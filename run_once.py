@@ -105,6 +105,8 @@ async def main() -> None:
     iran_bytes = ("\n".join(ep.line for ep in iran_ok).strip() + "\n").encode("utf-8")
 
     # تعیین کشور هر لینک سالم (healthy.txt) بر اساس IP سرور
+    print(f"[DEBUG] شروع گروه‌بندی بر اساس کشور - تعداد لینک‌های سالم: {len(res.healthy_links)}")
+    
     def _is_ip(host: str) -> bool:
         try:
             socket.inet_aton(host)
@@ -117,42 +119,78 @@ async def main() -> None:
     def _lookup_country(host: str) -> str:
         h = host.strip()
         if not h:
+            print(f"[DEBUG] Host خالی است")
             return "UNKNOWN"
+        
+        is_ip_addr = _is_ip(h)
+        print(f"[DEBUG] Host: {h} | نوع: {'IP' if is_ip_addr else 'Hostname'}")
+        
         try:
-            ip = h if _is_ip(h) else socket.gethostbyname(h)
-        except Exception:
+            ip = h if is_ip_addr else socket.gethostbyname(h)
+            if not is_ip_addr:
+                print(f"[DEBUG] Hostname '{h}' به IP تبدیل شد: {ip}")
+        except Exception as e:
+            print(f"[DEBUG] خطا در تبدیل hostname '{h}' به IP: {e}")
             return "UNKNOWN"
 
         if ip in country_cache:
-            return country_cache[ip]
+            cached_country = country_cache[ip]
+            print(f"[DEBUG] IP {ip} از cache: کشور = {cached_country}")
+            return cached_country
 
         code = "UNKNOWN"
         try:
+            print(f"[DEBUG] در حال lookup GeoIP برای IP: {ip}")
             r = httpx.get(f"https://ipapi.co/{ip}/json/", timeout=5)
+            print(f"[DEBUG] پاسخ GeoIP: status={r.status_code}")
             if r.status_code == 200:
                 data = r.json()
                 c = str(data.get("country_code") or "").upper()
                 if c:
                     code = c
-        except Exception:
-            code = "UNKNOWN"
+                    print(f"[DEBUG] کشور پیدا شد: {code}")
+                else:
+                    print(f"[DEBUG] country_code در پاسخ GeoIP وجود ندارد")
+            else:
+                print(f"[DEBUG] خطا در GeoIP: status={r.status_code}")
+        except Exception as e:
+            print(f"[DEBUG] خطا در درخواست GeoIP: {e}")
 
         country_cache[ip] = code
         return code
 
     links_by_country: dict[str, list[str]] = {}
+    processed_count = 0
+    skipped_count = 0
+    
     for link in res.healthy_links:
         try:
             n = node_from_share_link(link)
             host = str(n.outbound.get("server") or "").strip()
             if not host:
+                skipped_count += 1
+                print(f"[DEBUG] لینک بدون host نادیده گرفته شد")
                 continue
+            
+            print(f"[DEBUG] پردازش لینک | host: {host}")
             c = _lookup_country(host)
             if not c or c == "UNKNOWN":
+                skipped_count += 1
+                print(f"[DEBUG] کشور پیدا نشد یا UNKNOWN است")
                 continue
+            
             links_by_country.setdefault(c, []).append(link)
-        except Exception:
+            processed_count += 1
+            print(f"[DEBUG] لینک به کشور {c} اضافه شد")
+        except Exception as e:
+            skipped_count += 1
+            print(f"[DEBUG] خطا در پردازش لینک: {e}")
             continue
+    
+    print(f"[DEBUG] خلاصه: پردازش شده={processed_count}, نادیده گرفته شده={skipped_count}")
+    print(f"[DEBUG] کشورهای پیدا شده: {list(links_by_country.keys())}")
+    for country, links in links_by_country.items():
+        print(f"[DEBUG]   {country}: {len(links)} لینک")
 
     speed_enabled = os.environ.get("SPEED_TEST_ENABLED", "1").strip().lower() not in ("0", "false", "no")
     speed_threshold_kib_s = int(os.environ.get("SPEED_TEST_THRESHOLD_KIB_S", "500"))
@@ -264,13 +302,27 @@ async def main() -> None:
             f.write(yml_proto)
 
     # تولید فایل‌های متنی جداگانه بر اساس کشور (بر پایه healthy.txt)
+    print(f"[DEBUG] شروع ساخت فایل‌های کشوری - تعداد کشورها: {len(links_by_country)}")
+    files_created = 0
     for country, links in links_by_country.items():
         if not links:
+            print(f"[DEBUG] کشور {country}: لیست خالی است، رد می‌شود")
             continue
+        
+        print(f"[DEBUG] ساخت فایل برای کشور {country} با {len(links)} لینک")
         country_txt = ("\n".join(links).strip() + "\n").encode("utf-8")
         country_txt_path = os.path.join(base_dir, f"healthy_country_{country}.txt")
-        with open(country_txt_path, "wb") as f:
-            f.write(country_txt)
+        print(f"[DEBUG] مسیر فایل: {country_txt_path}")
+        
+        try:
+            with open(country_txt_path, "wb") as f:
+                f.write(country_txt)
+            files_created += 1
+            print(f"[DEBUG] ✓ فایل {country_txt_path} با موفقیت ساخته شد ({len(country_txt)} بایت)")
+        except Exception as e:
+            print(f"[DEBUG] ✗ خطا در ساخت فایل {country_txt_path}: {e}")
+    
+    print(f"[DEBUG] تعداد فایل‌های کشوری ساخته شده: {files_created}")
 
     os.makedirs(os.path.dirname(iran_path) or ".", exist_ok=True)
     with open(iran_path, "wb") as f:
