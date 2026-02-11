@@ -2,8 +2,10 @@ from __future__ import annotations
 
 import asyncio
 import os
+import socket
 from datetime import datetime
 
+import httpx
 import yaml
 from check_host import Endpoint, reachable_from_country_tcp
 from checker import check_nodes, collect_nodes, render_outputs
@@ -101,6 +103,56 @@ async def main() -> None:
             iran_ok = []
 
     iran_bytes = ("\n".join(ep.line for ep in iran_ok).strip() + "\n").encode("utf-8")
+
+    # تعیین کشور هر لینک سالم (healthy.txt) بر اساس IP سرور
+    def _is_ip(host: str) -> bool:
+        try:
+            socket.inet_aton(host)
+            return True
+        except OSError:
+            return False
+
+    country_cache: dict[str, str] = {}
+
+    def _lookup_country(host: str) -> str:
+        h = host.strip()
+        if not h:
+            return "UNKNOWN"
+        try:
+            ip = h if _is_ip(h) else socket.gethostbyname(h)
+        except Exception:
+            return "UNKNOWN"
+
+        if ip in country_cache:
+            return country_cache[ip]
+
+        code = "UNKNOWN"
+        try:
+            r = httpx.get(f"https://ipapi.co/{ip}/json/", timeout=5)
+            if r.status_code == 200:
+                data = r.json()
+                c = str(data.get("country_code") or "").upper()
+                if c:
+                    code = c
+        except Exception:
+            code = "UNKNOWN"
+
+        country_cache[ip] = code
+        return code
+
+    links_by_country: dict[str, list[str]] = {}
+    for link in res.healthy_links:
+        try:
+            n = node_from_share_link(link)
+            host = str(n.outbound.get("server") or "").strip()
+            if not host:
+                continue
+            c = _lookup_country(host)
+            if not c or c == "UNKNOWN":
+                continue
+            links_by_country.setdefault(c, []).append(link)
+        except Exception:
+            continue
 
     speed_enabled = os.environ.get("SPEED_TEST_ENABLED", "1").strip().lower() not in ("0", "false", "no")
     speed_threshold_kib_s = int(os.environ.get("SPEED_TEST_THRESHOLD_KIB_S", "500"))
@@ -211,64 +263,14 @@ async def main() -> None:
         with open(proto_path, "wb") as f:
             f.write(yml_proto)
 
-    # تولید فایل‌های جداگانه بر اساس کشور (کد دوحرفی) از روی پراکسی‌های Clash
-    by_country: dict[str, list[dict]] = {}
-    lines_by_country: dict[str, list[str]] = {}
-    for p in proxies:
-        country = (
-            str(
-                p.get("country")
-                or p.get("country_code")
-                or p.get("countryCode")
-                or ""
-            )
-            .strip()
-            .upper()
-        )
-        if not country:
+    # تولید فایل‌های متنی جداگانه بر اساس کشور (بر پایه healthy.txt)
+    for country, links in links_by_country.items():
+        if not links:
             continue
-        by_country.setdefault(country, []).append(p)
-        host = str(p.get("server") or "").strip()
-        port = str(p.get("port") or "").strip()
-        name = str(p.get("name") or "").strip()
-        if host and port:
-            line = f"{host}:{port}" + (f"\t{name}" if name else "")
-            lines_by_country.setdefault(country, []).append(line)
-
-    for country, plist in by_country.items():
-        if not plist:
-            continue
-        names = [str(p.get("name")) for p in plist if p.get("name")]
-        yaml_obj = {
-            "port": 7890,
-            "socks-port": 7891,
-            "allow-lan": True,
-            "mode": "Rule",
-            "log-level": "silent",
-            "proxies": plist,
-            "proxy-groups": [
-                {
-                    "name": "AUTO",
-                    "type": "url-test",
-                    "url": settings.test_url,
-                    "interval": 300,
-                    "proxies": names,
-                }
-            ],
-            "rules": ["MATCH,AUTO"],
-        }
-        yml_country = yaml.safe_dump(yaml_obj, allow_unicode=True, sort_keys=False).encode("utf-8")
-        country_yaml_path = os.path.join(base_dir, f"healthy_country_{country}.yaml")
-        with open(country_yaml_path, "wb") as f:
-            f.write(yml_country)
-
-        # فایل متنی حاوی لیست سرورهای همان کشور
-        lines = lines_by_country.get(country) or []
-        if lines:
-            country_txt = ("\n".join(lines).strip() + "\n").encode("utf-8")
-            country_txt_path = os.path.join(base_dir, f"healthy_country_{country}.txt")
-            with open(country_txt_path, "wb") as f:
-                f.write(country_txt)
+        country_txt = ("\n".join(links).strip() + "\n").encode("utf-8")
+        country_txt_path = os.path.join(base_dir, f"healthy_country_{country}.txt")
+        with open(country_txt_path, "wb") as f:
+            f.write(country_txt)
 
     os.makedirs(os.path.dirname(iran_path) or ".", exist_ok=True)
     with open(iran_path, "wb") as f:
