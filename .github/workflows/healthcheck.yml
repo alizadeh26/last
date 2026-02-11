@@ -78,7 +78,11 @@ jobs:
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add healthy.txt healthy_clash.yaml healthy_*.yaml healthy_country_*.txt iran_reachable.txt fast_500kbps.txt
+          git add healthy.txt healthy_clash.yaml healthy_*.yaml iran_reachable.txt fast_500kbps.txt
+          # فقط اگر فایل‌های کشوری وجود داشته باشند آن‌ها را اضافه کن
+          if ls healthy_country_*.txt 1> /dev/null 2>&1; then
+            git add healthy_country_*.txt
+          fi
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
