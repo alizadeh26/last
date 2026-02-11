@@ -1,0 +1,74 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: silent
+proxies:
+- name: 🇭🇰 香港 | HKG 17
+  server: 156.233.232.177
+  port: 44329
+  type: vmess
+  uuid: 1ba1fb56-e235-419e-c193-1c291adad4a7
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: nextmi.hajmyab.ir
+  port: 2053
+  type: vmess
+  uuid: 9585636a-54bc-419a-90a1-76c5c6ec74df
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: yakxvtfbyk.hajmyab.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: app.hajmyab.ir
+  udp: true
+- name: 🇺🇸 美国 | USA 22
+  server: bbnj.wc9.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: bbnj.wc9.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: jjmk.wc2.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: jjmk.wc2.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: jjmk.wc2.ccwu.cc
+  udp: true
+proxy-groups:
+- name: AUTO
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 17
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 23
+rules:
+- MATCH,AUTO
