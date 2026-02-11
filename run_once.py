@@ -2,8 +2,10 @@ from __future__ import annotations
 
 import asyncio
 import os
+import socket
 from datetime import datetime
 
+import httpx
 import yaml
 from check_host import Endpoint, reachable_from_country_tcp
 from checker import check_nodes, collect_nodes, render_outputs
@@ -102,6 +104,49 @@ async def main() -> None:
 
     iran_bytes = ("\n".join(ep.line for ep in iran_ok).strip() + "\n").encode("utf-8")
 
+    # گروه‌بندی بر اساس کشور برای ساخت فایل‌های متنی جداگانه
+    def _is_ip(host: str) -> bool:
+        try:
+            socket.inet_aton(host)
+            return True
+        except OSError:
+            return False
+
+    country_cache: dict[str, str] = {}
+
+    def _lookup_country(host: str) -> str:
+        h = host.strip()
+        if not h:
+            return "UNKNOWN"
+        try:
+            ip = h if _is_ip(h) else socket.gethostbyname(h)
+        except Exception:
+            return "UNKNOWN"
+
+        if ip in country_cache:
+            return country_cache[ip]
+
+        code = "UNKNOWN"
+        try:
+            r = httpx.get(f"https://ipapi.co/{ip}/json/", timeout=5)
+            if r.status_code == 200:
+                data = r.json()
+                c = str(data.get("country_code") or "").upper()
+                if c:
+                    code = c
+        except Exception:
+            code = "UNKNOWN"
+
+        country_cache[ip] = code
+        return code
+
+    lines_by_country: dict[str, list[str]] = {}
+    for ep in endpoints:
+        c = _lookup_country(ep.host)
+        if not c or c == "UNKNOWN":
+            continue
+        lines_by_country.setdefault(c, []).append(ep.line)
+
     speed_enabled = os.environ.get("SPEED_TEST_ENABLED", "1").strip().lower() not in ("0", "false", "no")
     speed_threshold_kib_s = int(os.environ.get("SPEED_TEST_THRESHOLD_KIB_S", "500"))
     speed_max_nodes = int(os.environ.get("SPEED_TEST_MAX_NODES", "10"))
@@ -176,7 +221,7 @@ async def main() -> None:
     with open(yml_path, "wb") as f:
         f.write(yml_bytes)
 
-    # تولید فایل‌های جداگانه بر اساس نوع پروتکل
+    # تولید فایل‌های جداگانه بر اساس نوع پروتکل (Clash YAML)
     base_dir = os.path.dirname(yml_path) or "."
     proxies = [p for p in res.healthy_clash_proxies if isinstance(p, dict)]
     by_protocol: dict[str, list[dict]] = {}
@@ -210,6 +255,15 @@ async def main() -> None:
         proto_path = os.path.join(base_dir, f"healthy_{ptype}.yaml")
         with open(proto_path, "wb") as f:
             f.write(yml_proto)
+
+    # تولید فایل‌های متنی جداگانه بر اساس کشور
+    for country, lines in lines_by_country.items():
+        if not lines:
+            continue
+        country_txt = ("\n".join(lines).strip() + "\n").encode("utf-8")
+        country_path = os.path.join(base_dir, f"healthy_country_{country}.txt")
+        with open(country_path, "wb") as f:
+            f.write(country_txt)
 
     # تولید فایل‌های جداگانه بر اساس کشور (کد دوحرفی)
     by_country: dict[str, list[dict]] = {}
