@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 import os
 import socket
+import time
 from datetime import datetime
 
 import httpx
@@ -138,23 +139,36 @@ async def main() -> None:
             print(f"[DEBUG] IP {ip} از cache: کشور = {cached_country}")
             return cached_country
 
+        # تأخیر برای جلوگیری از 429 (ip-api.com حدود ۴۵ درخواست در دقیقه مجاز دارد)
+        time.sleep(2)
+
         code = "UNKNOWN"
-        try:
-            print(f"[DEBUG] در حال lookup GeoIP برای IP: {ip}")
-            r = httpx.get(f"https://ipapi.co/{ip}/json/", timeout=5)
-            print(f"[DEBUG] پاسخ GeoIP: status={r.status_code}")
-            if r.status_code == 200:
-                data = r.json()
-                c = str(data.get("country_code") or "").upper()
-                if c:
-                    code = c
-                    print(f"[DEBUG] کشور پیدا شد: {code}")
-                else:
-                    print(f"[DEBUG] country_code در پاسخ GeoIP وجود ندارد")
-            else:
-                print(f"[DEBUG] خطا در GeoIP: status={r.status_code}")
-        except Exception as e:
-            print(f"[DEBUG] خطا در درخواست GeoIP: {e}")
+        # اول ip-api.com (۴۵ درخواست/دقیقه)، بعد ipapi.co
+        apis = [
+            ("http://ip-api.com/json/{ip}?fields=countryCode", "countryCode"),
+            ("https://ipapi.co/{ip}/json/", "country_code"),
+        ]
+        for url_tpl, key in apis:
+            try:
+                print(f"[DEBUG] در حال lookup GeoIP برای IP: {ip}")
+                r = httpx.get(url_tpl.format(ip=ip), timeout=10)
+                print(f"[DEBUG] پاسخ GeoIP: status={r.status_code}")
+                if r.status_code == 200:
+                    data = r.json()
+                    c = str(data.get(key) or "").strip().upper()
+                    if c:
+                        code = c
+                        print(f"[DEBUG] کشور پیدا شد: {code}")
+                        break
+                elif r.status_code == 429:
+                    print(f"[DEBUG] محدودیت درخواست (429)، تلاش با API بعدی...")
+                    time.sleep(3)
+                    continue
+            except Exception as e:
+                print(f"[DEBUG] خطا در درخواست GeoIP: {e}")
+                continue
+        else:
+            print(f"[DEBUG] کشور پیدا نشد یا UNKNOWN است")
 
         country_cache[ip] = code
         return code
