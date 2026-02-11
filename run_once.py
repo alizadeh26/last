@@ -211,6 +211,41 @@ async def main() -> None:
         with open(proto_path, "wb") as f:
             f.write(yml_proto)
 
+    # تولید فایل‌های جداگانه بر اساس کشور (کد دوحرفی)
+    by_country: dict[str, list[dict]] = {}
+    for p in proxies:
+        country = str(p.get("country") or "").strip().upper()
+        if not country:
+            continue
+        by_country.setdefault(country, []).append(p)
+
+    for country, plist in by_country.items():
+        if not plist:
+            continue
+        names = [str(p.get("name")) for p in plist if p.get("name")]
+        yaml_obj = {
+            "port": 7890,
+            "socks-port": 7891,
+            "allow-lan": True,
+            "mode": "Rule",
+            "log-level": "silent",
+            "proxies": plist,
+            "proxy-groups": [
+                {
+                    "name": "AUTO",
+                    "type": "url-test",
+                    "url": settings.test_url,
+                    "interval": 300,
+                    "proxies": names,
+                }
+            ],
+            "rules": ["MATCH,AUTO"],
+        }
+        yml_country = yaml.safe_dump(yaml_obj, allow_unicode=True, sort_keys=False).encode("utf-8")
+        country_path = os.path.join(base_dir, f"healthy_country_{country}.yaml")
+        with open(country_path, "wb") as f:
+            f.write(yml_country)
+
     os.makedirs(os.path.dirname(iran_path) or ".", exist_ok=True)
     with open(iran_path, "wb") as f:
         f.write(iran_bytes)
