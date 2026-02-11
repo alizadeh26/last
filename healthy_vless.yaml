@@ -1,0 +1,24 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: silent
+proxies:
+- name: SG_e15ff_0037
+  server: 43.173.125.15
+  port: 44519
+  type: vless
+  uuid: 6b05ea27-051b-450b-965b-f6c5da11a1f0
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  udp: true
+proxy-groups:
+- name: AUTO
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - SG_e15ff_0037
+rules:
+- MATCH,AUTO
