@@ -4,6 +4,7 @@ import asyncio
 import os
 from datetime import datetime
 
+import yaml
 from check_host import Endpoint, reachable_from_country_tcp
 from checker import check_nodes, collect_nodes, render_outputs
 from config import load_settings
@@ -174,6 +175,41 @@ async def main() -> None:
 
     with open(yml_path, "wb") as f:
         f.write(yml_bytes)
+
+    # تولید فایل‌های جداگانه بر اساس نوع پروتکل
+    base_dir = os.path.dirname(yml_path) or "."
+    proxies = [p for p in res.healthy_clash_proxies if isinstance(p, dict)]
+    by_protocol: dict[str, list[dict]] = {}
+    for p in proxies:
+        ptype = str(p.get("type") or "").lower() or "unknown"
+        by_protocol.setdefault(ptype, []).append(p)
+
+    for ptype, plist in by_protocol.items():
+        if not plist or ptype == "unknown":
+            continue
+        names = [str(p.get("name")) for p in plist if p.get("name")]
+        yaml_obj = {
+            "port": 7890,
+            "socks-port": 7891,
+            "allow-lan": True,
+            "mode": "Rule",
+            "log-level": "silent",
+            "proxies": plist,
+            "proxy-groups": [
+                {
+                    "name": "AUTO",
+                    "type": "url-test",
+                    "url": settings.test_url,
+                    "interval": 300,
+                    "proxies": names,
+                }
+            ],
+            "rules": ["MATCH,AUTO"],
+        }
+        yml_proto = yaml.safe_dump(yaml_obj, allow_unicode=True, sort_keys=False).encode("utf-8")
+        proto_path = os.path.join(base_dir, f"healthy_{ptype}.yaml")
+        with open(proto_path, "wb") as f:
+            f.write(yml_proto)
 
     os.makedirs(os.path.dirname(iran_path) or ".", exist_ok=True)
     with open(iran_path, "wb") as f:
