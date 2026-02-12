@@ -11,20 +11,6 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: VN_e15ff_0059
-  server: 103.186.155.85
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0060
-  server: 103.186.155.204
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: VN_e15ff_0061
   server: 103.186.154.213
   port: 38388
@@ -32,29 +18,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e15ff_0065
-  server: 103.186.154.249
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0064
-  server: 103.186.154.194
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0063
-  server: 103.186.154.79
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0066
-  server: 103.186.155.28
+- name: VN_e15ff_0059
+  server: 103.186.155.85
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -67,8 +32,50 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_e15ff_0063
+  server: 103.186.154.79
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e15ff_0064
+  server: 103.186.154.194
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e15ff_0060
+  server: 103.186.155.204
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e15ff_0065
+  server: 103.186.154.249
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e15ff_0067
+  server: 103.186.155.57
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_e15ff_0068
   server: 103.186.155.226
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e15ff_0070
+  server: 103.186.155.114
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -88,26 +95,26 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e15ff_0067
-  server: 103.186.155.57
+- name: VN_e15ff_0072
+  server: 103.186.155.56
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e15ff_0070
-  server: 103.186.155.114
+- name: VN_e15ff_0066
+  server: 103.186.155.28
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 185.120.59.59
-  port: 8388
+- name: VN_e15ff_0073
+  server: 103.186.154.74
+  port: 38388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: OWEyZ
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: VN_e15ff_0074
   server: 103.186.155.44
@@ -130,26 +137,12 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e15ff_0073
-  server: 103.186.154.74
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇭🇰 香港 | HKG 11
-  server: 103.141.221.124
+- name: 🇫🇷 法国 | FRA
+  server: 185.120.59.59
   port: 8388
   type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-  udp: true
-- name: VN_e15ff_0072
-  server: 103.186.155.56
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: chacha20-ietf-poly1305
+  password: OWEyZ
   udp: true
 - name: 🇮🇳 印度 | IND 2
   server: 134.209.147.198
@@ -179,15 +172,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.249
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.11
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.11
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.249
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -200,15 +193,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.154.12
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.154.221
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.154.221
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.154.12
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -242,35 +235,34 @@ proxy-groups:
   interval: 300
   proxies:
   - MK_e15ff_0024
-  - VN_e15ff_0059
-  - VN_e15ff_0060
   - VN_e15ff_0061
-  - VN_e15ff_0065
-  - VN_e15ff_0064
-  - VN_e15ff_0063
-  - VN_e15ff_0066
+  - VN_e15ff_0059
   - VN_e15ff_0062
+  - VN_e15ff_0063
+  - VN_e15ff_0064
+  - VN_e15ff_0060
+  - VN_e15ff_0065
+  - VN_e15ff_0067
   - VN_e15ff_0068
+  - VN_e15ff_0070
   - VN_e15ff_0069
   - VN_e15ff_0071
-  - VN_e15ff_0067
-  - VN_e15ff_0070
-  - 🇫🇷 法国 | FRA
+  - VN_e15ff_0072
+  - VN_e15ff_0066
+  - VN_e15ff_0073
   - VN_e15ff_0074
   - VN_e15ff_0075
   - VN_e15ff_0076
-  - VN_e15ff_0073
-  - 🇭🇰 香港 | HKG 11
-  - VN_e15ff_0072
+  - 🇫🇷 法国 | FRA
   - 🇮🇳 印度 | IND 2
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 10
   - 🇻🇳 越南 | VNM 11
   - 🇻🇳 越南 | VNM 14
