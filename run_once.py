@@ -174,7 +174,7 @@ async def main() -> None:
         return code
 
     links_by_country: dict[str, list[str]] = {}
-    # برای جلوگیری از تکرار سرورها (همان host:port) در هر کشور
+    # برای جلوگیری از تکرار سرورها در هر کشور (بر اساس هویت منطقی نود، نه فقط IP)
     seen_endpoints_by_country: dict[str, set[str]] = {}
     processed_count = 0
     skipped_count = 0
@@ -182,8 +182,9 @@ async def main() -> None:
     for link in res.healthy_links:
         try:
             n = node_from_share_link(link)
-            host = str(n.outbound.get("server") or "").strip()
-            port = str(n.outbound.get("server_port") or "").strip()
+            outbound = n.outbound
+            host = str(outbound.get("server") or "").strip()
+            port = str(outbound.get("server_port") or "").strip()
             if not host:
                 skipped_count += 1
                 print(f"[DEBUG] لینک بدون host نادیده گرفته شد")
@@ -195,8 +196,32 @@ async def main() -> None:
                 skipped_count += 1
                 print(f"[DEBUG] کشور پیدا نشد یا UNKNOWN است")
                 continue
+            
+            # ساخت کلید یکتا برای نود:
+            # برای vmess/vless/trojan روی Cloudflare، IP عوض می‌شود ولی
+            # SNI/Host + path + UUID معمولاً ثابت می‌مانند، پس بر اساس آن‌ها dedupe می‌کنیم.
+            otype = str(outbound.get("type") or "").lower()
+            endpoint_key: str
+            if otype in ("vmess", "vless", "trojan"):
+                tls = outbound.get("tls") or {}
+                if isinstance(tls, dict):
+                    sni = str(tls.get("server_name") or "")
+                else:
+                    sni = ""
+                transport = outbound.get("transport") or {}
+                path = ""
+                if isinstance(transport, dict):
+                    path = str(transport.get("path") or "")
+                ident = str(
+                    outbound.get("uuid")  # vmess / vless
+                    or outbound.get("password")  # trojan
+                    or ""
+                )
+                endpoint_key = f"{otype}|{sni}|{path}|{ident}|{port}"
+            else:
+                # برای سایر پروتکل‌ها، همان host:port کافی است
+                endpoint_key = f"{host}:{port}" if port else host
 
-            endpoint_key = f"{host}:{port}" if port else host
             country_seen = seen_endpoints_by_country.setdefault(c, set())
             if endpoint_key in country_seen:
                 skipped_count += 1
