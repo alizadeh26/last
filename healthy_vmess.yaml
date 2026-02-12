@@ -4,18 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 17
-  server: 156.233.232.177
-  port: 44329
-  type: vmess
-  uuid: 1ba1fb56-e235-419e-c193-1c291adad4a7
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: jjmk.wc2.ccwu.cc
+- name: 🇺🇸 美国 | USA 3
+  server: mki.tt5.ccwu.cc
   port: 80
   type: vmess
   uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
@@ -23,29 +13,62 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: jjmk.wc2.ccwu.cc
+  servername: mki.tt5.ccwu.cc
   network: ws
   ws-opts:
     path: /kFK9O5cl8ZycyrxcJWNVFC21
     headers:
-      Host: jjmk.wc2.ccwu.cc
+      Host: mki.tt5.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: bbnj.wc9.ccwu.cc
+- name: 🇺🇸 美国 | USA 7
+  server: nmk.tt6.ccwu.cc
   port: 80
   type: vmess
   uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
+  skip-cert-verify: false
+  servername: nmk.tt6.ccwu.cc
   network: ws
   ws-opts:
     path: /kFK9O5cl8ZycyrxcJWNVFC21
     headers:
-      Host: bbnj.wc9.ccwu.cc
+      Host: nmk.tt6.ccwu.cc
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
+- name: 🇺🇸 美国 | USA 11
+  server: mko.tc4.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: mko.tc4.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: mko.tc4.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: bnmj.wc6.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: bnmj.wc6.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: bnmj.wc6.ccwu.cc
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
   server: nextmi.hajmyab.ir
   port: 2053
   type: vmess
@@ -60,15 +83,48 @@ proxies:
     headers:
       Host: app.hajmyab.ir
   udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: nmjki.tc9.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: nmjki.tc9.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: nmjki.tc9.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: nmj.wc8.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: nmj.wc8.ccwu.cc
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 17
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 22
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO

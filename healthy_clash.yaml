@@ -4,193 +4,148 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: MK_e15ff_0024
+- name: MK_00769_0024
   server: 46.183.185.37
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: VN_e15ff_0061
-  server: 103.186.154.213
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0059
+- name: VN_00769_0059
   server: 103.186.155.85
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e15ff_0062
-  server: 103.186.155.81
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0063
-  server: 103.186.154.79
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0064
-  server: 103.186.154.194
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0060
+- name: VN_00769_0060
   server: 103.186.155.204
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e15ff_0065
+- name: VN_00769_0061
+  server: 103.186.154.213
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_00769_0062
+  server: 103.186.155.81
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_00769_0063
+  server: 103.186.154.79
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_00769_0065
   server: 103.186.154.249
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e15ff_0067
-  server: 103.186.155.57
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0068
-  server: 103.186.155.226
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0070
-  server: 103.186.155.114
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0069
-  server: 103.186.154.211
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0071
-  server: 103.186.154.181
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0072
-  server: 103.186.155.56
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e15ff_0066
+- name: VN_00769_0066
   server: 103.186.155.28
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e15ff_0073
+- name: VN_00769_0069
+  server: 103.186.154.211
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_00769_0068
+  server: 103.186.155.226
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_00769_0067
+  server: 103.186.155.57
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_00769_0070
+  server: 103.186.155.114
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_00769_0071
+  server: 103.186.154.181
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_00769_0073
   server: 103.186.154.74
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e15ff_0074
+- name: VN_00769_0072
+  server: 103.186.155.56
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇨🇭 瑞士 | CHE
+  server: 51.15.23.63
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: VN_00769_0074
   server: 103.186.155.44
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e15ff_0075
+- name: VN_00769_0075
   server: 103.186.154.226
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e15ff_0076
+- name: VN_00769_0076
   server: 103.186.155.27
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 185.120.59.59
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: OWEyZ
-  udp: true
-- name: 🇭🇰 香港 | HKG 17
-  server: 156.233.232.177
-  port: 44329
-  type: vmess
-  uuid: 1ba1fb56-e235-419e-c193-1c291adad4a7
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇳 印度 | IND 2
-  server: 134.209.147.198
-  port: 989
+- name: VN_00769_0064
+  server: 103.186.154.194
+  port: 38388
   type: ss
   cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 30
-  server: www.npmjs.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  servername: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 35
-  server: www.udemy.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  servername: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: jjmk.wc2.ccwu.cc
+- name: 🇺🇸 美国 | USA 3
+  server: mki.tt5.ccwu.cc
   port: 80
   type: vmess
   uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
@@ -198,36 +153,62 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: jjmk.wc2.ccwu.cc
+  servername: mki.tt5.ccwu.cc
   network: ws
   ws-opts:
     path: /kFK9O5cl8ZycyrxcJWNVFC21
     headers:
-      Host: jjmk.wc2.ccwu.cc
+      Host: mki.tt5.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: bbnj.wc9.ccwu.cc
+- name: 🇺🇸 美国 | USA 7
+  server: nmk.tt6.ccwu.cc
   port: 80
   type: vmess
   uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
+  skip-cert-verify: false
+  servername: nmk.tt6.ccwu.cc
   network: ws
   ws-opts:
     path: /kFK9O5cl8ZycyrxcJWNVFC21
     headers:
-      Host: bbnj.wc9.ccwu.cc
+      Host: nmk.tt6.ccwu.cc
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.241
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇺🇸 美国 | USA 11
+  server: mko.tc4.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: mko.tc4.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: mko.tc4.ccwu.cc
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
+- name: 🇺🇸 美国 | USA 9
+  server: bnmj.wc6.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: bnmj.wc6.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: bnmj.wc6.ccwu.cc
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
   server: nextmi.hajmyab.ir
   port: 2053
   type: vmess
@@ -242,71 +223,101 @@ proxies:
     headers:
       Host: app.hajmyab.ir
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.103
+- name: 🇺🇸 美国 | USA 16
+  server: nmjki.tc9.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: nmjki.tc9.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: nmjki.tc9.ccwu.cc
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.231
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.68
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: nmj.wc8.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: nmj.wc8.ccwu.cc
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.117
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.11
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.249
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.223
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.154.221
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 8
   server: 103.186.154.12
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 10
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.203
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.116
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.24
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.155.32
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 8
   server: 103.186.155.35
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 11
-  server: 103.186.154.66
+- name: 🇻🇳 越南 | VNM 10
+  server: 103.186.155.124
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 14
-  server: 103.186.155.124
+- name: 🇻🇳 越南 | VNM 9
+  server: 103.186.155.64
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -318,35 +329,35 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - MK_e15ff_0024
-  - VN_e15ff_0061
-  - VN_e15ff_0059
-  - VN_e15ff_0062
-  - VN_e15ff_0063
-  - VN_e15ff_0064
-  - VN_e15ff_0060
-  - VN_e15ff_0065
-  - VN_e15ff_0067
-  - VN_e15ff_0068
-  - VN_e15ff_0070
-  - VN_e15ff_0069
-  - VN_e15ff_0071
-  - VN_e15ff_0072
-  - VN_e15ff_0066
-  - VN_e15ff_0073
-  - VN_e15ff_0074
-  - VN_e15ff_0075
-  - VN_e15ff_0076
-  - 🇫🇷 法国 | FRA
-  - 🇭🇰 香港 | HKG 17
-  - 🇮🇳 印度 | IND 2
-  - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 35
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 22
+  - MK_00769_0024
+  - VN_00769_0059
+  - VN_00769_0060
+  - VN_00769_0061
+  - VN_00769_0062
+  - VN_00769_0063
+  - VN_00769_0065
+  - VN_00769_0066
+  - VN_00769_0069
+  - VN_00769_0068
+  - VN_00769_0067
+  - VN_00769_0070
+  - VN_00769_0071
+  - VN_00769_0073
+  - VN_00769_0072
+  - 🇨🇭 瑞士 | CHE
+  - VN_00769_0074
+  - VN_00769_0075
+  - VN_00769_0076
+  - VN_00769_0064
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 16
   - 🇻🇳 越南 | VNM
-  - 🇳🇱 荷兰 | NLD 2
   - 🇻🇳 越南 | VNM 2
+  - 🇺🇸 美国 | USA 15
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
@@ -354,34 +365,32 @@ proxy-groups:
   - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 10
-  - 🇻🇳 越南 | VNM 11
-  - 🇻🇳 越南 | VNM 14
+  - 🇻🇳 越南 | VNM 9
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - MK_e15ff_0024
-  - VN_e15ff_0061
-  - VN_e15ff_0059
-  - VN_e15ff_0062
-  - VN_e15ff_0063
-  - VN_e15ff_0064
-  - VN_e15ff_0060
-  - VN_e15ff_0065
-  - VN_e15ff_0067
-  - VN_e15ff_0068
-  - VN_e15ff_0070
-  - VN_e15ff_0069
-  - VN_e15ff_0071
-  - VN_e15ff_0072
-  - VN_e15ff_0066
-  - VN_e15ff_0073
-  - VN_e15ff_0074
-  - VN_e15ff_0075
-  - VN_e15ff_0076
-  - 🇫🇷 法国 | FRA
-  - 🇮🇳 印度 | IND 2
+  - MK_00769_0024
+  - VN_00769_0059
+  - VN_00769_0060
+  - VN_00769_0061
+  - VN_00769_0062
+  - VN_00769_0063
+  - VN_00769_0065
+  - VN_00769_0066
+  - VN_00769_0069
+  - VN_00769_0068
+  - VN_00769_0067
+  - VN_00769_0070
+  - VN_00769_0071
+  - VN_00769_0073
+  - VN_00769_0072
+  - 🇨🇭 瑞士 | CHE
+  - VN_00769_0074
+  - VN_00769_0075
+  - VN_00769_0076
+  - VN_00769_0064
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
@@ -391,39 +400,31 @@ proxy-groups:
   - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 10
-  - 🇻🇳 越南 | VNM 11
-  - 🇻🇳 越南 | VNM 14
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 35
+  - 🇻🇳 越南 | VNM 9
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 17
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 22
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 15
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_e15ff_0061
-  - VN_e15ff_0059
-  - VN_e15ff_0062
-  - VN_e15ff_0064
-  - VN_e15ff_0060
+  - VN_00769_0059
+  - VN_00769_0060
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - MK_e15ff_0024
+  - MK_00769_0024
 rules:
 - MATCH,AUTO
