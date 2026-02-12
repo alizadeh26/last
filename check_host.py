@@ -122,7 +122,9 @@ async def reachable_from_country_tcp(
     if not node_names:
         return []
 
-    endpoints = endpoints[: max(0, int(max_endpoints))]
+    # به‌جای محدودکردن تعداد، تمام endpointها را در یک اجرا تست می‌کنیم
+    # (اگر در آینده خواستی دوباره limit بگذاری، می‌توانی این خط را برگردانی یا شرط اضافه کنی)
+    endpoints = list(endpoints)
 
     sem = asyncio.Semaphore(max(1, int(concurrency)))
     ok: list[Endpoint] = []
