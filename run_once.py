@@ -174,6 +174,8 @@ async def main() -> None:
         return code
 
     links_by_country: dict[str, list[str]] = {}
+    # برای جلوگیری از تکرار سرورها (همان host:port) در هر کشور
+    seen_endpoints_by_country: dict[str, set[str]] = {}
     processed_count = 0
     skipped_count = 0
     
@@ -181,21 +183,30 @@ async def main() -> None:
         try:
             n = node_from_share_link(link)
             host = str(n.outbound.get("server") or "").strip()
+            port = str(n.outbound.get("server_port") or "").strip()
             if not host:
                 skipped_count += 1
                 print(f"[DEBUG] لینک بدون host نادیده گرفته شد")
                 continue
             
-            print(f"[DEBUG] پردازش لینک | host: {host}")
+            print(f"[DEBUG] پردازش لینک | host: {host} | port: {port}")
             c = _lookup_country(host)
             if not c or c == "UNKNOWN":
                 skipped_count += 1
                 print(f"[DEBUG] کشور پیدا نشد یا UNKNOWN است")
                 continue
-            
+
+            endpoint_key = f"{host}:{port}" if port else host
+            country_seen = seen_endpoints_by_country.setdefault(c, set())
+            if endpoint_key in country_seen:
+                skipped_count += 1
+                print(f"[DEBUG] سرور تکراری در کشور {c} (endpoint={endpoint_key})، نادیده گرفته شد")
+                continue
+
+            country_seen.add(endpoint_key)
             links_by_country.setdefault(c, []).append(link)
             processed_count += 1
-            print(f"[DEBUG] لینک به کشور {c} اضافه شد")
+            print(f"[DEBUG] لینک به کشور {c} اضافه شد (endpoint={endpoint_key})")
         except Exception as e:
             skipped_count += 1
             print(f"[DEBUG] خطا در پردازش لینک: {e}")
