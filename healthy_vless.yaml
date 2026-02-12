@@ -13,6 +13,17 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: deu542.globalunlock.org
+  port: 443
+  type: vless
+  uuid: ee750cca-f549-4e78-8648-a6b762953e70
+  tls: true
+  flow: xtls-rprx-vision
+  servername: deu542.globalunlock.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: entrainmentworld.de
   port: 2083
@@ -26,31 +37,6 @@ proxies:
     path: /vlessws
     headers:
       Host: entrainmentworld.de
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: deu542.globalunlock.org
-  port: 443
-  type: vless
-  uuid: ee750cca-f549-4e78-8648-a6b762953e70
-  tls: true
-  flow: xtls-rprx-vision
-  servername: deu542.globalunlock.org
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: rus3.worldunlocked.org
-  port: 8443
-  type: vless
-  uuid: 0e4865bf-811e-44e8-90ce-233ecf209b0b
-  tls: true
-  servername: rus3.worldunlocked.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws-vless/
-    headers:
-      Host: rus3.worldunlocked.org
   udp: true
 - name: 🇺🇸 美国 | USA 13
   server: nnj.818185.xyz
@@ -66,6 +52,20 @@ proxies:
     headers:
       Host: nnj.818185.xyz
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: rus3.worldunlocked.org
+  port: 8443
+  type: vless
+  uuid: 0e4865bf-811e-44e8-90ce-233ecf209b0b
+  tls: true
+  servername: rus3.worldunlocked.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws-vless/
+    headers:
+      Host: rus3.worldunlocked.org
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -73,9 +73,9 @@ proxy-groups:
   interval: 300
   proxies:
   - SG_88863_0037
-  - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 3
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇩🇪 德国 | DEU 5
   - 🇺🇸 美国 | USA 13
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO

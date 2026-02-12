@@ -13,6 +13,17 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: deu542.globalunlock.org
+  port: 443
+  type: vless
+  uuid: ee750cca-f549-4e78-8648-a6b762953e70
+  tls: true
+  flow: xtls-rprx-vision
+  servername: deu542.globalunlock.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: entrainmentworld.de
   port: 2083
@@ -27,16 +38,19 @@ proxies:
     headers:
       Host: entrainmentworld.de
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: deu542.globalunlock.org
+- name: 🇺🇸 美国 | USA 13
+  server: nnj.818185.xyz
   port: 443
   type: vless
-  uuid: ee750cca-f549-4e78-8648-a6b762953e70
+  uuid: eed4a583-b20e-4787-bbdb-09018156e53f
   tls: true
-  flow: xtls-rprx-vision
-  servername: deu542.globalunlock.org
+  servername: nnj.818185.xyz
   client-fingerprint: chrome
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /hf5eEFaMIyvZXFAbvQEN
+    headers:
+      Host: nnj.818185.xyz
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: rus3.worldunlocked.org
@@ -51,20 +65,6 @@ proxies:
     path: /ws-vless/
     headers:
       Host: rus3.worldunlocked.org
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: nnj.818185.xyz
-  port: 443
-  type: vless
-  uuid: eed4a583-b20e-4787-bbdb-09018156e53f
-  tls: true
-  servername: nnj.818185.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /hf5eEFaMIyvZXFAbvQEN
-    headers:
-      Host: nnj.818185.xyz
   udp: true
 - name: 🇺🇸 美国 | USA 35
   server: nmklo.kk0.ccwu.cc
@@ -88,10 +88,10 @@ proxy-groups:
   interval: 300
   proxies:
   - SG_88863_0037
-  - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 3
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇩🇪 德国 | DEU 5
   - 🇺🇸 美国 | USA 13
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 35
 - name: PROTO-VLESS
   type: url-test
@@ -99,10 +99,10 @@ proxy-groups:
   interval: 300
   proxies:
   - SG_88863_0037
-  - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 3
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇩🇪 德国 | DEU 5
   - 🇺🇸 美国 | USA 13
+  - 🇷🇺 俄罗斯 | RUS 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
