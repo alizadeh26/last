@@ -4,114 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
-  server: nextmi.hajmyab.ir
-  port: 2053
+- name: 🇺🇸 美国 | USA 35
+  server: nmklo.kk0.ccwu.cc
+  port: 443
   type: vmess
-  uuid: 9585636a-54bc-419a-90a1-76c5c6ec74df
+  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
   alterId: 0
   cipher: auto
   tls: true
-  servername: yakxvtfbyk.hajmyab.ir
+  servername: nmklo.kk0.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /PGsqb2SHJfbCLo
     headers:
-      Host: app.hajmyab.ir
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: nmk.tt6.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: nmk.tt6.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: nmk.tt6.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: mki.tt5.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: mki.tt5.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: mki.tt5.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: bnmj.wc6.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: bnmj.wc6.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: bnmj.wc6.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: mko.tc4.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: mko.tc4.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: mko.tc4.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: nmj.wc8.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: nmj.wc8.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: nmjki.tc9.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: nmjki.tc9.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: nmjki.tc9.ccwu.cc
+      Host: nmklo.kk0.ccwu.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -119,12 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 35
 rules:
 - MATCH,AUTO

@@ -4,33 +4,67 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 30
-  server: www.npmjs.com
-  port: 2095
+- name: SG_88863_0037
+  server: 43.173.125.15
+  port: 44519
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 6b05ea27-051b-450b-965b-f6c5da11a1f0
   tls: false
-  servername: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   udp: true
-- name: 🇺🇸 美国 | USA 35
-  server: www.udemy.com
-  port: 2095
+- name: 🇩🇪 德国 | DEU 5
+  server: entrainmentworld.de
+  port: 2083
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  servername: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
-  client-fingerprint: randomized
+  uuid: c61fd003-1ad7-44fb-9bfc-da6382c6f4d3
+  tls: true
+  servername: entrainmentworld.de
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /vlessws
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
+      Host: entrainmentworld.de
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: deu542.globalunlock.org
+  port: 443
+  type: vless
+  uuid: ee750cca-f549-4e78-8648-a6b762953e70
+  tls: true
+  flow: xtls-rprx-vision
+  servername: deu542.globalunlock.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: rus3.worldunlocked.org
+  port: 8443
+  type: vless
+  uuid: 0e4865bf-811e-44e8-90ce-233ecf209b0b
+  tls: true
+  servername: rus3.worldunlocked.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws-vless/
+    headers:
+      Host: rus3.worldunlocked.org
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: nnj.818185.xyz
+  port: 443
+  type: vless
+  uuid: eed4a583-b20e-4787-bbdb-09018156e53f
+  tls: true
+  servername: nnj.818185.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hf5eEFaMIyvZXFAbvQEN
+    headers:
+      Host: nnj.818185.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +72,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 35
+  - SG_88863_0037
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 3
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO

@@ -4,317 +4,82 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: VN_00769_0059
-  server: 103.186.155.85
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: SG_88863_0037
+  server: 43.173.125.15
+  port: 44519
+  type: vless
+  uuid: 6b05ea27-051b-450b-965b-f6c5da11a1f0
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: chrome
   udp: true
-- name: VN_00769_0060
-  server: 103.186.155.204
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇩🇪 德国 | DEU 5
+  server: entrainmentworld.de
+  port: 2083
+  type: vless
+  uuid: c61fd003-1ad7-44fb-9bfc-da6382c6f4d3
+  tls: true
+  servername: entrainmentworld.de
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: entrainmentworld.de
   udp: true
-- name: VN_00769_0062
-  server: 103.186.155.81
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇩🇪 德国 | DEU 3
+  server: deu542.globalunlock.org
+  port: 443
+  type: vless
+  uuid: ee750cca-f549-4e78-8648-a6b762953e70
+  tls: true
+  flow: xtls-rprx-vision
+  servername: deu542.globalunlock.org
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: VN_00769_0061
-  server: 103.186.154.213
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: rus3.worldunlocked.org
+  port: 8443
+  type: vless
+  uuid: 0e4865bf-811e-44e8-90ce-233ecf209b0b
+  tls: true
+  servername: rus3.worldunlocked.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws-vless/
+    headers:
+      Host: rus3.worldunlocked.org
   udp: true
-- name: VN_00769_0063
-  server: 103.186.154.79
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇺🇸 美国 | USA 13
+  server: nnj.818185.xyz
+  port: 443
+  type: vless
+  uuid: eed4a583-b20e-4787-bbdb-09018156e53f
+  tls: true
+  servername: nnj.818185.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hf5eEFaMIyvZXFAbvQEN
+    headers:
+      Host: nnj.818185.xyz
   udp: true
-- name: VN_00769_0064
-  server: 103.186.154.194
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0065
-  server: 103.186.154.249
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0066
-  server: 103.186.155.28
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0067
-  server: 103.186.155.57
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0068
-  server: 103.186.155.226
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0070
-  server: 103.186.155.114
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0069
-  server: 103.186.154.211
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0071
-  server: 103.186.154.181
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0072
-  server: 103.186.155.56
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0073
-  server: 103.186.154.74
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇨🇭 瑞士 | CHE
-  server: 51.15.23.63
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: VN_00769_0074
-  server: 103.186.155.44
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0075
-  server: 103.186.154.226
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0076
-  server: 103.186.155.27
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: nextmi.hajmyab.ir
-  port: 2053
+- name: 🇺🇸 美国 | USA 35
+  server: nmklo.kk0.ccwu.cc
+  port: 443
   type: vmess
-  uuid: 9585636a-54bc-419a-90a1-76c5c6ec74df
+  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
   alterId: 0
   cipher: auto
   tls: true
-  servername: yakxvtfbyk.hajmyab.ir
+  servername: nmklo.kk0.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /PGsqb2SHJfbCLo
     headers:
-      Host: app.hajmyab.ir
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.231
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.68
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.12
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.203
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.116
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: nmk.tt6.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: nmk.tt6.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: nmk.tt6.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: mki.tt5.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: mki.tt5.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: mki.tt5.ccwu.cc
-  udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.32
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.24
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.155.35
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: bnmj.wc6.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: bnmj.wc6.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: bnmj.wc6.ccwu.cc
-  udp: true
-- name: 🇻🇳 越南 | VNM 10
-  server: 103.186.155.124
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 9
-  server: 103.186.155.64
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: mko.tc4.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: mko.tc4.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: mko.tc4.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: nmj.wc8.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: nmj.wc8.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: nmjki.tc9.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: nmjki.tc9.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: nmjki.tc9.ccwu.cc
+      Host: nmklo.kk0.ccwu.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -322,95 +87,40 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_00769_0059
-  - VN_00769_0060
-  - VN_00769_0062
-  - VN_00769_0061
-  - VN_00769_0063
-  - VN_00769_0064
-  - VN_00769_0065
-  - VN_00769_0066
-  - VN_00769_0067
-  - VN_00769_0068
-  - VN_00769_0070
-  - VN_00769_0069
-  - VN_00769_0071
-  - VN_00769_0072
-  - VN_00769_0073
-  - 🇨🇭 瑞士 | CHE
-  - VN_00769_0074
-  - VN_00769_0075
-  - VN_00769_0076
-  - 🇳🇱 荷兰 | NLD
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 3
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 8
-  - 🇺🇸 美国 | USA 9
-  - 🇻🇳 越南 | VNM 10
-  - 🇻🇳 越南 | VNM 9
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 16
-- name: PROTO-SS
+  - SG_88863_0037
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 3
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 35
+- name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_00769_0059
-  - VN_00769_0060
-  - VN_00769_0062
-  - VN_00769_0061
-  - VN_00769_0063
-  - VN_00769_0064
-  - VN_00769_0065
-  - VN_00769_0066
-  - VN_00769_0067
-  - VN_00769_0068
-  - VN_00769_0070
-  - VN_00769_0069
-  - VN_00769_0071
-  - VN_00769_0072
-  - VN_00769_0073
-  - 🇨🇭 瑞士 | CHE
-  - VN_00769_0074
-  - VN_00769_0075
-  - VN_00769_0076
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 10
-  - 🇻🇳 越南 | VNM 9
+  - SG_88863_0037
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 3
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 13
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 16
-- name: REGION-AS
+  - 🇺🇸 美国 | USA 35
+- name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_00769_0059
-  - VN_00769_0060
-  - VN_00769_0062
+  - 🇩🇪 德国 | DEU 3
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - SG_88863_0037
+  - 🇩🇪 德国 | DEU 5
 rules:
 - MATCH,AUTO
