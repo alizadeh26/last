@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: MK_00769_0024
-  server: 46.183.185.37
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
 - name: VN_00769_0059
   server: 103.186.155.85
   port: 38388
@@ -25,13 +18,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_00769_0061
-  server: 103.186.154.213
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: VN_00769_0062
   server: 103.186.155.81
   port: 38388
@@ -39,8 +25,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_00769_0061
+  server: 103.186.154.213
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_00769_0063
   server: 103.186.154.79
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_00769_0064
+  server: 103.186.154.194
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -60,8 +60,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_00769_0069
-  server: 103.186.154.211
+- name: VN_00769_0067
+  server: 103.186.155.57
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -74,15 +74,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_00769_0067
-  server: 103.186.155.57
+- name: VN_00769_0070
+  server: 103.186.155.114
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_00769_0070
-  server: 103.186.155.114
+- name: VN_00769_0069
+  server: 103.186.154.211
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -95,15 +95,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_00769_0073
-  server: 103.186.154.74
+- name: VN_00769_0072
+  server: 103.186.155.56
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_00769_0072
-  server: 103.186.155.56
+- name: VN_00769_0073
+  server: 103.186.154.74
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -132,13 +132,6 @@ proxies:
   udp: true
 - name: VN_00769_0076
   server: 103.186.155.27
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_00769_0064
-  server: 103.186.154.194
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -179,15 +172,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.24
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.155.32
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.32
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.24
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -220,33 +213,32 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - MK_00769_0024
   - VN_00769_0059
   - VN_00769_0060
-  - VN_00769_0061
   - VN_00769_0062
+  - VN_00769_0061
   - VN_00769_0063
+  - VN_00769_0064
   - VN_00769_0065
   - VN_00769_0066
-  - VN_00769_0069
-  - VN_00769_0068
   - VN_00769_0067
+  - VN_00769_0068
   - VN_00769_0070
+  - VN_00769_0069
   - VN_00769_0071
-  - VN_00769_0073
   - VN_00769_0072
+  - VN_00769_0073
   - 🇨🇭 瑞士 | CHE
   - VN_00769_0074
   - VN_00769_0075
   - VN_00769_0076
-  - VN_00769_0064
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 10
   - 🇻🇳 越南 | VNM 9
