@@ -4,15 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_88863_0037
-  server: 43.173.125.15
-  port: 44519
-  type: vless
-  uuid: 6b05ea27-051b-450b-965b-f6c5da11a1f0
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: deu542.globalunlock.org
   port: 443
@@ -23,34 +14,6 @@ proxies:
   servername: deu542.globalunlock.org
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: entrainmentworld.de
-  port: 2083
-  type: vless
-  uuid: c61fd003-1ad7-44fb-9bfc-da6382c6f4d3
-  tls: true
-  servername: entrainmentworld.de
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: entrainmentworld.de
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: nnj.818185.xyz
-  port: 443
-  type: vless
-  uuid: eed4a583-b20e-4787-bbdb-09018156e53f
-  tls: true
-  servername: nnj.818185.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /hf5eEFaMIyvZXFAbvQEN
-    headers:
-      Host: nnj.818185.xyz
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: rus3.worldunlocked.org
@@ -65,6 +28,20 @@ proxies:
     path: /ws-vless/
     headers:
       Host: rus3.worldunlocked.org
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: nnj.818185.xyz
+  port: 443
+  type: vless
+  uuid: eed4a583-b20e-4787-bbdb-09018156e53f
+  tls: true
+  servername: nnj.818185.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hf5eEFaMIyvZXFAbvQEN
+    headers:
+      Host: nnj.818185.xyz
   udp: true
 - name: 🇺🇸 美国 | USA 35
   server: nmklo.kk0.ccwu.cc
@@ -87,22 +64,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_88863_0037
   - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 13
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 35
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_88863_0037
   - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 13
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 13
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -115,12 +88,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 3
+  - 🇷🇺 俄罗斯 | RUS 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_88863_0037
-  - 🇩🇪 德国 | DEU 5
+  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO
