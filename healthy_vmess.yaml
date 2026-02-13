@@ -35,36 +35,6 @@ proxies:
     headers:
       Host: mki.tt5.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: mmkio.tc6.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: mmkio.tc6.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: nnmjk.tt1.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: nnmjk.tt1.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: nnmjk.tt1.ccwu.cc
-  udp: true
 - name: 🇺🇸 美国 | USA 26
   server: mmkio.wc5.ccwu.cc
   port: 80
@@ -79,6 +49,20 @@ proxies:
     headers:
       Host: mmkio.wc5.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: mmkio.tc6.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: mmkio.tc6.ccwu.cc
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -87,8 +71,7 @@ proxy-groups:
   proxies:
   - 🇳🇱 荷兰 | NLD 7
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 21
 rules:
 - MATCH,AUTO

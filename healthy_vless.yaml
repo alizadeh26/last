@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_9399e_0001
+- name: DE_fa350_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -52,7 +52,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_9399e_0001
+  - DE_fa350_0001
   - 🇩🇪 德国 | DEU 5
   - 🇺🇸 美国 | USA 19
 rules:
