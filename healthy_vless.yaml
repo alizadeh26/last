@@ -4,58 +4,47 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: deu542.globalunlock.org
+- name: DE_9399e_0001
+  server: de.cdn.stun.su
   port: 443
   type: vless
-  uuid: ee750cca-f549-4e78-8648-a6b762953e70
-  tls: true
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
   flow: xtls-rprx-vision
-  servername: deu542.globalunlock.org
+  tls: true
+  skip-cert-verify: false
   client-fingerprint: chrome
-  network: tcp
+  servername: de.cdn.stun.su
+  reality-opts:
+    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+    short-id: 4daa022e84f8edf2
   udp: true
 - name: 🇩🇪 德国 | DEU 5
-  server: entrainmentworld.de
-  port: 2083
-  type: vless
-  uuid: c61fd003-1ad7-44fb-9bfc-da6382c6f4d3
-  tls: true
-  servername: entrainmentworld.de
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: entrainmentworld.de
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: nnj.818185.xyz
+  server: afrcloud22.mmv.kr
   port: 443
   type: vless
-  uuid: eed4a583-b20e-4787-bbdb-09018156e53f
+  uuid: fa335d1c-e6d1-48bb-99a3-f06710a29043
   tls: true
-  servername: nnj.818185.xyz
+  servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /hf5eEFaMIyvZXFAbvQEN
+    path: /130.185.164.213=8443
     headers:
-      Host: nnj.818185.xyz
+      Host: afrcloud22.mmv.kr
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: rus3.worldunlocked.org
-  port: 8443
+- name: 🇺🇸 美国 | USA 19
+  server: y.890601.pp.ua
+  port: 443
   type: vless
-  uuid: 0e4865bf-811e-44e8-90ce-233ecf209b0b
+  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
   tls: true
-  servername: rus3.worldunlocked.org
+  servername: y.890601.pp.ua
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws-vless/
+    path: /N4XLnUcJW0HJfbCLo
     headers:
-      Host: rus3.worldunlocked.org
+      Host: y.890601.pp.ua
   udp: true
 proxy-groups:
 - name: AUTO
@@ -63,9 +52,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
+  - DE_9399e_0001
   - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 13
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
