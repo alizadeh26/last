@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_fa350_0001
+- name: DE_dc40f_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,19 +18,19 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: afrcloud22.mmv.kr
+- name: 🇺🇸 美国 | USA 22
+  server: h.7282728.xyz
   port: 443
   type: vless
-  uuid: fa335d1c-e6d1-48bb-99a3-f06710a29043
+  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
   tls: true
-  servername: afrcloud22.mmv.kr
+  servername: h.7282728.xyz
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /130.185.164.213=8443
+    path: /N4XLnUcJW0HJfbCLo
     headers:
-      Host: afrcloud22.mmv.kr
+      Host: h.7282728.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_fa350_0001
-  - 🇩🇪 德国 | DEU 5
+  - DE_dc40f_0001
+  - 🇺🇸 美国 | USA 22
 rules:
 - MATCH,AUTO

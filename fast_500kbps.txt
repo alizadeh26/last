@@ -1,3 +1,4 @@
-trojan://76yTlnTIsjCTlmqnUJ5Tzc1rM@hl-freedom-0.undef.network:443?security=tls&sni=hl-freedom-0.undef.network&type=ws&host=hl-freedom-0.undef.network&path=/f2fc2a1f#Server 57 🇬🇧	dl_kib_s=1497	ul_kib_s=1400
-vless://e6c7ed63-89db-4ae1-a3f8-7a722921b3b2@104.18.32.47:443?alpn=http%2F1.1&encryption=none&host=apii.onlineshoppingez.ir&fp=chrome&path=%2FO1w0n3vYgFKYs7EzNAvLPvOp&security=tls&sni=apii.onlineshoppingez.ir&type=ws#Server 41 🇺🇸	dl_kib_s=1309	ul_kib_s=973
-vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855/?type=ws&encryption=none&flow=&path=%2F#Server 53 🇩🇰	dl_kib_s=830	ul_kib_s=1117
+vless://6251f84e-9c02-4140-921c-6b47d394fb96@40.160.14.104:8880?security=&encryption=none&type=grpc#Server 44 🇺🇸	dl_kib_s=6463	ul_kib_s=3402
+vless://e765eb5b-8442-40e3-9532-857ba5ececa7@ipbaz.ping-box.com:443?encryption=none&security=tls&sni=vbox.ping-box.com&insecure=0&allowInsecure=0&type=grpc#Server 34 🇨🇦	dl_kib_s=1736	ul_kib_s=1166
+trojan://76yTlnTIsjCTlmqnUJ5Tzc1rM@hl-freedom-0.undef.network:443?security=tls&sni=hl-freedom-0.undef.network&type=ws&host=hl-freedom-0.undef.network&path=/f2fc2a1f#Server 57 🇬🇧	dl_kib_s=1456	ul_kib_s=1371
+vless://e6c7ed63-89db-4ae1-a3f8-7a722921b3b2@104.18.32.47:443?alpn=http%2F1.1&encryption=none&host=apii.onlineshoppingez.ir&fp=chrome&path=%2FO1w0n3vYgFKYs7EzNAvLPvOp&security=tls&sni=apii.onlineshoppingez.ir&type=ws#Server 41 🇺🇸	dl_kib_s=1198	ul_kib_s=1090

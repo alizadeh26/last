@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_fa350_0001
+- name: DE_dc40f_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,94 +18,33 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: afrcloud22.mmv.kr
+- name: 🇺🇸 美国 | USA 10
+  server: yhj.tc1.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: yhj.tc1.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 22
+  server: h.7282728.xyz
   port: 443
   type: vless
-  uuid: fa335d1c-e6d1-48bb-99a3-f06710a29043
+  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
   tls: true
-  servername: afrcloud22.mmv.kr
+  servername: h.7282728.xyz
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /130.185.164.213=8443
+    path: /N4XLnUcJW0HJfbCLo
     headers:
-      Host: afrcloud22.mmv.kr
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: nextmi.hajmyab.ir
-  port: 2053
-  type: vmess
-  uuid: 9585636a-54bc-419a-90a1-76c5c6ec74df
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: yakxvtfbyk.hajmyab.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: app.hajmyab.ir
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: mki.tt5.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: mki.tt5.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: mki.tt5.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: mmkio.tc6.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: mmkio.tc6.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: mmkio.wc5.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: mmkio.wc5.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: nnmjk.tt1.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: nnmjk.tt1.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: nnmjk.tt1.ccwu.cc
+      Host: h.7282728.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -113,42 +52,34 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_fa350_0001
-  - 🇩🇪 德国 | DEU 5
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 27
+  - DE_dc40f_0001
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 22
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_fa350_0001
-  - 🇩🇪 德国 | DEU 5
+  - DE_dc40f_0001
+  - 🇺🇸 美国 | USA 22
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 10
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_fa350_0001
+  - DE_dc40f_0001
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 22
 rules:
 - MATCH,AUTO
