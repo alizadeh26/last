@@ -94,6 +94,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 22
 rules:
 - MATCH,AUTO
