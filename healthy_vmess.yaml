@@ -33,8 +33,22 @@ proxies:
     headers:
       Host: nju.bb4.indevs.in
   udp: true
+- name: end-gfw.com12@jp89
+  server: 3.112.193.174
+  port: 8686
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: baidu.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: end-gfw.com22@kr64
-  server: 43.203.141.150
+  server: 3.35.133.13
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -55,6 +69,7 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 18
+  - end-gfw.com12@jp89
   - end-gfw.com22@kr64
 rules:
 - MATCH,AUTO

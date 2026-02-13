@@ -18,17 +18,6 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: s128.okgfw.top
-  port: 443
-  type: vless
-  uuid: c2b6ef4f-58b5-34df-a9b2-b9423df641d9
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u729804u8a10s128.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: deu153.worldunbarred.org
   port: 8443
@@ -52,7 +41,6 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_414e6_0001
-  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO
