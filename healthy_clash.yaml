@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_414e6_0001
-  server: de.cdn.stun.su
-  port: 443
-  type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: de.cdn.stun.su
-  reality-opts:
-    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
-    short-id: 4daa022e84f8edf2
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: deu153.worldunbarred.org
   port: 8443
@@ -33,6 +19,17 @@ proxies:
     path: /ws-vless/
     headers:
       Host: deu153.worldunbarred.org
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: s128.okgfw.top
+  port: 443
+  type: vless
+  uuid: c2b6ef4f-58b5-34df-a9b2-b9423df641d9
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u729804u8a10s128.okgfw.top
+  client-fingerprint: random
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: nnmk.tt7.ccwu.cc
@@ -63,22 +60,8 @@ proxies:
     headers:
       Host: nju.bb4.indevs.in
   udp: true
-- name: end-gfw.com12@jp89
-  server: 3.112.193.174
-  port: 8686
-  type: vmess
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: baidu.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: end-gfw.com
 - name: end-gfw.com22@kr64
-  server: 3.35.133.13
+  server: 54.180.251.177
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -97,19 +80,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_414e6_0001
   - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 2
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 18
-  - end-gfw.com12@jp89
   - end-gfw.com22@kr64
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_414e6_0001
   - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -117,22 +99,14 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 18
-  - end-gfw.com12@jp89
-  - end-gfw.com22@kr64
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - end-gfw.com12@jp89
   - end-gfw.com22@kr64
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_414e6_0001
   - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
