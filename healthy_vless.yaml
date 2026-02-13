@@ -32,20 +32,6 @@ proxies:
     headers:
       Host: afrcloud22.mmv.kr
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: y.890601.pp.ua
-  port: 443
-  type: vless
-  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
-  tls: true
-  servername: y.890601.pp.ua
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /N4XLnUcJW0HJfbCLo
-    headers:
-      Host: y.890601.pp.ua
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -54,6 +40,5 @@ proxy-groups:
   proxies:
   - DE_fa350_0001
   - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
