@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_dc40f_0001
+- name: DE_414e6_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
+- name: 🇳🇱 荷兰 | NLD 2
   server: s128.okgfw.top
   port: 443
   type: vless
@@ -29,70 +29,100 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: yhj.tc1.ccwu.cc
+- name: 🇳🇱 荷兰 | NLD 3
+  server: deu153.worldunbarred.org
+  port: 8443
+  type: vless
+  uuid: 4d3b4e0b-9fa4-4bc7-a0fd-99a8d34a12e2
+  tls: true
+  alpn:
+  - h2
+  servername: deu153.worldunbarred.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws-vless/
+    headers:
+      Host: deu153.worldunbarred.org
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: nnmk.tt7.ccwu.cc
   port: 80
   type: vmess
   uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
   alterId: 0
   cipher: auto
   tls: false
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /kFK9O5cl8ZycyrxcJWNVFC21
     headers:
-      Host: yhj.tc1.ccwu.cc
+      Host: nnmk.tt7.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: h.7282728.xyz
-  port: 443
-  type: vless
-  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
-  tls: true
-  servername: h.7282728.xyz
-  client-fingerprint: chrome
+- name: 🇺🇸 美国 | USA 18
+  server: nju.bb4.indevs.in
+  port: 80
+  type: vmess
+  uuid: b020865b-7404-4894-ba65-a7414b10cda3
+  alterId: 0
+  cipher: auto
+  tls: false
   network: ws
   ws-opts:
-    path: /N4XLnUcJW0HJfbCLo
+    path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
     headers:
-      Host: h.7282728.xyz
+      Host: nju.bb4.indevs.in
   udp: true
+- name: end-gfw.com22@kr64
+  server: 43.203.141.150
+  port: 8686
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: baidu.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_dc40f_0001
+  - DE_414e6_0001
+  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 18
+  - end-gfw.com22@kr64
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_dc40f_0001
+  - DE_414e6_0001
+  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇺🇸 美国 | USA 22
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 18
+  - end-gfw.com22@kr64
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_dc40f_0001
+  - DE_414e6_0001
+  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO

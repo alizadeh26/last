@@ -4,26 +4,57 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 10
-  server: yhj.tc1.ccwu.cc
+- name: 🇺🇸 美国 | USA 5
+  server: nnmk.tt7.ccwu.cc
   port: 80
   type: vmess
   uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
   alterId: 0
   cipher: auto
   tls: false
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /kFK9O5cl8ZycyrxcJWNVFC21
     headers:
-      Host: yhj.tc1.ccwu.cc
+      Host: nnmk.tt7.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: nju.bb4.indevs.in
+  port: 80
+  type: vmess
+  uuid: b020865b-7404-4894-ba65-a7414b10cda3
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
+    headers:
+      Host: nju.bb4.indevs.in
+  udp: true
+- name: end-gfw.com22@kr64
+  server: 43.203.141.150
+  port: 8686
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: baidu.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 18
+  - end-gfw.com22@kr64
 rules:
 - MATCH,AUTO
