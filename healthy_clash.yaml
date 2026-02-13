@@ -32,20 +32,6 @@ proxies:
     headers:
       Host: afrcloud22.mmv.kr
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 60a22220-8a8f-46e7-82ba-76d42df68c34.661.qzz.io
-  port: 443
-  type: vmess
-  uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: 60a22220-8a8f-46e7-82Ba-76D42DF68C34.661.qZz.iO
-  network: grpc
-  grpc-opts:
-    grpc-service-name: KHtPvNZl371C8N28vdRpmS
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: nextmi.hajmyab.ir
   port: 2053
@@ -60,6 +46,20 @@ proxies:
     path: /
     headers:
       Host: app.hajmyab.ir
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: y.890601.pp.ua
+  port: 443
+  type: vless
+  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
+  tls: true
+  servername: y.890601.pp.ua
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /N4XLnUcJW0HJfbCLo
+    headers:
+      Host: y.890601.pp.ua
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: mki.tt5.ccwu.cc
@@ -77,6 +77,20 @@ proxies:
     headers:
       Host: mki.tt5.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: mmkio.tc6.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+    headers:
+      Host: mmkio.tc6.ccwu.cc
+  udp: true
 - name: 🇺🇸 美国 | USA 27
   server: nnmjk.tt1.ccwu.cc
   port: 80
@@ -92,34 +106,6 @@ proxies:
     path: /kFK9O5cl8ZycyrxcJWNVFC21
     headers:
       Host: nnmjk.tt1.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: mmkio.tc6.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: mmkio.tc6.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: y.890601.pp.ua
-  port: 443
-  type: vless
-  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
-  tls: true
-  servername: y.890601.pp.ua
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /N4XLnUcJW0HJfbCLo
-    headers:
-      Host: y.890601.pp.ua
   udp: true
 - name: 🇺🇸 美国 | USA 26
   server: mmkio.wc5.ccwu.cc
@@ -143,12 +129,11 @@ proxy-groups:
   proxies:
   - DE_9399e_0001
   - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 3
   - 🇳🇱 荷兰 | NLD 7
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 27
-  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 26
 - name: PROTO-VLESS
   type: url-test
@@ -163,11 +148,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 3
   - 🇳🇱 荷兰 | NLD 7
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 26
 - name: REGION-EU
   type: url-test
@@ -181,6 +165,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 3
+  - 🇳🇱 荷兰 | NLD 7
 rules:
 - MATCH,AUTO
