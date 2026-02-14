@@ -33,8 +33,8 @@ proxies:
     headers:
       Host: nju.bb4.indevs.in
   udp: true
-- name: end-gfw.com22@kr64
-  server: 54.180.251.177
+- name: end-gfw.com12@jp89
+  server: 3.112.237.248
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -55,6 +55,6 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 18
-  - end-gfw.com22@kr64
+  - end-gfw.com12@jp89
 rules:
 - MATCH,AUTO
