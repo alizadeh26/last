@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_414e6_0001
+- name: DE_94030_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,32 +18,16 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: s128.okgfw.top
-  port: 443
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: 193.163.203.36
+  port: 18570
   type: vless
-  uuid: c2b6ef4f-58b5-34df-a9b2-b9423df641d9
+  uuid: 88e148ba-1e39-45e9-8aef-6b207411435a
   tls: true
-  flow: xtls-rprx-vision
-  servername: u729804u8a10s128.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: deu153.worldunbarred.org
-  port: 8443
-  type: vless
-  uuid: 4d3b4e0b-9fa4-4bc7-a0fd-99a8d34a12e2
-  tls: true
-  alpn:
-  - h2
-  servername: deu153.worldunbarred.org
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws-vless/
-    headers:
-      Host: deu153.worldunbarred.org
+    path: /
   udp: true
 proxy-groups:
 - name: AUTO
@@ -51,8 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_414e6_0001
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
+  - DE_94030_0001
+  - 🇱🇻 拉脱维亚 | LVA
 rules:
 - MATCH,AUTO

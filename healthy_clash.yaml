@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_414e6_0001
+- name: DE_94030_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,35 +18,44 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: s128.okgfw.top
-  port: 443
-  type: vless
-  uuid: c2b6ef4f-58b5-34df-a9b2-b9423df641d9
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u729804u8a10s128.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: deu153.worldunbarred.org
+- name: 🇩🇪 德国 | DEU 2
+  server: dll.avaaaal.ir
   port: 8443
-  type: vless
-  uuid: 4d3b4e0b-9fa4-4bc7-a0fd-99a8d34a12e2
+  type: vmess
+  uuid: 725f5fcd-721d-40a0-ba6b-3c7477633110
+  alterId: 0
+  cipher: auto
   tls: true
-  alpn:
-  - h2
-  servername: deu153.worldunbarred.org
+  servername: cdge.avaaaal.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdge.avaaaal.ir
+  udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: 193.163.203.36
+  port: 18570
+  type: vless
+  uuid: 88e148ba-1e39-45e9-8aef-6b207411435a
+  tls: true
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws-vless/
-    headers:
-      Host: deu153.worldunbarred.org
+    path: /
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: nnmk.tt7.ccwu.cc
+- name: 🇺🇸 美国 | USA 11
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: www.bing.com
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: nnmjk.tt1.ccwu.cc
   port: 80
   type: vmess
   uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
@@ -54,28 +63,15 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
+  servername: nnmjk.tt1.ccwu.cc
   network: ws
   ws-opts:
     path: /kFK9O5cl8ZycyrxcJWNVFC21
     headers:
-      Host: nnmk.tt7.ccwu.cc
+      Host: nnmjk.tt1.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: nju.bb4.indevs.in
-  port: 80
-  type: vmess
-  uuid: b020865b-7404-4894-ba65-a7414b10cda3
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-    headers:
-      Host: nju.bb4.indevs.in
-  udp: true
-- name: end-gfw.com12@jp89
-  server: 3.112.237.248
+- name: end-gfw.com22@kr64
+  server: 43.203.217.199
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -94,35 +90,40 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_414e6_0001
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 18
-  - end-gfw.com12@jp89
+  - DE_94030_0001
+  - 🇩🇪 德国 | DEU 2
+  - 🇱🇻 拉脱维亚 | LVA
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 6
+  - end-gfw.com22@kr64
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_414e6_0001
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
+  - DE_94030_0001
+  - 🇱🇻 拉脱维亚 | LVA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 18
-  - end-gfw.com12@jp89
+  - 🇩🇪 德国 | DEU 2
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 6
+  - end-gfw.com22@kr64
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_414e6_0001
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
+  - DE_94030_0001
+  - 🇱🇻 拉脱维亚 | LVA
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO

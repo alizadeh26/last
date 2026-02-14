@@ -4,8 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 5
-  server: nnmk.tt7.ccwu.cc
+- name: 🇩🇪 德国 | DEU 2
+  server: dll.avaaaal.ir
+  port: 8443
+  type: vmess
+  uuid: 725f5fcd-721d-40a0-ba6b-3c7477633110
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: cdge.avaaaal.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdge.avaaaal.ir
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: www.bing.com
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: nnmjk.tt1.ccwu.cc
   port: 80
   type: vmess
   uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
@@ -13,28 +38,15 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
+  servername: nnmjk.tt1.ccwu.cc
   network: ws
   ws-opts:
     path: /kFK9O5cl8ZycyrxcJWNVFC21
     headers:
-      Host: nnmk.tt7.ccwu.cc
+      Host: nnmjk.tt1.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: nju.bb4.indevs.in
-  port: 80
-  type: vmess
-  uuid: b020865b-7404-4894-ba65-a7414b10cda3
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-    headers:
-      Host: nju.bb4.indevs.in
-  udp: true
-- name: end-gfw.com12@jp89
-  server: 3.112.237.248
+- name: end-gfw.com22@kr64
+  server: 43.203.217.199
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -53,8 +65,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 18
-  - end-gfw.com12@jp89
+  - 🇩🇪 德国 | DEU 2
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 6
+  - end-gfw.com22@kr64
 rules:
 - MATCH,AUTO
