@@ -48,6 +48,23 @@ class SingBoxRunner:
         if self._proc is not None:
             raise RuntimeError("sing-box already started")
 
+        # متدهای معتبر Shadowsocks در sing-box (مقدار UUID یا ناشناخته باعث crash می‌شود)
+        _VALID_SS_METHODS = frozenset({
+            "aes-128-gcm", "aes-192-gcm", "aes-256-gcm",
+            "chacha20-ietf-poly1305", "xchacha20-ietf-poly1305",
+            "chacha20-ietf", "xchacha20",
+            "2022-blake3-aes-128-gcm", "2022-blake3-aes-256-gcm", "2022-blake3-chacha20-poly1305",
+            "rc4-md5", "aes-128-cfb", "aes-192-cfb", "aes-256-cfb",
+            "aes-128-ctr", "aes-192-ctr", "aes-256-ctr",
+            "none",
+        })
+
+        def _is_valid_ss_method(method: str) -> bool:
+            m = (method or "").strip().lower()
+            if not m:
+                return False
+            return m in _VALID_SS_METHODS
+
         def _is_valid_ss2022_key(method: str, password: str) -> bool:
             m = (method or "").strip().lower()
             if "2022" not in m:
@@ -113,9 +130,11 @@ class SingBoxRunner:
                 if not isinstance(o, dict) or not o.get("tag"):
                     continue
                 if str(o.get("type") or "").lower() == "shadowsocks":
+                    method = str(o.get("method") or "")
+                    if not _is_valid_ss_method(method):
+                        continue
                     if attempt == 1:
                         continue
-                    method = str(o.get("method") or "")
                     password = _sanitize_ss2022_password(method, str(o.get("password") or ""))
                     if not _is_valid_ss2022_key(method, password):
                         continue
