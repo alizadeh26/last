@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_94030_0001
+- name: DE_4c2ed_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,16 +18,30 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 193.163.203.36
-  port: 18570
+- name: 🇩🇪 德国 | DEU 3
+  server: deu542.globalunlock.org
+  port: 443
   type: vless
-  uuid: 88e148ba-1e39-45e9-8aef-6b207411435a
+  uuid: ee750cca-f549-4e78-8648-a6b762953e70
   tls: true
+  flow: xtls-rprx-vision
+  servername: deu542.globalunlock.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: bhy7.ae1autumn.dpdns.org
+  port: 80
+  type: vless
+  uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
+  tls: false
+  servername: bhy7.ae1autumn.dpdns.org
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /XR8So0uqFVa3vY9ZbxgW4
+    headers:
+      Host: bhy7.ae1autumn.dpdns.org
   udp: true
 proxy-groups:
 - name: AUTO
@@ -35,7 +49,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_94030_0001
-  - 🇱🇻 拉脱维亚 | LVA
+  - DE_4c2ed_0001
+  - 🇩🇪 德国 | DEU 3
+  - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO

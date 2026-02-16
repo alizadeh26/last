@@ -4,49 +4,23 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: dll.avaaaal.ir
-  port: 8443
+- name: 🇺🇸 美国 | USA 2
+  server: jjjmki.930.pp.ua
+  port: 443
   type: vmess
-  uuid: 725f5fcd-721d-40a0-ba6b-3c7477633110
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
   alterId: 0
   cipher: auto
   tls: true
-  servername: cdge.avaaaal.ir
+  servername: jjjmki.930.pp.ua
   network: ws
   ws-opts:
-    path: /
+    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
     headers:
-      Host: cdge.avaaaal.ir
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: www.bing.com
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: nnmjk.tt1.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: nnmjk.tt1.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-    headers:
-      Host: nnmjk.tt1.ccwu.cc
+      Host: jjjmki.930.pp.ua
   udp: true
 - name: end-gfw.com22@kr64
-  server: 43.203.217.199
+  server: 43.201.250.101
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -65,9 +39,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 2
   - end-gfw.com22@kr64
 rules:
 - MATCH,AUTO
