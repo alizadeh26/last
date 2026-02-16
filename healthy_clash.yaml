@@ -19,7 +19,7 @@ proxies:
     short-id: 4daa022e84f8edf2
   udp: true
 - name: end-gfw.com12@jp89
-  server: 54.250.50.19
+  server: 18.176.52.125
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -33,7 +33,7 @@ proxies:
     headers:
       Host: end-gfw.com
 - name: end-gfw.com22@kr64
-  server: 43.203.120.58
+  server: 43.203.215.201
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
