@@ -4,11 +4,11 @@ import asyncio
 from dataclasses import dataclass
 from datetime import datetime, timezone
 import socket
+import json   # ← اضافه شده برای فیلتر
 
 import yaml
 import httpx
-import json
-import urllib.parse
+
 from singbox_runner import SingBoxRunner
 from subs import Node, fetch_text, node_from_clash_proxy, node_from_share_link, parse_subscription_payload
 
@@ -62,17 +62,9 @@ async def check_nodes(
     max_concurrency: int,
     nodes: list[Node],
 ) -> CheckResult:
-   
-
-
-
-
     outbounds = [n.outbound for n in nodes]
 
-
-
-
-        # === HARD FILTER برای ارور %2@ در ws path ===
+    # === HARD FILTER برای ارور %2@ در ws path ===
     bad_outbounds = []
     for i, ob in enumerate(outbounds):
         ob_str = json.dumps(ob, ensure_ascii=False)
@@ -88,9 +80,6 @@ async def check_nodes(
     print(f"After filtering: {len(outbounds)} outbounds remaining")
     # === END FILTER ===
 
-
-
-    
     sem = asyncio.Semaphore(max_concurrency)
 
     healthy_links: list[str] = []
@@ -154,7 +143,6 @@ def render_outputs(res: CheckResult) -> tuple[bytes, bytes]:
 
         continent = "UNKNOWN"
         try:
-            # از یک API عمومی برای GeoIP استفاده می‌کنیم
             r = httpx.get(f"https://ipapi.co/{ip}/json/", timeout=5)
             if r.status_code == 200:
                 data = r.json()
@@ -167,9 +155,7 @@ def render_outputs(res: CheckResult) -> tuple[bytes, bytes]:
         continent_cache[ip] = continent
         return continent
 
-    # گروه‌بندی بر اساس نوع پروتکل
     by_protocol: dict[str, list[str]] = {}
-    # گروه‌بندی بر اساس قاره
     by_continent: dict[str, list[str]] = {}
 
     all_names: list[str] = []
@@ -188,7 +174,6 @@ def render_outputs(res: CheckResult) -> tuple[bytes, bytes]:
 
     proxy_groups: list[dict] = []
 
-    # گروه اصلی AUTO شامل همه پروکسی‌ها
     if all_names:
         proxy_groups.append(
             {
@@ -200,7 +185,6 @@ def render_outputs(res: CheckResult) -> tuple[bytes, bytes]:
             }
         )
 
-    # گروه‌های بر اساس نوع پروتکل
     for ptype, names in sorted(by_protocol.items()):
         if not names:
             continue
@@ -215,7 +199,6 @@ def render_outputs(res: CheckResult) -> tuple[bytes, bytes]:
             }
         )
 
-    # گروه‌های بر اساس قاره
     for continent, names in sorted(by_continent.items()):
         if not names or continent == "UNKNOWN":
             continue
