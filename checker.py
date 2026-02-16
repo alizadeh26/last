@@ -61,35 +61,71 @@ async def check_nodes(
     max_concurrency: int,
     nodes: list[Node],
 ) -> CheckResult:
-    def is_valid_ws_path(path: str | None) -> bool:
-    if not path:
-        return True
-    if '%' not in path:
-        return True
-    try:
-        # چک می‌کنه آیا escapeها معتبر هستن
-        urllib.parse.unquote(path)  # اگر fail کنه → invalid
-        # یا چک دقیق‌تر
-        parts = path.split('%')
-        for p in parts[1:]:
-            if len(p) < 2 or not p[:2].isalnum():  # باید دو رقم هگز باشه
-                return False
-        return True
-    except Exception:
-        return False
+   
+
+import urllib.parse
+
+def has_invalid_ws_escape(config: dict) -> bool:
+    """
+    چک می‌کنه آیا جایی در config (outbound) مسیر ws با escape نامعتبر وجود داره
+    """
+    def check_path(path):
+        if not path or '%' not in path:
+            return False
+        try:
+            urllib.parse.unquote(path)          # اگر raise کنه → مشکل‌دار
+            # چک سخت‌گیرانه‌تر: بعد از هر % باید دقیقاً ۲ کاراکتر هگز بیاد
+            i = 0
+            while i < len(path):
+                if path[i] == '%':
+                    if i + 2 >= len(path) or not path[i+1:i+3].isalnum():
+                        return True  # invalid escape
+                    i += 3
+                else:
+                    i += 1
+            return False
+        except Exception:
+            return True  # هر exception یعنی invalid
+
+    # پیدا کردن همه pathهای ws در ساختار
+    def find_ws_paths(d):
+        paths = []
+        if isinstance(d, dict):
+            t = d.get("transport", {})
+            if isinstance(t, dict) and t.get("type") in ("ws", "websocket"):
+                p = t.get("path")
+                if p:
+                    paths.append(p)
+            for v in d.values():
+                paths.extend(find_ws_paths(v))
+        elif isinstance(d, list):
+            for item in d:
+                paths.extend(find_ws_paths(item))
+        return paths
+
+    ws_paths = find_ws_paths(config)
+    for p in ws_paths:
+        if check_path(p):
+            return True, p
+    return False, None
+
 
 filtered_outbounds = []
+skipped = []
+
 for n in nodes:
     outbound = n.outbound
-    transport = outbound.get("transport", {})
-    if transport.get("type") == "ws":
-        path = transport.get("path")
-        if not is_valid_ws_path(path):
-            print(f"Skipping invalid WS path outbound: {n.tag} → path={path}")
-            continue
+    invalid, bad_path = has_invalid_ws_escape(outbound)
+    if invalid:
+        tag = n.tag if hasattr(n, 'tag') else outbound.get('tag', 'unknown')
+        print(f"Skipping outbound with invalid WS path: {tag} → path = {bad_path}")
+        skipped.append(tag)
+        continue
     filtered_outbounds.append(outbound)
 
 outbounds = filtered_outbounds
+
+print(f"Filtered {len(skipped)} bad outbounds out of {len(nodes)}")
     outbounds = [n.outbound for n in nodes]
     sem = asyncio.Semaphore(max_concurrency)
 
