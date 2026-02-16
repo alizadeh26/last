@@ -4,27 +4,41 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 2
-  server: jjjmki.930.pp.ua
-  port: 443
+- name: end-gfw.com12@jp89
+  server: 54.250.50.19
+  port: 8686
   type: vmess
-  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
   cipher: auto
-  tls: true
-  servername: jjjmki.930.pp.ua
+  tls: false
+  servername: baidu.com
   network: ws
   ws-opts:
-    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
+    path: /
     headers:
-      Host: jjjmki.930.pp.ua
-  udp: true
+      Host: end-gfw.com
+- name: end-gfw.com22@kr64
+  server: 43.203.120.58
+  port: 8686
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: baidu.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 2
+  - end-gfw.com12@jp89
+  - end-gfw.com22@kr64
 rules:
 - MATCH,AUTO
