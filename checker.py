@@ -4,7 +4,6 @@ import asyncio
 from dataclasses import dataclass
 from datetime import datetime, timezone
 import socket
-import json   # ← اضافه شده برای فیلتر
 
 import yaml
 import httpx
@@ -64,21 +63,64 @@ async def check_nodes(
 ) -> CheckResult:
     outbounds = [n.outbound for n in nodes]
 
-    # === HARD FILTER برای ارور %2@ در ws path ===
-    bad_outbounds = []
-    for i, ob in enumerate(outbounds):
-        ob_str = json.dumps(ob, ensure_ascii=False)
-        if '%2@' in ob_str:
-            tag = ob.get('tag', f'index_{i}')
-            print(f"!!! BAD outbound found (contains %2@): {tag} at position {i}")
-            bad_outbounds.append(i)
+    # === فیلتر پیشرفته برای حذف outboundهای با ws path نامعتبر (مثل %2@) ===
+    hex_digits = "0123456789abcdefABCDEF"
 
-    if bad_outbounds:
-        print(f"Removing {len(bad_outbounds)} bad outbounds containing '%2@'")
-        outbounds = [ob for idx, ob in enumerate(outbounds) if idx not in bad_outbounds]
+    def is_invalid_path(p: str) -> bool:
+        if not p or "%" not in p:
+            return False
+        i = 0
+        while i < len(p):
+            if p[i] == "%":
+                if i + 2 >= len(p):
+                    return True
+                if p[i + 1] not in hex_digits or p[i + 2] not in hex_digits:
+                    return True
+                i += 2
+            i += 1
+        return False
 
-    print(f"After filtering: {len(outbounds)} outbounds remaining")
-    # === END FILTER ===
+    def has_invalid_ws_path(ob: dict) -> bool:
+        def recurse(d) -> bool:
+            if not isinstance(d, dict):
+                if isinstance(d, (list, tuple)):
+                    for item in d:
+                        if recurse(item):
+                            return True
+                return False
+
+            # چک کردن transport مستقیم یا تو tls/grpc و ...
+            transport = d.get("transport")
+            if isinstance(transport, dict):
+                t_type = transport.get("type")
+                if t_type in ("ws", "websocket"):
+                    path = transport.get("path")
+                    if isinstance(path, str) and is_invalid_path(path):
+                        return True
+                if recurse(transport):
+                    return True
+
+            # چک کردن همه مقادیر (برای nested یا path مستقیم)
+            for v in d.values():
+                if recurse(v):
+                    return True
+            return False
+
+        return recurse(ob)
+
+    bad_indices = []
+    for idx, ob in enumerate(outbounds):
+        if has_invalid_ws_path(ob):
+            tag = ob.get("tag", f"unknown_{idx}")
+            print(f"!!! Skipping invalid WS path outbound: {tag} (position {idx})")
+            bad_indices.append(idx)
+
+    if bad_indices:
+        print(f"Removing {len(bad_indices)} outbounds with invalid WS path escapes")
+        outbounds = [ob for idx, ob in enumerate(outbounds) if idx not in bad_indices]
+
+    print(f"After filtering: {len(outbounds)} valid outbounds remaining")
+    # === پایان فیلتر ===
 
     sem = asyncio.Semaphore(max_concurrency)
 
@@ -143,6 +185,7 @@ def render_outputs(res: CheckResult) -> tuple[bytes, bytes]:
 
         continent = "UNKNOWN"
         try:
+            # از یک API عمومی برای GeoIP استفاده می‌کنیم
             r = httpx.get(f"https://ipapi.co/{ip}/json/", timeout=5)
             if r.status_code == 200:
                 data = r.json()
@@ -155,7 +198,9 @@ def render_outputs(res: CheckResult) -> tuple[bytes, bytes]:
         continent_cache[ip] = continent
         return continent
 
+    # گروه‌بندی بر اساس نوع پروتکل
     by_protocol: dict[str, list[str]] = {}
+    # گروه‌بندی بر اساس قاره
     by_continent: dict[str, list[str]] = {}
 
     all_names: list[str] = []
@@ -174,6 +219,7 @@ def render_outputs(res: CheckResult) -> tuple[bytes, bytes]:
 
     proxy_groups: list[dict] = []
 
+    # گروه اصلی AUTO شامل همه پروکسی‌ها
     if all_names:
         proxy_groups.append(
             {
@@ -185,6 +231,7 @@ def render_outputs(res: CheckResult) -> tuple[bytes, bytes]:
             }
         )
 
+    # گروه‌های بر اساس نوع پروتکل
     for ptype, names in sorted(by_protocol.items()):
         if not names:
             continue
@@ -199,6 +246,7 @@ def render_outputs(res: CheckResult) -> tuple[bytes, bytes]:
             }
         )
 
+    # گروه‌های بر اساس قاره
     for continent, names in sorted(by_continent.items()):
         if not names or continent == "UNKNOWN":
             continue
