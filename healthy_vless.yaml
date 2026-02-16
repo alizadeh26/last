@@ -18,17 +18,6 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: deu542.globalunlock.org
-  port: 443
-  type: vless
-  uuid: ee750cca-f549-4e78-8648-a6b762953e70
-  tls: true
-  flow: xtls-rprx-vision
-  servername: deu542.globalunlock.org
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: bhy7.ae1autumn.dpdns.org
   port: 80
@@ -50,7 +39,6 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_4c2ed_0001
-  - 🇩🇪 德国 | DEU 3
   - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO

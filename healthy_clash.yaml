@@ -18,31 +18,6 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: deu542.globalunlock.org
-  port: 443
-  type: vless
-  uuid: ee750cca-f549-4e78-8648-a6b762953e70
-  tls: true
-  flow: xtls-rprx-vision
-  servername: deu542.globalunlock.org
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: bhy7.ae1autumn.dpdns.org
-  port: 80
-  type: vless
-  uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
-  tls: false
-  servername: bhy7.ae1autumn.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /XR8So0uqFVa3vY9ZbxgW4
-    headers:
-      Host: bhy7.ae1autumn.dpdns.org
-  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: jjjmki.930.pp.ua
   port: 443
@@ -58,20 +33,20 @@ proxies:
     headers:
       Host: jjjmki.930.pp.ua
   udp: true
-- name: end-gfw.com22@kr64
-  server: 43.201.250.101
-  port: 8686
-  type: vmess
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  alterId: 0
-  cipher: auto
+- name: 🇺🇸 美国 | USA 14
+  server: bhy7.ae1autumn.dpdns.org
+  port: 80
+  type: vless
+  uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
   tls: false
-  servername: baidu.com
+  servername: bhy7.ae1autumn.dpdns.org
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /XR8So0uqFVa3vY9ZbxgW4
     headers:
-      Host: end-gfw.com
+      Host: bhy7.ae1autumn.dpdns.org
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -79,17 +54,14 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_4c2ed_0001
-  - 🇩🇪 德国 | DEU 3
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 2
-  - end-gfw.com22@kr64
+  - 🇺🇸 美国 | USA 14
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - DE_4c2ed_0001
-  - 🇩🇪 德国 | DEU 3
   - 🇺🇸 美国 | USA 14
 - name: PROTO-VMESS
   type: url-test
@@ -97,26 +69,18 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 2
-  - end-gfw.com22@kr64
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - end-gfw.com22@kr64
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - DE_4c2ed_0001
-  - 🇩🇪 德国 | DEU 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO
