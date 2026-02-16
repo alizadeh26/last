@@ -63,7 +63,7 @@ async def check_nodes(
 ) -> CheckResult:
     outbounds = [n.outbound for n in nodes]
 
-    # === فیلتر پیشرفته و قوی برای حذف هر outbound با ws path نامعتبر (مثل %2@) ===
+    # === فیلتر قوی برای حذف outboundهای با path نامعتبر ws (مثل %2@) ===
     hex_digits = "0123456789abcdefABCDEF"
 
     def is_invalid_path(p: str) -> bool:
