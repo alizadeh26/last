@@ -61,6 +61,35 @@ async def check_nodes(
     max_concurrency: int,
     nodes: list[Node],
 ) -> CheckResult:
+    def is_valid_ws_path(path: str | None) -> bool:
+    if not path:
+        return True
+    if '%' not in path:
+        return True
+    try:
+        # چک می‌کنه آیا escapeها معتبر هستن
+        urllib.parse.unquote(path)  # اگر fail کنه → invalid
+        # یا چک دقیق‌تر
+        parts = path.split('%')
+        for p in parts[1:]:
+            if len(p) < 2 or not p[:2].isalnum():  # باید دو رقم هگز باشه
+                return False
+        return True
+    except Exception:
+        return False
+
+filtered_outbounds = []
+for n in nodes:
+    outbound = n.outbound
+    transport = outbound.get("transport", {})
+    if transport.get("type") == "ws":
+        path = transport.get("path")
+        if not is_valid_ws_path(path):
+            print(f"Skipping invalid WS path outbound: {n.tag} → path={path}")
+            continue
+    filtered_outbounds.append(outbound)
+
+outbounds = filtered_outbounds
     outbounds = [n.outbound for n in nodes]
     sem = asyncio.Semaphore(max_concurrency)
 
