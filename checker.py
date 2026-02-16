@@ -63,69 +63,9 @@ async def check_nodes(
 ) -> CheckResult:
    
 
-import urllib.parse
-
-def has_invalid_ws_escape(config: dict) -> bool:
-    """
-    چک می‌کنه آیا جایی در config (outbound) مسیر ws با escape نامعتبر وجود داره
-    """
-    def check_path(path):
-        if not path or '%' not in path:
-            return False
-        try:
-            urllib.parse.unquote(path)          # اگر raise کنه → مشکل‌دار
-            # چک سخت‌گیرانه‌تر: بعد از هر % باید دقیقاً ۲ کاراکتر هگز بیاد
-            i = 0
-            while i < len(path):
-                if path[i] == '%':
-                    if i + 2 >= len(path) or not path[i+1:i+3].isalnum():
-                        return True  # invalid escape
-                    i += 3
-                else:
-                    i += 1
-            return False
-        except Exception:
-            return True  # هر exception یعنی invalid
-
-    # پیدا کردن همه pathهای ws در ساختار
-    def find_ws_paths(d):
-        paths = []
-        if isinstance(d, dict):
-            t = d.get("transport", {})
-            if isinstance(t, dict) and t.get("type") in ("ws", "websocket"):
-                p = t.get("path")
-                if p:
-                    paths.append(p)
-            for v in d.values():
-                paths.extend(find_ws_paths(v))
-        elif isinstance(d, list):
-            for item in d:
-                paths.extend(find_ws_paths(item))
-        return paths
-
-    ws_paths = find_ws_paths(config)
-    for p in ws_paths:
-        if check_path(p):
-            return True, p
-    return False, None
 
 
-filtered_outbounds = []
-skipped = []
 
-for n in nodes:
-    outbound = n.outbound
-    invalid, bad_path = has_invalid_ws_escape(outbound)
-    if invalid:
-        tag = n.tag if hasattr(n, 'tag') else outbound.get('tag', 'unknown')
-        print(f"Skipping outbound with invalid WS path: {tag} → path = {bad_path}")
-        skipped.append(tag)
-        continue
-    filtered_outbounds.append(outbound)
-
-outbounds = filtered_outbounds
-
-print(f"Filtered {len(skipped)} bad outbounds out of {len(nodes)}")
     outbounds = [n.outbound for n in nodes]
     sem = asyncio.Semaphore(max_concurrency)
 
@@ -133,64 +73,6 @@ print(f"Filtered {len(skipped)} bad outbounds out of {len(nodes)}")
     healthy_clash: list[dict] = []
 
     async with SingBoxRunner(singbox_path, clash_api_host, clash_api_port) as runner:
-        # --- DEBUG + HARD FILTER ---
-import json
-import urllib.parse
-
-bad_outbounds = []
-
-for i, ob in enumerate(outbounds):
-    # تبدیل به string برای جستجوی ساده
-    ob_str = json.dumps(ob, ensure_ascii=False)
-    if '%2@' in ob_str:   # مستقیم دنبال مشکل بگرد
-        tag = ob.get('tag', f'index_{i}')
-        print(f"!!! BAD outbound found (contains %2@): {tag} at position {i}")
-        bad_outbounds.append(i)
-        # print(ob_str)   # اگر خواستی کل کانفیگ مشکل‌دار رو ببین → uncomment کن
-
-# حذف همه outboundهای مشکل‌دار
-if bad_outbounds:
-    print(f"Removing {len(bad_outbounds)} bad outbounds containing '%2@'")
-    outbounds = [ob for idx, ob in enumerate(outbounds) if idx not in bad_outbounds]
-
-# اگر خواستی سخت‌گیرانه‌تر: همه ws pathها رو چک کن
-def fix_or_skip_ws_path(ob):
-    def recurse(d):
-        if isinstance(d, dict):
-            if d.get('type') in ('ws', 'websocket'):
-                path = d.get('path', '')
-                if '%' in path:
-                    try:
-                        urllib.parse.unquote(path)
-                    except:
-                        print(f"Invalid WS path skipped/fixed in tag: {ob.get('tag')}")
-                        return None  # skip this outbound
-            for k, v in list(d.items()):
-                new_v = recurse(v)
-                if new_v is None:
-                    return None
-                d[k] = new_v
-        elif isinstance(d, list):
-            new_list = []
-            for item in d:
-                fixed = recurse(item)
-                if fixed is not None:
-                    new_list.append(fixed)
-            return new_list
-        return d
-    
-    return recurse(ob)
-
-# اعمال روی همه
-clean_outbounds = []
-for ob in outbounds:
-    fixed = fix_or_skip_ws_path(ob)
-    if fixed is not None:
-        clean_outbounds.append(fixed)
-
-outbounds = clean_outbounds
-print(f"After cleaning: {len(outbounds)} outbounds remaining")
-# --- END DEBUG ---
         api = await runner.start(outbounds)
 
         async def one(n: Node) -> None:
