@@ -7,7 +7,8 @@ import socket
 
 import yaml
 import httpx
-
+import json
+import urllib.parse
 from singbox_runner import SingBoxRunner
 from subs import Node, fetch_text, node_from_clash_proxy, node_from_share_link, parse_subscription_payload
 
@@ -67,6 +68,29 @@ async def check_nodes(
 
 
     outbounds = [n.outbound for n in nodes]
+
+
+
+
+        # === HARD FILTER برای ارور %2@ در ws path ===
+    bad_outbounds = []
+    for i, ob in enumerate(outbounds):
+        ob_str = json.dumps(ob, ensure_ascii=False)
+        if '%2@' in ob_str:
+            tag = ob.get('tag', f'index_{i}')
+            print(f"!!! BAD outbound found (contains %2@): {tag} at position {i}")
+            bad_outbounds.append(i)
+
+    if bad_outbounds:
+        print(f"Removing {len(bad_outbounds)} bad outbounds containing '%2@'")
+        outbounds = [ob for idx, ob in enumerate(outbounds) if idx not in bad_outbounds]
+
+    print(f"After filtering: {len(outbounds)} outbounds remaining")
+    # === END FILTER ===
+
+
+
+    
     sem = asyncio.Semaphore(max_concurrency)
 
     healthy_links: list[str] = []
