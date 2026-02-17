@@ -32,22 +32,8 @@ proxies:
     headers:
       Host: ko.890604.filegear-sg.me
   udp: true
-- name: end-gfw.com12@jp89
-  server: 54.250.170.199
-  port: 8686
-  type: vmess
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: baidu.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: end-gfw.com
 - name: end-gfw.com22@kr64
-  server: 43.203.197.112
+  server: 13.125.220.124
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -68,7 +54,6 @@ proxy-groups:
   proxies:
   - DE_65761_0001
   - 🇺🇸 美国 | USA 3
-  - end-gfw.com12@jp89
   - end-gfw.com22@kr64
 - name: PROTO-VLESS
   type: url-test
@@ -82,14 +67,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - end-gfw.com12@jp89
   - end-gfw.com22@kr64
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - end-gfw.com12@jp89
+  - end-gfw.com22@kr64
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
