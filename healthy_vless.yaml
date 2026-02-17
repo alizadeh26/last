@@ -18,6 +18,20 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: vbnj.oo1.ccwu.cc
+  port: 80
+  type: vless
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  tls: false
+  servername: vbnj.oo1.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /7ZHQqqDZuBdYKaAHx8c
+    headers:
+      Host: vbnj.oo1.ccwu.cc
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -25,5 +39,6 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_bdd05_0001
+  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
