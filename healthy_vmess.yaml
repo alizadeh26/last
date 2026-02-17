@@ -4,8 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: end-gfw.com12@jp89
+  server: 13.114.119.123
+  port: 8686
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: baidu.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: end-gfw.com22@kr64
-  server: 3.36.49.188
+  server: 15.165.17.118
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -24,6 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - end-gfw.com12@jp89
   - end-gfw.com22@kr64
 rules:
 - MATCH,AUTO
