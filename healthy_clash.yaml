@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_36238_0001
+- name: DE_2eca5_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,22 +18,18 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: end-gfw.com12@jp89
-  server: 57.181.35.115
-  port: 8686
-  type: vmess
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: baidu.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: end-gfw.com
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: lvcdn4.suio.me
+  port: 443
+  type: vless
+  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+  tls: true
+  servername: lvcdn4.suio.me
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: end-gfw.com22@kr64
-  server: 13.124.217.120
+  server: 3.36.49.188
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -52,34 +48,34 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_36238_0001
-  - end-gfw.com12@jp89
+  - DE_2eca5_0001
+  - 🇱🇻 拉脱维亚 | LVA
   - end-gfw.com22@kr64
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_36238_0001
+  - DE_2eca5_0001
+  - 🇱🇻 拉脱维亚 | LVA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - end-gfw.com12@jp89
   - end-gfw.com22@kr64
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - end-gfw.com12@jp89
   - end-gfw.com22@kr64
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_36238_0001
+  - DE_2eca5_0001
+  - 🇱🇻 拉脱维亚 | LVA
 rules:
 - MATCH,AUTO
