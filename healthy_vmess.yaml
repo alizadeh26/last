@@ -5,7 +5,7 @@ mode: Rule
 log-level: silent
 proxies:
 - name: end-gfw.com12@jp89
-  server: 13.114.119.123
+  server: 13.230.253.37
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -19,7 +19,7 @@ proxies:
     headers:
       Host: end-gfw.com
 - name: end-gfw.com22@kr64
-  server: 15.165.17.118
+  server: 43.200.253.35
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
