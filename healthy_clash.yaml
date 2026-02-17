@@ -4,38 +4,55 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_0bd4c_0001
-  server: de.cdn.stun.su
-  port: 443
-  type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: de.cdn.stun.su
-  reality-opts:
-    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
-    short-id: 4daa022e84f8edf2
-  udp: true
+- name: end-gfw.com12@jp89
+  server: 54.249.79.73
+  port: 8686
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: baidu.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: end-gfw.com22@kr64
+  server: 3.35.50.186
+  port: 8686
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: baidu.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_0bd4c_0001
-- name: PROTO-VLESS
+  - end-gfw.com12@jp89
+  - end-gfw.com22@kr64
+- name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_0bd4c_0001
-- name: REGION-EU
+  - end-gfw.com12@jp89
+  - end-gfw.com22@kr64
+- name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_0bd4c_0001
+  - end-gfw.com12@jp89
+  - end-gfw.com22@kr64
 rules:
 - MATCH,AUTO
