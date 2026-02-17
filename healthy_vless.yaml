@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_65761_0001
+- name: DE_0bd4c_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,27 +18,12 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: ko.890604.filegear-sg.me
-  port: 443
-  type: vless
-  uuid: b020865b-7404-4894-ba65-a7414b10cda3
-  tls: true
-  servername: ko.890604.filegear-sg.me
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /15ZYK3adOPjqSc7fzeJr
-    headers:
-      Host: ko.890604.filegear-sg.me
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_65761_0001
-  - 🇺🇸 美国 | USA 3
+  - DE_0bd4c_0001
 rules:
 - MATCH,AUTO
