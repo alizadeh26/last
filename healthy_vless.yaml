@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_0bd4c_0001
+- name: DE_bdd05_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -24,6 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_0bd4c_0001
+  - DE_bdd05_0001
 rules:
 - MATCH,AUTO
