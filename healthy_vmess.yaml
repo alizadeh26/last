@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: end-gfw.com22@kr64
-  server: 13.125.220.124
+- name: end-gfw.com12@jp89
+  server: 18.179.5.139
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -24,6 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - end-gfw.com22@kr64
+  - end-gfw.com12@jp89
 rules:
 - MATCH,AUTO
