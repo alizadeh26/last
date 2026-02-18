@@ -44,6 +44,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: Kg5NRMdbXzKqMCO04CbOYb
   udp: true
+- name: 🇺🇸 美国 | USA
+  server: bbbnmkl.taiwan2028.indevs.in
+  port: 443
+  type: vless
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  tls: true
+  servername: BBBNMkL.TaiwAn2028.INdEvS.iN
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /s2VHv9VUVzg35A6ueyyZnWd
+    headers:
+      Host: BbBNMkL.TAIWan2028.iNDEVs.In
+  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: s393.ccgfw.top
   port: 443
@@ -73,22 +87,15 @@ proxies:
     headers:
       Host: KI8.O1O.INDEVs.IN
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: bbbnmkl.taiwan2028.indevs.in
-  port: 443
-  type: vless
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  tls: true
-  servername: BBBNMkL.TaiwAn2028.INdEvS.iN
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /s2VHv9VUVzg35A6ueyyZnWd
-    headers:
-      Host: BbBNMkL.TAIWan2028.iNDEVs.In
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.233
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.210
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -101,8 +108,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.210
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.233
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -125,12 +132,13 @@ proxy-groups:
   - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU 2
   - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
@@ -139,9 +147,10 @@ proxy-groups:
   proxies:
   - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
@@ -150,21 +159,14 @@ proxy-groups:
   proxies:
   - DE_9764e_0001
   - 🇩🇪 德国 | DEU 2
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 4
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -178,6 +180,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 2
-  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
