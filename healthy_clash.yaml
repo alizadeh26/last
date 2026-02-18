@@ -4,16 +4,51 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: deu549.worldbypass.org
+- name: DE_effaa_0001
+  server: de.cdn.stun.su
   port: 443
   type: vless
-  uuid: 405ba2d6-7fcb-4cdd-9c77-4ecc616d77c8
-  tls: true
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
   flow: xtls-rprx-vision
-  servername: deu549.worldbypass.org
+  tls: true
+  skip-cert-verify: false
   client-fingerprint: chrome
-  network: tcp
+  servername: de.cdn.stun.su
+  reality-opts:
+    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+    short-id: 4daa022e84f8edf2
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 46.246.97.140
+  port: 53908
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ZweuXavjovuhzt1AF0d6qx
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: www.bing.com
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: xg1a5.waimaohots.com
+  port: 443
+  type: vmess
+  uuid: 374bf01b-17cf-4e26-a7e8-6d1110e04978
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xg1a5.waimaohots.com
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: xg1a5.waimaohots.com
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: gnju.o09.indevs.in
@@ -31,34 +66,61 @@ proxies:
     headers:
       Host: gnju.o09.indevs.in
   udp: true
-- name: DE_effaa_0001
-  server: de.cdn.stun.su
-  port: 443
-  type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: de.cdn.stun.su
-  reality-opts:
-    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
-    short-id: 4daa022e84f8edf2
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.37
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: xg1a5.waimaohots.com
-  port: 443
-  type: vmess
-  uuid: 374bf01b-17cf-4e26-a7e8-6d1110e04978
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xg1a5.waimaohots.com
-  network: ws
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: xg1a5.waimaohots.com
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.202
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.38
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.243
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.41
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: 62.60.233.220
+  port: 18685
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ixfXBq6dfMQQFiEz6PBcTy
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.203
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.154.201
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -66,36 +128,59 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇺🇸 美国 | USA 3
   - DE_effaa_0001
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 3
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 5
+  - 🇹🇷 土耳其 | TUR
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 7
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇪 瑞典 | SWE
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 5
+  - 🇹🇷 土耳其 | TUR
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
   - DE_effaa_0001
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
   - DE_effaa_0001
+  - 🇸🇪 瑞典 | SWE
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
