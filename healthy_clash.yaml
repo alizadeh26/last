@@ -18,21 +18,19 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: q2w3.o09.indevs.in
+- name: 🇺🇸 美国 | USA 11
+  server: vbnj.oo1.ccwu.cc
   port: 80
-  type: vmess
-  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
   tls: false
-  skip-cert-verify: false
-  servername: Q2W3.o09.iNDeVs.In
+  servername: vbnj.oo1.ccwu.cc
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /GgigazFGDLgFWDItkD5XgXAL
+    path: /7ZHQqqDZuBdYKaAHx8c
     headers:
-      Host: q2W3.o09.INdeVs.In
+      Host: vbnj.oo1.ccwu.cc
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: nmk.n1n.indevs.in
@@ -50,6 +48,22 @@ proxies:
     headers:
       Host: nmk.n1n.indevs.in
   udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: q2w3.o09.indevs.in
+  port: 80
+  type: vmess
+  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: Q2W3.o09.iNDeVs.In
+  network: ws
+  ws-opts:
+    path: /GgigazFGDLgFWDItkD5XgXAL
+    headers:
+      Host: q2W3.o09.INdeVs.In
+  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: we3.o1o.indevs.in
   port: 80
@@ -66,6 +80,20 @@ proxies:
     headers:
       Host: we3.o1o.indevs.in
   udp: true
+- name: end-gfw.com22@kr64
+  server: 43.201.147.64
+  port: 8686
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: baidu.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -73,23 +101,27 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_dd715_0001
-  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 10
+  - end-gfw.com22@kr64
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - DE_dd715_0001
+  - 🇺🇸 美国 | USA 11
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 10
+  - end-gfw.com22@kr64
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -101,7 +133,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
