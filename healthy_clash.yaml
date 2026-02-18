@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_bdd05_0001
+- name: DE_7f53e_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,22 +18,21 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: vbnj.oo1.ccwu.cc
-  port: 80
+- name: 🇫🇮 芬兰 | FIN
+  server: bouquetberlin.org
+  port: 8443
   type: vless
-  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
-  tls: false
-  servername: vbnj.oo1.ccwu.cc
+  uuid: 453c3861-eaf4-4c60-94e0-e57a2c9d2fcf
+  tls: true
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /7ZHQqqDZuBdYKaAHx8c
+    path: /vlessws
     headers:
-      Host: vbnj.oo1.ccwu.cc
+      Host: bouquetberlin.org
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: nmk.n1n.indevs.in
+- name: 🇺🇸 美国 | USA 3
+  server: uio.n1n.indevs.in
   port: 80
   type: vmess
   uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
@@ -41,15 +40,15 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: nmk.n1n.indevs.in
+  servername: uio.N1n.INDEvs.iN
   network: ws
   ws-opts:
     path: /GgigazFGDLgFWDItkD5XgXAL
     headers:
-      Host: nmk.n1n.indevs.in
+      Host: UIo.N1n.INdeVs.in
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: q2w3.o09.indevs.in
+- name: 🇺🇸 美国 | USA 13
+  server: mk.o09.indevs.in
   port: 80
   type: vmess
   uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
@@ -57,15 +56,15 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: Q2W3.o09.iNDeVs.In
+  servername: mk.o09.indevs.in
   network: ws
   ws-opts:
     path: /GgigazFGDLgFWDItkD5XgXAL
     headers:
-      Host: q2W3.o09.INdeVs.In
+      Host: mk.o09.indevs.in
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: we3.o1o.indevs.in
+- name: 🇺🇸 美国 | USA 22
+  server: bnmj.o09.indevs.in
   port: 80
   type: vmess
   uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
@@ -73,15 +72,15 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: we3.o1o.indevs.in
+  servername: bNmj.O09.inDEVs.IN
   network: ws
   ws-opts:
     path: /GgigazFGDLgFWDItkD5XgXAL
     headers:
-      Host: we3.o1o.indevs.in
+      Host: bnMj.o09.IndevS.IN
   udp: true
 - name: end-gfw.com12@jp89
-  server: 13.231.164.232
+  server: 54.199.105.162
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -100,40 +99,40 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_bdd05_0001
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 10
+  - DE_7f53e_0001
+  - 🇫🇮 芬兰 | FIN
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 22
   - end-gfw.com12@jp89
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_bdd05_0001
-  - 🇺🇸 美国 | USA 11
+  - DE_7f53e_0001
+  - 🇫🇮 芬兰 | FIN
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 22
   - end-gfw.com12@jp89
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_bdd05_0001
+  - DE_7f53e_0001
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 7
+  - 🇫🇮 芬兰 | FIN
+  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO

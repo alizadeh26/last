@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_bdd05_0001
+- name: DE_7f53e_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,19 +18,18 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: vbnj.oo1.ccwu.cc
-  port: 80
+- name: 🇫🇮 芬兰 | FIN
+  server: bouquetberlin.org
+  port: 8443
   type: vless
-  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
-  tls: false
-  servername: vbnj.oo1.ccwu.cc
+  uuid: 453c3861-eaf4-4c60-94e0-e57a2c9d2fcf
+  tls: true
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /7ZHQqqDZuBdYKaAHx8c
+    path: /vlessws
     headers:
-      Host: vbnj.oo1.ccwu.cc
+      Host: bouquetberlin.org
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +37,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_bdd05_0001
-  - 🇺🇸 美国 | USA 11
+  - DE_7f53e_0001
+  - 🇫🇮 芬兰 | FIN
 rules:
 - MATCH,AUTO
