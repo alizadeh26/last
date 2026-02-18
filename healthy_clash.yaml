@@ -18,6 +18,28 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: s481.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u708330uad0es481.ccgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: s348.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u708330u57e3s348.ccgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
 - name: 🇫🇮 芬兰 | FIN
   server: bouquetberlin.org
   port: 8443
@@ -46,6 +68,17 @@ proxies:
     path: /GgigazFGDLgFWDItkD5XgXAL
     headers:
       Host: UIo.N1n.INdeVs.in
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: s570.okgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u708330uaa85s570.okgfw.top
+  client-fingerprint: random
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 13
   server: mk.o09.indevs.in
@@ -77,6 +110,20 @@ proxies:
     headers:
       Host: we.0op.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: w.0op.ccwu.cc
+  port: 80
+  type: vless
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  tls: false
+  servername: w.0op.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /7ZHQqqDZuBdYKaAHx8c
+    headers:
+      Host: w.0op.ccwu.cc
+  udp: true
 - name: 🇺🇸 美国 | USA 22
   server: bnmj.o09.indevs.in
   port: 80
@@ -93,22 +140,22 @@ proxies:
     headers:
       Host: bnMj.o09.IndevS.IN
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: w.0op.ccwu.cc
-  port: 80
-  type: vless
-  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+- name: end-gfw.com12@jp89
+  server: 3.112.227.167
+  port: 8686
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
   tls: false
-  servername: w.0op.ccwu.cc
-  client-fingerprint: chrome
+  servername: baidu.com
   network: ws
   ws-opts:
-    path: /7ZHQqqDZuBdYKaAHx8c
+    path: /
     headers:
-      Host: w.0op.ccwu.cc
-  udp: true
-- name: end-gfw.com12@jp89
-  server: 54.178.5.41
+      Host: end-gfw.com
+- name: end-gfw.com22@kr64
+  server: 43.201.116.176
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -128,20 +175,27 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_7f53e_0001
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇪🇪 爱沙尼亚 | EST 2
   - 🇫🇮 芬兰 | FIN
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 22
   - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 22
   - end-gfw.com12@jp89
+  - end-gfw.com22@kr64
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - DE_7f53e_0001
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇪🇪 爱沙尼亚 | EST 2
   - 🇫🇮 芬兰 | FIN
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 18
 - name: PROTO-VMESS
@@ -153,18 +207,20 @@ proxy-groups:
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 22
   - end-gfw.com12@jp89
+  - end-gfw.com22@kr64
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - DE_7f53e_0001
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇪🇪 爱沙尼亚 | EST 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 | FIN
-  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO
