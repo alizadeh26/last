@@ -4,18 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: deu549.worldbypass.org
-  port: 443
-  type: vless
-  uuid: 405ba2d6-7fcb-4cdd-9c77-4ecc616d77c8
-  tls: true
-  flow: xtls-rprx-vision
-  servername: deu549.worldbypass.org
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: DE_effaa_0001
+- name: DE_9764e_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -29,13 +18,54 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: cdnjs.com
+  port: 2082
+  type: vless
+  uuid: 48ce9313-4913-4100-eedf-bccf3f956dec
+  tls: false
+  network: ws
+  ws-opts:
+    path: /@mahdi_383ir
+    headers:
+      Host: kh23h5k47xoocggw85cwt1mkdzi9vad4zoe2kfk.mahdi383ir.website
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: s393.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  servername: u708330u5903s393.ccgfw.top
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ssp
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: bbbnmkl.taiwan2028.indevs.in
+  port: 443
+  type: vless
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  tls: true
+  servername: BBBNMkL.TaiwAn2028.INdEvS.iN
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /s2VHv9VUVzg35A6ueyyZnWd
+    headers:
+      Host: BbBNMkL.TAIWan2028.iNDEVs.In
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - DE_effaa_0001
+  - DE_9764e_0001
+  - 🇩🇪 德国 | DEU 2
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

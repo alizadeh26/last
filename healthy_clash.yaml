@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_effaa_0001
+- name: DE_9764e_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,40 +18,47 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 46.246.97.140
-  port: 53908
+- name: 🇬🇧 英国 | GBR
+  server: 131.145.23.4
+  port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: ZweuXavjovuhzt1AF0d6qx
+  password: kaQH3hGdcP80XEDI
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: 🇩🇪 德国 | DEU 2
+  server: cdnjs.com
+  port: 2082
+  type: vless
+  uuid: 48ce9313-4913-4100-eedf-bccf3f956dec
   tls: false
-  servername: www.bing.com
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: xg1a5.waimaohots.com
-  port: 443
-  type: vmess
-  uuid: 374bf01b-17cf-4e26-a7e8-6d1110e04978
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xg1a5.waimaohots.com
   network: ws
   ws-opts:
-    path: /api/v1/graphql
+    path: /@mahdi_383ir
     headers:
-      Host: xg1a5.waimaohots.com
+      Host: kh23h5k47xoocggw85cwt1mkdzi9vad4zoe2kfk.mahdi383ir.website
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: gnju.o09.indevs.in
+- name: 🇳🇱 荷兰 | NLD
+  server: 185.250.45.163
+  port: 4129
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Kg5NRMdbXzKqMCO04CbOYb
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: s393.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  servername: u708330u5903s393.ccgfw.top
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ssp
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: ki8.o1o.indevs.in
   port: 80
   type: vmess
   uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
@@ -59,64 +66,50 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: gnju.o09.indevs.in
+  servername: kI8.o1o.InDeVs.in
   network: ws
   ws-opts:
     path: /GgigazFGDLgFWDItkD5XgXAL
     headers:
-      Host: gnju.o09.indevs.in
+      Host: KI8.O1O.INDEVs.IN
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.37
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇺🇸 美国 | USA
+  server: bbbnmkl.taiwan2028.indevs.in
+  port: 443
+  type: vless
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  tls: true
+  servername: BBBNMkL.TaiwAn2028.INdEvS.iN
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /s2VHv9VUVzg35A6ueyyZnWd
+    headers:
+      Host: BbBNMkL.TAIWan2028.iNDEVs.In
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.202
+  server: 103.186.155.233
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.38
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.161
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.243
+  server: 103.186.154.210
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.41
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 62.60.233.220
-  port: 18685
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ixfXBq6dfMQQFiEz6PBcTy
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.203
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.154.201
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.140
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -128,59 +121,63 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_effaa_0001
-  - 🇸🇪 瑞典 | SWE
+  - DE_9764e_0001
+  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 3
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 5
-  - 🇹🇷 土耳其 | TUR
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 | SWE
-  - 🇻🇳 越南 | VNM
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 5
-  - 🇹🇷 土耳其 | TUR
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_effaa_0001
+  - DE_9764e_0001
+  - 🇩🇪 德国 | DEU 2
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_effaa_0001
-  - 🇸🇪 瑞典 | SWE
+  - DE_9764e_0001
+  - 🇬🇧 英国 | GBR
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU 2
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
