@@ -112,41 +112,37 @@ async def check_nodes(
         outbounds = [ob for idx, ob in enumerate(outbounds) if idx not in bad_indices]
 
     print(f"After filtering: {len(outbounds)} valid outbounds remaining")
-    # === پایان فیلتر ===
+    # === پایان فیلتر ws ===
 
-
-
-
-        # === FIX TYPE برای sing-box (password, uuid و ... باید string باشن) ===
+    # === FIX TYPE: همه فیلدهایی که sing-box باید string باشن ===
     def sanitize_outbound(ob: dict) -> dict:
         if not isinstance(ob, dict):
             return ob
 
-        # فیلدهایی که حتماً باید string باشن
-        string_fields = ("password", "uuid", "shortId", "short_id", "flow", "method", "host", "path")
+        string_fields = ("password", "uuid", "id", "shortId", "short_id", "alterId", "flow", "method", "host", "path", "server_name")
 
         for key in string_fields:
-            if key in ob and isinstance(ob[key], (int, float, bool)):
-                ob[key] = str(ob[key])
+            if key in ob:
+                val = ob[key]
+                if isinstance(val, (int, float, bool)):
+                    ob[key] = str(val)
+                elif val is None:
+                    ob[key] = ""
 
-        # چک recursive برای transport, reality, tls و ...
+        # recursive برای transport, tls, reality, mux و ...
         for v in list(ob.values()):
             if isinstance(v, dict):
-                sanitize_outbound(v)   # تغییر درجا
+                sanitize_outbound(v)
             elif isinstance(v, list):
                 for item in v:
                     if isinstance(item, dict):
                         sanitize_outbound(item)
         return ob
 
-    # اعمال روی همه outboundها
-    outbounds = [sanitize_outbound(ob.copy()) for ob in outbounds]  # copy برای ایمنی
+    outbounds = [sanitize_outbound(ob.copy()) for ob in outbounds]
     print(f"After type sanitization: {len(outbounds)} outbounds ready for sing-box")
     # === پایان FIX TYPE ===
 
-
-
-    
     sem = asyncio.Semaphore(max_concurrency)
 
     healthy_links: list[str] = []
@@ -173,6 +169,7 @@ async def check_nodes(
     return CheckResult(healthy_links=healthy_links, healthy_clash_proxies=healthy_clash)
 
 
+# بقیه توابع (render_outputs و build_commit_message) دقیقاً مثل نسخه اصلی repo هست
 def render_outputs(res: CheckResult) -> tuple[bytes, bytes]:
     txt = "\n".join(res.healthy_links).strip() + "\n"
 
