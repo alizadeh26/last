@@ -63,6 +63,20 @@ proxies:
     headers:
       Host: mk.o09.indevs.in
   udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: we.0op.ccwu.cc
+  port: 80
+  type: vless
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  tls: false
+  servername: we.0op.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /7ZHQqqDZuBdYKaAHx8c
+    headers:
+      Host: we.0op.ccwu.cc
+  udp: true
 - name: 🇺🇸 美国 | USA 22
   server: bnmj.o09.indevs.in
   port: 80
@@ -79,8 +93,22 @@ proxies:
     headers:
       Host: bnMj.o09.IndevS.IN
   udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: w.0op.ccwu.cc
+  port: 80
+  type: vless
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  tls: false
+  servername: w.0op.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /7ZHQqqDZuBdYKaAHx8c
+    headers:
+      Host: w.0op.ccwu.cc
+  udp: true
 - name: end-gfw.com12@jp89
-  server: 54.199.105.162
+  server: 54.178.5.41
   port: 8686
   type: vmess
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
@@ -103,7 +131,9 @@ proxy-groups:
   - 🇫🇮 芬兰 | FIN
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 18
   - end-gfw.com12@jp89
 - name: PROTO-VLESS
   type: url-test
@@ -112,6 +142,8 @@ proxy-groups:
   proxies:
   - DE_7f53e_0001
   - 🇫🇮 芬兰 | FIN
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 18
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204

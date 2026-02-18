@@ -31,6 +31,34 @@ proxies:
     headers:
       Host: bouquetberlin.org
   udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: we.0op.ccwu.cc
+  port: 80
+  type: vless
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  tls: false
+  servername: we.0op.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /7ZHQqqDZuBdYKaAHx8c
+    headers:
+      Host: we.0op.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: w.0op.ccwu.cc
+  port: 80
+  type: vless
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  tls: false
+  servername: w.0op.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /7ZHQqqDZuBdYKaAHx8c
+    headers:
+      Host: w.0op.ccwu.cc
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -39,5 +67,7 @@ proxy-groups:
   proxies:
   - DE_7f53e_0001
   - 🇫🇮 芬兰 | FIN
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 18
 rules:
 - MATCH,AUTO
