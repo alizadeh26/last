@@ -4,7 +4,34 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_dd715_0001
+- name: 🇩🇪 德国 | DEU
+  server: deu549.worldbypass.org
+  port: 443
+  type: vless
+  uuid: 405ba2d6-7fcb-4cdd-9c77-4ecc616d77c8
+  tls: true
+  flow: xtls-rprx-vision
+  servername: deu549.worldbypass.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: gnju.o09.indevs.in
+  port: 80
+  type: vmess
+  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: gnju.o09.indevs.in
+  network: ws
+  ws-opts:
+    path: /GgigazFGDLgFWDItkD5XgXAL
+    headers:
+      Host: gnju.o09.indevs.in
+  udp: true
+- name: DE_effaa_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,124 +45,57 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: vbnj.oo1.ccwu.cc
-  port: 80
-  type: vless
-  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
-  tls: false
-  servername: vbnj.oo1.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /7ZHQqqDZuBdYKaAHx8c
-    headers:
-      Host: vbnj.oo1.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: nmk.n1n.indevs.in
-  port: 80
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: xg1a5.waimaohots.com
+  port: 443
   type: vmess
-  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  uuid: 374bf01b-17cf-4e26-a7e8-6d1110e04978
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: nmk.n1n.indevs.in
+  tls: true
+  servername: xg1a5.waimaohots.com
   network: ws
   ws-opts:
-    path: /GgigazFGDLgFWDItkD5XgXAL
+    path: /api/v1/graphql
     headers:
-      Host: nmk.n1n.indevs.in
+      Host: xg1a5.waimaohots.com
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: q2w3.o09.indevs.in
-  port: 80
-  type: vmess
-  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: Q2W3.o09.iNDeVs.In
-  network: ws
-  ws-opts:
-    path: /GgigazFGDLgFWDItkD5XgXAL
-    headers:
-      Host: q2W3.o09.INdeVs.In
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: we3.o1o.indevs.in
-  port: 80
-  type: vmess
-  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: we3.o1o.indevs.in
-  network: ws
-  ws-opts:
-    path: /GgigazFGDLgFWDItkD5XgXAL
-    headers:
-      Host: we3.o1o.indevs.in
-  udp: true
-- name: end-gfw.com22@kr64
-  server: 43.201.147.64
-  port: 8686
-  type: vmess
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: baidu.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: end-gfw.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_dd715_0001
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 10
-  - end-gfw.com22@kr64
+  - 🇩🇪 德国 | DEU
+  - 🇺🇸 美国 | USA 3
+  - DE_effaa_0001
+  - 🇷🇺 俄罗斯 | RUS 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_dd715_0001
-  - 🇺🇸 美国 | USA 11
+  - 🇩🇪 德国 | DEU
+  - DE_effaa_0001
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 10
-  - end-gfw.com22@kr64
+  - 🇺🇸 美国 | USA 3
+  - 🇷🇺 俄罗斯 | RUS 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_dd715_0001
+  - 🇩🇪 德国 | DEU
+  - DE_effaa_0001
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO

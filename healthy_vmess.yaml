@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 7
-  server: nmk.n1n.indevs.in
+- name: 🇺🇸 美国 | USA 3
+  server: gnju.o09.indevs.in
   port: 80
   type: vmess
   uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
@@ -13,68 +13,35 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: nmk.n1n.indevs.in
+  servername: gnju.o09.indevs.in
   network: ws
   ws-opts:
     path: /GgigazFGDLgFWDItkD5XgXAL
     headers:
-      Host: nmk.n1n.indevs.in
+      Host: gnju.o09.indevs.in
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: q2w3.o09.indevs.in
-  port: 80
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: xg1a5.waimaohots.com
+  port: 443
   type: vmess
-  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  uuid: 374bf01b-17cf-4e26-a7e8-6d1110e04978
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: Q2W3.o09.iNDeVs.In
+  tls: true
+  servername: xg1a5.waimaohots.com
   network: ws
   ws-opts:
-    path: /GgigazFGDLgFWDItkD5XgXAL
+    path: /api/v1/graphql
     headers:
-      Host: q2W3.o09.INdeVs.In
+      Host: xg1a5.waimaohots.com
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: we3.o1o.indevs.in
-  port: 80
-  type: vmess
-  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: we3.o1o.indevs.in
-  network: ws
-  ws-opts:
-    path: /GgigazFGDLgFWDItkD5XgXAL
-    headers:
-      Host: we3.o1o.indevs.in
-  udp: true
-- name: end-gfw.com22@kr64
-  server: 43.201.147.64
-  port: 8686
-  type: vmess
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: baidu.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: end-gfw.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 10
-  - end-gfw.com22@kr64
+  - 🇺🇸 美国 | USA 3
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO
