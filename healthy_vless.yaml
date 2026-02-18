@@ -44,19 +44,6 @@ proxies:
     headers:
       Host: BbBNMkL.TAIWan2028.iNDEVs.In
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: s393.ccgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  servername: u708330u5903s393.ccgfw.top
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ssp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -66,6 +53,5 @@ proxy-groups:
   - DE_9764e_0001
   - 🇩🇪 德国 | DEU 2
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
