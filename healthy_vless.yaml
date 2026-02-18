@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_7f53e_0001
+- name: DE_dd715_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,92 +18,12 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: s481.ccgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330uad0es481.ccgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇪🇪 爱沙尼亚 | EST 2
-  server: s348.ccgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330u57e3s348.ccgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇫🇮 芬兰 | FIN
-  server: bouquetberlin.org
-  port: 8443
-  type: vless
-  uuid: 453c3861-eaf4-4c60-94e0-e57a2c9d2fcf
-  tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: bouquetberlin.org
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: s570.okgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330uaa85s570.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: we.0op.ccwu.cc
-  port: 80
-  type: vless
-  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
-  tls: false
-  servername: we.0op.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /7ZHQqqDZuBdYKaAHx8c
-    headers:
-      Host: we.0op.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: w.0op.ccwu.cc
-  port: 80
-  type: vless
-  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
-  tls: false
-  servername: w.0op.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /7ZHQqqDZuBdYKaAHx8c
-    headers:
-      Host: w.0op.ccwu.cc
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_7f53e_0001
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇪🇪 爱沙尼亚 | EST 2
-  - 🇫🇮 芬兰 | FIN
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 18
+  - DE_dd715_0001
 rules:
 - MATCH,AUTO
