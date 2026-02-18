@@ -1,4 +1,4 @@
-بname: VPN Healthcheck
+name: VPN Healthcheck
 
 on:
   workflow_dispatch:
@@ -19,9 +19,8 @@ jobs:
 
     steps:
       - name: Checkout
-             - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0   # ← این خط خیلی مهمه!
+        uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -89,11 +88,4 @@ jobs:
             exit 0
           fi
           git commit -m "Update healthy subscription"
-                - name: Pull latest changes & Rebase
-        run: |
-          git fetch origin
-          git rebase origin/main
-
-      - name: Push changes
-        run: git push
           git push
