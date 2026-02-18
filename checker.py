@@ -114,6 +114,39 @@ async def check_nodes(
     print(f"After filtering: {len(outbounds)} valid outbounds remaining")
     # === پایان فیلتر ===
 
+
+
+
+        # === FIX TYPE برای sing-box (password, uuid و ... باید string باشن) ===
+    def sanitize_outbound(ob: dict) -> dict:
+        if not isinstance(ob, dict):
+            return ob
+
+        # فیلدهایی که حتماً باید string باشن
+        string_fields = ("password", "uuid", "shortId", "short_id", "flow", "method", "host", "path")
+
+        for key in string_fields:
+            if key in ob and isinstance(ob[key], (int, float, bool)):
+                ob[key] = str(ob[key])
+
+        # چک recursive برای transport, reality, tls و ...
+        for v in list(ob.values()):
+            if isinstance(v, dict):
+                sanitize_outbound(v)   # تغییر درجا
+            elif isinstance(v, list):
+                for item in v:
+                    if isinstance(item, dict):
+                        sanitize_outbound(item)
+        return ob
+
+    # اعمال روی همه outboundها
+    outbounds = [sanitize_outbound(ob.copy()) for ob in outbounds]  # copy برای ایمنی
+    print(f"After type sanitization: {len(outbounds)} outbounds ready for sing-box")
+    # === پایان FIX TYPE ===
+
+
+
+    
     sem = asyncio.Semaphore(max_concurrency)
 
     healthy_links: list[str] = []
