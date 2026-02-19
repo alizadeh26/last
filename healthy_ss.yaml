@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 131.145.23.4
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: kaQH3hGdcP80XEDI
-  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 185.250.45.163
   port: 4129
@@ -18,15 +11,15 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: Kg5NRMdbXzKqMCO04CbOYb
   udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 185.231.233.112
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.210
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.161
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -46,12 +39,12 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.161
-  port: 38388
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
   type: ss
   cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  password: f8f7aCzcPKbsF8p3
   udp: true
 proxy-groups:
 - name: AUTO
@@ -59,12 +52,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD
-  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM
+  - 🇵🇹 葡萄牙 | PRT
 rules:
 - MATCH,AUTO

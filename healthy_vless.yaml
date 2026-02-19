@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_9764e_0001
+- name: DE_4b43c_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -17,18 +17,6 @@ proxies:
   reality-opts:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: cdnjs.com
-  port: 2082
-  type: vless
-  uuid: 48ce9313-4913-4100-eedf-bccf3f956dec
-  tls: false
-  network: ws
-  ws-opts:
-    path: /@mahdi_383ir
-    headers:
-      Host: kh23h5k47xoocggw85cwt1mkdzi9vad4zoe2kfk.mahdi383ir.website
   udp: true
 - name: 🇺🇸 美国 | USA
   server: bbbnmkl.taiwan2028.indevs.in
@@ -50,8 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_9764e_0001
-  - 🇩🇪 德国 | DEU 2
+  - DE_4b43c_0001
   - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
