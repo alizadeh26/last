@@ -4,31 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: www.bing.com
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: gnju.o09.indevs.in
+- name: 🇺🇸 美国 | USA 15
+  server: nmkiy.1x8.indevs.in
   port: 80
   type: vmess
-  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: gnju.o09.indevs.in
+  servername: nmkiy.1x8.indevs.in
   network: ws
   ws-opts:
-    path: /GgigazFGDLgFWDItkD5XgXAL
+    path: /iSRWSKUJKNuXvVzsYHmsMrnO
     headers:
-      Host: gnju.o09.indevs.in
+      Host: nmkiy.1x8.indevs.in
   udp: true
 proxy-groups:
 - name: AUTO
@@ -36,7 +26,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO
