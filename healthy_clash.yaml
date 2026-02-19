@@ -29,6 +29,13 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 46.246.97.140
+  port: 53908
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ZweuXavjovuhzt1AF0d6qx
+  udp: true
 - name: 🇺🇸 美国 | USA
   server: 82.198.246.97
   port: 180
@@ -38,27 +45,6 @@ proxies:
   cipher: auto
   tls: false
   servername: www.bing.com
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.37
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.202
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.243
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: gnju.o09.indevs.in
@@ -76,15 +62,22 @@ proxies:
     headers:
       Host: gnju.o09.indevs.in
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.41
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.243
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.154.201
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.37
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.202
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -97,8 +90,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.41
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.155.203
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.154.201
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -112,27 +119,29 @@ proxy-groups:
   proxies:
   - DE_27eef_0001
   - 🇩🇪 德国 | DEU
+  - 🇸🇪 瑞典 | SWE
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
-  - 🇺🇸 美国 | USA 3
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇸🇪 瑞典 | SWE
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -154,11 +163,6 @@ proxy-groups:
   proxies:
   - DE_27eef_0001
   - 🇩🇪 德国 | DEU
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA
+  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
