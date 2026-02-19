@@ -4,18 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA
-  server: fr.1323.world
-  port: 443
-  type: vless
-  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
-  tls: true
-  alpn:
-  - h2
-  servername: b12a6eea4807ca4e.1323.world
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: DE_69949_0001
   server: de.cdn.stun.su
   port: 443
@@ -30,13 +18,39 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
+- name: 🇫🇷 法国 | FRA
+  server: fr.1323.world
+  port: 443
+  type: vless
+  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
+  tls: true
+  alpn:
+  - h2
+  servername: b12a6eea4807ca4e.1323.world
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: s393.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  servername: u708330u5903s393.ccgfw.top
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ssp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
   - DE_69949_0001
+  - 🇫🇷 法国 | FRA
+  - 🇺🇸 美国 | USA 18
 rules:
 - MATCH,AUTO
