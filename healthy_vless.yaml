@@ -18,19 +18,17 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: bbbnmkl.taiwan2028.indevs.in
-  port: 443
+- name: 🇩🇪 德国 | DEU 2
+  server: cdnjs.com
+  port: 2082
   type: vless
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  tls: true
-  servername: BBBNMkL.TaiwAn2028.INdEvS.iN
-  client-fingerprint: chrome
+  uuid: 48ce9313-4913-4100-eedf-bccf3f956dec
+  tls: false
   network: ws
   ws-opts:
-    path: /s2VHv9VUVzg35A6ueyyZnWd
+    path: /@mahdi_383ir
     headers:
-      Host: BbBNMkL.TAIWan2028.iNDEVs.In
+      Host: kh23h5k47xoocggw85cwt1mkdzi9vad4zoe2kfk.mahdi383ir.website
   udp: true
 proxy-groups:
 - name: AUTO
@@ -39,6 +37,6 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_4b43c_0001
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO
