@@ -60,6 +60,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.168
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 8
   server: 103.186.155.213
   port: 38388
@@ -95,6 +102,7 @@ proxy-groups:
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 10
