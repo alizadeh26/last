@@ -28,19 +28,16 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: ovhwuxian.pai50288.uk
-  port: 8443
+- name: 🇳🇱 荷兰 | NLD 2
+  server: s502.okgg.top
+  port: 443
   type: vless
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
   tls: true
-  servername: ovhwuxian.pai50288.uk
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /57ba2ab1
-    headers:
-      Host: ovhwuxian.pai50288.uk
+  flow: xtls-rprx-vision
+  servername: u708330uc21fs502.okgg.top
+  client-fingerprint: random
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 23
   server: nmj.1x0.indevs.in
@@ -56,8 +53,29 @@ proxies:
     headers:
       Host: nmj.1x0.indevs.in
   udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: ovhwuxian.pai50288.uk
+  port: 8443
+  type: vless
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  tls: true
+  servername: ovhwuxian.pai50288.uk
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /57ba2ab1
+    headers:
+      Host: ovhwuxian.pai50288.uk
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.63
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.229
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -77,8 +95,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.229
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.168
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -86,13 +104,6 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.155.4
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.168
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -106,25 +117,26 @@ proxy-groups:
   proxies:
   - DE_57e25_0001
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇺🇸 美国 | USA 2
+  - 🇳🇱 荷兰 | NLD 2
   - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -132,8 +144,9 @@ proxy-groups:
   proxies:
   - DE_57e25_0001
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇺🇸 美国 | USA 2
+  - 🇳🇱 荷兰 | NLD 2
   - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -141,11 +154,6 @@ proxy-groups:
   proxies:
   - DE_57e25_0001
   - 🇱🇻 拉脱维亚 | LVA
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 2
+  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO
