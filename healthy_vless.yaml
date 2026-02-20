@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_fc942_0001
+- name: DE_57e25_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,28 +18,54 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇰🇿 哈萨克斯坦 | KAZ
-  server: kzcdn1.suio.me
+- name: 🇮🇷 伊朗 | IRN
+  server: 85.133.204.179
+  port: 59036
+  type: vless
+  uuid: 8c26c19d-123d-454d-9529-ff737d0450f6
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: lvcdn4.suio.me
   port: 443
   type: vless
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
   tls: true
-  servername: kzcdn1.suio.me
+  servername: lvcdn4.suio.me
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: nmkio.1x7.indevs.in
-  port: 80
+- name: 🇺🇸 美国 | USA 2
+  server: ovhwuxian.pai50288.uk
+  port: 8443
+  type: vless
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  tls: true
+  servername: ovhwuxian.pai50288.uk
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /57ba2ab1
+    headers:
+      Host: ovhwuxian.pai50288.uk
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: nmj.1x0.indevs.in
+  port: 443
   type: vless
   uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  tls: false
-  servername: nmkio.1x7.indevs.in
+  tls: true
+  servername: nmj.1x0.indevs.in
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /hBasD7EdpBQ0zGAzsYHmsMrnO
     headers:
-      Host: nmkio.1x7.indevs.in
+      Host: nmj.1x0.indevs.in
   udp: true
 proxy-groups:
 - name: AUTO
@@ -47,8 +73,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_fc942_0001
-  - 🇰🇿 哈萨克斯坦 | KAZ
-  - 🇺🇸 美国 | USA 14
+  - DE_57e25_0001
+  - 🇮🇷 伊朗 | IRN
+  - 🇱🇻 拉脱维亚 | LVA
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 23
 rules:
 - MATCH,AUTO

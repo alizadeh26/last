@@ -1,7 +1,8 @@
 trojan://64a59181551b5773e390bd717a7b7c06@160.16.72.33:3423?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_022023003+L0
 trojan://64a59181551b5773e390bd717a7b7c06@153.121.51.29:400?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_022023004
-trojan://64a59181551b5773e390bd717a7b7c06@160.16.236.32:1281?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_022023006+L0
+trojan://64a59181551b5773e390bd717a7b7c06@160.16.116.227:1281?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_022023009
 vmess://eyJhZGQiOiJuMTc1MzU5ODQ0Ni53cGcyNy54eXoiLCJwb3J0IjoiNDQzIiwiaWQiOiJhNTA0N2Q5NS0yNGI4LTQ1MWEtOTNlMy1mMmEzODdiOTNkNWEiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidiI6IjIiLCJwcyI6IuaXpeacrF8wMjIwMjMyMTQiLCJob3N0IjoibjE3NTM1OTg0NDYud3BnMjcueHl6IiwicGF0aCI6Ii8iLCJ0bHMiOiJ0bHMiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@149.22.87.241:443#🇯🇵 237 - JP - SS/AEAD - 443
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@149.22.87.204:443#🇯🇵 236 - JP - SS/AEAD - 443
-trojan://64a59181551b5773e390bd717a7b7c06@160.16.105.192:193?sni=www.nintendogames.net&path=/#🇯🇵 50 - JP - Trojan/TLS - 193
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@149.22.87.241:443#🇯🇵 237 - JP - SS/AEAD - 443
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.112.130.53:8313#🇯🇵 191 - JP - SS/AEAD - 8313
+trojan://64a59181551b5773e390bd717a7b7c06@160.16.105.192:193?security=tls&sni=www.nintendogames.net&type=tcp&path=/#🇯🇵 49 - JP - Trojan/TLS - 193
