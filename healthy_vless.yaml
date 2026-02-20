@@ -18,17 +18,6 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: s504.okgg.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330u649as504.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇰🇿 哈萨克斯坦 | KAZ
   server: kzcdn1.suio.me
   port: 443
@@ -59,7 +48,6 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_fc942_0001
-  - 🇳🇱 荷兰 | NLD 3
   - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇺🇸 美国 | USA 14
 rules:

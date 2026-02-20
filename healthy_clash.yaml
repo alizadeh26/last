@@ -18,30 +18,12 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: xgrr.sdnlv0.cn
-  port: 14941
+- name: 🇹🇷 土耳其 | TUR
+  server: 62.60.233.220
+  port: 18685
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 13df5feb-756e-4627-bcee-497f3c81bab4
-  udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: xgrr.sdnlv0.cn
-  port: 44081
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 13df5feb-756e-4627-bcee-497f3c81bab4
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: s504.okgg.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330u649as504.okgg.top
-  client-fingerprint: random
-  network: tcp
+  password: ixfXBq6dfMQQFiEz6PBcTy
   udp: true
 - name: 🇰🇿 哈萨克斯坦 | KAZ
   server: kzcdn1.suio.me
@@ -52,27 +34,6 @@ proxies:
   servername: kzcdn1.suio.me
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 62.60.233.220
-  port: 18685
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ixfXBq6dfMQQFiEz6PBcTy
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.175
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: xgrr.sdnlv0.cn
-  port: 33220
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 13df5feb-756e-4627-bcee-497f3c81bab4
   udp: true
 - name: 🇺🇸 美国 | USA 14
   server: nmkio.1x7.indevs.in
@@ -86,6 +47,13 @@ proxies:
     path: /hBasD7EdpBQ0zGAzsYHmsMrnO
     headers:
       Host: nmkio.1x7.indevs.in
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.175
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.241
@@ -164,14 +132,10 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_fc942_0001
-  - 🇭🇰 香港 | HKG 5
-  - 🇰🇷 韩国 | KOR
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇹🇷 土耳其 | TUR
-  - 🇻🇳 越南 | VNM
-  - 🇸🇬 新加坡 | SGP 6
+  - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇺🇸 美国 | USA 14
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
@@ -187,11 +151,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
-  - 🇰🇷 韩国 | KOR
   - 🇹🇷 土耳其 | TUR
   - 🇻🇳 越南 | VNM
-  - 🇸🇬 新加坡 | SGP 6
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
@@ -208,7 +169,6 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_fc942_0001
-  - 🇳🇱 荷兰 | NLD 3
   - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇺🇸 美国 | USA 14
 - name: REGION-AS
@@ -216,17 +176,21 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
-  - 🇰🇷 韩国 | KOR
-  - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇹🇷 土耳其 | TUR
+  - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - DE_fc942_0001
-  - 🇳🇱 荷兰 | NLD 3
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO
