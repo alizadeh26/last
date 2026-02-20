@@ -18,17 +18,6 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇮🇷 伊朗 | IRN
-  server: 85.133.204.179
-  port: 59036
-  type: vless
-  uuid: 8c26c19d-123d-454d-9529-ff737d0450f6
-  tls: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
 - name: 🇱🇻 拉脱维亚 | LVA
   server: lvcdn4.suio.me
   port: 443
@@ -74,7 +63,6 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_57e25_0001
-  - 🇮🇷 伊朗 | IRN
   - 🇱🇻 拉脱维亚 | LVA
   - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 23
