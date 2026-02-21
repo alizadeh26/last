@@ -32,6 +32,17 @@ proxies:
     headers:
       Host: thj.huangzi.cfd
   udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: s570.okgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u708330uaa85s570.okgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: hnm.huangdi2025.dpdns.org
   port: 443
@@ -54,6 +65,7 @@ proxy-groups:
   proxies:
   - DE_18b98_0001
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO
