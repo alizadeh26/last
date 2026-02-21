@@ -4,21 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 3
-  server: n1753356378.4u9ma.icu
-  port: 443
-  type: vmess
-  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1753356378.4u9ma.icu
-  udp: true
 - name: 🇭🇰 香港 | HKG 5
   server: n1761296877.lie5d.cyou
   port: 443
@@ -33,6 +18,21 @@ proxies:
     path: /
     headers:
       Host: n1761296877.lie5d.cyou
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: n1753356378.4u9ma.icu
+  port: 443
+  type: vmess
+  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1753356378.4u9ma.icu
   udp: true
 - name: 🇺🇸 美国 | USA 6
   server: bh.bb2.indevs.in
@@ -55,8 +55,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG 3
   - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO

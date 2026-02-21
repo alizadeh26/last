@@ -26,6 +26,21 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: n1761296877.lie5d.cyou
+  port: 443
+  type: vmess
+  uuid: 1ebfdffa-1a37-4336-8494-f85b36cdf087
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1761296877.lie5d.cyou
+  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: rt.dddc.us.ci
   port: 443
@@ -40,12 +55,42 @@ proxies:
     headers:
       Host: rt.dddc.us.ci
   udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: n1753356378.4u9ma.icu
+  port: 443
+  type: vmess
+  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1753356378.4u9ma.icu
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.221
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: bh.bb2.indevs.in
+  port: 80
+  type: vmess
+  uuid: b020865b-7404-4894-ba65-a7414b10cda3
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: bh.bb2.indevs.in
+  network: ws
+  ws-opts:
+    path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
+    headers:
+      Host: bh.bb2.indevs.in
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.3
@@ -62,8 +107,11 @@ proxy-groups:
   proxies:
   - DE_ee855_0001
   - 🇩🇪 德国 | DEU 3
+  - 🇭🇰 香港 | HKG 5
   - 🇺🇸 美国 | USA 5
+  - 🇭🇰 香港 | HKG 3
   - 🇻🇳 越南 | VNM
+  - 🇺🇸 美国 | USA 6
   - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
   type: url-test
@@ -80,6 +128,20 @@ proxy-groups:
   - DE_ee855_0001
   - 🇩🇪 德国 | DEU 3
   - 🇺🇸 美国 | USA 5
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG 3
+  - 🇺🇸 美国 | USA 6
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -87,11 +149,5 @@ proxy-groups:
   proxies:
   - DE_ee855_0001
   - 🇩🇪 德国 | DEU 3
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
