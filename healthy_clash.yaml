@@ -29,19 +29,12 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: vfgty6.2nn.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-    headers:
-      Host: vfgty6.2nn.ccwu.cc
+- name: 🇹🇷 土耳其 | TUR
+  server: 62.60.233.220
+  port: 18685
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ixfXBq6dfMQQFiEz6PBcTy
   udp: true
 - name: 🇺🇸 美国 | USA 6
   server: nnmj.1x5.indevs.in
@@ -57,19 +50,19 @@ proxies:
     headers:
       Host: nnmj.1x5.indevs.in
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: dcvvbh.2nn.ccwu.cc
+- name: 🇺🇸 美国 | USA 3
+  server: vfgty6.2nn.ccwu.cc
   port: 80
-  type: vless
+  type: vmess
   uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  alterId: 0
+  cipher: auto
   tls: false
-  servername: dcvvbh.2nn.ccwu.cc
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /hBasD7EdpBQ0zGAzsYHmsMrnO
+    path: /iSRWSKUJKNuXvVzsYHmsMrnO
     headers:
-      Host: dcvvbh.2nn.ccwu.cc
+      Host: vfgty6.2nn.ccwu.cc
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: yyynm.2nn.ccwu.cc
@@ -87,6 +80,20 @@ proxies:
     headers:
       Host: yyynm.2nn.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: dcvvbh.2nn.ccwu.cc
+  port: 80
+  type: vless
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  tls: false
+  servername: dcvvbh.2nn.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hBasD7EdpBQ0zGAzsYHmsMrnO
+    headers:
+      Host: dcvvbh.2nn.ccwu.cc
+  udp: true
 - name: 🇺🇸 美国 | USA 19
   server: dffgg.2no.ccwu.cc
   port: 443
@@ -101,13 +108,6 @@ proxies:
     path: /PGsqb2SHJfbCLo
     headers:
       Host: dffgg.2no.ccwu.cc
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 62.60.233.220
-  port: 18685
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ixfXBq6dfMQQFiEz6PBcTy
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.62
@@ -138,12 +138,12 @@ proxy-groups:
   proxies:
   - DE_aecc6_0001
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 19
   - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 19
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
@@ -169,10 +169,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 19
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 | TUR
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -180,12 +186,5 @@ proxy-groups:
   proxies:
   - DE_aecc6_0001
   - 🇪🇪 爱沙尼亚 | EST
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
