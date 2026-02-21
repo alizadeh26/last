@@ -39,20 +39,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: cloudflare-dns.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  servername: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: www.visa.com.sg
   port: 2052
@@ -80,22 +66,15 @@ proxies:
     headers:
       Host: ovhwuxian.pai50288.uk
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: www.npmjs.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  servername: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-nmsl.workers.dev
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.63
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.229
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -115,22 +94,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.229
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.155.4
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.168
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -150,6 +115,13 @@ proxies:
     headers:
       Host: nmj.1x0.indevs.in
   udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.168
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -159,26 +131,24 @@ proxy-groups:
   - DE_2ab2e_0001
   - 🇮🇷 伊朗 | IRN
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 19
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 5
   - 🇺🇸 美国 | USA 23
+  - 🇻🇳 越南 | VNM 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
 - name: PROTO-VLESS
@@ -189,10 +159,8 @@ proxy-groups:
   - DE_2ab2e_0001
   - 🇮🇷 伊朗 | IRN
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 23
 - name: REGION-AS
   type: url-test
