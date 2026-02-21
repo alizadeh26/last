@@ -4,7 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_18b98_0001
+- name: 🇩🇪 德国 | DEU 3
+  server: 46.224.13.54
+  port: 41457
+  type: vless
+  uuid: b370ee6c-986b-4a59-b4ef-7974c6c20f6f
+  tls: false
+  network: tcp
+  udp: true
+- name: DE_ee855_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,75 +26,78 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: series-a2.samanehha.co
+- name: 🇭🇰 香港 | HKG 3
+  server: n1753356378.4u9ma.icu
   port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
+  type: vmess
+  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1753356378.4u9ma.icu
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: series-a1.samanehha.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-  udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: admin.c2.havij.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: kaQH3hGdcP80XEDI
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: thj.huangzi.cfd
+- name: 🇺🇸 美国 | USA 5
+  server: rt.dddc.us.ci
   port: 443
   type: vless
   uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
   tls: true
-  servername: thj.huangzi.cfd
+  servername: rt.dddc.us.ci
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /eDVWlsljXYWmzP5D1vsO
     headers:
-      Host: thj.huangzi.cfd
+      Host: rt.dddc.us.ci
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 82.198.246.97
-  port: 180
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.221
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: n1761296877.lie5d.cyou
+  port: 443
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 1ebfdffa-1a37-4336-8494-f85b36cdf087
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1761296877.lie5d.cyou
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: bh.bb2.indevs.in
+  port: 80
+  type: vmess
+  uuid: b020865b-7404-4894-ba65-a7414b10cda3
   alterId: 0
   cipher: auto
   tls: false
-  servername: www.bing.com
-  udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: s570.okgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330uaa85s570.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: hnm.huangdi2025.dpdns.org
-  port: 443
-  type: vless
-  uuid: 4ed4ac41-4b56-42c4-b31c-4d7bc36f74ce
-  tls: true
-  servername: hnm.huangdi2025.dpdns.org
-  client-fingerprint: chrome
+  servername: bh.bb2.indevs.in
   network: ws
   ws-opts:
-    path: /UzlFfVDyqJL3rI4BWzwNzcYz
+    path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
     headers:
-      Host: hnm.huangdi2025.dpdns.org
+      Host: bh.bb2.indevs.in
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.3
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -94,45 +105,57 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_18b98_0001
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 4
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 14
+  - 🇩🇪 德国 | DEU 3
+  - DE_ee855_0001
+  - 🇭🇰 香港 | HKG 3
+  - 🇺🇸 美国 | USA 5
+  - 🇻🇳 越南 | VNM
+  - 🇭🇰 香港 | HKG 5
+  - 🇺🇸 美国 | USA 6
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 4
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_18b98_0001
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 14
+  - 🇩🇪 德国 | DEU 3
+  - DE_ee855_0001
+  - 🇺🇸 美国 | USA 5
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 5
+  - 🇺🇸 美国 | USA 6
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 3
+  - 🇻🇳 越南 | VNM
+  - 🇭🇰 香港 | HKG 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_18b98_0001
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 4
+  - 🇩🇪 德国 | DEU 3
+  - DE_ee855_0001
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO

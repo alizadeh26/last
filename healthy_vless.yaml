@@ -4,7 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_18b98_0001
+- name: 🇩🇪 德国 | DEU 3
+  server: 46.224.13.54
+  port: 41457
+  type: vless
+  uuid: b370ee6c-986b-4a59-b4ef-7974c6c20f6f
+  tls: false
+  network: tcp
+  udp: true
+- name: DE_ee855_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,44 +26,19 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: thj.huangzi.cfd
+- name: 🇺🇸 美国 | USA 5
+  server: rt.dddc.us.ci
   port: 443
   type: vless
   uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
   tls: true
-  servername: thj.huangzi.cfd
+  servername: rt.dddc.us.ci
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /eDVWlsljXYWmzP5D1vsO
     headers:
-      Host: thj.huangzi.cfd
-  udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: s570.okgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330uaa85s570.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: hnm.huangdi2025.dpdns.org
-  port: 443
-  type: vless
-  uuid: 4ed4ac41-4b56-42c4-b31c-4d7bc36f74ce
-  tls: true
-  servername: hnm.huangdi2025.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /UzlFfVDyqJL3rI4BWzwNzcYz
-    headers:
-      Host: hnm.huangdi2025.dpdns.org
+      Host: rt.dddc.us.ci
   udp: true
 proxy-groups:
 - name: AUTO
@@ -63,9 +46,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_18b98_0001
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 14
+  - 🇩🇪 德国 | DEU 3
+  - DE_ee855_0001
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
