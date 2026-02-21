@@ -53,16 +53,6 @@ proxies:
     headers:
       Host: thj.huangzi.cfd
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: www.bing.com
-  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: hnm.huangdi2025.dpdns.org
   port: 443
@@ -88,7 +78,6 @@ proxy-groups:
   - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 4
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 14
 - name: PROTO-SS
   type: url-test
@@ -106,12 +95,6 @@ proxy-groups:
   - DE_18b98_0001
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 14
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 7
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
