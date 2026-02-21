@@ -4,6 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: s481.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u708330uad0es481.ccgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
 - name: DE_aecc6_0001
   server: de.cdn.stun.su
   port: 443
@@ -17,17 +28,6 @@ proxies:
   reality-opts:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
-  udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: s481.ccgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330uad0es481.ccgfw.top
-  client-fingerprint: random
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 8
   server: dcvvbh.2nn.ccwu.cc
@@ -49,8 +49,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_aecc6_0001
   - 🇪🇪 爱沙尼亚 | EST
+  - DE_aecc6_0001
   - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
