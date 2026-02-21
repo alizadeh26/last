@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_2ab2e_0001
+- name: DE_aecc6_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,105 +18,113 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇮🇷 伊朗 | IRN
-  server: 85.133.204.179
-  port: 59036
-  type: vless
-  uuid: 8c26c19d-123d-454d-9529-ff737d0450f6
-  tls: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: lvcdn4.suio.me
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: s481.ccgfw.top
   port: 443
   type: vless
-  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
   tls: true
-  servername: lvcdn4.suio.me
-  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: u708330uad0es481.ccgfw.top
+  client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: www.visa.com.sg
-  port: 2052
-  type: vless
-  uuid: cdec8542-a21f-4377-9da3-ea60bb6d3a30
+- name: 🇺🇸 美国 | USA 3
+  server: vfgty6.2nn.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  alterId: 0
+  cipher: auto
   tls: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /🔒
+    path: /iSRWSKUJKNuXvVzsYHmsMrnO
     headers:
-      Host: chosenflyesqt-q3y28ipf-v2.chosen-fly-esqt.workers.dev
+      Host: vfgty6.2nn.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: ovhwuxian.pai50288.uk
-  port: 8443
+- name: 🇺🇸 美国 | USA 6
+  server: nnmj.1x5.indevs.in
+  port: 80
+  type: vmess
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /iSRWSKUJKNuXvVzsYHmsMrnO
+    headers:
+      Host: nnmj.1x5.indevs.in
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: dcvvbh.2nn.ccwu.cc
+  port: 80
   type: vless
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  tls: true
-  servername: ovhwuxian.pai50288.uk
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  tls: false
+  servername: dcvvbh.2nn.ccwu.cc
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /57ba2ab1
+    path: /hBasD7EdpBQ0zGAzsYHmsMrnO
     headers:
-      Host: ovhwuxian.pai50288.uk
+      Host: dcvvbh.2nn.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: yyynm.2nn.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: yyynm.2nn.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /iSRWSKUJKNuXvVzsYHmsMrnO
+    headers:
+      Host: yyynm.2nn.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: dffgg.2no.ccwu.cc
+  port: 443
+  type: vmess
+  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: dffgg.2no.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /PGsqb2SHJfbCLo
+    headers:
+      Host: dffgg.2no.ccwu.cc
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: 62.60.233.220
+  port: 18685
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ixfXBq6dfMQQFiEz6PBcTy
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.63
+  server: 103.186.155.62
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.229
+  server: 103.186.154.213
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.142
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.48
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.4
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: nmj.1x0.indevs.in
-  port: 443
-  type: vless
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  tls: true
-  servername: nmj.1x0.indevs.in
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /hBasD7EdpBQ0zGAzsYHmsMrnO
-    headers:
-      Host: nmj.1x0.indevs.in
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.168
+  server: 103.186.154.74
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -128,52 +136,56 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_2ab2e_0001
-  - 🇮🇷 伊朗 | IRN
-  - 🇱🇻 拉脱维亚 | LVA
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 2
+  - DE_aecc6_0001
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 19
+  - 🇹🇷 土耳其 | TUR
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
-  - 🇺🇸 美国 | USA 23
-  - 🇻🇳 越南 | VNM 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇹🇷 土耳其 | TUR
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_2ab2e_0001
-  - 🇮🇷 伊朗 | IRN
-  - 🇱🇻 拉脱维亚 | LVA
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 23
-- name: REGION-AS
+  - DE_aecc6_0001
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇺🇸 美国 | USA 8
+- name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 伊朗 | IRN
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 19
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_2ab2e_0001
-  - 🇱🇻 拉脱维亚 | LVA
+  - DE_aecc6_0001
+  - 🇪🇪 爱沙尼亚 | EST
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
