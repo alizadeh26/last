@@ -4,14 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: 46.224.13.54
-  port: 41457
-  type: vless
-  uuid: b370ee6c-986b-4a59-b4ef-7974c6c20f6f
-  tls: false
-  network: tcp
-  udp: true
 - name: DE_ee855_0001
   server: de.cdn.stun.su
   port: 443
@@ -26,20 +18,13 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: n1753356378.4u9ma.icu
-  port: 443
-  type: vmess
-  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1753356378.4u9ma.icu
+- name: 🇩🇪 德国 | DEU 3
+  server: 46.224.13.54
+  port: 41457
+  type: vless
+  uuid: b370ee6c-986b-4a59-b4ef-7974c6c20f6f
+  tls: false
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: rt.dddc.us.ci
@@ -62,36 +47,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: n1761296877.lie5d.cyou
-  port: 443
-  type: vmess
-  uuid: 1ebfdffa-1a37-4336-8494-f85b36cdf087
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1761296877.lie5d.cyou
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: bh.bb2.indevs.in
-  port: 80
-  type: vmess
-  uuid: b020865b-7404-4894-ba65-a7414b10cda3
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: bh.bb2.indevs.in
-  network: ws
-  ws-opts:
-    path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-    headers:
-      Host: bh.bb2.indevs.in
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.3
   port: 38388
@@ -105,13 +60,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
   - DE_ee855_0001
-  - 🇭🇰 香港 | HKG 3
+  - 🇩🇪 德国 | DEU 3
   - 🇺🇸 美国 | USA 5
   - 🇻🇳 越南 | VNM
-  - 🇭🇰 香港 | HKG 5
-  - 🇺🇸 美国 | USA 6
   - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
   type: url-test
@@ -125,32 +77,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
   - DE_ee855_0001
+  - 🇩🇪 德国 | DEU 3
   - 🇺🇸 美国 | USA 5
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 5
-  - 🇺🇸 美国 | USA 6
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇻🇳 越南 | VNM
-  - 🇭🇰 香港 | HKG 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
   - DE_ee855_0001
+  - 🇩🇪 德国 | DEU 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204

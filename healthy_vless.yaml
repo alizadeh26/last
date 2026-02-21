@@ -4,14 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: 46.224.13.54
-  port: 41457
-  type: vless
-  uuid: b370ee6c-986b-4a59-b4ef-7974c6c20f6f
-  tls: false
-  network: tcp
-  udp: true
 - name: DE_ee855_0001
   server: de.cdn.stun.su
   port: 443
@@ -25,6 +17,14 @@ proxies:
   reality-opts:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 46.224.13.54
+  port: 41457
+  type: vless
+  uuid: b370ee6c-986b-4a59-b4ef-7974c6c20f6f
+  tls: false
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: rt.dddc.us.ci
@@ -46,8 +46,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
   - DE_ee855_0001
+  - 🇩🇪 德国 | DEU 3
   - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
