@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_30985_0001
+- name: DE_d6d04_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,152 +18,83 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 185.242.234.252
-  port: 14201
-  type: vless
-  uuid: f1fc0a00-c9cc-45ef-97c3-7014d9f94b8a
-  tls: false
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: fr.1323.world
+- name: 🇬🇧 英国 | GBR 2
+  server: admin.c2.havij.co
   port: 443
-  type: vless
-  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
-  tls: true
-  alpn:
-  - h2
-  servername: b12a6eea4807ca4e.1323.world
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: n1752248951.lie5d.cyou
-  port: 443
-  type: vmess
-  uuid: bf2ce3c2-339f-4926-b92d-b7d83af1b3b6
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1752248951.lie5d.cyou
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: n1753348736.lie5d.cyou
-  port: 443
-  type: vmess
-  uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1753348736.lie5d.cyou
-  udp: true
-- name: 🇭🇰 香港 | HKG 12
-  server: 103.149.182.79
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-  udp: true
-- name: 🇭🇰 香港 | HKG 16
-  server: n1752833184.lie5d.cyou
-  port: 443
-  type: vmess
-  uuid: 6c7d09e3-9cfa-41c8-8194-e81eb21bfb88
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1752833184.lie5d.cyou
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 62.113.114.116
-  port: 42320
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: BShcek5ydIWbXEnhI2vIym
+  password: kaQH3hGdcP80XEDI
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: bbbnhj.288288.shop
-  port: 443
-  type: vless
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  tls: true
-  servername: bBBNhj.288288.sHop
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /s2VHv9VUVzg35A6ueyyZnWd
-    headers:
-      Host: BbbNHj.288288.SHop
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: bnhjuu.ea1.indevs.in
+- name: 🇭🇰 香港 | HKG 6
+  server: n1753101277.4u9ma.icu
   port: 443
   type: vmess
-  uuid: 4ed4ac41-4b56-42c4-b31c-4d7bc36f74ce
+  uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
   alterId: 0
   cipher: auto
   tls: true
-  skip-cert-verify: false
-  servername: bnhjuu.ea1.indevs.in
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /E3MEctoKyZkI4BWzwNzcYz
+    path: /
     headers:
-      Host: bnhjuu.ea1.indevs.in
+      Host: n1753101277.4u9ma.icu
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.16
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇺🇸 美国 | USA 7
+  server: mmko.852224.dpdns.org
+  port: 443
+  type: vless
+  uuid: b020865b-7404-4894-ba65-a7414b10cda3
+  tls: true
+  servername: mmko.852224.dpdns.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /15ZYK3adOPjqSc7fzeJr
+    headers:
+      Host: mmko.852224.dpdns.org
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.112
+  server: 103.186.155.211
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.176
+  server: 103.186.155.115
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 876.dddc.us.ci
-  port: 443
-  type: vmess
-  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: 876.dddc.us.ci
-  network: ws
-  ws-opts:
-    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
-    headers:
-      Host: 876.dddc.us.ci
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.139
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.150
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.70
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.33
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -171,61 +102,53 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_30985_0001
-  - 🇭🇰 香港 | HKG
-  - 🇫🇷 法国 | FRA 3
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 12
-  - 🇭🇰 香港 | HKG 16
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 6
+  - DE_d6d04_0001
+  - 🇬🇧 英国 | GBR 2
+  - 🇭🇰 香港 | HKG 6
   - 🇺🇸 美国 | USA 7
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇺🇸 美国 | USA
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 12
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇻🇳 越南 | VNM
+  - 🇬🇧 英国 | GBR 2
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_30985_0001
-  - 🇭🇰 香港 | HKG
-  - 🇫🇷 法国 | FRA 3
-  - 🇺🇸 美国 | USA 6
+  - DE_d6d04_0001
+  - 🇺🇸 美国 | USA 7
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 16
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
+  - 🇭🇰 香港 | HKG 6
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 6
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_30985_0001
-  - 🇫🇷 法国 | FRA 3
+  - DE_d6d04_0001
+  - 🇬🇧 英国 | GBR 2
 rules:
 - MATCH,AUTO

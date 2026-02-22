@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 3
-  server: n1752248951.lie5d.cyou
+- name: 🇭🇰 香港 | HKG 6
+  server: n1753101277.4u9ma.icu
   port: 443
   type: vmess
-  uuid: bf2ce3c2-339f-4926-b92d-b7d83af1b3b6
+  uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
   alterId: 0
   cipher: auto
   tls: true
@@ -17,69 +17,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: n1752248951.lie5d.cyou
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: n1753348736.lie5d.cyou
-  port: 443
-  type: vmess
-  uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1753348736.lie5d.cyou
-  udp: true
-- name: 🇭🇰 香港 | HKG 16
-  server: n1752833184.lie5d.cyou
-  port: 443
-  type: vmess
-  uuid: 6c7d09e3-9cfa-41c8-8194-e81eb21bfb88
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1752833184.lie5d.cyou
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: bnhjuu.ea1.indevs.in
-  port: 443
-  type: vmess
-  uuid: 4ed4ac41-4b56-42c4-b31c-4d7bc36f74ce
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: bnhjuu.ea1.indevs.in
-  network: ws
-  ws-opts:
-    path: /E3MEctoKyZkI4BWzwNzcYz
-    headers:
-      Host: bnhjuu.ea1.indevs.in
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 876.dddc.us.ci
-  port: 443
-  type: vmess
-  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: 876.dddc.us.ci
-  network: ws
-  ws-opts:
-    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
-    headers:
-      Host: 876.dddc.us.ci
+      Host: n1753101277.4u9ma.icu
   udp: true
 proxy-groups:
 - name: AUTO
@@ -87,10 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 16
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
+  - 🇭🇰 香港 | HKG 6
 rules:
 - MATCH,AUTO
