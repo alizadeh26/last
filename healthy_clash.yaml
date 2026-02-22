@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇬🇧 英国 | GBR 2
+  server: admin.c2.havij.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: kaQH3hGdcP80XEDI
+  udp: true
 - name: DE_d6d04_0001
   server: de.cdn.stun.su
   port: 443
@@ -17,42 +24,6 @@ proxies:
   reality-opts:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: admin.c2.havij.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: kaQH3hGdcP80XEDI
-  udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: n1753101277.4u9ma.icu
-  port: 443
-  type: vmess
-  uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1753101277.4u9ma.icu
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: mmko.852224.dpdns.org
-  port: 443
-  type: vless
-  uuid: b020865b-7404-4894-ba65-a7414b10cda3
-  tls: true
-  servername: mmko.852224.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /15ZYK3adOPjqSc7fzeJr
-    headers:
-      Host: mmko.852224.dpdns.org
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.211
@@ -82,13 +53,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.70
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.155.33
   port: 38388
@@ -96,22 +60,42 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.70
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: mmko.852224.dpdns.org
+  port: 443
+  type: vless
+  uuid: b020865b-7404-4894-ba65-a7414b10cda3
+  tls: true
+  servername: mmko.852224.dpdns.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /15ZYK3adOPjqSc7fzeJr
+    headers:
+      Host: mmko.852224.dpdns.org
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_d6d04_0001
   - 🇬🇧 英国 | GBR 2
-  - 🇭🇰 香港 | HKG 6
-  - 🇺🇸 美国 | USA 7
+  - DE_d6d04_0001
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 5
+  - 🇺🇸 美国 | USA 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -122,8 +106,8 @@ proxy-groups:
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -131,24 +115,18 @@ proxy-groups:
   proxies:
   - DE_d6d04_0001
   - 🇺🇸 美国 | USA 7
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 6
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 6
+  - 🇻🇳 越南 | VNM 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_d6d04_0001
   - 🇬🇧 英国 | GBR 2
+  - DE_d6d04_0001
 rules:
 - MATCH,AUTO
