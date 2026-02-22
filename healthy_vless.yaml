@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_ee855_0001
+- name: DE_30985_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,27 +18,51 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 46.224.13.54
-  port: 41457
-  type: vless
-  uuid: b370ee6c-986b-4a59-b4ef-7974c6c20f6f
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: rt.dddc.us.ci
+- name: 🇫🇷 法国 | FRA 3
+  server: fr.1323.world
   port: 443
   type: vless
-  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
   tls: true
-  servername: rt.dddc.us.ci
+  alpn:
+  - h2
+  servername: b12a6eea4807ca4e.1323.world
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: 185.242.234.252
+  port: 14201
+  type: vless
+  uuid: f1fc0a00-c9cc-45ef-97c3-7014d9f94b8a
+  tls: false
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: deu549.worldbypass.org
+  port: 443
+  type: vless
+  uuid: 405ba2d6-7fcb-4cdd-9c77-4ecc616d77c8
+  tls: true
+  flow: xtls-rprx-vision
+  servername: deu549.worldbypass.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: bbbnhj.288288.shop
+  port: 443
+  type: vless
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  tls: true
+  servername: bBBNhj.288288.sHop
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eDVWlsljXYWmzP5D1vsO
+    path: /s2VHv9VUVzg35A6ueyyZnWd
     headers:
-      Host: rt.dddc.us.ci
+      Host: BbbNHj.288288.SHop
   udp: true
 proxy-groups:
 - name: AUTO
@@ -46,8 +70,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_ee855_0001
-  - 🇩🇪 德国 | DEU 3
-  - 🇺🇸 美国 | USA 5
+  - DE_30985_0001
+  - 🇫🇷 法国 | FRA 3
+  - 🇭🇰 香港 | HKG
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO

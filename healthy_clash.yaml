@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_ee855_0001
+- name: DE_30985_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,19 +18,32 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 46.224.13.54
-  port: 41457
+- name: 🇫🇷 法国 | FRA 3
+  server: fr.1323.world
+  port: 443
   type: vless
-  uuid: b370ee6c-986b-4a59-b4ef-7974c6c20f6f
-  tls: false
+  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
+  tls: true
+  alpn:
+  - h2
+  servername: b12a6eea4807ca4e.1323.world
+  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: n1761296877.lie5d.cyou
+- name: 🇭🇰 香港 | HKG
+  server: 185.242.234.252
+  port: 14201
+  type: vless
+  uuid: f1fc0a00-c9cc-45ef-97c3-7014d9f94b8a
+  tls: false
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: n1752248951.lie5d.cyou
   port: 443
   type: vmess
-  uuid: 1ebfdffa-1a37-4336-8494-f85b36cdf087
+  uuid: bf2ce3c2-339f-4926-b92d-b7d83af1b3b6
   alterId: 0
   cipher: auto
   tls: true
@@ -39,61 +52,110 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: n1761296877.lie5d.cyou
+      Host: n1752248951.lie5d.cyou
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: rt.dddc.us.ci
+- name: 🇭🇰 香港 | HKG 12
+  server: 103.149.182.79
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+  udp: true
+- name: 🇭🇰 香港 | HKG 16
+  server: n1752833184.lie5d.cyou
+  port: 443
+  type: vmess
+  uuid: 6c7d09e3-9cfa-41c8-8194-e81eb21bfb88
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1752833184.lie5d.cyou
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: deu549.worldbypass.org
   port: 443
   type: vless
-  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  uuid: 405ba2d6-7fcb-4cdd-9c77-4ecc616d77c8
   tls: true
-  servername: rt.dddc.us.ci
+  flow: xtls-rprx-vision
+  servername: deu549.worldbypass.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 62.113.114.116
+  port: 42320
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BShcek5ydIWbXEnhI2vIym
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 876.dddc.us.ci
+  port: 443
+  type: vmess
+  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 876.dddc.us.ci
+  network: ws
+  ws-opts:
+    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
+    headers:
+      Host: 876.dddc.us.ci
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: bbbnhj.288288.shop
+  port: 443
+  type: vless
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  tls: true
+  servername: bBBNhj.288288.sHop
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eDVWlsljXYWmzP5D1vsO
+    path: /s2VHv9VUVzg35A6ueyyZnWd
     headers:
-      Host: rt.dddc.us.ci
+      Host: BbbNHj.288288.SHop
   udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: n1753356378.4u9ma.icu
+- name: 🇺🇸 美国 | USA 7
+  server: bnhjuu.ea1.indevs.in
   port: 443
   type: vmess
-  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
+  uuid: 4ed4ac41-4b56-42c4-b31c-4d7bc36f74ce
   alterId: 0
   cipher: auto
   tls: true
-  skip-cert-verify: true
+  skip-cert-verify: false
+  servername: bnhjuu.ea1.indevs.in
   network: ws
   ws-opts:
-    path: /
+    path: /E3MEctoKyZkI4BWzwNzcYz
     headers:
-      Host: n1753356378.4u9ma.icu
+      Host: bnhjuu.ea1.indevs.in
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.221
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.112
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: bh.bb2.indevs.in
-  port: 80
-  type: vmess
-  uuid: b020865b-7404-4894-ba65-a7414b10cda3
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: bh.bb2.indevs.in
-  network: ws
-  ws-opts:
-    path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-    headers:
-      Host: bh.bb2.indevs.in
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.16
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.3
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.176
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -105,49 +167,61 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_ee855_0001
-  - 🇩🇪 德国 | DEU 3
-  - 🇭🇰 香港 | HKG 5
-  - 🇺🇸 美国 | USA 5
+  - DE_30985_0001
+  - 🇫🇷 法国 | FRA 3
+  - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 3
-  - 🇻🇳 越南 | VNM
+  - 🇭🇰 香港 | HKG 12
+  - 🇭🇰 香港 | HKG 16
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
+  - 🇭🇰 香港 | HKG 12
+  - 🇷🇺 俄罗斯 | RUS
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_ee855_0001
-  - 🇩🇪 德国 | DEU 3
-  - 🇺🇸 美国 | USA 5
+  - DE_30985_0001
+  - 🇫🇷 法国 | FRA 3
+  - 🇭🇰 香港 | HKG
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 6
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG 3
-  - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG 16
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 7
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_ee855_0001
-  - 🇩🇪 德国 | DEU 3
+  - DE_30985_0001
+  - 🇫🇷 法国 | FRA 3
 rules:
 - MATCH,AUTO

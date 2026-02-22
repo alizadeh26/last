@@ -4,15 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.221
+- name: 🇭🇰 香港 | HKG 12
+  server: 103.149.182.79
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 62.113.114.116
+  port: 42320
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BShcek5ydIWbXEnhI2vIym
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.112
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.3
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.16
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.176
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -24,7 +45,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
+  - 🇭🇰 香港 | HKG 12
+  - 🇷🇺 俄罗斯 | RUS
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO
