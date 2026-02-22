@@ -4,19 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_ff48f_0001
-  server: de.cdn.stun.su
+- name: 🇺🇸 美国 | USA 9
+  server: s842.ccgfw.top
   port: 443
   type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-  flow: xtls-rprx-vision
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
   tls: true
-  skip-cert-verify: false
+  servername: u708330u0378s842.ccgfw.top
   client-fingerprint: chrome
-  servername: de.cdn.stun.su
-  reality-opts:
-    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
-    short-id: 4daa022e84f8edf2
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ssp
   udp: true
 - name: 🇺🇸 美国 | USA 11
   server: bbbnhju.un2026.indevs.in
@@ -38,7 +37,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_ff48f_0001
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
