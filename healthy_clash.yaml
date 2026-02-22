@@ -67,13 +67,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.156
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 7
   server: 103.186.154.208
   port: 38388
@@ -88,12 +81,32 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.156
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 8
   server: 103.186.154.70
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: s842.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  servername: u708330u0378s842.ccgfw.top
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ssp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -109,10 +122,11 @@ proxy-groups:
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 8
+  - 🇺🇸 美国 | USA 9
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -125,9 +139,9 @@ proxy-groups:
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 8
 - name: PROTO-VLESS
   type: url-test
@@ -135,6 +149,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
