@@ -18,19 +18,19 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: mmko.852224.dpdns.org
+- name: 🇺🇸 美国 | USA 13
+  server: hhhnmjk.191268.xyz
   port: 443
   type: vless
-  uuid: b020865b-7404-4894-ba65-a7414b10cda3
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
   tls: true
-  servername: mmko.852224.dpdns.org
+  servername: hhhnmjk.191268.xyz
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /15ZYK3adOPjqSc7fzeJr
+    path: /8Midq8kt5Q2GkKGWRMg
     headers:
-      Host: mmko.852224.dpdns.org
+      Host: hhhnmjk.191268.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -39,6 +39,6 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_d6d04_0001
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO
