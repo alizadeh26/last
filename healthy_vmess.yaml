@@ -4,20 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 6
-  server: n1753101277.4u9ma.icu
-  port: 443
+- name: 🇺🇸 美国 | USA 10
+  server: 193.151.146.232
+  port: 17356
   type: vmess
-  uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
+  uuid: f95cb5ae-1b06-4a57-aba0-30afe12d23ed
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1753101277.4u9ma.icu
+  tls: false
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +19,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 6
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO

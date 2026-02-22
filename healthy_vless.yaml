@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_d6d04_0001
+- name: DE_ff48f_0001
   server: de.cdn.stun.su
   port: 443
   type: vless
@@ -18,19 +18,19 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: hhhnmjk.191268.xyz
+- name: 🇺🇸 美国 | USA 11
+  server: bbbnhju.un2026.indevs.in
   port: 443
   type: vless
-  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  uuid: f063dee0-f33c-4e6c-83f9-4d884b62ba9e
   tls: true
-  servername: hhhnmjk.191268.xyz
+  servername: bbbnhju.un2026.indevs.in
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /8Midq8kt5Q2GkKGWRMg
+    path: /2cCH0o9oSY1MFyEg1253o9NgB
     headers:
-      Host: hhhnmjk.191268.xyz
+      Host: bbbnhju.un2026.indevs.in
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_d6d04_0001
-  - 🇺🇸 美国 | USA 13
+  - DE_ff48f_0001
+  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
