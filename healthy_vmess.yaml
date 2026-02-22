@@ -19,6 +19,21 @@ proxies:
     headers:
       Host: n1752248951.lie5d.cyou
   udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: n1753348736.lie5d.cyou
+  port: 443
+  type: vmess
+  uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1753348736.lie5d.cyou
+  udp: true
 - name: 🇭🇰 香港 | HKG 16
   server: n1752833184.lie5d.cyou
   port: 443
@@ -33,22 +48,6 @@ proxies:
     path: /
     headers:
       Host: n1752833184.lie5d.cyou
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 876.dddc.us.ci
-  port: 443
-  type: vmess
-  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: 876.dddc.us.ci
-  network: ws
-  ws-opts:
-    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
-    headers:
-      Host: 876.dddc.us.ci
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: bnhjuu.ea1.indevs.in
@@ -66,6 +65,22 @@ proxies:
     headers:
       Host: bnhjuu.ea1.indevs.in
   udp: true
+- name: 🇺🇸 美国 | USA
+  server: 876.dddc.us.ci
+  port: 443
+  type: vmess
+  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 876.dddc.us.ci
+  network: ws
+  ws-opts:
+    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
+    headers:
+      Host: 876.dddc.us.ci
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -73,8 +88,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 16
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

@@ -18,6 +18,15 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
+- name: 🇭🇰 香港 | HKG
+  server: 185.242.234.252
+  port: 14201
+  type: vless
+  uuid: f1fc0a00-c9cc-45ef-97c3-7014d9f94b8a
+  tls: false
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇫🇷 法国 | FRA 3
   server: fr.1323.world
   port: 443
@@ -27,15 +36,6 @@ proxies:
   alpn:
   - h2
   servername: b12a6eea4807ca4e.1323.world
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 185.242.234.252
-  port: 14201
-  type: vless
-  uuid: f1fc0a00-c9cc-45ef-97c3-7014d9f94b8a
-  tls: false
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -53,6 +53,21 @@ proxies:
     path: /
     headers:
       Host: n1752248951.lie5d.cyou
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: n1753348736.lie5d.cyou
+  port: 443
+  type: vmess
+  uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1753348736.lie5d.cyou
   udp: true
 - name: 🇭🇰 香港 | HKG 12
   server: 103.149.182.79
@@ -76,39 +91,12 @@ proxies:
     headers:
       Host: n1752833184.lie5d.cyou
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: deu549.worldbypass.org
-  port: 443
-  type: vless
-  uuid: 405ba2d6-7fcb-4cdd-9c77-4ecc616d77c8
-  tls: true
-  flow: xtls-rprx-vision
-  servername: deu549.worldbypass.org
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 62.113.114.116
   port: 42320
   type: ss
   cipher: chacha20-ietf-poly1305
   password: BShcek5ydIWbXEnhI2vIym
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 876.dddc.us.ci
-  port: 443
-  type: vmess
-  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: 876.dddc.us.ci
-  network: ws
-  ws-opts:
-    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
-    headers:
-      Host: 876.dddc.us.ci
   udp: true
 - name: 🇺🇸 美国 | USA 6
   server: bbbnhj.288288.shop
@@ -140,15 +128,15 @@ proxies:
     headers:
       Host: bnhjuu.ea1.indevs.in
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.112
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.16
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.16
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.112
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -161,6 +149,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇺🇸 美国 | USA
+  server: 876.dddc.us.ci
+  port: 443
+  type: vmess
+  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 876.dddc.us.ci
+  network: ws
+  ws-opts:
+    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
+    headers:
+      Host: 876.dddc.us.ci
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -168,19 +172,19 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_30985_0001
-  - 🇫🇷 法国 | FRA 3
   - 🇭🇰 香港 | HKG
+  - 🇫🇷 法国 | FRA 3
   - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 12
   - 🇭🇰 香港 | HKG 16
-  - 🇳🇱 荷兰 | NLD 2
   - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇺🇸 美国 | USA
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -188,8 +192,8 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 12
   - 🇷🇺 俄罗斯 | RUS
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
@@ -197,9 +201,8 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_30985_0001
-  - 🇫🇷 法国 | FRA 3
   - 🇭🇰 香港 | HKG
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇫🇷 法国 | FRA 3
   - 🇺🇸 美国 | USA 6
 - name: PROTO-VMESS
   type: url-test
@@ -207,9 +210,10 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 16
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204

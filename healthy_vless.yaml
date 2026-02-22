@@ -18,18 +18,6 @@ proxies:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: fr.1323.world
-  port: 443
-  type: vless
-  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
-  tls: true
-  alpn:
-  - h2
-  servername: b12a6eea4807ca4e.1323.world
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇭🇰 香港 | HKG
   server: 185.242.234.252
   port: 14201
@@ -39,14 +27,15 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: deu549.worldbypass.org
+- name: 🇫🇷 法国 | FRA 3
+  server: fr.1323.world
   port: 443
   type: vless
-  uuid: 405ba2d6-7fcb-4cdd-9c77-4ecc616d77c8
+  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
   tls: true
-  flow: xtls-rprx-vision
-  servername: deu549.worldbypass.org
+  alpn:
+  - h2
+  servername: b12a6eea4807ca4e.1323.world
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -71,9 +60,8 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_30985_0001
-  - 🇫🇷 法国 | FRA 3
   - 🇭🇰 香港 | HKG
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇫🇷 法国 | FRA 3
   - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO
