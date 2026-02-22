@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: api.melonpanel.ir
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: x4WuCumDo-4ahFPPuhG6AuMn8cmgrmSK
-  udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: 185.100.159.79
   port: 443
@@ -18,12 +11,26 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ENX7SUeUQwVOzSHvl7dXiX
   udp: true
+- name: 🇩🇪 德国 | DEU
+  server: api.melonpanel.ir
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: x4WuCumDo-4ahFPPuhG6AuMn8cmgrmSK
+  udp: true
 - name: 🇬🇧 英国 | GBR 5
   server: 51.105.48.144
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: kaQH3hGdcP80XEDI
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.41
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.193
@@ -46,13 +53,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.233
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 7
   server: 103.186.154.208
   port: 38388
@@ -60,15 +60,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.41
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.18
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.233
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -81,22 +74,29 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.18
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU
   - 🇬🇧 英国 | GBR 5
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO
