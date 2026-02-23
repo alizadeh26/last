@@ -4,19 +4,28 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_2a02a_0001
-  server: de.cdn.stun.su
+- name: US_3aef0_0022
+  server: 104.20.1.252
+  port: 80
+  type: vless
+  uuid: 7d4a519b-d270-434e-a42d-d39624577a92
+  tls: false
+  skip-cert-verify: false
+  servername: bright-organizationauhuddhesz.sportland.company.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bright-organizationauhuddhesz.sportland.company.
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: decdn17.suio.me
   port: 443
   type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-  flow: xtls-rprx-vision
+  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
   tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: de.cdn.stun.su
-  reality-opts:
-    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
-    short-id: 4daa022e84f8edf2
+  servername: decdn17.suio.me
+  network: tcp
   udp: true
 - name: 🇭🇰 香港 | HKG
   server: n1761184273.mv7wh.tech
@@ -51,7 +60,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_2a02a_0001
+  - US_3aef0_0022
+  - 🇩🇪 德国 | DEU
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 18
 rules:
