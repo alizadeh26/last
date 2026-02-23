@@ -4,20 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG
-  server: n1761184273.mv7wh.tech
-  port: 443
+- name: US_f7b99_0015
+  server: 104.18.32.47
+  port: 80
   type: vless
-  uuid: a4c6bbd7-6ea5-44b2-9829-08f5ae615d49
-  tls: true
-  client-fingerprint: chrome
+  uuid: e31085f9-7f55-4a7d-b00e-ce94149477cb
+  tls: false
+  skip-cert-verify: false
+  servername: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
   network: ws
   ws-opts:
-    path: /a4c6bbd7-6ea5-44b2-9829-08f5ae615d49
+    path: /
     headers:
-      Host: n1761184273.mv7wh.tech
+      Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
   udp: true
-- name: US_3aef0_0022
+- name: US_f7b99_0016
   server: 104.20.1.252
   port: 80
   type: vless
@@ -31,55 +32,27 @@ proxies:
     headers:
       Host: bright-organizationauhuddhesz.sportland.company.
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: n1753101277.4u9ma.icu
-  port: 443
-  type: vmess
-  uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1753101277.4u9ma.icu
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
-  - US_3aef0_0022
-  - 🇭🇰 香港 | HKG 7
+  - US_f7b99_0015
+  - US_f7b99_0016
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
-  - US_3aef0_0022
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 7
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 7
+  - US_f7b99_0015
+  - US_f7b99_0016
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_3aef0_0022
+  - US_f7b99_0015
+  - US_f7b99_0016
 rules:
 - MATCH,AUTO
