@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_f7b99_0015
-  server: 104.18.32.47
-  port: 80
-  type: vless
-  uuid: e31085f9-7f55-4a7d-b00e-ce94149477cb
-  tls: false
-  skip-cert-verify: false
-  servername: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
-  udp: true
 - name: US_f7b99_0016
   server: 104.20.1.252
   port: 80
@@ -32,13 +18,26 @@ proxies:
     headers:
       Host: bright-organizationauhuddhesz.sportland.company.
   udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 104.18.32.47
+  port: 2052
+  type: vless
+  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_f7b99_0015
   - US_f7b99_0016
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO
