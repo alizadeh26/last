@@ -4,6 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU
+  server: decdn17.suio.me
+  port: 443
+  type: vless
+  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
+  tls: true
+  servername: decdn17.suio.me
+  network: tcp
+  udp: true
 - name: US_3aef0_0022
   server: 104.20.1.252
   port: 80
@@ -17,15 +26,6 @@ proxies:
     path: /
     headers:
       Host: bright-organizationauhuddhesz.sportland.company.
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: decdn17.suio.me
-  port: 443
-  type: vless
-  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
-  tls: true
-  servername: decdn17.suio.me
-  network: tcp
   udp: true
 - name: 🇭🇰 香港 | HKG
   server: n1761184273.mv7wh.tech
@@ -60,8 +60,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_3aef0_0022
   - 🇩🇪 德国 | DEU
+  - US_3aef0_0022
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 18
 rules:
