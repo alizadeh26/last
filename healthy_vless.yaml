@@ -4,32 +4,55 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 9
-  server: s842.ccgfw.top
+- name: DE_2a02a_0001
+  server: de.cdn.stun.su
   port: 443
   type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  flow: xtls-rprx-vision
   tls: true
-  servername: u708330u0378s842.ccgfw.top
+  skip-cert-verify: false
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ssp
+  servername: de.cdn.stun.su
+  reality-opts:
+    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+    short-id: 4daa022e84f8edf2
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: bbbnhju.un2026.indevs.in
+- name: 🇩🇪 德国 | DEU
+  server: decdn17.suio.me
   port: 443
   type: vless
-  uuid: f063dee0-f33c-4e6c-83f9-4d884b62ba9e
+  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
   tls: true
-  servername: bbbnhju.un2026.indevs.in
+  servername: decdn17.suio.me
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: n1761184273.mv7wh.tech
+  port: 443
+  type: vless
+  uuid: a4c6bbd7-6ea5-44b2-9829-08f5ae615d49
+  tls: true
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /2cCH0o9oSY1MFyEg1253o9NgB
+    path: /a4c6bbd7-6ea5-44b2-9829-08f5ae615d49
     headers:
-      Host: bbbnhju.un2026.indevs.in
+      Host: n1761184273.mv7wh.tech
+  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: kklio.dddc.us.ci
+  port: 443
+  type: vless
+  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  tls: true
+  servername: kklio.dddc.us.ci
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /9NojP751adPiN9LMya
+    headers:
+      Host: kklio.dddc.us.ci
   udp: true
 proxy-groups:
 - name: AUTO
@@ -37,7 +60,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 11
+  - DE_2a02a_0001
+  - 🇩🇪 德国 | DEU
+  - 🇭🇰 香港 | HKG
+  - 🇺🇸 美国 | USA 18
 rules:
 - MATCH,AUTO
