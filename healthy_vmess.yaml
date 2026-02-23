@@ -19,20 +19,6 @@ proxies:
     headers:
       Host: n1753101277.4u9ma.icu
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 104.26.15.137
-  port: 80
-  type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tr1-smart.adelping.com.
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -40,6 +26,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 7
-  - 🇹🇷 土耳其 | TUR
 rules:
 - MATCH,AUTO
