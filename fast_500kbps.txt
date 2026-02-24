@@ -1,7 +1,8 @@
-vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.116:8880?mode=gun&security=none&encryption=none&authority=telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray&type=grpc#Server 80 🇺🇸	dl_kib_s=3452	ul_kib_s=2377
-vless://6251f84e-9c02-4140-921c-6b47d394fb96@40.160.14.104:8880?security=&encryption=none&type=grpc#Server 44 🇺🇸	dl_kib_s=3156	ul_kib_s=2616
-vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.208:8880?encryption=none&type=grpc&mode=gun&security=none#Server 89 🇺🇸	dl_kib_s=3062	ul_kib_s=2095
-vless://e08f1ad7-0c60-446d-baec-08b3b69bb3d0@nl-90w-c.southnetworks.cloud:80?type=ws&security=none&encryption=none&path=/getWorkerUpdates#Server 73 🇳🇱	dl_kib_s=1249	ul_kib_s=1017
-vless://e08f1ad7-0c60-446d-baec-08b3b69bb3d0@nl-90w-c.southnetworks.cloud:80?&type=ws&headerType=none&host=nl-90w-c.southnetworks.cloud&path=%2FgetWorkerUpdates#Server 59 🇳🇱	dl_kib_s=1218	ul_kib_s=995
-trojan://76yTlnTIsjCTlmqnUJ5Tzc1rM@hl-freedom-0.undef.network:443?security=tls&sni=hl-freedom-0.undef.network&type=ws&host=hl-freedom-0.undef.network&path=/f2fc2a1f#Server 57 🇬🇧	dl_kib_s=1112	ul_kib_s=1015
-vless://e6c7ed63-89db-4ae1-a3f8-7a722921b3b2@104.18.32.47:443?alpn=http%2F1.1&encryption=none&host=apii.onlineshoppingez.ir&fp=chrome&path=%2FO1w0n3vYgFKYs7EzNAvLPvOp&security=tls&sni=apii.onlineshoppingez.ir&type=ws#Server 41 🇺🇸	dl_kib_s=733	ul_kib_s=992
+vless://6251f84e-9c02-4140-921c-6b47d394fb96@40.160.14.104:8880?security=&encryption=none&type=grpc#Server 44 🇺🇸	dl_kib_s=9945	ul_kib_s=11604
+vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.116:8880?mode=gun&security=none&encryption=none&authority=telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray&type=grpc#Server 80 🇺🇸	dl_kib_s=9577	ul_kib_s=5028
+vless://e08f1ad7-0c60-446d-baec-08b3b69bb3d0@nl-90w-c.southnetworks.cloud:80?&type=ws&headerType=none&host=nl-90w-c.southnetworks.cloud&path=%2FgetWorkerUpdates#Server 59 🇳🇱	dl_kib_s=1794	ul_kib_s=1589
+trojan://76yTlnTIsjCTlmqnUJ5Tzc1rM@hl-freedom-0.undef.network:443?security=tls&sni=hl-freedom-0.undef.network&type=ws&host=hl-freedom-0.undef.network&path=/f2fc2a1f#Server 57 🇬🇧	dl_kib_s=1724	ul_kib_s=1301
+vless://e6c7ed63-89db-4ae1-a3f8-7a722921b3b2@104.18.32.47:443?alpn=http%2F1.1&encryption=none&host=apii.onlineshoppingez.ir&fp=chrome&path=%2FO1w0n3vYgFKYs7EzNAvLPvOp&security=tls&sni=apii.onlineshoppingez.ir&type=ws#Server 41 🇺🇸	dl_kib_s=1127	ul_kib_s=1527
+vless://b5920b52-504c-4835-978c-fbc4110d5840@france-paris.hostinger.kcartik-vps.com:80?path=/vless&security=none&encryption=none&host=france-paris.hostinger.kcartik-vps.com&type=ws#Server 62 🇫🇷	dl_kib_s=890	ul_kib_s=1448
+vmess://eyJ2IjoiMiIsInBzIjoiU2VydmVyIDE2IPCfh7nwn4e3IiwiYWRkIjoidHIxLXNtYXJ0LmFkZWxwaW5nLmNvbSIsInBvcnQiOiI4MCIsImlkIjoiNDNkY2RjZTEtM2NlYS00MTkzLWJjOGQtOTBiOTIwNzFkNzc5IiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOiItLS0iLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiIsInNuaSI6IiIsInRlc3RfbmFtZSI6IjcifQ==	dl_kib_s=1167	ul_kib_s=520
+vless://6251f84e-9c02-4140-921c-6b47d394fb96@40.160.4.20:8880?security=&encryption=none&type=grpc#Server 56 🇺🇸	dl_kib_s=745	ul_kib_s=756
