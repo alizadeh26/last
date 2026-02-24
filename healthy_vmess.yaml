@@ -4,21 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: HK_76b2a_0012
-  server: 8.210.197.138
-  port: 1004
-  type: vmess
-  uuid: a13d3f6b-b961-4512-fc8a-9f1d908937b8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8.210.197.138
-  udp: true
 - name: US_76b2a_0022
   server: 156.236.76.45
   port: 37952
@@ -34,20 +19,20 @@ proxies:
     headers:
       Host: 156.236.76.45
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: scvbghy.988988.shop
-  port: 443
+- name: HK_76b2a_0012
+  server: 8.210.197.138
+  port: 1004
   type: vmess
-  uuid: 9e308743-bc58-4109-b8a8-c2c686959c65
+  uuid: a13d3f6b-b961-4512-fc8a-9f1d908937b8
   alterId: 0
   cipher: auto
-  tls: true
-  servername: scvbghy.988988.shop
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /YeQPaMoU0eDN02l1D3pAvPtZpEoeO
+    path: /
     headers:
-      Host: scvbghy.988988.shop
+      Host: 8.210.197.138
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: vbbns.1c0.ccwu.cc
@@ -64,15 +49,30 @@ proxies:
     headers:
       Host: vbbns.1c0.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: scvbghy.988988.shop
+  port: 443
+  type: vmess
+  uuid: 9e308743-bc58-4109-b8a8-c2c686959c65
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: scvbghy.988988.shop
+  network: ws
+  ws-opts:
+    path: /YeQPaMoU0eDN02l1D3pAvPtZpEoeO
+    headers:
+      Host: scvbghy.988988.shop
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_76b2a_0012
   - US_76b2a_0022
-  - 🇺🇸 美国 | USA 12
+  - HK_76b2a_0012
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
