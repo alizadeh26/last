@@ -18,20 +18,6 @@ proxies:
     headers:
       Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
   udp: true
-- name: US_fed85_0016
-  server: 104.20.1.252
-  port: 80
-  type: vless
-  uuid: 7d4a519b-d270-434e-a42d-d39624577a92
-  tls: false
-  skip-cert-verify: false
-  servername: bright-organizationauhuddhesz.sportland.company.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bright-organizationauhuddhesz.sportland.company.
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -39,6 +25,5 @@ proxy-groups:
   interval: 300
   proxies:
   - US_fed85_0015
-  - US_fed85_0016
 rules:
 - MATCH,AUTO

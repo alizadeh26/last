@@ -1,10 +1,7 @@
-vless://6251f84e-9c02-4140-921c-6b47d394fb96@40.160.14.104:8880?security=&encryption=none&type=grpc#Server 44 🇺🇸	dl_kib_s=6499	ul_kib_s=5558
-vless://e08f1ad7-0c60-446d-baec-08b3b69bb3d0@nl-90w-c.southnetworks.cloud:80?&type=ws&headerType=none&host=nl-90w-c.southnetworks.cloud&path=%2FgetWorkerUpdates#Server 59 🇳🇱	dl_kib_s=1629	ul_kib_s=1340
-vless://nasnet@162.19.10.94:443?flow=xtls-rprx-vision&security=tls&encryption=none&type=tcp&sni=nasnet-162191094-direct.sharghdaily.co&fp=chrome&headerType=none#Server 68 🇫🇷	dl_kib_s=1651	ul_kib_s=1310
-vless://e8b1500b-e9e8-5492-8312-f4eadf7d0767@162.19.10.94:443?encryption=none&flow=xtls-rprx-vision&type=tcp&headerType=none&security=tls&fp=chrome&sni=nasnet-162191094-direct.sharghdaily.co#Server 48 🇫🇷	dl_kib_s=1643	ul_kib_s=1305
-trojan://76yTlnTIsjCTlmqnUJ5Tzc1rM@hl-freedom-0.undef.network:443?security=tls&sni=hl-freedom-0.undef.network&type=ws&host=hl-freedom-0.undef.network&path=/f2fc2a1f#Server 57 🇬🇧	dl_kib_s=1391	ul_kib_s=1398
-vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855?path=/&security=none&encryption=none&type=ws#Server 49 🇩🇰	dl_kib_s=1412	ul_kib_s=1236
-vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855/?type=ws&encryption=none&flow=&path=%2F#Server 53 🇩🇰	dl_kib_s=1409	ul_kib_s=1143
-vless://e6c7ed63-89db-4ae1-a3f8-7a722921b3b2@104.18.32.47:443?alpn=http%2F1.1&encryption=none&host=apii.onlineshoppingez.ir&fp=chrome&path=%2FO1w0n3vYgFKYs7EzNAvLPvOp&security=tls&sni=apii.onlineshoppingez.ir&type=ws#Server 41 🇺🇸	dl_kib_s=1225	ul_kib_s=1242
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@146.190.207.55:443?type=ws&security=tls&host=sni.111000.indevs.in&path=/?ed%3D2560%26Telegram@VPN_VIP_NOR&sni=sni.111000.indevs.in&alpn=h2,http/1.1#Server 37 🇩🇪	dl_kib_s=593	ul_kib_s=988
-vmess://eyJhZGQiOiIxNzIuMjMzLjIyOS45MSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiIyN2JhODdmYy01ODNmLTQ3NjMtOTA2MC04M2NmMGI5MjY0ZGIiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjE0MTAyIiwicHMiOiJTZXJ2ZXIgNTIg8J+HuvCfh7giLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9	dl_kib_s=538	ul_kib_s=507
+vless://6251f84e-9c02-4140-921c-6b47d394fb96@40.160.14.104:8880?security=&encryption=none&type=grpc#Server 44 🇺🇸	dl_kib_s=3667	ul_kib_s=2631
+vless://e08f1ad7-0c60-446d-baec-08b3b69bb3d0@nl-90w-c.southnetworks.cloud:80?&type=ws&headerType=none&host=nl-90w-c.southnetworks.cloud&path=%2FgetWorkerUpdates#Server 59 🇳🇱	dl_kib_s=1267	ul_kib_s=1065
+trojan://76yTlnTIsjCTlmqnUJ5Tzc1rM@hl-freedom-0.undef.network:443?security=tls&sni=hl-freedom-0.undef.network&type=ws&host=hl-freedom-0.undef.network&path=/f2fc2a1f#Server 57 🇬🇧	dl_kib_s=1199	ul_kib_s=1084
+vless://e8b1500b-e9e8-5492-8312-f4eadf7d0767@162.19.10.94:443?encryption=none&flow=xtls-rprx-vision&type=tcp&headerType=none&security=tls&fp=chrome&sni=nasnet-162191094-direct.sharghdaily.co#Server 48 🇫🇷	dl_kib_s=1168	ul_kib_s=1075
+vless://e6c7ed63-89db-4ae1-a3f8-7a722921b3b2@104.18.32.47:443?alpn=http%2F1.1&encryption=none&host=apii.onlineshoppingez.ir&fp=chrome&path=%2FO1w0n3vYgFKYs7EzNAvLPvOp&security=tls&sni=apii.onlineshoppingez.ir&type=ws#Server 41 🇺🇸	dl_kib_s=1101	ul_kib_s=1048
+vless://nasnet@162.19.10.94:443?flow=xtls-rprx-vision&security=tls&encryption=none&type=tcp&sni=nasnet-162191094-direct.sharghdaily.co&fp=chrome&headerType=none#Server 68 🇫🇷	dl_kib_s=916	ul_kib_s=1084
+vless://b4819c49-6c7e-4b57-9b9b-c73031e1de11@45.15.170.237:80?encryption=none&path=%2Fvless%2F&type=ws#Server 64 🇦🇱	dl_kib_s=927	ul_kib_s=833
