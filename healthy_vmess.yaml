@@ -4,20 +4,35 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 7
-  server: n1753101277.4u9ma.icu
+- name: 🇺🇸 美国 | USA 12
+  server: scvbghy.988988.shop
   port: 443
   type: vmess
-  uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
+  uuid: 9e308743-bc58-4109-b8a8-c2c686959c65
   alterId: 0
   cipher: auto
   tls: true
-  skip-cert-verify: false
+  servername: scvbghy.988988.shop
   network: ws
   ws-opts:
-    path: /
+    path: /YeQPaMoU0eDN02l1D3pAvPtZpEoeO
     headers:
-      Host: n1753101277.4u9ma.icu
+      Host: scvbghy.988988.shop
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: vbbns.1c0.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
+    headers:
+      Host: vbbns.1c0.ccwu.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +40,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 7
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO

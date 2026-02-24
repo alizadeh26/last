@@ -4,21 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_fed85_0016
-  server: 104.20.1.252
-  port: 80
-  type: vless
-  uuid: 7d4a519b-d270-434e-a42d-d39624577a92
-  tls: false
-  skip-cert-verify: false
-  servername: bright-organizationauhuddhesz.sportland.company.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bright-organizationauhuddhesz.sportland.company.
-  udp: true
-- name: US_fed85_0015
+- name: US_e3454_0015
   server: 104.18.32.47
   port: 80
   type: vless
@@ -32,27 +18,97 @@ proxies:
     headers:
       Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
   udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: hhhnmjk.191268.xyz
+  port: 443
+  type: vless
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  tls: true
+  servername: hhhnmjk.191268.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /8Midq8kt5Q2GkKGWRMg
+    headers:
+      Host: hhhnmjk.191268.xyz
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: scvbghy.988988.shop
+  port: 443
+  type: vmess
+  uuid: 9e308743-bc58-4109-b8a8-c2c686959c65
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: scvbghy.988988.shop
+  network: ws
+  ws-opts:
+    path: /YeQPaMoU0eDN02l1D3pAvPtZpEoeO
+    headers:
+      Host: scvbghy.988988.shop
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: vbbns.1c0.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
+    headers:
+      Host: vbbns.1c0.ccwu.cc
+  udp: true
+- name: US_e3454_0016
+  server: 104.20.1.252
+  port: 80
+  type: vless
+  uuid: 7d4a519b-d270-434e-a42d-d39624577a92
+  tls: false
+  skip-cert-verify: false
+  servername: bright-organizationauhuddhesz.sportland.company.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bright-organizationauhuddhesz.sportland.company.
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_fed85_0016
-  - US_fed85_0015
+  - US_e3454_0015
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 4
+  - US_e3454_0016
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_fed85_0016
-  - US_fed85_0015
+  - US_e3454_0015
+  - 🇺🇸 美国 | USA 13
+  - US_e3454_0016
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 4
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_fed85_0016
-  - US_fed85_0015
+  - US_e3454_0015
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
