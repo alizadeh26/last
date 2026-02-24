@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_df544_0015
+- name: US_3e9a9_0015
   server: 104.18.32.47
   port: 80
   type: vless
@@ -18,7 +18,7 @@ proxies:
     headers:
       Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
   udp: true
-- name: US_df544_0016
+- name: US_3e9a9_0016
   server: 104.20.1.252
   port: 80
   type: vless
@@ -38,7 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_df544_0015
-  - US_df544_0016
+  - US_3e9a9_0015
+  - US_3e9a9_0016
 rules:
 - MATCH,AUTO
