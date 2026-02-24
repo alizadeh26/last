@@ -4,19 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_e3454_0015
-  server: 104.18.32.47
-  port: 80
+- name: FR_76b2a_0010
+  server: fran.scroogethebest.com
+  port: 443
   type: vless
-  uuid: e31085f9-7f55-4a7d-b00e-ce94149477cb
-  tls: false
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  flow: xtls-rprx-vision
+  tls: true
   skip-cert-verify: false
-  servername: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
+  client-fingerprint: chrome
+  servername: fran.scroogethebest.com
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  udp: true
+- name: BY_76b2a_0001
+  server: by.cdn.titun.su
+  port: 443
+  type: vless
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: by.cdn.titun.su
+  reality-opts:
+    public-key: 0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg
+    short-id: cad317b20db4aad2
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,6 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_e3454_0015
+  - FR_76b2a_0010
+  - BY_76b2a_0001
 rules:
 - MATCH,AUTO

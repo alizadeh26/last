@@ -4,34 +4,63 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_e3454_0015
-  server: 104.18.32.47
-  port: 80
-  type: vless
-  uuid: e31085f9-7f55-4a7d-b00e-ce94149477cb
-  tls: false
-  skip-cert-verify: false
-  servername: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: vbbns.1c0.ccwu.cc
-  port: 80
+- name: HK_76b2a_0012
+  server: 8.210.197.138
+  port: 1004
   type: vmess
-  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  uuid: a13d3f6b-b961-4512-fc8a-9f1d908937b8
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
+    path: /
     headers:
-      Host: vbbns.1c0.ccwu.cc
+      Host: 8.210.197.138
+  udp: true
+- name: US_76b2a_0022
+  server: 156.236.76.45
+  port: 37952
+  type: vmess
+  uuid: b8304f18-9a28-427c-b1fe-d92ee1757c0b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 156.236.76.45
+  udp: true
+- name: FR_76b2a_0010
+  server: fran.scroogethebest.com
+  port: 443
+  type: vless
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: fran.scroogethebest.com
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  udp: true
+- name: BY_76b2a_0001
+  server: by.cdn.titun.su
+  port: 443
+  type: vless
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: by.cdn.titun.su
+  reality-opts:
+    public-key: 0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg
+    short-id: cad317b20db4aad2
   udp: true
 - name: 🇺🇸 美国 | USA 12
   server: scvbghy.988988.shop
@@ -48,35 +77,66 @@ proxies:
     headers:
       Host: scvbghy.988988.shop
   udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: vbbns.1c0.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
+    headers:
+      Host: vbbns.1c0.ccwu.cc
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_e3454_0015
-  - 🇺🇸 美国 | USA 4
+  - HK_76b2a_0012
+  - US_76b2a_0022
+  - FR_76b2a_0010
+  - BY_76b2a_0001
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_e3454_0015
+  - FR_76b2a_0010
+  - BY_76b2a_0001
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
+  - HK_76b2a_0012
+  - US_76b2a_0022
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 4
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - HK_76b2a_0012
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - FR_76b2a_0010
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_e3454_0015
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 12
+  - US_76b2a_0022
 rules:
 - MATCH,AUTO

@@ -4,20 +4,35 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 4
-  server: vbbns.1c0.ccwu.cc
-  port: 80
+- name: HK_76b2a_0012
+  server: 8.210.197.138
+  port: 1004
   type: vmess
-  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  uuid: a13d3f6b-b961-4512-fc8a-9f1d908937b8
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
+    path: /
     headers:
-      Host: vbbns.1c0.ccwu.cc
+      Host: 8.210.197.138
+  udp: true
+- name: US_76b2a_0022
+  server: 156.236.76.45
+  port: 37952
+  type: vmess
+  uuid: b8304f18-9a28-427c-b1fe-d92ee1757c0b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 156.236.76.45
   udp: true
 - name: 🇺🇸 美国 | USA 12
   server: scvbghy.988988.shop
@@ -34,13 +49,30 @@ proxies:
     headers:
       Host: scvbghy.988988.shop
   udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: vbbns.1c0.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
+    headers:
+      Host: vbbns.1c0.ccwu.cc
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
+  - HK_76b2a_0012
+  - US_76b2a_0022
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
