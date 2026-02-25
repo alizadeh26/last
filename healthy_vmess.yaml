@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: HK_ceeca_0012
+- name: HK_79914_0012
   server: 8.210.197.138
   port: 1004
   type: vmess
@@ -19,35 +19,15 @@ proxies:
     headers:
       Host: 8.210.197.138
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: vbbns.1c0.ccwu.cc
-  port: 80
+- name: 🇺🇸 美国 | USA 20
+  server: 82.198.246.97
+  port: 180
   type: vmess
-  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
-    headers:
-      Host: vbbns.1c0.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: scvbghy.988988.shop
-  port: 443
-  type: vmess
-  uuid: 9e308743-bc58-4109-b8a8-c2c686959c65
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: scvbghy.988988.shop
-  network: ws
-  ws-opts:
-    path: /YeQPaMoU0eDN02l1D3pAvPtZpEoeO
-    headers:
-      Host: scvbghy.988988.shop
   udp: true
 proxy-groups:
 - name: AUTO
@@ -55,8 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_ceeca_0012
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 12
+  - HK_79914_0012
+  - 🇺🇸 美国 | USA 20
 rules:
 - MATCH,AUTO
