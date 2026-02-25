@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: BY_2bb44_0001
+- name: BY_ceeca_0001
   server: by.cdn.titun.su
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: 0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg
     short-id: cad317b20db4aad2
   udp: true
-- name: FR_2bb44_0010
+- name: FR_ceeca_0010
   server: fran.scroogethebest.com
   port: 443
   type: vless
@@ -32,7 +32,7 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: US_2bb44_0022
+- name: US_ceeca_0022
   server: 156.236.76.45
   port: 37952
   type: vmess
@@ -47,7 +47,7 @@ proxies:
     headers:
       Host: 156.236.76.45
   udp: true
-- name: HK_2bb44_0012
+- name: HK_ceeca_0012
   server: 8.210.197.138
   port: 1004
   type: vmess
@@ -62,54 +62,36 @@ proxies:
     headers:
       Host: 8.210.197.138
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: admin.c2.havij.co
-  port: 443
+- name: 🇫🇮 芬兰 | FIN
+  server: media.mothyleela.cfd
+  port: 40521
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: kaQH3hGdcP80XEDI
+  password: LYW2w9fwdrwj2qC9NyTBuBNKQJUvkKnCp9UxVnFW6LqeSpiCcnzV1cMohBUnCCWBkjkp83rV9wWeYQQqUZwMuYu1YyCt17tW
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 104.21.6.159
-  port: 80
-  type: vless
-  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
-  tls: false
-  servername: w.0op.ccwu.cc
+- name: 🇺🇸 美国 | USA 12
+  server: scvbghy.988988.shop
+  port: 443
+  type: vmess
+  uuid: 9e308743-bc58-4109-b8a8-c2c686959c65
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: scvbghy.988988.shop
   network: ws
   ws-opts:
-    path: /7ZHQqqDZuBdYKaAHx8c
+    path: /YeQPaMoU0eDN02l1D3pAvPtZpEoeO
     headers:
-      Host: w.0op.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 172.67.135.2
-  port: 80
-  type: vless
-  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
-  tls: false
-  servername: w.0op.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /7ZHQqqDZuBdYKaAHx8c
-    headers:
-      Host: w.0op.ccwu.cc
+      Host: scvbghy.988988.shop
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.46
+  server: 103.186.154.237
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.30
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.173
   port: 38388
   type: ss
@@ -117,70 +99,35 @@ proxies:
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.160
+  server: 103.186.154.172
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.132
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.155.77
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.72
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.45
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 9
-  server: 103.186.154.139
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.150
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 11
   server: 103.186.154.192
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 12
-  server: 103.186.155.235
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.76
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 10
-  server: 103.186.154.237
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 13
-  server: 103.186.155.49
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.162
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -192,73 +139,59 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BY_2bb44_0001
-  - FR_2bb44_0010
-  - US_2bb44_0022
-  - HK_2bb44_0012
-  - 🇬🇧 英国 | GBR 3
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 23
+  - BY_ceeca_0001
+  - FR_ceeca_0010
+  - US_ceeca_0022
+  - HK_ceeca_0012
+  - 🇫🇮 芬兰 | FIN
+  - 🇺🇸 美国 | USA 12
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 9
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 11
-  - 🇻🇳 越南 | VNM 12
-  - 🇻🇳 越南 | VNM 10
-  - 🇻🇳 越南 | VNM 13
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 3
+  - 🇫🇮 芬兰 | FIN
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 9
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 11
-  - 🇻🇳 越南 | VNM 12
-  - 🇻🇳 越南 | VNM 10
-  - 🇻🇳 越南 | VNM 13
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BY_2bb44_0001
-  - FR_2bb44_0010
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 23
+  - BY_ceeca_0001
+  - FR_ceeca_0010
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_2bb44_0022
-  - HK_2bb44_0012
+  - US_ceeca_0022
+  - HK_ceeca_0012
+  - 🇺🇸 美国 | USA 12
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BY_2bb44_0001
-  - FR_2bb44_0010
+  - BY_ceeca_0001
+  - FR_ceeca_0010
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_2bb44_0022
+  - US_ceeca_0022
 rules:
 - MATCH,AUTO
