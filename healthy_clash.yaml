@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: BY_79914_0001
-  server: by.cdn.titun.su
-  port: 443
-  type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: by.cdn.titun.su
-  reality-opts:
-    public-key: 0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg
-    short-id: cad317b20db4aad2
-  udp: true
 - name: FR_79914_0010
   server: fran.scroogethebest.com
   port: 443
@@ -47,43 +33,8 @@ proxies:
     headers:
       Host: 8.210.197.138
   udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: s348.ccgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330u57e3s348.ccgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.225
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.45
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.194
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -96,8 +47,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.155
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.194
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.45
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -137,16 +95,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BY_79914_0001
   - FR_79914_0010
   - HK_79914_0012
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇺🇸 美国 | USA 20
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 8
@@ -157,10 +111,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 8
@@ -170,28 +123,25 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BY_79914_0001
   - FR_79914_0010
-  - 🇪🇪 爱沙尼亚 | EST
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - HK_79914_0012
-  - 🇺🇸 美国 | USA 20
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - HK_79914_0012
+  - 🇻🇳 越南 | VNM
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BY_79914_0001
   - FR_79914_0010
 rules:
 - MATCH,AUTO

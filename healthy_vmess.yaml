@@ -19,16 +19,6 @@ proxies:
     headers:
       Host: 8.210.197.138
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -36,6 +26,5 @@ proxy-groups:
   interval: 300
   proxies:
   - HK_79914_0012
-  - 🇺🇸 美国 | USA 20
 rules:
 - MATCH,AUTO
