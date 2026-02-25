@@ -28,20 +28,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: kaQH3hGdcP80XEDI
   udp: true
-- name: FR_7758e_0005
-  server: fran.scroogethebest.com
-  port: 443
-  type: vless
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: fran.scroogethebest.com
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
-  udp: true
 - name: SG_7758e_0018
   server: 68.183.227.4
   port: 8080
@@ -73,12 +59,19 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.57
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: FR_7758e_0005
+  server: fran.scroogethebest.com
+  port: 443
+  type: vless
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: fran.scroogethebest.com
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.17
@@ -87,8 +80,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.155
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.57
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -110,14 +103,13 @@ proxy-groups:
   - FI_7758e_0003
   - GB_7758e_0008
   - GB_7758e_0006
-  - FR_7758e_0005
   - SG_7758e_0018
   - US_7758e_0023
   - 🇧🇬 保加利亚 | BGR
   - 🇳🇱 荷兰 | NLD
-  - 🇻🇳 越南 | VNM 3
+  - FR_7758e_0005
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
@@ -129,9 +121,8 @@ proxy-groups:
   - SG_7758e_0018
   - 🇧🇬 保加利亚 | BGR
   - 🇳🇱 荷兰 | NLD
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
@@ -146,6 +137,14 @@ proxy-groups:
   proxies:
   - GB_7758e_0008
   - US_7758e_0023
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - SG_7758e_0018
+  - US_7758e_0023
+  - 🇻🇳 越南 | VNM 4
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -153,6 +152,7 @@ proxy-groups:
   proxies:
   - FI_7758e_0003
   - GB_7758e_0006
+  - 🇧🇬 保加利亚 | BGR
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
