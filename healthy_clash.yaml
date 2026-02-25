@@ -4,12 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: FI_7758e_0003
-  server: 95.164.113.153
-  port: 5669
+- name: GB_7758e_0006
+  server: 20.108.41.100
+  port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: cJvGkXLQg1TCouv8BmE0Xu
+  password: kaQH3hGdcP80XEDI
   udp: true
 - name: GB_7758e_0008
   server: 82.198.246.97
@@ -20,44 +20,6 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-  udp: true
-- name: GB_7758e_0006
-  server: 20.108.41.100
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: kaQH3hGdcP80XEDI
-  udp: true
-- name: SG_7758e_0018
-  server: 68.183.227.4
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: US_7758e_0023
-  server: 47.84.126.255
-  port: 443
-  type: vmess
-  uuid: 32285564-1664-485c-f4db-daa776321a52
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇧🇬 保加利亚 | BGR
-  server: 89.44.197.181
-  port: 31348
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zDLmeWRsfcFdKT1Tpy02xodEToqCldTxvZcRoPIZZtBdnIEL
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 82.38.31.82
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: FR_7758e_0005
   server: fran.scroogethebest.com
@@ -73,6 +35,41 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
+- name: BY_7758e_0001
+  server: by.cdn.titun.su
+  port: 443
+  type: vless
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: by.cdn.titun.su
+  reality-opts:
+    public-key: 0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg
+    short-id: cad317b20db4aad2
+  udp: true
+- name: SG_7758e_0018
+  server: 68.183.227.4
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 🇧🇬 保加利亚 | BGR
+  server: 89.44.197.181
+  port: 31348
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: zDLmeWRsfcFdKT1Tpy02xodEToqCldTxvZcRoPIZZtBdnIEL
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 82.38.31.82
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.17
   port: 38388
@@ -82,6 +79,13 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.57
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.155
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -100,29 +104,29 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FI_7758e_0003
-  - GB_7758e_0008
   - GB_7758e_0006
+  - GB_7758e_0008
+  - FR_7758e_0005
+  - BY_7758e_0001
   - SG_7758e_0018
-  - US_7758e_0023
   - 🇧🇬 保加利亚 | BGR
   - 🇳🇱 荷兰 | NLD
-  - FR_7758e_0005
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FI_7758e_0003
   - GB_7758e_0006
   - SG_7758e_0018
   - 🇧🇬 保加利亚 | BGR
   - 🇳🇱 荷兰 | NLD
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
@@ -130,29 +134,28 @@ proxy-groups:
   interval: 300
   proxies:
   - FR_7758e_0005
+  - BY_7758e_0001
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - GB_7758e_0008
-  - US_7758e_0023
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_7758e_0018
-  - US_7758e_0023
-  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FI_7758e_0003
   - GB_7758e_0006
-  - 🇧🇬 保加利亚 | BGR
+  - FR_7758e_0005
+  - BY_7758e_0001
+  - 🇳🇱 荷兰 | NLD
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204

@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: FI_7758e_0003
-  server: 95.164.113.153
-  port: 5669
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cJvGkXLQg1TCouv8BmE0Xu
-  udp: true
 - name: GB_7758e_0006
   server: 20.108.41.100
   port: 443
@@ -53,6 +46,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.155
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 4
   server: 103.186.154.214
   port: 38388
@@ -66,13 +66,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FI_7758e_0003
   - GB_7758e_0006
   - SG_7758e_0018
   - 🇧🇬 保加利亚 | BGR
   - 🇳🇱 荷兰 | NLD
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
 rules:
 - MATCH,AUTO

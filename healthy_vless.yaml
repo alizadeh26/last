@@ -18,6 +18,20 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
+- name: BY_7758e_0001
+  server: by.cdn.titun.su
+  port: 443
+  type: vless
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: by.cdn.titun.su
+  reality-opts:
+    public-key: 0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg
+    short-id: cad317b20db4aad2
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -25,5 +39,6 @@ proxy-groups:
   interval: 300
   proxies:
   - FR_7758e_0005
+  - BY_7758e_0001
 rules:
 - MATCH,AUTO

@@ -14,16 +14,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: US_7758e_0023
-  server: 47.84.126.255
-  port: 443
-  type: vmess
-  uuid: 32285564-1664-485c-f4db-daa776321a52
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -31,6 +21,5 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_7758e_0008
-  - US_7758e_0023
 rules:
 - MATCH,AUTO
