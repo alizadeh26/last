@@ -32,52 +32,6 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: 🇪🇪 爱沙尼亚 | EST 2
-  server: s481.ccgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330uad0es481.ccgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: s348.ccgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330u57e3s348.ccgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: s504.okgg.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u708330u649as504.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: s842.ccgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  servername: u708330u0378s842.ccgfw.top
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ssp
-  udp: true
 - name: 🇺🇸 美国 | USA 19
   server: 104.21.6.159
   port: 80
@@ -112,10 +66,6 @@ proxy-groups:
   proxies:
   - BY_2bb44_0001
   - FR_2bb44_0010
-  - 🇪🇪 爱沙尼亚 | EST 2
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 23
 rules:
