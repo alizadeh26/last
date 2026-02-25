@@ -18,20 +18,19 @@ proxies:
     public-key: 0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg
     short-id: cad317b20db4aad2
   udp: true
-- name: US_ceeca_0022
-  server: 156.236.76.45
-  port: 37952
-  type: vmess
-  uuid: b8304f18-9a28-427c-b1fe-d92ee1757c0b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 156.236.76.45
+- name: FR_ceeca_0010
+  server: fran.scroogethebest.com
+  port: 443
+  type: vless
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: fran.scroogethebest.com
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
   udp: true
 - name: HK_ceeca_0012
   server: 8.210.197.138
@@ -48,34 +47,12 @@ proxies:
     headers:
       Host: 8.210.197.138
   udp: true
-- name: FR_ceeca_0010
-  server: fran.scroogethebest.com
-  port: 443
-  type: vless
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: fran.scroogethebest.com
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: scvbghy.988988.shop
-  port: 443
-  type: vmess
-  uuid: 9e308743-bc58-4109-b8a8-c2c686959c65
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: scvbghy.988988.shop
-  network: ws
-  ws-opts:
-    path: /YeQPaMoU0eDN02l1D3pAvPtZpEoeO
-    headers:
-      Host: scvbghy.988988.shop
+- name: 🇫🇮 芬兰 | FIN
+  server: media.mothyleela.cfd
+  port: 40521
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: LYW2w9fwdrwj2qC9NyTBuBNKQJUvkKnCp9UxVnFW6LqeSpiCcnzV1cMohBUnCCWBkjkp83rV9wWeYQQqUZwMuYu1YyCt17tW
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: vbbns.1c0.ccwu.cc
@@ -92,6 +69,21 @@ proxies:
     headers:
       Host: vbbns.1c0.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: scvbghy.988988.shop
+  port: 443
+  type: vmess
+  uuid: 9e308743-bc58-4109-b8a8-c2c686959c65
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: scvbghy.988988.shop
+  network: ws
+  ws-opts:
+    path: /YeQPaMoU0eDN02l1D3pAvPtZpEoeO
+    headers:
+      Host: scvbghy.988988.shop
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.237
   port: 38388
@@ -106,15 +98,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.172
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.72
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.72
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.76
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -134,8 +126,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.76
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.172
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -148,30 +140,31 @@ proxy-groups:
   interval: 300
   proxies:
   - BY_ceeca_0001
-  - US_ceeca_0022
-  - HK_ceeca_0012
   - FR_ceeca_0010
-  - 🇺🇸 美国 | USA 12
+  - HK_ceeca_0012
+  - 🇫🇮 芬兰 | FIN
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 12
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇫🇮 芬兰 | FIN
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -184,10 +177,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_ceeca_0022
   - HK_ceeca_0012
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 12
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -200,11 +192,6 @@ proxy-groups:
   interval: 300
   proxies:
   - BY_ceeca_0001
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - US_ceeca_0022
+  - FR_ceeca_0010
 rules:
 - MATCH,AUTO
