@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: BY_76b2a_0001
+- name: BY_2bb44_0001
   server: by.cdn.titun.su
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: 0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg
     short-id: cad317b20db4aad2
   udp: true
-- name: FR_76b2a_0010
+- name: FR_2bb44_0010
   server: fran.scroogethebest.com
   port: 443
   type: vless
@@ -32,13 +32,91 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: s481.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u708330uad0es481.ccgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: s348.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u708330u57e3s348.ccgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: s504.okgg.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u708330u649as504.okgg.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: s842.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  servername: u708330u0378s842.ccgfw.top
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ssp
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 104.21.6.159
+  port: 80
+  type: vless
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  tls: false
+  servername: w.0op.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /7ZHQqqDZuBdYKaAHx8c
+    headers:
+      Host: w.0op.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 172.67.135.2
+  port: 80
+  type: vless
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  tls: false
+  servername: w.0op.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /7ZHQqqDZuBdYKaAHx8c
+    headers:
+      Host: w.0op.ccwu.cc
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BY_76b2a_0001
-  - FR_76b2a_0010
+  - BY_2bb44_0001
+  - FR_2bb44_0010
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 23
 rules:
 - MATCH,AUTO

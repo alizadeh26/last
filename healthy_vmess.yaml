@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_76b2a_0022
+- name: US_2bb44_0022
   server: 156.236.76.45
   port: 37952
   type: vmess
@@ -19,7 +19,7 @@ proxies:
     headers:
       Host: 156.236.76.45
   udp: true
-- name: HK_76b2a_0012
+- name: HK_2bb44_0012
   server: 8.210.197.138
   port: 1004
   type: vmess
@@ -34,45 +34,13 @@ proxies:
     headers:
       Host: 8.210.197.138
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: vbbns.1c0.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
-    headers:
-      Host: vbbns.1c0.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: scvbghy.988988.shop
-  port: 443
-  type: vmess
-  uuid: 9e308743-bc58-4109-b8a8-c2c686959c65
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: scvbghy.988988.shop
-  network: ws
-  ws-opts:
-    path: /YeQPaMoU0eDN02l1D3pAvPtZpEoeO
-    headers:
-      Host: scvbghy.988988.shop
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_76b2a_0022
-  - HK_76b2a_0012
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 12
+  - US_2bb44_0022
+  - HK_2bb44_0012
 rules:
 - MATCH,AUTO
