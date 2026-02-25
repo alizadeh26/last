@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇮 芬兰 | FIN
-  server: media.mothyleela.cfd
-  port: 40521
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LYW2w9fwdrwj2qC9NyTBuBNKQJUvkKnCp9UxVnFW6LqeSpiCcnzV1cMohBUnCCWBkjkp83rV9wWeYQQqUZwMuYu1YyCt17tW
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.237
   port: 38388
@@ -46,15 +39,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.76
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.162
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.162
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.76
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -66,13 +59,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 | FIN
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
 rules:
 - MATCH,AUTO

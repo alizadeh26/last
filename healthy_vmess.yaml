@@ -49,6 +49,21 @@ proxies:
     headers:
       Host: scvbghy.988988.shop
   udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: vbbns.1c0.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
+    headers:
+      Host: vbbns.1c0.ccwu.cc
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -58,5 +73,6 @@ proxy-groups:
   - US_ceeca_0022
   - HK_ceeca_0012
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
