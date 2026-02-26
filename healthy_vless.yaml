@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: FR_bf218_0005
+- name: FR_2e99e_0005
   server: fran.scroogethebest.com
   port: 443
   type: vless
@@ -24,6 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FR_bf218_0005
+  - FR_2e99e_0005
 rules:
 - MATCH,AUTO
