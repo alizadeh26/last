@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: RU_b966f_0014
+  server: basic-ru-0.undef.network
+  port: 43902
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5kWesolQ0y0PVdIrb65LbHT2u
+  udp: true
 - name: SG_b966f_0018
   server: 68.183.227.4
   port: 8080
@@ -31,6 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - RU_b966f_0014
   - SG_b966f_0018
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
