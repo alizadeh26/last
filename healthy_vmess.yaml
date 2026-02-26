@@ -4,6 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: GB_2e99e_0008
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: US_2e99e_0023
   server: 47.84.126.255
   port: 443
@@ -14,11 +24,11 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: GB_2e99e_0008
-  server: 82.198.246.97
-  port: 180
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 47.84.126.255
+  port: 443
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 32285564-1664-485c-f4db-daa776321a52
   alterId: 0
   cipher: auto
   tls: false
@@ -30,7 +40,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_2e99e_0023
   - GB_2e99e_0008
+  - US_2e99e_0023
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO
