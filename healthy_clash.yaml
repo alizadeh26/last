@@ -4,16 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_2e99e_0008
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: FR_2e99e_0005
   server: fran.scroogethebest.com
   port: 443
@@ -66,13 +56,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.44
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: 47.84.126.255
   port: 443
@@ -82,6 +65,13 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.44
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.151
@@ -96,15 +86,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_2e99e_0008
   - FR_2e99e_0005
   - SG_2e99e_0018
   - US_2e99e_0023
   - 🇳🇱 荷兰 | NLD
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇸🇬 新加坡 | SGP 2
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
@@ -128,7 +117,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_2e99e_0008
   - US_2e99e_0023
   - 🇸🇬 新加坡 | SGP 2
 - name: REGION-AS
@@ -137,17 +125,18 @@ proxy-groups:
   interval: 300
   proxies:
   - SG_2e99e_0018
+  - US_2e99e_0023
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - FR_2e99e_0005
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_2e99e_0008
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
