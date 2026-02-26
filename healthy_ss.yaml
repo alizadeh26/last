@@ -11,19 +11,19 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: 🇧🇬 保加利亚 | BGR
-  server: 89.44.197.181
-  port: 31348
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zDLmeWRsfcFdKT1Tpy02xodEToqCldTxvZcRoPIZZtBdnIEL
-  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 82.38.31.82
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇧🇬 保加利亚 | BGR
+  server: 89.44.197.181
+  port: 31348
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: zDLmeWRsfcFdKT1Tpy02xodEToqCldTxvZcRoPIZZtBdnIEL
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.17
@@ -39,15 +39,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.214
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.155
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.155
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.214
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -60,11 +60,11 @@ proxy-groups:
   interval: 300
   proxies:
   - SG_0867b_0018
-  - 🇧🇬 保加利亚 | BGR
   - 🇳🇱 荷兰 | NLD
+  - 🇧🇬 保加利亚 | BGR
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 4
 rules:
 - MATCH,AUTO
