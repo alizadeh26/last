@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: BY_0867b_0001
+- name: BY_bf218_0001
   server: by.cdn.titun.su
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: 0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg
     short-id: cad317b20db4aad2
   udp: true
-- name: FR_0867b_0005
+- name: FR_bf218_0005
   server: fran.scroogethebest.com
   port: 443
   type: vless
@@ -38,7 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BY_0867b_0001
-  - FR_0867b_0005
+  - BY_bf218_0001
+  - FR_bf218_0005
 rules:
 - MATCH,AUTO
