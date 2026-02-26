@@ -4,43 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_2e99e_0018
+- name: SG_b966f_0018
   server: 68.183.227.4
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 195.93.253.245
-  port: 49137
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eGeS7710Fq2DIru91s0gGe
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.201
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.47
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.44
+  server: 103.186.154.75
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.151
+  server: 103.186.154.155
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -52,11 +31,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_2e99e_0018
-  - 🇳🇱 荷兰 | NLD
-  - 🇻🇳 越南 | VNM
+  - SG_b966f_0018
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO

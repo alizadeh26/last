@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: FR_2e99e_0005
+- name: FR_b966f_0005
   server: fran.scroogethebest.com
   port: 443
   type: vless
@@ -18,14 +18,24 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: SG_2e99e_0018
+- name: GB_b966f_0008
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: SG_b966f_0018
   server: 68.183.227.4
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: US_2e99e_0023
+- name: US_b966f_0023
   server: 47.84.126.255
   port: 443
   type: vmess
@@ -34,51 +44,30 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 195.93.253.245
-  port: 49137
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eGeS7710Fq2DIru91s0gGe
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.201
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.47
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 47.84.126.255
-  port: 443
-  type: vmess
-  uuid: 32285564-1664-485c-f4db-daa776321a52
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.44
+  server: 103.186.154.75
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.151
+  server: 103.186.154.155
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 47.84.126.255
+  port: 443
+  type: vmess
+  uuid: 32285564-1664-485c-f4db-daa776321a52
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: AUTO
@@ -86,57 +75,54 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FR_2e99e_0005
-  - SG_2e99e_0018
-  - US_2e99e_0023
-  - 🇳🇱 荷兰 | NLD
-  - 🇻🇳 越南 | VNM
+  - FR_b966f_0005
+  - GB_b966f_0008
+  - SG_b966f_0018
+  - US_b966f_0023
   - 🇻🇳 越南 | VNM 2
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
+  - 🇸🇬 新加坡 | SGP
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_2e99e_0018
-  - 🇳🇱 荷兰 | NLD
-  - 🇻🇳 越南 | VNM
+  - SG_b966f_0018
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FR_2e99e_0005
+  - FR_b966f_0005
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_2e99e_0023
-  - 🇸🇬 新加坡 | SGP 2
+  - GB_b966f_0008
+  - US_b966f_0023
+  - 🇸🇬 新加坡 | SGP
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_2e99e_0018
-  - US_2e99e_0023
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
+  - SG_b966f_0018
+  - US_b966f_0023
+  - 🇸🇬 新加坡 | SGP
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FR_2e99e_0005
-  - 🇳🇱 荷兰 | NLD
+  - FR_b966f_0005
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_b966f_0008
 rules:
 - MATCH,AUTO
