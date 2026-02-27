@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 9
+- name: 🇩🇪 德国 | DEU 7
   server: xbn-05.palmcraft.net
   port: 443
   type: vless
@@ -15,19 +15,17 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: ghyu.huangzi.cfd
-  port: 443
+- name: 🇺🇸 美国 | USA 2
+  server: nghnju.2yo.ccwu.cc
+  port: 80
   type: vless
-  uuid: 00a9b792-2bb4-437b-9228-565c1c994f1c
-  tls: true
-  servername: ghyu.huangzi.cfd
-  client-fingerprint: chrome
+  uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
+  tls: false
   network: ws
   ws-opts:
-    path: /9ELnrxvuY6f5UlQSLlXnsEj2y6
+    path: /IBb38gsTRjFOzklVEUuTu7GKK
     headers:
-      Host: ghyu.huangzi.cfd
+      Host: nghnju.2yo.ccwu.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -35,7 +33,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
-  - 🇺🇸 美国 | USA 17
+  - 🇩🇪 德国 | DEU 7
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
