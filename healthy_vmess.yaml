@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_b966f_0008
+- name: GB_7de11_0008
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,17 +14,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: US_b966f_0023
-  server: 47.84.126.255
-  port: 443
-  type: vmess
-  uuid: 32285564-1664-485c-f4db-daa776321a52
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
+- name: US_7de11_0023
   server: 47.84.126.255
   port: 443
   type: vmess
@@ -40,8 +30,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_b966f_0008
-  - US_b966f_0023
-  - 🇸🇬 新加坡 | SGP
+  - GB_7de11_0008
+  - US_7de11_0023
 rules:
 - MATCH,AUTO
