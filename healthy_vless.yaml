@@ -42,19 +42,6 @@ proxies:
     headers:
       Host: us1.opp.de5.net
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 162.159.48.107
-  port: 80
-  type: vless
-  uuid: a4f4c55a-5102-4c00-b212-682209219070
-  tls: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free
-    headers:
-      Host: us1.opp.de5.net
-  udp: true
 - name: 🇺🇸 美国 | USA 17
   server: ghyu.huangzi.cfd
   port: 443
@@ -82,6 +69,19 @@ proxies:
     headers:
       Host: us1.opp.de5.net
   udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 162.159.48.107
+  port: 80
+  type: vless
+  uuid: a4f4c55a-5102-4c00-b212-682209219070
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /free
+    headers:
+      Host: us1.opp.de5.net
+  udp: true
 - name: 🇺🇸 美国 | USA 33
   server: cf.090227.xyz
   port: 80
@@ -95,18 +95,6 @@ proxies:
     headers:
       Host: us1.opp.de5.net
   udp: true
-- name: 🇺🇸 美国 | USA 41
-  server: 104.18.32.47
-  port: 2052
-  type: vless
-  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -116,10 +104,9 @@ proxy-groups:
   - FR_b5374_0005
   - 🇩🇪 德国 | DEU 9
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 41
 rules:
 - MATCH,AUTO

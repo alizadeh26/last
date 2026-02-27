@@ -72,19 +72,6 @@ proxies:
     headers:
       Host: us1.opp.de5.net
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 162.159.48.107
-  port: 80
-  type: vless
-  uuid: a4f4c55a-5102-4c00-b212-682209219070
-  tls: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free
-    headers:
-      Host: us1.opp.de5.net
-  udp: true
 - name: 🇺🇸 美国 | USA 17
   server: ghyu.huangzi.cfd
   port: 443
@@ -99,8 +86,36 @@ proxies:
     headers:
       Host: ghyu.huangzi.cfd
   udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: vbbnhyu.2xv.ccwu.cc
+  port: 443
+  type: vmess
+  uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vbbnhyu.2xv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /7t9M6fIZbmR7zklVEUuTu7GKK
+    headers:
+      Host: vbbnhyu.2xv.ccwu.cc
+  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: cf.zhetengsha.eu.org
+  port: 80
+  type: vless
+  uuid: a4f4c55a-5102-4c00-b212-682209219070
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /free
+    headers:
+      Host: us1.opp.de5.net
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 162.159.48.107
   port: 80
   type: vless
   uuid: a4f4c55a-5102-4c00-b212-682209219070
@@ -125,33 +140,6 @@ proxies:
     headers:
       Host: us1.opp.de5.net
   udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: vbbnhyu.2xv.ccwu.cc
-  port: 443
-  type: vmess
-  uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vbbnhyu.2xv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /7t9M6fIZbmR7zklVEUuTu7GKK
-    headers:
-      Host: vbbnhyu.2xv.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 41
-  server: 104.18.32.47
-  port: 2052
-  type: vless
-  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -164,12 +152,11 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 10
   - 🇩🇪 德国 | DEU 9
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 41
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 33
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -178,11 +165,10 @@ proxy-groups:
   - FR_b5374_0005
   - 🇩🇪 德国 | DEU 9
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 41
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
