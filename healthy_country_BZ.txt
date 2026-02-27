@@ -1,1 +1,2 @@
-vless://57ba2ab1-a283-42eb-82ee-dc3561a805b8@45.131.209.130:8443?type=ws&encryption=none&host=ovhwuxian.pai50288.uk&path=/57ba2ab1&security=tls&sni=ovhwuxian.pai50288.uk&allowInsecure=1#🇧🇿 583 - BZ - VLESS/WS/TLS - 8443
+vless://57ba2ab1-a283-42eb-82ee-dc3561a805b8@45.131.209.130:8443?security=tls&sni=ovhwuxian.pai50288.uk&allowInsecure=1&fp=chrome&type=ws&path=/57ba2ab1&host=ovhwuxian.pai50288.uk&packetEncoding=xudp&encryption=none#🇧🇿 581 - BZ - VLESS/WS/TLS/UTLS - 8443
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@45.131.5.138:2096?path=/?ed=2560&security=tls&encryption=none&host=sni.111000.indevs.in&fp=chrome&type=ws&sni=sni.111000.indevs.in#🇧🇿 714 - BZ - VLESS/WS/TLS/UTLS - 2096

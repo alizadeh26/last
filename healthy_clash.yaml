@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_571fb_0007
-  server: 82.198.246.97
-  port: 180
+- name: US_571fb_0023
+  server: 47.84.126.255
+  port: 443
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 32285564-1664-485c-f4db-daa776321a52
   alterId: 0
   cipher: auto
   tls: false
@@ -37,16 +37,6 @@ proxies:
     headers:
       Host: nghnju.2yo.ccwu.cc
   udp: true
-- name: US_571fb_0023
-  server: 47.84.126.255
-  port: 443
-  type: vmess
-  uuid: 32285564-1664-485c-f4db-daa776321a52
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: vbbnhyu.2xv.ccwu.cc
   port: 443
@@ -68,10 +58,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_571fb_0007
+  - US_571fb_0023
   - 🇩🇪 德国 | DEU 7
   - 🇺🇸 美国 | USA 2
-  - US_571fb_0023
   - 🇺🇸 美国 | USA 14
 - name: PROTO-VLESS
   type: url-test
@@ -85,9 +74,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_571fb_0007
   - US_571fb_0023
   - 🇺🇸 美国 | USA 14
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - US_571fb_0023
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -99,7 +93,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_571fb_0007
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO
