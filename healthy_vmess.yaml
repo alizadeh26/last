@@ -4,7 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_5b7e5_0023
+- name: GB_b5374_0008
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: US_b5374_0023
   server: 47.84.126.255
   port: 443
   type: vmess
@@ -14,7 +24,17 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 9
+- name: 🇩🇪 德国 | DEU 10
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: www.bing.com
+  udp: true
+- name: 🇺🇸 美国 | USA 15
   server: vbbnhyu.2xv.ccwu.cc
   port: 443
   type: vmess
@@ -35,7 +55,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_5b7e5_0023
-  - 🇺🇸 美国 | USA 9
+  - GB_b5374_0008
+  - US_b5374_0023
+  - 🇩🇪 德国 | DEU 10
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO
