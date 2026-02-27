@@ -29,6 +29,19 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: s843.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  servername: u708330u2076s843.ccgfw.top
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ssp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -37,5 +50,6 @@ proxy-groups:
   proxies:
   - FR_5b7e5_0005
   - 🇪🇪 爱沙尼亚 | EST
+  - 🇺🇸 美国 | USA 18
 rules:
 - MATCH,AUTO

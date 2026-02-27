@@ -18,6 +18,16 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
+- name: GB_5b7e5_0008
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: US_5b7e5_0023
   server: 47.84.126.255
   port: 443
@@ -39,20 +49,18 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: vbbnhyu.2xv.ccwu.cc
+- name: 🇺🇸 美国 | USA 18
+  server: s843.ccgfw.top
   port: 443
-  type: vmess
-  uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
   tls: true
-  servername: vbbnhyu.2xv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /7t9M6fIZbmR7zklVEUuTu7GKK
-    headers:
-      Host: vbbnhyu.2xv.ccwu.cc
+  servername: u708330u2076s843.ccgfw.top
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ssp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -61,9 +69,10 @@ proxy-groups:
   interval: 300
   proxies:
   - FR_5b7e5_0005
+  - GB_5b7e5_0008
   - US_5b7e5_0023
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 18
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -71,13 +80,14 @@ proxy-groups:
   proxies:
   - FR_5b7e5_0005
   - 🇪🇪 爱沙尼亚 | EST
+  - 🇺🇸 美国 | USA 18
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - GB_5b7e5_0008
   - US_5b7e5_0023
-  - 🇺🇸 美国 | USA 9
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -90,6 +100,11 @@ proxy-groups:
   interval: 300
   proxies:
   - FR_5b7e5_0005
-  - 🇪🇪 爱沙尼亚 | EST
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_5b7e5_0008
 rules:
 - MATCH,AUTO
