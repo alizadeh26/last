@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: FR_7de11_0005
+- name: FR_5b7e5_0005
   server: fran.scroogethebest.com
   port: 443
   type: vless
@@ -18,17 +18,7 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: GB_7de11_0008
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: US_7de11_0023
+- name: US_5b7e5_0023
   server: 47.84.126.255
   port: 443
   type: vmess
@@ -38,45 +28,68 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: s501.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u708330u05c4s501.ccgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: vbbnhyu.2xv.ccwu.cc
+  port: 443
+  type: vmess
+  uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vbbnhyu.2xv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /7t9M6fIZbmR7zklVEUuTu7GKK
+    headers:
+      Host: vbbnhyu.2xv.ccwu.cc
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FR_7de11_0005
-  - GB_7de11_0008
-  - US_7de11_0023
+  - FR_5b7e5_0005
+  - US_5b7e5_0023
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇺🇸 美国 | USA 9
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FR_7de11_0005
+  - FR_5b7e5_0005
+  - 🇪🇪 爱沙尼亚 | EST
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_7de11_0008
-  - US_7de11_0023
+  - US_5b7e5_0023
+  - 🇺🇸 美国 | USA 9
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_7de11_0023
+  - US_5b7e5_0023
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FR_7de11_0005
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_7de11_0008
+  - FR_5b7e5_0005
+  - 🇪🇪 爱沙尼亚 | EST
 rules:
 - MATCH,AUTO

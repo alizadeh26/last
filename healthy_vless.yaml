@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: FR_7de11_0005
+- name: FR_5b7e5_0005
   server: fran.scroogethebest.com
   port: 443
   type: vless
@@ -18,12 +18,24 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: s501.ccgfw.top
+  port: 443
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u708330u05c4s501.ccgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FR_7de11_0005
+  - FR_5b7e5_0005
+  - 🇪🇪 爱沙尼亚 | EST
 rules:
 - MATCH,AUTO
