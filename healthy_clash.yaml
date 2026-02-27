@@ -14,20 +14,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: FR_b5374_0005
-  server: fran.scroogethebest.com
-  port: 443
-  type: vless
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: fran.scroogethebest.com
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
-  udp: true
 - name: US_b5374_0023
   server: 47.84.126.255
   port: 443
@@ -59,19 +45,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 104.17.222.76
-  port: 80
-  type: vless
-  uuid: a4f4c55a-5102-4c00-b212-682209219070
-  tls: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free
-    headers:
-      Host: us1.opp.de5.net
-  udp: true
 - name: 🇺🇸 美国 | USA 17
   server: ghyu.huangzi.cfd
   port: 443
@@ -101,45 +74,6 @@ proxies:
     headers:
       Host: vbbnhyu.2xv.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: cf.zhetengsha.eu.org
-  port: 80
-  type: vless
-  uuid: a4f4c55a-5102-4c00-b212-682209219070
-  tls: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free
-    headers:
-      Host: us1.opp.de5.net
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 162.159.48.107
-  port: 80
-  type: vless
-  uuid: a4f4c55a-5102-4c00-b212-682209219070
-  tls: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free
-    headers:
-      Host: us1.opp.de5.net
-  udp: true
-- name: 🇺🇸 美国 | USA 33
-  server: cf.090227.xyz
-  port: 80
-  type: vless
-  uuid: a4f4c55a-5102-4c00-b212-682209219070
-  tls: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free
-    headers:
-      Host: us1.opp.de5.net
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -147,28 +81,18 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_b5374_0008
-  - FR_b5374_0005
   - US_b5374_0023
   - 🇩🇪 德国 | DEU 10
   - 🇩🇪 德国 | DEU 9
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 33
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FR_b5374_0005
   - 🇩🇪 德国 | DEU 9
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 33
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -189,7 +113,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FR_b5374_0005
+  - 🇩🇪 德国 | DEU 9
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204

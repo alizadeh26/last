@@ -1,5 +1,6 @@
-vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.208:8880?encryption=none&type=grpc&mode=gun&security=none#Server 89 🇺🇸	dl_kib_s=2458	ul_kib_s=1906
-vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.116:8880?mode=gun&security=none&encryption=none&authority=telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray&type=grpc#Server 80 🇺🇸	dl_kib_s=2739	ul_kib_s=1617
-vless://e08f1ad7-0c60-446d-baec-08b3b69bb3d0@nl-90w-c.southnetworks.cloud:80?type=ws&security=none&encryption=none&path=/getWorkerUpdates#Server 73 🇳🇱	dl_kib_s=1159	ul_kib_s=938
-vless://e08f1ad7-0c60-446d-baec-08b3b69bb3d0@nl-90w-c.southnetworks.cloud:80?&type=ws&headerType=none&host=nl-90w-c.southnetworks.cloud&path=%2FgetWorkerUpdates#Server 59 🇳🇱	dl_kib_s=1129	ul_kib_s=936
-trojan://76yTlnTIsjCTlmqnUJ5Tzc1rM@hl-freedom-0.undef.network:443?security=tls&sni=hl-freedom-0.undef.network&type=ws&host=hl-freedom-0.undef.network&path=/f2fc2a1f#Server 57 🇬🇧	dl_kib_s=975	ul_kib_s=896
+vless://e08f1ad7-0c60-446d-baec-08b3b69bb3d0@nl-90w-c.southnetworks.cloud:80?type=ws&security=none&encryption=none&path=/getWorkerUpdates#Server 73 🇳🇱	dl_kib_s=1168	ul_kib_s=936
+vless://e6c7ed63-89db-4ae1-a3f8-7a722921b3b2@104.18.32.47:443?alpn=http%2F1.1&encryption=none&host=apii.onlineshoppingez.ir&fp=chrome&path=%2FO1w0n3vYgFKYs7EzNAvLPvOp&security=tls&sni=apii.onlineshoppingez.ir&type=ws#Server 41 🇺🇸	dl_kib_s=1025	ul_kib_s=1014
+vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855?path=/&security=none&encryption=none&type=ws#Server 49 🇩🇰	dl_kib_s=1108	ul_kib_s=902
+vless://e08f1ad7-0c60-446d-baec-08b3b69bb3d0@nl-90w-c.southnetworks.cloud:80?&type=ws&headerType=none&host=nl-90w-c.southnetworks.cloud&path=%2FgetWorkerUpdates#Server 59 🇳🇱	dl_kib_s=1094	ul_kib_s=901
+vless://e6c7ed63-89db-4ae1-a3f8-7a722921b3b2@chatgpt.com:443?path=/O1w0n3vYgFKYs7EzNAvLPvOp&security=tls&alpn=http/1.1&encryption=none&insecure=1&host=apii.onlineshoppingez.ir&fp=chrome&type=ws&allowInsecure=1&sni=apii.onlineshoppingez.ir#Server 86 🇬🇧	dl_kib_s=949	ul_kib_s=970
+vless://6251f84e-9c02-4140-921c-6b47d394fb96@40.160.14.104:8880?security=&encryption=none&type=grpc#Server 44 🇺🇸	dl_kib_s=948	ul_kib_s=631
