@@ -14,19 +14,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: s678.ccgfw.top
-  port: 443
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  tls: true
-  servername: u708330u6ad7s678.ccgfw.top
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ssp
-  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: scvf65.0z0.ccwu.cc
   port: 80
@@ -55,20 +42,6 @@ proxies:
     headers:
       Host: dcvb5yu.0wu.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: nhj7.222569.xyz
-  port: 443
-  type: vless
-  uuid: c558328b-eb46-424c-b9e0-574770f0b072
-  tls: true
-  servername: nhj7.222569.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /v8clafFSnPXNC0BXGtJ
-    headers:
-      Host: nhj7.222569.xyz
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -76,31 +49,21 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_83042_0007
-  - 🇳🇱 荷兰 | NLD 2
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - GB_83042_0007
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇳🇱 荷兰 | NLD 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -108,5 +71,6 @@ proxy-groups:
   proxies:
   - GB_83042_0007
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
