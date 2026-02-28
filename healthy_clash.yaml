@@ -4,63 +4,60 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_571fb_0007
-  server: 82.198.246.97
-  port: 180
+- name: 🇮🇩 印尼 | IDN
+  server: neva.azlan.biz.id
+  port: 443
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 8072298f-cd28-4a61-8e05-5879c84b9100
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: xbn-05.palmcraft.net
-  port: 443
-  type: vless
-  uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
   tls: true
-  flow: xtls-rprx-vision
-  servername: xbn-05.palmcraft.net
-  client-fingerprint: chrome
-  network: tcp
+  servername: neva.azlan.biz.id
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: neva.azlan.biz.id
   udp: true
-- name: US_571fb_0023
-  server: 47.84.126.255
-  port: 443
-  type: vmess
-  uuid: 32285564-1664-485c-f4db-daa776321a52
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: nghnju.2yo.ccwu.cc
+- name: 🇺🇸 美国 | USA 9
+  server: nmjju8.0sm.ccwu.cc
   port: 80
   type: vless
   uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
   tls: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /IBb38gsTRjFOzklVEUuTu7GKK
     headers:
-      Host: nghnju.2yo.ccwu.cc
+      Host: nmjju8.0sm.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: vbbnhyu.2xv.ccwu.cc
-  port: 443
-  type: vmess
-  uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vbbnhyu.2xv.ccwu.cc
+- name: 🇹🇭 泰国 | THA
+  server: www.ptnk.sry-vpn.com
+  port: 80
+  type: vless
+  uuid: 4dc817f7-2595-4330-a1b0-e35e7c6b803a
+  tls: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /7t9M6fIZbmR7zklVEUuTu7GKK
+    path: /vless
     headers:
-      Host: vbbnhyu.2xv.ccwu.cc
+      Host: www.ptnk.sry-vpn.com
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: turk1.net.net
+  port: 80
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tr1-smart.adelping.com.
   udp: true
 proxy-groups:
 - name: AUTO
@@ -68,43 +65,36 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_571fb_0007
-  - 🇩🇪 德国 | DEU 7
-  - US_571fb_0023
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 14
+  - 🇮🇩 印尼 | IDN
+  - 🇺🇸 美国 | USA 9
+  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 10
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 9
+  - 🇹🇭 泰国 | THA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_571fb_0007
-  - US_571fb_0023
-  - 🇺🇸 美国 | USA 14
+  - 🇮🇩 印尼 | IDN
+  - 🇺🇸 美国 | USA 10
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_571fb_0023
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 7
+  - 🇮🇩 印尼 | IDN
+  - 🇹🇭 泰国 | THA
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_571fb_0007
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO

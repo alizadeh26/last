@@ -4,40 +4,34 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_571fb_0007
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: US_571fb_0023
-  server: 47.84.126.255
+- name: 🇮🇩 印尼 | IDN
+  server: neva.azlan.biz.id
   port: 443
   type: vmess
-  uuid: 32285564-1664-485c-f4db-daa776321a52
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: vbbnhyu.2xv.ccwu.cc
-  port: 443
-  type: vmess
-  uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
+  uuid: 8072298f-cd28-4a61-8e05-5879c84b9100
   alterId: 0
   cipher: auto
   tls: true
-  servername: vbbnhyu.2xv.ccwu.cc
+  servername: neva.azlan.biz.id
   network: ws
   ws-opts:
-    path: /7t9M6fIZbmR7zklVEUuTu7GKK
+    path: /vmess
     headers:
-      Host: vbbnhyu.2xv.ccwu.cc
+      Host: neva.azlan.biz.id
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: turk1.net.net
+  port: 80
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tr1-smart.adelping.com.
   udp: true
 proxy-groups:
 - name: AUTO
@@ -45,8 +39,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_571fb_0007
-  - US_571fb_0023
-  - 🇺🇸 美国 | USA 14
+  - 🇮🇩 印尼 | IDN
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO

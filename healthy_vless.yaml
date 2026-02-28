@@ -4,28 +4,31 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: xbn-05.palmcraft.net
-  port: 443
-  type: vless
-  uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
-  tls: true
-  flow: xtls-rprx-vision
-  servername: xbn-05.palmcraft.net
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: nghnju.2yo.ccwu.cc
+- name: 🇺🇸 美国 | USA 9
+  server: nmjju8.0sm.ccwu.cc
   port: 80
   type: vless
   uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
   tls: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /IBb38gsTRjFOzklVEUuTu7GKK
     headers:
-      Host: nghnju.2yo.ccwu.cc
+      Host: nmjju8.0sm.ccwu.cc
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: www.ptnk.sry-vpn.com
+  port: 80
+  type: vless
+  uuid: 4dc817f7-2595-4330-a1b0-e35e7c6b803a
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: www.ptnk.sry-vpn.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -33,7 +36,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 9
+  - 🇹🇭 泰国 | THA
 rules:
 - MATCH,AUTO
