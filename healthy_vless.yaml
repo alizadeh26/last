@@ -4,33 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 5
-  server: scvf65.0z0.ccwu.cc
+- name: 🇺🇸 美国 | USA 27
+  server: bnmki.06o.ccwu.cc
   port: 80
   type: vless
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
+  uuid: 2bfded8d-6a7c-4c18-aaa5-fc65b955d50c
   tls: false
-  servername: scvf65.0z0.ccwu.cc
+  servername: bnmki.06o.ccwu.cc
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /Iq3945ZsqJBAQ5Ah
+    path: /HoBSIvRY1m5xOEJ3dX414bl
     headers:
-      Host: scvf65.0z0.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: dcvb5yu.0wu.ccwu.cc
-  port: 80
-  type: vless
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  tls: false
-  servername: dcvb5yu.0wu.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /Iq3945ZsqJBAQ5Ah
-    headers:
-      Host: dcvb5yu.0wu.ccwu.cc
+      Host: bnmki.06o.ccwu.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 27
 rules:
 - MATCH,AUTO
