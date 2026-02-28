@@ -14,17 +14,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: pub.ap20251212.com
-  port: 64013
-  type: vmess
-  uuid: bc0cbcc2-2625-32f3-8568-f3e917d6541c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  servername: pub.ap20251212.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -32,6 +21,5 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_83042_0007
-  - 🇨🇦 加拿大 | CAN
 rules:
 - MATCH,AUTO
