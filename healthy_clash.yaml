@@ -4,6 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: GB_2dd9d_0007
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: 🇮🇩 印尼 | IDN
   server: neva.azlan.biz.id
   port: 443
@@ -32,19 +42,6 @@ proxies:
     headers:
       Host: nmjju8.0sm.ccwu.cc
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: www.ptnk.sry-vpn.com
-  port: 80
-  type: vless
-  uuid: 4dc817f7-2595-4330-a1b0-e35e7c6b803a
-  tls: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: www.ptnk.sry-vpn.com
-  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: turk1.net.net
   port: 80
@@ -59,16 +56,30 @@ proxies:
     headers:
       Host: tr1-smart.adelping.com.
   udp: true
+- name: 🇹🇭 泰国 | THA
+  server: www.ptnk.sry-vpn.com
+  port: 80
+  type: vless
+  uuid: 4dc817f7-2595-4330-a1b0-e35e7c6b803a
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: www.ptnk.sry-vpn.com
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - GB_2dd9d_0007
   - 🇮🇩 印尼 | IDN
   - 🇺🇸 美国 | USA 9
-  - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 10
+  - 🇹🇭 泰国 | THA
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -81,6 +92,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - GB_2dd9d_0007
   - 🇮🇩 印尼 | IDN
   - 🇺🇸 美国 | USA 10
 - name: REGION-AS
@@ -89,12 +101,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇮🇩 印尼 | IDN
-  - 🇹🇭 泰国 | THA
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - GB_2dd9d_0007
   - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
