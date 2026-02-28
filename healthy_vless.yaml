@@ -4,31 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 9
-  server: nmjju8.0sm.ccwu.cc
+- name: 🇺🇸 美国 | USA 5
+  server: scvf65.0z0.ccwu.cc
   port: 80
   type: vless
-  uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
+  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
   tls: false
+  servername: scvf65.0z0.ccwu.cc
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /IBb38gsTRjFOzklVEUuTu7GKK
+    path: /Iq3945ZsqJBAQ5Ah
     headers:
-      Host: nmjju8.0sm.ccwu.cc
+      Host: scvf65.0z0.ccwu.cc
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: www.ptnk.sry-vpn.com
+- name: 🇺🇸 美国 | USA 8
+  server: dcvb5yu.0wu.ccwu.cc
   port: 80
   type: vless
-  uuid: 4dc817f7-2595-4330-a1b0-e35e7c6b803a
+  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
   tls: false
+  servername: dcvb5yu.0wu.ccwu.cc
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vless
+    path: /Iq3945ZsqJBAQ5Ah
     headers:
-      Host: www.ptnk.sry-vpn.com
+      Host: dcvb5yu.0wu.ccwu.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -36,7 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 9
-  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
