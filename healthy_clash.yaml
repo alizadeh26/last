@@ -3,7 +3,35 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: silent
-proxies: []
-proxy-groups: []
+proxies:
+- name: GB_c9ae2_0007
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+proxy-groups:
+- name: AUTO
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_c9ae2_0007
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_c9ae2_0007
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_c9ae2_0007
 rules:
 - MATCH,AUTO

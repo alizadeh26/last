@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_2dd9d_0007
+- name: GB_c9ae2_0007
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,43 +14,12 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇮🇩 印尼 | IDN
-  server: neva.azlan.biz.id
-  port: 443
-  type: vmess
-  uuid: 8072298f-cd28-4a61-8e05-5879c84b9100
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: neva.azlan.biz.id
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: neva.azlan.biz.id
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: turk1.net.net
-  port: 80
-  type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tr1-smart.adelping.com.
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_2dd9d_0007
-  - 🇮🇩 印尼 | IDN
-  - 🇺🇸 美国 | USA 10
+  - GB_c9ae2_0007
 rules:
 - MATCH,AUTO
