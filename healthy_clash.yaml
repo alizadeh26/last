@@ -4,34 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 10
-  server: 172.67.74.2
-  port: 80
-  type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tr1-smart.adelping.com.
-  udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: bnmki.06o.ccwu.cc
+- name: 🇺🇸 美国 | USA 13
+  server: jjk.0f0.ccwu.cc
   port: 80
   type: vless
-  uuid: 2bfded8d-6a7c-4c18-aaa5-fc65b955d50c
+  uuid: 60c4d55d-bee3-4719-9568-aabf45153f9f
   tls: false
-  servername: bnmki.06o.ccwu.cc
+  servername: jjk.0f0.ccwu.cc
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /HoBSIvRY1m5xOEJ3dX414bl
+    path: /gPvZ4oCcNDyuc3szX7xhuvpEm
     headers:
-      Host: bnmki.06o.ccwu.cc
+      Host: jjk.0f0.ccwu.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -39,26 +24,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 13
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 27
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 13
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO
