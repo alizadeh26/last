@@ -4,20 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 10
-  server: 172.67.74.2
-  port: 80
+- name: 🇩🇪 德国 | DEU
+  server: 82.198.246.97
+  port: 180
   type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tr1-smart.adelping.com.
+  servername: www.bing.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
+  - 🇩🇪 德国 | DEU
 rules:
 - MATCH,AUTO
