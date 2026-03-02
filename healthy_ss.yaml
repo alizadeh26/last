@@ -4,14 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_71aaf_0007
+- name: GB_a3a1b_0007
   server: admin.c1.havij.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 1kVr0KATIJI7mwOF
   udp: true
-- name: GB_71aaf_0008
+- name: GB_a3a1b_0008
   server: 82.38.31.194
   port: 8080
   type: ss
@@ -24,7 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_71aaf_0007
-  - GB_71aaf_0008
+  - GB_a3a1b_0007
+  - GB_a3a1b_0008
 rules:
 - MATCH,AUTO
