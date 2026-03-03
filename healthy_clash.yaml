@@ -18,6 +18,17 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: xbn-05.palmcraft.net
+  port: 443
+  type: vless
+  uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+  tls: true
+  flow: xtls-rprx-vision
+  servername: xbn-05.palmcraft.net
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.28
   port: 38388
@@ -33,6 +44,7 @@ proxy-groups:
   proxies:
   - GB_64cd4_0007
   - GB_64cd4_0008
+  - 🇩🇪 德国 | DEU 4
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
@@ -42,12 +54,12 @@ proxy-groups:
   - GB_64cd4_0007
   - GB_64cd4_0008
   - 🇻🇳 越南 | VNM
-- name: REGION-AS
+- name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
+  - 🇩🇪 德国 | DEU 4
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -55,5 +67,6 @@ proxy-groups:
   proxies:
   - GB_64cd4_0007
   - GB_64cd4_0008
+  - 🇩🇪 德国 | DEU 4
 rules:
 - MATCH,AUTO

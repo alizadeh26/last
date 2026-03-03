@@ -4,19 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 27
-  server: bnmki.06o.ccwu.cc
-  port: 80
+- name: 🇩🇪 德国 | DEU 4
+  server: xbn-05.palmcraft.net
+  port: 443
   type: vless
-  uuid: 2bfded8d-6a7c-4c18-aaa5-fc65b955d50c
-  tls: false
-  servername: bnmki.06o.ccwu.cc
+  uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+  tls: true
+  flow: xtls-rprx-vision
+  servername: xbn-05.palmcraft.net
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /HoBSIvRY1m5xOEJ3dX414bl
-    headers:
-      Host: bnmki.06o.ccwu.cc
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,6 +21,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 27
+  - 🇩🇪 德国 | DEU 4
 rules:
 - MATCH,AUTO
