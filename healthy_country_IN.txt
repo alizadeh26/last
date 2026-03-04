@@ -1,8 +1,8 @@
-vless://1027b850-de79-4a94-b337-eccdac28e141@144.24.126.26:443?security=tls&encryption=none&sni=g.sandesh.qzz.io&type=ws&host=g.sandesh.qzz.io&path=/vless#🇮🇳 115 - IN - VLESS/WS/TLS - 443
-vless://48ddd7e3-5d31-46ab-9153-16c0e4d92adc@139.59.3.70:24725?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=dash.cloudflare.com&fp=chrome&security=reality&pbk=PAAYOscWvc6-DIWjJ8cHWpgX-xkMUVmu8Nz24itmo34#🇮🇳 509 - IN - VLESS/REALITY/PBK/VISION/UTLS - 24725
+vless://05b544a4-d479-4ba4-8208-950bd4411453@45.89.105.56:80?encryption=none&type=ws&security=none&path=/vless/#🇮🇳 47 - IN - VLESS/WS - 80
+vless://1027b850-de79-4a94-b337-eccdac28e141@144.24.126.26:443?security=tls&encryption=none&sni=g.sandesh.qzz.io&type=ws&host=g.sandesh.qzz.io&path=/vless#🇮🇳 111 - IN - VLESS/WS/TLS - 443
+vless://48ddd7e3-5d31-46ab-9153-16c0e4d92adc@139.59.3.70:24725?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=dash.cloudflare.com&fp=chrome&security=reality&pbk=PAAYOscWvc6-DIWjJ8cHWpgX-xkMUVmu8Nz24itmo34#🇮🇳 507 - IN - VLESS/REALITY/PBK/VISION/UTLS - 24725
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3MzU1ODJlNTEzMjhhZjk5@163.171.206.24:28028#🇮🇳 33 - IN - SS/AEAD - 28028
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@152.70.76.104:46000?encryption=none&type=ws&security=tls&path=/?ed=2560&Telegram🇨🇳 @WangCai2&host=sni.111000.v6.navy&fp=chrome&sni=sni.111000.v6.navy#🇮🇳 714 - IN - VLESS/WS/TLS/UTLS - 46000
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5ZDk3NDMzNjg4ZTdlZmQ1@163.171.206.24:44233#🇮🇳 90 - IN - SS/AEAD - 44233
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5ZDk3NDMzNjg4ZTdlZmQ1@163.171.206.24:44233#🇮🇳 89 - IN - SS/AEAD - 44233
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5ZDk3NDMzNjg4ZTdlZmQ1@163.171.206.24:44234#🇮🇳 92 - IN - SS/AEAD - 44234
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5ZDk3NDMzNjg4ZTdlZmQ1@163.171.206.24:44235#🇮🇳 94 - IN - SS/AEAD - 44235
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5ZDk3NDMzNjg4ZTdlZmQ1@163.171.206.24:44235#🇮🇳 95 - IN - SS/AEAD - 44235
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5ZDk3NDMzNjg4ZTdlZmQ1@163.171.206.24:44236#🇮🇳 96 - IN - SS/AEAD - 44236
