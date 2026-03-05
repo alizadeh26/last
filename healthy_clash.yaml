@@ -11,6 +11,20 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: kwtgm.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: 9fc9b94d-6b44-4029-bc41-09e4ac92e508
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kwtgm.cmvvb.online
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -18,17 +32,30 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
+  - 🇩🇪 德国 | DEU 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 3
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 3
 rules:
 - MATCH,AUTO
