@@ -4,18 +4,58 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.170
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: AE_35346_0001
+  server: ae.cdn.stun.su
+  port: 443
+  type: vless
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: ae.cdn.stun.su
+  reality-opts:
+    public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+    short-id: 41a0b29e95aaea87
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: kwtgm.cmvvb.online
-  port: 8443
+- name: DK_35346_0008
+  server: 45.148.31.0
+  port: 15855
+  type: vless
+  uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  udp: true
+- name: DK_35346_0009
+  server: 45.148.31.0
+  port: 15855
+  type: vless
+  uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
+  tls: false
+  skip-cert-verify: false
+  servername: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
+  udp: true
+- name: GB_35346_0011
+  server: 82.198.246.97
+  port: 180
   type: vmess
-  uuid: 9fc9b94d-6b44-4029-bc41-09e4ac92e508
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: udtzy.cmvvb.online
+  port: 443
+  type: vmess
+  uuid: ef46b74c-b3ef-4633-9818-0af6226c4060
   alterId: 0
   cipher: auto
   tls: true
@@ -23,7 +63,36 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: kwtgm.cmvvb.online
+      Host: udtzy.cmvvb.online
+  udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: zdqbk.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: 1544fa69-d15e-430c-aba5-3f3c9fb7a354
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zdqbk.cmvvb.online
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: zdqbk.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: a2852e93-7255-4aae-9412-38273fdacd31
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zdqbk.cmvvb.online
   udp: true
 proxy-groups:
 - name: AUTO
@@ -31,31 +100,48 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
-  - 🇩🇪 德国 | DEU 3
-- name: PROTO-SS
+  - AE_35346_0001
+  - DK_35346_0008
+  - DK_35346_0009
+  - GB_35346_0011
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU
+- name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
+  - AE_35346_0001
+  - DK_35346_0008
+  - DK_35346_0009
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
+  - GB_35346_0011
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
+  - AE_35346_0001
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - DK_35346_0008
+  - DK_35346_0009
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
+  - GB_35346_0011
 rules:
 - MATCH,AUTO
