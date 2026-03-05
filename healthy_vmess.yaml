@@ -14,34 +14,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: udtzy.cmvvb.online
-  port: 443
-  type: vmess
-  uuid: ef46b74c-b3ef-4633-9818-0af6226c4060
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: udtzy.cmvvb.online
-  udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: zdqbk.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 1544fa69-d15e-430c-aba5-3f3c9fb7a354
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zdqbk.cmvvb.online
-  udp: true
 - name: 🇩🇪 德国 | DEU
   server: zdqbk.cmvvb.online
   port: 8443
@@ -57,6 +29,34 @@ proxies:
     headers:
       Host: zdqbk.cmvvb.online
   udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: zdqbk.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: 1544fa69-d15e-430c-aba5-3f3c9fb7a354
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zdqbk.cmvvb.online
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: udtzy.cmvvb.online
+  port: 443
+  type: vmess
+  uuid: ef46b74c-b3ef-4633-9818-0af6226c4060
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: udtzy.cmvvb.online
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -64,8 +64,8 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_35346_0011
-  - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 11
 rules:
 - MATCH,AUTO

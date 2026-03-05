@@ -27,6 +27,16 @@ proxies:
   skip-cert-verify: false
   network: ws
   udp: true
+- name: GB_35346_0011
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: DK_35346_0009
   server: 45.148.31.0
   port: 15855
@@ -40,44 +50,6 @@ proxies:
     path: /
     headers:
       Host: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
-  udp: true
-- name: GB_35346_0011
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: udtzy.cmvvb.online
-  port: 443
-  type: vmess
-  uuid: ef46b74c-b3ef-4633-9818-0af6226c4060
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: udtzy.cmvvb.online
-  udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: zdqbk.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 1544fa69-d15e-430c-aba5-3f3c9fb7a354
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zdqbk.cmvvb.online
   udp: true
 - name: 🇩🇪 德国 | DEU
   server: zdqbk.cmvvb.online
@@ -94,6 +66,34 @@ proxies:
     headers:
       Host: zdqbk.cmvvb.online
   udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: zdqbk.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: 1544fa69-d15e-430c-aba5-3f3c9fb7a354
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zdqbk.cmvvb.online
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: udtzy.cmvvb.online
+  port: 443
+  type: vmess
+  uuid: ef46b74c-b3ef-4633-9818-0af6226c4060
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: udtzy.cmvvb.online
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -102,11 +102,11 @@ proxy-groups:
   proxies:
   - AE_35346_0001
   - DK_35346_0008
-  - DK_35346_0009
   - GB_35346_0011
-  - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 13
+  - DK_35346_0009
   - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 11
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -121,9 +121,9 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_35346_0011
-  - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 11
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
