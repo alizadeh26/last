@@ -3,7 +3,38 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: silent
-proxies: []
-proxy-groups: []
+proxies:
+- name: 🇺🇸 美国 | USA 2
+  server: gggbnhj.10o.ccwu.cc
+  port: 80
+  type: vless
+  uuid: 2bfded8d-6a7c-4c18-aaa5-fc65b955d50c
+  tls: false
+  servername: gggbnhj.10o.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /HoBSIvRY1m5xOEJ3dX414bl
+    headers:
+      Host: gggbnhj.10o.ccwu.cc
+  udp: true
+proxy-groups:
+- name: AUTO
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 2
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO

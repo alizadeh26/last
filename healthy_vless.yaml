@@ -4,16 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: xbn-05.palmcraft.net
-  port: 443
+- name: 🇺🇸 美国 | USA 2
+  server: gggbnhj.10o.ccwu.cc
+  port: 80
   type: vless
-  uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
-  tls: true
-  flow: xtls-rprx-vision
-  servername: xbn-05.palmcraft.net
-  client-fingerprint: chrome
-  network: tcp
+  uuid: 2bfded8d-6a7c-4c18-aaa5-fc65b955d50c
+  tls: false
+  servername: gggbnhj.10o.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /HoBSIvRY1m5xOEJ3dX414bl
+    headers:
+      Host: gggbnhj.10o.ccwu.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -21,6 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
