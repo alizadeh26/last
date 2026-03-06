@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: AE_622d4_0001
+- name: AE_2ad15_0001
   server: ae.cdn.stun.su
   port: 443
   type: vless
@@ -18,7 +18,16 @@ proxies:
     public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
     short-id: 41a0b29e95aaea87
   udp: true
-- name: DK_622d4_0009
+- name: DK_2ad15_0008
+  server: 45.148.31.0
+  port: 15855
+  type: vless
+  uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  udp: true
+- name: DK_2ad15_0009
   server: 45.148.31.0
   port: 15855
   type: vless
@@ -32,14 +41,19 @@ proxies:
     headers:
       Host: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
   udp: true
-- name: DK_622d4_0008
-  server: 45.148.31.0
-  port: 15855
+- name: 🇺🇸 美国 | USA 18
+  server: dfvbg6.0oz.ccwu.cc
+  port: 80
   type: vless
-  uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
+  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
   tls: false
-  skip-cert-verify: false
+  servername: dfvbg6.0oz.ccwu.cc
+  client-fingerprint: chrome
   network: ws
+  ws-opts:
+    path: /Iq3945ZsqJBAQ5Ah
+    headers:
+      Host: dfvbg6.0oz.ccwu.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -47,8 +61,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - AE_622d4_0001
-  - DK_622d4_0009
-  - DK_622d4_0008
+  - AE_2ad15_0001
+  - DK_2ad15_0008
+  - DK_2ad15_0009
+  - 🇺🇸 美国 | USA 18
 rules:
 - MATCH,AUTO

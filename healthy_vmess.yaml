@@ -4,35 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_622d4_0011
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: udtzy.cmvvb.online
-  port: 443
-  type: vmess
-  uuid: 9fc9b94d-6b44-4029-bc41-09e4ac92e508
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: udtzy.cmvvb.online
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
+- name: 🇩🇪 德国 | DEU 4
   server: kwtgm.cmvvb.online
   port: 8443
   type: vmess
-  uuid: b24b91e4-57f8-4f50-a1cf-215756f9883b
+  uuid: 04ec1c31-a6ad-4392-bcc0-3afeb39059c5
   alterId: 0
   cipher: auto
   tls: true
@@ -42,35 +18,26 @@ proxies:
     headers:
       Host: kwtgm.cmvvb.online
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: udtzy.cmvvb.online
-  port: 443
-  type: vmess
-  uuid: 41a4ebc1-9ed5-4249-afd7-8a03b4e820b6
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: udtzy.cmvvb.online
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: zdqbk.cmvvb.online
+- name: 🇩🇪 德国 | DEU 7
+  server: kwtgm.cmvvb.online
   port: 8443
   type: vmess
-  uuid: e94ad59b-2c95-4883-823d-ad1eda4aa239
+  uuid: 633078c2-13e7-4672-a830-14f4c98b3d35
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kwtgm.cmvvb.online
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: kwtgm.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: 5017f929-00f3-4244-abb6-c7295ebf0ac3
   alterId: 0
   cipher: auto
   tls: true
@@ -78,7 +45,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: zdqbk.cmvvb.online
+      Host: kwtgm.cmvvb.online
   udp: true
 proxy-groups:
 - name: AUTO
@@ -86,11 +53,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_622d4_0011
+  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 11
-  - 🇺🇸 美国 | USA 5
-  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 8
 rules:
 - MATCH,AUTO
