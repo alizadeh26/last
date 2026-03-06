@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_f7dad_0069
-  server: us.netvora.space
-  port: 443
-  type: vless
-  uuid: 2baffe9c-099d-481b-8d9c-7eb351c9bf35
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: qq
-  servername: us.netvora.space
-  reality-opts:
-    public-key: OyMR_bsXbxfwuJ6HCtDOisl2Xf78RWYZXbaXb3CEiks
-    short-id: d513ea7473969a0a
-  udp: true
 - name: 🇭🇰 香港 | HKG 4
   server: 103.149.182.79
   port: 8388
@@ -39,19 +25,19 @@ proxies:
     headers:
       Host: jjk.0f0.ccwu.cc
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.224
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.143
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇺🇸 美国 | USA 13
+  server: kwtgm.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: 82aa5240-ee95-427d-91b0-1ba42383d49e
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kwtgm.cmvvb.online
   udp: true
 - name: 🇺🇸 美国 | USA 15
   server: kwtgm.cmvvb.online
@@ -67,26 +53,12 @@ proxies:
     headers:
       Host: kwtgm.cmvvb.online
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.11
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.143
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: kwtgm.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 82aa5240-ee95-427d-91b0-1ba42383d49e
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kwtgm.cmvvb.online
   udp: true
 - name: 🇺🇸 美国 | USA 18
   server: udtzy.cmvvb.online
@@ -116,20 +88,19 @@ proxies:
     headers:
       Host: kwtgm.cmvvb.online
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: nqzkb.cmvvb.online
-  port: 443
-  type: vmess
-  uuid: 16604b48-7497-428c-a6d4-b017b3a30ce4
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nqzkb.cmvvb.online
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.224
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.11
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -137,43 +108,39 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_f7dad_0069
   - 🇭🇰 香港 | HKG 4
   - 🇺🇸 美国 | USA 7
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
-  - 🇺🇸 美国 | USA 15
-  - 🇻🇳 越南 | VNM 3
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 15
+  - 🇻🇳 越南 | VNM
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 2
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 4
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_f7dad_0069
   - 🇺🇸 美国 | USA 7
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 2
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -185,7 +152,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_f7dad_0069
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 23
 rules:
 - MATCH,AUTO

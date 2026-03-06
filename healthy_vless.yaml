@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_f7dad_0069
-  server: us.netvora.space
-  port: 443
-  type: vless
-  uuid: 2baffe9c-099d-481b-8d9c-7eb351c9bf35
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: qq
-  servername: us.netvora.space
-  reality-opts:
-    public-key: OyMR_bsXbxfwuJ6HCtDOisl2Xf78RWYZXbaXb3CEiks
-    short-id: d513ea7473969a0a
-  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: jjk.0f0.ccwu.cc
   port: 80
@@ -38,7 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_f7dad_0069
   - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
