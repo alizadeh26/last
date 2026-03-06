@@ -18,15 +18,6 @@ proxies:
     public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
     short-id: 41a0b29e95aaea87
   udp: true
-- name: DK_622d4_0008
-  server: 45.148.31.0
-  port: 15855
-  type: vless
-  uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  udp: true
 - name: DK_622d4_0009
   server: 45.148.31.0
   port: 15855
@@ -41,6 +32,15 @@ proxies:
     headers:
       Host: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
   udp: true
+- name: DK_622d4_0008
+  server: 45.148.31.0
+  port: 15855
+  type: vless
+  uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -48,7 +48,7 @@ proxy-groups:
   interval: 300
   proxies:
   - AE_622d4_0001
-  - DK_622d4_0008
   - DK_622d4_0009
+  - DK_622d4_0008
 rules:
 - MATCH,AUTO
