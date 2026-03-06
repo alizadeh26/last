@@ -51,13 +51,6 @@ proxies:
     headers:
       Host: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.54
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: zdqbk.cmvvb.online
   port: 8443
@@ -73,6 +66,13 @@ proxies:
     headers:
       Host: zdqbk.cmvvb.online
   udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.54
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -83,8 +83,8 @@ proxy-groups:
   - DK_1a4e1_0008
   - GB_1a4e1_0011
   - DK_1a4e1_0009
-  - 🇻🇳 越南 | VNM
   - 🇩🇪 德国 | DEU 4
+  - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
