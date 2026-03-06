@@ -4,12 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.102
-  port: 38388
+- name: 🇭🇰 香港 | HKG 2
+  server: 103.149.182.79
+  port: 8388
   type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: chacha20-ietf
+  password: asd123456
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.31
@@ -18,8 +18,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.129
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.102
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -32,15 +32,23 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.129
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
+  - 🇭🇰 香港 | HKG 2
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO
