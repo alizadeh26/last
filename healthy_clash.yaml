@@ -55,13 +55,6 @@ proxies:
     headers:
       Host: kwtgm.cmvvb.online
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 103.149.182.79
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-  udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: kwtgm.cmvvb.online
   port: 8443
@@ -91,20 +84,6 @@ proxies:
     headers:
       Host: kwtgm.cmvvb.online
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: dfvbg6.0oz.ccwu.cc
-  port: 80
-  type: vless
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  tls: false
-  servername: dfvbg6.0oz.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /Iq3945ZsqJBAQ5Ah
-    headers:
-      Host: dfvbg6.0oz.ccwu.cc
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.102
   port: 38388
@@ -119,15 +98,29 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.246
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.129
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.129
+- name: 🇺🇸 美国 | USA 18
+  server: dfvbg6.0oz.ccwu.cc
+  port: 80
+  type: vless
+  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
+  tls: false
+  servername: dfvbg6.0oz.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /Iq3945ZsqJBAQ5Ah
+    headers:
+      Host: dfvbg6.0oz.ccwu.cc
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.246
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -143,24 +136,22 @@ proxy-groups:
   - DK_2ad15_0008
   - DK_2ad15_0009
   - 🇩🇪 德国 | DEU 4
-  - 🇭🇰 香港 | HKG 2
   - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
-  - 🇺🇸 美国 | USA 18
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
+  - 🇺🇸 美国 | USA 18
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -197,5 +188,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 7
 rules:
 - MATCH,AUTO
