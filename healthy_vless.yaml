@@ -4,56 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: AE_2ad15_0001
-  server: ae.cdn.stun.su
+- name: US_f7dad_0069
+  server: us.netvora.space
   port: 443
   type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  uuid: 2baffe9c-099d-481b-8d9c-7eb351c9bf35
   flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: ae.cdn.stun.su
+  client-fingerprint: qq
+  servername: us.netvora.space
   reality-opts:
-    public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
-    short-id: 41a0b29e95aaea87
+    public-key: OyMR_bsXbxfwuJ6HCtDOisl2Xf78RWYZXbaXb3CEiks
+    short-id: d513ea7473969a0a
   udp: true
-- name: DK_2ad15_0008
-  server: 45.148.31.0
-  port: 15855
-  type: vless
-  uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  udp: true
-- name: DK_2ad15_0009
-  server: 45.148.31.0
-  port: 15855
-  type: vless
-  uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
-  tls: false
-  skip-cert-verify: false
-  servername: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: dfvbg6.0oz.ccwu.cc
+- name: 🇺🇸 美国 | USA 7
+  server: jjk.0f0.ccwu.cc
   port: 80
   type: vless
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
+  uuid: 60c4d55d-bee3-4719-9568-aabf45153f9f
   tls: false
-  servername: dfvbg6.0oz.ccwu.cc
+  servername: jjk.0f0.ccwu.cc
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /Iq3945ZsqJBAQ5Ah
+    path: /gPvZ4oCcNDyuc3szX7xhuvpEm
     headers:
-      Host: dfvbg6.0oz.ccwu.cc
+      Host: jjk.0f0.ccwu.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -61,9 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - AE_2ad15_0001
-  - DK_2ad15_0008
-  - DK_2ad15_0009
-  - 🇺🇸 美国 | USA 18
+  - US_f7dad_0069
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO

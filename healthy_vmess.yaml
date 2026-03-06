@@ -4,58 +4,76 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_2ad15_0011
-  server: 82.198.246.97
-  port: 180
+- name: 🇺🇸 美国 | USA 15
+  server: kwtgm.cmvvb.online
+  port: 8443
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 991e1343-9a97-4b20-b9d5-af1e5b87fe85
   alterId: 0
   cipher: auto
-  tls: false
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kwtgm.cmvvb.online
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: kwtgm.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: 82aa5240-ee95-427d-91b0-1ba42383d49e
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kwtgm.cmvvb.online
+  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: udtzy.cmvvb.online
+  port: 443
+  type: vmess
+  uuid: bbd8bf1c-3f1a-423b-85c8-8d904030e897
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: udtzy.cmvvb.online
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: kwtgm.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: 7fed4ba5-c8c7-4f33-8e06-363e112d8e0c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kwtgm.cmvvb.online
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: nqzkb.cmvvb.online
+  port: 443
+  type: vmess
+  uuid: 16604b48-7497-428c-a6d4-b017b3a30ce4
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: kwtgm.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 04ec1c31-a6ad-4392-bcc0-3afeb39059c5
-  alterId: 0
-  cipher: auto
-  tls: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: kwtgm.cmvvb.online
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: kwtgm.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 5017f929-00f3-4244-abb6-c7295ebf0ac3
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kwtgm.cmvvb.online
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: kwtgm.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 633078c2-13e7-4672-a830-14f4c98b3d35
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kwtgm.cmvvb.online
+      Host: nqzkb.cmvvb.online
   udp: true
 proxy-groups:
 - name: AUTO
@@ -63,9 +81,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_2ad15_0011
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 7
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
