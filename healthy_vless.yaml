@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: AE_35346_0001
+- name: AE_1a4e1_0001
   server: ae.cdn.stun.su
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
     short-id: 41a0b29e95aaea87
   udp: true
-- name: DK_35346_0008
+- name: DK_1a4e1_0008
   server: 45.148.31.0
   port: 15855
   type: vless
@@ -27,7 +27,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   udp: true
-- name: DK_35346_0009
+- name: DK_1a4e1_0009
   server: 45.148.31.0
   port: 15855
   type: vless
@@ -47,8 +47,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - AE_35346_0001
-  - DK_35346_0008
-  - DK_35346_0009
+  - AE_1a4e1_0001
+  - DK_1a4e1_0008
+  - DK_1a4e1_0009
 rules:
 - MATCH,AUTO

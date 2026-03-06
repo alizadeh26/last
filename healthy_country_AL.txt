@@ -1,3 +1,3 @@
-vless://8910cbb3-33b1-4266-a243-ac780ac63394@pq-albania1.09vpn.com:80?path=%2Fvless%2F&security=&encryption=none&type=ws#AL🇦🇱
-vmess://eyJhZGQiOiI0NS4xNS4xNzAuMjM3IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjgyMGQ0YjRmLTMzNTctNGRjNy05MzgxLTZlNWZkNTJiNWYzOSIsImluc2VjdXJlIjoiMSIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3NcLyIsInBvcnQiOiI4MCIsInBzIjoiQUxcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZjEgfCA0NS4xNS4xNzAuMjM3LTgwIHwgMTcxLjk5bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Ii0tLSIsInYiOiIyIn0=
-vless://400c1f85-9d3a-444a-8a50-81b11f3b4c20@78.159.131.16:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=alb.denditop.site&pbk=BxD77zyPkOaShiNfOkRbbJvpmSzFHIKx4xhhLR4PSQU&sid=9c2378562188c3cb#🇦🇱 383 - AL - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://b4819c49-6c7e-4b57-9b9b-c73031e1de11@45.15.170.237:80?encryption=none&path=%2Fvless%2F&type=ws#Server 64 🇦🇱
+vless://8910cbb3-33b1-4266-a243-ac780ac63394@pq-albania1.09vpn.com:80?path=%2Fvless%2F&security=none&encryption=none&type=ws#Server 88 🇦🇱
+vless://400c1f85-9d3a-444a-8a50-81b11f3b4c20@78.159.131.16:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=alb.denditop.site&pbk=BxD77zyPkOaShiNfOkRbbJvpmSzFHIKx4xhhLR4PSQU&sid=9c2378562188c3cb#🇦🇱 418 - AL - VLESS/REALITY/PBK/SID/VISION/UTLS - 443

@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_35346_0011
+- name: GB_1a4e1_0011
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,11 +14,11 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪 德国 | DEU
+- name: 🇩🇪 德国 | DEU 4
   server: zdqbk.cmvvb.online
   port: 8443
   type: vmess
-  uuid: a2852e93-7255-4aae-9412-38273fdacd31
+  uuid: 25846056-c0d8-4cc4-85ee-97693e21795b
   alterId: 0
   cipher: auto
   tls: true
@@ -29,43 +29,13 @@ proxies:
     headers:
       Host: zdqbk.cmvvb.online
   udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: zdqbk.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 1544fa69-d15e-430c-aba5-3f3c9fb7a354
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zdqbk.cmvvb.online
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: udtzy.cmvvb.online
-  port: 443
-  type: vmess
-  uuid: ef46b74c-b3ef-4633-9818-0af6226c4060
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: udtzy.cmvvb.online
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_35346_0011
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 11
+  - GB_1a4e1_0011
+  - 🇩🇪 德国 | DEU 4
 rules:
 - MATCH,AUTO
