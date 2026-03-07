@@ -4,58 +4,57 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 4
-  server: 103.149.182.79
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: nqzkb.cmvvb.online
-  port: 443
+- name: 🇩🇪 德国 | DEU 10
+  server: kwtgm.cmvvb.online
+  port: 8443
   type: vmess
-  uuid: 16604b48-7497-428c-a6d4-b017b3a30ce4
+  uuid: 991e1343-9a97-4b20-b9d5-af1e5b87fe85
   alterId: 0
   cipher: auto
   tls: true
-  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: nqzkb.cmvvb.online
+      Host: kwtgm.cmvvb.online
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: jjk.0f0.ccwu.cc
-  port: 80
-  type: vless
-  uuid: 60c4d55d-bee3-4719-9568-aabf45153f9f
-  tls: false
-  servername: jjk.0f0.ccwu.cc
-  client-fingerprint: chrome
+- name: 🇩🇪 德国 | DEU 5
+  server: kwtgm.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: 86fdcdff-3be1-4a9e-8f67-a75fa326102d
+  alterId: 0
+  cipher: auto
+  tls: true
   network: ws
   ws-opts:
-    path: /gPvZ4oCcNDyuc3szX7xhuvpEm
+    path: /
     headers:
-      Host: jjk.0f0.ccwu.cc
+      Host: kwtgm.cmvvb.online
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.143
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.11
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇩🇪 德国 | DEU 12
+  server: kwtgm.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: 849a0032-116e-40e8-bec4-3ee88258c067
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kwtgm.cmvvb.online
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.224
+  server: 103.186.155.153
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.155
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -67,45 +66,39 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 4
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 7
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
+  - 🇩🇪 德国 | DEU 10
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 12
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 4
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 7
+  - 🇻🇳 越南 | VNM
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 2
+  - 🇩🇪 德国 | DEU 10
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 12
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 4
+  - 🇻🇳 越南 | VNM 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 7
+  - 🇩🇪 德国 | DEU 10
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 12
 rules:
 - MATCH,AUTO
