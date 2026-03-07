@@ -11,109 +11,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 5kWesolQ0y0PVdIrb65LbHT2u
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: itsea.osaip.net
-  port: 443
-  type: vless
-  uuid: 0dc47a17-6082-433a-8589-f2a2c06de4fd
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: itsea.osaip.net
-  port: 443
-  type: vless
-  uuid: fc44a3fd-7e32-4b90-8318-dbb85f832169
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: usrna.osaip.net
-  port: 15055
-  type: vless
-  uuid: 0423f544-e9f7-40f0-a950-7b84084c753e
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: usbad.osaip.net
-  port: 443
-  type: vless
-  uuid: e5b2f2a5-cdd6-4ad7-a6a2-e031cc8b6d18
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: usrna.osaip.net
-  port: 15055
-  type: vless
-  uuid: 0dc47a17-6082-433a-8589-f2a2c06de4fd
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: usbad.osaip.net
-  port: 443
-  type: vless
-  uuid: 0dc47a17-6082-433a-8589-f2a2c06de4fd
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: usbad.osaip.net
-  port: 443
-  type: vless
-  uuid: fc44a3fd-7e32-4b90-8318-dbb85f832169
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: s128.okgfw.top
-  port: 443
-  type: vless
-  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710297u8a10s128.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: s193.okgfw.top
-  port: 443
-  type: vless
-  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710297u2e89s193.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇲🇩 摩尔多瓦 | MDA
   server: mlb.tunnelguard.ru
   port: 443
@@ -130,13 +27,6 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.213
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.199
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -163,8 +53,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.126
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.199
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -177,13 +67,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.155.43
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 9
   server: 103.186.154.238
   port: 38388
@@ -191,8 +74,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 10
-  server: 103.186.154.66
+- name: 🇻🇳 越南 | VNM 13
+  server: 103.186.155.34
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -212,12 +95,36 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 13
-  server: 103.186.155.34
+- name: 🇻🇳 越南 | VNM 10
+  server: 103.186.154.66
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.155.126
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.155.43
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇯🇵 日本 | JPN 2
+  server: 31.58.223.134
+  port: 8443
+  type: vmess
+  uuid: 78cdc6b7-8b14-47d6-bf09-3167bc5124fb
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
 proxy-groups:
 - name: AUTO
@@ -226,29 +133,21 @@ proxy-groups:
   interval: 300
   proxies:
   - RU_922f4_0031
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 3
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 11
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD
   - 🇲🇩 摩尔多瓦 | MDA
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 10
+  - 🇻🇳 越南 | VNM 13
   - 🇻🇳 越南 | VNM 11
   - 🇻🇳 越南 | VNM 12
-  - 🇻🇳 越南 | VNM 13
+  - 🇻🇳 越南 | VNM 10
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 8
+  - 🇯🇵 日本 | JPN 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -256,47 +155,42 @@ proxy-groups:
   proxies:
   - RU_922f4_0031
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 10
+  - 🇻🇳 越南 | VNM 13
   - 🇻🇳 越南 | VNM 11
   - 🇻🇳 越南 | VNM 12
-  - 🇻🇳 越南 | VNM 13
+  - 🇻🇳 越南 | VNM 10
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 8
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 3
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 11
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD
   - 🇲🇩 摩尔多瓦 | MDA
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 日本 | JPN 2
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇻🇳 越南 | VNM
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - RU_922f4_0031
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 3
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 5
+  - 🇲🇩 摩尔多瓦 | MDA
 rules:
 - MATCH,AUTO

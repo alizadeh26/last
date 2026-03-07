@@ -4,47 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: kwtgm.cmvvb.online
+- name: 🇯🇵 日本 | JPN 2
+  server: 31.58.223.134
   port: 8443
   type: vmess
-  uuid: 86fdcdff-3be1-4a9e-8f67-a75fa326102d
+  uuid: 78cdc6b7-8b14-47d6-bf09-3167bc5124fb
   alterId: 0
   cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kwtgm.cmvvb.online
-  udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: kwtgm.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 991e1343-9a97-4b20-b9d5-af1e5b87fe85
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kwtgm.cmvvb.online
-  udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: kwtgm.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 849a0032-116e-40e8-bec4-3ee88258c067
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kwtgm.cmvvb.online
+  tls: false
+  skip-cert-verify: false
   udp: true
 proxy-groups:
 - name: AUTO
@@ -52,8 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 10
-  - 🇩🇪 德国 | DEU 12
+  - 🇯🇵 日本 | JPN 2
 rules:
 - MATCH,AUTO
