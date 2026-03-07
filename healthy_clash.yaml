@@ -47,13 +47,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.224
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.11
   port: 38388
@@ -61,19 +54,12 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: udtzy.cmvvb.online
-  port: 443
-  type: vmess
-  uuid: bbd8bf1c-3f1a-423b-85c8-8d904030e897
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: udtzy.cmvvb.online
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.224
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇺🇸 美国 | USA 13
   server: kwtgm.cmvvb.online
@@ -103,6 +89,20 @@ proxies:
     headers:
       Host: kwtgm.cmvvb.online
   udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: udtzy.cmvvb.online
+  port: 443
+  type: vmess
+  uuid: bbd8bf1c-3f1a-423b-85c8-8d904030e897
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: udtzy.cmvvb.online
+  udp: true
 - name: 🇺🇸 美国 | USA 23
   server: kwtgm.cmvvb.online
   port: 8443
@@ -127,11 +127,11 @@ proxy-groups:
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 2
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇺🇸 美国 | USA 18
+  - 🇻🇳 越南 | VNM 2
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 23
 - name: PROTO-SS
   type: url-test
@@ -140,8 +140,8 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 4
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -154,9 +154,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 23
 - name: REGION-AS
   type: url-test
@@ -171,7 +171,6 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO
