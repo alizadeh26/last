@@ -4,17 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 2
-  server: s128.okgfw.top
-  port: 443
-  type: vless
-  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710297u8a10s128.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: s193.okgfw.top
   port: 443
@@ -23,6 +12,17 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   servername: u710297u2e89s193.okgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: s128.okgfw.top
+  port: 443
+  type: vless
+  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710297u8a10s128.okgfw.top
   client-fingerprint: random
   network: tcp
   udp: true
@@ -46,8 +46,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
   - 🇲🇩 摩尔多瓦 | MDA
 rules:
 - MATCH,AUTO
