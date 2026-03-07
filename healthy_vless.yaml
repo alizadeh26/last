@@ -40,6 +40,17 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: usbad.osaip.net
+  port: 443
+  type: vless
+  uuid: 0dc47a17-6082-433a-8589-f2a2c06de4fd
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -49,5 +60,6 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 2
   - 🇲🇩 摩尔多瓦 | MDA
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
