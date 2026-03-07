@@ -11,20 +11,6 @@ proxies:
   cipher: chacha20-ietf
   password: asd123456
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: jjk.0f0.ccwu.cc
-  port: 80
-  type: vless
-  uuid: 60c4d55d-bee3-4719-9568-aabf45153f9f
-  tls: false
-  servername: jjk.0f0.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /gPvZ4oCcNDyuc3szX7xhuvpEm
-    headers:
-      Host: jjk.0f0.ccwu.cc
-  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: nqzkb.cmvvb.online
   port: 443
@@ -39,6 +25,20 @@ proxies:
     path: /
     headers:
       Host: nqzkb.cmvvb.online
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: jjk.0f0.ccwu.cc
+  port: 80
+  type: vless
+  uuid: 60c4d55d-bee3-4719-9568-aabf45153f9f
+  tls: false
+  servername: jjk.0f0.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /gPvZ4oCcNDyuc3szX7xhuvpEm
+    headers:
+      Host: jjk.0f0.ccwu.cc
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.143
@@ -61,62 +61,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: kwtgm.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 82aa5240-ee95-427d-91b0-1ba42383d49e
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kwtgm.cmvvb.online
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: kwtgm.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 991e1343-9a97-4b20-b9d5-af1e5b87fe85
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kwtgm.cmvvb.online
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: udtzy.cmvvb.online
-  port: 443
-  type: vmess
-  uuid: bbd8bf1c-3f1a-423b-85c8-8d904030e897
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: udtzy.cmvvb.online
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: kwtgm.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 7fed4ba5-c8c7-4f33-8e06-363e112d8e0c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kwtgm.cmvvb.online
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -124,15 +68,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 4
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 7
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 23
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -154,10 +94,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 23
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -169,8 +105,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
