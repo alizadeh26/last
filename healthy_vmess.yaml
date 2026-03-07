@@ -32,16 +32,6 @@ proxies:
     headers:
       Host: zzrt.uhomdex.shop
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: 31.58.223.134
-  port: 8443
-  type: vmess
-  uuid: 78cdc6b7-8b14-47d6-bf09-3167bc5124fb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -50,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 5
-  - 🇯🇵 日本 | JPN 2
 rules:
 - MATCH,AUTO
