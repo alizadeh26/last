@@ -4,15 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 2
-  server: 31.58.223.134
-  port: 8443
+- name: 🇩🇪 德国 | DEU
+  server: cxsfvn.uhomdex.shop
+  port: 443
   type: vmess
-  uuid: 78cdc6b7-8b14-47d6-bf09-3167bc5124fb
+  uuid: 68f78348-e22a-4c08-9464-deb592e9732d
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: false
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cxsfvn.uhomdex.shop
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: zzrt.uhomdex.shop
+  port: 8443
+  type: vmess
+  uuid: 68f78348-e22a-4c08-9464-deb592e9732d
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zzrt.uhomdex.shop
   udp: true
 proxy-groups:
 - name: AUTO
@@ -20,6 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 2
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 5
 rules:
 - MATCH,AUTO
