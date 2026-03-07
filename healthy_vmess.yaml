@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 10
-  server: kwtgm.cmvvb.online
-  port: 8443
-  type: vmess
-  uuid: 991e1343-9a97-4b20-b9d5-af1e5b87fe85
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kwtgm.cmvvb.online
-  udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: kwtgm.cmvvb.online
   port: 8443
@@ -46,14 +32,28 @@ proxies:
     headers:
       Host: kwtgm.cmvvb.online
   udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: kwtgm.cmvvb.online
+  port: 8443
+  type: vmess
+  uuid: 991e1343-9a97-4b20-b9d5-af1e5b87fe85
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kwtgm.cmvvb.online
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 10
   - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU 10
 rules:
 - MATCH,AUTO
