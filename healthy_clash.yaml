@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: zzrt.uhomdex.shop
-  port: 8443
-  type: vmess
-  uuid: 811f89e6-bf52-429c-a634-f6084fac2c6b
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zzrt.uhomdex.shop
-  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: zzrt.uhomdex.shop
   port: 8443
@@ -32,11 +18,36 @@ proxies:
     headers:
       Host: zzrt.uhomdex.shop
   udp: true
-- name: 🇩🇪 德国 | DEU 6
+- name: 🇳🇱 荷兰 | NLD
+  server: s193.okgfw.top
+  port: 443
+  type: vless
+  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710297u2e89s193.okgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 12
+  server: cxsfvn.uhomdex.shop
+  port: 443
+  type: vmess
+  uuid: 455a062d-7e5c-43ac-87f9-3c87150e01f9
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cxsfvn.uhomdex.shop
+  udp: true
+- name: 🇩🇪 德国 | DEU
   server: zzrt.uhomdex.shop
   port: 8443
   type: vmess
-  uuid: f2bd433f-70d0-470f-b271-1df1794ca955
+  uuid: 811f89e6-bf52-429c-a634-f6084fac2c6b
   alterId: 0
   cipher: auto
   tls: true
@@ -60,6 +71,13 @@ proxies:
     headers:
       Host: hwtqcp.uhomdex.shop
   udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.175
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇩🇪 德国 | DEU 11
   server: qvxbtx.uhomdex.shop
   port: 443
@@ -74,33 +92,12 @@ proxies:
     headers:
       Host: qvxbtx.uhomdex.shop
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: cxsfvn.uhomdex.shop
-  port: 443
-  type: vmess
-  uuid: 455a062d-7e5c-43ac-87f9-3c87150e01f9
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cxsfvn.uhomdex.shop
-  udp: true
-- name: 🇩🇪 德国 | DEU 17
-  server: hwtqcp.uhomdex.shop
-  port: 8443
-  type: vmess
-  uuid: fdca7a3f-a8ab-4438-806c-6f37e82a8a94
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hwtqcp.uhomdex.shop
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.65
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: qvxbtx.uhomdex.shop
@@ -116,40 +113,8 @@ proxies:
     headers:
       Host: qvxbtx.uhomdex.shop
   udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: cxsfvn.uhomdex.shop
-  port: 443
-  type: vmess
-  uuid: 07162b53-0827-461d-9b05-d49666358612
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cxsfvn.uhomdex.shop
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: s193.okgfw.top
-  port: 443
-  type: vless
-  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710297u2e89s193.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.175
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.65
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.10
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -157,13 +122,6 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.195
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.10
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -183,28 +141,85 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: zzrt.uhomdex.shop
+  port: 8443
+  type: vmess
+  uuid: f2bd433f-70d0-470f-b271-1df1794ca955
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zzrt.uhomdex.shop
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: zzrt.uhomdex.shop
+  port: 8443
+  type: vmess
+  uuid: aa333ae8-d538-40e3-a2af-9d79aeb53bef
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zzrt.uhomdex.shop
+  udp: true
+- name: 🇩🇪 德国 | DEU 17
+  server: hwtqcp.uhomdex.shop
+  port: 8443
+  type: vmess
+  uuid: fdca7a3f-a8ab-4438-806c-6f37e82a8a94
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hwtqcp.uhomdex.shop
+  udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: cxsfvn.uhomdex.shop
+  port: 443
+  type: vmess
+  uuid: 07162b53-0827-461d-9b05-d49666358612
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cxsfvn.uhomdex.shop
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 17
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 13
   - 🇳🇱 荷兰 | NLD
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 4
   - 🇻🇳 越南 | VNM
+  - 🇩🇪 德国 | DEU 11
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
+  - 🇩🇪 德国 | DEU 7
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 4
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 17
+  - 🇩🇪 德国 | DEU 13
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -212,8 +227,8 @@ proxy-groups:
   proxies:
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
@@ -227,14 +242,15 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 17
   - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 17
   - 🇩🇪 德国 | DEU 13
 - name: REGION-EU
   type: url-test
@@ -247,14 +263,15 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 17
   - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 17
   - 🇩🇪 德国 | DEU 13
 rules:
 - MATCH,AUTO

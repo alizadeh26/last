@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: zzrt.uhomdex.shop
-  port: 8443
-  type: vmess
-  uuid: 811f89e6-bf52-429c-a634-f6084fac2c6b
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zzrt.uhomdex.shop
-  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: zzrt.uhomdex.shop
   port: 8443
@@ -32,11 +18,25 @@ proxies:
     headers:
       Host: zzrt.uhomdex.shop
   udp: true
-- name: 🇩🇪 德国 | DEU 6
+- name: 🇩🇪 德国 | DEU 12
+  server: cxsfvn.uhomdex.shop
+  port: 443
+  type: vmess
+  uuid: 455a062d-7e5c-43ac-87f9-3c87150e01f9
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cxsfvn.uhomdex.shop
+  udp: true
+- name: 🇩🇪 德国 | DEU
   server: zzrt.uhomdex.shop
   port: 8443
   type: vmess
-  uuid: f2bd433f-70d0-470f-b271-1df1794ca955
+  uuid: 811f89e6-bf52-429c-a634-f6084fac2c6b
   alterId: 0
   cipher: auto
   tls: true
@@ -74,11 +74,11 @@ proxies:
     headers:
       Host: qvxbtx.uhomdex.shop
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: cxsfvn.uhomdex.shop
+- name: 🇩🇪 德国 | DEU 7
+  server: qvxbtx.uhomdex.shop
   port: 443
   type: vmess
-  uuid: 455a062d-7e5c-43ac-87f9-3c87150e01f9
+  uuid: f46b45a8-38fe-4b99-9dc1-472952c1cc4b
   alterId: 0
   cipher: auto
   tls: true
@@ -86,7 +86,35 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: cxsfvn.uhomdex.shop
+      Host: qvxbtx.uhomdex.shop
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: zzrt.uhomdex.shop
+  port: 8443
+  type: vmess
+  uuid: f2bd433f-70d0-470f-b271-1df1794ca955
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zzrt.uhomdex.shop
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: zzrt.uhomdex.shop
+  port: 8443
+  type: vmess
+  uuid: aa333ae8-d538-40e3-a2af-9d79aeb53bef
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zzrt.uhomdex.shop
   udp: true
 - name: 🇩🇪 德国 | DEU 17
   server: hwtqcp.uhomdex.shop
@@ -101,20 +129,6 @@ proxies:
     path: /
     headers:
       Host: hwtqcp.uhomdex.shop
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: qvxbtx.uhomdex.shop
-  port: 443
-  type: vmess
-  uuid: f46b45a8-38fe-4b99-9dc1-472952c1cc4b
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: qvxbtx.uhomdex.shop
   udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: cxsfvn.uhomdex.shop
@@ -136,14 +150,15 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 17
   - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 17
   - 🇩🇪 德国 | DEU 13
 rules:
 - MATCH,AUTO
