@@ -4,30 +4,28 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 10
-  server: usrna.osaip.net
-  port: 15055
+- name: GB_f7f93_0006
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: s541.ccgfw.top
+  port: 443
   type: vless
-  uuid: c45cab5a-9a08-4e8e-b7f1-b4c61357b8a4
+  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
   tls: true
-  client-fingerprint: chrome
+  servername: u710297u9990s541.ccgfw.top
+  client-fingerprint: ios
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: dr.ae1autumn.dpdns.org
-  port: 80
-  type: vless
-  uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
-  tls: false
-  servername: dr.ae1autumn.dpdns.org
-  network: ws
-  ws-opts:
-    path: /XR8So0uqFVa3vY9ZbxgW4
-    headers:
-      Host: dr.ae1autumn.dpdns.org
+    grpc-service-name: ssp
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.27
@@ -36,8 +34,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.73
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.155.139
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.189
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -57,19 +69,18 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.189
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.73
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇺🇸 美国 | USA 14
+  server: dr.ae1autumn.dpdns.org
+  port: 80
+  type: vless
+  uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
+  tls: false
+  servername: dr.ae1autumn.dpdns.org
+  network: ws
+  ws-opts:
+    path: /XR8So0uqFVa3vY9ZbxgW4
+    headers:
+      Host: dr.ae1autumn.dpdns.org
   udp: true
 proxy-groups:
 - name: AUTO
@@ -77,47 +88,51 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 14
+  - GB_f7f93_0006
+  - 🇺🇸 美国 | USA 12
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 2
+  - 🇺🇸 美国 | USA 14
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 14
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_f7f93_0006
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 14
+  - GB_f7f93_0006
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
