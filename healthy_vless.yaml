@@ -4,30 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
-  server: www.visa.com.sg
-  port: 2052
+- name: 🇺🇸 美国 | USA 10
+  server: usrna.osaip.net
+  port: 15055
   type: vless
-  uuid: 25efc727-e853-49ba-9609-3c20009d0e7a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: winbiss-0tpka6-v1.winbiss.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: s541.ccgfw.top
-  port: 443
-  type: vless
-  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
+  uuid: c45cab5a-9a08-4e8e-b7f1-b4c61357b8a4
   tls: true
-  servername: u710297u9990s541.ccgfw.top
-  client-fingerprint: ios
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: ssp
+    grpc-service-name: violet
   udp: true
 - name: 🇺🇸 美国 | USA 14
   server: dr.ae1autumn.dpdns.org
@@ -48,8 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO
