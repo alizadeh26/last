@@ -46,11 +46,11 @@ proxies:
     headers:
       Host: hwtqcp.uhomdex.shop
   udp: true
-- name: 🇩🇪 德国 | DEU 8
+- name: 🇩🇪 德国 | DEU 6
   server: zzrt.uhomdex.shop
   port: 8443
   type: vmess
-  uuid: aa333ae8-d538-40e3-a2af-9d79aeb53bef
+  uuid: f2bd433f-70d0-470f-b271-1df1794ca955
   alterId: 0
   cipher: auto
   tls: true
@@ -74,11 +74,11 @@ proxies:
     headers:
       Host: qvxbtx.uhomdex.shop
   udp: true
-- name: 🇩🇪 德国 | DEU 6
+- name: 🇩🇪 德国 | DEU 8
   server: zzrt.uhomdex.shop
   port: 8443
   type: vmess
-  uuid: f2bd433f-70d0-470f-b271-1df1794ca955
+  uuid: aa333ae8-d538-40e3-a2af-9d79aeb53bef
   alterId: 0
   cipher: auto
   tls: true
@@ -87,6 +87,20 @@ proxies:
     path: /
     headers:
       Host: zzrt.uhomdex.shop
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: qvxbtx.uhomdex.shop
+  port: 443
+  type: vmess
+  uuid: 74b20946-b17c-485f-9338-27500f70f379
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: qvxbtx.uhomdex.shop
   udp: true
 - name: 🇩🇪 德国 | DEU 12
   server: cxsfvn.uhomdex.shop
@@ -141,13 +155,6 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.195
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 5
   server: 103.186.155.10
   port: 38388
@@ -155,15 +162,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.175
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.229
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.195
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -176,26 +176,26 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.229
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.175
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 4
   server: 103.186.154.142
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: qvxbtx.uhomdex.shop
-  port: 443
-  type: vmess
-  uuid: 74b20946-b17c-485f-9338-27500f70f379
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: qvxbtx.uhomdex.shop
   udp: true
 proxy-groups:
 - name: AUTO
@@ -206,30 +206,30 @@ proxy-groups:
   - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 12
   - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 17
   - 🇳🇱 荷兰 | NLD
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
-  - 🇩🇪 德国 | DEU 11
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
@@ -245,13 +245,13 @@ proxy-groups:
   - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 12
   - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 17
-  - 🇩🇪 德国 | DEU 11
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -266,12 +266,12 @@ proxy-groups:
   - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 12
   - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 17
-  - 🇩🇪 德国 | DEU 11
 rules:
 - MATCH,AUTO
