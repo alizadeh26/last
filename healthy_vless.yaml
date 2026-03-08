@@ -15,42 +15,6 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: s128.okgfw.top
-  port: 443
-  type: vless
-  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710297u8a10s128.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇲🇩 摩尔多瓦 | MDA
-  server: mlb.tunnelguard.ru
-  port: 443
-  type: vless
-  uuid: a619d576-1380-4aac-8732-99e8dfe8df0f
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  servername: mlb.tunnelguard.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: usbad.osaip.net
-  port: 443
-  type: vless
-  uuid: 0dc47a17-6082-433a-8589-f2a2c06de4fd
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -58,8 +22,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇲🇩 摩尔多瓦 | MDA
-  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
