@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_11763_0006
+- name: GB_74411_0006
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -20,6 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_11763_0006
+  - GB_74411_0006
 rules:
 - MATCH,AUTO

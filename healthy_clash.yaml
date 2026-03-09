@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_11763_0006
+- name: GB_74411_0006
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,46 +14,50 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: s128.okgfw.top
+- name: 🇨🇦 加拿大 | CAN
+  server: 137.184.174.93
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: s726.ccgfw.top
   port: 443
   type: vless
   uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
   tls: true
   flow: xtls-rprx-vision
-  servername: u710297u8a10s128.okgfw.top
+  servername: u710297u5534s726.ccgfw.top
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: itarmy.com.ua
-  port: 2095
+- name: 🇳🇱 荷兰 | NLD
+  server: s124.okgfw.top
+  port: 443
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710297uf57fs124.okgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: scvf65.0z0.ccwu.cc
+  port: 80
+  type: vless
+  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
   tls: false
-  client-fingerprint: randomized
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /Iq3945ZsqJBAQ5Ah
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-0.workers.dev
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 103.36.91.32
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
+      Host: scvf65.0z0.ccwu.cc
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.141
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.176
+  server: 103.186.155.129
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -65,45 +69,45 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_11763_0006
-  - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇸🇬 新加坡 | SGP
+  - GB_74411_0006
+  - 🇨🇦 加拿大 | CAN
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 4
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP
+  - 🇨🇦 加拿大 | CAN
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_11763_0006
+  - GB_74411_0006
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 6
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_11763_0006
-  - 🇳🇱 荷兰 | NLD 3
+  - GB_74411_0006
+  - 🇨🇦 加拿大 | CAN
 rules:
 - MATCH,AUTO
