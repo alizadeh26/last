@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_9c01d_0006
+- name: GB_adf62_0009
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,12 +14,39 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: CN_adf62_0003
+  server: a.cdn-bilibili.cn
+  port: 30003
+  type: vmess
+  uuid: 69de9a52-36b0-4265-a3cf-d06bcefe713d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: GB_adf62_0014
+  server: 85.211.242.85
+  port: 12889
+  type: vmess
+  uuid: 37c67a5e-2b2a-49b2-a197-889e80b28bee
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: baidu.com
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_9c01d_0006
+  - GB_adf62_0009
+  - CN_adf62_0003
+  - GB_adf62_0014
 rules:
 - MATCH,AUTO

@@ -4,6 +4,111 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CH_adf62_0002
+  server: estonia.scroogethebest.com
+  port: 443
+  type: vless
+  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: random
+  servername: estonia.scroogethebest.com
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  udp: true
+- name: GB_adf62_0009
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: GB_adf62_0011
+  server: admin.c1.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+  udp: true
+- name: GB_adf62_0010
+  server: series-a2.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+  udp: true
+- name: GB_adf62_0012
+  server: admin.c1.havij.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1kVr0KATIJI7mwOF
+  udp: true
+- name: CN_adf62_0003
+  server: a.cdn-bilibili.cn
+  port: 30003
+  type: vmess
+  uuid: 69de9a52-36b0-4265-a3cf-d06bcefe713d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: GB_adf62_0013
+  server: series-a1.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+  udp: true
+- name: GB_adf62_0014
+  server: 85.211.242.85
+  port: 12889
+  type: vmess
+  uuid: 37c67a5e-2b2a-49b2-a197-889e80b28bee
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: baidu.com
+  udp: true
+- name: NL_adf62_0049
+  server: nll.scroogethebest.com
+  port: 443
+  type: vless
+  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: random
+  servername: nll.scroogethebest.com
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  udp: true
+- name: NL_adf62_0048
+  server: routewhitenl.subv.ru
+  port: 443
+  type: vless
+  uuid: c67f81df-34e8-4cb3-ab43-599585775fa9
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: qq
+  servername: routewhitenl.subv.ru
+  reality-opts:
+    public-key: sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4
+    short-id: ba262a270ecb844e
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.208
   port: 38388
@@ -37,6 +142,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CH_adf62_0002
+  - GB_adf62_0009
+  - GB_adf62_0011
+  - GB_adf62_0010
+  - GB_adf62_0012
+  - CN_adf62_0003
+  - GB_adf62_0013
+  - GB_adf62_0014
+  - NL_adf62_0049
+  - NL_adf62_0048
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇺🇸 美国 | USA 5
@@ -45,6 +160,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - GB_adf62_0011
+  - GB_adf62_0010
+  - GB_adf62_0012
+  - GB_adf62_0013
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
@@ -52,19 +171,41 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CH_adf62_0002
+  - NL_adf62_0049
+  - NL_adf62_0048
   - 🇺🇸 美国 | USA 5
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_adf62_0009
+  - CN_adf62_0003
+  - GB_adf62_0014
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
+  - CN_adf62_0003
+  - GB_adf62_0014
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - CH_adf62_0002
+  - GB_adf62_0011
+  - GB_adf62_0010
+  - GB_adf62_0012
+  - GB_adf62_0013
+  - NL_adf62_0049
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 5
+  - GB_adf62_0009
 rules:
 - MATCH,AUTO

@@ -4,6 +4,48 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CH_adf62_0002
+  server: estonia.scroogethebest.com
+  port: 443
+  type: vless
+  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: random
+  servername: estonia.scroogethebest.com
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  udp: true
+- name: NL_adf62_0049
+  server: nll.scroogethebest.com
+  port: 443
+  type: vless
+  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: random
+  servername: nll.scroogethebest.com
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  udp: true
+- name: NL_adf62_0048
+  server: routewhitenl.subv.ru
+  port: 443
+  type: vless
+  uuid: c67f81df-34e8-4cb3-ab43-599585775fa9
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: qq
+  servername: routewhitenl.subv.ru
+  reality-opts:
+    public-key: sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4
+    short-id: ba262a270ecb844e
+  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: yyhj.ae1autumn.dpdns.org
   port: 443
@@ -23,6 +65,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CH_adf62_0002
+  - NL_adf62_0049
+  - NL_adf62_0048
   - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
