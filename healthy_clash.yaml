@@ -21,27 +21,12 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: s726.ccgfw.top
-  port: 443
-  type: vless
-  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710297u5534s726.ccgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: s124.okgfw.top
-  port: 443
-  type: vless
-  uuid: f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710297uf57fs124.okgfw.top
-  client-fingerprint: random
-  network: tcp
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.129
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: scvf65.0z0.ccwu.cc
@@ -56,13 +41,6 @@ proxies:
     headers:
       Host: scvf65.0z0.ccwu.cc
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.129
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -71,10 +49,8 @@ proxy-groups:
   proxies:
   - GB_74411_0006
   - 🇨🇦 加拿大 | CAN
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 4
   - 🇻🇳 越南 | VNM
+  - 🇺🇸 美国 | USA 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -87,8 +63,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 4
 - name: PROTO-VMESS
   type: url-test
@@ -96,12 +70,12 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_74411_0006
-- name: REGION-EU
+- name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇻🇳 越南 | VNM
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
