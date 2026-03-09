@@ -14,16 +14,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: CN_adf62_0003
-  server: a.cdn-bilibili.cn
-  port: 30003
-  type: vmess
-  uuid: 69de9a52-36b0-4265-a3cf-d06bcefe713d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: GB_adf62_0014
   server: 85.211.242.85
   port: 12889
@@ -46,7 +36,6 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_adf62_0009
-  - CN_adf62_0003
   - GB_adf62_0014
 rules:
 - MATCH,AUTO

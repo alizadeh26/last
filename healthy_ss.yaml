@@ -4,15 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_adf62_0011
-  server: admin.c1.webramz.co
+- name: GB_adf62_0010
+  server: series-a2.samanehha.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: GB_adf62_0010
-  server: series-a2.samanehha.co
+- name: GB_adf62_0011
+  server: admin.c1.webramz.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -52,8 +52,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_adf62_0011
   - GB_adf62_0010
+  - GB_adf62_0011
   - GB_adf62_0012
   - GB_adf62_0013
   - 🇻🇳 越南 | VNM
