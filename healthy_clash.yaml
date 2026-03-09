@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_74411_0006
+- name: GB_9c01d_0006
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,19 +14,32 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: 137.184.174.93
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.129
+  server: 103.186.154.208
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.128
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: yyhj.ae1autumn.dpdns.org
+  port: 443
+  type: vless
+  uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
+  tls: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /XR8So0uqFVa3vY9ZbxgW4
+    headers:
+      Host: yyhj.ae1autumn.dpdns.org
   udp: true
 proxy-groups:
 - name: AUTO
@@ -34,34 +47,41 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_74411_0006
-  - 🇨🇦 加拿大 | CAN
+  - GB_9c01d_0006
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
+  - 🇺🇸 美国 | USA 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 5
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_74411_0006
+  - GB_9c01d_0006
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_74411_0006
-  - 🇨🇦 加拿大 | CAN
+  - GB_9c01d_0006
 rules:
 - MATCH,AUTO
