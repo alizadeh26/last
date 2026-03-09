@@ -28,19 +28,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: scvf65.0z0.ccwu.cc
-  port: 80
-  type: vless
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  tls: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /Iq3945ZsqJBAQ5Ah
-    headers:
-      Host: scvf65.0z0.ccwu.cc
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -50,7 +37,6 @@ proxy-groups:
   - GB_74411_0006
   - 🇨🇦 加拿大 | CAN
   - 🇻🇳 越南 | VNM
-  - 🇺🇸 美国 | USA 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -58,12 +44,6 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇻🇳 越南 | VNM
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
