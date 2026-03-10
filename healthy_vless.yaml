@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_ff344_0002
+- name: CH_cd19c_0002
   server: estonia.scroogethebest.com
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: NL_ff344_0049
+- name: NL_cd19c_0049
   server: nll.scroogethebest.com
   port: 443
   type: vless
@@ -32,26 +32,13 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: mx2.tehrantolidi.ir
-  port: 80
-  type: vless
-  uuid: dfe13f5a-9ce4-44fc-be96-1067bbf9202d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /site
-    headers:
-      Host: cdn123.global.ssl.fastly.net
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_ff344_0002
-  - NL_ff344_0049
-  - 🇳🇱 荷兰 | NLD
+  - CH_cd19c_0002
+  - NL_cd19c_0049
 rules:
 - MATCH,AUTO

@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_ff344_0002
+- name: CH_cd19c_0002
   server: estonia.scroogethebest.com
   port: 443
   type: vless
@@ -18,35 +18,35 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: GB_ff344_0010
+- name: GB_cd19c_0010
   server: series-a2.samanehha.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: GB_ff344_0011
+- name: GB_cd19c_0011
   server: admin.c1.webramz.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: GB_ff344_0012
+- name: GB_cd19c_0012
   server: admin.c1.havij.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 1kVr0KATIJI7mwOF
   udp: true
-- name: GB_ff344_0013
+- name: GB_cd19c_0013
   server: series-a1.samanehha.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: NL_ff344_0049
+- name: NL_cd19c_0049
   server: nll.scroogethebest.com
   port: 443
   type: vless
@@ -60,79 +60,44 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: mx2.tehrantolidi.ir
-  port: 80
-  type: vless
-  uuid: dfe13f5a-9ce4-44fc-be96-1067bbf9202d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /site
-    headers:
-      Host: cdn123.global.ssl.fastly.net
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.69
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_ff344_0002
-  - GB_ff344_0010
-  - GB_ff344_0011
-  - GB_ff344_0012
-  - GB_ff344_0013
-  - NL_ff344_0049
-  - 🇳🇱 荷兰 | NLD
-  - 🇻🇳 越南 | VNM
+  - CH_cd19c_0002
+  - GB_cd19c_0010
+  - GB_cd19c_0011
+  - GB_cd19c_0012
+  - GB_cd19c_0013
+  - NL_cd19c_0049
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_ff344_0010
-  - GB_ff344_0011
-  - GB_ff344_0012
-  - GB_ff344_0013
-  - 🇻🇳 越南 | VNM
+  - GB_cd19c_0010
+  - GB_cd19c_0011
+  - GB_cd19c_0012
+  - GB_cd19c_0013
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_ff344_0002
-  - NL_ff344_0049
-  - 🇳🇱 荷兰 | NLD
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇻🇳 越南 | VNM
+  - CH_cd19c_0002
+  - NL_cd19c_0049
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_ff344_0002
-  - GB_ff344_0010
-  - GB_ff344_0011
-  - GB_ff344_0012
-  - GB_ff344_0013
-  - NL_ff344_0049
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇳🇱 荷兰 | NLD
+  - CH_cd19c_0002
+  - GB_cd19c_0010
+  - GB_cd19c_0011
+  - GB_cd19c_0012
+  - GB_cd19c_0013
+  - NL_cd19c_0049
 rules:
 - MATCH,AUTO
