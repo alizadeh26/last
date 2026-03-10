@@ -46,21 +46,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: GB_ff344_0014
-  server: 85.211.242.85
-  port: 12889
-  type: vmess
-  uuid: 37c67a5e-2b2a-49b2-a197-889e80b28bee
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-  udp: true
 - name: NL_ff344_0049
   server: nll.scroogethebest.com
   port: 443
@@ -105,7 +90,6 @@ proxy-groups:
   - GB_ff344_0011
   - GB_ff344_0012
   - GB_ff344_0013
-  - GB_ff344_0014
   - NL_ff344_0049
   - 🇳🇱 荷兰 | NLD
   - 🇻🇳 越南 | VNM
@@ -127,18 +111,12 @@ proxy-groups:
   - CH_ff344_0002
   - NL_ff344_0049
   - 🇳🇱 荷兰 | NLD
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_ff344_0014
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_ff344_0014
+  - 🇻🇳 越南 | VNM
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -149,5 +127,12 @@ proxy-groups:
   - GB_ff344_0011
   - GB_ff344_0012
   - GB_ff344_0013
+  - NL_ff344_0049
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
