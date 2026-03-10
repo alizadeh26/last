@@ -32,18 +32,17 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: video.livecut.cc
-  port: 443
+- name: 🇳🇱 荷兰 | NLD
+  server: mx2.tehrantolidi.ir
+  port: 80
   type: vless
-  uuid: e6091655-c2cf-4287-89d9-5fd9818872df
-  tls: true
-  servername: video.livecut.cc
+  uuid: dfe13f5a-9ce4-44fc-be96-1067bbf9202d
+  tls: false
   network: ws
   ws-opts:
-    path: /video
+    path: /site
     headers:
-      Host: video.livecut.cc
+      Host: cdn123.global.ssl.fastly.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -53,6 +52,6 @@ proxy-groups:
   proxies:
   - CH_ff344_0002
   - NL_ff344_0049
-  - 🇭🇰 香港 | HKG 2
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
