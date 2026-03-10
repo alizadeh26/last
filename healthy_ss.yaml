@@ -39,15 +39,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.112
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.222
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.222
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.112
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -64,7 +64,7 @@ proxy-groups:
   - GB_f291a_0012
   - GB_f291a_0013
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO

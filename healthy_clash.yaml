@@ -32,6 +32,16 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
+- name: CN_f291a_0003
+  server: a.cdn-bilibili.cn
+  port: 30003
+  type: vmess
+  uuid: 69de9a52-36b0-4265-a3cf-d06bcefe713d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
 - name: GB_f291a_0012
   server: admin.c1.havij.co
   port: 443
@@ -82,15 +92,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.112
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.222
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.222
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.112
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -105,13 +115,14 @@ proxy-groups:
   - CH_f291a_0002
   - GB_f291a_0010
   - GB_f291a_0011
+  - CN_f291a_0003
   - GB_f291a_0012
   - GB_f291a_0013
   - GB_f291a_0014
   - NL_f291a_0049
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -122,8 +133,8 @@ proxy-groups:
   - GB_f291a_0012
   - GB_f291a_0013
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -136,13 +147,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CN_f291a_0003
   - GB_f291a_0014
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_f291a_0014
+  - CN_f291a_0003
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
