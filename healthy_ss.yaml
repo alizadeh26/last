@@ -4,15 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_0eff9_0010
-  server: series-a2.samanehha.co
+- name: GB_0eff9_0011
+  server: admin.c1.webramz.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: GB_0eff9_0011
-  server: admin.c1.webramz.co
+- name: GB_0eff9_0010
+  server: series-a2.samanehha.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -39,13 +39,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 1kVr0KATIJI7mwOF
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.41
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.33
   port: 38388
@@ -55,6 +48,13 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.155.150
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.41
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -73,14 +73,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_0eff9_0010
   - GB_0eff9_0011
+  - GB_0eff9_0010
   - GB_0eff9_0012
   - GB_0eff9_0013
   - 🇬🇧 英国 | GBR 3
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
 rules:
 - MATCH,AUTO
