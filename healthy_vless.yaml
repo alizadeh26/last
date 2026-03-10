@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_f291a_0002
+- name: CH_ff344_0002
   server: estonia.scroogethebest.com
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: NL_f291a_0049
+- name: NL_ff344_0049
   server: nll.scroogethebest.com
   port: 443
   type: vless
@@ -32,13 +32,27 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: video.livecut.cc
+  port: 443
+  type: vless
+  uuid: e6091655-c2cf-4287-89d9-5fd9818872df
+  tls: true
+  servername: video.livecut.cc
+  network: ws
+  ws-opts:
+    path: /video
+    headers:
+      Host: video.livecut.cc
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_f291a_0002
-  - NL_f291a_0049
+  - CH_ff344_0002
+  - NL_ff344_0049
+  - 🇭🇰 香港 | HKG 2
 rules:
 - MATCH,AUTO

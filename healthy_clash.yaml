@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_f291a_0002
+- name: CH_ff344_0002
   server: estonia.scroogethebest.com
   port: 443
   type: vless
@@ -18,21 +18,7 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: GB_f291a_0010
-  server: series-a2.samanehha.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-  udp: true
-- name: GB_f291a_0011
-  server: admin.c1.webramz.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-  udp: true
-- name: CN_f291a_0003
+- name: CN_ff344_0003
   server: a.cdn-bilibili.cn
   port: 30003
   type: vmess
@@ -42,21 +28,45 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_f291a_0012
+- name: GB_ff344_0010
+  server: series-a2.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+  udp: true
+- name: GB_ff344_0011
+  server: admin.c1.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+  udp: true
+- name: GB_ff344_0012
   server: admin.c1.havij.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 1kVr0KATIJI7mwOF
   udp: true
-- name: GB_f291a_0013
+- name: GB_ff344_0013
   server: series-a1.samanehha.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: GB_f291a_0014
+- name: GB_ff344_0009
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: GB_ff344_0014
   server: 85.211.242.85
   port: 12889
   type: vmess
@@ -71,7 +81,7 @@ proxies:
     headers:
       Host: baidu.com
   udp: true
-- name: NL_f291a_0049
+- name: NL_ff344_0049
   server: nll.scroogethebest.com
   port: 443
   type: vless
@@ -85,22 +95,21 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: video.livecut.cc
+  port: 443
+  type: vless
+  uuid: e6091655-c2cf-4287-89d9-5fd9818872df
+  tls: true
+  servername: video.livecut.cc
+  network: ws
+  ws-opts:
+    path: /video
+    headers:
+      Host: video.livecut.cc
+  udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.33
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.222
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.112
+  server: 103.186.154.69
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -112,58 +121,58 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_f291a_0002
-  - GB_f291a_0010
-  - GB_f291a_0011
-  - CN_f291a_0003
-  - GB_f291a_0012
-  - GB_f291a_0013
-  - GB_f291a_0014
-  - NL_f291a_0049
+  - CH_ff344_0002
+  - CN_ff344_0003
+  - GB_ff344_0010
+  - GB_ff344_0011
+  - GB_ff344_0012
+  - GB_ff344_0013
+  - GB_ff344_0009
+  - GB_ff344_0014
+  - NL_ff344_0049
+  - 🇭🇰 香港 | HKG 2
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_f291a_0010
-  - GB_f291a_0011
-  - GB_f291a_0012
-  - GB_f291a_0013
+  - GB_ff344_0010
+  - GB_ff344_0011
+  - GB_ff344_0012
+  - GB_ff344_0013
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_f291a_0002
-  - NL_f291a_0049
+  - CH_ff344_0002
+  - NL_ff344_0049
+  - 🇭🇰 香港 | HKG 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_f291a_0003
-  - GB_f291a_0014
+  - CN_ff344_0003
+  - GB_ff344_0009
+  - GB_ff344_0014
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_f291a_0003
+  - CN_ff344_0003
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_f291a_0002
-  - GB_f291a_0010
-  - GB_f291a_0011
-  - GB_f291a_0012
-  - GB_f291a_0013
+  - CH_ff344_0002
+  - GB_ff344_0010
+  - GB_ff344_0011
+  - GB_ff344_0012
+  - GB_ff344_0013
 rules:
 - MATCH,AUTO
