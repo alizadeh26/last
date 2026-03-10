@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_0eff9_0002
+- name: CH_f291a_0002
   server: estonia.scroogethebest.com
   port: 443
   type: vless
@@ -18,45 +18,35 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: GB_0eff9_0009
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: GB_0eff9_0011
-  server: admin.c1.webramz.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-  udp: true
-- name: GB_0eff9_0010
+- name: GB_f291a_0010
   server: series-a2.samanehha.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: GB_0eff9_0012
+- name: GB_f291a_0011
+  server: admin.c1.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+  udp: true
+- name: GB_f291a_0012
   server: admin.c1.havij.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 1kVr0KATIJI7mwOF
   udp: true
-- name: GB_0eff9_0013
+- name: GB_f291a_0013
   server: series-a1.samanehha.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: GB_0eff9_0014
+- name: GB_f291a_0014
   server: 85.211.242.85
   port: 12889
   type: vmess
@@ -71,7 +61,7 @@ proxies:
     headers:
       Host: baidu.com
   udp: true
-- name: NL_0eff9_0049
+- name: NL_f291a_0049
   server: nll.scroogethebest.com
   port: 443
   type: vless
@@ -85,14 +75,7 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: admin.c1.havij.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1kVr0KATIJI7mwOF
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
+- name: 🇻🇳 越南 | VNM
   server: 103.186.155.33
   port: 38388
   type: ss
@@ -100,38 +83,18 @@ proxies:
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.150
+  server: 103.186.155.112
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.41
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.222
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.60
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: yyhj.ae1autumn.dpdns.org
-  port: 443
-  type: vless
-  uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
-  tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /XR8So0uqFVa3vY9ZbxgW4
-    headers:
-      Host: yyhj.ae1autumn.dpdns.org
   udp: true
 proxy-groups:
 - name: AUTO
@@ -139,65 +102,56 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_0eff9_0002
-  - GB_0eff9_0009
-  - GB_0eff9_0011
-  - GB_0eff9_0010
-  - GB_0eff9_0012
-  - GB_0eff9_0013
-  - GB_0eff9_0014
-  - NL_0eff9_0049
-  - 🇬🇧 英国 | GBR 3
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
+  - CH_f291a_0002
+  - GB_f291a_0010
+  - GB_f291a_0011
+  - GB_f291a_0012
+  - GB_f291a_0013
+  - GB_f291a_0014
+  - NL_f291a_0049
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 4
-  - 🇺🇸 美国 | USA 10
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_0eff9_0011
-  - GB_0eff9_0010
-  - GB_0eff9_0012
-  - GB_0eff9_0013
-  - 🇬🇧 英国 | GBR 3
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
+  - GB_f291a_0010
+  - GB_f291a_0011
+  - GB_f291a_0012
+  - GB_f291a_0013
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_0eff9_0002
-  - NL_0eff9_0049
-  - 🇺🇸 美国 | USA 10
+  - CH_f291a_0002
+  - NL_f291a_0049
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_0eff9_0009
-  - GB_0eff9_0014
+  - GB_f291a_0014
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_f291a_0014
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_0eff9_0002
-  - GB_0eff9_0011
-  - GB_0eff9_0010
-  - GB_0eff9_0012
-  - GB_0eff9_0013
-  - 🇬🇧 英国 | GBR 3
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_0eff9_0009
+  - CH_f291a_0002
+  - GB_f291a_0010
+  - GB_f291a_0011
+  - GB_f291a_0012
+  - GB_f291a_0013
 rules:
 - MATCH,AUTO
