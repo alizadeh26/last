@@ -4,12 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_cd19c_0010
-  server: series-a2.samanehha.co
+- name: GB_cd19c_0012
+  server: admin.c1.havij.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
+  password: 1kVr0KATIJI7mwOF
   udp: true
 - name: GB_cd19c_0011
   server: admin.c1.webramz.co
@@ -18,12 +18,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: GB_cd19c_0012
-  server: admin.c1.havij.co
+- name: GB_cd19c_0010
+  server: series-a2.samanehha.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 1kVr0KATIJI7mwOF
+  password: W74XFALLLuw6m5IA
   udp: true
 - name: GB_cd19c_0013
   server: series-a1.samanehha.co
@@ -38,9 +38,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_cd19c_0010
-  - GB_cd19c_0011
   - GB_cd19c_0012
+  - GB_cd19c_0011
+  - GB_cd19c_0010
   - GB_cd19c_0013
 rules:
 - MATCH,AUTO

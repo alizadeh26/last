@@ -4,6 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: GB_cd19c_0009
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: CH_cd19c_0002
   server: estonia.scroogethebest.com
   port: 443
@@ -18,12 +28,12 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: GB_cd19c_0010
-  server: series-a2.samanehha.co
+- name: GB_cd19c_0012
+  server: admin.c1.havij.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
+  password: 1kVr0KATIJI7mwOF
   udp: true
 - name: GB_cd19c_0011
   server: admin.c1.webramz.co
@@ -32,12 +42,22 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: GB_cd19c_0012
-  server: admin.c1.havij.co
+- name: GB_cd19c_0010
+  server: series-a2.samanehha.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 1kVr0KATIJI7mwOF
+  password: W74XFALLLuw6m5IA
+  udp: true
+- name: CN_cd19c_0003
+  server: a.cdn-bilibili.cn
+  port: 30003
+  type: vmess
+  uuid: 69de9a52-36b0-4265-a3cf-d06bcefe713d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
 - name: GB_cd19c_0013
   server: series-a1.samanehha.co
@@ -66,10 +86,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - GB_cd19c_0009
   - CH_cd19c_0002
-  - GB_cd19c_0010
-  - GB_cd19c_0011
   - GB_cd19c_0012
+  - GB_cd19c_0011
+  - GB_cd19c_0010
+  - CN_cd19c_0003
   - GB_cd19c_0013
   - NL_cd19c_0049
 - name: PROTO-SS
@@ -77,9 +99,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_cd19c_0010
-  - GB_cd19c_0011
   - GB_cd19c_0012
+  - GB_cd19c_0011
+  - GB_cd19c_0010
   - GB_cd19c_0013
 - name: PROTO-VLESS
   type: url-test
@@ -88,16 +110,35 @@ proxy-groups:
   proxies:
   - CH_cd19c_0002
   - NL_cd19c_0049
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_cd19c_0009
+  - CN_cd19c_0003
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - CN_cd19c_0003
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - CH_cd19c_0002
-  - GB_cd19c_0010
-  - GB_cd19c_0011
   - GB_cd19c_0012
+  - GB_cd19c_0011
+  - GB_cd19c_0010
   - GB_cd19c_0013
   - NL_cd19c_0049
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_cd19c_0009
 rules:
 - MATCH,AUTO
