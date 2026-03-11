@@ -18,16 +18,6 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: GB_1d4a2_0009
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: GB_1d4a2_0010
   server: series-a2.samanehha.co
   port: 443
@@ -70,25 +60,15 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.69
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.23
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.23
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.69
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -101,15 +81,13 @@ proxy-groups:
   interval: 300
   proxies:
   - CH_1d4a2_0002
-  - GB_1d4a2_0009
   - GB_1d4a2_0010
   - GB_1d4a2_0011
   - GB_1d4a2_0012
   - GB_1d4a2_0013
   - NL_1d4a2_0049
-  - 🇩🇪 德国 | DEU
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -119,8 +97,8 @@ proxy-groups:
   - GB_1d4a2_0011
   - GB_1d4a2_0012
   - GB_1d4a2_0013
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -128,13 +106,6 @@ proxy-groups:
   proxies:
   - CH_1d4a2_0002
   - NL_1d4a2_0049
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_1d4a2_0009
-  - 🇩🇪 德国 | DEU
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -145,12 +116,6 @@ proxy-groups:
   - GB_1d4a2_0011
   - GB_1d4a2_0012
   - GB_1d4a2_0013
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_1d4a2_0009
-  - 🇩🇪 德国 | DEU
+  - NL_1d4a2_0049
 rules:
 - MATCH,AUTO
