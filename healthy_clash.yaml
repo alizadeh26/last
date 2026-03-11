@@ -4,61 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_90d77_0002
-  server: estonia.scroogethebest.com
-  port: 443
-  type: vless
-  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: estonia.scroogethebest.com
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
-  udp: true
-- name: GB_90d77_0010
-  server: series-a2.samanehha.co
-  port: 443
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.136
+  port: 38388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-  udp: true
-- name: GB_90d77_0011
-  server: admin.c1.webramz.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-  udp: true
-- name: GB_90d77_0012
-  server: admin.c1.havij.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1kVr0KATIJI7mwOF
-  udp: true
-- name: GB_90d77_0013
-  server: series-a1.samanehha.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-  udp: true
-- name: NL_90d77_0049
-  server: nll.scroogethebest.com
-  port: 443
-  type: vless
-  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: nll.scroogethebest.com
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -66,38 +17,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_90d77_0002
-  - GB_90d77_0010
-  - GB_90d77_0011
-  - GB_90d77_0012
-  - GB_90d77_0013
-  - NL_90d77_0049
+  - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_90d77_0010
-  - GB_90d77_0011
-  - GB_90d77_0012
-  - GB_90d77_0013
-- name: PROTO-VLESS
+  - 🇻🇳 越南 | VNM
+- name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_90d77_0002
-  - NL_90d77_0049
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - CH_90d77_0002
-  - GB_90d77_0010
-  - GB_90d77_0011
-  - GB_90d77_0012
-  - GB_90d77_0013
-  - NL_90d77_0049
+  - 🇻🇳 越南 | VNM
 rules:
 - MATCH,AUTO
