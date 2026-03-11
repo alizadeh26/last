@@ -18,8 +18,8 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: GB_90d77_0010
-  server: series-a2.samanehha.co
+- name: GB_90d77_0011
+  server: admin.c1.webramz.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -32,8 +32,8 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 1kVr0KATIJI7mwOF
   udp: true
-- name: GB_90d77_0011
-  server: admin.c1.webramz.co
+- name: GB_90d77_0010
+  server: series-a2.samanehha.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -60,16 +60,6 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -77,20 +67,19 @@ proxy-groups:
   interval: 300
   proxies:
   - CH_90d77_0002
-  - GB_90d77_0010
-  - GB_90d77_0012
   - GB_90d77_0011
+  - GB_90d77_0012
+  - GB_90d77_0010
   - GB_90d77_0013
   - NL_90d77_0049
-  - 🇩🇪 德国 | DEU 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_90d77_0010
-  - GB_90d77_0012
   - GB_90d77_0011
+  - GB_90d77_0012
+  - GB_90d77_0010
   - GB_90d77_0013
 - name: PROTO-VLESS
   type: url-test
@@ -99,21 +88,15 @@ proxy-groups:
   proxies:
   - CH_90d77_0002
   - NL_90d77_0049
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - CH_90d77_0002
-  - GB_90d77_0010
-  - GB_90d77_0012
   - GB_90d77_0011
+  - GB_90d77_0012
+  - GB_90d77_0010
   - GB_90d77_0013
   - NL_90d77_0049
 rules:

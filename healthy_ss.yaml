@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_90d77_0010
-  server: series-a2.samanehha.co
+- name: GB_90d77_0011
+  server: admin.c1.webramz.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -18,8 +18,8 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 1kVr0KATIJI7mwOF
   udp: true
-- name: GB_90d77_0011
-  server: admin.c1.webramz.co
+- name: GB_90d77_0010
+  server: series-a2.samanehha.co
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -38,9 +38,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_90d77_0010
-  - GB_90d77_0012
   - GB_90d77_0011
+  - GB_90d77_0012
+  - GB_90d77_0010
   - GB_90d77_0013
 rules:
 - MATCH,AUTO
