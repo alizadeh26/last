@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_1d4a2_0002
+- name: CH_ab359_0002
   server: estonia.scroogethebest.com
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
-- name: NL_1d4a2_0049
+- name: NL_ab359_0049
   server: nll.scroogethebest.com
   port: 443
   type: vless
@@ -38,7 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_1d4a2_0002
-  - NL_1d4a2_0049
+  - CH_ab359_0002
+  - NL_ab359_0049
 rules:
 - MATCH,AUTO
