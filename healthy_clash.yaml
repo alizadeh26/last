@@ -18,6 +18,13 @@ proxies:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
   udp: true
+- name: GB_90d77_0010
+  server: series-a2.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+  udp: true
 - name: GB_90d77_0011
   server: admin.c1.webramz.co
   port: 443
@@ -31,13 +38,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 1kVr0KATIJI7mwOF
-  udp: true
-- name: GB_90d77_0010
-  server: series-a2.samanehha.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
   udp: true
 - name: GB_90d77_0013
   server: series-a1.samanehha.co
@@ -67,9 +67,9 @@ proxy-groups:
   interval: 300
   proxies:
   - CH_90d77_0002
+  - GB_90d77_0010
   - GB_90d77_0011
   - GB_90d77_0012
-  - GB_90d77_0010
   - GB_90d77_0013
   - NL_90d77_0049
 - name: PROTO-SS
@@ -77,9 +77,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - GB_90d77_0010
   - GB_90d77_0011
   - GB_90d77_0012
-  - GB_90d77_0010
   - GB_90d77_0013
 - name: PROTO-VLESS
   type: url-test
@@ -94,9 +94,9 @@ proxy-groups:
   interval: 300
   proxies:
   - CH_90d77_0002
+  - GB_90d77_0010
   - GB_90d77_0011
   - GB_90d77_0012
-  - GB_90d77_0010
   - GB_90d77_0013
   - NL_90d77_0049
 rules:
