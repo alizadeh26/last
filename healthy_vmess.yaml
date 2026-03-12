@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_58fd7_0001
+- name: CN_46538_0001
   server: pub.ap20260228.com
   port: 64021
   type: vmess
@@ -14,7 +14,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_58fd7_0003
+- name: CN_46538_0003
   server: pub.ap20260228.com
   port: 64003
   type: vmess
@@ -24,7 +24,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_58fd7_0004
+- name: CN_46538_0004
   server: pub.ap20260228.com
   port: 64097
   type: vmess
@@ -34,25 +34,14 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: pub.ap20260228.com
-  port: 64003
-  type: vmess
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_58fd7_0001
-  - CN_58fd7_0003
-  - CN_58fd7_0004
-  - 🇦🇺 澳大利亚 | AUS
+  - CN_46538_0001
+  - CN_46538_0003
+  - CN_46538_0004
 rules:
 - MATCH,AUTO

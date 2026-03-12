@@ -4,8 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇮🇳 印度 | IND
+  server: 134.209.147.198
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.122
+  server: 103.186.155.225
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇮🇳 印度 | IND
   - 🇻🇳 越南 | VNM
 rules:
 - MATCH,AUTO
