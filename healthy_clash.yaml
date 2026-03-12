@@ -4,35 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_2713b_0001
-  server: pub.ap20260228.com
-  port: 64021
-  type: vmess
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_2713b_0004
-  server: pub.ap20260228.com
-  port: 64097
-  type: vmess
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.225
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.24
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -51,10 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_2713b_0001
-  - CN_2713b_0004
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
@@ -62,28 +32,13 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - CN_2713b_0001
-  - CN_2713b_0004
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - CN_2713b_0001
-  - CN_2713b_0004
+  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO
