@@ -4,27 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_bbe63_0004
-  server: pub.ap20260228.com
-  port: 64097
-  type: vmess
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_bbe63_0002
-  server: pub.ap20260228.com
-  port: 64018
-  type: vmess
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_bbe63_0001
+- name: CN_2713b_0001
   server: pub.ap20260228.com
   port: 64021
   type: vmess
@@ -34,9 +14,9 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_bbe63_0003
+- name: CN_2713b_0004
   server: pub.ap20260228.com
-  port: 64003
+  port: 64097
   type: vmess
   uuid: a739e782-1682-38a5-9153-aad09d779ae9
   alterId: 0
@@ -50,9 +30,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_bbe63_0004
-  - CN_bbe63_0002
-  - CN_bbe63_0001
-  - CN_bbe63_0003
+  - CN_2713b_0001
+  - CN_2713b_0004
 rules:
 - MATCH,AUTO
