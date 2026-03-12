@@ -4,29 +4,45 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
-  server: s504.okgg.top
-  port: 443
-  type: vless
-  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710948u649as504.okgg.top
-  client-fingerprint: random
-  network: tcp
+- name: CN_58fd7_0001
+  server: pub.ap20260228.com
+  port: 64021
+  type: vmess
+  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: s678.ccgfw.top
-  port: 443
-  type: vless
-  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
-  tls: true
-  servername: u710948u6ad7s678.ccgfw.top
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ssp
+- name: CN_58fd7_0003
+  server: pub.ap20260228.com
+  port: 64003
+  type: vmess
+  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: CN_58fd7_0004
+  server: pub.ap20260228.com
+  port: 64097
+  type: vmess
+  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇦🇺 澳大利亚 | AUS
+  server: pub.ap20260228.com
+  port: 64003
+  type: vmess
+  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.122
@@ -41,8 +57,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
+  - CN_58fd7_0001
+  - CN_58fd7_0003
+  - CN_58fd7_0004
+  - 🇦🇺 澳大利亚 | AUS
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
@@ -50,25 +68,24 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
-- name: PROTO-VLESS
+- name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
+  - CN_58fd7_0001
+  - CN_58fd7_0003
+  - CN_58fd7_0004
+  - 🇦🇺 澳大利亚 | AUS
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CN_58fd7_0001
+  - CN_58fd7_0003
+  - CN_58fd7_0004
+  - 🇦🇺 澳大利亚 | AUS
   - 🇻🇳 越南 | VNM
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO
