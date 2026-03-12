@@ -4,33 +4,29 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_90d77_0002
-  server: estonia.scroogethebest.com
+- name: 🇳🇱 荷兰 | NLD
+  server: s504.okgg.top
   port: 443
   type: vless
-  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
-  flow: xtls-rprx-vision
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
   tls: true
-  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  servername: u710948u649as504.okgg.top
   client-fingerprint: random
-  servername: estonia.scroogethebest.com
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
+  network: tcp
   udp: true
-- name: NL_90d77_0049
-  server: nll.scroogethebest.com
+- name: 🇳🇱 荷兰 | NLD 2
+  server: s678.ccgfw.top
   port: 443
   type: vless
-  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
-  flow: xtls-rprx-vision
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
   tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: nll.scroogethebest.com
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
+  servername: u710948u6ad7s678.ccgfw.top
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ssp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +34,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_90d77_0002
-  - NL_90d77_0049
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO
