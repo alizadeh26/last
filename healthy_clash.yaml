@@ -4,22 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP 10
-  server: hd117-xjp-jd.huidu51.com
-  port: 46611
+- name: 🇭🇰 香港 | HKG 4
+  server: 103.149.182.105
+  port: 8388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eebfd479-3c1f-46d5-b83d-3ccb3f07bf9a
+  cipher: chacha20-ietf
+  password: asd123456
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.232
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.218
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.218
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.232
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -31,24 +31,24 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 10
-  - 🇻🇳 越南 | VNM 2
+  - 🇭🇰 香港 | HKG 4
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 10
-  - 🇻🇳 越南 | VNM 2
+  - 🇭🇰 香港 | HKG 4
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 10
-  - 🇻🇳 越南 | VNM 2
+  - 🇭🇰 香港 | HKG 4
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
 rules:
 - MATCH,AUTO
