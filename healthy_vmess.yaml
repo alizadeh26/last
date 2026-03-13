@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_c0c81_0001
+- name: CN_8a1dc_0001
   server: pub.ap20260228.com
   port: 64021
   type: vmess
@@ -14,9 +14,9 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_c0c81_0003
+- name: CN_8a1dc_0002
   server: pub.ap20260228.com
-  port: 64003
+  port: 64018
   type: vmess
   uuid: a739e782-1682-38a5-9153-aad09d779ae9
   alterId: 0
@@ -24,15 +24,15 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_c0c81_0004
-  server: pub.ap20260228.com
-  port: 64097
+- name: 🇩🇪 德国 | DEU 8
+  server: 82.198.246.97
+  port: 180
   type: vmess
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: false
+  servername: www.bing.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -40,8 +40,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_c0c81_0001
-  - CN_c0c81_0003
-  - CN_c0c81_0004
+  - CN_8a1dc_0001
+  - CN_8a1dc_0002
+  - 🇩🇪 德国 | DEU 8
 rules:
 - MATCH,AUTO
