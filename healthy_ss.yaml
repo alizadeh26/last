@@ -4,15 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇳 印度 | IND
-  server: 134.209.147.198
-  port: 989
+- name: 🇸🇬 新加坡 | SGP 10
+  server: hd117-xjp-jd.huidu51.com
+  port: 46611
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: eebfd479-3c1f-46d5-b83d-3ccb3f07bf9a
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.232
+  port: 38388
   type: ss
   cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.225
+  server: 103.186.154.218
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -24,7 +31,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 | IND
+  - 🇸🇬 新加坡 | SGP 10
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
 rules:
 - MATCH,AUTO
