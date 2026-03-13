@@ -4,6 +4,26 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CN_c0c81_0002
+  server: pub.ap20260228.com
+  port: 64018
+  type: vmess
+  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: CN_c0c81_0004
+  server: pub.ap20260228.com
+  port: 64097
+  type: vmess
+  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.76
   port: 38388
@@ -17,6 +37,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CN_c0c81_0002
+  - CN_c0c81_0004
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
@@ -24,11 +46,20 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - CN_c0c81_0002
+  - CN_c0c81_0004
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CN_c0c81_0002
+  - CN_c0c81_0004
   - 🇻🇳 越南 | VNM
 rules:
 - MATCH,AUTO
