@@ -4,22 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 4
-  server: 103.149.182.105
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-  udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.218
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.232
+  server: 103.186.154.76
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -31,8 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 4
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
 rules:
 - MATCH,AUTO
