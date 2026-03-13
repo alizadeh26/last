@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.108
   port: 38388
@@ -24,6 +31,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
 rules:

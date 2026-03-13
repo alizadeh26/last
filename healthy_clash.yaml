@@ -4,35 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_8a1dc_0001
-  server: pub.ap20260228.com
-  port: 64021
-  type: vmess
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_8a1dc_0002
-  server: pub.ap20260228.com
-  port: 64018
-  type: vmess
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: www.bing.com
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.108
@@ -54,9 +31,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_8a1dc_0001
-  - CN_8a1dc_0002
-  - 🇩🇪 德国 | DEU 8
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
@@ -64,29 +39,21 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - CN_8a1dc_0001
-  - CN_8a1dc_0002
-  - 🇩🇪 德国 | DEU 8
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_8a1dc_0001
-  - CN_8a1dc_0002
   - 🇻🇳 越南 | VNM
-- name: REGION-NA
+  - 🇻🇳 越南 | VNM 2
+- name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
+  - 🇵🇹 葡萄牙 | PRT
 rules:
 - MATCH,AUTO
