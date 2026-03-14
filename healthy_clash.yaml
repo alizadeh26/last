@@ -4,19 +4,54 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.133
+- name: 🇭🇰 香港 | HKG 7
+  server: ss.058.node-for-bigairport.win
+  port: 29001
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.101
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: download.riferoser.icu
-  port: 56594
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.199
+  port: 38388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: mzeMYBJYp4Bo7nA1qYLvv7QG73igtAA85nt4pr8A9ntx2qhDfYgRtiJ7iH7VrcneQKNmtvpbsvvFKPaUATYELi18iH56Ttr4
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.29
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.74
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.117
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.148
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,26 +59,32 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇭🇰 香港 | HKG 7
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇭🇰 香港 | HKG 7
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 2
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇭🇰 香港 | HKG 7
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO
