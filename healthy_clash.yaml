@@ -4,16 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 2
-  server: 155.117.5.181
-  port: 443
-  type: vless
-  uuid: f62095b5-6e82-43b1-8d79-1358bbeffc62
-  tls: false
-  network: ws
-  ws-opts:
-    path: /@FeriVP/@FeriVP/@FeriVP
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: download.riferoser.icu
   port: 56594
@@ -34,7 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
   - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
@@ -44,12 +33,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇻🇳 越南 | VNM
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇫🇷 法国 | FRA 2
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -61,7 +44,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
   - 🇹🇼 🇨🇳 台湾 | TWN 2
 rules:
 - MATCH,AUTO
