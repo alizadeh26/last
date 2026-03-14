@@ -4,29 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
-  server: s504.okgg.top
+- name: 🇫🇷 法国 | FRA 2
+  server: 155.117.5.181
   port: 443
   type: vless
-  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710948u649as504.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: s678.ccgfw.top
-  port: 443
-  type: vless
-  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
-  tls: true
-  servername: u710948u6ad7s678.ccgfw.top
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ssp
+  uuid: f62095b5-6e82-43b1-8d79-1358bbeffc62
+  tls: false
+  network: ws
+  ws-opts:
+    path: /@FeriVP/@FeriVP/@FeriVP
   udp: true
 proxy-groups:
 - name: AUTO
@@ -34,7 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇫🇷 法国 | FRA 2
 rules:
 - MATCH,AUTO
