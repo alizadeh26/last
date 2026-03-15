@@ -34,9 +34,9 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: CN_fc145_0006
+- name: CN_fc145_0009
   server: cn02.365cloud5878.com
-  port: 6001
+  port: 6043
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -54,20 +54,35 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: HK_fc145_0015
-  server: n1761214907.74qxv.top
-  port: 443
+- name: CN_fc145_0011
+  server: cn02.365cloud5878.com
+  port: 6019
   type: vmess
-  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1761214907.74qxv.top
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: CN_fc145_0006
+  server: cn02.365cloud5878.com
+  port: 6001
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇺 匈牙利 | HUN 2
+  server: cn02.365cloud5878.com
+  port: 6029
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
 proxy-groups:
 - name: AUTO
@@ -78,8 +93,10 @@ proxy-groups:
   - CN_fc145_0008
   - CN_fc145_0007
   - GB_fc145_0013
-  - CN_fc145_0006
+  - CN_fc145_0009
   - CN_fc145_0010
-  - HK_fc145_0015
+  - CN_fc145_0011
+  - CN_fc145_0006
+  - 🇭🇺 匈牙利 | HUN 2
 rules:
 - MATCH,AUTO
