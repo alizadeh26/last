@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_14e8a_0008
+- name: CN_fc145_0008
   server: cn02.365cloud5878.com
   port: 6003
   type: vmess
@@ -14,7 +14,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_14e8a_0007
+- name: CN_fc145_0007
   server: cn02.365cloud5878.com
   port: 6004
   type: vmess
@@ -24,17 +24,17 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_14e8a_0009
-  server: cn02.365cloud5878.com
-  port: 6043
+- name: GB_fc145_0013
+  server: 82.198.246.97
+  port: 180
   type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: false
+  skip-cert-verify: true
   udp: true
-- name: CN_14e8a_0010
+- name: CN_fc145_0010
   server: cn02.365cloud5878.com
   port: 6029
   type: vmess
@@ -44,7 +44,17 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_14e8a_0011
+- name: CN_fc145_0009
+  server: cn02.365cloud5878.com
+  port: 6043
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: CN_fc145_0011
   server: cn02.365cloud5878.com
   port: 6019
   type: vmess
@@ -54,37 +64,9 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: HK_14e8a_0015
-  server: n1761214907.74qxv.top
-  port: 443
-  type: vmess
-  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1761214907.74qxv.top
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 164.92.245.167
-  port: 2096
-  type: vmess
-  uuid: 4c95d617-efd8-4045-98d5-4d00e96667f9
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: 🇨🇭 瑞士 | CHE
+- name: 🇭🇺 匈牙利 | HUN 2
   server: cn02.365cloud5878.com
-  port: 6041
+  port: 6029
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -98,13 +80,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_14e8a_0008
-  - CN_14e8a_0007
-  - CN_14e8a_0009
-  - CN_14e8a_0010
-  - CN_14e8a_0011
-  - HK_14e8a_0015
-  - 🇩🇪 德国 | DEU
-  - 🇨🇭 瑞士 | CHE
+  - CN_fc145_0008
+  - CN_fc145_0007
+  - GB_fc145_0013
+  - CN_fc145_0010
+  - CN_fc145_0009
+  - CN_fc145_0011
+  - 🇭🇺 匈牙利 | HUN 2
 rules:
 - MATCH,AUTO
