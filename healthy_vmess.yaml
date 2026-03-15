@@ -4,16 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_5549d_0008
-  server: cn02.365cloud5878.com
-  port: 6003
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: CN_5549d_0006
   server: cn02.365cloud5878.com
   port: 6001
@@ -24,9 +14,9 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_5549d_0007
+- name: CN_5549d_0008
   server: cn02.365cloud5878.com
-  port: 6004
+  port: 6003
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -44,9 +34,9 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_5549d_0010
+- name: CN_5549d_0007
   server: cn02.365cloud5878.com
-  port: 6029
+  port: 6004
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -64,15 +54,30 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_5549d_0013
-  server: 82.198.246.97
-  port: 180
+- name: CN_5549d_0010
+  server: cn02.365cloud5878.com
+  port: 6029
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
   cipher: auto
   tls: false
+  skip-cert-verify: false
+  udp: true
+- name: HK_5549d_0015
+  server: n1761214907.74qxv.top
+  port: 443
+  type: vmess
+  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1761214907.74qxv.top
   udp: true
 proxy-groups:
 - name: AUTO
@@ -80,12 +85,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_5549d_0008
   - CN_5549d_0006
-  - CN_5549d_0007
+  - CN_5549d_0008
   - CN_5549d_0009
-  - CN_5549d_0010
+  - CN_5549d_0007
   - CN_5549d_0011
-  - GB_5549d_0013
+  - CN_5549d_0010
+  - HK_5549d_0015
 rules:
 - MATCH,AUTO
