@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CN_14e8a_0005
+  server: 120.233.125.33
+  port: 30036
+  type: ss
+  cipher: aes-256-gcm
+  password: PiLr13pE
+  udp: true
 - name: CN_14e8a_0007
   server: cn02.365cloud5878.com
   port: 6004
@@ -14,26 +21,9 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_14e8a_0005
-  server: 120.233.125.33
-  port: 30036
-  type: ss
-  cipher: aes-256-gcm
-  password: PiLr13pE
-  udp: true
 - name: CN_14e8a_0008
   server: cn02.365cloud5878.com
   port: 6003
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_14e8a_0009
-  server: cn02.365cloud5878.com
-  port: 6043
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -51,6 +41,16 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
+- name: CN_14e8a_0009
+  server: cn02.365cloud5878.com
+  port: 6043
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
 - name: CN_14e8a_0011
   server: cn02.365cloud5878.com
   port: 6019
@@ -60,6 +60,16 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
+  udp: true
+- name: GB_14e8a_0013
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   udp: true
 - name: HK_14e8a_0015
   server: n1761214907.74qxv.top
@@ -76,6 +86,28 @@ proxies:
     headers:
       Host: n1761214907.74qxv.top
   udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 164.92.245.167
+  port: 2096
+  type: vmess
+  uuid: 4c95d617-efd8-4045-98d5-4d00e96667f9
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: cdn4.api-rutube.ru
+  port: 443
+  type: vless
+  uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
+  tls: false
+  client-fingerprint: qq
+  network: tcp
+  udp: true
 - name: HK_14e8a_0014
   server: n1761184282.74qxv.top
   port: 443
@@ -90,18 +122,15 @@ proxies:
     headers:
       Host: n1761184282.74qxv.top
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 164.92.245.167
-  port: 2096
+- name: CN_14e8a_0006
+  server: cn02.365cloud5878.com
+  port: 6001
   type: vmess
-  uuid: 4c95d617-efd8-4045-98d5-4d00e96667f9
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
+  skip-cert-verify: false
   udp: true
 - name: 🇨🇭 瑞士 | CHE
   server: cn02.365cloud5878.com
@@ -113,18 +142,26 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_14e8a_0006
-  server: cn02.365cloud5878.com
-  port: 6001
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+- name: 🇺🇸 美国 | USA 3
+  server: s173.okgg.top
+  port: 443
+  type: vless
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948ub2afs173.okgg.top
+  client-fingerprint: random
+  network: tcp
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.107
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.195
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -137,43 +174,29 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: cdn4.api-rutube.ru
-  port: 443
-  type: vless
-  uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
-  tls: false
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.195
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_14e8a_0007
   - CN_14e8a_0005
+  - CN_14e8a_0007
   - CN_14e8a_0008
-  - CN_14e8a_0009
   - CN_14e8a_0010
+  - CN_14e8a_0009
   - CN_14e8a_0011
+  - GB_14e8a_0013
   - HK_14e8a_0015
-  - HK_14e8a_0014
   - 🇩🇪 德国 | DEU
-  - 🇨🇭 瑞士 | CHE
-  - CN_14e8a_0006
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇩🇪 德国 | DEU 3
+  - HK_14e8a_0014
+  - CN_14e8a_0006
+  - 🇨🇭 瑞士 | CHE
+  - 🇺🇸 美国 | USA 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -181,15 +204,16 @@ proxy-groups:
   proxies:
   - CN_14e8a_0005
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_14e8a_0014
   - 🇩🇪 德国 | DEU 3
+  - HK_14e8a_0014
+  - 🇺🇸 美国 | USA 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -197,13 +221,14 @@ proxy-groups:
   proxies:
   - CN_14e8a_0007
   - CN_14e8a_0008
-  - CN_14e8a_0009
   - CN_14e8a_0010
+  - CN_14e8a_0009
   - CN_14e8a_0011
+  - GB_14e8a_0013
   - HK_14e8a_0015
   - 🇩🇪 德国 | DEU
-  - 🇨🇭 瑞士 | CHE
   - CN_14e8a_0006
+  - 🇨🇭 瑞士 | CHE
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -217,10 +242,10 @@ proxy-groups:
   proxies:
   - CN_14e8a_0007
   - CN_14e8a_0008
-  - CN_14e8a_0009
   - CN_14e8a_0010
+  - CN_14e8a_0009
   - CN_14e8a_0011
-  - 🇨🇭 瑞士 | CHE
   - CN_14e8a_0006
+  - 🇨🇭 瑞士 | CHE
 rules:
 - MATCH,AUTO

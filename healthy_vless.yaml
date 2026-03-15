@@ -4,6 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU 3
+  server: cdn4.api-rutube.ru
+  port: 443
+  type: vless
+  uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
+  tls: false
+  client-fingerprint: qq
+  network: tcp
+  udp: true
 - name: HK_14e8a_0014
   server: n1761184282.74qxv.top
   port: 443
@@ -18,13 +27,15 @@ proxies:
     headers:
       Host: n1761184282.74qxv.top
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: cdn4.api-rutube.ru
+- name: 🇺🇸 美国 | USA 3
+  server: s173.okgg.top
   port: 443
   type: vless
-  uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
-  tls: false
-  client-fingerprint: qq
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948ub2afs173.okgg.top
+  client-fingerprint: random
   network: tcp
   udp: true
 proxy-groups:
@@ -33,7 +44,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_14e8a_0014
   - 🇩🇪 德国 | DEU 3
+  - HK_14e8a_0014
+  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO

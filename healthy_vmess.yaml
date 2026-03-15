@@ -24,9 +24,9 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_14e8a_0009
+- name: CN_14e8a_0010
   server: cn02.365cloud5878.com
-  port: 6043
+  port: 6029
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -34,9 +34,9 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_14e8a_0010
+- name: CN_14e8a_0009
   server: cn02.365cloud5878.com
-  port: 6029
+  port: 6043
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -53,6 +53,16 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
+  udp: true
+- name: GB_14e8a_0013
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   udp: true
 - name: HK_14e8a_0015
   server: n1761214907.74qxv.top
@@ -82,9 +92,9 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: 🇨🇭 瑞士 | CHE
+- name: CN_14e8a_0006
   server: cn02.365cloud5878.com
-  port: 6041
+  port: 6001
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -92,9 +102,9 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_14e8a_0006
+- name: 🇨🇭 瑞士 | CHE
   server: cn02.365cloud5878.com
-  port: 6001
+  port: 6041
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -110,12 +120,13 @@ proxy-groups:
   proxies:
   - CN_14e8a_0007
   - CN_14e8a_0008
-  - CN_14e8a_0009
   - CN_14e8a_0010
+  - CN_14e8a_0009
   - CN_14e8a_0011
+  - GB_14e8a_0013
   - HK_14e8a_0015
   - 🇩🇪 德国 | DEU
-  - 🇨🇭 瑞士 | CHE
   - CN_14e8a_0006
+  - 🇨🇭 瑞士 | CHE
 rules:
 - MATCH,AUTO
