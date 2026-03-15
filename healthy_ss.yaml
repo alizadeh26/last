@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CN_fc145_0005
+  server: 120.233.125.33
+  port: 30036
+  type: ss
+  cipher: aes-256-gcm
+  password: PiLr13pE
+  udp: true
 - name: 🇱🇻 拉脱维亚 | LVA
   server: 185.176.221.72
   port: 24637
@@ -18,13 +25,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: v8NKiSxilGVslodFPWWLR8
   udp: true
-- name: CN_fc145_0005
-  server: 120.233.125.33
-  port: 30036
-  type: ss
-  cipher: aes-256-gcm
-  password: PiLr13pE
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: 120.233.125.33
   port: 30036
@@ -32,15 +32,22 @@ proxies:
   cipher: aes-256-gcm
   password: PiLr13pE
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.80
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: 120.232.77.28
+  port: 30036
+  type: ss
+  cipher: aes-256-gcm
+  password: PiLr13pE
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.240
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.240
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.80
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -52,11 +59,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CN_fc145_0005
   - 🇱🇻 拉脱维亚 | LVA
   - 🇭🇺 匈牙利 | HUN
-  - CN_fc145_0005
   - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇻🇳 越南 | VNM 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
 rules:
 - MATCH,AUTO
