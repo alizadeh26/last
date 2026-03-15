@@ -4,29 +4,9 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_5549d_0006
-  server: cn02.365cloud5878.com
-  port: 6001
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: CN_5549d_0008
   server: cn02.365cloud5878.com
   port: 6003
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_5549d_0009
-  server: cn02.365cloud5878.com
-  port: 6043
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -44,9 +24,19 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_5549d_0011
+- name: GB_5549d_0013
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: CN_5549d_0009
   server: cn02.365cloud5878.com
-  port: 6019
+  port: 6043
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -64,20 +54,25 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: HK_5549d_0015
-  server: n1761214907.74qxv.top
-  port: 443
+- name: CN_5549d_0011
+  server: cn02.365cloud5878.com
+  port: 6019
   type: vmess
-  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1761214907.74qxv.top
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: CN_5549d_0006
+  server: cn02.365cloud5878.com
+  port: 6001
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
 proxy-groups:
 - name: AUTO
@@ -85,12 +80,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_5549d_0006
   - CN_5549d_0008
-  - CN_5549d_0009
   - CN_5549d_0007
-  - CN_5549d_0011
+  - GB_5549d_0013
+  - CN_5549d_0009
   - CN_5549d_0010
-  - HK_5549d_0015
+  - CN_5549d_0011
+  - CN_5549d_0006
 rules:
 - MATCH,AUTO
