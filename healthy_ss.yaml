@@ -4,22 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_14e8a_0005
-  server: 120.233.125.33
-  port: 30036
-  type: ss
-  cipher: aes-256-gcm
-  password: PiLr13pE
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.107
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.195
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.195
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.107
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -38,9 +31,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_14e8a_0005
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO
