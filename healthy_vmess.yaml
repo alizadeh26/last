@@ -4,27 +4,67 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_8a1dc_0001
-  server: pub.ap20260228.com
-  port: 64021
+- name: CN_5549d_0008
+  server: cn02.365cloud5878.com
+  port: 6003
   type: vmess
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_8a1dc_0002
-  server: pub.ap20260228.com
-  port: 64018
+- name: CN_5549d_0006
+  server: cn02.365cloud5878.com
+  port: 6001
   type: vmess
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇩🇪 德国 | DEU 8
+- name: CN_5549d_0007
+  server: cn02.365cloud5878.com
+  port: 6004
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: CN_5549d_0009
+  server: cn02.365cloud5878.com
+  port: 6043
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: CN_5549d_0010
+  server: cn02.365cloud5878.com
+  port: 6029
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: CN_5549d_0011
+  server: cn02.365cloud5878.com
+  port: 6019
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: GB_5549d_0013
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -32,7 +72,7 @@ proxies:
   alterId: 0
   cipher: auto
   tls: false
-  servername: www.bing.com
+  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: AUTO
@@ -40,8 +80,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_8a1dc_0001
-  - CN_8a1dc_0002
-  - 🇩🇪 德国 | DEU 8
+  - CN_5549d_0008
+  - CN_5549d_0006
+  - CN_5549d_0007
+  - CN_5549d_0009
+  - CN_5549d_0010
+  - CN_5549d_0011
+  - GB_5549d_0013
 rules:
 - MATCH,AUTO

@@ -4,18 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 16
-  server: support.cloudflare.com
-  port: 2095
+- name: HK_5549d_0014
+  server: n1761184282.74qxv.top
+  port: 443
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  client-fingerprint: randomized
+  uuid: 824dc1b1-e35b-4121-ad73-9acaf13d6410
+  tls: true
+  skip-cert-verify: false
+  servername: n1761184282.74qxv.top
   network: ws
   ws-opts:
-    path: /
+    path: /824dc1b1-e35b-4121-ad73-9acaf13d6410
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-1.workers.dev
+      Host: n1761184282.74qxv.top
   udp: true
 proxy-groups:
 - name: AUTO
@@ -23,6 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 16
+  - HK_5549d_0014
 rules:
 - MATCH,AUTO
