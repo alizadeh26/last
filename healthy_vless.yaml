@@ -4,15 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 2
-  server: 155.117.5.181
-  port: 443
+- name: 🇺🇸 美国 | USA 16
+  server: support.cloudflare.com
+  port: 2095
   type: vless
-  uuid: f62095b5-6e82-43b1-8d79-1358bbeffc62
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
+  client-fingerprint: randomized
   network: ws
   ws-opts:
-    path: /@FeriVP/@FeriVP/@FeriVP
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-1.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -20,6 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
+  - 🇺🇸 美国 | USA 16
 rules:
 - MATCH,AUTO
