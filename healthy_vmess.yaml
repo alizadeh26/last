@@ -64,16 +64,6 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_66e7c_0006
-  server: cn02.365cloud5878.com
-  port: 6001
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: HK_66e7c_0015
   server: n1761214907.74qxv.top
   port: 443
@@ -88,6 +78,16 @@ proxies:
     path: /
     headers:
       Host: n1761214907.74qxv.top
+  udp: true
+- name: CN_66e7c_0006
+  server: cn02.365cloud5878.com
+  port: 6001
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
 - name: 🇭🇰 香港 | HKG 3
   server: cn02.365cloud5878.com
@@ -111,8 +111,8 @@ proxy-groups:
   - CN_66e7c_0009
   - CN_66e7c_0011
   - CN_66e7c_0010
-  - CN_66e7c_0006
   - HK_66e7c_0015
+  - CN_66e7c_0006
   - 🇭🇰 香港 | HKG 3
 rules:
 - MATCH,AUTO
