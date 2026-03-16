@@ -4,17 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_66e7c_0007
-  server: cn02.365cloud5878.com
-  port: 6004
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: GB_66e7c_0013
+- name: GB_98254_0013
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -24,47 +14,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: CN_66e7c_0008
-  server: cn02.365cloud5878.com
-  port: 6003
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_66e7c_0009
-  server: cn02.365cloud5878.com
-  port: 6043
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_66e7c_0011
-  server: cn02.365cloud5878.com
-  port: 6019
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_66e7c_0010
-  server: cn02.365cloud5878.com
-  port: 6029
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: HK_66e7c_0015
+- name: HK_98254_0015
   server: n1761214907.74qxv.top
   port: 443
   type: vmess
@@ -79,9 +29,9 @@ proxies:
     headers:
       Host: n1761214907.74qxv.top
   udp: true
-- name: CN_66e7c_0006
+- name: 🇯🇵 日本 | JPN 4
   server: cn02.365cloud5878.com
-  port: 6001
+  port: 6003
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
@@ -89,30 +39,14 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: cn02.365cloud5878.com
-  port: 6001
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_66e7c_0007
-  - GB_66e7c_0013
-  - CN_66e7c_0008
-  - CN_66e7c_0009
-  - CN_66e7c_0011
-  - CN_66e7c_0010
-  - HK_66e7c_0015
-  - CN_66e7c_0006
-  - 🇭🇰 香港 | HKG 3
+  - GB_98254_0013
+  - HK_98254_0015
+  - 🇯🇵 日本 | JPN 4
 rules:
 - MATCH,AUTO
