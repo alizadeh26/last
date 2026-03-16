@@ -1,17 +1,15 @@
-trojan://f389ed926e512e15f382dc3804029474@160.16.85.33:4937?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031609005
-trojan://f389ed926e512e15f382dc3804029474@160.16.132.38:3419?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031609003
-trojan://f389ed926e512e15f382dc3804029474@160.16.85.33:4674?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031609007
-trojan://f389ed926e512e15f382dc3804029474@153.121.65.107:4019?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031609004
-trojan://f389ed926e512e15f382dc3804029474@57.180.28.65:2001?allowInsecure=0&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031609016
-trojan://f389ed926e512e15f382dc3804029474@160.16.124.17:34818?allowInsecure=0&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031609017
-trojan://f389ed926e512e15f382dc3804029474@18.182.10.16:921?allowInsecure=0&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031609014
-trojan://f389ed926e512e15f382dc3804029474@153.121.45.139:3057?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031609009+L0
-trojan://f389ed926e512e15f382dc3804029474@13.113.193.32:4920?allowInsecure=0&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031609020
+trojan://f389ed926e512e15f382dc3804029474@160.16.132.38:3419?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031614003
+trojan://f389ed926e512e15f382dc3804029474@160.16.72.205:3057?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031614002
+trojan://f389ed926e512e15f382dc3804029474@153.121.65.107:4019?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031614006
+trojan://f389ed926e512e15f382dc3804029474@160.16.132.38:4937?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031614013
+trojan://f389ed926e512e15f382dc3804029474@160.16.85.33:4674?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031614007
+trojan://f389ed926e512e15f382dc3804029474@18.182.10.16:921?allowInsecure=0&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031614017
+trojan://f389ed926e512e15f382dc3804029474@13.113.193.32:4920?allowInsecure=0&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031614023
 vless://a16bd0e2-ff2e-4e4c-a955-0c684255a065@sg.fasti.win:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=-YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs&security=reality&sid=feedbacc&sni=sg.fasti.win&type=tcp#REALITY|SG🇸🇬
 vless://948fac3c-42bf-41a6-a5f9-704d36ff0d8d@198.13.62.34:443?&security=tls&fp=random&alpn=http/1.1&sni=snippet.danfeng.ccwu.cc&type=ws&headerType=none&host=snippet.danfeng.ccwu.cc&path=%2Fdanfeng#%40v2rayconfigamir%202446
-vmess://eyJ2IjoiMiIsInBzIjoiQHYycmF5Y29uZmlnYW1pciA5Njg3IiwiYWRkIjoibjE3NTM1OTg0NTIud3BnMjcueHl6IiwicG9ydCI6IjQ0MyIsInR5cGUiOiJhdXRvIiwiaWQiOiI0ZjIzZWI3Yy1lZjJmLTQzYjAtOTBkZC1mMmI4YTc1OTU0YTUiLCJhaWQiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsImhvc3QiOiJuMTc1MzU5ODQ1Mi53cGcyNy54eXoiLCJ0bHMiOiJ0bHMifQ==
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11202#🇯🇵 76 - JP - SS/AEAD - 11202
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11201#🇯🇵 75 - JP - SS/AEAD - 11201
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11203#🇯🇵 77 - JP - SS/AEAD - 11203
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11204#🇯🇵 78 - JP - SS/AEAD - 11204
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11205#🇯🇵 79 - JP - SS/AEAD - 11205
+vmess://eyJhZGQiOiJuMTc1MzU5ODQ1Mi53cGcyNy54eXoiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Im4xNzUzNTk4NDUyLndwZzI3Lnh5eiIsImlkIjoiNGYyM2ViN2MtZWYyZi00M2IwLTkwZGQtZjJiOGE3NTk1NGE1IiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiI0NDMiLCJwcyI6IjEg8J+TsSBAdW52aXNpYmxlX2Ryb3BzIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6InRscyIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11202#🇯🇵 72 - JP - SS/AEAD - 11202
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11201#🇯🇵 71 - JP - SS/AEAD - 11201
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11203#🇯🇵 73 - JP - SS/AEAD - 11203
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11205#🇯🇵 75 - JP - SS/AEAD - 11205
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11204#🇯🇵 74 - JP - SS/AEAD - 11204
