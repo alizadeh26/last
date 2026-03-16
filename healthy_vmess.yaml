@@ -14,20 +14,35 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: HK_98254_0015
-  server: n1761214907.74qxv.top
-  port: 443
+- name: CN_98254_0007
+  server: cn02.365cloud5878.com
+  port: 6004
   type: vmess
-  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1761214907.74qxv.top
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: CN_98254_0008
+  server: cn02.365cloud5878.com
+  port: 6003
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: CN_98254_0006
+  server: cn02.365cloud5878.com
+  port: 6001
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
 - name: 🇯🇵 日本 | JPN 4
   server: cn02.365cloud5878.com
@@ -46,7 +61,9 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_98254_0013
-  - HK_98254_0015
+  - CN_98254_0007
+  - CN_98254_0008
+  - CN_98254_0006
   - 🇯🇵 日本 | JPN 4
 rules:
 - MATCH,AUTO

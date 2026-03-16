@@ -14,6 +14,16 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: CN_98254_0007
+  server: cn02.365cloud5878.com
+  port: 6004
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
 - name: HK_98254_0014
   server: n1761184282.74qxv.top
   port: 443
@@ -28,20 +38,25 @@ proxies:
     headers:
       Host: n1761184282.74qxv.top
   udp: true
-- name: HK_98254_0015
-  server: n1761214907.74qxv.top
-  port: 443
+- name: CN_98254_0008
+  server: cn02.365cloud5878.com
+  port: 6003
   type: vmess
-  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1761214907.74qxv.top
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: CN_98254_0006
+  server: cn02.365cloud5878.com
+  port: 6001
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
 - name: 🇰🇷 韩国 | KOR
   server: 141.164.45.187
@@ -74,6 +89,13 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
+- name: 🇱🇹 立陶宛 | LTU
+  server: 195.66.25.220
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: yhrHMDgZ2egKftvrecvkpUPqpUTyac7q
+  udp: true
 - name: 🇺🇸 美国 | USA 13
   server: nnnmjki.09o.ccwu.cc
   port: 80
@@ -94,6 +116,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.156
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.155.202
   port: 38388
@@ -108,15 +137,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.156
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.252
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.252
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.153
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -129,18 +158,22 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_98254_0013
+  - CN_98254_0007
   - HK_98254_0014
-  - HK_98254_0015
+  - CN_98254_0008
+  - CN_98254_0006
   - 🇰🇷 韩国 | KOR
   - 🇰🇷 韩国 | KOR 5
   - 🇰🇷 韩国 | KOR 8
   - 🇯🇵 日本 | JPN 4
+  - 🇱🇹 立陶宛 | LTU
   - 🇺🇸 美国 | USA 13
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -149,11 +182,13 @@ proxy-groups:
   - 🇰🇷 韩国 | KOR
   - 🇰🇷 韩国 | KOR 5
   - 🇰🇷 韩国 | KOR 8
+  - 🇱🇹 立陶宛 | LTU
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -167,7 +202,9 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_98254_0013
-  - HK_98254_0015
+  - CN_98254_0007
+  - CN_98254_0008
+  - CN_98254_0006
   - 🇯🇵 日本 | JPN 4
 - name: REGION-AS
   type: url-test
@@ -175,17 +212,20 @@ proxy-groups:
   interval: 300
   proxies:
   - HK_98254_0014
-  - HK_98254_0015
   - 🇰🇷 韩国 | KOR
   - 🇰🇷 韩国 | KOR 5
   - 🇰🇷 韩国 | KOR 8
-  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - GB_98254_0013
+  - CN_98254_0007
+  - CN_98254_0008
+  - CN_98254_0006
   - 🇯🇵 日本 | JPN 4
+  - 🇱🇹 立陶宛 | LTU
 rules:
 - MATCH,AUTO

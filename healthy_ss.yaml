@@ -25,8 +25,22 @@ proxies:
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
+- name: 🇱🇹 立陶宛 | LTU
+  server: 195.66.25.220
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: yhrHMDgZ2egKftvrecvkpUPqpUTyac7q
+  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.241
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.156
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -46,15 +60,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.156
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.252
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.252
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.153
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -69,10 +83,12 @@ proxy-groups:
   - 🇰🇷 韩国 | KOR
   - 🇰🇷 韩国 | KOR 5
   - 🇰🇷 韩国 | KOR 8
+  - 🇱🇹 立陶宛 | LTU
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
 rules:
 - MATCH,AUTO
