@@ -14,16 +14,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: CN_98254_0007
-  server: cn02.365cloud5878.com
-  port: 6004
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: HK_98254_0014
   server: n1761184282.74qxv.top
   port: 443
@@ -38,86 +28,30 @@ proxies:
     headers:
       Host: n1761184282.74qxv.top
   udp: true
-- name: CN_98254_0008
-  server: cn02.365cloud5878.com
-  port: 6003
+- name: HK_98254_0015
+  server: n1761214907.74qxv.top
+  port: 443
   type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_98254_0006
-  server: cn02.365cloud5878.com
-  port: 6001
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: 141.164.45.187
-  port: 8091
-  type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: 🇰🇷 韩国 | KOR 5
-  server: 141.164.45.187
-  port: 8008
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇰🇷 韩国 | KOR 8
-  server: 141.164.45.187
-  port: 5001
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: cn02.365cloud5878.com
-  port: 6003
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇱🇹 立陶宛 | LTU
-  server: 195.66.25.220
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: yhrHMDgZ2egKftvrecvkpUPqpUTyac7q
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: nnnmjki.09o.ccwu.cc
-  port: 80
-  type: vless
-  uuid: 2bfded8d-6a7c-4c18-aaa5-fc65b955d50c
-  tls: false
-  servername: nnnmjki.09o.ccwu.cc
+  tls: true
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /HoBSIvRY1m5xOEJ3dX414bl
+    path: /
     headers:
-      Host: nnnmjki.09o.ccwu.cc
+      Host: n1761214907.74qxv.top
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.241
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.156
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.156
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.241
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -144,13 +78,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.153
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -158,74 +85,48 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_98254_0013
-  - CN_98254_0007
   - HK_98254_0014
-  - CN_98254_0008
-  - CN_98254_0006
-  - 🇰🇷 韩国 | KOR
-  - 🇰🇷 韩国 | KOR 5
-  - 🇰🇷 韩国 | KOR 8
-  - 🇯🇵 日本 | JPN 4
-  - 🇱🇹 立陶宛 | LTU
-  - 🇺🇸 美国 | USA 13
-  - 🇻🇳 越南 | VNM 2
+  - HK_98254_0015
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 | KOR
-  - 🇰🇷 韩国 | KOR 5
-  - 🇰🇷 韩国 | KOR 8
-  - 🇱🇹 立陶宛 | LTU
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - HK_98254_0014
-  - 🇺🇸 美国 | USA 13
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - GB_98254_0013
-  - CN_98254_0007
-  - CN_98254_0008
-  - CN_98254_0006
-  - 🇯🇵 日本 | JPN 4
+  - HK_98254_0015
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - HK_98254_0014
-  - 🇰🇷 韩国 | KOR
-  - 🇰🇷 韩国 | KOR 5
-  - 🇰🇷 韩国 | KOR 8
-  - 🇻🇳 越南 | VNM 2
+  - HK_98254_0015
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - GB_98254_0013
-  - CN_98254_0007
-  - CN_98254_0008
-  - CN_98254_0006
-  - 🇯🇵 日本 | JPN 4
-  - 🇱🇹 立陶宛 | LTU
 rules:
 - MATCH,AUTO

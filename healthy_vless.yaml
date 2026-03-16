@@ -18,19 +18,6 @@ proxies:
     headers:
       Host: n1761184282.74qxv.top
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: nnnmjki.09o.ccwu.cc
-  port: 80
-  type: vless
-  uuid: 2bfded8d-6a7c-4c18-aaa5-fc65b955d50c
-  tls: false
-  servername: nnnmjki.09o.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /HoBSIvRY1m5xOEJ3dX414bl
-    headers:
-      Host: nnnmjki.09o.ccwu.cc
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -38,6 +25,5 @@ proxy-groups:
   interval: 300
   proxies:
   - HK_98254_0014
-  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO
