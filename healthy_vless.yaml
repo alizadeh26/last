@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: HK_98254_0014
+- name: HK_5a863_0014
   server: n1761184282.74qxv.top
   port: 443
   type: vless
@@ -24,6 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_98254_0014
+  - HK_5a863_0014
 rules:
 - MATCH,AUTO

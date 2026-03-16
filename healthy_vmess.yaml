@@ -4,17 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_98254_0013
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: HK_98254_0015
+- name: HK_5a863_0015
   server: n1761214907.74qxv.top
   port: 443
   type: vmess
@@ -29,13 +19,43 @@ proxies:
     headers:
       Host: n1761214907.74qxv.top
   udp: true
+- name: 🇨🇦 加拿大 | CAN 2
+  server: t.cnmjcn.cyou
+  port: 16641
+  type: vmess
+  uuid: 029db9dc-c42d-468b-bda5-3224927d8c89
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 98564a637e1e476f33c3372987770183.mobgslb.tbcache.com
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: hb.seacloudmachinery.com
+  port: 2086
+  type: vmess
+  uuid: 82b0e3ab-e5ba-5fe0-bd05-df6f5d49a563
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: hb.seacloudmachinery.com
+  network: ws
+  ws-opts:
+    path: /telegram id @rootface
+    headers:
+      Host: hb.seacloudmachinery.com
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_98254_0013
-  - HK_98254_0015
+  - HK_5a863_0015
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO
