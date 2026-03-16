@@ -18,17 +18,6 @@ proxies:
     headers:
       Host: n1761184282.74qxv.top
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: s502.okgg.top
-  port: 443
-  type: vless
-  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710948uc21fs502.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -36,6 +25,5 @@ proxy-groups:
   interval: 300
   proxies:
   - HK_66e7c_0014
-  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO

@@ -14,16 +14,6 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_66e7c_0008
-  server: cn02.365cloud5878.com
-  port: 6003
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: GB_66e7c_0013
   server: 82.198.246.97
   port: 180
@@ -33,6 +23,16 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
+  udp: true
+- name: CN_66e7c_0008
+  server: cn02.365cloud5878.com
+  port: 6003
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
 - name: CN_66e7c_0009
   server: cn02.365cloud5878.com
@@ -64,6 +64,20 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
+- name: HK_66e7c_0014
+  server: n1761184282.74qxv.top
+  port: 443
+  type: vless
+  uuid: 824dc1b1-e35b-4121-ad73-9acaf13d6410
+  tls: true
+  skip-cert-verify: false
+  servername: n1761184282.74qxv.top
+  network: ws
+  ws-opts:
+    path: /824dc1b1-e35b-4121-ad73-9acaf13d6410
+    headers:
+      Host: n1761184282.74qxv.top
+  udp: true
 - name: CN_66e7c_0006
   server: cn02.365cloud5878.com
   port: 6001
@@ -88,19 +102,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qlAaMfSPv2c1Sys925zjWY
   udp: true
-- name: HK_66e7c_0014
-  server: n1761184282.74qxv.top
+- name: HK_66e7c_0015
+  server: n1761214907.74qxv.top
   port: 443
-  type: vless
-  uuid: 824dc1b1-e35b-4121-ad73-9acaf13d6410
+  type: vmess
+  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
+  alterId: 0
+  cipher: auto
   tls: true
-  skip-cert-verify: false
-  servername: n1761184282.74qxv.top
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /824dc1b1-e35b-4121-ad73-9acaf13d6410
+    path: /
     headers:
-      Host: n1761184282.74qxv.top
+      Host: n1761214907.74qxv.top
   udp: true
 - name: 🇰🇷 韩国 | KOR 3
   server: 141.164.45.187
@@ -109,30 +124,12 @@ proxies:
   cipher: aes-256-gcm
   password: TEzjfAYq2IjtuoS
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: s502.okgg.top
-  port: 443
-  type: vless
-  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710948uc21fs502.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇰🇷 韩国 | KOR 5
   server: 141.164.45.187
   port: 2376
   type: ss
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
-  udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 185.231.233.112
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇭🇰 香港 | HKG 3
   server: cn02.365cloud5878.com
@@ -165,19 +162,18 @@ proxy-groups:
   interval: 300
   proxies:
   - CN_66e7c_0007
-  - CN_66e7c_0008
   - GB_66e7c_0013
+  - CN_66e7c_0008
   - CN_66e7c_0009
   - CN_66e7c_0011
   - CN_66e7c_0010
+  - HK_66e7c_0014
   - CN_66e7c_0006
   - 🇨🇦 加拿大 | CAN 2
   - 🇫🇮 芬兰 | FIN
-  - HK_66e7c_0014
+  - HK_66e7c_0015
   - 🇰🇷 韩国 | KOR 3
-  - 🇳🇱 荷兰 | NLD
   - 🇰🇷 韩国 | KOR 5
-  - 🇵🇹 葡萄牙 | PRT
   - 🇭🇰 香港 | HKG 3
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
@@ -190,7 +186,6 @@ proxy-groups:
   - 🇫🇮 芬兰 | FIN
   - 🇰🇷 韩国 | KOR 3
   - 🇰🇷 韩国 | KOR 5
-  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
@@ -199,19 +194,19 @@ proxy-groups:
   interval: 300
   proxies:
   - HK_66e7c_0014
-  - 🇳🇱 荷兰 | NLD
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - CN_66e7c_0007
-  - CN_66e7c_0008
   - GB_66e7c_0013
+  - CN_66e7c_0008
   - CN_66e7c_0009
   - CN_66e7c_0011
   - CN_66e7c_0010
   - CN_66e7c_0006
+  - HK_66e7c_0015
   - 🇭🇰 香港 | HKG 3
 - name: REGION-NA
   type: url-test
@@ -219,8 +214,8 @@ proxy-groups:
   interval: 300
   proxies:
   - CN_66e7c_0007
-  - CN_66e7c_0008
   - GB_66e7c_0013
+  - CN_66e7c_0008
   - CN_66e7c_0009
   - CN_66e7c_0011
   - CN_66e7c_0010
