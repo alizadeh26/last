@@ -4,7 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_fc145_0008
+- name: CN_e57f4_0005
+  server: 120.233.125.33
+  port: 30036
+  type: ss
+  cipher: aes-256-gcm
+  password: PiLr13pE
+  udp: true
+- name: CN_e57f4_0008
   server: cn02.365cloud5878.com
   port: 6003
   type: vmess
@@ -14,7 +21,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_fc145_0007
+- name: CN_e57f4_0007
   server: cn02.365cloud5878.com
   port: 6004
   type: vmess
@@ -24,24 +31,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_fc145_0005
-  server: 120.233.125.33
-  port: 30036
-  type: ss
-  cipher: aes-256-gcm
-  password: PiLr13pE
-  udp: true
-- name: GB_fc145_0013
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: CN_fc145_0009
+- name: CN_e57f4_0009
   server: cn02.365cloud5878.com
   port: 6043
   type: vmess
@@ -51,17 +41,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_fc145_0010
-  server: cn02.365cloud5878.com
-  port: 6029
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_fc145_0011
+- name: CN_e57f4_0011
   server: cn02.365cloud5878.com
   port: 6019
   type: vmess
@@ -71,31 +51,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_fc145_0006
-  server: cn02.365cloud5878.com
-  port: 6001
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 185.176.221.72
-  port: 24637
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MholStyHL7DhrewKbpQa20
-  udp: true
-- name: 🇭🇺 匈牙利 | HUN
-  server: 194.71.130.26
-  port: 2949
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: v8NKiSxilGVslodFPWWLR8
-  udp: true
-- name: 🇭🇺 匈牙利 | HUN 2
+- name: CN_e57f4_0010
   server: cn02.365cloud5878.com
   port: 6029
   type: vmess
@@ -105,7 +61,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: HK_fc145_0014
+- name: HK_e57f4_0014
   server: n1761184282.74qxv.top
   port: 443
   type: vless
@@ -119,38 +75,84 @@ proxies:
     headers:
       Host: n1761184282.74qxv.top
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
+- name: HK_e57f4_0015
+  server: n1761214907.74qxv.top
+  port: 443
+  type: vmess
+  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1761214907.74qxv.top
+  udp: true
+- name: 🇨🇱 智利 | CHL
+  server: 38.54.20.59
+  port: 8881
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: CN_e57f4_0006
+  server: cn02.365cloud5878.com
+  port: 6001
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 香港 | HKG 6
+  server: cn02.365cloud5878.com
+  port: 6001
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: ffv.xx6.ccwu.cc
   port: 443
   type: vless
-  uuid: b2f99930-7d48-4a22-8d67-539c440b6a7a
+  uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
   tls: true
-  alpn:
-  - http/1.1
-  servername: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /01119417
+    path: /XR8So0uqFVa3vY9ZbxgW4
     headers:
-      Host: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
+      Host: ffv.xx6.ccwu.cc
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: 120.233.125.33
-  port: 30036
-  type: ss
-  cipher: aes-256-gcm
-  password: PiLr13pE
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.240
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.56
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.80
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.77
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.228
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.20
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -162,71 +164,70 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_fc145_0008
-  - CN_fc145_0007
-  - CN_fc145_0005
-  - GB_fc145_0013
-  - CN_fc145_0009
-  - CN_fc145_0010
-  - CN_fc145_0011
-  - CN_fc145_0006
-  - 🇱🇻 拉脱维亚 | LVA
-  - 🇭🇺 匈牙利 | HUN
-  - 🇭🇺 匈牙利 | HUN 2
-  - HK_fc145_0014
-  - 🇹🇷 土耳其 | TUR
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇻🇳 越南 | VNM
+  - CN_e57f4_0005
+  - CN_e57f4_0008
+  - CN_e57f4_0007
+  - CN_e57f4_0009
+  - CN_e57f4_0011
+  - CN_e57f4_0010
+  - HK_e57f4_0014
+  - HK_e57f4_0015
+  - 🇨🇱 智利 | CHL
+  - CN_e57f4_0006
+  - 🇭🇰 香港 | HKG 6
+  - 🇺🇸 美国 | USA 6
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_fc145_0005
-  - 🇱🇻 拉脱维亚 | LVA
-  - 🇭🇺 匈牙利 | HUN
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇻🇳 越南 | VNM
+  - CN_e57f4_0005
+  - 🇨🇱 智利 | CHL
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_fc145_0014
-  - 🇹🇷 土耳其 | TUR
+  - HK_e57f4_0014
+  - 🇺🇸 美国 | USA 6
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_fc145_0008
-  - CN_fc145_0007
-  - GB_fc145_0013
-  - CN_fc145_0009
-  - CN_fc145_0010
-  - CN_fc145_0011
-  - CN_fc145_0006
-  - 🇭🇺 匈牙利 | HUN 2
+  - CN_e57f4_0008
+  - CN_e57f4_0007
+  - CN_e57f4_0009
+  - CN_e57f4_0011
+  - CN_e57f4_0010
+  - HK_e57f4_0015
+  - CN_e57f4_0006
+  - 🇭🇰 香港 | HKG 6
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_fc145_0005
-  - 🇹🇼 🇨🇳 台湾 | TWN
+  - CN_e57f4_0005
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_fc145_0008
-  - CN_fc145_0007
-  - CN_fc145_0009
-  - CN_fc145_0010
-  - CN_fc145_0011
-  - CN_fc145_0006
-  - 🇭🇺 匈牙利 | HUN 2
+  - CN_e57f4_0008
+  - CN_e57f4_0007
+  - CN_e57f4_0009
+  - CN_e57f4_0011
+  - CN_e57f4_0010
+  - CN_e57f4_0006
+  - 🇭🇰 香港 | HKG 6
 rules:
 - MATCH,AUTO
