@@ -3,4 +3,5 @@ vless://fad2b7e0-d80c-4b7b-a84f-d86e0e49f627@45.15.128.75:8443?flow=xtls-rprx-vi
 ss://YWVzLTI1Ni1jZmI6SFNadXlKUWNXZThkeE5kRg==@217.30.10.70:9043#%F0%9F%87%B5%F0%9F%87%B1PL-217.30.10.70-4835
 ss://YWVzLTI1Ni1jZmI6VWtYUnNYdlI2YnVETUcyWQ@217.30.10.18:9001#🇵🇱PL%20%20ROSE—438🤯
 ss://YWVzLTI1Ni1nY206OEpDc1Bzc2ZnUzh0aVJ3aU1saEFSZz09@57.128.214.100:12000#PL%F0%9F%87%B5%F0%9F%87%B1+%7C+57.128.214.100-12000+%7C+172.9ms
-vless://35b9becb-2488-447c-ad69-e839f2fc13c1@95.85.253.87:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=eh.vk.com&pbk=G1QPj-IQQVssEsfjld6gGOlxhgXDYdg56cYdweymLy0&sid=3ef8cdbc#🇵🇱 368 - PL - VLESS/GRPC/REALITY/PBK/SID/UTLS - 443
+vless://35b9becb-2488-447c-ad69-e839f2fc13c1@95.85.253.87:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=eh.vk.com&pbk=G1QPj-IQQVssEsfjld6gGOlxhgXDYdg56cYdweymLy0&sid=3ef8cdbc#🇵🇱 401 - PL - VLESS/GRPC/REALITY/PBK/SID/UTLS - 443
+vless://418a67d1-e7fc-4832-bc5d-980c77c1f7de@144.31.112.100:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=pl.rexten.cc&pbk=OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ#🇵🇱 517 - PL - VLESS/REALITY/PBK/VISION - 443

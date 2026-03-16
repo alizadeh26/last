@@ -1,12 +1,11 @@
-trojan://f389ed926e512e15f382dc3804029474@160.16.124.17:34818?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031700002
-trojan://f389ed926e512e15f382dc3804029474@160.16.85.33:4674?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031700003
-trojan://f389ed926e512e15f382dc3804029474@160.16.132.38:3419?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031700006
-trojan://f389ed926e512e15f382dc3804029474@153.121.45.139:3057?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031700004+L0
-trojan://f389ed926e512e15f382dc3804029474@57.180.28.65:2001?allowInsecure=0&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031700011
-trojan://f389ed926e512e15f382dc3804029474@160.16.130.21:4019?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031700005
-trojan://f389ed926e512e15f382dc3804029474@160.16.85.33:4937?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031700215
+trojan://f389ed926e512e15f382dc3804029474@160.16.124.17:34818?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031704002
+trojan://f389ed926e512e15f382dc3804029474@160.16.85.33:4674?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031704003
+trojan://f389ed926e512e15f382dc3804029474@57.180.28.65:2001?allowInsecure=0&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031704011
+trojan://f389ed926e512e15f382dc3804029474@160.16.132.38:3419?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031704006
+trojan://f389ed926e512e15f382dc3804029474@153.121.45.139:3057?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031704004+L0
+trojan://f389ed926e512e15f382dc3804029474@153.121.45.139:4937?type=tcp&security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031704016+L0
+trojan://f389ed926e512e15f382dc3804029474@160.16.130.21:4019?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_031704005
 vless://a16bd0e2-ff2e-4e4c-a955-0c684255a065@sg.fasti.win:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=-YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs&security=reality&sid=feedbacc&sni=sg.fasti.win&type=tcp#REALITY|SG🇸🇬
-vmess://eyJhZGQiOiJuMTc1MzU5ODQ0Ni53cGcyNy54eXoiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Im4xNzUzNTk4NDQ2LndwZzI3Lnh5eiIsImlkIjoiYTUwNDdkOTUtMjRiOC00NTFhLTkzZTMtZjJhMzg3YjkzZDVhIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiI0NDMiLCJwcyI6Ilx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKb2luK1RlbGVncmFtOkBGYXJhaF9WUE4gXHVkODNjXHVkZGVmXHVkODNjXHVkZGY1Iiwic2N5IjoiYXV0byIsInNuaSI6Im4xNzUzNTk4NDQ2LndwZzI3Lnh5eiIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIiLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlfQ==
 vmess://eyJhZGQiOiJuMTc1MzU5ODQ1Mi53cGcyNy54eXoiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Im4xNzUzNTk4NDUyLndwZzI3Lnh5eiIsImlkIjoiNGYyM2ViN2MtZWYyZi00M2IwLTkwZGQtZjJiOGE3NTk1NGE1IiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiI0NDMiLCJwcyI6IjEg8J+TsSBAdW52aXNpYmxlX2Ryb3BzIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6InRscyIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9
 vless://948fac3c-42bf-41a6-a5f9-704d36ff0d8d@198.13.62.34:443?&security=tls&fp=random&alpn=http/1.1&sni=snippet.danfeng.ccwu.cc&type=ws&headerType=none&host=snippet.danfeng.ccwu.cc&path=%2Fdanfeng#%40v2rayconfigamir%202446
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11201#🇯🇵 72 - JP - SS/AEAD - 11201

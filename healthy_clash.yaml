@@ -4,19 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: HK_5a863_0014
-  server: n1761184282.74qxv.top
-  port: 443
-  type: vless
-  uuid: 824dc1b1-e35b-4121-ad73-9acaf13d6410
-  tls: true
-  skip-cert-verify: false
-  servername: n1761184282.74qxv.top
-  network: ws
-  ws-opts:
-    path: /824dc1b1-e35b-4121-ad73-9acaf13d6410
-    headers:
-      Host: n1761184282.74qxv.top
+- name: GB_5a863_0013
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   udp: true
 - name: HK_5a863_0015
   server: n1761214907.74qxv.top
@@ -33,19 +29,19 @@ proxies:
     headers:
       Host: n1761214907.74qxv.top
   udp: true
-- name: 🇨🇦 加拿大 | CAN 2
-  server: t.cnmjcn.cyou
-  port: 16641
-  type: vmess
-  uuid: 029db9dc-c42d-468b-bda5-3224927d8c89
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: HK_5a863_0014
+  server: n1761184282.74qxv.top
+  port: 443
+  type: vless
+  uuid: 824dc1b1-e35b-4121-ad73-9acaf13d6410
+  tls: true
+  skip-cert-verify: false
+  servername: n1761184282.74qxv.top
   network: ws
   ws-opts:
-    path: /
+    path: /824dc1b1-e35b-4121-ad73-9acaf13d6410
     headers:
-      Host: 98564a637e1e476f33c3372987770183.mobgslb.tbcache.com
+      Host: n1761184282.74qxv.top
   udp: true
 - name: 🇺🇸 美国 | USA 15
   server: hb.seacloudmachinery.com
@@ -75,9 +71,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_5a863_0014
+  - GB_5a863_0013
   - HK_5a863_0015
-  - 🇨🇦 加拿大 | CAN 2
+  - HK_5a863_0014
   - 🇺🇸 美国 | USA 15
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
@@ -97,21 +93,22 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - GB_5a863_0013
   - HK_5a863_0015
-  - 🇨🇦 加拿大 | CAN 2
   - 🇺🇸 美国 | USA 15
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_5a863_0014
   - HK_5a863_0015
-- name: REGION-EU
+  - HK_5a863_0014
+- name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN 2
+  - GB_5a863_0013
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO
