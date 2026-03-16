@@ -14,21 +14,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: HK_5a863_0015
-  server: n1761214907.74qxv.top
-  port: 443
-  type: vmess
-  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1761214907.74qxv.top
-  udp: true
 - name: 🇺🇸 美国 | USA 15
   server: hb.seacloudmachinery.com
   port: 2086
@@ -51,7 +36,6 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_5a863_0013
-  - HK_5a863_0015
   - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO
