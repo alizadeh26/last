@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_5a863_0013
+- name: GB_1306b_0013
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,20 +14,34 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: hb.seacloudmachinery.com
-  port: 2086
+- name: HK_1306b_0015
+  server: n1761214907.74qxv.top
+  port: 443
   type: vmess
-  uuid: 82b0e3ab-e5ba-5fe0-bd05-df6f5d49a563
+  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
   alterId: 0
   cipher: auto
   tls: true
-  servername: hb.seacloudmachinery.com
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /telegram id @rootface
+    path: /
     headers:
-      Host: hb.seacloudmachinery.com
+      Host: n1761214907.74qxv.top
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: planb.mojcn.com
+  port: 16648
+  type: vmess
+  uuid: fcad95ed-9d9c-4621-9b1a-21fd5dde3f83
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ac9761292953f408ccdba1b1b4953c3c.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -35,7 +49,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_5a863_0013
-  - 🇺🇸 美国 | USA 15
+  - GB_1306b_0013
+  - HK_1306b_0015
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
