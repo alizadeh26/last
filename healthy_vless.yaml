@@ -4,29 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 37.220.86.14
+- name: 🇺🇸 美国 | USA 7
+  server: us.darknet.run
   port: 443
   type: vless
-  uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
-  port: 443
-  type: vless
-  uuid: b2f99930-7d48-4a22-8d67-539c440b6a7a
+  uuid: b73855fb-2ec9-4039-935a-a206dda339f8
   tls: true
-  alpn:
-  - http/1.1
-  servername: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TgnKibgLcTTCrTPHA-70mp--ruN1SlbTCecnEbJbTjY
+    short-id: a1b323d5
+  servername: us.darknet.run
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /01119417
-    headers:
-      Host: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -34,7 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO

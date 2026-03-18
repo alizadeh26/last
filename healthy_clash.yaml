@@ -4,22 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_06b29_0007
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸 美国 | USA 7
-  server: 104.192.227.163
+  server: us.darknet.run
   port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: mJeZR1QMSzpEaOHvSh9W3i
+  type: vless
+  uuid: b73855fb-2ec9-4039-935a-a206dda339f8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TgnKibgLcTTCrTPHA-70mp--ruN1SlbTCecnEbJbTjY
+    short-id: a1b323d5
+  servername: us.darknet.run
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇵🇹 葡萄牙 | PRT
   server: 185.231.233.112
@@ -29,20 +26,13 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.64
+  server: 103.186.154.193
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.39
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
+- name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.220
   port: 38388
   type: ss
@@ -50,28 +40,21 @@ proxies:
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.233
+  server: 103.186.154.58
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.154.159
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.33
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.42
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.218
+  server: 103.186.154.200
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -83,36 +66,36 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_06b29_0007
   - 🇺🇸 美国 | USA 7
   - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
   - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-- name: PROTO-VMESS
+- name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_06b29_0007
+  - 🇺🇸 美国 | USA 7
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇻🇳 越南 | VNM
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -124,7 +107,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_06b29_0007
   - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
