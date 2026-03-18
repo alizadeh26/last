@@ -4,6 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇳🇱 荷兰 | NLD
+  server: 37.220.86.14
+  port: 443
+  type: vless
+  uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: us.darknet.run
   port: 443
@@ -18,15 +26,15 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 185.231.233.112
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.193
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.58
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -46,13 +54,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.58
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 5
   server: 103.186.154.200
   port: 38388
@@ -66,29 +67,29 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 7
-  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 7
 - name: REGION-AS
   type: url-test
@@ -96,14 +97,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇹 葡萄牙 | PRT
+  - 🇳🇱 荷兰 | NLD
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204

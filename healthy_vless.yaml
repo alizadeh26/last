@@ -4,6 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇳🇱 荷兰 | NLD
+  server: 37.220.86.14
+  port: 443
+  type: vless
+  uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: us.darknet.run
   port: 443
@@ -24,6 +32,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
