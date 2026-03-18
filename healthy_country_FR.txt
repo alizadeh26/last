@@ -1,8 +1,11 @@
-vmess://eyJhZGQiOiI5NC4yMzIuMjQ3LjE2NCIsInBvcnQiOiI0NDAzMCIsImlkIjoiMjJjMzk2YTMtOTVkYS00YmU4LWJlZWYtODM0ZDE3ZDc1Nzg0IiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ2IjoiMiIsInBzIjoi5pGp5bCU5aSa55OmXzAzMTcwOTAwMSIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoibm9uZSIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
-vless://256c5f48-4908-4255-83d1-c86cb58f22b4@185.171.202.48:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4&security=reality&sid=9c2378562188c3cb&sni=fr.denditop.site&type=tcp#REALITY|FR🇫🇷
-vless://c7a7051e-b2f6-44c9-b51b-474848706f8c@cache12.datapull.cc:443?type=tcp&security=reality&flow=xtls-rprx-vision&sni=cache12.datapull.cc&pbk=uYlJKmVHsSuCk-T9Y4CpqyR2LIP9etRZkRmDEt8-fUs&fp=random&sid=8ba5ad773c31deb3#🆔soskeynet%20🔒%20VL-TCP-%20🇫🇷%20FR%20158ms
-vless://00000000-0000-4000-8000-000000000000@84.247.129.205:4433?allowInsecure=1&encryption=none&host=sub.mot.ip-ddns.com&path=/&security=tls&sni=sub.mot.ip-ddns.com&type=ws#🇫🇷 20 - FR - VLESS/WS/TLS - 4433
-vless://15cbab96-197e-46a5-9042-073b3980c798@fsdns.ectunnelvpn.me:80?encryption=none&host=fsdns.ectunnelvpn.me&path=/vless&security=none&type=ws#🇫🇷 167 - FR - VLESS/WS - 80
-vless://25f86cb1-2140-4085-abcb-c3a0ea7a4be0@152.228.162.19:80?type=ws&encryption=none&host=Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN&path=/vless/#🇫🇷 285 - FR - VLESS/WS - 80
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@62.210.91.10:23576?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#🇫🇷 647 - FR - VLESS/REALITY/PBK/SID/VISION/UTLS - 23576
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3NDkxOGJjODAxZDUzYTRi@57.130.28.148:11201#🇫🇷 15 - FR - SS/AEAD - 11201
+vmess://eyJhZGQiOiI5NC4yMzIuMjQ3LjE2NCIsInBvcnQiOiI0NDAzMCIsImlkIjoiMjJjMzk2YTMtOTVkYS00YmU4LWJlZWYtODM0ZDE3ZDc1Nzg0IiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ2IjoiMiIsInBzIjoi5pGp5bCU5aSa55OmXzAzMTgwOTAwMiIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoibm9uZSIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
+vless://15cbab96-197e-46a5-9042-073b3980c798@213.136.69.8:80?encryption=none&host=fsdns.ectunnelvpn.me&path=%2Fvless&security=none&type=ws#FR🇫🇷
+vless://11beaf11-726d-4c11-8ce9-27308c1c608c@157.173.127.225:443?security=reality&encryption=none&pbk=v3EwzA9RIIh5Ndxm-gypRY6RCJhOpQ-2WO7KaH8nsC8&headerType=none&fp=random&type=tcp&sni=analytics.google.com&sid=eab26c4a32#REALITY|FR🇫🇷
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@88.218.78.167:443?path=%2F&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#🆔soskeynet%20🔒%20VL-WS-N/A%20🇫🇷%20FR%20119ms
+vless://00000000-0000-4000-8000-000000000000@84.247.129.205:4433?allowInsecure=1&encryption=none&host=sub.mot.ip-ddns.com&path=/&security=tls&sni=sub.mot.ip-ddns.com&type=ws#🇫🇷 18 - FR - VLESS/WS/TLS - 4433
+vless://00000000-0000-4000-8000-000000000000@62.60.156.252:8085?allowInsecure=1&encryption=none&host=jmc9f8ao6n5xq.saghv.filegear-sg.me&path=/@Marisa_kristi&security=tls&sni=jmc9f8ao6n5xq.saghv.filegear-sg.me&type=ws#🇫🇷 15 - FR - VLESS/WS/TLS - 8085
+vless://256c5f48-4908-4255-83d1-c86cb58f22b4@185.171.202.48:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=fr.denditop.site&pbk=wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4&sid=9c2378562188c3cb&spx=/#🇫🇷 414 - FR - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://25f86cb1-2140-4085-abcb-c3a0ea7a4be0@ov-france1.09vpn.com:80?path=/vless/&security=none&encryption=none&type=ws#🇫🇷 419 - FR - VLESS/WS - 80
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1MjY3MTY0N2FmMGNmZmEw@38.242.222.183:11201#🇫🇷 7 - FR - SS/AEAD - 11201
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3NDkxOGJjODAxZDUzYTRi@57.130.28.148:11201#🇫🇷 31 - FR - SS/AEAD - 11201
+ss://YWVzLTI1Ni1nY206QmJPVWdOTFV5VDZyZHJ4RQ@95.111.250.4:80#🇫🇷 697 - FR - SS/AEAD - 80

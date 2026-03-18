@@ -4,19 +4,29 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: HK_5a863_0014
-  server: n1761184282.74qxv.top
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 37.220.86.14
   port: 443
   type: vless
-  uuid: 824dc1b1-e35b-4121-ad73-9acaf13d6410
+  uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
+  port: 443
+  type: vless
+  uuid: b2f99930-7d48-4a22-8d67-539c440b6a7a
   tls: true
-  skip-cert-verify: false
-  servername: n1761184282.74qxv.top
+  alpn:
+  - http/1.1
+  servername: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /824dc1b1-e35b-4121-ad73-9acaf13d6410
+    path: /01119417
     headers:
-      Host: n1761184282.74qxv.top
+      Host: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,6 +34,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_5a863_0014
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇹🇷 土耳其 | TUR
 rules:
 - MATCH,AUTO

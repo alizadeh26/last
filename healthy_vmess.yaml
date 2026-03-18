@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_1306b_0013
+- name: GB_8373e_0007
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,43 +14,12 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: HK_1306b_0015
-  server: n1761214907.74qxv.top
-  port: 443
-  type: vmess
-  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1761214907.74qxv.top
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: planb.mojcn.com
-  port: 16648
-  type: vmess
-  uuid: fcad95ed-9d9c-4621-9b1a-21fd5dde3f83
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ac9761292953f408ccdba1b1b4953c3c.mobgslb.tbcache.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_1306b_0013
-  - HK_1306b_0015
-  - 🇺🇸 美国 | USA 2
+  - GB_8373e_0007
 rules:
 - MATCH,AUTO

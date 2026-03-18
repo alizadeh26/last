@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_1306b_0013
+- name: GB_8373e_0007
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,41 +14,36 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: HK_1306b_0015
-  server: n1761214907.74qxv.top
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 37.220.86.14
   port: 443
-  type: vmess
-  uuid: 4c17399f-c93d-4527-8ace-5bdc2f0901f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
+  port: 443
+  type: vless
+  uuid: b2f99930-7d48-4a22-8d67-539c440b6a7a
   tls: true
-  skip-cert-verify: true
+  alpn:
+  - http/1.1
+  servername: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /01119417
     headers:
-      Host: n1761214907.74qxv.top
+      Host: 8adeefa1-96b4-42d4-b163-1e0bf13bae5d.quadzero.online
   udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 185.231.233.112
-  port: 989
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.140
+  port: 38388
   type: ss
   cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: planb.mojcn.com
-  port: 16648
-  type: vmess
-  uuid: fcad95ed-9d9c-4621-9b1a-21fd5dde3f83
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ac9761292953f408ccdba1b1b4953c3c.mobgslb.tbcache.com
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -56,41 +51,46 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_1306b_0013
-  - HK_1306b_0015
-  - 🇵🇹 葡萄牙 | PRT
-  - 🇺🇸 美国 | USA 2
+  - GB_8373e_0007
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇹🇷 土耳其 | TUR
+  - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇹 葡萄牙 | PRT
+  - 🇻🇳 越南 | VNM
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇹🇷 土耳其 | TUR
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_1306b_0013
-  - HK_1306b_0015
-  - 🇺🇸 美国 | USA 2
+  - GB_8373e_0007
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_1306b_0015
+  - 🇹🇷 土耳其 | TUR
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇹 葡萄牙 | PRT
+  - 🇳🇱 荷兰 | NLD 4
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_1306b_0013
+  - GB_8373e_0007
 rules:
 - MATCH,AUTO
