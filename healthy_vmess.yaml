@@ -29,6 +29,16 @@ proxies:
   tls: false
   servername: www.bing.com
   udp: true
+- name: 🇪🇸 西班牙 | ESP 3
+  server: 85.90.217.42
+  port: 22324
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
 - name: GB_103de_0005
   server: t.cnmjcn.cyou
   port: 16618
@@ -43,16 +53,6 @@ proxies:
     path: /
     headers:
       Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
-  udp: true
-- name: 🇪🇸 西班牙 | ESP 3
-  server: 85.90.217.42
-  port: 22324
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
   udp: true
 - name: 🇺🇸 美国 | USA 19
   server: 216.106.185.141
@@ -72,8 +72,8 @@ proxy-groups:
   proxies:
   - CN_103de_0003
   - 🇩🇪 德国 | DEU 2
-  - GB_103de_0005
   - 🇪🇸 西班牙 | ESP 3
+  - GB_103de_0005
   - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
