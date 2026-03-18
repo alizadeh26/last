@@ -4,26 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
+- name: 🇳🇱 荷兰 | NLD 2
   server: 37.220.86.14
   port: 443
   type: vless
   uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
   tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: us.darknet.run
-  port: 443
-  type: vless
-  uuid: b73855fb-2ec9-4039-935a-a206dda339f8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TgnKibgLcTTCrTPHA-70mp--ruN1SlbTCecnEbJbTjY
-    short-id: a1b323d5
-  servername: us.darknet.run
-  client-fingerprint: chrome
   network: tcp
   udp: true
 proxy-groups:
@@ -32,7 +18,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 7
+  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO
