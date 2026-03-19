@@ -4,20 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
-  server: de106.mechvpn.online
+- name: IR_350f3_0022
+  server: whitelist2.124515.xyz
+  port: 8443
+  type: vless
+  uuid: a55a1cb4-cdb3-43db-9095-a8321ca1e9ad
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: whitelist2.124515.xyz
+  reality-opts:
+    public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
+    short-id: c10b9c49979ca3ad
+  udp: true
+- name: US_350f3_0060
+  server: pl202.mechvpn.online
   port: 443
   type: vless
   uuid: 729764b1-149c-49f2-b170-322544df7b5b
+  flow: xtls-rprx-vision
   tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
   alpn:
   - h3
   - h2
   - http/1.1
-  flow: xtls-rprx-vision
-  servername: de106.mechvpn.online
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
+  - IR_350f3_0022
+  - US_350f3_0060
 rules:
 - MATCH,AUTO
