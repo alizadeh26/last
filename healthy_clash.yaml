@@ -4,6 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CN_87ff4_0003
+  server: m.cnmjin.net
+  port: 16618
+  type: vmess
+  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
+  udp: true
+- name: GB_87ff4_0005
+  server: t.cnmjcn.cyou
+  port: 16618
+  type: vmess
+  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
+  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: de106.mechvpn.online
   port: 443
@@ -19,12 +49,16 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 194.87.69.100
-  port: 60129
-  type: ss
-  cipher: aes-256-gcm
-  password: 83acf69edb4e5453
+- name: 🇳🇱 荷兰 | NLD 2
+  server: s503.okgg.top
+  port: 443
+  type: vless
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948u2550s503.okgg.top
+  client-fingerprint: random
+  network: tcp
   udp: true
 - name: 🇯🇵 日本 | JPN
   server: t.cnmjcn.cyou
@@ -41,6 +75,17 @@ proxies:
     headers:
       Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
   udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: s110.okgfw.top
+  port: 443
+  type: vless
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948u7fbbs110.okgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.30
   port: 38388
@@ -50,13 +95,6 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.40
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.25
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -76,6 +114,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.25
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.154.178
   port: 38388
@@ -89,26 +134,28 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CN_87ff4_0003
+  - GB_87ff4_0005
   - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇳🇱 荷兰 | NLD 2
   - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 21
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 6
 - name: PROTO-VLESS
   type: url-test
@@ -116,19 +163,25 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 21
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CN_87ff4_0003
+  - GB_87ff4_0005
   - 🇯🇵 日本 | JPN
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CN_87ff4_0003
+  - GB_87ff4_0005
   - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇳🇱 荷兰 | NLD 2
   - 🇯🇵 日本 | JPN
 rules:
 - MATCH,AUTO

@@ -19,6 +19,28 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: s503.okgg.top
+  port: 443
+  type: vless
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948u2550s503.okgg.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: s110.okgfw.top
+  port: 443
+  type: vless
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948u7fbbs110.okgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -26,5 +48,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 21
 rules:
 - MATCH,AUTO
