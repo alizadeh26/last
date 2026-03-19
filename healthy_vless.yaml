@@ -4,22 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇾 塞浦路斯 | CYP
-  server: pl202.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 729764b1-149c-49f2-b170-322544df7b5b
-  tls: true
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  servername: pl202.mechvpn.online
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU
+- name: 🇳🇱 荷兰 | NLD
   server: de106.mechvpn.online
   port: 443
   type: vless
@@ -40,7 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 | CYP
-  - 🇩🇪 德国 | DEU
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
