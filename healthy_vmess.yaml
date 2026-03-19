@@ -24,21 +24,6 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_350f3_0005
-  server: m.cnmjin.net
-  port: 16617
-  type: vmess
-  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
-  udp: true
 - name: CN_350f3_0006
   server: planb.mojcn.com
   port: 16626
@@ -69,9 +54,9 @@ proxies:
     headers:
       Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
   udp: true
-- name: CN_350f3_0012
-  server: planb.mojcn.com
-  port: 16617
+- name: CN_350f3_0010
+  server: m.cnmjin.net
+  port: 16632
   type: vmess
   uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
   alterId: 0
@@ -84,11 +69,11 @@ proxies:
     headers:
       Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
   udp: true
-- name: CN_350f3_0016
-  server: m.cnmjin.net
-  port: 16622
+- name: CN_350f3_0011
+  server: planb.mojcn.com
+  port: 16632
   type: vmess
-  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
   alterId: 0
   cipher: auto
   tls: false
@@ -97,7 +82,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
+      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
   udp: true
 - name: CN_350f3_0013
   server: planb.mojcn.com
@@ -113,6 +98,51 @@ proxies:
     path: /
     headers:
       Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  udp: true
+- name: CN_350f3_0012
+  server: planb.mojcn.com
+  port: 16617
+  type: vmess
+  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  udp: true
+- name: CN_350f3_0005
+  server: m.cnmjin.net
+  port: 16617
+  type: vmess
+  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
+  udp: true
+- name: CN_350f3_0016
+  server: m.cnmjin.net
+  port: 16622
+  type: vmess
+  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
   udp: true
 - name: CN_350f3_0015
   server: m.cnmjin.net
@@ -139,68 +169,8 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_350f3_0010
-  server: m.cnmjin.net
-  port: 16632
-  type: vmess
-  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-  udp: true
-- name: GB_350f3_0020
-  server: t.cnmjcn.cyou
-  port: 16632
-  type: vmess
-  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-  udp: true
 - name: 🇭🇰 香港 | HKG 6
   server: t.cnmjcn.cyou
-  port: 16632
-  type: vmess
-  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-  udp: true
-- name: GB_350f3_0019
-  server: t.cnmjcn.cyou
-  port: 16632
-  type: vmess
-  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
-  udp: true
-- name: CN_350f3_0011
-  server: planb.mojcn.com
   port: 16632
   type: vmess
   uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
@@ -222,18 +192,16 @@ proxy-groups:
   proxies:
   - CN_350f3_0003
   - CN_350f3_0008
-  - CN_350f3_0005
   - CN_350f3_0006
   - CN_350f3_0007
-  - CN_350f3_0012
-  - CN_350f3_0016
+  - CN_350f3_0010
+  - CN_350f3_0011
   - CN_350f3_0013
+  - CN_350f3_0012
+  - CN_350f3_0005
+  - CN_350f3_0016
   - CN_350f3_0015
   - 🇭🇰 香港 | HKG 8
-  - CN_350f3_0010
-  - GB_350f3_0020
   - 🇭🇰 香港 | HKG 6
-  - GB_350f3_0019
-  - CN_350f3_0011
 rules:
 - MATCH,AUTO
