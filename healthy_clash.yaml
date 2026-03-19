@@ -4,87 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇾 塞浦路斯 | CYP
-  server: pl202.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 729764b1-149c-49f2-b170-322544df7b5b
-  tls: true
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  servername: pl202.mechvpn.online
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: de106.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 729764b1-149c-49f2-b170-322544df7b5b
-  tls: true
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  servername: de106.mechvpn.online
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.42
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.230
+  server: 103.186.154.251
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.25
+  server: 103.186.155.220
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.157
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.72
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.206
+  server: 103.186.155.156
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.53
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.154.39
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.80
+  server: 103.186.154.178
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -96,48 +45,29 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 | CYP
-  - 🇩🇪 德国 | DEU
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 7
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇾 塞浦路斯 | CYP
-  - 🇩🇪 德国 | DEU
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇾 塞浦路斯 | CYP
-  - 🇩🇪 德国 | DEU
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 5
 rules:
 - MATCH,AUTO
