@@ -18,6 +18,28 @@ proxies:
     public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
     short-id: c10b9c49979ca3ad
   udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: s501.ccgfw.top
+  port: 443
+  type: vless
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948ued7bs501.ccgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: s504.okgg.top
+  port: 443
+  type: vless
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948u649as504.okgg.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 178.173.250.59
   port: 443
@@ -48,6 +70,8 @@ proxy-groups:
   interval: 300
   proxies:
   - IR_cb7c6_0022
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 2
   - 🇺🇸 美国 | USA 15
 rules:
