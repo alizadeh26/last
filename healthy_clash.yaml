@@ -51,13 +51,6 @@ proxies:
     headers:
       Host: vip.yaml7.ggff.net
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.225
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.180
   port: 38388
@@ -65,27 +58,12 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: s229.okgg.top
-  port: 443
-  type: vless
-  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710948ub8e9s229.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: s226.okgg.top
-  port: 443
-  type: vless
-  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710948ueb11s226.okgg.top
-  client-fingerprint: random
-  network: tcp
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.225
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.170
@@ -104,18 +82,16 @@ proxy-groups:
   - IR_cb7c6_0022
   - 🇳🇱 荷兰 | NLD 2
   - 🇺🇸 美国 | USA 15
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM
 - name: PROTO-VLESS
   type: url-test
@@ -125,8 +101,6 @@ proxy-groups:
   - IR_cb7c6_0022
   - 🇳🇱 荷兰 | NLD 2
   - 🇺🇸 美国 | USA 15
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -139,6 +113,8 @@ proxy-groups:
   interval: 300
   proxies:
   - CN_cb7c6_0003
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -146,5 +122,11 @@ proxy-groups:
   proxies:
   - IR_cb7c6_0022
   - 🇳🇱 荷兰 | NLD 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO

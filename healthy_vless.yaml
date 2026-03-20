@@ -41,28 +41,6 @@ proxies:
     headers:
       Host: vip.yaml7.ggff.net
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: s229.okgg.top
-  port: 443
-  type: vless
-  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710948ub8e9s229.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: s226.okgg.top
-  port: 443
-  type: vless
-  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710948ueb11s226.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -72,7 +50,5 @@ proxy-groups:
   - IR_cb7c6_0022
   - 🇳🇱 荷兰 | NLD 2
   - 🇺🇸 美国 | USA 15
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO
