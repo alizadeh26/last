@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_9d3af_0008
+- name: CN_d11ae_0008
   server: cn01.365cloud8754.com
   port: 6001
   type: vmess
@@ -14,7 +14,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: IR_9d3af_0022
+- name: IR_d11ae_0022
   server: whitelist2.124515.xyz
   port: 8443
   type: vless
@@ -28,7 +28,7 @@ proxies:
     public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
     short-id: c10b9c49979ca3ad
   udp: true
-- name: US_9d3af_0060
+- name: US_d11ae_0060
   server: pl202.mechvpn.online
   port: 443
   type: vless
@@ -42,51 +42,64 @@ proxies:
   - h2
   - http/1.1
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: pl234.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 729764b1-149c-49f2-b170-322544df7b5b
-  tls: true
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  servername: pl234.mechvpn.online
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.204
-  port: 38388
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
   type: ss
   cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.45
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.37
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.49
+  server: 103.186.154.232
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.233
+  server: 103.186.154.194
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.75
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.218
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.8
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.155.49
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.155.209
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.203
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -98,51 +111,57 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_9d3af_0008
-  - IR_9d3af_0022
-  - US_9d3af_0060
-  - 🇵🇱 波兰 | POL
-  - 🇻🇳 越南 | VNM
+  - CN_d11ae_0008
+  - IR_d11ae_0022
+  - US_d11ae_0060
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_9d3af_0022
-  - US_9d3af_0060
-  - 🇵🇱 波兰 | POL
+  - IR_d11ae_0022
+  - US_d11ae_0060
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_9d3af_0008
+  - CN_d11ae_0008
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_9d3af_0022
-  - US_9d3af_0060
+  - IR_d11ae_0022
+  - US_d11ae_0060
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_9d3af_0008
+  - CN_d11ae_0008
 rules:
 - MATCH,AUTO

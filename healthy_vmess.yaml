@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_9d3af_0008
+- name: CN_d11ae_0008
   server: cn01.365cloud8754.com
   port: 6001
   type: vmess
@@ -20,6 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_9d3af_0008
+  - CN_d11ae_0008
 rules:
 - MATCH,AUTO
