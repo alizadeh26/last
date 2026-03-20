@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IR_b18ef_0022
+- name: IR_cb7c6_0022
   server: whitelist2.124515.xyz
   port: 8443
   type: vless
@@ -18,12 +18,61 @@ proxies:
     public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
     short-id: c10b9c49979ca3ad
   udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 178.173.250.59
+  port: 443
+  type: vless
+  uuid: 3ddce082-7e03-429c-8af8-9a873d23f0ba
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: 104.17.152.254
+  port: 80
+  type: vless
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vip.yaml7.ggff.net
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: s229.okgg.top
+  port: 443
+  type: vless
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948ub8e9s229.okgg.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: s226.okgg.top
+  port: 443
+  type: vless
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948ueb11s226.okgg.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_b18ef_0022
+  - IR_cb7c6_0022
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 15
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO
