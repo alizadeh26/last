@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_d11ae_0008
-  server: cn01.365cloud8754.com
-  port: 6001
+- name: CN_b18ef_0003
+  server: v12.hdacd.com
+  port: 30812
   type: vmess
-  uuid: db75bc92-4e32-48dd-b792-d7a8b707626c
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 0
   cipher: auto
   tls: false
@@ -20,6 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_d11ae_0008
+  - CN_b18ef_0003
 rules:
 - MATCH,AUTO

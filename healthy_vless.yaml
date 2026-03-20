@@ -18,20 +18,6 @@ proxies:
     public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
     short-id: c10b9c49979ca3ad
   udp: true
-- name: US_b18ef_0060
-  server: pl202.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 729764b1-149c-49f2-b170-322544df7b5b
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -39,6 +25,5 @@ proxy-groups:
   interval: 300
   proxies:
   - IR_b18ef_0022
-  - US_b18ef_0060
 rules:
 - MATCH,AUTO

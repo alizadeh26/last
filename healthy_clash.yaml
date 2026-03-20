@@ -4,6 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CN_b18ef_0003
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
 - name: IR_b18ef_0022
   server: whitelist2.124515.xyz
   port: 8443
@@ -18,19 +28,12 @@ proxies:
     public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
     short-id: c10b9c49979ca3ad
   udp: true
-- name: US_b18ef_0060
-  server: pl202.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 729764b1-149c-49f2-b170-322544df7b5b
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  alpn:
-  - h3
-  - h2
-  - http/1.1
+- name: 🇪🇸 西班牙 | ESP
+  server: 5.188.181.201
+  port: 9014
+  type: ss
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.224
@@ -39,8 +42,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.234
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.240
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -53,8 +56,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.240
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.234
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -108,12 +111,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CN_b18ef_0003
   - IR_b18ef_0022
-  - US_b18ef_0060
+  - 🇪🇸 西班牙 | ESP
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 7
@@ -125,10 +129,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇪🇸 西班牙 | ESP
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 7
@@ -141,22 +146,24 @@ proxy-groups:
   interval: 300
   proxies:
   - IR_b18ef_0022
-  - US_b18ef_0060
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - CN_b18ef_0003
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 6
+  - CN_b18ef_0003
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - IR_b18ef_0022
-  - US_b18ef_0060
+  - 🇪🇸 西班牙 | ESP
 rules:
 - MATCH,AUTO
