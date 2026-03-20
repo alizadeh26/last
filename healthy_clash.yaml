@@ -42,6 +42,18 @@ proxies:
   - h2
   - http/1.1
   udp: true
+- name: 🇸🇬 新加坡 | SGP 14
+  server: vps.zakir.web.id
+  port: 80
+  type: vless
+  uuid: ca73d911-29f4-42d8-ada5-81dee679e96a
+  tls: false
+  network: ws
+  ws-opts:
+    path: vless
+    headers:
+      Host: vps.zakir.web.id
+  udp: true
 - name: 🇵🇹 葡萄牙 | PRT
   server: 185.231.233.112
   port: 989
@@ -49,8 +61,8 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.232
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.218
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -63,20 +75,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.75
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.218
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.155.8
   port: 38388
@@ -84,8 +82,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.49
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.203
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.232
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.75
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -98,8 +110,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.203
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.155.49
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -114,29 +126,30 @@ proxy-groups:
   - CN_d11ae_0008
   - IR_d11ae_0022
   - US_d11ae_0060
+  - 🇸🇬 新加坡 | SGP 14
   - 🇵🇹 葡萄牙 | PRT
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇵🇹 葡萄牙 | PRT
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -144,6 +157,7 @@ proxy-groups:
   proxies:
   - IR_d11ae_0022
   - US_d11ae_0060
+  - 🇸🇬 新加坡 | SGP 14
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204

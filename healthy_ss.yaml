@@ -11,8 +11,8 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.232
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.218
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -25,36 +25,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.75
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.218
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.155.8
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.49
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.155.209
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -67,6 +39,34 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.232
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.75
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.155.209
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.155.49
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -74,13 +74,13 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇵🇹 葡萄牙 | PRT
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 7
 rules:
 - MATCH,AUTO

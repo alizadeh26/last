@@ -32,6 +32,18 @@ proxies:
   - h2
   - http/1.1
   udp: true
+- name: 🇸🇬 新加坡 | SGP 14
+  server: vps.zakir.web.id
+  port: 80
+  type: vless
+  uuid: ca73d911-29f4-42d8-ada5-81dee679e96a
+  tls: false
+  network: ws
+  ws-opts:
+    path: vless
+    headers:
+      Host: vps.zakir.web.id
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -40,5 +52,6 @@ proxy-groups:
   proxies:
   - IR_d11ae_0022
   - US_d11ae_0060
+  - 🇸🇬 新加坡 | SGP 14
 rules:
 - MATCH,AUTO
