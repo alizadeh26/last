@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IR_350f3_0022
+- name: IR_9d3af_0022
   server: whitelist2.124515.xyz
   port: 8443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
     short-id: c10b9c49979ca3ad
   udp: true
-- name: US_350f3_0060
+- name: US_9d3af_0060
   server: pl202.mechvpn.online
   port: 443
   type: vless
@@ -32,13 +32,41 @@ proxies:
   - h2
   - http/1.1
   udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: s299.okgg.top
+  port: 443
+  type: vless
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948u15c5s299.okgg.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pl234.mechvpn.online
+  port: 443
+  type: vless
+  uuid: 729764b1-149c-49f2-b170-322544df7b5b
+  tls: true
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  flow: xtls-rprx-vision
+  servername: pl234.mechvpn.online
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_350f3_0022
-  - US_350f3_0060
+  - IR_9d3af_0022
+  - US_9d3af_0060
+  - 🇭🇰 香港 | HKG 2
+  - 🇵🇱 波兰 | POL
 rules:
 - MATCH,AUTO

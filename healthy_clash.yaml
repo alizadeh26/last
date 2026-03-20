@@ -4,17 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_350f3_0003
-  server: v12.hdacd.com
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_350f3_0008
+- name: CN_9d3af_0008
   server: cn01.365cloud8754.com
   port: 6001
   type: vmess
@@ -24,22 +14,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_350f3_0005
-  server: m.cnmjin.net
-  port: 16617
-  type: vmess
-  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
-  udp: true
-- name: IR_350f3_0022
+- name: IR_9d3af_0022
   server: whitelist2.124515.xyz
   port: 8443
   type: vless
@@ -53,157 +28,7 @@ proxies:
     public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
     short-id: c10b9c49979ca3ad
   udp: true
-- name: CN_350f3_0010
-  server: m.cnmjin.net
-  port: 16632
-  type: vmess
-  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-  udp: true
-- name: CN_350f3_0011
-  server: planb.mojcn.com
-  port: 16632
-  type: vmess
-  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-  udp: true
-- name: CN_350f3_0006
-  server: planb.mojcn.com
-  port: 16626
-  type: vmess
-  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
-  udp: true
-- name: CN_350f3_0012
-  server: planb.mojcn.com
-  port: 16617
-  type: vmess
-  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-  udp: true
-- name: CN_350f3_0013
-  server: planb.mojcn.com
-  port: 16626
-  type: vmess
-  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-  udp: true
-- name: CN_350f3_0015
-  server: m.cnmjin.net
-  port: 16617
-  type: vmess
-  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-  udp: true
-- name: CN_350f3_0016
-  server: m.cnmjin.net
-  port: 16622
-  type: vmess
-  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
-  udp: true
-- name: CN_350f3_0007
-  server: planb.mojcn.com
-  port: 16616
-  type: vmess
-  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
-  udp: true
-- name: GB_350f3_0020
-  server: t.cnmjcn.cyou
-  port: 16632
-  type: vmess
-  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-  udp: true
-- name: GB_350f3_0019
-  server: t.cnmjcn.cyou
-  port: 16632
-  type: vmess
-  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
-  udp: true
-- name: US_350f3_0060
+- name: US_9d3af_0060
   server: pl202.mechvpn.online
   port: 443
   type: vless
@@ -217,58 +42,66 @@ proxies:
   - h2
   - http/1.1
   udp: true
-- name: 🇭🇰 香港 | HKG 8
-  server: cn01.365cloud8754.com
-  port: 6001
-  type: vmess
-  uuid: db75bc92-4e32-48dd-b792-d7a8b707626c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+- name: 🇭🇰 香港 | HKG 2
+  server: s299.okgg.top
+  port: 443
+  type: vless
+  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u710948u15c5s299.okgg.top
+  client-fingerprint: random
+  network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 45.140.169.225
-  port: 50128
-  type: ss
-  cipher: aes-256-gcm
-  password: c5fcdf7829112cb4
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.60
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇵🇱 波兰 | POL
+  server: pl234.mechvpn.online
+  port: 443
+  type: vless
+  uuid: 729764b1-149c-49f2-b170-322544df7b5b
+  tls: true
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  flow: xtls-rprx-vision
+  servername: pl234.mechvpn.online
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.235
+  server: 103.186.154.37
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.192
+  server: 103.186.154.45
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: t.cnmjcn.cyou
-  port: 16632
-  type: vmess
-  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.204
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.49
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.233
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -276,92 +109,53 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_350f3_0003
-  - CN_350f3_0008
-  - CN_350f3_0005
-  - IR_350f3_0022
-  - CN_350f3_0010
-  - CN_350f3_0011
-  - CN_350f3_0006
-  - CN_350f3_0012
-  - CN_350f3_0013
-  - CN_350f3_0015
-  - CN_350f3_0016
-  - CN_350f3_0007
-  - GB_350f3_0020
-  - GB_350f3_0019
-  - US_350f3_0060
-  - 🇭🇰 香港 | HKG 8
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇻🇳 越南 | VNM
+  - CN_9d3af_0008
+  - IR_9d3af_0022
+  - US_9d3af_0060
+  - 🇭🇰 香港 | HKG 2
+  - 🇵🇱 波兰 | POL
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇭🇰 香港 | HKG 6
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_350f3_0022
-  - US_350f3_0060
+  - IR_9d3af_0022
+  - US_9d3af_0060
+  - 🇭🇰 香港 | HKG 2
+  - 🇵🇱 波兰 | POL
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_350f3_0003
-  - CN_350f3_0008
-  - CN_350f3_0005
-  - CN_350f3_0010
-  - CN_350f3_0011
-  - CN_350f3_0006
-  - CN_350f3_0012
-  - CN_350f3_0013
-  - CN_350f3_0015
-  - CN_350f3_0016
-  - CN_350f3_0007
-  - GB_350f3_0020
-  - GB_350f3_0019
-  - 🇭🇰 香港 | HKG 8
-  - 🇭🇰 香港 | HKG 6
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - CN_350f3_0003
+  - CN_9d3af_0008
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_350f3_0005
-  - CN_350f3_0010
-  - CN_350f3_0011
-  - CN_350f3_0006
-  - CN_350f3_0012
-  - CN_350f3_0013
-  - CN_350f3_0015
-  - CN_350f3_0016
-  - CN_350f3_0007
-  - GB_350f3_0020
-  - GB_350f3_0019
-  - 🇭🇰 香港 | HKG 6
+  - IR_9d3af_0022
+  - US_9d3af_0060
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_350f3_0008
-  - 🇭🇰 香港 | HKG 8
+  - CN_9d3af_0008
 rules:
 - MATCH,AUTO
