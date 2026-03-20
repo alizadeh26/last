@@ -42,17 +42,6 @@ proxies:
   - h2
   - http/1.1
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: s299.okgg.top
-  port: 443
-  type: vless
-  uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710948u15c5s299.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇵🇱 波兰 | POL
   server: pl234.mechvpn.online
   port: 443
@@ -68,8 +57,8 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.37
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.204
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -82,8 +71,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.204
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.37
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -112,11 +101,10 @@ proxy-groups:
   - CN_9d3af_0008
   - IR_9d3af_0022
   - US_9d3af_0060
-  - 🇭🇰 香港 | HKG 2
   - 🇵🇱 波兰 | POL
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
 - name: PROTO-SS
@@ -124,9 +112,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
 - name: PROTO-VLESS
@@ -136,7 +124,6 @@ proxy-groups:
   proxies:
   - IR_9d3af_0022
   - US_9d3af_0060
-  - 🇭🇰 香港 | HKG 2
   - 🇵🇱 波兰 | POL
 - name: PROTO-VMESS
   type: url-test
