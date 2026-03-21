@@ -18,19 +18,12 @@ proxies:
     public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
     short-id: c10b9c49979ca3ad
   udp: true
-- name: 🇭🇰 香港 | HKG 9
-  server: 103.149.182.105
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.75
-  port: 38388
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
   type: ss
   cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.102
@@ -46,12 +39,12 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 185.231.233.112
-  port: 989
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.75
+  port: 38388
   type: ss
   cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -60,21 +53,19 @@ proxy-groups:
   interval: 300
   proxies:
   - IR_26fd2_0022
-  - 🇭🇰 香港 | HKG 9
-  - 🇻🇳 越南 | VNM 3
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇵🇹 葡萄牙 | PRT
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 9
-  - 🇻🇳 越南 | VNM 3
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇵🇹 葡萄牙 | PRT
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -86,13 +77,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 9
-  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - IR_26fd2_0022
+  - 🇵🇹 葡萄牙 | PRT
 rules:
 - MATCH,AUTO
