@@ -4,216 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_4ddb4_0041
-  server: www.shopify.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0044
-  server: support.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0046
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0049
-  server: openai.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0047
-  server: ns.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0048
-  server: developers.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0050
-  server: www.udemy.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0043
-  server: www.npmjs.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0051
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0053
-  server: cdnjs.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0056
-  server: cloudflare-dns.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0042
-  server: docs.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0045
-  server: blog.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
-- name: US_4ddb4_0057
-  server: cf.090227.xyz
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing.workers.dev
-  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: itsea.osaip.net
   port: 443
@@ -226,15 +16,15 @@ proxies:
     grpc-mode: gun
     grpc-service-name: violet
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.245
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.49
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.49
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.245
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -261,29 +51,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.232
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 9
-  server: 103.186.154.240
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.154.152
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.154.162
+- name: 🇻🇳 越南 | VNM 12
+  server: 103.186.154.203
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -303,8 +72,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 12
-  server: 103.186.154.203
+- name: 🇻🇳 越南 | VNM 9
+  server: 103.186.154.240
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -317,8 +86,29 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.154.152
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.232
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 13
   server: 103.186.154.164
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.154.162
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -330,81 +120,58 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_4ddb4_0041
-  - US_4ddb4_0044
-  - US_4ddb4_0046
-  - US_4ddb4_0049
-  - US_4ddb4_0047
-  - US_4ddb4_0048
-  - US_4ddb4_0050
-  - US_4ddb4_0043
-  - US_4ddb4_0051
-  - US_4ddb4_0053
-  - US_4ddb4_0056
-  - US_4ddb4_0042
-  - US_4ddb4_0045
-  - US_4ddb4_0057
   - 🇮🇹 意大利 | ITA
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 12
   - 🇻🇳 越南 | VNM 10
   - 🇻🇳 越南 | VNM 11
-  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 14
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 13
+  - 🇻🇳 越南 | VNM 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 12
   - 🇻🇳 越南 | VNM 10
   - 🇻🇳 越南 | VNM 11
-  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 14
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 13
+  - 🇻🇳 越南 | VNM 8
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_4ddb4_0041
-  - US_4ddb4_0044
-  - US_4ddb4_0046
-  - US_4ddb4_0049
-  - US_4ddb4_0047
-  - US_4ddb4_0048
-  - US_4ddb4_0050
-  - US_4ddb4_0043
-  - US_4ddb4_0051
-  - US_4ddb4_0053
-  - US_4ddb4_0056
-  - US_4ddb4_0042
-  - US_4ddb4_0045
-  - US_4ddb4_0057
   - 🇮🇹 意大利 | ITA
-- name: REGION-NA
+- name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_4ddb4_0041
-  - US_4ddb4_0044
-  - US_4ddb4_0046
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO
