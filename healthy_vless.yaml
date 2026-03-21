@@ -4,17 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA
-  server: itsea.osaip.net
-  port: 443
+- name: IR_26fd2_0022
+  server: whitelist2.124515.xyz
+  port: 8443
   type: vless
-  uuid: 3f606a75-d664-43b8-8628-b05d220813e4
+  uuid: a55a1cb4-cdb3-43db-9095-a8321ca1e9ad
+  flow: xtls-rprx-vision
   tls: true
+  skip-cert-verify: false
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
+  servername: whitelist2.124515.xyz
+  reality-opts:
+    public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
+    short-id: c10b9c49979ca3ad
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
+  - IR_26fd2_0022
 rules:
 - MATCH,AUTO

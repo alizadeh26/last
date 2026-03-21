@@ -4,6 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: IR_26fd2_0022
+  server: whitelist2.124515.xyz
+  port: 8443
+  type: vless
+  uuid: a55a1cb4-cdb3-43db-9095-a8321ca1e9ad
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: whitelist2.124515.xyz
+  reality-opts:
+    public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
+    short-id: c10b9c49979ca3ad
+  udp: true
 - name: 🇭🇰 香港 | HKG 9
   server: 103.149.182.105
   port: 8388
@@ -11,22 +25,15 @@ proxies:
   cipher: chacha20-ietf
   password: asd123456
   udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 185.231.233.112
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.102
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.75
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.75
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.102
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -39,39 +46,53 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - IR_26fd2_0022
   - 🇭🇰 香港 | HKG 9
-  - 🇵🇹 葡萄牙 | PRT
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
+  - 🇵🇹 葡萄牙 | PRT
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 9
-  - 🇵🇹 葡萄牙 | PRT
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
+  - 🇵🇹 葡萄牙 | PRT
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - IR_26fd2_0022
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 9
-  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇹 葡萄牙 | PRT
+  - IR_26fd2_0022
 rules:
 - MATCH,AUTO
