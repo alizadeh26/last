@@ -32,6 +32,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -42,6 +49,7 @@ proxy-groups:
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇵🇹 葡萄牙 | PRT
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -51,6 +59,7 @@ proxy-groups:
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇵🇹 葡萄牙 | PRT
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -59,6 +68,5 @@ proxy-groups:
   - SG_2bf3d_0035
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO
