@@ -39,6 +39,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.162
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -50,6 +57,7 @@ proxy-groups:
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -60,18 +68,6 @@ proxy-groups:
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - SG_1f601_0035
-  - 🇻🇳 越南 | VNM
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇵🇹 葡萄牙 | PRT
+  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO
