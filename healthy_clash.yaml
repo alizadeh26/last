@@ -4,12 +4,98 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_2bf3d_0035
+- name: SG_a47a4_0035
   server: 68.183.227.4
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: US_a47a4_0037
+  server: www.npmjs.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: US_a47a4_0042
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: US_a47a4_0041
+  server: ns.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: US_a47a4_0038
+  server: www.udemy.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: vpn.nnet.online
+  port: 80
+  type: vless
+  uuid: 5d950f22-a120-42c3-86f8-8ee81bfa08c9
+  tls: false
+  network: ws
+  ws-opts:
+    path: /vless-ntls
+    headers:
+      Host: nnet.online
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: vpn.nnet.online
+  port: 443
+  type: vless
+  uuid: 1007b7c2-2170-4ba4-a68d-ec31fbb4bf74
+  tls: true
+  servername: nnet.online
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless-tls
+    headers:
+      Host: nnet.online
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.102
@@ -19,25 +105,32 @@ proxies:
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.113
+  server: 103.186.154.238
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.75
+  server: 103.186.155.127
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 185.231.233.112
-  port: 989
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.248
+  port: 38388
   type: ss
   cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.113
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -45,28 +138,52 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_2bf3d_0035
+  - SG_a47a4_0035
+  - US_a47a4_0037
+  - US_a47a4_0042
+  - US_a47a4_0041
+  - US_a47a4_0038
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 5
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇵🇹 葡萄牙 | PRT
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_2bf3d_0035
+  - SG_a47a4_0035
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇵🇹 葡萄牙 | PRT
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - US_a47a4_0037
+  - US_a47a4_0042
+  - US_a47a4_0041
+  - US_a47a4_0038
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 5
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_2bf3d_0035
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
+  - SG_a47a4_0035
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - US_a47a4_0037
+  - US_a47a4_0042
 rules:
 - MATCH,AUTO

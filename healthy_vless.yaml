@@ -4,19 +4,91 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IR_26fd2_0022
-  server: whitelist2.124515.xyz
-  port: 8443
+- name: US_a47a4_0037
+  server: www.npmjs.com
+  port: 2095
   type: vless
-  uuid: a55a1cb4-cdb3-43db-9095-a8321ca1e9ad
-  flow: xtls-rprx-vision
-  tls: true
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
   skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: US_a47a4_0042
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: US_a47a4_0041
+  server: ns.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: US_a47a4_0038
+  server: www.udemy.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: vpn.nnet.online
+  port: 80
+  type: vless
+  uuid: 5d950f22-a120-42c3-86f8-8ee81bfa08c9
+  tls: false
+  network: ws
+  ws-opts:
+    path: /vless-ntls
+    headers:
+      Host: nnet.online
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: vpn.nnet.online
+  port: 443
+  type: vless
+  uuid: 1007b7c2-2170-4ba4-a68d-ec31fbb4bf74
+  tls: true
+  servername: nnet.online
   client-fingerprint: chrome
-  servername: whitelist2.124515.xyz
-  reality-opts:
-    public-key: p6rBxt_9BHHS3ODfWh3gE3nnzsbVqidNUisM5rRk-n0
-    short-id: c10b9c49979ca3ad
+  network: ws
+  ws-opts:
+    path: /vless-tls
+    headers:
+      Host: nnet.online
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,6 +96,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_26fd2_0022
+  - US_a47a4_0037
+  - US_a47a4_0042
+  - US_a47a4_0041
+  - US_a47a4_0038
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 5
 rules:
 - MATCH,AUTO
