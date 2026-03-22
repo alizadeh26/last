@@ -4,11 +4,35 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 15
+- name: 🇮🇹 意大利 | ITA
+  server: itsea.osaip.net
+  port: 443
+  type: vless
+  uuid: 1d842ae7-8ae8-4fd0-827b-8aa623c97397
+  tls: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
+  udp: true
+- name: 🇺🇸 美国 | USA 6
   server: usrna.osaip.net
   port: 15055
   type: vless
-  uuid: 589b22d1-69a7-44d6-be22-bc41a50bf269
+  uuid: 604e6b98-556e-4ecb-a620-8455d6cdceed
+  tls: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: usrna.osaip.net
+  port: 15055
+  type: vless
+  uuid: 1d842ae7-8ae8-4fd0-827b-8aa623c97397
   tls: true
   client-fingerprint: chrome
   network: grpc
@@ -22,6 +46,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 15
+  - 🇮🇹 意大利 | ITA
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
