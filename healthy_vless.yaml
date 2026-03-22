@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA 2
-  server: itsea.osaip.net
-  port: 443
+- name: 🇺🇸 美国 | USA 15
+  server: usrna.osaip.net
+  port: 15055
   type: vless
-  uuid: 1d842ae7-8ae8-4fd0-827b-8aa623c97397
+  uuid: 589b22d1-69a7-44d6-be22-bc41a50bf269
   tls: true
   client-fingerprint: chrome
   network: grpc
@@ -22,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO

@@ -4,38 +4,24 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_dfeec_0035
+- name: SG_fae7b_0035
   server: 68.183.227.4
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 103.149.183.113
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: itsea.osaip.net
-  port: 443
+- name: 🇺🇸 美国 | USA 15
+  server: usrna.osaip.net
+  port: 15055
   type: vless
-  uuid: 1d842ae7-8ae8-4fd0-827b-8aa623c97397
+  uuid: 589b22d1-69a7-44d6-be22-bc41a50bf269
   tls: true
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: violet
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.29
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.249
@@ -44,26 +30,40 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.148
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.29
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.66
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.75
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.162
+  server: 103.186.154.66
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.148
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
 proxy-groups:
 - name: AUTO
@@ -71,44 +71,44 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_dfeec_0035
-  - 🇭🇰 香港 | HKG 2
-  - 🇮🇹 意大利 | ITA 2
-  - 🇻🇳 越南 | VNM
+  - SG_fae7b_0035
+  - 🇺🇸 美国 | USA 15
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
+  - 🇵🇹 葡萄牙 | PRT
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_dfeec_0035
-  - 🇭🇰 香港 | HKG 2
-  - 🇻🇳 越南 | VNM
+  - SG_fae7b_0035
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
+  - 🇵🇹 葡萄牙 | PRT
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
+  - 🇺🇸 美国 | USA 15
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_dfeec_0035
-  - 🇭🇰 香港 | HKG 2
-- name: REGION-EU
+  - SG_fae7b_0035
+  - 🇻🇳 越南 | VNM 2
+- name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO
