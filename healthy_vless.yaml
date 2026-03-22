@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_a47a4_0037
-  server: www.npmjs.com
+- name: US_a47a4_0038
+  server: www.udemy.com
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -19,8 +19,8 @@ proxies:
     headers:
       Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
-- name: US_a47a4_0042
-  server: www.wto.org
+- name: US_a47a4_0037
+  server: www.npmjs.com
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -49,8 +49,8 @@ proxies:
     headers:
       Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
-- name: US_a47a4_0038
-  server: www.udemy.com
+- name: US_a47a4_0042
+  server: www.wto.org
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -90,17 +90,30 @@ proxies:
     headers:
       Host: nnet.online
   udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: usbad.osaip.net
+  port: 443
+  type: vless
+  uuid: 604e6b98-556e-4ecb-a620-8455d6cdceed
+  tls: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_a47a4_0037
-  - US_a47a4_0042
-  - US_a47a4_0041
   - US_a47a4_0038
+  - US_a47a4_0037
+  - US_a47a4_0041
+  - US_a47a4_0042
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO

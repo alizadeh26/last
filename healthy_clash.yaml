@@ -4,12 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_a47a4_0035
-  server: 68.183.227.4
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+- name: US_a47a4_0038
+  server: www.udemy.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
 - name: US_a47a4_0037
   server: www.npmjs.com
@@ -26,20 +34,12 @@ proxies:
     headers:
       Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
-- name: US_a47a4_0042
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+- name: SG_a47a4_0035
+  server: 68.183.227.4
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
   udp: true
 - name: US_a47a4_0041
   server: ns.cloudflare.com
@@ -56,8 +56,8 @@ proxies:
     headers:
       Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
-- name: US_a47a4_0038
-  server: www.udemy.com
+- name: US_a47a4_0042
+  server: www.wto.org
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -96,6 +96,18 @@ proxies:
     path: /vless-tls
     headers:
       Host: nnet.online
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: usbad.osaip.net
+  port: 443
+  type: vless
+  uuid: 604e6b98-556e-4ecb-a620-8455d6cdceed
+  tls: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.102
@@ -138,13 +150,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_a47a4_0035
-  - US_a47a4_0037
-  - US_a47a4_0042
-  - US_a47a4_0041
   - US_a47a4_0038
+  - US_a47a4_0037
+  - SG_a47a4_0035
+  - US_a47a4_0041
+  - US_a47a4_0042
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
+  - 🇺🇸 美国 | USA 10
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
@@ -166,12 +179,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_a47a4_0037
-  - US_a47a4_0042
-  - US_a47a4_0041
   - US_a47a4_0038
+  - US_a47a4_0037
+  - US_a47a4_0041
+  - US_a47a4_0042
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
+  - 🇺🇸 美国 | USA 10
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -183,7 +197,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - US_a47a4_0038
   - US_a47a4_0037
-  - US_a47a4_0042
 rules:
 - MATCH,AUTO
