@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_47945_0035
+- name: SG_8bee4_0035
   server: 68.183.227.4
   port: 8080
   type: ss
@@ -18,55 +18,27 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.66
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.29
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.162
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_47945_0035
+  - SG_8bee4_0035
   - 🇵🇹 葡萄牙 | PRT
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_47945_0035
+  - SG_8bee4_0035
   - 🇵🇹 葡萄牙 | PRT
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_47945_0035
-  - 🇻🇳 越南 | VNM
+  - SG_8bee4_0035
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
