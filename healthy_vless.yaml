@@ -4,41 +4,65 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA
-  server: itsea.osaip.net
-  port: 443
+- name: US_0c704_0037
+  server: www.npmjs.com
+  port: 2095
   type: vless
-  uuid: 1d842ae7-8ae8-4fd0-827b-8aa623c97397
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: usrna.osaip.net
-  port: 15055
+- name: US_0c704_0038
+  server: www.udemy.com
+  port: 2095
   type: vless
-  uuid: 604e6b98-556e-4ecb-a620-8455d6cdceed
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: usrna.osaip.net
-  port: 15055
+- name: US_0c704_0042
+  server: www.wto.org
+  port: 2095
   type: vless
-  uuid: 1d842ae7-8ae8-4fd0-827b-8aa623c97397
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: US_0c704_0041
+  server: ns.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -46,8 +70,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 9
+  - US_0c704_0037
+  - US_0c704_0038
+  - US_0c704_0042
+  - US_0c704_0041
 rules:
 - MATCH,AUTO
