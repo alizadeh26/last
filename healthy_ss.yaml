@@ -11,13 +11,6 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 103.36.91.32
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.31
   port: 38388
@@ -32,13 +25,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 185.231.233.112
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -46,9 +32,7 @@ proxy-groups:
   interval: 300
   proxies:
   - SG_8cad3_0035
-  - 🇸🇬 新加坡 | SGP
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
-  - 🇵🇹 葡萄牙 | PRT
 rules:
 - MATCH,AUTO
