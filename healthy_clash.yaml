@@ -4,15 +4,75 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_38812_0035
+- name: US_24059_0037
+  server: www.npmjs.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: US_24059_0042
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: US_24059_0038
+  server: www.udemy.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: SG_24059_0035
   server: 68.183.227.4
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
+- name: US_24059_0041
+  server: ns.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.18
+  server: 103.186.155.25
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -31,7 +91,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_38812_0035
+  - US_24059_0037
+  - US_24059_0042
+  - US_24059_0038
+  - SG_24059_0035
+  - US_24059_0041
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
@@ -39,16 +103,25 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_38812_0035
+  - SG_24059_0035
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
-- name: REGION-AS
+- name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_38812_0035
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
+  - US_24059_0037
+  - US_24059_0042
+  - US_24059_0038
+  - US_24059_0041
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - US_24059_0037
+  - US_24059_0042
+  - US_24059_0038
 rules:
 - MATCH,AUTO

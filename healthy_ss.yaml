@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_38812_0035
+- name: SG_24059_0035
   server: 68.183.227.4
   port: 8080
   type: ss
@@ -12,7 +12,7 @@ proxies:
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.18
+  server: 103.186.155.25
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -31,7 +31,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_38812_0035
+  - SG_24059_0035
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
 rules:

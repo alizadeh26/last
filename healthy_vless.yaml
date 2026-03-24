@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_0c704_0037
+- name: US_24059_0037
   server: www.npmjs.com
   port: 2095
   type: vless
@@ -19,22 +19,7 @@ proxies:
     headers:
       Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
-- name: US_0c704_0038
-  server: www.udemy.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  udp: true
-- name: US_0c704_0042
+- name: US_24059_0042
   server: www.wto.org
   port: 2095
   type: vless
@@ -49,7 +34,22 @@ proxies:
     headers:
       Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
-- name: US_0c704_0041
+- name: US_24059_0038
+  server: www.udemy.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  udp: true
+- name: US_24059_0041
   server: ns.cloudflare.com
   port: 2095
   type: vless
@@ -70,9 +70,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_0c704_0037
-  - US_0c704_0038
-  - US_0c704_0042
-  - US_0c704_0041
+  - US_24059_0037
+  - US_24059_0042
+  - US_24059_0038
+  - US_24059_0041
 rules:
 - MATCH,AUTO
