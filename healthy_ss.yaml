@@ -4,26 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_24059_0035
+- name: SG_dba01_0035
   server: 68.183.227.4
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.25
-  port: 38388
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
   type: ss
   cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.162
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  password: f8f7aCzcPKbsF8p3
   udp: true
 proxy-groups:
 - name: AUTO
@@ -31,8 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_24059_0035
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
+  - SG_dba01_0035
+  - 🇵🇹 葡萄牙 | PRT
 rules:
 - MATCH,AUTO
