@@ -4,133 +4,105 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_d70f3_0035
+- name: SG_7e1a1_0035
   server: 68.183.227.4
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: 20.6.128.4
-  port: 6788
-  type: vmess
-  uuid: bfff8306-6102-4fde-8a7f-f025e94f7a53
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 3
-  server: n8mrcg005998s6m.cybervena.com
-  port: 50099
+- name: 🇩🇪 德国 | DEU
+  server: ka02.academicbest.dpdns.org
+  port: 7014
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  cipher: aes-256-gcm
+  password: e411e1b3-7620-4ab9-893c-49f1c9f1c7ef
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: us02.academicbest.dpdns.org
+  port: 7012
+  type: ss
+  cipher: aes-256-gcm
+  password: d19df351-057e-4ce1-9bd1-425c160980f6
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: gm.academicbest.dpdns.org
+  port: 7002
+  type: ss
+  cipher: aes-256-gcm
+  password: 139b5705-8566-404e-8de7-18e97c719ebc
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 5
+  server: 103.47.225.69
+  port: 443
+  type: ss
+  cipher: aes-256-gcm
+  password: 899c7e30-50c7-4b63-a0a0-f26ac572d4f9
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: r3mrcg001142988.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 5
-  server: n8mrcg005938lsz.cybervena.com
+  server: n8mrcg006043yc6.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 4
-  server: r3mrcg0011499tl.cybervena.com
+  server: r3mrcg001162ctc.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: r3mrcg001188p8v.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 7
-  server: n8mrcg004697zw5.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  server: n8mrcg004732fk8.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 6
-  server: r3mrcg0011606bh.cybervena.com
+  server: r3mrcg007150y7y.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 8
-  server: ncmrcg000138e7b.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 5
+  server: r3mrcg007147vhp.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 185.231.233.112
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 9
-  server: namrcg001640lrm.cybervena.com
-  port: 50099
+- name: 🇺🇸 美国 | USA
+  server: uss.sudao888.xyz
+  port: 51110
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: b4e92f5c-80d5-4c00-b028-168f7493c197
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 10
-  server: r3mrcg007134n4g.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 11
-  server: n8mrcg004751vh5.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 12
-  server: n8mrcg005977h4d.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 13
-  server: namrcg001666y2h.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 14
-  server: n8mrcg004740fsy.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 7
+  server: nbmrcg0034458by.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.215
+  server: 103.186.155.54
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇸🇨 塞舌尔 | SYC
+  server: 156.238.250.91
+  port: 18811
+  type: vmess
+  uuid: 4a1b829b-8394-42c1-a068-04cd8e6bcb3c
+  alterId: 0
+  cipher: auto
+  tls: false
   udp: true
 proxy-groups:
 - name: AUTO
@@ -138,59 +110,61 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_d70f3_0035
-  - 🇭🇰 香港 | HKG 7
-  - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - SG_7e1a1_0035
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 2
+  - 🇸🇬 新加坡 | SGP 5
   - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
   - 🇹🇼 🇨🇳 台湾 | TWN 4
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 7
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
   - 🇹🇼 🇨🇳 台湾 | TWN 6
-  - 🇹🇼 🇨🇳 台湾 | TWN 8
-  - 🇵🇹 葡萄牙 | PRT
-  - 🇹🇼 🇨🇳 台湾 | TWN 9
-  - 🇹🇼 🇨🇳 台湾 | TWN 10
-  - 🇹🇼 🇨🇳 台湾 | TWN 11
-  - 🇹🇼 🇨🇳 台湾 | TWN 12
-  - 🇹🇼 🇨🇳 台湾 | TWN 13
-  - 🇹🇼 🇨🇳 台湾 | TWN 14
+  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇺🇸 美国 | USA
+  - 🇹🇼 🇨🇳 台湾 | TWN 7
   - 🇻🇳 越南 | VNM
+  - 🇸🇨 塞舌尔 | SYC
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_d70f3_0035
-  - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - SG_7e1a1_0035
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 2
+  - 🇸🇬 新加坡 | SGP 5
   - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
   - 🇹🇼 🇨🇳 台湾 | TWN 4
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 7
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
   - 🇹🇼 🇨🇳 台湾 | TWN 6
-  - 🇹🇼 🇨🇳 台湾 | TWN 8
-  - 🇵🇹 葡萄牙 | PRT
-  - 🇹🇼 🇨🇳 台湾 | TWN 9
-  - 🇹🇼 🇨🇳 台湾 | TWN 10
-  - 🇹🇼 🇨🇳 台湾 | TWN 11
-  - 🇹🇼 🇨🇳 台湾 | TWN 12
-  - 🇹🇼 🇨🇳 台湾 | TWN 13
-  - 🇹🇼 🇨🇳 台湾 | TWN 14
+  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇺🇸 美国 | USA
+  - 🇹🇼 🇨🇳 台湾 | TWN 7
   - 🇻🇳 越南 | VNM
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 7
+  - 🇸🇨 塞舌尔 | SYC
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_d70f3_0035
-  - 🇭🇰 香港 | HKG 7
-  - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - SG_7e1a1_0035
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇹🇼 🇨🇳 台湾 | TWN 4
+  - 🇹🇼 🇨🇳 台湾 | TWN 6
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO
