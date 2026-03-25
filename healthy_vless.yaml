@@ -4,65 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_434a6_0037
-  server: www.npmjs.com
-  port: 2095
+- name: 🇮🇹 意大利 | ITA
+  server: itsea.osaip.net
+  port: 443
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  udp: true
-- name: US_434a6_0038
-  server: www.udemy.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  udp: true
-- name: US_434a6_0042
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  udp: true
-- name: US_434a6_0041
-  server: ns.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  uuid: b2a196d2-a696-4be7-b440-7e9825f7ac5d
+  tls: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
   udp: true
 proxy-groups:
 - name: AUTO
@@ -70,9 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_434a6_0037
-  - US_434a6_0038
-  - US_434a6_0042
-  - US_434a6_0041
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO

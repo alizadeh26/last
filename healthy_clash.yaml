@@ -4,79 +4,136 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_434a6_0037
-  server: www.npmjs.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  udp: true
-- name: US_434a6_0038
-  server: www.udemy.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  udp: true
-- name: SG_434a6_0035
+- name: SG_aae1d_0035
   server: 68.183.227.4
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: US_434a6_0042
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  udp: true
-- name: US_434a6_0041
-  server: ns.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.19
-  port: 38388
+- name: 🇩🇪 德国 | DEU
+  server: sg02.academicbest.dpdns.org
+  port: 7010
   type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-gcm
+  password: ece9f981-9069-4ed4-9593-680dec198a43
+  udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: itsea.osaip.net
+  port: 443
+  type: vless
+  uuid: b2a196d2-a696-4be7-b440-7e9825f7ac5d
+  tls: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 103.47.225.69
+  port: 443
+  type: ss
+  cipher: aes-256-gcm
+  password: 899c7e30-50c7-4b63-a0a0-f26ac572d4f9
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: r3mrcg001142988.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  server: nbmrcg003466pb9.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 4
+  server: n8mrcg005938lsz.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 5
+  server: r3mrcg0011606bh.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 7
+  server: nbmrcg0034686rw.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 10
+  server: r3mrcg001162ctc.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 11
+  server: r3mrcg007153btm.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 12
+  server: namrcg001655hvm.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 13
+  server: n8mrcg0059867fh.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 14
+  server: n8mrcg004697zw5.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 15
+  server: namrcg001662wgh.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 16
+  server: n8mrcg005972g7w.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 17
+  server: nbmrcg003507ck6.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 19
+  server: n8mrcg004676x9e.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 proxy-groups:
 - name: AUTO
@@ -84,40 +141,64 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_434a6_0037
-  - US_434a6_0038
-  - SG_434a6_0035
-  - US_434a6_0042
-  - US_434a6_0041
-  - 🇻🇳 越南 | VNM
+  - SG_aae1d_0035
+  - 🇩🇪 德国 | DEU
+  - 🇮🇹 意大利 | ITA
+  - 🇸🇬 新加坡 | SGP
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇹🇼 🇨🇳 台湾 | TWN 4
+  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇹🇼 🇨🇳 台湾 | TWN 7
+  - 🇹🇼 🇨🇳 台湾 | TWN 10
+  - 🇹🇼 🇨🇳 台湾 | TWN 11
+  - 🇹🇼 🇨🇳 台湾 | TWN 12
+  - 🇹🇼 🇨🇳 台湾 | TWN 13
+  - 🇹🇼 🇨🇳 台湾 | TWN 14
+  - 🇹🇼 🇨🇳 台湾 | TWN 15
+  - 🇹🇼 🇨🇳 台湾 | TWN 16
+  - 🇹🇼 🇨🇳 台湾 | TWN 17
+  - 🇹🇼 🇨🇳 台湾 | TWN 19
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_434a6_0035
-  - 🇻🇳 越南 | VNM
+  - SG_aae1d_0035
+  - 🇩🇪 德国 | DEU
+  - 🇸🇬 新加坡 | SGP
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇹🇼 🇨🇳 台湾 | TWN 4
+  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇹🇼 🇨🇳 台湾 | TWN 7
+  - 🇹🇼 🇨🇳 台湾 | TWN 10
+  - 🇹🇼 🇨🇳 台湾 | TWN 11
+  - 🇹🇼 🇨🇳 台湾 | TWN 12
+  - 🇹🇼 🇨🇳 台湾 | TWN 13
+  - 🇹🇼 🇨🇳 台湾 | TWN 14
+  - 🇹🇼 🇨🇳 台湾 | TWN 15
+  - 🇹🇼 🇨🇳 台湾 | TWN 16
+  - 🇹🇼 🇨🇳 台湾 | TWN 17
+  - 🇹🇼 🇨🇳 台湾 | TWN 19
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_434a6_0037
-  - US_434a6_0038
-  - US_434a6_0042
-  - US_434a6_0041
+  - 🇮🇹 意大利 | ITA
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_434a6_0035
-- name: REGION-NA
+  - SG_aae1d_0035
+- name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_434a6_0037
-  - US_434a6_0038
+  - 🇩🇪 德国 | DEU
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO
