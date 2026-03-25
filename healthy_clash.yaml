@@ -20,22 +20,15 @@ proxies:
   cipher: auto
   tls: false
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: 103.149.182.105
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: r3mrcg001142988.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  server: n8mrcg005998s6m.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: r3mrcg001188p8v.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: r3mrcg001142988.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -48,15 +41,22 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 3
-  server: n8mrcg005998s6m.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 4
+  server: r3mrcg0011499tl.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 4
-  server: r3mrcg0011499tl.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: r3mrcg001188p8v.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 7
+  server: n8mrcg004697zw5.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -76,8 +76,15 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 7
-  server: n8mrcg004697zw5.cybervena.com
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 9
+  server: namrcg001640lrm.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -97,22 +104,8 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 9
-  server: namrcg001640lrm.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 12
   server: n8mrcg005977h4d.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 14
-  server: n8mrcg004740fsy.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -125,12 +118,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 185.231.233.112
-  port: 989
+- name: 🇹🇼 🇨🇳 台湾 | TWN 14
+  server: n8mrcg004740fsy.cybervena.com
+  port: 50099
   type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.215
@@ -147,22 +140,21 @@ proxy-groups:
   proxies:
   - SG_d70f3_0035
   - 🇭🇰 香港 | HKG 7
-  - 🇭🇰 香港 | HKG 5
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
   - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇹🇼 🇨🇳 台湾 | TWN 5
   - 🇹🇼 🇨🇳 台湾 | TWN 4
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 7
   - 🇹🇼 🇨🇳 台湾 | TWN 6
   - 🇹🇼 🇨🇳 台湾 | TWN 8
-  - 🇹🇼 🇨🇳 台湾 | TWN 7
+  - 🇵🇹 葡萄牙 | PRT
+  - 🇹🇼 🇨🇳 台湾 | TWN 9
   - 🇹🇼 🇨🇳 台湾 | TWN 10
   - 🇹🇼 🇨🇳 台湾 | TWN 11
-  - 🇹🇼 🇨🇳 台湾 | TWN 9
   - 🇹🇼 🇨🇳 台湾 | TWN 12
-  - 🇹🇼 🇨🇳 台湾 | TWN 14
   - 🇹🇼 🇨🇳 台湾 | TWN 13
-  - 🇵🇹 葡萄牙 | PRT
+  - 🇹🇼 🇨🇳 台湾 | TWN 14
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
@@ -170,22 +162,21 @@ proxy-groups:
   interval: 300
   proxies:
   - SG_d70f3_0035
-  - 🇭🇰 香港 | HKG 5
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
   - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇹🇼 🇨🇳 台湾 | TWN 5
   - 🇹🇼 🇨🇳 台湾 | TWN 4
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 7
   - 🇹🇼 🇨🇳 台湾 | TWN 6
   - 🇹🇼 🇨🇳 台湾 | TWN 8
-  - 🇹🇼 🇨🇳 台湾 | TWN 7
+  - 🇵🇹 葡萄牙 | PRT
+  - 🇹🇼 🇨🇳 台湾 | TWN 9
   - 🇹🇼 🇨🇳 台湾 | TWN 10
   - 🇹🇼 🇨🇳 台湾 | TWN 11
-  - 🇹🇼 🇨🇳 台湾 | TWN 9
   - 🇹🇼 🇨🇳 台湾 | TWN 12
-  - 🇹🇼 🇨🇳 台湾 | TWN 14
   - 🇹🇼 🇨🇳 台湾 | TWN 13
-  - 🇵🇹 葡萄牙 | PRT
+  - 🇹🇼 🇨🇳 台湾 | TWN 14
   - 🇻🇳 越南 | VNM
 - name: PROTO-VMESS
   type: url-test
@@ -200,9 +191,6 @@ proxy-groups:
   proxies:
   - SG_d70f3_0035
   - 🇭🇰 香港 | HKG 7
-  - 🇭🇰 香港 | HKG 5
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
 rules:
 - MATCH,AUTO
