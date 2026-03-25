@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_bd449_0035
+- name: SG_434a6_0035
   server: 68.183.227.4
   port: 8080
   type: ss
@@ -24,7 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_bd449_0035
+  - SG_434a6_0035
   - 🇻🇳 越南 | VNM
 rules:
 - MATCH,AUTO
