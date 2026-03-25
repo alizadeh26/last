@@ -11,6 +11,18 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: itsea.osaip.net
+  port: 443
+  type: vless
+  uuid: b2a196d2-a696-4be7-b440-7e9825f7ac5d
+  tls: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
+  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 103.47.225.69
   port: 443
@@ -25,13 +37,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 4
-  server: n8mrcg005938lsz.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 3
   server: nbmrcg003466pb9.cybervena.com
   port: 50099
@@ -39,8 +44,8 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 5
-  server: r3mrcg0011606bh.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 4
+  server: n8mrcg005938lsz.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -88,12 +93,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: sg02.academicbest.dpdns.org
-  port: 7010
+- name: 🇹🇼 🇨🇳 台湾 | TWN 15
+  server: namrcg001662wgh.cybervena.com
+  port: 50099
   type: ss
-  cipher: aes-256-gcm
-  password: ece9f981-9069-4ed4-9593-680dec198a43
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 16
   server: n8mrcg005972g7w.cybervena.com
@@ -104,13 +109,6 @@ proxies:
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 17
   server: nbmrcg003507ck6.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 15
-  server: namrcg001662wgh.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -130,21 +128,20 @@ proxy-groups:
   interval: 300
   proxies:
   - SG_aae1d_0035
+  - 🇮🇹 意大利 | ITA
   - 🇸🇬 新加坡 | SGP
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 4
   - 🇹🇼 🇨🇳 台湾 | TWN 3
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇹🇼 🇨🇳 台湾 | TWN 4
   - 🇹🇼 🇨🇳 台湾 | TWN 7
   - 🇹🇼 🇨🇳 台湾 | TWN 10
   - 🇹🇼 🇨🇳 台湾 | TWN 11
   - 🇹🇼 🇨🇳 台湾 | TWN 12
   - 🇹🇼 🇨🇳 台湾 | TWN 13
   - 🇹🇼 🇨🇳 台湾 | TWN 14
-  - 🇩🇪 德国 | DEU
+  - 🇹🇼 🇨🇳 台湾 | TWN 15
   - 🇹🇼 🇨🇳 台湾 | TWN 16
   - 🇹🇼 🇨🇳 台湾 | TWN 17
-  - 🇹🇼 🇨🇳 台湾 | TWN 15
   - 🇹🇼 🇨🇳 台湾 | TWN 19
 - name: PROTO-SS
   type: url-test
@@ -154,20 +151,24 @@ proxy-groups:
   - SG_aae1d_0035
   - 🇸🇬 新加坡 | SGP
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 4
   - 🇹🇼 🇨🇳 台湾 | TWN 3
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇹🇼 🇨🇳 台湾 | TWN 4
   - 🇹🇼 🇨🇳 台湾 | TWN 7
   - 🇹🇼 🇨🇳 台湾 | TWN 10
   - 🇹🇼 🇨🇳 台湾 | TWN 11
   - 🇹🇼 🇨🇳 台湾 | TWN 12
   - 🇹🇼 🇨🇳 台湾 | TWN 13
   - 🇹🇼 🇨🇳 台湾 | TWN 14
-  - 🇩🇪 德国 | DEU
+  - 🇹🇼 🇨🇳 台湾 | TWN 15
   - 🇹🇼 🇨🇳 台湾 | TWN 16
   - 🇹🇼 🇨🇳 台湾 | TWN 17
-  - 🇹🇼 🇨🇳 台湾 | TWN 15
   - 🇹🇼 🇨🇳 台湾 | TWN 19
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇹 意大利 | ITA
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -175,6 +176,11 @@ proxy-groups:
   proxies:
   - SG_aae1d_0035
   - 🇸🇬 新加坡 | SGP
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO
