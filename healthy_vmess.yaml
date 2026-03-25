@@ -4,15 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 82.198.246.97
-  port: 180
+- name: 🇭🇰 香港 | HKG 7
+  server: 20.6.128.4
+  port: 6788
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: bfff8306-6102-4fde-8a7f-f025e94f7a53
   alterId: 0
   cipher: auto
   tls: false
-  servername: www.bing.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -20,6 +19,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
+  - 🇭🇰 香港 | HKG 7
 rules:
 - MATCH,AUTO

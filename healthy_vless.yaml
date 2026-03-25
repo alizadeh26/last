@@ -8,7 +8,7 @@ proxies:
   server: itsea.osaip.net
   port: 443
   type: vless
-  uuid: b2a196d2-a696-4be7-b440-7e9825f7ac5d
+  uuid: 540e7de3-4e27-4632-a467-82586f3b23d6
   tls: true
   client-fingerprint: chrome
   network: grpc
