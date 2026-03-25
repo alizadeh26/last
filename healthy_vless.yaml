@@ -34,8 +34,8 @@ proxies:
     headers:
       Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
-- name: US_434a6_0041
-  server: ns.cloudflare.com
+- name: US_434a6_0042
+  server: www.wto.org
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -49,8 +49,8 @@ proxies:
     headers:
       Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
   udp: true
-- name: US_434a6_0042
-  server: www.wto.org
+- name: US_434a6_0041
+  server: ns.cloudflare.com
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -72,7 +72,7 @@ proxy-groups:
   proxies:
   - US_434a6_0037
   - US_434a6_0038
-  - US_434a6_0041
   - US_434a6_0042
+  - US_434a6_0041
 rules:
 - MATCH,AUTO
