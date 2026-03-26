@@ -11,18 +11,6 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: itsea.osaip.net
-  port: 443
-  type: vless
-  uuid: 4f4a8ac0-e88c-4db4-a2e0-59cb31ed57d7
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: r3mrcg001233myh.cybervena.com
   port: 50099
@@ -37,15 +25,15 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 3
-  server: n8mrcg005938lsz.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 4
+  server: n8mrcg006016ehj.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 4
-  server: n8mrcg006016ehj.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  server: n8mrcg005938lsz.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -58,18 +46,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: sgskb.osaip.net
-  port: 25055
-  type: vless
-  uuid: 9b595065-67ea-4fbe-a42f-9ebebfff2bd1
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -77,13 +53,11 @@ proxy-groups:
   interval: 300
   proxies:
   - SG_d2c8f_0035
-  - 🇮🇹 意大利 | ITA
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 3
   - 🇹🇼 🇨🇳 台湾 | TWN 4
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
   - 🇻🇳 越南 | VNM
-  - 🇸🇬 新加坡 | SGP 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -92,16 +66,9 @@ proxy-groups:
   - SG_d2c8f_0035
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 3
   - 🇹🇼 🇨🇳 台湾 | TWN 4
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
   - 🇻🇳 越南 | VNM
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇸🇬 新加坡 | SGP 6
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -109,11 +76,6 @@ proxy-groups:
   proxies:
   - SG_d2c8f_0035
   - 🇹🇼 🇨🇳 台湾 | TWN
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇮🇹 意大利 | ITA
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
 rules:
 - MATCH,AUTO
