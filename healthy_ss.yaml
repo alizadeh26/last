@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_09c96_0035
+- name: SG_d2c8f_0035
   server: 68.183.227.4
   port: 8080
   type: ss
@@ -12,49 +12,35 @@ proxies:
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: ncmrcg000138e7b.cybervena.com
+  server: r3mrcg001233myh.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 6
-  server: n8mrcg005988a7z.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  server: n8mrcg005938lsz.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 4
+  server: n8mrcg006016ehj.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.237
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.72
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.78
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.77
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.190
+  server: 103.186.154.247
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -66,13 +52,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_09c96_0035
+  - SG_d2c8f_0035
   - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇹🇼 🇨🇳 台湾 | TWN 6
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇹🇼 🇨🇳 台湾 | TWN 4
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
 rules:
 - MATCH,AUTO
