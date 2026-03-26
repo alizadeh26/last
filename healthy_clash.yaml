@@ -58,6 +58,18 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: sgskb.osaip.net
+  port: 25055
+  type: vless
+  uuid: 9b595065-67ea-4fbe-a42f-9ebebfff2bd1
+  tls: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -71,6 +83,7 @@ proxy-groups:
   - 🇹🇼 🇨🇳 台湾 | TWN 3
   - 🇹🇼 🇨🇳 台湾 | TWN 4
   - 🇻🇳 越南 | VNM
+  - 🇸🇬 新加坡 | SGP 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -88,6 +101,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇮🇹 意大利 | ITA
+  - 🇸🇬 新加坡 | SGP 6
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204

@@ -16,6 +16,18 @@ proxies:
     grpc-mode: gun
     grpc-service-name: violet
   udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: sgskb.osaip.net
+  port: 25055
+  type: vless
+  uuid: 9b595065-67ea-4fbe-a42f-9ebebfff2bd1
+  tls: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -23,5 +35,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇮🇹 意大利 | ITA
+  - 🇸🇬 新加坡 | SGP 6
 rules:
 - MATCH,AUTO
