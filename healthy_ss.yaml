@@ -4,96 +4,61 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_a128e_0035
+- name: SG_09c96_0035
   server: 68.183.227.4
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 4
-  server: r3mrcg007144ll4.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: ncmrcg000138e7b.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 3
-  server: nbmrcg003449jp6.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 5
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 7
-  server: n8mrcg005961xa6.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 9
+- name: 🇹🇼 🇨🇳 台湾 | TWN 6
   server: n8mrcg005988a7z.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 11
-  server: r3mrcg001168e8p.cybervena.com
-  port: 50099
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.78
+  port: 38388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 12
-  server: r3mrcg007117fb8.cybervena.com
-  port: 50099
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.72
+  port: 38388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 10
-  server: nbmrcg003466pb9.cybervena.com
-  port: 50099
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.237
+  port: 38388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 13
-  server: r3mrcg001257bhv.cybervena.com
-  port: 50099
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.77
+  port: 38388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 14
-  server: r3mrcg007153btm.cybervena.com
-  port: 50099
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.190
+  port: 38388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 16
-  server: r3mrcg0011993za.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 15
-  server: nbmrcg0034686rw.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -101,18 +66,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_a128e_0035
-  - 🇹🇼 🇨🇳 台湾 | TWN 4
-  - 🇹🇼 🇨🇳 台湾 | TWN 3
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
-  - 🇹🇼 🇨🇳 台湾 | TWN 7
-  - 🇹🇼 🇨🇳 台湾 | TWN 9
-  - 🇹🇼 🇨🇳 台湾 | TWN 11
-  - 🇹🇼 🇨🇳 台湾 | TWN 12
-  - 🇹🇼 🇨🇳 台湾 | TWN 10
-  - 🇹🇼 🇨🇳 台湾 | TWN 13
-  - 🇹🇼 🇨🇳 台湾 | TWN 14
-  - 🇹🇼 🇨🇳 台湾 | TWN 16
-  - 🇹🇼 🇨🇳 台湾 | TWN 15
+  - SG_09c96_0035
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇹🇼 🇨🇳 台湾 | TWN 6
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
 rules:
 - MATCH,AUTO
