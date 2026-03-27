@@ -4,14 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇨 塞舌尔 | SYC
-  server: 156.238.250.91
-  port: 18811
+- name: 🇸🇬 新加坡 | SGP 5
+  server: v12.hdacd.com
+  port: 30812
   type: vmess
-  uuid: 4a1b829b-8394-42c1-a068-04cd8e6bcb3c
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 0
   cipher: auto
   tls: false
+  skip-cert-verify: false
   udp: true
 proxy-groups:
 - name: AUTO
@@ -19,6 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 | SYC
+  - 🇸🇬 新加坡 | SGP 5
 rules:
 - MATCH,AUTO

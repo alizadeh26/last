@@ -4,29 +4,31 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA
-  server: itsea.osaip.net
+- name: 🇨🇭 瑞士 | CHE
+  server: ch.fasti.win
   port: 443
   type: vless
-  uuid: 4f4a8ac0-e88c-4db4-a2e0-59cb31ed57d7
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
   tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
+  servername: ch.fasti.win
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
+  network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: sgskb.osaip.net
-  port: 25055
+- name: 🇲🇩 摩尔多瓦 | MDA 2
+  server: 104.18.32.47
+  port: 2052
   type: vless
-  uuid: 9b595065-67ea-4fbe-a42f-9ebebfff2bd1
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
+  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
   udp: true
 proxy-groups:
 - name: AUTO
@@ -34,7 +36,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇸🇬 新加坡 | SGP 6
+  - 🇨🇭 瑞士 | CHE
+  - 🇲🇩 摩尔多瓦 | MDA 2
 rules:
 - MATCH,AUTO
