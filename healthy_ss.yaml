@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_a9c7d_0035
+- name: SG_533d2_0035
   server: 68.183.227.4
   port: 8080
   type: ss
@@ -38,7 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_a9c7d_0035
+  - SG_533d2_0035
   - 🇹🇼 🇨🇳 台湾 | TWN 3
   - 🇹🇼 🇨🇳 台湾 | TWN 5
   - 🇻🇳 越南 | VNM
