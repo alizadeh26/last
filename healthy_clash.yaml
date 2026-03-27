@@ -25,20 +25,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 6
-  server: ncmrcg000138e7b.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 7
-  server: nbmrcg003466pb9.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 3
   server: n8mrcg005961xa6.cybervena.com
   port: 50099
@@ -46,15 +32,22 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.45
+- name: 🇹🇼 🇨🇳 台湾 | TWN 6
+  server: ncmrcg000138e7b.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.21
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.21
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.45
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -76,11 +69,10 @@ proxy-groups:
   - SG_a901f_0035
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 6
-  - 🇹🇼 🇨🇳 台湾 | TWN 7
   - 🇹🇼 🇨🇳 台湾 | TWN 3
-  - 🇻🇳 越南 | VNM 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 6
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
@@ -90,11 +82,10 @@ proxy-groups:
   - SG_a901f_0035
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 6
-  - 🇹🇼 🇨🇳 台湾 | TWN 7
   - 🇹🇼 🇨🇳 台湾 | TWN 3
-  - 🇻🇳 越南 | VNM 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 6
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
 - name: REGION-AS
   type: url-test
