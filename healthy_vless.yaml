@@ -4,18 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇲🇩 摩尔多瓦 | MDA 2
-  server: 104.18.32.47
-  port: 2052
-  type: vless
-  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
-  udp: true
 - name: 🇨🇭 瑞士 | CHE
   server: ch.fasti.win
   port: 443
@@ -30,13 +18,25 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇲🇩 摩尔多瓦 | MDA 2
+  server: 104.18.32.47
+  port: 2052
+  type: vless
+  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 摩尔多瓦 | MDA 2
   - 🇨🇭 瑞士 | CHE
+  - 🇲🇩 摩尔多瓦 | MDA 2
 rules:
 - MATCH,AUTO
