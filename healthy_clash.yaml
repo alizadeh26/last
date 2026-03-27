@@ -18,6 +18,18 @@ proxies:
   cipher: aes-256-cfb
   password: XPtzA9sCug3SPR4c
   udp: true
+- name: 🇲🇩 摩尔多瓦 | MDA 2
+  server: 104.18.32.47
+  port: 2052
+  type: vless
+  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
+  udp: true
 - name: 🇨🇭 瑞士 | CHE
   server: ch.fasti.win
   port: 443
@@ -32,18 +44,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇲🇩 摩尔多瓦 | MDA 2
-  server: 104.18.32.47
-  port: 2052
-  type: vless
-  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: nbmrcg003505rnd.cybervena.com
   port: 50099
@@ -51,8 +51,8 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 6
-  server: r3mrcg001142988.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  server: r3mrcg0011993za.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -68,8 +68,8 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 3
-  server: r3mrcg0011993za.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 6
+  server: r3mrcg001142988.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -82,15 +82,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.81
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.69
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.237
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.81
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -110,8 +110,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.69
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.237
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -125,18 +125,18 @@ proxy-groups:
   proxies:
   - SG_d93c5_0035
   - 🇪🇸 西班牙 | ESP
-  - 🇨🇭 瑞士 | CHE
   - 🇲🇩 摩尔多瓦 | MDA 2
+  - 🇨🇭 瑞士 | CHE
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 6
-  - 🇸🇬 新加坡 | SGP 5
   - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇹🇼 🇨🇳 台湾 | TWN 6
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -145,21 +145,21 @@ proxy-groups:
   - SG_d93c5_0035
   - 🇪🇸 西班牙 | ESP
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 6
   - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇹🇼 🇨🇳 台湾 | TWN 6
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 | CHE
   - 🇲🇩 摩尔多瓦 | MDA 2
+  - 🇨🇭 瑞士 | CHE
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -178,6 +178,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇪🇸 西班牙 | ESP
-  - 🇨🇭 瑞士 | CHE
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇩 摩尔多瓦 | MDA 2
 rules:
 - MATCH,AUTO
