@@ -4,6 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: GB_f0047_0007
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: SC_f0047_0018
   server: 154.223.16.212
   port: 989
@@ -45,28 +55,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 8
-  server: r3mrcg007117fb8.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 76fd2910-8f2d-4f0f-883a-8da226f52000
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: zz3.jishuyun.top
-  port: 10503
-  type: vmess
-  uuid: 957d12d8-048d-4b57-b09c-f19d027484a0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: www.baidu.com
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.50
   port: 38388
@@ -76,6 +64,13 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.52
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.226
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -95,13 +90,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.226
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 7
   server: 103.186.155.119
   port: 38388
@@ -109,41 +97,24 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: static.ubejiasu.top
-  port: 31516
-  type: vmess
-  uuid: 957d12d8-048d-4b57-b09c-f19d027484a0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: www.baidu.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - GB_f0047_0007
   - SC_f0047_0018
   - IR_f0047_0008
   - 🇸🇬 新加坡 | SGP 3
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇹🇼 🇨🇳 台湾 | TWN 7
-  - 🇹🇼 🇨🇳 台湾 | TWN 8
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 7
-  - 🇺🇸 美国 | USA 11
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -152,22 +123,20 @@ proxy-groups:
   - SC_f0047_0018
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇹🇼 🇨🇳 台湾 | TWN 7
-  - 🇹🇼 🇨🇳 台湾 | TWN 8
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 7
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - GB_f0047_0007
   - IR_f0047_0008
   - 🇸🇬 新加坡 | SGP 3
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇺🇸 美国 | USA 11
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -175,10 +144,12 @@ proxy-groups:
   proxies:
   - IR_f0047_0008
   - 🇸🇬 新加坡 | SGP 3
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇹🇼 🇨🇳 台湾 | TWN 7
-  - 🇹🇼 🇨🇳 台湾 | TWN 8
-  - 🇻🇳 越南 | VNM 5
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_f0047_0007
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204

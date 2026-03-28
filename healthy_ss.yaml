@@ -25,13 +25,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 8
-  server: r3mrcg007117fb8.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 76fd2910-8f2d-4f0f-883a-8da226f52000
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.50
   port: 38388
@@ -46,6 +39,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.226
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 5
   server: 103.186.155.35
   port: 38388
@@ -55,13 +55,6 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.154.219
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.226
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -83,12 +76,11 @@ proxy-groups:
   - SC_f0047_0018
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇹🇼 🇨🇳 台湾 | TWN 7
-  - 🇹🇼 🇨🇳 台湾 | TWN 8
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 7
 rules:
 - MATCH,AUTO
