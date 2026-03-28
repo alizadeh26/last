@@ -4,57 +4,68 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_40490_0035
-  server: 68.183.227.4
-  port: 8080
+- name: SC_f0047_0018
+  server: 154.223.16.212
+  port: 989
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 82.198.246.97
-  port: 180
+- name: IR_f0047_0008
+  server: v12.hdacd.com
+  port: 30812
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 0
   cipher: auto
   tls: false
-  servername: www.bing.com
+  skip-cert-verify: true
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: n8mrcg0059595fa.cybervena.com
+- name: 🇸🇬 新加坡 | SGP 3
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: r3mrcg007153btm.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 5
-  server: n8mrcg0060292s3.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 7
+  server: r3mrcg007168e8p.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 8
-  server: r3mrcg001188p8v.cybervena.com
+  server: r3mrcg007117fb8.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: 76fd2910-8f2d-4f0f-883a-8da226f52000
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.84
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.246
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: zz3.jishuyun.top
+  port: 10503
+  type: vmess
+  uuid: 957d12d8-048d-4b57-b09c-f19d027484a0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.baidu.com
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.50
@@ -63,33 +74,55 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.49
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
+- name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.52
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.20
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.35
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.154.164
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.219
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.226
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.155.119
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: static.ubejiasu.top
+  port: 31516
+  type: vmess
+  uuid: 957d12d8-048d-4b57-b09c-f19d027484a0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.baidu.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -97,52 +130,60 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_40490_0035
-  - 🇩🇪 德国 | DEU
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - SC_f0047_0018
+  - IR_f0047_0008
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇹🇼 🇨🇳 台湾 | TWN 7
   - 🇹🇼 🇨🇳 台湾 | TWN 8
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 8
+  - 🇺🇸 美国 | USA 11
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_40490_0035
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - SC_f0047_0018
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇹🇼 🇨🇳 台湾 | TWN 7
   - 🇹🇼 🇨🇳 台湾 | TWN 8
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 8
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
+  - IR_f0047_0008
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇺🇸 美国 | USA 11
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_40490_0035
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-- name: REGION-NA
+  - IR_f0047_0008
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇹🇼 🇨🇳 台湾 | TWN 7
+  - 🇹🇼 🇨🇳 台湾 | TWN 8
+  - 🇻🇳 越南 | VNM 5
+- name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
+  - SC_f0047_0018
 rules:
 - MATCH,AUTO
