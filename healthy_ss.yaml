@@ -11,6 +11,13 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
+- name: 🇫🇷 法国 | FRA 2
+  server: 13.37.222.70
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: n8mrcg0059595fa.cybervena.com
   port: 50099
@@ -39,8 +46,36 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.84
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.50
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 5
   server: 103.186.154.52
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.49
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.155
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -60,27 +95,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.49
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.84
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.50
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -88,15 +102,17 @@ proxy-groups:
   interval: 300
   proxies:
   - SC_ecabf_0018
+  - 🇫🇷 法国 | FRA 2
   - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇹🇼 🇨🇳 台湾 | TWN 5
   - 🇹🇼 🇨🇳 台湾 | TWN 8
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 8
 rules:
 - MATCH,AUTO
