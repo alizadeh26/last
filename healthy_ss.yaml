@@ -11,12 +11,12 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 5
-  server: n8mrcg0060292s3.cybervena.com
-  port: 50099
+- name: 🇫🇷 法国 | FRA 2
+  server: 13.37.222.70
+  port: 443
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: n8mrcg0059595fa.cybervena.com
@@ -25,12 +25,26 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 8
-  server: r3mrcg001188p8v.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 5
+  server: n8mrcg0060292s3.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.246
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.84
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.50
@@ -46,22 +60,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.84
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.246
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.155.49
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.155
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -74,6 +81,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.154.164
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -81,14 +95,16 @@ proxy-groups:
   interval: 300
   proxies:
   - SC_b06bf_0018
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇫🇷 法国 | FRA 2
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 8
+  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 8
 rules:
 - MATCH,AUTO
