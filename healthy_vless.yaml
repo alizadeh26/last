@@ -5,17 +5,14 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇳🇱 荷兰 | NLD
-  server: s678.ccgfw.top
+  server: cluster-usa.zmeet.video
   port: 443
   type: vless
-  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
+  uuid: 54cc54b2-77ad-4541-b7b6-7ac2053b60d4
   tls: true
-  servername: u710947u2968s678.ccgfw.top
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ssp
+  servername: cluster-usa.zmeet.video
+  client-fingerprint: safari
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
