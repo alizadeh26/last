@@ -4,14 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SC_f0047_0018
-  server: 154.223.16.212
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: GB_f0047_0007
+- name: GB_b06bf_0007
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -21,15 +14,49 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: r3mrcg007153btm.cybervena.com
+- name: SC_b06bf_0018
+  server: 154.223.16.212
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: IR_b06bf_0008
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: www.bing.com
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 5
+  server: n8mrcg0060292s3.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 7
-  server: r3mrcg007168e8p.cybervena.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: n8mrcg0059595fa.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 8
+  server: r3mrcg001188p8v.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -42,36 +69,36 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
+- name: 🇻🇳 越南 | VNM 5
   server: 103.186.154.52
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.226
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.84
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.35
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.246
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.219
+  server: 103.186.155.49
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.119
+  server: 103.186.155.20
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -83,14 +110,17 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SC_f0047_0018
-  - GB_f0047_0007
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇹🇼 🇨🇳 台湾 | TWN 7
+  - GB_b06bf_0007
+  - SC_b06bf_0018
+  - IR_b06bf_0008
+  - 🇩🇪 德国 | DEU
+  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 8
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 7
 - name: PROTO-SS
@@ -98,13 +128,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SC_f0047_0018
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇹🇼 🇨🇳 台湾 | TWN 7
+  - SC_b06bf_0018
+  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 8
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 7
 - name: PROTO-VMESS
@@ -112,24 +143,27 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_f0047_0007
+  - GB_b06bf_0007
+  - IR_b06bf_0008
+  - 🇩🇪 德国 | DEU
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 🇨🇳 台湾 | TWN
+  - IR_b06bf_0008
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_f0047_0007
+  - GB_b06bf_0007
+  - 🇩🇪 德国 | DEU
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SC_f0047_0018
+  - SC_b06bf_0018
 rules:
 - MATCH,AUTO
