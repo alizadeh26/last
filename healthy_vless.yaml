@@ -4,18 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
-  server: s678.ccgfw.top
-  port: 443
+- name: 🇺🇸 美国 | USA 4
+  server: openai.com
+  port: 2095
   type: vless
-  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
-  tls: true
-  servername: u710947u2968s678.ccgfw.top
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ssp
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-t.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -23,6 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
