@@ -4,17 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 6
-  server: 104.17.152.254
-  port: 80
+- name: 🇺🇸 美国 | USA 7
+  server: us-02.chunkyvpn.shop
+  port: 443
   type: vless
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
+  uuid: 6053689d-39d6-4005-b1bd-c0dce854f429
+  tls: true
+  flow: xtls-rprx-vision
+  servername: us-02.chunkyvpn.shop
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +21,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
