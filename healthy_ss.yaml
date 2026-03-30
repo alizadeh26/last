@@ -11,6 +11,13 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: 13.63.166.122
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 4
   server: namrcg002771r35.cybervena.com
   port: 50099
@@ -24,20 +31,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 2NjR8ef7LEDd3jeXdE6Pkd
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.85
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.37
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.50
@@ -53,6 +46,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.34
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 4
   server: 103.186.155.108
   port: 38388
@@ -60,8 +60,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.34
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.85
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.37
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -81,14 +88,15 @@ proxy-groups:
   interval: 300
   proxies:
   - SC_3cd20_0018
+  - 🇸🇪 瑞典 | SWE 2
   - 🇹🇼 🇨🇳 台湾 | TWN 4
   - 🇺🇸 美国 | USA 9
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 8
 rules:
 - MATCH,AUTO
