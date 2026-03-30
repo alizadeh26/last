@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SC_51370_0018
-  server: 154.223.16.212
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
 - name: IR_51370_0008
   server: v12.hdacd.com
   port: 30812
@@ -21,18 +14,12 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: qsybgp1-1-1000ws.1000ws.top
-  port: 80
-  type: vless
-  uuid: a223093f-0679-4d36-ba83-fedcd787d3da
-  tls: false
-  servername: qsybgp1-1-1000ws.1000ws.top
-  network: ws
-  ws-opts:
-    path: /grpchongkong4/
-    headers:
-      Host: 1000ws36.iptests.net
+- name: SC_51370_0018
+  server: 154.223.16.212
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 104.17.152.254
@@ -55,8 +42,8 @@ proxies:
   cipher: auto
   tls: false
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.65
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.105
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -64,13 +51,6 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.155.147
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.105
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -89,14 +69,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SC_51370_0018
   - IR_51370_0008
-  - 🇭🇰 香港 | HKG 6
+  - SC_51370_0018
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 8
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
@@ -104,16 +82,14 @@ proxy-groups:
   interval: 300
   proxies:
   - SC_51370_0018
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 6
   - 🇺🇸 美国 | USA 6
 - name: PROTO-VMESS
   type: url-test
@@ -128,15 +104,12 @@ proxy-groups:
   interval: 300
   proxies:
   - IR_51370_0008
-  - 🇭🇰 香港 | HKG 6
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 6
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
