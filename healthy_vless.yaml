@@ -4,18 +4,30 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 4
-  server: openai.com
-  port: 2095
+- name: 🇭🇰 香港 | HKG 6
+  server: qsybgp1-1-1000ws.1000ws.top
+  port: 80
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: a223093f-0679-4d36-ba83-fedcd787d3da
   tls: false
-  client-fingerprint: randomized
+  servername: qsybgp1-1-1000ws.1000ws.top
+  network: ws
+  ws-opts:
+    path: /grpchongkong4/
+    headers:
+      Host: 1000ws36.iptests.net
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 104.17.152.254
+  port: 80
+  type: vless
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-t.workers.dev
+      Host: vip.yaml7.ggff.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -23,6 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
+  - 🇭🇰 香港 | HKG 6
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO
