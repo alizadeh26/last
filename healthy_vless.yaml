@@ -4,15 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 7
-  server: us-02.chunkyvpn.shop
+- name: 🇻🇳 越南 | VNM 2
+  server: s228.okgg.top
   port: 443
   type: vless
-  uuid: 6053689d-39d6-4005-b1bd-c0dce854f429
+  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
   tls: true
   flow: xtls-rprx-vision
-  servername: us-02.chunkyvpn.shop
-  client-fingerprint: chrome
+  servername: u710947u6deds228.okgg.top
+  client-fingerprint: random
   network: tcp
   udp: true
 proxy-groups:
@@ -21,6 +21,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
+  - 🇻🇳 越南 | VNM 2
 rules:
 - MATCH,AUTO
