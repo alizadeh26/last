@@ -42,17 +42,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: s228.okgg.top
-  port: 443
-  type: vless
-  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710947u6deds228.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇻🇳 越南 | VNM 4
   server: 103.186.154.66
   port: 38388
@@ -85,7 +74,6 @@ proxy-groups:
   - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
@@ -101,12 +89,6 @@ proxy-groups:
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
