@@ -11,13 +11,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
-- name: 🇸🇬 新加坡 | SGP 19
-  server: 13.214.211.132
-  port: 12345
-  type: ss
-  cipher: aes-128-gcm
-  password: dfa9412e-4c5d-4af3-86c5-734f3f36cc0e
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: namrcg002801sc5.cybervena.com
   port: 50099
@@ -53,7 +46,6 @@ proxy-groups:
   interval: 300
   proxies:
   - ZA_3005f_0035
-  - 🇸🇬 新加坡 | SGP 19
   - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
