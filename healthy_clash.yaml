@@ -4,58 +4,50 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_3005f_0006
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: ZA_3005f_0035
+- name: ZA_24753_0035
   server: 102.133.165.160
   port: 16233
   type: ss
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: 166.88.99.80
-  port: 24106
-  type: vmess
-  uuid: bda150b1-067e-43ac-8b37-fe6a493bac13
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: namrcg002801sc5.cybervena.com
+  server: ncmrcg000116egb.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.216
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.202
+  server: 103.186.155.65
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.4
+  server: 103.186.154.66
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.125
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.9
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.139
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -67,47 +59,37 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_3005f_0006
-  - ZA_3005f_0035
-  - 🇯🇵 日本 | JPN 3
+  - ZA_24753_0035
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - ZA_3005f_0035
+  - ZA_24753_0035
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_3005f_0006
-  - 🇯🇵 日本 | JPN 3
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM
 - name: REGION-AF
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - ZA_3005f_0035
+  - ZA_24753_0035
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 3
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_3005f_0006
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO
