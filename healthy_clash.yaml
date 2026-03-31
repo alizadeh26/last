@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_83978_0006
+- name: GB_3005f_0006
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,76 +14,111 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: www.bing.com
+- name: 🇪🇸 西班牙 | ESP
+  server: 5.188.181.201
+  port: 9005
+  type: ss
+  cipher: aes-256-cfb
+  password: ZET59LF6DvCC8KVt
   udp: true
-- name: ZA_83978_0035
+- name: ZA_3005f_0035
   server: 102.133.165.160
   port: 16233
   type: ss
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
-- name: 🇮🇪 爱尔兰 | IRL
-  server: 108.131.224.21
-  port: 443
+- name: 🇦🇺 澳大利亚 | AUS
+  server: frk.fastsoonlink.com
+  port: 40012
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: chacha20-ietf-poly1305
+  password: c2b2fd63-521c-4cfa-b8dc-3c0c41a57b55
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: nnt.stardevs.top
-  port: 443
-  type: vless
-  uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: QsdftfvfD6Owl-SutPVzJTijXYmQO7LD_YR9mq1vqnI
-    short-id: b03a4d1767157467
-  servername: nnt.stardevs.top
-  client-fingerprint: chrome
-  network: tcp
+- name: 🇭🇰 香港 | HKG
+  server: hk.fastsoonlink.com
+  port: 40000
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: a59ad97d-dafc-46aa-82f5-f9af0289c56a
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: 166.88.99.80
+  port: 24106
+  type: vmess
+  uuid: bda150b1-067e-43ac-8b37-fe6a493bac13
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇮🇩 印尼 | IDN 2
+  server: idn.fastsoonlink.com
+  port: 40033
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c595b1fc-8233-4a34-9c6c-ebcd91f2c9cd
+  udp: true
+- name: 🇯🇵 日本 | JPN 2
+  server: jp.fastsoonlink.com
+  port: 40003
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 335cf133-c368-4bee-92f8-e80069a4bdbe
+  udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: ml.fastsoonlink.com
+  port: 40006
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c595b1fc-8233-4a34-9c6c-ebcd91f2c9cd
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 19
+  server: 13.214.211.132
+  port: 12345
+  type: ss
+  cipher: aes-128-gcm
+  password: dfa9412e-4c5d-4af3-86c5-734f3f36cc0e
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: r3mrcg001233myh.cybervena.com
+  server: namrcg002801sc5.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: r3mrcg007134n4g.cybervena.com
-  port: 50099
+  server: tw.fastsoonlink.com
+  port: 40020
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: a59ad97d-dafc-46aa-82f5-f9af0289c56a
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 82.198.246.46
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: 🇺🇸 美国 | USA
+  server: us.fastsoonlink.com
+  port: 40001
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c595b1fc-8233-4a34-9c6c-ebcd91f2c9cd
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.199
+  server: 103.186.154.216
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.213
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.202
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.4
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -95,59 +130,65 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_83978_0006
-  - 🇩🇪 德国 | DEU
-  - ZA_83978_0035
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇳🇱 荷兰 | NLD
+  - GB_3005f_0006
+  - 🇪🇸 西班牙 | ESP
+  - ZA_3005f_0035
+  - 🇦🇺 澳大利亚 | AUS
+  - 🇭🇰 香港 | HKG
+  - 🇯🇵 日本 | JPN 3
+  - 🇮🇩 印尼 | IDN 2
+  - 🇯🇵 日本 | JPN 2
+  - 🇲🇾 马来西亚 | MYS
+  - 🇸🇬 新加坡 | SGP 19
   - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - ZA_83978_0035
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇪🇸 西班牙 | ESP
+  - ZA_3005f_0035
+  - 🇦🇺 澳大利亚 | AUS
+  - 🇭🇰 香港 | HKG
+  - 🇮🇩 印尼 | IDN 2
+  - 🇯🇵 日本 | JPN 2
+  - 🇲🇾 马来西亚 | MYS
+  - 🇸🇬 新加坡 | SGP 19
   - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇺🇸 美国 | USA
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇳🇱 荷兰 | NLD
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_83978_0006
-  - 🇩🇪 德国 | DEU
-  - 🇺🇸 美国 | USA 8
+  - GB_3005f_0006
+  - 🇯🇵 日本 | JPN 3
 - name: REGION-AF
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - ZA_83978_0035
+  - ZA_3005f_0035
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇪🇸 西班牙 | ESP
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_83978_0006
-  - 🇩🇪 德国 | DEU
+  - GB_3005f_0006
 rules:
 - MATCH,AUTO
