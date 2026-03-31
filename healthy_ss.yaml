@@ -11,8 +11,8 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: VN_e8367_0065
-  server: 103.186.154.179
+- name: VN_e8367_0062
+  server: 103.186.155.48
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -25,8 +25,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e8367_0068
-  server: 103.186.154.208
+- name: VN_e8367_0065
+  server: 103.186.154.179
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -39,29 +39,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e8367_0069
-  server: 103.186.154.216
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e8367_0062
-  server: 103.186.155.48
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e8367_0067
-  server: 103.186.154.162
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e8367_0070
-  server: 103.186.154.168
+- name: VN_e8367_0068
+  server: 103.186.154.208
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -74,8 +53,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e8367_0072
-  server: 103.186.154.228
+- name: VN_e8367_0069
+  server: 103.186.154.216
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -88,15 +67,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e8367_0063
-  server: 103.186.154.141
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e8367_0074
-  server: 103.186.155.109
+- name: VN_e8367_0072
+  server: 103.186.154.228
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -109,8 +81,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e8367_0076
-  server: 103.186.155.129
+- name: VN_e8367_0074
+  server: 103.186.155.109
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -123,15 +95,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e8367_0078
-  server: 103.186.155.23
+- name: VN_e8367_0079
+  server: 103.186.155.70
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e8367_0079
-  server: 103.186.155.70
+- name: VN_e8367_0076
+  server: 103.186.155.129
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0078
+  server: 103.186.155.23
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -144,13 +123,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.40
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.238.214.82
   port: 41632
@@ -158,8 +130,8 @@ proxies:
   cipher: aes-256-cfb
   password: qwerREWQ@@
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.162
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.40
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -179,28 +151,24 @@ proxy-groups:
   interval: 300
   proxies:
   - MT_e8367_0027
-  - VN_e8367_0065
-  - VN_e8367_0064
-  - VN_e8367_0068
-  - VN_e8367_0066
-  - VN_e8367_0069
   - VN_e8367_0062
-  - VN_e8367_0067
-  - VN_e8367_0070
+  - VN_e8367_0064
+  - VN_e8367_0065
+  - VN_e8367_0066
+  - VN_e8367_0068
   - VN_e8367_0071
-  - VN_e8367_0072
+  - VN_e8367_0069
   - VN_e8367_0073
-  - VN_e8367_0063
-  - VN_e8367_0074
+  - VN_e8367_0072
   - VN_e8367_0075
-  - VN_e8367_0076
+  - VN_e8367_0074
   - VN_e8367_0077
-  - VN_e8367_0078
   - VN_e8367_0079
+  - VN_e8367_0076
+  - VN_e8367_0078
   - 🇹🇼 🇨🇳 台湾 | TWN 4
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
 rules:
 - MATCH,AUTO
