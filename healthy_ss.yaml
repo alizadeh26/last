@@ -4,50 +4,43 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: ZA_4058d_0035
+- name: ZA_83978_0035
   server: 102.133.165.160
   port: 16233
   type: ss
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 108.131.224.21
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: ncmrcg000116egb.cybervena.com
+  server: r3mrcg001233myh.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: r3mrcg007134n4g.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.139
+  server: 103.186.154.199
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.65
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.66
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.125
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.9
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.213
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -59,12 +52,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - ZA_4058d_0035
+  - ZA_83978_0035
+  - 🇮🇪 爱尔兰 | IRL
   - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 2
 rules:
 - MATCH,AUTO

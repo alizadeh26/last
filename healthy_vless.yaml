@@ -4,16 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇻🇳 越南 | VNM 2
-  server: s228.okgg.top
+- name: 🇮🇹 意大利 | ITA
+  server: itsea.osaip.net
   port: 443
   type: vless
-  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
+  uuid: f3a2714e-c9fa-46e3-8717-88772c8739c6
   tls: true
-  flow: xtls-rprx-vision
-  servername: u710947u6deds228.okgg.top
-  client-fingerprint: random
-  network: tcp
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
   udp: true
 proxy-groups:
 - name: AUTO
@@ -21,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM 2
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO
