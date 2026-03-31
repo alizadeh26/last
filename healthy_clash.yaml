@@ -14,33 +14,12 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇪🇸 西班牙 | ESP
-  server: 5.188.181.201
-  port: 9005
-  type: ss
-  cipher: aes-256-cfb
-  password: ZET59LF6DvCC8KVt
-  udp: true
 - name: ZA_3005f_0035
   server: 102.133.165.160
   port: 16233
   type: ss
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: frk.fastsoonlink.com
-  port: 40012
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c2b2fd63-521c-4cfa-b8dc-3c0c41a57b55
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: hk.fastsoonlink.com
-  port: 40000
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: a59ad97d-dafc-46aa-82f5-f9af0289c56a
   udp: true
 - name: 🇯🇵 日本 | JPN 3
   server: 166.88.99.80
@@ -53,27 +32,6 @@ proxies:
   network: ws
   ws-opts:
     path: /arki
-  udp: true
-- name: 🇮🇩 印尼 | IDN 2
-  server: idn.fastsoonlink.com
-  port: 40033
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c595b1fc-8233-4a34-9c6c-ebcd91f2c9cd
-  udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: jp.fastsoonlink.com
-  port: 40003
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 335cf133-c368-4bee-92f8-e80069a4bdbe
-  udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: ml.fastsoonlink.com
-  port: 40006
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c595b1fc-8233-4a34-9c6c-ebcd91f2c9cd
   udp: true
 - name: 🇸🇬 新加坡 | SGP 19
   server: 13.214.211.132
@@ -88,20 +46,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: tw.fastsoonlink.com
-  port: 40020
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: a59ad97d-dafc-46aa-82f5-f9af0289c56a
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: us.fastsoonlink.com
-  port: 40001
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c595b1fc-8233-4a34-9c6c-ebcd91f2c9cd
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.216
@@ -131,18 +75,10 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_3005f_0006
-  - 🇪🇸 西班牙 | ESP
   - ZA_3005f_0035
-  - 🇦🇺 澳大利亚 | AUS
-  - 🇭🇰 香港 | HKG
   - 🇯🇵 日本 | JPN 3
-  - 🇮🇩 印尼 | IDN 2
-  - 🇯🇵 日本 | JPN 2
-  - 🇲🇾 马来西亚 | MYS
   - 🇸🇬 新加坡 | SGP 19
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇺🇸 美国 | USA
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
@@ -151,17 +87,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 | ESP
   - ZA_3005f_0035
-  - 🇦🇺 澳大利亚 | AUS
-  - 🇭🇰 香港 | HKG
-  - 🇮🇩 印尼 | IDN 2
-  - 🇯🇵 日本 | JPN 2
-  - 🇲🇾 马来西亚 | MYS
   - 🇸🇬 新加坡 | SGP 19
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇺🇸 美国 | USA
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
@@ -178,12 +106,12 @@ proxy-groups:
   interval: 300
   proxies:
   - ZA_3005f_0035
-- name: REGION-EU
+- name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 | ESP
+  - 🇯🇵 日本 | JPN 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
