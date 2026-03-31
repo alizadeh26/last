@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_24753_0006
+- name: GB_e8367_0007
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,12 +14,36 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: IR_e8367_0017
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 | JPN 6
+  server: 50.114.113.203
+  port: 20202
+  type: vmess
+  uuid: 15f6c2dd-a251-44b3-9b73-5a737ae8d2cd
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_24753_0006
+  - GB_e8367_0007
+  - IR_e8367_0017
+  - 🇯🇵 日本 | JPN 6
 rules:
 - MATCH,AUTO

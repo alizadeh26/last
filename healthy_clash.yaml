@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_24753_0006
+- name: GB_e8367_0007
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,50 +14,179 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: ZA_24753_0035
-  server: 102.133.165.160
-  port: 16233
+- name: MT_e8367_0027
+  server: 171.22.254.17
+  port: 989
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: ncmrcg000116egb.cybervena.com
+- name: IR_e8367_0017
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: US_e8367_0057
+  server: kinopl20.dramatorg.net
+  port: 443
+  type: vless
+  uuid: f25eb463-e242-4fa9-b174-c305af3ab95e
+  tls: true
+  skip-cert-verify: true
+  servername: kinopl20.dramatorg.net
+  udp: true
+- name: VN_e8367_0062
+  server: 103.186.155.48
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0066
+  server: 103.186.154.199
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0064
+  server: 103.186.155.213
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0065
+  server: 103.186.154.179
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0068
+  server: 103.186.154.208
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0063
+  server: 103.186.154.141
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0069
+  server: 103.186.154.216
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0071
+  server: 103.186.154.241
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0072
+  server: 103.186.154.228
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0073
+  server: 103.186.154.60
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0075
+  server: 103.186.155.112
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0074
+  server: 103.186.155.109
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0077
+  server: 103.186.155.239
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0076
+  server: 103.186.155.129
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e8367_0079
+  server: 103.186.155.70
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇯🇵 日本 | JPN 6
+  server: 50.114.113.203
+  port: 20202
+  type: vmess
+  uuid: 15f6c2dd-a251-44b3-9b73-5a737ae8d2cd
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: VN_e8367_0078
+  server: 103.186.155.23
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 4
+  server: nbmrcg003482y3p.cybervena.com
   port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.65
+  server: 103.186.155.40
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.125
-  port: 38388
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.238.214.82
+  port: 41632
   type: ss
   cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  password: qwerREWQ@@
   udp: true
 - name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.66
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.139
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.9
+  server: 103.186.155.105
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -69,49 +198,89 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_24753_0006
-  - ZA_24753_0035
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - GB_e8367_0007
+  - MT_e8367_0027
+  - IR_e8367_0017
+  - US_e8367_0057
+  - VN_e8367_0062
+  - VN_e8367_0066
+  - VN_e8367_0064
+  - VN_e8367_0065
+  - VN_e8367_0068
+  - VN_e8367_0063
+  - VN_e8367_0069
+  - VN_e8367_0071
+  - VN_e8367_0072
+  - VN_e8367_0073
+  - VN_e8367_0075
+  - VN_e8367_0074
+  - VN_e8367_0077
+  - VN_e8367_0076
+  - VN_e8367_0079
+  - 🇯🇵 日本 | JPN 6
+  - VN_e8367_0078
+  - 🇹🇼 🇨🇳 台湾 | TWN 4
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - ZA_24753_0035
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - MT_e8367_0027
+  - VN_e8367_0062
+  - VN_e8367_0066
+  - VN_e8367_0064
+  - VN_e8367_0065
+  - VN_e8367_0068
+  - VN_e8367_0063
+  - VN_e8367_0069
+  - VN_e8367_0071
+  - VN_e8367_0072
+  - VN_e8367_0073
+  - VN_e8367_0075
+  - VN_e8367_0074
+  - VN_e8367_0077
+  - VN_e8367_0076
+  - VN_e8367_0079
+  - VN_e8367_0078
+  - 🇹🇼 🇨🇳 台湾 | TWN 4
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 6
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - US_e8367_0057
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_24753_0006
-- name: REGION-AF
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - ZA_24753_0035
+  - GB_e8367_0007
+  - IR_e8367_0017
+  - 🇯🇵 日本 | JPN 6
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - IR_e8367_0017
+  - VN_e8367_0071
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - MT_e8367_0027
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_24753_0006
+  - GB_e8367_0007
 rules:
 - MATCH,AUTO

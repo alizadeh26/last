@@ -4,19 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
-  server: nnt.stardevs.top
+- name: US_e8367_0057
+  server: kinopl20.dramatorg.net
   port: 443
   type: vless
-  uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
+  uuid: f25eb463-e242-4fa9-b174-c305af3ab95e
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: QsdftfvfD6Owl-SutPVzJTijXYmQO7LD_YR9mq1vqnI
-    short-id: b03a4d1767157467
-  servername: nnt.stardevs.top
-  client-fingerprint: chrome
-  network: tcp
+  skip-cert-verify: true
+  servername: kinopl20.dramatorg.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,6 +19,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
+  - US_e8367_0057
 rules:
 - MATCH,AUTO
