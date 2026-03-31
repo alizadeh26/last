@@ -4,6 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: GB_24753_0006
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: ZA_24753_0035
   server: 102.133.165.160
   port: 16233
@@ -18,15 +28,15 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.139
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.65
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.65
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.125
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -39,8 +49,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.125
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.139
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -59,12 +69,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - GB_24753_0006
   - ZA_24753_0035
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 6
 - name: PROTO-SS
   type: url-test
@@ -73,11 +84,17 @@ proxy-groups:
   proxies:
   - ZA_24753_0035
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 6
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_24753_0006
 - name: REGION-AF
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -90,8 +107,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_24753_0006
 rules:
 - MATCH,AUTO

@@ -18,15 +18,15 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.139
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.65
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.65
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.125
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -39,8 +39,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.125
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.139
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -61,10 +61,10 @@ proxy-groups:
   proxies:
   - ZA_24753_0035
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 6
 rules:
 - MATCH,AUTO

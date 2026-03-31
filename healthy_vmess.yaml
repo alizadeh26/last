@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_3005f_0006
+- name: GB_24753_0006
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,25 +14,12 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: 166.88.99.80
-  port: 24106
-  type: vmess
-  uuid: bda150b1-067e-43ac-8b37-fe6a493bac13
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_3005f_0006
-  - 🇯🇵 日本 | JPN 3
+  - GB_24753_0006
 rules:
 - MATCH,AUTO
