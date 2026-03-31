@@ -4,32 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: ZA_83978_0035
-  server: 102.133.165.160
-  port: 16233
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 🇮🇪 爱尔兰 | IRL
-  server: 108.131.224.21
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: itsea.osaip.net
-  port: 443
-  type: vless
-  uuid: f3a2714e-c9fa-46e3-8717-88772c8739c6
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
 - name: GB_83978_0006
   server: 82.198.246.97
   port: 180
@@ -49,6 +23,34 @@ proxies:
   cipher: auto
   tls: false
   servername: www.bing.com
+  udp: true
+- name: ZA_83978_0035
+  server: 102.133.165.160
+  port: 16233
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  udp: true
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 108.131.224.21
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: nnt.stardevs.top
+  port: 443
+  type: vless
+  uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: QsdftfvfD6Owl-SutPVzJTijXYmQO7LD_YR9mq1vqnI
+    short-id: b03a4d1767157467
+  servername: nnt.stardevs.top
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: r3mrcg001233myh.cybervena.com
@@ -93,11 +95,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - ZA_83978_0035
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇮🇹 意大利 | ITA
   - GB_83978_0006
   - 🇩🇪 德国 | DEU
+  - ZA_83978_0035
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇳🇱 荷兰 | NLD
   - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇺🇸 美国 | USA 8
@@ -119,7 +121,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
+  - 🇳🇱 荷兰 | NLD
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -140,6 +142,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇮🇪 爱尔兰 | IRL
-  - 🇮🇹 意大利 | ITA
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_83978_0006
+  - 🇩🇪 德国 | DEU
 rules:
 - MATCH,AUTO
