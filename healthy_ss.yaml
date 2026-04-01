@@ -11,6 +11,13 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
+- name: VN_45cdb_0064
+  server: 103.186.155.213
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_45cdb_0062
   server: 103.186.155.48
   port: 38388
@@ -32,13 +39,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_45cdb_0069
-  server: 103.186.154.216
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: VN_45cdb_0068
   server: 103.186.154.208
   port: 38388
@@ -46,8 +46,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_45cdb_0072
-  server: 103.186.154.228
+- name: VN_45cdb_0069
+  server: 103.186.154.216
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -67,22 +67,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_45cdb_0072
+  server: 103.186.154.228
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_45cdb_0074
   server: 103.186.155.109
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_45cdb_0075
-  server: 103.186.155.112
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_45cdb_0076
-  server: 103.186.155.129
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -95,8 +88,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_45cdb_0064
-  server: 103.186.155.213
+- name: VN_45cdb_0076
+  server: 103.186.155.129
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_45cdb_0075
+  server: 103.186.155.112
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -130,15 +130,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.125
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.9
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.9
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.125
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -151,24 +151,24 @@ proxy-groups:
   interval: 300
   proxies:
   - MT_45cdb_0027
+  - VN_45cdb_0064
   - VN_45cdb_0062
   - VN_45cdb_0065
   - VN_45cdb_0066
-  - VN_45cdb_0069
   - VN_45cdb_0068
-  - VN_45cdb_0072
+  - VN_45cdb_0069
   - VN_45cdb_0071
   - VN_45cdb_0073
+  - VN_45cdb_0072
   - VN_45cdb_0074
-  - VN_45cdb_0075
-  - VN_45cdb_0076
   - VN_45cdb_0077
-  - VN_45cdb_0064
+  - VN_45cdb_0076
+  - VN_45cdb_0075
   - VN_45cdb_0078
   - VN_45cdb_0079
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 5
 rules:
 - MATCH,AUTO
