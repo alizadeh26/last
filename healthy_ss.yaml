@@ -11,13 +11,6 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: VN_bec3c_0062
-  server: 103.186.155.48
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: VN_bec3c_0064
   server: 103.186.155.213
   port: 38388
@@ -39,6 +32,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_bec3c_0062
+  server: 103.186.155.48
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_bec3c_0068
   server: 103.186.154.208
   port: 38388
@@ -46,22 +46,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_bec3c_0069
-  server: 103.186.154.216
+- name: VN_bec3c_0071
+  server: 103.186.154.241
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_bec3c_0073
-  server: 103.186.154.60
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_bec3c_0074
-  server: 103.186.155.109
+- name: VN_bec3c_0063
+  server: 103.186.154.141
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -74,8 +67,29 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_bec3c_0071
-  server: 103.186.154.241
+- name: VN_bec3c_0070
+  server: 103.186.154.168
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_bec3c_0074
+  server: 103.186.155.109
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_bec3c_0073
+  server: 103.186.154.60
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_bec3c_0075
+  server: 103.186.155.112
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -95,15 +109,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_bec3c_0079
-  server: 103.186.155.70
+- name: VN_bec3c_0078
+  server: 103.186.155.23
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_bec3c_0078
-  server: 103.186.155.23
+- name: VN_bec3c_0079
+  server: 103.186.155.70
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -116,6 +130,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
+- name: VN_bec3c_0069
+  server: 103.186.154.216
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_bec3c_0067
+  server: 103.186.154.162
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -123,20 +151,24 @@ proxy-groups:
   interval: 300
   proxies:
   - MT_bec3c_0027
-  - VN_bec3c_0062
   - VN_bec3c_0064
   - VN_bec3c_0066
   - VN_bec3c_0065
+  - VN_bec3c_0062
   - VN_bec3c_0068
-  - VN_bec3c_0069
-  - VN_bec3c_0073
-  - VN_bec3c_0074
-  - VN_bec3c_0072
   - VN_bec3c_0071
+  - VN_bec3c_0063
+  - VN_bec3c_0072
+  - VN_bec3c_0070
+  - VN_bec3c_0074
+  - VN_bec3c_0073
+  - VN_bec3c_0075
   - VN_bec3c_0076
   - VN_bec3c_0077
-  - VN_bec3c_0079
   - VN_bec3c_0078
+  - VN_bec3c_0079
   - 🇹🇼 🇨🇳 台湾 | TWN
+  - VN_bec3c_0069
+  - VN_bec3c_0067
 rules:
 - MATCH,AUTO
