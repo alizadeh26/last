@@ -4,14 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_e8367_0057
-  server: kinopl20.dramatorg.net
+- name: 🇺🇸 美国 | USA 13
+  server: s175.okgg.top
   port: 443
   type: vless
-  uuid: f25eb463-e242-4fa9-b174-c305af3ab95e
+  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
   tls: true
-  skip-cert-verify: true
-  servername: kinopl20.dramatorg.net
+  flow: xtls-rprx-vision
+  servername: u710947ud086s175.okgg.top
+  client-fingerprint: random
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -19,6 +21,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_e8367_0057
+  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO
