@@ -53,8 +53,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_a722f_0063
+  server: 103.186.154.141
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_a722f_0067
   server: 103.186.154.162
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_a722f_0070
+  server: 103.186.154.168
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -74,13 +88,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0073
-  server: 103.186.154.60
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: VN_a722f_0074
   server: 103.186.155.109
   port: 38388
@@ -88,22 +95,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0070
-  server: 103.186.154.168
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a722f_0079
-  server: 103.186.155.70
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a722f_0077
-  server: 103.186.155.239
+- name: VN_a722f_0073
+  server: 103.186.154.60
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -116,8 +109,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_a722f_0077
+  server: 103.186.155.239
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_a722f_0076
   server: 103.186.155.129
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_a722f_0079
+  server: 103.186.155.70
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -143,16 +150,17 @@ proxy-groups:
   - VN_a722f_0065
   - VN_a722f_0068
   - VN_a722f_0069
+  - VN_a722f_0063
   - VN_a722f_0067
+  - VN_a722f_0070
   - VN_a722f_0071
   - VN_a722f_0072
-  - VN_a722f_0073
   - VN_a722f_0074
-  - VN_a722f_0070
-  - VN_a722f_0079
-  - VN_a722f_0077
+  - VN_a722f_0073
   - VN_a722f_0075
+  - VN_a722f_0077
   - VN_a722f_0076
+  - VN_a722f_0079
   - VN_a722f_0078
 rules:
 - MATCH,AUTO
