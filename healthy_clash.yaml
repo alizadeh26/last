@@ -4,14 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: MT_a722f_0027
+- name: MT_bec3c_0027
   server: 171.22.254.17
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: IR_a722f_0017
+- name: IR_bec3c_0017
   server: v12.hdacd.com
   port: 30812
   type: vmess
@@ -21,141 +21,110 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: VN_a722f_0064
-  server: 103.186.155.213
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a722f_0062
+- name: VN_bec3c_0062
   server: 103.186.155.48
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0066
+- name: VN_bec3c_0064
+  server: 103.186.155.213
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_bec3c_0066
   server: 103.186.154.199
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0065
+- name: VN_bec3c_0065
   server: 103.186.154.179
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0068
+- name: VN_bec3c_0068
   server: 103.186.154.208
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0069
+- name: VN_bec3c_0069
   server: 103.186.154.216
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0063
-  server: 103.186.154.141
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a722f_0067
-  server: 103.186.154.162
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a722f_0070
-  server: 103.186.154.168
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: GB_a722f_0007
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: VN_a722f_0071
-  server: 103.186.154.241
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a722f_0072
-  server: 103.186.154.228
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a722f_0074
-  server: 103.186.155.109
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a722f_0073
+- name: VN_bec3c_0073
   server: 103.186.154.60
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0075
-  server: 103.186.155.112
+- name: VN_bec3c_0074
+  server: 103.186.155.109
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0077
-  server: 103.186.155.239
+- name: VN_bec3c_0072
+  server: 103.186.154.228
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0076
+- name: VN_bec3c_0071
+  server: 103.186.154.241
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_bec3c_0076
   server: 103.186.155.129
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0079
+- name: VN_bec3c_0077
+  server: 103.186.155.239
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_bec3c_0079
   server: 103.186.155.70
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a722f_0078
+- name: VN_bec3c_0078
   server: 103.186.155.23
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: namrcg002771r35.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 proxy-groups:
 - name: AUTO
@@ -163,70 +132,62 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - MT_a722f_0027
-  - IR_a722f_0017
-  - VN_a722f_0064
-  - VN_a722f_0062
-  - VN_a722f_0066
-  - VN_a722f_0065
-  - VN_a722f_0068
-  - VN_a722f_0069
-  - VN_a722f_0063
-  - VN_a722f_0067
-  - VN_a722f_0070
-  - GB_a722f_0007
-  - VN_a722f_0071
-  - VN_a722f_0072
-  - VN_a722f_0074
-  - VN_a722f_0073
-  - VN_a722f_0075
-  - VN_a722f_0077
-  - VN_a722f_0076
-  - VN_a722f_0079
-  - VN_a722f_0078
+  - MT_bec3c_0027
+  - IR_bec3c_0017
+  - VN_bec3c_0062
+  - VN_bec3c_0064
+  - VN_bec3c_0066
+  - VN_bec3c_0065
+  - VN_bec3c_0068
+  - VN_bec3c_0069
+  - VN_bec3c_0073
+  - VN_bec3c_0074
+  - VN_bec3c_0072
+  - VN_bec3c_0071
+  - VN_bec3c_0076
+  - VN_bec3c_0077
+  - VN_bec3c_0079
+  - VN_bec3c_0078
+  - 🇹🇼 🇨🇳 台湾 | TWN
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - MT_a722f_0027
-  - VN_a722f_0064
-  - VN_a722f_0062
-  - VN_a722f_0066
-  - VN_a722f_0065
-  - VN_a722f_0068
-  - VN_a722f_0069
-  - VN_a722f_0063
-  - VN_a722f_0067
-  - VN_a722f_0070
-  - VN_a722f_0071
-  - VN_a722f_0072
-  - VN_a722f_0074
-  - VN_a722f_0073
-  - VN_a722f_0075
-  - VN_a722f_0077
-  - VN_a722f_0076
-  - VN_a722f_0079
-  - VN_a722f_0078
+  - MT_bec3c_0027
+  - VN_bec3c_0062
+  - VN_bec3c_0064
+  - VN_bec3c_0066
+  - VN_bec3c_0065
+  - VN_bec3c_0068
+  - VN_bec3c_0069
+  - VN_bec3c_0073
+  - VN_bec3c_0074
+  - VN_bec3c_0072
+  - VN_bec3c_0071
+  - VN_bec3c_0076
+  - VN_bec3c_0077
+  - VN_bec3c_0079
+  - VN_bec3c_0078
+  - 🇹🇼 🇨🇳 台湾 | TWN
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_a722f_0017
-  - GB_a722f_0007
+  - IR_bec3c_0017
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_a722f_0017
-  - VN_a722f_0064
+  - IR_bec3c_0017
+  - VN_bec3c_0062
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - MT_a722f_0027
+  - MT_bec3c_0027
 rules:
 - MATCH,AUTO
