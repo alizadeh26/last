@@ -14,15 +14,25 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: VN_4eed9_0062
-  server: 103.186.155.48
+- name: IR_4eed9_0017
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: VN_4eed9_0064
+  server: 103.186.155.213
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_4eed9_0064
-  server: 103.186.155.213
+- name: VN_4eed9_0062
+  server: 103.186.155.48
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -49,13 +59,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_4eed9_0067
-  server: 103.186.154.162
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: VN_4eed9_0069
   server: 103.186.154.216
   port: 38388
@@ -63,15 +66,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_4eed9_0071
-  server: 103.186.154.241
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_4eed9_0063
-  server: 103.186.154.141
+- name: VN_4eed9_0067
+  server: 103.186.154.162
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -84,15 +80,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_4eed9_0073
-  server: 103.186.154.60
+- name: VN_4eed9_0074
+  server: 103.186.155.109
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_4eed9_0074
-  server: 103.186.155.109
+- name: VN_4eed9_0073
+  server: 103.186.154.60
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -105,8 +101,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_4eed9_0076
-  server: 103.186.155.129
+- name: VN_4eed9_0063
+  server: 103.186.154.141
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -119,6 +115,20 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_4eed9_0071
+  server: 103.186.154.241
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_4eed9_0076
+  server: 103.186.155.129
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_4eed9_0078
   server: 103.186.155.23
   port: 38388
@@ -126,19 +136,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: s175.okgg.top
-  port: 443
-  type: vless
-  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u710947ud086s175.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: VN_4eed9_0079
   server: 103.186.155.70
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_4eed9_0070
+  server: 103.186.154.168
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -158,69 +164,64 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_4eed9_0007
-  - VN_4eed9_0062
+  - IR_4eed9_0017
   - VN_4eed9_0064
+  - VN_4eed9_0062
   - VN_4eed9_0066
   - VN_4eed9_0065
   - VN_4eed9_0068
-  - VN_4eed9_0067
   - VN_4eed9_0069
-  - VN_4eed9_0071
-  - VN_4eed9_0063
+  - VN_4eed9_0067
   - VN_4eed9_0072
-  - VN_4eed9_0073
   - VN_4eed9_0074
+  - VN_4eed9_0073
   - VN_4eed9_0075
-  - VN_4eed9_0076
+  - VN_4eed9_0063
   - VN_4eed9_0077
+  - VN_4eed9_0071
+  - VN_4eed9_0076
   - VN_4eed9_0078
-  - 🇺🇸 美国 | USA 13
   - VN_4eed9_0079
+  - VN_4eed9_0070
   - MT_4eed9_0027
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_4eed9_0062
   - VN_4eed9_0064
+  - VN_4eed9_0062
   - VN_4eed9_0066
   - VN_4eed9_0065
   - VN_4eed9_0068
-  - VN_4eed9_0067
   - VN_4eed9_0069
-  - VN_4eed9_0071
-  - VN_4eed9_0063
+  - VN_4eed9_0067
   - VN_4eed9_0072
-  - VN_4eed9_0073
   - VN_4eed9_0074
+  - VN_4eed9_0073
   - VN_4eed9_0075
-  - VN_4eed9_0076
+  - VN_4eed9_0063
   - VN_4eed9_0077
+  - VN_4eed9_0071
+  - VN_4eed9_0076
   - VN_4eed9_0078
   - VN_4eed9_0079
+  - VN_4eed9_0070
   - MT_4eed9_0027
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 13
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - GB_4eed9_0007
+  - IR_4eed9_0017
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_4eed9_0062
+  - IR_4eed9_0017
   - VN_4eed9_0064
-  - VN_4eed9_0066
-  - VN_4eed9_0075
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
