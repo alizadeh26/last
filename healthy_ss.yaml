@@ -25,15 +25,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_ce466_0066
-  server: 103.186.154.199
+- name: VN_ce466_0065
+  server: 103.186.154.179
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_ce466_0065
-  server: 103.186.154.179
+- name: VN_ce466_0066
+  server: 103.186.154.199
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -60,6 +60,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_ce466_0073
+  server: 103.186.154.60
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_ce466_0072
   server: 103.186.154.228
   port: 38388
@@ -69,41 +76,6 @@ proxies:
   udp: true
 - name: VN_ce466_0074
   server: 103.186.155.109
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_ce466_0077
-  server: 103.186.155.239
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_ce466_0079
-  server: 103.186.155.70
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_ce466_0078
-  server: 103.186.155.23
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.220
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_ce466_0073
-  server: 103.186.154.60
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -123,6 +95,48 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_ce466_0077
+  server: 103.186.155.239
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_ce466_0078
+  server: 103.186.155.23
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_ce466_0079
+  server: 103.186.155.70
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_ce466_0067
+  server: 103.186.154.162
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.220
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_ce466_0070
+  server: 103.186.154.168
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -132,19 +146,21 @@ proxy-groups:
   - MT_ce466_0027
   - VN_ce466_0062
   - VN_ce466_0064
-  - VN_ce466_0066
   - VN_ce466_0065
+  - VN_ce466_0066
   - VN_ce466_0068
   - VN_ce466_0069
   - VN_ce466_0071
+  - VN_ce466_0073
   - VN_ce466_0072
   - VN_ce466_0074
-  - VN_ce466_0077
-  - VN_ce466_0079
-  - VN_ce466_0078
-  - 🇻🇳 越南 | VNM
-  - VN_ce466_0073
   - VN_ce466_0075
   - VN_ce466_0076
+  - VN_ce466_0077
+  - VN_ce466_0078
+  - VN_ce466_0079
+  - VN_ce466_0067
+  - 🇻🇳 越南 | VNM
+  - VN_ce466_0070
 rules:
 - MATCH,AUTO

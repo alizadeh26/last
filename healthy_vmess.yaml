@@ -14,16 +14,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: IR_ce466_0017
-  server: v12.hdacd.com
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -31,6 +21,5 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_ce466_0007
-  - IR_ce466_0017
 rules:
 - MATCH,AUTO
