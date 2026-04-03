@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: MT_636c8_0027
+  server: 171.22.254.17
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
 - name: VN_636c8_0062
   server: 103.186.155.48
   port: 38388
@@ -32,6 +39,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_636c8_0063
+  server: 103.186.154.141
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_636c8_0068
   server: 103.186.154.208
   port: 38388
@@ -46,8 +60,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_636c8_0067
+  server: 103.186.154.162
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_636c8_0071
   server: 103.186.154.241
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_636c8_0072
+  server: 103.186.154.228
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -60,8 +88,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_636c8_0072
-  server: 103.186.154.228
+- name: VN_636c8_0070
+  server: 103.186.154.168
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -81,13 +109,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_636c8_0076
-  server: 103.186.155.129
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: VN_636c8_0077
   server: 103.186.155.239
   port: 38388
@@ -95,8 +116,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_636c8_0067
-  server: 103.186.154.162
+- name: VN_636c8_0076
+  server: 103.186.155.129
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -116,35 +137,30 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: MT_636c8_0027
-  server: 171.22.254.17
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - MT_636c8_0027
   - VN_636c8_0062
   - VN_636c8_0064
   - VN_636c8_0065
   - VN_636c8_0066
+  - VN_636c8_0063
   - VN_636c8_0068
   - VN_636c8_0069
+  - VN_636c8_0067
   - VN_636c8_0071
-  - VN_636c8_0073
   - VN_636c8_0072
+  - VN_636c8_0073
+  - VN_636c8_0070
   - VN_636c8_0074
   - VN_636c8_0075
-  - VN_636c8_0076
   - VN_636c8_0077
-  - VN_636c8_0067
+  - VN_636c8_0076
   - VN_636c8_0078
   - VN_636c8_0079
-  - MT_636c8_0027
 rules:
 - MATCH,AUTO
