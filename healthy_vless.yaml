@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: BR_debb8_0003
+- name: BR_a411c_0003
   server: uk1.fromblancwithlove.com
   port: 8443
   type: vless
@@ -18,6 +18,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BR_debb8_0003
+  - BR_a411c_0003
 rules:
 - MATCH,AUTO
