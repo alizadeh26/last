@@ -12,15 +12,15 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: VN_debb8_0074
-  server: 103.186.154.172
+- name: VN_debb8_0073
+  server: 103.186.154.251
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_debb8_0073
-  server: 103.186.154.251
+- name: VN_debb8_0074
+  server: 103.186.154.172
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -57,8 +57,8 @@ proxy-groups:
   interval: 300
   proxies:
   - BR_debb8_0003
-  - VN_debb8_0074
   - VN_debb8_0073
+  - VN_debb8_0074
   - VN_debb8_0075
   - IR_debb8_0059
   - 🇻🇳 越南 | VNM
@@ -67,8 +67,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_debb8_0074
   - VN_debb8_0073
+  - VN_debb8_0074
   - VN_debb8_0075
   - 🇻🇳 越南 | VNM
 - name: PROTO-VLESS
@@ -88,8 +88,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_debb8_0074
   - VN_debb8_0073
+  - VN_debb8_0074
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
