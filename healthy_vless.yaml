@@ -4,16 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 13
-  server: s175.okgg.top
-  port: 443
+- name: BR_debb8_0003
+  server: uk1.fromblancwithlove.com
+  port: 8443
   type: vless
-  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
   tls: true
-  flow: xtls-rprx-vision
-  servername: u710947ud086s175.okgg.top
-  client-fingerprint: random
-  network: tcp
+  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: AUTO
@@ -21,6 +18,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 13
+  - BR_debb8_0003
 rules:
 - MATCH,AUTO
