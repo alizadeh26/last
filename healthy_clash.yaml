@@ -22,6 +22,13 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: VN_82bc5_0073
+  server: 103.186.154.251
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_82bc5_0074
   server: 103.186.154.172
   port: 38388
@@ -29,8 +36,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_82bc5_0073
-  server: 103.186.154.251
+- name: VN_82bc5_0075
+  server: 103.186.155.80
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.24
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.121
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -45,27 +66,6 @@ proxies:
   cipher: auto
   tls: false
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.121
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.24
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_82bc5_0075
-  server: 103.186.155.80
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -74,22 +74,22 @@ proxy-groups:
   proxies:
   - BR_82bc5_0003
   - IR_82bc5_0059
-  - VN_82bc5_0074
   - VN_82bc5_0073
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
+  - VN_82bc5_0074
   - VN_82bc5_0075
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
+  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_82bc5_0074
   - VN_82bc5_0073
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
+  - VN_82bc5_0074
   - VN_82bc5_0075
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -109,7 +109,7 @@ proxy-groups:
   interval: 300
   proxies:
   - IR_82bc5_0059
-  - VN_82bc5_0074
+  - VN_82bc5_0073
   - 🇸🇬 新加坡 | SGP 2
 - name: REGION-EU
   type: url-test
