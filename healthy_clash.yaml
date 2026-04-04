@@ -43,18 +43,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: itsea.osaip.net
-  port: 443
-  type: vless
-  uuid: 2abee161-5637-4673-9594-df78813953ea
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.242
   port: 38388
@@ -62,15 +50,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.224
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.178
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.178
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.224
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -101,10 +89,9 @@ proxy-groups:
   - VN_3ed17_0073
   - VN_3ed17_0074
   - VN_3ed17_0075
-  - 🇮🇹 意大利 | ITA
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
 - name: PROTO-SS
@@ -116,8 +103,8 @@ proxy-groups:
   - VN_3ed17_0074
   - VN_3ed17_0075
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
 - name: PROTO-VLESS
@@ -126,7 +113,6 @@ proxy-groups:
   interval: 300
   proxies:
   - BR_3ed17_0003
-  - 🇮🇹 意大利 | ITA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
