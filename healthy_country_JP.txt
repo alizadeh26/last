@@ -1,8 +1,9 @@
 trojan://9f7d5cb76d1645101994d9b25891e3b7@160.16.106.99:2001?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_040418005
-trojan://9f7d5cb76d1645101994d9b25891e3b7@160.16.85.33:4674?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_040418003
 trojan://9f7d5cb76d1645101994d9b25891e3b7@160.16.72.205:4937?allowInsecure=0&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_040418007
-trojan://9f7d5cb76d1645101994d9b25891e3b7@160.16.132.38:3057?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_040418002
 trojan://9f7d5cb76d1645101994d9b25891e3b7@160.16.85.33:4380?allowInsecure=0&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_040418011
+trojan://9f7d5cb76d1645101994d9b25891e3b7@160.16.85.33:4674?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_040418003
+trojan://9f7d5cb76d1645101994d9b25891e3b7@160.16.132.38:3057?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_040418002
+vless://52c3e040-f7a4-4f69-86a4-13019fde4584@147.45.49.184:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=jp.pink-service.ru&pbk=2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0&sid=86b80f1e713a33ad#🇯🇵 611 - JP - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11201#🇯🇵 89 - JP - SS/AEAD - 11201
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11202#🇯🇵 90 - JP - SS/AEAD - 11202
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11203#🇯🇵 91 - JP - SS/AEAD - 11203

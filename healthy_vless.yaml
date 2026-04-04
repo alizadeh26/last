@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: BR_03ad3_0003
+- name: BR_3ed17_0003
   server: uk1.fromblancwithlove.com
   port: 8443
   type: vless
@@ -12,12 +12,25 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: itsea.osaip.net
+  port: 443
+  type: vless
+  uuid: 2abee161-5637-4673-9594-df78813953ea
+  tls: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BR_03ad3_0003
+  - BR_3ed17_0003
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO
