@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: BR_a411c_0003
+- name: BR_82bc5_0003
   server: uk1.fromblancwithlove.com
   port: 8443
   type: vless
@@ -12,7 +12,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: IR_a411c_0059
+- name: IR_82bc5_0059
   server: v12.hdacd.com
   port: 30812
   type: vmess
@@ -22,28 +22,44 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: VN_a411c_0073
-  server: 103.186.154.251
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a411c_0074
+- name: VN_82bc5_0074
   server: 103.186.154.172
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.62
+- name: VN_82bc5_0073
+  server: 103.186.154.251
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a411c_0075
+- name: 🇸🇬 新加坡 | SGP 2
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.121
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.24
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_82bc5_0075
   server: 103.186.155.80
   port: 38388
   type: ss
@@ -56,48 +72,50 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BR_a411c_0003
-  - IR_a411c_0059
-  - VN_a411c_0073
-  - VN_a411c_0074
+  - BR_82bc5_0003
+  - IR_82bc5_0059
+  - VN_82bc5_0074
+  - VN_82bc5_0073
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
-  - VN_a411c_0075
+  - VN_82bc5_0075
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_a411c_0073
-  - VN_a411c_0074
+  - VN_82bc5_0074
+  - VN_82bc5_0073
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
-  - VN_a411c_0075
+  - VN_82bc5_0075
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BR_a411c_0003
+  - BR_82bc5_0003
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_a411c_0059
+  - IR_82bc5_0059
+  - 🇸🇬 新加坡 | SGP 2
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_a411c_0059
-  - VN_a411c_0073
-  - VN_a411c_0074
-  - 🇻🇳 越南 | VNM
-  - VN_a411c_0075
+  - IR_82bc5_0059
+  - VN_82bc5_0074
+  - 🇸🇬 新加坡 | SGP 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BR_a411c_0003
+  - BR_82bc5_0003
 rules:
 - MATCH,AUTO
