@@ -12,15 +12,18 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
+- name: IR_c017f_0059
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: VN_c017f_0073
   server: 103.186.154.251
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_c017f_0074
-  server: 103.186.154.172
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -33,27 +36,12 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: IR_c017f_0059
-  server: v12.hdacd.com
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: itsea.osaip.net
-  port: 443
-  type: vless
-  uuid: 3fa52b26-f1f9-42ff-aafe-78fc1d5daab4
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
+- name: VN_c017f_0074
+  server: 103.186.154.172
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 82.198.246.250
@@ -76,6 +64,16 @@ proxies:
     headers:
       Host: vip.yaml7.ggff.net
   udp: true
+- name: 🇵🇪 秘鲁 | PER
+  server: pe1.bctuo.top
+  port: 443
+  type: vmess
+  uuid: 31801968-9877-4ef5-be87-56503c34a69d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -83,28 +81,27 @@ proxy-groups:
   interval: 300
   proxies:
   - BR_c017f_0003
-  - VN_c017f_0073
-  - VN_c017f_0074
-  - VN_c017f_0075
   - IR_c017f_0059
-  - 🇮🇹 意大利 | ITA
+  - VN_c017f_0073
+  - VN_c017f_0075
+  - VN_c017f_0074
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 6
+  - 🇵🇪 秘鲁 | PER
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - VN_c017f_0073
-  - VN_c017f_0074
   - VN_c017f_0075
+  - VN_c017f_0074
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - BR_c017f_0003
-  - 🇮🇹 意大利 | ITA
   - 🇺🇸 美国 | USA 6
 - name: PROTO-VMESS
   type: url-test
@@ -113,13 +110,14 @@ proxy-groups:
   proxies:
   - IR_c017f_0059
   - 🇺🇸 美国 | USA 4
+  - 🇵🇪 秘鲁 | PER
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - IR_c017f_0059
   - VN_c017f_0073
-  - VN_c017f_0074
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204

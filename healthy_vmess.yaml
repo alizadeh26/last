@@ -23,6 +23,16 @@ proxies:
   cipher: auto
   tls: false
   udp: true
+- name: 🇵🇪 秘鲁 | PER
+  server: pe1.bctuo.top
+  port: 443
+  type: vmess
+  uuid: 31801968-9877-4ef5-be87-56503c34a69d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -31,5 +41,6 @@ proxy-groups:
   proxies:
   - IR_c017f_0059
   - 🇺🇸 美国 | USA 4
+  - 🇵🇪 秘鲁 | PER
 rules:
 - MATCH,AUTO

@@ -11,15 +11,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_c017f_0074
-  server: 103.186.154.172
+- name: VN_c017f_0075
+  server: 103.186.155.80
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_c017f_0075
-  server: 103.186.155.80
+- name: VN_c017f_0074
+  server: 103.186.154.172
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -32,7 +32,7 @@ proxy-groups:
   interval: 300
   proxies:
   - VN_c017f_0073
-  - VN_c017f_0074
   - VN_c017f_0075
+  - VN_c017f_0074
 rules:
 - MATCH,AUTO
