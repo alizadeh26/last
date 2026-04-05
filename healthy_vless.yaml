@@ -12,18 +12,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: itsea.osaip.net
-  port: 443
-  type: vless
-  uuid: 3fa52b26-f1f9-42ff-aafe-78fc1d5daab4
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -31,6 +19,5 @@ proxy-groups:
   interval: 300
   proxies:
   - BR_fed45_0003
-  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO
