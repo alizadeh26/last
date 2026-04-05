@@ -12,6 +12,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
+- name: VN_28d03_0073
+  server: 103.186.154.251
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: IR_28d03_0059
   server: v12.hdacd.com
   port: 30812
@@ -21,13 +28,6 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-  udp: true
-- name: VN_28d03_0073
-  server: 103.186.154.251
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: VN_28d03_0074
   server: 103.186.154.172
@@ -43,32 +43,11 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: usrna.osaip.net
-  port: 15055
-  type: vless
-  uuid: 0f999552-f7f5-460b-8b88-d075a7633c96
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
 - name: 🇺🇸 美国 | USA 11
   server: 43.153.79.68
   port: 39567
   type: vmess
   uuid: 49f0b27d-a882-4a79-bad6-db9c87fb12a7
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 9
-  server: 151.242.180.91
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 0
   cipher: auto
   tls: false
@@ -80,6 +59,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇸🇬 新加坡 | SGP 9
+  server: 151.242.180.91
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -87,14 +75,13 @@ proxy-groups:
   interval: 300
   proxies:
   - BR_28d03_0003
-  - IR_28d03_0059
   - VN_28d03_0073
+  - IR_28d03_0059
   - VN_28d03_0074
   - VN_28d03_0075
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 11
-  - 🇸🇬 新加坡 | SGP 9
   - 🇻🇳 越南 | VNM
+  - 🇸🇬 新加坡 | SGP 9
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -110,7 +97,6 @@ proxy-groups:
   interval: 300
   proxies:
   - BR_28d03_0003
-  - 🇺🇸 美国 | USA 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -124,8 +110,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_28d03_0059
   - VN_28d03_0073
+  - IR_28d03_0059
   - 🇸🇬 新加坡 | SGP 9
 - name: REGION-EU
   type: url-test
