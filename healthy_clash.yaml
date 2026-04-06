@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: BR_fed45_0003
+- name: BR_c0d86_0003
   server: uk1.fromblancwithlove.com
   port: 8443
   type: vless
@@ -12,7 +12,38 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: IR_fed45_0059
+- name: 🇩🇪 德国 | DEU
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: www.bing.com
+  udp: true
+- name: VN_c0d86_0073
+  server: 103.186.154.251
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_c0d86_0074
+  server: 103.186.154.172
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_c0d86_0075
+  server: 103.186.155.80
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: IR_c0d86_0059
   server: v12.hdacd.com
   port: 30812
   type: vmess
@@ -22,61 +53,53 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: VN_fed45_0073
-  server: 103.186.154.251
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇫🇮 芬兰 | FIN
+  server: 85.192.61.106
+  port: 2053
+  type: vless
+  uuid: 838dc870-d43e-4c85-9aef-a3b03419a3ee
+  tls: false
+  network: tcp
   udp: true
-- name: VN_fed45_0075
-  server: 103.186.155.80
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇮🇱 以色列 | ISR
+  server: cf.0sm.com
+  port: 80
+  type: vless
+  uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
   udp: true
-- name: VN_fed45_0074
-  server: 103.186.154.172
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇳🇱 荷兰 | NLD
+  server: 104.17.254.236
+  port: 80
+  type: vless
+  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netherlands.xydcqd.workers.dev
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.224
+  server: 103.186.155.84
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.187
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.67
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.149
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.168
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇸🇬 新加坡 | SGP 9
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
   udp: true
 proxy-groups:
 - name: AUTO
@@ -84,53 +107,60 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BR_fed45_0003
-  - IR_fed45_0059
-  - VN_fed45_0073
-  - VN_fed45_0075
-  - VN_fed45_0074
+  - BR_c0d86_0003
+  - 🇩🇪 德国 | DEU
+  - VN_c0d86_0073
+  - VN_c0d86_0074
+  - VN_c0d86_0075
+  - IR_c0d86_0059
+  - 🇫🇮 芬兰 | FIN
+  - 🇮🇱 以色列 | ISR
+  - 🇳🇱 荷兰 | NLD
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
+  - 🇸🇬 新加坡 | SGP 9
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_fed45_0073
-  - VN_fed45_0075
-  - VN_fed45_0074
+  - VN_c0d86_0073
+  - VN_c0d86_0074
+  - VN_c0d86_0075
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BR_fed45_0003
+  - BR_c0d86_0003
+  - 🇫🇮 芬兰 | FIN
+  - 🇮🇱 以色列 | ISR
+  - 🇳🇱 荷兰 | NLD
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_fed45_0059
+  - 🇩🇪 德国 | DEU
+  - IR_c0d86_0059
+  - 🇸🇬 新加坡 | SGP 9
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_fed45_0059
-  - VN_fed45_0073
+  - VN_c0d86_0073
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BR_fed45_0003
+  - BR_c0d86_0003
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU
 rules:
 - MATCH,AUTO

@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: BR_fed45_0003
+- name: BR_c0d86_0003
   server: uk1.fromblancwithlove.com
   port: 8443
   type: vless
@@ -12,12 +12,47 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
+- name: 🇫🇮 芬兰 | FIN
+  server: 85.192.61.106
+  port: 2053
+  type: vless
+  uuid: 838dc870-d43e-4c85-9aef-a3b03419a3ee
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇮🇱 以色列 | ISR
+  server: cf.0sm.com
+  port: 80
+  type: vless
+  uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 104.17.254.236
+  port: 80
+  type: vless
+  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netherlands.xydcqd.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BR_fed45_0003
+  - BR_c0d86_0003
+  - 🇫🇮 芬兰 | FIN
+  - 🇮🇱 以色列 | ISR
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
