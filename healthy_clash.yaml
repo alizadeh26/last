@@ -4,67 +4,76 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IR_ab7db_0006
-  server: v12.hdacd.com
-  port: 30812
+- name: 🇺🇸 美国 | USA
+  server: 82.198.246.250
+  port: 180
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 104.17.152.254
-  port: 80
+- name: 🇱🇻 拉脱维亚 | LVA 2
+  server: lv89.mechvpn.online
+  port: 443
   type: vless
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
+  uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.4
+  server: 103.186.154.47
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.226
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.142
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.85
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.42
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 37.sahanwickramasinghevip.shop
-  port: 443
-  type: vless
-  uuid: c4108e57-c74e-4480-b4e2-db56a517877b
-  tls: true
-  servername: 37.sahanwickramasinghevip.shop
-  network: tcp
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.43
+  server: 103.186.154.161
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.157
+  server: 103.186.154.239
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.154.42
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.159
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.154.18
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -76,49 +85,58 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_ab7db_0006
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA
+  - 🇱🇻 拉脱维亚 | LVA 2
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇱🇻 拉脱维亚 | LVA 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_ab7db_0006
+  - 🇺🇸 美国 | USA
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_ab7db_0006
   - 🇻🇳 越南 | VNM
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇱🇻 拉脱维亚 | LVA 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

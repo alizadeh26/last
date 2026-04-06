@@ -4,25 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 7
-  server: 104.17.152.254
-  port: 80
-  type: vless
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 37.sahanwickramasinghevip.shop
+- name: 🇱🇻 拉脱维亚 | LVA 2
+  server: lv89.mechvpn.online
   port: 443
   type: vless
-  uuid: c4108e57-c74e-4480-b4e2-db56a517877b
+  uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
   tls: true
-  servername: 37.sahanwickramasinghevip.shop
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
   network: tcp
   udp: true
 proxy-groups:
@@ -31,7 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇱🇻 拉脱维亚 | LVA 2
 rules:
 - MATCH,AUTO
