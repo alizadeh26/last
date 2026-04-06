@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: BR_c0d86_0003
+- name: BR_1b4e4_0003
   server: uk1.fromblancwithlove.com
   port: 8443
   type: vless
@@ -12,29 +12,14 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: 🇮🇱 以色列 | ISR
-  server: cf.0sm.com
-  port: 80
+- name: 🇸🇬 新加坡 | SGP 2
+  server: node1.nanonet.host
+  port: 22539
   type: vless
-  uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 104.17.254.236
-  port: 80
-  type: vless
-  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: netherlands.xydcqd.workers.dev
+  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
+  tls: true
+  servername: node1.nanonet.host
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -42,8 +27,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BR_c0d86_0003
-  - 🇮🇱 以色列 | ISR
-  - 🇳🇱 荷兰 | NLD
+  - BR_1b4e4_0003
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO
