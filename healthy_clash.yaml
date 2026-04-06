@@ -14,12 +14,19 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 50.19.33.104
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 54.246.75.250
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: 112.213.102.188
+  port: 41632
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 104.17.152.254
@@ -33,20 +40,6 @@ proxies:
     headers:
       Host: vip.yaml7.ggff.net
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.42
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.4
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.43
   port: 38388
@@ -54,8 +47,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.85
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.4
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -70,12 +63,19 @@ proxies:
   servername: 37.sahanwickramasinghevip.shop
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 112.213.102.188
-  port: 41632
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.42
+  port: 38388
   type: ss
   cipher: aes-256-cfb
-  password: qwerREWQ@@
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.85
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 5
   server: 103.186.154.143
@@ -91,6 +91,16 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -98,27 +108,28 @@ proxy-groups:
   interval: 300
   proxies:
   - IR_ab7db_0006
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 7
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇮🇪 爱尔兰 | IRL
   - 🇭🇰 香港 | HKG
+  - 🇺🇸 美国 | USA 7
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
+  - 🇺🇸 美国 | USA 9
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 8
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
+  - 🇮🇪 爱尔兰 | IRL
   - 🇭🇰 香港 | HKG
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
 - name: PROTO-VLESS
@@ -134,18 +145,19 @@ proxy-groups:
   interval: 300
   proxies:
   - IR_ab7db_0006
+  - 🇺🇸 美国 | USA 9
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - IR_ab7db_0006
-- name: REGION-NA
+  - 🇭🇰 香港 | HKG
+- name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 7
+  - 🇮🇪 爱尔兰 | IRL
 rules:
 - MATCH,AUTO

@@ -4,15 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 8
-  server: 50.19.33.104
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 54.246.75.250
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.42
+- name: 🇭🇰 香港 | HKG
+  server: 112.213.102.188
+  port: 41632
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.43
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -25,8 +32,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.43
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.42
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -38,13 +45,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 112.213.102.188
-  port: 41632
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
   udp: true
 - name: 🇻🇳 越南 | VNM 5
   server: 103.186.154.143
@@ -66,12 +66,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 8
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
+  - 🇮🇪 爱尔兰 | IRL
   - 🇭🇰 香港 | HKG
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
 rules:
