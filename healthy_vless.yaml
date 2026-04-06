@@ -4,21 +4,25 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: BR_1b4e4_0003
-  server: uk1.fromblancwithlove.com
-  port: 8443
+- name: 🇺🇸 美国 | USA 7
+  server: 104.17.152.254
+  port: 80
   type: vless
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  tls: true
-  skip-cert-verify: true
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vip.yaml7.ggff.net
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: node1.nanonet.host
-  port: 22539
+- name: 🇸🇬 新加坡 | SGP 7
+  server: 37.sahanwickramasinghevip.shop
+  port: 443
   type: vless
-  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
+  uuid: c4108e57-c74e-4480-b4e2-db56a517877b
   tls: true
-  servername: node1.nanonet.host
+  servername: 37.sahanwickramasinghevip.shop
   network: tcp
   udp: true
 proxy-groups:
@@ -27,7 +31,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - BR_1b4e4_0003
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 7
+  - 🇸🇬 新加坡 | SGP 7
 rules:
 - MATCH,AUTO
