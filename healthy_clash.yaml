@@ -28,6 +28,15 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA
+  server: 82.198.246.250
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  udp: true
 - name: 🇱🇻 拉脱维亚 | LVA 2
   server: lv89.mechvpn.online
   port: 443
@@ -38,14 +47,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 82.198.246.250
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.239
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.47
@@ -54,15 +61,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.154.42
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.239
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.154.18
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -75,15 +75,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.142
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.154.42
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.159
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.142
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -96,8 +96,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.154.18
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.159
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -111,29 +111,29 @@ proxy-groups:
   proxies:
   - IR_3050f_0006
   - 🇬🇧 英国 | GBR
-  - 🇱🇻 拉脱维亚 | LVA 2
   - 🇺🇸 美国 | USA
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 8
+  - 🇱🇻 拉脱维亚 | LVA 2
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -160,6 +160,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR
-  - 🇱🇻 拉脱维亚 | LVA 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
