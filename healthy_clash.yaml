@@ -22,15 +22,15 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: VN_1b4e4_0075
-  server: 103.186.155.80
+- name: VN_1b4e4_0073
+  server: 103.186.154.251
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_1b4e4_0073
-  server: 103.186.154.251
+- name: VN_1b4e4_0075
+  server: 103.186.155.80
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -52,15 +52,6 @@ proxies:
   cipher: auto
   tls: false
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 151.242.180.91
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: v30.hdacd.com
   port: 30830
@@ -70,6 +61,15 @@ proxies:
   cipher: auto
   tls: false
   servername: img14.360buyimg.com
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 151.242.180.91
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
   udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: node1.nanonet.host
@@ -108,6 +108,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.163
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -116,29 +123,31 @@ proxy-groups:
   proxies:
   - BR_1b4e4_0003
   - IR_1b4e4_0059
-  - VN_1b4e4_0075
   - VN_1b4e4_0073
+  - VN_1b4e4_0075
   - VN_1b4e4_0074
   - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP 3
   - 🇳🇱 荷兰 | NLD
+  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 2
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_1b4e4_0075
   - VN_1b4e4_0073
+  - VN_1b4e4_0075
   - VN_1b4e4_0074
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -153,17 +162,17 @@ proxy-groups:
   proxies:
   - IR_1b4e4_0059
   - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP 3
   - 🇳🇱 荷兰 | NLD
+  - 🇸🇬 新加坡 | SGP 3
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - IR_1b4e4_0059
-  - VN_1b4e4_0075
-  - 🇸🇬 新加坡 | SGP 3
+  - VN_1b4e4_0073
   - 🇳🇱 荷兰 | NLD
+  - 🇸🇬 新加坡 | SGP 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204

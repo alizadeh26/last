@@ -23,15 +23,6 @@ proxies:
   cipher: auto
   tls: false
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 151.242.180.91
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: v30.hdacd.com
   port: 30830
@@ -42,6 +33,15 @@ proxies:
   tls: false
   servername: img14.360buyimg.com
   udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 151.242.180.91
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -50,7 +50,7 @@ proxy-groups:
   proxies:
   - IR_1b4e4_0059
   - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP 3
   - 🇳🇱 荷兰 | NLD
+  - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO
