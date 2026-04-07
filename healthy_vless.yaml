@@ -4,29 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: gbr1.frostbot.ru
-  port: 6443
+- name: 🇺🇸 美国 | USA 7
+  server: usrna.osaip.net
+  port: 15055
   type: vless
-  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
+  uuid: fe5711b0-3732-44c0-9210-0bfd58e58958
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
-    short-id: b9605803fb4b
-  servername: gbr1.frostbot.ru
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 2
-  server: lv89.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
-  tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  network: tcp
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
   udp: true
 proxy-groups:
 - name: AUTO
@@ -34,7 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇱🇻 拉脱维亚 | LVA 2
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
