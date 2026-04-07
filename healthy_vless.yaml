@@ -4,14 +4,28 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 10
-  server: s570.okgfw.top
+- name: 🇬🇧 英国 | GBR
+  server: gbr1.frostbot.ru
+  port: 6443
+  type: vless
+  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
+    short-id: b9605803fb4b
+  servername: gbr1.frostbot.ru
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: s173.okgg.top
   port: 443
   type: vless
   uuid: 872624ac-aa40-39b1-8232-f7270812c234
   tls: true
   flow: xtls-rprx-vision
-  servername: u711541u604fs570.okgfw.top
+  servername: u711541ua226s173.okgg.top
   client-fingerprint: random
   network: tcp
   udp: true
@@ -21,6 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
+  - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
