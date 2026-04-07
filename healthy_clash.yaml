@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IR_3050f_0006
+- name: IR_e6643_0006
   server: v12.hdacd.com
   port: 30812
   type: vmess
@@ -14,90 +14,36 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: gbr1.frostbot.ru
-  port: 6443
-  type: vless
-  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
-    short-id: b9605803fb4b
-  servername: gbr1.frostbot.ru
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 82.198.246.250
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 2
-  server: lv89.mechvpn.online
+- name: 🇺🇸 美国 | USA 9
+  server: 98.94.81.104
   port: 443
-  type: vless
-  uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.239
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.223
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.47
+  server: 103.186.154.57
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.154.18
-  port: 38388
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
   type: ss
   cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.226
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.154.42
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.142
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.161
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.159
+  server: 103.186.154.152
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -109,62 +55,40 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_3050f_0006
-  - 🇬🇧 英国 | GBR
-  - 🇺🇸 美国 | USA
-  - 🇱🇻 拉脱维亚 | LVA 2
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
+  - IR_e6643_0006
+  - 🇺🇸 美国 | USA 9
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
+  - 🇵🇹 葡萄牙 | PRT
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
+  - 🇺🇸 美国 | USA 9
   - 🇻🇳 越南 | VNM 3
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇱🇻 拉脱维亚 | LVA 2
+  - 🇻🇳 越南 | VNM
+  - 🇵🇹 葡萄牙 | PRT
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_3050f_0006
-  - 🇺🇸 美国 | USA
+  - IR_e6643_0006
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_3050f_0006
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR
+  - IR_e6643_0006
+  - 🇻🇳 越南 | VNM 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO

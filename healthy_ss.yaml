@@ -4,57 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.239
+- name: 🇺🇸 美国 | USA 9
+  server: 98.94.81.104
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.223
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.47
+  server: 103.186.154.57
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.154.18
-  port: 38388
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
   type: ss
   cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.226
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.154.42
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.142
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.161
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.159
+  server: 103.186.154.152
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -66,13 +45,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
+  - 🇺🇸 美国 | USA 9
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
+  - 🇵🇹 葡萄牙 | PRT
+  - 🇻🇳 越南 | VNM 4
 rules:
 - MATCH,AUTO
