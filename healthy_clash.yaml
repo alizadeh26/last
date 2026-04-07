@@ -24,17 +24,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: s570.okgfw.top
-  port: 443
-  type: vless
-  uuid: 872624ac-aa40-39b1-8232-f7270812c234
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u711541u604fs570.okgfw.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 4
   server: 151.242.180.91
   port: 30812
@@ -43,13 +32,6 @@ proxies:
   alterId: 0
   cipher: auto
   tls: false
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.213
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.9
@@ -65,8 +47,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.36
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.213
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -74,6 +56,13 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.154.55
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.36
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -101,13 +90,12 @@ proxy-groups:
   proxies:
   - IR_3a184_0006
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 10
   - 🇸🇬 新加坡 | SGP 4
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 7
 - name: PROTO-SS
@@ -115,19 +103,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 7
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 10
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -143,12 +125,12 @@ proxy-groups:
   proxies:
   - IR_3a184_0006
   - 🇸🇬 新加坡 | SGP 4
+  - 🇻🇳 越南 | VNM 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
