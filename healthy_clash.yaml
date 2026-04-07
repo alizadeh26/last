@@ -4,6 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇬🇧 英国 | GBR
+  server: gbr1.frostbot.ru
+  port: 6443
+  type: vless
+  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
+    short-id: b9605803fb4b
+  servername: gbr1.frostbot.ru
+  client-fingerprint: random
+  network: tcp
+  udp: true
 - name: 🇭🇰 香港 | HKG 9
   server: 112.213.102.188
   port: 41632
@@ -39,13 +53,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.150
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.149
   port: 38388
@@ -53,19 +60,12 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: gbr1.frostbot.ru
-  port: 6443
-  type: vless
-  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
-    short-id: b9605803fb4b
-  servername: gbr1.frostbot.ru
-  client-fingerprint: random
-  network: tcp
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.150
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -73,14 +73,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇬🇧 英国 | GBR
   - 🇭🇰 香港 | HKG 9
   - 🇺🇸 美国 | USA
   - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
-  - 🇬🇧 英国 | GBR
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -91,8 +91,8 @@ proxy-groups:
   - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -110,7 +110,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇹 葡萄牙 | PRT
+  - 🇬🇧 英国 | GBR
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
