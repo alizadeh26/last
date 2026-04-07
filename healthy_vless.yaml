@@ -4,17 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 7
-  server: usrna.osaip.net
-  port: 15055
+- name: 🇺🇸 美国 | USA 10
+  server: s570.okgfw.top
+  port: 443
   type: vless
-  uuid: fe5711b0-3732-44c0-9210-0bfd58e58958
+  uuid: 872624ac-aa40-39b1-8232-f7270812c234
   tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
+  flow: xtls-rprx-vision
+  servername: u711541u604fs570.okgfw.top
+  client-fingerprint: random
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +21,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
