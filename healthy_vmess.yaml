@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IR_3da89_0006
+- name: IR_c11eb_0006
   server: v12.hdacd.com
   port: 30812
   type: vmess
@@ -20,6 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_3da89_0006
+  - IR_c11eb_0006
 rules:
 - MATCH,AUTO
