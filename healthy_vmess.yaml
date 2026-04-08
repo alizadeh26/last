@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_91d74_0009
-  server: 82.198.246.97
-  port: 180
+- name: IR_91d74_0034
+  server: v12.hdacd.com
+  port: 30812
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 0
   cipher: auto
   tls: false
@@ -23,29 +23,13 @@ proxies:
   cipher: auto
   tls: false
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: m.cnmjin.net
-  port: 16616
-  type: vmess
-  uuid: b688ce0f-9201-4e8e-a67a-f3be2c6aa201
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 7a297964a2b31dafd3529ef4d14574b9.mobgslb.tbcache.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_91d74_0009
+  - IR_91d74_0034
   - 🇺🇸 美国 | USA 7
-  - 🇹🇼 🇨🇳 台湾 | TWN
 rules:
 - MATCH,AUTO
