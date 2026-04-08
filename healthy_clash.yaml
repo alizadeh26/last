@@ -4,60 +4,31 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IR_78870_0006
-  server: v12.hdacd.com
-  port: 30812
+- name: GB_91d74_0009
+  server: 82.198.246.97
+  port: 180
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇦🇺 澳大利亚 | AUS
+- name: 🇯🇵 日本 | JPN 25
   server: gw.lydwan.com
-  port: 35608
+  port: 35603
   type: ss
   cipher: chacha20-ietf-poly1305
   password: b421832d-9964-4519-b4b3-e52a7be8b31b
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 5.188.190.252
-  port: 22324
+- name: 🇺🇸 美国 | USA 7
+  server: 82.198.246.250
+  port: 180
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.21
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.123
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.31
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.143
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: m.cnmjin.net
@@ -80,39 +51,36 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_78870_0006
-  - 🇦🇺 澳大利亚 | AUS
-  - 🇹🇷 土耳其 | TUR
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
+  - GB_91d74_0009
+  - 🇯🇵 日本 | JPN 25
+  - 🇺🇸 美国 | USA 7
   - 🇹🇼 🇨🇳 台湾 | TWN
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 | AUS
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 3
+  - 🇯🇵 日本 | JPN 25
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_78870_0006
-  - 🇹🇷 土耳其 | TUR
+  - GB_91d74_0009
+  - 🇺🇸 美国 | USA 7
   - 🇹🇼 🇨🇳 台湾 | TWN
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_78870_0006
-  - 🇦🇺 澳大利亚 | AUS
-  - 🇹🇷 土耳其 | TUR
+  - 🇯🇵 日本 | JPN 25
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - GB_91d74_0009
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO

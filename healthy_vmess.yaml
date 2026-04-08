@@ -4,25 +4,24 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IR_78870_0006
-  server: v12.hdacd.com
-  port: 30812
+- name: GB_91d74_0009
+  server: 82.198.246.97
+  port: 180
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 5.188.190.252
-  port: 22324
+- name: 🇺🇸 美国 | USA 7
+  server: 82.198.246.250
+  port: 180
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: m.cnmjin.net
@@ -45,8 +44,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_78870_0006
-  - 🇹🇷 土耳其 | TUR
+  - GB_91d74_0009
+  - 🇺🇸 美国 | USA 7
   - 🇹🇼 🇨🇳 台湾 | TWN
 rules:
 - MATCH,AUTO
