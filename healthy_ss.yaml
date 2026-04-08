@@ -11,13 +11,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.175
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.38
   port: 38388
@@ -25,8 +18,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.43
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.175
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -39,6 +32,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.43
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -46,9 +46,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇮🇪 爱尔兰 | IRL
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
 rules:
 - MATCH,AUTO
