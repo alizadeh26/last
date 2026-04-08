@@ -4,36 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇪 爱尔兰 | IRL
-  server: 46.137.38.144
-  port: 443
+- name: 🇬🇧 英国 | GBR
+  server: mn.qwer-cn.org
+  port: 10929
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-128-gcm
+  password: c1e93142-d092-4bc6-8723-0352ae6b1d74
+  udp: true
+- name: 🇭🇰 香港 | HKG 11
+  server: 95.40.66.13
+  port: 663
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: daeeed82-f7df-439b-9caf-d77b4bf0b7ce
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.38
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.175
+  server: 103.186.154.162
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.27
+  server: 103.186.155.40
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.43
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.23
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -45,10 +45,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇬🇧 英国 | GBR
+  - 🇭🇰 香港 | HKG 11
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 2
 rules:
 - MATCH,AUTO

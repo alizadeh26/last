@@ -4,26 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA 5
-  server: itsea.osaip.net
+- name: 🇩🇪 德国 | DEU 3
+  server: e1-f55.pages.dev
   port: 443
   type: vless
-  uuid: ac6f2dc3-7a82-4dfb-bfe3-6719c6566ca8
+  uuid: 8b5acf77-2c2e-4eed-9ad1-be81851b99ea
   tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: node1.nanonet.host
-  port: 22539
-  type: vless
-  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
-  tls: true
-  servername: node1.nanonet.host
-  network: tcp
+  servername: E1-F55.pAgeS.dEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: e1-f55.pages.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -31,7 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 5
-  - 🇺🇸 美国 | USA 11
+  - 🇩🇪 德国 | DEU 3
 rules:
 - MATCH,AUTO
