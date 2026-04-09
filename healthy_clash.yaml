@@ -28,16 +28,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: v30.hdacd.com
-  port: 30830
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: img14.360buyimg.com
-  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: t.cnmjcn.cyou
   port: 16618
@@ -62,7 +52,6 @@ proxy-groups:
   - GB_c3aeb_0009
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇳🇱 荷兰 | NLD
   - 🇸🇬 新加坡 | SGP
 - name: PROTO-SS
   type: url-test
@@ -77,7 +66,6 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_c3aeb_0009
-  - 🇳🇱 荷兰 | NLD
   - 🇸🇬 新加坡 | SGP
 - name: REGION-AS
   type: url-test
