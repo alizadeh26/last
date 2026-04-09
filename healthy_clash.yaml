@@ -4,16 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_ebba2_0009
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: IR_ebba2_0034
   server: v12.hdacd.com
   port: 30812
@@ -51,13 +41,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.193
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.143
   port: 38388
@@ -65,15 +48,12 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: a.cdn-bilibili.cn
-  port: 60776
-  type: vmess
-  uuid: e42e75bb-e320-4a99-80c7-80150e923380
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.193
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: t.cnmjcn.cyou
@@ -90,40 +70,48 @@ proxies:
     headers:
       Host: 7a297964a2b31dafd3529ef4d14574b9.mobgslb.tbcache.com
   udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: a.cdn-bilibili.cn
+  port: 60776
+  type: vmess
+  uuid: e42e75bb-e320-4a99-80c7-80150e923380
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_ebba2_0009
   - IR_ebba2_0034
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM
-  - 🇺🇸 美国 | USA 5
+  - 🇻🇳 越南 | VNM 3
   - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_ebba2_0009
   - IR_ebba2_0034
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 5
   - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 5
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -135,7 +123,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_ebba2_0009
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
