@@ -4,18 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: e1-f55.pages.dev
+- name: 🇯🇵 日本 | JPN 14
+  server: dongjing2.zqjsqapi.com
   port: 443
   type: vless
-  uuid: 8b5acf77-2c2e-4eed-9ad1-be81851b99ea
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
   tls: true
-  servername: E1-F55.pAgeS.dEV
+  servername: dongjing2.zqjsqapi.com
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /proxy
     headers:
-      Host: e1-f55.pages.dev
+      Host: dongjing2.zqjsqapi.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -23,6 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
+  - 🇯🇵 日本 | JPN 14
 rules:
 - MATCH,AUTO

@@ -4,41 +4,48 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_c30b3_0009
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: IR_c30b3_0034
-  server: v12.hdacd.com
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港 | HKG 9
-  server: hkt.ackzzcdn.com
-  port: 2095
-  type: vmess
-  uuid: 7cf43977-3e5f-4aaa-8028-4dff65def6e2
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  servername: www.lovelive-anime.jp
+- name: 🇯🇵 日本 | JPN 14
+  server: dongjing2.zqjsqapi.com
+  port: 443
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  tls: true
+  servername: dongjing2.zqjsqapi.com
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /global
+    path: /proxy
     headers:
-      Host: hkcdn.ackhk.xyz
+      Host: dongjing2.zqjsqapi.com
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.118
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.191
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: t.cnmjcn.cyou
+  port: 16618
+  type: vmess
+  uuid: b688ce0f-9201-4e8e-a67a-f3be2c6aa201
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 7a297964a2b31dafd3529ef4d14574b9.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -46,29 +53,36 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_c30b3_0009
-  - IR_c30b3_0034
-  - 🇭🇰 香港 | HKG 9
+  - 🇯🇵 日本 | JPN 14
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
+  - 🇸🇬 新加坡 | SGP
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 日本 | JPN 14
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_c30b3_0009
-  - IR_c30b3_0034
-  - 🇭🇰 香港 | HKG 9
+  - 🇸🇬 新加坡 | SGP
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_c30b3_0034
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_c30b3_0009
-  - 🇭🇰 香港 | HKG 9
+  - 🇯🇵 日本 | JPN 14
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
 rules:
 - MATCH,AUTO
