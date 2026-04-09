@@ -24,12 +24,21 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.152
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇭🇰 香港 | HKG 9
+  server: hkt.ackzzcdn.com
+  port: 2095
+  type: vmess
+  uuid: 7cf43977-3e5f-4aaa-8028-4dff65def6e2
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: www.lovelive-anime.jp
+  network: ws
+  ws-opts:
+    path: /global
+    headers:
+      Host: hkcdn.ackhk.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -39,13 +48,7 @@ proxy-groups:
   proxies:
   - GB_c30b3_0009
   - IR_c30b3_0034
-  - 🇻🇳 越南 | VNM
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇻🇳 越南 | VNM
+  - 🇭🇰 香港 | HKG 9
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -53,18 +56,19 @@ proxy-groups:
   proxies:
   - GB_c30b3_0009
   - IR_c30b3_0034
+  - 🇭🇰 香港 | HKG 9
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - IR_c30b3_0034
-  - 🇻🇳 越南 | VNM
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - GB_c30b3_0009
+  - 🇭🇰 香港 | HKG 9
 rules:
 - MATCH,AUTO
