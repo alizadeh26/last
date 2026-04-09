@@ -14,6 +14,26 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: IR_94981_0034
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: v30.hdacd.com
+  port: 30830
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: img14.360buyimg.com
+  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: t.cnmjcn.cyou
   port: 16618
@@ -36,6 +56,8 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_94981_0009
+  - IR_94981_0034
+  - 🇳🇱 荷兰 | NLD
   - 🇸🇬 新加坡 | SGP
 rules:
 - MATCH,AUTO
