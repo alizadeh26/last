@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_94981_0009
+- name: GB_c3aeb_0009
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -14,7 +14,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: IR_94981_0034
+- name: IR_c3aeb_0034
   server: v12.hdacd.com
   port: 30812
   type: vmess
@@ -55,8 +55,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_94981_0009
-  - IR_94981_0034
+  - GB_c3aeb_0009
+  - IR_c3aeb_0034
   - 🇳🇱 荷兰 | NLD
   - 🇸🇬 新加坡 | SGP
 rules:
