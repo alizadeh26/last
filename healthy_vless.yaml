@@ -4,19 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 14
-  server: dongjing2.zqjsqapi.com
+- name: 🇮🇹 意大利 | ITA
+  server: itsea.osaip.net
   port: 443
   type: vless
-  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  uuid: ad8381bc-1e47-4bf3-b517-622d7a6b8576
   tls: true
-  servername: dongjing2.zqjsqapi.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxy
-    headers:
-      Host: dongjing2.zqjsqapi.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 14
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO

@@ -14,6 +14,18 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: itsea.osaip.net
+  port: 443
+  type: vless
+  uuid: ad8381bc-1e47-4bf3-b517-622d7a6b8576
+  tls: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
+  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.118
   port: 38388
@@ -35,6 +47,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
+  - 🇮🇹 意大利 | ITA
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
@@ -44,6 +57,12 @@ proxy-groups:
   proxies:
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇹 意大利 | ITA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -56,7 +75,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇹 意大利 | ITA
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
