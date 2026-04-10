@@ -1,13 +1,12 @@
 trojan://187dda4498be9ac4f28db939d5940185@160.16.124.17:4674?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_041018004
 trojan://187dda4498be9ac4f28db939d5940185@160.16.132.38:34818?allowInsecure=0&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_041018013
-trojan://187dda4498be9ac4f28db939d5940185@160.16.85.33:4019?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_041018002
 trojan://187dda4498be9ac4f28db939d5940185@160.16.124.17:3057?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_041018005
+trojan://187dda4498be9ac4f28db939d5940185@160.16.85.33:4019?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_041018002
 trojan://187dda4498be9ac4f28db939d5940185@160.16.132.38:29370?security=tls&sni=www.nintendogames.net#%E6%97%A5%E6%9C%AC_041018008
-vless://43488128-319e-f480-64ea-0acdc712e2a8@64.176.57.250:443?flow=xtls-rprx-vision&security=reality&encryption=none&sni=www.muji.com&fp=chrome&pbk=wLkaWLYNGirBj1ggKZsnmlZiWnwZd99cIShBHVm7BQo&sid=c906f73d3ba8211f&type=tcp&headerType=none&path=/#🇯🇵 395 - JP - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@103.106.228.126:2053?encryption=none&type=ws&security=tls&path=/?Telegram🇨🇳+@WangCai2=&host=sni.111000.indevs.in&sni=sni.111000.indevs.in#🇯🇵 576 - JP - VLESS/WS/TLS - 2053
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11202#🇯🇵 108 - JP - SS/AEAD - 11202
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11201#🇯🇵 106 - JP - SS/AEAD - 11201
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11203#🇯🇵 110 - JP - SS/AEAD - 11203
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11204#🇯🇵 111 - JP - SS/AEAD - 11204
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11205#🇯🇵 113 - JP - SS/AEAD - 11205
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ@103.106.228.247:990#🇯🇵 122 - JP - SS/AEAD - 990
+vless://43488128-319e-f480-64ea-0acdc712e2a8@64.176.57.250:443?flow=xtls-rprx-vision&security=reality&encryption=none&sni=www.muji.com&fp=chrome&pbk=wLkaWLYNGirBj1ggKZsnmlZiWnwZd99cIShBHVm7BQo&sid=c906f73d3ba8211f&type=tcp&headerType=none&path=/#🇯🇵 397 - JP - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@103.106.228.126:2053?encryption=none&type=ws&security=tls&path=/?Telegram🇨🇳+@WangCai2=&host=sni.111000.indevs.in&sni=sni.111000.indevs.in#🇯🇵 611 - JP - VLESS/WS/TLS - 2053
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11201#🇯🇵 105 - JP - SS/AEAD - 11201
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11202#🇯🇵 107 - JP - SS/AEAD - 11202
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11203#🇯🇵 109 - JP - SS/AEAD - 11203
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11204#🇯🇵 112 - JP - SS/AEAD - 11204
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozMDNhYzY1ZTMwZjI4YjBi@154.205.139.9:11205#🇯🇵 114 - JP - SS/AEAD - 11205

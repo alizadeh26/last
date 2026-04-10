@@ -5,14 +5,21 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.52
+  server: 103.186.155.213
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.150
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.218
+  server: 103.186.155.146
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -25,6 +32,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
 rules:
 - MATCH,AUTO
