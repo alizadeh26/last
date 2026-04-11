@@ -11,9 +11,9 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
   udp: true
-- name: 🇭🇰 香港 | HKG 8
+- name: 🇭🇰 香港 | HKG 6
   server: xgrr.sdnlv0.cn
-  port: 14193
+  port: 18008
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
@@ -25,6 +25,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 8
+  - 🇭🇰 香港 | HKG 6
 rules:
 - MATCH,AUTO
