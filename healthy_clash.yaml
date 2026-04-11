@@ -4,7 +4,35 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_86b92_0009
+- name: 🇪🇸 西班牙 | ESP
+  server: 5.188.181.201
+  port: 9027
+  type: ss
+  cipher: aes-256-cfb
+  password: EXN3S3eQpjE7EJu8
+  udp: true
+- name: 🇮🇸 冰岛 | ISL
+  server: xgrr.sdnlv0.cn
+  port: 36086
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 217.30.10.70
+  port: 9059
+  type: ss
+  cipher: aes-256-cfb
+  password: 9XwYyZsK8SNzQDtY
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: 217.30.10.70
+  port: 9042
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+  udp: true
+- name: 🇺🇸 美国 | USA
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -12,10 +40,17 @@ proxies:
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
+  servername: www.bing.com
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: xgrr.sdnlv0.cn
+  port: 20600
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.200
+  server: 103.186.155.129
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -27,31 +62,44 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_86b92_0009
+  - 🇪🇸 西班牙 | ESP
+  - 🇮🇸 冰岛 | ISL
+  - 🇵🇱 波兰 | POL
+  - 🇵🇱 波兰 | POL 2
+  - 🇺🇸 美国 | USA
+  - 🇸🇬 新加坡 | SGP
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇪🇸 西班牙 | ESP
+  - 🇮🇸 冰岛 | ISL
+  - 🇵🇱 波兰 | POL
+  - 🇵🇱 波兰 | POL 2
+  - 🇸🇬 新加坡 | SGP
   - 🇻🇳 越南 | VNM
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_86b92_0009
+  - 🇺🇸 美国 | USA
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
-- name: REGION-NA
+  - 🇮🇸 冰岛 | ISL
+  - 🇸🇬 新加坡 | SGP
+- name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_86b92_0009
+  - 🇪🇸 西班牙 | ESP
+  - 🇵🇱 波兰 | POL
+  - 🇵🇱 波兰 | POL 2
 rules:
 - MATCH,AUTO
