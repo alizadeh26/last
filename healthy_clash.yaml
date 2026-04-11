@@ -4,57 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 5
-  server: hk17.network-cdn-gw-yd.net
-  port: 47707
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: b235696d-7873-4b15-9b22-7dae3a0b6747
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: www.bing.com
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 217.30.10.70
-  port: 9059
-  type: ss
-  cipher: aes-256-cfb
-  password: 9XwYyZsK8SNzQDtY
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 217.30.10.70
-  port: 9042
-  type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-  udp: true
-- name: 🇮🇸 冰岛 | ISL
+- name: 🇭🇰 香港 | HKG 2
   server: xgrr.sdnlv0.cn
-  port: 36086
+  port: 33229
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
   udp: true
-- name: 🇸🇬 新加坡 | SGP
+- name: 🇭🇰 香港 | HKG 8
   server: xgrr.sdnlv0.cn
-  port: 20600
+  port: 14193
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.129
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -62,48 +24,21 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
-  - 🇺🇸 美国 | USA
-  - 🇵🇱 波兰 | POL
-  - 🇵🇱 波兰 | POL 2
-  - 🇮🇸 冰岛 | ISL
-  - 🇸🇬 新加坡 | SGP
-  - 🇻🇳 越南 | VNM
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
-  - 🇵🇱 波兰 | POL
-  - 🇵🇱 波兰 | POL 2
-  - 🇮🇸 冰岛 | ISL
-  - 🇸🇬 新加坡 | SGP
-  - 🇻🇳 越南 | VNM
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 8
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇵🇱 波兰 | POL
-  - 🇵🇱 波兰 | POL 2
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 8
 rules:
 - MATCH,AUTO
