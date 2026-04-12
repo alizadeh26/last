@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 2
-  server: xgrr.sdnlv0.cn
-  port: 56052
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
-  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 82.198.246.46
   port: 180
@@ -21,22 +14,15 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: xgrr.sdnlv0.cn
-  port: 51881
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.59
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.135
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.135
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.59
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -49,13 +35,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.58
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 4
   server: 103.186.155.130
   port: 38388
@@ -63,12 +42,12 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: xgrr.sdnlv0.cn
-  port: 39707
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.58
+  port: 38388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -76,28 +55,22 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
   - 🇺🇸 美国 | USA 2
-  - 🇭🇰 香港 | HKG 4
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 4
-  - 🇭🇰 香港 | HKG 7
+  - 🇻🇳 越南 | VNM 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 4
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 4
-  - 🇭🇰 香港 | HKG 7
+  - 🇻🇳 越南 | VNM 5
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -109,10 +82,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇭🇰 香港 | HKG 7
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
