@@ -4,17 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA
-  server: itsea.osaip.net
-  port: 443
+- name: 🇺🇸 美国 | USA
+  server: cf.090227.xyz
+  port: 2095
   type: vless
-  uuid: ad8381bc-1e47-4bf3-b517-622d7a6b8576
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: violet
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-g.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
