@@ -11,19 +11,26 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: xgrr.sdnlv0.cn
-  port: 39707
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
-  udp: true
 - name: 🇭🇰 香港 | HKG 4
   server: xgrr.sdnlv0.cn
   port: 51881
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.59
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.135
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.225
@@ -39,13 +46,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.135
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 4
   server: 103.186.155.130
   port: 38388
@@ -53,12 +53,12 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.59
-  port: 38388
+- name: 🇭🇰 香港 | HKG 7
+  server: xgrr.sdnlv0.cn
+  port: 39707
   type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: chacha20-ietf-poly1305
+  password: 8ba6a37d-8715-440d-942a-a3e6c23a9290
   udp: true
 proxy-groups:
 - name: AUTO
@@ -67,12 +67,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 4
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 2
+  - 🇭🇰 香港 | HKG 7
 rules:
 - MATCH,AUTO
