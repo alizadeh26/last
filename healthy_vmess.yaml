@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_a02a3_0003
+- name: CN_720b7_0003
   server: planb.mojcn.com
   port: 16622
   type: vmess
@@ -25,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_a02a3_0003
+  - CN_720b7_0003
 rules:
 - MATCH,AUTO
