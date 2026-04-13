@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_720b7_0003
+- name: CN_92107_0001
   server: planb.mojcn.com
   port: 16622
   type: vmess
@@ -19,15 +19,14 @@ proxies:
     headers:
       Host: 6a52001e3651ccdc8ef7740494916ad2.mobgslb.tbcache.com
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 82.198.246.46
+- name: 🇺🇸 美国 | USA 4
+  server: 82.198.246.97
   port: 180
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: AUTO
@@ -35,7 +34,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_720b7_0003
-  - 🇺🇸 美国 | USA
+  - CN_92107_0001
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
