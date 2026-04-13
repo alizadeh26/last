@@ -19,15 +19,15 @@ proxies:
     headers:
       Host: 6a52001e3651ccdc8ef7740494916ad2.mobgslb.tbcache.com
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.122
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.17
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.17
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.122
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -54,8 +54,8 @@ proxy-groups:
   interval: 300
   proxies:
   - CN_a02a3_0003
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
@@ -63,8 +63,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
 - name: PROTO-VMESS
@@ -78,8 +78,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
