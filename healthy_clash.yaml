@@ -14,26 +14,12 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇦🇷 阿根廷 | ARG
-  server: v.g.5.j.x.g.z.8.d.ar01-ae5.entry.v51124-4.qpon
-  port: 20027
-  type: ss
-  cipher: aes-256-gcm
-  password: 99840981-d157-3437-b5a2-b2f8b67161ff
-  udp: true
 - name: 🇭🇰 香港 | HKG 3
   server: 8.r.y.4.6.g.e.e.d.hk08-ae5.entry.v51124-5.qpon
   port: 18646
   type: ss
   cipher: aes-256-gcm
   password: 7b562532-8f03-3a69-bb44-3c3e18227c19
-  udp: true
-- name: 🇯🇵 日本 | JPN 21
-  server: z.4.8.1.p.g.z.8.d.jp04-ae5.entry.v51124-4.qpon
-  port: 495
-  type: ss
-  cipher: aes-256-gcm
-  password: 99840981-d157-3437-b5a2-b2f8b67161ff
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 82.198.246.46
@@ -82,12 +68,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: z.g.e.s.o.7.9.8.d.tw01-ae5.entry.v51124-4.qpon
-  port: 20007
+- name: 🇸🇬 新加坡 | SGP 3
+  server: j.w.c.b.j.7.7.e.d.sg01-ae5.entry.v51124-5.qpon
+  port: 20003
   type: ss
   cipher: aes-256-gcm
-  password: 99840981-d157-3437-b5a2-b2f8b67161ff
+  password: 7b562532-8f03-3a69-bb44-3c3e18227c19
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.207
@@ -124,14 +110,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇯🇵 日本 | JPN 25
-  - 🇦🇷 阿根廷 | ARG
   - 🇭🇰 香港 | HKG 3
-  - 🇯🇵 日本 | JPN 21
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 10
   - 🇯🇵 日本 | JPN 29
   - 🇸🇨 塞舌尔 | SYC 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇸🇬 新加坡 | SGP 3
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
@@ -141,11 +125,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇷 阿根廷 | ARG
   - 🇭🇰 香港 | HKG 3
-  - 🇯🇵 日本 | JPN 21
   - 🇯🇵 日本 | JPN 29
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇸🇬 新加坡 | SGP 3
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
@@ -176,6 +158,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇷 阿根廷 | ARG
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
