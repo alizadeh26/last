@@ -4,17 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: www.visa.com.sg
-  port: 2052
+- name: 🇸🇨 塞舌尔 | SYC 2
+  server: polands.stardevs.top
+  port: 443
   type: vless
-  uuid: 25efc727-e853-49ba-9609-3c20009d0e7a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: winbiss-0tpka6-v1.winbiss.workers.dev
+  uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
+    short-id: f37fb7531c60780d
+  servername: polands.stardevs.top
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
+  - 🇸🇨 塞舌尔 | SYC 2
 rules:
 - MATCH,AUTO

@@ -4,43 +4,64 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇦🇷 阿根廷 | ARG
+  server: v.g.5.j.x.g.z.8.d.ar01-ae5.entry.v51124-4.qpon
+  port: 20027
+  type: ss
+  cipher: aes-256-gcm
+  password: 99840981-d157-3437-b5a2-b2f8b67161ff
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: 8.r.y.4.6.g.e.e.d.hk08-ae5.entry.v51124-5.qpon
+  port: 18646
+  type: ss
+  cipher: aes-256-gcm
+  password: 7b562532-8f03-3a69-bb44-3c3e18227c19
+  udp: true
+- name: 🇯🇵 日本 | JPN 21
+  server: z.4.8.1.p.g.z.8.d.jp04-ae5.entry.v51124-4.qpon
+  port: 495
+  type: ss
+  cipher: aes-256-gcm
+  password: 99840981-d157-3437-b5a2-b2f8b67161ff
+  udp: true
+- name: 🇯🇵 日本 | JPN 29
+  server: 8.r.1.d.6.g.8.e.d.jp03-ae5.entry.v51124-5.qpon
+  port: 491
+  type: ss
+  cipher: aes-256-gcm
+  password: 7b562532-8f03-3a69-bb44-3c3e18227c19
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: z.g.e.s.o.7.9.8.d.tw01-ae5.entry.v51124-4.qpon
+  port: 20007
+  type: ss
+  cipher: aes-256-gcm
+  password: 99840981-d157-3437-b5a2-b2f8b67161ff
+  udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.62
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.145
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
   server: 103.186.155.207
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.34
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.117
+  server: 103.186.155.31
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.66
+  server: 103.186.155.43
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.29
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -52,11 +73,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇦🇷 阿根廷 | ARG
+  - 🇭🇰 香港 | HKG 3
+  - 🇯🇵 日本 | JPN 21
+  - 🇯🇵 日本 | JPN 29
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
 rules:
 - MATCH,AUTO
