@@ -4,29 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.117
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.62
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.66
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.207
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -39,8 +18,29 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.207
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 5
   server: 103.186.154.34
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.117
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.66
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -52,30 +52,30 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 6
 rules:
 - MATCH,AUTO
