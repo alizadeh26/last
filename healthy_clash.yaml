@@ -14,12 +14,19 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: 8.r.y.4.6.g.e.e.d.hk08-ae5.entry.v51124-5.qpon
-  port: 18646
-  type: ss
-  cipher: aes-256-gcm
-  password: 7b562532-8f03-3a69-bb44-3c3e18227c19
+- name: 🇸🇨 塞舌尔 | SYC 2
+  server: polands.stardevs.top
+  port: 443
+  type: vless
+  uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
+    short-id: f37fb7531c60780d
+  servername: polands.stardevs.top
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 82.198.246.46
@@ -47,34 +54,6 @@ proxies:
     headers:
       Host: xg1b1.waimaofuwujd.cc
   udp: true
-- name: 🇯🇵 日本 | JPN 29
-  server: 8.r.1.d.6.g.8.e.d.jp03-ae5.entry.v51124-5.qpon
-  port: 491
-  type: ss
-  cipher: aes-256-gcm
-  password: 7b562532-8f03-3a69-bb44-3c3e18227c19
-  udp: true
-- name: 🇸🇨 塞舌尔 | SYC 2
-  server: polands.stardevs.top
-  port: 443
-  type: vless
-  uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
-    short-id: f37fb7531c60780d
-  servername: polands.stardevs.top
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: j.w.c.b.j.7.7.e.d.sg01-ae5.entry.v51124-5.qpon
-  port: 20003
-  type: ss
-  cipher: aes-256-gcm
-  password: 7b562532-8f03-3a69-bb44-3c3e18227c19
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.207
   port: 38388
@@ -89,15 +68,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.43
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.29
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.29
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.43
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -110,28 +89,22 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇯🇵 日本 | JPN 25
-  - 🇭🇰 香港 | HKG 3
+  - 🇸🇨 塞舌尔 | SYC 2
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 10
-  - 🇯🇵 日本 | JPN 29
-  - 🇸🇨 塞舌尔 | SYC 2
-  - 🇸🇬 新加坡 | SGP 3
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇯🇵 日本 | JPN 29
-  - 🇸🇬 新加坡 | SGP 3
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -152,7 +125,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇯🇵 日本 | JPN 25
-  - 🇭🇰 香港 | HKG 3
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇨 塞舌尔 | SYC 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
