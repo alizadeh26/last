@@ -4,14 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 4
-  server: 82.198.246.97
-  port: 180
+- name: 🇸🇬 新加坡 | SGP
+  server: t.cnmjcn.cyou
+  port: 16618
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: b688ce0f-9201-4e8e-a67a-f3be2c6aa201
   alterId: 0
   cipher: auto
   tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 7a297964a2b31dafd3529ef4d14574b9.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -19,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
+  - 🇸🇬 新加坡 | SGP
 rules:
 - MATCH,AUTO

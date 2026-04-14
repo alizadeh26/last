@@ -4,18 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
-  server: cf.090227.xyz
-  port: 2095
+- name: 🇩🇪 德国 | DEU 2
+  server: www.visa.com.sg
+  port: 2052
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 25efc727-e853-49ba-9609-3c20009d0e7a
   tls: false
-  client-fingerprint: randomized
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-g.workers.dev
+      Host: winbiss-0tpka6-v1.winbiss.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -23,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO
