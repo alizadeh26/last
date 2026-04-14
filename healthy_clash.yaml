@@ -4,15 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 4
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.202
   port: 38388
@@ -26,7 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
@@ -34,23 +24,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 4
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 | VNM
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
