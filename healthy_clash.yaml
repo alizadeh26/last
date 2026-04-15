@@ -4,79 +4,77 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 25
-  server: 172.104.80.66
-  port: 22324
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 3
+  server: v.d.n.s.p.g.i.8.d.de01-ae5.entry.v51124-4.qpon
+  port: 20052
+  type: ss
+  cipher: aes-256-gcm
+  password: 99840981-d157-3437-b5a2-b2f8b67161ff
   udp: true
-- name: 🇸🇨 塞舌尔 | SYC 2
-  server: polands.stardevs.top
-  port: 443
-  type: vless
-  uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
-    short-id: f37fb7531c60780d
-  servername: polands.stardevs.top
-  client-fingerprint: chrome
-  network: tcp
+- name: 🇳🇱 荷兰 | NLD
+  server: 82.38.31.208
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 82.198.246.46
-  port: 180
+- name: 🇭🇰 香港 | HKG 5
+  server: 8.d.5.s.o.g.9.8.d.hk08-ae5.entry.v51124-4.qpon
+  port: 18645
+  type: ss
+  cipher: aes-256-gcm
+  password: 99840981-d157-3437-b5a2-b2f8b67161ff
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 194.87.186.134
+  port: 6354
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4DrioHAbACj61Wq8yZ0wuq
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 216.167.32.53
+  port: 3438
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: a77d8ea6-1e1b-4825-a71c-41262f19e3fd
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: xg1b1.waimaofuwujd.cc
-  port: 443
-  type: vmess
-  uuid: 1a87fc81-6846-4246-add3-00a38baa8c0f
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: xg1b1.waimaofuwujd.cc
   network: ws
   ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: xg1b1.waimaofuwujd.cc
+    path: /
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.207
-  port: 38388
+- name: 🇰🇷 韩国 | KOR
+  server: v.d.5.j.x.g.t.8.d.kr01-ae5.entry.v51124-4.qpon
+  port: 20042
   type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-gcm
+  password: 99840981-d157-3437-b5a2-b2f8b67161ff
+  udp: true
+- name: 🇺🇦 乌克兰 | UKR 2
+  server: v.g.8.1.x.s.9.8.d.ua01-ae5.entry.v51124-4.qpon
+  port: 20072
+  type: ss
+  cipher: aes-256-gcm
+  password: 99840981-d157-3437-b5a2-b2f8b67161ff
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.31
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.29
+  server: 103.186.154.249
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.43
+  server: 103.186.155.107
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.188
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -88,54 +86,49 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 25
-  - 🇸🇨 塞舌尔 | SYC 2
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 10
-  - 🇻🇳 越南 | VNM
+  - 🇩🇪 德国 | DEU 3
+  - 🇳🇱 荷兰 | NLD
+  - 🇭🇰 香港 | HKG 5
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 4
+  - 🇰🇷 韩国 | KOR
+  - 🇺🇦 乌克兰 | UKR 2
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
+  - 🇩🇪 德国 | DEU 3
+  - 🇳🇱 荷兰 | NLD
+  - 🇭🇰 香港 | HKG 5
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇰🇷 韩国 | KOR
+  - 🇺🇦 乌克兰 | UKR 2
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇸🇨 塞舌尔 | SYC 2
+  - 🇻🇳 越南 | VNM
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 25
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 4
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 25
+  - 🇩🇪 德国 | DEU 3
+  - 🇭🇰 香港 | HKG 5
+  - 🇰🇷 韩国 | KOR
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 | SYC 2
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 7
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
