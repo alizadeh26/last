@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CY_3f0e6_0001
+- name: CY_a17cd_0001
   server: gbr1.frostbot.ru
   port: 6443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
     short-id: b9605803fb4b
   udp: true
-- name: HK_3f0e6_0006
+- name: HK_a17cd_0006
   server: polands.stardevs.top
   port: 443
   type: vless
@@ -38,7 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CY_3f0e6_0001
-  - HK_3f0e6_0006
+  - CY_a17cd_0001
+  - HK_a17cd_0006
 rules:
 - MATCH,AUTO
