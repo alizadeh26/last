@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CY_a17cd_0001
-  server: gbr1.frostbot.ru
-  port: 6443
-  type: vless
-  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: gbr1.frostbot.ru
-  reality-opts:
-    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
-    short-id: b9605803fb4b
-  udp: true
 - name: HK_a17cd_0006
   server: polands.stardevs.top
   port: 443
@@ -32,13 +18,27 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
+- name: CY_a17cd_0001
+  server: gbr1.frostbot.ru
+  port: 6443
+  type: vless
+  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: gbr1.frostbot.ru
+  reality-opts:
+    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
+    short-id: b9605803fb4b
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CY_a17cd_0001
   - HK_a17cd_0006
+  - CY_a17cd_0001
 rules:
 - MATCH,AUTO

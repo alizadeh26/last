@@ -4,22 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: VN_a17cd_0025
-  server: 103.186.155.236
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a17cd_0028
-  server: 103.186.154.55
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a17cd_0026
-  server: 103.186.154.21
+- name: VN_a17cd_0023
+  server: 103.186.155.113
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -32,8 +18,36 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_a17cd_0028
+  server: 103.186.154.55
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_a17cd_0030
+  server: 103.186.154.208
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_a17cd_0024
   server: 103.186.154.142
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_a17cd_0032
+  server: 103.186.154.212
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_a17cd_0026
+  server: 103.186.154.21
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -60,22 +74,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a17cd_0033
-  server: 103.186.154.161
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a17cd_0030
-  server: 103.186.154.208
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a17cd_0037
-  server: 103.186.155.141
+- name: VN_a17cd_0035
+  server: 103.186.155.134
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -88,19 +88,26 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a17cd_0032
-  server: 103.186.154.212
+- name: VN_a17cd_0037
+  server: 103.186.155.141
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: us1-ss.flyparts.cn
-  port: 10020
+- name: VN_a17cd_0033
+  server: 103.186.154.161
+  port: 38388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 50992659-af58-432c-918d-e1e9d9099649
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_a17cd_0025
+  server: 103.186.155.236
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.208
@@ -116,12 +123,12 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a17cd_0023
-  server: 103.186.155.113
-  port: 38388
+- name: 🇺🇸 美国 | USA 5
+  server: us1-ss.flyparts.cn
+  port: 10020
   type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: chacha20-ietf-poly1305
+  password: 50992659-af58-432c-918d-e1e9d9099649
   udp: true
 proxy-groups:
 - name: AUTO
@@ -129,22 +136,23 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_a17cd_0025
-  - VN_a17cd_0028
-  - VN_a17cd_0026
+  - VN_a17cd_0023
   - VN_a17cd_0027
+  - VN_a17cd_0028
+  - VN_a17cd_0030
   - VN_a17cd_0024
+  - VN_a17cd_0032
+  - VN_a17cd_0026
   - VN_a17cd_0034
   - VN_a17cd_0029
   - VN_a17cd_0031
-  - VN_a17cd_0033
-  - VN_a17cd_0030
-  - VN_a17cd_0037
+  - VN_a17cd_0035
   - VN_a17cd_0036
-  - VN_a17cd_0032
-  - 🇺🇸 美国 | USA 5
+  - VN_a17cd_0037
+  - VN_a17cd_0033
+  - VN_a17cd_0025
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - VN_a17cd_0023
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
