@@ -34,6 +34,20 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: VN_06ed7_0033
+  server: 103.186.155.41
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_06ed7_0034
+  server: 103.186.155.215
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_06ed7_0032
   server: 103.186.155.58
   port: 38388
@@ -48,15 +62,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0034
-  server: 103.186.155.215
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_06ed7_0033
-  server: 103.186.155.41
+- name: VN_06ed7_0036
+  server: 103.186.154.206
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -69,22 +76,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0036
-  server: 103.186.154.206
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: VN_06ed7_0040
   server: 103.186.155.79
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_06ed7_0038
-  server: 103.186.154.60
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -113,19 +106,19 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: hk1SdyRWbYi3Igxeow9JdN
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 45.55.40.127
-  port: 49726
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: elTuo73FsQwO90EbLo96Ve
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 195.133.5.36
   port: 60129
   type: ss
   cipher: aes-256-gcm
   password: 7ae4e68cf77f6089
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 45.55.40.127
+  port: 49726
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: elTuo73FsQwO90EbLo96Ve
   udp: true
 - name: 🇸🇬 新加坡 | SGP 6
   server: 54.179.57.53
@@ -148,6 +141,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_06ed7_0038
+  server: 103.186.154.60
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -157,42 +157,42 @@ proxy-groups:
   - GB_06ed7_0005
   - GB_06ed7_0007
   - GB_06ed7_0006
+  - VN_06ed7_0033
+  - VN_06ed7_0034
   - VN_06ed7_0032
   - VN_06ed7_0035
-  - VN_06ed7_0034
-  - VN_06ed7_0033
-  - VN_06ed7_0037
   - VN_06ed7_0036
+  - VN_06ed7_0037
   - VN_06ed7_0040
-  - VN_06ed7_0038
   - VN_06ed7_0039
   - 🇭🇰 香港 | HKG 5
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 5
   - 🇸🇬 新加坡 | SGP 6
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - VN_06ed7_0038
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - VN_06ed7_0033
+  - VN_06ed7_0034
   - VN_06ed7_0032
   - VN_06ed7_0035
-  - VN_06ed7_0034
-  - VN_06ed7_0033
-  - VN_06ed7_0037
   - VN_06ed7_0036
+  - VN_06ed7_0037
   - VN_06ed7_0040
-  - VN_06ed7_0038
   - VN_06ed7_0039
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 5
   - 🇸🇬 新加坡 | SGP 6
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - VN_06ed7_0038
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
