@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CY_ea079_0001
+- name: CY_3f0e6_0001
   server: gbr1.frostbot.ru
   port: 6443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
     short-id: b9605803fb4b
   udp: true
-- name: HK_ea079_0006
+- name: HK_3f0e6_0006
   server: polands.stardevs.top
   port: 443
   type: vless
@@ -32,23 +32,13 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: node1.nanonet.host
-  port: 22539
-  type: vless
-  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
-  tls: true
-  servername: node1.nanonet.host
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CY_ea079_0001
-  - HK_ea079_0006
-  - 🇸🇬 新加坡 | SGP 7
+  - CY_3f0e6_0001
+  - HK_3f0e6_0006
 rules:
 - MATCH,AUTO
