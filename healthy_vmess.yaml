@@ -4,18 +4,44 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 4
-  server: 216.167.32.53
-  port: 3438
+- name: GB_06ed7_0005
+  server: 82.198.246.250
+  port: 180
   type: vmess
-  uuid: a77d8ea6-1e1b-4825-a71c-41262f19e3fd
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
+  udp: true
+- name: GB_06ed7_0007
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: GB_06ed7_0006
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: vm51544542.dns8656815.com
+  port: 7754
+  type: vmess
+  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
+  alterId: 0
+  cipher: auto
+  tls: false
   udp: true
 proxy-groups:
 - name: AUTO
@@ -23,6 +49,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
+  - GB_06ed7_0005
+  - GB_06ed7_0007
+  - GB_06ed7_0006
+  - 🇭🇰 香港 | HKG 5
 rules:
 - MATCH,AUTO
