@@ -4,6 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CY_a17cd_0001
+  server: gbr1.frostbot.ru
+  port: 6443
+  type: vless
+  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: gbr1.frostbot.ru
+  reality-opts:
+    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
+    short-id: b9605803fb4b
+  udp: true
 - name: HK_a17cd_0006
   server: polands.stardevs.top
   port: 443
@@ -18,6 +32,13 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
+- name: VN_a17cd_0026
+  server: 103.186.154.21
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_a17cd_0023
   server: 103.186.155.113
   port: 38388
@@ -27,6 +48,13 @@ proxies:
   udp: true
 - name: VN_a17cd_0027
   server: 103.186.155.29
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_a17cd_0025
+  server: 103.186.155.236
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -46,13 +74,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a17cd_0024
-  server: 103.186.154.142
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: VN_a17cd_0032
   server: 103.186.154.212
   port: 38388
@@ -60,8 +81,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a17cd_0026
-  server: 103.186.154.21
+- name: VN_a17cd_0024
+  server: 103.186.154.142
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_a17cd_0031
+  server: 103.186.154.158
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -74,15 +102,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a17cd_0029
-  server: 103.186.154.149
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a17cd_0031
-  server: 103.186.154.158
+- name: VN_a17cd_0033
+  server: 103.186.154.161
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -109,15 +130,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a17cd_0033
-  server: 103.186.154.161
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_a17cd_0025
-  server: 103.186.155.236
+- name: VN_a17cd_0029
+  server: 103.186.154.149
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -130,13 +144,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.68
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: us1-ss.flyparts.cn
   port: 10020
@@ -144,19 +151,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 50992659-af58-432c-918d-e1e9d9099649
   udp: true
-- name: CY_a17cd_0001
-  server: gbr1.frostbot.ru
-  port: 6443
-  type: vless
-  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: gbr1.frostbot.ru
-  reality-opts:
-    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
-    short-id: b9605803fb4b
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.68
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -164,55 +164,71 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CY_a17cd_0001
   - HK_a17cd_0006
+  - VN_a17cd_0026
   - VN_a17cd_0023
   - VN_a17cd_0027
+  - VN_a17cd_0025
   - VN_a17cd_0028
   - VN_a17cd_0030
-  - VN_a17cd_0024
   - VN_a17cd_0032
-  - VN_a17cd_0026
-  - VN_a17cd_0034
-  - VN_a17cd_0029
+  - VN_a17cd_0024
   - VN_a17cd_0031
+  - VN_a17cd_0034
+  - VN_a17cd_0033
   - VN_a17cd_0035
   - VN_a17cd_0036
   - VN_a17cd_0037
-  - VN_a17cd_0033
-  - VN_a17cd_0025
+  - VN_a17cd_0029
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇺🇸 美国 | USA 5
-  - CY_a17cd_0001
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - VN_a17cd_0026
   - VN_a17cd_0023
   - VN_a17cd_0027
+  - VN_a17cd_0025
   - VN_a17cd_0028
   - VN_a17cd_0030
-  - VN_a17cd_0024
   - VN_a17cd_0032
-  - VN_a17cd_0026
-  - VN_a17cd_0034
-  - VN_a17cd_0029
+  - VN_a17cd_0024
   - VN_a17cd_0031
+  - VN_a17cd_0034
+  - VN_a17cd_0033
   - VN_a17cd_0035
   - VN_a17cd_0036
   - VN_a17cd_0037
-  - VN_a17cd_0033
-  - VN_a17cd_0025
+  - VN_a17cd_0029
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇺🇸 美国 | USA 5
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_a17cd_0006
   - CY_a17cd_0001
+  - HK_a17cd_0006
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - VN_a17cd_0026
+  - VN_a17cd_0027
+  - VN_a17cd_0025
+  - VN_a17cd_0032
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - CY_a17cd_0001
+  - HK_a17cd_0006
 rules:
 - MATCH,AUTO
