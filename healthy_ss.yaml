@@ -11,13 +11,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_3f0e6_0028
-  server: 103.186.154.55
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: VN_3f0e6_0025
   server: 103.186.155.236
   port: 38388
@@ -27,6 +20,13 @@ proxies:
   udp: true
 - name: VN_3f0e6_0027
   server: 103.186.155.29
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_3f0e6_0028
+  server: 103.186.154.55
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -46,15 +46,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_3f0e6_0032
-  server: 103.186.154.212
+- name: VN_3f0e6_0024
+  server: 103.186.154.142
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_3f0e6_0024
-  server: 103.186.154.142
+- name: VN_3f0e6_0032
+  server: 103.186.154.212
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -74,8 +74,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_3f0e6_0036
-  server: 103.186.155.239
+- name: VN_3f0e6_0031
+  server: 103.186.154.158
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -88,6 +88,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: VN_3f0e6_0036
+  server: 103.186.155.239
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_3f0e6_0037
   server: 103.186.155.141
   port: 38388
@@ -95,15 +102,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.148
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.59
+- name: VN_3f0e6_0033
+  server: 103.186.154.161
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -116,15 +116,29 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.27
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.59
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.34
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.148
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 11
+  server: 103.186.155.144
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 9
+  server: 103.186.155.85
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -151,15 +165,29 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 9
-  server: 103.186.155.85
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.27
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 11
-  server: 103.186.155.144
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.155
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 12
+  server: 103.186.154.160
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.34
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -172,27 +200,31 @@ proxy-groups:
   interval: 300
   proxies:
   - VN_3f0e6_0023
-  - VN_3f0e6_0028
   - VN_3f0e6_0025
   - VN_3f0e6_0027
+  - VN_3f0e6_0028
   - VN_3f0e6_0026
   - VN_3f0e6_0030
-  - VN_3f0e6_0032
   - VN_3f0e6_0024
+  - VN_3f0e6_0032
   - VN_3f0e6_0029
   - VN_3f0e6_0034
-  - VN_3f0e6_0036
+  - VN_3f0e6_0031
   - VN_3f0e6_0035
+  - VN_3f0e6_0036
   - VN_3f0e6_0037
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM
+  - VN_3f0e6_0033
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 11
+  - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 10
-  - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 11
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 6
 rules:
 - MATCH,AUTO
