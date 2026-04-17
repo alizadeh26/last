@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_06ed7_0005
+- name: GB_d8d6d_0005
   server: 82.198.246.250
   port: 180
   type: vmess
@@ -14,28 +14,8 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: GB_06ed7_0007
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: GB_06ed7_0006
-  server: v12.hdacd.com
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: vm51544542.dns8656815.com
+- name: 🇭🇰 香港 | HKG
+  server: efan.dnsefan04881.com
   port: 7754
   type: vmess
   uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
@@ -49,9 +29,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_06ed7_0005
-  - GB_06ed7_0007
-  - GB_06ed7_0006
-  - 🇭🇰 香港 | HKG 5
+  - GB_d8d6d_0005
+  - 🇭🇰 香港 | HKG
 rules:
 - MATCH,AUTO

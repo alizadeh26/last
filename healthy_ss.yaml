@@ -4,106 +4,99 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: VN_06ed7_0033
-  server: 103.186.155.41
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_06ed7_0034
-  server: 103.186.155.215
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_06ed7_0032
+- name: VN_d8d6d_0032
   server: 103.186.155.58
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0035
+- name: VN_d8d6d_0034
+  server: 103.186.155.215
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_d8d6d_0033
+  server: 103.186.155.41
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_d8d6d_0035
   server: 103.186.154.191
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0036
+- name: VN_d8d6d_0036
   server: 103.186.154.206
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0037
+- name: VN_d8d6d_0037
   server: 103.186.154.252
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0040
+- name: VN_d8d6d_0040
   server: 103.186.155.79
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0039
+- name: VN_d8d6d_0039
   server: 103.186.155.115
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 142.93.73.182
-  port: 45389
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hk1SdyRWbYi3Igxeow9JdN
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 195.133.5.36
-  port: 60129
-  type: ss
-  cipher: aes-256-gcm
-  password: 7ae4e68cf77f6089
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 45.55.40.127
-  port: 49726
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: elTuo73FsQwO90EbLo96Ve
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 54.179.57.53
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.252
+- name: VN_d8d6d_0038
+  server: 103.186.154.60
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 66.154.114.231
+  port: 19353
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ExUzHZ3AqMIVRmz9r6mcgy
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 138.68.153.223
+  port: 46576
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: idMvoewrSyLLvEvP03k9zR
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.147
+  server: 103.186.155.54
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0038
-  server: 103.186.154.60
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.162
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.149
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -115,20 +108,19 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_06ed7_0033
-  - VN_06ed7_0034
-  - VN_06ed7_0032
-  - VN_06ed7_0035
-  - VN_06ed7_0036
-  - VN_06ed7_0037
-  - VN_06ed7_0040
-  - VN_06ed7_0039
-  - 🇺🇸 美国 | USA 4
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 5
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇻🇳 越南 | VNM 2
+  - VN_d8d6d_0032
+  - VN_d8d6d_0034
+  - VN_d8d6d_0033
+  - VN_d8d6d_0035
+  - VN_d8d6d_0036
+  - VN_d8d6d_0037
+  - VN_d8d6d_0040
+  - VN_d8d6d_0039
+  - VN_d8d6d_0038
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 3
   - 🇻🇳 越南 | VNM
-  - VN_06ed7_0038
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 rules:
 - MATCH,AUTO

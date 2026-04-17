@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_06ed7_0005
+- name: GB_d8d6d_0005
   server: 82.198.246.250
   port: 180
   type: vmess
@@ -14,84 +14,71 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: GB_06ed7_0007
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: GB_06ed7_0006
-  server: v12.hdacd.com
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: VN_06ed7_0033
-  server: 103.186.155.41
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_06ed7_0034
-  server: 103.186.155.215
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_06ed7_0032
+- name: VN_d8d6d_0032
   server: 103.186.155.58
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0035
+- name: VN_d8d6d_0034
+  server: 103.186.155.215
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_d8d6d_0033
+  server: 103.186.155.41
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_d8d6d_0035
   server: 103.186.154.191
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0036
+- name: VN_d8d6d_0036
   server: 103.186.154.206
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0037
+- name: VN_d8d6d_0037
   server: 103.186.154.252
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0040
+- name: VN_d8d6d_0040
   server: 103.186.155.79
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0039
+- name: VN_d8d6d_0039
   server: 103.186.155.115
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: vm51544542.dns8656815.com
+- name: VN_d8d6d_0038
+  server: 103.186.154.60
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: efan.dnsefan04881.com
   port: 7754
   type: vmess
   uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
@@ -99,50 +86,36 @@ proxies:
   cipher: auto
   tls: false
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 142.93.73.182
-  port: 45389
+- name: 🇺🇸 美国 | USA 2
+  server: 66.154.114.231
+  port: 19353
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: hk1SdyRWbYi3Igxeow9JdN
+  password: ExUzHZ3AqMIVRmz9r6mcgy
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 195.133.5.36
-  port: 60129
-  type: ss
-  cipher: aes-256-gcm
-  password: 7ae4e68cf77f6089
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 45.55.40.127
-  port: 49726
+- name: 🇺🇸 美国 | USA 3
+  server: 138.68.153.223
+  port: 46576
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: elTuo73FsQwO90EbLo96Ve
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 54.179.57.53
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.252
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  password: idMvoewrSyLLvEvP03k9zR
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.147
+  server: 103.186.155.54
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_06ed7_0038
-  server: 103.186.154.60
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.162
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.149
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -154,66 +127,63 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_06ed7_0005
-  - GB_06ed7_0007
-  - GB_06ed7_0006
-  - VN_06ed7_0033
-  - VN_06ed7_0034
-  - VN_06ed7_0032
-  - VN_06ed7_0035
-  - VN_06ed7_0036
-  - VN_06ed7_0037
-  - VN_06ed7_0040
-  - VN_06ed7_0039
-  - 🇭🇰 香港 | HKG 5
-  - 🇺🇸 美国 | USA 4
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 5
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇻🇳 越南 | VNM 2
+  - GB_d8d6d_0005
+  - VN_d8d6d_0032
+  - VN_d8d6d_0034
+  - VN_d8d6d_0033
+  - VN_d8d6d_0035
+  - VN_d8d6d_0036
+  - VN_d8d6d_0037
+  - VN_d8d6d_0040
+  - VN_d8d6d_0039
+  - VN_d8d6d_0038
+  - 🇭🇰 香港 | HKG
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 3
   - 🇻🇳 越南 | VNM
-  - VN_06ed7_0038
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_06ed7_0033
-  - VN_06ed7_0034
-  - VN_06ed7_0032
-  - VN_06ed7_0035
-  - VN_06ed7_0036
-  - VN_06ed7_0037
-  - VN_06ed7_0040
-  - VN_06ed7_0039
-  - 🇺🇸 美国 | USA 4
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 5
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇻🇳 越南 | VNM 2
+  - VN_d8d6d_0032
+  - VN_d8d6d_0034
+  - VN_d8d6d_0033
+  - VN_d8d6d_0035
+  - VN_d8d6d_0036
+  - VN_d8d6d_0037
+  - VN_d8d6d_0040
+  - VN_d8d6d_0039
+  - VN_d8d6d_0038
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 3
   - 🇻🇳 越南 | VNM
-  - VN_06ed7_0038
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_06ed7_0005
-  - GB_06ed7_0007
-  - GB_06ed7_0006
-  - 🇭🇰 香港 | HKG 5
+  - GB_d8d6d_0005
+  - 🇭🇰 香港 | HKG
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_06ed7_0006
+  - VN_d8d6d_0032
+  - VN_d8d6d_0034
+  - VN_d8d6d_0033
+  - VN_d8d6d_0035
+  - VN_d8d6d_0037
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_06ed7_0005
-  - GB_06ed7_0007
+  - GB_d8d6d_0005
 rules:
 - MATCH,AUTO
