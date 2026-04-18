@@ -25,8 +25,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_99705_0026
-  server: 103.186.154.162
+- name: VN_99705_0027
+  server: 103.186.154.216
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -39,15 +39,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_99705_0029
-  server: 103.186.155.60
+- name: VN_99705_0026
+  server: 103.186.154.162
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_99705_0027
-  server: 103.186.154.216
+- name: VN_99705_0029
+  server: 103.186.155.60
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -62,9 +62,9 @@ proxy-groups:
   - VN_99705_0023
   - VN_99705_0024
   - VN_99705_0025
-  - VN_99705_0026
-  - VN_99705_0028
-  - VN_99705_0029
   - VN_99705_0027
+  - VN_99705_0028
+  - VN_99705_0026
+  - VN_99705_0029
 rules:
 - MATCH,AUTO
