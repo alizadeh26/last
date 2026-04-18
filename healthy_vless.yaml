@@ -4,33 +4,49 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CY_a17cd_0001
-  server: gbr1.frostbot.ru
-  port: 6443
+- name: 🇯🇵 日本 | JPN 13
+  server: tokyo1.ap221.com
+  port: 30000
   type: vless
-  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
-  flow: xtls-rprx-vision
+  uuid: a7585574-ae54-4b8f-9f7f-e794dc6fe17d
   tls: true
-  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  servername: tokyo.ap221.com
   client-fingerprint: chrome
-  servername: gbr1.frostbot.ru
-  reality-opts:
-    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
-    short-id: b9605803fb4b
+  network: tcp
   udp: true
-- name: HK_a17cd_0006
-  server: polands.stardevs.top
-  port: 443
+- name: 🇸🇬 新加坡 | SGP 4
+  server: sg1.ap221.com
+  port: 30000
   type: vless
-  uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
-  flow: xtls-rprx-vision
+  uuid: a7585574-ae54-4b8f-9f7f-e794dc6fe17d
   tls: true
-  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  servername: sg.ap221.com
   client-fingerprint: chrome
-  servername: polands.stardevs.top
-  reality-opts:
-    public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
-    short-id: f37fb7531c60780d
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: sg1.ap221.com
+  port: 30000
+  type: vless
+  uuid: b6877b5a-4554-4e5a-8a24-308a171e5bef
+  tls: true
+  flow: xtls-rprx-vision
+  servername: sg.ap221.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 25
+  server: ohio1.ap221.com
+  port: 30000
+  type: vless
+  uuid: a7585574-ae54-4b8f-9f7f-e794dc6fe17d
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ohio.ap221.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +54,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CY_a17cd_0001
-  - HK_a17cd_0006
+  - 🇯🇵 日本 | JPN 13
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 25
 rules:
 - MATCH,AUTO

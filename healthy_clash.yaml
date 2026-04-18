@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_e48b9_0005
+- name: GB_99705_0005
   server: v12.hdacd.com
   port: 30812
   type: vmess
@@ -14,106 +14,108 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: VN_e48b9_0023
-  server: 103.186.154.198
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e48b9_0027
-  server: 103.186.154.216
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e48b9_0025
-  server: 103.186.155.24
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_e48b9_0024
+- name: VN_99705_0024
   server: 103.186.154.236
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e48b9_0028
+- name: VN_99705_0023
+  server: 103.186.154.198
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_99705_0027
+  server: 103.186.154.216
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_99705_0028
   server: 103.186.155.136
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e48b9_0029
+- name: VN_99705_0025
+  server: 103.186.155.24
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_99705_0029
   server: 103.186.155.60
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_e48b9_0026
+- name: VN_99705_0026
   server: 103.186.154.162
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇭🇰 香港 | HKG 12
-  server: efan.dnsefan04881.com
-  port: 7754
+- name: 🇺🇸 美国 | USA 5
+  server: 82.198.246.233
+  port: 180
   type: vmess
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: auto
+  cipher: aes-128-gcm
   tls: false
+  skip-cert-verify: false
   udp: true
-- name: 🇯🇵 日本 | JPN 22
-  server: 185.141.219.158
-  port: 30312
-  type: ss
-  cipher: aes-256-gcm
-  password: 99394cfebe6c0906
+- name: 🇯🇵 日本 | JPN 13
+  server: tokyo1.ap221.com
+  port: 30000
+  type: vless
+  uuid: a7585574-ae54-4b8f-9f7f-e794dc6fe17d
+  tls: true
+  flow: xtls-rprx-vision
+  servername: tokyo.ap221.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: m.cnmjin.net
-  port: 16632
-  type: vmess
-  uuid: b49af8c9-0cf1-4212-8ed8-35b70d9f2cf4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 3416cbe57b7c52733721859d4e23be39.mobgslb.tbcache.com
+- name: 🇸🇬 新加坡 | SGP 4
+  server: sg1.ap221.com
+  port: 30000
+  type: vless
+  uuid: a7585574-ae54-4b8f-9f7f-e794dc6fe17d
+  tls: true
+  flow: xtls-rprx-vision
+  servername: sg.ap221.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 52.207.147.180
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
+- name: 🇸🇬 新加坡 | SGP 3
+  server: sg1.ap221.com
+  port: 30000
+  type: vless
+  uuid: b6877b5a-4554-4e5a-8a24-308a171e5bef
+  tls: true
+  flow: xtls-rprx-vision
+  servername: sg.ap221.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 52.221.247.133
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.218
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇺🇸 美国 | USA 25
+  server: ohio1.ap221.com
+  port: 30000
+  type: vless
+  uuid: a7585574-ae54-4b8f-9f7f-e794dc6fe17d
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ohio.ap221.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -121,51 +123,54 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_e48b9_0005
-  - VN_e48b9_0023
-  - VN_e48b9_0027
-  - VN_e48b9_0025
-  - VN_e48b9_0024
-  - VN_e48b9_0028
-  - VN_e48b9_0029
-  - VN_e48b9_0026
-  - 🇭🇰 香港 | HKG 12
-  - 🇯🇵 日本 | JPN 22
-  - 🇭🇰 香港 | HKG 4
-  - 🇺🇸 美国 | USA 4
-  - 🇸🇬 新加坡 | SGP
-  - 🇻🇳 越南 | VNM
+  - GB_99705_0005
+  - VN_99705_0024
+  - VN_99705_0023
+  - VN_99705_0027
+  - VN_99705_0028
+  - VN_99705_0025
+  - VN_99705_0029
+  - VN_99705_0026
+  - 🇺🇸 美国 | USA 5
+  - 🇯🇵 日本 | JPN 13
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 25
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_e48b9_0023
-  - VN_e48b9_0027
-  - VN_e48b9_0025
-  - VN_e48b9_0024
-  - VN_e48b9_0028
-  - VN_e48b9_0029
-  - VN_e48b9_0026
-  - 🇯🇵 日本 | JPN 22
-  - 🇺🇸 美国 | USA 4
-  - 🇸🇬 新加坡 | SGP
-  - 🇻🇳 越南 | VNM
+  - VN_99705_0024
+  - VN_99705_0023
+  - VN_99705_0027
+  - VN_99705_0028
+  - VN_99705_0025
+  - VN_99705_0029
+  - VN_99705_0026
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 日本 | JPN 13
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 25
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_e48b9_0005
-  - 🇭🇰 香港 | HKG 12
-  - 🇭🇰 香港 | HKG 4
+  - GB_99705_0005
+  - 🇺🇸 美国 | USA 5
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_e48b9_0005
-  - VN_e48b9_0023
-  - VN_e48b9_0027
+  - GB_99705_0005
+  - VN_99705_0024
+  - VN_99705_0023
 rules:
 - MATCH,AUTO

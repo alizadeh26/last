@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_e48b9_0005
+- name: GB_99705_0005
   server: v12.hdacd.com
   port: 30812
   type: vmess
@@ -14,29 +14,15 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港 | HKG 12
-  server: efan.dnsefan04881.com
-  port: 7754
+- name: 🇺🇸 美国 | USA 5
+  server: 82.198.246.233
+  port: 180
   type: vmess
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: auto
+  cipher: aes-128-gcm
   tls: false
-  udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: m.cnmjin.net
-  port: 16632
-  type: vmess
-  uuid: b49af8c9-0cf1-4212-8ed8-35b70d9f2cf4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 3416cbe57b7c52733721859d4e23be39.mobgslb.tbcache.com
+  skip-cert-verify: false
   udp: true
 proxy-groups:
 - name: AUTO
@@ -44,8 +30,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_e48b9_0005
-  - 🇭🇰 香港 | HKG 12
-  - 🇭🇰 香港 | HKG 4
+  - GB_99705_0005
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
