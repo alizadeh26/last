@@ -4,71 +4,78 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: VN_4a2ea_0024
-  server: 103.186.154.236
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_4a2ea_0023
+- name: VN_e48b9_0023
   server: 103.186.154.198
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_4a2ea_0025
-  server: 103.186.155.24
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_4a2ea_0028
-  server: 103.186.155.136
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_4a2ea_0029
-  server: 103.186.155.60
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_4a2ea_0027
+- name: VN_e48b9_0027
   server: 103.186.154.216
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_4a2ea_0026
+- name: VN_e48b9_0029
+  server: 103.186.155.60
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e48b9_0028
+  server: 103.186.155.136
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e48b9_0025
+  server: 103.186.155.24
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e48b9_0024
+  server: 103.186.154.236
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_e48b9_0026
   server: 103.186.154.162
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 45.55.40.127
-  port: 49726
+- name: 🇯🇵 日本 | JPN 22
+  server: 185.141.219.158
+  port: 30312
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: elTuo73FsQwO90EbLo96Ve
+  cipher: aes-256-gcm
+  password: 99394cfebe6c0906
   udp: true
 - name: 🇺🇸 美国 | USA 4
-  server: 142.93.73.182
-  port: 45389
+  server: 52.207.147.180
+  port: 80
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hk1SdyRWbYi3Igxeow9JdN
+  cipher: aes-256-gcm
+  password: dada1203
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.252
+- name: 🇸🇬 新加坡 | SGP
+  server: 52.221.247.133
+  port: 80
+  type: ss
+  cipher: aes-256-gcm
+  password: dada1203
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.218
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -80,15 +87,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_4a2ea_0024
-  - VN_4a2ea_0023
-  - VN_4a2ea_0025
-  - VN_4a2ea_0028
-  - VN_4a2ea_0029
-  - VN_4a2ea_0027
-  - VN_4a2ea_0026
-  - 🇺🇸 美国 | USA 5
+  - VN_e48b9_0023
+  - VN_e48b9_0027
+  - VN_e48b9_0029
+  - VN_e48b9_0028
+  - VN_e48b9_0025
+  - VN_e48b9_0024
+  - VN_e48b9_0026
+  - 🇯🇵 日本 | JPN 22
   - 🇺🇸 美国 | USA 4
-  - 🇻🇳 越南 | VNM 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇻🇳 越南 | VNM
 rules:
 - MATCH,AUTO
