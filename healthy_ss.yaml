@@ -4,50 +4,50 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: VN_99705_0023
-  server: 103.186.154.198
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_99705_0024
+- name: VN_1ff06_0024
   server: 103.186.154.236
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_99705_0025
+- name: VN_1ff06_0023
+  server: 103.186.154.198
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_1ff06_0025
   server: 103.186.155.24
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_99705_0027
+- name: VN_1ff06_0027
   server: 103.186.154.216
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_99705_0028
-  server: 103.186.155.136
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_99705_0026
+- name: VN_1ff06_0026
   server: 103.186.154.162
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_99705_0029
+- name: VN_1ff06_0029
   server: 103.186.155.60
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_1ff06_0028
+  server: 103.186.155.136
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -59,12 +59,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_99705_0023
-  - VN_99705_0024
-  - VN_99705_0025
-  - VN_99705_0027
-  - VN_99705_0028
-  - VN_99705_0026
-  - VN_99705_0029
+  - VN_1ff06_0024
+  - VN_1ff06_0023
+  - VN_1ff06_0025
+  - VN_1ff06_0027
+  - VN_1ff06_0026
+  - VN_1ff06_0029
+  - VN_1ff06_0028
 rules:
 - MATCH,AUTO

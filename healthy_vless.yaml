@@ -15,22 +15,22 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
+- name: 🇸🇬 新加坡 | SGP 3
   server: sg1.ap221.com
   port: 30000
   type: vless
-  uuid: a7585574-ae54-4b8f-9f7f-e794dc6fe17d
+  uuid: b6877b5a-4554-4e5a-8a24-308a171e5bef
   tls: true
   flow: xtls-rprx-vision
   servername: sg.ap221.com
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
+- name: 🇸🇬 新加坡 | SGP 4
   server: sg1.ap221.com
   port: 30000
   type: vless
-  uuid: b6877b5a-4554-4e5a-8a24-308a171e5bef
+  uuid: a7585574-ae54-4b8f-9f7f-e794dc6fe17d
   tls: true
   flow: xtls-rprx-vision
   servername: sg.ap221.com
@@ -55,8 +55,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇯🇵 日本 | JPN 13
-  - 🇸🇬 新加坡 | SGP 4
   - 🇸🇬 新加坡 | SGP 3
+  - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 25
 rules:
 - MATCH,AUTO
