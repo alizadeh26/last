@@ -14,6 +14,13 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: VN_1ff06_0023
+  server: 103.186.154.198
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: VN_1ff06_0024
   server: 103.186.154.236
   port: 38388
@@ -35,15 +42,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_1ff06_0029
-  server: 103.186.155.60
+- name: VN_1ff06_0028
+  server: 103.186.155.136
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_1ff06_0028
-  server: 103.186.155.136
+- name: VN_1ff06_0026
+  server: 103.186.154.162
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: VN_1ff06_0029
+  server: 103.186.155.60
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -59,24 +73,6 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: VN_1ff06_0023
-  server: 103.186.154.198
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇯🇵 日本 | JPN 13
-  server: tokyo1.ap221.com
-  port: 30000
-  type: vless
-  uuid: a7585574-ae54-4b8f-9f7f-e794dc6fe17d
-  tls: true
-  flow: xtls-rprx-vision
-  servername: tokyo.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: sg1.ap221.com
   port: 30000
@@ -88,35 +84,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: sg1.ap221.com
-  port: 30000
-  type: vless
-  uuid: a7585574-ae54-4b8f-9f7f-e794dc6fe17d
-  tls: true
-  flow: xtls-rprx-vision
-  servername: sg.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: ohio1.ap221.com
-  port: 30000
-  type: vless
-  uuid: a7585574-ae54-4b8f-9f7f-e794dc6fe17d
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ohio.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: VN_1ff06_0026
-  server: 103.186.154.162
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -124,39 +91,33 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_1ff06_0005
+  - VN_1ff06_0023
   - VN_1ff06_0024
   - VN_1ff06_0025
   - VN_1ff06_0027
-  - VN_1ff06_0029
   - VN_1ff06_0028
-  - 🇺🇸 美国 | USA 5
-  - VN_1ff06_0023
-  - 🇯🇵 日本 | JPN 13
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 25
   - VN_1ff06_0026
+  - VN_1ff06_0029
+  - 🇺🇸 美国 | USA 5
+  - 🇸🇬 新加坡 | SGP 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - VN_1ff06_0023
   - VN_1ff06_0024
   - VN_1ff06_0025
   - VN_1ff06_0027
-  - VN_1ff06_0029
   - VN_1ff06_0028
-  - VN_1ff06_0023
   - VN_1ff06_0026
+  - VN_1ff06_0029
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 13
   - 🇸🇬 新加坡 | SGP 3
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 25
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -170,15 +131,8 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_1ff06_0005
+  - VN_1ff06_0023
   - VN_1ff06_0024
   - VN_1ff06_0025
-  - VN_1ff06_0027
-  - VN_1ff06_0029
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
