@@ -4,16 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_de7af_0005
-  server: v12.hdacd.com
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 🇩🇪 德国 | DEU
   server: 82.198.246.9
   port: 180
@@ -49,7 +39,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_de7af_0005
   - 🇩🇪 德国 | DEU
   - 🇭🇰 香港 | HKG 3
   - 🇺🇸 美国 | USA 9
