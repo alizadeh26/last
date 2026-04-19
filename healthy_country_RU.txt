@@ -1,3 +1,5 @@
 vless://0678c5c6-d3f8-4cd8-9f66-3dbf5220540a@95.163.215.62:2443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=www.ads.x5.ru&pbk=9n9QFGzAagGdQBU7uMdLRaGhk-CuPcVwEZdbegnUeDs&sid=d2e8ddc7e3dda3#🇷🇺 14 - RU - VLESS/REALITY/PBK/SID/VISION/UTLS - 2443
+vless://19ef3d02-1c55-4fec-9794-6def8cbac396@185.130.113.39:5443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=i.oneme.ru&pbk=-nZqMxt7meVxfnQeK46MAYh5scb0M6La82axD8KHJXk&sid=91e2a4c7#🇷🇺 129 - RU - VLESS/REALITY/PBK/SID/VISION/UTLS - 5443
+vless://4e4f5607-087f-4ff6-907c-6b466530b455@109.205.58.79:54986?encryption=none&type=tcp&security=reality&fp=chrome&sni=www.vk.com&pbk=r5MXUjZdwVFbi1XWgElNHWbAn5SA_XRyoENzVTDxa2U&sid=cccbaf57#🇷🇺 325 - RU - VLESS/REALITY/PBK/SID/UTLS - 54986
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@185.148.106.138:2096?encryption=none&host=sni.111000.indevs.in&security=tls&sni=sni.111000.indevs.in&type=ws#🇷🇺 489 - RU - VLESS/WS/TLS - 2096
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@89.23.106.39:2053?allowInsecure=1&encryption=none&host=sni.111000.indevs.in&security=tls&sni=sni.111000.indevs.in&type=ws#🇩🇪 668 - DE - VLESS/WS/TLS - 2053
