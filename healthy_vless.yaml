@@ -14,17 +14,6 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: sg1.ap221.com
-  port: 30000
-  type: vless
-  uuid: c3637f06-2dc6-44cd-9dbe-0c09dac1837b
-  tls: true
-  flow: xtls-rprx-vision
-  servername: sg.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -32,6 +21,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 6
-  - 🇸🇬 新加坡 | SGP 7
 rules:
 - MATCH,AUTO
