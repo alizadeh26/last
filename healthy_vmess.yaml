@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_1ff06_0005
+- name: GB_b5300_0005
   server: v12.hdacd.com
   port: 30812
   type: vmess
@@ -14,15 +14,20 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 82.198.246.233
-  port: 180
+- name: 🇯🇵 日本 | JPN 21
+  server: planb.mojcn.com
+  port: 16617
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: b49af8c9-0cf1-4212-8ed8-35b70d9f2cf4
   alterId: 0
-  cipher: aes-128-gcm
+  cipher: auto
   tls: false
-  skip-cert-verify: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 3416cbe57b7c52733721859d4e23be39.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -30,7 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_1ff06_0005
-  - 🇺🇸 美国 | USA 5
+  - GB_b5300_0005
+  - 🇯🇵 日本 | JPN 21
 rules:
 - MATCH,AUTO

@@ -4,11 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP 3
+- name: 🇺🇸 美国 | USA 6
+  server: 192.159.99.18
+  port: 30047
+  type: vless
+  uuid: caf9d5f7-77f2-4033-823e-d55a1996fc4a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 7
   server: sg1.ap221.com
   port: 30000
   type: vless
-  uuid: b6877b5a-4554-4e5a-8a24-308a171e5bef
+  uuid: c3637f06-2dc6-44cd-9dbe-0c09dac1837b
   tls: true
   flow: xtls-rprx-vision
   servername: sg.ap221.com
@@ -21,6 +31,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 6
+  - 🇸🇬 新加坡 | SGP 7
 rules:
 - MATCH,AUTO
