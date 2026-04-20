@@ -18,6 +18,27 @@ proxies:
     public-key: 5yAKDAAQ6mDjzplTCDL0D7xBiAmgRxWBOcTQuy5XAB8
     short-id: 353df31b921e9884
   udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: vm51544542.dns8656815.com
+  port: 7754
+  type: vmess
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  alterId: 0
+  cipher: auto
+  tls: false
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 151.101.1.55
+  port: 80
+  type: vless
+  uuid: 74d47fb8-c057-49b1-85ff-447ecd6cfcd6
+  tls: false
+  network: ws
+  ws-opts:
+    path: /live
+    headers:
+      Host: plus-mobile1.global.ssl.fastly.net
+  udp: true
 - name: US_1b634_0021
   server: nld.pink-world.ru
   port: 443
@@ -45,48 +66,6 @@ proxies:
     public-key: tB6tQr-pmLTdMM8DVOb9KsS27lDkAjjelbdu_Gp1SR0
     short-id: f27d8b541b5f48bf
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 151.101.1.55
-  port: 80
-  type: vless
-  uuid: 74d47fb8-c057-49b1-85ff-447ecd6cfcd6
-  tls: false
-  network: ws
-  ws-opts:
-    path: /live
-    headers:
-      Host: plus-mobile1.global.ssl.fastly.net
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: vm51544542.dns8656815.com
-  port: 7754
-  type: vmess
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
-- name: 🇮🇳 印度 | IND
-  server: 13.233.161.155
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: bl3-mwscloud.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5yAKDAAQ6mDjzplTCDL0D7xBiAmgRxWBOcTQuy5XAB8
-    short-id: 353df31b921e9884
-  servername: bl3-mwscloud.onnstreaming.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: US_1b634_0028
   server: st-2.globalcache.onnstreaming.ru
   port: 443
@@ -100,6 +79,13 @@ proxies:
   reality-opts:
     public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
     short-id: aa69f619e4414362
+  udp: true
+- name: 🇮🇳 印度 | IND
+  server: 13.233.161.155
+  port: 80
+  type: ss
+  cipher: aes-256-gcm
+  password: dada1203
   udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 82.198.246.37
@@ -121,19 +107,26 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: bl3-mwscloud.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5yAKDAAQ6mDjzplTCDL0D7xBiAmgRxWBOcTQuy5XAB8
+    short-id: 353df31b921e9884
+  servername: bl3-mwscloud.onnstreaming.ru
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 45.129.3.254
   port: 60290
   type: ss
   cipher: aes-256-gcm
   password: f34579d0148b2581
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.130
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.214
@@ -142,8 +135,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.225
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.130
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.203
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -156,12 +156,26 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.225
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.154.13
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇻🇳 越南 | VNM 8
   server: 103.186.154.248
@@ -184,20 +198,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.203
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 185.231.233.112
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -205,26 +205,26 @@ proxy-groups:
   interval: 300
   proxies:
   - IT_1b634_0007
+  - 🇭🇰 香港 | HKG 2
+  - 🇩🇪 德国 | DEU
   - US_1b634_0021
   - US_1b634_0022
-  - 🇩🇪 德国 | DEU
-  - 🇭🇰 香港 | HKG 2
-  - 🇮🇳 印度 | IND
-  - 🇮🇹 意大利 | ITA
   - US_1b634_0028
+  - 🇮🇳 印度 | IND
   - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 7
+  - 🇮🇹 意大利 | ITA
   - 🇷🇺 俄罗斯 | RUS
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 6
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 4
-  - 🇵🇹 葡萄牙 | PRT
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -232,27 +232,27 @@ proxy-groups:
   proxies:
   - 🇮🇳 印度 | IND
   - 🇷🇺 俄罗斯 | RUS
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 6
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 4
-  - 🇵🇹 葡萄牙 | PRT
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - IT_1b634_0007
+  - 🇩🇪 德国 | DEU
   - US_1b634_0021
   - US_1b634_0022
-  - 🇩🇪 德国 | DEU
-  - 🇮🇹 意大利 | ITA
   - US_1b634_0028
+  - 🇮🇹 意大利 | ITA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -267,18 +267,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇮🇳 印度 | IND
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - IT_1b634_0007
-  - US_1b634_0021
-  - US_1b634_0022
   - 🇮🇹 意大利 | ITA
 - name: REGION-NA
   type: url-test
