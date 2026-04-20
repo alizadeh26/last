@@ -4,13 +4,29 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
-  server: aprilshit.sahanwickramasinghevip.shop
+- name: 🇩🇪 德国 | DEU 3
+  server: cluster-de-1.firstvideocdn.ru
+  port: 52006
+  type: vless
+  uuid: 75807638-6f19-01f4-ae08-38492ee85c88
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 10
+  server: hk1.zywm.eu.org
   port: 443
   type: vless
-  uuid: 1a7f0d8d-a78d-4df5-8014-432817a5f92c
+  uuid: 83564060-4069-40b4-e657-adccef9c4b62
   tls: true
-  network: tcp
+  servername: hk1.zywm.eu.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hhk
+    headers:
+      Host: hk1.zywm.eu.org
   udp: true
 proxy-groups:
 - name: AUTO
@@ -18,6 +34,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU 3
+  - 🇭🇰 香港 | HKG 10
 rules:
 - MATCH,AUTO
