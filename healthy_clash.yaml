@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: VN_a3219_0024
-  server: 103.186.154.236
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: VN_a3219_0023
   server: 103.186.154.198
   port: 38388
@@ -25,8 +18,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_a3219_0027
-  server: 103.186.154.216
+- name: VN_a3219_0024
+  server: 103.186.154.236
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -60,6 +53,13 @@ proxies:
   cipher: aes-256-cfb
   password: fG2artUmHfNT2cX7
   udp: true
+- name: VN_a3219_0027
+  server: 103.186.154.216
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 82.198.246.250
   port: 180
@@ -68,6 +68,13 @@ proxies:
   alterId: 0
   cipher: auto
   tls: false
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.21
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.182
@@ -104,53 +111,46 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.21
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_a3219_0024
   - VN_a3219_0023
   - VN_a3219_0025
-  - VN_a3219_0027
+  - VN_a3219_0024
   - VN_a3219_0028
   - VN_a3219_0029
   - VN_a3219_0026
   - 🇵🇱 波兰 | POL
+  - VN_a3219_0027
   - 🇺🇸 美国 | USA 2
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_a3219_0024
   - VN_a3219_0023
   - VN_a3219_0025
-  - VN_a3219_0027
+  - VN_a3219_0024
   - VN_a3219_0028
   - VN_a3219_0029
   - VN_a3219_0026
   - 🇵🇱 波兰 | POL
+  - VN_a3219_0027
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -162,8 +162,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - VN_a3219_0024
   - VN_a3219_0023
   - VN_a3219_0025
+  - VN_a3219_0024
 rules:
 - MATCH,AUTO
