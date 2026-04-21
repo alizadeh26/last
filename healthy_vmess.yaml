@@ -4,6 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇭🇰 香港 | HKG
+  server: efan.dnsefan04881.com
+  port: 7754
+  type: vmess
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  alterId: 0
+  cipher: auto
+  tls: false
+  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 82.198.246.9
   port: 180
@@ -14,22 +23,13 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: efan.dnsefan04881.com
-  port: 7754
-  type: vmess
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
   - 🇭🇰 香港 | HKG
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO

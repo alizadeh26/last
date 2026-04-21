@@ -4,19 +4,31 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IT_c3dfe_0007
-  server: bl3-mwscloud.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: bl3-mwscloud.onnstreaming.ru
-  reality-opts:
-    public-key: 5yAKDAAQ6mDjzplTCDL0D7xBiAmgRxWBOcTQuy5XAB8
-    short-id: 353df31b921e9884
+- name: 🇭🇰 香港 | HKG
+  server: efan.dnsefan04881.com
+  port: 7754
+  type: vmess
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  alterId: 0
+  cipher: auto
+  tls: false
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 82.198.246.9
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 45.140.169.225
+  port: 10974
+  type: ss
+  cipher: aes-256-gcm
+  password: c5fcdf7829112cb4
   udp: true
 - name: US_c3dfe_0021
   server: nld.pink-world.ru
@@ -31,6 +43,27 @@ proxies:
   reality-opts:
     public-key: tB6tQr-pmLTdMM8DVOb9KsS27lDkAjjelbdu_Gp1SR0
     short-id: f27d8b541b5f48bf
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.214
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.69
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.227
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: US_c3dfe_0022
   server: nld.pink-world.ru
@@ -59,84 +92,35 @@ proxies:
     public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
     short-id: aa69f619e4414362
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 82.198.246.9
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 45.140.169.225
-  port: 10974
-  type: ss
-  cipher: aes-256-gcm
-  password: c5fcdf7829112cb4
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.227
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.214
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: efan.dnsefan04881.com
-  port: 7754
-  type: vmess
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.69
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IT_c3dfe_0007
-  - US_c3dfe_0021
-  - US_c3dfe_0022
-  - US_c3dfe_0028
+  - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 4
   - 🇷🇺 俄罗斯 | RUS
-  - 🇻🇳 越南 | VNM 3
+  - US_c3dfe_0021
   - 🇻🇳 越南 | VNM
-  - 🇭🇰 香港 | HKG
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
+  - US_c3dfe_0022
+  - US_c3dfe_0028
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 | RUS
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IT_c3dfe_0007
   - US_c3dfe_0021
   - US_c3dfe_0022
   - US_c3dfe_0028
@@ -145,15 +129,25 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 4
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
   - 🇭🇰 香港 | HKG
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IT_c3dfe_0007
-  - US_c3dfe_0021
-  - US_c3dfe_0022
+  - 🇷🇺 俄罗斯 | RUS
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
