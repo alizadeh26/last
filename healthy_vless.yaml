@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IT_fc9b1_0007
+- name: IT_e8756_0007
   server: bl3-mwscloud.onnstreaming.ru
   port: 443
   type: vless
@@ -18,7 +18,19 @@ proxies:
     public-key: 5yAKDAAQ6mDjzplTCDL0D7xBiAmgRxWBOcTQuy5XAB8
     short-id: 353df31b921e9884
   udp: true
-- name: US_fc9b1_0028
+- name: 🇩🇪 德国 | DEU 2
+  server: 151.101.1.55
+  port: 80
+  type: vless
+  uuid: 74d47fb8-c057-49b1-85ff-447ecd6cfcd6
+  tls: false
+  network: ws
+  ws-opts:
+    path: /live
+    headers:
+      Host: plus-mobile1.global.ssl.fastly.net
+  udp: true
+- name: US_e8756_0028
   server: st-2.globalcache.onnstreaming.ru
   port: 443
   type: vless
@@ -32,24 +44,14 @@ proxies:
     public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
     short-id: aa69f619e4414362
   udp: true
-- name: 🇳🇴 挪威 | NOR
-  server: cluster-de-2.firstvideocdn.ru
-  port: 52006
-  type: vless
-  uuid: 75807638-6f19-2710-ae08-38492ee85c88
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IT_fc9b1_0007
-  - US_fc9b1_0028
-  - 🇳🇴 挪威 | NOR
+  - IT_e8756_0007
+  - 🇩🇪 德国 | DEU 2
+  - US_e8756_0028
 rules:
 - MATCH,AUTO

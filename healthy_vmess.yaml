@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 3
-  server: 82.198.246.214
+- name: 🇺🇸 美国 | USA 2
+  server: 82.198.246.37
   port: 180
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -14,19 +14,10 @@ proxies:
   tls: false
   udp: true
 - name: 🇺🇸 美国 | USA 5
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
-- name: 🇭🇰 香港 | HKG 8
-  server: vm51544542.dns8656815.com
-  port: 7754
-  type: vmess
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
   alterId: 0
   cipher: auto
   tls: false
@@ -37,8 +28,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 5
-  - 🇭🇰 香港 | HKG 8
 rules:
 - MATCH,AUTO
