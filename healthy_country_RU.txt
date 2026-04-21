@@ -1,4 +1,7 @@
-vless://2983c1d0-2c98-4e16-a92a-a64351ec2b30@109.120.189.4:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=ads.x5.ru&pbk=YnOlmcxFiHgitIcjba45C7z6kw7txOWnImgSfMCtsiA&sid=1da44564cda563cc#🇷🇺 155 - RU - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@185.148.106.138:2096?encryption=none&host=sni.111000.indevs.in&security=tls&sni=sni.111000.indevs.in&type=ws#🇷🇺 498 - RU - VLESS/WS/TLS - 2096
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@89.23.106.39:2053?allowInsecure=1&encryption=none&host=sni.111000.indevs.in&security=tls&sni=sni.111000.indevs.in&type=ws#🇩🇪 705 - DE - VLESS/WS/TLS - 2053
-ss://YWVzLTI1Ni1nY206ZjM0NTc5ZDAxNDhiMjU4MQ@45.129.3.254:60290#🇷🇺 488 - RU - SS/AEAD - 60290
+vless://0c8a9f50-51b3-43b5-b1fb-09fc3131a800@5.23.54.103:8443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=gwapp-ru02.freenets.store&pbk=vuC_K7GAfERRLNvqVoGc0Mu8umhpEMkbtpxND0vLJQk#🇷🇺 83 - RU - VLESS/REALITY/PBK/VISION - 8443
+vless://2983c1d0-2c98-4e16-a92a-a64351ec2b30@109.120.189.4:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=ads.x5.ru&pbk=YnOlmcxFiHgitIcjba45C7z6kw7txOWnImgSfMCtsiA&sid=1da44564cda563cc#🇷🇺 181 - RU - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://32838792-84c0-4140-b1c1-162877b4fa41@158.160.120.38:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=api-maps.yandex.ru&pbk=OUTme8tBK1dzVY4volPJ-FcMpGuVbc-E0ssp1XnuVHk&spx=/#🇷🇺 201 - RU - VLESS/REALITY/PBK/VISION/UTLS - 443
+vless://3448c497-ecfb-4323-83da-6cf0fb9d9770@51.250.120.99:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=sun6-20.userapi.com&pbk=EFVYyes5-yvLnlI-a7PtNFRyI3qOqQd-bzgN6cbCYBo#🇷🇺 206 - RU - VLESS/REALITY/PBK/VISION - 443
+vless://51a73dce-9950-4214-bd22-e8b191da3bd4@51.250.27.136:443?encryption=none&type=tcp&security=reality&fp=random&sni=www.google.com&pbk=RivqWpaTYsjjZ1cGX8xa2njjbB1k5vWYijNvq0hBkWI&sid=7f#🇷🇺 338 - RU - VLESS/REALITY/PBK/SID/UTLS - 443
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@185.148.106.138:2096?encryption=none&host=sni.111000.indevs.in&security=tls&sni=sni.111000.indevs.in&type=ws#🇷🇺 540 - RU - VLESS/WS/TLS - 2096
+ss://YWVzLTI1Ni1nY206ZjM0NTc5ZDAxNDhiMjU4MQ@45.129.3.254:60290#🇷🇺 487 - RU - SS/AEAD - 60290
