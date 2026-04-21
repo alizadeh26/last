@@ -18,6 +18,30 @@ proxies:
     public-key: 5yAKDAAQ6mDjzplTCDL0D7xBiAmgRxWBOcTQuy5XAB8
     short-id: 353df31b921e9884
   udp: true
+- name: US_fc9b1_0028
+  server: st-2.globalcache.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: st-2.globalcache.onnstreaming.ru
+  reality-opts:
+    public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
+    short-id: aa69f619e4414362
+  udp: true
+- name: 🇳🇴 挪威 | NOR
+  server: cluster-de-2.firstvideocdn.ru
+  port: 52006
+  type: vless
+  uuid: 75807638-6f19-2710-ae08-38492ee85c88
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -25,5 +49,7 @@ proxy-groups:
   interval: 300
   proxies:
   - IT_fc9b1_0007
+  - US_fc9b1_0028
+  - 🇳🇴 挪威 | NOR
 rules:
 - MATCH,AUTO

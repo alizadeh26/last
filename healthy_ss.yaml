@@ -11,6 +11,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇭🇰 香港 | HKG 7
+  server: 91.149.237.36
+  port: 19081
+  type: ss
+  cipher: aes-256-gcm
+  password: 7e1dd4c55bf85da5
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 194.87.196.164
   port: 20129
@@ -39,29 +46,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.17
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 11
-  server: 103.186.154.215
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 12
-  server: 103.186.155.102
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.59
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.17
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -74,15 +67,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: 91.149.237.36
-  port: 19081
-  type: ss
-  cipher: aes-256-gcm
-  password: 7e1dd4c55bf85da5
-  udp: true
-- name: 🇻🇳 越南 | VNM 14
-  server: 103.186.154.245
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.225
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -95,13 +81,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 13
-  server: 103.186.154.53
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 7
   server: 103.186.154.71
   port: 38388
@@ -109,43 +88,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.225
+- name: 🇻🇳 越南 | VNM 11
+  server: 103.186.154.215
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 15
-  server: 103.186.155.233
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 16
-  server: 103.186.155.131
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 17
-  server: 103.186.154.246
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 10
-  server: 103.186.154.250
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 18
-  server: 103.186.154.201
+- name: 🇻🇳 越南 | VNM 13
+  server: 103.186.154.53
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -158,6 +109,55 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 12
+  server: 103.186.155.102
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 14
+  server: 103.186.154.245
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 15
+  server: 103.186.155.233
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 18
+  server: 103.186.154.201
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 17
+  server: 103.186.154.246
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 16
+  server: 103.186.155.131
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 10
+  server: 103.186.154.250
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -165,26 +165,26 @@ proxy-groups:
   interval: 300
   proxies:
   - UN 01 [wzdnzd/aggregator]
+  - 🇭🇰 香港 | HKG 7
   - 🇷🇺 俄罗斯 | RUS
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 11
-  - 🇻🇳 越南 | VNM 12
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇭🇰 香港 | HKG 7
-  - 🇻🇳 越南 | VNM 14
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 13
-  - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 15
-  - 🇻🇳 越南 | VNM 16
-  - 🇻🇳 越南 | VNM 17
-  - 🇻🇳 越南 | VNM 10
-  - 🇻🇳 越南 | VNM 18
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 11
+  - 🇻🇳 越南 | VNM 13
   - 🇻🇳 越南 | VNM 9
+  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 14
+  - 🇻🇳 越南 | VNM 15
+  - 🇻🇳 越南 | VNM 18
+  - 🇻🇳 越南 | VNM 17
+  - 🇻🇳 越南 | VNM 16
+  - 🇻🇳 越南 | VNM 10
 rules:
 - MATCH,AUTO
