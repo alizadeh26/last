@@ -18,8 +18,8 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.245
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.39
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -32,15 +32,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.250
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.39
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.245
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -60,15 +53,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 9
-  server: 103.186.155.116
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.155.55
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.155.55
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.250
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -81,8 +74,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 11
-  server: 103.186.155.67
+- name: 🇻🇳 越南 | VNM 9
+  server: 103.186.155.116
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 13
+  server: 103.186.155.233
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -102,8 +102,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 13
-  server: 103.186.155.233
+- name: 🇻🇳 越南 | VNM 11
+  server: 103.186.155.67
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -117,18 +117,18 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 | FRA
   - 🇲🇰 北马其顿 | MKD
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 10
-  - 🇻🇳 越南 | VNM 11
+  - 🇻🇳 越南 | VNM 9
+  - 🇻🇳 越南 | VNM 13
   - 🇻🇳 越南 | VNM 12
   - 🇻🇳 越南 | VNM 14
-  - 🇻🇳 越南 | VNM 13
+  - 🇻🇳 越南 | VNM 11
 rules:
 - MATCH,AUTO
