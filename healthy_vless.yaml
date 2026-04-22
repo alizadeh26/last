@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IT_f1a11_0007
-  server: bl3-mwscloud.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: bl3-mwscloud.onnstreaming.ru
-  reality-opts:
-    public-key: 5yAKDAAQ6mDjzplTCDL0D7xBiAmgRxWBOcTQuy5XAB8
-    short-id: 353df31b921e9884
-  udp: true
 - name: US_f1a11_0028
   server: st-2.globalcache.onnstreaming.ru
   port: 443
@@ -48,7 +34,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IT_f1a11_0007
   - US_f1a11_0028
   - 🇵🇱 波兰 | POL
 rules:
