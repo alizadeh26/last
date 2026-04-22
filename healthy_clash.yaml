@@ -18,15 +18,19 @@ proxies:
     public-key: 5yAKDAAQ6mDjzplTCDL0D7xBiAmgRxWBOcTQuy5XAB8
     short-id: 353df31b921e9884
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: cluster-de-1.firstvideocdn.ru
-  port: 52006
+- name: US_92c20_0028
+  server: st-2.globalcache.onnstreaming.ru
+  port: 443
   type: vless
-  uuid: 75807638-6f19-01f4-ae08-38492ee85c88
-  tls: true
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
   flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
   client-fingerprint: chrome
-  network: tcp
+  servername: st-2.globalcache.onnstreaming.ru
+  reality-opts:
+    public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
+    short-id: aa69f619e4414362
   udp: true
 - name: 🇭🇰 香港 | HKG 7
   server: 112.213.102.188
@@ -59,20 +63,6 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: 99394cfebe6c0906
-  udp: true
-- name: 🇯🇵 日本 | JPN 5
-  server: jp.milas.click
-  port: 443
-  type: vless
-  uuid: 913c6074-a747-492b-a7e9-5abfcad6369d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: DoZSKLwNQjogQMlE7oEEuB8TqpNa-umXzG-2Q6dTTEY
-    short-id: 4fa44664f6a566d3
-  servername: jp.milas.click
-  client-fingerprint: random
-  network: tcp
   udp: true
 - name: 🇯🇵 日本 | JPN 11
   server: jp01.a0a.xyz
@@ -129,41 +119,6 @@ proxies:
   cipher: auto
   tls: false
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 3
-  server: namrcg001640lrm.cybervena.com
-  port: 50099
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: a9a0d092-6f0e-4701-81ee-454643d6d506
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.126
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: usace-cdncloud.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: a2tG4WygpOMmfHadIp6t4xKTvNESG1_-T12wyUb0fXw
-    short-id: cb80795fada6a060
-  servername: usace-cdncloud.onnstreaming.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.63
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.234
   port: 38388
@@ -171,36 +126,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.50
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇯🇵 日本 | JPN 5
+  server: jp.milas.click
+  port: 443
+  type: vless
+  uuid: 913c6074-a747-492b-a7e9-5abfcad6369d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: DoZSKLwNQjogQMlE7oEEuB8TqpNa-umXzG-2Q6dTTEY
+    short-id: 4fa44664f6a566d3
+  servername: jp.milas.click
+  client-fingerprint: random
+  network: tcp
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.84
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.155.130
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 9
-  server: 103.186.155.227
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.154.14
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.63
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -213,6 +154,48 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.154.14
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.155.130
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.84
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 9
+  server: 103.186.155.227
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.126
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.50
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -220,27 +203,25 @@ proxy-groups:
   interval: 300
   proxies:
   - IT_92c20_0007
-  - 🇩🇪 德国 | DEU
+  - US_92c20_0028
   - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG 11
   - 🇯🇵 日本 | JPN 7
-  - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 11
   - 🇰🇷 韩国 | KOR
   - 🇰🇷 韩国 | KOR 2
   - 🇺🇸 美国 | USA 10
-  - 🇹🇼 🇨🇳 台湾 | TWN 3
-  - 🇻🇳 越南 | VNM
-  - 🇺🇸 美国 | USA 12
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 7
+  - 🇯🇵 日本 | JPN 5
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 9
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -248,25 +229,23 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 7
   - 🇯🇵 日本 | JPN 7
-  - 🇹🇼 🇨🇳 台湾 | TWN 3
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 9
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - IT_92c20_0007
-  - 🇩🇪 德国 | DEU
+  - US_92c20_0028
   - 🇯🇵 日本 | JPN 5
-  - 🇺🇸 美国 | USA 12
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -286,7 +265,7 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG 11
-  - 🇯🇵 日本 | JPN 5
+  - 🇯🇵 日本 | JPN 7
   - 🇯🇵 日本 | JPN 11
 - name: REGION-EU
   type: url-test
@@ -294,6 +273,11 @@ proxy-groups:
   interval: 300
   proxies:
   - IT_92c20_0007
-  - 🇩🇪 德国 | DEU
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - US_92c20_0028
 rules:
 - MATCH,AUTO

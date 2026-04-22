@@ -18,15 +18,19 @@ proxies:
     public-key: 5yAKDAAQ6mDjzplTCDL0D7xBiAmgRxWBOcTQuy5XAB8
     short-id: 353df31b921e9884
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: cluster-de-1.firstvideocdn.ru
-  port: 52006
+- name: US_92c20_0028
+  server: st-2.globalcache.onnstreaming.ru
+  port: 443
   type: vless
-  uuid: 75807638-6f19-01f4-ae08-38492ee85c88
-  tls: true
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
   flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
   client-fingerprint: chrome
-  network: tcp
+  servername: st-2.globalcache.onnstreaming.ru
+  reality-opts:
+    public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
+    short-id: aa69f619e4414362
   udp: true
 - name: 🇯🇵 日本 | JPN 5
   server: jp.milas.click
@@ -42,20 +46,6 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: usace-cdncloud.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: a2tG4WygpOMmfHadIp6t4xKTvNESG1_-T12wyUb0fXw
-    short-id: cb80795fada6a060
-  servername: usace-cdncloud.onnstreaming.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -63,8 +53,7 @@ proxy-groups:
   interval: 300
   proxies:
   - IT_92c20_0007
-  - 🇩🇪 德国 | DEU
+  - US_92c20_0028
   - 🇯🇵 日本 | JPN 5
-  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
