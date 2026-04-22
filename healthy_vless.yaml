@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_f1a11_0028
+- name: US_0b85e_0028
   server: st-2.globalcache.onnstreaming.ru
   port: 443
   type: vless
@@ -34,7 +34,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_f1a11_0028
+  - US_0b85e_0028
   - 🇵🇱 波兰 | POL
 rules:
 - MATCH,AUTO
