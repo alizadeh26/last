@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IT_92c20_0007
+- name: IT_f1a11_0007
   server: bl3-mwscloud.onnstreaming.ru
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: 5yAKDAAQ6mDjzplTCDL0D7xBiAmgRxWBOcTQuy5XAB8
     short-id: 353df31b921e9884
   udp: true
-- name: US_92c20_0028
+- name: US_f1a11_0028
   server: st-2.globalcache.onnstreaming.ru
   port: 443
   type: vless
@@ -32,18 +32,14 @@ proxies:
     public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
     short-id: aa69f619e4414362
   udp: true
-- name: 🇯🇵 日本 | JPN 5
-  server: jp.milas.click
-  port: 443
+- name: 🇵🇱 波兰 | POL
+  server: cluster-de-2.firstvideocdn.ru
+  port: 52006
   type: vless
-  uuid: 913c6074-a747-492b-a7e9-5abfcad6369d
+  uuid: 75807638-6f19-2710-ae08-38492ee85c88
   tls: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: DoZSKLwNQjogQMlE7oEEuB8TqpNa-umXzG-2Q6dTTEY
-    short-id: 4fa44664f6a566d3
-  servername: jp.milas.click
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: tcp
   udp: true
 proxy-groups:
@@ -52,8 +48,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IT_92c20_0007
-  - US_92c20_0028
-  - 🇯🇵 日本 | JPN 5
+  - IT_f1a11_0007
+  - US_f1a11_0028
+  - 🇵🇱 波兰 | POL
 rules:
 - MATCH,AUTO
