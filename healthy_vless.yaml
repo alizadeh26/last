@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_0b85e_0028
+- name: US_cbab2_0028
   server: st-2.globalcache.onnstreaming.ru
   port: 443
   type: vless
@@ -18,23 +18,12 @@ proxies:
     public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
     short-id: aa69f619e4414362
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: cluster-de-2.firstvideocdn.ru
-  port: 52006
-  type: vless
-  uuid: 75807638-6f19-2710-ae08-38492ee85c88
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_0b85e_0028
-  - 🇵🇱 波兰 | POL
+  - US_cbab2_0028
 rules:
 - MATCH,AUTO

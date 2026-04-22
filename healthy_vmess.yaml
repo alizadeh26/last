@@ -4,78 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 5
-  server: efan.dnsefan04881.com
-  port: 7754
+- name: 🇸🇬 新加坡 | SGP 2
+  server: m.cnmjin.net
+  port: 16618
   type: vmess
-  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
-- name: 🇭🇰 香港 | HKG 11
-  server: vm51544542.dns8656815.com
-  port: 7754
-  type: vmess
-  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
-- name: 🇯🇵 日本 | JPN 11
-  server: jp01.a0a.xyz
-  port: 80
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  uuid: 033db0ca-703e-4484-a717-77b8900acd7b
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /
     headers:
-      Host: jp01.a0a.xyz
-  udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: kr02.a0a.xyz
-  port: 80
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  servername: kr02.a0a.xyz
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
-  udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: kr03.a0a.xyz
-  port: 80
-  type: vmess
-  uuid: ae5d1a01-72db-4842-fcba-7bd006ff04bb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  servername: kr03.a0a.xyz
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr03.a0a.xyz
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 82.198.246.233
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
+      Host: 5f34ddd3745456d7ab987287b3f66a2c.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -83,11 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG 11
-  - 🇯🇵 日本 | JPN 11
-  - 🇰🇷 韩国 | KOR
-  - 🇰🇷 韩国 | KOR 2
-  - 🇺🇸 美国 | USA 10
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO
