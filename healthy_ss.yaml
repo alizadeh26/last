@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 3
-  server: 51.44.178.10
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
-  udp: true
 - name: 🇨🇾 塞浦路斯 | CYP
   server: 45.82.252.109
   port: 990
@@ -18,15 +11,15 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
+- name: 🇫🇷 法国 | FRA 3
+  server: 51.44.178.10
+  port: 80
+  type: ss
+  cipher: aes-256-gcm
+  password: dada1203
+  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 82.38.31.89
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 82.38.31.61
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -39,6 +32,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 82.38.31.61
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 82.38.31.103
   port: 8080
@@ -46,19 +46,19 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 52.54.122.43
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 195.58.49.220
   port: 10990
   type: ss
   cipher: aes-256-gcm
   password: 9f3d1a6d31468599
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 52.54.122.43
+  port: 80
+  type: ss
+  cipher: aes-256-gcm
+  password: dada1203
   udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.243
@@ -69,13 +69,6 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.234
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.18
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -95,8 +88,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.221
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.18
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -116,6 +109,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 9
+  server: 103.186.155.84
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 10
   server: 103.186.155.43
   port: 38388
@@ -123,8 +123,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 9
-  server: 103.186.155.84
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.221
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -136,23 +136,23 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 3
   - 🇨🇾 塞浦路斯 | CYP
+  - 🇫🇷 法国 | FRA 3
   - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 6
-  - 🇺🇸 美国 | USA
   - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 10
   - 🇻🇳 越南 | VNM 9
+  - 🇻🇳 越南 | VNM 10
+  - 🇻🇳 越南 | VNM 6
 rules:
 - MATCH,AUTO
