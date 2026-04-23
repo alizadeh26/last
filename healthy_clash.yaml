@@ -11,15 +11,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: efan.dnsefan04881.com
-  port: 7754
-  type: vmess
-  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
 - name: US_5486f_0028
   server: st-2.globalcache.onnstreaming.ru
   port: 443
@@ -34,19 +25,23 @@ proxies:
     public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
     short-id: aa69f619e4414362
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 82.38.31.210
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇭🇰 香港 | HKG 7
+  server: efan.dnsefan04881.com
+  port: 7754
+  type: vmess
+  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
+  alterId: 0
+  cipher: auto
+  tls: false
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 82.38.31.124
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇭🇰 香港 | HKG 8
+  server: vm51544542.dns8656815.com
+  port: 7754
+  type: vmess
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  alterId: 0
+  cipher: auto
+  tls: false
   udp: true
 - name: 🇺🇸 美国 | USA
   server: 82.198.246.250
@@ -56,6 +51,13 @@ proxies:
   alterId: 0
   cipher: auto
   tls: false
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 82.38.31.210
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 82.198.246.9
@@ -67,8 +69,22 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.221
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 82.38.31.124
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.29
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.155.57
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -88,15 +104,8 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.29
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.202
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.165
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -109,29 +118,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.57
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 10
-  server: 103.186.154.250
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 13
-  server: 103.186.155.5
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 14
-  server: 103.186.155.138
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.10
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -144,6 +132,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.18
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 11
   server: 103.186.154.17
   port: 38388
@@ -151,17 +146,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇭🇰 香港 | HKG 8
-  server: vm51544542.dns8656815.com
-  port: 7754
-  type: vmess
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: 🇻🇳 越南 | VNM 13
+  server: 103.186.155.5
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.10
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.202
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -174,8 +167,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.18
+- name: 🇻🇳 越南 | VNM 14
+  server: 103.186.155.138
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 10
+  server: 103.186.154.250
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -188,27 +188,27 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR
-  - 🇭🇰 香港 | HKG 7
   - US_5486f_0028
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 2
-  - 🇻🇳 越南 | VNM
-  - 🇺🇸 美国 | USA 8
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 10
-  - 🇻🇳 越南 | VNM 13
-  - 🇻🇳 越南 | VNM 14
-  - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 11
+  - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 8
+  - 🇺🇸 美国 | USA
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 2
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 7
+  - 🇺🇸 美国 | USA 8
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 11
+  - 🇻🇳 越南 | VNM 13
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 14
+  - 🇻🇳 越南 | VNM 10
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -217,19 +217,19 @@ proxy-groups:
   - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 10
-  - 🇻🇳 越南 | VNM 13
-  - 🇻🇳 越南 | VNM 14
-  - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 11
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 11
+  - 🇻🇳 越南 | VNM 13
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 14
+  - 🇻🇳 越南 | VNM 10
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -243,9 +243,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 8
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
-  - 🇭🇰 香港 | HKG 8
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
