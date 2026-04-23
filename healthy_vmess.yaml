@@ -19,21 +19,6 @@ proxies:
     headers:
       Host: 7742af127c04571e3e3953165a8bc157.mobgslb.tbcache.com
   udp: true
-- name: GB_78e4b_0083
-  server: m.cnmjin.net
-  port: 16632
-  type: vmess
-  uuid: 8d95151d-d626-4ed2-83ac-29631f44085b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d26bc33c22885694ea3e533bfbf33059.mobgslb.tbcache.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -41,6 +26,5 @@ proxy-groups:
   interval: 300
   proxies:
   - CN_78e4b_0051
-  - GB_78e4b_0083
 rules:
 - MATCH,AUTO

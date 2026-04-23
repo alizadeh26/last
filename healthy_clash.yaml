@@ -54,21 +54,6 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: GB_78e4b_0083
-  server: m.cnmjin.net
-  port: 16632
-  type: vmess
-  uuid: 8d95151d-d626-4ed2-83ac-29631f44085b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d26bc33c22885694ea3e533bfbf33059.mobgslb.tbcache.com
-  udp: true
 - name: 🇧🇪 比利时 | BEL
   server: 192.71.249.78
   port: 989
@@ -83,6 +68,13 @@ proxies:
   cipher: aes-256-gcm
   password: dada1203
   udp: true
+- name: 🇱🇻 拉脱维亚 | LVA 6
+  server: 46.183.217.204
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: 82.38.31.202
   port: 8080
@@ -96,13 +88,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 6
-  server: 46.183.217.204
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
 - name: 🇵🇱 波兰 | POL
   server: pl74.mechvpn.online
@@ -119,22 +104,21 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇯🇵 日本 | JPN 10
+  server: cdn.wmsj.eu.org
+  port: 443
+  type: vless
+  uuid: dc5625c7-a2e0-452d-ab14-d4f2f34b6921
+  tls: true
+  servername: cdn.wmsj.eu.org
+  network: ws
+  ws-opts:
+    path: /jjp
+    headers:
+      Host: cdn.wmsj.eu.org
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.141
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.85
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.42
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -147,15 +131,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.37
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.155.50
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.155.126
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.42
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -168,15 +152,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.50
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 10
-  server: 103.186.154.77
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.37
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -199,6 +176,20 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.85
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.155.126
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -209,24 +200,23 @@ proxy-groups:
   - DE_78e4b_0060
   - CN_78e4b_0051
   - HK_78e4b_0098
-  - GB_78e4b_0083
   - 🇧🇪 比利时 | BEL
   - 🇯🇵 日本 | JPN 7
+  - 🇱🇻 拉脱维亚 | LVA 6
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 3
-  - 🇱🇻 拉脱维亚 | LVA 6
   - 🇵🇱 波兰 | POL
+  - 🇯🇵 日本 | JPN 10
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 10
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 9
   - 🇵🇱 波兰 | POL 2
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -235,19 +225,18 @@ proxy-groups:
   - GB_78e4b_0074
   - 🇧🇪 比利时 | BEL
   - 🇯🇵 日本 | JPN 7
+  - 🇱🇻 拉脱维亚 | LVA 6
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 3
-  - 🇱🇻 拉脱维亚 | LVA 6
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 7
-  - 🇻🇳 越南 | VNM 10
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 9
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 8
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -256,6 +245,7 @@ proxy-groups:
   - DE_78e4b_0060
   - HK_78e4b_0098
   - 🇵🇱 波兰 | POL
+  - 🇯🇵 日本 | JPN 10
   - 🇵🇱 波兰 | POL 2
 - name: PROTO-VMESS
   type: url-test
@@ -263,7 +253,6 @@ proxy-groups:
   interval: 300
   proxies:
   - CN_78e4b_0051
-  - GB_78e4b_0083
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -272,6 +261,5 @@ proxy-groups:
   - GB_78e4b_0074
   - DE_78e4b_0060
   - CN_78e4b_0051
-  - GB_78e4b_0083
 rules:
 - MATCH,AUTO
