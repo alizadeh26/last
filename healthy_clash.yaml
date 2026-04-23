@@ -85,6 +85,13 @@ proxies:
   cipher: auto
   tls: false
   udp: true
+- name: 🇸🇨 塞舌尔 | SYC
+  server: 154.205.150.157
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
 - name: 🇵🇱 波兰 | POL
   server: pl-1.illusion-vpn.ru
   port: 443
@@ -99,8 +106,15 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇨 塞舌尔 | SYC
-  server: 154.205.150.157
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.227
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 38.89.142.56
   port: 990
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -108,13 +122,6 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.47
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.227
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -134,13 +141,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 38.89.142.56
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -157,12 +157,12 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇺🇸 美国 | USA 5
-  - 🇵🇱 波兰 | POL
   - 🇸🇨 塞舌尔 | SYC
-  - 🇻🇳 越南 | VNM 2
+  - 🇵🇱 波兰 | POL
   - 🇻🇳 越南 | VNM 3
-  - 🇺🇸 美国 | USA 7
   - 🇸🇬 新加坡 | SGP 4
+  - 🇻🇳 越南 | VNM 2
+  - 🇺🇸 美国 | USA 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -176,9 +176,9 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇸🇨 塞舌尔 | SYC
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇸🇬 新加坡 | SGP 4
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -200,7 +200,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 2
-  - 🇳🇱 荷兰 | NLD 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -208,12 +207,5 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇬🇧 英国 | GBR
-  - US_da92e_0028
-- name: REGION-OC
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇾 塞浦路斯 | CYP
 rules:
 - MATCH,AUTO
