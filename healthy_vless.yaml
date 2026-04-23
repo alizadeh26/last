@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_5486f_0028
-  server: st-2.globalcache.onnstreaming.ru
+- name: DE_78e4b_0060
+  server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
   uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
@@ -13,22 +13,47 @@ proxies:
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
-  servername: st-2.globalcache.onnstreaming.ru
+  servername: pl2-gws4.onnstreaming.ru
   reality-opts:
-    public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
-    short-id: aa69f619e4414362
+    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
+    short-id: d1f93724859d75ac
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: st-2.globalcache.onnstreaming.ru
+- name: HK_78e4b_0098
+  server: polands.stardevs.top
   port: 443
   type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: polands.stardevs.top
+  reality-opts:
+    public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
+    short-id: f37fb7531c60780d
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pl74.mechvpn.online
+  port: 443
+  type: vless
+  uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
+  tls: true
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  flow: xtls-rprx-vision
+  servername: pl74.mechvpn.online
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: cluster-de-2.firstvideocdn.ru
+  port: 52006
+  type: vless
+  uuid: 75807638-6f19-2710-ae08-38492ee85c88
   tls: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
-    short-id: aa69f619e4414362
-  servername: st-2.globalcache.onnstreaming.ru
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -38,7 +63,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_5486f_0028
-  - 🇺🇸 美国 | USA 8
+  - DE_78e4b_0060
+  - HK_78e4b_0098
+  - 🇵🇱 波兰 | POL
+  - 🇵🇱 波兰 | POL 2
 rules:
 - MATCH,AUTO
