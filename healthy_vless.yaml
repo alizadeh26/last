@@ -4,7 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_da92e_0028
+- name: 🇩🇪 德国 | DEU 7
+  server: 178.104.118.247
+  port: 2087
+  type: vless
+  uuid: a34a5f3e-e9fa-40a6-f3af-2984adbd701b
+  tls: false
+  servername: 178.104.118.247
+  network: tcp
+  udp: true
+- name: US_c65f5_0028
   server: st-2.globalcache.onnstreaming.ru
   port: 443
   type: vless
@@ -18,42 +27,13 @@ proxies:
     public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
     short-id: aa69f619e4414362
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: pl-1.illusion-vpn.ru
-  port: 443
-  type: vless
-  uuid: bf263367-bb63-4663-b4a1-34946107a72e
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5qvcOTHr_izGbsRz-j2xC3BMMdugFMsl7MnANjzwZ0I
-    short-id: b2a1c97a38
-  servername: pl-1.illusion-vpn.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: pl2-gws4.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
-    short-id: d1f93724859d75ac
-  servername: pl2-gws4.onnstreaming.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_da92e_0028
-  - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 7
+  - 🇩🇪 德国 | DEU 7
+  - US_c65f5_0028
 rules:
 - MATCH,AUTO
