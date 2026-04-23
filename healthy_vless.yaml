@@ -4,16 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: 178.104.118.247
-  port: 2087
-  type: vless
-  uuid: a34a5f3e-e9fa-40a6-f3af-2984adbd701b
-  tls: false
-  servername: 178.104.118.247
-  network: tcp
-  udp: true
-- name: US_c65f5_0028
+- name: US_5486f_0028
   server: st-2.globalcache.onnstreaming.ru
   port: 443
   type: vless
@@ -27,13 +18,27 @@ proxies:
     public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
     short-id: aa69f619e4414362
   udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: st-2.globalcache.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
+    short-id: aa69f619e4414362
+  servername: st-2.globalcache.onnstreaming.ru
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - US_c65f5_0028
+  - US_5486f_0028
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
