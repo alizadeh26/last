@@ -47,29 +47,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 10
-  server: cdn.wmsj.eu.org
-  port: 443
-  type: vless
-  uuid: dc5625c7-a2e0-452d-ab14-d4f2f34b6921
-  tls: true
-  servername: cdn.wmsj.eu.org
-  network: ws
-  ws-opts:
-    path: /jjp
-    headers:
-      Host: cdn.wmsj.eu.org
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: cluster-de-2.firstvideocdn.ru
-  port: 52006
-  type: vless
-  uuid: 75807638-6f19-2710-ae08-38492ee85c88
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -79,7 +56,5 @@ proxy-groups:
   - DE_78e4b_0060
   - HK_78e4b_0098
   - 🇵🇱 波兰 | POL
-  - 🇯🇵 日本 | JPN 10
-  - 🇵🇱 波兰 | POL 2
 rules:
 - MATCH,AUTO
