@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_d25d3_0060
+- name: DE_043e4_0060
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: HK_d25d3_0098
+- name: HK_043e4_0098
   server: polands.stardevs.top
   port: 443
   type: vless
@@ -32,13 +32,24 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: cluster-de-2.firstvideocdn.ru
+  port: 52006
+  type: vless
+  uuid: 75807638-6f19-2710-ae08-38492ee85c88
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_d25d3_0060
-  - HK_d25d3_0098
+  - DE_043e4_0060
+  - HK_043e4_0098
+  - 🇵🇱 波兰 | POL 2
 rules:
 - MATCH,AUTO

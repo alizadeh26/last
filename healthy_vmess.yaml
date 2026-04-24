@@ -4,15 +4,29 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 8
-  server: 82.198.246.37
-  port: 180
+- name: 🇭🇰 香港 | HKG 11
+  server: efan.dnsefan04881.com
+  port: 7754
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 | HKG 10
+  server: planb.mojcn.com
+  port: 16622
+  type: vmess
+  uuid: 426069f8-bd51-4ca1-8be0-406e113e8d6d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 58d3f211c751f812d25139d33ea67d2d.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -20,6 +34,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 8
+  - 🇭🇰 香港 | HKG 11
+  - 🇭🇰 香港 | HKG 10
 rules:
 - MATCH,AUTO
