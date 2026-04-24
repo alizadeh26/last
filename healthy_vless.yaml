@@ -32,20 +32,6 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: 🇲🇩 摩尔多瓦 | MDA
-  server: lv.milas.click
-  port: 443
-  type: vless
-  uuid: 913c6074-a747-492b-a7e9-5abfcad6369d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: DoZSKLwNQjogQMlE7oEEuB8TqpNa-umXzG-2Q6dTTEY
-    short-id: 4fa44664f6a566d3
-  servername: lv.milas.click
-  client-fingerprint: random
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -54,6 +40,5 @@ proxy-groups:
   proxies:
   - DE_d25d3_0060
   - HK_d25d3_0098
-  - 🇲🇩 摩尔多瓦 | MDA
 rules:
 - MATCH,AUTO
