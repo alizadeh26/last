@@ -25,13 +25,6 @@ proxies:
   cipher: aes-256-gcm
   password: dada1203
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 37.19.198.244
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 6
   server: 13.212.99.130
   port: 80
@@ -39,15 +32,22 @@ proxies:
   cipher: aes-256-gcm
   password: dada1203
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.18
+- name: 🇺🇸 美国 | USA 6
+  server: 37.19.198.244
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.11
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.11
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.82
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -60,8 +60,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.82
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.18
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -90,12 +90,12 @@ proxy-groups:
   - GB_c486c_0074
   - 🇪🇨 厄瓜多尔 | ECU
   - 🇰🇷 韩国 | KOR 3
-  - 🇺🇸 美国 | USA 6
   - 🇸🇬 新加坡 | SGP 6
-  - 🇻🇳 越南 | VNM
+  - 🇺🇸 美国 | USA 6
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
 rules:

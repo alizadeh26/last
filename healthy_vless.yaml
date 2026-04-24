@@ -4,6 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: DE_c486c_0060
+  server: pl2-gws4.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl2-gws4.onnstreaming.ru
+  reality-opts:
+    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
+    short-id: d1f93724859d75ac
+  udp: true
 - name: HK_c486c_0098
   server: polands.stardevs.top
   port: 443
@@ -24,6 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - DE_c486c_0060
   - HK_c486c_0098
 rules:
 - MATCH,AUTO

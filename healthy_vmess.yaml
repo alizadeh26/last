@@ -35,34 +35,6 @@ proxies:
     headers:
       Host: us77.cowjump.site
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: t.cnmjcn.cyou
-  port: 16622
-  type: vmess
-  uuid: 4c724177-302e-4fec-873c-8497faacd892
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc0300d614f3a627dad66423df3612b8.mobgslb.tbcache.com
-  udp: true
-- name: 🇮🇳 印度 | IND
-  server: planb.mojcn.com
-  port: 16626
-  type: vmess
-  uuid: 4c724177-302e-4fec-873c-8497faacd892
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc0300d614f3a627dad66423df3612b8.mobgslb.tbcache.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -71,7 +43,5 @@ proxy-groups:
   proxies:
   - GB_c486c_0083
   - 🇺🇸 美国 | USA
-  - 🇭🇰 香港 | HKG
-  - 🇮🇳 印度 | IND
 rules:
 - MATCH,AUTO
