@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_78e4b_0060
+- name: DE_d25d3_0060
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: HK_78e4b_0098
+- name: HK_d25d3_0098
   server: polands.stardevs.top
   port: 443
   type: vless
@@ -32,19 +32,18 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: pl74.mechvpn.online
+- name: 🇲🇩 摩尔多瓦 | MDA
+  server: lv.milas.click
   port: 443
   type: vless
-  uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
+  uuid: 913c6074-a747-492b-a7e9-5abfcad6369d
   tls: true
-  alpn:
-  - h3
-  - h2
-  - http/1.1
   flow: xtls-rprx-vision
-  servername: pl74.mechvpn.online
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: DoZSKLwNQjogQMlE7oEEuB8TqpNa-umXzG-2Q6dTTEY
+    short-id: 4fa44664f6a566d3
+  servername: lv.milas.click
+  client-fingerprint: random
   network: tcp
   udp: true
 proxy-groups:
@@ -53,8 +52,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_78e4b_0060
-  - HK_78e4b_0098
-  - 🇵🇱 波兰 | POL
+  - DE_d25d3_0060
+  - HK_d25d3_0098
+  - 🇲🇩 摩尔多瓦 | MDA
 rules:
 - MATCH,AUTO
