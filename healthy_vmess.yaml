@@ -19,6 +19,22 @@ proxies:
     headers:
       Host: d26bc33c22885694ea3e533bfbf33059.mobgslb.tbcache.com
   udp: true
+- name: 🇺🇸 美国 | USA
+  server: us77.cowjump.site
+  port: 443
+  type: vmess
+  uuid: 0bf1cead-bdd4-4692-b3d4-6866ccb9f37a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: us77.cowjump.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us77.cowjump.site
+  udp: true
 - name: 🇭🇰 香港 | HKG
   server: t.cnmjcn.cyou
   port: 16622
@@ -47,22 +63,6 @@ proxies:
     headers:
       Host: cc0300d614f3a627dad66423df3612b8.mobgslb.tbcache.com
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: us77.cowjump.site
-  port: 443
-  type: vmess
-  uuid: 0bf1cead-bdd4-4692-b3d4-6866ccb9f37a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: us77.cowjump.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us77.cowjump.site
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -70,8 +70,8 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_c486c_0083
+  - 🇺🇸 美国 | USA
   - 🇭🇰 香港 | HKG
   - 🇮🇳 印度 | IND
-  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

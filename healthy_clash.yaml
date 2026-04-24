@@ -54,26 +54,28 @@ proxies:
   cipher: aes-256-gcm
   password: dada1203
   udp: true
+- name: 🇺🇸 美国 | USA
+  server: us77.cowjump.site
+  port: 443
+  type: vmess
+  uuid: 0bf1cead-bdd4-4692-b3d4-6866ccb9f37a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: us77.cowjump.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us77.cowjump.site
+  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 37.19.198.244
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: t.cnmjcn.cyou
-  port: 16622
-  type: vmess
-  uuid: 4c724177-302e-4fec-873c-8497faacd892
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc0300d614f3a627dad66423df3612b8.mobgslb.tbcache.com
   udp: true
 - name: 🇸🇬 新加坡 | SGP 6
   server: 13.212.99.130
@@ -82,9 +84,9 @@ proxies:
   cipher: aes-256-gcm
   password: dada1203
   udp: true
-- name: 🇮🇳 印度 | IND
-  server: planb.mojcn.com
-  port: 16626
+- name: 🇭🇰 香港 | HKG
+  server: t.cnmjcn.cyou
+  port: 16622
   type: vmess
   uuid: 4c724177-302e-4fec-873c-8497faacd892
   alterId: 0
@@ -110,22 +112,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.147
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 5
   server: 103.186.154.28
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.167
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -138,21 +126,33 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: us77.cowjump.site
-  port: 443
+- name: 🇮🇳 印度 | IND
+  server: planb.mojcn.com
+  port: 16626
   type: vmess
-  uuid: 0bf1cead-bdd4-4692-b3d4-6866ccb9f37a
+  uuid: 4c724177-302e-4fec-873c-8497faacd892
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: us77.cowjump.site
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: us77.cowjump.site
+      Host: cc0300d614f3a627dad66423df3612b8.mobgslb.tbcache.com
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.147
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.167
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 proxy-groups:
 - name: AUTO
@@ -165,17 +165,17 @@ proxy-groups:
   - GB_c486c_0083
   - 🇪🇨 厄瓜多尔 | ECU
   - 🇰🇷 韩国 | KOR 3
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 6
-  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 6
-  - 🇮🇳 印度 | IND
+  - 🇭🇰 香港 | HKG
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 6
-  - 🇺🇸 美国 | USA
+  - 🇮🇳 印度 | IND
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -188,10 +188,10 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 6
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -204,9 +204,9 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_c486c_0083
+  - 🇺🇸 美国 | USA
   - 🇭🇰 香港 | HKG
   - 🇮🇳 印度 | IND
-  - 🇺🇸 美国 | USA
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
