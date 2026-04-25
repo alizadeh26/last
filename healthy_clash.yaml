@@ -25,17 +25,6 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: s504.okgg.top
-  port: 443
-  type: vless
-  uuid: 872624ac-aa40-39b1-8232-f7270812c234
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u711541u9c18s504.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 185.22.155.49
   port: 40129
@@ -73,15 +62,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.247
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.3
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.3
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.247
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -102,14 +91,13 @@ proxy-groups:
   proxies:
   - GB_57dbd_0074
   - HK_57dbd_0098
-  - 🇳🇱 荷兰 | NLD 2
   - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
@@ -121,8 +109,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA 4
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
@@ -130,7 +118,6 @@ proxy-groups:
   interval: 300
   proxies:
   - HK_57dbd_0098
-  - 🇳🇱 荷兰 | NLD 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -144,14 +131,6 @@ proxy-groups:
   proxies:
   - GB_57dbd_0074
   - HK_57dbd_0098
-  - 🇳🇱 荷兰 | NLD 2
   - 🇷🇺 俄罗斯 | RUS
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO

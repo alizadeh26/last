@@ -18,17 +18,6 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: s504.okgg.top
-  port: 443
-  type: vless
-  uuid: 872624ac-aa40-39b1-8232-f7270812c234
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u711541u9c18s504.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -36,6 +25,5 @@ proxy-groups:
   interval: 300
   proxies:
   - HK_57dbd_0098
-  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO
