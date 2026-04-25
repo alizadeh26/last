@@ -11,20 +11,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: DE_94626_0060
-  server: pl2-gws4.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl2-gws4.onnstreaming.ru
-  reality-opts:
-    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
-    short-id: d1f93724859d75ac
-  udp: true
 - name: HK_94626_0098
   server: polands.stardevs.top
   port: 443
@@ -39,12 +25,19 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 51.15.23.166
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+- name: DE_94626_0060
+  server: pl2-gws4.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl2-gws4.onnstreaming.ru
+  reality-opts:
+    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
+    short-id: d1f93724859d75ac
   udp: true
 - name: 🇭🇰 香港 | HKG 3
   server: hk1.ap221.com
@@ -57,6 +50,13 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 107.21.73.207
+  port: 80
+  type: ss
+  cipher: aes-256-gcm
+  password: dada1203
+  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 82.198.246.9
   port: 180
@@ -67,12 +67,12 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 107.21.73.207
-  port: 80
+- name: 🇳🇱 荷兰 | NLD
+  server: 51.15.23.166
+  port: 989
   type: ss
-  cipher: aes-256-gcm
-  password: dada1203
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 165.22.111.31
@@ -80,6 +80,13 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: 7GaQIM4q84sLnhqQJ8mLqb0KbdDmBWxKPaXa59tFXtg
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.58
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: ohio1.ap221.com
@@ -99,13 +106,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.58
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 5
   server: 103.186.155.30
   port: 38388
@@ -120,13 +120,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.161
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -134,40 +127,38 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_94626_0074
-  - DE_94626_0060
   - HK_94626_0098
-  - 🇳🇱 荷兰 | NLD
+  - DE_94626_0060
   - 🇭🇰 香港 | HKG 3
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 8
+  - 🇳🇱 荷兰 | NLD
   - 🇸🇬 新加坡 | SGP
+  - 🇻🇳 越南 | VNM
   - 🇺🇸 美国 | USA 5
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - GB_94626_0074
-  - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 16
+  - 🇳🇱 荷兰 | NLD
   - 🇸🇬 新加坡 | SGP
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_94626_0060
   - HK_94626_0098
+  - DE_94626_0060
   - 🇭🇰 香港 | HKG 3
   - 🇺🇸 美国 | USA 5
 - name: PROTO-VMESS
@@ -182,7 +173,7 @@ proxy-groups:
   interval: 300
   proxies:
   - GB_94626_0074
-  - DE_94626_0060
   - HK_94626_0098
+  - DE_94626_0060
 rules:
 - MATCH,AUTO

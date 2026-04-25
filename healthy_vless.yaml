@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_94626_0060
-  server: pl2-gws4.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl2-gws4.onnstreaming.ru
-  reality-opts:
-    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
-    short-id: d1f93724859d75ac
-  udp: true
 - name: HK_94626_0098
   server: polands.stardevs.top
   port: 443
@@ -31,6 +17,20 @@ proxies:
   reality-opts:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
+  udp: true
+- name: DE_94626_0060
+  server: pl2-gws4.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl2-gws4.onnstreaming.ru
+  reality-opts:
+    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
+    short-id: d1f93724859d75ac
   udp: true
 - name: 🇭🇰 香港 | HKG 3
   server: hk1.ap221.com
@@ -60,8 +60,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_94626_0060
   - HK_94626_0098
+  - DE_94626_0060
   - 🇭🇰 香港 | HKG 3
   - 🇺🇸 美国 | USA 5
 rules:
