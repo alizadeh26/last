@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: HK_9462a_0098
+- name: HK_57dbd_0098
   server: polands.stardevs.top
   port: 443
   type: vless
@@ -18,19 +18,16 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: DE_9462a_0060
-  server: pl2-gws4.onnstreaming.ru
+- name: 🇳🇱 荷兰 | NLD 2
+  server: s504.okgg.top
   port: 443
   type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  flow: xtls-rprx-vision
+  uuid: 872624ac-aa40-39b1-8232-f7270812c234
   tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl2-gws4.onnstreaming.ru
-  reality-opts:
-    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
-    short-id: d1f93724859d75ac
+  flow: xtls-rprx-vision
+  servername: u711541u9c18s504.okgg.top
+  client-fingerprint: random
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_9462a_0098
-  - DE_9462a_0060
+  - HK_57dbd_0098
+  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO

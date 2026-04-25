@@ -4,14 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_9462a_0074
+- name: GB_57dbd_0074
   server: 82.38.31.89
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: HK_9462a_0098
+- name: HK_57dbd_0098
   server: polands.stardevs.top
   port: 443
   type: vless
@@ -24,6 +24,17 @@ proxies:
   reality-opts:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: s504.okgg.top
+  port: 443
+  type: vless
+  uuid: 872624ac-aa40-39b1-8232-f7270812c234
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u711541u9c18s504.okgg.top
+  client-fingerprint: random
+  network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 185.22.155.49
@@ -48,20 +59,6 @@ proxies:
   cipher: auto
   tls: false
   udp: true
-- name: DE_9462a_0060
-  server: pl2-gws4.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl2-gws4.onnstreaming.ru
-  reality-opts:
-    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
-    short-id: d1f93724859d75ac
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.154.179
   port: 38388
@@ -76,15 +73,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.3
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.247
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.247
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.3
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -103,57 +100,51 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_9462a_0074
-  - HK_9462a_0098
+  - GB_57dbd_0074
+  - HK_57dbd_0098
+  - 🇳🇱 荷兰 | NLD 2
   - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
-  - DE_9462a_0060
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_9462a_0074
+  - GB_57dbd_0074
   - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA 4
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_9462a_0098
-  - DE_9462a_0060
+  - HK_57dbd_0098
+  - 🇳🇱 荷兰 | NLD 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 5
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_9462a_0074
-  - HK_9462a_0098
+  - GB_57dbd_0074
+  - HK_57dbd_0098
+  - 🇳🇱 荷兰 | NLD 2
   - 🇷🇺 俄罗斯 | RUS
 - name: REGION-NA
   type: url-test
@@ -161,5 +152,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO

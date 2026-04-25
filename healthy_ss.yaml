@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_9462a_0074
+- name: GB_57dbd_0074
   server: 82.38.31.89
   port: 8080
   type: ss
@@ -39,15 +39,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.3
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.247
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.247
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.3
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -66,13 +66,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_9462a_0074
+  - GB_57dbd_0074
   - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA 4
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
 rules:
 - MATCH,AUTO
