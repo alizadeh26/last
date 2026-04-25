@@ -4,14 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_c486c_0074
+- name: GB_94626_0074
   server: 82.38.31.89
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: DE_c486c_0060
+- name: DE_94626_0060
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -25,7 +25,7 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: HK_c486c_0098
+- name: HK_94626_0098
   server: polands.stardevs.top
   port: 443
   type: vless
@@ -39,102 +39,89 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: GB_c486c_0083
-  server: m.cnmjin.net
-  port: 16632
+- name: 🇳🇱 荷兰 | NLD
+  server: 51.15.23.166
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: hk1.ap221.com
+  port: 443
+  type: vless
+  uuid: afee9d32-7699-46cc-875d-454dfb95557b
+  tls: true
+  flow: xtls-rprx-vision
+  servername: hk.ap221.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 82.198.246.9
+  port: 180
   type: vmess
-  uuid: 8d95151d-d626-4ed2-83ac-29631f44085b
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d26bc33c22885694ea3e533bfbf33059.mobgslb.tbcache.com
-  udp: true
-- name: 🇪🇨 厄瓜多尔 | ECU
-  server: 185.47.253.227
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  udp: true
-- name: 🇰🇷 韩国 | KOR 3
-  server: 3.36.130.117
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 13.212.99.130
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: us77.cowjump.site
-  port: 443
-  type: vmess
-  uuid: 0bf1cead-bdd4-4692-b3d4-6866ccb9f37a
-  alterId: 0
-  cipher: auto
-  tls: true
   skip-cert-verify: true
-  servername: us77.cowjump.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us77.cowjump.site
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 37.19.198.244
-  port: 443
+- name: 🇺🇸 美国 | USA 16
+  server: 107.21.73.207
+  port: 80
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: aes-256-gcm
+  password: dada1203
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 165.22.111.31
+  port: 8388
+  type: ss
+  cipher: aes-256-gcm
+  password: 7GaQIM4q84sLnhqQJ8mLqb0KbdDmBWxKPaXa59tFXtg
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: ohio1.ap221.com
+  port: 443
+  type: vless
+  uuid: afee9d32-7699-46cc-875d-454dfb95557b
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ohio.ap221.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.11
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.155.82
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.28
+  server: 103.186.155.145
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.18
+  server: 103.186.155.58
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.30
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.147
+  server: 103.186.155.3
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.167
+  server: 103.186.154.161
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -146,19 +133,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_c486c_0074
-  - DE_c486c_0060
-  - HK_c486c_0098
-  - GB_c486c_0083
-  - 🇪🇨 厄瓜多尔 | ECU
-  - 🇰🇷 韩国 | KOR 3
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 6
+  - GB_94626_0074
+  - DE_94626_0060
+  - HK_94626_0098
+  - 🇳🇱 荷兰 | NLD
+  - 🇭🇰 香港 | HKG 3
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 16
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 5
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
@@ -166,15 +152,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_c486c_0074
-  - 🇪🇨 厄瓜多尔 | ECU
-  - 🇰🇷 韩国 | KOR 3
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇺🇸 美国 | USA 6
+  - GB_94626_0074
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 16
+  - 🇸🇬 新加坡 | SGP
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
@@ -182,22 +166,23 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_c486c_0060
-  - HK_c486c_0098
+  - DE_94626_0060
+  - HK_94626_0098
+  - 🇭🇰 香港 | HKG 3
+  - 🇺🇸 美国 | USA 5
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_c486c_0083
-  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 8
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_c486c_0074
-  - DE_c486c_0060
-  - HK_c486c_0098
+  - GB_94626_0074
+  - DE_94626_0060
+  - HK_94626_0098
 rules:
 - MATCH,AUTO
