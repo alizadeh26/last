@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: HK_94626_0098
+- name: HK_9462a_0098
   server: polands.stardevs.top
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: DE_94626_0060
+- name: DE_9462a_0060
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -32,37 +32,13 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: hk1.ap221.com
-  port: 443
-  type: vless
-  uuid: afee9d32-7699-46cc-875d-454dfb95557b
-  tls: true
-  flow: xtls-rprx-vision
-  servername: hk.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: ohio1.ap221.com
-  port: 443
-  type: vless
-  uuid: afee9d32-7699-46cc-875d-454dfb95557b
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ohio.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_94626_0098
-  - DE_94626_0060
-  - 🇭🇰 香港 | HKG 3
-  - 🇺🇸 美国 | USA 5
+  - HK_9462a_0098
+  - DE_9462a_0060
 rules:
 - MATCH,AUTO

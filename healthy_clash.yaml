@@ -4,14 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_94626_0074
+- name: GB_9462a_0074
   server: 82.38.31.89
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: HK_94626_0098
+- name: HK_9462a_0098
   server: polands.stardevs.top
   port: 443
   type: vless
@@ -25,7 +25,30 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: DE_94626_0060
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 185.22.155.49
+  port: 40129
+  type: ss
+  cipher: aes-256-gcm
+  password: 7ae4e68cf77f6089
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 18.219.127.116
+  port: 80
+  type: ss
+  cipher: aes-256-gcm
+  password: dada1203
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 82.198.246.233
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  udp: true
+- name: DE_9462a_0060
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -39,82 +62,36 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: hk1.ap221.com
-  port: 443
-  type: vless
-  uuid: afee9d32-7699-46cc-875d-454dfb95557b
-  tls: true
-  flow: xtls-rprx-vision
-  servername: hk.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 107.21.73.207
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 82.198.246.9
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 51.15.23.166
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 165.22.111.31
-  port: 8388
-  type: ss
-  cipher: aes-256-gcm
-  password: 7GaQIM4q84sLnhqQJ8mLqb0KbdDmBWxKPaXa59tFXtg
-  udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.58
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: ohio1.ap221.com
-  port: 443
-  type: vless
-  uuid: afee9d32-7699-46cc-875d-454dfb95557b
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ohio.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.145
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.30
+  server: 103.186.154.179
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.18
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
   server: 103.186.155.3
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.247
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.54
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -126,54 +103,63 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_94626_0074
-  - HK_94626_0098
-  - DE_94626_0060
-  - 🇭🇰 香港 | HKG 3
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 8
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP
-  - 🇻🇳 越南 | VNM
+  - GB_9462a_0074
+  - HK_9462a_0098
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
+  - DE_9462a_0060
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_94626_0074
-  - 🇺🇸 美国 | USA 16
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP
+  - GB_9462a_0074
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 4
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_94626_0098
-  - DE_94626_0060
-  - 🇭🇰 香港 | HKG 3
-  - 🇺🇸 美国 | USA 5
+  - HK_9462a_0098
+  - DE_9462a_0060
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 5
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_94626_0074
-  - HK_94626_0098
-  - DE_94626_0060
+  - GB_9462a_0074
+  - HK_9462a_0098
+  - 🇷🇺 俄罗斯 | RUS
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO

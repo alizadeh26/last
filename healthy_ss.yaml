@@ -4,57 +4,57 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_94626_0074
+- name: GB_9462a_0074
   server: 82.38.31.89
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 107.21.73.207
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 185.22.155.49
+  port: 40129
+  type: ss
+  cipher: aes-256-gcm
+  password: 7ae4e68cf77f6089
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 18.219.127.116
   port: 80
   type: ss
   cipher: aes-256-gcm
   password: dada1203
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 51.15.23.166
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 165.22.111.31
-  port: 8388
-  type: ss
-  cipher: aes-256-gcm
-  password: 7GaQIM4q84sLnhqQJ8mLqb0KbdDmBWxKPaXa59tFXtg
-  udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.58
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.145
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.30
+  server: 103.186.154.179
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.18
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
   server: 103.186.155.3
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.247
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.54
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -66,13 +66,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_94626_0074
-  - 🇺🇸 美国 | USA 16
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP
+  - GB_9462a_0074
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 4
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
 rules:
 - MATCH,AUTO
