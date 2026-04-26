@@ -4,14 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 5
-  server: 82.198.246.233
+- name: 🇺🇸 美国 | USA 10
+  server: 82.198.246.9
   port: 180
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
+  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: AUTO
@@ -19,6 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO

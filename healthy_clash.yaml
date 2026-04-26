@@ -4,14 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_80950_0074
-  server: 82.38.31.89
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: DE_80950_0060
+- name: DE_c0fce_0035
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -25,50 +18,95 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: HK_80950_0098
-  server: polands.stardevs.top
+- name: RU_c0fce_0086
+  server: srv80.towersflowerss.com
   port: 443
   type: vless
-  uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
+  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
   flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
-  servername: polands.stardevs.top
+  servername: srv80.towersflowerss.com
   reality-opts:
-    public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
-    short-id: f37fb7531c60780d
+    public-key: Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 46.17.40.197
-  port: 40412
+- name: 🇩🇪 德国 | DEU 2
+  server: 43.165.3.102
+  port: 34851
   type: ss
-  cipher: aes-256-gcm
-  password: 9ca2803c16de72cd
+  cipher: aes-128-gcm
+  password: a9d727cd-330b-4edd-8911-7c224df6afd5
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 45.140.169.225
-  port: 40412
+- name: 🇦🇪 阿联酋 | ARE
+  server: 77.74.201.171
+  port: 25891
   type: ss
-  cipher: aes-256-gcm
-  password: c5fcdf7829112cb4
+  cipher: chacha20-ietf-poly1305
+  password: a9d727cd-330b-4edd-8911-7c224df6afd5
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 82.198.246.9
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: sg1.ap221.com
+  port: 443
+  type: vless
+  uuid: c71ab922-2c35-4f6e-abfe-4950658f7bce
+  tls: true
+  flow: xtls-rprx-vision
+  servername: sg.ap221.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.58
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.69
+  server: 103.186.155.156
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.24
+  server: 103.186.155.77
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.197
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.58
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: ohio1.ap221.com
+  port: 443
+  type: vless
+  uuid: 9b1ec8dd-9c94-484a-b01f-a2946d18ce36
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ohio.ap221.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.160
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -80,39 +118,52 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_80950_0074
-  - DE_80950_0060
-  - HK_80950_0098
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
+  - DE_c0fce_0035
+  - RU_c0fce_0086
+  - 🇩🇪 德国 | DEU 2
+  - 🇦🇪 阿联酋 | ARE
+  - 🇺🇸 美国 | USA 10
+  - 🇸🇬 新加坡 | SGP 6
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
+  - 🇺🇸 美国 | USA 14
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_80950_0074
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇩🇪 德国 | DEU 2
+  - 🇦🇪 阿联酋 | ARE
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_80950_0060
-  - HK_80950_0098
+  - DE_c0fce_0035
+  - RU_c0fce_0086
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇺🇸 美国 | USA 14
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 10
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_80950_0074
-  - DE_80950_0060
-  - HK_80950_0098
+  - DE_c0fce_0035
+  - RU_c0fce_0086
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO

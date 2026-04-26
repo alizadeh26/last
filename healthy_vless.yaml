@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_80950_0060
+- name: DE_c0fce_0035
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -18,19 +18,40 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: HK_80950_0098
-  server: polands.stardevs.top
+- name: RU_c0fce_0086
+  server: srv80.towersflowerss.com
   port: 443
   type: vless
-  uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
+  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
   flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
-  servername: polands.stardevs.top
+  servername: srv80.towersflowerss.com
   reality-opts:
-    public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
-    short-id: f37fb7531c60780d
+    public-key: Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: sg1.ap221.com
+  port: 443
+  type: vless
+  uuid: c71ab922-2c35-4f6e-abfe-4950658f7bce
+  tls: true
+  flow: xtls-rprx-vision
+  servername: sg.ap221.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: ohio1.ap221.com
+  port: 443
+  type: vless
+  uuid: 9b1ec8dd-9c94-484a-b01f-a2946d18ce36
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ohio.ap221.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +59,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_80950_0060
-  - HK_80950_0098
+  - DE_c0fce_0035
+  - RU_c0fce_0086
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO
