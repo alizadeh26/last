@@ -70,6 +70,12 @@ proxy-groups:
   proxies:
   - DE_4ccfc_0060
   - HK_4ccfc_0098
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇻🇳 越南 | VNM
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
