@@ -4,14 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_4ccfc_0074
+- name: GB_80950_0074
   server: 82.38.31.89
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: DE_4ccfc_0060
+- name: DE_80950_0060
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -25,7 +25,7 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: HK_4ccfc_0098
+- name: HK_80950_0098
   server: polands.stardevs.top
   port: 443
   type: vless
@@ -39,8 +39,36 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 46.17.40.197
+  port: 40412
+  type: ss
+  cipher: aes-256-gcm
+  password: 9ca2803c16de72cd
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 45.140.169.225
+  port: 40412
+  type: ss
+  cipher: aes-256-gcm
+  password: c5fcdf7829112cb4
+  udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.65
+  server: 103.186.155.58
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.69
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.155.24
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -52,37 +80,39 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_4ccfc_0074
-  - DE_4ccfc_0060
-  - HK_4ccfc_0098
+  - GB_80950_0074
+  - DE_80950_0060
+  - HK_80950_0098
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_4ccfc_0074
+  - GB_80950_0074
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_4ccfc_0060
-  - HK_4ccfc_0098
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇻🇳 越南 | VNM
+  - DE_80950_0060
+  - HK_80950_0098
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_4ccfc_0074
-  - DE_4ccfc_0060
-  - HK_4ccfc_0098
+  - GB_80950_0074
+  - DE_80950_0060
+  - HK_80950_0098
 rules:
 - MATCH,AUTO
