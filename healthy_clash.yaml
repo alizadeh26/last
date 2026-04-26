@@ -4,14 +4,28 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_57dbd_0074
+- name: GB_4ccfc_0074
   server: 82.38.31.89
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: HK_57dbd_0098
+- name: DE_4ccfc_0060
+  server: pl2-gws4.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl2-gws4.onnstreaming.ru
+  reality-opts:
+    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
+    short-id: d1f93724859d75ac
+  udp: true
+- name: HK_4ccfc_0098
   server: polands.stardevs.top
   port: 443
   type: vless
@@ -25,59 +39,8 @@ proxies:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
     short-id: f37fb7531c60780d
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 185.22.155.49
-  port: 40129
-  type: ss
-  cipher: aes-256-gcm
-  password: 7ae4e68cf77f6089
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 18.219.127.116
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 82.198.246.233
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.179
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.18
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.3
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.247
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.54
+  server: 103.186.155.65
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -89,48 +52,31 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_57dbd_0074
-  - HK_57dbd_0098
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
+  - GB_4ccfc_0074
+  - DE_4ccfc_0060
+  - HK_4ccfc_0098
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_57dbd_0074
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 4
+  - GB_4ccfc_0074
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_57dbd_0098
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 5
+  - DE_4ccfc_0060
+  - HK_4ccfc_0098
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_57dbd_0074
-  - HK_57dbd_0098
-  - 🇷🇺 俄罗斯 | RUS
+  - GB_4ccfc_0074
+  - DE_4ccfc_0060
+  - HK_4ccfc_0098
 rules:
 - MATCH,AUTO
