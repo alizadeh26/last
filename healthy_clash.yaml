@@ -4,21 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_7ac56_0035
-  server: pl2-gws4.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl2-gws4.onnstreaming.ru
-  reality-opts:
-    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
-    short-id: d1f93724859d75ac
-  udp: true
-- name: DE_7ac56_0044
+- name: DE_f21f8_0044
   server: srv190.towersflowerss.com
   port: 443
   type: vless
@@ -32,112 +18,21 @@ proxies:
     headers:
       Host: srv190.towersflowerss.com
   udp: true
-- name: CN_7ac56_0026
-  server: planb.mojcn.com
-  port: 16632
-  type: vmess
-  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: DE_f21f8_0035
+  server: pl2-gws4.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  client-fingerprint: chrome
+  servername: pl2-gws4.onnstreaming.ru
+  reality-opts:
+    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
+    short-id: d1f93724859d75ac
   udp: true
-- name: CN_7ac56_0028
-  server: planb.mojcn.com
-  port: 16648
-  type: vmess
-  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
-  udp: true
-- name: GB_7ac56_0054
-  server: t.cnmjcn.cyou
-  port: 16618
-  type: vmess
-  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
-  udp: true
-- name: GB_7ac56_0053
-  server: m.cnmjin.net
-  port: 16618
-  type: vmess
-  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
-  udp: true
-- name: GB_7ac56_0051
-  server: m.cnmjin.net
-  port: 16616
-  type: vmess
-  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
-  udp: true
-- name: GB_7ac56_0057
-  server: t.cnmjcn.cyou
-  port: 16616
-  type: vmess
-  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
-  udp: true
-- name: GB_7ac56_0050
-  server: m.cnmjin.net
-  port: 16622
-  type: vmess
-  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
-  udp: true
-- name: RU_7ac56_0086
+- name: RU_f21f8_0086
   server: srv80.towersflowerss.com
   port: 443
   type: vless
@@ -157,24 +52,18 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 104.18.189.112
-  port: 80
+- name: 🇯🇵 日本 | JPN 3
+  server: cdn.wmsj.eu.org
+  port: 443
   type: vless
-  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
-  tls: false
+  uuid: dc5625c7-a2e0-452d-ab14-d4f2f34b6921
+  tls: true
+  servername: cdn.wmsj.eu.org
   network: ws
   ws-opts:
-    path: /@WireXnet?ed=2048
+    path: /jjp
     headers:
-      Host: us.xydcqd.workers.dev
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.215
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+      Host: cdn.wmsj.eu.org
   udp: true
 - name: 🇺🇸 美国 | USA 8
   server: ohio1.ap221.com
@@ -187,6 +76,13 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.54
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 - name: 🇻🇳 越南 | VNM 4
   server: 103.186.154.236
   port: 38388
@@ -194,8 +90,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.54
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.165
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -208,8 +104,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.165
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.155.215
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -235,24 +131,17 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_7ac56_0035
-  - DE_7ac56_0044
-  - CN_7ac56_0026
-  - CN_7ac56_0028
-  - GB_7ac56_0054
-  - GB_7ac56_0053
-  - GB_7ac56_0051
-  - GB_7ac56_0057
-  - GB_7ac56_0050
-  - RU_7ac56_0086
+  - DE_f21f8_0044
+  - DE_f21f8_0035
+  - RU_f21f8_0086
   - 🇬🇧 英国 | GBR 2
-  - 🇺🇸 美国 | USA 2
-  - 🇻🇳 越南 | VNM
+  - 🇯🇵 日本 | JPN 3
   - 🇺🇸 美国 | USA 8
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM
   - 🇰🇷 韩国 | KOR 2
   - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-SS
@@ -261,11 +150,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR 2
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM
   - 🇰🇷 韩国 | KOR 2
   - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-VLESS
@@ -273,22 +162,26 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_7ac56_0035
-  - DE_7ac56_0044
-  - RU_7ac56_0086
-  - 🇺🇸 美国 | USA 2
+  - DE_f21f8_0044
+  - DE_f21f8_0035
+  - RU_f21f8_0086
+  - 🇯🇵 日本 | JPN 3
   - 🇺🇸 美国 | USA 8
-- name: PROTO-VMESS
+- name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_7ac56_0026
-  - CN_7ac56_0028
-  - GB_7ac56_0054
-  - GB_7ac56_0053
-  - GB_7ac56_0051
-  - GB_7ac56_0057
-  - GB_7ac56_0050
+  - 🇻🇳 越南 | VNM 4
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - DE_f21f8_0044
+  - DE_f21f8_0035
+  - RU_f21f8_0086
+  - 🇬🇧 英国 | GBR 2
+  - 🇯🇵 日本 | JPN 3
 rules:
 - MATCH,AUTO
