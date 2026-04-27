@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_b8601_0035
-  server: pl2-gws4.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl2-gws4.onnstreaming.ru
-  reality-opts:
-    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
-    short-id: d1f93724859d75ac
-  udp: true
 - name: DE_b8601_0044
   server: srv190.towersflowerss.com
   port: 443
@@ -32,6 +18,81 @@ proxies:
     headers:
       Host: srv190.towersflowerss.com
   udp: true
+- name: CN_b8601_0028
+  server: planb.mojcn.com
+  port: 16648
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: CN_b8601_0026
+  server: planb.mojcn.com
+  port: 16632
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: GB_b8601_0050
+  server: m.cnmjin.net
+  port: 16622
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: GB_b8601_0053
+  server: m.cnmjin.net
+  port: 16618
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: GB_b8601_0054
+  server: t.cnmjcn.cyou
+  port: 16618
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
 - name: RU_b8601_0086
   server: srv80.towersflowerss.com
   port: 443
@@ -45,6 +106,20 @@ proxies:
   reality-opts:
     public-key: Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0
   udp: true
+- name: DE_b8601_0035
+  server: pl2-gws4.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl2-gws4.onnstreaming.ru
+  reality-opts:
+    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
+    short-id: d1f93724859d75ac
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: node-us.connectsuite.org
   port: 2053
@@ -55,6 +130,17 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: s503.okgg.top
+  port: 443
+  type: vless
+  uuid: 872624ac-aa40-39b1-8232-f7270812c234
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u711541ud1a8s503.okgg.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 194.87.68.6
   port: 40120
@@ -62,20 +148,19 @@ proxies:
   cipher: aes-256-gcm
   password: 1a87017d0bf57f34
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: hk.aicvideo.info
-  port: 8810
-  type: vmess
-  uuid: 456c497e-02bc-4b46-883f-06747cabdfbd
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: hk.aicvideo.info
-  network: ws
-  ws-opts:
-    path: /dgs
-    headers:
-      Host: www.bing.com
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.206
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.215
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: srv18.datatowers.net
@@ -86,66 +171,74 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.215
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.206
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_b8601_0035
   - DE_b8601_0044
+  - CN_b8601_0028
+  - CN_b8601_0026
+  - GB_b8601_0050
+  - GB_b8601_0053
+  - GB_b8601_0054
   - RU_b8601_0086
+  - DE_b8601_0035
   - 🇷🇺 俄罗斯 | RUS
+  - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇭🇰 香港 | HKG
-  - 🇹🇷 土耳其 | TUR
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
+  - 🇹🇷 土耳其 | TUR
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_b8601_0035
   - DE_b8601_0044
   - RU_b8601_0086
+  - DE_b8601_0035
+  - 🇳🇱 荷兰 | NLD
   - 🇹🇷 土耳其 | TUR
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CN_b8601_0028
+  - CN_b8601_0026
+  - GB_b8601_0050
+  - GB_b8601_0053
+  - GB_b8601_0054
   - 🇷🇺 俄罗斯 | RUS
-  - 🇭🇰 香港 | HKG
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_b8601_0035
   - DE_b8601_0044
+  - CN_b8601_0028
+  - CN_b8601_0026
+  - GB_b8601_0050
+  - GB_b8601_0053
+  - GB_b8601_0054
   - RU_b8601_0086
+  - DE_b8601_0035
+  - 🇳🇱 荷兰 | NLD
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO

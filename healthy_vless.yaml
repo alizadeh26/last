@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_b8601_0035
-  server: pl2-gws4.onnstreaming.ru
-  port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl2-gws4.onnstreaming.ru
-  reality-opts:
-    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
-    short-id: d1f93724859d75ac
-  udp: true
 - name: DE_b8601_0044
   server: srv190.towersflowerss.com
   port: 443
@@ -45,6 +31,31 @@ proxies:
   reality-opts:
     public-key: Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0
   udp: true
+- name: DE_b8601_0035
+  server: pl2-gws4.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl2-gws4.onnstreaming.ru
+  reality-opts:
+    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
+    short-id: d1f93724859d75ac
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: s503.okgg.top
+  port: 443
+  type: vless
+  uuid: 872624ac-aa40-39b1-8232-f7270812c234
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u711541ud1a8s503.okgg.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: srv18.datatowers.net
   port: 64534
@@ -60,9 +71,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_b8601_0035
   - DE_b8601_0044
   - RU_b8601_0086
+  - DE_b8601_0035
+  - 🇳🇱 荷兰 | NLD
   - 🇹🇷 土耳其 | TUR
 rules:
 - MATCH,AUTO
