@@ -18,17 +18,6 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: taipei1.ap221.com
-  port: 443
-  type: vless
-  uuid: c71ab922-2c35-4f6e-abfe-4950658f7bce
-  tls: true
-  flow: xtls-rprx-vision
-  servername: taipei.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -36,6 +25,5 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_4b883_0035
-  - 🇹🇼 🇨🇳 台湾 | TWN
 rules:
 - MATCH,AUTO
