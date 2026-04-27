@@ -4,7 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_b8601_0044
+- name: DE_7ac56_0035
+  server: pl2-gws4.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl2-gws4.onnstreaming.ru
+  reality-opts:
+    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
+    short-id: d1f93724859d75ac
+  udp: true
+- name: DE_7ac56_0044
   server: srv190.towersflowerss.com
   port: 443
   type: vless
@@ -18,22 +32,7 @@ proxies:
     headers:
       Host: srv190.towersflowerss.com
   udp: true
-- name: CN_b8601_0028
-  server: planb.mojcn.com
-  port: 16648
-  type: vmess
-  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
-  udp: true
-- name: CN_b8601_0026
+- name: CN_7ac56_0026
   server: planb.mojcn.com
   port: 16632
   type: vmess
@@ -48,9 +47,9 @@ proxies:
     headers:
       Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
   udp: true
-- name: GB_b8601_0050
-  server: m.cnmjin.net
-  port: 16622
+- name: CN_7ac56_0028
+  server: planb.mojcn.com
+  port: 16648
   type: vmess
   uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
   alterId: 0
@@ -63,22 +62,7 @@ proxies:
     headers:
       Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
   udp: true
-- name: GB_b8601_0053
-  server: m.cnmjin.net
-  port: 16618
-  type: vmess
-  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
-  udp: true
-- name: GB_b8601_0054
+- name: GB_7ac56_0054
   server: t.cnmjcn.cyou
   port: 16618
   type: vmess
@@ -93,7 +77,67 @@ proxies:
     headers:
       Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
   udp: true
-- name: RU_b8601_0086
+- name: GB_7ac56_0053
+  server: m.cnmjin.net
+  port: 16618
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: GB_7ac56_0051
+  server: m.cnmjin.net
+  port: 16616
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: GB_7ac56_0057
+  server: t.cnmjcn.cyou
+  port: 16616
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: GB_7ac56_0050
+  server: m.cnmjin.net
+  port: 16622
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: RU_7ac56_0086
   server: srv80.towersflowerss.com
   port: 443
   type: vless
@@ -106,70 +150,84 @@ proxies:
   reality-opts:
     public-key: Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0
   udp: true
-- name: DE_b8601_0035
-  server: pl2-gws4.onnstreaming.ru
+- name: 🇬🇧 英国 | GBR 2
+  server: series-a2.samanehha.co
   port: 443
-  type: vless
-  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl2-gws4.onnstreaming.ru
-  reality-opts:
-    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
-    short-id: d1f93724859d75ac
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: node-us.connectsuite.org
-  port: 2053
-  type: vmess
-  uuid: 9b91e960-f8f7-41aa-ac67-f5c7b6b72e74
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: s503.okgg.top
-  port: 443
-  type: vless
-  uuid: 872624ac-aa40-39b1-8232-f7270812c234
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u711541ud1a8s503.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 194.87.68.6
-  port: 40120
   type: ss
-  cipher: aes-256-gcm
-  password: 1a87017d0bf57f34
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 104.18.189.112
+  port: 80
+  type: vless
+  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+  tls: false
+  network: ws
+  ws-opts:
+    path: /@WireXnet?ed=2048
+    headers:
+      Host: us.xydcqd.workers.dev
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.206
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
   server: 103.186.155.215
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: srv18.datatowers.net
-  port: 64534
+- name: 🇺🇸 美国 | USA 8
+  server: ohio1.ap221.com
+  port: 443
   type: vless
-  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
-  tls: false
-  client-fingerprint: qq
+  uuid: c71ab922-2c35-4f6e-abfe-4950658f7bce
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ohio.ap221.com
+  client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.236
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.54
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.66
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.154.165
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇰🇷 韩国 | KOR 2
+  server: 211.178.105.134
+  port: 6123
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 192.124.176.125
+  port: 8388
+  type: ss
+  cipher: aes-256-gcm
+  password: hmNf9bkveWaL
   udp: true
 proxy-groups:
 - name: AUTO
@@ -177,68 +235,60 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_b8601_0044
-  - CN_b8601_0028
-  - CN_b8601_0026
-  - GB_b8601_0050
-  - GB_b8601_0053
-  - GB_b8601_0054
-  - RU_b8601_0086
-  - DE_b8601_0035
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS 3
+  - DE_7ac56_0035
+  - DE_7ac56_0044
+  - CN_7ac56_0026
+  - CN_7ac56_0028
+  - GB_7ac56_0054
+  - GB_7ac56_0053
+  - GB_7ac56_0051
+  - GB_7ac56_0057
+  - GB_7ac56_0050
+  - RU_7ac56_0086
+  - 🇬🇧 英国 | GBR 2
+  - 🇺🇸 美国 | USA 2
   - 🇻🇳 越南 | VNM
+  - 🇺🇸 美国 | USA 8
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
-  - 🇹🇷 土耳其 | TUR
+  - 🇰🇷 韩国 | KOR 2
+  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇬🇧 英国 | GBR 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
+  - 🇰🇷 韩国 | KOR 2
+  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_b8601_0044
-  - RU_b8601_0086
-  - DE_b8601_0035
-  - 🇳🇱 荷兰 | NLD
-  - 🇹🇷 土耳其 | TUR
+  - DE_7ac56_0035
+  - DE_7ac56_0044
+  - RU_7ac56_0086
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 8
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_b8601_0028
-  - CN_b8601_0026
-  - GB_b8601_0050
-  - GB_b8601_0053
-  - GB_b8601_0054
-  - 🇷🇺 俄罗斯 | RUS
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - DE_b8601_0044
-  - CN_b8601_0028
-  - CN_b8601_0026
-  - GB_b8601_0050
-  - GB_b8601_0053
-  - GB_b8601_0054
-  - RU_b8601_0086
-  - DE_b8601_0035
-  - 🇳🇱 荷兰 | NLD
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇷🇺 俄罗斯 | RUS
+  - CN_7ac56_0026
+  - CN_7ac56_0028
+  - GB_7ac56_0054
+  - GB_7ac56_0053
+  - GB_7ac56_0051
+  - GB_7ac56_0057
+  - GB_7ac56_0050
 rules:
 - MATCH,AUTO

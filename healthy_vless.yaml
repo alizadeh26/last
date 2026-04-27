@@ -4,34 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_b8601_0044
-  server: srv190.towersflowerss.com
-  port: 443
-  type: vless
-  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
-  tls: false
-  skip-cert-verify: false
-  servername: srv190.towersflowerss.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: srv190.towersflowerss.com
-  udp: true
-- name: RU_b8601_0086
-  server: srv80.towersflowerss.com
-  port: 443
-  type: vless
-  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: srv80.towersflowerss.com
-  reality-opts:
-    public-key: Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0
-  udp: true
-- name: DE_b8601_0035
+- name: DE_7ac56_0035
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -45,24 +18,54 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: s503.okgg.top
+- name: DE_7ac56_0044
+  server: srv190.towersflowerss.com
   port: 443
-  type: vless
-  uuid: 872624ac-aa40-39b1-8232-f7270812c234
-  tls: true
-  flow: xtls-rprx-vision
-  servername: u711541ud1a8s503.okgg.top
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: srv18.datatowers.net
-  port: 64534
   type: vless
   uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
   tls: false
-  client-fingerprint: qq
+  skip-cert-verify: false
+  servername: srv190.towersflowerss.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: srv190.towersflowerss.com
+  udp: true
+- name: RU_7ac56_0086
+  server: srv80.towersflowerss.com
+  port: 443
+  type: vless
+  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: srv80.towersflowerss.com
+  reality-opts:
+    public-key: Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 104.18.189.112
+  port: 80
+  type: vless
+  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+  tls: false
+  network: ws
+  ws-opts:
+    path: /@WireXnet?ed=2048
+    headers:
+      Host: us.xydcqd.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: ohio1.ap221.com
+  port: 443
+  type: vless
+  uuid: c71ab922-2c35-4f6e-abfe-4950658f7bce
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ohio.ap221.com
+  client-fingerprint: chrome
   network: tcp
   udp: true
 proxy-groups:
@@ -71,10 +74,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_b8601_0044
-  - RU_b8601_0086
-  - DE_b8601_0035
-  - 🇳🇱 荷兰 | NLD
-  - 🇹🇷 土耳其 | TUR
+  - DE_7ac56_0035
+  - DE_7ac56_0044
+  - RU_7ac56_0086
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

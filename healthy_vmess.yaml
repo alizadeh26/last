@@ -4,22 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_b8601_0028
-  server: planb.mojcn.com
-  port: 16648
-  type: vmess
-  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
-  udp: true
-- name: CN_b8601_0026
+- name: CN_7ac56_0026
   server: planb.mojcn.com
   port: 16632
   type: vmess
@@ -34,9 +19,9 @@ proxies:
     headers:
       Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
   udp: true
-- name: GB_b8601_0050
-  server: m.cnmjin.net
-  port: 16622
+- name: CN_7ac56_0028
+  server: planb.mojcn.com
+  port: 16648
   type: vmess
   uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
   alterId: 0
@@ -49,22 +34,7 @@ proxies:
     headers:
       Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
   udp: true
-- name: GB_b8601_0053
-  server: m.cnmjin.net
-  port: 16618
-  type: vmess
-  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
-  udp: true
-- name: GB_b8601_0054
+- name: GB_7ac56_0054
   server: t.cnmjcn.cyou
   port: 16618
   type: vmess
@@ -79,15 +49,65 @@ proxies:
     headers:
       Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: node-us.connectsuite.org
-  port: 2053
+- name: GB_7ac56_0053
+  server: m.cnmjin.net
+  port: 16618
   type: vmess
-  uuid: 9b91e960-f8f7-41aa-ac67-f5c7b6b72e74
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: GB_7ac56_0051
+  server: m.cnmjin.net
+  port: 16616
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: GB_7ac56_0057
+  server: t.cnmjcn.cyou
+  port: 16616
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: GB_7ac56_0050
+  server: m.cnmjin.net
+  port: 16622
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -95,11 +115,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_b8601_0028
-  - CN_b8601_0026
-  - GB_b8601_0050
-  - GB_b8601_0053
-  - GB_b8601_0054
-  - 🇷🇺 俄罗斯 | RUS
+  - CN_7ac56_0026
+  - CN_7ac56_0028
+  - GB_7ac56_0054
+  - GB_7ac56_0053
+  - GB_7ac56_0051
+  - GB_7ac56_0057
+  - GB_7ac56_0050
 rules:
 - MATCH,AUTO

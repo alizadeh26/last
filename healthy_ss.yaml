@@ -4,26 +4,61 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 194.87.68.6
-  port: 40120
+- name: 🇬🇧 英国 | GBR 2
+  server: series-a2.samanehha.co
+  port: 443
   type: ss
-  cipher: aes-256-gcm
-  password: 1a87017d0bf57f34
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.206
+  server: 103.186.155.215
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.236
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 3
+  server: 103.186.154.54
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.155.66
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.215
+  server: 103.186.154.165
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇰🇷 韩国 | KOR 2
+  server: 211.178.105.134
+  port: 6123
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 192.124.176.125
+  port: 8388
+  type: ss
+  cipher: aes-256-gcm
+  password: hmNf9bkveWaL
   udp: true
 proxy-groups:
 - name: AUTO
@@ -31,8 +66,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇬🇧 英国 | GBR 2
   - 🇻🇳 越南 | VNM
+  - 🇻🇳 越南 | VNM 4
+  - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 2
+  - 🇰🇷 韩国 | KOR 2
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO
