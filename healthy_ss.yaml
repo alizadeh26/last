@@ -4,50 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 43.165.3.102
-  port: 34851
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 194.87.68.6
+  port: 40120
   type: ss
-  cipher: aes-128-gcm
-  password: a9d727cd-330b-4edd-8911-7c224df6afd5
-  udp: true
-- name: 🇦🇪 阿联酋 | ARE
-  server: 77.74.201.171
-  port: 25891
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: a9d727cd-330b-4edd-8911-7c224df6afd5
-  udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.156
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.77
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.197
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.58
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-gcm
+  password: 1a87017d0bf57f34
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.154.160
+  server: 103.186.155.215
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.206
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -59,12 +31,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇦🇪 阿联酋 | ARE
-  - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 4
+  - 🇷🇺 俄罗斯 | RUS 3
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
 rules:
 - MATCH,AUTO

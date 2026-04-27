@@ -4,15 +4,30 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 10
-  server: 82.198.246.9
-  port: 180
+- name: 🇷🇺 俄罗斯 | RUS
+  server: node-us.connectsuite.org
+  port: 2053
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 9b91e960-f8f7-41aa-ac67-f5c7b6b72e74
   alterId: 0
   cipher: auto
-  tls: false
+  tls: true
   skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: hk.aicvideo.info
+  port: 8810
+  type: vmess
+  uuid: 456c497e-02bc-4b46-883f-06747cabdfbd
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: hk.aicvideo.info
+  network: ws
+  ws-opts:
+    path: /dgs
+    headers:
+      Host: www.bing.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -20,6 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇭🇰 香港 | HKG
 rules:
 - MATCH,AUTO
