@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_f21f8_0044
-  server: srv190.towersflowerss.com
-  port: 443
-  type: vless
-  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
-  tls: false
-  skip-cert-verify: false
-  servername: srv190.towersflowerss.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: srv190.towersflowerss.com
-  udp: true
 - name: DE_f21f8_0035
   server: pl2-gws4.onnstreaming.ru
   port: 443
@@ -31,32 +17,6 @@ proxies:
   reality-opts:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
-  udp: true
-- name: RU_f21f8_0086
-  server: srv80.towersflowerss.com
-  port: 443
-  type: vless
-  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: srv80.towersflowerss.com
-  reality-opts:
-    public-key: Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0
-  udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: cdn.wmsj.eu.org
-  port: 443
-  type: vless
-  uuid: dc5625c7-a2e0-452d-ab14-d4f2f34b6921
-  tls: true
-  servername: cdn.wmsj.eu.org
-  network: ws
-  ws-opts:
-    path: /jjp
-    headers:
-      Host: cdn.wmsj.eu.org
   udp: true
 - name: 🇺🇸 美国 | USA 8
   server: ohio1.ap221.com
@@ -75,10 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_f21f8_0044
   - DE_f21f8_0035
-  - RU_f21f8_0086
-  - 🇯🇵 日本 | JPN 3
   - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
