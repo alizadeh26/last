@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_f21f8_0035
+- name: DE_4b883_0035
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -18,14 +18,14 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: ohio1.ap221.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: taipei1.ap221.com
   port: 443
   type: vless
   uuid: c71ab922-2c35-4f6e-abfe-4950658f7bce
   tls: true
   flow: xtls-rprx-vision
-  servername: ohio.ap221.com
+  servername: taipei.ap221.com
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -35,7 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_f21f8_0035
-  - 🇺🇸 美国 | USA 8
+  - DE_4b883_0035
+  - 🇹🇼 🇨🇳 台湾 | TWN
 rules:
 - MATCH,AUTO
