@@ -13,20 +13,6 @@ proxies:
   skip-cert-verify: false
   network: ws
   udp: true
-- name: GB_c1939_0008
-  server: gr-1.illusion-proxy.ru
-  port: 443
-  type: vless
-  uuid: bf263367-bb63-4663-b4a1-34946107a72e
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: gr-1.illusion-proxy.ru
-  reality-opts:
-    public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
-    short-id: fe28038a
-  udp: true
 - name: DE_c1939_0005
   server: pl2-gws4.onnstreaming.ru
   port: 443
@@ -41,6 +27,20 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
+- name: GB_c1939_0008
+  server: gr-1.illusion-proxy.ru
+  port: 443
+  type: vless
+  uuid: bf263367-bb63-4663-b4a1-34946107a72e
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: gr-1.illusion-proxy.ru
+  reality-opts:
+    public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
+    short-id: fe28038a
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -48,7 +48,7 @@ proxy-groups:
   interval: 300
   proxies:
   - CH_c1939_0001
-  - GB_c1939_0008
   - DE_c1939_0005
+  - GB_c1939_0008
 rules:
 - MATCH,AUTO

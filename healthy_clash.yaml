@@ -43,20 +43,6 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_c1939_0008
-  server: gr-1.illusion-proxy.ru
-  port: 443
-  type: vless
-  uuid: bf263367-bb63-4663-b4a1-34946107a72e
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: gr-1.illusion-proxy.ru
-  reality-opts:
-    public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
-    short-id: fe28038a
-  udp: true
 - name: DE_c1939_0005
   server: pl2-gws4.onnstreaming.ru
   port: 443
@@ -70,6 +56,20 @@ proxies:
   reality-opts:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
+  udp: true
+- name: GB_c1939_0008
+  server: gr-1.illusion-proxy.ru
+  port: 443
+  type: vless
+  uuid: bf263367-bb63-4663-b4a1-34946107a72e
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: gr-1.illusion-proxy.ru
+  reality-opts:
+    public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
+    short-id: fe28038a
   udp: true
 - name: 🇬🇧 英国 | GBR
   server: 146.70.61.37
@@ -88,13 +88,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.39
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 2
   server: 103.186.154.52
   port: 38388
@@ -104,6 +97,13 @@ proxies:
   udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.203
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.39
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -133,13 +133,13 @@ proxy-groups:
   - GB_c1939_0006
   - GB_c1939_0007
   - GB_c1939_0009
-  - GB_c1939_0008
   - DE_c1939_0005
+  - GB_c1939_0008
   - 🇬🇧 英国 | GBR
   - 🇺🇸 美国 | USA 14
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
@@ -148,9 +148,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
@@ -159,8 +159,8 @@ proxy-groups:
   interval: 300
   proxies:
   - CH_c1939_0001
-  - GB_c1939_0008
   - DE_c1939_0005
+  - GB_c1939_0008
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
