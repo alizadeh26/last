@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_4b883_0035
+- name: DE_6a69f_0035
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -24,6 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_4b883_0035
+  - DE_6a69f_0035
 rules:
 - MATCH,AUTO
