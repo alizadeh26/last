@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_7219e_0001
+- name: CH_c1939_0001
   server: 138.124.32.188
   port: 30047
   type: vless
@@ -13,7 +13,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   udp: true
-- name: GB_7219e_0008
+- name: GB_c1939_0008
   server: gr-1.illusion-proxy.ru
   port: 443
   type: vless
@@ -27,7 +27,7 @@ proxies:
     public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
     short-id: fe28038a
   udp: true
-- name: DE_7219e_0005
+- name: DE_c1939_0005
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -47,8 +47,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_7219e_0001
-  - GB_7219e_0008
-  - DE_7219e_0005
+  - CH_c1939_0001
+  - GB_c1939_0008
+  - DE_c1939_0005
 rules:
 - MATCH,AUTO
