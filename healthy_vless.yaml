@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_fb767_0001
+- name: CH_304f8_0001
   server: 138.124.32.188
   port: 30047
   type: vless
@@ -13,7 +13,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   udp: true
-- name: GB_fb767_0008
+- name: GB_304f8_0008
   server: gr-1.illusion-proxy.ru
   port: 443
   type: vless
@@ -27,7 +27,7 @@ proxies:
     public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
     short-id: fe28038a
   udp: true
-- name: DE_fb767_0005
+- name: DE_304f8_0005
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -41,29 +41,7 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: tokyo1.ap221.com
-  port: 443
-  type: vless
-  uuid: e8029124-0f56-48eb-90bc-6ab7d5870951
-  tls: true
-  flow: xtls-rprx-vision
-  servername: tokyo.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: bero-3.bexum.fun
-  port: 9443
-  type: vless
-  uuid: cbf10015-d51a-4a7c-b13a-3c6091135d93
-  tls: true
-  flow: xtls-rprx-vision
-  servername: bero-3.bexum.fun
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
+- name: 🇳🇱 荷兰 | NLD 2
   server: nlety.ksnodes.net
   port: 443
   type: vless
@@ -77,17 +55,17 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL 3
-  server: pl-1.illusion-vpn.ru
+- name: 🇵🇱 波兰 | POL
+  server: p0land.gxcore.net
   port: 443
   type: vless
-  uuid: bf263367-bb63-4663-b4a1-34946107a72e
+  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 5qvcOTHr_izGbsRz-j2xC3BMMdugFMsl7MnANjzwZ0I
-    short-id: b2a1c97a38
-  servername: pl-1.illusion-vpn.ru
+    public-key: VM2nI0r9lXd6rKDA-_5sZc28qcDPTvZaJMOnxDDYUmc
+    short-id: a1ab5a56bc42
+  servername: p0land.gxcore.net
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -97,12 +75,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_fb767_0001
-  - GB_fb767_0008
-  - DE_fb767_0005
-  - 🇯🇵 日本 | JPN 4
-  - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇵🇱 波兰 | POL 3
+  - CH_304f8_0001
+  - GB_304f8_0008
+  - DE_304f8_0005
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇵🇱 波兰 | POL
 rules:
 - MATCH,AUTO

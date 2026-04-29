@@ -4,26 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_fb767_0001
-  server: 138.124.32.188
-  port: 30047
-  type: vless
-  uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  udp: true
-- name: GB_fb767_0007
-  server: 82.198.246.214
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: GB_fb767_0006
+- name: GB_304f8_0006
   server: 82.198.246.9
   port: 180
   type: vmess
@@ -33,7 +14,17 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_fb767_0009
+- name: GB_304f8_0007
+  server: 82.198.246.214
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: GB_304f8_0009
   server: 82.198.246.37
   port: 180
   type: vmess
@@ -43,7 +34,16 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_fb767_0008
+- name: CH_304f8_0001
+  server: 138.124.32.188
+  port: 30047
+  type: vless
+  uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  udp: true
+- name: GB_304f8_0008
   server: gr-1.illusion-proxy.ru
   port: 443
   type: vless
@@ -57,7 +57,7 @@ proxies:
     public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
     short-id: fe28038a
   udp: true
-- name: DE_fb767_0005
+- name: DE_304f8_0005
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -71,36 +71,7 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 13.36.173.59
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: dada1203
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: tokyo1.ap221.com
-  port: 443
-  type: vless
-  uuid: e8029124-0f56-48eb-90bc-6ab7d5870951
-  tls: true
-  flow: xtls-rprx-vision
-  servername: tokyo.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: bero-3.bexum.fun
-  port: 9443
-  type: vless
-  uuid: cbf10015-d51a-4a7c-b13a-3c6091135d93
-  tls: true
-  flow: xtls-rprx-vision
-  servername: bero-3.bexum.fun
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
+- name: 🇳🇱 荷兰 | NLD 2
   server: nlety.ksnodes.net
   port: 443
   type: vless
@@ -114,85 +85,101 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL 3
-  server: pl-1.illusion-vpn.ru
+- name: 🇺🇸 美国 | USA 10
+  server: 82.198.246.233
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: p0land.gxcore.net
   port: 443
   type: vless
-  uuid: bf263367-bb63-4663-b4a1-34946107a72e
+  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 5qvcOTHr_izGbsRz-j2xC3BMMdugFMsl7MnANjzwZ0I
-    short-id: b2a1c97a38
-  servername: pl-1.illusion-vpn.ru
+    public-key: VM2nI0r9lXd6rKDA-_5sZc28qcDPTvZaJMOnxDDYUmc
+    short-id: a1ab5a56bc42
+  servername: p0land.gxcore.net
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 3.16.50.244
-  port: 80
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.17
+  port: 38388
   type: ss
-  cipher: aes-256-gcm
-  password: dada1203
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.154.186
+  server: 103.186.155.122
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.154.77
+  server: 103.186.155.209
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 4
-  server: 103.186.154.185
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.155.230
+  server: 103.186.155.36
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.33
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.65
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.231
+  server: 103.186.154.239
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 9
-  server: 103.186.154.50
+  server: 103.186.154.63
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 8
-  server: 103.186.155.28
+  server: 103.186.154.186
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 11
+  server: 103.186.154.190
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 12
+  server: 103.186.154.66
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.154.40
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 10
+  server: 103.186.154.38
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -204,75 +191,68 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_fb767_0001
-  - GB_fb767_0007
-  - GB_fb767_0006
-  - GB_fb767_0009
-  - GB_fb767_0008
-  - DE_fb767_0005
-  - 🇫🇷 法国 | FRA
-  - 🇯🇵 日本 | JPN 4
-  - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇵🇱 波兰 | POL 3
-  - 🇺🇸 美国 | USA 2
+  - GB_304f8_0006
+  - GB_304f8_0007
+  - GB_304f8_0009
+  - CH_304f8_0001
+  - GB_304f8_0008
+  - DE_304f8_0005
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 10
+  - 🇵🇱 波兰 | POL
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 11
+  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 10
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
-  - 🇺🇸 美国 | USA 2
+  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 2
-  - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 11
+  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 10
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_fb767_0001
-  - GB_fb767_0008
-  - DE_fb767_0005
-  - 🇯🇵 日本 | JPN 4
-  - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇵🇱 波兰 | POL 3
+  - CH_304f8_0001
+  - GB_304f8_0008
+  - DE_304f8_0005
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇵🇱 波兰 | POL
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_fb767_0007
-  - GB_fb767_0006
-  - GB_fb767_0009
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - CH_fb767_0001
+  - GB_304f8_0006
+  - GB_304f8_0007
+  - GB_304f8_0009
+  - 🇺🇸 美国 | USA 10
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_fb767_0007
-  - GB_fb767_0006
+  - GB_304f8_0006
+  - GB_304f8_0007
+  - GB_304f8_0009
 rules:
 - MATCH,AUTO
