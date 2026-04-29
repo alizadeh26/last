@@ -4,17 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_a2a27_0006
-  server: 82.198.246.9
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: GB_a2a27_0007
+- name: GB_cbf16_0007
   server: 82.198.246.214
   port: 180
   type: vmess
@@ -24,7 +14,17 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_a2a27_0009
+- name: GB_cbf16_0006
+  server: 82.198.246.9
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: GB_cbf16_0009
   server: 82.198.246.37
   port: 180
   type: vmess
@@ -58,9 +58,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_a2a27_0006
-  - GB_a2a27_0007
-  - GB_a2a27_0009
+  - GB_cbf16_0007
+  - GB_cbf16_0006
+  - GB_cbf16_0009
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 16
 rules:
