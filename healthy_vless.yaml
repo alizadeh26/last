@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_304f8_0001
+- name: CH_a2a27_0001
   server: 138.124.32.188
   port: 30047
   type: vless
@@ -13,21 +13,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   udp: true
-- name: GB_304f8_0008
-  server: gr-1.illusion-proxy.ru
-  port: 443
-  type: vless
-  uuid: bf263367-bb63-4663-b4a1-34946107a72e
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: gr-1.illusion-proxy.ru
-  reality-opts:
-    public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
-    short-id: fe28038a
-  udp: true
-- name: DE_304f8_0005
+- name: DE_a2a27_0005
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -40,6 +26,20 @@ proxies:
   reality-opts:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
+  udp: true
+- name: GB_a2a27_0008
+  server: gr-1.illusion-proxy.ru
+  port: 443
+  type: vless
+  uuid: bf263367-bb63-4663-b4a1-34946107a72e
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: gr-1.illusion-proxy.ru
+  reality-opts:
+    public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
+    short-id: fe28038a
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: nlety.ksnodes.net
@@ -75,9 +75,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_304f8_0001
-  - GB_304f8_0008
-  - DE_304f8_0005
+  - CH_a2a27_0001
+  - DE_a2a27_0005
+  - GB_a2a27_0008
   - 🇳🇱 荷兰 | NLD 2
   - 🇵🇱 波兰 | POL
 rules:
