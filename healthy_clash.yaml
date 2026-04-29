@@ -13,16 +13,6 @@ proxies:
   skip-cert-verify: false
   network: ws
   udp: true
-- name: GB_fb767_0006
-  server: 82.198.246.9
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: GB_fb767_0007
   server: 82.198.246.214
   port: 180
@@ -33,20 +23,15 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CY_fb767_0003
-  server: www.csgo.net
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+- name: GB_fb767_0006
+  server: 82.198.246.9
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
   tls: false
   skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
   udp: true
 - name: GB_fb767_0009
   server: 82.198.246.37
@@ -57,21 +42,6 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
-  udp: true
-- name: US_fb767_0014
-  server: cf.090227.xyz
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
   udp: true
 - name: GB_fb767_0008
   server: gr-1.illusion-proxy.ru
@@ -87,51 +57,6 @@ proxies:
     public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
     short-id: fe28038a
   udp: true
-- name: US_fb767_0017
-  server: www.whatismyip.net
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0021
-  server: cloudflare-dns.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0023
-  server: ns.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
 - name: DE_fb767_0005
   server: pl2-gws4.onnstreaming.ru
   port: 443
@@ -146,214 +71,12 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: US_fb767_0028
-  server: support.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0025
-  server: www.shopify.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0027
-  server: itarmy.com.ua
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0036
-  server: docs.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0039
-  server: cdnjs.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0040
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0041
-  server: openai.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0043
-  server: developers.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0045
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0044
-  server: www.udemy.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0048
-  server: www.epicgames.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
-- name: US_fb767_0035
-  server: blog.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-  udp: true
 - name: 🇫🇷 法国 | FRA
   server: 13.36.173.59
   port: 80
   type: ss
   cipher: aes-256-gcm
   password: dada1203
-  udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: hk1.ap221.com
-  port: 443
-  type: vless
-  uuid: 86746abd-f22f-404e-a0e9-f3f786539782
-  tls: true
-  flow: xtls-rprx-vision
-  servername: hk.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: tokyo1.ap221.com
-  port: 443
-  type: vless
-  uuid: 921c7cb1-9e42-4daa-8fa4-54794473b90e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: tokyo.ap221.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇯🇵 日本 | JPN 4
   server: tokyo1.ap221.com
@@ -419,24 +142,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: ohio1.ap221.com
-  port: 443
-  type: vless
-  uuid: 86746abd-f22f-404e-a0e9-f3f786539782
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ohio.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.65
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.77
   port: 38388
@@ -458,13 +163,6 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.231
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 6
   server: 103.186.154.33
   port: 38388
@@ -472,8 +170,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.155.28
+- name: 🇻🇳 越南 | VNM 2
+  server: 103.186.155.65
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.155.231
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -486,6 +191,13 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.155.28
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -493,46 +205,26 @@ proxy-groups:
   interval: 300
   proxies:
   - CH_fb767_0001
-  - GB_fb767_0006
   - GB_fb767_0007
-  - CY_fb767_0003
+  - GB_fb767_0006
   - GB_fb767_0009
-  - US_fb767_0014
   - GB_fb767_0008
-  - US_fb767_0017
-  - US_fb767_0021
-  - US_fb767_0023
   - DE_fb767_0005
-  - US_fb767_0028
-  - US_fb767_0025
-  - US_fb767_0027
-  - US_fb767_0036
-  - US_fb767_0039
-  - US_fb767_0040
-  - US_fb767_0041
-  - US_fb767_0043
-  - US_fb767_0045
-  - US_fb767_0044
-  - US_fb767_0048
-  - US_fb767_0035
   - 🇫🇷 法国 | FRA
-  - 🇭🇰 香港 | HKG 3
-  - 🇯🇵 日本 | JPN
   - 🇯🇵 日本 | JPN 4
   - 🇩🇪 德国 | DEU 3
   - 🇳🇱 荷兰 | NLD 3
   - 🇵🇱 波兰 | POL 3
   - 🇺🇸 美国 | USA 2
   - 🇻🇳 越南 | VNM
-  - 🇺🇸 美国 | USA 6
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 9
+  - 🇻🇳 越南 | VNM 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -541,53 +233,33 @@ proxy-groups:
   - 🇫🇷 法国 | FRA
   - 🇺🇸 美国 | USA 2
   - 🇻🇳 越南 | VNM
-  - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 7
   - 🇻🇳 越南 | VNM 9
+  - 🇻🇳 越南 | VNM 8
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - CH_fb767_0001
-  - CY_fb767_0003
-  - US_fb767_0014
   - GB_fb767_0008
-  - US_fb767_0017
-  - US_fb767_0021
-  - US_fb767_0023
   - DE_fb767_0005
-  - US_fb767_0028
-  - US_fb767_0025
-  - US_fb767_0027
-  - US_fb767_0036
-  - US_fb767_0039
-  - US_fb767_0040
-  - US_fb767_0041
-  - US_fb767_0043
-  - US_fb767_0045
-  - US_fb767_0044
-  - US_fb767_0048
-  - US_fb767_0035
-  - 🇭🇰 香港 | HKG 3
-  - 🇯🇵 日本 | JPN
   - 🇯🇵 日本 | JPN 4
   - 🇩🇪 德国 | DEU 3
   - 🇳🇱 荷兰 | NLD 3
   - 🇵🇱 波兰 | POL 3
-  - 🇺🇸 美国 | USA 6
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_fb767_0006
   - GB_fb767_0007
+  - GB_fb767_0006
   - GB_fb767_0009
 - name: REGION-EU
   type: url-test
@@ -600,7 +272,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_fb767_0006
   - GB_fb767_0007
+  - GB_fb767_0006
 rules:
 - MATCH,AUTO
