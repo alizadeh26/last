@@ -44,24 +44,6 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 82.198.246.250
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  udp: true
 - name: 🇩🇪 德国 | DEU 11
   server: 82.198.246.37
   port: 180
@@ -71,6 +53,15 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 82.198.246.250
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
   udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: 82.198.246.233
@@ -101,9 +92,8 @@ proxy-groups:
   - GB_93584_0007
   - GB_93584_0009
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 14
 rules:
