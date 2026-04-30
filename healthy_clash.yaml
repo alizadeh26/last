@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_cbf16_0001
+- name: CH_93584_0001
   server: 138.124.32.188
   port: 30047
   type: vless
@@ -13,7 +13,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   udp: true
-- name: GB_cbf16_0006
+- name: GB_93584_0006
   server: 82.198.246.9
   port: 180
   type: vmess
@@ -23,7 +23,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_cbf16_0007
+- name: GB_93584_0007
   server: 82.198.246.214
   port: 180
   type: vmess
@@ -33,7 +33,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_cbf16_0009
+- name: GB_93584_0009
   server: 82.198.246.37
   port: 180
   type: vmess
@@ -43,7 +43,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_cbf16_0008
+- name: GB_93584_0008
   server: gr-1.illusion-proxy.ru
   port: 443
   type: vless
@@ -57,7 +57,7 @@ proxies:
     public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
     short-id: fe28038a
   udp: true
-- name: DE_cbf16_0005
+- name: DE_93584_0005
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -71,44 +71,17 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: nlety.ksnodes.net
-  port: 443
-  type: vless
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
-  tls: true
-  alpn:
-  - http/1.1
-  - h2
-  flow: xtls-rprx-vision
-  servername: nlety.ksnodes.net
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: p0land.gxcore.net
-  port: 443
-  type: vless
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: VM2nI0r9lXd6rKDA-_5sZc28qcDPTvZaJMOnxDDYUmc
-    short-id: a1ab5a56bc42
-  servername: p0land.gxcore.net
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 82.198.246.233
+- name: 🇩🇪 德国 | DEU 2
+  server: 82.198.246.214
   port: 180
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
+  skip-cert-verify: false
   udp: true
-- name: 🇺🇸 美国 | USA 16
+- name: 🇩🇪 德国 | DEU 6
   server: 82.198.246.250
   port: 180
   type: vmess
@@ -117,35 +90,73 @@ proxies:
   cipher: auto
   tls: false
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.155.122
-  port: 38388
+- name: 🇩🇪 德国 | DEU 7
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: 82.198.246.37
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: 82.198.246.233
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  udp: true
+- name: 🇩🇪 德国 | DEU 14
+  server: 82.198.246.9
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇵🇹 葡萄牙 | PRT
+  server: 185.231.233.112
+  port: 989
   type: ss
   cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇻🇳 越南 | VNM 2
-  server: 103.186.155.17
+  server: 103.186.155.36
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 3
-  server: 103.186.155.209
+  server: 103.186.154.251
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.239
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.154.38
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 9
+- name: 🇻🇳 越南 | VNM 5
   server: 103.186.154.63
   port: 38388
   type: ss
@@ -153,49 +164,105 @@ proxies:
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 8
-  server: 103.186.154.186
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.36
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.153
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 10
-  server: 103.186.154.38
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 11
-  server: 103.186.154.190
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 12
-  server: 103.186.154.66
+  server: 103.186.154.40
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
 - name: 🇻🇳 越南 | VNM 7
-  server: 103.186.154.40
+  server: 103.186.154.190
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 9
+  server: 103.186.155.17
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: gr-1.illusion-proxy.ru
+  port: 443
+  type: vless
+  uuid: bf263367-bb63-4663-b4a1-34946107a72e
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
+    short-id: fe28038a
+  servername: gr-1.illusion-proxy.ru
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇻🇳 越南 | VNM 10
+  server: 103.186.154.77
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 11
+  server: 103.186.154.52
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.155.209
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 12
+  server: 103.186.154.253
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 13
+  server: 103.186.154.66
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 14
+  server: 103.186.155.129
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 15
+  server: 103.186.154.186
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 16
+  server: 103.186.154.31
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 17
+  server: 103.186.155.122
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.239
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -207,77 +274,97 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_cbf16_0001
-  - GB_cbf16_0006
-  - GB_cbf16_0007
-  - GB_cbf16_0009
-  - GB_cbf16_0008
-  - DE_cbf16_0005
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 16
-  - 🇻🇳 越南 | VNM
+  - CH_93584_0001
+  - GB_93584_0006
+  - GB_93584_0007
+  - GB_93584_0009
+  - GB_93584_0008
+  - DE_93584_0005
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 14
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 9
+  - 🇺🇸 美国 | USA 20
   - 🇻🇳 越南 | VNM 10
   - 🇻🇳 越南 | VNM 11
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 12
-  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 13
+  - 🇻🇳 越南 | VNM 14
+  - 🇻🇳 越南 | VNM 15
+  - 🇻🇳 越南 | VNM 16
+  - 🇻🇳 越南 | VNM 17
+  - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 | VNM
+  - 🇵🇹 葡萄牙 | PRT
   - 🇻🇳 越南 | VNM 2
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 6
-  - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 8
   - 🇻🇳 越南 | VNM 4
   - 🇻🇳 越南 | VNM 5
+  - 🇻🇳 越南 | VNM 8
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 9
   - 🇻🇳 越南 | VNM 10
   - 🇻🇳 越南 | VNM 11
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 12
-  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 13
+  - 🇻🇳 越南 | VNM 14
+  - 🇻🇳 越南 | VNM 15
+  - 🇻🇳 越南 | VNM 16
+  - 🇻🇳 越南 | VNM 17
+  - 🇻🇳 越南 | VNM
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_cbf16_0001
-  - GB_cbf16_0008
-  - DE_cbf16_0005
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇵🇱 波兰 | POL
+  - CH_93584_0001
+  - GB_93584_0008
+  - DE_93584_0005
+  - 🇺🇸 美国 | USA 20
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_cbf16_0006
-  - GB_cbf16_0007
-  - GB_cbf16_0009
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 16
+  - GB_93584_0006
+  - GB_93584_0007
+  - GB_93584_0009
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 14
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_cbf16_0001
+  - CH_93584_0001
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_cbf16_0006
-  - GB_cbf16_0007
+  - GB_93584_0006
+  - GB_93584_0007
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 14
 rules:
 - MATCH,AUTO
