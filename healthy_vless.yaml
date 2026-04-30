@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_93584_0001
+- name: CH_29b9c_0001
   server: 138.124.32.188
   port: 30047
   type: vless
@@ -13,7 +13,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   udp: true
-- name: DE_93584_0005
+- name: DE_29b9c_0005
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -27,7 +27,7 @@ proxies:
     public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
     short-id: d1f93724859d75ac
   udp: true
-- name: GB_93584_0008
+- name: GB_29b9c_0008
   server: gr-1.illusion-proxy.ru
   port: 443
   type: vless
@@ -61,9 +61,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_93584_0001
-  - DE_93584_0005
-  - GB_93584_0008
+  - CH_29b9c_0001
+  - DE_29b9c_0005
+  - GB_29b9c_0008
   - 🇺🇸 美国 | USA 20
 rules:
 - MATCH,AUTO
