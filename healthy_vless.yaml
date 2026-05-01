@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_5713b_0001
+- name: CH_1c981_0001
   server: 138.124.32.188
   port: 30047
   type: vless
@@ -19,6 +19,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_5713b_0001
+  - CH_1c981_0001
 rules:
 - MATCH,AUTO
