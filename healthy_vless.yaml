@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_556bd_0001
+- name: CH_e03cd_0001
   server: 138.124.32.188
   port: 30047
   type: vless
@@ -13,7 +13,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   udp: true
-- name: DE_556bd_0005
+- name: DE_e03cd_0005
   server: pl2-gws4.onnstreaming.ru
   port: 443
   type: vless
@@ -33,7 +33,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_556bd_0001
-  - DE_556bd_0005
+  - CH_e03cd_0001
+  - DE_e03cd_0005
 rules:
 - MATCH,AUTO
