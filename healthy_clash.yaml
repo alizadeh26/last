@@ -4,17 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_1c981_0001
-  server: 138.124.32.188
-  port: 30047
-  type: vless
-  uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  udp: true
-- name: GB_1c981_0007
-  server: 82.198.246.214
+- name: GB_1c981_0006
+  server: 82.198.246.9
   port: 180
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -23,8 +14,8 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_1c981_0006
-  server: 82.198.246.9
+- name: GB_1c981_0007
+  server: 82.198.246.214
   port: 180
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -43,6 +34,15 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
+- name: CH_1c981_0001
+  server: 138.124.32.188
+  port: 30047
+  type: vless
+  uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: 103.186.155.19
   port: 38388
@@ -56,10 +56,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_1c981_0001
-  - GB_1c981_0007
   - GB_1c981_0006
+  - GB_1c981_0007
   - GB_1c981_0009
+  - CH_1c981_0001
   - 🇻🇳 越南 | VNM
 - name: PROTO-SS
   type: url-test
@@ -78,21 +78,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_1c981_0007
   - GB_1c981_0006
+  - GB_1c981_0007
   - GB_1c981_0009
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - CH_1c981_0001
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_1c981_0007
   - GB_1c981_0006
+  - GB_1c981_0007
+  - GB_1c981_0009
 rules:
 - MATCH,AUTO
