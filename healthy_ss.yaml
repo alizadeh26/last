@@ -5,7 +5,7 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇻🇳 越南 | VNM
-  server: 103.186.155.236
+  server: 103.186.155.214
   port: 38388
   type: ss
   cipher: aes-256-cfb
