@@ -4,15 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_4fcf7_0001
-  server: 138.124.32.188
-  port: 30047
-  type: vless
-  uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  udp: true
 - name: GB_4fcf7_0006
   server: 82.198.246.9
   port: 180
@@ -43,6 +34,15 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
+- name: CH_4fcf7_0001
+  server: 138.124.32.188
+  port: 30047
+  type: vless
+  uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 82.198.246.9
   port: 180
@@ -68,10 +68,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_4fcf7_0001
   - GB_4fcf7_0006
   - GB_4fcf7_0007
   - GB_4fcf7_0009
+  - CH_4fcf7_0001
   - 🇺🇸 美国 | USA 7
   - 🇳🇱 荷兰 | NLD
 - name: PROTO-VLESS
@@ -90,12 +90,6 @@ proxy-groups:
   - GB_4fcf7_0007
   - GB_4fcf7_0009
   - 🇺🇸 美国 | USA 7
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - CH_4fcf7_0001
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -103,6 +97,7 @@ proxy-groups:
   proxies:
   - GB_4fcf7_0006
   - GB_4fcf7_0007
+  - GB_4fcf7_0009
   - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
