@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_1c981_0001
+- name: CH_745b9_0001
   server: 138.124.32.188
   port: 30047
   type: vless
@@ -13,12 +13,200 @@ proxies:
   skip-cert-verify: false
   network: ws
   udp: true
+- name: CY_745b9_0004
+  server: www.csgo.net
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  udp: true
+- name: US_745b9_0015
+  server: openai.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  udp: true
+- name: US_745b9_0019
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  udp: true
+- name: US_745b9_0016
+  server: cf.090227.xyz
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  udp: true
+- name: US_745b9_0022
+  server: ns.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  udp: true
+- name: US_745b9_0020
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  udp: true
+- name: US_745b9_0029
+  server: docs.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  udp: true
+- name: US_745b9_0032
+  server: support.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  udp: true
+- name: US_745b9_0034
+  server: www.whatismyip.net
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  udp: true
+- name: US_745b9_0033
+  server: developers.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: s110.okgfw.top
+  port: 443
+  type: vless
+  uuid: 8f8ccdc5-fe99-38d7-a8a6-422f8c88ef0a
+  tls: true
+  flow: xtls-rprx-vision
+  servername: u712031u50f3s110.okgfw.top
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: US_745b9_0030
+  server: itarmy.com.ua
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-o.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_1c981_0001
+  - CH_745b9_0001
+  - CY_745b9_0004
+  - US_745b9_0015
+  - US_745b9_0019
+  - US_745b9_0016
+  - US_745b9_0022
+  - US_745b9_0020
+  - US_745b9_0029
+  - US_745b9_0032
+  - US_745b9_0034
+  - US_745b9_0033
+  - 🇺🇸 美国 | USA 27
+  - US_745b9_0030
 rules:
 - MATCH,AUTO
