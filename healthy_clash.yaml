@@ -4,16 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_18d4e_0006
-  server: 82.198.246.9
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: GB_18d4e_0007
   server: 82.198.246.214
   port: 180
@@ -40,7 +30,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_18d4e_0006
   - GB_18d4e_0007
   - GB_18d4e_0009
 - name: PROTO-VMESS
@@ -48,7 +37,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_18d4e_0006
   - GB_18d4e_0007
   - GB_18d4e_0009
 - name: REGION-NA
@@ -56,7 +44,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_18d4e_0006
   - GB_18d4e_0007
   - GB_18d4e_0009
 rules:
