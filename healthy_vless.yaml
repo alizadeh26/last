@@ -4,25 +4,55 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇱🇹 立陶宛 | LTU
-  server: vltch.mostserv.xyz
+- name: 🇭🇰 香港 | HKG
+  server: hk1.ap221.com
   port: 443
   type: vless
-  uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791
+  uuid: 2bd9c075-e47a-46d8-a777-93baa759d8aa
   tls: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI
-    short-id: 226509f017e4c36d
-  servername: vltch.mostserv.xyz
+  servername: hk.ap221.com
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 3
+- name: 🇩🇪 德国 | DEU
+  server: frankfurt1.ap221.com
+  port: 443
+  type: vless
+  uuid: 0dcd0d55-8a1c-4a8b-91c5-6967720a8444
+  tls: true
+  flow: xtls-rprx-vision
+  servername: frankfurt.ap221.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: london1.ap221.com
+  port: 443
+  type: vless
+  uuid: 2bd9c075-e47a-46d8-a777-93baa759d8aa
+  tls: true
+  flow: xtls-rprx-vision
+  servername: london.ap221.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: london1.ap221.com
+  port: 443
+  type: vless
+  uuid: 8f25d191-c31c-4d07-86ec-db01fe1085d9
+  tls: true
+  flow: xtls-rprx-vision
+  servername: london.ap221.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN
   server: tokyo1.ap221.com
   port: 443
   type: vless
-  uuid: 03491a57-f071-4c0c-84f2-f4ec9062ede1
+  uuid: 79b78774-0ccd-4792-aa2d-189887dd987f
   tls: true
   flow: xtls-rprx-vision
   servername: tokyo.ap221.com
@@ -35,7 +65,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 立陶宛 | LTU
-  - 🇯🇵 日本 | JPN 3
+  - 🇭🇰 香港 | HKG
+  - 🇩🇪 德国 | DEU
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR
+  - 🇯🇵 日本 | JPN
 rules:
 - MATCH,AUTO
