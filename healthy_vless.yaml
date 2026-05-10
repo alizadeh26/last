@@ -40,14 +40,14 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: r1.mizulina.top
-  port: 22231
+- name: 🇺🇸 美国 | USA 11
+  server: ohio1.ap221.com
+  port: 443
   type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  uuid: 3a1d7c1d-09c6-4c81-8e11-75dd4ab1ac07
   tls: true
   flow: xtls-rprx-vision
-  servername: r1.mizulina.top
+  servername: ohio.ap221.com
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -62,14 +62,14 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: ohio1.ap221.com
-  port: 443
+- name: 🇺🇸 美国 | USA 12
+  server: r1.mizulina.top
+  port: 22231
   type: vless
-  uuid: 3a1d7c1d-09c6-4c81-8e11-75dd4ab1ac07
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
   tls: true
   flow: xtls-rprx-vision
-  servername: ohio.ap221.com
+  servername: r1.mizulina.top
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -82,8 +82,8 @@ proxy-groups:
   - 🇱🇹 立陶宛 | LTU
   - 🇭🇰 香港 | HKG 2
   - 🇬🇧 英国 | GBR 4
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
