@@ -4,14 +4,30 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_02d05_0001
-  server: 138.124.32.188
-  port: 30047
+- name: 🇱🇹 立陶宛 | LTU
+  server: vltch.mostserv.xyz
+  port: 443
   type: vless
-  uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
-  tls: false
-  skip-cert-verify: false
-  network: ws
+  uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI
+    short-id: 226509f017e4c36d
+  servername: vltch.mostserv.xyz
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: tokyo1.ap221.com
+  port: 443
+  type: vless
+  uuid: 03491a57-f071-4c0c-84f2-f4ec9062ede1
+  tls: true
+  flow: xtls-rprx-vision
+  servername: tokyo.ap221.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -19,6 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_02d05_0001
+  - 🇱🇹 立陶宛 | LTU
+  - 🇯🇵 日本 | JPN 3
 rules:
 - MATCH,AUTO
