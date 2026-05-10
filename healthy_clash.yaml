@@ -65,13 +65,6 @@ proxies:
   cipher: auto
   tls: false
   udp: true
-- name: 🇻🇳 越南 | VNM
-  server: 103.186.154.250
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 - name: 🇻🇳 越南 | VNM 3
   server: 103.186.154.182
   port: 38388
@@ -79,22 +72,8 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 4
-  server: 103.186.155.49
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 5
-  server: 103.186.154.22
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 | VNM 7
-  server: 103.186.155.218
+- name: 🇻🇳 越南 | VNM
+  server: 103.186.154.250
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -107,15 +86,26 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 8
-  server: 103.186.155.15
+- name: 🇯🇵 日本 | JPN 3
+  server: tokyo1.ap221.com
+  port: 443
+  type: vless
+  uuid: 03491a57-f071-4c0c-84f2-f4ec9062ede1
+  tls: true
+  flow: xtls-rprx-vision
+  servername: tokyo.ap221.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇻🇳 越南 | VNM 5
+  server: 103.186.154.22
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 10
-  server: 103.186.155.118
+- name: 🇻🇳 越南 | VNM 8
+  server: 103.186.155.15
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -128,8 +118,15 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 12
-  server: 103.186.155.36
+- name: 🇻🇳 越南 | VNM 10
+  server: 103.186.155.118
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 6
+  server: 103.186.154.165
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -149,19 +146,22 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: tokyo1.ap221.com
-  port: 443
-  type: vless
-  uuid: 03491a57-f071-4c0c-84f2-f4ec9062ede1
-  tls: true
-  flow: xtls-rprx-vision
-  servername: tokyo.ap221.com
-  client-fingerprint: chrome
-  network: tcp
+- name: 🇻🇳 越南 | VNM 7
+  server: 103.186.155.218
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇻🇳 越南 | VNM 6
-  server: 103.186.154.165
+- name: 🇻🇳 越南 | VNM 12
+  server: 103.186.155.36
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: 🇻🇳 越南 | VNM 4
+  server: 103.186.155.49
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -180,20 +180,20 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 7
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
+  - 🇯🇵 日本 | JPN 3
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 10
   - 🇻🇳 越南 | VNM 11
-  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 10
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 13
   - 🇻🇳 越南 | VNM 9
-  - 🇯🇵 日本 | JPN 3
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -203,19 +203,19 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇺🇸 美国 | USA 5
-  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 3
-  - 🇻🇳 越南 | VNM 4
-  - 🇻🇳 越南 | VNM 5
-  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM
   - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM 5
   - 🇻🇳 越南 | VNM 8
-  - 🇻🇳 越南 | VNM 10
   - 🇻🇳 越南 | VNM 11
-  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 10
+  - 🇻🇳 越南 | VNM 6
   - 🇻🇳 越南 | VNM 13
   - 🇻🇳 越南 | VNM 9
-  - 🇻🇳 越南 | VNM 6
+  - 🇻🇳 越南 | VNM 7
+  - 🇻🇳 越南 | VNM 12
+  - 🇻🇳 越南 | VNM 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
