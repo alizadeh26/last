@@ -1,17 +1,13 @@
 ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU@35.182.134.208:443?#Server 6 🇨🇦
-ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU@35.183.96.211:443?#Server 5 🇨🇦
-ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU@15.222.60.36:443?#Server 22 🇨🇦
-ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU@15.223.186.62:443?#Server 38 🇨🇦
+ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU@15.157.68.13:443?#Server 24 🇨🇦
+vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@162.159.36.5:80?encryption=none&host=tt.andishehparenting.com&path=%2F&security=none&type=ws#Server 82 🇺🇸
 vless://e258977b-e413-4718-a3af-02d75492c349@172.64.47.168:2096?encryption=none&type=ws&host=jp.aniua.qzz.io&path=%2F%3Fed%3D2095security%3Dtls&security=tls&sni=jp.aniua.qzz.io#Server 179 🇺🇸
-vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@172.64.146.102:80?encryption=none&host=tt.andishehparenting.com&path=%2F&security=none&type=ws#Server 173 🇺🇸
-vmess://eyJhZGQiOiIxMzQuMTk1LjE5Ni4yMTEiLCJwb3J0IjoiMTgwMDAiLCJpZCI6ImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidiI6IjIiLCJwcyI6IuWKoOaLv+Wkp18wNTI4MjEwMDYiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoi8J+PgVpaIn0=
+vmess://eyJhZGQiOiIxMzQuMTk1LjE5Ni4yMTEiLCJwb3J0IjoiMTgwMDAiLCJpZCI6ImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidiI6IjIiLCJwcyI6IuWKoOaLv+Wkp18wNTI5MDIwMDYiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoi8J+PgVpaIn0=
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#%F0%9F%87%A8%F0%9F%87%A6CA-149.22.95.183-0083
 ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@137.184.174.93:8080#%F0%9F%87%A8%F0%9F%87%A6CA-137.184.174.93-0096
-vless://58fbbc47-237d-4bc2-a8c3-6db623585a1b@104.18.120.34:8443?encryption=none&security=tls&sni=superconducting.turboo-server.space&insecure=0&allowInsecure=0&type=ws&host=superconducting.turboo-server.space&path=/#🇨🇦 58 - CA - VLESS/WS/TLS - 8443
+trojan://humanity@www.gossipglove.com:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.gossipglove.com#%40Golestan_VPN%20%F0%9F%86%93%20IRAN
 vless://94968e80-d1ab-4763-9d4b-1d29fb21b642@188.114.96.12:443?encryption=none&security=tls&sni=2.webramz.store&fp=chrome&alpn=h2,http/1.1&insecure=1&allowInsecure=1&type=ws&host=2.webramz.store&path=/stream#🇺🇸 101 - US - VLESS/WS/TLS/UTLS - 443
-vless://58fbbc47-237d-4bc2-a8c3-6db623585a1b@104.16.7.70:8443?encryption=none&security=tls&sni=Kingdom.turbooo-server.com&insecure=0&allowInsecure=0&type=ws&host=Kingdom.turbooo-server.com&path=/#🇨🇦 57 - CA - VLESS/WS/TLS - 8443
-trojan://humanity@104.16.7.70:443?type=ws&security=tls&path=/assignment&host=www.calmlunch.com&sni=www.calmlunch.com&allowInsecure=0#🇨🇦 25 - CA - Trojan/WS/TLS - 443
-trojan://humanity@188.114.96.4:443?path=/assignment&security=tls&alpn=http/1.1&insecure=1&host=www.calmloud.com&fp=chrome&type=ws&allowInsecure=1&sni=www.calmloud.com#🇺🇸 28 - US - Trojan/WS/TLS/UTLS - 443
+trojan://humanity@www.calmlunch.com:443?sni=www.calmlunch.com&type=ws&path=/assignment#🇺🇸 39 - US - Trojan/WS/TLS - 443
 trojan://humanity@www.multiplydose.com:443?security=tls&sni=www.multiplydose.com&type=ws&host=www.multiplydose.com&path=//assignment&allow_insecure=1#🇺🇸 43 - US - Trojan/WS/TLS - 443
-trojan://humanity@www.ignitelimit.com:443?security=tls&sni=www.ignitelimit.com&fp=chrome&type=ws&path=/assignment&allow_insecure=0#🇨🇦 40 - CA - Trojan/WS/TLS/UTLS - 443
+trojan://humanity@www.ignitelimit.com:443?security=tls&sni=www.ignitelimit.com&fp=ios&type=ws&path=/assignment#🇨🇦 41 - CA - Trojan/WS/TLS/UTLS - 443
 vmess://eyJ2IjogIjIiLCAicHMiOiAi8J+HqPCfh6YgNSAtIENBIC0gVk1lc3MvV1MvVExTIC0gODQ0MyIsICJhZGQiOiAiMTA0LjE3Ljc3Ljc3IiwgInBvcnQiOiA4NDQzLCAiaWQiOiAiNjA0NDE1NDgtYjY4ZS00M2IyLTgxOTEtZTNiODg0YmU0YjNjIiwgImFpZCI6ICIwIiwgInNjeSI6ICJub25lIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJ2MnJheTEuZG96YXBwLnh5eiIsICJwYXRoIjogIi9sTW5zWlVONC8iLCAidGxzIjogInRscyIsICJzbmkiOiAidjJyYXkxLmRvemFwcC54eXoiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgIm5hbWUiOiAiVk0tMDMwMi0wMyJ9

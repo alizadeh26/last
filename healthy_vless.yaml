@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: NL_e5853_0027
+- name: NL_1d77a_0027
   server: g1.steptofreedom.one
   port: 443
   type: vless
@@ -18,7 +18,7 @@ proxies:
     public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
     short-id: 6d6f13013d3e1d0c
   udp: true
-- name: RU_e5853_0034
+- name: RU_1d77a_0034
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -29,7 +29,7 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: RU_e5853_0037
+- name: RU_1d77a_0037
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -56,9 +56,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - NL_e5853_0027
-  - RU_e5853_0034
-  - RU_e5853_0037
+  - NL_1d77a_0027
+  - RU_1d77a_0034
+  - RU_1d77a_0037
   - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO
