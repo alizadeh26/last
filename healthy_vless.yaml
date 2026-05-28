@@ -4,65 +4,42 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇱🇹 立陶宛 | LTU
-  server: vltch.mostserv.xyz
+- name: NL_e5853_0027
+  server: g1.steptofreedom.one
   port: 443
   type: vless
-  uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791
-  tls: true
+  uuid: 279828c6-13f2-439c-9a4e-ea7d4f470fa4
   flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: g1.steptofreedom.one
   reality-opts:
-    public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI
-    short-id: 226509f017e4c36d
-  servername: vltch.mostserv.xyz
-  client-fingerprint: chrome
-  network: tcp
+    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
+    short-id: 6d6f13013d3e1d0c
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: hk1.ap221.com
-  port: 443
+- name: RU_e5853_0034
+  server: r1.mizulina.top
+  port: 22231
   type: vless
-  uuid: 3a1d7c1d-09c6-4c81-8e11-75dd4ab1ac07
-  tls: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
   flow: xtls-rprx-vision
-  servername: hk.ap221.com
-  client-fingerprint: chrome
-  network: tcp
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: edge
+  servername: r1.mizulina.top
   udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: london1.ap221.com
-  port: 443
+- name: RU_e5853_0037
+  server: r1.mizulina.top
+  port: 22231
   type: vless
-  uuid: 79b78774-0ccd-4792-aa2d-189887dd987f
-  tls: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
   flow: xtls-rprx-vision
-  servername: london.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: ohio1.ap221.com
-  port: 443
-  type: vless
-  uuid: 3a1d7c1d-09c6-4c81-8e11-75dd4ab1ac07
   tls: true
-  flow: xtls-rprx-vision
-  servername: ohio.ap221.com
+  skip-cert-verify: false
   client-fingerprint: chrome
-  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: ohio1.ap221.com
-  port: 443
-  type: vless
-  uuid: 8f25d191-c31c-4d07-86ec-db01fe1085d9
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ohio.ap221.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 12
+- name: 🇷🇺 俄罗斯 | RUS
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -70,7 +47,7 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   servername: r1.mizulina.top
-  client-fingerprint: chrome
+  client-fingerprint: edge
   network: tcp
   udp: true
 proxy-groups:
@@ -79,11 +56,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 立陶宛 | LTU
-  - 🇭🇰 香港 | HKG 2
-  - 🇬🇧 英国 | GBR 4
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 12
+  - NL_e5853_0027
+  - RU_e5853_0034
+  - RU_e5853_0037
+  - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO

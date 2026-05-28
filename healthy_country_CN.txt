@@ -1,3 +1,1 @@
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@176.124.223.238:2096?encryption=none&security=tls&sni=sni.jpmj.dev&type=ws&host=sni.jpmj.dev&path=/?ed=2560#🇨🇳 612 - CN - VLESS/WS/TLS - 2096
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@176.124.223.238:443?allowInsecure=1&encryption=none&host=sni.jpmj.dev&security=tls&sni=sni.jpmj.dev&type=ws#🇨🇳 613 - CN - VLESS/WS/TLS - 443
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@176.124.223.238:2096?ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&host=sni.jpmj.dev&path=/&security=tls&sni=sni.jpmj.dev&type=ws#🇨🇳 611 - CN - VLESS/WS/TLS - 2096
+vmess://eyJ2IjoiMiIsInBzIjoiU2VydmVyIDMwIPCfh7Lwn4e9IiwiYWRkIjoiMTMwLjk0LjEwMS4zNSIsInBvcnQiOiI0NjgyMCIsImlkIjoiZjIzYjMyMmMtOWJjMS00YTBjLTgwM2QtNDk0ZGI5ZDQwOTlkIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOiJub25lIiwiaG9zdCI6IiIsInBhdGgiOiIvYXJraSIsInRscyI6IiIsInNuaSI6IiIsImFscG4iOiIiLCJmcCI6IiIsImluc2VjdXJlIjoiMCJ9
