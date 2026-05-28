@@ -4,15 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_1d77a_0017
-  server: 18.195.213.130
+- name: CA_1d77a_0001
+  server: 35.183.129.131
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: DE_1d77a_0018
-  server: 3.71.109.196
+- name: DE_1d77a_0017
+  server: 18.195.213.130
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -24,7 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CA_1d77a_0001
   - DE_1d77a_0017
-  - DE_1d77a_0018
 rules:
 - MATCH,AUTO
