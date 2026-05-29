@@ -1,5 +1,4 @@
 vless://@free_conf_iran@145.239.173.163:443?security=none&encryption=none&headerType=none&type=tcp#Server 57 🇫🇷
 vless://40bf709c-4353-4552-ba26-406d2bf7821d@95.182.96.225:20567?encryption=none&flow=xtls-rprx-vision&fp=&pbk=1WOtQYIQ-3sJtbrhSA1LW6gAnO-wG0Z5aCnlL_zoiXQ&security=reality&sid=b82d7208fe23&sni=cloudflare.com&type=tcp#REALITY|FR🇫🇷
 vless://256c5f48-4908-4255-83d1-c86cb58f22b4@fr.denditop.site:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=fr.denditop.site&fp=chrome&pbk=wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4&sid=9c2378562188c3cb&type=tcp&headerType=none#🇺🇸 89 - US - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://25f86cb1-2140-4085-abcb-c3a0ea7a4be0@ov-france1.09vpn.com:80?path=/vless/&security=none&encryption=none&type=ws#🇫🇷 90 - FR - VLESS/WS - 80
 vless://55f7d143-a594-4a91-b030-f227039f85ef@cdg-1.fromblancwithlove.com:8443?alpn=h2&encryption=none&security=tls&type=tcp#🇫🇷 186 - FR - VLESS/TLS - 8443

@@ -4,7 +4,39 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: NL_1d77a_0027
+- name: RU_cbdbf_0034
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: edge
+  servername: r1.mizulina.top
+  udp: true
+- name: RU_cbdbf_0037
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  tls: true
+  flow: xtls-rprx-vision
+  servername: r1.mizulina.top
+  client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: NL_cbdbf_0027
   server: g1.steptofreedom.one
   port: 443
   type: vless
@@ -18,47 +50,15 @@ proxies:
     public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
     short-id: 6d6f13013d3e1d0c
   udp: true
-- name: RU_1d77a_0034
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: edge
-  servername: r1.mizulina.top
-  udp: true
-- name: RU_1d77a_0037
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  tls: true
-  flow: xtls-rprx-vision
-  servername: r1.mizulina.top
-  client-fingerprint: edge
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - NL_1d77a_0027
-  - RU_1d77a_0034
-  - RU_1d77a_0037
-  - 🇷🇺 俄罗斯 | RUS
+  - RU_cbdbf_0034
+  - RU_cbdbf_0037
+  - 🇷🇺 俄罗斯 | RUS 3
+  - NL_cbdbf_0027
 rules:
 - MATCH,AUTO
