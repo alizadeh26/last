@@ -11,13 +11,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: DE_50561_0017
-  server: 18.195.213.130
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: DE_50561_0018
   server: 3.71.109.196
   port: 443
@@ -32,7 +25,6 @@ proxy-groups:
   interval: 300
   proxies:
   - CA_50561_0001
-  - DE_50561_0017
   - DE_50561_0018
 rules:
 - MATCH,AUTO
