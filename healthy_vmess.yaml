@@ -4,17 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_c8a7b_0021
-  server: 82.198.246.250
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: GB_c8a7b_0022
+- name: GB_50561_0022
   server: 82.198.246.214
   port: 180
   type: vmess
@@ -24,7 +14,27 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: US_c8a7b_0043
+- name: GB_50561_0023
+  server: 82.198.246.37
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 82.198.246.37
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: US_50561_0043
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
   port: 6001
   type: vmess
@@ -34,17 +44,17 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 82.198.246.214
-  port: 180
+- name: 🇺🇸 美国 | USA
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  port: 6001
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: false
+  skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA
+- name: 🇺🇸 美国 | USA 2
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
   port: 6004
   type: vmess
@@ -54,26 +64,16 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  port: 6001
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_c8a7b_0021
-  - GB_c8a7b_0022
-  - US_c8a7b_0043
-  - 🇩🇪 德国 | DEU 5
+  - GB_50561_0022
+  - GB_50561_0023
+  - 🇩🇪 德国 | DEU 2
+  - US_50561_0043
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
 rules:
