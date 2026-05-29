@@ -4,22 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CA_22e03_0001
+  server: 35.183.129.131
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: DE_22e03_0018
   server: 3.71.109.196
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-  udp: true
-- name: GB_22e03_0021
-  server: 82.198.246.250
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
   udp: true
 - name: GB_22e03_0022
   server: 82.198.246.214
@@ -28,6 +25,16 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: GB_22e03_0023
+  server: 82.198.246.37
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
   tls: false
   skip-cert-verify: false
   udp: true
@@ -42,26 +49,6 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: RU_22e03_0037
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 82.198.246.250
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: US_22e03_0043
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
   port: 6001
@@ -71,6 +58,16 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
+  udp: true
+- name: RU_22e03_0037
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
   udp: true
 - name: 🇺🇸 美国 | USA
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
@@ -98,13 +95,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CA_22e03_0001
   - DE_22e03_0018
-  - GB_22e03_0021
   - GB_22e03_0022
+  - GB_22e03_0023
   - RU_22e03_0034
-  - RU_22e03_0037
-  - 🇩🇪 德国 | DEU
   - US_22e03_0043
+  - RU_22e03_0037
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
 - name: PROTO-SS
@@ -112,6 +109,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CA_22e03_0001
   - DE_22e03_0018
 - name: PROTO-VLESS
   type: url-test
@@ -125,9 +123,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_22e03_0021
   - GB_22e03_0022
-  - 🇩🇪 德国 | DEU
+  - GB_22e03_0023
   - US_22e03_0043
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
@@ -137,18 +134,12 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_22e03_0018
-  - RU_22e03_0034
-  - RU_22e03_0037
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_22e03_0021
+  - CA_22e03_0001
   - GB_22e03_0022
-  - 🇩🇪 德国 | DEU
-  - US_22e03_0043
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO

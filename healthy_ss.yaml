@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CA_22e03_0001
+  server: 35.183.129.131
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: DE_22e03_0018
   server: 3.71.109.196
   port: 443
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CA_22e03_0001
   - DE_22e03_0018
 rules:
 - MATCH,AUTO
