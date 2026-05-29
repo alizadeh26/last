@@ -4,36 +4,29 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CA_cbdbf_0001
-  server: 35.183.129.131
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: DE_cbdbf_0018
-  server: 3.71.109.196
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: DE_cbdbf_0017
+- name: DE_c8a7b_0017
   server: 18.195.213.130
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: 35.183.129.131
+- name: DE_c8a7b_0018
+  server: 3.71.109.196
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇩🇪 德国 | DEU 2
+- name: 🇩🇪 德国 | DEU
   server: 3.71.109.196
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 18.195.213.130
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -45,10 +38,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CA_cbdbf_0001
-  - DE_cbdbf_0018
-  - DE_cbdbf_0017
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 2
+  - DE_c8a7b_0017
+  - DE_c8a7b_0018
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 4
 rules:
 - MATCH,AUTO

@@ -4,7 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: RU_cbdbf_0034
+- name: RU_c8a7b_0037
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  udp: true
+- name: RU_c8a7b_0034
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -15,17 +25,7 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: RU_cbdbf_0037
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
+- name: 🇷🇺 俄罗斯 | RUS 2
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -36,29 +36,14 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: NL_cbdbf_0027
-  server: g1.steptofreedom.one
-  port: 443
-  type: vless
-  uuid: 279828c6-13f2-439c-9a4e-ea7d4f470fa4
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: g1.steptofreedom.one
-  reality-opts:
-    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
-    short-id: 6d6f13013d3e1d0c
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_cbdbf_0034
-  - RU_cbdbf_0037
-  - 🇷🇺 俄罗斯 | RUS 3
-  - NL_cbdbf_0027
+  - RU_c8a7b_0037
+  - RU_c8a7b_0034
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO
