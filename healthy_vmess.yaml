@@ -4,66 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_45c5a_0005
+- name: 🇩🇪 德国 | DEU 2
   server: 82.198.246.214
   port: 180
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: GB_45c5a_0008
-  server: 82.198.246.214
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 82.198.246.37
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: NN_45c5a_0016
-  server: yd3.ainivp.com
-  port: 33408
-  type: vmess
-  uuid: 9204afcd-026e-781f-1abc-c03efabd1344
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ray
-    headers:
-      Host: yd3.ainivp.com
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  port: 6001
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  port: 6004
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
   alterId: 0
   cipher: auto
   tls: false
@@ -75,11 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_45c5a_0005
-  - GB_45c5a_0008
-  - 🇩🇪 德国 | DEU
-  - NN_45c5a_0016
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO

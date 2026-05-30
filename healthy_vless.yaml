@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_45c5a_0033
+- name: US_42c90_0033
   server: 155.117.127.137
   port: 443
   type: vless
@@ -12,24 +12,12 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  tls: true
-  flow: xtls-rprx-vision
-  servername: r1.mizulina.top
-  client-fingerprint: edge
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_45c5a_0033
-  - 🇷🇺 俄罗斯 | RUS 3
+  - US_42c90_0033
 rules:
 - MATCH,AUTO
