@@ -18,13 +18,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: DE_bf907_0017
-  server: 18.195.213.130
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -33,6 +26,5 @@ proxy-groups:
   proxies:
   - CA_bf907_0001
   - DE_bf907_0018
-  - DE_bf907_0017
 rules:
 - MATCH,AUTO

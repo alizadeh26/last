@@ -18,13 +18,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: DE_bf907_0017
-  server: 18.195.213.130
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: GB_bf907_0021
   server: 82.198.246.250
   port: 180
@@ -96,6 +89,16 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  port: 6001
+  type: vmess
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: r1.mizulina.top
   port: 22231
@@ -125,7 +128,6 @@ proxy-groups:
   proxies:
   - CA_bf907_0001
   - DE_bf907_0018
-  - DE_bf907_0017
   - GB_bf907_0021
   - GB_bf907_0022
   - RU_bf907_0034
@@ -133,6 +135,7 @@ proxy-groups:
   - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 4
   - US_bf907_0043
+  - 🇺🇸 美国 | USA 2
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA
 - name: PROTO-SS
@@ -142,7 +145,6 @@ proxy-groups:
   proxies:
   - CA_bf907_0001
   - DE_bf907_0018
-  - DE_bf907_0017
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -161,6 +163,7 @@ proxy-groups:
   - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 4
   - US_bf907_0043
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA
 - name: REGION-EU
   type: url-test
@@ -168,10 +171,6 @@ proxy-groups:
   interval: 300
   proxies:
   - DE_bf907_0018
-  - DE_bf907_0017
-  - RU_bf907_0034
-  - RU_bf907_0037
-  - 🇷🇺 俄罗斯 | RUS 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -180,7 +179,5 @@ proxy-groups:
   - CA_bf907_0001
   - GB_bf907_0021
   - 🇩🇪 德国 | DEU 4
-  - US_bf907_0043
-  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

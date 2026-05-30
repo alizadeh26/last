@@ -1,17 +1,12 @@
 vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?encryption=none&security=none&type=tcp#Server 1 🇩🇪
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1Uk91RXFzTDhJVU1NVmI0d0R3bkdV@57.129.121.230:10443#Server 5 🇩🇪
 ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU@3.67.67.95:443?#Server 32 🇩🇪
-ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU@3.76.213.55:443?#Server 42 🇩🇪
-vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@162.19.228.119:80?security=none&type=ws&path=%2Fhttp#Server 140 🇩🇪
-vless://18535741-e8b3-4b43-9348-785b55936751@57.129.41.216:80?encryption=none&type=ws&path=%2Fvless%2F&security=none#Server 160 🇩🇪
-vless://7d74eae4-8a06-4306-a923-ad686f30bf26@57.129.41.216:80?type=ws&path=%2Fvless%2F#Server 172 🇩🇪
-trojan://qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq@91.233.8.138:443?security=tls&sni=www.homelywebs.click&fp=chrome&type=tcp#%E5%BE%B7%E5%9B%BD_053010007
-trojan://hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd@185.137.157.254:443?security=tls&sni=www.directorypipeline.click&fp=chrome&type=tcp#%E6%9C%AA%E7%9F%A5_053010042
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1Uk91RXFzTDhJVU1NVmI0d0R3bkdV@57.129.121.230:10443#Server 5 🇩🇪
 vmess://eyJhZGQiOiJkZTUudGFza2Zsb3dodWIub3JnIiwicG9ydCI6IjIwNTMiLCJpZCI6ImNhNThiMTY1LTBmN2QtNDlhYS05ZmFlLWEwMTdlOGEwZjg4NCIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidiI6IjIiLCJwcyI6IuazleWbvV8wNTMwMTAwNDEiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6InRscyIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
 vmess://eyJhZGQiOiI4Mi40MC42Mi4xMDYiLCJwb3J0IjoiMjA4MCIsImlkIjoiY2Q2ODIzMDItYzlkNy00YzBkLWJhZGEtNTJlN2Q2NTJjMjJjIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ2IjoiMiIsInBzIjoi6Iux5Zu9XzA1MzAxMDIyOSIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIiwic25pIjoiIiwidHlwZSI6Im5vbmUiLCJzZXJ2ZXJQb3J0IjowLCJuYXRpb24iOiIifQ==
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNbFp2eU9KS1ZJTlNvcEtCNkk2c1Rn@198.105.115.100:1080#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+198.105.115.100-1080+%7C+134.08ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001#%F0%9F%87%A9%F0%9F%87%AADE-8.209.74.72-0100
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWRUZGVUdaa050YlRHQUdkZTR2VVFqcW5HU1QtYmdUUA==@144.31.96.174:8388#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+144.31.96.174-8388+%7C+139.71ms
-vless://327bf8a4-52ec-4fc1-afab-fc37ecec8be9@150.241.94.160:33199?security=reality&encryption=none&pbk=0paB9-U-QzEBoSQiOP161BPvc2PhWrfQ_5nbfk2AezM&headerType=none&fp=chrome&spx=/&type=tcp&sni=web.max.ru&sid=a9766c#🇳🇱 93 - NL - VLESS/REALITY/PBK/SID/UTLS - 33199
-vless://4dc0eec9-f0e1-4755-be7e-7ba628522d1b@91.99.145.207:443?encryption=none&path=/&security=none&type=ws#🇩🇪 198 - DE - VLESS/WS - 443
-trojan://r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ@172.238.120.124:443?security=tls&sni=172.238.120.124&fp=chrome&type=tcp&headerType=none&path=/&allow_insecure=0#🇩🇪 53 - DE - Trojan/TLS/UTLS - 443
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001#%F0%9F%87%A9%F0%9F%87%AADE-8.209.74.72-0061
+ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@3.71.109.196:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+3.71.109.196-443+%7C+158.78ms
+vmess://eyJhZGQiOiJub2RlLWRlLmNvbm5lY3RzdWl0ZS5vcmciLCJhaWQiOiIwIiwiYWxwbiI6ImgyLGh0dHBcLzEuMSIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiZmQxNjlhMGEtNWMzMi00ZjNlLTliNmMtMjhkZDM1ZjJhNWU1IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIyMDUzIiwicHMiOiJERVx1ZDgzY1x1ZGRlOVx1ZDgzY1x1ZGRlYSB8IG5vZGUtZGUuY29ubmVjdHN1aXRlLm9yZy0yMDUzIHwgMzA5LjcxbXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
+vless://327bf8a4-52ec-4fc1-afab-fc37ecec8be9@150.241.94.160:33199?security=reality&encryption=none&pbk=0paB9-U-QzEBoSQiOP161BPvc2PhWrfQ_5nbfk2AezM&headerType=none&fp=chrome&spx=/&type=tcp&sni=web.max.ru&sid=a9766c#🇺🇸 70 - US - VLESS/REALITY/PBK/SID/UTLS - 33199
+vless://394f6981-a782-4779-9a85-e6cf22935d93@152.233.35.228:8443?encryption=none&security=tls&sni=de1.fromblancwithlove.com&type=tcp#🇩🇪 83 - DE - VLESS/TLS - 8443
+vless://4dc0eec9-f0e1-4755-be7e-7ba628522d1b@91.99.145.207:443?encryption=none&path=/&security=none&type=ws#🇩🇪 129 - DE - VLESS/WS - 443
+trojan://r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ@172.238.120.124:443?security=tls&sni=172.238.120.124&fp=chrome&type=tcp&headerType=none&path=/&allow_insecure=0#🇩🇪 52 - DE - Trojan/TLS/UTLS - 443
