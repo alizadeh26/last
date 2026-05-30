@@ -24,21 +24,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: NN_45c5a_0016
-  server: yd3.ainivp.com
-  port: 33408
-  type: vmess
-  uuid: 9204afcd-026e-781f-1abc-c03efabd1344
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ray
-    headers:
-      Host: yd3.ainivp.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -47,6 +32,5 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
-  - NN_45c5a_0016
 rules:
 - MATCH,AUTO

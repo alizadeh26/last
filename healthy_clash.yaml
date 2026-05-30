@@ -4,26 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CA_45c5a_0002
+  server: 15.223.186.62
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: FR_45c5a_0004
   server: 163.5.192.18
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: Sj2yu7qKPprUmPJoOCgN6q
-  udp: true
-- name: SG_45c5a_0022
-  server: jp-05.jjsdns.com
-  port: 11788
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: a9d727cd-330b-4edd-8911-7c224df6afd5
-  udp: true
-- name: RU_45c5a_0020
-  server: 89.23.98.196
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Sy2vCAJafzeswDVuBfNO6Q
   udp: true
 - name: US_45c5a_0033
   server: 155.117.127.137
@@ -32,6 +25,13 @@ proxies:
   uuid: 5a20b5d0-3a98-4792-9559-95f4e24277ec
   tls: false
   skip-cert-verify: false
+  udp: true
+- name: RU_45c5a_0020
+  server: 89.23.98.196
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Sy2vCAJafzeswDVuBfNO6Q
   udp: true
 - name: 🇺🇸 美国 | USA
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
@@ -53,53 +53,25 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: NN_45c5a_0016
-  server: yd3.ainivp.com
-  port: 33408
-  type: vmess
-  uuid: 9204afcd-026e-781f-1abc-c03efabd1344
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ray
-    headers:
-      Host: yd3.ainivp.com
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  tls: true
-  flow: xtls-rprx-vision
-  servername: r1.mizulina.top
-  client-fingerprint: edge
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CA_45c5a_0002
   - FR_45c5a_0004
-  - SG_45c5a_0022
-  - RU_45c5a_0020
   - US_45c5a_0033
+  - RU_45c5a_0020
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
-  - NN_45c5a_0016
-  - 🇷🇺 俄罗斯 | RUS 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CA_45c5a_0002
   - FR_45c5a_0004
-  - SG_45c5a_0022
   - RU_45c5a_0020
 - name: PROTO-VLESS
   type: url-test
@@ -107,7 +79,6 @@ proxy-groups:
   interval: 300
   proxies:
   - US_45c5a_0033
-  - 🇷🇺 俄罗斯 | RUS 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -115,19 +86,23 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
-  - NN_45c5a_0016
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - FR_45c5a_0004
-  - SG_45c5a_0022
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_45c5a_0020
+  - US_45c5a_0033
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - CA_45c5a_0002
 rules:
 - MATCH,AUTO

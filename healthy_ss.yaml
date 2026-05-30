@@ -4,19 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: CA_45c5a_0002
+  server: 15.223.186.62
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: FR_45c5a_0004
   server: 163.5.192.18
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: Sj2yu7qKPprUmPJoOCgN6q
-  udp: true
-- name: SG_45c5a_0022
-  server: jp-05.jjsdns.com
-  port: 11788
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: a9d727cd-330b-4edd-8911-7c224df6afd5
   udp: true
 - name: RU_45c5a_0020
   server: 89.23.98.196
@@ -31,8 +31,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - CA_45c5a_0002
   - FR_45c5a_0004
-  - SG_45c5a_0022
   - RU_45c5a_0020
 rules:
 - MATCH,AUTO
