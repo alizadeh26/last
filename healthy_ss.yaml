@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CA_d6a4d_0002
+- name: CA_29a79_0002
   server: 15.223.186.62
   port: 443
   type: ss
@@ -24,7 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CA_d6a4d_0002
+  - CA_29a79_0002
   - 🇨🇦 加拿大 | CAN
 rules:
 - MATCH,AUTO

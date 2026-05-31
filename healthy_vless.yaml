@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_d6a4d_0033
+- name: US_29a79_0033
   server: 155.117.127.137
   port: 443
   type: vless
@@ -18,6 +18,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_d6a4d_0033
+  - US_29a79_0033
 rules:
 - MATCH,AUTO
