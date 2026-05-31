@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: FI_660ee_0006
+  server: 109.107.182.229
+  port: 51544
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MZeSTvpl2uoey1R0frhPyJ
+  udp: true
 - name: CH_660ee_0002
   server: mzonede.3cloudhost.com
   port: 443
@@ -17,12 +24,19 @@ proxies:
   reality-opts:
     public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
   udp: true
-- name: FI_660ee_0006
-  server: 109.107.182.229
-  port: 51544
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MZeSTvpl2uoey1R0frhPyJ
+- name: MD_660ee_0012
+  server: pl.prostosetup.org
+  port: 443
+  type: vless
+  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl.prostosetup.org
+  reality-opts:
+    public-key: ps7eCLLKAqgSGPFRQl1-R1PhzUeO1Z1EwNl02Ac63UA
+    short-id: 514d02a2addd6476
   udp: true
 - name: NL_660ee_0013
   server: g3.steptofsvo.com
@@ -49,13 +63,6 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: US_660ee_0027
-  server: 216.105.168.18
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hCCWOcIsK5wrFz4OX70rWf
-  udp: true
 - name: RU_660ee_0021
   server: r1.mizulina.top
   port: 22231
@@ -66,18 +73,26 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
   udp: true
+- name: US_660ee_0027
+  server: 216.105.168.18
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: hCCWOcIsK5wrFz4OX70rWf
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_660ee_0002
   - FI_660ee_0006
+  - CH_660ee_0002
+  - MD_660ee_0012
   - NL_660ee_0013
   - RU_660ee_0017
-  - US_660ee_0027
   - RU_660ee_0021
+  - US_660ee_0027
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -91,6 +106,7 @@ proxy-groups:
   interval: 300
   proxies:
   - CH_660ee_0002
+  - MD_660ee_0012
   - NL_660ee_0013
   - RU_660ee_0017
   - RU_660ee_0021
@@ -99,8 +115,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_660ee_0002
   - FI_660ee_0006
-  - NL_660ee_0013
+  - CH_660ee_0002
+  - MD_660ee_0012
 rules:
 - MATCH,AUTO

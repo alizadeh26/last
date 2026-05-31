@@ -17,6 +17,20 @@ proxies:
   reality-opts:
     public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
   udp: true
+- name: MD_660ee_0012
+  server: pl.prostosetup.org
+  port: 443
+  type: vless
+  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl.prostosetup.org
+  reality-opts:
+    public-key: ps7eCLLKAqgSGPFRQl1-R1PhzUeO1Z1EwNl02Ac63UA
+    short-id: 514d02a2addd6476
+  udp: true
 - name: NL_660ee_0013
   server: g3.steptofsvo.com
   port: 443
@@ -59,6 +73,7 @@ proxy-groups:
   interval: 300
   proxies:
   - CH_660ee_0002
+  - MD_660ee_0012
   - NL_660ee_0013
   - RU_660ee_0017
   - RU_660ee_0021
