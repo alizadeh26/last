@@ -11,32 +11,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: MZeSTvpl2uoey1R0frhPyJ
   udp: true
-- name: CH_660ee_0002
-  server: mzonede.3cloudhost.com
-  port: 443
-  type: vless
-  uuid: f3368578-8389-458d-9aee-08dc350c5230
-  flow: xtls-rprx-vision
-  tls: true
+- name: CN_660ee_0004
+  server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
+  port: 10055
+  type: vmess
+  uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: mzone.3cloudhost.com
-  reality-opts:
-    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
-  udp: true
-- name: MD_660ee_0012
-  server: pl.prostosetup.org
-  port: 443
-  type: vless
-  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl.prostosetup.org
-  reality-opts:
-    public-key: ps7eCLLKAqgSGPFRQl1-R1PhzUeO1Z1EwNl02Ac63UA
-    short-id: 514d02a2addd6476
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
   udp: true
 - name: NL_660ee_0013
   server: g3.steptofsvo.com
@@ -52,6 +40,20 @@ proxies:
     public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
     short-id: 6d6f13013d3e1d0c
   udp: true
+- name: MD_660ee_0012
+  server: pl.prostosetup.org
+  port: 443
+  type: vless
+  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl.prostosetup.org
+  reality-opts:
+    public-key: ps7eCLLKAqgSGPFRQl1-R1PhzUeO1Z1EwNl02Ac63UA
+    short-id: 514d02a2addd6476
+  udp: true
 - name: RU_660ee_0017
   server: r1.mizulina.top
   port: 22231
@@ -63,6 +65,13 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
+- name: US_660ee_0027
+  server: 216.105.168.18
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: hCCWOcIsK5wrFz4OX70rWf
+  udp: true
 - name: RU_660ee_0021
   server: r1.mizulina.top
   port: 22231
@@ -73,13 +82,6 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
   udp: true
-- name: US_660ee_0027
-  server: 216.105.168.18
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hCCWOcIsK5wrFz4OX70rWf
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -87,12 +89,12 @@ proxy-groups:
   interval: 300
   proxies:
   - FI_660ee_0006
-  - CH_660ee_0002
-  - MD_660ee_0012
+  - CN_660ee_0004
   - NL_660ee_0013
+  - MD_660ee_0012
   - RU_660ee_0017
-  - RU_660ee_0021
   - US_660ee_0027
+  - RU_660ee_0021
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -105,18 +107,28 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_660ee_0002
-  - MD_660ee_0012
   - NL_660ee_0013
+  - MD_660ee_0012
   - RU_660ee_0017
   - RU_660ee_0021
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - CN_660ee_0004
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - CN_660ee_0004
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - FI_660ee_0006
-  - CH_660ee_0002
-  - MD_660ee_0012
+  - NL_660ee_0013
 rules:
 - MATCH,AUTO

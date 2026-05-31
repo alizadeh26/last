@@ -4,18 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CH_660ee_0002
-  server: mzonede.3cloudhost.com
+- name: NL_660ee_0013
+  server: g3.steptofsvo.com
   port: 443
   type: vless
-  uuid: f3368578-8389-458d-9aee-08dc350c5230
+  uuid: 279828c6-13f2-439c-9a4e-ea7d4f470fa4
   flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: mzone.3cloudhost.com
+  client-fingerprint: randomized
+  servername: g3.steptofsvo.com
   reality-opts:
-    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
+    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
+    short-id: 6d6f13013d3e1d0c
   udp: true
 - name: MD_660ee_0012
   server: pl.prostosetup.org
@@ -30,20 +31,6 @@ proxies:
   reality-opts:
     public-key: ps7eCLLKAqgSGPFRQl1-R1PhzUeO1Z1EwNl02Ac63UA
     short-id: 514d02a2addd6476
-  udp: true
-- name: NL_660ee_0013
-  server: g3.steptofsvo.com
-  port: 443
-  type: vless
-  uuid: 279828c6-13f2-439c-9a4e-ea7d4f470fa4
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: g3.steptofsvo.com
-  reality-opts:
-    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
-    short-id: 6d6f13013d3e1d0c
   udp: true
 - name: RU_660ee_0017
   server: r1.mizulina.top
@@ -72,9 +59,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CH_660ee_0002
-  - MD_660ee_0012
   - NL_660ee_0013
+  - MD_660ee_0012
   - RU_660ee_0017
   - RU_660ee_0021
 rules:

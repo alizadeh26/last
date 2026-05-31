@@ -6,15 +6,18 @@ vmess://eyJhZGQiOiJub2RlLXVrLmNvbm5lY3RzdWl0ZS5vcmciLCJhaWQiOiIwIiwiYWxwbiI6Imgy
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTA1NWU5ZTkwMzEyOGEx@57.129.129.247:19308#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+57.129.129.247-19308+%7C+113.35ms
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxa1ZyMEtBVElKSTdtd09G@admin.c1.havij.co:443#%F0%9F%87%AC%F0%9F%87%A7GB-20.90.253.201-0087
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@admin.c1.webramz.co:443#%F0%9F%87%AC%F0%9F%87%A7GB-20.90.253.201-0089
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@series-a2.samanehha.co:443#%F0%9F%87%AC%F0%9F%87%A7GB-20.90.253.201-0090
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@series-a1.samanehha.co:443#%F0%9F%87%AC%F0%9F%87%A7GB-20.90.253.201-0088
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.178-0095
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@series-a2.samanehha.co:443#%F0%9F%87%AC%F0%9F%87%A7GB-20.90.253.201-0090
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.178-443+%7C+106.37ms
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.179-443+%7C+117.06ms
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-4631
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.182:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.182-0099
-ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+94.156.250.148-7001+%7C+114.25ms
+ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-4606
 vless://394f6981-a782-4779-9a85-e6cf22935d93@152.233.28.198:8443?alpn=h2&encryption=none&security=tls&sni=uk1.fromblancwithlove.com&type=tcp#GB🇬🇧
-vless://394f6981-a782-4779-9a85-e6cf22935d93@uk1.fromblancwithlove.com:8443?allowInsecure=1&encryption=none&security=tls&type=tcp#🇬🇧 107 - GB - VLESS/TLS - 8443
-vless://5a20b5d0-3a98-4792-9559-95f4e24277ec@155.117.127.137:443?#🇩🇪 173 - DE - VLESS - 443
-vless://d78c12c4-6927-40b8-8550-ed9be00334da@217.179.6.84:443?security=reality&encryption=none&pbk=UJSYKOEr3a3V1P_obd9zNBq4Pr3Vbd_a2nHE7-rstRk&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=France1cxc.chickenkiller.com&sid=6089640857a72237#🇬🇧 406 - GB - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YTVhZjUwMGNiMjk1OTM1@149.102.144.110:18337#🇬🇧 9 - GB - SS/AEAD - 18337
+vless://394f6981-a782-4779-9a85-e6cf22935d93@uk1.fromblancwithlove.com:8443?allowInsecure=1&encryption=none&security=tls&type=tcp#🇺🇸 156 - US - VLESS/TLS - 8443
+vless://5a20b5d0-3a98-4792-9559-95f4e24277ec@155.117.127.137:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad#🇬🇧 219 - GB - VLESS - 443
+vless://749a5df1-2d12-45cf-80f3-f85ea6b2e405@31.76.53.0:443?flow=xtls-rprx-vision&security=reality&allowInsecure=0&encryption=none&type=tcp&sni=google.com&fp=random&pbk=Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8&headerType=none#🇬🇧 248 - GB - VLESS/REALITY/PBK/VISION/UTLS - 443
+vless://bf3e8944-8d26-47de-8748-b9aa74cce974@140.238.100.35:40721?security=reality&encryption=none&echfq=none&pbk=TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk&headerType=none&fp=chrome&allowinsecure=0&type=tcp&sni=yahoo.com&sid=df8611c07d#🇬🇧 390 - GB - VLESS/REALITY/PBK/SID/UTLS - 40721
+vless://d78c12c4-6927-40b8-8550-ed9be00334da@217.179.6.84:443?security=reality&encryption=none&pbk=UJSYKOEr3a3V1P_obd9zNBq4Pr3Vbd_a2nHE7-rstRk&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=France1cxc.chickenkiller.com&sid=6089640857a72237#🇬🇧 423 - GB - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YTVhZjUwMGNiMjk1OTM1@149.102.144.110:18337#🇺🇸 9 - US - SS/AEAD - 18337
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3OGI2ZTkzZTU0MjI1ODAz@51.75.168.50:26179#🇺🇸 8 - US - SS/AEAD - 26179
