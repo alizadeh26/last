@@ -4,12 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CA_c13b4_0002
-  server: 15.223.186.62
+- name: FI_660ee_0006
+  server: 109.107.182.229
+  port: 51544
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MZeSTvpl2uoey1R0frhPyJ
+  udp: true
+- name: US_660ee_0027
+  server: 216.105.168.18
   port: 443
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: chacha20-ietf-poly1305
+  password: hCCWOcIsK5wrFz4OX70rWf
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CA_c13b4_0002
+  - FI_660ee_0006
+  - US_660ee_0027
 rules:
 - MATCH,AUTO

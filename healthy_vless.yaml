@@ -4,13 +4,53 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_c13b4_0033
-  server: 155.117.127.137
+- name: CH_660ee_0002
+  server: mzonede.3cloudhost.com
   port: 443
   type: vless
-  uuid: 5a20b5d0-3a98-4792-9559-95f4e24277ec
-  tls: false
+  uuid: f3368578-8389-458d-9aee-08dc350c5230
+  flow: xtls-rprx-vision
+  tls: true
   skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: mzone.3cloudhost.com
+  reality-opts:
+    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
+  udp: true
+- name: NL_660ee_0013
+  server: g3.steptofsvo.com
+  port: 443
+  type: vless
+  uuid: 279828c6-13f2-439c-9a4e-ea7d4f470fa4
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: g3.steptofsvo.com
+  reality-opts:
+    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
+    short-id: 6d6f13013d3e1d0c
+  udp: true
+- name: RU_660ee_0017
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: edge
+  servername: r1.mizulina.top
+  udp: true
+- name: RU_660ee_0021
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
   udp: true
 proxy-groups:
 - name: AUTO
@@ -18,6 +58,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_c13b4_0033
+  - CH_660ee_0002
+  - NL_660ee_0013
+  - RU_660ee_0017
+  - RU_660ee_0021
 rules:
 - MATCH,AUTO
