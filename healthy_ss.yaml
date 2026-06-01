@@ -4,21 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: FI_23d51_0006
-  server: 109.107.182.229
-  port: 51544
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MZeSTvpl2uoey1R0frhPyJ
-  udp: true
-- name: US_23d51_0027
+- name: US_b11fa_0027
   server: 216.105.168.18
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: hCCWOcIsK5wrFz4OX70rWf
   udp: true
-- name: 🇫🇮 芬兰 | FIN
+- name: FI_b11fa_0006
   server: 109.107.182.229
   port: 51544
   type: ss
@@ -31,8 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FI_23d51_0006
-  - US_23d51_0027
-  - 🇫🇮 芬兰 | FIN
+  - US_b11fa_0027
+  - FI_b11fa_0006
 rules:
 - MATCH,AUTO

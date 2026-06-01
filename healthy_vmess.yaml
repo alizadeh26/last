@@ -4,15 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 82.198.246.214
-  port: 180
+- name: 🇺🇸 美国 | USA
+  server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
+  port: 10055
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
   alterId: 0
-  cipher: aes-128-gcm
+  cipher: auto
   tls: false
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -20,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
