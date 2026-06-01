@@ -1,5 +1,5 @@
 trojan://iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf@64.176.65.85:443?security=tls#%E6%B3%A2%E5%85%B0_060118001
-ss://YWVzLTI1Ni1jZmI6TTN0MlpFUWNNR1JXQmpSYQ==@217.30.10.70:9011#PL%F0%9F%87%B5%F0%9F%87%B1+%7C+217.30.10.70-9011+%7C+145.14ms
-ss://YWVzLTI1Ni1jZmI6a1NQbXZ3ZEZ6R01NVzVwWQ==@217.30.10.70:9007#PL%F0%9F%87%B5%F0%9F%87%B1+%7C+217.30.10.70-9007+%7C+135.31ms
-ss://YWVzLTI1Ni1jZmI6YzNOdEhKNXVqVjJ0R0Rmag==@217.30.10.70:9084#PL%F0%9F%87%B5%F0%9F%87%B1+%7C+217.30.10.70-9084+%7C+144.41ms
-vless://37a0bd7c-8b9f-4693-8916-bd1e2da0a817@128.204.223.70:50401?encryption=none&path=%2F&security=none&type=ws#PL🇵🇱
+ss://YWVzLTI1Ni1jZmI6dWVMWFZrdmg0aGNraEVyUQ==@217.30.10.70:9060#PL%F0%9F%87%B5%F0%9F%87%B1+%7C+217.30.10.70-9060+%7C+144.13ms
+vless://a8f7bfbc-4bb8-4f10-ac8f-93e0ce4cc46a@147.90.14.161:8443?security=reality&type=tcp&sni=www.cloudflare.com&fp=chrome&flow=xtls-rprx-vision&sid=4adcbc3df6cdd138&pbk=TxeJaR7AeMcpnSi8A45lOSc8xMSFlYu6x7mHjeQMQWU&encryption=none#🏳️ 542 - XX - VLESS/REALITY/PBK/SID/VISION/UTLS - 8443
+vless://ae5ba4be-7262-4199-bd62-210ed8999b9f@poland-1.bexum.fun:443?security=reality&type=raw&sni=poland-1.bexum.fun&fp=randomized&flow=xtls-rprx-vision&sid=5dd747e98058584b&pbk=j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng&encryption=none#🏳️ 550 - XX - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 443
+vless://be015dd2-30b4-4fcf-a9ee-080c13ac13fb@2.56.125.209:49868?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=yahoo.com&fp=chrome&sid=6d638e&pbk=joEKL4Itljxodt1SOe1itSMrAH9bk_udpPtXgIjdu10#🇺🇸 614 - US - VLESS/REALITY/PBK/SID/UTLS - 49868

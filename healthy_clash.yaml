@@ -4,7 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: RU_b11fa_0017
+- name: CH_8910a_0004
+  server: world.t.51guangtaobao.com
+  port: 2510
+  type: vmess
+  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: RU_8910a_0038
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -15,7 +25,17 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: RU_b11fa_0021
+- name: 🇩🇪 德国 | DEU 2
+  server: 82.198.246.250
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: RU_8910a_0042
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -25,14 +45,30 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
   udp: true
-- name: US_b11fa_0027
-  server: 216.105.168.18
+- name: US_8910a_0050
+  server: cg1c02.waimaojd.com
   port: 443
+  type: vmess
+  uuid: 332774e5-9371-48bb-b518-1fe56c7268da
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: cg1c02.waimaojd.com
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c02.waimaojd.com
+  udp: true
+- name: TW_8910a_0049
+  server: r3mrcg001269pz2.cybervena.com
+  port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: hCCWOcIsK5wrFz4OX70rWf
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
+- name: 🇷🇺 俄罗斯 | RUS 3
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -43,27 +79,12 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: FI_b11fa_0006
+- name: 🇫🇮 芬兰 | FIN
   server: 109.107.182.229
   port: 51544
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MZeSTvpl2uoey1R0frhPyJ
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
-  port: 10055
-  type: vmess
-  uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -71,47 +92,56 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_b11fa_0017
-  - RU_b11fa_0021
-  - US_b11fa_0027
-  - 🇷🇺 俄罗斯 | RUS
-  - FI_b11fa_0006
-  - 🇺🇸 美国 | USA
+  - CH_8910a_0004
+  - RU_8910a_0038
+  - 🇩🇪 德国 | DEU 2
+  - RU_8910a_0042
+  - US_8910a_0050
+  - TW_8910a_0049
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇫🇮 芬兰 | FIN
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_b11fa_0027
-  - FI_b11fa_0006
+  - TW_8910a_0049
+  - 🇫🇮 芬兰 | FIN
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_b11fa_0017
-  - RU_b11fa_0021
-  - 🇷🇺 俄罗斯 | RUS
+  - RU_8910a_0038
+  - RU_8910a_0042
+  - 🇷🇺 俄罗斯 | RUS 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
+  - CH_8910a_0004
+  - 🇩🇪 德国 | DEU 2
+  - US_8910a_0050
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - CH_8910a_0004
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_b11fa_0017
-  - RU_b11fa_0021
-  - 🇷🇺 俄罗斯 | RUS
-  - FI_b11fa_0006
+  - RU_8910a_0038
+  - RU_8910a_0042
+  - 🇷🇺 俄罗斯 | RUS 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_b11fa_0027
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO

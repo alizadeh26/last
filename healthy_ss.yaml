@@ -4,14 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_b11fa_0027
-  server: 216.105.168.18
-  port: 443
+- name: TW_8910a_0049
+  server: r3mrcg001269pz2.cybervena.com
+  port: 50099
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: hCCWOcIsK5wrFz4OX70rWf
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: FI_b11fa_0006
+- name: 🇫🇮 芬兰 | FIN
   server: 109.107.182.229
   port: 51544
   type: ss
@@ -24,7 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_b11fa_0027
-  - FI_b11fa_0006
+  - TW_8910a_0049
+  - 🇫🇮 芬兰 | FIN
 rules:
 - MATCH,AUTO
