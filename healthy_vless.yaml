@@ -4,35 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: NL_660ee_0013
-  server: g3.steptofsvo.com
-  port: 443
-  type: vless
-  uuid: 279828c6-13f2-439c-9a4e-ea7d4f470fa4
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: g3.steptofsvo.com
-  reality-opts:
-    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
-    short-id: 6d6f13013d3e1d0c
-  udp: true
-- name: MD_660ee_0012
-  server: pl.prostosetup.org
-  port: 443
-  type: vless
-  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl.prostosetup.org
-  reality-opts:
-    public-key: ps7eCLLKAqgSGPFRQl1-R1PhzUeO1Z1EwNl02Ac63UA
-    short-id: 514d02a2addd6476
-  udp: true
-- name: RU_660ee_0017
+- name: RU_23d51_0017
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -43,7 +15,7 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: RU_660ee_0021
+- name: RU_23d51_0021
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -53,15 +25,25 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  tls: true
+  flow: xtls-rprx-vision
+  servername: r1.mizulina.top
+  client-fingerprint: edge
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - NL_660ee_0013
-  - MD_660ee_0012
-  - RU_660ee_0017
-  - RU_660ee_0021
+  - RU_23d51_0017
+  - RU_23d51_0021
+  - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO

@@ -4,57 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: FI_660ee_0006
+- name: FI_23d51_0006
   server: 109.107.182.229
   port: 51544
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MZeSTvpl2uoey1R0frhPyJ
   udp: true
-- name: CN_660ee_0004
-  server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
-  port: 10055
-  type: vmess
-  uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
-  udp: true
-- name: NL_660ee_0013
-  server: g3.steptofsvo.com
-  port: 443
-  type: vless
-  uuid: 279828c6-13f2-439c-9a4e-ea7d4f470fa4
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: g3.steptofsvo.com
-  reality-opts:
-    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
-    short-id: 6d6f13013d3e1d0c
-  udp: true
-- name: MD_660ee_0012
-  server: pl.prostosetup.org
-  port: 443
-  type: vless
-  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl.prostosetup.org
-  reality-opts:
-    public-key: ps7eCLLKAqgSGPFRQl1-R1PhzUeO1Z1EwNl02Ac63UA
-    short-id: 514d02a2addd6476
-  udp: true
-- name: RU_660ee_0017
+- name: RU_23d51_0017
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -65,14 +22,7 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: US_660ee_0027
-  server: 216.105.168.18
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hCCWOcIsK5wrFz4OX70rWf
-  udp: true
-- name: RU_660ee_0021
+- name: RU_23d51_0021
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -82,53 +32,91 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
   udp: true
+- name: US_23d51_0027
+  server: 216.105.168.18
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: hCCWOcIsK5wrFz4OX70rWf
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 82.198.246.214
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇫🇮 芬兰 | FIN
+  server: 109.107.182.229
+  port: 51544
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MZeSTvpl2uoey1R0frhPyJ
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  tls: true
+  flow: xtls-rprx-vision
+  servername: r1.mizulina.top
+  client-fingerprint: edge
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FI_660ee_0006
-  - CN_660ee_0004
-  - NL_660ee_0013
-  - MD_660ee_0012
-  - RU_660ee_0017
-  - US_660ee_0027
-  - RU_660ee_0021
+  - FI_23d51_0006
+  - RU_23d51_0017
+  - RU_23d51_0021
+  - US_23d51_0027
+  - 🇩🇪 德国 | DEU
+  - 🇫🇮 芬兰 | FIN
+  - 🇷🇺 俄罗斯 | RUS
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FI_660ee_0006
-  - US_660ee_0027
+  - FI_23d51_0006
+  - US_23d51_0027
+  - 🇫🇮 芬兰 | FIN
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - NL_660ee_0013
-  - MD_660ee_0012
-  - RU_660ee_0017
-  - RU_660ee_0021
+  - RU_23d51_0017
+  - RU_23d51_0021
+  - 🇷🇺 俄罗斯 | RUS
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_660ee_0004
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - CN_660ee_0004
+  - 🇩🇪 德国 | DEU
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - FI_660ee_0006
-  - NL_660ee_0013
+  - FI_23d51_0006
+  - RU_23d51_0017
+  - RU_23d51_0021
+  - 🇫🇮 芬兰 | FIN
+  - 🇷🇺 俄罗斯 | RUS
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - US_23d51_0027
 rules:
 - MATCH,AUTO
