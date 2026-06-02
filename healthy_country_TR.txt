@@ -1,4 +1,4 @@
-ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.113.194:8119#TR%F0%9F%87%B9%F0%9F%87%B7+%7C+38.180.113.194-8119+%7C+168.13ms
-trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?path=/#🇹🇷 307 - TR - Trojan/TLS - 8441
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0dW5uZWwtZmJyb2Y@tr-1.stunnel.cc:8444#🇹🇷 37 - TR - SS/AEAD - 8444
-ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#🇹🇷 189 - TR - SS/AEAD - 2376
+vless://02efe030-c27d-45e7-b1b8-6ce2b88db968@38.180.171.164:54570?security=none&type=ws&path=/&host=www.google.com&encryption=none#🇹🇷 4 - TR - VLESS/WS - 54570
+vless://bcc094e4-1a85-8a25-f8e1-5b08b9af841c@mouse2.1lil1.de:443?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=www.stackoverflow.com&fp=chrome&flow=xtls-rprx-vision&sid=c410508e9721512b&pbk=LaGTRJ1CJnnYV7FnyqQnU28I0xFTPFKI8xmUFwig5ic#🇹🇷 823 - TR - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?security=tls&path=/#🇹🇷 396 - TR - Trojan/TLS - 8441
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#🇹🇷 225 - TR - SS/AEAD - 2376

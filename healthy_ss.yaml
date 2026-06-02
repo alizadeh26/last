@@ -4,12 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: SG_f8999_0048
+- name: SG_268ab_0048
   server: 5.34.177.228
   port: 41348
   type: ss
   cipher: chacha20-ietf-poly1305
   password: vJ4LrBqkqCYgGMO08YmmsMjQ3ZMtJ7Ey6Sxfpe
+  udp: true
+- name: 🇫🇮 芬兰 | FIN
+  server: 109.107.182.229
+  port: 51544
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MZeSTvpl2uoey1R0frhPyJ
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - SG_f8999_0048
+  - SG_268ab_0048
+  - 🇫🇮 芬兰 | FIN
 rules:
 - MATCH,AUTO
