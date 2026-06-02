@@ -4,12 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP
-  server: 5.34.177.228
-  port: 41348
+- name: DE_0554e_0007
+  server: 185.129.84.12
+  port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: vJ4LrBqkqCYgGMO08YmmsMjQ3ZMtJ7Ey6Sxfpe
+  password: DQHK4mtugy7xMNChJjB9Jm
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP
+  - DE_0554e_0007
 rules:
 - MATCH,AUTO

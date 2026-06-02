@@ -4,7 +4,31 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: RU_11c6a_0038
+- name: JP_0554e_0024
+  server: vnldc.mostserv.xyz
+  port: 443
+  type: vless
+  uuid: 0ddc1b7c-ce23-4a30-8ede-8a9e19f02fb7
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: qq
+  servername: vnldc.mostserv.xyz
+  reality-opts:
+    public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI
+    short-id: 226509f017e4c36d
+  udp: true
+- name: RU_0554e_0044
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  udp: true
+- name: RU_0554e_0040
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -14,16 +38,6 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: edge
   servername: r1.mizulina.top
-  udp: true
-- name: RU_11c6a_0042
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: r1.mizulina.top
@@ -42,8 +56,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_11c6a_0038
-  - RU_11c6a_0042
+  - JP_0554e_0024
+  - RU_0554e_0044
+  - RU_0554e_0040
   - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO

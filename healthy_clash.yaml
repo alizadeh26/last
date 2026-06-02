@@ -4,18 +4,68 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: RU_11c6a_0038
-  server: r1.mizulina.top
-  port: 22231
+- name: DE_0554e_0007
+  server: 185.129.84.12
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: DQHK4mtugy7xMNChJjB9Jm
+  udp: true
+- name: GB_0554e_0008
+  server: 82.198.246.214
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: GB_0554e_0009
+  server: 82.198.246.37
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: GB_0554e_0010
+  server: 82.198.246.214
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: JP_0554e_0024
+  server: vnldc.mostserv.xyz
+  port: 443
   type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  uuid: 0ddc1b7c-ce23-4a30-8ede-8a9e19f02fb7
   flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
-  client-fingerprint: edge
-  servername: r1.mizulina.top
+  client-fingerprint: qq
+  servername: vnldc.mostserv.xyz
+  reality-opts:
+    public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI
+    short-id: 226509f017e4c36d
   udp: true
-- name: RU_11c6a_0042
+- name: 🇩🇪 德国 | DEU 3
+  server: 82.198.246.214
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: RU_0554e_0044
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -25,25 +75,16 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 82.198.246.250
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: RU_0554e_0040
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
   skip-cert-verify: false
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 82.198.246.214
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-  tls: false
-  skip-cert-verify: false
+  client-fingerprint: edge
+  servername: r1.mizulina.top
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: r1.mizulina.top
@@ -56,60 +97,59 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 5.34.177.228
-  port: 41348
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: vJ4LrBqkqCYgGMO08YmmsMjQ3ZMtJ7Ey6Sxfpe
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_11c6a_0038
-  - RU_11c6a_0042
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 4
+  - DE_0554e_0007
+  - GB_0554e_0008
+  - GB_0554e_0009
+  - GB_0554e_0010
+  - JP_0554e_0024
+  - 🇩🇪 德国 | DEU 3
+  - RU_0554e_0044
+  - RU_0554e_0040
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇸🇬 新加坡 | SGP
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP
+  - DE_0554e_0007
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_11c6a_0038
-  - RU_11c6a_0042
+  - JP_0554e_0024
+  - RU_0554e_0044
+  - RU_0554e_0040
   - 🇷🇺 俄罗斯 | RUS 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 4
+  - GB_0554e_0008
+  - GB_0554e_0009
+  - GB_0554e_0010
+  - 🇩🇪 德国 | DEU 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_11c6a_0038
-  - RU_11c6a_0042
-  - 🇷🇺 俄罗斯 | RUS 2
+  - DE_0554e_0007
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 4
+  - GB_0554e_0008
+  - GB_0554e_0009
+  - GB_0554e_0010
+  - 🇩🇪 德国 | DEU 3
 rules:
 - MATCH,AUTO
