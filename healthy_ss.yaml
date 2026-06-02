@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_0554e_0007
+- name: DE_99e64_0007
   server: 185.129.84.12
   port: 443
   type: ss
@@ -17,6 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_0554e_0007
+  - DE_99e64_0007
 rules:
 - MATCH,AUTO

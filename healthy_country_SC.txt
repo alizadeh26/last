@@ -1,3 +1,4 @@
-vless://d08d180d-cb07-4d82-b1bd-1e42fa523cd7@45.130.125.0:443?security=tls&type=ws&path=/sg-orcl&host=ads.ruangguru.com.cyylr.eu.cc&sni=ads.ruangguru.com.cyylr.eu.cc&fp=chrome&encryption=none#🇸🇨 909 - SC - VLESS/WS/TLS/UTLS - 443
-vless://db764368-13f4-4852-b11e-b96576366e1b@45.130.125.76:443?security=tls&type=ws&path=/sg-orcl&host=www.genflix.co.id.cyylr.eu.cc&sni=www.genflix.co.id.cyylr.eu.cc&fp=chrome&encryption=none#🇸🇨 953 - SC - VLESS/WS/TLS/UTLS - 443
-trojan://humanity@45.130.125.69:443?path=/assignment&security=tls&alpn=http/1.1&insecure=1&host=www.calmloud.com&fp=chrome&type=ws&allowInsecure=1&sni=www.calmloud.com#🇸🇨 288 - SC - Trojan/WS/TLS/UTLS - 443
+vless://db764368-13f4-4852-b11e-b96576366e1b@45.130.125.76:443?security=tls&type=ws&path=/sg-orcl&host=www.genflix.co.id.cyylr.eu.cc&sni=www.genflix.co.id.cyylr.eu.cc&fp=chrome&encryption=none#🇺🇸 891 - US - VLESS/WS/TLS/UTLS - 443
+vless://d08d180d-cb07-4d82-b1bd-1e42fa523cd7@45.130.125.0:443?security=tls&type=ws&path=/sg-orcl&host=ads.ruangguru.com.cyylr.eu.cc&sni=ads.ruangguru.com.cyylr.eu.cc&fp=chrome&encryption=none#🇸🇨 846 - SC - VLESS/WS/TLS/UTLS - 443
+trojan://humanity@45.130.125.76:443?allowInsecure=1&alpn=http/1.1&host=www.calmlunch.com&path=/assignment&sni=www.calmlunch.com&type=ws#🇺🇸 295 - US - Trojan/WS/TLS - 443
+trojan://humanity@45.130.125.69:443?path=/assignment&security=tls&alpn=http/1.1&insecure=1&host=www.calmloud.com&fp=chrome&type=ws&allowInsecure=1&sni=www.calmloud.com#🇸🇨 291 - SC - Trojan/WS/TLS/UTLS - 443
