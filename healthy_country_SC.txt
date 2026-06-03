@@ -1,6 +1,6 @@
-vless://586db082-dcfc-4599-8b52-af4cf7da8330@45.130.125.69:8443?security=tls&type=ws&path=/ws&host=aFaRiNbEsHoMa.X-uPlOaD.oRg&sni=aFaRiNbEsHoMa.X-uPlOaD.oRg&fp=chrome&encryption=none#🇸🇨 269 - SC - VLESS/WS/TLS/UTLS - 8443
-vless://db764368-13f4-4852-b11e-b96576366e1b@45.130.125.76:443?security=tls&type=ws&path=/sg-orcl&host=www.genflix.co.id.cyylr.eu.cc&sni=www.genflix.co.id.cyylr.eu.cc&fp=chrome&encryption=none#🇸🇨 601 - SC - VLESS/WS/TLS/UTLS - 443
-vless://fc965ad9-bdd7-4815-ad71-b39ec5972dc1@45.130.125.0:443?security=tls&type=ws&path=/tsghdws&host=octopusss4.com&sni=octopusss4.com&fp=chrome&encryption=none#🇺🇸 719 - US - VLESS/WS/TLS/UTLS - 443
-trojan://Config0plus@45.130.125.160:443?path=/id-tksi&security=tls&insecure=0&host=api24-normal.tiktokv.com.cyylr.eu.cc&type=ws&allowInsecure=0&sni=api24-normal.tiktokv.com.cyylr.eu.cc#🇸🇨 31 - SC - Trojan/WS/TLS - 443
-trojan://humanity@45.130.125.160:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇸🇨 168 - SC - Trojan/WS/TLS - 443
-trojan://humanity@45.130.125.69:443?path=/assignment&security=tls&alpn=http/1.1&insecure=1&host=www.calmloud.com&fp=chrome&type=ws&allowInsecure=1&sni=www.calmloud.com#🇸🇨 169 - SC - Trojan/WS/TLS/UTLS - 443
+vless://1eb8c38b-0bc2-4a6f-a860-5239c446abc8@45.130.125.0:443?security=tls&type=ws&path=/sg-amz&host=support.zoom.us.cyylr.eu.cc&sni=support.zoom.us.cyylr.eu.cc&fp=chrome&encryption=none#🇸🇨 79 - SC - VLESS/WS/TLS/UTLS - 443
+vless://586db082-dcfc-4599-8b52-af4cf7da8330@45.130.125.69:8443?security=tls&type=ws&path=/ws&host=aFaRiNbEsHoMa.X-uPlOaD.oRg&sni=aFaRiNbEsHoMa.X-uPlOaD.oRg&fp=chrome&encryption=none#🇸🇨 421 - SC - VLESS/WS/TLS/UTLS - 8443
+vless://cff04824-47a3-4a85-a9df-83af9181f84c@45.130.125.0:443?security=tls&type=ws&path=/in-pdr&host=zaintest.vuclip.com.cyylr.eu.cc&sni=zaintest.vuclip.com.cyylr.eu.cc&fp=chrome&encryption=none#🇸🇨 910 - SC - VLESS/WS/TLS/UTLS - 443
+vless://c75c49cd-4930-47c9-8247-29889a13f23c@45.130.125.69:443?security=tls&type=ws&path=/my-wbv&host=zaintest.vuclip.com.cyylr.eu.cc&sni=zaintest.vuclip.com.cyylr.eu.cc&fp=chrome&encryption=none#🇸🇨 890 - SC - VLESS/WS/TLS/UTLS - 443
+vless://fc965ad9-bdd7-4815-ad71-b39ec5972dc1@45.130.125.76:443?security=tls&type=ws&path=/tsghdws&host=octopusss4.com&sni=octopusss4.com&fp=chrome&encryption=none#🇸🇨 1138 - SC - VLESS/WS/TLS/UTLS - 443
+trojan://humanity@45.130.125.76:443?allowInsecure=1&alpn=http/1.1&host=www.calmlunch.com&path=/assignment&sni=www.calmlunch.com&type=ws#🇸🇨 312 - SC - Trojan/WS/TLS - 443
