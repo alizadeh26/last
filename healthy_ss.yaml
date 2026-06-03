@@ -4,7 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_99e64_0007
+- name: DE_8aac6_0007
+  server: 185.129.84.12
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: DQHK4mtugy7xMNChJjB9Jm
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
   server: 185.129.84.12
   port: 443
   type: ss
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_99e64_0007
+  - DE_8aac6_0007
+  - 🇩🇪 德国 | DEU 6
 rules:
 - MATCH,AUTO
