@@ -1,6 +1,4 @@
-vless://1eb8c38b-0bc2-4a6f-a860-5239c446abc8@45.130.125.0:443?security=tls&type=ws&path=/sg-amz&host=support.zoom.us.cyylr.eu.cc&sni=support.zoom.us.cyylr.eu.cc&fp=chrome&encryption=none#🇺🇸 88 - US - VLESS/WS/TLS/UTLS - 443
-vless://c75c49cd-4930-47c9-8247-29889a13f23c@45.130.125.69:443?security=tls&type=ws&path=/my-wbv&host=zaintest.vuclip.com.cyylr.eu.cc&sni=zaintest.vuclip.com.cyylr.eu.cc&fp=chrome&encryption=none#🇸🇨 905 - SC - VLESS/WS/TLS/UTLS - 443
-vless://cff04824-47a3-4a85-a9df-83af9181f84c@45.130.125.0:443?security=tls&type=ws&path=/in-pdr&host=zaintest.vuclip.com.cyylr.eu.cc&sni=zaintest.vuclip.com.cyylr.eu.cc&fp=chrome&encryption=none#🇺🇸 934 - US - VLESS/WS/TLS/UTLS - 443
-vless://fc965ad9-bdd7-4815-ad71-b39ec5972dc1@45.130.125.69:443?security=tls&type=ws&path=/tsghdws&host=octopusss4.com&sni=octopusss4.com&fp=chrome&encryption=none#🇸🇨 1173 - SC - VLESS/WS/TLS/UTLS - 443
-trojan://humanity@45.130.125.0:443?type=ws&security=tls&path=/assignment&host=www.calmloud.com&sni=www.calmloud.com&alpn=http/1.1&fp=chrome&allowInsecure=1#🇺🇸 323 - US - Trojan/WS/TLS/UTLS - 443
-trojan://humanity@45.130.125.76:443?allowInsecure=1&alpn=http/1.1&host=www.calmlunch.com&path=/assignment&sni=www.calmlunch.com&type=ws#🇺🇸 333 - US - Trojan/WS/TLS - 443
+vless://1eb8c38b-0bc2-4a6f-a860-5239c446abc8@45.130.125.0:443?encryption=none&host=support.zoom.us.cyylr.eu.cc&path=/sg-amz&security=tls&sni=support.zoom.us.cyylr.eu.cc&type=ws#🇺🇸 65 - US - VLESS/WS/TLS - 443
+vless://fc965ad9-bdd7-4815-ad71-b39ec5972dc1@45.130.125.160:443?security=tls&type=ws&path=/tsghdws&host=octopusss4.com&sni=octopusss4.com&fp=chrome&encryption=none#🏳️ 855 - XX - VLESS/WS/TLS/UTLS - 443
+trojan://humanity@45.130.125.0:443?type=ws&security=tls&path=/assignment&host=www.calmloud.com&sni=www.calmloud.com&alpn=http/1.1&fp=chrome&allowInsecure=1#🇺🇸 228 - US - Trojan/WS/TLS/UTLS - 443
+trojan://humanity@45.130.125.160:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🏳️ 229 - XX - Trojan/WS/TLS - 443
