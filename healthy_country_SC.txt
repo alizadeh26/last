@@ -1,5 +1,4 @@
-vless://1eb8c38b-0bc2-4a6f-a860-5239c446abc8@45.130.125.0:443?encryption=none&host=support.zoom.us.cyylr.eu.cc&path=/sg-amz&security=tls&sni=support.zoom.us.cyylr.eu.cc&type=ws#🇸🇨 83 - SC - VLESS/WS/TLS - 443
-vless://fc965ad9-bdd7-4815-ad71-b39ec5972dc1@45.130.125.0:443?security=tls&type=ws&path=/tsghdws&host=octopusss4.com&sni=octopusss4.com&fp=chrome&encryption=none#🇸🇨 913 - SC - VLESS/WS/TLS/UTLS - 443
-trojan://Config0plus@45.130.125.76:443?path=/sg-melbi&security=tls&insecure=0&host=unnes.ac.id.cyylr.eu.cc&type=ws&allowInsecure=0&sni=unnes.ac.id.cyylr.eu.cc#🇸🇨 33 - SC - Trojan/WS/TLS - 443
-trojan://humanity@45.130.125.0:443?path=/assignment&security=tls&alpn=http/1.1&host=www.calmloud.com&fp=chrome&allowinsecure=0&type=ws&sni=www.calmloud.com#🇸🇨 229 - SC - Trojan/WS/TLS/UTLS - 443
-trojan://humanity@45.130.125.160:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇸🇨 232 - SC - Trojan/WS/TLS - 443
+vless://1eb8c38b-0bc2-4a6f-a860-5239c446abc8@45.130.125.0:443?encryption=none&host=support.zoom.us.cyylr.eu.cc&path=/sg-amz&security=tls&sni=support.zoom.us.cyylr.eu.cc&type=ws#🇸🇨 91 - SC - VLESS/WS/TLS - 443
+vless://fc965ad9-bdd7-4815-ad71-b39ec5972dc1@45.130.125.0:443?security=tls&type=ws&path=/tsghdws&host=octopusss4.com&sni=octopusss4.com&fp=chrome&encryption=none#🇸🇨 880 - SC - VLESS/WS/TLS/UTLS - 443
+trojan://humanity@45.130.125.160:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🏳️ 226 - XX - Trojan/WS/TLS - 443
+trojan://humanity@45.130.125.0:443?type=ws&security=tls&path=/assignment&host=www.calmloud.com&sni=www.calmloud.com&alpn=http/1.1&fp=chrome&allowInsecure=1#🇸🇨 225 - SC - Trojan/WS/TLS/UTLS - 443

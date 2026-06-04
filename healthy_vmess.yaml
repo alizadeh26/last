@@ -4,38 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_b6972_0004
-  server: 82.198.246.37
+- name: GB_22a0b_0012
+  server: 82.198.246.250
   port: 180
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CN_b6972_0001
-  server: 1b267619c4812cc46ee281747884ca50.qos.onl
-  port: 10021
-  type: vmess
-  uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 82.198.246.214
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
   tls: false
   skip-cert-verify: false
   udp: true
@@ -45,8 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_b6972_0004
-  - CN_b6972_0001
-  - 🇩🇪 德国 | DEU 2
+  - GB_22a0b_0012
 rules:
 - MATCH,AUTO
