@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_d8488_0004
+- name: GB_b6972_0004
   server: 82.198.246.37
   port: 180
   type: vmess
@@ -14,7 +14,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: CN_d8488_0001
+- name: CN_b6972_0001
   server: 1b267619c4812cc46ee281747884ca50.qos.onl
   port: 10021
   type: vmess
@@ -29,7 +29,7 @@ proxies:
     headers:
       Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
   udp: true
-- name: RU_d8488_0022
+- name: RU_b6972_0022
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -40,7 +40,7 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: RU_d8488_0024
+- name: RU_b6972_0024
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -50,8 +50,8 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 82.198.246.37
+- name: 🇩🇪 德国 | DEU 2
+  server: 82.198.246.214
   port: 180
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -60,7 +60,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
+- name: 🇷🇺 俄罗斯 | RUS 3
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -77,43 +77,27 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_d8488_0004
-  - CN_d8488_0001
-  - RU_d8488_0022
-  - RU_d8488_0024
-  - 🇩🇪 德国 | DEU
-  - 🇷🇺 俄罗斯 | RUS
+  - GB_b6972_0004
+  - CN_b6972_0001
+  - RU_b6972_0022
+  - RU_b6972_0024
+  - 🇩🇪 德国 | DEU 2
+  - 🇷🇺 俄罗斯 | RUS 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_d8488_0022
-  - RU_d8488_0024
-  - 🇷🇺 俄罗斯 | RUS
+  - RU_b6972_0022
+  - RU_b6972_0024
+  - 🇷🇺 俄罗斯 | RUS 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_d8488_0004
-  - CN_d8488_0001
-  - 🇩🇪 德国 | DEU
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - CN_d8488_0001
-  - RU_d8488_0022
-  - RU_d8488_0024
-  - 🇷🇺 俄罗斯 | RUS
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_d8488_0004
-  - 🇩🇪 德国 | DEU
+  - GB_b6972_0004
+  - CN_b6972_0001
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO
