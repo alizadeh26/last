@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: RU_22a0b_0039
+- name: RU_4b3e5_0039
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -14,7 +14,18 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
   udp: true
-- name: US_22a0b_0046
+- name: 🇷🇺 俄罗斯 | RUS
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  tls: true
+  flow: xtls-rprx-vision
+  servername: r1.mizulina.top
+  client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: US_4b3e5_0046
   server: nld02.helpbot.click
   port: 443
   type: vless
@@ -29,25 +40,14 @@ proxies:
     public-key: M1a5zeQ6Ckoo1UybbRYD8696xaWb-fRcCY-7iaQ4wCA
     short-id: fd3f0f2bce8083fe
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  tls: true
-  flow: xtls-rprx-vision
-  servername: r1.mizulina.top
-  client-fingerprint: edge
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_22a0b_0039
-  - US_22a0b_0046
-  - 🇷🇺 俄罗斯 | RUS 2
+  - RU_4b3e5_0039
+  - 🇷🇺 俄罗斯 | RUS
+  - US_4b3e5_0046
 rules:
 - MATCH,AUTO
