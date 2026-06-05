@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
+- name: 🇩🇪 德国 | DEU
   server: 82.198.246.214
   port: 180
   type: vmess
@@ -14,7 +14,17 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_4b3e5_0012
+- name: 🇩🇪 德国 | DEU 3
+  server: 82.198.246.37
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: GB_821aa_0012
   server: 82.198.246.250
   port: 180
   type: vmess
@@ -30,7 +40,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - GB_4b3e5_0012
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - GB_821aa_0012
 rules:
 - MATCH,AUTO
