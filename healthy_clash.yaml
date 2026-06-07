@@ -4,16 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_e0fcc_0012
-  server: 82.198.246.250
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: RU_e0fcc_0039
   server: r1.mizulina.top
   port: 22231
@@ -40,7 +30,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_e0fcc_0012
   - RU_e0fcc_0039
   - 🇷🇺 俄罗斯 | RUS
 - name: PROTO-VLESS
@@ -50,12 +39,6 @@ proxy-groups:
   proxies:
   - RU_e0fcc_0039
   - 🇷🇺 俄罗斯 | RUS
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_e0fcc_0012
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -63,11 +46,5 @@ proxy-groups:
   proxies:
   - RU_e0fcc_0039
   - 🇷🇺 俄罗斯 | RUS
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - GB_e0fcc_0012
 rules:
 - MATCH,AUTO
