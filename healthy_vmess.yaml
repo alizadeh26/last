@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_5a9ec_0012
+- name: 🇩🇪 德国 | DEU
   server: 82.198.246.250
   port: 180
   type: vmess
@@ -14,7 +14,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇩🇪 德国 | DEU 2
+- name: GB_1ab65_0012
   server: 82.198.246.250
   port: 180
   type: vmess
@@ -30,7 +30,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_5a9ec_0012
-  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU
+  - GB_1ab65_0012
 rules:
 - MATCH,AUTO
