@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_54ab4_0012
+- name: GB_e0fcc_0012
   server: 82.198.246.250
   port: 180
   type: vmess
@@ -14,7 +14,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: RU_54ab4_0039
+- name: RU_e0fcc_0039
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -24,7 +24,7 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
+- name: 🇷🇺 俄罗斯 | RUS
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -40,34 +40,34 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_54ab4_0012
-  - RU_54ab4_0039
-  - 🇷🇺 俄罗斯 | RUS 2
+  - GB_e0fcc_0012
+  - RU_e0fcc_0039
+  - 🇷🇺 俄罗斯 | RUS
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_54ab4_0039
-  - 🇷🇺 俄罗斯 | RUS 2
+  - RU_e0fcc_0039
+  - 🇷🇺 俄罗斯 | RUS
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_54ab4_0012
+  - GB_e0fcc_0012
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_54ab4_0039
-  - 🇷🇺 俄罗斯 | RUS 2
+  - RU_e0fcc_0039
+  - 🇷🇺 俄罗斯 | RUS
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_54ab4_0012
+  - GB_e0fcc_0012
 rules:
 - MATCH,AUTO
