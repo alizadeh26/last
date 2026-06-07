@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: RU_dbf6b_0039
+- name: RU_1ab65_0039
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -30,21 +30,21 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_dbf6b_0039
+  - RU_1ab65_0039
   - 🇷🇺 俄罗斯 | RUS
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_dbf6b_0039
+  - RU_1ab65_0039
   - 🇷🇺 俄罗斯 | RUS
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_dbf6b_0039
+  - RU_1ab65_0039
   - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO
