@@ -4,7 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: CN_2a61e_0003
+- name: RU_abddb_0048
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: edge
+  servername: r1.mizulina.top
+  udp: true
+- name: CN_abddb_0003
   server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
   port: 10055
   type: vmess
@@ -19,7 +30,7 @@ proxies:
     headers:
       Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
   udp: true
-- name: IR_2a61e_0011
+- name: IR_abddb_0011
   server: nlt.reata.ir
   port: 1020
   type: vmess
@@ -29,118 +40,40 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: RU_2a61e_0048
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: edge
-  servername: r1.mizulina.top
-  udp: true
-- name: US_2a61e_0056
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  udp: true
-- name: US_2a61e_0057
-  server: cloudflare-dns.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  udp: true
-- name: US_2a61e_0058
-  server: www.whatismyip.net
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  udp: true
-- name: SE_2a61e_0051
-  server: main.saforia.ru
-  port: 2086
-  type: vless
-  uuid: b8c51058-4378-46d3-b2c9-50b43b5715a0
-  tls: false
-  skip-cert-verify: false
-  servername: main.saforia.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: main.saforia.ru
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_2a61e_0003
-  - IR_2a61e_0011
-  - RU_2a61e_0048
-  - US_2a61e_0056
-  - US_2a61e_0057
-  - US_2a61e_0058
-  - SE_2a61e_0051
+  - RU_abddb_0048
+  - CN_abddb_0003
+  - IR_abddb_0011
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_2a61e_0048
-  - US_2a61e_0056
-  - US_2a61e_0057
-  - US_2a61e_0058
-  - SE_2a61e_0051
+  - RU_abddb_0048
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_2a61e_0003
-  - IR_2a61e_0011
+  - CN_abddb_0003
+  - IR_abddb_0011
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_2a61e_0011
+  - IR_abddb_0011
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_2a61e_0003
-  - RU_2a61e_0048
+  - RU_abddb_0048
+  - CN_abddb_0003
 rules:
 - MATCH,AUTO

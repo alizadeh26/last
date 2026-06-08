@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: RU_2a61e_0048
+- name: RU_abddb_0048
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -15,75 +15,12 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: US_2a61e_0056
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  udp: true
-- name: US_2a61e_0057
-  server: cloudflare-dns.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  udp: true
-- name: US_2a61e_0058
-  server: www.whatismyip.net
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  udp: true
-- name: SE_2a61e_0051
-  server: main.saforia.ru
-  port: 2086
-  type: vless
-  uuid: b8c51058-4378-46d3-b2c9-50b43b5715a0
-  tls: false
-  skip-cert-verify: false
-  servername: main.saforia.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: main.saforia.ru
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_2a61e_0048
-  - US_2a61e_0056
-  - US_2a61e_0057
-  - US_2a61e_0058
-  - SE_2a61e_0051
+  - RU_abddb_0048
 rules:
 - MATCH,AUTO
