@@ -1,8 +1,7 @@
-vless://b852270a-1283-4ea8-8a2f-5bae8e644a3e@38.55.146.153:13000?#Server 45 🇺🇸	dl_kib_s=1886	ul_kib_s=2152
-vless://1de37726-744b-46e1-9101-c926b3402e82@104.17.72.206:80?encryption=none&host=v2.v2configlab.workers.dev&security=none&type=ws#Server 158 🇺🇸	dl_kib_s=1931	ul_kib_s=1824
-vmess://eyJ2IjoiMiIsInBzIjoiU2VydmVyIDE3NSDwn4ew8J+HtyIsImFkZCI6IjEzMi4xNDUuODAuMjMwIiwicG9ydCI6ODAsImlkIjoiNTE1NTg2MGUtZDA3ZC00NmMzLTkxMjgtM2FmYmQ4NDYyNmM3IiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiJrcjAyLmEwYS54eXoiLCJwYXRoIjoiL2NjdHYxMy5tM3U4In0=	dl_kib_s=874	ul_kib_s=888
-vmess://eyJ2IjoiMiIsInBzIjoiU2VydmVyIDEwNSDwn4eq8J+HuCIsImFkZCI6Ijg1LjkwLjIxNy40MiIsInBvcnQiOiIyMjMyNCIsInR5cGUiOiJub25lIiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=	dl_kib_s=780	ul_kib_s=958
-vmess://eyJhZGQiOiIxNTIuNjcuMjE4LjM4IiwiYWlkIjowLCJob3N0IjoiIiwiaWQiOiJiNWU5NDgwYS1iN2FhLTQwYTQtZjlhNy01Mjk5YjVlMzYzYjQiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6NDQzLCJwcyI6IlNlcnZlciAxNDMg8J+HsPCfh7ciLCJ0bHMiOiIiLCJ0eXBlIjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IiIsInYiOiIyIn0=	dl_kib_s=844	ul_kib_s=819
-vless://394f6981-a782-4779-9a85-e6cf22935d93@84.17.37.19:8443?allow_insecure=0&fp=chrome&security=tls&sni=hkg1.fromblancwithlove.com#Server 47 🇭🇰	dl_kib_s=741	ul_kib_s=801
-vless://394f6981-a782-4779-9a85-e6cf22935d93@84.17.37.19:8443?allowInsecure=1&alpn=h2&encryption=none&security=tls&sni=hkg1.fromblancwithlove.com&type=tcp#Server 38 🇭🇰	dl_kib_s=649	ul_kib_s=813
-vmess://eyJhZGQiOiIxNTIuNjcuMjE4LjM4IiwiYWlkIjowLCJob3N0IjoiMTUyLjY3LjIxOC4zOCIsImlkIjoiYjVlOTQ4MGEtYjdhYS00MGE0LWY5YTctNTI5OWI1ZTM2M2I0IiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOjQ0MywicHMiOiJTZXJ2ZXIgMTY4IPCfh7Dwn4e3IiwidGxzIjoiIiwidHlwZSI6ImF1dG8iLCJzZWN1cml0eSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiIiLCJ2IjoiMiJ9	dl_kib_s=773	ul_kib_s=650
+vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@162.249.126.73:8443?encryption=none&fp=chrome&security=tls&sni=cdn3-87.vk-cdnvideo.com&type=tcp#Server 34 🇩🇪	dl_kib_s=1533	ul_kib_s=1502
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@162.19.228.119:80?security=none&type=ws&path=%2Fhttp#Server 36 🇩🇪	dl_kib_s=1518	ul_kib_s=1474
+vless://03bc875d-0d8e-49b6-9094-89a8159e65ee@91.107.191.12:29376?security=&encryption=none&headerType=none&type=tcp#Server 13 🇩🇪	dl_kib_s=1477	ul_kib_s=1364
+vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@162.249.126.76:8443?encryption=none&security=tls&sni=cdn7-09.vk-cdnvideo.com&type=tcp#Server 33 🇩🇪	dl_kib_s=1391	ul_kib_s=1447
+vless://d3d59da0-31a4-45da-bf9e-373c6ab140db@62.60.251.131:45656?security=none&amp;encryption=none&amp;headerType=none&amp;type=tcp#Server 29 🇫🇮	dl_kib_s=1269	ul_kib_s=1193
+vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@77.74.123.163:8443?encryption=none&fp=chrome&security=tls&sni=cdn3-87.vk-cdnvideo.com&type=tcp#Server 22 🇳🇱	dl_kib_s=945	ul_kib_s=1307
+vless://03bc875d-0d8e-49b6-9094-89a8159e65ee@91.107.191.12:29376?encryption=none&type=tcp&headerType=none#Server 18 🇩🇪	dl_kib_s=734	ul_kib_s=1162
