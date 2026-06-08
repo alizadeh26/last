@@ -4,17 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: RU_abddb_0048
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: edge
-  servername: r1.mizulina.top
-  udp: true
 - name: CN_abddb_0003
   server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
   port: 10055
@@ -40,15 +29,26 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: RU_abddb_0048
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: edge
+  servername: r1.mizulina.top
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_abddb_0048
   - CN_abddb_0003
   - IR_abddb_0011
+  - RU_abddb_0048
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -73,7 +73,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_abddb_0048
   - CN_abddb_0003
+  - RU_abddb_0048
 rules:
 - MATCH,AUTO
