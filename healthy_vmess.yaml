@@ -4,15 +4,30 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_e0fcc_0012
-  server: 82.198.246.250
-  port: 180
+- name: CN_2a61e_0003
+  server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
+  port: 10055
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
+  udp: true
+- name: IR_2a61e_0011
+  server: nlt.reata.ir
+  port: 1020
+  type: vmess
+  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: AUTO
@@ -20,6 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_e0fcc_0012
+  - CN_2a61e_0003
+  - IR_2a61e_0011
 rules:
 - MATCH,AUTO
