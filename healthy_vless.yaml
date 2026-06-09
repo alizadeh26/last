@@ -15,51 +15,6 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: US_197b7_0057
-  server: cloudflare-dns.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  udp: true
-- name: US_197b7_0058
-  server: www.whatismyip.net
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  udp: true
-- name: US_197b7_0056
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: r1.mizulina.top
   port: 22231
@@ -78,9 +33,6 @@ proxy-groups:
   interval: 300
   proxies:
   - RU_197b7_0048
-  - US_197b7_0057
-  - US_197b7_0058
-  - US_197b7_0056
   - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO

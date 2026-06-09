@@ -4,17 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: RU_197b7_0048
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: edge
-  servername: r1.mizulina.top
-  udp: true
 - name: IR_197b7_0011
   server: nlt.reata.ir
   port: 1020
@@ -40,50 +29,26 @@ proxies:
     headers:
       Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
   udp: true
-- name: US_197b7_0057
-  server: cloudflare-dns.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+- name: 🇮🇷 伊朗 | IRN
+  server: nlt.reata.ir
+  port: 1020
+  type: vmess
+  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
+  alterId: 0
+  cipher: auto
   tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
+  skip-cert-verify: true
   udp: true
-- name: US_197b7_0058
-  server: www.whatismyip.net
-  port: 2095
+- name: RU_197b7_0048
+  server: r1.mizulina.top
+  port: 22231
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
   skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  udp: true
-- name: US_197b7_0056
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnmfangbinxing.cnmfangbinxing-a.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-a.workers.dev
+  client-fingerprint: edge
+  servername: r1.mizulina.top
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: r1.mizulina.top
@@ -96,39 +61,23 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇮🇷 伊朗 | IRN
-  server: nlt.reata.ir
-  port: 1020
-  type: vmess
-  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_197b7_0048
   - IR_197b7_0011
   - CN_197b7_0003
-  - US_197b7_0057
-  - US_197b7_0058
-  - US_197b7_0056
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇮🇷 伊朗 | IRN
+  - RU_197b7_0048
+  - 🇷🇺 俄罗斯 | RUS 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - RU_197b7_0048
-  - US_197b7_0057
-  - US_197b7_0058
-  - US_197b7_0056
   - 🇷🇺 俄罗斯 | RUS 2
 - name: PROTO-VMESS
   type: url-test
@@ -150,8 +99,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_197b7_0048
   - CN_197b7_0003
+  - RU_197b7_0048
   - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO
