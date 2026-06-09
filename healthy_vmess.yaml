@@ -4,17 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: IR_197b7_0011
-  server: nlt.reata.ir
-  port: 1020
-  type: vmess
-  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: CN_197b7_0003
+- name: CN_d3e06_0003
   server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
   port: 10055
   type: vmess
@@ -29,24 +19,12 @@ proxies:
     headers:
       Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
   udp: true
-- name: 🇮🇷 伊朗 | IRN
-  server: nlt.reata.ir
-  port: 1020
-  type: vmess
-  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - IR_197b7_0011
-  - CN_197b7_0003
-  - 🇮🇷 伊朗 | IRN
+  - CN_d3e06_0003
 rules:
 - MATCH,AUTO
