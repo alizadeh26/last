@@ -3,59 +3,7 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: silent
-proxies:
-- name: RU_654bd_0048
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: edge
-  servername: r1.mizulina.top
-  udp: true
-- name: CN_654bd_0003
-  server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
-  port: 10055
-  type: vmess
-  uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
-  udp: true
-proxy-groups:
-- name: AUTO
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - RU_654bd_0048
-  - CN_654bd_0003
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - RU_654bd_0048
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - CN_654bd_0003
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - RU_654bd_0048
-  - CN_654bd_0003
+proxies: []
+proxy-groups: []
 rules:
 - MATCH,AUTO
