@@ -4,18 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: RU_d3e06_0048
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: edge
-  servername: r1.mizulina.top
-  udp: true
-- name: CN_d3e06_0003
+- name: CN_654bd_0003
   server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
   port: 10055
   type: vmess
@@ -30,16 +19,26 @@ proxies:
     headers:
       Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
+- name: IR_654bd_0011
+  server: nlt.reata.ir
+  port: 1020
+  type: vmess
+  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: RU_654bd_0048
   server: r1.mizulina.top
   port: 22231
   type: vless
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  tls: true
   flow: xtls-rprx-vision
-  servername: r1.mizulina.top
+  tls: true
+  skip-cert-verify: false
   client-fingerprint: edge
-  network: tcp
+  servername: r1.mizulina.top
   udp: true
 proxy-groups:
 - name: AUTO
@@ -47,29 +46,34 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_d3e06_0048
-  - CN_d3e06_0003
-  - 🇷🇺 俄罗斯 | RUS
+  - CN_654bd_0003
+  - IR_654bd_0011
+  - RU_654bd_0048
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_d3e06_0048
-  - 🇷🇺 俄罗斯 | RUS
+  - RU_654bd_0048
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - CN_d3e06_0003
+  - CN_654bd_0003
+  - IR_654bd_0011
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - IR_654bd_0011
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_d3e06_0048
-  - CN_d3e06_0003
-  - 🇷🇺 俄罗斯 | RUS
+  - CN_654bd_0003
+  - RU_654bd_0048
 rules:
 - MATCH,AUTO

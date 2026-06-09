@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: RU_d3e06_0048
+- name: RU_654bd_0048
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -15,24 +15,12 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: r1.mizulina.top
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  tls: true
-  flow: xtls-rprx-vision
-  servername: r1.mizulina.top
-  client-fingerprint: edge
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - RU_d3e06_0048
-  - 🇷🇺 俄罗斯 | RUS
+  - RU_654bd_0048
 rules:
 - MATCH,AUTO
