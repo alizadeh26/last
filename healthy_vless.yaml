@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_ed982_0066
+- name: US_402a1_0066
   server: 199.232.197.131
   port: 80
   type: vless
@@ -18,7 +18,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_ed982_0067
+- name: US_402a1_0067
   server: speedtest.net
   port: 80
   type: vless
@@ -32,7 +32,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_ed982_0068
+- name: US_402a1_0068
   server: speedtest.net
   port: 80
   type: vless
@@ -47,7 +47,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_ed982_0069
+- name: US_402a1_0069
   server: 151.101.0.1
   port: 80
   type: vless
@@ -61,21 +61,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_ed982_0070
-  server: 151.101.194.219
-  port: 80
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
-  skip-cert-verify: false
-  servername: max-gb1.global.ssl.fastly.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  udp: true
-- name: US_ed982_0071
+- name: US_402a1_0071
   server: 167.82.0.1
   port: 80
   type: vless
@@ -89,7 +75,21 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_ed982_0073
+- name: US_402a1_0072
+  server: 151.101.2.219
+  port: 80
+  type: vless
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  tls: false
+  skip-cert-verify: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: US_402a1_0073
   server: 151.101.0.1
   port: 80
   type: vless
@@ -103,14 +103,93 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_ed982_0072
+- name: US_402a1_0070
+  server: 151.101.194.219
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  skip-cert-verify: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 151.101.0.1
+  port: 80
+  type: vless
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  tls: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 151.101.194.219
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
   server: 151.101.2.219
   port: 80
   type: vless
   uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
   tls: false
-  skip-cert-verify: false
   servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 167.82.0.1
+  port: 80
+  type: vless
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  tls: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 151.101.0.1
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: speedtest.net
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  servername: max-gb1.global.ssl.fastly.net
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
@@ -134,14 +213,20 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_ed982_0066
-  - US_ed982_0067
-  - US_ed982_0068
-  - US_ed982_0069
-  - US_ed982_0070
-  - US_ed982_0071
-  - US_ed982_0073
-  - US_ed982_0072
+  - US_402a1_0066
+  - US_402a1_0067
+  - US_402a1_0068
+  - US_402a1_0069
+  - US_402a1_0071
+  - US_402a1_0072
+  - US_402a1_0073
+  - US_402a1_0070
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 6
   - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO
