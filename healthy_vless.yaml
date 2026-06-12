@@ -18,8 +18,8 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_1f9ab_0050
-  server: 199.232.197.131
+- name: US_1f9ab_0051
+  server: 151.101.2.219
   port: 80
   type: vless
   uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
@@ -32,8 +32,8 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_1f9ab_0051
-  server: 151.101.2.219
+- name: US_1f9ab_0050
+  server: 199.232.197.131
   port: 80
   type: vless
   uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
@@ -67,8 +67,8 @@ proxy-groups:
   interval: 300
   proxies:
   - US_1f9ab_0049
-  - US_1f9ab_0050
   - US_1f9ab_0051
+  - US_1f9ab_0050
   - US_1f9ab_0052
 rules:
 - MATCH,AUTO

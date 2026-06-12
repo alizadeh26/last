@@ -1,1 +1,13 @@
-
+vless://2c36bf33-1ec0-45e8-84af-84eeccd56ca5@45.152.67.34:47488?security=none&encryption=none&headerType=none&type=tcp#Server 80 🇭🇰
+ss://YWVzLTI1Ni1nY206N051QjBZNW0zYU56a0tNS2xGb013a2lhanN1NkYzNmM5b2s0VktFWm5CND0@de5.taskflowhub.org:2083#Server 216 🇩🇪
+vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@162.249.126.68:8443?encryption=none&fp=chrome&security=tls&sni=cdn7-09.vk-cdnvideo.com&type=tcp#Server 140 🇩🇪
+vmess://eyJhZGQiOiIxNTUuMjU0LjEyNi4yNDkiLCJwb3J0IjoiNjAwMSIsImlkIjoiYTAzMDg0MmEtZDI5YS00ZWE5LWE3NzYtMTRmYzRiOWUxMDJkIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ2IjoiMiIsInBzIjoi5oSP5aSn5YipXzA2MTMwNTAyNSIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIiwic25pIjoiIiwidHlwZSI6Im5vbmUiLCJzZXJ2ZXJQb3J0IjowLCJuYXRpb24iOiIifQ==
+trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@46.8.113.142:443?security=tls&type=tcp&sni=ch-2.bexum.fun#%E6%97%A5%E6%9C%AC_061305009
+trojan://3d00966f-0723-4b6a-b4e7-9843883f9be4@node1-vpn.hrzy.me:443?allowInsecure=0&sni=#%E9%A6%99%E6%B8%AF_061305041
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.178-0098
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRVG1MVmlVNFZFbXV3Yk94VXc0SVhk@107.172.250.161:59556#%F0%9F%87%BA%F0%9F%87%B8US-107.172.250.161-0078
+vmess://eyJ2IjoiMiIsInBzIjoiXHVkODNjXHVkZGZhXHVkODNjXHVkZGY4IEpvaW4rVGVsZWdyYW06QEZhcmFoX1ZQTiBcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjgiLCJhZGQiOiIxNjUuMTQwLjIxNi4xNDEiLCJwb3J0IjoiNDQzIiwiaWQiOiJlN2Q3MmE4ZC0yNmYyLTRiNTQtYjM2Ni0wYzQzZTBiY2JhN2QiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InRjcCIsInR5cGUiOiJub25lIiwiaG9zdCI6IiIsInBhdGgiOiIiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0ZXN0X25hbWUiOiIxMiIsInNraXAtY2VydC12ZXJpZnkiOnRydWV9
+vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@cdn3-87.vk-cdnvideo.com:8443?encryption=none&fp=chrome&security=tls&sni=cdn3-87.vk-cdnvideo.com&type=tcp#🏳️ 309 - XX - VLESS/TLS/UTLS - 8443
+trojan://humanity@104.16.7.70:443?security=tls&sni=www.calmlunch.com&type=ws&host=www.calmlunch.com&path=/assignment#🇨🇦 67 - CA - Trojan/WS/TLS - 443
+trojan://humanity@216.24.57.6:443?security=tls&sni=www.calmloud.com&alpn=http/1.1&type=ws&host=www.calmloud.com&path=/assignment#🏳️ 111 - XX - Trojan/WS/TLS - 443
+trojan://humanity@8.6.112.6:443?path=/assignment&security=tls&alpn=http/1.1&insecure=0&host=www.calmloud.com&fp=chrome&type=ws&allowInsecure=0&sni=www.calmloud.com#🇺🇸 122 - US - Trojan/WS/TLS/UTLS - 443
