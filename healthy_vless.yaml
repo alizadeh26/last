@@ -4,47 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_60981_0052
-  server: 151.101.0.1
-  port: 80
+- name: HK_b098a_0002
+  server: assets.trorays.com
+  port: 443
   type: vless
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  tls: false
-  skip-cert-verify: true
-  servername: max-gb1.global.ssl.fastly.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  udp: true
-- name: US_60981_0051
-  server: 151.101.2.219
-  port: 80
-  type: vless
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  tls: false
+  uuid: b69a71ef-51dc-48c6-b3df-4c3533062606
+  flow: xtls-rprx-vision
+  tls: true
   skip-cert-verify: false
-  servername: max-gb1.global.ssl.fastly.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  udp: true
-- name: US_60981_0050
-  server: 199.232.197.131
-  port: 80
-  type: vless
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  tls: false
-  skip-cert-verify: false
-  servername: max-gb1.global.ssl.fastly.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
+  client-fingerprint: chrome
+  servername: assets.trorays.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -52,8 +21,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_60981_0052
-  - US_60981_0051
-  - US_60981_0050
+  - HK_b098a_0002
 rules:
 - MATCH,AUTO
