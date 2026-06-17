@@ -1,17 +1,17 @@
 vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@77.74.123.163:8443?encryption=none&fp=chrome&security=tls&sni=cdn3-87.vk-cdnvideo.com&type=tcp#Server 22 🇳🇱
 vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@162.249.126.76:8443?encryption=none&security=tls&sni=cdn7-09.vk-cdnvideo.com&type=tcp#Server 33 🇩🇪
 vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@162.249.126.74:8443?encryption=none&fp=chrome&security=tls&sni=cdn7-39.vk-cdnvideo.com&type=tcp#Server 62 🇩🇪
+vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@cdn9-33.vk-cdnvideo.com:8443?security=tls&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0#Server 69 🇩🇪
 vless://b585dc5e-55bf-4a8b-913a-27c9ccac05c3@bab-6.site:443?encryption=none&fp=chrome&host=bab-6.site&path=%2Fvws%2F&security=tls&sni=bab-6.site&type=ws#Server 106 🇫🇷
 vless://55f7d143-a594-4a91-b030-f227039f85ef@79.127.196.11:8443?security=tls&encryption=none&headerType=none&allowinsecure=0&type=tcp&sni=cdg-1.fromblancwithlove.com#Server 148 🇫🇷
+vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@cdn9-33.vk-cdnvideo.com:8443?security=tls&encryption=none&headerType=none&fp=chrome&allowinsecure=0&type=tcp&sni=cdn9-33.vk-cdnvideo.com#Server 206 🇳🇱
 vless://55f7d143-a594-4a91-b030-f227039f85ef@cdg-1.fromblancwithlove.com:8443?alpn=h2&encryption=none&security=tls&type=tcp#Server 213 🇫🇷
 vless://2065a8c9-8b3d-4dba-b0ce-90d649aa3da7@greb.loralden.com:443?security=reality&encryption=none&pbk=EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=greb.loralden.com&sid=3620820fe66d6731#MHH👉V2ray313👈%40v2ray313%20%DA%A9%D8%A7%D9%86%D8%A7%D9%84%D9%85%D9%88%D9%86%20%F0%9F%8E%AE
-vmess://eyJhZGQiOiJmcjUudGFza2Zsb3dodWIub3JnIiwicG9ydCI6IjIwODciLCJpZCI6ImI4ZTU5MGE4LTQ4NzAtNDE0Yi05NjdiLWQyZjQzZDAxMzA1YSIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ2IjoiMiIsInBzIjoi5rOV5Zu9XzA2MTcyMTQzMiIsImhvc3QiOiJmcjUudGFza2Zsb3dodWIub3JnIiwicGF0aCI6Ii9yZWFsdGltZSIsInRscyI6InRscyIsInNuaSI6IiIsInR5cGUiOiItLS0iLCJzZXJ2ZXJQb3J0IjowLCJuYXRpb24iOiIifQ==
-vmess://eyJhZGQiOiJub2RlLWZyLmNvbm5lY3RzdWl0ZS5vcmciLCJwb3J0IjoiMjA1MyIsImlkIjoiMmY0MjM0ZjktOGYzMy00YzdmLTk1MmYtNTY1ZmZhNWY1ZmI3IiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJyYXciLCJ2IjoiMiIsInBzIjoi5rOV5Zu9XzA2MTcyMTQzOCIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoidGxzIiwic25pIjoiIiwidHlwZSI6IiIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
+trojan://hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey@38.60.136.156:443?type=tcp&security=tls&headerType=none&sni=38.60.136.156&fp=chrome&insecure=1&allowInsecure=1#%E6%B3%95%E5%9B%BD_061801452
+vmess://eyJhZGQiOiJmcjUudGFza2Zsb3dodWIub3JnIiwicG9ydCI6IjIwODciLCJpZCI6ImI4ZTU5MGE4LTQ4NzAtNDE0Yi05NjdiLWQyZjQzZDAxMzA1YSIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ2IjoiMiIsInBzIjoi5rOV5Zu9XzA2MTgwMTA3MyIsImhvc3QiOiJmcjUudGFza2Zsb3dodWIub3JnIiwicGF0aCI6Ii9yZWFsdGltZSIsInRscyI6InRscyIsInNuaSI6IiIsInR5cGUiOiItLS0iLCJzZXJ2ZXJQb3J0IjowLCJuYXRpb24iOiIifQ==
 ss://YWVzLTI1Ni1nY206RmpHM0lQYm55KzBaWVU0L3AxdlVMUDg0R2NLcEdvWnBXS0FheTE2VmhJdz0=@51.254.128.106:2083#%F0%9F%87%AB%F0%9F%87%B7FR-51.254.128.106-0137
 ss://YWVzLTI1Ni1nY206RmpHM0lQYm55KzBaWVU0L3AxdlVMUDg0R2NLcEdvWnBXS0FheTE2VmhJdz0=@fr5.taskflowhub.org:2083#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+fr5.taskflowhub.org-2083+%7C+275.76ms
 vless://3e5da4f6-93c4-4701-911b-1a5091d2430f@213.199.39.156:30001?type=ws&security=none&sni=&fp=chrome&host=&path=%2Fws#🆔ar14n24b%20🔓%20VL-WS-N/A%20🇫🇷%20FR%20146ms
-vless://25f86cb1-2140-4085-abcb-c3a0ea7a4be0@152.228.162.19:80?path=/vless/&encryption=none&type=ws#🇫🇷 47 - FR - VLESS/WS - 80
-vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@162.249.126.198:8443?encryption=none&fp=chrome&security=tls&sni=cdn9-33.vk-cdnvideo.com&type=tcp#🇩🇪 258 - DE - VLESS/TLS/UTLS - 8443
-vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@162.249.126.67:8443?encryption=none&fp=chrome&security=tls&sni=cdn3-25.vk-cdnvideo.com&type=tcp#🇩🇪 262 - DE - VLESS/TLS/UTLS - 8443
-vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@cdn3-87.vk-cdnvideo.com:8443?allowInsecure=1&encryption=none&security=tls&type=tcp#🇺🇸 314 - US - VLESS/TLS - 8443
-vless://d036cc79-7142-5376-82b3-14acb32a4d8a@193.243.147.244:8880?encryption=none&host=openai.com&path=/vless&security=none&type=ws#🇫🇷 357 - FR - VLESS/WS - 8880
+vless://25f86cb1-2140-4085-abcb-c3a0ea7a4be0@152.228.162.19:80?path=/vless/&encryption=none&type=ws#🇫🇷 36 - FR - VLESS/WS - 80
+vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@162.249.126.67:8443?encryption=none&fp=chrome&security=tls&sni=cdn3-25.vk-cdnvideo.com&type=tcp#🇺🇸 238 - US - VLESS/TLS/UTLS - 8443
+vless://d036cc79-7142-5376-82b3-14acb32a4d8a@193.243.147.244:8880?encryption=none&host=openai.com&path=/vless&security=none&type=ws#🇫🇷 330 - FR - VLESS/WS - 8880
