@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: HK_b098a_0002
+- name: HK_11d36_0002
   server: assets.trorays.com
   port: 443
   type: vless
@@ -21,6 +21,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_b098a_0002
+  - HK_11d36_0002
 rules:
 - MATCH,AUTO
