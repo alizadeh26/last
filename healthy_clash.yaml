@@ -3,7 +3,36 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: silent
-proxies: []
-proxy-groups: []
+proxies:
+- name: HK_dbbb0_0002
+  server: assets.trorays.com
+  port: 443
+  type: vless
+  uuid: b69a71ef-51dc-48c6-b3df-4c3533062606
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: assets.trorays.com
+  udp: true
+proxy-groups:
+- name: AUTO
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - HK_dbbb0_0002
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - HK_dbbb0_0002
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - HK_dbbb0_0002
 rules:
 - MATCH,AUTO
