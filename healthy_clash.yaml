@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: HK_dbbb0_0002
+- name: HK_38c39_0002
   server: assets.trorays.com
   port: 443
   type: vless
@@ -15,24 +15,38 @@ proxies:
   client-fingerprint: chrome
   servername: assets.trorays.com
   udp: true
+- name: 🇮🇱 以色列 | ISR
+  server: assets.trorays.com
+  port: 443
+  type: vless
+  uuid: b69a71ef-51dc-48c6-b3df-4c3533062606
+  tls: true
+  flow: xtls-rprx-vision
+  servername: assets.trorays.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_dbbb0_0002
+  - HK_38c39_0002
+  - 🇮🇱 以色列 | ISR
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_dbbb0_0002
+  - HK_38c39_0002
+  - 🇮🇱 以色列 | ISR
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - HK_dbbb0_0002
+  - HK_38c39_0002
+  - 🇮🇱 以色列 | ISR
 rules:
 - MATCH,AUTO
