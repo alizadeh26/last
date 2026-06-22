@@ -1,3 +1,10 @@
-vless://fe52cfb4-8261-4c85-8278-e4bf4057bde1@46.8.230.9:50785?encryption=none&security=none&type=tcp#Server 15 🇫🇮
 vless://3007b043-acdf-43a4-900e-c7c015406f89@193.233.23.196:26048?encryption=none&security=none&type=tcp#Server 171 🇫🇮
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AEFI-193.47.60.186-0117
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AEFI-193.47.60.186-0136
+ss://YWVzLTEyOC1nY206dGlqc2prM2l3emM2YjEwYXpiMHk=@77.83.247.206:18284#%F0%9F%87%AB%F0%9F%87%AEFI-77.83.247.206-0143
+ss://YWVzLTEyOC1nY206eTNvM3JhNmVkeTVuZmM2aHliMm4=@185.103.110.68:18283#FI%F0%9F%87%AB%F0%9F%87%AE+%7C+185.103.110.68-18283+%7C+114.18ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHbnVHRU9lNEZzTnlHc3FMYzJKaTBG@109.107.182.229:51544#FI%F0%9F%87%AB%F0%9F%87%AE+%7C+109.107.182.229-51544+%7C+175.64ms
+vless://3559f1f7-7d70-46c9-82db-d2b46269300b@s2.dipvpn.ru:443?encryption=none&type=tcp&security=reality&headerType=none&sni=dipvpn.ru&fp=chrome&insecure=1&allowInsecure=1&pbk=1BdgrQ_esOEya01sDCBYK4MGpJgaUhssHQG-aWJkyFQ&flow=xtls-rprx-vision#🆔soskeynet%20🔒%20VL-TCP-%20🇫🇮%20FI%20down
+vless://115936e4-4a2f-45b5-bcda-a572ef2982aa@94.183.234.41:10020?security=none&type=tcp#🆔soskeynet%20🔓%20VL-TCP-N/A%20🇫🇮%20FI%20112ms
+vless://394f6981-a782-4779-9a85-e6cf22935d93@46.246.34.165:8443?security=tls&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=ams1.fromblancwithlove.com#🇫🇮 157 - FI - VLESS/TLS - 8443
+vless://f83d8e60-f039-45c8-95d2-2a44c59025f6@freetg.strettenvpn.com:9999?encryption=none&security=none&type=tcp#🇫🇮 706 - FI - VLESS - 9999
+vless://f07a3816-f527-4ce8-8d21-ada012618695@fin-jd.jdvpn.shakhle.ir:22000?security=reality&encryption=none&pbk=xLCgdUiKeBpYK3YsT96d81yuhFuVgUeANbVeiQACRWw&headerType=none&fp=firefox&type=tcp&sni=fontawesome.com&sid=6ba85179e30d4fc2#🇺🇸 699 - US - VLESS/REALITY/PBK/SID/UTLS - 22000
