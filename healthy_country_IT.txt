@@ -1,6 +1,6 @@
-vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@sca23.myfymain.com:8880?mode=gun&security=none&encryption=none&type=grpc#Server 25 🇮🇹
-vmess://eyJhZGQiOiI0NS45Mi43MC4yMzYiLCJwb3J0IjoiMjIzMjQiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidiI6IjIiLCJwcyI6IuaEj+Wkp+WIqV8wNjIyMTgwMDEiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoi8J+HtfCfh7lQVCJ9
-ss://YWVzLTI1Ni1nY206MzRmSXR5Wnl6Njl1SXJ4a0orY0xSMXBkY2x2RzYyOHB2OCtmelVOVElDMD0=@it5.taskflowhub.org:2083#IT%F0%9F%87%AE%F0%9F%87%B9+%7C+it5.taskflowhub.org-2083+%7C+114.1ms
+vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@151.115.166.221:8880/?type=grpc&encryption=none&flow=#Server 38 🇮🇹
+vmess://eyJhZGQiOiI0NS45Mi43MC4yMzYiLCJwb3J0IjoiMjIzMjQiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoicmF3IiwidiI6IjIiLCJwcyI6IuaEj+Wkp+WIqV8wNjIyMTgwNTMiLCJob3N0IjoiIiwicGF0aCI6Ii8iLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
 vless://049e56d8-0ba0-49e3-b764-ee04122b9f00@ov-italy1.09vpn.com:80?encryption=none&path=%2Fvless%2F&security=none&type=ws#IT🇮🇹
-vless://9770fce0-0b88-590f-992d-7dac8625d360@195.231.60.106:443?alpn=h2,http/1.1&encryption=none&flow=xtls-rprx-vision&fp=chrome&security=tls&sni=winq35461s-19523160106-direct.irgame.co&type=tcp#🇮🇹 505 - IT - VLESS/TLS/VISION/UTLS - 443
-vless://9f0285ee-20ca-4953-bcdb-86a920652923@204.216.216.23:10086?encryption=none&security=none&type=tcp#🇮🇹 513 - IT - VLESS - 10086
+ss://YWVzLTI1Ni1nY206MzRmSXR5Wnl6Njl1SXJ4a0orY0xSMXBkY2x2RzYyOHB2OCtmelVOVElDMD0=@it5.taskflowhub.org:2083#IT%F0%9F%87%AE%F0%9F%87%B9+%7C+it5.taskflowhub.org-2083+%7C+114.1ms
+vless://9770fce0-0b88-590f-992d-7dac8625d360@195.231.60.106:443?alpn=h2,http/1.1&encryption=none&flow=xtls-rprx-vision&fp=chrome&security=tls&sni=winq35461s-19523160106-direct.irgame.co&type=tcp#🇮🇹 496 - IT - VLESS/TLS/VISION/UTLS - 443
+vless://9f0285ee-20ca-4953-bcdb-86a920652923@204.216.216.23:10086?encryption=none&security=none&type=tcp#🇮🇹 509 - IT - VLESS - 10086
