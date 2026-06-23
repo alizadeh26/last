@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: JP_27f22_0010
+- name: JP_25bc6_0010
   server: 151.101.109.223
   port: 80
   type: vless
@@ -18,21 +18,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_27f22_0091
-  server: 151.101.2.219
-  port: 80
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
-  skip-cert-verify: false
-  servername: max-gb1.global.ssl.fastly.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  udp: true
-- name: US_27f22_0087
+- name: US_25bc6_0087
   server: 199.232.197.131
   port: 80
   type: vless
@@ -46,7 +32,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_27f22_0092
+- name: US_25bc6_0092
   server: 151.101.194.219
   port: 80
   type: vless
@@ -60,8 +46,8 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_27f22_0095
-  server: speedtest.net
+- name: US_25bc6_0093
+  server: 151.101.0.1
   port: 80
   type: vless
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -74,7 +60,21 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_27f22_0094
+- name: US_25bc6_0091
+  server: 151.101.2.219
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  skip-cert-verify: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: US_25bc6_0094
   server: 167.82.0.1
   port: 80
   type: vless
@@ -88,13 +88,91 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: US_27f22_0093
-  server: 151.101.0.1
+- name: US_25bc6_0095
+  server: speedtest.net
   port: 80
   type: vless
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   tls: false
   skip-cert-verify: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 199.232.197.131
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 151.101.194.219
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 151.101.109.223
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 167.82.0.1
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: speedtest.net
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 151.101.0.1
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
   servername: max-gb1.global.ssl.fastly.net
   network: ws
   ws-opts:
@@ -119,13 +197,19 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - JP_27f22_0010
-  - US_27f22_0091
-  - US_27f22_0087
-  - US_27f22_0092
-  - US_27f22_0095
-  - US_27f22_0094
-  - US_27f22_0093
+  - JP_25bc6_0010
+  - US_25bc6_0087
+  - US_25bc6_0092
+  - US_25bc6_0093
+  - US_25bc6_0091
+  - US_25bc6_0094
+  - US_25bc6_0095
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇰 丹麦 | DNK
 rules:
 - MATCH,AUTO
