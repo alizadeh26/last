@@ -4,34 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_6d58b_0066
-  server: 199.232.197.131
-  port: 80
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
-  skip-cert-verify: false
-  servername: max-gb1.global.ssl.fastly.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  udp: true
-- name: US_6d58b_0072
-  server: 151.101.130.219
-  port: 80
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
-  skip-cert-verify: false
-  servername: max-gb1.global.ssl.fastly.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  udp: true
 - name: US_6d58b_0071
   server: speedtest.net
   port: 80
@@ -60,34 +32,8 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 151.101.194.219
-  port: 80
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
-  servername: max-gb1.global.ssl.fastly.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 151.101.0.1
-  port: 80
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
-  servername: max-gb1.global.ssl.fastly.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 199.232.197.131
   port: 80
   type: vless
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -125,6 +71,19 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 199.232.197.131
+  port: 80
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  servername: max-gb1.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: speedtest.net
   port: 80
@@ -144,40 +103,33 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_6d58b_0066
-  - US_6d58b_0072
   - US_6d58b_0071
   - US_6d58b_0073
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_6d58b_0066
-  - US_6d58b_0072
   - US_6d58b_0071
   - US_6d58b_0073
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_6d58b_0066
-  - US_6d58b_0072
   - US_6d58b_0071
-  - 🇩🇪 德国 | DEU 3
+  - US_6d58b_0073
+  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 4
 rules:
 - MATCH,AUTO
