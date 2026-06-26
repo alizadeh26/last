@@ -3,55 +3,7 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: silent
-proxies:
-- name: IR_d7aa6_0011
-  server: sv2.azparadox.ir
-  port: 8880
-  type: vless
-  uuid: d9307ab3-1ed0-4b6d-bfd0-e104c7ccc25a
-  tls: false
-  skip-cert-verify: false
-  servername: azsv2.ir5ive.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: azsv2.ir5ive.ir
-  udp: true
-- name: 🇮🇷 伊朗 | IRN
-  server: sv2.azparadox.ir
-  port: 8880
-  type: vless
-  uuid: d9307ab3-1ed0-4b6d-bfd0-e104c7ccc25a
-  tls: false
-  servername: azsv2.ir5ive.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: azsv2.ir5ive.ir
-  udp: true
-proxy-groups:
-- name: AUTO
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - IR_d7aa6_0011
-  - 🇮🇷 伊朗 | IRN
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - IR_d7aa6_0011
-  - 🇮🇷 伊朗 | IRN
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - IR_d7aa6_0011
-  - 🇮🇷 伊朗 | IRN
+proxies: []
+proxy-groups: []
 rules:
 - MATCH,AUTO
