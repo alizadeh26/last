@@ -1,16 +1,12 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.10:8080#Server 206 🇳🇱
-trojan://aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR@92.119.35.127:443?allowInsecure=1&sni=#%E5%BE%B7%E5%9B%BD_062620013
-vmess://eyJhZGQiOiI4Mi4xOTguMjQ2LjIzMyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJkMTNmYzJmNS0zZTA1LTQ3OTUtODFlYi00NDE0M2EwOWU1NTIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiXC8iLCJwb3J0IjoxODAsInBzIjoiREVcdWQ4M2NcdWRkZTlcdWQ4M2NcdWRkZWEgfCA4Mi4xOTguMjQ2LjIzMy0xODAgfCA4Ljg1bXMiLCJzY3kiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
-ss://YWVzLTI1Ni1jZmI6ZGFGWWFncURkQmRBNlZUWA==@217.30.10.70:9073#%F0%9F%87%B5%F0%9F%87%B1PL-217.30.10.70-5905
-trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.140:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=185.137.157.140#%E6%9C%AA%E7%9F%A5_0626204583
-vless://15b84012-d261-4b4c-807a-061bb4a901fd@116.80.58.239:39975?encryption=none&flow=xtls-rprx-vision&pbk=qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY&security=reality&sni=cloudcircus.jp&type=tcp#🇺🇸 55 - US - VLESS/REALITY/PBK/VISION - 39975
-vless://8ca5cbd3-ec16-4728-bedc-2bc0d82f0922@fi.faygo.bot:443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=enterprisekitten.com&sid=6ba85179e30d4fc2#🇫🇮 297 - FI - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://94ad3f93-36e3-465f-b934-78554e7ec06a@45.11.26.234:8443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=edge&sni=wl-7-6.nodes.ac&pbk=QxW0nwrOXYHuEeL4PXObUDEackg-ebQ_9Vgl01IwsxM&sid=77173c666c84bec1#🇺🇸 325 - US - VLESS/REALITY/PBK/SID/VISION/UTLS - 8443
-vless://70252937-5c61-4fb0-8656-d1a16261b795@188.114.97.6:2096?path=/shalana&security=tls&encryption=none&insecure=0&host=group.shalana.xyz&type=ws&allowInsecure=0&sni=group.shalana.xyz#🇺🇸 244 - US - VLESS/WS/TLS - 2096
-vless://7d876627-abf5-4865-8ff4-03f37d49de5d@37.114.48.146:9443?encryption=none&flow=xtls-rprx-vision&fp=chrome&security=tls&sni=bero-3.bexum.fun&type=tcp#🇩🇪 266 - DE - VLESS/TLS/VISION/UTLS - 9443
-vless://b585dc5e-55bf-4a8b-913a-27c9ccac05c3@149.202.58.99:443?path=/vws/&security=tls&encryption=none&insecure=0&host=bab-6.site&fp=chrome&type=ws&allowInsecure=0&sni=bab-6.site#🇫🇷 390 - FR - VLESS/WS/TLS/UTLS - 443
-vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@144.31.241.7:8443?encryption=none&flow=xtls-rprx-vision&pbk=kt-3Y5U6yLWiLB_RijhceKo01lYAVosWRZbhS05YpCY&security=reality&sid=7d6203949764f921&sni=yourcloud.ldtp.com&type=tcp#🇵🇱 426 - PL - VLESS/REALITY/PBK/SID/VISION - 8443
-trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.151:443?security=tls&type=tcp&headerType=none&path=/&allow_insecure=0#🇺🇸 56 - US - Trojan/TLS - 443
-vless://f83d8e60-f039-45c8-95d2-2a44c59025f6@freetg.strettenvpn.com:9999?encryption=none&security=none&type=tcp#🇫🇮 539 - FI - VLESS - 9999
-trojan://humanity@104.18.152.229:443?path=/assignment&security=tls&alpn=http/1.1&insecure=0&host=www.calmloud.com&fp=chrome&type=ws&allowInsecure=0&sni=www.calmloud.com#🇺🇸 93 - US - Trojan/WS/TLS/UTLS - 443
-trojan://humanity@sourceforge.net:443?allowInsecure=1&alpn=http/1.1&host=www.calmloud.com&path=/assignment&sni=www.calmloud.com&type=ws#🇺🇸 164 - US - Trojan/WS/TLS - 443
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.189:8080#Server 203 🇳🇱
+vmess://eyJhZGQiOiI4NS45MC4yMTcuNDIiLCJwb3J0IjoiMjIzMjQiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidiI6IjIiLCJwcyI6Iuilv+ePreeJmV8wNjI3MDAwMDIiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A=@140.174.184.5:8388#ES%F0%9F%87%AA%F0%9F%87%B8+%7C+140.174.184.5-8388+%7C+157.53ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.204:8080#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+82.38.31.204-8080+%7C+140.6ms
+vmess://eyJhZGQiOiI2Ny4yMjAuNzIuMjM3IiwiYWlkIjoiMSIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsIm5ldCI6InRjcCIsInBhdGgiOiJcLyIsInBvcnQiOjIyMzI0LCJwcyI6IlVTXHVkODNjXHVkZGZhXHVkODNjXHVkZGY4IHwgNjcuMjIwLjcyLjIzNy0yMjMyNCB8IDQ2LjcybXMiLCJzY3kiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.194:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.194-0074
+vless://3571b127-4b3b-4c01-8249-1684daf586b5@149.248.79.235:17301?security=reality&encryption=none&pbk=nadshlxG0RqC6om__cf9E4F6qolRmHJLcNtReBTr9xY&type=grpc&sni=aws.amazon.com&sid=5d#🇬🇧 69 - GB - VLESS/GRPC/REALITY/PBK/SID - 17301
+vless://7e544a9d-7667-413b-bbb0-b3bb1aac6d77@172.67.74.2:443?ed=2048&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=shegeftihaaa.net&path=/rsedgws&security=tls&sni=shegeftihaaa.net&type=ws#🇨🇦 245 - CA - VLESS/WS/TLS/UTLS - 443
+trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.142:443?security=tls&sni=185.137.157.142&type=tcp&path=/#🇩🇪 53 - DE - Trojan/TLS - 443
+trojan://eeb6823c-b926-4ea2-866a-5542edd26e59@38.47.105.76:443?fp=chrome&host=tjsp.hhxaf.cc.cd&path=/&sni=tjsp.hhxaf.cc.cd&type=ws#🇯🇵 65 - JP - Trojan/WS/TLS/UTLS - 443
+vless://eeb6823c-b926-4ea2-866a-5542edd26e59@104.21.47.19:443?ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=t1s1.rittbo.kdns.fr&path=/&security=tls&sni=t1s1.rittbo.kdns.fr&type=ws#🇨🇦 501 - CA - VLESS/WS/TLS/UTLS - 443
+vless://eeb6823c-b926-4ea2-866a-5542edd26e59@cf.008500.xyz:443?allowInsecure=1&encryption=none&host=t1s1.rittbo.kdns.fr&path=/&security=tls&sni=t1s1.rittbo.kdns.fr&type=ws#🇺🇸 514 - US - VLESS/WS/TLS - 443
