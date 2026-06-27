@@ -4,15 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_ca48f_0002
-  server: 82.198.246.37
-  port: 180
+- name: US_b220b_0054
+  server: 104.253.134.92
+  port: 13932
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 010a6106-960a-4a3c-94d3-410a50c1219d
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: false
+  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: AUTO
@@ -20,6 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_ca48f_0002
+  - US_b220b_0054
 rules:
 - MATCH,AUTO
