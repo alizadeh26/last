@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: GB_f8315_0002
+- name: GB_dc183_0002
   server: 82.198.246.37
   port: 180
   type: vmess
@@ -20,18 +20,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_f8315_0002
+  - GB_dc183_0002
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_f8315_0002
+  - GB_dc183_0002
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - GB_f8315_0002
+  - GB_dc183_0002
 rules:
 - MATCH,AUTO
