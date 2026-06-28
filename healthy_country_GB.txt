@@ -1,17 +1,14 @@
 trojan://kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP@45.77.227.183:443#Server 36 🇬🇧
 vless://7e6a38f4-7150-4eff-ae68-579852357ddb@13.40.188.81:443?security=none&encryption=none&headerType=none&type=tcp#Server 75 🇬🇧
-vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InRjcCIsInYiOiIyIiwicHMiOiLnvo7lm71fMDYyODE2MDE3IiwiaG9zdCI6IiIsInBhdGgiOiIiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJSU14Rk15cTNGd3lQZDIxVUdXZ21OSkNBaVlOOW0ydk9v@91.108.254.252:18982#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+91.108.254.252-18982+%7C+164.37ms
+vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InRjcCIsInYiOiIyIiwicHMiOiLnvo7lm71fMDYyODE5MDE3IiwiaG9zdCI6IiIsInBhdGgiOiIiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnV0JnbUtiOEFMMXVSSzBqWjQ0QW9PUGFDNWxWVE9IWm1p@91.108.254.104:13683#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+91.108.254.104-13683+%7C+138.77ms
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.178-0073
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.179-443+%7C+143.77ms
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-0071
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.182:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.182-0083
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.24.73:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+158.173.24.73-443+%7C+139.31ms
-ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-0066
+ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+94.156.250.148-7001+%7C+138.08ms
 ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+146.70.61.37-8080+%7C+138.39ms
 vless://db1b568f-8847-42bf-84e5-a51e2e49a786@212.74.39.42:17524?encryption=none&security=none&type=tcp#🆔configfa%20🔓%20VL-TCP-N/A%20🇬🇧%20GB%2077ms
-vless://3571b127-4b3b-4c01-8249-1684daf586b5@149.248.79.235:17301?security=reality&encryption=none&pbk=nadshlxG0RqC6om__cf9E4F6qolRmHJLcNtReBTr9xY&type=grpc&sni=aws.amazon.com&sid=5d#🇬🇧 95 - GB - VLESS/GRPC/REALITY/PBK/SID - 17301
-vless://52faee73-e0fe-4661-992d-67259257170f@45.206.0.38:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=storage.yandex.net&fp=firefox&pbk=dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8&sid=ea10cd5686751ec5&type=tcp&headerType=none#🇺🇸 190 - US - VLESS/REALITY/PBK/SID/VISION/UTLS - 8443
-trojan://MITIVPN@164.38.155.135:443?security=tls&sni=95r.ir&alpn=http/1.1&type=ws&host=95r.ir&path=/MiTiVPN=De#🇬🇧 14 - GB - Trojan/WS/TLS - 443
-trojan://MiTiVPN@91.193.58.201:443?security=tls&sni=95r.ir&alpn=http/1.1&type=ws&host=95r.ir&path=/MiTiVPN=NL#🇬🇧 24 - GB - Trojan/WS/TLS - 443
+vless://3571b127-4b3b-4c01-8249-1684daf586b5@149.248.79.235:17301?security=reality&encryption=none&pbk=nadshlxG0RqC6om__cf9E4F6qolRmHJLcNtReBTr9xY&type=grpc&sni=aws.amazon.com&sid=5d#🇬🇧 73 - GB - VLESS/GRPC/REALITY/PBK/SID - 17301
+vless://52faee73-e0fe-4661-992d-67259257170f@45.206.0.44:8443?security=reality&encryption=none&pbk=dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=storage.yandex.net&sid=ea10cd5686751ec5#🇺🇸 181 - US - VLESS/REALITY/PBK/SID/VISION/UTLS - 8443
+trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=NL&security=tls&alpn=http/1.1&insecure=0&host=95r.ir&fp=firefox&type=ws&allowInsecure=0&sni=95r.ir#🇬🇧 22 - GB - Trojan/WS/TLS/UTLS - 443
