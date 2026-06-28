@@ -2,9 +2,9 @@ trojan://hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey@38.60.136.156:443#Server 50 🇫🇷
 trojan://Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD@38.60.168.129:443?security=tls#Server 149 🇲🇾
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkaU9NQlU1SUR2SmNGcXlOUGJSallS@137.74.119.18:10443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+137.74.119.18-10443+%7C+183.22ms
 vless://1f4c983e-382c-d2fa-b2dc-7981f02b34de@62.60.155.0:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=YD3G553bQP0uWuyYDY9ZvhLCmfF9tmKUo8MRuALEFUw&security=reality&sid=deee73&sni=telegraph.co.uk&type=tcp#REALITY|IR🇮🇷
-vless://25f86cb1-2140-4085-abcb-c3a0ea7a4be0@ov-france1.09vpn.com:80?encryption=none&path=/vless/&security=none&type=ws#🇫🇷 47 - FR - VLESS/WS - 80
-vless://55f7d143-a594-4a91-b030-f227039f85ef@79.127.196.11:8443?type=tcp&encryption=none&security=tls&sni=cdg-1.fromblancwithlove.com&alpn=h2&allowInsecure=1#🇺🇸 140 - US - VLESS/TLS - 8443
-vless://b585dc5e-55bf-4a8b-913a-27c9ccac05c3@149.202.58.99:443?path=/vws/&security=tls&encryption=none&insecure=0&host=bab-6.site&fp=chrome&type=ws&allowInsecure=0&sni=bab-6.site#🇫🇷 323 - FR - VLESS/WS/TLS/UTLS - 443
-vless://d61b4e1b-4745-484f-8362-18537825a7af@194.164.217.139:448?encryption=none&security=reality&sni=www.samsung.com&fp=chrome&pbk=fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo&sid=05fdaa8a05be46a9&type=tcp&headerType=none#🇫🇷 360 - FR - VLESS/REALITY/PBK/SID/UTLS - 448
-vless://eb77be10-9d9e-527b-a78d-8caaf58992d6@45.13.119.219:8888?encryption=none&security=none&type=tcp#🇫🇷 405 - FR - VLESS - 8888
-trojan://humanity@81.255.155.10:443?host=www.creationlong.org&path=/assignment&sni=www.creationlong.org&type=ws#🇫🇷 182 - FR - Trojan/WS/TLS - 443
+vless://55f7d143-a594-4a91-b030-f227039f85ef@79.127.196.11:8443?type=tcp&encryption=none&security=tls&sni=cdg-1.fromblancwithlove.com&alpn=h2&allowInsecure=1#🇫🇷 145 - FR - VLESS/TLS - 8443
+vless://7bd180e8-1142-4387-93f5-03e8d750a896@62.210.172.147:443?encryption=none&host=python-graysongon.wasmer.app&path=/7bd180e8&security=tls&sni=python-graysongon.wasmer.app&type=ws#🇫🇷 201 - FR - VLESS/WS/TLS - 443
+vless://b585dc5e-55bf-4a8b-913a-27c9ccac05c3@149.202.58.99:443?path=/vws/&security=tls&encryption=none&insecure=0&host=bab-6.site&fp=chrome&type=ws&allowInsecure=0&sni=bab-6.site#🇺🇸 352 - US - VLESS/WS/TLS/UTLS - 443
+vless://d61b4e1b-4745-484f-8362-18537825a7af@194.164.217.139:448?encryption=none&security=reality&sni=www.samsung.com&fp=chrome&pbk=fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo&sid=05fdaa8a05be46a9&type=tcp&headerType=none#🇫🇷 392 - FR - VLESS/REALITY/PBK/SID/UTLS - 448
+vless://eb77be10-9d9e-527b-a78d-8caaf58992d6@45.13.119.219:8888?encryption=none&security=none&type=tcp#🇫🇷 433 - FR - VLESS - 8888
+trojan://humanity@81.255.155.10:443?host=www.creationlong.org&path=/assignment&sni=www.creationlong.org&type=ws#🇺🇸 195 - US - Trojan/WS/TLS - 443
