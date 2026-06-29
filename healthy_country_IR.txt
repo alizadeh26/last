@@ -1,2 +1,2 @@
-trojan://MiTiVPN@45.131.4.118:443?security=tls&sni=95r.ir&alpn=http/1.1&type=ws&host=95r.ir&path=/MiTiVPN=Se#🇺🇸 29 - US - Trojan/WS/TLS - 443
-trojan://humanity@2.144.21.112:40443?security=tls&sni=www.ignitelimit.com&type=ws&host=www.ignitelimit.com&path=/assignment&allowInsecure=1#🇮🇷 168 - IR - Trojan/WS/TLS - 40443
+trojan://MiTiVPN@45.131.4.118:443?path=/MiTiVPN=Se&security=tls&insecure=0&host=95r.ir&type=ws&allowInsecure=0&sni=95r.ir#🇧🇿 30 - BZ - Trojan/WS/TLS - 443
+trojan://humanity@2.144.21.112:40443?security=tls&sni=www.ignitelimit.com&type=ws&host=www.ignitelimit.com&path=/assignment&allowInsecure=1#🇮🇷 163 - IR - Trojan/WS/TLS - 40443
