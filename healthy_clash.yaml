@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: DE_3037e_0003
+- name: DE_1cc0e_0003
   server: 5.230.184.16
   port: 443
   type: ss
@@ -17,18 +17,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_3037e_0003
+  - DE_1cc0e_0003
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_3037e_0003
+  - DE_1cc0e_0003
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - DE_3037e_0003
+  - DE_1cc0e_0003
 rules:
 - MATCH,AUTO
