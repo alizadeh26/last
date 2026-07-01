@@ -3,7 +3,52 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: silent
-proxies: []
-proxy-groups: []
+proxies:
+- name: 🇺🇸 美国 | USA
+  server: 162.159.48.193
+  port: 8880
+  type: vless
+  uuid: 905d0e1f-4067-4a30-9c05-c64352faea62
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: divine-mode-93ad.46-54e.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 104.16.106.213
+  port: 8880
+  type: vless
+  uuid: e43ca713-a646-4406-a4d5-1e7bad20e7da
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: autumn-snow-735a.175-9d9.workers.dev
+  udp: true
+proxy-groups:
+- name: AUTO
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 4
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 4
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO

@@ -1,15 +1,21 @@
-vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InRjcCIsInYiOiIyIiwicHMiOiLnvo7lm71fMDcwMTEwMDEwIiwiaG9zdCI6IiIsInBhdGgiOiIiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IvCfh7rwn4e4IFVTIn0=
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVWlFZOWhOalZOV3dhbWFqclhBZjF2dDh1NjNuajBmRg==@141.133.175.194:8388#CZ%F0%9F%87%A8%F0%9F%87%BF+%7C+141.133.175.194-8388+%7C+121.94ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJSU14Rk15cTNGd3lQZDIxVUdXZ21OSkNBaVlOOW0ydk9v@91.108.254.252:18982#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+91.108.254.252-18982+%7C+91.29ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnV0JnbUtiOEFMMXVSSzBqWjQ0QW9PUGFDNWxWVE9IWm1p@91.108.254.104:13683#%F0%9F%87%AC%F0%9F%87%A7GB-91.108.254.104-2410
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.178-0136
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.179-0140
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.181-443+%7C+99.96ms
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.182:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.182-0131
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.24.73:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+158.173.24.73-443+%7C+90.9ms
-ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#%F0%9F%87%AC%F0%9F%87%A7GB-146.70.61.37-0074
-ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-0112
-vless://a6704fb4-4874-4e6b-98f4-571b048e3d90@31.77.161.2:8443?security=reality&encryption=none&pbk=4XxjInQuDp4SqaYF03yQ1VY61exkKi9e0RS5-kgyxAE&headerType=none&fp=chrome&type=tcp&sni=prod.de-node-01.security-sbrf.ru&sid=db04ce8bdb8900f1#🆔v2ray1_ng%20🔒%20VL-TCP-%20🇬🇧%20GB%20148ms
-vless://0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c@91.193.58.77:443?alpn=networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-&encryption=none&fp=chrome&host=unnes.ac.id.yxls.eu.cc&path=/ca-cl&security=tls&sni=unnes.ac.id.yxls.eu.cc&type=ws#🇬🇧 34 - GB - VLESS/WS/TLS/UTLS - 443
-vless://3571b127-4b3b-4c01-8249-1684daf586b5@149.248.79.235:17301?security=reality&encryption=none&pbk=nadshlxG0RqC6om__cf9E4F6qolRmHJLcNtReBTr9xY&type=grpc&sni=aws.amazon.com&sid=5d#🇬🇧 106 - GB - VLESS/GRPC/REALITY/PBK/SID - 17301
-vless://52faee73-e0fe-4661-992d-67259257170f@45.206.0.44:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=storage.yandex.net&fp=firefox&pbk=dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8&sid=ea10cd5686751ec5&type=tcp&headerType=none#🇬🇧 213 - GB - VLESS/REALITY/PBK/SID/VISION/UTLS - 8443
+trojan://LSS6HLnp7IeEEJUcox@uk-1.tr202607.com:443?type=tcp&security=tls&headerType=none&allowInsecure=1#Server 27 🇬🇧
+vless://810b8ba9-3232-42ac-a474-3e921fdc8845@gbw40.moyvpns.com:443?alpn=h2&encryption=none&fp=firefox&security=tls&serviceName=grpc-api&sni=gbw40.moyvpns.com&type=grpc#Server 35 🇬🇧
+vless://810b8ba9-3232-42ac-a474-3e921fdc8845@gb7.univesalsrv.com:443?mode=gun&security=tls&alpn=h2&encryption=none&insecure=0&fp=firefox&type=grpc&serviceName=mobile.api.Event&allowInsecure=0&sni=gb7.univesalsrv.com#Server 42 🇬🇧
+vless://7e6a38f4-7150-4eff-ae68-579852357ddb@13.40.188.81:443?security=none&encryption=none&headerType=none&type=tcp#Server 10 🇬🇧
+vless://810b8ba9-3232-42ac-a474-3e921fdc8845@gbw40.moyvpns.com:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&encryption=none&security=tls&sni=&alpn=h2&fp=chrome&type=grpc&authority=&serviceName=grpc-api&mode=gun#Server 107 🇬🇧
+vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InRjcCIsInYiOiIyIiwicHMiOiLnvo7lm71fMDcwMTE2MDExIiwiaG9zdCI6IiIsInBhdGgiOiIiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IvCfh7rwn4e4IFVTIn0=
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJSU14Rk15cTNGd3lQZDIxVUdXZ21OSkNBaVlOOW0ydk9v@91.108.254.252:18982#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+91.108.254.252-18982+%7C+92.49ms
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.178-0184
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.179-0186
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-0188
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.182:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.182-443+%7C+99.1ms
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.24.73:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+158.173.24.73-443+%7C+94.98ms
+ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#%F0%9F%87%AC%F0%9F%87%A7GB-146.70.61.37-0128
+ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+94.156.250.148-7001+%7C+94.18ms
+vless://0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c@91.193.58.77:443?alpn=networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-&encryption=none&fp=chrome&host=unnes.ac.id.yxls.eu.cc&path=/ca-cl&security=tls&sni=unnes.ac.id.yxls.eu.cc&type=ws#🇬🇧 36 - GB - VLESS/WS/TLS/UTLS - 443
+vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@57.128.176.87:443?encryption=none&fp=chrome&host=vpn47.cc.cd&path=/&security=tls&sni=vpn47.cc.cd&type=ws#🇺🇸 28 - US - VLESS/WS/TLS/UTLS - 443
+vless://4a836d89-0655-4c77-9702-b47219afaa5d@eng.wizardx1.com:2040?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&host=www.yahoo.com&headerType=none&fp=chrome&type=tcp&sni=play.google.com#🇬🇧 115 - GB - VLESS/REALITY/PBK/UTLS - 2040
+vless://52faee73-e0fe-4661-992d-67259257170f@45.206.0.38:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=storage.yandex.net&fp=firefox&pbk=dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8&sid=ea10cd5686751ec5&type=tcp&headerType=none#🇬🇧 138 - GB - VLESS/REALITY/PBK/SID/VISION/UTLS - 8443
+vless://527561c6-bed1-44c5-8404-f322fbf7ced2@uk.lizardshop.org:2053?mode=gun&security=reality&encryption=none&pbk=r44-29dhInxzD-1JIMYuQMrbhieWsLm00BEHXn-6ggg&fp=chrome&type=grpc&serviceName=xyz&sni=play.google.com&sid=6ba85179e30d4fc2#🇬🇧 137 - GB - VLESS/GRPC/REALITY/PBK/SID/UTLS - 2053
+trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=NL&fp=firefox&sni=PioHosting.ir&type=ws&insecure=0&alpn=http/1.1&security=tls&allowInsecure=0&host=PioHosting.ir#🇬🇧 22 - GB - Trojan/WS/TLS/UTLS - 443
+trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&sni=PioHosting.ir&fp=firefox&type=ws&insecure=0&alpn=http/1.1&security=tls&allowInsecure=0&host=PioHosting.ir#🇬🇧 23 - GB - Trojan/WS/TLS/UTLS - 443
