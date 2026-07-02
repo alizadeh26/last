@@ -1,2 +1,2 @@
 trojan://ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed@38.60.202.163:443?security=tls&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=38.60.202.163#Server 85 🇦🇪
-trojan://MITIVPN@94.140.0.40:443?security=tls&sni=Usa.App-Cloud.ir&alpn=http/1.1&type=ws&host=Usa.App-Cloud.ir&path=/MiTiVPN=Usa#🇦🇪 16 - AE - Trojan/WS/TLS - 443
+trojan://MITIVPN@94.140.0.40:443?path=/MiTiVPN=Usa&security=tls&alpn=http/1.1&insecure=0&host=Usa.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=Usa.App-Cloud.ir#🇦🇪 14 - AE - Trojan/WS/TLS/UTLS - 443
