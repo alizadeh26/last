@@ -1,2 +1,1 @@
-vless://d9307ab3-1ed0-4b6d-bfd0-e104c7ccc25a@193.176.240.129:8880/?type=ws&encryption=none&flow=&host=azsv2.ir5ive.ir&path=%2F#Server 24 🇧🇬
-trojan://humanity@2.144.21.112:40443?path=/assignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#🇮🇷 130 - IR - Trojan/WS/TLS - 40443
+trojan://humanity@2.144.21.112:40443?security=tls&sni=www.ignitelimit.com&type=ws&host=www.ignitelimit.com&path=/assignment&allowInsecure=1#🏳️ 134 - XX - Trojan/WS/TLS - 40443
