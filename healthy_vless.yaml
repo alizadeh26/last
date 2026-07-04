@@ -4,29 +4,76 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
-  server: 162.159.48.193
-  port: 8880
+- name: 🇳🇱 荷兰 | NLD
+  server: 172.67.196.16
+  port: 8080
   type: vless
-  uuid: 905d0e1f-4067-4a30-9c05-c64352faea62
+  uuid: 6caab115-c88f-4e8b-bdab-d66865b681c8
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /
     headers:
-      Host: divine-mode-93ad.46-54e.workers.dev
+      Host: zeus-panel-6bt45h.ftgwyie7w8321.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 45.74.159.146
+  port: 32845
+  type: vless
+  uuid: 31ed0ed1-746a-46aa-bb54-7a3c30b90c3e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
   udp: true
 - name: 🇺🇸 美国 | USA 4
-  server: 104.16.106.213
+  server: www.gov.ua
   port: 8880
   type: vless
-  uuid: e43ca713-a646-4406-a4d5-1e7bad20e7da
+  uuid: da5ff974-c135-4b57-a0ff-53dd2502e71e
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: autumn-snow-735a.175-9d9.workers.dev
+      Host: long-smoke-b6cb.290-cd1.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: www.gov.ua
+  port: 8880
+  type: vless
+  uuid: 34ce8760-24ed-41e7-a1f5-aa6c2660a53c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: quiet-frost-ac61.333-07d.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 104.24.152.211
+  port: 8880
+  type: vless
+  uuid: 34ce8760-24ed-41e7-a1f5-aa6c2660a53c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: quiet-frost-ac61.333-07d.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 172.67.188.126
+  port: 80
+  type: vless
+  uuid: 21688283-27f0-4428-accc-26b372585053
+  tls: false
+  servername: zeus-panel-2oxlxt.kingworker121212121peekconfig.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zeus-panel-2oxlxt.kingworker121212121peekconfig.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -34,7 +81,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 4
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
