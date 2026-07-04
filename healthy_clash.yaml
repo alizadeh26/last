@@ -11,35 +11,6 @@ proxies:
   cipher: aes-256-gcm
   password: 2803361d6c196af8
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 88.218.170.50
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f9vrSj-T8Nc3wuRuWCp9Rg
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 172.67.196.16
-  port: 8080
-  type: vless
-  uuid: 6caab115-c88f-4e8b-bdab-d66865b681c8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zeus-panel-6bt45h.ftgwyie7w8321.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 45.74.159.146
-  port: 32845
-  type: vless
-  uuid: 31ed0ed1-746a-46aa-bb54-7a3c30b90c3e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: www.gov.ua
   port: 8880
@@ -52,42 +23,22 @@ proxies:
     headers:
       Host: long-smoke-b6cb.290-cd1.workers.dev
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: www.gov.ua
-  port: 8880
-  type: vless
-  uuid: 34ce8760-24ed-41e7-a1f5-aa6c2660a53c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: quiet-frost-ac61.333-07d.workers.dev
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 88.218.170.50
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f9vrSj-T8Nc3wuRuWCp9Rg
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 104.24.152.211
-  port: 8880
+- name: 🇺🇸 美国 | USA
+  server: 45.74.159.146
+  port: 32845
   type: vless
-  uuid: 34ce8760-24ed-41e7-a1f5-aa6c2660a53c
+  uuid: 31ed0ed1-746a-46aa-bb54-7a3c30b90c3e
   tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: quiet-frost-ac61.333-07d.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 172.67.188.126
-  port: 80
-  type: vless
-  uuid: 21688283-27f0-4428-accc-26b372585053
-  tls: false
-  servername: zeus-panel-2oxlxt.kingworker121212121peekconfig.workers.dev
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: zeus-panel-2oxlxt.kingworker121212121peekconfig.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -96,13 +47,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇪🇬 埃及 | EGY
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 4
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 2
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -115,12 +62,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 4
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA
 - name: REGION-AF
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -138,6 +81,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
