@@ -1,15 +1,12 @@
-trojan://t=59N=Mo9Mri3fydoIizU9vBbePqKilHij@78.141.232.96:443?type=tcp&security=tls#%E8%8B%B1%E5%9B%BD_070419941
-trojan://t=59N=Mo9Mri3fydoIizU9vBbePqKilHij@192.248.173.25:443?type=tcp&security=tls#%E8%8B%B1%E5%9B%BD_070419942
-trojan://t=59N=Mo9Mri3fydoIizU9vBbePqKilHij@45.32.176.168:443?type=tcp&security=tls#%E8%8B%B1%E5%9B%BD_070419943
+vless://ae1c12b0-df98-5f76-9adc-bd3380a3dbbd@72.62.211.211:80?encryption=none&host=pay.google.com&path=/telegramSoonTeam&security=none&type=ws#Server 37 🇬🇧
 vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InRjcCIsInYiOiIyIiwicHMiOiLnvo7lm71fMDcwNDE5MDIyIiwiaG9zdCI6IiIsInBhdGgiOiIiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.178-0136
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.179-0124
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-0126
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.182:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.182-443+%7C+141.42ms
-ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-0122
+trojan://t=59N=Mo9Mri3fydoIizU9vBbePqKilHij@192.248.173.25:443?type=tcp&security=tls#%E8%8B%B1%E5%9B%BD_070419942
+trojan://t=59N=Mo9Mri3fydoIizU9vBbePqKilHij@78.141.232.96:443?type=tcp&security=tls#%E8%8B%B1%E5%9B%BD_070419941
+trojan://t=59N=Mo9Mri3fydoIizU9vBbePqKilHij@45.32.176.168:443?type=tcp&security=tls#%E8%8B%B1%E5%9B%BD_070419943
+ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+94.156.250.148-7001+%7C+133.54ms
 ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#%F0%9F%87%AC%F0%9F%87%A7GB-146.70.61.37-0064
-vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@104.248.173.190:443?sni=vpn47.cc.cd&allowInsecure=0&type=ws&path=/&fp=chrome&host=vpn47.cc.cd&security=tls&insecure=0&encryption=none#🇬🇧 22 - GB - VLESS/WS/TLS/UTLS - 443
-vless://0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c@91.193.58.77:443?alpn=networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-&encryption=none&fp=chrome&host=unnes.ac.id.yxls.eu.cc&path=/ca-cl&security=tls&sni=unnes.ac.id.yxls.eu.cc&type=ws#🇺🇸 56 - US - VLESS/WS/TLS/UTLS - 443
+vless://a6704fb4-4874-4e6b-98f4-571b048e3d90@31.77.161.2:8443?security=reality&encryption=none&pbk=4XxjInQuDp4SqaYF03yQ1VY61exkKi9e0RS5-kgyxAE&headerType=none&fp=chrome&type=tcp&sni=prod.de-node-01.security-sbrf.ru&sid=db04ce8bdb8900f1#🆔soskeynet%20🔒%20VL-TCP-%20🇬🇧%20GB%20down
+vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@104.248.173.190:443?path=/&security=tls&encryption=none&insecure=0&host=vpn47.cc.cd&fp=chrome&type=ws&allowInsecure=0&sni=vpn47.cc.cd#🇬🇧 21 - GB - VLESS/WS/TLS/UTLS - 443
 vless://367ff772-a8f4-4895-8e99-3702a868f0c6@gbos2.osvp.online:443?encryption=none&fp=chrome&security=tls&serviceName=grpc-api&sni=gbos2.osvp.online&type=grpc#🇬🇧 112 - GB - VLESS/GRPC/TLS/UTLS - 443
 vless://52faee73-e0fe-4661-992d-67259257170f@45.206.0.38:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=storage.yandex.net&fp=firefox&pbk=dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8&sid=ea10cd5686751ec5&type=tcp&headerType=none#🇬🇧 160 - GB - VLESS/REALITY/PBK/SID/VISION/UTLS - 8443
 vless://564397f8-4805-4433-ab5b-a24aa133bac2@app.oneoker.com:443?encryption=none&security=reality&sni=app.oneoker.com&fp=chrome&pbk=AmAdR0vhSJczokH8dMt81F-6BGFyKPtBwuxqbuPlyAk&sid=1c63aa937542d3c0&type=grpc&serviceName=api.v1.StreamService&mode=gun#🇬🇧 178 - GB - VLESS/GRPC/REALITY/PBK/SID/UTLS - 443
