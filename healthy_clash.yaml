@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇺🇸 美国 | USA
+  server: 3.15.193.107
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇨🇦 加拿大 | CAN
   server: c87s5.portablesubmarines.com
   port: 18339
@@ -33,6 +40,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇺🇸 美国 | USA
   - 🇨🇦 加拿大 | CAN
   - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR
@@ -41,6 +49,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇺🇸 美国 | USA
   - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR
 - name: PROTO-VMESS
@@ -56,6 +65,11 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇫🇷 法国 | FRA
-  - 🇬🇧 英国 | GBR
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

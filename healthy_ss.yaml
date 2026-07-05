@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇺🇸 美国 | USA
+  server: 3.15.193.107
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇫🇷 法国 | FRA
   server: 35.180.229.83
   port: 443
@@ -24,6 +31,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇺🇸 美国 | USA
   - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR
 rules:
