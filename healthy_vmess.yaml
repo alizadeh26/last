@@ -4,15 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: US_b220b_0054
-  server: 104.253.134.92
-  port: 13932
+- name: 🇨🇦 加拿大 | CAN
+  server: c87s5.portablesubmarines.com
+  port: 18339
   type: vmess
-  uuid: 010a6106-960a-4a3c-94d3-410a50c1219d
+  uuid: 3cd9077d-76f7-4104-bd82-eb6916b89d43
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: AUTO
@@ -20,6 +19,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - US_b220b_0054
+  - 🇨🇦 加拿大 | CAN
 rules:
 - MATCH,AUTO
