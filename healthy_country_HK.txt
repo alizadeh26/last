@@ -1,2 +1,1 @@
-vless://f978f967-5726-42f1-e023-58e0b01abb93@103.252.119.61:45678/?type=tcp&encryption=none#Server 148 🇭🇰
-trojan://PI36027154@moved-osprey.rooster465.autos:443?security=tls&sni=moved-osprey.rooster465.autos&type=tcp&headerType=none&path=/&allow_insecure=0#🇭🇰 44 - HK - Trojan/TLS - 443
+trojan://PI36027154@moved-osprey.rooster465.autos:443?allowInsecure=0&sni=moved-osprey.rooster465.autos#🇺🇸 41 - US - Trojan/TLS - 443
