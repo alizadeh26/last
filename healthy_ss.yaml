@@ -11,6 +11,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: tinkered-pennies-puppies.freesocks.work
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -18,5 +25,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO
