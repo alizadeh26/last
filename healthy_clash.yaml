@@ -4,19 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
-  server: tinkered-pennies-puppies.freesocks.work
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  udp: true
 - name: 🇫🇮 芬兰 | FIN
   server: 109.107.182.229
   port: 51544
   type: ss
   cipher: chacha20-ietf-poly1305
   password: x3ZJXCnqxaoaAIrrkfoaNB
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: tinkered-pennies-puppies.freesocks.work
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: hbGrpfvNrJsUmKmPbR3iY2
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: r3mrcg001286ek2.cybervena.com
@@ -31,16 +31,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
   - 🇫🇮 芬兰 | FIN
+  - 🇺🇸 美国 | USA
   - 🇹🇼 🇨🇳 台湾 | TWN
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
   - 🇫🇮 芬兰 | FIN
+  - 🇺🇸 美国 | USA
   - 🇹🇼 🇨🇳 台湾 | TWN
 - name: REGION-AS
   type: url-test
