@@ -11,12 +11,19 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: hbGrpfvNrJsUmKmPbR3iY2
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: mail2.thirdpaull.monster
-  port: 57327
+- name: 🇫🇮 芬兰 | FIN
+  server: 109.107.182.229
+  port: 51544
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 2KAu9eMmGwShWTWcuyynmLE81PVkoKDvQ3fb29dPScc1bMUW5y6hpprXqVWqSqjTi234hFGdDf3ArCuWtBw5FA6zV5wBgWTP
+  password: x3ZJXCnqxaoaAIrrkfoaNB
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +32,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA
-  - 🇬🇧 英国 | GBR
+  - 🇫🇮 芬兰 | FIN
+  - 🇹🇼 🇨🇳 台湾 | TWN
 rules:
 - MATCH,AUTO
