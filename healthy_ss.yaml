@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇮 芬兰 | FIN
-  server: 109.107.182.229
-  port: 51544
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 72FligLnSYd0rNQ4WE1y7x
-  udp: true
 - name: 🇺🇸 美国 | USA
   server: tinkered-pennies-puppies.freesocks.work
   port: 443
@@ -18,13 +11,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: hbGrpfvNrJsUmKmPbR3iY2
   udp: true
+- name: 🇫🇮 芬兰 | FIN
+  server: 109.107.182.229
+  port: 51544
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 72FligLnSYd0rNQ4WE1y7x
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 | FIN
   - 🇺🇸 美国 | USA
+  - 🇫🇮 芬兰 | FIN
 rules:
 - MATCH,AUTO
