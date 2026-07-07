@@ -11,13 +11,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: hbGrpfvNrJsUmKmPbR3iY2
   udp: true
-- name: 🇫🇮 芬兰 | FIN
-  server: 109.107.182.229
-  port: 51544
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 72FligLnSYd0rNQ4WE1y7x
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -25,6 +18,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA
-  - 🇫🇮 芬兰 | FIN
 rules:
 - MATCH,AUTO
