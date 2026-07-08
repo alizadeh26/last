@@ -11,6 +11,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: hbGrpfvNrJsUmKmPbR3iY2
   udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 3.147.78.9
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -18,5 +25,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
