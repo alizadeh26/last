@@ -1,8 +1,8 @@
-trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.135:443?type=trojan&security=tls#Server 11 🇩🇪	dl_kib_s=1661	ul_kib_s=1551
-vless://16e7c88d-3967-484a-ba2a-1c5ba1d74f62@93.127.160.203:610/?type=tcp&encryption=none&flow=#Server 3 🇩🇪	dl_kib_s=1671	ul_kib_s=1495
-vless://16e7c88d-3967-484a-ba2a-1c5ba1d74f62@93.127.160.203:610?security=none&type=tcp&headerType=&path=&host=#Server 6 🇩🇪	dl_kib_s=1671	ul_kib_s=1467
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.32:443#Server 8 🇳🇱	dl_kib_s=1548	ul_kib_s=1427
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#Server 5 🇳🇱	dl_kib_s=1540	ul_kib_s=1417
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.215:8080#Server 4 🇳🇱	dl_kib_s=1326	ul_kib_s=1314
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.203:8080#Server 7 🇳🇱	dl_kib_s=1471	ul_kib_s=1086
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.3:8080#Server 2 🇳🇱	dl_kib_s=919	ul_kib_s=1406
+vless://16e7c88d-3967-484a-ba2a-1c5ba1d74f62@93.127.160.203:610/?type=tcp&encryption=none&flow=#Server 3 🇩🇪	dl_kib_s=1479	ul_kib_s=1306
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.195:8080#Server 1 🇳🇱	dl_kib_s=1380	ul_kib_s=1275
+vless://16e7c88d-3967-484a-ba2a-1c5ba1d74f62@93.127.160.203:610?security=none&type=tcp&headerType=&path=&host=#Server 6 🇩🇪	dl_kib_s=1389	ul_kib_s=1219
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#Server 5 🇳🇱	dl_kib_s=1338	ul_kib_s=1240
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.32:443#Server 8 🇳🇱	dl_kib_s=1332	ul_kib_s=1213
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.203:8080#Server 7 🇳🇱	dl_kib_s=1075	ul_kib_s=1166
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.215:8080#Server 4 🇳🇱	dl_kib_s=823	ul_kib_s=1281
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.3:8080#Server 2 🇳🇱	dl_kib_s=882	ul_kib_s=1197

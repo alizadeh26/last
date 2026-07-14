@@ -4,18 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 4
-  server: www.gov.ua
-  port: 8880
-  type: vless
-  uuid: 767c5a66-bd28-440a-90c8-7ae1101a0172
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: still-voice-1adc.135-275.workers.dev
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: support.zoom.us
   port: 80
@@ -34,7 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
   - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO

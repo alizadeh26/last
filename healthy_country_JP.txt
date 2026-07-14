@@ -4,3 +4,4 @@ trojan://PI36027154@exciting-grizzly.rooster465.autos:443?security=tls&sni=excit
 trojan://PI36027154@busy-lab.rooster465.autos:443?security=tls&sni=busy-lab.rooster465.autos#%E6%97%A5%E6%9C%AC_071419008
 vless://e258977b-e413-4718-a3af-02d75492c349@64.176.42.196:10443?alpn=http/1.1&ed=2095&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=ww1.aniuge.qzz.io&path=/&security=tls&sni=ww1.aniuge.qzz.io&type=ws#🇯🇵 450 - JP - VLESS/WS/TLS/UTLS - 10443
 vless://e258977b-e413-4718-a3af-02d75492c349@84.247.152.29:8443?alpn=http/1.1&ed=2095&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=ww1.aniuge.qzz.io&path=/&security=tls&sni=ww1.aniuge.qzz.io&type=ws#🇯🇵 451 - JP - VLESS/WS/TLS/UTLS - 8443
+trojan://tsuchiya@aa.ccmusic.jp:443?security=tls&type=tcp&headerType=none&path=/#🇺🇸 228 - US - Trojan/TLS - 443
