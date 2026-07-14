@@ -1,5 +1,8 @@
-vless://16e7c88d-3967-484a-ba2a-1c5ba1d74f62@93.127.160.203:610/?type=tcp&encryption=none&flow=#Server 3 🇩🇪	dl_kib_s=1370	ul_kib_s=1201
-vless://16e7c88d-3967-484a-ba2a-1c5ba1d74f62@93.127.160.203:610?security=none&type=tcp&headerType=&path=&host=#Server 6 🇩🇪	dl_kib_s=1344	ul_kib_s=1183
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.215:8080#Server 4 🇳🇱	dl_kib_s=1194	ul_kib_s=1107
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.32:443#Server 8 🇳🇱	dl_kib_s=1172	ul_kib_s=1060
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.3:8080#Server 2 🇳🇱	dl_kib_s=839	ul_kib_s=1061
+trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.135:443?type=trojan&security=tls#Server 11 🇩🇪	dl_kib_s=1661	ul_kib_s=1551
+vless://16e7c88d-3967-484a-ba2a-1c5ba1d74f62@93.127.160.203:610/?type=tcp&encryption=none&flow=#Server 3 🇩🇪	dl_kib_s=1671	ul_kib_s=1495
+vless://16e7c88d-3967-484a-ba2a-1c5ba1d74f62@93.127.160.203:610?security=none&type=tcp&headerType=&path=&host=#Server 6 🇩🇪	dl_kib_s=1671	ul_kib_s=1467
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.32:443#Server 8 🇳🇱	dl_kib_s=1548	ul_kib_s=1427
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#Server 5 🇳🇱	dl_kib_s=1540	ul_kib_s=1417
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.215:8080#Server 4 🇳🇱	dl_kib_s=1326	ul_kib_s=1314
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.203:8080#Server 7 🇳🇱	dl_kib_s=1471	ul_kib_s=1086
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.3:8080#Server 2 🇳🇱	dl_kib_s=919	ul_kib_s=1406

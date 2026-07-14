@@ -1,9 +1,6 @@
-trojan://PI36027154@stirred-buck.rooster465.autos:443?security=tls&sni=stirred-buck.rooster465.autos#%E6%97%A5%E6%9C%AC_071415007
-vmess://eyJhZGQiOiIxNDAuODMuNTEuMTYxIiwicG9ydCI6IjI1Njg2IiwiaWQiOiI2NzMzYzM1Ny1iYTExLTRlOWYtZjAwZi03ZDg3ZjI3NzZmZjkiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidiI6IjIiLCJwcyI6IuaXpeacrF8wNzE0MTUwMDUiLCJob3N0IjoianAwMi5hMGEueHl6IiwicGF0aCI6Ii9jY3R2MTMubTN1OCIsInRscyI6IiIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
-trojan://PI36027154@faithful-clam.rooster465.autos:443?security=tls&sni=faithful-clam.rooster465.autos#%E6%97%A5%E6%9C%AC_071415008
-trojan://PI36027154@exciting-grizzly.rooster465.autos:443?security=tls&sni=exciting-grizzly.rooster465.autos#%E6%97%A5%E6%9C%AC_071415009
-trojan://PI36027154@busy-lab.rooster465.autos:443?security=tls&sni=busy-lab.rooster465.autos#%E6%97%A5%E6%9C%AC_071415010
-vmess://eyJhZGQiOiIxNjEuMzMuMTM5LjEzOCIsInBvcnQiOiI1ODkwNSIsImlkIjoiMTYxMGY4ZGMtMDY2MS00MDMyLWFjNmEtYTcyNTA2MDNmNjA4IiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInYiOiIyIiwicHMiOiLnvo7lm71fMDcxNDE1MDQ1IiwiaG9zdCI6IjE2MS4zMy4xMzkuMTM4IiwicGF0aCI6Ii8xNjEwZjhkYy0wNjYxLTQwMzItYWM2YS1hNzI1MDYwM2Y2MDgtdm0iLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoiYXV0byIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
-vless://e258977b-e413-4718-a3af-02d75492c349@64.176.42.196:10443?alpn=http/1.1&ed=2095&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=ww1.aniuge.qzz.io&path=/&security=tls&sni=ww1.aniuge.qzz.io&type=ws#🇯🇵 430 - JP - VLESS/WS/TLS/UTLS - 10443
-vless://e258977b-e413-4718-a3af-02d75492c349@84.247.152.29:8443?alpn=http/1.1&ed=2095&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=ww1.aniuge.qzz.io&path=/&security=tls&sni=ww1.aniuge.qzz.io&type=ws#🇯🇵 431 - JP - VLESS/WS/TLS/UTLS - 8443
-trojan://tsuchiya@aa.ccmusic.jp:443?security=tls&type=tcp&headerType=none&path=/#🇯🇵 227 - JP - Trojan/TLS - 443
+trojan://PI36027154@stirred-buck.rooster465.autos:443?security=tls&sni=stirred-buck.rooster465.autos#%E6%97%A5%E6%9C%AC_071419005
+trojan://PI36027154@faithful-clam.rooster465.autos:443?security=tls&sni=faithful-clam.rooster465.autos#%E6%97%A5%E6%9C%AC_071419006
+trojan://PI36027154@exciting-grizzly.rooster465.autos:443?security=tls&sni=exciting-grizzly.rooster465.autos#%E6%97%A5%E6%9C%AC_071419007
+trojan://PI36027154@busy-lab.rooster465.autos:443?security=tls&sni=busy-lab.rooster465.autos#%E6%97%A5%E6%9C%AC_071419008
+vless://e258977b-e413-4718-a3af-02d75492c349@64.176.42.196:10443?alpn=http/1.1&ed=2095&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=ww1.aniuge.qzz.io&path=/&security=tls&sni=ww1.aniuge.qzz.io&type=ws#🇯🇵 450 - JP - VLESS/WS/TLS/UTLS - 10443
+vless://e258977b-e413-4718-a3af-02d75492c349@84.247.152.29:8443?alpn=http/1.1&ed=2095&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=ww1.aniuge.qzz.io&path=/&security=tls&sni=ww1.aniuge.qzz.io&type=ws#🇯🇵 451 - JP - VLESS/WS/TLS/UTLS - 8443

@@ -4,66 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇬 保加利亚 | BGR
-  server: stariver.vip
-  port: 443
-  type: vless
-  uuid: 2a331283-75b2-4f48-b237-319bb53e2606
-  tls: true
-  servername: stariver.vip
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: gonegrpc
-  udp: true
-- name: 🇫🇷 法国 | FRA
-  server: eventloophub.org
-  port: 8443
-  type: vless
-  uuid: aa28b265-baff-42e4-927e-7a8dee0ef623
-  tls: true
-  servername: eventloophub.org
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 213.189.16.91
-  port: 1446
-  type: vless
-  uuid: d8b42cd5-a149-4356-9e61-111111111111
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: www.iplocation.net
+- name: 🇺🇸 美国 | USA 4
+  server: www.gov.ua
   port: 8880
   type: vless
-  uuid: 4bf6fee9-d3c4-4a98-b83b-170bf37c669c
+  uuid: 767c5a66-bd28-440a-90c8-7ae1101a0172
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: cold-water-945c.43-bc5.workers.dev
+      Host: still-voice-1adc.135-275.workers.dev
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: de1.linkto.sbs
-  port: 443
-  type: vless
-  uuid: dabe4e44-39e1-4464-9491-521993f207d8
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: de1.linkto.sbs
-  client-fingerprint: edge
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
+- name: 🇸🇬 新加坡 | SGP 3
   server: support.zoom.us
   port: 80
   type: vless
@@ -81,11 +34,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 | BGR
-  - 🇫🇷 法国 | FRA
-  - 🇳🇱 荷兰 | NLD
-  - 🇯🇵 日本 | JPN 4
-  - 🇩🇪 德国 | DEU
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 4
+  - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO
