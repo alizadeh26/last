@@ -39,6 +39,24 @@ def _normalize_vless_flow(flow: str) -> str | None:
     return None
 
 
+_VALID_UTLS_FINGERPRINTS = {
+    "chrome",
+    "firefox",
+    "edge",
+    "safari",
+    "ios",
+    "android",
+    "random",
+}
+
+
+def _normalize_utls_fingerprint(fp: str) -> str:
+    s = (fp or "").strip().lower()
+    if s in _VALID_UTLS_FINGERPRINTS:
+        return s
+    return "chrome"
+
+
 def _is_valid_reality_public_key(pbk: str) -> bool:
     s = (pbk or "").strip()
     if not s:
@@ -282,7 +300,10 @@ def node_from_share_link(link: str) -> Node:
                     tls["reality"] = {"enabled": True, "public_key": pbk}
                     if sid:
                         tls["reality"]["short_id"] = sid
-                    tls["utls"] = {"enabled": True, "fingerprint": fp or "chrome"}
+                    tls["utls"] = {
+                        "enabled": True,
+                        "fingerprint": _normalize_utls_fingerprint(fp),
+                    }
             outbound["tls"] = tls
 
         if transport == "ws":
@@ -399,7 +420,10 @@ def node_from_clash_proxy(proxy: dict) -> Node | None:
                     if reality_opts.get("short-id"):
                         tls["reality"]["short_id"] = reality_opts.get("short-id")
                     fp = proxy.get("client-fingerprint") or "chrome"
-                    tls["utls"] = {"enabled": True, "fingerprint": fp}
+                    tls["utls"] = {
+                        "enabled": True,
+                        "fingerprint": _normalize_utls_fingerprint(fp),
+                    }
                     outbound["tls"] = tls
 
         tls = outbound.get("tls")
