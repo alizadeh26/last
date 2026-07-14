@@ -64,7 +64,17 @@ class SingBoxRunner:
             if not m:
                 return False
             return m in _VALID_SS_METHODS
+_VALID_UTLS_FINGERPRINTS = frozenset({
+    "chrome", "firefox", "safari", "ios", "android", "edge",
+    "360", "qq", "random", "randomized",
+})
 
+def _is_valid_utls_fingerprint(fp: str) -> bool:
+    """Validate uTLS fingerprint value"""
+    f = (fp or "").strip().lower()
+    if not f:
+        return True  # Empty fingerprint is valid (defaults to chrome)
+    return f in _VALID_UTLS_FINGERPRINTS
         def _is_valid_ss2022_key(method: str, password: str) -> bool:
             m = (method or "").strip().lower()
             if "2022" not in m:
