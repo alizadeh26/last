@@ -18,6 +18,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: gaM3vd5zfR1ay1v7hfn4X6
   udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 18.190.176.112
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: tinkered-pennies-puppies.freesocks.work
   port: 443
@@ -33,6 +40,7 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
