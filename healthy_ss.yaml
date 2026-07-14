@@ -9,28 +9,21 @@ proxies:
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: ebEfGowZtV1BEFXZOtgAXi
+  password: hbGrpfvNrJsUmKmPbR3iY2
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: tinkered-pennies-puppies.freesocks.work
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: gaM3vd5zfR1ay1v7hfn4X6
-  udp: true
-- name: 🇺🇸 美国 | USA 6
+- name: 🇺🇸 美国 | USA 2
   server: 18.190.176.112
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇺🇸 美国 | USA 5
+- name: 🇺🇸 美国 | USA 4
   server: tinkered-pennies-puppies.freesocks.work
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: hbGrpfvNrJsUmKmPbR3iY2
+  password: gaM3vd5zfR1ay1v7hfn4X6
   udp: true
 proxy-groups:
 - name: AUTO
@@ -39,8 +32,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO

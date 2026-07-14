@@ -9,30 +9,23 @@ proxies:
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: ebEfGowZtV1BEFXZOtgAXi
+  password: hbGrpfvNrJsUmKmPbR3iY2
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: tinkered-pennies-puppies.freesocks.work
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: gaM3vd5zfR1ay1v7hfn4X6
-  udp: true
-- name: 🇺🇸 美国 | USA 6
+- name: 🇺🇸 美国 | USA 2
   server: 18.190.176.112
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇺🇸 美国 | USA 5
+- name: 🇺🇸 美国 | USA 4
   server: tinkered-pennies-puppies.freesocks.work
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: hbGrpfvNrJsUmKmPbR3iY2
+  password: gaM3vd5zfR1ay1v7hfn4X6
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
+- name: 🇸🇬 新加坡 | SGP
   server: support.zoom.us
   port: 80
   type: vless
@@ -44,6 +37,18 @@ proxies:
     headers:
       Host: sahanwickramasinghevip.shop
   udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 185.68.184.186
+  port: 443
+  type: vless
+  uuid: 7bdb9235-68bd-418f-912e-4cc590f50c35
+  tls: true
+  reality-opts:
+    public-key: zdUruFsb8e_EEIqEMyykFbpNaOZCk_RDRaYInsgD9y0
+    short-id: 0a076a46
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -51,34 +56,33 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 5
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 4
+  - 🇸🇬 新加坡 | SGP
+  - 🇩🇪 德国 | DEU
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇸🇬 新加坡 | SGP
+  - 🇩🇪 德国 | DEU
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 5
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 4
+  - 🇸🇬 新加坡 | SGP
 rules:
 - MATCH,AUTO
