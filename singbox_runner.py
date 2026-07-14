@@ -58,17 +58,25 @@ class SingBoxRunner:
             "aes-128-ctr", "aes-192-ctr", "aes-256-ctr",
             "none",
         })
+
+
+
+
 _VALID_UTLS_FINGERPRINTS = frozenset({
     "chrome", "firefox", "safari", "ios", "android", "edge",
     "360", "qq", "random", "randomized",
 })
 
-def _is_valid_utls_fingerprint(fp: str) -> bool:
-    """Validate uTLS fingerprint value"""
-    f = (fp or "").strip().lower()
-    if not f:
-        return True  # Empty fingerprint is valid (defaults to chrome)
-    return f in _VALID_UTLS_FINGERPRINTS
+        def _is_valid_utls_fingerprint(fp: str) -> bool:
+             """Validate uTLS fingerprint value"""
+             f = (fp or "").strip().lower()
+            if not f:
+                 return True  # Empty fingerprint is valid (defaults to chrome)
+            return f in _VALID_UTLS_FINGERPRINTS
+        
+    
+    
+    
         def _is_valid_ss_method(method: str) -> bool:
             m = (method or "").strip().lower()
             if not m:
