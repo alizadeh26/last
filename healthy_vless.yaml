@@ -16,18 +16,6 @@ proxies:
     headers:
       Host: sahanwickramasinghevip.shop
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 185.68.184.186
-  port: 443
-  type: vless
-  uuid: 7bdb9235-68bd-418f-912e-4cc590f50c35
-  tls: true
-  reality-opts:
-    public-key: zdUruFsb8e_EEIqEMyykFbpNaOZCk_RDRaYInsgD9y0
-    short-id: 0a076a46
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -35,6 +23,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇸🇬 新加坡 | SGP
-  - 🇩🇪 德国 | DEU
 rules:
 - MATCH,AUTO
