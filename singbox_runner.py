@@ -59,24 +59,6 @@ class SingBoxRunner:
             "none",
         })
 
-
-
-
-_VALID_UTLS_FINGERPRINTS = frozenset({
-    "chrome", "firefox", "safari", "ios", "android", "edge",
-    "360", "qq", "random", "randomized",
-})
-
-        def _is_valid_utls_fingerprint(fp: str) -> bool:
-             """Validate uTLS fingerprint value"""
-             f = (fp or "").strip().lower()
-            if not f:
-                 return True  # Empty fingerprint is valid (defaults to chrome)
-            return f in _VALID_UTLS_FINGERPRINTS
-        
-    
-    
-    
         def _is_valid_ss_method(method: str) -> bool:
             m = (method or "").strip().lower()
             if not m:
@@ -147,13 +129,6 @@ _VALID_UTLS_FINGERPRINTS = frozenset({
             for o in outbounds:
                 if not isinstance(o, dict) or not o.get("tag"):
                     continue
-                    # Validate uTLS fingerprint if present
-if "tls" in o and isinstance(o.get("tls"), dict):
-    utls_fp = o["tls"].get("utls", {})
-    if isinstance(utls_fp, dict):
-        fingerprint = utls_fp.get("fingerprint")
-        if fingerprint and not _is_valid_utls_fingerprint(fingerprint):
-            continue  # Skip this proxy
                 if str(o.get("type") or "").lower() == "shadowsocks":
                     method = str(o.get("method") or "")
                     if not _is_valid_ss_method(method):
