@@ -4,27 +4,54 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 4
-  server: www.gov.ua
+- name: 🇧🇬 保加利亚 | BGR
+  server: stariver.vip
+  port: 443
+  type: vless
+  uuid: 2a331283-75b2-4f48-b237-319bb53e2606
+  tls: true
+  servername: stariver.vip
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: gonegrpc
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: upwork.com
   port: 8880
   type: vless
-  uuid: da5ff974-c135-4b57-a0ff-53dd2502e71e
+  uuid: 05e7abc2-46e1-4a23-9cdc-173ce17eb0d4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: round-term-947c.41-332.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: www.zsu.gov.ua
+  port: 8880
+  type: vless
+  uuid: 30e4c878-15ca-4f53-ab32-04c60ecd3f31
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: long-smoke-b6cb.290-cd1.workers.dev
+      Host: blue-rice-7142.30-346.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 45.74.159.146
-  port: 32845
+- name: 🇸🇬 新加坡 | SGP
+  server: support.zoom.us
+  port: 80
   type: vless
-  uuid: 31ed0ed1-746a-46aa-bb54-7a3c30b90c3e
+  uuid: e7b178da-65e8-45ad-8550-de40eb0a7835
   tls: false
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: sahanwickramasinghevip.shop
   udp: true
 proxy-groups:
 - name: AUTO
@@ -32,7 +59,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA
+  - 🇧🇬 保加利亚 | BGR
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 9
+  - 🇸🇬 新加坡 | SGP
 rules:
 - MATCH,AUTO

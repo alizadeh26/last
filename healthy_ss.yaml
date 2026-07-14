@@ -4,12 +4,40 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 195.133.23.45
+  port: 60129
+  type: ss
+  cipher: aes-256-gcm
+  password: fbaf33bcffe53cf9
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 195.133.23.27
+  port: 20129
+  type: ss
+  cipher: aes-256-gcm
+  password: 1a87017d0bf57f34
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: tinkered-pennies-puppies.freesocks.work
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ebEfGowZtV1BEFXZOtgAXi
+  udp: true
+- name: 🇺🇸 美国 | USA 4
   server: tinkered-pennies-puppies.freesocks.work
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: hbGrpfvNrJsUmKmPbR3iY2
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: tinkered-pennies-puppies.freesocks.work
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: gaM3vd5zfR1ay1v7hfn4X6
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +45,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

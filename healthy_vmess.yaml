@@ -4,14 +4,81 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: c87s5.portablesubmarines.com
-  port: 18339
+- name: 🇺🇸 美国 | USA
+  server: 107.161.82.89
+  port: 59912
   type: vmess
-  uuid: 3cd9077d-76f7-4104-bd82-eb6916b89d43
+  uuid: bda619b6-c5e7-444a-aed7-4d8716237bd7
   alterId: 0
   cipher: auto
   tls: false
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 128.242.109.20
+  port: 17432
+  type: vmess
+  uuid: 6cc4a312-2d18-4694-b92d-0af1c039e697
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: b32-16.cmj0502.cn
+  port: 45979
+  type: vmess
+  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /test
+    headers:
+      Host: b32-16.cmj0502.cn
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 107.161.82.89
+  port: 59284
+  type: vmess
+  uuid: bd16ed8f-a5bd-47ea-a69a-651fc70e92ac
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: 107.161.82.89
+  port: 27489
+  type: vmess
+  uuid: 1f111c76-69ce-4fa9-a55c-1ae21cd1ab2a
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: b32-14.cmj0502.cn
+  port: 45979
+  type: vmess
+  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /test
+    headers:
+      Host: b32-14.cmj0502.cn
   udp: true
 proxy-groups:
 - name: AUTO
@@ -19,6 +86,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
