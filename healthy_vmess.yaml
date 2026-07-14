@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
-  server: 107.161.82.89
-  port: 59912
+- name: 🇲🇴 澳门 | MAC
+  server: 45.207.35.102
+  port: 43539
   type: vmess
-  uuid: bda619b6-c5e7-444a-aed7-4d8716237bd7
+  uuid: 3557c8af-dcd7-4cda-88b7-c44ed22d3194
   alterId: 0
   cipher: auto
   tls: false
@@ -16,11 +16,11 @@ proxies:
   ws-opts:
     path: /arki
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 128.242.109.20
-  port: 17432
+- name: 🇲🇴 澳门 | MAC 2
+  server: 45.207.35.102
+  port: 34080
   type: vmess
-  uuid: 6cc4a312-2d18-4694-b92d-0af1c039e697
+  uuid: a727244e-41d4-4ae8-b307-44595b9d723d
   alterId: 0
   cipher: auto
   tls: false
@@ -28,57 +28,17 @@ proxies:
   ws-opts:
     path: /arki
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: b32-16.cmj0502.cn
-  port: 45979
+- name: 🇲🇴 澳门 | MAC 3
+  server: 45.207.35.102
+  port: 26711
   type: vmess
-  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
+  uuid: e92b8574-c76c-49e0-ac30-1ee35814428d
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /test
-    headers:
-      Host: b32-16.cmj0502.cn
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 107.161.82.89
-  port: 59284
-  type: vmess
-  uuid: bd16ed8f-a5bd-47ea-a69a-651fc70e92ac
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 107.161.82.89
-  port: 27489
-  type: vmess
-  uuid: 1f111c76-69ce-4fa9-a55c-1ae21cd1ab2a
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: b32-14.cmj0502.cn
-  port: 45979
-  type: vmess
-  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /test
-    headers:
-      Host: b32-14.cmj0502.cn
+    path: /
   udp: true
 proxy-groups:
 - name: AUTO
@@ -86,11 +46,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 10
+  - 🇲🇴 澳门 | MAC
+  - 🇲🇴 澳门 | MAC 2
+  - 🇲🇴 澳门 | MAC 3
 rules:
 - MATCH,AUTO
