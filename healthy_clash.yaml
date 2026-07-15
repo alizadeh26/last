@@ -4,38 +4,45 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP 3
-  server: support.zoom.us
-  port: 80
-  type: vless
-  uuid: cac6ec8f-99f0-44c5-814f-2f3f65e4db74
+- name: 🇬🇧 英国 | GBR
+  server: m.cnmjin.net
+  port: 16645
+  type: vmess
+  uuid: 81392bb3-4873-4cf3-8e9b-ef557961446a
+  alterId: 0
+  cipher: auto
   tls: false
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula
-    headers:
-      Host: speed.dulacloud.store
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: fn.fifapes.monster
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: support.zoom.us
-  port: 80
-  type: vless
-  uuid: e7b178da-65e8-45ad-8550-de40eb0a7835
-  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sahanwickramasinghevip.shop
+      Host: 6f973d82f8e986776816458d2f00cc1d.mobgslb.tbcache.com
+- name: 🇸🇪 瑞典 | SWE 3
+  server: swed1.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 59da5351-5151-417d-b2f7-6923848b717e
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: swed1.helper-internet.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: download.yunzhongzhuan.com
+  port: 8880
+  type: vless
+  uuid: efc13f4d-141c-444c-8fbc-ffbcf2be4252
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: bitter-morning-b4e3.283.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -43,29 +50,34 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 6
-  - 🇸🇬 新加坡 | SGP 5
+  - 🇬🇧 英国 | GBR
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇺🇸 美国 | USA 8
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 6
-  - 🇸🇬 新加坡 | SGP 5
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇺🇸 美国 | USA 8
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇬🇧 英国 | GBR
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 6
+  - 🇬🇧 英国 | GBR
+  - 🇸🇪 瑞典 | SWE 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇸🇬 新加坡 | SGP 5
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

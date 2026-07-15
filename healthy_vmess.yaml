@@ -4,54 +4,26 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 2
-  server: 45.76.202.45
-  port: 4010
+- name: 🇬🇧 英国 | GBR
+  server: m.cnmjin.net
+  port: 16645
   type: vmess
-  uuid: 071a8a71-c656-4fb6-a908-4e42eb72243d
+  uuid: 81392bb3-4873-4cf3-8e9b-ef557961446a
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /liksuzcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 13.214.178.3
-  port: 443
-  type: vmess
-  uuid: 714d82c3-184d-457b-bbb3-d8ad3861e5ef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 176.122.174.175
-  port: 8443
-  type: vmess
-  uuid: aa6bc79c-7535-4491-aede-655110ced2e3
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  servername: 176.122.174.175
-  network: ws
-  ws-opts:
-    path: /vmess
-  udp: true
+    path: /
+    headers:
+      Host: 6f973d82f8e986776816458d2f00cc1d.mobgslb.tbcache.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 2
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 6
+  - 🇬🇧 英国 | GBR
 rules:
 - MATCH,AUTO
