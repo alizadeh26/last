@@ -4,97 +4,59 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 63.179.29.71
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 63.179.29.71
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: 45.76.202.45
-  port: 4010
-  type: vmess
-  uuid: 071a8a71-c656-4fb6-a908-4e42eb72243d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /liksuzcp
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 43.173.98.184
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 3t21e/P6fxeSULmI2S4f0mJ3q3b2TiQO
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 13.214.178.3
-  port: 443
-  type: vmess
-  uuid: 714d82c3-184d-457b-bbb3-d8ad3861e5ef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 176.122.174.175
-  port: 8443
-  type: vmess
-  uuid: aa6bc79c-7535-4491-aede-655110ced2e3
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  servername: 176.122.174.175
-  network: ws
-  ws-opts:
-    path: /vmess
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 3.146.176.147
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇺🇸 美国 | USA 9
+- name: 🇺🇸 美国 | USA 3
   server: tinkered-pennies-puppies.freesocks.work
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: gaM3vd5zfR1ay1v7hfn4X6
   udp: true
-- name: 🇺🇸 美国 | USA 11
+- name: 🇺🇸 美国 | USA 5
   server: tinkered-pennies-puppies.freesocks.work
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: hbGrpfvNrJsUmKmPbR3iY2
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
+- name: 🇺🇸 美国 | USA 8
+  server: 85.209.134.58
+  port: 443
+  type: vless
+  uuid: 7bdb9235-68bd-418f-912e-4cc590f50c35
+  tls: true
+  reality-opts:
+    public-key: zdUruFsb8e_EEIqEMyykFbpNaOZCk_RDRaYInsgD9y0
+    short-id: 0a076a46
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: fn.fifapes.monster
+  port: 2090
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: support.zoom.us
+  port: 80
+  type: vless
+  uuid: cac6ec8f-99f0-44c5-814f-2f3f65e4db74
+  tls: false
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    path: /dula
+    headers:
+      Host: speed.dulacloud.store
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 5
   server: support.zoom.us
   port: 80
   type: vless
   uuid: e7b178da-65e8-45ad-8550-de40eb0a7835
   tls: false
-  servername: sahanwickramasinghevip.shop
   network: ws
   ws-opts:
     path: /
@@ -107,59 +69,41 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
-  - 🇯🇵 日本 | JPN 2
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 11
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 6
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇸🇬 新加坡 | SGP 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 11
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
-  - 🇸🇬 新加坡 | SGP 2
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇯🇵 日本 | JPN 2
-  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇯🇵 日本 | JPN 2
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇸🇬 新加坡 | SGP 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
+  - 🇺🇸 美国 | USA 6
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

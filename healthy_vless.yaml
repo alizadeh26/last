@@ -4,29 +4,45 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 63.179.29.71
-  port: 22222
+- name: 🇺🇸 美国 | USA 8
+  server: 85.209.134.58
+  port: 443
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 7bdb9235-68bd-418f-912e-4cc590f50c35
+  tls: true
+  reality-opts:
+    public-key: zdUruFsb8e_EEIqEMyykFbpNaOZCk_RDRaYInsgD9y0
+    short-id: 0a076a46
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: fn.fifapes.monster
+  port: 2090
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 63.179.29.71
-  port: 22224
+- name: 🇸🇬 新加坡 | SGP 3
+  server: support.zoom.us
+  port: 80
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: cac6ec8f-99f0-44c5-814f-2f3f65e4db74
   tls: false
-  network: tcp
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    path: /dula
+    headers:
+      Host: speed.dulacloud.store
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
+- name: 🇸🇬 新加坡 | SGP 5
   server: support.zoom.us
   port: 80
   type: vless
   uuid: e7b178da-65e8-45ad-8550-de40eb0a7835
   tls: false
-  servername: sahanwickramasinghevip.shop
   network: ws
   ws-opts:
     path: /
@@ -39,8 +55,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 6
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇸🇬 新加坡 | SGP 5
 rules:
 - MATCH,AUTO
