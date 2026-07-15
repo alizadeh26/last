@@ -4,24 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 185.68.184.186
-  port: 443
-  type: vless
-  uuid: 7bdb9235-68bd-418f-912e-4cc590f50c35
-  tls: true
-  reality-opts:
-    public-key: zdUruFsb8e_EEIqEMyykFbpNaOZCk_RDRaYInsgD9y0
-    short-id: 0a076a46
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
+- name: 🇸🇬 新加坡 | SGP 2
   server: support.zoom.us
   port: 80
   type: vless
   uuid: e7b178da-65e8-45ad-8550-de40eb0a7835
   tls: false
+  servername: sahanwickramasinghevip.shop
   network: ws
   ws-opts:
     path: /
@@ -34,7 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO
