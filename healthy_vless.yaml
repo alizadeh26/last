@@ -18,18 +18,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: download.yunzhongzhuan.com
-  port: 8880
-  type: vless
-  uuid: efc13f4d-141c-444c-8fbc-ffbcf2be4252
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: bitter-morning-b4e3.283.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -37,6 +25,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇸🇪 瑞典 | SWE 3
-  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
