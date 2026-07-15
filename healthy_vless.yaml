@@ -4,6 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU
+  server: 63.179.29.71
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 63.179.29.71
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: support.zoom.us
   port: 80
@@ -23,6 +39,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
   - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO

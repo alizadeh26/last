@@ -4,6 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU
+  server: 63.179.29.71
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 63.179.29.71
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇯🇵 日本 | JPN 2
   server: 45.76.202.45
   port: 4010
@@ -17,6 +33,13 @@ proxies:
   ws-opts:
     path: /liksuzcp
   udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 43.173.98.184
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3t21e/P6fxeSULmI2S4f0mJ3q3b2TiQO
+  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 13.214.178.3
   port: 443
@@ -29,13 +52,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 43.173.98.184
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 3t21e/P6fxeSULmI2S4f0mJ3q3b2TiQO
   udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 176.122.174.175
@@ -51,33 +67,12 @@ proxies:
   ws-opts:
     path: /vmess
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: support.zoom.us
-  port: 80
-  type: vless
-  uuid: e7b178da-65e8-45ad-8550-de40eb0a7835
-  tls: false
-  servername: sahanwickramasinghevip.shop
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sahanwickramasinghevip.shop
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: loveourlive.com
+- name: 🇺🇸 美国 | USA 8
+  server: 3.146.176.147
   port: 443
-  type: vmess
-  uuid: 183AFF7A-001B-4C5E-A754-FE1506BF33A2
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: loveourlive.com
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: tinkered-pennies-puppies.freesocks.work
@@ -93,26 +88,42 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: hbGrpfvNrJsUmKmPbR3iY2
   udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: support.zoom.us
+  port: 80
+  type: vless
+  uuid: e7b178da-65e8-45ad-8550-de40eb0a7835
+  tls: false
+  servername: sahanwickramasinghevip.shop
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sahanwickramasinghevip.shop
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
   - 🇯🇵 日本 | JPN 2
-  - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 5
+  - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 6
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 11
+  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 11
 - name: PROTO-VLESS
@@ -120,6 +131,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
   - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-VMESS
   type: url-test
@@ -129,14 +142,19 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 2
   - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 10
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 日本 | JPN 2
-  - 🇸🇬 新加坡 | SGP
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204

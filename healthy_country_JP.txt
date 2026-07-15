@@ -1,9 +1,25 @@
 trojan://PI36027154@stirred-buck.rooster465.autos:443?security=tls&sni=stirred-buck.rooster465.autos#%E6%97%A5%E6%9C%AC_071509005
 trojan://CF68213490@star-dodo.rooster465.autos:443?security=tls&sni=star-dodo.rooster465.autos#%E6%97%A5%E6%9C%AC_071509006
-trojan://PI36027154@faithful-clam.rooster465.autos:443?security=tls&sni=faithful-clam.rooster465.autos#%E6%97%A5%E6%9C%AC_071509008
 trojan://PI36027154@exciting-grizzly.rooster465.autos:443?security=tls&sni=exciting-grizzly.rooster465.autos#%E6%97%A5%E6%9C%AC_071509007
+trojan://PI36027154@faithful-clam.rooster465.autos:443?security=tls&sni=faithful-clam.rooster465.autos#%E6%97%A5%E6%9C%AC_071509008
 trojan://PI36027154@busy-lab.rooster465.autos:443?security=tls&sni=busy-lab.rooster465.autos#%E6%97%A5%E6%9C%AC_071509009
 vmess://eyJhZGQiOiI0NS43Ni4yMDIuNDUiLCJwb3J0IjoiNDAxMCIsImlkIjoiMDcxYThhNzEtYzY1Ni00ZmI2LWE5MDgtNGU0MmViNzIyNDNkIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInYiOiIyIiwicHMiOiLml6XmnKxfMDcxNTA5NTc2IiwiaG9zdCI6IiIsInBhdGgiOiIvbGlrc3V6Y3AiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IvCfh6/wn4e1SlAifQ==
-vless://e258977b-e413-4718-a3af-02d75492c349@84.247.152.29:8443?alpn=http/1.1&ed=2095&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=ww1.aniuge.qzz.io&path=/&security=tls&sni=ww1.aniuge.qzz.io&type=ws#🇯🇵 542 - JP - VLESS/WS/TLS/UTLS - 8443
-vless://e258977b-e413-4718-a3af-02d75492c349@64.176.42.196:10443?alpn=http/1.1&ed=2095&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=ww1.aniuge.qzz.io&path=/&security=tls&sni=ww1.aniuge.qzz.io&type=ws#🇲🇽 541 - MX - VLESS/WS/TLS/UTLS - 10443
-trojan://tsuchiya@161.34.39.108:443?sni=aa.ccmusic.jp&fp=chrome&type=tcp&path=/#🇯🇵 210 - JP - Trojan/TLS/UTLS - 443
+vless://e258977b-e413-4718-a3af-02d75492c349@84.247.152.29:8443?alpn=http/1.1&ed=2095&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=ww1.aniuge.qzz.io&path=/&security=tls&sni=ww1.aniuge.qzz.io&type=ws#🇯🇵 594 - JP - VLESS/WS/TLS/UTLS - 8443
+vless://e258977b-e413-4718-a3af-02d75492c349@64.176.42.196:10443?alpn=http/1.1&ed=2095&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=ww1.aniuge.qzz.io&path=/&security=tls&sni=ww1.aniuge.qzz.io&type=ws#🇯🇵 593 - JP - VLESS/WS/TLS/UTLS - 10443
+trojan://CF68213490@alert-redfish.rooster465.autos:443?sni=alert-redfish.rooster465.autos&type=tcp&fp=chrome#🇯🇵 11 - JP - Trojan/TLS/UTLS - 443
+trojan://CF68213490@careful-penguin.rooster465.autos:443?sni=careful-penguin.rooster465.autos&type=tcp&fp=chrome#🇺🇸 12 - US - Trojan/TLS/UTLS - 443
+trojan://CF68213490@caring-wallaby.rooster465.autos:443?sni=caring-wallaby.rooster465.autos&type=tcp&fp=chrome#🇯🇵 13 - JP - Trojan/TLS/UTLS - 443
+trojan://CF68213490@eager-platypus.rooster465.autos:443?sni=eager-platypus.rooster465.autos&type=tcp&fp=chrome#🇯🇵 18 - JP - Trojan/TLS/UTLS - 443
+trojan://CF68213490@eminent-panther.rooster465.autos:443?sni=eminent-panther.rooster465.autos&type=tcp&fp=chrome#🇯🇵 19 - JP - Trojan/TLS/UTLS - 443
+trojan://CF68213490@equipped-moth.rooster465.autos:443?allowInsecure=0&sni=equipped-moth.rooster465.autos#🇺🇸 21 - US - Trojan/TLS - 443
+trojan://CF68213490@eternal-kingfish.rooster465.autos:443?sni=eternal-kingfish.rooster465.autos&type=tcp&fp=chrome#🇯🇵 23 - JP - Trojan/TLS/UTLS - 443
+trojan://CF68213490@eternal-perch.rooster465.autos:443?sni=eternal-perch.rooster465.autos&type=tcp&fp=chrome#🇯🇵 24 - JP - Trojan/TLS/UTLS - 443
+trojan://CF68213490@flowing-eagle.rooster465.autos:443?sni=flowing-eagle.rooster465.autos&type=tcp&fp=chrome#🇯🇵 25 - JP - Trojan/TLS/UTLS - 443
+trojan://CF68213490@gentle-honeybee.rooster465.autos:443?sni=gentle-honeybee.rooster465.autos&type=tcp&fp=chrome#🇯🇵 26 - JP - Trojan/TLS/UTLS - 443
+trojan://CF68213490@glowing-marmoset.rooster465.autos:443?sni=glowing-marmoset.rooster465.autos&type=tcp&fp=chrome#🇯🇵 27 - JP - Trojan/TLS/UTLS - 443
+trojan://CF68213490@musical-manatee.rooster465.autos:443?sni=musical-manatee.rooster465.autos&type=tcp&fp=chrome#🇺🇸 30 - US - Trojan/TLS/UTLS - 443
+trojan://CF68213490@next-turkey.rooster465.autos:443?sni=next-turkey.rooster465.autos&type=tcp&fp=chrome#🇺🇸 32 - US - Trojan/TLS/UTLS - 443
+trojan://CF68213490@noble-tahr.rooster465.autos:443?allowInsecure=0&sni=noble-tahr.rooster465.autos#🇯🇵 33 - JP - Trojan/TLS - 443
+trojan://CF68213490@rested-osprey.rooster465.autos:443?sni=rested-osprey.rooster465.autos&type=tcp&fp=chrome#🇯🇵 34 - JP - Trojan/TLS/UTLS - 443
+trojan://CF68213490@smiling-fowl.rooster465.autos:443?sni=smiling-fowl.rooster465.autos&type=tcp&fp=chrome#🇯🇵 37 - JP - Trojan/TLS/UTLS - 443
+trojan://CF68213490@summary-firefly.rooster465.autos:443?sni=summary-firefly.rooster465.autos&type=tcp&fp=chrome#🇺🇸 41 - US - Trojan/TLS/UTLS - 443
