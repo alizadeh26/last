@@ -4,26 +4,27 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: m.cnmjin.net
-  port: 16645
+- name: 🏴‍☠️ 未知地区 | Unknown 2
+  server: jp01.scpnb.top
+  port: 443
   type: vmess
-  uuid: 81392bb3-4873-4cf3-8e9b-ef557961446a
+  uuid: 537a036f-a4ad-4051-80c4-011a46c62bb0
   alterId: 0
   cipher: auto
-  tls: false
+  tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /537a036f-a4ad-4051-80c4-011a46c62bb0-vm
     headers:
-      Host: 6f973d82f8e986776816458d2f00cc1d.mobgslb.tbcache.com
+      Host: jp01.scpnb.top
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
+  - 🏴‍☠️ 未知地区 | Unknown 2
 rules:
 - MATCH,AUTO
