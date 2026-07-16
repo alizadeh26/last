@@ -26,16 +26,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: vless
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 2.26.86.140
-  port: 10006
-  type: vless
-  uuid: ac3501f6-365f-4fbf-8ca0-8cd323d72b31
-  tls: false
-  network: ws
-  ws-opts:
-    path: /tunnel-5-ws
-  udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: de.themesh.site
   port: 443
@@ -64,20 +54,6 @@ proxies:
     headers:
       Host: ad-005.vector9nmb3.info
   udp: true
-- name: 🇩🇪 德国 | DEU 20
-  server: fin.themesh.site
-  port: 443
-  type: vless
-  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: yocysajpuAGT059wla3OHEQZ8yNQt8heojZuYM2MkSY
-    short-id: 8ccda4d8bbe0b881
-  servername: fin.themesh.site
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 21
   server: fin.themesh.site
   port: 443
@@ -90,6 +66,20 @@ proxies:
     short-id: 8ccda4d8bbe0b881
   servername: fin.themesh.site
   client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 20
+  server: fin.themesh.site
+  port: 443
+  type: vless
+  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: yocysajpuAGT059wla3OHEQZ8yNQt8heojZuYM2MkSY
+    short-id: 8ccda4d8bbe0b881
+  servername: fin.themesh.site
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 24
@@ -120,27 +110,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: icy-snowflake-1f56.147-1ea.workers.dev
-  udp: true
-- name: 🇵🇱 波兰 | POL 3
-  server: pl.applepie-recipe.ru
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: ru.themesh.site
   port: 443
   type: vless
-  uuid: 881cbd87-6cc3-41f9-9d4c-303fa2f8deab
+  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
   tls: true
   flow: xtls-rprx-vision
-  servername: shopper.applepie-recipe.ru
-  client-fingerprint: firefox
+  reality-opts:
+    public-key: zA-R_HtKJR1Hb0c1KXA3Yxh1TH_SPi1oV6cDfWURdQs
+    short-id: d4f1c403150d9964
+  servername: ru.themesh.site
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇸🇪 瑞典 | SWE 2
@@ -157,32 +138,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: ru.themesh.site
-  port: 443
-  type: vless
-  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zA-R_HtKJR1Hb0c1KXA3Yxh1TH_SPi1oV6cDfWURdQs
-    short-id: d4f1c403150d9964
-  servername: ru.themesh.site
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 24
   server: gb1.cyphervpn.pro
   port: 443
@@ -196,6 +151,18 @@ proxies:
   servername: gb1.cyphervpn.pro
   client-fingerprint: firefox
   network: tcp
+- name: 🇺🇸 美国 | USA 7
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-tree-3dbf.285.workers.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 23
   server: ad-020.vector2llqn.info
   port: 8443
@@ -230,19 +197,16 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 10
-  - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 20
   - 🇩🇪 德国 | DEU 21
+  - 🇩🇪 德国 | DEU 20
   - 🇩🇪 德国 | DEU 24
   - 🇳🇱 荷兰 | NLD 3
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇵🇱 波兰 | POL 3
-  - 🇸🇪 瑞典 | SWE 2
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 7
+  - 🇸🇪 瑞典 | SWE 2
   - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 26
 rules:
