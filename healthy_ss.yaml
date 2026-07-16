@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
-  server: 18.190.176.112
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇦🇱 AL_10
   server: 157.22.240.141
   port: 57925
@@ -18,13 +11,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 3JB91l5ol2HvkPUduw2hj4
   udp: true
+- name: 🇺🇸 美国 | USA
+  server: 18.190.176.112
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
   - 🇦🇱 AL_10
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

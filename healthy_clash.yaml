@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇦🇱 AL_10
+  server: 157.22.240.141
+  port: 57925
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3JB91l5ol2HvkPUduw2hj4
+  udp: true
 - name: 🇩🇪 德国 | DEU 9
   server: 81.31.211.114
   port: 2085
@@ -40,6 +47,16 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 2.26.86.140
+  port: 10006
+  type: vless
+  uuid: ac3501f6-365f-4fbf-8ca0-8cd323d72b31
+  tls: false
+  network: ws
+  ws-opts:
+    path: /tunnel-5-ws
+  udp: true
 - name: 🇩🇪 德国 | DEU 14
   server: ad-005.vector9nmb3.info
   port: 8443
@@ -53,6 +70,20 @@ proxies:
     path: /
     headers:
       Host: ad-005.vector9nmb3.info
+  udp: true
+- name: 🇩🇪 德国 | DEU 24
+  server: fin1.panel11.ru
+  port: 443
+  type: vless
+  uuid: aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: lQ8pnlOU0kqS77TA7Fftl8nSzktXLzFpOLGqCZEAhjg
+    short-id: aaec521b22bbe6cb
+  servername: fin1.panel11.ru
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 21
   server: fin.themesh.site
@@ -82,20 +113,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 24
-  server: fin1.panel11.ru
-  port: 443
-  type: vless
-  uuid: aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: lQ8pnlOU0kqS77TA7Fftl8nSzktXLzFpOLGqCZEAhjg
-    short-id: aaec521b22bbe6cb
-  servername: fin1.panel11.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: ru-1.videoproeditor.com
   port: 443
@@ -117,20 +134,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: ru.themesh.site
-  port: 443
-  type: vless
-  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zA-R_HtKJR1Hb0c1KXA3Yxh1TH_SPi1oV6cDfWURdQs
-    short-id: d4f1c403150d9964
-  servername: ru.themesh.site
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇸🇪 瑞典 | SWE 2
   server: swe02.myxasecure.space
   port: 443
@@ -143,6 +146,20 @@ proxies:
     short-id: d67ec5a8fc40ebea
   servername: swe02.myxasecure.space
   client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: ru.themesh.site
+  port: 443
+  type: vless
+  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zA-R_HtKJR1Hb0c1KXA3Yxh1TH_SPi1oV6cDfWURdQs
+    short-id: d4f1c403150d9964
+  servername: ru.themesh.site
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 24
@@ -196,42 +213,36 @@ proxies:
     headers:
       Host: rzd.ru
   udp: true
-- name: 🇦🇱 AL_10
-  server: 157.22.240.141
-  port: 57925
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 3JB91l5ol2HvkPUduw2hj4
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇦🇱 AL_10
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 10
   - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 24
   - 🇩🇪 德国 | DEU 21
   - 🇩🇪 德国 | DEU 20
-  - 🇩🇪 德国 | DEU 24
   - 🇳🇱 荷兰 | NLD 3
   - 🇺🇸 美国 | USA
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 2
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 26
-  - 🇦🇱 AL_10
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
   - 🇦🇱 AL_10
+  - 🇺🇸 美国 | USA
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -240,13 +251,14 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 10
   - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 24
   - 🇩🇪 德国 | DEU 21
   - 🇩🇪 德国 | DEU 20
-  - 🇩🇪 德国 | DEU 24
   - 🇳🇱 荷兰 | NLD 3
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 2
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 23
@@ -256,8 +268,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇦🇱 AL_10
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 10
-  - 🇩🇪 德国 | DEU 13
 rules:
 - MATCH,AUTO
