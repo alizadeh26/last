@@ -1,3 +1,4 @@
-vless://13deef01-0a60-47ec-aa9c-8a3481e1c87f@bot.sobhanpor.ir:443?security=tls&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=bot.sobhanpor.ir#🇺🇸 35 - US - VLESS/TLS - 443
-vless://154c18ae-f5eb-4cfd-8429-1f582c93913b@bot.sobhanpor.ir:443?encryption=none&security=tls&type=tcp&headerType=none&sni=bot.sobhanpor.ir#🇺🇸 51 - US - VLESS/TLS - 443
-vless://eab915bc-d2df-73d1-47d0-6eb240497055@fn.fifapes.monster:2090?encryption=none&security=none&type=tcp#🇫🇷 515 - FR - VLESS - 2090
+vless://154c18ae-f5eb-4cfd-8429-1f582c93913b@bot.sobhanpor.ir:443?encryption=none&security=tls&type=tcp&headerType=none&sni=bot.sobhanpor.ir#🇫🇮 59 - FI - VLESS/TLS - 443
+vless://94878fe1-5e8b-4676-9ee0-a90267a596e5@144.31.27.179:443?encryption=none&flow=xtls-rprx-vision&pbk=8jwT95mGT7dW1VkMVt8vtwbWLgHN39tnhnt6PN1FTmU&security=reality&sid=b08c5eb124a5877e&sni=site.rumedia-cdn.com&type=tcp#🇫🇮 332 - FI - VLESS/REALITY/PBK/SID/VISION - 443
+vless://b8bdf08d-aa89-4fd5-8083-22f38e2cef17@bot.sobhanpor.ir:443?encryption=none&security=tls&type=tcp&headerType=none&sni=bot.sobhanpor.ir#🇫🇮 391 - FI - VLESS/TLS - 443
+vless://eab915bc-d2df-73d1-47d0-6eb240497055@fn.fifapes.monster:2090?encryption=none&security=none&type=tcp&headerType=none#🇺🇸 509 - US - VLESS - 2090

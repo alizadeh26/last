@@ -26,6 +26,16 @@ proxies:
     grpc-mode: gun
     grpc-service-name: vless
   udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 2.26.86.140
+  port: 10006
+  type: vless
+  uuid: ac3501f6-365f-4fbf-8ca0-8cd323d72b31
+  tls: false
+  network: ws
+  ws-opts:
+    path: /tunnel-5-ws
+  udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: de.themesh.site
   port: 443
@@ -40,15 +50,19 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 2.26.86.140
-  port: 10006
+- name: 🇩🇪 德国 | DEU 20
+  server: fin.themesh.site
+  port: 443
   type: vless
-  uuid: ac3501f6-365f-4fbf-8ca0-8cd323d72b31
-  tls: false
-  network: ws
-  ws-opts:
-    path: /tunnel-5-ws
+  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: yocysajpuAGT059wla3OHEQZ8yNQt8heojZuYM2MkSY
+    short-id: 8ccda4d8bbe0b881
+  servername: fin.themesh.site
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 14
   server: ad-005.vector9nmb3.info
@@ -64,20 +78,6 @@ proxies:
     headers:
       Host: ad-005.vector9nmb3.info
   udp: true
-- name: 🇩🇪 德国 | DEU 24
-  server: fin1.panel11.ru
-  port: 443
-  type: vless
-  uuid: aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: lQ8pnlOU0kqS77TA7Fftl8nSzktXLzFpOLGqCZEAhjg
-    short-id: aaec521b22bbe6cb
-  servername: fin1.panel11.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 21
   server: fin.themesh.site
   port: 443
@@ -92,17 +92,17 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 20
-  server: fin.themesh.site
+- name: 🇩🇪 德国 | DEU 24
+  server: fin1.panel11.ru
   port: 443
   type: vless
-  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
+  uuid: aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: yocysajpuAGT059wla3OHEQZ8yNQt8heojZuYM2MkSY
-    short-id: 8ccda4d8bbe0b881
-  servername: fin.themesh.site
+    public-key: lQ8pnlOU0kqS77TA7Fftl8nSzktXLzFpOLGqCZEAhjg
+    short-id: aaec521b22bbe6cb
+  servername: fin1.panel11.ru
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -120,20 +120,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: swe02.myxasecure.space
-  port: 443
-  type: vless
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: swe02.myxasecure.space
-  client-fingerprint: qq
-  network: tcp
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: ru.themesh.site
   port: 443
@@ -148,6 +134,32 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: swe02.myxasecure.space
+  port: 443
+  type: vless
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: swe02.myxasecure.space
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-tree-3dbf.285.workers.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 24
   server: gb1.cyphervpn.pro
   port: 443
@@ -161,18 +173,6 @@ proxies:
   servername: gb1.cyphervpn.pro
   client-fingerprint: firefox
   network: tcp
-- name: 🇺🇸 美国 | USA 7
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 23
   server: ad-020.vector2llqn.info
   port: 8443
@@ -207,17 +207,17 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 10
-  - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 24
-  - 🇩🇪 德国 | DEU 21
+  - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 20
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 21
+  - 🇩🇪 德国 | DEU 24
   - 🇳🇱 荷兰 | NLD 3
-  - 🇸🇪 瑞典 | SWE 2
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 24
+  - 🇸🇪 瑞典 | SWE 2
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 26
 rules:
