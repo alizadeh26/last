@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇱 AL_14
+- name: 🇦🇱 AL_12
   server: alban2.helper-internet.com
   port: 443
   type: vless
@@ -18,43 +18,172 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 81.31.211.115
+- name: 🇩🇪 德国 | DEU
+  server: 81.31.211.112
   port: 2085
   type: vless
-  uuid: f7c0db69-6963-4d7e-9743-8ef52c44c7b8
+  uuid: 3d244afc-60ef-468a-9b19-f4bbad7e8ef1
   tls: false
   network: grpc
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: vless
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 195.63.137.251
-  port: 8090
+- name: 🇨🇿 捷克 | CZE
+  server: node10.mxvpn.dev
+  port: 443
   type: vless
-  uuid: ef14c532-b69a-4f46-ae29-272f2fdaf673
+  uuid: 736a07e4-16d6-4a4b-a813-8b9edbe005a4
+  tls: true
+  alpn:
+  - http/1.1
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: bbc68cec8bb8d2e3
+  servername: node10.mxvpn.dev
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 81.31.211.110
+  port: 2085
+  type: vless
+  uuid: 5fbee2a0-7ca4-46a8-aac7-9f26a1f2cb3c
   tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 81.31.211.110
+  port: 2085
+  type: vless
+  uuid: 3067642d-02fa-47e9-a6a2-fb5dda565969
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 81.31.211.108
+  port: 2085
+  type: vless
+  uuid: cebf31b3-a467-4b84-9dce-62bed1c26719
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 81.31.211.111
+  port: 2085
+  type: vless
+  uuid: 3d244afc-60ef-468a-9b19-f4bbad7e8ef1
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: de2.raketa-balance.com
+  port: 443
+  type: vless
+  uuid: 8a22fde8-e72e-4ce2-96f6-285aeffe66a2
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY
+    short-id: 6c6082a2223c1d03
+  servername: de2.raketa-balance.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: 81.31.211.119
+  port: 2085
+  type: vless
+  uuid: 3d244afc-60ef-468a-9b19-f4bbad7e8ef1
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇩🇪 德国 | DEU 12
+  server: 81.31.211.116
+  port: 2085
+  type: vless
+  uuid: 5fbee2a0-7ca4-46a8-aac7-9f26a1f2cb3c
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇩🇪 德国 | DEU 14
+  server: 81.31.211.117
+  port: 2085
+  type: vless
+  uuid: 3067642d-02fa-47e9-a6a2-fb5dda565969
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇩🇪 德国 | DEU 15
+  server: 81.31.211.115
+  port: 2085
+  type: vless
+  uuid: cebf31b3-a467-4b84-9dce-62bed1c26719
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇩🇪 德国 | DEU 19
+  server: 81.31.211.118
+  port: 2085
+  type: vless
+  uuid: 3067642d-02fa-47e9-a6a2-fb5dda565969
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇩🇪 德国 | DEU 24
+  server: 81.31.211.118
+  port: 2085
+  type: vless
+  uuid: d4d2de4b-2aa0-4a49-8c59-05d83d72af93
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: tn.tmn141246.ru
+  port: 2200
+  type: vless
+  uuid: d4aad26f-70b6-4411-8517-17f7b4281886
+  tls: false
+  servername: rzd.ru
   network: ws
   ws-opts:
-    path: /ws
+    path: /v1
     headers:
-      Host: rukr.speedload.ru
+      Host: tn.tmn141246.ru
   udp: true
-- name: 🇯🇵 日本 | JPN 6
-  server: download.yunzhongzhuan.com
-  port: 8880
-  type: vless
-  uuid: efc13f4d-141c-444c-8fbc-ffbcf2be4252
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: bitter-morning-b4e3.283.workers.dev
-  udp: true
-- name: 🇰🇿 哈萨克斯坦 | KAZ
-  server: kz4.helper-internet.com
+- name: 🇪🇸 西班牙 | ESP 2
+  server: spain2.helper-internet.com
   port: 443
   type: vless
   uuid: 59da5351-5151-417d-b2f7-6923848b717e
@@ -63,11 +192,25 @@ proxies:
   reality-opts:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
     short-id: ff776ff77be48b88
-  servername: kz4.helper-internet.com
+  servername: spain2.helper-internet.com
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
+- name: 🇬🇷 希腊 | GRC
+  server: grek.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 59da5351-5151-417d-b2f7-6923848b717e
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: grek.helper-internet.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
   server: 195.63.163.190
   port: 8090
   type: vless
@@ -79,42 +222,18 @@ proxies:
     headers:
       Host: rukr.speedload.ru
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: www.baipiao.eu.org
-  port: 8880
-  type: vless
-  uuid: 8e7ce77a-d889-4dbf-b095-1d0eca88f6dc
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: broad-bread-2a6d.433-b9b.workers.dev
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 89.124.89.102
-  port: 8090
-  type: vless
-  uuid: ef14c532-b69a-4f46-ae29-272f2fdaf673
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rukr.speedload.ru
-  udp: true
-- name: 🇳🇴 挪威 | NOR
-  server: no.cache-4d8a.com
+- name: 🇳🇱 荷兰 | NLD 7
+  server: b2.raketa-balance.com
   port: 443
   type: vless
-  uuid: bbae962a-b6e9-46e6-990c-6abf13e6b075
+  uuid: 8a22fde8-e72e-4ce2-96f6-285aeffe66a2
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 7wLv5M4GZGhqMAGVj9zdHyW-RrSRdrYAu1Aaqa8N1nY
-    short-id: 9d84de9d9f7b85e9
-  servername: no.cache-4d8a.com
-  client-fingerprint: safari
+    public-key: JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY
+    short-id: 6c6082a2223c1d03
+  servername: b2.raketa-balance.com
+  client-fingerprint: qq
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 5
@@ -131,25 +250,102 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL 3
-  server: music1000.melobitmusic1.ir
-  port: 2053
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 195.63.137.251
+  port: 8090
   type: vless
-  uuid: da4747a6-be0d-4c1b-90f4-d82ec3012be2
+  uuid: ef14c532-b69a-4f46-ae29-272f2fdaf673
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: rukr.speedload.ru
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: nl4.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 59da5351-5151-417d-b2f7-6923848b717e
   tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: music1000.melobitmusic1.ir
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: nl4.helper-internet.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 12
+  server: 195.63.136.11
+  port: 8090
+  type: vless
+  uuid: ef14c532-b69a-4f46-ae29-272f2fdaf673
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: rukr.speedload.ru
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pol2.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 59da5351-5151-417d-b2f7-6923848b717e
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: pol2.helper-internet.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: tur3.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 59da5351-5151-417d-b2f7-6923848b717e
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: tur3.helper-internet.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: ad-010.vector2llqn.info
+  port: 8443
+  type: vless
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  servername: ad-010.vector2llqn.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: music1000.melobitmusic1.ir
+      Host: ad-010.vector2llqn.info
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: upwork.com
+- name: 🇺🇸 美国 | USA 11
+  server: ad-020.limaklhc6.info
+  port: 8443
+  type: vless
+  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
+  tls: true
+  servername: ad-020.limaklhc6.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-020.limaklhc6.info
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: www.baipiao.eu.org
   port: 8880
   type: vless
   uuid: 8e7ce77a-d889-4dbf-b095-1d0eca88f6dc
@@ -160,19 +356,17 @@ proxies:
     headers:
       Host: broad-bread-2a6d.433-b9b.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: ad-020.vector2llqn.info
-  port: 8443
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: tn.tmn141246.ru
+  port: 2200
   type: vless
-  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
-  tls: true
-  servername: ad-020.vector2llqn.info
-  client-fingerprint: chrome
+  uuid: e7299042-7d8f-440f-8368-2516b0e69341
+  tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /v1
     headers:
-      Host: ad-020.vector2llqn.info
+      Host: rzd.ru
   udp: true
 proxy-groups:
 - name: AUTO
@@ -180,18 +374,34 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_14
+  - 🇦🇱 AL_12
+  - 🇩🇪 德国 | DEU
+  - 🇨🇿 捷克 | CZE
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 15
+  - 🇩🇪 德国 | DEU 19
+  - 🇩🇪 德国 | DEU 24
   - 🇩🇪 德国 | DEU 6
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇯🇵 日本 | JPN 6
-  - 🇰🇿 哈萨克斯坦 | KAZ
+  - 🇪🇸 西班牙 | ESP 2
+  - 🇬🇷 希腊 | GRC
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇳🇴 挪威 | NOR
   - 🇳🇱 荷兰 | NLD 5
-  - 🇵🇱 波兰 | POL 3
-  - 🇺🇸 美国 | USA 10
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 12
+  - 🇵🇱 波兰 | POL
+  - 🇹🇷 土耳其 | TUR
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 3
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO

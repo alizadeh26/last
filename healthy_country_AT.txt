@@ -1,2 +1,2 @@
-vless://aa28b265-baff-42e4-927e-7a8dee0ef623@152.53.0.209:443?security=reality&encryption=none&pbk=FW0Co-dGXLOCXJU7prlPavpooVfXc9VajRm41UnBDnk&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=shuviu.de&sid=affc28b1a8c32c#🇦🇹 378 - AT - VLESS/REALITY/PBK/SID/VISION - 443
-trojan://humanity@212.183.88.136:443?host=www.calmlunch.com&path=/assignment&sni=www.calmlunch.com&type=ws#🏳️ 252 - XX - Trojan/WS/TLS - 443
+trojan://humanity@212.183.88.136:443?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#🆔freeconfigsplus%20🔒%20TR-WS-N/A%20🇦🇹%20AT%202ms
+vless://aa28b265-baff-42e4-927e-7a8dee0ef623@152.53.0.209:443?security=reality&encryption=none&pbk=FW0Co-dGXLOCXJU7prlPavpooVfXc9VajRm41UnBDnk&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=shuviu.de&sid=affc28b1a8c32c#🏳️ 426 - XX - VLESS/REALITY/PBK/SID/VISION - 443
