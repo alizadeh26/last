@@ -4,6 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU 8
+  server: 91.107.159.216
+  port: 26437
+  type: vless
+  uuid: 4281e90a-a495-45ac-bac0-c4aa7ed133b1
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: corelink.su
   port: 443
@@ -17,14 +25,6 @@ proxies:
   servername: corelink.su
   client-fingerprint: chrome
   network: tcp
-- name: 🇩🇪 德国 | DEU 8
-  server: 91.107.159.216
-  port: 26437
-  type: vless
-  uuid: 4281e90a-a495-45ac-bac0-c4aa7ed133b1
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: fetch.anotherok.com
   port: 443
@@ -41,12 +41,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 18.133.180.164
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇪🇸 西班牙 | ESP
   server: isp04.myxasecure.space
   port: 443
@@ -61,20 +55,12 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: sw.srv.anti-zapret.com
+- name: 🇬🇧 英国 | GBR
+  server: 18.133.180.164
   port: 443
-  type: vless
-  uuid: 13b55e8e-fbea-4ee1-b6b7-115fa3043182
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
-    short-id: 17faf32cb516c9cb
-  servername: sw.srv.anti-zapret.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇲🇽 墨西哥 | MEX
   server: nl11.cyphervpn.pro
   port: 443
@@ -88,22 +74,6 @@ proxies:
   servername: nl11.cyphervpn.pro
   client-fingerprint: firefox
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 8
-  server: cdn.oneokgames.com
-  port: 443
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  reality-opts:
-    public-key: VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU
-    short-id: a30b344b5214d62f
-  servername: cdn.oneokgames.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: push.v2.FeedService
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: edge1.onetimeok.com
   port: 443
@@ -120,6 +90,20 @@ proxies:
     grpc-mode: gun
     grpc-service-name: edge.v2.RelayService
   udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: sw.srv.anti-zapret.com
+  port: 443
+  type: vless
+  uuid: 13b55e8e-fbea-4ee1-b6b7-115fa3043182
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 17faf32cb516c9cb
+  servername: sw.srv.anti-zapret.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: dl.onetimeok.com
   port: 443
@@ -135,6 +119,22 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: api.v2.PushService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: cdn.oneokgames.com
+  port: 443
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  tls: true
+  reality-opts:
+    public-key: VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU
+    short-id: a30b344b5214d62f
+  servername: cdn.oneokgames.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: push.v2.FeedService
   udp: true
 - name: 🇳🇱 荷兰 | NLD 9
   server: link.oneokgames.com
@@ -269,16 +269,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 13
-  - 🇬🇧 英国 | GBR
   - 🇪🇸 西班牙 | ESP
-  - 🇱🇻 拉脱维亚 | LVA
+  - 🇬🇧 英国 | GBR
   - 🇲🇽 墨西哥 | MEX
-  - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 5
+  - 🇱🇻 拉脱维亚 | LVA
   - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 12
@@ -299,15 +299,15 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 13
   - 🇪🇸 西班牙 | ESP
-  - 🇱🇻 拉脱维亚 | LVA
   - 🇲🇽 墨西哥 | MEX
-  - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 5
+  - 🇱🇻 拉脱维亚 | LVA
   - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 12
@@ -327,8 +327,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 13
 rules:
 - MATCH,AUTO
