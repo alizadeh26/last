@@ -4,34 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 6
-  server: 31.56.48.28
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  network: tcp
-- name: 🇬🇧 英国 | GBR
-  server: 18.133.180.164
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: eston6.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 59da5351-5151-417d-b2f7-6923848b717e
-  tls: true
-  packet-encoding: xudp
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: eston6.helper-internet.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: y.srv.anti-zapret.com
   port: 443
@@ -45,22 +17,6 @@ proxies:
   servername: y.srv.anti-zapret.com
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: us.onetimeok.com
-  port: 443
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  reality-opts:
-    public-key: 8QJSXd0F3JScfRiyQFh_IXYq8Liwpa9EzhbC1MDRrnc
-    short-id: 8e4d75390b1e0547
-  servername: us.onetimeok.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: media.v1.ObjectService
   udp: true
 - name: 🇳🇱 荷兰 | NLD 10
   server: main.reasonok.com
@@ -77,6 +33,22 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: node.v2.StreamService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: us.onetimeok.com
+  port: 443
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  tls: true
+  reality-opts:
+    public-key: 8QJSXd0F3JScfRiyQFh_IXYq8Liwpa9EzhbC1MDRrnc
+    short-id: 8e4d75390b1e0547
+  servername: us.onetimeok.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: media.v1.ObjectService
   udp: true
 - name: 🇳🇱 荷兰 | NLD 12
   server: video.reasonok.com
@@ -128,31 +100,20 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇬🇧 英国 | GBR
-  - 🇪🇪 爱沙尼亚 | EST
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 12
   - 🇸🇪 瑞典 | SWE
   - 🏴‍☠️ 未知地区 | Unknown 7
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇪🇪 爱沙尼亚 | EST
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 12
   - 🇸🇪 瑞典 | SWE
   - 🏴‍☠️ 未知地区 | Unknown 7
@@ -161,8 +122,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇬🇧 英国 | GBR
-  - 🇪🇪 爱沙尼亚 | EST
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 9
 rules:
 - MATCH,AUTO
