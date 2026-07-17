@@ -4,200 +4,152 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU 6
+  server: 31.56.48.28
+  port: 2090
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU 4
+  server: free6.playon.ir
+  port: 443
+  type: vless
+  uuid: b9079c38-165c-4341-8ab1-e9371101062d
+  tls: true
+  alpn:
+  - http/1.1
+  servername: free6.playon.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fc-90BpftMflQDbbnz7dKVtDEjU
+    headers:
+      Host: free6.playon.ir
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: eston6.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 59da5351-5151-417d-b2f7-6923848b717e
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: eston6.helper-internet.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 9
-  server: 81.31.211.114
-  port: 2085
+  server: 193.151.150.135
+  port: 2095
   type: vless
-  uuid: cebf31b3-a467-4b84-9dce-62bed1c26719
+  uuid: aff6f31d-e503-4a75-b87f-6f2e566ffb88
   tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: y.srv.anti-zapret.com
+  port: 443
+  type: vless
+  uuid: 13b55e8e-fbea-4ee1-b6b7-115fa3043182
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 58fbcddfaae3ade9
+  servername: y.srv.anti-zapret.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: us.onetimeok.com
+  port: 443
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  tls: true
+  reality-opts:
+    public-key: 8QJSXd0F3JScfRiyQFh_IXYq8Liwpa9EzhbC1MDRrnc
+    short-id: 8e4d75390b1e0547
+  servername: us.onetimeok.com
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: vless
+    grpc-service-name: media.v1.ObjectService
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: 81.31.211.120
-  port: 2085
+- name: 🇳🇱 荷兰 | NLD 10
+  server: main.reasonok.com
+  port: 443
   type: vless
-  uuid: cebf31b3-a467-4b84-9dce-62bed1c26719
-  tls: false
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  tls: true
+  reality-opts:
+    public-key: zGzQklZzWAfmwvLGgQtj-cgfWoUHbUelb4j1qYz5A3w
+    short-id: c24b10219813df29
+  servername: main.reasonok.com
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: vless
+    grpc-service-name: node.v2.StreamService
   udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: de.themesh.site
+- name: 🇳🇱 荷兰 | NLD 12
+  server: video.reasonok.com
   port: 443
   type: vless
-  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: L7JB_3bRdr08McJ2_RNR6thyx1s65gdj6OeLdkJ463s
-    short-id: c98e3dfeb3aff317
-  servername: de.themesh.site
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 14
-  server: ad-005.vector9nmb3.info
-  port: 8443
-  type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
-  tls: true
-  servername: ad-005.vector9nmb3.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-005.vector9nmb3.info
-  udp: true
-- name: 🇩🇪 德国 | DEU 20
-  server: fin.themesh.site
-  port: 443
-  type: vless
-  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: yocysajpuAGT059wla3OHEQZ8yNQt8heojZuYM2MkSY
-    short-id: 8ccda4d8bbe0b881
-  servername: fin.themesh.site
+    public-key: lOONDaJA7m6EtXSWb0DdUIAfOEO2_hqLsqn6ifA4gXE
+    short-id: 018f65354c647e46
+  servername: video.reasonok.com
   client-fingerprint: firefox
-  network: tcp
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: sync.v2.FeedService
   udp: true
-- name: 🇩🇪 德国 | DEU 21
-  server: fin.themesh.site
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 15
+  server: 103.133.1.160
+  port: 80
   type: vless
-  uuid: 6fa9f6ae-877b-4858-b128-a8377fd9038b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: yocysajpuAGT059wla3OHEQZ8yNQt8heojZuYM2MkSY
-    short-id: 8ccda4d8bbe0b881
-  servername: fin.themesh.site
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 2.26.86.140
-  port: 10006
-  type: vless
-  uuid: ac3501f6-365f-4fbf-8ca0-8cd323d72b31
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
   tls: false
   network: ws
   ws-opts:
-    path: /tunnel-5-ws
-  udp: true
-- name: 🇩🇪 德国 | DEU 24
-  server: fin1.panel11.ru
+    path: /ws
+    headers:
+      Host: soft-shadow-1e33.xicav73335.workers.dev
+- name: 🇸🇪 瑞典 | SWE
+  server: st.onnstreaming.ru
   port: 443
   type: vless
-  uuid: aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d
+  uuid: d1c624fc-d0b0-49c7-8afa-e15a5949bc17
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: lQ8pnlOU0kqS77TA7Fftl8nSzktXLzFpOLGqCZEAhjg
-    short-id: aaec521b22bbe6cb
-  servername: fin1.panel11.ru
+    public-key: 1c7TsslPz_gsvzX4ENkEa36Pp3gm-M3SRLhvqtGaAz4
+    short-id: e8e019c424ccb765
+  servername: st.onnstreaming.ru
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🏴‍☠️ 未知地区 | Unknown 7
+  server: sw.srv.anti-zapret.com
+  port: 443
+  type: vless
+  uuid: 13b55e8e-fbea-4ee1-b6b7-115fa3043182
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 17faf32cb516c9cb
+  servername: sw.srv.anti-zapret.com
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: ru-1.videoproeditor.com
-  port: 443
-  type: vless
-  uuid: ef0d09e7-75d9-4252-8a42-6bd70a3b40f5
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
-    short-id: 6d6f13013d3e1d0c
-  servername: ru-1.videoproeditor.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: icy-snowflake-1f56.147-1ea.workers.dev
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: swe02.myxasecure.space
-  port: 443
-  type: vless
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: swe02.myxasecure.space
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: ru.themesh.site
-  port: 443
-  type: vless
-  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zA-R_HtKJR1Hb0c1KXA3Yxh1TH_SPi1oV6cDfWURdQs
-    short-id: d4f1c403150d9964
-  servername: ru.themesh.site
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: gb1.cyphervpn.pro
-  port: 443
-  type: vless
-  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 2cfC4N-V5UGaoDjrRXWb6TYJNfuXzhlITdKoCx9mLwM
-    short-id: 408763178ac4cb55
-  servername: gb1.cyphervpn.pro
-  client-fingerprint: firefox
-  network: tcp
-- name: 🇺🇸 美国 | USA 23
-  server: ad-020.vector2llqn.info
-  port: 8443
-  type: vless
-  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
-  tls: true
-  servername: ad-020.vector2llqn.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-020.vector2llqn.info
   udp: true
 proxy-groups:
 - name: AUTO
@@ -205,20 +157,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 4
+  - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 10
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 20
-  - 🇩🇪 德国 | DEU 21
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 24
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 23
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 12
+  - 🇳🇱 荷兰 | NLD 15
+  - 🇸🇪 瑞典 | SWE
+  - 🏴‍☠️ 未知地区 | Unknown 7
 rules:
 - MATCH,AUTO
