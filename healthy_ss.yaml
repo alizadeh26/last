@@ -4,19 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇱 AL_10
-  server: 157.22.240.141
-  port: 57925
+- name: 🇬🇧 英国 | GBR
+  server: 18.133.180.164
+  port: 443
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 3JB91l5ol2HvkPUduw2hj4
-  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_10
+  - 🇬🇧 英国 | GBR
 rules:
 - MATCH,AUTO

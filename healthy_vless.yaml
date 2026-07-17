@@ -11,22 +11,6 @@ proxies:
   uuid: eab915bc-d2df-73d1-47d0-6eb240497055
   tls: false
   network: tcp
-- name: 🇩🇪 德国 | DEU 4
-  server: free6.playon.ir
-  port: 443
-  type: vless
-  uuid: b9079c38-165c-4341-8ab1-e9371101062d
-  tls: true
-  alpn:
-  - http/1.1
-  servername: free6.playon.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fc-90BpftMflQDbbnz7dKVtDEjU
-    headers:
-      Host: free6.playon.ir
-  udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: eston6.helper-internet.com
   port: 443
@@ -40,14 +24,6 @@ proxies:
     short-id: ff776ff77be48b88
   servername: eston6.helper-internet.com
   client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 193.151.150.135
-  port: 2095
-  type: vless
-  uuid: aff6f31d-e503-4a75-b87f-6f2e566ffb88
-  tls: false
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 6
@@ -112,17 +88,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: sync.v2.FeedService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 15
-  server: 103.133.1.160
-  port: 80
-  type: vless
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: soft-shadow-1e33.xicav73335.workers.dev
 - name: 🇸🇪 瑞典 | SWE
   server: st.onnstreaming.ru
   port: 443
@@ -158,14 +123,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 4
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 12
-  - 🇳🇱 荷兰 | NLD 15
   - 🇸🇪 瑞典 | SWE
   - 🏴‍☠️ 未知地区 | Unknown 7
 rules:
