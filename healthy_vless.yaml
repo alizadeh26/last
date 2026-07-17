@@ -4,19 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: corelink.su
-  port: 443
-  type: vless
-  uuid: 153560b0-1a33-4b44-b059-ca5b22e55c19
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: b0y3fVgL8jKbO3cNmh_qCoZWoWRsY6BYc6VDJFkNe2I
-    short-id: b7fc0f11dda97edb
-  servername: corelink.su
-  client-fingerprint: chrome
-  network: tcp
 - name: 🇩🇪 德国 | DEU 8
   server: 91.107.159.216
   port: 26437
@@ -40,22 +27,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
-  udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 15.188.61.203
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 15.188.61.203
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
   udp: true
 - name: 🇪🇸 西班牙 | ESP
   server: isp04.myxasecure.space
@@ -84,6 +55,36 @@ proxies:
   servername: nl11.cyphervpn.pro
   client-fingerprint: firefox
   network: tcp
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: sw.srv.anti-zapret.com
+  port: 443
+  type: vless
+  uuid: 13b55e8e-fbea-4ee1-b6b7-115fa3043182
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 17faf32cb516c9cb
+  servername: sw.srv.anti-zapret.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: edge1.onetimeok.com
+  port: 443
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  tls: true
+  reality-opts:
+    public-key: TLAYLGGk8xnADNCg4_7-E3YqlC8L4lVo4m7aauBL7kU
+    short-id: ce7d5b58da528cf1
+  servername: edge1.onetimeok.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: edge.v2.RelayService
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: dl.onetimeok.com
   port: 443
@@ -131,22 +132,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: media.v1.SyncService
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: edge1.onetimeok.com
-  port: 443
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  reality-opts:
-    public-key: TLAYLGGk8xnADNCg4_7-E3YqlC8L4lVo4m7aauBL7kU
-    short-id: ce7d5b58da528cf1
-  servername: edge1.onetimeok.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: edge.v2.RelayService
   udp: true
 - name: 🇳🇱 荷兰 | NLD 11
   server: eu.oneokgames.com
@@ -236,6 +221,18 @@ proxies:
   ws-opts:
     path: /
   udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-tree-3dbf.285.workers.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 11
   server: vnp.noaguo.xyz
   port: 443
@@ -256,23 +253,22 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 13
-  - 🇫🇷 法国 | FRA
-  - 🇫🇷 法国 | FRA 3
   - 🇪🇸 西班牙 | ESP
   - 🇲🇽 墨西哥 | MEX
+  - 🇱🇻 拉脱维亚 | LVA
+  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 12
   - 🇳🇱 荷兰 | NLD 15
   - 🇳🇱 荷兰 | NLD 14
   - 🇳🇱 荷兰 | NLD 16
   - 🇵🇱 波兰 | POL 3
+  - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
