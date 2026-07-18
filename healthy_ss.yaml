@@ -10,24 +10,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: FXpDf7WV6lfD6n9hpz7HF2
-- name: 🇩🇪 德国 | DEU 4
-  server: 54.93.83.254
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 | DEU 5
-  server: 63.177.252.44
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 | DEU 3
-  server: 35.156.204.162
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇬🇧 英国 | GBR 2
   server: 13.135.248.162
   port: 443
@@ -53,9 +35,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇦🇱 AL_12
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 3
   - 🇬🇧 英国 | GBR 2
   - 🇷🇺 俄罗斯 | RUS
   - 🇷🇴 罗马尼亚 | ROU

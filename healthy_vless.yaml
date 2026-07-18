@@ -4,14 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 11
-  server: 18.195.205.161
-  port: 22224
+- name: 🇩🇪 德国 | DEU 29
+  server: 31.56.146.82
+  port: 2090
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
   tls: false
   network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 31
   server: fi.buycloud.app
   port: 443
@@ -25,22 +24,6 @@ proxies:
   servername: fi.buycloud.app
   client-fingerprint: qq
   network: tcp
-- name: 🇬🇧 英国 | GBR 5
-  server: api.oneoker.com
-  port: 443
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  reality-opts:
-    public-key: pVc2H60-PlZ1gRiYyYc089xCwcck5BTs67k6B2-5ZRM
-    short-id: 7a7de52ae0e6c22f
-  servername: api.oneoker.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.StreamService
-  udp: true
 - name: 🇬🇧 英国 | GBR 6
   server: stats.oneoker.com
   port: 443
@@ -57,28 +40,21 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
   udp: true
-- name: 🇩🇪 德国 | DEU 29
-  server: 31.56.146.82
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 6
-  server: get.onetimeok.com
+- name: 🇬🇧 英国 | GBR 5
+  server: api.oneoker.com
   port: 443
   type: vless
   uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
   tls: true
   reality-opts:
-    public-key: CQhnOxCj9UuA67kiDGGOcXB1G_XayWfHyhmlWGeG4Uw
-    short-id: cfb882e7dcf03ef2
-  servername: get.onetimeok.com
+    public-key: pVc2H60-PlZ1gRiYyYc089xCwcck5BTs67k6B2-5ZRM
+    short-id: 7a7de52ae0e6c22f
+  servername: api.oneoker.com
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: api.v2.ApiService
+    grpc-service-name: api.v1.StreamService
   udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: api.onetimeok.com
@@ -112,6 +88,22 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v2.ApiService
   udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: get.onetimeok.com
+  port: 443
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  tls: true
+  reality-opts:
+    public-key: CQhnOxCj9UuA67kiDGGOcXB1G_XayWfHyhmlWGeG4Uw
+    short-id: cfb882e7dcf03ef2
+  servername: get.onetimeok.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: api.v2.ApiService
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: app.he-happ.com
   port: 443
@@ -128,21 +120,30 @@ proxies:
     grpc-mode: gun
     grpc-service-name: cloud.v2.RelayService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: tmesubgift.up.railway.app
-  port: 443
+- name: 🇩🇪 德国 | DEU 14
+  server: 5.129.194.34
+  port: 4100
   type: vless
-  uuid: 0ac6ad68-45cb-cd9e-459b-446568d15f69
-  tls: true
-  alpn:
-  - http/1.1
-  servername: tmesubgift.up.railway.app
-  client-fingerprint: chrome
+  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  tls: false
   network: ws
   ws-opts:
-    path: /ws/0ac6ad68-45cb-cd9e-459b-446568d15f69
+    path: /v1
     headers:
-      Host: tmesubgift.up.railway.app
+      Host: live.ok.ru
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 11
+  server: rezerv27.yunus.guru
+  port: 443
+  type: vless
+  uuid: 861fd825-3828-4bc6-a48e-8295f357b6c7
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5f6adBpAj7t6LDM9aEI4LMqkVfkh_6nMcNGgWFNnsm8
+    short-id: 6a5ae6670f71187d
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 8
   server: 94-183-224-55.sslip.io
@@ -158,17 +159,18 @@ proxies:
     headers:
       Host: 94-183-224-55.sslip.io
   udp: true
-- name: 🇳🇱 荷兰 | NLD 11
-  server: rezerv27.yunus.guru
+- name: 🇸🇪 瑞典 | SWE 2
+  server: swe-one.quiet-rogue.site
   port: 443
   type: vless
-  uuid: 861fd825-3828-4bc6-a48e-8295f357b6c7
+  uuid: 71cada65-d23e-418c-88e4-a06188d14689
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 5f6adBpAj7t6LDM9aEI4LMqkVfkh_6nMcNGgWFNnsm8
-    short-id: 6a5ae6670f71187d
-  client-fingerprint: chrome
+    public-key: wiqox4cXWo08IKTueVpIp5k0aC25Hcbuo0uAKvqlQ2Y
+    short-id: ae5abf486d5dcd20
+  servername: swe-one.quiet-rogue.site
+  client-fingerprint: edge
   network: tcp
   udp: true
 - name: 🇸🇬 新加坡 | SGP 2
@@ -183,19 +185,17 @@ proxies:
     headers:
       Host: square-tree-3dbf.285.workers.dev
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: swe-one.quiet-rogue.site
-  port: 443
+- name: 🇺🇸 美国 | USA 8
+  server: 162.159.21.178
+  port: 8880
   type: vless
-  uuid: 71cada65-d23e-418c-88e4-a06188d14689
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: wiqox4cXWo08IKTueVpIp5k0aC25Hcbuo0uAKvqlQ2Y
-    short-id: ae5abf486d5dcd20
-  servername: swe-one.quiet-rogue.site
-  client-fingerprint: edge
-  network: tcp
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dark-leaf-93a1.440-02e.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 162.159.21.178
@@ -215,20 +215,20 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 31
-  - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 6
   - 🇩🇪 德国 | DEU 29
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇩🇪 德国 | DEU 31
+  - 🇬🇧 英国 | GBR 6
+  - 🇬🇧 英国 | GBR 5
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 8
+  - 🇩🇪 德国 | DEU 14
   - 🇳🇱 荷兰 | NLD 11
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇳🇱 荷兰 | NLD 8
   - 🇸🇪 瑞典 | SWE 2
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
