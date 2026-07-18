@@ -4,7 +4,34 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🏴‍☠️ 未知地区 | Unknown 7
+- name: 🇭🇰 香港 | HKG 9
+  server: c722s3.portablesubmarines.com
+  port: 16025
+  type: vmess
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 香港 | HKG 10
+  server: c722s4.portablesubmarines.com
+  port: 16025
+  type: vmess
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 香港 | HKG 11
+  server: c722s5.portablesubmarines.com
+  port: 16025
+  type: vmess
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 28
   server: c722s801.portablesubmarines.com
   port: 16025
   type: vmess
@@ -19,6 +46,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🏴‍☠️ 未知地区 | Unknown 7
+  - 🇭🇰 香港 | HKG 9
+  - 🇭🇰 香港 | HKG 10
+  - 🇭🇰 香港 | HKG 11
+  - 🇺🇸 美国 | USA 28
 rules:
 - MATCH,AUTO
