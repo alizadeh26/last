@@ -28,13 +28,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 🇸🇰 斯洛伐克 | SVK
-  server: 156.146.40.84
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -45,6 +38,5 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 18
   - 🇩🇪 德国 | DEU 20
   - 🇷🇴 罗马尼亚 | ROU
-  - 🇸🇰 斯洛伐克 | SVK
 rules:
 - MATCH,AUTO

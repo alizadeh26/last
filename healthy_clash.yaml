@@ -10,31 +10,8 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: FXpDf7WV6lfD6n9hpz7HF2
-- name: 🇩🇪 德国 | DEU
-  server: 45.32.155.73
-  port: 53776
-  type: vless
-  uuid: 1c799205-5251-4fb2-8167-56d3e895c8c5
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: 31.56.146.82
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  network: tcp
-- name: 🇩🇪 德国 | DEU 11
-  server: 31.57.27.177
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 46.8.225.98
   port: 2090
   type: vless
   uuid: eab915bc-d2df-73d1-47d0-6eb240497055
@@ -81,18 +58,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 95.182.90.97
-  port: 21855
-  type: vless
-  uuid: 3d466ccc-1585-439d-aa28-5a82d626576a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: genshin.hoyoverse.com
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: get.onetimeok.com
   port: 443
@@ -109,15 +74,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v2.ApiService
   udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: family.bucket.x9.kfc-520.com
-  port: 10037
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: api.onetimeok.com
   port: 443
@@ -134,6 +90,19 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v2.ApiService
   udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: corelink.su
+  port: 443
+  type: vless
+  uuid: 153560b0-1a33-4b44-b059-ca5b22e55c19
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: b0y3fVgL8jKbO3cNmh_qCoZWoWRsY6BYc6VDJFkNe2I
+    short-id: b7fc0f11dda97edb
+  servername: corelink.su
+  client-fingerprint: chrome
+  network: tcp
 - name: 🇳🇱 荷兰 | NLD 6
   server: app.he-happ.com
   port: 443
@@ -150,42 +119,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: cloud.v2.RelayService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 103.133.1.160
-  port: 80
-  type: vless
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: soft-shadow-1e33.xicav73335.workers.dev
-  udp: true
-- name: 🇲🇽 墨西哥 | MEX 2
-  server: family.bucket.x9.kfc-520.com
-  port: 10045
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇭 菲律宾 | PHL
-  server: family.bucket.x9.kfc-520.com
-  port: 10409
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 | ROU
-  server: 146.70.254.238
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: qq.utiltools.ru
   port: 443
@@ -199,26 +132,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇸🇰 斯洛伐克 | SVK
-  server: 156.146.40.84
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: blog.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  servername: cnmfangbinxing.cnmfangbinxing-s.workers.dev
-  network: ws
-  ws-opts:
-    path: /fp=randomized
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-s.workers.dev
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 8
   server: codecanyon.net
   port: 8880
@@ -231,15 +144,6 @@ proxies:
     headers:
       Host: dawn-waterfall-6052.360-001.workers.dev
   udp: true
-- name: 🇹🇷 土耳其 | TUR 2
-  server: family.bucket.x9.kfc-520.com
-  port: 10048
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
 - name: 🇺🇸 美国 | USA 22
   server: 104.18.34.245
   port: 8880
@@ -252,19 +156,12 @@ proxies:
     headers:
       Host: square-tree-3dbf.285.workers.dev
   udp: true
-- name: 🇩🇪 德国 | DEU 24
-  server: 26bc92586944.apruxdomain.online
-  port: 80
-  type: vless
-  uuid: f387e32c-a8ab-4adf-9c5c-fe371cf78f6b
-  tls: false
-  packet-encoding: xudp
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26bc92586944.apruxdomain.online
-  udp: true
+- name: 🇷🇴 罗马尼亚 | ROU
+  server: 146.70.254.238
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Vr06rU_v1vFPYeXq9zbsAA
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -272,30 +169,19 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇦🇱 AL_17
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 18
   - 🇩🇪 德国 | DEU 20
   - 🇩🇰 丹麦 | DNK
   - 🇬🇧 英国 | GBR 2
-  - 🇱🇻 拉脱维亚 | LVA
   - 🇳🇱 荷兰 | NLD 4
-  - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇲🇽 墨西哥 | MEX 2
-  - 🇵🇭 菲律宾 | PHL
-  - 🇷🇴 罗马尼亚 | ROU
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇸🇰 斯洛伐克 | SVK
-  - 🇺🇸 美国 | USA 25
   - 🇸🇬 新加坡 | SGP 8
-  - 🇹🇷 土耳其 | TUR 2
   - 🇺🇸 美国 | USA 22
-  - 🇩🇪 德国 | DEU 24
+  - 🇷🇴 罗马尼亚 | ROU
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -305,44 +191,28 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 18
   - 🇩🇪 德国 | DEU 20
   - 🇷🇴 罗马尼亚 | ROU
-  - 🇸🇰 斯洛伐克 | SVK
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 6
   - 🇩🇰 丹麦 | DNK
   - 🇬🇧 英国 | GBR 2
-  - 🇱🇻 拉脱维亚 | LVA
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 7
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA 25
   - 🇸🇬 新加坡 | SGP 8
   - 🇺🇸 美国 | USA 22
-  - 🇩🇪 德国 | DEU 24
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇲🇽 墨西哥 | MEX 2
-  - 🇵🇭 菲律宾 | PHL
-  - 🇹🇷 土耳其 | TUR 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇦🇱 AL_17
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 18
 rules:
 - MATCH,AUTO
