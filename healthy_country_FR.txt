@@ -1,20 +1,19 @@
-trojan://NQ26071394@chief-cricket.rooster465.autos:443?sni=chief-cricket.rooster465.autos&type=tcp&fp=chrome#%E6%B3%95%E5%9B%BD_071818444
-trojan://NQ26071394@ready-kangaroo.rooster465.autos:443?security=tls&sni=ready-kangaroo.rooster465.autos#%E6%B3%95%E5%9B%BD_071818006
+trojan://PD07395842@pretty-quail.rooster465.autos:443?allowInsecure=1&sni=pretty-quail.rooster465.autos#%E6%B3%95%E5%9B%BD_071823464
+trojan://NQ26071394@chief-cricket.rooster465.autos:443?allowInsecure=1&sni=#%E6%B3%95%E5%9B%BD_071823008
+trojan://NQ26071394@ready-kangaroo.rooster465.autos:443?security=tls&sni=ready-kangaroo.rooster465.autos#%E6%B3%95%E5%9B%BD_071823006
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@185.128.25.36:1080#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+185.128.25.36-1080+%7C+128.42ms
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@185.128.25.44:1080#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+185.128.25.44-1080+%7C+117.28ms
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@185.156.173.206:1080#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+185.156.173.206-1080+%7C+112.3ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@194.187.249.218:1080#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+194.187.249.218-1080+%7C+123.92ms
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@194.187.249.220:1080#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+194.187.249.220-1080+%7C+116.43ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@194.187.249.218:1080#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+194.187.249.218-1080+%7C+123.92ms
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@62.210.123.100:1080#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+62.210.123.100-1080+%7C+115.8ms
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkaU9NQlU1SUR2SmNGcXlOUGJSallS@137.74.119.18:10443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+137.74.119.18-10443+%7C+168.54ms
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@217.138.207.106:1080#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+217.138.207.106-1080+%7C+106.46ms
-trojan://humanity@81.255.155.10:443?host=www.creationlong.org&path=/assignment&sni=www.creationlong.org&type=ws#🇫🇷 621 - FR - Trojan/WS/TLS - 443
-vless://7dc3461c-630f-4547-82a9-08042b0daba5@31.58.76.95:8443?encryption=none&flow=xtls-rprx-vision&pbk=HN1XHrqmB_-gDnVeXgmyPZFWAZEo4aTqlU-cIWh6hm0&security=reality&sni=tradingview.com&type=tcp#🇺🇸 302 - US - VLESS/REALITY/PBK/VISION - 8443
-vless://a1750ade-801f-4e3e-a5d2-de825771205d@151.80.147.30:443?encryption=none&type=tcp&security=reality&headerType=none&sni=speedtest.net&fp=chrome&insecure=1&allowInsecure=1&pbk=Ij3Iz1jqht6zLOy9uI0iusTy4n1oIr7gpgTwRTtA8kY&sid=42b395462da31c0e&flow=xtls-rprx-vision#🇫🇷 379 - FR - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://aa28b265-baff-42e4-927e-7a8dee0ef623@217.154.3.67:8443?encryption=none&fp=chrome&security=tls&serviceName=grpc&sni=eventloophub.org&type=grpc#🇩🇪 399 - DE - VLESS/GRPC/TLS/UTLS - 8443
-vless://b585dc5e-55bf-4a8b-913a-27c9ccac05c3@149.202.58.99:443?path=/vws/&security=tls&encryption=none&insecure=0&host=bab-6.site&fp=chrome&type=ws&allowInsecure=0&sni=bab-6.site#🇺🇸 418 - US - VLESS/WS/TLS/UTLS - 443
-vless://d7b8d855-352f-44fd-a20f-7e8ff06d0f66@31.56.146.93:8443?encryption=none&flow=xtls-rprx-vision&pbk=8i-67NPZNxTU8dgnF5yKYpijyu4GbQsDOdZSHQjsLGQ&security=reality&sni=tradingview.com&type=tcp#🇫🇷 443 - FR - VLESS/REALITY/PBK/VISION - 8443
-vless://d61b4e1b-4745-484f-8362-18537825a7af@194.164.217.139:448?encryption=none&security=reality&sni=www.samsung.com&fp=firefox&pbk=fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo&sid=05fdaa8a05be46a9&type=tcp&headerType=none#🇫🇷 441 - FR - VLESS/REALITY/PBK/SID/UTLS - 448
-vless://eab915bc-d2df-73d1-47d0-6eb240497055@fn.fifapes.monster:2090?encryption=none&security=none&type=tcp&headerType=none#🇺🇸 473 - US - VLESS - 2090
-vless://eb77be10-9d9e-527b-a78d-8caaf58992d6@45.13.119.219:8888?encryption=none&security=none&type=tcp#🇫🇷 478 - FR - VLESS - 8888
-vless://ff3e10a8-2a5c-4792-a14e-20fd11b1bed9@31.56.146.93:8443?flow=xtls-rprx-vision&security=reality&sni=tradingview.com&fp=firefox&pbk=8i-67NPZNxTU8dgnF5yKYpijyu4GbQsDOdZSHQjsLGQ&type=tcp&path=/#🇫🇷 625 - FR - VLESS/REALITY/PBK/VISION/UTLS - 8443
+vless://7dc3461c-630f-4547-82a9-08042b0daba5@31.58.76.95:8443?encryption=none&flow=xtls-rprx-vision&pbk=HN1XHrqmB_-gDnVeXgmyPZFWAZEo4aTqlU-cIWh6hm0&security=reality&sni=tradingview.com&type=tcp#🇫🇷 303 - FR - VLESS/REALITY/PBK/VISION - 8443
+vless://a1750ade-801f-4e3e-a5d2-de825771205d@151.80.147.30:443?security=reality&encryption=none&pbk=Ij3Iz1jqht6zLOy9uI0iusTy4n1oIr7gpgTwRTtA8kY&host=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=speedtest.net&sid=42b395462da31c0e#🇺🇸 384 - US - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://aa28b265-baff-42e4-927e-7a8dee0ef623@217.154.3.67:8443?encryption=none&fp=chrome&security=tls&serviceName=grpc&sni=eventloophub.org&type=grpc#🏳️ 390 - XX - VLESS/GRPC/TLS/UTLS - 8443
+vless://b585dc5e-55bf-4a8b-913a-27c9ccac05c3@149.202.58.99:443?path=/vws/&security=tls&encryption=none&insecure=0&host=bab-6.site&fp=chrome&type=ws&allowInsecure=0&sni=bab-6.site#🏳️ 416 - XX - VLESS/WS/TLS/UTLS - 443
+vless://d7b8d855-352f-44fd-a20f-7e8ff06d0f66@31.56.146.93:8443?encryption=none&flow=xtls-rprx-vision&pbk=8i-67NPZNxTU8dgnF5yKYpijyu4GbQsDOdZSHQjsLGQ&security=reality&sni=tradingview.com&type=tcp#🇺🇸 446 - US - VLESS/REALITY/PBK/VISION - 8443
+vless://d61b4e1b-4745-484f-8362-18537825a7af@194.164.217.139:448?encryption=none&security=reality&sni=www.samsung.com&fp=firefox&pbk=fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo&sid=05fdaa8a05be46a9&type=tcp&headerType=none#🏳️ 444 - XX - VLESS/REALITY/PBK/SID/UTLS - 448
+vless://eb77be10-9d9e-527b-a78d-8caaf58992d6@45.13.119.219:8888?encryption=none&security=none&type=tcp#🏳️ 480 - XX - VLESS - 8888
+vless://ff3e10a8-2a5c-4792-a14e-20fd11b1bed9@31.56.146.93:8443?security=reality&encryption=none&pbk=8i-67NPZNxTU8dgnF5yKYpijyu4GbQsDOdZSHQjsLGQ&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=tradingview.com#🇺🇸 611 - US - VLESS/REALITY/PBK/VISION/UTLS - 8443
