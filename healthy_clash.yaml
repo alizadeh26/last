@@ -4,45 +4,74 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇱 AL_17
+- name: 🇦🇱 AL_12
   server: 157.22.240.141
   port: 57925
   type: ss
   cipher: chacha20-ietf-poly1305
   password: FXpDf7WV6lfD6n9hpz7HF2
-- name: 🇩🇪 德国 | DEU 5
-  server: 31.56.146.82
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  network: tcp
-- name: 🇩🇪 德国 | DEU 18
-  server: 3.77.54.36
+- name: 🇩🇪 德国 | DEU 4
+  server: 54.93.83.254
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇩🇪 德国 | DEU 20
+- name: 🇩🇪 德国 | DEU 5
+  server: 63.177.252.44
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 | DEU 3
   server: 35.156.204.162
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇩🇰 丹麦 | DNK
-  server: dk1.cyphervpn.pro
+- name: 🇩🇪 德国 | DEU 11
+  server: 18.195.205.161
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 13.135.248.162
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 | DEU 31
+  server: fi.buycloud.app
   port: 443
   type: vless
-  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
+  uuid: bbae962a-b6e9-46e6-990c-6abf13e6b075
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc
-    short-id: 8f9d033ad6d2cebf
-  servername: dk1.cyphervpn.pro
-  client-fingerprint: firefox
+    public-key: V4SeM4OMxXoSKBmmyC5C0kZEhgL33a5vVZBe7ysJ42U
+    short-id: 0a30e2aee95a7571
+  servername: fi.buycloud.app
+  client-fingerprint: qq
   network: tcp
-- name: 🇬🇧 英国 | GBR 2
+- name: 🇬🇧 英国 | GBR 5
+  server: api.oneoker.com
+  port: 443
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  tls: true
+  reality-opts:
+    public-key: pVc2H60-PlZ1gRiYyYc089xCwcck5BTs67k6B2-5ZRM
+    short-id: 7a7de52ae0e6c22f
+  servername: api.oneoker.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: api.v1.StreamService
+  udp: true
+- name: 🇬🇧 英国 | GBR 6
   server: stats.oneoker.com
   port: 443
   type: vless
@@ -58,7 +87,14 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
+- name: 🇩🇪 德国 | DEU 29
+  server: 31.56.146.82
+  port: 2090
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD 6
   server: get.onetimeok.com
   port: 443
   type: vless
@@ -74,7 +110,7 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v2.ApiService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
+- name: 🇳🇱 荷兰 | NLD 4
   server: api.onetimeok.com
   port: 443
   type: vless
@@ -90,20 +126,23 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v2.ApiService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: corelink.su
+- name: 🇳🇱 荷兰 | NLD 5
+  server: images.onetimeok.com
   port: 443
   type: vless
-  uuid: 153560b0-1a33-4b44-b059-ca5b22e55c19
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: b0y3fVgL8jKbO3cNmh_qCoZWoWRsY6BYc6VDJFkNe2I
-    short-id: b7fc0f11dda97edb
-  servername: corelink.su
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 6
+    public-key: CQhnOxCj9UuA67kiDGGOcXB1G_XayWfHyhmlWGeG4Uw
+    short-id: cfb882e7dcf03ef2
+  servername: images.onetimeok.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: api.v2.ApiService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
   server: app.he-happ.com
   port: 443
   type: vless
@@ -119,32 +158,56 @@ proxies:
     grpc-mode: gun
     grpc-service-name: cloud.v2.RelayService
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: qq.utiltools.ru
+- name: 🇳🇱 荷兰 | NLD 9
+  server: tmesubgift.up.railway.app
   port: 443
   type: vless
-  uuid: eb78e1f0-d921-4ca9-a889-261fcc5a0547
+  uuid: 0ac6ad68-45cb-cd9e-459b-446568d15f69
+  tls: true
+  alpn:
+  - http/1.1
+  servername: tmesubgift.up.railway.app
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/0ac6ad68-45cb-cd9e-459b-446568d15f69
+    headers:
+      Host: tmesubgift.up.railway.app
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 94-183-224-55.sslip.io
+  port: 8443
+  type: vless
+  uuid: 3820aab5-ffaf-43b7-8741-af720c6690a4
+  tls: true
+  servername: 94-183-224-55.sslip.io
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /yt
+    headers:
+      Host: 94-183-224-55.sslip.io
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 11
+  server: rezerv27.yunus.guru
+  port: 443
+  type: vless
+  uuid: 861fd825-3828-4bc6-a48e-8295f357b6c7
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI
-  servername: qq.utiltools.ru
-  client-fingerprint: qq
+    public-key: 5f6adBpAj7t6LDM9aEI4LMqkVfkh_6nMcNGgWFNnsm8
+    short-id: 6a5ae6670f71187d
+  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dawn-waterfall-6052.360-001.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 22
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 185.22.154.103
+  port: 40110
+  type: ss
+  cipher: aes-256-gcm
+  password: cfe685726eea2c4b
+- name: 🇸🇬 新加坡 | SGP 2
   server: 104.18.34.245
   port: 8880
   type: vless
@@ -155,6 +218,32 @@ proxies:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
       Host: square-tree-3dbf.285.workers.dev
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: swe-one.quiet-rogue.site
+  port: 443
+  type: vless
+  uuid: 71cada65-d23e-418c-88e4-a06188d14689
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: wiqox4cXWo08IKTueVpIp5k0aC25Hcbuo0uAKvqlQ2Y
+    short-id: ae5abf486d5dcd20
+  servername: swe-one.quiet-rogue.site
+  client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: 94977b19-6720-48a6-92fd-00238757ea30
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: fragrant-credit-c4cf.148-e68.workers.dev
   udp: true
 - name: 🇷🇴 罗马尼亚 | ROU
   server: 146.70.254.238
@@ -168,51 +257,67 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_17
+  - 🇦🇱 AL_12
+  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 18
-  - 🇩🇪 德国 | DEU 20
-  - 🇩🇰 丹麦 | DNK
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 11
   - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 31
+  - 🇬🇧 英国 | GBR 5
+  - 🇬🇧 英国 | GBR 6
+  - 🇩🇪 德国 | DEU 29
+  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇺🇸 美国 | USA 22
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 11
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 9
   - 🇷🇴 罗马尼亚 | ROU
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_17
-  - 🇩🇪 德国 | DEU 18
-  - 🇩🇪 德国 | DEU 20
+  - 🇦🇱 AL_12
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 2
+  - 🇷🇺 俄罗斯 | RUS
   - 🇷🇴 罗马尼亚 | ROU
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇰 丹麦 | DNK
-  - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 31
+  - 🇬🇧 英国 | GBR 5
+  - 🇬🇧 英国 | GBR 6
+  - 🇩🇪 德国 | DEU 29
+  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇺🇸 美国 | USA 22
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 11
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 9
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_17
+  - 🇦🇱 AL_12
+  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 18
 rules:
 - MATCH,AUTO
