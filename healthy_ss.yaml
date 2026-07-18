@@ -4,24 +4,25 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇱 AL_12
+- name: 🇦🇱 AL_11
   server: 157.22.240.141
   port: 57925
   type: ss
   cipher: chacha20-ietf-poly1305
   password: FXpDf7WV6lfD6n9hpz7HF2
-- name: 🇬🇧 英国 | GBR 2
-  server: 13.135.248.162
+- name: 🇩🇪 德国 | DEU 14
+  server: 54.93.186.149
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 185.22.154.103
-  port: 40110
+- name: 🇳🇱 荷兰 | NLD
+  server: 82.38.31.48
+  port: 8080
   type: ss
-  cipher: aes-256-gcm
-  password: cfe685726eea2c4b
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
 - name: 🇷🇴 罗马尼亚 | ROU
   server: 146.70.254.238
   port: 1080
@@ -34,9 +35,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_12
-  - 🇬🇧 英国 | GBR 2
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇦🇱 AL_11
+  - 🇩🇪 德国 | DEU 14
+  - 🇳🇱 荷兰 | NLD
   - 🇷🇴 罗马尼亚 | ROU
 rules:
 - MATCH,AUTO

@@ -1,6 +1,8 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#Server 5 🇳🇱	dl_kib_s=1394	ul_kib_s=1282
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.195:8080#Server 1 🇳🇱	dl_kib_s=1376	ul_kib_s=1263
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.32:443#Server 8 🇳🇱	dl_kib_s=1371	ul_kib_s=1243
-trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.135:443?type=trojan&security=tls#Server 11 🇩🇪	dl_kib_s=1380	ul_kib_s=1223
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.3:8080#Server 2 🇳🇱	dl_kib_s=900	ul_kib_s=1255
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.215:8080#Server 4 🇳🇱	dl_kib_s=915	ul_kib_s=1240
+trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.140:443?allowInsecure=0&sni=#Server 34 🇩🇪	dl_kib_s=1406	ul_kib_s=1307
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.195:8080#Server 1 🇳🇱	dl_kib_s=1411	ul_kib_s=1286
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.32:443#Server 8 🇳🇱	dl_kib_s=1363	ul_kib_s=1249
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#Server 5 🇳🇱	dl_kib_s=1345	ul_kib_s=1241
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.215:8080#Server 4 🇳🇱	dl_kib_s=1116	ul_kib_s=1114
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.211:8080#Server 46 🇳🇱	dl_kib_s=1337	ul_kib_s=880
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.3:8080#Server 2 🇳🇱	dl_kib_s=890	ul_kib_s=1252
+trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.145:443/?type=tcp&security=tls&sni=185.137.157.145#Server 40 🇩🇪	dl_kib_s=777	ul_kib_s=1076
