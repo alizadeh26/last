@@ -4,17 +4,9 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 13
-  server: 45.63.116.184
-  port: 23231
-  type: vless
-  uuid: d67f37da-8a7d-416e-a386-ea0a82317257
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 51.44.110.9
-  port: 22222
+- name: 🇫🇷 法国 | FRA 2
+  server: 13.36.95.89
+  port: 22224
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
@@ -35,6 +27,19 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: t3.feiyue706.com
+  port: 56784
+  type: vless
+  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+  tls: true
+  servername: t3.feiyue706.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
   udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: stats.oneoker.com
@@ -65,6 +70,32 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇯🇵 日本 | JPN 4
+  server: t2.feiyue706.com
+  port: 46784
+  type: vless
+  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+  tls: true
+  servername: t2.feiyue706.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
+  udp: true
+- name: 🇰🇷 韩国 | KOR 3
+  server: t2.feiyue706.com
+  port: 46785
+  type: vless
+  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+  tls: true
+  servername: t2.feiyue706.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: images.onetimeok.com
   port: 443
@@ -80,6 +111,19 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: api.v2.ApiService
+  udp: true
+- name: 🇵🇭 菲律宾 | PHL 2
+  server: t1.feiyue706.com
+  port: 36799
+  type: vless
+  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+  tls: true
+  servername: t1.feiyue706.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
   udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 162.159.21.178
@@ -101,30 +145,22 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 87.228.122.108
-  port: 4100
-  type: vless
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 13
-  - 🇫🇷 法国 | FRA 3
+  - 🇫🇷 法国 | FRA 2
   - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR 2
   - 🇮🇹 意大利 | ITA
+  - 🇯🇵 日本 | JPN 4
+  - 🇰🇷 韩国 | KOR 3
   - 🇳🇱 荷兰 | NLD 3
+  - 🇵🇭 菲律宾 | PHL 2
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 15
-  - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO
