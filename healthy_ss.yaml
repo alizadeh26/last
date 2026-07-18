@@ -10,6 +10,18 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: FXpDf7WV6lfD6n9hpz7HF2
+- name: 🇩🇪 德国 | DEU 14
+  server: 54.93.186.149
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 | DEU 17
+  server: 63.177.252.44
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇳🇱 荷兰 | NLD
   server: 82.38.31.48
   port: 8080
@@ -24,6 +36,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇦🇱 AL_11
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 17
   - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
