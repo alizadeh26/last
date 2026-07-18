@@ -4,89 +4,54 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇱 AL_11
+- name: 🇦🇱 AL_17
   server: 157.22.240.141
   port: 57925
   type: ss
   cipher: chacha20-ietf-poly1305
   password: FXpDf7WV6lfD6n9hpz7HF2
-- name: 🇩🇪 德国 | DEU 4
-  server: 3.122.115.111
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 3.71.12.190
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇨🇿 捷克 | CZE
-  server: cz.srv.anti-zapret.com
-  port: 443
+- name: 🇩🇪 德国 | DEU
+  server: 45.32.155.73
+  port: 53776
   type: vless
-  uuid: 13b55e8e-fbea-4ee1-b6b7-115fa3043182
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
-    short-id: 17faf32cb516c9cb
-  servername: cz.srv.anti-zapret.com
-  client-fingerprint: firefox
+  uuid: 1c799205-5251-4fb2-8167-56d3e895c8c5
+  tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: fetch.anotherok.com
-  port: 443
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  reality-opts:
-    public-key: U7O4wCUNinuk5M-ADV1e4sJ_iA7-JVBEXB8nev6kzzs
-    short-id: 335555b164619360
-  servername: fetch.anotherok.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.StreamService
-  udp: true
-- name: 🇩🇪 德国 | DEU 22
+- name: 🇩🇪 德国 | DEU 5
   server: 31.56.146.82
   port: 2090
   type: vless
   uuid: eab915bc-d2df-73d1-47d0-6eb240497055
   tls: false
   network: tcp
-- name: 🇩🇪 德国 | DEU 19
-  server: corelink.su
-  port: 443
+- name: 🇩🇪 德国 | DEU 11
+  server: 31.57.27.177
+  port: 2090
   type: vless
-  uuid: 153560b0-1a33-4b44-b059-ca5b22e55c19
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: b0y3fVgL8jKbO3cNmh_qCoZWoWRsY6BYc6VDJFkNe2I
-    short-id: b7fc0f11dda97edb
-  servername: corelink.su
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇩🇪 德国 | DEU 24
-  server: fi2.cyphervpn.pro
-  port: 443
-  type: vless
-  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc
-    short-id: 8f9d033ad6d2cebf
-  servername: fi2.cyphervpn.pro
-  client-fingerprint: firefox
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 46.8.225.98
+  port: 2090
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU 18
+  server: 3.77.54.36
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 | DEU 20
+  server: 35.156.204.162
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇩🇰 丹麦 | DNK
   server: dk1.cyphervpn.pro
   port: 443
@@ -100,99 +65,7 @@ proxies:
   servername: dk1.cyphervpn.pro
   client-fingerprint: firefox
   network: tcp
-- name: 🇩🇪 德国 | DEU 25
-  server: fi3.cyphervpn.pro
-  port: 443
-  type: vless
-  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc
-    short-id: 8f9d033ad6d2cebf
-  servername: fi3.cyphervpn.pro
-  client-fingerprint: firefox
-  network: tcp
-- name: 🇩🇪 德国 | DEU 16
-  server: speedtestgoogleyahoobingyandexgmailappleaol.xbx24.ir
-  port: 2096
-  type: vless
-  uuid: ab7c7007-9a4e-4391-bada-1d13bb20d144
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  - h3
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /mehdi666
-    headers:
-      Host: speedtestgoogleyahoobingyandexgmailappleaol.xbx24.ir
-  udp: true
-- name: 🇪🇸 西班牙 | ESP
-  server: isp04.myxasecure.space
-  port: 443
-  type: vless
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: isp04.myxasecure.space
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: home.oneoker.com
-  port: 443
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  reality-opts:
-    public-key: JFEaiOh7NMOoZJQx-IYSlm3hsrRDnRZK4udMHShwvGw
-    short-id: ac4ef9797715a935
-  servername: home.oneoker.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.StreamService
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
-  server: add.oneoker.com
-  port: 443
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  reality-opts:
-    public-key: W329R9_hAiG_wGLcIhfbm0AA8Si7DVhz4es2aASZACY
-    short-id: 9c478d3655bfa85d
-  servername: add.oneoker.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.StreamService
-  udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: api.oneoker.com
-  port: 443
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  reality-opts:
-    public-key: pVc2H60-PlZ1gRiYyYc089xCwcck5BTs67k6B2-5ZRM
-    short-id: 7a7de52ae0e6c22f
-  servername: api.oneoker.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.StreamService
-  udp: true
-- name: 🇬🇧 英国 | GBR 6
   server: stats.oneoker.com
   port: 443
   type: vless
@@ -208,95 +81,43 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
   udp: true
-- name: 🇬🇧 英国 | GBR 5
-  server: main.oneoker.com
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: 95.182.90.97
+  port: 21855
+  type: vless
+  uuid: 3d466ccc-1585-439d-aa28-5a82d626576a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: genshin.hoyoverse.com
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: get.onetimeok.com
   port: 443
   type: vless
   uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
   tls: true
   reality-opts:
-    public-key: yiX2T6z3GavNIgnnxsoU57vgq2pdfngXAU83vhBDQlA
-    short-id: a9b0c08836bad3c5
-  servername: main.oneoker.com
+    public-key: CQhnOxCj9UuA67kiDGGOcXB1G_XayWfHyhmlWGeG4Uw
+    short-id: cfb882e7dcf03ef2
+  servername: get.onetimeok.com
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: api.v1.StreamService
+    grpc-service-name: api.v2.ApiService
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: c722s1.portablesubmarines.com
-  port: 16025
-  type: ss
-  cipher: aes-256-gcm
-  password: gXtfJmxrZ8Qkkd2k
-- name: 🇭🇰 香港 | HKG 3
-  server: c722s2.portablesubmarines.com
-  port: 16025
-  type: ss
-  cipher: aes-256-gcm
-  password: gXtfJmxrZ8Qkkd2k
-- name: 🇭🇰 香港 | HKG 9
-  server: c722s3.portablesubmarines.com
-  port: 16025
+- name: 🇩🇪 德国 | DEU 7
+  server: family.bucket.x9.kfc-520.com
+  port: 10037
   type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 香港 | HKG 10
-  server: c722s4.portablesubmarines.com
-  port: 16025
-  type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 香港 | HKG 11
-  server: c722s5.portablesubmarines.com
-  port: 16025
-  type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 85.159.228.250
-  port: 25703
-  type: vless
-  uuid: 7e5964d036b843ff885b86c4d3bfd466
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 3
-  server: nl.themesh.site
-  port: 443
-  type: vless
-  uuid: 419bfbd4-3097-4cef-a6b3-aebd78506ed7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -GF4mweoZmsIF2Kl0j-3u_NBlT8iGSBr12a7xZVtYTo
-    short-id: 4f16d2b6e32c09f2
-  servername: nl.themesh.site
-  client-fingerprint: firefox
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 4
-  server: nl.themesh.site
-  port: 443
-  type: vless
-  uuid: 6fa9f6ae-877b-4858-b128-a8377fd9038b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -GF4mweoZmsIF2Kl0j-3u_NBlT8iGSBr12a7xZVtYTo
-    short-id: 4f16d2b6e32c09f2
-  servername: nl.themesh.site
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: api.onetimeok.com
   port: 443
@@ -314,230 +135,135 @@ proxies:
     grpc-service-name: api.v2.ApiService
   udp: true
 - name: 🇳🇱 荷兰 | NLD 6
-  server: images.onetimeok.com
+  server: app.he-happ.com
   port: 443
   type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  uuid: 9e4e5d64-11a3-48bc-8622-1d39bd1c2573
   tls: true
   reality-opts:
-    public-key: CQhnOxCj9UuA67kiDGGOcXB1G_XayWfHyhmlWGeG4Uw
-    short-id: cfb882e7dcf03ef2
-  servername: images.onetimeok.com
+    public-key: 0DJvjVOtuyfSDnioOJJzHKMsYGgUD95Sw153xEJrBgo
+    short-id: db8389179a5852d4
+  servername: app.he-happ.com
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: api.v2.ApiService
+    grpc-service-name: cloud.v2.RelayService
   udp: true
 - name: 🇳🇱 荷兰 | NLD 7
-  server: get.onetimeok.com
-  port: 443
+  server: 103.133.1.160
+  port: 80
   type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  reality-opts:
-    public-key: CQhnOxCj9UuA67kiDGGOcXB1G_XayWfHyhmlWGeG4Uw
-    short-id: cfb882e7dcf03ef2
-  servername: get.onetimeok.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v2.ApiService
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: soft-shadow-1e33.xicav73335.workers.dev
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: gateway.oneokgames.com
-  port: 443
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  reality-opts:
-    public-key: 2ByKrIVItayTLa4VxxsEpSMi5Anjk8tGqsUm9A2YU2I
-    short-id: acd160fedb4b4006
-  servername: gateway.oneokgames.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: rpc.v1.StreamService
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: mirror.oneokgames.com
-  port: 443
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  reality-opts:
-    public-key: 2ByKrIVItayTLa4VxxsEpSMi5Anjk8tGqsUm9A2YU2I
-    short-id: acd160fedb4b4006
-  servername: mirror.oneokgames.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: rpc.v1.StreamService
-  udp: true
+- name: 🇲🇽 墨西哥 | MEX 2
+  server: family.bucket.x9.kfc-520.com
+  port: 10045
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇭 菲律宾 | PHL
+  server: family.bucket.x9.kfc-520.com
+  port: 10409
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 | ROU
   server: 146.70.254.238
   port: 1080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 🇵🇱 波兰 | POL 5
-  server: pl.srv.anti-zapret.com
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: qq.utiltools.ru
   port: 443
   type: vless
-  uuid: 13b55e8e-fbea-4ee1-b6b7-115fa3043182
+  uuid: eb78e1f0-d921-4ca9-a889-261fcc5a0547
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
-    short-id: 17faf32cb516c9cb
-  servername: pl.srv.anti-zapret.com
-  client-fingerprint: firefox
+    public-key: drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI
+  servername: qq.utiltools.ru
+  client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 185.185.142.60
+- name: 🇸🇰 斯洛伐克 | SVK
+  server: 156.146.40.84
   port: 1080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: vwc9nGgP8O5KeWbyrwiUow
+  password: Vr06rU_v1vFPYeXq9zbsAA
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 185.22.154.254
-  port: 10122
-  type: ss
-  cipher: aes-256-gcm
-  password: 32c0ea6e823341a2
-- name: 🇺🇸 美国 | USA 3
-  server: 18.221.194.108
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 2
-  server: 18.118.189.84
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 | SWE 4
-  server: st.onnstreaming.ru
-  port: 443
+- name: 🇺🇸 美国 | USA 25
+  server: blog.cloudflare.com
+  port: 2095
   type: vless
-  uuid: d1c624fc-d0b0-49c7-8afa-e15a5949bc17
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1c7TsslPz_gsvzX4ENkEa36Pp3gm-M3SRLhvqtGaAz4
-    short-id: e8e019c424ccb765
-  servername: st.onnstreaming.ru
-  client-fingerprint: random
-  network: tcp
-- name: 🇺🇸 美国 | USA 28
-  server: c722s801.portablesubmarines.com
-  port: 16025
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  servername: cnmfangbinxing.cnmfangbinxing-s.workers.dev
+  network: ws
+  ws-opts:
+    path: /fp=randomized
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-s.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 8
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dawn-waterfall-6052.360-001.workers.dev
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 2
+  server: family.bucket.x9.kfc-520.com
+  port: 10048
   type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 | USA 20
-  server: ad-013.limaklhc6.info
-  port: 8443
-  type: vless
-  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
-  tls: true
-  servername: ad-013.limaklhc6.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-013.limaklhc6.info
-  udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: hong1.panel11.ru
-  port: 443
-  type: vless
-  uuid: aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MCdZOPt6XUdH3N8xQc6J4GElI9_9csxjsOOzwCPZjR0
-    short-id: 6378191533abf6df
-  servername: hong1.panel11.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: ad-005.vector2llqn.info
-  port: 8443
-  type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
-  tls: true
-  servername: ad-005.vector2llqn.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-005.vector2llqn.info
-  udp: true
 - name: 🇺🇸 美国 | USA 22
-  server: speedtestgoogleyahoobingyandexgmailappleaol.xbx24.ir
-  port: 2083
+  server: 104.18.34.245
+  port: 8880
   type: vless
-  uuid: 060283c1-790d-46e7-87a2-566537386edf
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  - h3
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /mehdi666
-    headers:
-      Host: speedtestgoogleyahoobingyandexgmailappleaol.xbx24.ir
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 87.228.122.108
-  port: 4100
-  type: vless
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
   tls: false
   network: ws
   ws-opts:
-    path: /v1
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-tree-3dbf.285.workers.dev
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 5.129.194.34
-  port: 4100
+- name: 🇩🇪 德国 | DEU 24
+  server: 26bc92586944.apruxdomain.online
+  port: 80
   type: vless
-  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  uuid: f387e32c-a8ab-4adf-9c5c-fe371cf78f6b
   tls: false
+  packet-encoding: xudp
   network: ws
   ws-opts:
-    path: /v1
+    path: /
     headers:
-      Host: live.ok.ru
-  udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: us.srv.anti-zapret.com
-  port: 443
-  type: vless
-  uuid: 13b55e8e-fbea-4ee1-b6b7-115fa3043182
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
-    short-id: 58fbcddfaae3ade9
-  servername: us.srv.anti-zapret.com
-  client-fingerprint: firefox
-  network: tcp
+      Host: 26bc92586944.apruxdomain.online
   udp: true
 proxy-groups:
 - name: AUTO
@@ -545,118 +271,78 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_11
-  - 🇩🇪 德国 | DEU 4
+  - 🇦🇱 AL_17
+  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 5
-  - 🇨🇿 捷克 | CZE
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 22
-  - 🇩🇪 德国 | DEU 19
-  - 🇩🇪 德国 | DEU 24
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 18
+  - 🇩🇪 德国 | DEU 20
   - 🇩🇰 丹麦 | DNK
-  - 🇩🇪 德国 | DEU 25
-  - 🇩🇪 德国 | DEU 16
-  - 🇪🇸 西班牙 | ESP
-  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 4
-  - 🇬🇧 英国 | GBR 6
-  - 🇬🇧 英国 | GBR 5
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 9
-  - 🇭🇰 香港 | HKG 10
-  - 🇭🇰 香港 | HKG 11
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 4
+  - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 8
+  - 🇲🇽 墨西哥 | MEX 2
+  - 🇵🇭 菲律宾 | PHL
   - 🇷🇴 罗马尼亚 | ROU
-  - 🇵🇱 波兰 | POL 5
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 2
-  - 🇸🇪 瑞典 | SWE 4
-  - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 22
-  - 🇷🇺 俄罗斯 | RUS 4
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA 19
+  - 🇸🇰 斯洛伐克 | SVK
+  - 🇺🇸 美国 | USA 25
+  - 🇸🇬 新加坡 | SGP 8
+  - 🇹🇷 土耳其 | TUR 2
+  - 🇺🇸 美国 | USA 22
+  - 🇩🇪 德国 | DEU 24
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_11
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 5
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 3
+  - 🇦🇱 AL_17
+  - 🇩🇪 德国 | DEU 18
+  - 🇩🇪 德国 | DEU 20
   - 🇷🇴 罗马尼亚 | ROU
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 2
+  - 🇸🇰 斯洛伐克 | SVK
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 | CZE
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 22
-  - 🇩🇪 德国 | DEU 19
-  - 🇩🇪 德国 | DEU 24
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 6
   - 🇩🇰 丹麦 | DNK
-  - 🇩🇪 德国 | DEU 25
-  - 🇩🇪 德国 | DEU 16
-  - 🇪🇸 西班牙 | ESP
-  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 4
-  - 🇬🇧 英国 | GBR 6
-  - 🇬🇧 英国 | GBR 5
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇵🇱 波兰 | POL 5
-  - 🇸🇪 瑞典 | SWE 4
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 22
-  - 🇷🇺 俄罗斯 | RUS 4
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 25
+  - 🇸🇬 新加坡 | SGP 8
+  - 🇺🇸 美国 | USA 22
+  - 🇩🇪 德国 | DEU 24
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 9
-  - 🇭🇰 香港 | HKG 10
-  - 🇭🇰 香港 | HKG 11
-  - 🇺🇸 美国 | USA 28
+  - 🇩🇪 德国 | DEU 7
+  - 🇲🇽 墨西哥 | MEX 2
+  - 🇵🇭 菲律宾 | PHL
+  - 🇹🇷 土耳其 | TUR 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_11
-  - 🇩🇪 德国 | DEU 4
+  - 🇦🇱 AL_17
+  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 5
 rules:
 - MATCH,AUTO

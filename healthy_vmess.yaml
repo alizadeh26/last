@@ -4,38 +4,38 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 9
-  server: c722s3.portablesubmarines.com
-  port: 16025
+- name: 🇩🇪 德国 | DEU 7
+  server: family.bucket.x9.kfc-520.com
+  port: 10037
   type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 香港 | HKG 10
-  server: c722s4.portablesubmarines.com
-  port: 16025
+- name: 🇲🇽 墨西哥 | MEX 2
+  server: family.bucket.x9.kfc-520.com
+  port: 10045
   type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 香港 | HKG 11
-  server: c722s5.portablesubmarines.com
-  port: 16025
+- name: 🇵🇭 菲律宾 | PHL
+  server: family.bucket.x9.kfc-520.com
+  port: 10409
   type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 | USA 28
-  server: c722s801.portablesubmarines.com
-  port: 16025
+- name: 🇹🇷 土耳其 | TUR 2
+  server: family.bucket.x9.kfc-520.com
+  port: 10048
   type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
   alterId: 0
   cipher: auto
   tls: false
@@ -46,9 +46,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 9
-  - 🇭🇰 香港 | HKG 10
-  - 🇭🇰 香港 | HKG 11
-  - 🇺🇸 美国 | USA 28
+  - 🇩🇪 德国 | DEU 7
+  - 🇲🇽 墨西哥 | MEX 2
+  - 🇵🇭 菲律宾 | PHL
+  - 🇹🇷 土耳其 | TUR 2
 rules:
 - MATCH,AUTO
