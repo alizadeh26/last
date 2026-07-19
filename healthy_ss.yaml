@@ -4,25 +4,40 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: 3.126.251.203
+- name: 🇬🇧 英国 | GBR 4
+  server: 52.56.188.204
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇬🇧 英国 | GBR
+- name: 🇬🇧 英国 | GBR 2
   server: 13.135.169.180
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 82.38.31.156
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 212.67.17.239
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: vwc9nGgP8O5KeWbyrwiUow
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 4
+  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇷🇺 俄罗斯 | RUS 3
 rules:
 - MATCH,AUTO
