@@ -4,33 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇱 AL_09
-  server: 157.22.240.141
-  port: 57925
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: FXpDf7WV6lfD6n9hpz7HF2
-- name: 🇩🇪 德国 | DEU 9
+- name: 🇩🇪 德国 | DEU 14
   server: 54.93.83.254
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇩🇪 德国 | DEU 3
-  server: 3.77.54.36
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 | DEU 13
-  server: 3.75.172.120
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇩🇪 德国 | DEU 15
-  server: 63.176.169.206
+- name: 🇬🇧 英国 | GBR 2
+  server: 52.56.188.204
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -41,10 +22,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_09
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 15
+  - 🇩🇪 德国 | DEU 14
+  - 🇬🇧 英国 | GBR 2
 rules:
 - MATCH,AUTO
