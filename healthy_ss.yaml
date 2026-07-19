@@ -4,18 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR 4
-  server: 52.56.188.204
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 | GBR 2
-  server: 13.135.169.180
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 212.67.17.239
   port: 1080
@@ -35,8 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 4
-  - 🇬🇧 英国 | GBR 2
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇳🇱 荷兰 | NLD 2
 rules:

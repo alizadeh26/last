@@ -18,16 +18,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: 82.115.16.211
-  port: 2082
-  type: vless
-  uuid: 1c404fde-0aa5-482c-ab00-0b34db703ac8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
 - name: 🇬🇧 英国 | GBR 5
   server: cdn.pinecloud.net
   port: 443
@@ -81,18 +71,6 @@ proxies:
     headers:
       Host: ad-007.cloud25075.info
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: odd-darkness-57ce.334-a29.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -100,11 +78,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE 2
-  - 🇩🇪 德国 | DEU 13
   - 🇬🇧 英国 | GBR 5
   - 🇷🇺 俄罗斯 | RUS
   - 🇸🇬 新加坡 | SGP 7
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
