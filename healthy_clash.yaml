@@ -60,9 +60,27 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG
+- name: 🇩🇪 德国 | DEU 13
+  server: 63.177.252.44
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 新加坡 | SGP 11
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: white-hill-f907.23-b68.workers.dev
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN
   server: t1.feiyue706.com
-  port: 36796
+  port: 36780
   type: vless
   uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
   tls: true
@@ -72,30 +90,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: ljfxz
-  udp: true
-- name: 🇯🇵 日本 | JPN 9
-  server: soskeynets.yunzhongzhuan.com
-  port: 8880
-  type: vless
-  uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: steep-thunder-97fa.108-d10.workers.dev
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 14
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: icy-snowflake-1f56.147-1ea.workers.dev
   udp: true
 - name: 🇸🇬 新加坡 | SGP 10
   server: 104.18.34.245
@@ -109,31 +103,17 @@ proxies:
     headers:
       Host: dawn-waterfall-6052.360-001.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: usa.plus-hit.ru
-  port: 443
-  type: vless
-  uuid: de0683f5-ad03-40c4-90f2-59feec9003b9
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA
-    short-id: 94c2ae0f7b6d3e15
-  servername: usa.plus-hit.ru
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 11
-  server: codecanyon.net
+- name: 🇯🇵 日本 | JPN 9
+  server: soskeynets.yunzhongzhuan.com
   port: 8880
   type: vless
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
+  uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: white-hill-f907.23-b68.workers.dev
+      Host: steep-thunder-97fa.108-d10.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 162.159.21.178
@@ -172,20 +152,6 @@ proxies:
     headers:
       Host: dawn-waterfall-6052.360-001.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: ad-010.vector2llqn.info
-  port: 8443
-  type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.vector2llqn.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.vector2llqn.info
-  udp: true
 - name: 🇺🇸 美国 | USA 30
   server: us02.tunnely.ru
   port: 443
@@ -199,18 +165,19 @@ proxies:
   servername: us02.tunnely.ru
   client-fingerprint: firefox
   network: tcp
-- name: 🇻🇳 越南 | VNM
-  server: t1.feiyue706.com
-  port: 36804
+- name: 🇺🇸 美国 | USA 20
+  server: ad-010.vector2llqn.info
+  port: 8443
   type: vless
-  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
   tls: true
-  servername: t1.feiyue706.com
+  servername: ad-010.vector2llqn.info
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.vector2llqn.info
   udp: true
 - name: 🇺🇸 美国 | USA 19
   server: cs3iiova.cf.3666888.xyz
@@ -235,18 +202,16 @@ proxy-groups:
   - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR 5
-  - 🇭🇰 香港 | HKG
-  - 🇯🇵 日本 | JPN 9
-  - 🇸🇬 新加坡 | SGP 14
-  - 🇸🇬 新加坡 | SGP 10
-  - 🇺🇸 美国 | USA 10
+  - 🇩🇪 德国 | DEU 13
   - 🇸🇬 新加坡 | SGP 11
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇸🇬 新加坡 | SGP 10
+  - 🇯🇵 日本 | JPN 9
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 30
-  - 🇻🇳 越南 | VNM
+  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 19
 - name: PROTO-SS
   type: url-test
@@ -255,6 +220,7 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 14
   - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 13
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -263,18 +229,15 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 11
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR 5
-  - 🇭🇰 香港 | HKG
-  - 🇯🇵 日本 | JPN 9
-  - 🇸🇬 新加坡 | SGP 14
-  - 🇸🇬 新加坡 | SGP 10
-  - 🇺🇸 美国 | USA 10
   - 🇸🇬 新加坡 | SGP 11
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇸🇬 新加坡 | SGP 10
+  - 🇯🇵 日本 | JPN 9
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 30
-  - 🇻🇳 越南 | VNM
+  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 19
 - name: REGION-EU
   type: url-test
