@@ -18,18 +18,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 108.162.194.226
-  port: 80
-  type: vless
-  uuid: 39e4ffce-5027-4138-a93b-4de33bc2a3f1
-  tls: false
-  network: ws
-  ws-opts:
-    path: /secure-vpn/
-    headers:
-      Host: ppp.19bot.ir
-  udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: 82.115.16.211
   port: 2082
@@ -79,18 +67,6 @@ proxies:
     headers:
       Host: yellow-breeze-989b.348-9b8.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: odd-darkness-57ce.334-a29.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 9
   server: ad-007.cloud25075.info
   port: 8443
@@ -105,6 +81,18 @@ proxies:
     headers:
       Host: ad-007.cloud25075.info
   udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: odd-darkness-57ce.334-a29.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -112,12 +100,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE 2
-  - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 13
   - 🇬🇧 英国 | GBR 5
   - 🇷🇺 俄罗斯 | RUS
   - 🇸🇬 新加坡 | SGP 7
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
