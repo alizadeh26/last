@@ -40,8 +40,8 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 13.135.169.180
+- name: 🇬🇧 英国 | GBR 4
+  server: 52.56.188.204
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -60,6 +60,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 82.38.31.156
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 212.67.17.239
   port: 1080
@@ -67,12 +73,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: vwc9nGgP8O5KeWbyrwiUow
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 82.38.31.156
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇷🇺 俄罗斯 | RUS
   server: qq.utiltools.ru
   port: 443
@@ -86,18 +86,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-lab-91a6.54-8c3.workers.dev
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 7
   server: 162.159.21.178
   port: 8880
@@ -109,6 +97,18 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: yellow-breeze-989b.348-9b8.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: odd-darkness-57ce.334-a29.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: ad-007.cloud25075.info
@@ -124,36 +124,6 @@ proxies:
     headers:
       Host: ad-007.cloud25075.info
   udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: white-hill-f907.23-b68.workers.dev
-  udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: 52.56.188.204
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 24
-  server: download.yunzhongzhuan.com
-  port: 8880
-  type: vless
-  uuid: 3aaabf99-32c6-4032-8695-c9f0eb28be6f
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: divine-sound-9e93.22-be2.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -163,26 +133,22 @@ proxy-groups:
   - 🇨🇭 瑞士 | CHE 2
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 13
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 5
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 11
-  - 🇸🇬 新加坡 | SGP 7
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 15
   - 🇬🇧 英国 | GBR 4
-  - 🇺🇸 美国 | USA 24
+  - 🇬🇧 英国 | GBR 5
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇳🇱 荷兰 | NLD 2
   - 🇬🇧 英国 | GBR 4
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇷🇺 俄罗斯 | RUS 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -193,11 +159,9 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 13
   - 🇬🇧 英国 | GBR 5
   - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 11
   - 🇸🇬 新加坡 | SGP 7
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 24
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
