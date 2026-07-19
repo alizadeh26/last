@@ -4,39 +4,99 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇱 AL_11
+- name: 🇦🇱 AL_09
   server: 157.22.240.141
   port: 57925
   type: ss
   cipher: chacha20-ietf-poly1305
   password: FXpDf7WV6lfD6n9hpz7HF2
-- name: 🇩🇪 德国 | DEU 14
-  server: 54.93.186.149
+- name: 🇨🇭 瑞士 | CHE 2
+  server: t2.feiyue706.com
+  port: 46786
+  type: vless
+  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+  tls: true
+  servername: t2.feiyue706.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
+  udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: 54.93.83.254
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 | DEU 3
+  server: 3.77.54.36
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 | DEU 4
+  server: ger01.myxasecure.space
+  port: 443
+  type: vless
+  uuid: b79ada82-b394-4afd-828f-7eefecae3a97
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: ger01.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
+- name: 🇩🇪 德国 | DEU 12
+  server: 82.115.16.211
+  port: 2082
+  type: vless
+  uuid: 1c404fde-0aa5-482c-ab00-0b34db703ac8
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: 3.75.172.120
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇩🇪 德国 | DEU 15
+  server: 63.176.169.206
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇩🇪 德国 | DEU 17
-  server: 63.177.252.44
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 | GBR 2
-  server: stats.oneoker.com
+  server: fi.buycloud.app
   port: 443
   type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  uuid: bbae962a-b6e9-46e6-990c-6abf13e6b075
   tls: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: uYXyM2Nwmqw3bSDSV95XmpbOaAYBmBTh619Vl8lFJRs
-    short-id: 60cde13ab21686e9
-  servername: stats.oneoker.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.StreamService
+    public-key: V4SeM4OMxXoSKBmmyC5C0kZEhgL33a5vVZBe7ysJ42U
+    short-id: 0a30e2aee95a7571
+  servername: fi.buycloud.app
+  client-fingerprint: qq
+  network: tcp
+- name: 🇩🇪 德国 | DEU 11
+  server: fi.plus-hit.ru
+  port: 443
+  type: vless
+  uuid: de0683f5-ad03-40c4-90f2-59feec9003b9
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ayJjf8TJwT_INFKDDHk9uv3zyoERmbG2gECNX1fwFxo
+    short-id: 94c2ae0f7b6d3e15
+  servername: fi.plus-hit.ru
+  client-fingerprint: random
+  network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR
   server: api.oneoker.com
@@ -54,45 +114,96 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: hudrososov.blog
+- name: 🇵🇭 菲律宾 | PHL
+  server: t1.feiyue706.com
+  port: 36800
+  type: vless
+  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+  tls: true
+  servername: t1.feiyue706.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: xxl.orbit-escape.ru
   port: 443
   type: vless
-  uuid: dbb84eca-ee83-4ea7-9db0-064803d4b469
+  uuid: 27c1d725-629c-4e65-9271-d6f5df82c7e9
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: yuKSmrb2MumCllTTmBJiuNTQcGxEaNhqmZVR8dVjLwI
-    short-id: d1c2b3a4
+    public-key: HS4Gr-vMqAOKdxn1Qr2Kwvh3UCIgr3eYWOvUTvuhJh4
+    short-id: 89965a0c305affd3
+  servername: xxl.orbit-escape.ru
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 82.38.31.48
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇸🇬 新加坡 | SGP 2
+  server: t1.feiyue706.com
+  port: 36785
+  type: vless
+  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+  tls: true
+  servername: t1.feiyue706.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: images.onetimeok.com
+- name: 🇸🇪 瑞典 | SWE 2
+  server: api.oneoneok.com
   port: 443
   type: vless
   uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
   tls: true
+  packet-encoding: xudp
   reality-opts:
-    public-key: CQhnOxCj9UuA67kiDGGOcXB1G_XayWfHyhmlWGeG4Uw
-    short-id: cfb882e7dcf03ef2
-  servername: images.onetimeok.com
+    public-key: 4EY4k0Ush0fOcMCMbbx4qPv5OBXswb77LGN6wH8axSA
+    short-id: 5747aafd6c68484a
+  servername: api.oneoneok.com
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: api.v2.ApiService
+    grpc-service-name: api.v1.StreamService
   udp: true
-- name: 🇵🇭 菲律宾 | PHL
+- name: 🇳🇱 荷兰 | NLD 6
+  server: free04.tunnely.ru
+  port: 2096
+  type: vless
+  uuid: 6fa54ae4-6ff6-4456-9700-a3593401389f
+  tls: true
+  reality-opts:
+    public-key: mChFHtaRmeuO2aDuDPqZvBFaCz6f34sVJIKuJcAR130
+    short-id: 2e40144ddc07e8e1
+  servername: free04.tunnely.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: ad-013.limaklhc6.info
+  port: 8443
+  type: vless
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  servername: ad-013.limaklhc6.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-013.limaklhc6.info
+  udp: true
+- name: 🇻🇳 越南 | VNM 2
   server: t1.feiyue706.com
-  port: 36798
+  port: 36805
   type: vless
   uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
   tls: true
@@ -103,9 +214,9 @@ proxies:
     grpc-mode: gun
     grpc-service-name: ljfxz
   udp: true
-- name: 🇵🇭 菲律宾 | PHL 2
+- name: 🇻🇳 越南 | VNM
   server: t1.feiyue706.com
-  port: 36799
+  port: 36803
   type: vless
   uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
   tls: true
@@ -116,74 +227,30 @@ proxies:
     grpc-mode: gun
     grpc-service-name: ljfxz
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.21.178
+- name: 🇺🇸 美国 | USA 26
+  server: dokqjxa0.cf.3666888.xyz
   port: 8880
   type: vless
-  uuid: 94977b19-6720-48a6-92fd-00238757ea30
+  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /sub
     headers:
-      Host: fragrant-credit-c4cf.148-e68.workers.dev
+      Host: rhna7tu4.xn--nxa.nyc.mn
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: t1.feiyue706.com
-  port: 36784
+- name: 🇩🇪 德国 | DEU 14
+  server: 26bc92586944.apruxdomain.online
+  port: 80
   type: vless
-  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
-  tls: true
-  servername: t1.feiyue706.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: t1.feiyue706.com
-  port: 36792
-  type: vless
-  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
-  tls: true
-  servername: t1.feiyue706.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 15
-  server: 43.245.198.157
-  port: 21719
-  type: vless
-  uuid: 6ff24708-1b2a-47dc-bc2b-d498ea00e3e1
+  uuid: f387e32c-a8ab-4adf-9c5c-fe371cf78f6b
   tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: t2.feiyue706.com
-  port: 46783
-  type: vless
-  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
-  tls: true
-  servername: t2.feiyue706.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 87.228.122.108
-  port: 4100
-  type: vless
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  tls: false
+  packet-encoding: xudp
   network: ws
   ws-opts:
-    path: /v1
+    path: /
+    headers:
+      Host: 26bc92586944.apruxdomain.online
   udp: true
 proxy-groups:
 - name: AUTO
@@ -191,55 +258,70 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_11
-  - 🇩🇪 德国 | DEU 14
+  - 🇦🇱 AL_09
+  - 🇨🇭 瑞士 | CHE 2
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 17
-  - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 11
   - 🇬🇧 英国 | GBR
-  - 🇮🇹 意大利 | ITA
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 3
   - 🇵🇭 菲律宾 | PHL
-  - 🇵🇭 菲律宾 | PHL 2
-  - 🇸🇬 新加坡 | SGP
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇭 泰国 | THA
-  - 🇸🇬 新加坡 | SGP 15
-  - 🇺🇸 美国 | USA 13
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇺🇸 美国 | USA 4
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇺🇸 美国 | USA 26
+  - 🇩🇪 德国 | DEU 14
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_11
-  - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 17
-  - 🇳🇱 荷兰 | NLD
+  - 🇦🇱 AL_09
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 15
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
+  - 🇨🇭 瑞士 | CHE 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU 17
+  - 🇩🇪 德国 | DEU 11
   - 🇬🇧 英国 | GBR
-  - 🇮🇹 意大利 | ITA
-  - 🇳🇱 荷兰 | NLD 3
   - 🇵🇭 菲律宾 | PHL
-  - 🇵🇭 菲律宾 | PHL 2
-  - 🇸🇬 新加坡 | SGP
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇭 泰国 | THA
-  - 🇸🇬 新加坡 | SGP 15
-  - 🇺🇸 美国 | USA 13
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇺🇸 美国 | USA 4
+  - 🇻🇳 越南 | VNM 2
+  - 🇻🇳 越南 | VNM
+  - 🇺🇸 美国 | USA 26
+  - 🇩🇪 德国 | DEU 14
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_11
-  - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 17
+  - 🇦🇱 AL_09
+  - 🇩🇪 德国 | DEU 9
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇭 瑞士 | CHE 2
 rules:
 - MATCH,AUTO

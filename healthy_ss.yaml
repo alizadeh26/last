@@ -4,40 +4,47 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇱 AL_11
+- name: 🇦🇱 AL_09
   server: 157.22.240.141
   port: 57925
   type: ss
   cipher: chacha20-ietf-poly1305
   password: FXpDf7WV6lfD6n9hpz7HF2
-- name: 🇩🇪 德国 | DEU 14
-  server: 54.93.186.149
+- name: 🇩🇪 德国 | DEU 9
+  server: 54.93.83.254
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇩🇪 德国 | DEU 17
-  server: 63.177.252.44
+- name: 🇩🇪 德国 | DEU 3
+  server: 3.77.54.36
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇳🇱 荷兰 | NLD
-  server: 82.38.31.48
-  port: 8080
+- name: 🇩🇪 德国 | DEU 13
+  server: 3.75.172.120
+  port: 443
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
+- name: 🇩🇪 德国 | DEU 15
+  server: 63.176.169.206
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL_11
-  - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 17
-  - 🇳🇱 荷兰 | NLD
+  - 🇦🇱 AL_09
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 15
 rules:
 - MATCH,AUTO
