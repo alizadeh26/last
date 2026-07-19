@@ -4,37 +4,111 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU 4
+  server: 108.162.194.226
+  port: 80
+  type: vless
+  uuid: 39e4ffce-5027-4138-a93b-4de33bc2a3f1
+  tls: false
+  network: ws
+  ws-opts:
+    path: /secure-vpn/
+    headers:
+      Host: ppp.19bot.ir
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 18.194.222.164
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 11
-  server: fi.plus-hit.ru
+  server: 199.247.4.254
+  port: 22628
+  type: vless
+  uuid: 399f7f1b-0f5e-43a1-b0b5-6f255367d778
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: 3.124.225.132
+  port: 22223
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 14
+  server: 3.124.225.132
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: 199.247.4.254
+  port: 34274
+  type: vless
+  uuid: 399f7f1b-0f5e-43a1-b0b5-6f255367d778
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+  udp: true
+- name: 🇫🇷 法国 | FRA 2
+  server: 104.238.191.140
+  port: 50171
+  type: vless
+  uuid: 5de7e72d-5f52-40c0-be9c-15ce3b95aeff
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 23
+  server: available.ressel-radar.shop
   port: 443
   type: vless
-  uuid: de0683f5-ad03-40c4-90f2-59feec9003b9
+  uuid: a307dbfd-1069-4880-950a-b5f5e82c3478
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: ayJjf8TJwT_INFKDDHk9uv3zyoERmbG2gECNX1fwFxo
-    short-id: 94c2ae0f7b6d3e15
-  servername: fi.plus-hit.ru
-  client-fingerprint: random
+    public-key: Ef6FHHeelWjhdcynH2iDYOP9g4TeaXmwTS4D8a7biGc
+    short-id: ec4979c10c8a48b3
+  servername: available.ressel-radar.shop
+  client-fingerprint: safari
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: api.oneoker.com
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: nl02.tunnely.ru
   port: 443
   type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
   tls: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: pVc2H60-PlZ1gRiYyYc089xCwcck5BTs67k6B2-5ZRM
-    short-id: 7a7de52ae0e6c22f
-  servername: api.oneoker.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.StreamService
+    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+    short-id: 2e40144ddc07e8e1
+  servername: nl02.tunnely.ru
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 5
+- name: 🇩🇪 德国 | DEU 19
+  server: ad-005.vector2llqn.info
+  port: 8443
+  type: vless
+  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
+  tls: true
+  servername: ad-005.vector2llqn.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-005.vector2llqn.info
+  udp: true
+- name: 🇬🇧 英国 | GBR 7
   server: cdn.pinecloud.net
   port: 443
   type: vless
@@ -48,21 +122,9 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 11
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: white-hill-f907.23-b68.workers.dev
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
+- name: 🇭🇰 香港 | HKG 3
   server: t1.feiyue706.com
-  port: 36780
+  port: 36795
   type: vless
   uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
   tls: true
@@ -73,7 +135,7 @@ proxies:
     grpc-mode: gun
     grpc-service-name: ljfxz
   udp: true
-- name: 🇸🇬 新加坡 | SGP 10
+- name: 🇸🇬 新加坡 | SGP
   server: 104.18.34.245
   port: 8880
   type: vless
@@ -85,44 +147,108 @@ proxies:
     headers:
       Host: dawn-waterfall-6052.360-001.workers.dev
   udp: true
-- name: 🇯🇵 日本 | JPN 9
-  server: soskeynets.yunzhongzhuan.com
-  port: 8880
+- name: 🇳🇱 荷兰 | NLD 7
+  server: free04.tunnely.ru
+  port: 2096
   type: vless
-  uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: steep-thunder-97fa.108-d10.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 94977b19-6720-48a6-92fd-00238757ea30
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: fragrant-credit-c4cf.148-e68.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: t1.feiyue706.com
-  port: 36800
-  type: vless
-  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+  uuid: 6fa54ae4-6ff6-4456-9700-a3593401389f
   tls: true
-  servername: t1.feiyue706.com
+  reality-opts:
+    public-key: mChFHtaRmeuO2aDuDPqZvBFaCz6f34sVJIKuJcAR130
+    short-id: 2e40144ddc07e8e1
+  servername: free04.tunnely.ru
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: ljfxz
+    grpc-service-name: grpc
   udp: true
-- name: 🇺🇸 美国 | USA 11
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: yellow-breeze-989b.348-9b8.workers.dev
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 193.41.68.133
+  port: 443
+  type: vless
+  uuid: 4e843ed6-09e7-4be5-bd52-a1dc46568aeb
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: qq.utiltools.ru
+  port: 443
+  type: vless
+  uuid: eb78e1f0-d921-4ca9-a889-261fcc5a0547
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI
+  servername: qq.utiltools.ru
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇨🇭 瑞士 | CHE 3
+  server: ch03.tunnely.ru
+  port: 443
+  type: vless
+  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+    short-id: 2e40144ddc07e8e1
+  servername: ch03.tunnely.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 24
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: silent-snow-1a0d.241-b0a.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-tree-3dbf.285.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 25
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: weathered-union-5358.101-262.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 26
   server: codecanyon.net
   port: 8880
   type: vless
@@ -134,44 +260,19 @@ proxies:
     headers:
       Host: dawn-waterfall-6052.360-001.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 30
-  server: us02.tunnely.ru
-  port: 443
-  type: vless
-  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
-    short-id: 2e40144ddc07e8e1
-  servername: us02.tunnely.ru
-  client-fingerprint: firefox
-  network: tcp
-- name: 🇺🇸 美国 | USA 20
-  server: ad-010.vector2llqn.info
+- name: 🇺🇸 美国 | USA 22
+  server: ad-020.vector2llqn.info
   port: 8443
   type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
   tls: true
-  servername: ad-010.vector2llqn.info
+  servername: ad-020.vector2llqn.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-010.vector2llqn.info
-  udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: cs3iiova.cf.3666888.xyz
-  port: 2086
-  type: vless
-  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
-  tls: false
-  network: ws
-  ws-opts:
-    path: /sub
-    headers:
-      Host: od1kl638.xn--nxa.nyc.mn
+      Host: ad-020.vector2llqn.info
   udp: true
 proxy-groups:
 - name: AUTO
@@ -179,18 +280,28 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 11
-  - 🇬🇧 英国 | GBR 3
-  - 🇬🇧 英国 | GBR 5
-  - 🇸🇬 新加坡 | SGP 11
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇸🇬 新加坡 | SGP 10
-  - 🇯🇵 日本 | JPN 9
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 19
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 10
+  - 🇫🇷 法国 | FRA 2
+  - 🇩🇪 德国 | DEU 23
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇩🇪 德国 | DEU 19
+  - 🇬🇧 英国 | GBR 7
+  - 🇭🇰 香港 | HKG 3
+  - 🇸🇬 新加坡 | SGP
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇨🇭 瑞士 | CHE 3
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 22
 rules:
 - MATCH,AUTO

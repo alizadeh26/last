@@ -4,20 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 14
-  server: 54.93.83.254
+- name: 🇩🇪 德国 | DEU 3
+  server: 3.126.251.203
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇬🇧 英国 | GBR 2
-  server: 52.56.188.204
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 | DEU 13
-  server: 63.177.252.44
+- name: 🇬🇧 英国 | GBR
+  server: 13.135.169.180
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -28,8 +22,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 14
-  - 🇬🇧 英国 | GBR 2
-  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR
 rules:
 - MATCH,AUTO
