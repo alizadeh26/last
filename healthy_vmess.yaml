@@ -4,51 +4,27 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: family.bucket.x9.kfc-520.com
-  port: 10037
+- name: 🇺🇸 美国 | USA
+  server: jp01.scpnb.top
+  port: 443
   type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+  uuid: 537a036f-a4ad-4051-80c4-011a46c62bb0
   alterId: 0
   cipher: auto
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇲🇽 墨西哥 | MEX 2
-  server: family.bucket.x9.kfc-520.com
-  port: 10045
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇭 菲律宾 | PHL
-  server: family.bucket.x9.kfc-520.com
-  port: 10409
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 | TUR 2
-  server: family.bucket.x9.kfc-520.com
-  port: 10048
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /537a036f-a4ad-4051-80c4-011a46c62bb0-vm
+    headers:
+      Host: jp01.scpnb.top
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇲🇽 墨西哥 | MEX 2
-  - 🇵🇭 菲律宾 | PHL
-  - 🇹🇷 土耳其 | TUR 2
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

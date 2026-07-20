@@ -4,114 +4,134 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 9
-  server: de07.tunnely.ru
+- name: 🇫🇷 法国 | FRA 3
+  server: 0w7ymj.spectrum.vu
   port: 443
   type: vless
-  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
+  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU 9
+  server: fl.unlimitedteam.space
+  port: 443
+  type: vless
+  uuid: 6fa1b8eb-56f4-4f41-97dc-e0185bcfc575
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
-    short-id: 2e40144ddc07e8e1
-  servername: de07.tunnely.ru
+    public-key: CH9W2oh_iX9lNVegNBYJ3Z6Ht2PMS5xFaq7gZ_S-3AY
+    short-id: 7c069b4738e25acd
+  servername: fl.unlimitedteam.space
   client-fingerprint: firefox
   network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
-  server: spider-panel-production-8fc7.up.railway.app
+  server: ld.242311.xyz
   port: 443
   type: vless
-  uuid: bedb826892f3de617a6b65a02e5ebc13
+  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
   tls: true
-  alpn:
-  - http/1.1
-  servername: spider-panel-production-8fc7.up.railway.app
+  servername: ld.242311.xyz
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws/bedb826892f3de617a6b65a02e5ebc13
+    path: /fp=chrome
     headers:
-      Host: spider-panel-production-8fc7.up.railway.app
+      Host: ld.242311.xyz
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: qq.utiltools.ru
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 87.242.85.201
+  port: 35412
+  type: vless
+  uuid: 566f8818-17fe-4ca9-8035-c9081ece6f68
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 7
+  server: 87.242.85.201
+  port: 13561
+  type: vless
+  uuid: 566f8818-17fe-4ca9-8035-c9081ece6f68
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: yellow-breeze-989b.348-9b8.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 9
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-tree-3dbf.285.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 33
+  server: dns-query.host.try-me.store
   port: 443
   type: vless
-  uuid: eb78e1f0-d921-4ca9-a889-261fcc5a0547
+  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI
-  servername: qq.utiltools.ru
-  client-fingerprint: qq
+    public-key: OOo-agzuOug2EM-rLJMrgH2pkuVahVWEdXSFMl3z_EE
+  servername: dns-query.host.try-me.store
+  client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: ad-004.cloud25075.info
-  port: 8443
-  type: vless
-  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
-  tls: true
-  servername: ad-004.cloud25075.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-004.cloud25075.info
-  udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: ad-018.cloud25075.info
-  port: 8443
-  type: vless
-  uuid: 5d3abfa9-bdf5-4334-8383-dcf92df802a5
-  tls: true
-  servername: ad-018.cloud25075.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-018.cloud25075.info
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: ad-010.limaklhc6.info
+- name: 🇺🇸 美国 | USA 32
+  server: ad-020.cloud25075.info
   port: 8443
   type: vless
   uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
   tls: true
-  servername: ad-010.limaklhc6.info
+  servername: ad-020.cloud25075.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-010.limaklhc6.info
+      Host: ad-020.cloud25075.info
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: skk.moe
+- name: 🇺🇸 美国 | USA 10
+  server: 162.159.21.178
   port: 8880
   type: vless
-  uuid: 0de87762-7d50-49e7-a5ae-7ac85760e083
+  uuid: 94977b19-6720-48a6-92fd-00238757ea30
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: delicate-fog-bbae.205-635.workers.dev
+      Host: fragrant-credit-c4cf.148-e68.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 6
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 19
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇷🇺 俄罗斯 | RUS 7
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP 9
+  - 🇺🇸 美国 | USA 33
+  - 🇺🇸 美国 | USA 32
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
