@@ -40,17 +40,19 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: uk.monkora.org
-  port: 443
+- name: 🇬🇧 英国 | GBR 2
+  server: ad-010.vector9nmb3.info
+  port: 8443
   type: vless
-  uuid: d89c9d5e-004f-4a02-8cd5-0c0d697862bb
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
   tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: uk.monkora.org
-  client-fingerprint: firefox
-  network: tcp
+  servername: ad-010.vector9nmb3.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.vector9nmb3.info
   udp: true
 - name: 🇫🇷 法国 | FRA
   server: ad-004.vector9nmb3.info
@@ -66,20 +68,6 @@ proxies:
     headers:
       Host: ad-004.vector9nmb3.info
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: ad-010.vector9nmb3.info
-  port: 8443
-  type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.vector9nmb3.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.vector9nmb3.info
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 87.242.85.201
   port: 13561
@@ -87,40 +75,6 @@ proxies:
   uuid: 566f8818-17fe-4ca9-8035-c9081ece6f68
   tls: false
   network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 87.242.85.201
-  port: 35412
-  type: vless
-  uuid: 566f8818-17fe-4ca9-8035-c9081ece6f68
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: se.monkeyisland.xyz
-  port: 443
-  type: vless
-  uuid: d89c9d5e-004f-4a02-8cd5-0c0d697862bb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
-    short-id: ecca56e9a9963ed7
-  servername: se.monkeyisland.xyz
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: dark-leaf-93a1.440-02e.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: ad-020.cloud25075.info
@@ -150,30 +104,6 @@ proxies:
     headers:
       Host: ad-010.limaklhc6.info
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dawn-waterfall-6052.360-001.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 1a5e2e63-64e2-4737-95b6-c2ee60c979a1
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: wild-mode-4ca6.234-8f6.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 23
   server: 162.159.21.178
   port: 8880
@@ -186,6 +116,14 @@ proxies:
     headers:
       Host: yellow-breeze-989b.348-9b8.workers.dev
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 87.242.85.201
+  port: 35412
+  type: vless
+  uuid: 566f8818-17fe-4ca9-8035-c9081ece6f68
+  tls: false
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -195,18 +133,13 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 3
   - 🇨🇭 瑞士 | CHE 2
   - 🇩🇪 德国 | DEU 4
-  - 🇬🇧 英国 | GBR
-  - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR 2
+  - 🇫🇷 法国 | FRA
   - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 23
+  - 🇷🇺 俄罗斯 | RUS 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -215,18 +148,13 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 3
   - 🇨🇭 瑞士 | CHE 2
   - 🇩🇪 德国 | DEU 4
-  - 🇬🇧 英国 | GBR
-  - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR 2
+  - 🇫🇷 法国 | FRA
   - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 23
+  - 🇷🇺 俄罗斯 | RUS 4
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
