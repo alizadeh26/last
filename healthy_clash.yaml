@@ -32,6 +32,13 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 82.38.31.35
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 87.242.85.201
   port: 35412
@@ -39,18 +46,6 @@ proxies:
   uuid: 566f8818-17fe-4ca9-8035-c9081ece6f68
   tls: false
   network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: dark-leaf-93a1.440-02e.workers.dev
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 87.242.85.201
@@ -82,10 +77,16 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 | AUT
   - 🇫🇷 法国 | FRA
+  - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS
-  - 🇸🇬 新加坡 | SGP 5
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 7
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -94,7 +95,6 @@ proxy-groups:
   - 🇦🇹 奥地利 | AUT
   - 🇫🇷 法国 | FRA
   - 🇷🇺 俄罗斯 | RUS
-  - 🇸🇬 新加坡 | SGP 5
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 7
 - name: REGION-EU
@@ -104,7 +104,6 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 | AUT
   - 🇫🇷 法国 | FRA
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO

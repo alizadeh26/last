@@ -4,18 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 2
-  server: 212.192.13.95
-  port: 8388
-  type: ss
-  cipher: aes-256-gcm
-  password: VJescVWup8PR
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 212.67.17.239
-  port: 1080
+- name: 🇳🇱 荷兰 | NLD
+  server: 82.38.31.35
+  port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: vwc9nGgP8O5KeWbyrwiUow
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 proxy-groups:
 - name: AUTO
@@ -23,7 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO

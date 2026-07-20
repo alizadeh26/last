@@ -40,18 +40,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: dark-leaf-93a1.440-02e.workers.dev
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 87.242.85.201
   port: 13561
@@ -83,7 +71,6 @@ proxy-groups:
   - 🇦🇹 奥地利 | AUT
   - 🇫🇷 法国 | FRA
   - 🇷🇺 俄罗斯 | RUS
-  - 🇸🇬 新加坡 | SGP 5
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 7
 rules:
