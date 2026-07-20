@@ -4,16 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: 52.57.228.114
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇭 瑞士 | CHE 2
-  server: ch10.tunnely.ru
+- name: 🇦🇹 奥地利 | AUT
+  server: at08.tunnely.ru
   port: 443
   type: vless
   uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
@@ -22,53 +14,45 @@ proxies:
   reality-opts:
     public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
     short-id: 2e40144ddc07e8e1
-  servername: ch10.tunnely.ru
+  servername: at08.tunnely.ru
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: fl15.myxasecure.space
+- name: 🇫🇷 法国 | FRA
+  server: fr03.tunnely.ru
   port: 443
   type: vless
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: fl15.myxasecure.space
-  client-fingerprint: qq
+    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+    short-id: 2e40144ddc07e8e1
+  servername: fr03.tunnely.ru
+  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: ad-010.vector9nmb3.info
-  port: 8443
-  type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.vector9nmb3.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.vector9nmb3.info
-  udp: true
-- name: 🇫🇷 法国 | FRA
-  server: ad-004.vector9nmb3.info
-  port: 8443
-  type: vless
-  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
-  tls: true
-  servername: ad-004.vector9nmb3.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-004.vector9nmb3.info
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
+  server: 87.242.85.201
+  port: 35412
+  type: vless
+  uuid: 566f8818-17fe-4ca9-8035-c9081ece6f68
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 5
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dark-leaf-93a1.440-02e.workers.dev
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
   server: 87.242.85.201
   port: 13561
   type: vless
@@ -77,52 +61,18 @@ proxies:
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 7
-  server: ad-020.cloud25075.info
+  server: ad-004.vector2llqn.info
   port: 8443
   type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
   tls: true
-  servername: ad-020.cloud25075.info
+  servername: ad-004.vector2llqn.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-020.cloud25075.info
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: ad-010.limaklhc6.info
-  port: 8443
-  type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.limaklhc6.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.limaklhc6.info
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: yellow-breeze-989b.348-9b8.workers.dev
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 87.242.85.201
-  port: 35412
-  type: vless
-  uuid: 566f8818-17fe-4ca9-8035-c9081ece6f68
-  tls: false
-  network: tcp
+      Host: ad-004.vector2llqn.info
   udp: true
 proxy-groups:
 - name: AUTO
@@ -130,15 +80,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇨🇭 瑞士 | CHE 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇬🇧 英国 | GBR 2
+  - 🇦🇹 奥地利 | AUT
   - 🇫🇷 法国 | FRA
   - 🇷🇺 俄罗斯 | RUS
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 23
-  - 🇷🇺 俄罗斯 | RUS 4
 rules:
 - MATCH,AUTO
