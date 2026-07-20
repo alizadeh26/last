@@ -1,18 +1,19 @@
 trojan://NQ26071394@62.112.222.12:443?sni=ready-lion.rooster465.autos&path=/#Server 55 🇵🇱
-trojan://CF68213490@emerging-weevil.rooster465.autos:443?security=tls#%E6%B3%A2%E5%85%B0_072010002
-trojan://NQ26071394@kind-unicorn.rooster465.autos:443?security=tls#%E6%B3%A2%E5%85%B0_072010004
-trojan://OD90375861@more-trout.rooster465.autos:443?sni=more-trout.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072010066
-trojan://KV63147582@more-trout.rooster465.autos:443?security=tls&sni=more-trout.rooster465.autos#%E6%B3%A2%E5%85%B0_072010001
-trojan://KV63147582@legible-possum.rooster465.autos:443?sni=legible-possum.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072010067
-trojan://PI36027154@upright-hamster.rooster465.autos:443?sni=upright-hamster.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072010065
-trojan://OD90375861@ideal-robin.rooster465.autos:443?sni=ideal-robin.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072010068
-trojan://PD07395842@legible-possum.rooster465.autos:443?sni=legible-possum.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072010069
-trojan://PD07395842@emerging-weevil.rooster465.autos:443?sni=emerging-weevil.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072010070
-trojan://PD07395842@strong-haddock.rooster465.autos:443?sni=strong-haddock.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072010071
-trojan://ON38567014@ideal-robin.rooster465.autos:443?sni=ideal-robin.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072010073
-trojan://PD07395842@fast-ghost.rooster465.autos:443?sni=fast-ghost.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072010072
-trojan://ON38567014@smiling-ray.rooster465.autos:443?sni=smiling-ray.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072010074
-trojan://ON38567014@strong-haddock.rooster465.autos:443?sni=strong-haddock.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072010075
+trojan://KV63147582@more-trout.rooster465.autos:443?security=tls&sni=more-trout.rooster465.autos#%E6%B3%A2%E5%85%B0_072015001
+trojan://NQ26071394@kind-unicorn.rooster465.autos:443?security=tls#%E6%B3%A2%E5%85%B0_072015003
+trojan://PI36027154@upright-hamster.rooster465.autos:443?sni=upright-hamster.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072015065
+trojan://CF68213490@emerging-weevil.rooster465.autos:443?security=tls#%E6%B3%A2%E5%85%B0_072015004
+trojan://OD90375861@more-trout.rooster465.autos:443?sni=more-trout.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072015066
+trojan://KV63147582@legible-possum.rooster465.autos:443?sni=legible-possum.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072015067
+trojan://PD07395842@legible-possum.rooster465.autos:443?sni=legible-possum.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072015069
+trojan://PD07395842@emerging-weevil.rooster465.autos:443?sni=emerging-weevil.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072015070
+trojan://OD90375861@ideal-robin.rooster465.autos:443?sni=ideal-robin.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072015068
+trojan://PD07395842@strong-haddock.rooster465.autos:443?sni=strong-haddock.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072015071
+trojan://ON38567014@smiling-ray.rooster465.autos:443?sni=smiling-ray.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072015074
+trojan://ON38567014@ideal-robin.rooster465.autos:443?sni=ideal-robin.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072015073
+trojan://PD07395842@fast-ghost.rooster465.autos:443?sni=fast-ghost.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072015072
+trojan://ON38567014@strong-haddock.rooster465.autos:443?sni=strong-haddock.rooster465.autos&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_072015075
 vless://1f6531a1-a6eb-4274-9f51-4a0899456fcf@195.254.165.243:443?security=reality&encryption=none&pbk=zSjG6wndmLAzE8ykCBXpAm2eh0viWVSy3gt2juXF4EE&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=play.google.com&sid=eaa8#REALITY|IR🇮🇷
 ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@92.118.205.211:5600#PL%F0%9F%87%B5%F0%9F%87%B1+%7C+92.118.205.211-5600+%7C+164.75ms
-vless://37a0bd7c-8b9f-4693-8916-bd1e2da0a817@128.204.223.94:9815?encryption=none&path=/&security=none&type=ws#🏳️ 149 - XX - VLESS/WS - 9815
+vless://37a0bd7c-8b9f-4693-8916-bd1e2da0a817@128.204.223.94:9815?encryption=none&path=/&security=none&type=ws#🇵🇱 139 - PL - VLESS/WS - 9815
+vless://a34b5e88-cf0d-4c01-8199-2d1002d3c787@meow-warsaw.nethcloud.top:443?security=reality&encryption=none&pbk=HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U&host=Leviko_Config&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.wikihow.com#🇺🇸 465 - US - VLESS/REALITY/PBK/VISION/UTLS - 443

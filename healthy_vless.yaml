@@ -4,49 +4,83 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 3
-  server: 0w7ymj.spectrum.vu
-  port: 443
+- name: 🇩🇪 德国 | DEU 3
+  server: 52.57.228.114
+  port: 22224
   type: vless
-  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
-- name: 🇩🇪 德国 | DEU 9
-  server: fl.unlimitedteam.space
+  udp: true
+- name: 🇨🇭 瑞士 | CHE 2
+  server: ch10.tunnely.ru
   port: 443
   type: vless
-  uuid: 6fa1b8eb-56f4-4f41-97dc-e0185bcfc575
+  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: CH9W2oh_iX9lNVegNBYJ3Z6Ht2PMS5xFaq7gZ_S-3AY
-    short-id: 7c069b4738e25acd
-  servername: fl.unlimitedteam.space
+    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+    short-id: 2e40144ddc07e8e1
+  servername: ch10.tunnely.ru
   client-fingerprint: firefox
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 6
-  server: ld.242311.xyz
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: fl15.myxasecure.space
   port: 443
   type: vless
-  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
   tls: true
-  servername: ld.242311.xyz
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: fl15.myxasecure.space
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: uk.monkora.org
+  port: 443
+  type: vless
+  uuid: d89c9d5e-004f-4a02-8cd5-0c0d697862bb
+  tls: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: uk.monkora.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA
+  server: ad-004.vector9nmb3.info
+  port: 8443
+  type: vless
+  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
+  tls: true
+  servername: ad-004.vector9nmb3.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
-      Host: ld.242311.xyz
+      Host: ad-004.vector9nmb3.info
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: ad-010.vector9nmb3.info
+  port: 8443
+  type: vless
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  servername: ad-010.vector9nmb3.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.vector9nmb3.info
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
-  server: 87.242.85.201
-  port: 35412
-  type: vless
-  uuid: 566f8818-17fe-4ca9-8035-c9081ece6f68
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 7
   server: 87.242.85.201
   port: 13561
   type: vless
@@ -54,44 +88,41 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 162.159.21.178
-  port: 8880
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 87.242.85.201
+  port: 35412
   type: vless
-  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
+  uuid: 566f8818-17fe-4ca9-8035-c9081ece6f68
   tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: yellow-breeze-989b.348-9b8.workers.dev
+  network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 9
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 33
-  server: dns-query.host.try-me.store
+- name: 🇸🇪 瑞典 | SWE
+  server: se.monkeyisland.xyz
   port: 443
   type: vless
-  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
+  uuid: d89c9d5e-004f-4a02-8cd5-0c0d697862bb
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: OOo-agzuOug2EM-rLJMrgH2pkuVahVWEdXSFMl3z_EE
-  servername: dns-query.host.try-me.store
-  client-fingerprint: random
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: ecca56e9a9963ed7
+  servername: se.monkeyisland.xyz
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 32
+- name: 🇺🇸 美国 | USA 5
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dark-leaf-93a1.440-02e.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 7
   server: ad-020.cloud25075.info
   port: 8443
   type: vless
@@ -105,17 +136,55 @@ proxies:
     headers:
       Host: ad-020.cloud25075.info
   udp: true
-- name: 🇺🇸 美国 | USA 10
+- name: 🇺🇸 美国 | USA 11
+  server: ad-010.limaklhc6.info
+  port: 8443
+  type: vless
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  servername: ad-010.limaklhc6.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.limaklhc6.info
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dawn-waterfall-6052.360-001.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 13
   server: 162.159.21.178
   port: 8880
   type: vless
-  uuid: 94977b19-6720-48a6-92fd-00238757ea30
+  uuid: 1a5e2e63-64e2-4737-95b6-c2ee60c979a1
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: fragrant-credit-c4cf.148-e68.workers.dev
+      Host: wild-mode-4ca6.234-8f6.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: yellow-breeze-989b.348-9b8.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -123,15 +192,20 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 3
-  - 🇩🇪 德国 | DEU 9
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇩🇪 德国 | DEU 3
+  - 🇨🇭 瑞士 | CHE 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇬🇧 英国 | GBR
+  - 🇫🇷 法国 | FRA
+  - 🇬🇧 英国 | GBR 2
   - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 7
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇸🇬 新加坡 | SGP 9
-  - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 32
-  - 🇺🇸 美国 | USA 10
+  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 23
 rules:
 - MATCH,AUTO
