@@ -1,18 +1,22 @@
 ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@18.133.180.164:443#Server 39 🇬🇧
-vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InJhdyIsInYiOiIyIiwicHMiOiLnvo7lm71fMDcyMDA0NTQyMCIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIiwic25pIjoiIiwidHlwZSI6IiIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
+ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@18.175.139.211:443#Server 62 🇬🇧
+vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InJhdyIsInYiOiIyIiwicHMiOiLnvo7lm71fMDcyMDEwNTQzMyIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIiwic25pIjoiIiwidHlwZSI6IiIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6ejBkSGpEZm9hU2FadVJGTEdILWhOZkJBTFNFSlVZRA==@194.164.92.198:1234#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+194.164.92.198-1234+%7C+146.44ms
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.178-443+%7C+130.07ms
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.179-443+%7C+132.23ms
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.24.73:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+158.173.24.73-443+%7C+132.47ms
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.181-443+%7C+129.42ms
-ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@18.175.139.211:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+18.175.139.211-443+%7C+138.69ms
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.181-443+%7C+129.93ms
 ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+94.156.250.148-7001+%7C+130.33ms
-vless://367ff772-a8f4-4895-8e99-3702a868f0c6@45.86.159.164:443?security=tls&type=grpc&mode=gun&serviceName=grpc-api&packetEncoding=xudp&sni=gbos2.osvp.online&fp=chrome&encryption=none#🇺🇸 97 - US - VLESS/GRPC/TLS/UTLS - 443
-vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.58.124:2087?encryption=none&host=vp2.cc.cd&path=/&security=tls&sni=vp2.cc.cd&type=ws#🇬🇧 194 - GB - VLESS/WS/TLS - 2087
-vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.58.47:2053?encryption=none&host=vp8.cc.cd&path=/&security=tls&sni=vp8.cc.cd&type=ws#🇺🇸 196 - US - VLESS/WS/TLS - 2053
-vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.101:443?encryption=none&host=vp8.cc.cd&path=/&security=tls&sni=vp8.cc.cd&type=ws#🇬🇧 198 - GB - VLESS/WS/TLS - 443
-vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.15:2087?encryption=none&fp=firefox&host=vp7.cc.cd&path=/&security=tls&sni=vp7.cc.cd&type=ws#🇬🇧 200 - GB - VLESS/WS/TLS/UTLS - 2087
-vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.30:2096?encryption=none&host=vp3.cc.cd&path=/&security=tls&sni=vp3.cc.cd&type=ws#🇬🇧 204 - GB - VLESS/WS/TLS - 2096
-vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?encryption=none&host=google.com&path=/vless/&security=none&type=ws#🇬🇧 428 - GB - VLESS/WS - 80
-vless://b1a689fa-20c3-43b4-a107-4af64f8a7cf3@britain.pelzimo.ir:6300?security=reality&encryption=none&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&headerType=none&fp=qq&type=tcp&sni=play.google.com#🇬🇧 449 - GB - VLESS/REALITY/PBK/UTLS - 6300
-vless://fb978279-0a28-4045-8258-e9ab97deaf2b@91.193.58.178:443?encryption=none&host=3da0360c.myblog-2hd.pages.dev&path=/Telegram🇨🇳+@WangCai2&security=tls&sni=3da0360c.myblog-2hd.pages.dev&type=ws#🇬🇧 709 - GB - VLESS/WS/TLS - 443
+vless://367ff772-a8f4-4895-8e99-3702a868f0c6@45.86.159.164:443?security=tls&type=grpc&mode=gun&serviceName=grpc-api&packetEncoding=xudp&sni=gbos2.osvp.online&fp=chrome&encryption=none#🇬🇧 156 - GB - VLESS/GRPC/TLS/UTLS - 443
+vless://4feb7818-dc02-46cd-b985-abf3fdd0cdc5@164.38.155.13:443?allowInsecure=1&encryption=none&host=edge-4cb23bf6.pages.dev&path=/Telegram🇨🇳+@WangCai2&security=tls&sni=edge-4cb23bf6.pages.dev&type=ws#🇬🇧 212 - GB - VLESS/WS/TLS - 443
+vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.58.124:2087?encryption=none&host=vp2.cc.cd&path=/&security=tls&sni=vp2.cc.cd&type=ws#🏳️ 261 - XX - VLESS/WS/TLS - 2087
+vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.58.47:2053?encryption=none&host=vp8.cc.cd&path=/&security=tls&sni=vp8.cc.cd&type=ws#🇬🇧 263 - GB - VLESS/WS/TLS - 2053
+vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.58.142:8443?encryption=none&fp=firefox&host=vp8.cc.cd&path=/&security=tls&sni=vp8.cc.cd&type=ws#🇬🇧 262 - GB - VLESS/WS/TLS/UTLS - 8443
+vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.58.7:2096?encryption=none&host=vp6.cc.cd&path=/&security=tls&sni=vp6.cc.cd&type=ws#🇬🇧 264 - GB - VLESS/WS/TLS - 2096
+vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.101:443?encryption=none&host=vp8.cc.cd&path=/&security=tls&sni=vp8.cc.cd&type=ws#🇬🇧 265 - GB - VLESS/WS/TLS - 443
+vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.165:8443?encryption=none&host=vp3.cc.cd&path=/&security=tls&sni=vp3.cc.cd&type=ws#🏳️ 268 - XX - VLESS/WS/TLS - 8443
+vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.115:2087?encryption=none&fp=firefox&host=vp7.cc.cd&path=/&security=tls&sni=vp7.cc.cd&type=ws#🇬🇧 266 - GB - VLESS/WS/TLS/UTLS - 2087
+vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.55:2096?encryption=none&fp=firefox&host=vp8.cc.cd&path=/&security=tls&sni=vp8.cc.cd&type=ws#🇬🇧 272 - GB - VLESS/WS/TLS/UTLS - 2096
+vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.30:2096?encryption=none&host=vp3.cc.cd&path=/&security=tls&sni=vp3.cc.cd&type=ws#🏳️ 271 - XX - VLESS/WS/TLS - 2096
+vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.171:8443?encryption=none&fp=firefox&host=vp6.cc.cd&path=/&security=tls&sni=vp6.cc.cd&type=ws#🇺🇸 270 - US - VLESS/WS/TLS/UTLS - 8443
+vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?encryption=none&host=google.com&path=/vless/&security=none&type=ws#🇬🇧 482 - GB - VLESS/WS - 80
