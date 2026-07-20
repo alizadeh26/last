@@ -1,19 +1,12 @@
 ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@18.133.180.164:443#Server 39 🇬🇧
 ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@18.175.139.211:443#Server 62 🇬🇧
 vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InJhdyIsInYiOiIyIiwicHMiOiLnvo7lm71fMDcyMTA1NTQzNiIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIiwic25pIjoiIiwidHlwZSI6IiIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.178-5905
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.178-443+%7C+147.4ms
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.179-5911
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.181-443+%7C+146.25ms
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-5903
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.24.73:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+158.173.24.73-443+%7C+136.34ms
-ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+94.156.250.148-7001+%7C+150.07ms
+ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-5866
 vmess://eyJhZGQiOiI1Ny4xMjkuMTMyLjIyMyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiZ29vZ2xlLmNvbSIsImlkIjoiYTI1Y2JmMTEtMjkwOC00YTFiLWEzYTgtOWE1NzE3NzdkY2EzIiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzc1wvIiwicG9ydCI6IjgwIiwicHMiOiJVU1x1ZDgzY1x1ZGRmYVx1ZDgzY1x1ZGRmOCB8IGdvb2dsZS5jb20tODAgfCAyLjVtcyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
-vless://367ff772-a8f4-4895-8e99-3702a868f0c6@45.86.159.164:443?security=tls&type=grpc&mode=gun&serviceName=grpc-api&packetEncoding=xudp&sni=gbos2.osvp.online&fp=chrome&encryption=none#🇬🇧 121 - GB - VLESS/GRPC/TLS/UTLS - 443
-vless://4feb7818-dc02-46cd-b985-abf3fdd0cdc5@164.38.155.13:443?allowInsecure=1&encryption=none&host=edge-4cb23bf6.pages.dev&path=/Telegram🇨🇳+@WangCai2&security=tls&sni=edge-4cb23bf6.pages.dev&type=ws#🇬🇧 179 - GB - VLESS/WS/TLS - 443
-vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.58.124:2087?encryption=none&host=vp2.cc.cd&path=/&security=tls&sni=vp2.cc.cd&type=ws#🇺🇸 231 - US - VLESS/WS/TLS - 2087
-vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.101:443?encryption=none&host=vp8.cc.cd&path=/&security=tls&sni=vp8.cc.cd&type=ws#🇬🇧 235 - GB - VLESS/WS/TLS - 443
-vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.58.47:2053?encryption=none&host=vp8.cc.cd&path=/&security=tls&sni=vp8.cc.cd&type=ws#🇬🇧 233 - GB - VLESS/WS/TLS - 2053
-vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.58.142:8443?encryption=none&fp=firefox&host=vp8.cc.cd&path=/&security=tls&sni=vp8.cc.cd&type=ws#🇬🇧 232 - GB - VLESS/WS/TLS/UTLS - 8443
-vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.115:2087?encryption=none&fp=firefox&host=vp7.cc.cd&path=/&security=tls&sni=vp7.cc.cd&type=ws#🇬🇧 236 - GB - VLESS/WS/TLS/UTLS - 2087
-vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.59.55:2096?encryption=none&fp=firefox&host=vp8.cc.cd&path=/&security=tls&sni=vp8.cc.cd&type=ws#🇬🇧 241 - GB - VLESS/WS/TLS/UTLS - 2096
-vless://ae86f68e-84c7-41de-b69f-87285451fb71@45.86.159.132:2085?encryption=none&security=none&serviceName=vless&type=grpc#🇬🇧 443 - GB - VLESS/GRPC - 2085
-vless://fb978279-0a28-4045-8258-e9ab97deaf2b@91.193.58.178:443?encryption=none&host=3da0360c.myblog-2hd.pages.dev&path=/Telegram🇨🇳+@WangCai2&security=tls&sni=3da0360c.myblog-2hd.pages.dev&type=ws#🇬🇧 696 - GB - VLESS/WS/TLS - 443
+vless://663cf772-829c-4bc6-893d-b7d021d42f5b@91.193.58.142:8443?encryption=none&fp=firefox&host=vp8.cc.cd&path=/&security=tls&sni=vp8.cc.cd&type=ws#🇺🇸 255 - US - VLESS/WS/TLS/UTLS - 8443
+vless://ae86f68e-84c7-41de-b69f-87285451fb71@45.86.159.132:2085?encryption=none&security=none&serviceName=vless&type=grpc#🇬🇧 460 - GB - VLESS/GRPC - 2085
+vless://fb978279-0a28-4045-8258-e9ab97deaf2b@91.193.58.178:443?encryption=none&host=3da0360c.myblog-2hd.pages.dev&path=/Telegram🇨🇳+@WangCai2&security=tls&sni=3da0360c.myblog-2hd.pages.dev&type=ws#🇺🇸 702 - US - VLESS/WS/TLS - 443
