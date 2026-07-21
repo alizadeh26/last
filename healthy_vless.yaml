@@ -4,34 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: cd7bgmsi0a6d.dop69.com
-  port: 24266
-  type: vless
-  uuid: 4e8cd0d9-b7da-417c-8953-d04c6c57a6c1
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cd7bgmsi0a6d.dop69.com
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: fn.fifapes.monster
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 15.188.31.143
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇵🇱 波兰 | POL 2
   server: pl-1.124515.xyz
   port: 443
@@ -44,22 +16,6 @@ proxies:
     short-id: c7c005c49b11d17c
   servername: pl-1.124515.xyz
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 182.16.61.3
-  port: 45647
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: 60.249.101.13
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 8
@@ -75,37 +31,21 @@ proxies:
     headers:
       Host: cdn.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 104.18.34.245
-  port: 8880
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: 60.249.101.13
+  port: 10000
   type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: mastvpnd1.k7k7.ir
-  port: 8080
-  type: vless
-  uuid: 041f4da7-1aa5-42e8-9cb2-834510c345a8
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
   tls: false
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: download.yunzhongzhuan.com
-  port: 8880
+- name: 🇺🇸 美国 | USA 13
+  server: 182.16.61.3
+  port: 45647
   type: vless
-  uuid: 3aaabf99-32c6-4032-8695-c9f0eb28be6f
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
   tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: divine-sound-9e93.22-be2.workers.dev
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -113,15 +53,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 4
-  - 🇫🇷 法国 | FRA 2
   - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 13
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 10
-  - 🇩🇪 德国 | DEU 6
-  - 🇯🇵 日本 | JPN 3
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO
