@@ -4,6 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU 6
+  server: mastvpnd1.k7k7.ir
+  port: 8080
+  type: vless
+  uuid: 041f4da7-1aa5-42e8-9cb2-834510c345a8
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇵🇱 波兰 | POL 2
   server: pl-1.124515.xyz
   port: 443
@@ -16,6 +24,22 @@ proxies:
     short-id: c7c005c49b11d17c
   servername: pl-1.124515.xyz
   client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 182.16.61.3
+  port: 45647
+  type: vless
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: 60.249.101.13
+  port: 10000
+  type: vless
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 8
@@ -31,19 +55,11 @@ proxies:
     headers:
       Host: cdn.pusytroller.cf
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: 60.249.101.13
-  port: 10000
+- name: 🇩🇪 德国 | DEU 4
+  server: fn.fifapes.monster
+  port: 2090
   type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 182.16.61.3
-  port: 45647
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
   tls: false
   network: tcp
   udp: true
@@ -53,9 +69,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 6
   - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 8
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇺🇸 美国 | USA 13
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇺🇸 美国 | USA 8
+  - 🇩🇪 德国 | DEU 4
 rules:
 - MATCH,AUTO
