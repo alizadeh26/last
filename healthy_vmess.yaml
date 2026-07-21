@@ -4,24 +4,24 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 5
+- name: 🇯🇵 日本 | JPN
   server: 134.122.199.106
-  port: 56304
+  port: 31198
   type: vmess
-  uuid: 69c9a9f9-3624-4858-a319-97c1991ef52c
+  uuid: 84c81ccd-4cfa-4d0f-d27a-da45ddc70e52
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki
+    path: /
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 5
+  - 🇯🇵 日本 | JPN
 rules:
 - MATCH,AUTO
