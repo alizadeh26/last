@@ -4,27 +4,24 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
-  server: jp01.scpnb.top
-  port: 443
+- name: 🇯🇵 日本 | JPN 5
+  server: 134.122.199.106
+  port: 56304
   type: vmess
-  uuid: 537a036f-a4ad-4051-80c4-011a46c62bb0
+  uuid: 69c9a9f9-3624-4858-a319-97c1991ef52c
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /537a036f-a4ad-4051-80c4-011a46c62bb0-vm
-    headers:
-      Host: jp01.scpnb.top
-  udp: true
+    path: /arki
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
+  - 🇯🇵 日本 | JPN 5
 rules:
 - MATCH,AUTO
