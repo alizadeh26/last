@@ -4,15 +4,75 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: fn.fifapes.monster
-  port: 2090
+- name: 🇦🇪 阿联酋 | ARE
+  server: nl2.prime-net.me
+  port: 443
   type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  uuid: c553d2dc-0f05-4f5f-831f-3e966d910da3
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: qgQAQ19q2EhKzfolYMDsvTlmP9EAiCT8kng4uWR4QVg
+    short-id: 5cb943f4de56c4b1
+  servername: nl2.prime-net.me
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: f2.steptofsvo.com
+  port: 443
+  type: vless
+  uuid: ab6a5359-0edf-41c3-8dfd-e4b005e80820
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
+    short-id: 6d6f13013d3e1d0c
+  servername: f2.steptofsvo.com
+  client-fingerprint: randomized
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 4
+  server: 35.181.73.240
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL 2
+- name: 🇱🇻 拉脱维亚 | LVA 2
+  server: 31.57.29.46
+  port: 8443
+  type: vless
+  uuid: eeb6c1bf-5fb4-49b1-bf74-049eb9b06300
+  tls: false
+  network: ws
+  ws-opts:
+    path: /chunkycorp
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: ru-xr-1.124515.xyz
+  port: 443
+  type: vless
+  uuid: 56b812e4-2d96-0001-b365-6c801663a37a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: dxsu1yp4dcpuhq32vLIX6fZ3A7uWs_5OzNIlUmLBSzQ
+    short-id: c7c005c49b11d17c
+  servername: ru-xr-1.124515.xyz
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 77.239.112.4
+  port: 3690
+  type: vless
+  uuid: cd554b8c-aff9-45e7-bffb-eb1c4f2a585f
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 4
   server: pl-1.124515.xyz
   port: 443
   type: vless
@@ -26,34 +86,100 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: 60.249.101.13
-  port: 10000
+- name: 🇸🇬 新加坡 | SGP 7
+  server: cdn.ai-4-science.com
+  port: 443
   type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
+  uuid: 85c38af5-5a88-4ef1-b87a-a6dee6772285
+  tls: true
+  servername: cdn.ai-4-science.com
+  network: ws
+  ws-opts:
+    path: /api/v1/stream
+    headers:
+      Host: cdn.ai-4-science.com
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: pl04.myxasecure.space
+  port: 443
+  type: vless
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: pl04.myxasecure.space
+  client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: cdn.pusytroller.cf
-  port: 2095
+- name: 🇺🇸 美国 | USA
+  server: 162.159.21.178
+  port: 8880
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
   tls: false
-  packet-encoding: xudp
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: yellow-breeze-989b.348-9b8.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: ad-005.vector2llqn.info
+  port: 8443
+  type: vless
+  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
+  tls: true
+  servername: ad-005.vector2llqn.info
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cdn.pusytroller.cf
+      Host: ad-005.vector2llqn.info
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 182.16.61.3
-  port: 45647
+- name: 🇺🇸 美国 | USA 11
+  server: ad-005.limaklhc6.info
+  port: 8443
   type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  network: tcp
+  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
+  tls: true
+  servername: ad-005.limaklhc6.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-005.limaklhc6.info
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: ad-007.cloud25075.info
+  port: 8443
+  type: vless
+  uuid: 2e8beadd-99bf-4fda-8692-8493886504bc
+  tls: true
+  servername: ad-007.cloud25075.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-007.cloud25075.info
+  udp: true
+- name: 🇺🇸 美国 | USA 31
+  server: ad-020.vector2llqn.info
+  port: 8443
+  type: vless
+  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
+  tls: true
+  servername: ad-020.vector2llqn.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-020.vector2llqn.info
   udp: true
 proxy-groups:
 - name: AUTO
@@ -61,10 +187,19 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
+  - 🇦🇪 阿联酋 | ARE
+  - 🇩🇪 德国 | DEU 10
+  - 🇫🇷 法国 | FRA 4
+  - 🇱🇻 拉脱维亚 | LVA 2
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇵🇱 波兰 | POL 4
+  - 🇸🇬 新加坡 | SGP 7
   - 🇵🇱 波兰 | POL 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 31
 rules:
 - MATCH,AUTO
