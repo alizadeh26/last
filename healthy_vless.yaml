@@ -4,27 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: fl2.cr7com1.ir
-  port: 53416
-  type: vless
-  uuid: 764a2d3e-7916-4da7-b3cc-195b7d30540c
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: 3.121.143.119
   port: 22223
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: fl2.cr7com1.ir
-  port: 8888
-  type: vless
-  uuid: 764a2d3e-7916-4da7-b3cc-195b7d30540c
   tls: false
   network: tcp
   udp: true
@@ -42,14 +26,18 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: fn.fifapes.monster
-  port: 2090
+- name: 🇸🇬 新加坡 | SGP 6
+  server: sgp3xui.jzy88.top
+  port: 54324
   type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  network: tcp
-  udp: true
+  uuid: cdd37253-5f9b-4dcb-8b01-ad60a29384b8
+  tls: true
+  servername: sgp3xui.jzy88.top
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
 - name: 🇵🇱 波兰 | POL 2
   server: pl04.myxasecure.space
   port: 443
@@ -64,18 +52,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: sgp3xui.jzy88.top
-  port: 54324
-  type: vless
-  uuid: cdd37253-5f9b-4dcb-8b01-ad60a29384b8
-  tls: true
-  servername: sgp3xui.jzy88.top
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
 - name: 🇺🇸 美国 | USA 15
   server: 162.159.21.178
   port: 8880
@@ -94,13 +70,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 10
-  - 🇵🇱 波兰 | POL 2
   - 🇸🇬 新加坡 | SGP 6
+  - 🇵🇱 波兰 | POL 2
   - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO

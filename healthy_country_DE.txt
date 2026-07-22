@@ -1,47 +1,40 @@
 trojan://OD90375861@3.67.171.41:443?fp=chrome&sni=busy-hermit.rooster465.autos#Server 24 🇩🇪
 trojan://KV63147582@3.76.41.23:443?fp=chrome&sni=evolving-baboon.rooster465.autos#Server 53 🇩🇪
 trojan://NQ26071394@3.75.174.185:443?fp=chrome&sni=certain-prawn.rooster465.autos#Server 58 🇩🇪
-ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@54.93.186.149:443#Server 64 🇩🇪
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?encryption=none&security=none&type=ws&host=de.vpnbase.net&path=/http#Server 72 🇩🇪
 trojan://CF68213490@18.184.4.15:443?security=tls&sni=harmless-lab.rooster465.autos&path=/#Server 124 🇩🇪
 trojan://NQ26071394@63.178.193.196:443?security=tls&sni=quiet-condor.rooster465.autos&path=/#Server 133 🇩🇪
-trojan://IQ68037294@aware-pika.rooster465.autos:443?security=tls&sni=aware-pika.rooster465.autos#%E5%BE%B7%E5%9B%BD_072215010
-trojan://IQ68037294@glad-javelin.rooster465.autos:443?security=tls&sni=glad-javelin.rooster465.autos&insecure=0&allowInsecure=0&type=tcp&headerType=none#%E5%BE%B7%E5%9B%BD_072215029
-trojan://IQ68037294@enabling-gobbler.rooster465.autos:443?security=tls&sni=enabling-gobbler.rooster465.autos&insecure=0&allowInsecure=0&type=tcp&headerType=none#%E5%BE%B7%E5%9B%BD_072215030
-trojan://XG59623478@enabling-asp.rooster465.autos:443?security=tls&sni=enabling-asp.rooster465.autos#%E5%BE%B7%E5%9B%BD_072215014
-trojan://NQ26071394@square-pheasant.rooster465.autos:443?sni=square-pheasant.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215919
-trojan://NQ26071394@harmless-lab.rooster465.autos:443?sni=harmless-lab.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215920
-trojan://PD07395842@optimum-bull.rooster465.autos:443?sni=optimum-bull.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215923
-trojan://NQ26071394@busy-hermit.rooster465.autos:443?sni=busy-hermit.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215921
-trojan://PD07395842@golden-fox.rooster465.autos:443?sni=golden-fox.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215924
-trojan://ON38567014@harmless-lab.rooster465.autos:443?sni=harmless-lab.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215928
-trojan://ON38567014@sensible-grubworm.rooster465.autos:443?sni=sensible-grubworm.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215930
-trojan://ON38567014@summary-finch.rooster465.autos:443?sni=summary-finch.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215929
-trojan://5a4ea216-9597-4df7-a119-02949a3b6b82@ger.wafer.fun:443?sni=ger.wafer.fun&type=ws&path=/ChGF4VS2wmOOrQCXl1&alpn=http/1.1&fp=chrome#%E5%BE%B7%E5%9B%BD_072215926
-trojan://ON38567014@square-pheasant.rooster465.autos:443?sni=square-pheasant.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215931
-trojan://IQ68037294@optimum-bull.rooster465.autos:443?sni=optimum-bull.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215934
-trojan://IQ68037294@harmless-lab.rooster465.autos:443?sni=harmless-lab.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215933
-trojan://IQ68037294@rested-blowfish.rooster465.autos:443?sni=rested-blowfish.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215935
-trojan://IQ68037294@square-pheasant.rooster465.autos:443?sni=square-pheasant.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215936
-trojan://PD07395842@quiet-condor.rooster465.autos:443?sni=quiet-condor.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215948
-trojan://KV63147582@enabling-asp.rooster465.autos:443?sni=enabling-asp.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215946
-trojan://PD07395842@enabling-asp.rooster465.autos:443?sni=enabling-asp.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072215949
+trojan://XG59623478@enabling-asp.rooster465.autos:443?security=tls&sni=enabling-asp.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219013
+trojan://NQ26071394@harmless-lab.rooster465.autos:443?allowInsecure=0&sni=harmless-lab.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219017
+trojan://PD07395842@optimum-bull.rooster465.autos:443?allowInsecure=0&sni=optimum-bull.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219019
+trojan://PD07395842@golden-fox.rooster465.autos:443?allowInsecure=0&sni=golden-fox.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219020
+trojan://ON38567014@sensible-grubworm.rooster465.autos:443?allowInsecure=0&sni=sensible-grubworm.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219026
+trojan://ON38567014@harmless-lab.rooster465.autos:443?allowInsecure=0&sni=harmless-lab.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219024
+trojan://ON38567014@summary-finch.rooster465.autos:443?allowInsecure=0&sni=summary-finch.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219025
+trojan://IQ68037294@enabling-gobbler.rooster465.autos:443?allowInsecure=0&sni=enabling-gobbler.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219030
+trojan://IQ68037294@glad-javelin.rooster465.autos:443?allowInsecure=0&sni=glad-javelin.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219034
+trojan://IQ68037294@optimum-bull.rooster465.autos:443?allowInsecure=0&sni=optimum-bull.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219031
+trojan://IQ68037294@rested-blowfish.rooster465.autos:443?allowInsecure=0&sni=rested-blowfish.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219032
+trojan://IQ68037294@harmless-lab.rooster465.autos:443?allowInsecure=0&sni=harmless-lab.rooster465.autos#%E5%BE%B7%E5%9B%BD_072219029
+trojan://PD07395842@quiet-condor.rooster465.autos:443?sni=quiet-condor.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072219954
+trojan://KV63147582@enabling-asp.rooster465.autos:443?sni=enabling-asp.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072219952
+trojan://WG39087154@lenient-dory.rooster465.autos:443?allowInsecure=1#%E5%BE%B7%E5%9B%BD_072219973
+trojan://PD07395842@enabling-asp.rooster465.autos:443?sni=enabling-asp.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_072219955
 vless://0b9bcbc1-b289-4a64-86fa-a5b731b65384@93.152.223.98:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=QocXHwad0mV7WA5jSAcqDac3uuVBEp1WF775-CilniE&security=reality&sid=45ba18f429ad1f28&sni=web.max.ru&type=tcp#REALITY|BG🇧🇬
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AADE-209.46.102.22-0163
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1Uk91RXFzTDhJVU1NVmI0d0R3bkdV@57.129.121.230:10443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+57.129.121.230-10443+%7C+181ms
-ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@18.159.196.187:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+18.159.196.187-443+%7C+120.28ms
-ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@35.156.204.162:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+35.156.204.162-443+%7C+131.42ms
-ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@54.93.83.254:443#%F0%9F%87%A9%F0%9F%87%AADE-54.93.83.254-0169
-ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@63.176.169.206:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+63.176.169.206-443+%7C+124.68ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AADE-209.46.102.22-0163
+trojan://IQ68037294@aware-pika.rooster465.autos:443?security=tls&sni=aware-pika.rooster465.autos#%F0%9F%87%A9%F0%9F%87%AADE-63.182.30.36-3137
 vmess://eyJhZGQiOiJnZXIud2FmZXIuZnVuIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJnZXIud2FmZXIuZnVuIiwiaWQiOiI1YTRlYTIxNi05NTk3LTRkZjctYTExOS0wMjk0OWEzYjZiODIiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL1lncHVOOTVIeVMyYUZ1T3JRQ1hsMSIsInBvcnQiOiI4MCIsInBzIjoiREVcdWQ4M2NcdWRkZTlcdWQ4M2NcdWRkZWEgfCBnZXIud2FmZXIuZnVuLTgwIHwgMTMzLjA0bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoibm9uZSIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
 vmess://eyJhZGQiOiJnZXIud2FmZXIuZnVuIiwiYWlkIjoiMCIsImFscG4iOiJodHRwXC8xLjEiLCJmcCI6ImNocm9tZSIsImhvc3QiOiJnZXIud2FmZXIuZnVuIiwiaWQiOiI1YTRlYTIxNi05NTk3LTRkZjctYTExOS0wMjk0OWEzYjZiODIiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL1lncHVOOTVIeVMyYUZ1T3JRQ1hsMSIsInBvcnQiOiI0NDMiLCJwcyI6IkRFXHVkODNjXHVkZGU5XHVkODNjXHVkZGVhIHwgZ2VyLndhZmVyLmZ1bi00NDMgfCAxNTMuMzhtcyIsInNjeSI6ImF1dG8iLCJzbmkiOiJnZXIud2FmZXIuZnVuIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
-trojan://humanity@141.101.90.101:443?host=www.ignitelimit.com&path=/assignment&sni=www.ignitelimit.com&type=ws#🇩🇪 908 - DE - Trojan/WS/TLS - 443
-vless://2820c3fd-dccc-4a51-bb74-f7d6c453ee71@moji1.best-cloud.ir:8880?encryption=none&security=none&type=ws&host=play.google.com&path=/#🏳️ 107 - XX - VLESS/WS - 8880
-vless://4f51ca84-43ea-4087-b8a2-938e0ccbe27a@217.60.99.18:443?encryption=none&flow=xtls-rprx-vision&pbk=mDDDyruO33nuqcTS7pZOjd9oOpDHUf0aEv2TQ1DFGV4&security=reality&sni=google.com&type=tcp#🇩🇪 221 - DE - VLESS/REALITY/PBK/VISION - 443
-vless://5a4ea216-9597-4df7-a119-02949a3b6b82@ger.wafer.fun:443?alpn=h2&encryption=none&security=tls&serviceName=Ts7kIzm7a8mYEa7OOaBF&sni=ger.wafer.fun&type=grpc#🏳️ 238 - XX - VLESS/GRPC/TLS - 443
-vless://7d74eae4-8a06-4306-a923-ad686f30bf26@57.129.41.216:80?encryption=none&host=OV-Germany1.09vpn.com&path=/vless/&security=none&type=ws#🇩🇪 303 - DE - VLESS/WS - 80
-vless://bbae962a-b6e9-46e6-990c-6abf13e6b075@de.edge-9d7c.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=de.edge-9d7c.com&fp=safari&pbk=qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM&sid=9d84de9d9f7b85e9&type=tcp&headerType=none#🇩🇪 438 - DE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://af288d94-dd26-46cb-ad3d-5fe644e97e2f@31.76.119.201:4888?encryption=none&flow=xtls-rprx-vision&pbk=qtTBa3X4L1h8yS5jbUPY4SFstmtQ0v1oOn0f3qqV3jc&security=reality&sid=ce6dec37e4d0d3c6&sni=pingless.com&type=tcp#🏳️ 419 - XX - VLESS/REALITY/PBK/SID/VISION - 4888
-vless://c95f6104-6b19-4f3e-aaa6-a74fec3ee258@168.222.244.66:10277?encryption=none&type=tcp&security=reality&headerType=none&sni=play.google.com&fp=firefox&insecure=1&allowInsecure=1&pbk=5WM9qJQUXyEnE2xaJHvXai6IV7HrBLnuy5s39fcqCAA&sid=7a&spx=/naranv2ray#🇺🇸 451 - US - VLESS/REALITY/PBK/SID/UTLS - 10277
-vless://da97d2d7-d255-4efd-8398-7101d698768e@195.133.18.161:30153?encryption=none&security=none&type=tcp&headerType=none#🇷🇸 465 - RS - VLESS - 30153
-vless://f0e2e83d-d2b0-4e71-8da5-71306ad58e08@164.92.143.135:80?encryption=none&host=xU.aSaCO.sTorE&path=/&security=none&type=ws#🏳️ 626 - XX - VLESS/WS - 80
+trojan://5a4ea216-9597-4df7-a119-02949a3b6b82@91.107.145.13:443?security=tls&sni=ger.wafer.fun&alpn=http/1.1&fp=chrome&type=ws&host=ger.wafer.fun&path=/ChGF4VS2wmOOrQCXl1&allow_insecure=0#🇺🇸 4 - US - Trojan/WS/TLS/UTLS - 443
+trojan://NQ26071394@3.67.171.41:443?sni=busy-hermit.rooster465.autos&fp=chrome&type=tcp&path=/#🇺🇸 360 - US - Trojan/TLS/UTLS - 443
+trojan://humanity@141.101.90.101:443?host=www.ignitelimit.com&path=/assignment&sni=www.ignitelimit.com&type=ws#🏳️ 908 - XX - Trojan/WS/TLS - 443
+trojan://p2QFnWdKPZt0evve7n-C52fTqRndJa5W@rem.dtr.kotokopolb.ru:443?fp=chrome&path=/trojan-ws&type=ws#🇺🇸 961 - US - Trojan/WS/TLS/UTLS - 443
+vless://2c326e00-d936-42e1-b463-5022c90d4597@pl.sv.temas-bor.ir:22021?security=reality&encryption=none&pbk=OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg&headerType=none&fp=firefox&spx=/&type=tcp&sni=login.yahoo.com&sid=c6e19c434dc87df7#🇩🇪 112 - DE - VLESS/REALITY/PBK/SID/UTLS - 22021
+vless://2c326e00-d936-42e1-b463-5022c90d4597@se.sv.temas-bor.ir:22024?security=reality&encryption=none&pbk=OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg&headerType=none&fp=firefox&spx=/&type=tcp&sni=login.yahoo.com&sid=c6e19c434dc87df7#🏳️ 113 - XX - VLESS/REALITY/PBK/SID/UTLS - 22024
+vless://5a4ea216-9597-4df7-a119-02949a3b6b82@ger.wafer.fun:443?alpn=h2&encryption=none&security=tls&serviceName=Ts7kIzm7a8mYEa7OOaBF&sni=ger.wafer.fun&type=grpc#🏳️ 198 - XX - VLESS/GRPC/TLS - 443
+vless://4f51ca84-43ea-4087-b8a2-938e0ccbe27a@217.60.99.18:443?encryption=none&flow=xtls-rprx-vision&pbk=mDDDyruO33nuqcTS7pZOjd9oOpDHUf0aEv2TQ1DFGV4&security=reality&sni=google.com&type=tcp#🇺🇸 181 - US - VLESS/REALITY/PBK/VISION - 443
+vless://bbae962a-b6e9-46e6-990c-6abf13e6b075@185.191.118.67:443?security=reality&encryption=none&pbk=qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM&headerType=none&fp=safari&type=tcp&flow=xtls-rprx-vision&sni=de.edge-9d7c.com&sid=9d84de9d9f7b85e9#🇺🇸 439 - US - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://c95f6104-6b19-4f3e-aaa6-a74fec3ee258@168.222.244.66:10277?encryption=none&type=tcp&security=reality&headerType=none&sni=play.google.com&fp=firefox&insecure=1&allowInsecure=1&pbk=5WM9qJQUXyEnE2xaJHvXai6IV7HrBLnuy5s39fcqCAA&sid=7a&spx=/naranv2ray#🏳️ 466 - XX - VLESS/REALITY/PBK/SID/UTLS - 10277
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.121.143.119:22224?encryption=none&headerType=none&type=tcp#🏳️ 509 - XX - VLESS - 22224
+vless://f0e2e83d-d2b0-4e71-8da5-71306ad58e08@164.92.143.135:80?encryption=none&host=xU.aSaCO.sTorE&path=/&security=none&type=ws#🏳️ 637 - XX - VLESS/WS - 80

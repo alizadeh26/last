@@ -1,59 +1,58 @@
 vmess://eyJhZGQiOiI0Ny44My4yMjEuMTg1IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6Ijc3MWE1OTBjLTVlYWMtNTczMi1iNzk2LTE3MjUxMTMyZjhkMiIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiODAiLCJwcyI6IlNlcnZlciAxMzUg8J+HrfCfh7AiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
-vmess://eyJhZGQiOiJuMTc0NzYyNDI2MC40dTltYS5pY3UiLCJwb3J0IjoiNDQzIiwiaWQiOiJlZWU4Y2I3Mi03ZWFiLTQwMzQtYTMwOC1lZDA2Y2IwN2UwMDMiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidiI6IjIiLCJwcyI6IuaWsOWKoOWdoV8wNzIyMTUwMTIiLCJob3N0IjoibjE3NDc2MjQyNjAuNHU5bWEuaWN1IiwicGF0aCI6Ii8iLCJ0bHMiOiJ0bHMiLCJzbmkiOiIiLCJ0eXBlIjoiYXV0byIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
-trojan://XG59623478@growing-oyster.rooster465.autos:443?allowInsecure=0&sni=growing-oyster.rooster465.autos#%E9%A6%99%E6%B8%AF_072215001
-trojan://NQ26071394@pretty-mollusk.rooster465.autos:443?allowInsecure=0&sni=pretty-mollusk.rooster465.autos#%E9%A6%99%E6%B8%AF_072215002
-trojan://HW85960347@185.14.47.195:443?security=tls&sni=eminent-lamb.rooster465.autos#%E9%A6%99%E6%B8%AF_072215003
-trojan://KV63147582@amused-peacock.rooster465.autos:443?sni=amused-peacock.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215196
-trojan://CF68213490@well-marmot.rooster465.autos:443?sni=well-marmot.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215195
-trojan://OD90375861@desired-tahr.rooster465.autos:443?sni=desired-tahr.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215197
-trojan://KV63147582@desired-tahr.rooster465.autos:443?sni=desired-tahr.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215198
-trojan://NQ26071394@heroic-cow.rooster465.autos:443?sni=heroic-cow.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215205
-trojan://PD07395842@free-tahr.rooster465.autos:443?sni=free-tahr.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215207
-trojan://NQ26071394@full-ox.rooster465.autos:443?sni=full-ox.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215206
-trojan://KV63147582@electric-sturgeon.rooster465.autos:443?sni=electric-sturgeon.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215200
-trojan://NQ26071394@striking-cheetah.rooster465.autos:443?sni=striking-cheetah.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215204
-trojan://NQ26071394@electric-gibbon.rooster465.autos:443?sni=electric-gibbon.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215202
-trojan://NQ26071394@wealthy-loon.rooster465.autos:443?sni=wealthy-loon.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215201
-trojan://NQ26071394@glad-roughy.rooster465.autos:443?sni=glad-roughy.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215203
-trojan://PD07395842@ace-starling.rooster465.autos:443?sni=ace-starling.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215208
-trojan://PD07395842@novel-mouse.rooster465.autos:443?sni=novel-mouse.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215209
-trojan://PD07395842@liberal-salmon.rooster465.autos:443?sni=liberal-salmon.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215210
-trojan://PD07395842@choice-worm.rooster465.autos:443?sni=choice-worm.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215211
-trojan://PD07395842@striking-cheetah.rooster465.autos:443?sni=striking-cheetah.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215212
-trojan://PD07395842@magical-kodiak.rooster465.autos:443?sni=magical-kodiak.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215213
-trojan://JA96378052@91.199.84.185:443?sni=WangCai.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215214
-trojan://ON38567014@novel-mouse.rooster465.autos:443?sni=novel-mouse.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215217
-trojan://ON38567014@leading-ram.rooster465.autos:443?sni=leading-ram.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215216
-trojan://ON38567014@pretty-mollusk.rooster465.autos:443?sni=pretty-mollusk.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215218
-trojan://ON38567014@humorous-parakeet.rooster465.autos:443?sni=humorous-parakeet.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215219
-trojan://ON38567014@natural-swan.rooster465.autos:443?sni=natural-swan.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215220
-trojan://ON38567014@genuine-grackle.rooster465.autos:443?sni=genuine-grackle.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215221
-trojan://IQ68037294@engaging-llama.rooster465.autos:443?sni=engaging-llama.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215228
-trojan://IQ68037294@well-marmot.rooster465.autos:443?sni=well-marmot.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215224
-trojan://IQ68037294@wealthy-loon.rooster465.autos:443?sni=wealthy-loon.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215227
-trojan://IQ68037294@growing-oyster.rooster465.autos:443?sni=growing-oyster.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215225
-trojan://IQ68037294@eminent-lamb.rooster465.autos:443?sni=eminent-lamb.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215226
-trojan://ON38567014@top-goshawk.rooster465.autos:443?sni=top-goshawk.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215222
-trojan://IQ68037294@relaxed-gull.rooster465.autos:443?sni=relaxed-gull.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215223
-trojan://IQ68037294@true-coral.rooster465.autos:443?sni=true-coral.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215230
-trojan://IQ68037294@pretty-mollusk.rooster465.autos:443?sni=pretty-mollusk.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215229
-trojan://IQ68037294@humorous-parakeet.rooster465.autos:443?sni=humorous-parakeet.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215231
-trojan://IQ68037294@renewing-ewe.rooster465.autos:443?sni=renewing-ewe.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215232
-trojan://IQ68037294@liberal-salmon.rooster465.autos:443?sni=liberal-salmon.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215234
-trojan://IQ68037294@full-ox.rooster465.autos:443?sni=full-ox.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215233
-trojan://IQ68037294@novel-mouse.rooster465.autos:443?sni=novel-mouse.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215236
-trojan://IQ68037294@modern-bedbug.rooster465.autos:443?sni=modern-bedbug.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215235
-trojan://IQ68037294@choice-worm.rooster465.autos:443?sni=choice-worm.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215237
-trojan://IQ68037294@natural-swan.rooster465.autos:443?sni=natural-swan.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215238
-trojan://IQ68037294@ace-starling.rooster465.autos:443?sni=ace-starling.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215240
-trojan://IQ68037294@desired-tahr.rooster465.autos:443?sni=desired-tahr.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215241
-trojan://IQ68037294@genuine-grackle.rooster465.autos:443?sni=genuine-grackle.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215242
-trojan://JA96378052@saved-mudfish.rooster465.autos:443?sni=saved-mudfish.rooster465.autos&allowInsecure=1&type=tcp#%E9%A6%99%E6%B8%AF_072215247
-trojan://IQ68037294@magical-kodiak.rooster465.autos:443?sni=magical-kodiak.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215243
-trojan://KV63147582@pretty-vervet.rooster465.autos:443?sni=pretty-vervet.rooster465.autos&allowInsecure=1&type=tcp#%E9%A6%99%E6%B8%AF_072215246
-trojan://HW85960347@top-goshawk.rooster465.autos:443?allowInsecure=1&sni=top-goshawk.rooster465.autos#%E9%A6%99%E6%B8%AF_072215250
-trojan://IQ68037294@electric-gibbon.rooster465.autos:443?sni=electric-gibbon.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_072215245
-trojan://JA96378052@91.199.84.72:443?security=tls&sni=enabling-snipe.rooster465.autos&type=tcp&path=/#🇭🇰 207 - HK - Trojan/TLS - 443
-trojan://OD90375861@185.14.47.230:443?sni=modest-foal.rooster465.autos&fp=chrome&type=tcp&path=/#🇭🇰 558 - HK - Trojan/TLS/UTLS - 443
-trojan://ON38567014@91.199.84.86:443?sni=dynamic-grubworm.rooster465.autos&fp=chrome&type=tcp&path=/#🇭🇰 709 - HK - Trojan/TLS/UTLS - 443
+trojan://HW85960347@185.14.47.195:443?security=tls&sni=eminent-lamb.rooster465.autos#%E9%A6%99%E6%B8%AF_072219003
+trojan://NQ26071394@wealthy-loon.rooster465.autos:443?allowInsecure=0&sni=wealthy-loon.rooster465.autos#%E9%A6%99%E6%B8%AF_072219010
+trojan://NQ26071394@pretty-mollusk.rooster465.autos:443?allowInsecure=0&sni=pretty-mollusk.rooster465.autos#%E9%A6%99%E6%B8%AF_072219002
+trojan://NQ26071394@full-ox.rooster465.autos:443?allowInsecure=0&sni=full-ox.rooster465.autos#%E9%A6%99%E6%B8%AF_072219012
+trojan://XG59623478@growing-oyster.rooster465.autos:443?allowInsecure=0&sni=growing-oyster.rooster465.autos#%E9%A6%99%E6%B8%AF_072219001
+trojan://NQ26071394@electric-gibbon.rooster465.autos:443?allowInsecure=0&sni=electric-gibbon.rooster465.autos#%E9%A6%99%E6%B8%AF_072219011
+trojan://OD90375861@modest-foal.rooster465.autos:443?allowInsecure=0&sni=modest-foal.rooster465.autos#%E9%A6%99%E6%B8%AF_072219009
+trojan://OD90375861@desired-tahr.rooster465.autos:443?allowInsecure=0&sni=desired-tahr.rooster465.autos#%E9%A6%99%E6%B8%AF_072219007
+trojan://KV63147582@desired-tahr.rooster465.autos:443?allowInsecure=0&sni=desired-tahr.rooster465.autos#%E9%A6%99%E6%B8%AF_072219008
+trojan://PD07395842@free-tahr.rooster465.autos:443?allowInsecure=0&sni=free-tahr.rooster465.autos#%E9%A6%99%E6%B8%AF_072219013
+trojan://PD07395842@ace-starling.rooster465.autos:443?allowInsecure=0&sni=ace-starling.rooster465.autos#%E9%A6%99%E6%B8%AF_072219014
+trojan://CF68213490@well-marmot.rooster465.autos:443?allowInsecure=0&sni=well-marmot.rooster465.autos#%E9%A6%99%E6%B8%AF_072219006
+trojan://PD07395842@liberal-salmon.rooster465.autos:443?allowInsecure=0&sni=liberal-salmon.rooster465.autos#%E9%A6%99%E6%B8%AF_072219016
+trojan://PD07395842@novel-mouse.rooster465.autos:443?allowInsecure=0&sni=novel-mouse.rooster465.autos#%E9%A6%99%E6%B8%AF_072219015
+trojan://PD07395842@choice-worm.rooster465.autos:443?allowInsecure=0&sni=choice-worm.rooster465.autos#%E9%A6%99%E6%B8%AF_072219017
+trojan://JA96378052@91.199.84.185:443?allowInsecure=1&sni=WangCai.rooster465.autos#%E9%A6%99%E6%B8%AF_072219019
+trojan://ON38567014@dynamic-grubworm.rooster465.autos:443?allowInsecure=0&sni=dynamic-grubworm.rooster465.autos#%E9%A6%99%E6%B8%AF_072219020
+trojan://PD07395842@magical-kodiak.rooster465.autos:443?allowInsecure=0&sni=magical-kodiak.rooster465.autos#%E9%A6%99%E6%B8%AF_072219018
+trojan://ON38567014@leading-ram.rooster465.autos:443?allowInsecure=0&sni=leading-ram.rooster465.autos#%E9%A6%99%E6%B8%AF_072219021
+trojan://ON38567014@pretty-mollusk.rooster465.autos:443?allowInsecure=0&sni=pretty-mollusk.rooster465.autos#%E9%A6%99%E6%B8%AF_072219023
+trojan://ON38567014@top-goshawk.rooster465.autos:443?allowInsecure=0&sni=top-goshawk.rooster465.autos#%E9%A6%99%E6%B8%AF_072219027
+trojan://ON38567014@humorous-parakeet.rooster465.autos:443?allowInsecure=0&sni=humorous-parakeet.rooster465.autos#%E9%A6%99%E6%B8%AF_072219024
+trojan://IQ68037294@relaxed-gull.rooster465.autos:443?allowInsecure=0&sni=relaxed-gull.rooster465.autos#%E9%A6%99%E6%B8%AF_072219028
+trojan://ON38567014@novel-mouse.rooster465.autos:443?allowInsecure=0&sni=novel-mouse.rooster465.autos#%E9%A6%99%E6%B8%AF_072219022
+trojan://IQ68037294@well-marmot.rooster465.autos:443?allowInsecure=0&sni=well-marmot.rooster465.autos#%E9%A6%99%E6%B8%AF_072219029
+trojan://ON38567014@genuine-grackle.rooster465.autos:443?allowInsecure=0&sni=genuine-grackle.rooster465.autos#%E9%A6%99%E6%B8%AF_072219026
+trojan://IQ68037294@growing-oyster.rooster465.autos:443?allowInsecure=0&sni=growing-oyster.rooster465.autos#%E9%A6%99%E6%B8%AF_072219030
+trojan://IQ68037294@engaging-llama.rooster465.autos:443?allowInsecure=0&sni=engaging-llama.rooster465.autos#%E9%A6%99%E6%B8%AF_072219033
+trojan://IQ68037294@pretty-mollusk.rooster465.autos:443?allowInsecure=0&sni=pretty-mollusk.rooster465.autos#%E9%A6%99%E6%B8%AF_072219034
+trojan://IQ68037294@wealthy-loon.rooster465.autos:443?allowInsecure=0&sni=wealthy-loon.rooster465.autos#%E9%A6%99%E6%B8%AF_072219032
+trojan://IQ68037294@eminent-lamb.rooster465.autos:443?allowInsecure=0&sni=eminent-lamb.rooster465.autos#%E9%A6%99%E6%B8%AF_072219031
+trojan://IQ68037294@true-coral.rooster465.autos:443?allowInsecure=0&sni=true-coral.rooster465.autos#%E9%A6%99%E6%B8%AF_072219035
+trojan://IQ68037294@humorous-parakeet.rooster465.autos:443?allowInsecure=0&sni=humorous-parakeet.rooster465.autos#%E9%A6%99%E6%B8%AF_072219036
+trojan://ON38567014@natural-swan.rooster465.autos:443?allowInsecure=0&sni=natural-swan.rooster465.autos#%E9%A6%99%E6%B8%AF_072219025
+trojan://IQ68037294@renewing-ewe.rooster465.autos:443?allowInsecure=0&sni=renewing-ewe.rooster465.autos#%E9%A6%99%E6%B8%AF_072219037
+trojan://IQ68037294@full-ox.rooster465.autos:443?allowInsecure=0&sni=full-ox.rooster465.autos#%E9%A6%99%E6%B8%AF_072219038
+trojan://IQ68037294@liberal-salmon.rooster465.autos:443?allowInsecure=0&sni=liberal-salmon.rooster465.autos#%E9%A6%99%E6%B8%AF_072219039
+trojan://IQ68037294@modern-bedbug.rooster465.autos:443?allowInsecure=0&sni=modern-bedbug.rooster465.autos#%E9%A6%99%E6%B8%AF_072219040
+trojan://IQ68037294@novel-mouse.rooster465.autos:443?allowInsecure=0&sni=novel-mouse.rooster465.autos#%E9%A6%99%E6%B8%AF_072219041
+trojan://IQ68037294@choice-worm.rooster465.autos:443?allowInsecure=0&sni=choice-worm.rooster465.autos#%E9%A6%99%E6%B8%AF_072219042
+trojan://IQ68037294@natural-swan.rooster465.autos:443?allowInsecure=0&sni=natural-swan.rooster465.autos#%E9%A6%99%E6%B8%AF_072219043
+trojan://IQ68037294@electric-gibbon.rooster465.autos:443?allowInsecure=0&sni=electric-gibbon.rooster465.autos#%E9%A6%99%E6%B8%AF_072219050
+trojan://IQ68037294@desired-tahr.rooster465.autos:443?allowInsecure=0&sni=desired-tahr.rooster465.autos#%E9%A6%99%E6%B8%AF_072219046
+trojan://IQ68037294@genuine-grackle.rooster465.autos:443?allowInsecure=0&sni=genuine-grackle.rooster465.autos#%E9%A6%99%E6%B8%AF_072219047
+trojan://IQ68037294@magical-kodiak.rooster465.autos:443?allowInsecure=0&sni=magical-kodiak.rooster465.autos#%E9%A6%99%E6%B8%AF_072219048
+trojan://HW85960347@top-goshawk.rooster465.autos:443?allowInsecure=1&sni=top-goshawk.rooster465.autos#%E9%A6%99%E6%B8%AF_072219245
+trojan://IQ68037294@ace-starling.rooster465.autos:443?allowInsecure=0&sni=ace-starling.rooster465.autos#%E9%A6%99%E6%B8%AF_072219045
+trojan://IQ68037294@dynamic-grubworm.rooster465.autos:443?allowInsecure=0&sni=dynamic-grubworm.rooster465.autos#%E9%A6%99%E6%B8%AF_072219044
+trojan://JA96378052@saved-mudfish.rooster465.autos:443?allowInsecure=1&sni=saved-mudfish.rooster465.autos#%E9%A6%99%E6%B8%AF_072219052
+trojan://KV63147582@pretty-vervet.rooster465.autos:443?allowInsecure=1&sni=pretty-vervet.rooster465.autos#%E9%A6%99%E6%B8%AF_072219051
+trojan://JA96378052@91.199.84.72:443?security=tls&sni=enabling-snipe.rooster465.autos&type=tcp&path=/#🏳️ 206 - XX - Trojan/TLS - 443
+trojan://KV63147582@185.14.47.86:443?security=tls&sni=electric-sturgeon.rooster465.autos&path=/#🏳️ 234 - XX - Trojan/TLS - 443
+trojan://KV63147582@194.99.79.13:443?sni=amused-peacock.rooster465.autos&path=/#🇺🇸 241 - US - Trojan/TLS - 443
+trojan://NQ26071394@185.14.47.209:443?sni=glad-roughy.rooster465.autos&fp=chrome&type=tcp&path=/#🏳️ 346 - XX - Trojan/TLS/UTLS - 443
+trojan://NQ26071394@185.244.208.95:443?sni=heroic-cow.rooster465.autos&fp=chrome&type=tcp&path=/#🇺🇸 349 - US - Trojan/TLS/UTLS - 443
+trojan://NQ26071394@91.199.84.165:443?sni=striking-cheetah.rooster465.autos&fp=chrome&type=tcp&path=/#🏳️ 437 - XX - Trojan/TLS/UTLS - 443
 trojan://PD07395842@185.244.208.52:443?sni=just-alpaca.rooster465.autos&fp=chrome&type=tcp&path=/#🇭🇰 835 - HK - Trojan/TLS/UTLS - 443
