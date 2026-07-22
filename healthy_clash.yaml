@@ -30,18 +30,6 @@ proxies:
     headers:
       Host: nmslfangbinxing.pusytroller.gq
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: yellow-breeze-989b.348-9b8.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: ad-005.limaklhc6.info
   port: 8443
@@ -56,6 +44,18 @@ proxies:
     headers:
       Host: ad-005.limaklhc6.info
   udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: yellow-breeze-989b.348-9b8.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -64,8 +64,8 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 | FRA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 18
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -73,8 +73,8 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 | FRA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 18
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -87,6 +87,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
