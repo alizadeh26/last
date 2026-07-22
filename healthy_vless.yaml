@@ -4,22 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 4
-  server: 13.37.126.152
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 8
-  server: 13.37.126.152
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇫🇷 法国 | FRA 6
   server: fr.raketa-balance.com
   port: 443
@@ -32,14 +16,6 @@ proxies:
     short-id: 6c6082a2223c1d03
   servername: fr.raketa-balance.com
   client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 9
-  server: 13.37.126.152
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
   network: tcp
   udp: true
 - name: 🇫🇷 法国 | FRA 10
@@ -58,22 +34,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: soskeynets-v2ngnet-daefaaf.up.railway.app
-  port: 443
-  type: vless
-  uuid: 713b7247-d958-0148-3838-1fcb15f991b5
-  tls: true
-  alpn:
-  - http/1.1
-  servername: join-v2ngnet-daefaaf.up.railway.app
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /ws/713b7247-d958-0148-3838-1fcb15f991b5
-    headers:
-      Host: join-v2ngnet-daefaaf.up.railway.app
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: nmslfangbinxing.pusytroller.gq
   port: 2095
@@ -85,34 +45,6 @@ proxies:
     path: /
     headers:
       Host: nmslfangbinxing.pusytroller.gq
-  udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: v2rayngselllbot-aaws.up.railway.app
-  port: 443
-  type: vless
-  uuid: f082844f-1902-b7a0-9af2-9bd9bf1c5361
-  tls: true
-  alpn:
-  - http/1.1
-  servername: v2rayngselllbot-aaws.up.railway.app
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /ws/f082844f-1902-b7a0-9af2-9bd9bf1c5361
-    headers:
-      Host: v2rayngselllbot-aaws.up.railway.app
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: yellow-breeze-989b.348-9b8.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: ezaccess-project-53562a.pages.dev
@@ -147,16 +79,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 4
-  - 🇫🇷 法国 | FRA 8
   - 🇫🇷 法国 | FRA 6
-  - 🇫🇷 法国 | FRA 9
   - 🇫🇷 法国 | FRA 10
   - 🇫🇷 法国 | FRA 11
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 2
 rules:
