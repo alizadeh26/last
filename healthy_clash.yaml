@@ -18,22 +18,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 10
-  server: 13.37.118.222
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 11
-  server: 13.37.118.222
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: nmslfangbinxing.pusytroller.gq
   port: 2095
@@ -46,19 +30,18 @@ proxies:
     headers:
       Host: nmslfangbinxing.pusytroller.gq
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: ezaccess-project-53562a.pages.dev
-  port: 443
+- name: 🇺🇸 美国 | USA 18
+  server: 162.159.21.178
+  port: 8880
   type: vless
-  uuid: 22df7ca3-ce10-48a9-a582-a3894296049e
-  tls: true
-  servername: ezacCeSs-PRojEct-53562a.PaGES.dev
-  client-fingerprint: ios
+  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
+  tls: false
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiWm1TZTQ0NVdZalBwYmtpdSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: ezaccess-project-53562a.pages.dev
+      Host: yellow-breeze-989b.348-9b8.workers.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: ad-005.limaklhc6.info
   port: 8443
@@ -80,10 +63,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇫🇷 法国 | FRA 6
-  - 🇫🇷 法国 | FRA 10
-  - 🇫🇷 法国 | FRA 11
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 2
 - name: PROTO-VLESS
   type: url-test
@@ -91,10 +72,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇫🇷 法国 | FRA 6
-  - 🇫🇷 法国 | FRA 10
-  - 🇫🇷 法国 | FRA 11
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 2
 - name: REGION-EU
   type: url-test
@@ -102,13 +81,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇫🇷 法国 | FRA 6
-  - 🇫🇷 法国 | FRA 10
-  - 🇫🇷 法国 | FRA 11
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 18
 rules:
 - MATCH,AUTO
