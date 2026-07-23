@@ -4,19 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 3
-  server: 150.251.158.203
-  port: 8388
+- name: 🇰🇷 韩国 | KOR
+  server: 27.255.82.134
+  port: 2078
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 185.22.154.254
+  port: 7022
   type: ss
   cipher: aes-256-gcm
-  password: h6mDbcyvQUXD
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 195.58.48.19
-  port: 30112
-  type: ss
-  cipher: aes-256-gcm
-  password: fbaf33bcffe53cf9
-- name: 🇺🇸 美国 | USA 17
+  password: 32c0ea6e823341a2
+- name: 🇺🇸 美国 | USA 19
   server: 54.197.30.38
   port: 443
   type: ss
@@ -28,8 +28,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 3
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 17
+  - 🇰🇷 韩国 | KOR
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
