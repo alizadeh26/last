@@ -17,6 +17,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: 54.197.30.38
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -25,5 +31,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 2
   - 🇳🇱 荷兰 | NLD 10
+  - 🇺🇸 美国 | USA 21
 rules:
 - MATCH,AUTO
