@@ -4,7 +4,151 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
+- name: 🇩🇪 德国 | DEU 4
+  server: store.noneok.com
+  port: 443
+  type: vless
+  uuid: 340e4de3-144b-49c4-ad72-b49b35713728
+  tls: true
+  reality-opts:
+    public-key: jv786fxOk5giwQ0hoqIkLkaKJYup9hwy2FWY-Xcl2yU
+    short-id: 5bc76436f2905fba
+  servername: store.noneok.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: api.v1.StreamService
+  udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: gr1.panel11.ru
+  port: 443
+  type: vless
+  uuid: d385a48f-9f6f-406a-8d3c-e409b371c565
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8H-YQe-nSd_aL2FwWIFNV2-anUb4v3cY_n5QcEEjGEs
+    short-id: eeed325908a87d9f
+  servername: gr1.panel11.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 16
+  server: fn.fifapes.monster
+  port: 2090
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇪🇸 西班牙 | ESP
+  server: spain1.panel11.ru
+  port: 443
+  type: vless
+  uuid: d385a48f-9f6f-406a-8d3c-e409b371c565
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: FXAq8r9zWm-vV_EM0iYIPlMv5JGUzojo-m9CZRdHbFA
+    short-id: fe21042f33c44391
+  servername: spain1.panel11.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 3
+  server: 13.39.58.127
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 4
+  server: 13.39.58.127
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 5
+  server: 13.39.58.127
+  port: 22223
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: funny1.oneok.name
+  port: 443
+  type: vless
+  uuid: 340e4de3-144b-49c4-ad72-b49b35713728
+  tls: true
+  reality-opts:
+    public-key: w5fBwTRrvLjDfKKfYM88Lrh7DpwSVlhnCCyo4FxLUSo
+    short-id: 096bb498
+  servername: funny1.oneok.name
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: api.v1.StreamService
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 7
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: odd-darkness-57ce.334-a29.workers.dev
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: pl02.myxasecure.space
+  port: 443
+  type: vless
+  uuid: 8dd32d18-f32b-4204-b03b-74d5394a6487
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: pl02.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: swe01.myxasecure.space
+  port: 443
+  type: vless
+  uuid: 8dd32d18-f32b-4204-b03b-74d5394a6487
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: swe01.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 9
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: yellow-breeze-989b.348-9b8.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 22
   server: ad-013.orbitqgr7v.info
   port: 8443
   type: vless
@@ -18,68 +162,60 @@ proxies:
     headers:
       Host: ad-013.orbitqgr7v.info
   udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 52.58.62.164
-  port: 22222
+- name: 🇺🇸 美国 | USA 26
+  server: usa01.myxasecure.space
+  port: 443
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
+  uuid: 8dd32d18-f32b-4204-b03b-74d5394a6487
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: usa01.myxasecure.space
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN
-  server: jp5.vpn.partners
+- name: 🇸🇬 新加坡 | SGP 18
+  server: cdn.ai-4-science.com
   port: 443
   type: vless
-  uuid: 40a9bfd0-c0e4-4736-a8c3-1ae41ef0fdb3
+  uuid: 85c38af5-5a88-4ef1-b87a-a6dee6772285
   tls: true
-  alpn:
-  - h2
-  servername: jp5.vpn.partners
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vlgrpc
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
-  tls: false
+  servername: cdn.ai-4-science.com
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /api/v1/stream
     headers:
-      Host: dark-leaf-93a1.440-02e.workers.dev
+      Host: cdn.ai-4-science.com
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: swg.raketa-balance.com
-  port: 443
+- name: 🇺🇸 美国 | USA 28
+  server: ad-005.novayjr9g.info
+  port: 8443
   type: vless
-  uuid: d7fc372d-c057-43ce-8070-9b96abbc60f3
+  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
   tls: true
-  reality-opts:
-    public-key: Q8SjY3b6H8hnsg2TVIgNpnoQ2zjOacm727EJkEIPSkg
-    short-id: 6c6082a2223c1d03
-  servername: swg.raketa-balance.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-service
-  udp: true
-- name: 🇹🇭 泰国 | THA 2
-  server: 18.239.134.69
-  port: 80
-  type: vless
-  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
-  tls: false
+  servername: ad-005.novayjr9g.info
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+      Host: ad-005.novayjr9g.info
+  udp: true
+- name: 🇺🇸 美国 | USA 35
+  server: ad-020.orbitqgr7v.info
+  port: 8443
+  type: vless
+  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
+  tls: true
+  servername: ad-020.orbitqgr7v.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-020.orbitqgr7v.info
   udp: true
 proxy-groups:
 - name: AUTO
@@ -87,11 +223,22 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 9
-  - 🇯🇵 日本 | JPN
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇸🇪 瑞典 | SWE
-  - 🇹🇭 泰国 | THA 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 16
+  - 🇪🇸 西班牙 | ESP
+  - 🇫🇷 法国 | FRA 3
+  - 🇫🇷 法国 | FRA 4
+  - 🇫🇷 法国 | FRA 5
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇵🇱 波兰 | POL 2
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇸🇬 新加坡 | SGP 9
+  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 26
+  - 🇸🇬 新加坡 | SGP 18
+  - 🇺🇸 美国 | USA 28
+  - 🇺🇸 美国 | USA 35
 rules:
 - MATCH,AUTO
