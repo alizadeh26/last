@@ -34,6 +34,14 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 16
+  server: fn.fifapes.monster
+  port: 2090
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇪🇸 西班牙 | ESP
   server: spain1.panel11.ru
   port: 443
@@ -46,14 +54,6 @@ proxies:
     short-id: fe21042f33c44391
   servername: spain1.panel11.ru
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 16
-  server: fn.fifapes.monster
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
   network: tcp
   udp: true
 - name: 🇭🇰 香港 | HKG 2
@@ -89,32 +89,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: swe01.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 8dd32d18-f32b-4204-b03b-74d5394a6487
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: swe01.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 9
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: yellow-breeze-989b.348-9b8.workers.dev
-  udp: true
 - name: 🇵🇱 波兰 | POL 2
   server: pl02.myxasecure.space
   port: 443
@@ -129,24 +103,38 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: 54.197.30.38
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇬 新加坡 | SGP 18
-  server: cdn.ai-4-science.com
+- name: 🇸🇪 瑞典 | SWE 2
+  server: swe01.myxasecure.space
   port: 443
   type: vless
-  uuid: 85c38af5-5a88-4ef1-b87a-a6dee6772285
+  uuid: 8dd32d18-f32b-4204-b03b-74d5394a6487
   tls: true
-  servername: cdn.ai-4-science.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: swe01.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: 82.38.31.15
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 9
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
+  tls: false
   network: ws
   ws-opts:
-    path: /api/v1/stream
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: cdn.ai-4-science.com
+      Host: yellow-breeze-989b.348-9b8.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 22
   server: ad-013.orbitqgr7v.info
@@ -161,6 +149,43 @@ proxies:
     path: /
     headers:
       Host: ad-013.orbitqgr7v.info
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: mgxui.peng.mom
+  port: 26604
+  type: vless
+  uuid: 94213f38-6bf8-4d35-b8ad-7b1431ab20f6
+  tls: true
+  servername: mgxui.peng.mom
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 18
+  server: cdn.ai-4-science.com
+  port: 443
+  type: vless
+  uuid: 85c38af5-5a88-4ef1-b87a-a6dee6772285
+  tls: true
+  servername: cdn.ai-4-science.com
+  network: ws
+  ws-opts:
+    path: /api/v1/stream
+    headers:
+      Host: cdn.ai-4-science.com
+  udp: true
+- name: 🇺🇸 美国 | USA 26
+  server: usa01.myxasecure.space
+  port: 443
+  type: vless
+  uuid: 8dd32d18-f32b-4204-b03b-74d5394a6487
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: usa01.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 28
   server: ad-005.novayjr9g.info
@@ -190,27 +215,6 @@ proxies:
     headers:
       Host: ad-020.orbitqgr7v.info
   udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: usa01.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 8dd32d18-f32b-4204-b03b-74d5394a6487
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: usa01.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 82.38.31.15
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -219,28 +223,27 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 13
-  - 🇪🇸 西班牙 | ESP
   - 🇩🇪 德国 | DEU 16
+  - 🇪🇸 西班牙 | ESP
   - 🇭🇰 香港 | HKG 2
   - 🇯🇵 日本 | JPN 4
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇬 新加坡 | SGP 9
   - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 21
-  - 🇸🇬 新加坡 | SGP 18
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇳🇱 荷兰 | NLD 10
+  - 🇸🇬 新加坡 | SGP 9
   - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 9
+  - 🇸🇬 新加坡 | SGP 18
+  - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 28
   - 🇺🇸 美国 | USA 35
-  - 🇺🇸 美国 | USA 26
-  - 🇳🇱 荷兰 | NLD 10
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇺🇸 美国 | USA 21
   - 🇳🇱 荷兰 | NLD 10
 - name: PROTO-VLESS
   type: url-test
@@ -249,18 +252,19 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 13
-  - 🇪🇸 西班牙 | ESP
   - 🇩🇪 德国 | DEU 16
+  - 🇪🇸 西班牙 | ESP
   - 🇯🇵 日本 | JPN 4
   - 🇷🇺 俄罗斯 | RUS 3
+  - 🇵🇱 波兰 | POL 2
   - 🇸🇪 瑞典 | SWE 2
   - 🇸🇬 新加坡 | SGP 9
-  - 🇵🇱 波兰 | POL 2
-  - 🇸🇬 新加坡 | SGP 18
   - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 9
+  - 🇸🇬 新加坡 | SGP 18
+  - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 28
   - 🇺🇸 美国 | USA 35
-  - 🇺🇸 美国 | USA 26
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -274,7 +278,7 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 13
-  - 🇪🇸 西班牙 | ESP
   - 🇩🇪 德国 | DEU 16
+  - 🇪🇸 西班牙 | ESP
 rules:
 - MATCH,AUTO
