@@ -4,24 +4,24 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN
-  server: 134.122.199.106
-  port: 31198
+- name: 🇺🇸 美国 | USA 5
+  server: 43.173.74.241
+  port: 10086
   type: vmess
-  uuid: 84c81ccd-4cfa-4d0f-d27a-da45ddc70e52
+  uuid: bd7e0c40-79c7-4db1-ba27-43894d59a4a1
   alterId: 0
   cipher: auto
   tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
