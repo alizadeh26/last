@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇹 奥地利 | AUT
-  server: at.monkeyvillage.pro
-  port: 443
-  type: vless
-  uuid: 9b3f1507-a0f9-4950-a0c0-f184d9cb3c2a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo
-    short-id: 032cf928d97d0c4c
-  servername: at.monkeyvillage.pro
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇨🇦 加拿大 | CAN
   server: ad-013.orbitqgr7v.info
   port: 8443
@@ -31,45 +17,6 @@ proxies:
     path: /
     headers:
       Host: ad-013.orbitqgr7v.info
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: de.monkeyvillage.pro
-  port: 443
-  type: vless
-  uuid: 9b3f1507-a0f9-4950-a0c0-f184d9cb3c2a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo
-    short-id: dbfe71e8d87e5f8c
-  servername: de.monkeyvillage.pro
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: fast.motorbazan.com
-  port: 80
-  type: vless
-  uuid: b9ab00a9-5fd0-42eb-a474-cc18265df70d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER
-    headers:
-      Host: pan1.global.ssl.fastly.net
-  udp: true
-- name: 🇪🇸 西班牙 | ESP
-  server: es.noooo.win
-  port: 8443
-  type: vless
-  uuid: 84ab386f-9d86-4a71-bdf3-e26170c2c8f6
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: api-6a607319.noooo.win
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 9
   server: 52.58.62.164
@@ -94,21 +41,17 @@ proxies:
     grpc-mode: gun
     grpc-service-name: vlgrpc
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: ezaccess1-x4g-ezaccess1-e6b8.up.railway.app
-  port: 443
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 162.159.21.178
+  port: 8880
   type: vless
-  uuid: 4834f2fb-0f56-5fe5-37df-2082896b4f75
-  tls: true
-  alpn:
-  - http/1.1
-  servername: ezaccess1-x4g-ezaccess1-e6b8.up.railway.app
-  client-fingerprint: ios
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  tls: false
   network: ws
   ws-opts:
-    path: /ws/4834f2fb-0f56-5fe5-37df-2082896b4f75
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: ezaccess1-x4g-ezaccess1-e6b8.up.railway.app
+      Host: dark-leaf-93a1.440-02e.workers.dev
   udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: swg.raketa-balance.com
@@ -138,48 +81,17 @@ proxies:
     headers:
       Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 172.64.88.168
-  port: 8880
-  type: vless
-  uuid: d702b5e4-412d-4859-a528-3fc0b91f6fc0
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: wild-math-3ef2.439.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: yt.noooo.win
-  port: 8443
-  type: vless
-  uuid: 6f98a077-004e-4b86-8b78-8d09308d3868
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: ai-6a607097.noooo.win
-  client-fingerprint: randomized
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
   - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 10
-  - 🇪🇸 西班牙 | ESP
   - 🇩🇪 德国 | DEU 9
   - 🇯🇵 日本 | JPN
-  - 🇳🇱 荷兰 | NLD 8
+  - 🇸🇬 新加坡 | SGP 4
   - 🇸🇪 瑞典 | SWE
   - 🇹🇭 泰国 | THA 2
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 22
 rules:
 - MATCH,AUTO
