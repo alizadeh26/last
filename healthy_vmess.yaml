@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 5
-  server: 43.173.74.241
-  port: 10086
+- name: 🇭🇰 香港 | HKG 5
+  server: 185.206.171.78
+  port: 8081
   type: vmess
-  uuid: bd7e0c40-79c7-4db1-ba27-43894d59a4a1
+  uuid: 450037e8-e9fb-4296-bdf7-213f40b753c1
   alterId: 0
   cipher: auto
   tls: false
@@ -22,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 5
+  - 🇭🇰 香港 | HKG 5
 rules:
 - MATCH,AUTO
