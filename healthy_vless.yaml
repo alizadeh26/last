@@ -45,20 +45,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: vl10.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: vl10.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 18
   server: ger05.myxasecure.space
   port: 443
@@ -70,6 +56,20 @@ proxies:
     public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
     short-id: d67ec5a8fc40ebea
   servername: ger05.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 4
+  server: vl10.myxasecure.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: vl10.myxasecure.space
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -87,19 +87,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: nl16.sodahub.online
-  port: 443
-  type: vless
-  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: oGgupP3uX0TNyFwuxNYaFj-IQ8EPhCuKfJdaOHiMnV0
-    short-id: c334408a1056aaf8
-  servername: nl16.sodahub.online
-  client-fingerprint: firefox
-  network: tcp
 - name: 🇳🇱 荷兰 | NLD 6
   server: node2.mxvpn.dev
   port: 443
@@ -114,6 +101,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: nl16.sodahub.online
+  port: 443
+  type: vless
+  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: oGgupP3uX0TNyFwuxNYaFj-IQ8EPhCuKfJdaOHiMnV0
+    short-id: c334408a1056aaf8
+  servername: nl16.sodahub.online
+  client-fingerprint: firefox
+  network: tcp
 - name: 🇵🇱 波兰 | POL 2
   server: pl.mcqueenconnection.ru
   port: 443
@@ -140,20 +140,6 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: ad-007.cloud25075.info
-  port: 8443
-  type: vless
-  uuid: 2e8beadd-99bf-4fda-8692-8493886504bc
-  tls: true
-  servername: ad-007.cloud25075.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-007.cloud25075.info
-  udp: true
 - name: 🇺🇸 美国 | USA 30
   server: usa02.myxasecure.space
   port: 443
@@ -168,17 +154,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 162.159.21.178
-  port: 8880
+- name: 🇺🇸 美国 | USA 6
+  server: ad-007.cloud25075.info
+  port: 8443
   type: vless
-  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
-  tls: false
+  uuid: 2e8beadd-99bf-4fda-8692-8493886504bc
+  tls: true
+  servername: ad-007.cloud25075.info
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /
     headers:
-      Host: yellow-breeze-989b.348-9b8.workers.dev
+      Host: ad-007.cloud25075.info
   udp: true
 proxy-groups:
 - name: AUTO
@@ -189,15 +177,14 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 23
-  - 🇬🇧 英国 | GBR 4
   - 🇩🇪 德国 | DEU 18
+  - 🇬🇧 英国 | GBR 4
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 8
   - 🇵🇱 波兰 | POL 2
   - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO

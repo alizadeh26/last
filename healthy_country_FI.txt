@@ -1,4 +1,4 @@
-vless://31fb98b7-e7a1-4b56-8c6a-3f060f06393c@141.98.87.48:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28&security=reality&sid=8248954896&sni=eh.vk.com&type=raw#🇫🇮 106 - FI - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 443
-vless://94878fe1-5e8b-4676-9ee0-a90267a596e5@144.31.27.179:443?encryption=none&flow=xtls-rprx-vision&pbk=8jwT95mGT7dW1VkMVt8vtwbWLgHN39tnhnt6PN1FTmU&security=reality&sid=b08c5eb124a5877e&sni=site.rumedia-cdn.com&type=tcp#🇫🇮 388 - FI - VLESS/REALITY/PBK/SID/VISION - 443
-vless://a7a42d83-b810-4393-a321-a554ec2e75c9@ru.washing.help:8443?security=tls&encryption=none&path=/#🇫🇮 418 - FI - VLESS/TLS - 8443
-vless://d3aebc17-a731-40fb-a755-aac1a4cf80f2@95.181.167.171:9090?security=none&encryption=none&headerType=none&type=tcp#🇫🇮 450 - FI - VLESS - 9090
+vless://31fb98b7-e7a1-4b56-8c6a-3f060f06393c@141.98.87.48:443?encryption=none&flow=xtls-rprx-vision&pbk=yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28&security=reality&sid=8248954896&sni=eh.vk.com&type=raw#🏳️ 108 - XX - VLESS/RAW/REALITY/PBK/SID/VISION - 443
+vless://94878fe1-5e8b-4676-9ee0-a90267a596e5@144.31.27.179:443?encryption=none&flow=xtls-rprx-vision&pbk=8jwT95mGT7dW1VkMVt8vtwbWLgHN39tnhnt6PN1FTmU&security=reality&sid=b08c5eb124a5877e&sni=site.rumedia-cdn.com&type=tcp#🏳️ 370 - XX - VLESS/REALITY/PBK/SID/VISION - 443
+vless://a7a42d83-b810-4393-a321-a554ec2e75c9@ru.washing.help:8443?security=tls&encryption=none&path=/#🇫🇮 401 - FI - VLESS/TLS - 8443
+vless://d3aebc17-a731-40fb-a755-aac1a4cf80f2@95.181.167.171:9090?security=none&encryption=none&headerType=none&type=tcp#🇺🇸 436 - US - VLESS - 9090
