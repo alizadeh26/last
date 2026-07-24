@@ -4,37 +4,95 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 6
-  server: 81.31.211.170
-  port: 2085
+- name: 🇨🇾 塞浦路斯 | CYP
+  server: cur03.myxasecure.space
+  port: 443
   type: vless
-  uuid: 854b5f21-f3a9-4aa9-b62e-d0585fb5122a
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: cur03.myxasecure.space
+  client-fingerprint: edge
+  network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 81.31.211.172
-  port: 2085
+- name: 🇩🇪 德国 | DEU 14
+  server: 78.159.110.126
+  port: 33470
   type: vless
-  uuid: 31a62aa2-c465-4c1f-b636-f90578922b5f
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
-  udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: 31.57.106.87
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  uuid: be737d2a-0b7a-4a0a-a455-ad8ec833d084
   tls: false
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 2
+- name: 🇩🇪 德国 | DEU 16
+  server: 81.31.211.170
+  port: 2085
+  type: vless
+  uuid: 157c2020-1c55-41d8-8431-6952fd4f4912
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇩🇪 德国 | DEU 24
+  server: ger05.myxasecure.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: ger05.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 27
+  server: store.noneok.com
+  port: 443
+  type: vless
+  uuid: 340e4de3-144b-49c4-ad72-b49b35713728
+  tls: true
+  reality-opts:
+    public-key: jv786fxOk5giwQ0hoqIkLkaKJYup9hwy2FWY-Xcl2yU
+    short-id: 5bc76436f2905fba
+  servername: store.noneok.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: api.v1.StreamService
+  udp: true
+- name: 🇩🇪 德国 | DEU 30
+  server: gr.lion-game.ir
+  port: 46646
+  type: vless
+  uuid: 466f13f5-61a3-447b-b593-cb09c583d8e7
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gr.lion-game.ir
+  udp: true
+- name: 🇩🇪 德国 | DEU 34
+  server: ru.washing.help
+  port: 8443
+  type: vless
+  uuid: a7a42d83-b810-4393-a321-a554ec2e75c9
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: ru.washing.help
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 4
   server: node13.mxvpn.dev
   port: 443
   type: vless
@@ -48,8 +106,98 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 5
-  server: node12.mxvpn.dev
+- name: 🇬🇧 英国 | GBR 3
+  server: vl10.myxasecure.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: vl10.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇬🇷 希腊 | GRC
+  server: gre03.myxasecure.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: gre03.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 4
+  server: uk1.panel11.ru
+  port: 443
+  type: vless
+  uuid: d385a48f-9f6f-406a-8d3c-e409b371c565
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: L5qLDM9pWlBV6gU9yCT4_yc7jz982FiLi2CZWLo3Ki0
+    short-id: dcbf3f13ce2dbe37
+  servername: uk1.panel11.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: latvia.hivaphone.ir
+  port: 23513
+  type: vless
+  uuid: 79f92090-4395-4d15-a093-5a524324b9eb
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇮🇳 印度 | IND
+  server: india1.panel11.ru
+  port: 443
+  type: vless
+  uuid: d385a48f-9f6f-406a-8d3c-e409b371c565
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zkOiykhUe5uab1qCgw5kXzMG5dlq4BPiFby-JFCBH3U
+    short-id: f48bf80d70cc40cc
+  servername: india1.panel11.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇪🇸 西班牙 | ESP
+  server: isp01.myxasecure.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: isp01.myxasecure.space
+  client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: 94977b19-6720-48a6-92fd-00238757ea30
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: fragrant-credit-c4cf.148-e68.workers.dev
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 5
+  server: node.mxvpn.dev
   port: 443
   type: vless
   uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
@@ -58,12 +206,20 @@ proxies:
   reality-opts:
     public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
     short-id: bbc68cec8bb8d2e3
-  servername: node12.mxvpn.dev
+  servername: node.mxvpn.dev
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 4
-  server: fr11.myxasecure.space
+- name: 🇵🇱 波兰 | POL 4
+  server: poland.hivaphone.ir
+  port: 32253
+  type: vless
+  uuid: 79f92090-4395-4d15-a093-5a524324b9eb
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: tur02.myxasecure.space
   port: 443
   type: vless
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
@@ -72,12 +228,12 @@ proxies:
   reality-opts:
     public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
     short-id: d67ec5a8fc40ebea
-  servername: fr11.myxasecure.space
+  servername: tur02.myxasecure.space
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: fl14.myxasecure.space
+- name: 🇺🇸 美国 | USA 20
+  server: usa02.myxasecure.space
   port: 443
   type: vless
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
@@ -86,78 +242,139 @@ proxies:
   reality-opts:
     public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
     short-id: d67ec5a8fc40ebea
-  servername: fl14.myxasecure.space
+  servername: usa02.myxasecure.space
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: fr02.myxasecure.space
-  port: 443
+- name: 🇺🇸 美国 | USA 15
+  server: 162.159.21.178
+  port: 8880
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: fr02.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
+  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: yellow-breeze-989b.348-9b8.workers.dev
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: nd01.myxasecure.space
-  port: 443
+- name: 🇺🇸 美国 | USA 21
+  server: www.wto.org
+  port: 2095
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: nd01.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: ru10.sipipro.su
-  port: 443
-  type: vless
-  uuid: bedee8a6-cdca-4d75-aa9d-993bb3e21e23
-  tls: true
-  reality-opts:
-    public-key: bwCZQA36bHZreEcoFuhKznztNFhcnE6ellCHGyooDj8
-    short-id: 37645fbc3fdc11c3
-  servername: ru10.sipipro.su
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: ru01.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: ru01.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: ad-020.limaklhc6.info
+- name: 🇺🇸 美国 | USA 24
+  server: ad-013.limaklhc6.info
   port: 8443
   type: vless
-  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
   tls: true
-  servername: ad-020.limaklhc6.info
+  servername: ad-013.limaklhc6.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-020.limaklhc6.info
+      Host: ad-013.limaklhc6.info
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: 18.239.134.69
+  port: 80
+  type: vless
+  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  udp: true
+- name: 🇺🇸 美国 | USA 25
+  server: ad-020.fluxmxd18.info
+  port: 8443
+  type: vless
+  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
+  tls: true
+  servername: ad-020.fluxmxd18.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-020.fluxmxd18.info
+  udp: true
+- name: 🇺🇸 美国 | USA 26
+  server: ad-004.novayjr9g.info
+  port: 8443
+  type: vless
+  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
+  tls: true
+  servername: ad-004.novayjr9g.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-004.novayjr9g.info
+  udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: ad-004.vector2llqn.info
+  port: 8443
+  type: vless
+  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
+  tls: true
+  servername: ad-004.vector2llqn.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-004.vector2llqn.info
+  udp: true
+- name: 🇺🇸 美国 | USA 28
+  server: ad-004.clouduhtpv.info
+  port: 8443
+  type: vless
+  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
+  tls: true
+  servername: ad-004.clouduhtpv.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-004.clouduhtpv.info
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 104.16.72.41
+  port: 8880
+  type: vless
+  uuid: 15ce0fde-88e2-42b0-91e6-e4a1b4568f6e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: old-truth-de8a.110-187.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dark-leaf-93a1.440-02e.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -165,17 +382,34 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 13
-  - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA 5
+  - 🇨🇾 塞浦路斯 | CYP
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 16
+  - 🇩🇪 德国 | DEU 24
+  - 🇩🇪 德国 | DEU 27
+  - 🇩🇪 德国 | DEU 30
+  - 🇩🇪 德国 | DEU 34
   - 🇫🇷 法国 | FRA 4
-  - 🇩🇪 德国 | DEU 12
-  - 🇫🇷 法国 | FRA 3
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇵🇱 波兰 | POL
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 5
+  - 🇬🇧 英国 | GBR 3
+  - 🇬🇷 希腊 | GRC
+  - 🇬🇧 英国 | GBR 4
+  - 🇱🇻 拉脱维亚 | LVA
+  - 🇮🇳 印度 | IND
+  - 🇪🇸 西班牙 | ESP
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇪 瑞典 | SWE 5
+  - 🇵🇱 波兰 | POL 4
+  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 24
+  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 28
+  - 🇺🇸 美国 | USA 6
+  - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO
