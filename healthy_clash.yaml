@@ -60,20 +60,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: vless
   udp: true
-- name: 🇩🇪 德国 | DEU 23
-  server: node6.mxvpn.dev
-  port: 443
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: bbc68cec8bb8d2e3
-  servername: node6.mxvpn.dev
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 18
   server: ger05.myxasecure.space
   port: 443
@@ -88,6 +74,20 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 23
+  server: node6.mxvpn.dev
+  port: 443
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: bbc68cec8bb8d2e3
+  servername: node6.mxvpn.dev
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇬🇧 英国 | GBR 4
   server: vl10.myxasecure.space
   port: 443
@@ -99,20 +99,6 @@ proxies:
     public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
     short-id: d67ec5a8fc40ebea
   servername: vl10.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: uk1.panel11.ru
-  port: 443
-  type: vless
-  uuid: d385a48f-9f6f-406a-8d3c-e409b371c565
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: L5qLDM9pWlBV6gU9yCT4_yc7jz982FiLi2CZWLo3Ki0
-    short-id: dcbf3f13ce2dbe37
-  servername: uk1.panel11.ru
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -142,20 +128,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: node2.mxvpn.dev
-  port: 443
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: bbc68cec8bb8d2e3
-  servername: node2.mxvpn.dev
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 8
   server: nl16.sodahub.online
   port: 443
@@ -169,17 +141,17 @@ proxies:
   servername: nl16.sodahub.online
   client-fingerprint: firefox
   network: tcp
-- name: 🇵🇱 波兰 | POL 2
-  server: pl.mcqueenconnection.ru
+- name: 🇳🇱 荷兰 | NLD 6
+  server: node2.mxvpn.dev
   port: 443
   type: vless
-  uuid: 12e410bf-0eb8-4b60-b52e-6951d96eb82c
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: O2ttHpVFmwoAf-E1rHgOlv7NggcwxcWkHHen7jkIBjY
-    short-id: 1798724d1c2888c1
-  servername: pl.mcqueenconnection.ru
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: bbc68cec8bb8d2e3
+  servername: node2.mxvpn.dev
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -197,38 +169,26 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: pl.mcqueenconnection.ru
+  port: 443
+  type: vless
+  uuid: 12e410bf-0eb8-4b60-b52e-6951d96eb82c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: O2ttHpVFmwoAf-E1rHgOlv7NggcwxcWkHHen7jkIBjY
+    short-id: 1798724d1c2888c1
+  servername: pl.mcqueenconnection.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 54.197.30.38
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇮🇳 印度 | IND
-  server: india1.panel11.ru
-  port: 443
-  type: vless
-  uuid: d385a48f-9f6f-406a-8d3c-e409b371c565
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zkOiykhUe5uab1qCgw5kXzMG5dlq4BPiFby-JFCBH3U
-    short-id: f48bf80d70cc40cc
-  servername: india1.panel11.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 18
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: icy-snowflake-1f56.147-1ea.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: ad-007.cloud25075.info
   port: 8443
@@ -242,6 +202,18 @@ proxies:
     path: /
     headers:
       Host: ad-007.cloud25075.info
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: 104.16.8.66
+  port: 8880
+  type: vless
+  uuid: 2145ee90-d933-4975-b4fe-8fa5365937f0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: long-breeze-5552.250-271.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 30
   server: usa02.myxasecure.space
@@ -257,18 +229,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: yellow-breeze-989b.348-9b8.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 28
   server: www.fbi.gov
   port: 2095
@@ -281,6 +241,18 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: yellow-breeze-989b.348-9b8.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -292,23 +264,21 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 22
-  - 🇩🇪 德国 | DEU 23
   - 🇩🇪 德国 | DEU 18
+  - 🇩🇪 德国 | DEU 23
   - 🇬🇧 英国 | GBR 4
-  - 🇬🇧 英国 | GBR
   - 🇭🇰 香港 | HKG 5
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 8
-  - 🇵🇱 波兰 | POL 2
+  - 🇳🇱 荷兰 | NLD 6
   - 🇸🇪 瑞典 | SWE
+  - 🇵🇱 波兰 | POL 2
   - 🇺🇸 美国 | USA 5
-  - 🇮🇳 印度 | IND
-  - 🇸🇬 新加坡 | SGP 18
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 28
+  - 🇺🇸 美国 | USA 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -325,21 +295,19 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 22
-  - 🇩🇪 德国 | DEU 23
   - 🇩🇪 德国 | DEU 18
+  - 🇩🇪 德国 | DEU 23
   - 🇬🇧 英国 | GBR 4
-  - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 8
-  - 🇵🇱 波兰 | POL 2
+  - 🇳🇱 荷兰 | NLD 6
   - 🇸🇪 瑞典 | SWE
-  - 🇮🇳 印度 | IND
-  - 🇸🇬 新加坡 | SGP 18
+  - 🇵🇱 波兰 | POL 2
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 28
+  - 🇺🇸 美国 | USA 8
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
