@@ -4,14 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇿 捷克 | CZE
-  server: 141.133.172.222
-  port: 20342
+- name: 🇩🇪 德国 | DEU
+  server: 151.101.56.7
+  port: 80
   type: vless
-  uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
+  uuid: 66ea0b4c-8c39-4e8b-92f0-0a9065218d37
   tls: false
-  packet-encoding: xudp
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: 151.101.56.7
@@ -25,11 +28,23 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 151.101.56.7
+- name: 🇩🇪 德国 | DEU 13
+  server: 151.101.193.54
   port: 80
   type: vless
-  uuid: 66ea0b4c-8c39-4e8b-92f0-0a9065218d37
+  uuid: 4b1d39f2-42d4-4850-8b8a-fd4fa2f1ae55
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+  udp: true
+- name: 🇩🇪 德国 | DEU 15
+  server: 167.82.0.1
+  port: 80
+  type: vless
+  uuid: 46445435-11cd-47e8-87dc-1acc159fc360
   tls: false
   network: ws
   ws-opts:
@@ -49,24 +64,8 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇩🇪 德国 | DEU 16
-  server: store.noneok.com
-  port: 443
-  type: vless
-  uuid: 340e4de3-144b-49c4-ad72-b49b35713728
-  tls: true
-  reality-opts:
-    public-key: jv786fxOk5giwQ0hoqIkLkaKJYup9hwy2FWY-Xcl2yU
-    short-id: 5bc76436f2905fba
-  servername: store.noneok.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.StreamService
-  udp: true
-- name: 🇩🇪 德国 | DEU 15
-  server: 167.82.0.1
+- name: 🇩🇪 德国 | DEU 20
+  server: 167.82.0.7
   port: 80
   type: vless
   uuid: 46445435-11cd-47e8-87dc-1acc159fc360
@@ -77,17 +76,17 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: uk-t2.vinnypuxtomoon.today
-  port: 2053
+- name: 🇮🇪 爱尔兰 | IRL
+  server: ire03.myxasecure.space
+  port: 443
   type: vless
-  uuid: f7024ef7-dd35-4fe8-a18d-4186a0ae910c
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
-    short-id: c0d1d1776fed0f6d
-  servername: uk-t2.vinnypuxtomoon.today
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: ire03.myxasecure.space
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -105,18 +104,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 20
-  server: 167.82.0.7
-  port: 80
-  type: vless
-  uuid: 46445435-11cd-47e8-87dc-1acc159fc360
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: it02.myxasecure.space
   port: 443
@@ -131,46 +118,13 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: ld.242311.xyz
-  port: 443
+- name: 🇨🇿 捷克 | CZE
+  server: 141.133.172.222
+  port: 20342
   type: vless
-  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
-  tls: true
-  servername: ld.242311.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ld.242311.xyz
-  udp: true
-- name: 🇮🇪 爱尔兰 | IRL
-  server: ire03.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: ire03.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: polandtobcn.click
-  port: 443
-  type: vless
-  uuid: f3a8da6e-9557-43e3-b8d6-44350d0dc6f7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: P1ijgorxcrokmQIyG-DnMf73vJEgfvGY_OntmZe6Wwc
-    short-id: 92d45b9f0820fbe8
-  servername: polandtobcn.click
-  client-fingerprint: qq
+  uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
+  tls: false
+  packet-encoding: xudp
   network: tcp
   udp: true
 - name: 🇸🇬 新加坡 | SGP
@@ -199,6 +153,20 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: ad-013.fluxmxd18.info
+  port: 8443
+  type: vless
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  servername: ad-013.fluxmxd18.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-013.fluxmxd18.info
+  udp: true
 - name: 🇵🇱 波兰 | POL
   server: pl05.myxasecure.space
   port: 443
@@ -213,19 +181,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: ad-013.fluxmxd18.info
-  port: 8443
+- name: 🇹🇷 土耳其 | TUR
+  server: tur02.myxasecure.space
+  port: 443
   type: vless
-  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
   tls: true
-  servername: ad-013.fluxmxd18.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-013.fluxmxd18.info
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: tur02.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 162.159.21.178
@@ -271,23 +239,21 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 | CZE
-  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 17
-  - 🇩🇪 德国 | DEU 16
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 15
-  - 🇬🇧 英国 | GBR 2
-  - 🇫🇷 法国 | FRA 3
+  - 🇩🇪 德国 | DEU 17
   - 🇩🇪 德国 | DEU 20
-  - 🇮🇹 意大利 | ITA
-  - 🇳🇱 荷兰 | NLD 7
   - 🇮🇪 爱尔兰 | IRL
-  - 🇩🇪 德国 | DEU 11
+  - 🇫🇷 法国 | FRA 3
+  - 🇮🇹 意大利 | ITA
+  - 🇨🇿 捷克 | CZE
   - 🇸🇬 新加坡 | SGP
   - 🇵🇱 波兰 | POL 2
-  - 🇵🇱 波兰 | POL
   - 🇺🇸 美国 | USA 7
+  - 🇵🇱 波兰 | POL
+  - 🇹🇷 土耳其 | TUR
   - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA 3
   - 🇸🇪 瑞典 | SWE 2
