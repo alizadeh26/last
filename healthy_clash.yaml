@@ -18,20 +18,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: node5.mxvpn.dev
-  port: 443
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: bbc68cec8bb8d2e3
-  servername: node5.mxvpn.dev
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: fl11.myxasecure.space
   port: 443
@@ -46,17 +32,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 19
-  server: 151.101.56.7
-  port: 80
+- name: 🇩🇪 德国 | DEU 2
+  server: node5.mxvpn.dev
+  port: 443
   type: vless
-  uuid: 46445435-11cd-47e8-87dc-1acc159fc360
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: bbc68cec8bb8d2e3
+  servername: node5.mxvpn.dev
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇫🇷 法国 | FRA 2
   server: ad-004.pixel9xdmq.info
@@ -82,50 +70,6 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: s71.fishserver.ru
-  port: 443
-  type: vless
-  uuid: cfc3f0bd-5f7e-4e46-9278-75a53b9214e7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OIwXSQhQyd7BCM1gFruUWxgK5kvugEZohV2KsLKTyiY
-    short-id: 589a3d
-  servername: s71.fishserver.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: pl07.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: pl07.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: s2.fishvpn.ru
-  port: 443
-  type: vless
-  uuid: 5d1c3271-6c63-4e92-bc42-d1fc4764ba45
-  tls: true
-  reality-opts:
-    public-key: Wn-cmjTn1_3oWYrEV0nWGZ7iOcSA9577EIb2-b0G8gI
-    short-id: 94ad67
-  servername: s2.fishvpn.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: FishServices
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 7
   server: s13.fishvpn.ru
   port: 443
@@ -137,44 +81,6 @@ proxies:
     public-key: xRWMf_LY42-HvyyXveIwActX0oBk-_LfV4CuT0aPdF8
     short-id: eb06abd74f14e6
   servername: s13.fishvpn.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 9
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: yellow-breeze-989b.348-9b8.workers.dev
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: swe05.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: swe05.myxasecure.space
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -220,6 +126,36 @@ proxies:
     headers:
       Host: ad-004.vector2llqn.info
   udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: swe05.myxasecure.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: swe05.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: s2.fishvpn.ru
+  port: 443
+  type: vless
+  uuid: 5d1c3271-6c63-4e92-bc42-d1fc4764ba45
+  tls: true
+  reality-opts:
+    public-key: Wn-cmjTn1_3oWYrEV0nWGZ7iOcSA9577EIb2-b0G8gI
+    short-id: 94ad67
+  servername: s2.fishvpn.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: FishServices
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -227,56 +163,46 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 19
+  - 🇩🇪 德国 | DEU 2
   - 🇫🇷 法国 | FRA 2
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇵🇱 波兰 | POL 2
-  - 🇵🇱 波兰 | POL
-  - 🇳🇱 荷兰 | NLD 3
   - 🇷🇺 俄罗斯 | RUS 7
-  - 🇺🇸 美国 | USA 8
-  - 🇸🇬 新加坡 | SGP 9
-  - 🇸🇪 瑞典 | SWE 2
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 13
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇳🇱 荷兰 | NLD 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 19
+  - 🇩🇪 德国 | DEU 2
   - 🇫🇷 法国 | FRA 2
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇵🇱 波兰 | POL 2
-  - 🇵🇱 波兰 | POL
-  - 🇳🇱 荷兰 | NLD 3
   - 🇷🇺 俄罗斯 | RUS 7
-  - 🇺🇸 美国 | USA 8
-  - 🇸🇬 新加坡 | SGP 9
-  - 🇸🇪 瑞典 | SWE 2
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 13
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇳🇱 荷兰 | NLD 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 2
+  - 🇱🇻 拉脱维亚 | LVA
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 19
   - 🇫🇷 法国 | FRA 2
 rules:
 - MATCH,AUTO
