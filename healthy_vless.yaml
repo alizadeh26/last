@@ -4,101 +4,104 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: ger03.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: ger03.myxasecure.space
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: fl11.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: fl11.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: node5.mxvpn.dev
-  port: 443
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: bbc68cec8bb8d2e3
-  servername: node5.mxvpn.dev
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: ad-004.pixel9xdmq.info
+- name: 🇨🇦 加拿大 | CAN
+  server: ad-013.pixel9xdmq.info
   port: 8443
   type: vless
-  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
   tls: true
-  servername: ad-004.pixel9xdmq.info
+  servername: ad-013.pixel9xdmq.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-004.pixel9xdmq.info
+      Host: ad-013.pixel9xdmq.info
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 95.182.90.218
+- name: 🇩🇪 德国 | DEU 2
+  server: 31.57.106.87
+  port: 2090
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  packet-encoding: xudp
+  network: tcp
+  udp: true
+- name: 🇮🇪 爱尔兰 | IRL
+  server: ire03.myxasecure.space
   port: 443
   type: vless
-  uuid: c85e3845-37f5-4a63-88f8-7ca5f613da54
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: ire03.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 91panel-axiora-vpn.korvexe.ir
+  port: 52225
+  type: vless
+  uuid: 28926c34-865c-447e-8d42-a17240af743b
+  tls: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn-xui911.korvexe.ir
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: 217.149.19.15
+  port: 23344
+  type: vless
+  uuid: 85da2b09-1a08-4dac-9ef0-888138b11703
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: 91panel-axiora-vpn.korvexe.ir
+  port: 57820
+  type: vless
+  uuid: 28926c34-865c-447e-8d42-a17240af743b
+  tls: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn-xui911.korvexe.ir
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 31.57.46.165
+  port: 2053
+  type: vless
+  uuid: f05645e7-b789-48b9-a98f-434fa8035d5c
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: 18.238.109.28
+  port: 80
+  type: vless
+  uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
   tls: false
   network: ws
   ws-opts:
-    path: /
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 7
-  server: s13.fishvpn.ru
-  port: 443
-  type: vless
-  uuid: 74d75009-f05f-4865-b1ba-16200ba35700
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: xRWMf_LY42-HvyyXveIwActX0oBk-_LfV4CuT0aPdF8
-    short-id: eb06abd74f14e6
-  servername: s13.fishvpn.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: ad-010.pixel9xdmq.info
-  port: 8443
-  type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.pixel9xdmq.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
+    path: /GDkX4xpB/
     headers:
-      Host: ad-010.pixel9xdmq.info
+      Host: duatoup3wk8q2.cloudfront.net
   udp: true
-- name: 🇺🇸 美国 | USA 2
+- name: 🇺🇸 美国 | USA 12
   server: ad-005.vector2llqn.info
   port: 8443
   type: vless
@@ -112,49 +115,17 @@ proxies:
     headers:
       Host: ad-005.vector2llqn.info
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: ad-004.vector2llqn.info
-  port: 8443
+- name: 🇺🇸 美国 | USA 17
+  server: 162.159.21.178
+  port: 8880
   type: vless
-  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
-  tls: true
-  servername: ad-004.vector2llqn.info
-  client-fingerprint: chrome
+  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
+  tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: ad-004.vector2llqn.info
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: swe05.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: swe05.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: s2.fishvpn.ru
-  port: 443
-  type: vless
-  uuid: 5d1c3271-6c63-4e92-bc42-d1fc4764ba45
-  tls: true
-  reality-opts:
-    public-key: Wn-cmjTn1_3oWYrEV0nWGZ7iOcSA9577EIb2-b0G8gI
-    short-id: 94ad67
-  servername: s2.fishvpn.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: FishServices
+      Host: yellow-breeze-989b.348-9b8.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -162,16 +133,15 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 5
+  - 🇨🇦 加拿大 | CAN
   - 🇩🇪 德国 | DEU 2
-  - 🇫🇷 法国 | FRA 2
-  - 🇱🇻 拉脱维亚 | LVA
-  - 🇷🇺 俄罗斯 | RUS 7
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 13
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇮🇪 爱尔兰 | IRL
   - 🇳🇱 荷兰 | NLD 3
+  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇵🇱 波兰 | POL 2
+  - 🇺🇸 美国 | USA 5
+  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 17
 rules:
 - MATCH,AUTO

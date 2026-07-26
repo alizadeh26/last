@@ -4,18 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 9
-  server: 34.207.112.128
+- name: 🇺🇸 美国 | USA 11
+  server: 216.105.168.19
   port: 443
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: chacha20-ietf-poly1305
+  password: Yq42Vx56a2SghCnLtOyOCF
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
