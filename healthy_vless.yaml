@@ -32,14 +32,6 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 91.107.139.186
-  port: 50417
-  type: vless
-  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: dem.themesh.site
   port: 443
@@ -54,19 +46,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: ger16.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: ger16.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
 - name: 🇩🇪 德国 | DEU 9
   server: germany.superbuba.top
   port: 443
@@ -80,22 +59,19 @@ proxies:
   servername: germany.superbuba.top
   client-fingerprint: random
   network: tcp
-- name: 🇫🇷 法国 | FRA
-  server: 15.188.160.141
-  port: 22224
+- name: 🇩🇪 德国 | DEU 7
+  server: ger16.myxasecure.space
+  port: 443
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: ger16.myxasecure.space
+  client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 15.188.160.141
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: 167.82.0.1
   port: 80
@@ -107,14 +83,6 @@ proxies:
     path: /
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 15.188.160.141
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 16
   server: fl17.myxasecure.space
@@ -130,6 +98,22 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 91.107.139.186
+  port: 50417
+  type: vless
+  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 4
+  server: 14.137.238.17
+  port: 10000
+  type: vless
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇮🇪 爱尔兰 | IRL 2
   server: ie.orpheous.ru
   port: 443
@@ -142,14 +126,6 @@ proxies:
     short-id: 9e4eced6e98ed4d4
   servername: ie.orpheous.ru
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: 14.137.238.17
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 11
@@ -203,6 +179,15 @@ proxies:
     path: /
     headers:
       Host: fangbinxingnmsl.pusytroller.gq
+- name: 🇺🇸 美国 | USA 21
+  server: 180.178.60.252
+  port: 10000
+  type: vless
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
+  packet-encoding: xudp
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 151.101.56.7
   port: 80
@@ -227,15 +212,6 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: 180.178.60.252
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  packet-encoding: xudp
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 32
   server: hn---gn---gk.belamona.ir
   port: 2044
@@ -244,17 +220,17 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 162.159.21.178
-  port: 8880
+- name: 🇺🇸 美国 | USA 34
+  server: cs3iiova.cf.3666888.xyz
+  port: 2086
   type: vless
-  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /sub
     headers:
-      Host: dark-leaf-93a1.440-02e.workers.dev
+      Host: od1kl638.xn--nxa.nyc.mn
   udp: true
 proxy-groups:
 - name: AUTO
@@ -264,25 +240,22 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇦🇹 奥地利 | AUT
-  - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 9
-  - 🇫🇷 法国 | FRA
-  - 🇫🇷 法国 | FRA 2
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 13
-  - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 16
-  - 🇮🇪 爱尔兰 | IRL 2
+  - 🇩🇪 德国 | DEU 6
   - 🇯🇵 日本 | JPN 4
+  - 🇮🇪 爱尔兰 | IRL 2
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 10
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 29
-  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 32
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 34
 rules:
 - MATCH,AUTO
