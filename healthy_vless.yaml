@@ -4,21 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: ad-013.pixel9xdmq.info
-  port: 8443
-  type: vless
-  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
-  tls: true
-  servername: ad-013.pixel9xdmq.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-013.pixel9xdmq.info
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
+- name: 🇩🇪 德国 | DEU 5
   server: 31.57.106.87
   port: 2090
   type: vless
@@ -27,34 +13,34 @@ proxies:
   packet-encoding: xudp
   network: tcp
   udp: true
-- name: 🇮🇪 爱尔兰 | IRL
-  server: ire03.myxasecure.space
+- name: 🇫🇷 法国 | FRA
+  server: api.yandex-dev.online
   port: 443
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  uuid: f7a12c2a-8849-428e-8785-fcec05a17ec4
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: ire03.myxasecure.space
-  client-fingerprint: firefox
+    public-key: IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0
+    short-id: 122218f4c1f172e4
+  servername: api.yandex-dev.online
+  client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 91panel-axiora-vpn.korvexe.ir
-  port: 52225
+- name: 🇲🇩 摩尔多瓦 | MDA
+  server: bolg1.panel11.ru
+  port: 443
   type: vless
-  uuid: 28926c34-865c-447e-8d42-a17240af743b
+  uuid: f165affe-ffb4-4f13-a081-f14434e51152
   tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn-xui911.korvexe.ir
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Ffbj8WzPUpY_qNYoIusH8c5kuYmZD8599nZxFxxKtlY
+    short-id: 67ef08f70e8ae1bb
+  servername: bolg1.panel11.ru
+  client-fingerprint: firefox
+  network: tcp
+- name: 🇷🇺 俄罗斯 | RUS 14
   server: 217.149.19.15
   port: 23344
   type: vless
@@ -62,60 +48,88 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 91panel-axiora-vpn.korvexe.ir
-  port: 57820
+- name: 🇺🇸 美国 | USA 7
+  server: a.cryptoofarm.com
+  port: 8443
   type: vless
-  uuid: 28926c34-865c-447e-8d42-a17240af743b
+  uuid: c4750859-d126-4eaa-9549-1a7ffd44572c
   tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Gf2ymgpjePfVnxSLQgKDPK7YIQbR1QbUckuAAnyqNjM
+    short-id: 7f37611eb21d91
+  servername: a.cryptoofarm.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 3
+  server: pro-tr.emrata.top
+  port: 443
+  type: vless
+  uuid: ae9cfd0d-d0c5-49e5-991e-6a45452e473a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: da5UVhoC5QOCDm84AxB-RRxf0z2nySZ3lOemgqizLS4
+  servername: pro-tr.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: ad-020.cloud25075.info
+  port: 8443
+  type: vless
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  servername: ad-020.cloud25075.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cdn-xui911.korvexe.ir
+      Host: ad-020.cloud25075.info
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 31.57.46.165
-  port: 2053
+- name: 🇺🇸 美国 | USA 2
+  server: ad-020.clouduhtpv.info
+  port: 8443
   type: vless
-  uuid: f05645e7-b789-48b9-a98f-434fa8035d5c
+  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
   tls: true
-  alpn:
-  - h2
-  - http/1.1
+  servername: ad-020.clouduhtpv.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /
+    headers:
+      Host: ad-020.clouduhtpv.info
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 18.238.109.28
-  port: 80
+- name: 🇺🇸 美国 | USA 11
+  server: ad-020.novayjr9g.info
+  port: 8443
   type: vless
-  uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
+  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
+  tls: true
+  servername: ad-020.novayjr9g.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-020.novayjr9g.info
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: www.glassdoor.com
+  port: 8880
+  type: vless
+  uuid: 5fc8a5e4-d0c5-4ad2-8bfe-db589553c6c1
   tls: false
   network: ws
   ws-opts:
-    path: /GDkX4xpB/
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: duatoup3wk8q2.cloudfront.net
+      Host: red-disk-58df.153-2ce.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: ad-005.vector2llqn.info
-  port: 8443
-  type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
-  tls: true
-  servername: ad-005.vector2llqn.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-005.vector2llqn.info
-  udp: true
-- name: 🇺🇸 美国 | USA 17
+- name: 🇺🇸 美国 | USA 13
   server: 162.159.21.178
   port: 8880
   type: vless
@@ -127,21 +141,67 @@ proxies:
     headers:
       Host: yellow-breeze-989b.348-9b8.workers.dev
   udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: ad-004.clouduhtpv.info
+  port: 8443
+  type: vless
+  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
+  tls: true
+  servername: ad-004.clouduhtpv.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-004.clouduhtpv.info
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: ad-004.pixel9xdmq.info
+  port: 8443
+  type: vless
+  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
+  tls: true
+  servername: ad-004.pixel9xdmq.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-004.pixel9xdmq.info
+  udp: true
+- name: 🇺🇸 美国 | USA 30
+  server: ad-004.novayjr9g.info
+  port: 8443
+  type: vless
+  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
+  tls: true
+  servername: ad-004.novayjr9g.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-004.novayjr9g.info
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 2
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 5
-  - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 17
+  - 🇩🇪 德国 | DEU 5
+  - 🇫🇷 法国 | FRA
+  - 🇲🇩 摩尔多瓦 | MDA
+  - 🇷🇺 俄罗斯 | RUS 14
+  - 🇺🇸 美国 | USA 7
+  - 🇹🇷 土耳其 | TUR 3
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 30
 rules:
 - MATCH,AUTO
