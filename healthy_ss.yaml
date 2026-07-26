@@ -18,6 +18,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: i8asar9lrxhavh38
   udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 54.197.30.38
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇺🇸 美国 | USA 6
   server: 54.167.54.100
   port: 443
@@ -25,12 +31,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 54.197.30.38
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -39,7 +39,7 @@ proxy-groups:
   proxies:
   - 🇳🇱 荷兰 | NLD 3
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO

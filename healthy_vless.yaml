@@ -32,6 +32,14 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 91.107.139.186
+  port: 50417
+  type: vless
+  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: dem.themesh.site
   port: 443
@@ -98,22 +106,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 91.107.139.186
-  port: 50417
-  type: vless
-  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: 14.137.238.17
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇮🇪 爱尔兰 | IRL 2
   server: ie.orpheous.ru
   port: 443
@@ -126,6 +118,14 @@ proxies:
     short-id: 9e4eced6e98ed4d4
   servername: ie.orpheous.ru
   client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 4
+  server: 14.137.238.17
+  port: 10000
+  type: vless
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 11
@@ -240,14 +240,14 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇦🇹 奥地利 | AUT
+  - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 16
-  - 🇩🇪 德国 | DEU 6
-  - 🇯🇵 日本 | JPN 4
   - 🇮🇪 爱尔兰 | IRL 2
+  - 🇯🇵 日本 | JPN 4
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 10
   - 🇺🇸 美国 | USA 10

@@ -32,6 +32,14 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 91.107.139.186
+  port: 50417
+  type: vless
+  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: dem.themesh.site
   port: 443
@@ -72,6 +80,18 @@ proxies:
   servername: ger16.myxasecure.space
   client-fingerprint: firefox
   network: tcp
+- name: 🇩🇪 德国 | DEU 17
+  server: 91.107.139.186
+  port: 51459
+  type: vmess
+  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: 167.82.0.1
   port: 80
@@ -98,34 +118,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 91.107.139.186
-  port: 50417
-  type: vless
-  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 17
-  server: 91.107.139.186
-  port: 51459
-  type: vmess
-  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: 14.137.238.17
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇮🇪 爱尔兰 | IRL 2
   server: ie.orpheous.ru
   port: 443
@@ -138,6 +130,14 @@ proxies:
     short-id: 9e4eced6e98ed4d4
   servername: ie.orpheous.ru
   client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 4
+  server: 14.137.238.17
+  port: 10000
+  type: vless
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 3
@@ -181,6 +181,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: i8asar9lrxhavh38
   udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 54.197.30.38
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇺🇸 美国 | USA 6
   server: 54.167.54.100
   port: 443
@@ -188,12 +194,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 54.197.30.38
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇺🇸 美国 | USA 10
   server: 104.16.72.41
   port: 2095
@@ -227,20 +227,6 @@ proxies:
   packet-encoding: xudp
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 37
-  server: 173.249.200.68
-  port: 8080
-  type: vmess
-  uuid: 79a295f7-8cfe-46ca-aed6-ebef1f3be53b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /79a295f7-8cfe-46ca-aed6-ebef1f3be53b-vm
-    headers:
-      Host: www.bing.com
 - name: 🇺🇸 美国 | USA 14
   server: 151.101.56.7
   port: 80
@@ -273,6 +259,20 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 37
+  server: 173.249.200.68
+  port: 8080
+  type: vmess
+  uuid: 79a295f7-8cfe-46ca-aed6-ebef1f3be53b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /79a295f7-8cfe-46ca-aed6-ebef1f3be53b-vm
+    headers:
+      Host: www.bing.com
 - name: 🇺🇸 美国 | USA 34
   server: cs3iiova.cf.3666888.xyz
   port: 2086
@@ -293,28 +293,28 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇦🇹 奥地利 | AUT
+  - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 17
   - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 16
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 17
-  - 🇯🇵 日本 | JPN 4
   - 🇮🇪 爱尔兰 | IRL 2
+  - 🇯🇵 日本 | JPN 4
   - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 10
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 37
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 29
   - 🇺🇸 美国 | USA 32
+  - 🇺🇸 美国 | USA 37
   - 🇺🇸 美国 | USA 34
 - name: PROTO-SS
   type: url-test
@@ -323,8 +323,8 @@ proxy-groups:
   proxies:
   - 🇳🇱 荷兰 | NLD 3
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -332,14 +332,14 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇦🇹 奥地利 | AUT
+  - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 16
-  - 🇩🇪 德国 | DEU 6
-  - 🇯🇵 日本 | JPN 4
   - 🇮🇪 爱尔兰 | IRL 2
+  - 🇯🇵 日本 | JPN 4
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 10
   - 🇺🇸 美国 | USA 10
@@ -362,8 +362,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇦🇹 奥地利 | AUT
+  - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 17
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
