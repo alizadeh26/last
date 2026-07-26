@@ -40,18 +40,18 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: germany.superbuba.top
+- name: 🇩🇪 德国 | DEU 7
+  server: ger16.myxasecure.space
   port: 443
   type: vless
-  uuid: b6af5776-fede-4765-b86c-806e827e9a07
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
-    short-id: 4fa44664f6a566d3
-  servername: germany.superbuba.top
-  client-fingerprint: random
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: ger16.myxasecure.space
+  client-fingerprint: firefox
   network: tcp
 - name: 🇩🇪 德国 | DEU 8
   server: dem.themesh.site
@@ -67,22 +67,46 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: ger16.myxasecure.space
+- name: 🇩🇪 德国 | DEU 9
+  server: germany.superbuba.top
   port: 443
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  uuid: b6af5776-fede-4765-b86c-806e827e9a07
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: ger16.myxasecure.space
-  client-fingerprint: firefox
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  servername: germany.superbuba.top
+  client-fingerprint: random
   network: tcp
 - name: 🇫🇷 法国 | FRA
   server: 15.188.160.141
   port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 2
+  server: 15.188.160.141
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 4
+  server: 15.236.79.88
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 3
+  server: 15.188.160.141
+  port: 22223
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
@@ -100,33 +124,17 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 15.188.160.141
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 15.188.160.141
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 4
-  server: 15.236.79.88
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇫🇷 法国 | FRA 5
   server: 15.236.79.88
   port: 22223
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 6
+  server: 15.236.79.88
+  port: 22222
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
@@ -146,13 +154,17 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 6
-  server: 15.236.79.88
-  port: 22222
+- name: 🇫🇷 法国 | FRA 9
+  server: 8.47.69.0
+  port: 8880
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: a8178248-3cdf-4fb0-ab7b-87c1ab77201c
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /cdn/assets/stream
+    headers:
+      Host: cnd.france2.gg.newwaycdn.com
   udp: true
 - name: 🇮🇪 爱尔兰 | IRL 2
   server: ie.orpheous.ru
@@ -203,6 +215,18 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dark-leaf-93a1.440-02e.workers.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 104.16.72.41
   port: 2095
@@ -227,26 +251,13 @@ proxies:
     path: /
     headers:
       Host: fangbinxingnmsl.pusytroller.gq
-- name: 🇺🇸 美国 | USA 31
-  server: 3x-ui-production-f8f6.up.railway.app
-  port: 443
+- name: 🇺🇸 美国 | USA 21
+  server: 180.178.60.252
+  port: 10000
   type: vless
-  uuid: 5c9c1907-3e66-415e-943d-e7a432b40c1c
-  tls: true
-  servername: 3x-ui-production-f8f6.up.railway.app
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /in1
-    headers:
-      Host: 3x-ui-production-f8f6.up.railway.app
-  udp: true
-- name: 🇺🇸 美国 | USA 32
-  server: hn---gn---gk.belamona.ir
-  port: 2044
-  type: vless
-  uuid: 79f92090-4395-4d15-a093-5a524324b9eb
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
   tls: false
+  packet-encoding: xudp
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 29
@@ -261,40 +272,27 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 31.57.46.165
-  port: 2053
+- name: 🇺🇸 美国 | USA 32
+  server: hn---gn---gk.belamona.ir
+  port: 2044
   type: vless
-  uuid: f05645e7-b789-48b9-a98f-434fa8035d5c
+  uuid: 79f92090-4395-4d15-a093-5a524324b9eb
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 31
+  server: 3x-ui-production-f8f6.up.railway.app
+  port: 443
+  type: vless
+  uuid: 5c9c1907-3e66-415e-943d-e7a432b40c1c
   tls: true
-  alpn:
-  - h2
-  - http/1.1
+  servername: 3x-ui-production-f8f6.up.railway.app
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
-  udp: true
-- name: 🇺🇸 美国 | USA 33
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /in1
     headers:
-      Host: odd-darkness-57ce.334-a29.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: 180.178.60.252
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  packet-encoding: xudp
-  network: tcp
+      Host: 3x-ui-production-f8f6.up.railway.app
   udp: true
 - name: 🇺🇸 美国 | USA 34
   server: cs3iiova.cf.3666888.xyz
@@ -317,29 +315,29 @@ proxy-groups:
   - 🇨🇦 加拿大 | CAN
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 9
   - 🇫🇷 法国 | FRA
-  - 🇩🇪 德国 | DEU 13
   - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA 3
   - 🇫🇷 法国 | FRA 4
+  - 🇫🇷 法国 | FRA 3
+  - 🇩🇪 德国 | DEU 13
   - 🇫🇷 法国 | FRA 5
-  - 🇩🇪 德国 | DEU 16
   - 🇫🇷 法国 | FRA 6
+  - 🇩🇪 德国 | DEU 16
+  - 🇫🇷 法国 | FRA 9
   - 🇮🇪 爱尔兰 | IRL 2
   - 🇯🇵 日本 | JPN 4
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 10
+  - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 31
-  - 🇺🇸 美国 | USA 32
-  - 🇺🇸 美国 | USA 29
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 29
+  - 🇺🇸 美国 | USA 32
+  - 🇺🇸 美国 | USA 31
   - 🇺🇸 美国 | USA 34
 rules:
 - MATCH,AUTO

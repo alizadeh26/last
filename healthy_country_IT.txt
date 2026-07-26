@@ -1,5 +1,12 @@
-vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@ronaldo15.fordnsdirect.shop:8880?mode=gun&security=none&encryption=none&type=grpc#Server 12 🇮🇹
-vless://1e280316-0408-47c4-b058-05b8f1f17f02@ov-italy1.09vpn.com:80?path=%2Fvless%2F&security=&encryption=none&host=OV-Italy1.09vpn.com&type=ws#Server 72 🇮🇹
-vless://71cada65-d23e-418c-88e4-a06188d14689@31.77.154.248:443?security=reality&encryption=none&pbk=T7cxFOGNMLKqZiEustm2sOfwOovHyHnLcGDWfSmaU1c&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=it-one.quiet-rogue.site#🇮🇹 290 - IT - VLESS/REALITY/PBK/VISION - 443
-vless://9f0285ee-20ca-4953-bcdb-86a920652923@204.216.216.23:10086?encryption=none&security=none&type=tcp#🇮🇹 428 - IT - VLESS - 10086
-vless://c01c2da7-6977-4b53-a493-cda17fa61b4f@5.231.80.219:443?encryption=none&security=reality&sni=file.ax&fp=chrome&pbk=ayE6OYhZPTadQ_3Q00PcvN99n7SfvmFU5yffGQVxMG0&sid=2387a1e00eca0913&type=grpc#🇮🇹 470 - IT - VLESS/GRPC/REALITY/PBK/SID/UTLS - 443
+vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@151.115.164.43:8880?mode=gun&security=none&encryption=none&type=grpc#Server 1 🇮🇹
+vless://708ab9e0-a500-490b-8340-05dfdc4b1f1b@samanirani.remotewire.net:40375?encryption=none&security=none&type=tcp#Server 43 🇮🇹
+vless://a7b0a504-c64e-42fb-b27b-22faeb40e816@samanirani.remotewire.net:40375?encryption=none&security=none&type=tcp#Server 63 🇮🇹
+vless://464d2398-e419-4971-9660-30eb45924131@samanirani.remotewire.net:40375?encryption=none&security=none&type=tcp#Server 50 🇮🇹
+vless://be5dca55-dffa-42a4-aace-7867b600a848@samanirani.remotewire.net:40375?encryption=none&security=none&type=tcp#Server 45 🇮🇹
+vless://05afb490-342a-4505-af54-142d8b1fd15d@samanirani.remotewire.net:40375?security=none&type=tcp&encryption=none#🇮🇹 17 - IT - VLESS - 40375
+vless://38009450-dc6a-4953-8eaf-4805e76b75d2@samanirani.remotewire.net:40375?security=none&type=tcp&encryption=none#🇮🇹 168 - IT - VLESS - 40375
+vless://427e19ac-992a-491e-ad32-abefc25d6a23@samanirani.remotewire.net:40375?security=none&type=tcp&encryption=none#🇮🇹 200 - IT - VLESS - 40375
+vless://71cada65-d23e-418c-88e4-a06188d14689@31.77.154.248:443?security=reality&encryption=none&pbk=T7cxFOGNMLKqZiEustm2sOfwOovHyHnLcGDWfSmaU1c&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=it-one.quiet-rogue.site#🇮🇹 332 - IT - VLESS/REALITY/PBK/VISION - 443
+vless://76346040-646e-4b9c-be1f-b7262f603287@samanirani.remotewire.net:40375?security=none&type=tcp&encryption=none#🇮🇹 342 - IT - VLESS - 40375
+vless://9f0285ee-20ca-4953-bcdb-86a920652923@204.216.216.23:10086?security=none&type=tcp&encryption=none#🇮🇹 521 - IT - VLESS - 10086
+vless://c01c2da7-6977-4b53-a493-cda17fa61b4f@5.231.80.219:443?encryption=none&security=reality&sni=file.ax&fp=chrome&pbk=ayE6OYhZPTadQ_3Q00PcvN99n7SfvmFU5yffGQVxMG0&sid=2387a1e00eca0913&type=grpc#🇳🇱 552 - NL - VLESS/GRPC/REALITY/PBK/SID/UTLS - 443
