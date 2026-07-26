@@ -40,19 +40,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: ger16.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: ger16.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
 - name: 🇩🇪 德国 | DEU 8
   server: dem.themesh.site
   port: 443
@@ -67,6 +54,19 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: ger16.myxasecure.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: ger16.myxasecure.space
+  client-fingerprint: firefox
+  network: tcp
 - name: 🇩🇪 德国 | DEU 9
   server: germany.superbuba.top
   port: 443
@@ -88,37 +88,9 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 17
-  server: 91.107.139.186
-  port: 51459
-  type: vmess
-  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
 - name: 🇫🇷 法国 | FRA 2
   server: 15.188.160.141
   port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 4
-  server: 15.236.79.88
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 15.188.160.141
-  port: 22223
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
@@ -136,17 +108,9 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇫🇷 法国 | FRA 5
-  server: 15.236.79.88
+- name: 🇫🇷 法国 | FRA 3
+  server: 15.188.160.141
   port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 6
-  server: 15.236.79.88
-  port: 22222
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
@@ -165,18 +129,6 @@ proxies:
   servername: fl17.myxasecure.space
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 9
-  server: 8.47.69.0
-  port: 8880
-  type: vless
-  uuid: a8178248-3cdf-4fb0-ab7b-87c1ab77201c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /cdn/assets/stream
-    headers:
-      Host: cnd.france2.gg.newwaycdn.com
   udp: true
 - name: 🇮🇪 爱尔兰 | IRL 2
   server: ie.orpheous.ru
@@ -199,6 +151,18 @@ proxies:
   uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
   tls: false
   network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 17
+  server: 91.107.139.186
+  port: 51459
+  type: vmess
+  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
   udp: true
 - name: 🇳🇱 荷兰 | NLD 11
   server: nl.themesh.site
@@ -227,24 +191,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 195.133.5.207
-  port: 10210
-  type: ss
-  cipher: aes-256-gcm
-  password: b24a80e79cee1d1f
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: dark-leaf-93a1.440-02e.workers.dev
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: 178.128.86.181
   port: 51435
@@ -252,6 +198,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: i8asar9lrxhavh38
   udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 54.197.30.38
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇺🇸 美国 | USA 10
   server: 104.16.72.41
   port: 2095
@@ -276,14 +228,17 @@ proxies:
     path: /
     headers:
       Host: fangbinxingnmsl.pusytroller.gq
-- name: 🇺🇸 美国 | USA 21
-  server: 180.178.60.252
-  port: 10000
+- name: 🇺🇸 美国 | USA 14
+  server: 151.101.56.7
+  port: 80
   type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
   tls: false
-  packet-encoding: xudp
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
 - name: 🇺🇸 美国 | USA 29
   server: www.wto.org
@@ -297,6 +252,15 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: 180.178.60.252
+  port: 10000
+  type: vless
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
+  packet-encoding: xudp
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 32
   server: hn---gn---gk.belamona.ir
   port: 2044
@@ -304,20 +268,6 @@ proxies:
   uuid: 79f92090-4395-4d15-a093-5a524324b9eb
   tls: false
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 31
-  server: 3x-ui-production-f8f6.up.railway.app
-  port: 443
-  type: vless
-  uuid: 5c9c1907-3e66-415e-943d-e7a432b40c1c
-  tls: true
-  servername: 3x-ui-production-f8f6.up.railway.app
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /in1
-    headers:
-      Host: 3x-ui-production-f8f6.up.railway.app
   udp: true
 - name: 🇺🇸 美国 | USA 37
   server: 173.249.200.68
@@ -333,24 +283,24 @@ proxies:
     path: /79a295f7-8cfe-46ca-aed6-ebef1f3be53b-vm
     headers:
       Host: www.bing.com
-- name: 🇺🇸 美国 | USA 6
-  server: 54.167.54.100
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 193.29.139.147
+  port: 8080
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇺🇸 美国 | USA 34
-  server: cs3iiova.cf.3666888.xyz
-  port: 2086
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 162.159.21.178
+  port: 8880
   type: vless
-  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
   tls: false
   network: ws
   ws-opts:
-    path: /sub
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: od1kl638.xn--nxa.nyc.mn
+      Host: dark-leaf-93a1.440-02e.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -361,43 +311,38 @@ proxy-groups:
   - 🇨🇦 加拿大 | CAN
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 9
   - 🇫🇷 法国 | FRA
-  - 🇩🇪 德国 | DEU 17
   - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA 4
-  - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 13
-  - 🇫🇷 法国 | FRA 5
-  - 🇫🇷 法国 | FRA 6
+  - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 16
-  - 🇫🇷 法国 | FRA 9
   - 🇮🇪 爱尔兰 | IRL 2
   - 🇯🇵 日本 | JPN 4
+  - 🇩🇪 德国 | DEU 17
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 10
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇸🇬 新加坡 | SGP 4
   - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 29
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 32
-  - 🇺🇸 美国 | USA 31
   - 🇺🇸 美国 | USA 37
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 34
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇸🇬 新加坡 | SGP 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
+  - 🇳🇱 荷兰 | NLD 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -406,30 +351,25 @@ proxy-groups:
   - 🇨🇦 加拿大 | CAN
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 9
   - 🇫🇷 法国 | FRA
   - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA 4
-  - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 13
-  - 🇫🇷 法国 | FRA 5
-  - 🇫🇷 法国 | FRA 6
+  - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 16
-  - 🇫🇷 法国 | FRA 9
   - 🇮🇪 爱尔兰 | IRL 2
   - 🇯🇵 日本 | JPN 4
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 10
-  - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 29
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 32
-  - 🇺🇸 美国 | USA 31
-  - 🇺🇸 美国 | USA 34
+  - 🇸🇬 新加坡 | SGP 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -444,8 +384,8 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 17
 - name: REGION-NA
   type: url-test
