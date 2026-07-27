@@ -5,18 +5,10 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇩🇪 德国 | DEU
-  server: fn.fifapes.monster
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 167.82.0.1
+  server: 167.82.0.17
   port: 80
   type: vless
-  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
   tls: false
   network: ws
   ws-opts:
@@ -24,35 +16,7 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: swe11.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: swe11.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: gr1.panel11.ru
-  port: 443
-  type: vless
-  uuid: f165affe-ffb4-4f13-a081-f14434e51152
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8H-YQe-nSd_aL2FwWIFNV2-anUb4v3cY_n5QcEEjGEs
-    short-id: eeed325908a87d9f
-  servername: gr1.panel11.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 14
+- name: 🇩🇪 德国 | DEU 3
   server: 151.101.56.7
   port: 80
   type: vless
@@ -64,34 +28,29 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: fin.themesh.site
-  port: 443
+- name: 🇩🇪 德国 | DEU 2
+  server: 150.241.65.217
+  port: 25247
   type: vless
-  uuid: 49e8f20c-6a27-4637-9e20-e0ea18a75766
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: uC_QQnsGBe7k66PCdUeeGDxzfZAGWhr6fKe8ZHfHeDo
-    short-id: d1d566593dd4227d
-  servername: fin.themesh.site
-  client-fingerprint: edge
-  network: tcp
-- name: 🇩🇪 德国 | DEU 12
-  server: fl17.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: fl17.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
+  uuid: deb9c015-1ffe-4e41-9d21-310eb0422a4c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /xray
   udp: true
-- name: 🇩🇪 德国 | DEU 17
+- name: 🇩🇪 德国 | DEU 7
+  server: 167.82.0.1
+  port: 80
+  type: vless
+  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+  udp: true
+- name: 🇩🇪 德国 | DEU 14
   server: germany.superbuba.top
   port: 443
   type: vless
@@ -104,20 +63,7 @@ proxies:
   servername: germany.superbuba.top
   client-fingerprint: random
   network: tcp
-- name: 🇩🇪 德国 | DEU 21
-  server: fl18.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: fl18.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-- name: 🇩🇪 德国 | DEU 22
+- name: 🇩🇪 德国 | DEU 16
   server: pro-fi.emrata.top
   port: 443
   type: vless
@@ -129,15 +75,19 @@ proxies:
   servername: pro-fi.emrata.top
   client-fingerprint: qq
   network: tcp
-- name: 🇫🇷 法国 | FRA
-  server: 15.236.213.86
-  port: 22223
+- name: 🇩🇪 德国 | DEU 9
+  server: 167.82.0.1
+  port: 80
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇩🇪 德国 | DEU 26
+- name: 🇩🇪 德国 | DEU 12
   server: 151.101.193.54
   port: 80
   type: vless
@@ -149,34 +99,34 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: pro-uk.emrata.top
+- name: 🇮🇹 意大利 | ITA
+  server: pro-it.emrata.top
   port: 443
   type: vless
-  uuid: ecedc1d3-6853-4cfd-b65c-1753c9ad57b2
+  uuid: f81b1299-f813-46ef-aed1-63afa5e61c91
   tls: true
   reality-opts:
-    public-key: RYnbBzo-UTB4nVMymzJ5B6TgYed7DfOc6O5Pr_htYSc
-  servername: pro-uk.emrata.top
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-it.emrata.top
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: pl1.raketa-balance.com
+  port: 443
+  type: vless
+  uuid: d7fc372d-c057-43ce-8070-9b96abbc60f3
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY
+    short-id: 6c6082a2223c1d03
+  servername: pl1.raketa-balance.com
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: ad-020.vector2llqn.info
-  port: 8443
-  type: vless
-  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
-  tls: true
-  servername: ad-020.vector2llqn.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-020.vector2llqn.info
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 12
-  server: nd08.myxasecure.space
+- name: 🇵🇱 波兰 | POL
+  server: pl08.myxasecure.space
   port: 443
   type: vless
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
@@ -185,37 +135,48 @@ proxies:
   reality-opts:
     public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
     short-id: d67ec5a8fc40ebea
-  servername: nd08.myxasecure.space
+  servername: pl08.myxasecure.space
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: pro-ru-bridge.emrata.top
+- name: 🇺🇸 美国 | USA 2
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: usa24.tcpnet.fun
   port: 443
   type: vless
-  uuid: 42c3337e-57f5-48d8-b7ad-46f75f5e7e8a
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
-  servername: pro-ru-bridge.emrata.top
+    public-key: Z4AlsTFXv79aaFZOJebC50J6pgIHR_gdZ091JpKhUBo
+    short-id: 08bf0ad0
+  servername: usa24.tcpnet.fun
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇹🇷 土耳其 | TUR 2
-  server: pro-tr.emrata.top
-  port: 443
-  type: vless
-  uuid: f81b1299-f813-46ef-aed1-63afa5e61c91
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: da5UVhoC5QOCDm84AxB-RRxf0z2nySZ3lOemgqizLS4
-  servername: pro-tr.emrata.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
+- name: 🇸🇪 瑞典 | SWE 2
   server: swe06.myxasecure.space
   port: 443
   type: vless
@@ -229,17 +190,38 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 18.239.134.69
+- name: 🇺🇸 美国 | USA 26
+  server: pro-us.emrata.top
+  port: 443
+  type: vless
+  uuid: f81b1299-f813-46ef-aed1-63afa5e61c91
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uY-4wMHFY1pD8SIwHBfcxVRdolB7NAJIWIbYjaG8iw0
+  servername: pro-us.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 22
+  server: us---ee--us.belamona.ir
+  port: 2044
+  type: vless
+  uuid: 79f92090-4395-4d15-a093-5a524324b9eb
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 167.82.0.17
   port: 80
   type: vless
-  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  uuid: a69d5300-8101-47b5-9448-6730f228af37
   tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+      Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
 proxy-groups:
 - name: AUTO
@@ -248,23 +230,22 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 16
+  - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 17
-  - 🇩🇪 德国 | DEU 21
-  - 🇩🇪 德国 | DEU 22
-  - 🇫🇷 法国 | FRA
-  - 🇩🇪 德国 | DEU 26
-  - 🇬🇧 英国 | GBR
-  - 🇫🇷 法国 | FRA 2
-  - 🇳🇱 荷兰 | NLD 12
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇹🇷 土耳其 | TUR 2
-  - 🇸🇪 瑞典 | SWE
-  - 🇹🇭 泰国 | THA
+  - 🇮🇹 意大利 | ITA
+  - 🇵🇱 波兰 | POL 2
+  - 🇵🇱 波兰 | POL
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 14
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 23
 rules:
 - MATCH,AUTO
