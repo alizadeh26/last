@@ -18,6 +18,17 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: 95.85.250.126
+  port: 8443
+  type: vless
+  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
 - name: 🇩🇪 德国 | DEU 11
   server: fi1.samovargate.com
   port: 443
@@ -32,29 +43,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 95.85.250.126
-  port: 8443
-  type: vless
-  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 167.82.0.4
-  port: 80
-  type: vless
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
 - name: 🇩🇪 德国 | DEU 19
   server: fi13.samovargate.com
   port: 443
@@ -67,30 +55,6 @@ proxies:
     short-id: f04729f65b9ea261
   servername: fi13.samovargate.com
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 15.188.1.105
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 6
-  server: 15.188.1.105
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 7
-  server: 15.188.1.105
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
   network: tcp
   udp: true
 - name: 🇫🇷 法国 | FRA 4
@@ -107,22 +71,8 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 16
-  server: ru8.samovargate.com
-  port: 443
-  type: vless
-  uuid: 5d680dcf-88a5-4ea4-b799-0a12ef2c0dfd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
-    short-id: f04729f65b9ea261
-  servername: ru8.samovargate.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 17
-  server: 151.101.56.7
+- name: 🇩🇪 德国 | DEU 3
+  server: 167.82.0.4
   port: 80
   type: vless
   uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
@@ -154,18 +104,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇩🇪 德国 | DEU 12
-  server: 167.82.0.1
-  port: 80
-  type: vless
-  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: 158.101.207.136
   port: 62145
@@ -173,6 +111,44 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+  udp: true
+- name: 🇮🇷 伊朗 | IRN
+  server: cd18.almas-cloud.ir
+  port: 2096
+  type: vless
+  uuid: 94d1b793-0670-405a-af31-d1270b582427
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cd18.almas-cloud.ir
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: nl6.samovargate.com
+  port: 443
+  type: vless
+  uuid: 5d680dcf-88a5-4ea4-b799-0a12ef2c0dfd
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
+    short-id: f04729f65b9ea261
+  servername: nl6.samovargate.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 17
+  server: 151.101.56.7
+  port: 80
+  type: vless
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
 - name: 🇳🇱 荷兰 | NLD 18
   server: 193.123.37.67
@@ -196,6 +172,18 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 21
+  server: 151.101.193.54
+  port: 80
+  type: vless
+  uuid: a69d5300-8101-47b5-9448-6730f228af37
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: cdn-spb.buildsnow.top
   port: 443
@@ -211,20 +199,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: cdn-spb.buildsnow.top
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: pl2.samovargate.com
-  port: 443
-  type: vless
-  uuid: 5d680dcf-88a5-4ea4-b799-0a12ef2c0dfd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
-    short-id: f04729f65b9ea261
-  servername: pl2.samovargate.com
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇹🇷 土耳其 | TUR 2
   server: 185.39.204.155
@@ -249,8 +223,16 @@ proxies:
     headers:
       Host: yellow-breeze-989b.348-9b8.workers.dev
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: nl6.samovargate.com
+- name: 🇺🇸 美国 | USA 18
+  server: us---ee--us.belamona.ir
+  port: 2044
+  type: vless
+  uuid: 79f92090-4395-4d15-a093-5a524324b9eb
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pl2.samovargate.com
   port: 443
   type: vless
   uuid: 5d680dcf-88a5-4ea4-b799-0a12ef2c0dfd
@@ -259,16 +241,8 @@ proxies:
   reality-opts:
     public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
     short-id: f04729f65b9ea261
-  servername: nl6.samovargate.com
+  servername: pl2.samovargate.com
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: us---ee--us.belamona.ir
-  port: 2044
-  type: vless
-  uuid: 79f92090-4395-4d15-a093-5a524324b9eb
-  tls: false
   network: tcp
   udp: true
 proxy-groups:
@@ -278,27 +252,24 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 | CYP
-  - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 19
-  - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA 6
-  - 🇫🇷 法国 | FRA 7
   - 🇫🇷 法国 | FRA 4
-  - 🇩🇪 德国 | DEU 16
-  - 🇩🇪 德国 | DEU 17
+  - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
   - 🇳🇱 荷兰 | NLD 3
-  - 🇩🇪 德国 | DEU 12
   - 🇳🇱 荷兰 | NLD 4
+  - 🇮🇷 伊朗 | IRN
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇩🇪 德国 | DEU 17
   - 🇳🇱 荷兰 | NLD 18
   - 🇳🇴 挪威 | NOR
+  - 🇩🇪 德国 | DEU 21
   - 🇷🇺 俄罗斯 | RUS
-  - 🇵🇱 波兰 | POL
   - 🇹🇷 土耳其 | TUR 2
   - 🇸🇬 新加坡 | SGP
-  - 🇳🇱 荷兰 | NLD 9
   - 🇺🇸 美国 | USA 18
+  - 🇵🇱 波兰 | POL
 rules:
 - MATCH,AUTO

@@ -4,8 +4,9 @@ ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#%F0%9F%87%AC%F0%9F%87%A
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.179-0237
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-0230
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.182:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.182-0232
-ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#%F0%9F%87%AC%F0%9F%87%A7GB-146.70.61.37-0095
 ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-0185
-trojan://521314@104.248.161.136:443?host=tjplay.lxdxo.kdns.fr&path=/&sni=tjplay.lxdxo.kdns.fr&type=ws#🏳️ 13 - XX - Trojan/WS/TLS - 443
-vless://14b59caf-a196-4ec2-8c70-c7b388062f5b@91.193.58.201:443?path=/rdfgtws&security=tls&encryption=none&insecure=0&host=vangoghhh.info&type=ws&allowInsecure=0&sni=vangoghhh.info#🏳️ 67 - XX - VLESS/WS/TLS - 443
-vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?encryption=none&host=google.com&path=/vless/&security=none&type=ws#🇺🇸 472 - US - VLESS/WS - 80
+ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#%F0%9F%87%AC%F0%9F%87%A7GB-146.70.61.37-0095
+trojan://521314@104.248.160.220:443?type=ws&allowInsecure=0&path=/&insecure=0&host=tjplay.lxdxo.kdns.fr&sni=tjplay.lxdxo.kdns.fr&security=tls#🏳️ 14 - XX - Trojan/WS/TLS - 443
+vless://14b59caf-a196-4ec2-8c70-c7b388062f5b@91.193.58.201:443?path=/rdfgtws&security=tls&encryption=none&insecure=0&host=vangoghhh.info&type=ws&allowInsecure=0&sni=vangoghhh.info#🇺🇸 54 - US - VLESS/WS/TLS - 443
+vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?encryption=none&host=google.com&path=/vless/&security=none&type=ws#🏳️ 423 - XX - VLESS/WS - 80
+vless://a1de0630-5786-48a0-84f6-dc6f2de10d6d@91.193.58.15:2083?encryption=none&security=tls&sni=vlso.1d.mom&type=ws&host=vlso.1d.mom&path=/socks5=888:888@8.210.127.248:1080#🇺🇸 454 - US - VLESS/WS/TLS - 2083
