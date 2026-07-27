@@ -4,18 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇰🇷 韩国 | KOR
-  server: 115.89.98.231
-  port: 10509
-  type: vmess
-  uuid: 4f1c1ca1-a422-4014-9423-04e39ed73b03
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
 - name: 🇺🇸 美国 | USA 7
   server: 23.27.143.149
   port: 5686
@@ -34,7 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 | KOR
   - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO

@@ -4,12 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR 2
-  server: 18.170.212.188
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇬🇧 英国 | GBR
   server: 18.130.251.185
   port: 443
@@ -22,6 +16,13 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+- name: 🇳🇱 荷兰 | NLD 15
+  server: 193.29.139.223
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 100.58.124.178
   port: 443
@@ -34,9 +35,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 15
   - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO

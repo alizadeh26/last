@@ -4,19 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇾 塞浦路斯 | CYP
-  server: ee1.samovargate.com
-  port: 443
+- name: 🇩🇪 德国 | DEU 3
+  server: 167.82.0.4
+  port: 80
   type: vless
-  uuid: 5d680dcf-88a5-4ea4-b799-0a12ef2c0dfd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
-    short-id: f04729f65b9ea261
-  servername: ee1.samovargate.com
-  client-fingerprint: firefox
-  network: tcp
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
 - name: 🇩🇪 德国 | DEU 9
   server: 95.85.250.126
@@ -43,6 +41,18 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 17
+  server: 151.101.56.7
+  port: 80
+  type: vless
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+  udp: true
 - name: 🇩🇪 德国 | DEU 19
   server: fi13.samovargate.com
   port: 443
@@ -54,6 +64,20 @@ proxies:
     public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
     short-id: f04729f65b9ea261
   servername: fi13.samovargate.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇨🇾 塞浦路斯 | CYP
+  server: ee1.samovargate.com
+  port: 443
+  type: vless
+  uuid: 5d680dcf-88a5-4ea4-b799-0a12ef2c0dfd
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
+    short-id: f04729f65b9ea261
+  servername: ee1.samovargate.com
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -71,12 +95,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 18.170.212.188
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇬🇧 英国 | GBR
   server: 18.130.251.185
   port: 443
@@ -89,30 +107,21 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇩🇪 德国 | DEU 3
-  server: 167.82.0.4
-  port: 80
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 158.101.207.136
+  port: 62145
   type: vless
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
+  network: tcp
   udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: 115.89.98.231
-  port: 10509
-  type: vmess
-  uuid: 4f1c1ca1-a422-4014-9423-04e39ed73b03
-  alterId: 0
-  cipher: auto
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 144.21.33.246
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
+  network: tcp
 - name: 🇪🇪 爱沙尼亚 | EST
   server: ee10.samovargate.com
   port: 443
@@ -125,21 +134,6 @@ proxies:
     short-id: f04729f65b9ea261
   servername: ee10.samovargate.com
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 144.21.33.246
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 158.101.207.136
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
   network: tcp
   udp: true
 - name: 🇮🇷 伊朗 | IRN
@@ -168,17 +162,12 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 17
-  server: 151.101.56.7
-  port: 80
-  type: vless
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
+- name: 🇳🇱 荷兰 | NLD 15
+  server: 193.29.139.223
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
 - name: 🇳🇱 荷兰 | NLD 18
   server: 193.123.37.67
@@ -202,17 +191,19 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 21
-  server: 151.101.193.54
-  port: 80
+- name: 🇵🇱 波兰 | POL
+  server: pl2.samovargate.com
+  port: 443
   type: vless
-  uuid: a69d5300-8101-47b5-9448-6730f228af37
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
+  uuid: 5d680dcf-88a5-4ea4-b799-0a12ef2c0dfd
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
+    short-id: f04729f65b9ea261
+  servername: pl2.samovargate.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: cdn-spb.buildsnow.top
@@ -279,102 +270,89 @@ proxies:
   network: ws
   ws-opts:
     path: /arki
-- name: 🇵🇱 波兰 | POL
-  server: pl2.samovargate.com
-  port: 443
-  type: vless
-  uuid: 5d680dcf-88a5-4ea4-b799-0a12ef2c0dfd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
-    short-id: f04729f65b9ea261
-  servername: pl2.samovargate.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 | CYP
+  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 17
   - 🇩🇪 德国 | DEU 19
+  - 🇨🇾 塞浦路斯 | CYP
   - 🇫🇷 法国 | FRA 4
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 3
-  - 🇩🇪 德国 | DEU 3
-  - 🇰🇷 韩国 | KOR
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇪🇪 爱沙尼亚 | EST
   - 🇮🇷 伊朗 | IRN
   - 🇳🇱 荷兰 | NLD 9
-  - 🇩🇪 德国 | DEU 17
+  - 🇳🇱 荷兰 | NLD 15
   - 🇳🇱 荷兰 | NLD 18
   - 🇳🇴 挪威 | NOR
-  - 🇩🇪 德国 | DEU 21
+  - 🇵🇱 波兰 | POL
   - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA 6
   - 🇹🇷 土耳其 | TUR 2
   - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 7
-  - 🇵🇱 波兰 | POL
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 15
   - 🇺🇸 美国 | USA 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 | CYP
+  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 17
   - 🇩🇪 德国 | DEU 19
+  - 🇨🇾 塞浦路斯 | CYP
   - 🇫🇷 法国 | FRA 4
-  - 🇩🇪 德国 | DEU 3
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇪🇪 爱沙尼亚 | EST
   - 🇮🇷 伊朗 | IRN
   - 🇳🇱 荷兰 | NLD 9
-  - 🇩🇪 德国 | DEU 17
   - 🇳🇱 荷兰 | NLD 18
   - 🇳🇴 挪威 | NOR
-  - 🇩🇪 德国 | DEU 21
+  - 🇵🇱 波兰 | POL
   - 🇷🇺 俄罗斯 | RUS
   - 🇹🇷 土耳其 | TUR 2
   - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 18
-  - 🇵🇱 波兰 | POL
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 | KOR
   - 🇺🇸 美国 | USA 7
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 | CYP
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 19
-  - 🇫🇷 法国 | FRA 4
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 17
 rules:
 - MATCH,AUTO
