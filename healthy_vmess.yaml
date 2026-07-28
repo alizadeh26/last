@@ -5,7 +5,7 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇩🇪 德国 | DEU 4
-  server: fj260403.freechatup.com
+  server: fj260305.freechatup.com
   port: 27726
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
@@ -14,7 +14,7 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇩🇪 德国 | DEU 5
-  server: fj260306.freechatup.com
+  server: fj260404.freechatup.com
   port: 27726
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
@@ -22,8 +22,8 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 7
-  server: fj260204.freechatup.com
+- name: 🇩🇪 德国 | DEU 25
+  server: fj260403.freechatup.com
   port: 27726
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
@@ -31,8 +31,8 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 6
-  server: fj260304.freechatup.com
+- name: 🇩🇪 德国 | DEU 28
+  server: fj260205.freechatup.com
   port: 27726
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
@@ -40,16 +40,7 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 14
-  server: fj260203.freechatup.com
-  port: 27726
-  type: vmess
-  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 10
+- name: 🇩🇪 德国 | DEU 26
   server: cu2.ainivp.com
   port: 33208
   type: vmess
@@ -64,7 +55,19 @@ proxies:
     path: /ray
     headers:
       Host: cu2.ainivp.com
-- name: 🇭🇰 香港 | HKG
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 162.248.76.145
+  port: 9121
+  type: vmess
+  uuid: de0ccac7-408f-4380-ab16-b9a57ca89338
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
   server: yd3.ainivp.com
   port: 33409
   type: vmess
@@ -79,7 +82,22 @@ proxies:
     path: /ray
     headers:
       Host: yd3.ainivp.com
-- name: 🇯🇵 日本 | JPN 2
+- name: 🇰🇷 韩国 | KOR 2
+  server: yd4.ainivp.com
+  port: 33204
+  type: vmess
+  uuid: 9227afcd-026e-781f-1abc-c06efabd2338
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: yd4.ainivp.com
+  network: ws
+  ws-opts:
+    path: /ray
+    headers:
+      Host: yd4.ainivp.com
+- name: 🇯🇵 日本 | JPN
   server: cu2.ainivp.com
   port: 33203
   type: vmess
@@ -94,21 +112,7 @@ proxies:
     path: /ray
     headers:
       Host: cu2.ainivp.com
-- name: 🇰🇷 韩国 | KOR 6
-  server: sylva53.ceoiii.com
-  port: 36824
-  type: vmess
-  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: ajax.microsoft.com
-- name: 🇳🇱 荷兰 | NLD 5
+- name: 🇳🇱 荷兰 | NLD 4
   server: apjhdggyx.com
   port: 443
   type: vmess
@@ -123,41 +127,26 @@ proxies:
     path: /5f72f180-b21b-4b7a-8484-240759096785
     headers:
       Host: apjhdggyx.com
-- name: 🇰🇷 韩国 | KOR
-  server: cu2.ainivp.com
-  port: 33200
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: yd3.ainivp.com
+  port: 33404
   type: vmess
   uuid: 9227afcd-026e-781f-1abc-c06efabd2338
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: cu2.ainivp.com
+  servername: yd3.ainivp.com
   network: ws
   ws-opts:
     path: /ray
     headers:
-      Host: cu2.ainivp.com
-- name: 🇰🇷 韩国 | KOR 7
-  server: cu3.ainivp.com
-  port: 33204
+      Host: yd3.ainivp.com
+- name: 🇲🇽 墨西哥 | MEX
+  server: cindy50.ceoiii.com
+  port: 36801
   type: vmess
-  uuid: 9227afcd-026e-781f-1abc-c06efabd2338
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: cu3.ainivp.com
-  network: ws
-  ws-opts:
-    path: /ray
-    headers:
-      Host: cu3.ainivp.com
-- name: 🇺🇸 美国 | USA 5
-  server: sylva51.ceoiii.com
-  port: 36822
-  type: vmess
-  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
   alterId: 0
   cipher: auto
   tls: false
@@ -167,7 +156,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: ajax.microsoft.com
-- name: 🇸🇬 新加坡 | SGP 11
+- name: 🇸🇬 新加坡 | SGP 2
   server: cu4.ainivp.com
   port: 33402
   type: vmess
@@ -182,18 +171,34 @@ proxies:
     path: /ray
     headers:
       Host: cu4.ainivp.com
-- name: 🇺🇸 美国 | USA 23
-  server: 192.204.57.30
-  port: 443
+- name: 🇸🇬 新加坡 | SGP 3
+  server: cindy58.ceoiii.com
+  port: 36809
   type: vmess
-  uuid: 4da9adf3-8c0c-48a7-92ac-429c72a76ef8
+  uuid: d5cac7ea-a02f-3cf2-9ca8-f48b6666b419
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /speed
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: ajax.microsoft.com
+- name: 🇰🇷 韩国 | KOR
+  server: sylva53.ceoiii.com
+  port: 36824
+  type: vmess
+  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: ajax.microsoft.com
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -202,18 +207,18 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 10
-  - 🇭🇰 香港 | HKG
-  - 🇯🇵 日本 | JPN 2
-  - 🇰🇷 韩国 | KOR 6
-  - 🇳🇱 荷兰 | NLD 5
+  - 🇩🇪 德国 | DEU 25
+  - 🇩🇪 德国 | DEU 28
+  - 🇩🇪 德国 | DEU 26
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇭🇰 香港 | HKG 2
+  - 🇰🇷 韩国 | KOR 2
+  - 🇯🇵 日本 | JPN
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇲🇽 墨西哥 | MEX
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP 3
   - 🇰🇷 韩国 | KOR
-  - 🇰🇷 韩国 | KOR 7
-  - 🇺🇸 美国 | USA 5
-  - 🇸🇬 新加坡 | SGP 11
-  - 🇺🇸 美国 | USA 23
 rules:
 - MATCH,AUTO
