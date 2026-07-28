@@ -10,13 +10,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇬🇧 英国 | GBR 6
-  server: 89.249.74.188
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 185.22.154.103
   port: 10921
@@ -29,12 +22,6 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: fbaf33bcffe53cf9
-- name: 🇺🇸 美国 | USA 2
-  server: hj260302.hihidress.com
-  port: 9810
-  type: ss
-  cipher: aes-256-gcm
-  password: c5Da6X2vZsM53zvT
 - name: 🇹🇭 泰国 | THA 2
   server: 47.81.56.202
   port: 44617
@@ -48,12 +35,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: XF0klw7870vXn3uQIxe19Q
-- name: 🇺🇸 美国 | USA 34
-  server: hj260202.hihidress.com
-  port: 9810
-  type: ss
-  cipher: aes-256-gcm
-  password: c5Da6X2vZsM53zvT
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -61,12 +42,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 6
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇷🇺 俄罗斯 | RUS 4
-  - 🇺🇸 美国 | USA 2
   - 🇹🇭 泰国 | THA 2
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 34
 rules:
 - MATCH,AUTO

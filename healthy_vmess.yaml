@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: fj260305.freechatup.com
+- name: 🇩🇪 德国 | DEU 5
+  server: fj260404.freechatup.com
   port: 27726
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
@@ -13,8 +13,8 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 5
-  server: fj260404.freechatup.com
+- name: 🇩🇪 德国 | DEU 4
+  server: fj260305.freechatup.com
   port: 27726
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
@@ -69,6 +69,18 @@ proxies:
     path: /5f72f180-b21b-4b7a-8484-240759096785
     headers:
       Host: apjhdggyx.com
+- name: 🇺🇸 美国 | USA 10
+  server: 154.64.228.51
+  port: 7739
+  type: vmess
+  uuid: 63d54df4-02eb-413e-beba-95e27bee760f
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
 - name: 🇰🇷 韩国 | KOR
   server: sylva53.ceoiii.com
   port: 36824
@@ -83,18 +95,6 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: ajax.microsoft.com
-- name: 🇺🇸 美国 | USA 10
-  server: 154.64.228.51
-  port: 7739
-  type: vmess
-  uuid: 63d54df4-02eb-413e-beba-95e27bee760f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
 - name: 🇸🇬 新加坡 | SGP 3
   server: cindy58.ceoiii.com
   port: 36809
@@ -115,14 +115,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 25
   - 🇩🇪 德国 | DEU 28
   - 🇲🇽 墨西哥 | MEX
   - 🇳🇱 荷兰 | NLD 4
-  - 🇰🇷 韩国 | KOR
   - 🇺🇸 美国 | USA 10
+  - 🇰🇷 韩国 | KOR
   - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO

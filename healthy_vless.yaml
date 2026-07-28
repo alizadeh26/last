@@ -44,6 +44,19 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
+- name: 🇬🇧 英国 | GBR 5
+  server: t1.hhaakk9922.com
+  port: 46784
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  tls: true
+  servername: t1.hhaakk9922.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: status.capitaloneok.com
   port: 443
@@ -73,19 +86,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 5
-  server: t1.hhaakk9922.com
-  port: 46784
-  type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
-  tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: t1.hhaakk9922.com
   port: 36798
@@ -110,6 +110,33 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: t1.hhaakk9922.com
+  port: 36787
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  tls: true
+  servername: t1.hhaakk9922.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
+  udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: ad-013.zen2bswa.info
+  port: 8443
+  type: vless
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  servername: ad-013.zen2bswa.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-013.zen2bswa.info
   udp: true
 - name: 🇹🇭 泰国 | THA
   server: www.true.th
@@ -137,20 +164,6 @@ proxies:
     headers:
       Host: ad-010.zen2bswa.info
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: ad-013.zen2bswa.info
-  port: 8443
-  type: vless
-  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
-  tls: true
-  servername: ad-013.zen2bswa.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-013.zen2bswa.info
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -160,13 +173,14 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 16
   - 🇩🇪 德国 | DEU 22
+  - 🇬🇧 英国 | GBR 5
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 12
-  - 🇬🇧 英国 | GBR 5
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 27
   - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 27
 rules:
 - MATCH,AUTO

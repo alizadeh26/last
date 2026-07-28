@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: fj260305.freechatup.com
+- name: 🇩🇪 德国 | DEU 5
+  server: fj260404.freechatup.com
   port: 27726
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
@@ -13,8 +13,8 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 5
-  server: fj260404.freechatup.com
+- name: 🇩🇪 德国 | DEU 4
+  server: fj260305.freechatup.com
   port: 27726
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
@@ -59,15 +59,6 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 28
-  server: fj260205.freechatup.com
-  port: 27726
-  type: vmess
-  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
 - name: 🇩🇪 德国 | DEU 22
   server: 151.101.56.7
   port: 80
@@ -80,33 +71,34 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
+- name: 🇩🇪 德国 | DEU 28
+  server: fj260205.freechatup.com
+  port: 27726
+  type: vmess
+  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
 - name: 🇬🇧 英国 | GBR 2
   server: 144.24.227.218
   port: 61312
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇬🇧 英国 | GBR 6
-  server: 89.249.74.188
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
+- name: 🇬🇧 英国 | GBR 5
+  server: t1.hhaakk9922.com
+  port: 46784
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  tls: true
+  servername: t1.hhaakk9922.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
   udp: true
-- name: 🇲🇽 墨西哥 | MEX
-  server: cindy50.ceoiii.com
-  port: 36801
-  type: vmess
-  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: ajax.microsoft.com
 - name: 🇳🇱 荷兰 | NLD 6
   server: status.capitaloneok.com
   port: 443
@@ -122,6 +114,20 @@ proxies:
     grpc-mode: gun
     grpc-service-name: sync.v2.PushService
   udp: true
+- name: 🇲🇽 墨西哥 | MEX
+  server: cindy50.ceoiii.com
+  port: 36801
+  type: vmess
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: ajax.microsoft.com
 - name: 🇳🇱 荷兰 | NLD 12
   server: getsavesafe.net
   port: 443
@@ -151,19 +157,6 @@ proxies:
     path: /5f72f180-b21b-4b7a-8484-240759096785
     headers:
       Host: apjhdggyx.com
-- name: 🇬🇧 英国 | GBR 5
-  server: t1.hhaakk9922.com
-  port: 46784
-  type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
-  tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 185.22.154.103
   port: 10921
@@ -176,38 +169,6 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: fbaf33bcffe53cf9
-- name: 🇺🇸 美国 | USA 2
-  server: hj260302.hihidress.com
-  port: 9810
-  type: ss
-  cipher: aes-256-gcm
-  password: c5Da6X2vZsM53zvT
-- name: 🇰🇷 韩国 | KOR
-  server: sylva53.ceoiii.com
-  port: 36824
-  type: vmess
-  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: ajax.microsoft.com
-- name: 🇺🇸 美国 | USA 10
-  server: 154.64.228.51
-  port: 7739
-  type: vmess
-  uuid: 63d54df4-02eb-413e-beba-95e27bee760f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
 - name: 🇹🇭 泰国 | THA 2
   server: 47.81.56.202
   port: 44617
@@ -221,6 +182,18 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: XF0klw7870vXn3uQIxe19Q
+- name: 🇺🇸 美国 | USA 10
+  server: 154.64.228.51
+  port: 7739
+  type: vmess
+  uuid: 63d54df4-02eb-413e-beba-95e27bee760f
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
 - name: 🇺🇸 美国 | USA 3
   server: t1.hhaakk9922.com
   port: 36798
@@ -246,37 +219,32 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 34
-  server: hj260202.hihidress.com
-  port: 9810
-  type: ss
-  cipher: aes-256-gcm
-  password: c5Da6X2vZsM53zvT
-- name: 🇹🇭 泰国 | THA
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: ff485c50-b364-4b4f-90be-ea576b949dd3
+- name: 🇰🇷 韩国 | KOR
+  server: sylva53.ceoiii.com
+  port: 36824
+  type: vmess
+  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
+  alterId: 0
+  cipher: auto
   tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /fnetvpn2026
+    path: /hls/cctv5phd.m3u8
     headers:
-      Host: d3gxy6d0a9fs18.cloudfront.net
-  udp: true
-- name: 🇺🇸 美国 | USA 33
-  server: ad-010.zen2bswa.info
-  port: 8443
+      Host: ajax.microsoft.com
+- name: 🇺🇸 美国 | USA 21
+  server: t1.hhaakk9922.com
+  port: 36787
   type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
   tls: true
-  servername: ad-010.zen2bswa.info
+  servername: t1.hhaakk9922.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.zen2bswa.info
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
   udp: true
 - name: 🇺🇸 美国 | USA 27
   server: ad-013.zen2bswa.info
@@ -292,6 +260,18 @@ proxies:
     headers:
       Host: ad-013.zen2bswa.info
   udp: true
+- name: 🇹🇭 泰国 | THA
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: ff485c50-b364-4b4f-90be-ea576b949dd3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /fnetvpn2026
+    headers:
+      Host: d3gxy6d0a9fs18.cloudfront.net
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: cindy58.ceoiii.com
   port: 36809
@@ -306,53 +286,62 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: ajax.microsoft.com
+- name: 🇺🇸 美国 | USA 33
+  server: ad-010.zen2bswa.info
+  port: 8443
+  type: vless
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  servername: ad-010.zen2bswa.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.zen2bswa.info
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 16
   - 🇩🇪 德国 | DEU 25
-  - 🇩🇪 德国 | DEU 28
   - 🇩🇪 德国 | DEU 22
+  - 🇩🇪 德国 | DEU 28
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 6
-  - 🇲🇽 墨西哥 | MEX
+  - 🇬🇧 英国 | GBR 5
   - 🇳🇱 荷兰 | NLD 6
+  - 🇲🇽 墨西哥 | MEX
   - 🇳🇱 荷兰 | NLD 12
   - 🇳🇱 荷兰 | NLD 4
-  - 🇬🇧 英国 | GBR 5
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇷🇺 俄罗斯 | RUS 4
-  - 🇺🇸 美国 | USA 2
-  - 🇰🇷 韩国 | KOR
-  - 🇺🇸 美国 | USA 10
   - 🇹🇭 泰国 | THA 2
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 34
-  - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 33
+  - 🇰🇷 韩国 | KOR
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 27
+  - 🇹🇭 泰国 | THA
   - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 33
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 6
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇷🇺 俄罗斯 | RUS 4
-  - 🇺🇸 美国 | USA 2
   - 🇹🇭 泰国 | THA 2
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 34
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -361,35 +350,36 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 16
   - 🇩🇪 德国 | DEU 22
+  - 🇬🇧 英国 | GBR 5
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 12
-  - 🇬🇧 英国 | GBR 5
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 27
   - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 27
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 25
   - 🇩🇪 德国 | DEU 28
   - 🇲🇽 墨西哥 | MEX
   - 🇳🇱 荷兰 | NLD 4
-  - 🇰🇷 韩国 | KOR
   - 🇺🇸 美国 | USA 10
+  - 🇰🇷 韩国 | KOR
   - 🇸🇬 新加坡 | SGP 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 16
   - 🇩🇪 德国 | DEU 25
   - 🇩🇪 德国 | DEU 28
