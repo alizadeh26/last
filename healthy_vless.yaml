@@ -12,6 +12,18 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 15
+  server: 167.82.0.1
+  port: 80
+  type: vless
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+  udp: true
 - name: 🇩🇪 德国 | DEU 16
   server: get.noneok.com
   port: 443
@@ -28,31 +40,17 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
   udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: my.up-connect.online
-  port: 443
+- name: 🇩🇪 德国 | DEU 22
+  server: 151.101.56.7
+  port: 80
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: my.up-connect.online
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: pro-jp.emrata.top
-  port: 443
-  type: vless
-  uuid: d9e292f3-3c9e-4fea-9961-a0a8ae201eac
-  tls: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: pro-jp.emrata.top
-  client-fingerprint: firefox
-  network: tcp
+  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 158.178.151.165
@@ -61,19 +59,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-  udp: true
-- name: 🇰🇷 韩国 | KOR 3
-  server: t1.hhaakk9922.com
-  port: 46785
-  type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
-  tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
   udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: status.capitaloneok.com
@@ -90,69 +75,17 @@ proxies:
     grpc-mode: gun
     grpc-service-name: sync.v2.PushService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: nl2.panel11.ru
-  port: 443
+- name: 🇺🇸 美国 | USA 7
+  server: www.wto.org
+  port: 2095
   type: vless
-  uuid: f165affe-ffb4-4f13-a081-f14434e51152
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bKfIxJpnGI17_v5257WLeZy2mGAli86T1Mf8_8hwETo
-    short-id: 1da052e4ba28e6e9
-  servername: nl2.panel11.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 11
-  server: 3x-ui-production-e032.up.railway.app
-  port: 443
-  type: vless
-  uuid: e95a6f6e-f9bc-4d51-ba7e-73804aeb74e1
-  tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /in1
-    headers:
-      Host: 3x-ui-production-e032.up.railway.app
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /
     headers:
-      Host: icy-snowflake-1f56.147-1ea.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: t1.hhaakk9922.com
-  port: 36798
-  type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
-  tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 172.64.88.168
-  port: 8880
-  type: vless
-  uuid: 2e55e846-7737-4c07-af67-191e2727513c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: weathered-sunset-be54.407-d9d.workers.dev
+      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
 - name: 🇹🇭 泰国 | THA
   server: www.true.th
@@ -165,19 +98,6 @@ proxies:
     path: /fnetvpn2026
     headers:
       Host: d3gxy6d0a9fs18.cloudfront.net
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: t1.hhaakk9922.com
-  port: 36787
-  type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
-  tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
   udp: true
 - name: 🇺🇸 美国 | USA 27
   server: ad-013.zen2bswa.info
@@ -214,19 +134,13 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 16
-  - 🇩🇪 德国 | DEU 7
-  - 🇯🇵 日本 | JPN 2
+  - 🇩🇪 德国 | DEU 22
   - 🇳🇱 荷兰 | NLD
-  - 🇰🇷 韩国 | KOR 3
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 11
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 7
   - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 33
 rules:
