@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 7
-  server: 23.27.143.149
-  port: 5686
+- name: 🇺🇸 美国 | USA 10
+  server: 154.64.228.51
+  port: 7739
   type: vmess
-  uuid: e06736c8-5da2-4713-b801-d9f6ac59ce1d
+  uuid: 63d54df4-02eb-413e-beba-95e27bee760f
   alterId: 0
   cipher: auto
   tls: false
@@ -22,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO

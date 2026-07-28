@@ -4,41 +4,46 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: 212.83.51.81
-  port: 1080
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 50.114.177.134
+  port: 10210
+  type: ss
+  cipher: aes-256-gcm
+  password: 2803361d6c196af8
+- name: 🇨🇭 瑞士 | CHE 2
+  server: best.kovira2.ir
+  port: 25026
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-  udp: true
+  password: xp6qduya33bvl863
 - name: 🇬🇧 英国 | GBR 2
-  server: 18.170.212.188
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 | GBR 3
-  server: 144.24.227.140
+  server: 129.151.78.150
   port: 61312
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇳🇱 荷兰 | NLD 15
-  server: 193.29.139.223
-  port: 8080
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 185.22.154.103
+  port: 10921
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
+  cipher: aes-256-gcm
+  password: cfe685726eea2c4b
+- name: 🇺🇸 美国 | USA 12
+  server: 100.58.124.178
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇨🇭 瑞士 | CHE 2
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD 15
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
