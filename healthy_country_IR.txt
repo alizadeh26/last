@@ -1,2 +1,1 @@
-trojan://humanity@2.144.21.112:40443?path=/assignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#🇮🇷 1760 - IR - Trojan/WS/TLS - 40443
-vless://0d543aed-4e30-4553-b5ac-211419bb0961@185.128.139.11:18244?encryption=none&host=/?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=none&type=tcp#🏳️ 38 - XX - VLESS - 18244
+trojan://humanity@2.144.21.112:40443?security=tls&sni=www.ignitelimit.com&type=ws&host=www.ignitelimit.com&path=/assignment&allowInsecure=1#🇮🇷 1761 - IR - Trojan/WS/TLS - 40443

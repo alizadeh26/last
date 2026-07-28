@@ -4,119 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN 2
-  server: 50.114.177.134
-  port: 10210
-  type: ss
-  cipher: aes-256-gcm
-  password: 2803361d6c196af8
 - name: 🇨🇭 瑞士 | CHE
-  server: ch.snowfalls.top
-  port: 1443
-  type: vless
-  uuid: f9922bed-4524-4a6a-8709-9c2e26dedee9
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: rvOPhBAT3c5Uok7UDuxVfML3j4mib3Y9MU_Cd9M822c
-    short-id: 0441f3e34348cb45
-  servername: ch.snowfalls.top
-  client-fingerprint: edge
-  network: tcp
-  udp: true
-- name: 🇨🇭 瑞士 | CHE 2
   server: best.kovira2.ir
   port: 25026
   type: ss
   cipher: chacha20-ietf-poly1305
   password: xp6qduya33bvl863
-- name: 🇦🇪 阿联酋 | ARE
-  server: naseza.tarfiq.ir
-  port: 80
-  type: vless
-  uuid: 29eadf13-b054-40df-97bd-8aad33f0b729
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: teranko.global.ssl.fastly.net
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 158.247.123.142
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇩🇪 德国 | DEU 5
-  server: 167.82.0.4
-  port: 80
-  type: vless
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: fl06.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: fl06.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 64.188.83.94
-  port: 8443
-  type: vless
-  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 151.101.193.54
-  port: 80
-  type: vless
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: fl04.myxasecure.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: fl04.myxasecure.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 12
+- name: 🇩🇪 德国 | DEU 2
   server: 167.82.0.1
   port: 80
   type: vless
-  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  uuid: f7fbb3ea-64c7-4ba2-a15b-315aee61e69d
   tls: false
   network: ws
   ws-opts:
@@ -124,7 +22,20 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇩🇪 德国 | DEU 16
+- name: 🇩🇪 德国 | DEU 5
+  server: pro-fi.emrata.top
+  port: 443
+  type: vless
+  uuid: 138bfe7f-a2c4-443e-befe-6a9d13e1550b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-fi.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 9
   server: pro-fi.emrata.top
   port: 443
   type: vless
@@ -137,20 +48,8 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 151.101.193.54
-  port: 80
-  type: vless
-  uuid: c32c0a52-8dad-44b9-a376-0a9fad55e1fe
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
-- name: 🇩🇪 德国 | DEU 19
-  server: my.up-connect.online
+- name: 🇩🇪 德国 | DEU 8
+  server: swe11.myxasecure.space
   port: 443
   type: vless
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
@@ -159,32 +58,106 @@ proxies:
   reality-opts:
     public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
     short-id: d67ec5a8fc40ebea
-  servername: my.up-connect.online
+  servername: swe11.myxasecure.space
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇪🇸 西班牙 | ESP 2
-  server: fat-sp.arpozan.cloud
+- name: 🇩🇪 德国 | DEU 19
+  server: 151.101.56.7
+  port: 80
+  type: vless
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+  udp: true
+- name: 🇩🇪 德国 | DEU 22
+  server: 151.101.56.7
+  port: 80
+  type: vless
+  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+  udp: true
+- name: 🇩🇪 德国 | DEU 20
+  server: fih1.redemshenvpn.site
+  port: 25060
+  type: vless
+  uuid: deb9c015-1ffe-4e41-9d21-310eb0422a4c
+  tls: true
+  servername: fih1.redemshenvpn.site
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /xray
+    headers:
+      Host: fih1.redemshenvpn.site
+  udp: true
+- name: 🇩🇪 德国 | DEU 27
+  server: pro-de.emrata.top
+  port: 443
+  type: vless
+  uuid: d9e292f3-3c9e-0032-9961-a0a8ae201eac
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-de.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: 95.85.224.3
   port: 8443
   type: vless
   uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
-  tls: true
-  alpn:
-  - h2
-  servername: fat-sp.arpozan.cloud
-  client-fingerprint: chrome
+  tls: false
   network: grpc
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: grpc
   udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: d2-ee.cloud-cdn.xyz
+  port: 443
+  type: vless
+  uuid: b55a6115-07f5-4464-85b5-7059ce4701f3
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 4C9KU3mBvc1uusC8ZUheHqIYAKkKlFDalP7QSL2cYHs
+    short-id: 7a3f9e2b1c8d4f6a
+  servername: d2-ee.cloud-cdn.xyz
+  client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA
+  server: d-pl.cloud-cdn.xyz
+  port: 443
+  type: vless
+  uuid: b55a6115-07f5-4464-85b5-7059ce4701f3
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: nFJCJ2tvxLdLrc9G-O1laW8KDir5SDnaOTmYndVaOGQ
+    short-id: 7a3f9e2b1c8d4f6a
+  servername: d-pl.cloud-cdn.xyz
+  client-fingerprint: edge
+  network: tcp
+  udp: true
 - name: 🇬🇧 英国 | GBR 2
-  server: 129.151.78.150
-  port: 61312
+  server: 18.170.212.188
+  port: 443
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇬🇧 英国 | GBR 3
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇬🇧 英国 | GBR 4
   server: pro-uk.emrata.top
   port: 443
   type: vless
@@ -196,71 +169,44 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 92.5.234.219
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 95.85.228.161
-  port: 8443
-  type: vless
-  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: nl2.panel11.ru
+- name: 🇩🇪 德国 | DEU 30
+  server: ru1.samovargate.com
   port: 443
   type: vless
-  uuid: f165affe-ffb4-4f13-a081-f14434e51152
+  uuid: f85b5746-534d-4b89-8eff-98fa109c9d0d
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: bKfIxJpnGI17_v5257WLeZy2mGAli86T1Mf8_8hwETo
-    short-id: 1da052e4ba28e6e9
-  servername: nl2.panel11.ru
+    public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
+    short-id: f04729f65b9ea261
+  servername: ru1.samovargate.com
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: nl1.orpheous.ru
-  port: 443
+- name: 🇯🇵 日本 | JPN
+  server: download.yunzhongzhuan.com
+  port: 8880
   type: vless
-  uuid: ac5313ae-803b-4104-a047-94c97ecb621e
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  servername: nl1.orpheous.ru
-  client-fingerprint: firefox
-  network: tcp
+  uuid: 20f21d96-3700-46d9-9f63-5933403c0c18
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: restless-math-7bde.299-75c.workers.dev
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
+- name: 🇷🇺 俄罗斯 | RUS
   server: 185.22.154.103
   port: 10921
   type: ss
   cipher: aes-256-gcm
   password: cfe685726eea2c4b
-- name: 🇵🇱 波兰 | POL 4
-  server: pl08.myxasecure.space
-  port: 443
+- name: 🇩🇪 德国 | DEU 18
+  server: 46.8.225.26
+  port: 2090
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  servername: pl08.myxasecure.space
-  client-fingerprint: firefox
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
   network: tcp
   udp: true
 - name: 🇸🇪 瑞典 | SWE 3
@@ -277,22 +223,21 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 154.64.228.51
-  port: 44194
+- name: 🇸🇪 瑞典 | SWE 2
+  server: swdh1.redemshenvpn.site
+  port: 25060
   type: vless
-  uuid: 3857c126-6475-4dd7-d219-2e1d8fd43684
-  tls: false
+  uuid: deb9c015-1ffe-4e41-9d21-310eb0422a4c
+  tls: true
+  servername: swdh1.redemshenvpn.site
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
-- name: 🇺🇸 美国 | USA 12
-  server: 100.58.124.178
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 10
+    path: /xray
+    headers:
+      Host: swdh1.redemshenvpn.site
+  udp: true
+- name: 🇺🇸 美国 | USA 4
   server: 154.64.228.51
   port: 7739
   type: vmess
@@ -304,7 +249,14 @@ proxies:
   network: ws
   ws-opts:
     path: /arki
-- name: 🇺🇸 美国 | USA 14
+- name: 🇹🇭 泰国 | THA
+  server: 47.81.56.202
+  port: 44617
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: lhuULRwO4slM6k262pAC4cbq5A1H6z8eaOHV27vi7Yw=
+  udp: true
+- name: 🇺🇸 美国 | USA 27
   server: www.fbi.gov
   port: 2095
   type: vless
@@ -316,20 +268,41 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: pq1gqi8a.cf.3666888.xyz
-  port: 2052
+- name: 🇺🇸 美国 | USA 11
+  server: ad-020.fluxmxd18.info
+  port: 8443
   type: vless
-  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
+  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
+  tls: true
+  servername: ad-020.fluxmxd18.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-020.fluxmxd18.info
+  udp: true
+- name: 🇺🇦 乌克兰 | UKR
+  server: 194.54.80.37
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: XF0klw7870vXn3uQIxe19Q
+  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: download.yunzhongzhuan.com
+  port: 8880
+  type: vless
+  uuid: ce977d82-824b-4209-87f1-0719f78d6a2e
   tls: false
   network: ws
   ws-opts:
-    path: /sub
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: 3o3ed92e.xn--nxa.nyc.mn
+      Host: royal-mode-cf74.210-62d.workers.dev
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 18.244.214.27
+- name: 🇹🇭 泰国 | THA 2
+  server: 3.169.173.58
   port: 80
   type: vless
   uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
@@ -346,100 +319,89 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN 2
   - 🇨🇭 瑞士 | CHE
-  - 🇨🇭 瑞士 | CHE 2
-  - 🇦🇪 阿联酋 | ARE
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 16
-  - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 19
-  - 🇪🇸 西班牙 | ESP 2
+  - 🇩🇪 德国 | DEU 22
+  - 🇩🇪 德国 | DEU 20
+  - 🇩🇪 德国 | DEU 27
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇵🇱 波兰 | POL 4
+  - 🇬🇧 英国 | GBR 4
+  - 🇩🇪 德国 | DEU 30
+  - 🇯🇵 日本 | JPN
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇩🇪 德国 | DEU 18
   - 🇸🇪 瑞典 | SWE 3
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 13
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 4
   - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇦 乌克兰 | UKR
+  - 🇺🇸 美国 | USA 18
+  - 🇹🇭 泰国 | THA 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN 2
-  - 🇨🇭 瑞士 | CHE 2
+  - 🇨🇭 瑞士 | CHE
   - 🇬🇧 英国 | GBR 2
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 12
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇹🇭 泰国 | THA
+  - 🇺🇦 乌克兰 | UKR
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 | CHE
-  - 🇦🇪 阿联酋 | ARE
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 16
-  - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 19
-  - 🇪🇸 西班牙 | ESP 2
-  - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇵🇱 波兰 | POL 4
+  - 🇩🇪 德国 | DEU 22
+  - 🇩🇪 德国 | DEU 20
+  - 🇩🇪 德国 | DEU 27
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇫🇷 法国 | FRA
+  - 🇬🇧 英国 | GBR 4
+  - 🇩🇪 德国 | DEU 30
+  - 🇯🇵 日本 | JPN
+  - 🇩🇪 德国 | DEU 18
   - 🇸🇪 瑞典 | SWE 3
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 13
-  - 🇹🇭 泰国 | THA
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 18
+  - 🇹🇭 泰国 | THA 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 4
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE
-  - 🇨🇭 瑞士 | CHE 2
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 8
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN 2
-  - 🇦🇪 阿联酋 | ARE
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO

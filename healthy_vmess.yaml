@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 10
+- name: 🇺🇸 美国 | USA 4
   server: 154.64.228.51
   port: 7739
   type: vmess
@@ -22,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
