@@ -40,11 +40,11 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇲🇽 墨西哥 | MEX
-  server: cindy50.ceoiii.com
-  port: 36801
+- name: 🇰🇷 韩国 | KOR
+  server: sylva53.ceoiii.com
+  port: 36824
   type: vmess
-  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
   alterId: 0
   cipher: auto
   tls: false
@@ -69,6 +69,20 @@ proxies:
     path: /5f72f180-b21b-4b7a-8484-240759096785
     headers:
       Host: apjhdggyx.com
+- name: 🇸🇬 新加坡 | SGP 3
+  server: cindy58.ceoiii.com
+  port: 36809
+  type: vmess
+  uuid: d5cac7ea-a02f-3cf2-9ca8-f48b6666b419
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: ajax.microsoft.com
 - name: 🇺🇸 美国 | USA 10
   server: 154.64.228.51
   port: 7739
@@ -81,25 +95,11 @@ proxies:
   network: ws
   ws-opts:
     path: /arki
-- name: 🇰🇷 韩国 | KOR
-  server: sylva53.ceoiii.com
-  port: 36824
+- name: 🇲🇽 墨西哥 | MEX
+  server: cindy50.ceoiii.com
+  port: 36801
   type: vmess
-  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: ajax.microsoft.com
-- name: 🇸🇬 新加坡 | SGP 3
-  server: cindy58.ceoiii.com
-  port: 36809
-  type: vmess
-  uuid: d5cac7ea-a02f-3cf2-9ca8-f48b6666b419
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
   alterId: 0
   cipher: auto
   tls: false
@@ -119,10 +119,10 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 25
   - 🇩🇪 德国 | DEU 28
-  - 🇲🇽 墨西哥 | MEX
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 10
   - 🇰🇷 韩国 | KOR
+  - 🇳🇱 荷兰 | NLD 4
   - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 10
+  - 🇲🇽 墨西哥 | MEX
 rules:
 - MATCH,AUTO

@@ -32,18 +32,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
   udp: true
-- name: 🇩🇪 德国 | DEU 22
-  server: 151.101.56.7
-  port: 80
-  type: vless
-  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
 - name: 🇬🇧 英国 | GBR 5
   server: t1.hhaakk9922.com
   port: 46784
@@ -86,19 +74,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: t1.hhaakk9922.com
-  port: 36798
-  type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
-  tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
-  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: www.wto.org
   port: 2095
@@ -110,19 +85,6 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: t1.hhaakk9922.com
-  port: 36787
-  type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
-  tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
   udp: true
 - name: 🇺🇸 美国 | USA 27
   server: ad-013.zen2bswa.info
@@ -172,13 +134,10 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 16
-  - 🇩🇪 德国 | DEU 22
   - 🇬🇧 英国 | GBR 5
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 12
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 27
   - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 33

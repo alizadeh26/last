@@ -10,18 +10,25 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+- name: 🇬🇧 英国 | GBR 6
+  server: 89.249.74.188
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: XF0klw7870vXn3uQIxe19Q
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 185.22.154.103
   port: 10921
   type: ss
   cipher: aes-256-gcm
   password: cfe685726eea2c4b
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 195.58.48.19
-  port: 10921
+- name: 🇺🇸 美国 | USA 9
+  server: 156.146.38.195
+  port: 1080
   type: ss
-  cipher: aes-256-gcm
-  password: fbaf33bcffe53cf9
+  cipher: chacha20-ietf-poly1305
+  password: XF0klw7870vXn3uQIxe19Q
 - name: 🇹🇭 泰国 | THA 2
   server: 47.81.56.202
   port: 44617
@@ -29,12 +36,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: lhuULRwO4slM6k262pAC4cbq5A1H6z8eaOHV27vi7Yw=
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 156.146.38.195
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -42,9 +43,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 6
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇹🇭 泰国 | THA 2
   - 🇺🇸 美国 | USA 9
+  - 🇹🇭 泰国 | THA 2
 rules:
 - MATCH,AUTO
