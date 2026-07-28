@@ -4,14 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.233.228
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 15
   server: 167.82.0.1
   port: 80
@@ -52,14 +44,6 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 158.178.151.165
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: status.capitaloneok.com
   port: 443
@@ -74,6 +58,46 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: sync.v2.PushService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 12
+  server: getsavesafe.net
+  port: 443
+  type: vless
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+  servername: getsavesafe.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 5
+  server: t1.hhaakk9922.com
+  port: 46784
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  tls: true
+  servername: t1.hhaakk9922.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: t1.hhaakk9922.com
+  port: 36798
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  tls: true
+  servername: t1.hhaakk9922.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: www.wto.org
@@ -99,20 +123,6 @@ proxies:
     headers:
       Host: d3gxy6d0a9fs18.cloudfront.net
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: ad-013.zen2bswa.info
-  port: 8443
-  type: vless
-  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
-  tls: true
-  servername: ad-013.zen2bswa.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-013.zen2bswa.info
-  udp: true
 - name: 🇺🇸 美国 | USA 33
   server: ad-010.zen2bswa.info
   port: 8443
@@ -127,21 +137,36 @@ proxies:
     headers:
       Host: ad-010.zen2bswa.info
   udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: ad-013.zen2bswa.info
+  port: 8443
+  type: vless
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  servername: ad-013.zen2bswa.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-013.zen2bswa.info
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 16
   - 🇩🇪 德国 | DEU 22
-  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 12
+  - 🇬🇧 英国 | GBR 5
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
   - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 33
+  - 🇺🇸 美国 | USA 27
 rules:
 - MATCH,AUTO
