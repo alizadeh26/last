@@ -4,24 +4,216 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 4
-  server: 154.64.228.51
-  port: 7739
+- name: 🇩🇪 德国 | DEU 4
+  server: fj260403.freechatup.com
+  port: 27726
   type: vmess
-  uuid: 63d54df4-02eb-413e-beba-95e27bee760f
+  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 5
+  server: fj260306.freechatup.com
+  port: 27726
+  type: vmess
+  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 7
+  server: fj260204.freechatup.com
+  port: 27726
+  type: vmess
+  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 6
+  server: fj260304.freechatup.com
+  port: 27726
+  type: vmess
+  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 14
+  server: fj260203.freechatup.com
+  port: 27726
+  type: vmess
+  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 10
+  server: cu2.ainivp.com
+  port: 33208
+  type: vmess
+  uuid: 9227afcd-026e-781f-1abc-c06efabd2338
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: cu2.ainivp.com
+  network: ws
+  ws-opts:
+    path: /ray
+    headers:
+      Host: cu2.ainivp.com
+- name: 🇭🇰 香港 | HKG
+  server: yd3.ainivp.com
+  port: 33409
+  type: vmess
+  uuid: 9227afcd-026e-781f-1abc-c06efabd2338
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: yd3.ainivp.com
+  network: ws
+  ws-opts:
+    path: /ray
+    headers:
+      Host: yd3.ainivp.com
+- name: 🇯🇵 日本 | JPN 2
+  server: cu2.ainivp.com
+  port: 33203
+  type: vmess
+  uuid: 9227afcd-026e-781f-1abc-c06efabd2338
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: cu2.ainivp.com
+  network: ws
+  ws-opts:
+    path: /ray
+    headers:
+      Host: cu2.ainivp.com
+- name: 🇰🇷 韩国 | KOR 6
+  server: sylva53.ceoiii.com
+  port: 36824
+  type: vmess
+  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: ajax.microsoft.com
+- name: 🇳🇱 荷兰 | NLD 5
+  server: apjhdggyx.com
+  port: 443
+  type: vmess
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: apjhdggyx.com
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
+- name: 🇰🇷 韩国 | KOR
+  server: cu2.ainivp.com
+  port: 33200
+  type: vmess
+  uuid: 9227afcd-026e-781f-1abc-c06efabd2338
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: cu2.ainivp.com
+  network: ws
+  ws-opts:
+    path: /ray
+    headers:
+      Host: cu2.ainivp.com
+- name: 🇰🇷 韩国 | KOR 7
+  server: cu3.ainivp.com
+  port: 33204
+  type: vmess
+  uuid: 9227afcd-026e-781f-1abc-c06efabd2338
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: cu3.ainivp.com
+  network: ws
+  ws-opts:
+    path: /ray
+    headers:
+      Host: cu3.ainivp.com
+- name: 🇺🇸 美国 | USA 5
+  server: sylva51.ceoiii.com
+  port: 36822
+  type: vmess
+  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: ajax.microsoft.com
+- name: 🇸🇬 新加坡 | SGP 11
+  server: cu4.ainivp.com
+  port: 33402
+  type: vmess
+  uuid: 9227afcd-026e-781f-1abc-c06efabd2338
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: cu4.ainivp.com
+  network: ws
+  ws-opts:
+    path: /ray
+    headers:
+      Host: cu4.ainivp.com
+- name: 🇺🇸 美国 | USA 23
+  server: 192.204.57.30
+  port: 443
+  type: vmess
+  uuid: 4da9adf3-8c0c-48a7-92ac-429c72a76ef8
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /speed
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 10
+  - 🇭🇰 香港 | HKG
+  - 🇯🇵 日本 | JPN 2
+  - 🇰🇷 韩国 | KOR 6
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇰🇷 韩国 | KOR
+  - 🇰🇷 韩国 | KOR 7
+  - 🇺🇸 美国 | USA 5
+  - 🇸🇬 新加坡 | SGP 11
+  - 🇺🇸 美国 | USA 23
 rules:
 - MATCH,AUTO
