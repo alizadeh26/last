@@ -1,13 +1,24 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.184:8080#Server 12 🇳🇱
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.35:8080#Server 59 🇳🇱
-ss://YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==@185.196.61.82:8080#CA%F0%9F%87%A8%F0%9F%87%A6+%7C+185.196.61.82-8080+%7C+25.1ms
-vmess://eyJhZGQiOiJzeWx2YTUzLmNlb2lpaS5jb20iLCJwb3J0IjoiMzY4MjQiLCJpZCI6IjRmMTk4ZWE5LTMxMWUtM2RjZi05MTBjLTg5NmRlNmNiMTYwYiIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ2IjoiMiIsInBzIjoi6Z+p5Zu9XzA3MjkxNTAwNCIsImhvc3QiOiJhamF4Lm1pY3Jvc29mdC5jb20iLCJwYXRoIjoiL2hscy9jY3R2NXBoZC5tM3U4IiwidGxzIjoiIiwic25pIjoiIiwidHlwZSI6Im5vbmUiLCJzZXJ2ZXJQb3J0IjowLCJuYXRpb24iOiIifQ==
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.244-0107
-vless://29ca503d-e6b8-4509-b666-48133f450857@162.159.38.206:8443?security=tls&type=ws&path=/fdip&host=learn00.evany.de5.net&sni=learn00.evany.de5.net&fp=chrome&encryption=none#🇺🇸 136 - US - VLESS/WS/TLS/UTLS - 8443
-vless://1ad37675-b4cf-42fa-9dc5-83fd35cd63cb@104.21.40.223:8443?encryption=none&fp=chrome&host=ad-020.limaklhc6.info&path=/&security=tls&sni=ad-020.limaklhc6.info&type=ws#🇨🇦 100 - CA - VLESS/WS/TLS/UTLS - 8443
-vless://073d1d50-8478-47bf-a828-7a1b381931d5@108.162.192.75:443?path=/odiyfws&security=tls&encryption=none&insecure=0&host=octopusss.net&fp=chrome&type=ws&allowInsecure=0&sni=octopusss.net#🇨🇦 25 - CA - VLESS/WS/TLS/UTLS - 443
-vless://9047efd2-5aa4-4c9c-a58f-a5791b06c79e@ad-010.limaklhc6.info:8443?encryption=none&host=ad-010.limaklhc6.info&path=/&security=tls&sni=ad-010.limaklhc6.info&type=ws#🏳️ 489 - XX - VLESS/WS/TLS - 8443
-vless://efeefecf-72f9-4118-9e25-634ca2b2ca11@167.233.33.113:22012?security=reality&type=tcp&sni=login.yahoo.com&fp=chrome&sid=c6e19c434dc87df7&pbk=OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg&encryption=none#🏳️ 743 - XX - VLESS/REALITY/PBK/SID/UTLS - 22012
-trojan://ba07a8af-5544-48ac-ab62-3b6c00a44fa6@oplosgru-c.catcat321.com:20035?security=tls&sni=hk.catxstar.com&path=/#🇺🇸 56 - US - Trojan/TLS - 20035
-trojan://MITIVPN@104.16.72.41:443?security=tls&sni=ikk---7-MiTiVPN----o.aPp-cLoud.IR&alpn=http/1.1&type=ws&host=mitivpn---MiTiVPN---MiTiVPN.aPp-cLoud.IR&path=/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de#🇺🇸 23 - US - Trojan/WS/TLS - 443
-trojan://humanity@104.18.32.47:443?allowInsecure=1&host=www.gossipglove.com&path=/assignment&sni=www.gossipglove.com&type=ws#🇨🇦 95 - CA - Trojan/WS/TLS - 443
+trojan://0_Oms89nH82l_Ki813_Nxmw81_Rbt_Jq190Kl_m@167.150.100.133:450?security=tls&sni=grape-power-sg.roxa.org&alpn=http/1.1&fp=chrome&type=tcp&path=/ #Server 90 🇸🇬
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.181:8080#Server 77 🇳🇱
+vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@sca34.mysilipdir.com:8880?encryption=none&type=grpc&authority=v2rayNplus--v2rayNplus--v2rayNplus&mode=gun#Server 134 🇮🇹
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.205:8080#Server 176 🇳🇱
+vless://f667a096-5231-4cfb-8759-92bb32473139@77.91.68.70:55983?security=reality&encryption=none&pbk=nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg&headerType=none&fp=chrome&spx=%2F%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%40V2WRAY-%3Fed&type=tcp&sni=yahoo.com&sid=0e#MHH👉tizjo👈%F0%9F%87%A6%F0%9F%87%B2%5B%20%40tizjo%20%5D
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.191:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.191-0165
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#%F0%9F%87%B3%F0%9F%87%B1NL-193.29.139.151-0142
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.16:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.16-6014
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.36:443#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.36-0241
+vless://1ee6dbe4-b7bd-47bd-b6e5-23deb076f95b@45.131.212.22:443?encryption=none&flow=xtls-rprx-vision&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&sni=sellflow.org&type=tcp#🇷🇺 116 - RU - VLESS/REALITY/PBK/VISION - 443
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#US%F0%9F%87%BA%F0%9F%87%B8+%7C+37.19.198.160-443+%7C+11.68ms
+vless://431fe973-a43a-4fac-bf83-2a772e0d0625@60.249.101.16:10000?security=none&type=tcp&encryption=none#🇹🇼 202 - TW - VLESS - 10000
+vless://05cf7b0e-ad1a-42bb-80e7-73ae45b1019a@france.io-com-de-dev.org:8443?security=tls&type=ws&path=/api/voip/updates/static/x9i2&host=france.io-com-de-dev.org&alpn=http/1.1&sni=france.io-com-de-dev.org&fp=chrome&encryption=none#🇺🇸 21 - US - VLESS/WS/TLS/UTLS - 8443
+vless://2e8beadd-99bf-4fda-8692-8493886504bc@ad-007.cloud25075.info:8443?encryption=none&fp=chrome&host=ad-007.cloud25075.info&path=/&security=tls&sni=ad-007.cloud25075.info&type=ws#🇺🇸 165 - US - VLESS/WS/TLS/UTLS - 8443
+vless://955ffc74-bc8f-4335-aa53-d854a118bb0c@jush.sukario.ir:443?security=tls&type=ws&path=/mashdi&host=chish2.mashadiebod.org&sni=chish2.mashadiebod.org&fp=firefox&encryption=none#🇺🇸 507 - US - VLESS/WS/TLS/UTLS - 443
+vless://8b9986f7-889c-4213-bc64-fafe012fabd6@104.18.10.118:8880?encryption=none&security=none&type=ws&host=morning-cell-adfc.99-c38.workers.dev&path=/pyip=ProxyIP.US.CMLiussss.net#🇺🇸 469 - US - VLESS/WS - 8880
+vless://7968c546-02dc-4f8c-b791-934591a94cb2@104.16.72.50:443?type=ws&encryption=none&host=hhvl.hhapp.kdns.fr&path=/cbasur&security=tls&sni=hhvl.hhapp.kdns.fr#🇺🇸 360 - US - VLESS/WS/TLS - 443
+vless://c19735a7-ff97-a112-3f07-60e500f7719b@104.18.16.56:443?encryption=none&security=tls&sni=l-j--vMiTiVPN---MiTiVPN-pp-o.KingCloud-1.ir&alpn=http/1.1&type=ws&host=l-j-v-MiTiVPN---MiTiVPN-oo.KingCloud-1.ir&path=/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NL#🇺🇸 602 - US - VLESS/WS/TLS - 443
+vless://efeefecf-72f9-4118-9e25-634ca2b2ca11@gb.sv.temas-bor.ir:22012?security=reality&type=raw&sni=login.yahoo.com&fp=firefox&sid=c6e19c434dc87df7&pbk=OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg&encryption=none#🇺🇸 700 - US - VLESS/RAW/REALITY/PBK/SID/UTLS - 22012
+trojan://humanity@202.37.33.80:443?path=/assignment&security=tls&insecure=0&host=www.creationlong.org&type=ws&allowInsecure=0&sni=www.creationlong.org#🇳🇿 132 - NZ - Trojan/WS/TLS - 443
+13.53.198.63:443	🇸🇪 瑞典 | SWE
+trojan://humanity@172.66.44.211:443?host=www.multiplydose.com&path=/assignment&sni=www.multiplydose.com&type=ws#🇺🇸 113 - US - Trojan/WS/TLS - 443
+163.176.152.109:59319	🇧🇷 巴西 | BRA 2
+nl.furryraccoon.net:443	🇳🇱 荷兰 | NLD 16
