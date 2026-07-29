@@ -12,14 +12,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.235.225
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇫🇷 法国 | FRA 3
   server: 13.38.197.216
   port: 22222
@@ -35,6 +27,19 @@ proxies:
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 4
+  server: t1.hhaakk9922.com
+  port: 46780
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  tls: true
+  servername: t1.hhaakk9922.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
   udp: true
 - name: 🇬🇧 英国 | GBR 5
   server: t1.hhaakk9922.com
@@ -62,13 +67,18 @@ proxies:
     grpc-mode: gun
     grpc-service-name: ljfxz
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 141.148.235.102
-  port: 62145
+- name: 🇩🇪 德国 | DEU 9
+  server: www.true.th
+  port: 80
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: ff485c50-b364-4b4f-90be-ea576b949dd3
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /fnetvpn2026
+    headers:
+      Host: d3gxy6d0a9fs18.cloudfront.net
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 64.188.77.22
   port: 2053
@@ -93,20 +103,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 87.199.205.120.sslip.io
-  port: 443
-  type: vless
-  uuid: f165affe-ffb4-4f13-a081-f14434e51152
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bKfIxJpnGI17_v5257WLeZy2mGAli86T1Mf8_8hwETo
-    short-id: 1da052e4ba28e6e9
-  servername: 87.199.205.120.sslip.io
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 14
   server: getsavesafe.net
   port: 443
@@ -121,50 +117,19 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: www.true.th
-  port: 80
+- name: 🇳🇱 荷兰 | NLD 9
+  server: 87.199.205.120.sslip.io
+  port: 443
   type: vless
-  uuid: ff485c50-b364-4b4f-90be-ea576b949dd3
-  tls: false
-  network: ws
-  ws-opts:
-    path: /fnetvpn2026
-    headers:
-      Host: d3gxy6d0a9fs18.cloudfront.net
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 4
-  server: 89.19.223.97
-  port: 8443
-  type: vless
-  uuid: d7790b85-9659-4558-a405-e0ab57d32984
-  tls: false
+  uuid: f165affe-ffb4-4f13-a081-f14434e51152
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: bKfIxJpnGI17_v5257WLeZy2mGAli86T1Mf8_8hwETo
+    short-id: 1da052e4ba28e6e9
+  servername: 87.199.205.120.sslip.io
+  client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 151.101.56.7
-  port: 80
-  type: vless
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
-  tls: false
-  servername: BankMelat.glObal.ssl.faStly.nEt.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: icy-snowflake-1f56.147-1ea.workers.dev
   udp: true
 - name: 🇬🇧 英国 | GBR 6
   server: ad-010.atlast9hdp.info
@@ -180,6 +145,27 @@ proxies:
     headers:
       Host: ad-010.atlast9hdp.info
   udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: t1.hhaakk9922.com
+  port: 36789
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  tls: true
+  servername: t1.hhaakk9922.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 4
+  server: 89.19.223.97
+  port: 8443
+  type: vless
+  uuid: d7790b85-9659-4558-a405-e0ab57d32984
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 21
   server: www.wto.org
   port: 2095
@@ -192,18 +178,33 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: t1.hhaakk9922.com
-  port: 36788
+- name: 🇵🇱 波兰 | POL
+  server: 144.31.0.34
+  port: 7443
   type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  uuid: 1fef5248-fdd2-40d6-b3b9-6c33d4e74724
   tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
+  alpn:
+  - http/1.1
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8wD0IhR27ftD5LyJDq9CaFzi6DgA4vFtB-UP6QIdWVc
+    short-id: e8ca5079a5e91481
+  servername: _custom_
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 34
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
 - name: 🇺🇸 美国 | USA 29
   server: ad-020.novayjr9g.info
@@ -218,18 +219,6 @@ proxies:
     path: /
     headers:
       Host: ad-020.novayjr9g.info
-  udp: true
-- name: 🇺🇸 美国 | USA 34
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
 - name: 🇺🇸 美国 | USA 28
   server: ad-010.limaklhc6.info
@@ -252,25 +241,23 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇫🇷 法国 | FRA 3
   - 🇫🇷 法国 | FRA 4
+  - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 5
   - 🇯🇵 日本 | JPN
-  - 🇳🇱 荷兰 | NLD 5
+  - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 7
   - 🇲🇩 摩尔多瓦 | MDA
-  - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 14
-  - 🇩🇪 德国 | DEU 9
-  - 🇸🇪 瑞典 | SWE 4
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 14
+  - 🇳🇱 荷兰 | NLD 9
   - 🇬🇧 英国 | GBR 6
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇪 瑞典 | SWE 4
   - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 29
+  - 🇵🇱 波兰 | POL
   - 🇺🇸 美国 | USA 34
+  - 🇺🇸 美国 | USA 29
   - 🇺🇸 美国 | USA 28
 rules:
 - MATCH,AUTO
