@@ -4,6 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.230.78
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 9
   server: www.true.th
   port: 80
@@ -15,6 +23,19 @@ proxies:
     path: /fnetvpn2026
     headers:
       Host: d3gxy6d0a9fs18.cloudfront.net
+  udp: true
+- name: 🇬🇧 英国 | GBR 5
+  server: t1.hhaakk9922.com
+  port: 46784
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  tls: true
+  servername: t1.hhaakk9922.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
   udp: true
 - name: 🇯🇵 日本 | JPN
   server: t1.hhaakk9922.com
@@ -43,19 +64,6 @@ proxies:
     headers:
       Host: ad-010.atlast9hdp.info
   udp: true
-- name: 🇬🇧 英国 | GBR 5
-  server: t1.hhaakk9922.com
-  port: 46784
-  type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
-  tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 64.188.77.22
   port: 2053
@@ -65,20 +73,6 @@ proxies:
   network: ws
   ws-opts:
     path: /api
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 87.199.205.120.sslip.io
-  port: 443
-  type: vless
-  uuid: f165affe-ffb4-4f13-a081-f14434e51152
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bKfIxJpnGI17_v5257WLeZy2mGAli86T1Mf8_8hwETo
-    short-id: 1da052e4ba28e6e9
-  servername: 87.199.205.120.sslip.io
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 14
   server: getsavesafe.net
@@ -94,17 +88,19 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇲🇩 摩尔多瓦 | MDA
-  server: mold1.panel11.ru
-  port: 443
+- name: 🇵🇱 波兰 | POL
+  server: 144.31.0.34
+  port: 7443
   type: vless
-  uuid: f165affe-ffb4-4f13-a081-f14434e51152
+  uuid: 1fef5248-fdd2-40d6-b3b9-6c33d4e74724
   tls: true
+  alpn:
+  - http/1.1
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: hkIcYGdaztjQD_PGSyljnzpVu5fQNdetqSlXk3rUllY
-    short-id: 41d87f620985209c
-  servername: mold1.panel11.ru
+    public-key: 8wD0IhR27ftD5LyJDq9CaFzi6DgA4vFtB-UP6QIdWVc
+    short-id: e8ca5079a5e91481
+  servername: _custom_
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -120,8 +116,46 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 151.101.56.7
+  port: 80
+  type: vless
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  tls: false
+  servername: BankMelat.glObal.ssl.faStly.nEt.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+  udp: true
 - name: 🇺🇸 美国 | USA 21
   server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 22
+  server: t1.hhaakk9922.com
+  port: 36799
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  tls: true
+  servername: t1.hhaakk9922.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
+  udp: true
+- name: 🇺🇸 美国 | USA 34
+  server: www.fbi.gov
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -160,36 +194,26 @@ proxies:
     headers:
       Host: ad-010.limaklhc6.info
   udp: true
-- name: 🇺🇸 美国 | USA 34
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 9
+  - 🇬🇧 英国 | GBR 5
   - 🇯🇵 日本 | JPN
   - 🇬🇧 英国 | GBR 6
-  - 🇬🇧 英国 | GBR 5
   - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 14
-  - 🇲🇩 摩尔多瓦 | MDA
+  - 🇵🇱 波兰 | POL
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 29
   - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 34
 rules:
 - MATCH,AUTO

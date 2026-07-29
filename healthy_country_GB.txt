@@ -1,8 +1,10 @@
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6ejBkSGpEZm9hU2FadVJGTEdILWhOZkJBTFNFSlVZRA==@194.164.92.198:1234#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+194.164.92.198-1234+%7C+94.49ms
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.178-443+%7C+85.17ms
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.179-443+%7C+84.72ms
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.178-0270
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.179-0267
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.181-443+%7C+85.74ms
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.182:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.182-0269
 ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-0207
-vless://e480ec05-1570-4a7d-b377-c3a20f80afa8@51.89.229.242:2053?security=reality&type=grpc&mode=gun&serviceName=api.v1.data&sni=play.google.com&fp=firefox&sid=524efc1f88592266&pbk=GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY#🇬🇧 556 - GB - VLESS/GRPC/REALITY/PBK/SID/UTLS - 2053
+vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?encryption=none&host=google.com&path=/vless/&security=none&type=ws#🇬🇧 457 - GB - VLESS/WS - 80
+vless://b8ae8186-22ed-413b-b0de-dc590bbbc3bc@britain.relvuno.ir:6500?security=reality&type=tcp&sni=play.google.com&fp=qq&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&encryption=none#🇬🇧 508 - GB - VLESS/REALITY/PBK/UTLS - 6500
+vless://e480ec05-1570-4a7d-b377-c3a20f80afa8@gr043.bamajobin.ir:2053?security=reality&type=grpc&mode=gun&serviceName=api.v1.data&sni=play.google.com&fp=firefox&sid=524efc1f88592266&pbk=GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY&encryption=none#🇬🇧 586 - GB - VLESS/GRPC/REALITY/PBK/SID/UTLS - 2053
 trojan://521314@104.248.161.136:443?host=tjplay.lxdxo.kdns.fr&path=/&sni=tjplay.lxdxo.kdns.fr&type=ws#🇬🇧 3 - GB - Trojan/WS/TLS - 443

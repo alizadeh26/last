@@ -16,13 +16,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: XF0klw7870vXn3uQIxe19Q
-- name: 🇸🇪 瑞典 | SWE
-  server: 13.53.198.63
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -31,6 +24,5 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇳🇱 荷兰 | NLD 2
-  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
