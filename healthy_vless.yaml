@@ -4,12 +4,45 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 15
-  server: 167.82.0.1
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.239.173
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 167.82.0.4
   port: 80
   type: vless
   uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
   tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 167.82.0.17
+  port: 80
+  type: vless
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+  udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: 151.101.56.7
+  port: 80
+  type: vless
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  tls: false
+  servername: BankMelat.glObal.ssl.faStly.nEt.
   network: ws
   ws-opts:
     path: /
@@ -32,20 +65,100 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
   udp: true
-- name: 🇬🇧 英国 | GBR 5
-  server: t1.hhaakk9922.com
-  port: 46784
+- name: 🇩🇪 德国 | DEU 14
+  server: ad-005.clouduhtpv.info
+  port: 8443
   type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
   tls: true
-  servername: t1.hhaakk9922.com
+  servername: ad-005.clouduhtpv.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-005.clouduhtpv.info
+  udp: true
+- name: 🇩🇪 德国 | DEU 18
+  server: fn.fifapes.monster
+  port: 2090
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 26
+  server: 167.82.0.1
+  port: 80
+  type: vless
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: 95.85.224.3
+  port: 8443
+  type: vless
+  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+- name: 🇩🇪 德国 | DEU 25
+  server: site.up-connect.online
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: site.up-connect.online
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇪🇸 西班牙 | ESP 2
+  server: fat-sp.arpozan.cloud
+  port: 8443
+  type: vless
+  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
+  tls: true
+  alpn:
+  - h2
+  servername: fat-sp.arpozan.cloud
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: ljfxz
+    grpc-service-name: grpc
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 150.230.20.164
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: 95.85.228.161
+  port: 8443
+  type: vless
+  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
   server: status.capitaloneok.com
   port: 443
   type: vless
@@ -60,21 +173,76 @@ proxies:
     grpc-mode: gun
     grpc-service-name: sync.v2.PushService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 12
-  server: getsavesafe.net
+- name: 🇵🇱 波兰 | POL 6
+  server: 77.83.246.92
+  port: 8443
+  type: vless
+  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: pl10.myxasecure.space
   port: 443
   type: vless
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
-  servername: getsavesafe.net
-  client-fingerprint: qq
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: pl10.myxasecure.space
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 7
+- name: 🇵🇱 波兰 | POL 7
+  server: 144.31.0.34
+  port: 7443
+  type: vless
+  uuid: 1fef5248-fdd2-40d6-b3b9-6c33d4e74724
+  tls: true
+  alpn:
+  - http/1.1
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8wD0IhR27ftD5LyJDq9CaFzi6DgA4vFtB-UP6QIdWVc
+    short-id: e8ca5079a5e91481
+  servername: _custom_
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: pro-se.emrata.top
+  port: 443
+  type: vless
+  uuid: 72b9b9bd-8cb9-49ed-bfd4-20fab16829ba
+  tls: true
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+  servername: pro-se.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: ezaccess1-x4g-ezaccess1-c619.up.railway.app
+  port: 443
+  type: vless
+  uuid: 5a832c52-da28-b23c-ba24-d8a900e3982e
+  tls: true
+  alpn:
+  - http/1.1
+  servername: ezaccess1-x4g-ezaccess1-c619.up.railway.app
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /ws/5a832c52-da28-b23c-ba24-d8a900e3982e
+    headers:
+      Host: ezaccess1-x4g-ezaccess1-c619.up.railway.app
+  udp: true
+- name: 🇺🇸 美国 | USA 14
   server: www.wto.org
   port: 2095
   type: vless
@@ -86,19 +254,31 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: ad-013.zen2bswa.info
+- name: 🇺🇸 美国 | USA 13
+  server: ad-005.fluxmxd18.info
   port: 8443
   type: vless
-  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
   tls: true
-  servername: ad-013.zen2bswa.info
+  servername: ad-005.fluxmxd18.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-013.zen2bswa.info
+      Host: ad-005.fluxmxd18.info
+  udp: true
+- name: 🇺🇸 美国 | USA 26
+  server: 151.101.193.54
+  port: 80
+  type: vless
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
 - name: 🇹🇭 泰国 | THA
   server: www.true.th
@@ -112,34 +292,34 @@ proxies:
     headers:
       Host: d3gxy6d0a9fs18.cloudfront.net
   udp: true
-- name: 🇺🇸 美国 | USA 33
-  server: ad-010.zen2bswa.info
-  port: 8443
-  type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.zen2bswa.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.zen2bswa.info
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 15
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 16
-  - 🇬🇧 英国 | GBR 5
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 12
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 27
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 18
+  - 🇩🇪 德国 | DEU 26
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇩🇪 德国 | DEU 25
+  - 🇪🇸 西班牙 | ESP 2
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇵🇱 波兰 | POL 6
+  - 🇵🇱 波兰 | POL 2
+  - 🇵🇱 波兰 | POL 7
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 26
   - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 33
 rules:
 - MATCH,AUTO
