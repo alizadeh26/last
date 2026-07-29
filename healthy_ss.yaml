@@ -4,24 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA 2
-  server: 163.176.152.109
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
 - name: 🇧🇷 巴西 | BRA
   server: 137.131.170.144
   port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 🇳🇱 荷兰 | NLD
-  server: 134.98.145.69
-  port: 45819
+- name: 🇧🇷 巴西 | BRA 2
+  server: 163.176.152.109
+  port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
 - name: 🇳🇱 荷兰 | NLD 2
   server: 190.2.147.119
   port: 1080
@@ -48,9 +42,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA 2
   - 🇧🇷 巴西 | BRA
-  - 🇳🇱 荷兰 | NLD
+  - 🇧🇷 巴西 | BRA 2
   - 🇳🇱 荷兰 | NLD 2
   - 🇸🇪 瑞典 | SWE 2
   - 🇸🇪 瑞典 | SWE
