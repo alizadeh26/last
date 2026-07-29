@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 29
+- name: 🇩🇪 德国 | DEU 19
   server: jeffptrade.com
   port: 443
   type: vmess
@@ -19,26 +19,11 @@ proxies:
     path: /odixvws
     headers:
       Host: jeffptrade.com
-- name: 🇭🇰 香港 | HKG 2
-  server: yd4.ainivp.com
-  port: 33410
+- name: 🇸🇬 新加坡 | SGP 4
+  server: cindy58.ceoiii.com
+  port: 36809
   type: vmess
-  uuid: 9301afcd-025e-781f-1abc-c10efabd1211
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: yd4.ainivp.com
-  network: ws
-  ws-opts:
-    path: /ray
-    headers:
-      Host: yd4.ainivp.com
-- name: 🇲🇽 墨西哥 | MEX
-  server: cindy50.ceoiii.com
-  port: 36801
-  type: vmess
-  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  uuid: d5cac7ea-a02f-3cf2-9ca8-f48b6666b419
   alterId: 0
   cipher: auto
   tls: false
@@ -48,59 +33,14 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: ajax.microsoft.com
-- name: 🇺🇸 美国 | USA 19
-  server: cindy51.ceoiii.com
-  port: 36802
-  type: vmess
-  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: ajax.microsoft.com
-- name: 🇺🇸 美国 | USA 16
-  server: sylva51.ceoiii.com
-  port: 36822
-  type: vmess
-  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: ajax.microsoft.com
-- name: 🇲🇾 马来西亚 | MYS
-  server: cindy52.ceoiii.com
-  port: 36803
-  type: vmess
-  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: ajax.microsoft.com
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 29
-  - 🇭🇰 香港 | HKG 2
-  - 🇲🇽 墨西哥 | MEX
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 16
-  - 🇲🇾 马来西亚 | MYS
+  - 🇩🇪 德国 | DEU 19
+  - 🇸🇬 新加坡 | SGP 4
 rules:
 - MATCH,AUTO

@@ -1,6 +1,10 @@
 vless://eb77be10-9d9e-527b-a78d-8caaf58992d6@45.13.119.219:8888?encryption=none&security=none&type=tcp#Server 22 🇫🇷
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkaU9NQlU1SUR2SmNGcXlOUGJSallS@137.74.119.18:10443#Server 93 🇫🇷
-vless://9f0baff8-bdee-4de9-9515-bcc4932b41fa@194.76.154.31:40443?security=reality&encryption=none&pbk=MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ&headerType=none&type=tcp&sni=deepl.com&sid=a8ae#REALITY|CY🇨🇾
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@62.210.91.10:23576?security=reality&type=tcp&sni=fuck.rkn&fp=chrome&flow=xtls-rprx-vision&sid=01&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&encryption=none#🇫🇷 171 - FR - VLESS/REALITY/PBK/SID/VISION/UTLS - 23576
-vless://795d5f5b-318c-49a6-844f-ee2ab63bbe94@35.180.187.82:12228?security=reality&type=raw&sni=www.tesla.com&fp=chrome&flow=xtls-rprx-vision&sid=59625eb3275249ca&pbk=hvyaRhFtrj3cGv1Ya5uXpE256i2PoUi2fOgU0KlvKmI&encryption=none#🇺🇸 275 - US - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 12228
-trojan://humanity@81.255.155.10:443?host=www.creationlong.org&path=/assignment&sni=www.creationlong.org&type=ws#🇺🇸 264 - US - Trojan/WS/TLS - 443
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@217.138.207.106:1080#🆔ar14n24b%20🔒%20SS-TCP-TLS%20🇫🇷%20FR%20147ms
+vless://7b4b7d4e-7a53-4c0c-bd8e-9f3b1b2c7f21@51.91.158.180:443?encryption=none&type=tcp&security=reality&headerType=none&sni=www.speedtest.net&fp=firefox&insecure=1&allowInsecure=1&pbk=wwH_L9FmhJ7AyOBKm9J8YGKdVo1G-QlDEuw5-s3eGEM&sid=9a4c7d2f8e1b6a3c&flow=xtls-rprx-vision#🆔configfa%20🔒%20VL-TCP-%20🇫🇷%20FR%20167ms
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@62.210.91.10:23576?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=fuck.rkn&fp=chrome&flow=xtls-rprx-vision&sid=01&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s#🇫🇷 243 - FR - VLESS/REALITY/PBK/SID/VISION/UTLS - 23576
+vless://795d5f5b-318c-49a6-844f-ee2ab63bbe94@35.180.187.82:12228?security=reality&type=raw&sni=www.tesla.com&fp=chrome&flow=xtls-rprx-vision&sid=59625eb3275249ca&pbk=hvyaRhFtrj3cGv1Ya5uXpE256i2PoUi2fOgU0KlvKmI&encryption=none#🇫🇷 369 - FR - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 12228
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.44.201:22222?encryption=none&security=none&type=tcp#🏳️ 637 - XX - VLESS - 22222
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.44.201:22223?encryption=none&security=none&type=tcp#🏳️ 638 - XX - VLESS - 22223
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.44.201:22224?#🏳️ 639 - XX - VLESS - 22224
+trojan://humanity@81.255.155.10:443?host=www.creationlong.org&path=/assignment&sni=www.creationlong.org&type=ws#🇫🇷 154 - FR - Trojan/WS/TLS - 443

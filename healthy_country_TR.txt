@@ -1,4 +1,4 @@
 trojan://humanity@86.38.214.205:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#Server 8 🇱🇹
-trojan://521314@103.83.87.133:443?path=%2F&security=tls&insecure=0&host=tjplay.lxdxo.kdns.fr&type=ws&allowInsecure=0&sni=tjplay.lxdxo.kdns.fr#Server 2 🇹🇷
-vmess://eyJhZGQiOiI1LjE4OC4xOTAuMjUyIiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InJhdyIsInYiOiIyIiwicHMiOiLlnJ/ogLPlhbZfMDcyOTEwMDAxIiwiaG9zdCI6IiIsInBhdGgiOiIiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
-vless://1f29762d-3f23-4207-9e39-f774de5d49ba@185.39.204.155:8443?type=grpc&serviceName=grpc#🇹🇷 83 - TR - VLESS/GRPC - 8443
+trojan://521314@103.83.87.111:443?path=%2F&security=tls&insecure=1&host=tjplay.lxdxo.kdns.fr&type=ws&allowInsecure=1&sni=tjplay.lxdxo.kdns.fr#Server 1 🇹🇷
+ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.113.194:8119#TR%F0%9F%87%B9%F0%9F%87%B7+%7C+38.180.113.194-8119+%7C+132.3ms
+vless://1f29762d-3f23-4207-9e39-f774de5d49ba@185.39.204.155:8443?encryption=none&security=none&type=grpc&serviceName=grpc&mode=gun#🇹🇷 106 - TR - VLESS/GRPC - 8443

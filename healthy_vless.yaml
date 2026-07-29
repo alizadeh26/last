@@ -4,19 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.239.173
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 167.82.0.4
+- name: 🇩🇪 德国 | DEU 14
+  server: 151.101.193.54
   port: 80
   type: vless
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  uuid: 6bd7815d-9fb0-41c6-87ef-ffc713bf6b8f
   tls: false
   network: ws
   ws-opts:
@@ -24,19 +16,7 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 167.82.0.17
-  port: 80
-  type: vless
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
+- name: 🇩🇪 德国 | DEU 20
   server: 151.101.56.7
   port: 80
   type: vless
@@ -49,69 +29,84 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇩🇪 德国 | DEU 16
-  server: get.noneok.com
+- name: 🇩🇪 德国 | DEU 2
+  server: mag.faradadeh.xyz
   port: 443
   type: vless
-  uuid: ad5ff95a-81a8-4006-8771-8e33f0bcd9aa
+  uuid: 0d3a6c59-c89d-49c6-a480-4a615ed26314
   tls: true
-  reality-opts:
-    public-key: 8foPheDUi9ULJfe5UuxfspzwQ7J5JZg-2J1XkhL1B1I
-    short-id: 0768452b5e736e7f
-  servername: get.noneok.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.StreamService
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: video.php
+    headers:
+      Host: mag.faradadeh.xyz
   udp: true
-- name: 🇩🇪 德国 | DEU 14
-  server: ad-005.clouduhtpv.info
+- name: 🇫🇷 法国 | FRA 7
+  server: ad-020.atlast9hdp.info
   port: 8443
   type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
+  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
   tls: true
-  servername: ad-005.clouduhtpv.info
+  servername: ad-020.atlast9hdp.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-005.clouduhtpv.info
+      Host: ad-020.atlast9hdp.info
   udp: true
-- name: 🇩🇪 德国 | DEU 18
-  server: fn.fifapes.monster
-  port: 2090
+- name: 🇬🇧 英国 | GBR
+  server: ad-010.flux3ni5o.info
+  port: 8443
   type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 26
-  server: 167.82.0.1
-  port: 80
-  type: vless
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
-  tls: false
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  servername: ad-010.flux3ni5o.info
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
+      Host: ad-010.flux3ni5o.info
   udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: 95.85.224.3
-  port: 8443
+- name: 🇳🇱 荷兰 | NLD 11
+  server: skk.moe
+  port: 8880
   type: vless
-  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
+  uuid: 0de87762-7d50-49e7-a5ae-7ac85760e083
   tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: delicate-fog-bbae.205-635.workers.dev
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: 64.188.77.22
+  port: 2053
+  type: vless
+  uuid: 63f96e98-f83f-48d0-9cd0-f31e8071f67f
+  tls: false
+  network: ws
+  ws-opts:
+    path: /api
+  udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: t1.hhaakk9922.com
+  port: 36795
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  tls: true
+  servername: t1.hhaakk9922.com
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: grpc
+    grpc-service-name: ljfxz
   udp: true
-- name: 🇩🇪 德国 | DEU 25
-  server: site.up-connect.online
+- name: 🇳🇱 荷兰 | NLD 10
+  server: test.skorostnet.space
   port: 443
   type: vless
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
@@ -120,71 +115,11 @@ proxies:
   reality-opts:
     public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
     short-id: d67ec5a8fc40ebea
-  servername: site.up-connect.online
+  servername: test.skorostnet.space
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇪🇸 西班牙 | ESP 2
-  server: fat-sp.arpozan.cloud
-  port: 8443
-  type: vless
-  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
-  tls: true
-  alpn:
-  - h2
-  servername: fat-sp.arpozan.cloud
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 150.230.20.164
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 95.85.228.161
-  port: 8443
-  type: vless
-  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: status.capitaloneok.com
-  port: 443
-  type: vless
-  uuid: 649291ba-27db-423a-a34b-6ddade44973f
-  tls: true
-  alpn:
-  - h2
-  servername: status.capitaloneok.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: sync.v2.PushService
-  udp: true
-- name: 🇵🇱 波兰 | POL 6
-  server: 77.83.246.92
-  port: 8443
-  type: vless
-  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
+- name: 🇵🇱 波兰 | POL 7
   server: pl10.myxasecure.space
   port: 443
   type: vless
@@ -198,23 +133,21 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL 7
-  server: 144.31.0.34
-  port: 7443
+- name: 🇵🇱 波兰 | POL 10
+  server: my.neoncloak.space
+  port: 443
   type: vless
-  uuid: 1fef5248-fdd2-40d6-b3b9-6c33d4e74724
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
   tls: true
-  alpn:
-  - http/1.1
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 8wD0IhR27ftD5LyJDq9CaFzi6DgA4vFtB-UP6QIdWVc
-    short-id: e8ca5079a5e91481
-  servername: _custom_
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: my.neoncloak.space
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
+- name: 🇸🇪 瑞典 | SWE
   server: pro-se.emrata.top
   port: 443
   type: vless
@@ -226,23 +159,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: ezaccess1-x4g-ezaccess1-c619.up.railway.app
-  port: 443
+- name: 🇹🇭 泰国 | THA 2
+  server: 18.239.134.69
+  port: 80
   type: vless
-  uuid: 5a832c52-da28-b23c-ba24-d8a900e3982e
-  tls: true
-  alpn:
-  - http/1.1
-  servername: ezaccess1-x4g-ezaccess1-c619.up.railway.app
-  client-fingerprint: ios
+  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  tls: false
   network: ws
   ws-opts:
-    path: /ws/5a832c52-da28-b23c-ba24-d8a900e3982e
+    path: /
     headers:
-      Host: ezaccess1-x4g-ezaccess1-c619.up.railway.app
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   udp: true
-- name: 🇺🇸 美国 | USA 14
+- name: 🇺🇸 美国 | USA 8
   server: www.wto.org
   port: 2095
   type: vless
@@ -254,43 +183,25 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 172.64.88.251
+  port: 8880
+  type: vless
+  uuid: efb0a3fe-af52-45c5-b397-1a6866d88d67
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: tight-recipe-11ad.252-068.workers.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 13
-  server: ad-005.fluxmxd18.info
-  port: 8443
+  server: 180.178.60.252
+  port: 10000
   type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
-  tls: true
-  servername: ad-005.fluxmxd18.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-005.fluxmxd18.info
-  udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: 151.101.193.54
-  port: 80
-  type: vless
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
   tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: ff485c50-b364-4b4f-90be-ea576b949dd3
-  tls: false
-  network: ws
-  ws-opts:
-    path: /fnetvpn2026
-    headers:
-      Host: d3gxy6d0a9fs18.cloudfront.net
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -298,28 +209,21 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 16
   - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 18
-  - 🇩🇪 德国 | DEU 26
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇩🇪 德国 | DEU 25
-  - 🇪🇸 西班牙 | ESP 2
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 10
+  - 🇩🇪 德国 | DEU 20
+  - 🇩🇪 德国 | DEU 2
+  - 🇫🇷 法国 | FRA 7
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 9
-  - 🇵🇱 波兰 | POL 6
-  - 🇵🇱 波兰 | POL 2
+  - 🇲🇾 马来西亚 | MYS
+  - 🇳🇱 荷兰 | NLD 10
   - 🇵🇱 波兰 | POL 7
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 14
+  - 🇵🇱 波兰 | POL 10
+  - 🇸🇪 瑞典 | SWE
+  - 🇹🇭 泰国 | THA 2
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 26
-  - 🇹🇭 泰国 | THA
 rules:
 - MATCH,AUTO
