@@ -10,25 +10,12 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 🇧🇷 巴西 | BRA 2
-  server: 163.176.152.109
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
 - name: 🇳🇱 荷兰 | NLD 2
   server: 190.2.147.119
   port: 1080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: XF0klw7870vXn3uQIxe19Q
-- name: 🇸🇪 瑞典 | SWE 2
-  server: 51.20.125.180
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: 13.53.198.63
   port: 443
@@ -43,9 +30,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
   - 🇳🇱 荷兰 | NLD 2
-  - 🇸🇪 瑞典 | SWE 2
   - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
