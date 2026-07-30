@@ -4,75 +4,122 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 3
-  server: ddc-chr.astralweb.tech
-  port: 443
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.236.254
+  port: 62145
   type: vless
-  uuid: 3ad1d277-5715-4ca1-84db-5baea72f822d
-  tls: true
-  alpn:
-  - h2
-  servername: ddc-chr.astralweb.tech
-  client-fingerprint: firefox
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: ad-010.flux3ni5o.info
-  port: 8443
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.191.146
+  port: 62145
   type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.flux3ni5o.info
-  client-fingerprint: chrome
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 193.104.58.45
+  port: 59167
+  type: vless
+  uuid: 1d977a71-920e-4846-98b1-24f8e2fa0ea3
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 12
+  server: vpn.574ck.xyz
+  port: 2083
+  type: vless
+  uuid: 52ed7408-efac-4d3a-935e-3cdc8e887225
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vpn.574ck.xyz
+  udp: true
+- name: 🇫🇷 法国 | FRA 5
+  server: 89.208.113.16
+  port: 443
+  type: vless
+  uuid: adce7c2a-3191-49ae-b61c-9b8258ea1b0e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 14
+  server: ru-de.apruxdomain.xyz
+  port: 80
+  type: vless
+  uuid: 84dc79c7-e443-489d-bf07-b4bb825f57d9
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-010.flux3ni5o.info
+      Host: ru-de.apruxdomain.xyz
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: getsavesafe.net
+- name: 🇮🇪 爱尔兰 | IRL
+  server: ai.tunnelpoint.space
   port: 443
   type: vless
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
-  servername: getsavesafe.net
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+  servername: ai.tunnelpoint.space
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: ad-010.orbitqgr7v.info
-  port: 8443
+- name: 🇭🇰 香港 | HKG 2
+  server: 45.125.32.115
+  port: 443
   type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.orbitqgr7v.info
-  client-fingerprint: chrome
+  uuid: e2c8fa8c-886d-4649-bd59-cf73bee48b55
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 195.63.136.235
+  port: 443
+  type: vless
+  uuid: 0f026ffa-077e-46cf-b35a-3425227bd462
+  tls: false
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: ad-010.orbitqgr7v.info
+    path: /rw
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: ad-005.fluxmxd18.info
-  port: 8443
+- name: 🇷🇺 俄罗斯 | RUS
+  server: pro-ru-bridge.emrata.top
+  port: 443
   type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
+  uuid: 831f56ff-d117-4a72-bb2b-a5e44eab6fbf
   tls: true
-  servername: ad-005.fluxmxd18.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-005.fluxmxd18.info
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
+  servername: pro-ru-bridge.emrata.top
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: rf4.o4ka-internet.com
+  port: 443
+  type: vless
+  uuid: a03df445-0666-4d61-acde-9705009e409c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: rf4.o4ka-internet.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 6
   server: sw1-chr.astralweb.tech
   port: 443
   type: vless
@@ -86,21 +133,7 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: pr.cryptoofarm.com
-  port: 8443
-  type: vless
-  uuid: cf5b6485-654c-44cc-a9a4-05c56781c52d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -xMBgfglUYBvXsk14YxUWXdlTEcY-Nv7kZFmYkUvjzk
-    short-id: 9721e6bd42537c
-  servername: pr.cryptoofarm.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇹🇭 泰国 | THA
+- name: 🇹🇭 泰国 | THA 2
   server: 157.85.96.11
   port: 8443
   type: vless
@@ -108,89 +141,69 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 104.17.144.29
-  port: 8880
+- name: 🇺🇸 美国 | USA 4
+  server: www.wto.org
+  port: 2095
   type: vless
-  uuid: 77d68177-7331-4816-b5e9-23ec39a2ae3b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: divine-rice-3224.464.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: dark-leaf-93a1.440-02e.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: homeless.happy105.eu.cc
-  port: 55658
-  type: vless
-  uuid: c38ff276-3a23-4976-f516-8a0a682f3e16
-  tls: true
-  packet-encoding: xudp
-  flow: xtls-rprx-vision
-  servername: homeless.happy105.eu.cc
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: ad-013.fluxmxd18.info
-  port: 8443
-  type: vless
-  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
-  tls: true
-  servername: ad-013.fluxmxd18.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-013.fluxmxd18.info
-  udp: true
-- name: 🇹🇭 泰国 | THA 3
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d2pwbkmfr5lxa4.cloudfront.net
+      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: ad-010.atlast9hdp.info
+- name: 🇺🇸 美国 | USA 36
+  server: 8.47.69.0
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 35
+  server: 172.64.152.241
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: ad-010.orbitqgr7v.info
   port: 8443
   type: vless
   uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
   tls: true
-  servername: ad-010.atlast9hdp.info
+  servername: ad-010.orbitqgr7v.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-010.atlast9hdp.info
+      Host: ad-010.orbitqgr7v.info
   udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 2.59.163.45
-  port: 59992
+- name: 🇺🇸 美国 | USA 21
+  server: ad-010.flux3ni5o.info
+  port: 8443
   type: vless
-  uuid: 9a9fe945246a431ebd051cb981464c8d
-  tls: false
-  network: tcp
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  servername: ad-010.flux3ni5o.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.flux3ni5o.info
   udp: true
 proxy-groups:
 - name: AUTO
@@ -198,20 +211,23 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇬🇧 英国 | GBR 3
-  - 🇩🇪 德国 | DEU 6
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 22
-  - 🇹🇭 泰国 | THA 3
-  - 🇺🇸 美国 | USA 23
-  - 🇵🇱 波兰 | POL 2
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 12
+  - 🇫🇷 法国 | FRA 5
+  - 🇩🇪 德国 | DEU 14
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇭🇰 香港 | HKG 2
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇸🇪 瑞典 | SWE 6
+  - 🇹🇭 泰国 | THA 2
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 36
+  - 🇺🇸 美国 | USA 35
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 21
 rules:
 - MATCH,AUTO
