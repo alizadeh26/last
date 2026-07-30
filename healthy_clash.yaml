@@ -10,42 +10,6 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: 2803361d6c196af8
-- name: 🇩🇪 德国 | DEU 7
-  server: free-de-01.la-la-land.top
-  port: 443
-  type: vless
-  uuid: 77572cd2-9f06-418e-927f-e4bfd49d5d68
-  tls: true
-  reality-opts:
-    public-key: uRuW2K9JNw64jgAVEdV39NMh_udtVD6xxEV-dQFATHY
-  servername: free-de-01.la-la-land.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: free-de-01.la-la-land.top
-  port: 443
-  type: vless
-  uuid: 0b1d4347-8767-431c-a662-2e5fc1298e32
-  tls: true
-  reality-opts:
-    public-key: uRuW2K9JNw64jgAVEdV39NMh_udtVD6xxEV-dQFATHY
-  servername: free-de-01.la-la-land.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: free-de-03.la-la-land.top
-  port: 443
-  type: vless
-  uuid: 405d634d-5d3e-0032-97d0-79929f69e7b4
-  tls: true
-  reality-opts:
-    public-key: uRuW2K9JNw64jgAVEdV39NMh_udtVD6xxEV-dQFATHY
-  servername: free-de-03.la-la-land.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: ddc-chr.astralweb.tech
   port: 443
@@ -56,34 +20,6 @@ proxies:
   - h2
   servername: ddc-chr.astralweb.tech
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: nl2.prime-net.me
-  port: 443
-  type: vless
-  uuid: 30702f28-0a64-4f96-bd8f-cc601ca87e4d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: qgQAQ19q2EhKzfolYMDsvTlmP9EAiCT8kng4uWR4QVg
-    short-id: 36a7af09338156bc
-  servername: nl2.prime-net.me
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: getsavesafe.net
-  port: 443
-  type: vless
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
-  servername: getsavesafe.net
-  client-fingerprint: qq
   network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR 2
@@ -100,6 +36,20 @@ proxies:
     headers:
       Host: ad-010.flux3ni5o.info
   udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: getsavesafe.net
+  port: 443
+  type: vless
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+  servername: getsavesafe.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
 - name: 🇬🇧 英国 | GBR 3
   server: ad-010.orbitqgr7v.info
   port: 8443
@@ -113,52 +63,6 @@ proxies:
     path: /
     headers:
       Host: ad-010.orbitqgr7v.info
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: sw1-chr.astralweb.tech
-  port: 443
-  type: vless
-  uuid: 3ad1d277-5715-4ca1-84db-5baea72f822d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Z2c9dK70_0OWBEZGgeaXJyt9dup9h2-hZlCCvIGLg1Q
-    short-id: 496ee75c2f91f51d
-  servername: sw1-chr.astralweb.tech
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dawn-waterfall-6052.360-001.workers.dev
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: weathered-union-5358.101-262.workers.dev
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 157.85.96.11
-  port: 8443
-  type: vless
-  uuid: 9abf5e0c-e98a-44a3-bd0b-1a6dd065eb0f
-  tls: false
-  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: ad-005.fluxmxd18.info
@@ -174,6 +78,42 @@ proxies:
     headers:
       Host: ad-005.fluxmxd18.info
   udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: sw1-chr.astralweb.tech
+  port: 443
+  type: vless
+  uuid: 3ad1d277-5715-4ca1-84db-5baea72f822d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Z2c9dK70_0OWBEZGgeaXJyt9dup9h2-hZlCCvIGLg1Q
+    short-id: 496ee75c2f91f51d
+  servername: sw1-chr.astralweb.tech
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: pr.cryptoofarm.com
+  port: 8443
+  type: vless
+  uuid: cf5b6485-654c-44cc-a9a4-05c56781c52d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -xMBgfglUYBvXsk14YxUWXdlTEcY-Nv7kZFmYkUvjzk
+    short-id: 9721e6bd42537c
+  servername: pr.cryptoofarm.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: 157.85.96.11
+  port: 8443
+  type: vless
+  uuid: 9abf5e0c-e98a-44a3-bd0b-1a6dd065eb0f
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 104.17.144.29
   port: 8880
@@ -185,42 +125,6 @@ proxies:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
       Host: divine-rice-3224.464.workers.dev
-  udp: true
-- name: 🇹🇭 泰国 | THA 4
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: b75fc664-23e1-4fdb-a66d-2413904f36f4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2ssiqpba7s356.cloudfront.net
-  udp: true
-- name: 🇹🇭 泰国 | THA 3
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2pwbkmfr5lxa4.cloudfront.net
-  udp: true
-- name: 🇹🇭 泰国 | THA 5
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: 95f0ce23-a69e-47f8-82fc-5251268a90ee
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2ssiqpba7s356.cloudfront.net
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 162.159.21.178
@@ -246,46 +150,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: soskeynets-node-production-e828.up.railway.app
-  port: 443
-  type: vless
-  uuid: de1e55b3-1cbd-4fae-a3e5-db3430c95b06
-  tls: true
-  alpn:
-  - h2
-  servername: marzban-node-production-e828.up.railway.app
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: marzban-node-production-e828.up.railway.app
-  udp: true
-- name: 🇺🇸 美国 | USA 28
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
 - name: 🇺🇸 美国 | USA 22
   server: ad-013.fluxmxd18.info
   port: 8443
@@ -300,19 +164,17 @@ proxies:
     headers:
       Host: ad-013.fluxmxd18.info
   udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: pr.cryptoofarm.com
-  port: 8443
+- name: 🇹🇭 泰国 | THA 3
+  server: www.true.th
+  port: 80
   type: vless
-  uuid: cf5b6485-654c-44cc-a9a4-05c56781c52d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -xMBgfglUYBvXsk14YxUWXdlTEcY-Nv7kZFmYkUvjzk
-    short-id: 9721e6bd42537c
-  servername: pr.cryptoofarm.com
-  client-fingerprint: firefox
-  network: tcp
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2pwbkmfr5lxa4.cloudfront.net
   udp: true
 - name: 🇺🇸 美国 | USA 23
   server: ad-010.atlast9hdp.info
@@ -328,17 +190,13 @@ proxies:
     headers:
       Host: ad-010.atlast9hdp.info
   udp: true
-- name: 🇹🇭 泰国 | THA 2
-  server: 18.239.134.69
-  port: 80
+- name: 🇵🇱 波兰 | POL 2
+  server: 2.59.163.45
+  port: 59992
   type: vless
-  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  uuid: 9a9fe945246a431ebd051cb981464c8d
   tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -347,32 +205,21 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 4
   - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 4
   - 🇬🇧 英国 | GBR 3
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇹🇭 泰国 | THA
   - 🇩🇪 德国 | DEU 6
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 3
-  - 🇹🇭 泰国 | THA 4
-  - 🇹🇭 泰国 | THA 3
-  - 🇹🇭 泰国 | THA 5
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 28
   - 🇺🇸 美国 | USA 22
-  - 🇸🇪 瑞典 | SWE 3
+  - 🇹🇭 泰国 | THA 3
   - 🇺🇸 美国 | USA 23
-  - 🇹🇭 泰国 | THA 2
+  - 🇵🇱 波兰 | POL 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -384,47 +231,35 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 4
   - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 4
   - 🇬🇧 英国 | GBR 3
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇹🇭 泰国 | THA
   - 🇩🇪 德国 | DEU 6
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 3
-  - 🇹🇭 泰国 | THA 4
-  - 🇹🇭 泰国 | THA 3
-  - 🇹🇭 泰国 | THA 5
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 28
   - 🇺🇸 美国 | USA 22
-  - 🇸🇪 瑞典 | SWE 3
+  - 🇹🇭 泰国 | THA 3
   - 🇺🇸 美国 | USA 23
-  - 🇹🇭 泰国 | THA 2
+  - 🇵🇱 波兰 | POL 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 4
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 9
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
 rules:
 - MATCH,AUTO
