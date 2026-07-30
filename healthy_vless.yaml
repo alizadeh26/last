@@ -20,14 +20,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 193.104.58.45
-  port: 59167
-  type: vless
-  uuid: 1d977a71-920e-4846-98b1-24f8e2fa0ea3
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 12
   server: vpn.574ck.xyz
   port: 2083
@@ -60,6 +52,14 @@ proxies:
     headers:
       Host: ru-de.apruxdomain.xyz
   udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 193.104.58.45
+  port: 59167
+  type: vless
+  uuid: 1d977a71-920e-4846-98b1-24f8e2fa0ea3
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇮🇪 爱尔兰 | IRL
   server: ai.tunnelpoint.space
   port: 443
@@ -74,14 +74,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 45.125.32.115
-  port: 443
-  type: vless
-  uuid: e2c8fa8c-886d-4649-bd59-cf73bee48b55
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 195.63.136.235
   port: 443
@@ -91,6 +83,14 @@ proxies:
   network: ws
   ws-opts:
     path: /rw
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: 45.125.32.115
+  port: 443
+  type: vless
+  uuid: e2c8fa8c-886d-4649-bd59-cf73bee48b55
+  tls: false
+  network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: pro-ru-bridge.emrata.top
@@ -102,20 +102,6 @@ proxies:
   reality-opts:
     public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
   servername: pro-ru-bridge.emrata.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: rf4.o4ka-internet.com
-  port: 443
-  type: vless
-  uuid: a03df445-0666-4d61-acde-9705009e409c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: rf4.o4ka-internet.com
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -138,6 +124,14 @@ proxies:
   port: 8443
   type: vless
   uuid: 9abf5e0c-e98a-44a3-bd0b-1a6dd065eb0f
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 3
+  server: 2.59.163.45
+  port: 59992
+  type: vless
+  uuid: 9a9fe945246a431ebd051cb981464c8d
   tls: false
   network: tcp
   udp: true
@@ -177,34 +171,6 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: ad-010.orbitqgr7v.info
-  port: 8443
-  type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.orbitqgr7v.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.orbitqgr7v.info
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: ad-010.flux3ni5o.info
-  port: 8443
-  type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.flux3ni5o.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.flux3ni5o.info
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -213,21 +179,19 @@ proxy-groups:
   proxies:
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 12
   - 🇫🇷 法国 | FRA 5
   - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 2
   - 🇮🇪 爱尔兰 | IRL
-  - 🇭🇰 香港 | HKG 2
   - 🇳🇱 荷兰 | NLD 5
+  - 🇭🇰 香港 | HKG 2
   - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 6
   - 🇹🇭 泰国 | THA 2
+  - 🇵🇱 波兰 | POL 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 36
   - 🇺🇸 美国 | USA 35
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 21
 rules:
 - MATCH,AUTO
