@@ -12,14 +12,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 193.104.58.45
-  port: 59167
-  type: vless
-  uuid: 1d977a71-920e-4846-98b1-24f8e2fa0ea3
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 12
   server: vpn.574ck.xyz
   port: 2083
@@ -40,6 +32,14 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: 45.125.32.115
+  port: 443
+  type: vless
+  uuid: e2c8fa8c-886d-4649-bd59-cf73bee48b55
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇮🇪 爱尔兰 | IRL
   server: ai.tunnelpoint.space
   port: 443
@@ -54,13 +54,17 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 45.125.32.115
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 45.130.125.209
+  port: 80
   type: vless
-  uuid: e2c8fa8c-886d-4649-bd59-cf73bee48b55
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /http
+    headers:
+      Host: de.vpnbase.net
   udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 195.63.136.235
@@ -71,6 +75,14 @@ proxies:
   network: ws
   ws-opts:
     path: /rw
+  udp: true
+- name: 🇵🇱 波兰 | POL 3
+  server: 2.59.163.45
+  port: 59992
+  type: vless
+  uuid: 9a9fe945246a431ebd051cb981464c8d
+  tls: false
+  network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: pro-ru-bridge.emrata.top
@@ -84,6 +96,32 @@ proxies:
   servername: pro-ru-bridge.emrata.top
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: rf4.o4ka-internet.com
+  port: 443
+  type: vless
+  uuid: a03df445-0666-4d61-acde-9705009e409c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: rf4.o4ka-internet.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 7
+  server: 130.17.2.27
+  port: 4100
+  type: vless
+  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
   udp: true
 - name: 🇸🇪 瑞典 | SWE 6
   server: sw1-chr.astralweb.tech
@@ -109,6 +147,30 @@ proxies:
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 35
+  server: 172.64.152.241
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 36
+  server: 8.47.69.0
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -147,56 +209,6 @@ proxies:
     headers:
       Host: ad-010.flux3ni5o.info
   udp: true
-- name: 🇺🇸 美国 | USA 35
-  server: 172.64.152.241
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 36
-  server: 8.47.69.0
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: rf4.o4ka-internet.com
-  port: 443
-  type: vless
-  uuid: a03df445-0666-4d61-acde-9705009e409c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: rf4.o4ka-internet.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: tun1.wizardx1.com
-  port: 2078
-  type: vmess
-  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -204,55 +216,57 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 12
   - 🇫🇷 法国 | FRA 5
-  - 🇮🇪 爱尔兰 | IRL
   - 🇭🇰 香港 | HKG 2
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 5
+  - 🇵🇱 波兰 | POL 3
   - 🇷🇺 俄罗斯 | RUS
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇷🇺 俄罗斯 | RUS 7
   - 🇸🇪 瑞典 | SWE 6
   - 🇹🇭 泰国 | THA 2
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 35
   - 🇺🇸 美国 | USA 36
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 21
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 12
   - 🇫🇷 法国 | FRA 5
-  - 🇮🇪 爱尔兰 | IRL
   - 🇭🇰 香港 | HKG 2
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 5
+  - 🇵🇱 波兰 | POL 3
   - 🇷🇺 俄罗斯 | RUS
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇷🇺 俄罗斯 | RUS 7
   - 🇸🇪 瑞典 | SWE 6
   - 🇹🇭 泰国 | THA 2
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 35
   - 🇺🇸 美国 | USA 36
-  - 🇷🇺 俄罗斯 | RUS 2
-- name: PROTO-VMESS
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 21
+- name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇭🇰 香港 | HKG 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 12
   - 🇫🇷 法国 | FRA 5
   - 🇮🇪 爱尔兰 | IRL
