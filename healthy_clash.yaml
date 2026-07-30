@@ -4,97 +4,61 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: norwselfst.5gvpn.pw
+- name: 🇨🇦 加拿大 | CAN
+  server: 50.114.177.134
+  port: 20111
+  type: ss
+  cipher: aes-256-gcm
+  password: 2803361d6c196af8
+- name: 🇩🇪 德国 | DEU 7
+  server: free-de-01.la-la-land.top
   port: 443
   type: vless
-  uuid: 63f96e98-f83f-48d0-9cd0-f31e8071f67f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: vqx7me-oxAZmYOQbuxy5qRsGyAD0Vdmsn3gEMYFIjHQ
-  servername: norwselfst.5gvpn.pw
-  client-fingerprint: safari
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 213.232.204.172
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 31.56.204.32
-  port: 2090
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  packet-encoding: xudp
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: de.prime-net.me
-  port: 443
-  type: vless
-  uuid: 30702f28-0a64-4f96-bd8f-cc601ca87e4d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: qgQAQ19q2EhKzfolYMDsvTlmP9EAiCT8kng4uWR4QVg
-    short-id: 0a2d53503fdec721
-  servername: de.prime-net.me
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA
-  server: ad-020.zen2bswa.info
-  port: 8443
-  type: vless
-  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
-  tls: true
-  servername: ad-020.zen2bswa.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-020.zen2bswa.info
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 195.21.129.117
-  port: 2552
-  type: vless
-  uuid: d8b42cd5-a149-4356-9e61-000000000000
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: pro-jp.emrata.top
-  port: 443
-  type: vless
-  uuid: 3c6275a3-9d27-4f19-8f87-f9da04db78e8
+  uuid: 77572cd2-9f06-418e-927f-e4bfd49d5d68
   tls: true
   reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: pro-jp.emrata.top
+    public-key: uRuW2K9JNw64jgAVEdV39NMh_udtVD6xxEV-dQFATHY
+  servername: free-de-01.la-la-land.top
   client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 8
-  server: 31.56.196.205
-  port: 2090
+  server: free-de-01.la-la-land.top
+  port: 443
   type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
-  alpn:
-  - http/1.1
-  packet-encoding: xudp
-  client-fingerprint: chrome
+  uuid: 0b1d4347-8767-431c-a662-2e5fc1298e32
+  tls: true
+  reality-opts:
+    public-key: uRuW2K9JNw64jgAVEdV39NMh_udtVD6xxEV-dQFATHY
+  servername: free-de-01.la-la-land.top
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
+- name: 🇩🇪 德国 | DEU 9
+  server: free-de-03.la-la-land.top
+  port: 443
+  type: vless
+  uuid: 405d634d-5d3e-0032-97d0-79929f69e7b4
+  tls: true
+  reality-opts:
+    public-key: uRuW2K9JNw64jgAVEdV39NMh_udtVD6xxEV-dQFATHY
+  servername: free-de-03.la-la-land.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: ddc-chr.astralweb.tech
+  port: 443
+  type: vless
+  uuid: 3ad1d277-5715-4ca1-84db-5baea72f822d
+  tls: true
+  alpn:
+  - h2
+  servername: ddc-chr.astralweb.tech
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
   server: nl2.prime-net.me
   port: 443
   type: vless
@@ -108,18 +72,234 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 195.58.48.19
-  port: 20111
-  type: ss
-  cipher: aes-256-gcm
-  password: fbaf33bcffe53cf9
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 195.133.5.207
-  port: 20111
-  type: ss
-  cipher: aes-256-gcm
-  password: b24a80e79cee1d1f
+- name: 🇳🇱 荷兰 | NLD 4
+  server: getsavesafe.net
+  port: 443
+  type: vless
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+  servername: getsavesafe.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: ad-010.flux3ni5o.info
+  port: 8443
+  type: vless
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  servername: ad-010.flux3ni5o.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.flux3ni5o.info
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: ad-010.orbitqgr7v.info
+  port: 8443
+  type: vless
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  servername: ad-010.orbitqgr7v.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.orbitqgr7v.info
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: sw1-chr.astralweb.tech
+  port: 443
+  type: vless
+  uuid: 3ad1d277-5715-4ca1-84db-5baea72f822d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Z2c9dK70_0OWBEZGgeaXJyt9dup9h2-hZlCCvIGLg1Q
+    short-id: 496ee75c2f91f51d
+  servername: sw1-chr.astralweb.tech
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dawn-waterfall-6052.360-001.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: weathered-union-5358.101-262.workers.dev
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: 157.85.96.11
+  port: 8443
+  type: vless
+  uuid: 9abf5e0c-e98a-44a3-bd0b-1a6dd065eb0f
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: ad-005.fluxmxd18.info
+  port: 8443
+  type: vless
+  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
+  tls: true
+  servername: ad-005.fluxmxd18.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-005.fluxmxd18.info
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 104.17.144.29
+  port: 8880
+  type: vless
+  uuid: 77d68177-7331-4816-b5e9-23ec39a2ae3b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: divine-rice-3224.464.workers.dev
+  udp: true
+- name: 🇹🇭 泰国 | THA 4
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: b75fc664-23e1-4fdb-a66d-2413904f36f4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2ssiqpba7s356.cloudfront.net
+  udp: true
+- name: 🇹🇭 泰国 | THA 3
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2pwbkmfr5lxa4.cloudfront.net
+  udp: true
+- name: 🇹🇭 泰国 | THA 5
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: 95f0ce23-a69e-47f8-82fc-5251268a90ee
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2ssiqpba7s356.cloudfront.net
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dark-leaf-93a1.440-02e.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: homeless.happy105.eu.cc
+  port: 55658
+  type: vless
+  uuid: c38ff276-3a23-4976-f516-8a0a682f3e16
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  servername: homeless.happy105.eu.cc
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 25
+  server: soskeynets-node-production-e828.up.railway.app
+  port: 443
+  type: vless
+  uuid: de1e55b3-1cbd-4fae-a3e5-db3430c95b06
+  tls: true
+  alpn:
+  - h2
+  servername: marzban-node-production-e828.up.railway.app
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: marzban-node-production-e828.up.railway.app
+  udp: true
+- name: 🇺🇸 美国 | USA 28
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 22
+  server: ad-013.fluxmxd18.info
+  port: 8443
+  type: vless
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  servername: ad-013.fluxmxd18.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-013.fluxmxd18.info
+  udp: true
 - name: 🇸🇪 瑞典 | SWE 3
   server: pr.cryptoofarm.com
   port: 8443
@@ -134,118 +314,31 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: icy-snowflake-1f56.147-1ea.workers.dev
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 194.87.10.216
-  port: 8388
-  type: ss
-  cipher: aes-256-gcm
-  password: sHh42jRgCUfV
-- name: 🇺🇸 美国 | USA 3
-  server: 1.rmgyvpn.rest
-  port: 443
-  type: vless
-  uuid: 98262dbd-3606-437b-b12e-3f38ca62522f
-  tls: true
-  servername: 1.rmgyvpn.rest
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws-cdn
-    headers:
-      Host: 1.rmgyvpn.rest
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 1a5e2e63-64e2-4737-95b6-c2ee60c979a1
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: wild-mode-4ca6.234-8f6.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: ad-005.zenkk0cd.info
+- name: 🇺🇸 美国 | USA 23
+  server: ad-010.atlast9hdp.info
   port: 8443
   type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
   tls: true
-  servername: ad-005.zenkk0cd.info
+  servername: ad-010.atlast9hdp.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-005.zenkk0cd.info
+      Host: ad-010.atlast9hdp.info
   udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: ad-004.zen2bswa.info
-  port: 8443
+- name: 🇹🇭 泰国 | THA 2
+  server: 18.239.134.69
+  port: 80
   type: vless
-  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: ad-004.zen2bswa.info
-  client-fingerprint: chrome
+  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-004.zen2bswa.info
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 172.66.214.247
-  port: 8880
-  type: vless
-  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: sweet-sun-c70f.317-ba5.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: ad-004.cloud25075.info
-  port: 8443
-  type: vless
-  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
-  tls: true
-  servername: ad-004.cloud25075.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-004.cloud25075.info
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: 104.17.181.19
-  port: 8880
-  type: vless
-  uuid: 26fb53e4-fd49-4b34-b605-b6cc1b1a06a8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: royal-shape-3771.93-728.workers.dev
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -253,72 +346,85 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 13
-  - 🇫🇷 法国 | FRA
-  - 🇬🇧 英国 | GBR 2
-  - 🇯🇵 日本 | JPN
+  - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇸🇬 新加坡 | SGP
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇩🇪 德国 | DEU 9
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇹🇭 泰国 | THA
+  - 🇩🇪 德国 | DEU 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 19
+  - 🇹🇭 泰国 | THA 4
+  - 🇹🇭 泰国 | THA 3
+  - 🇹🇭 泰国 | THA 5
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 28
+  - 🇺🇸 美国 | USA 22
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇺🇸 美国 | USA 23
+  - 🇹🇭 泰国 | THA 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇨🇦 加拿大 | CAN
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 13
-  - 🇫🇷 法国 | FRA
-  - 🇬🇧 英国 | GBR 2
-  - 🇯🇵 日本 | JPN
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇸🇬 新加坡 | SGP
+  - 🇩🇪 德国 | DEU 9
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇹🇭 泰国 | THA
+  - 🇩🇪 德国 | DEU 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 19
+  - 🇹🇭 泰国 | THA 4
+  - 🇹🇭 泰国 | THA 3
+  - 🇹🇭 泰国 | THA 5
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 28
+  - 🇺🇸 美国 | USA 22
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇺🇸 美国 | USA 23
+  - 🇹🇭 泰国 | THA 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 13
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
+  - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 9
 rules:
 - MATCH,AUTO
