@@ -4,157 +4,188 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.230.78
-  port: 62145
+- name: 🇨🇦 加拿大 | CAN
+  server: ad-013.zen2bswa.info
+  port: 8443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: ff485c50-b364-4b4f-90be-ea576b949dd3
-  tls: false
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  servername: ad-013.zen2bswa.info
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /fnetvpn2026
+    path: /
     headers:
-      Host: d3gxy6d0a9fs18.cloudfront.net
+      Host: ad-013.zen2bswa.info
   udp: true
-- name: 🇬🇧 英国 | GBR 5
-  server: t1.hhaakk9922.com
-  port: 46784
+- name: 🇩🇪 德国 | DEU 2
+  server: de.prime-net.me
+  port: 443
   type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  uuid: 30702f28-0a64-4f96-bd8f-cc601ca87e4d
   tls: true
-  servername: t1.hhaakk9922.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: qgQAQ19q2EhKzfolYMDsvTlmP9EAiCT8kng4uWR4QVg
+    short-id: 0a2d53503fdec721
+  servername: de.prime-net.me
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 20
+  server: norwselfst.5gvpn.pw
+  port: 443
+  type: vless
+  uuid: 63f96e98-f83f-48d0-9cd0-f31e8071f67f
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: vqx7me-oxAZmYOQbuxy5qRsGyAD0Vdmsn3gEMYFIjHQ
+  servername: norwselfst.5gvpn.pw
+  client-fingerprint: safari
+  network: tcp
+  udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: pro-it.emrata.top
+  port: 443
+  type: vless
+  uuid: 7755d18a-7c77-4f2a-b1db-73b114a625a1
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-it.emrata.top
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
+  network: tcp
+  udp: true
+- name: 🇮🇹 意大利 | ITA 2
+  server: pro-it.emrata.top
+  port: 443
+  type: vless
+  uuid: 3c6275a3-9d27-4f19-8f87-f9da04db78e8
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-it.emrata.top
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇯🇵 日本 | JPN
-  server: t1.hhaakk9922.com
-  port: 46783
+  server: pro-jp.emrata.top
+  port: 443
   type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  uuid: cf502d0f-812c-4301-bf48-3d3728911d49
   tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-jp.emrata.top
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 6
-  server: ad-010.atlast9hdp.info
+- name: 🇯🇵 日本 | JPN 3
+  server: pro-jp.emrata.top
+  port: 443
+  type: vless
+  uuid: 3c6275a3-9d27-4f19-8f87-f9da04db78e8
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-jp.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 5
+  server: pro-jp.emrata.top
+  port: 443
+  type: vless
+  uuid: 7755d18a-7c77-4f2a-b1db-73b114a625a1
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-jp.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: ad-010.zen2bswa.info
   port: 8443
   type: vless
   uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
   tls: true
-  servername: ad-010.atlast9hdp.info
+  servername: ad-010.zen2bswa.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-010.atlast9hdp.info
+      Host: ad-010.zen2bswa.info
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 64.188.77.22
-  port: 2053
-  type: vless
-  uuid: 63f96e98-f83f-48d0-9cd0-f31e8071f67f
-  tls: false
-  network: ws
-  ws-opts:
-    path: /api
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 14
-  server: getsavesafe.net
+- name: 🇵🇱 波兰 | POL 2
+  server: lbvzo.falsemirrov.com
   port: 443
   type: vless
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  uuid: 0fd412c1-6904-4ccc-bb6e-9653975c73f3
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
-  servername: getsavesafe.net
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 144.31.0.34
-  port: 7443
-  type: vless
-  uuid: 1fef5248-fdd2-40d6-b3b9-6c33d4e74724
-  tls: true
-  alpn:
-  - http/1.1
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8wD0IhR27ftD5LyJDq9CaFzi6DgA4vFtB-UP6QIdWVc
-    short-id: e8ca5079a5e91481
-  servername: _custom_
+    public-key: FiGwAuKMy_5VK62hqCxDZn1jUjrplWTM1RmAwoA5o1w
+    short-id: 0d6c02fda165f38c
+  servername: lbvzo.falsemirrov.com
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 151.101.193.54
-  port: 80
+- name: 🇹🇷 土耳其 | TUR 3
+  server: pro-tr.emrata.top
+  port: 443
   type: vless
-  uuid: 6bd7815d-9fb0-41c6-87ef-ffc713bf6b8f
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 151.101.56.7
-  port: 80
-  type: vless
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
-  tls: false
-  servername: BankMelat.glObal.ssl.faStly.nEt.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: t1.hhaakk9922.com
-  port: 36799
-  type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  uuid: 7755d18a-7c77-4f2a-b1db-73b114a625a1
   tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: da5UVhoC5QOCDm84AxB-RRxf0z2nySZ3lOemgqizLS4
+  servername: pro-tr.emrata.top
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 34
+- name: 🇹🇷 土耳其 | TUR 4
+  server: pro-tr.emrata.top
+  port: 443
+  type: vless
+  uuid: 3c6275a3-9d27-4f19-8f87-f9da04db78e8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: da5UVhoC5QOCDm84AxB-RRxf0z2nySZ3lOemgqizLS4
+  servername: pro-tr.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 5
+  server: pro-tr.emrata.top
+  port: 443
+  type: vless
+  uuid: 5256d367-4c83-484f-b230-9a6045cb31ee
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: da5UVhoC5QOCDm84AxB-RRxf0z2nySZ3lOemgqizLS4
+  servername: pro-tr.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: pro-us.emrata.top
+  port: 443
+  type: vless
+  uuid: 7755d18a-7c77-4f2a-b1db-73b114a625a1
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uY-4wMHFY1pD8SIwHBfcxVRdolB7NAJIWIbYjaG8iw0
+  servername: pro-us.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 17
   server: www.fbi.gov
   port: 2095
   type: vless
@@ -166,33 +197,29 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 29
-  server: ad-020.novayjr9g.info
-  port: 8443
+- name: 🇺🇸 美国 | USA 22
+  server: 104.26.0.195
+  port: 8080
   type: vless
-  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
-  tls: true
-  servername: ad-020.novayjr9g.info
-  client-fingerprint: chrome
+  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
+  tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /ws-hTopcF3L
     headers:
-      Host: ad-020.novayjr9g.info
+      Host: premium-us-az-01-hostinger.efgwf.online
   udp: true
-- name: 🇺🇸 美国 | USA 28
-  server: ad-010.limaklhc6.info
-  port: 8443
+- name: 🇹🇭 泰国 | THA
+  server: www.true.th
+  port: 80
   type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.limaklhc6.info
-  client-fingerprint: chrome
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-010.limaklhc6.info
+      Host: d2pwbkmfr5lxa4.cloudfront.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -200,20 +227,22 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 9
-  - 🇬🇧 英国 | GBR 5
+  - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 20
+  - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
   - 🇯🇵 日本 | JPN
-  - 🇬🇧 英国 | GBR 6
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 14
-  - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 21
+  - 🇯🇵 日本 | JPN 3
+  - 🇯🇵 日本 | JPN 5
+  - 🇬🇧 英国 | GBR 3
+  - 🇵🇱 波兰 | POL 2
+  - 🇹🇷 土耳其 | TUR 3
+  - 🇹🇷 土耳其 | TUR 4
+  - 🇹🇷 土耳其 | TUR 5
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 34
-  - 🇺🇸 美国 | USA 29
-  - 🇺🇸 美国 | USA 28
+  - 🇹🇭 泰国 | THA
 rules:
 - MATCH,AUTO
