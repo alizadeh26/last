@@ -4,25 +4,26 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.82.112
-  port: 61312
+- name: 🇧🇷 巴西 | BRA
+  server: 137.131.193.56
+  port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇧🇷 巴西 | BRA 2
+  server: 147.15.57.24
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇭🇰 香港 | HKG
+  server: 212.192.13.25
+  port: 20166
+  type: ss
+  cipher: aes-256-gcm
+  password: 7e1dd4c55bf85da5
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 3
-  server: 176.32.34.152
-  port: 50111
-  type: ss
-  cipher: aes-256-gcm
-  password: 1a87017d0bf57f34
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 195.133.23.200
-  port: 1291
-  type: ss
-  cipher: aes-256-gcm
-  password: 9f3d1a6d31468599
-- name: 🇷🇺 俄罗斯 | RUS 7
   server: 195.58.48.19
   port: 50111
   type: ss
@@ -34,9 +35,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
+  - 🇭🇰 香港 | HKG
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇷🇺 俄罗斯 | RUS 7
 rules:
 - MATCH,AUTO

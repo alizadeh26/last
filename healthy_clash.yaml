@@ -4,77 +4,89 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 8
-  server: ad-005.zen2bswa.info
-  port: 8443
-  type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
-  tls: true
-  servername: ad-005.zen2bswa.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-005.zen2bswa.info
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.82.112
-  port: 61312
+- name: 🇧🇷 巴西 | BRA
+  server: 137.131.193.56
+  port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 141.148.227.114
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 6
-  server: tun1.wizardx1.com
-  port: 2078
-  type: vmess
-  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 176.32.34.152
-  port: 50111
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇧🇷 巴西 | BRA 2
+  server: 147.15.57.24
+  port: 59319
   type: ss
-  cipher: aes-256-gcm
-  password: 1a87017d0bf57f34
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 195.133.23.200
-  port: 1291
-  type: ss
-  cipher: aes-256-gcm
-  password: 9f3d1a6d31468599
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: pro-ru-bridge.emrata.top
-  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇩🇪 德国 | DEU 12
+  server: 178.17.53.177
+  port: 34150
   type: vless
-  uuid: 831f56ff-d117-4a72-bb2b-a5e44eab6fbf
+  uuid: e80398bb-aecb-4686-a75c-dfe4cd8ce242
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
-  servername: pro-ru-bridge.emrata.top
+    public-key: nlEvGwt7WTuobjUSOK9ITQ8LF5VIC-SrWPMTH9FqTk4
+    short-id: 84abf04b
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 185.118.15.160
+  port: 2095
+  type: vless
+  uuid: 529cd8b2-0432-4fe7-80a2-89076c818f25
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 2
+  server: node12.mxvpn.dev
+  port: 443
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: bbc68cec8bb8d2e3
+  servername: node12.mxvpn.dev
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 7
+- name: 🇭🇰 香港 | HKG
+  server: 212.192.13.25
+  port: 20166
+  type: ss
+  cipher: aes-256-gcm
+  password: 7e1dd4c55bf85da5
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: getsavesafe.net
+  port: 443
+  type: vless
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+  servername: getsavesafe.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: 91.229.91.167
+  port: 11139
+  type: vless
+  uuid: 4d033e4e-943d-43c3-bed8-3e14184bae2f
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
   server: 195.58.48.19
   port: 50111
   type: ss
   cipher: aes-256-gcm
   password: fbaf33bcffe53cf9
-- name: 🇷🇺 俄罗斯 | RUS 8
+- name: 🇷🇺 俄罗斯 | RUS 9
   server: pro-ru-bridge.emrata.top
   port: 443
   type: vless
@@ -87,34 +99,44 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: turok2.o4ka-internet.com
+- name: 🇷🇺 俄罗斯 | RUS 10
+  server: pro-ru-bridge.emrata.top
   port: 443
   type: vless
-  uuid: a03df445-0666-4d61-acde-9705009e409c
+  uuid: 831f56ff-d117-4a72-bb2b-a5e44eab6fbf
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: turok2.o4ka-internet.com
-  client-fingerprint: random
+    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
+  servername: pro-ru-bridge.emrata.top
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 172.64.88.168
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.21.178
   port: 8880
   type: vless
-  uuid: 6f876b28-1b3e-4088-85c0-d299e56bfccd
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
   tls: false
-  servername: throbbing-haze-fbde.388-6c4.workers.dev
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: throbbing-haze-fbde.388-6c4.workers.dev
+      Host: dark-leaf-93a1.440-02e.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 13
+- name: 🇹🇭 泰国 | THA 2
+  server: dtac.exp.dog
+  port: 80
+  type: vless
+  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
+  tls: false
+  network: ws
+  ws-opts:
+    path: /fnet50
+    headers:
+      Host: duatoup3wk8q2.cloudfront.net
+  udp: true
+- name: 🇺🇸 美国 | USA 17
   server: sha3.o4ka-internet.com
   port: 443
   type: vless
@@ -128,55 +150,92 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: ad-004.zenkk0cd.info
-  port: 8443
+- name: 🇺🇸 美国 | USA 16
+  server: www.wto.org
+  port: 2095
   type: vless
-  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
-  tls: true
-  servername: ad-004.zenkk0cd.info
-  client-fingerprint: chrome
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-004.zenkk0cd.info
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 10
+  server: turok2.o4ka-internet.com
+  port: 443
+  type: vless
+  uuid: a03df445-0666-4d61-acde-9705009e409c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: turok2.o4ka-internet.com
+  client-fingerprint: random
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 21
-  server: codecanyon.net
-  port: 8880
+  server: www.fbi.gov
+  port: 2095
   type: vless
-  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /
     headers:
-      Host: lingering-lab-91a6.54-8c3.workers.dev
+      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: dtac.exp.dog
+- name: 🇺🇸 美国 | USA 22
+  server: icook.tw
+  port: 8880
+  type: vless
+  uuid: c3f4ee0c-3c64-466d-ae14-9bcf685e1efd
+  tls: false
+  servername: icook.tw
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: shiny-waterfall-fa51.300-c6f.workers.dev
+  udp: true
+- name: 🇹🇭 泰国 | THA 4
+  server: www.true.th
   port: 80
   type: vless
-  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
+  uuid: ff0c1cde-6f94-4bf1-9774-ab25c6b4977d
   tls: false
   network: ws
   ws-opts:
-    path: /fnet50
+    path: /knl8
     headers:
-      Host: duatoup3wk8q2.cloudfront.net
+      Host: d7iwyzy9wpvuu.cloudfront.net
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: codecanyon.net
-  port: 8880
+- name: 🇹🇭 泰国 | THA
+  server: 157.85.105.179
+  port: 80
   type: vless
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
   tls: false
   network: ws
   ws-opts:
-    path: /pyip
+    path: /
     headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
+      Host: d2pwbkmfr5lxa4.cloudfront.net
+  udp: true
+- name: 🇹🇭 泰国 | THA 3
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2pwbkmfr5lxa4.cloudfront.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -184,74 +243,77 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU 3
+  - 🇫🇷 法国 | FRA 2
+  - 🇭🇰 香港 | HKG
+  - 🇳🇱 荷兰 | NLD 8
   - 🇷🇺 俄罗斯 | RUS 5
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 7
-  - 🇷🇺 俄罗斯 | RUS 8
-  - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS 9
+  - 🇷🇺 俄罗斯 | RUS 10
+  - 🇸🇬 新加坡 | SGP
+  - 🇹🇭 泰国 | THA 2
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 16
+  - 🇹🇷 土耳其 | TUR 10
   - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 22
+  - 🇹🇭 泰国 | THA 4
   - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 19
+  - 🇹🇭 泰国 | THA 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
+  - 🇭🇰 香港 | HKG
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇷🇺 俄罗斯 | RUS 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 8
-  - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU 3
+  - 🇫🇷 法国 | FRA 2
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇷🇺 俄罗斯 | RUS 9
+  - 🇷🇺 俄罗斯 | RUS 10
+  - 🇸🇬 新加坡 | SGP
+  - 🇹🇭 泰国 | THA 2
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 16
+  - 🇹🇷 土耳其 | TUR 10
   - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 22
+  - 🇹🇭 泰国 | THA 4
   - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 19
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇹🇭 泰国 | THA 3
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇹🇭 泰国 | THA
+  - 🇩🇪 德国 | DEU 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇷🇺 俄罗斯 | RUS 3
-- name: REGION-NA
+  - 🇩🇪 德国 | DEU 12
+  - 🇫🇷 法国 | FRA 2
+- name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
-  - 🇺🇸 美国 | USA 8
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
 rules:
 - MATCH,AUTO

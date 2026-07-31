@@ -1,13 +1,11 @@
-vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InJhdyIsInYiOiIyIiwicHMiOiLnvo7lm71fMDczMTEwNTk1NCIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIiwic25pIjoiIiwidHlwZSI6IiIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
+vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InJhdyIsInYiOiIyIiwicHMiOiLnvo7lm71fMDczMTE1NTk1NCIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIiwic25pIjoiIiwidHlwZSI6IiIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6ejBkSGpEZm9hU2FadVJGTEdILWhOZkJBTFNFSlVZRA==@194.164.92.198:1234#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+194.164.92.198-1234+%7C+114.1ms
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.178:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.178-0151
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.179-0153
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.179:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.179-443+%7C+125.55ms
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-0152
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.182:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.182-443+%7C+112.56ms
 ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-0098
-ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#%F0%9F%87%AC%F0%9F%87%A7GB-146.70.61.37-0070
-vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?encryption=none&host=google.com&path=/vless/&security=none&type=ws#🇬🇧 490 - GB - VLESS/WS - 80
-vless://b8ae8186-22ed-413b-b0de-dc590bbbc3bc@54.37.6.39:6500?security=reality&type=tcp&sni=play.google.com&fp=qq&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&encryption=none#🇬🇧 550 - GB - VLESS/REALITY/PBK/UTLS - 6500
-vless://d65cc14c-f53f-4fe2-b262-97856601319c@82.39.171.145:443?flow=xtls-rprx-vision&security=reality&sni=yahoo.com&fp=ios&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&sid=c39cc7310a&path=/#🇩🇪 588 - DE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://e480ec05-1570-4a7d-b377-c3a20f80afa8@51.89.229.242:2053?security=reality&type=grpc&mode=gun&serviceName=api.v1.data&sni=play.google.com&fp=firefox&sid=524efc1f88592266&pbk=GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY#🇬🇧 620 - GB - VLESS/GRPC/REALITY/PBK/SID/UTLS - 2053
-trojan://humanity@5.10.214.53:443?alpn=http/1.1&fp=chrome&host=www.calmloud.com&path=/assignment&sni=www.calmloud.com&type=ws#🇬🇧 135 - GB - Trojan/WS/TLS/UTLS - 443
+ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+146.70.61.37-8080+%7C+107.4ms
+vless://b8ae8186-22ed-413b-b0de-dc590bbbc3bc@54.37.6.39:6500?security=reality&type=tcp&sni=play.google.com&fp=qq&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&encryption=none#🇬🇧 575 - GB - VLESS/REALITY/PBK/UTLS - 6500
+vless://d65cc14c-f53f-4fe2-b262-97856601319c@82.39.171.145:443?flow=xtls-rprx-vision&security=reality&sni=yahoo.com&fp=ios&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&sid=c39cc7310a&path=/#🇩🇪 616 - DE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://e480ec05-1570-4a7d-b377-c3a20f80afa8@51.89.229.242:2053?security=reality&type=grpc&mode=gun&serviceName=api.v1.data&sni=play.google.com&fp=firefox&sid=524efc1f88592266&pbk=GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY#🇬🇧 650 - GB - VLESS/GRPC/REALITY/PBK/SID/UTLS - 2053
