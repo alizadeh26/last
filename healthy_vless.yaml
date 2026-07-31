@@ -4,42 +4,41 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.191.146
+- name: 🇪🇪 爱沙尼亚 | EST 3
+  server: nl.gruztrack.online
+  port: 2053
+  type: vless
+  uuid: 3ea58e96-5fe0-11f1-bd95-ee5f4ed81fa1
+  tls: true
+  reality-opts:
+    public-key: 75W-x6PKwwG6fJJbrIkGcsBgMKP7pQnw2HlM8oevDjM
+    short-id: b328618afa4a944e
+  servername: nl.gruztrack.online
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-direct
+  udp: true
+- name: 🇯🇵 日本 | JPN
+  server: pro-jp.emrata.top
+  port: 443
+  type: vless
+  uuid: 8586ba96-1d58-42d8-9e66-68714425fcd8
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-jp.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 141.148.227.114
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: vpn.574ck.xyz
-  port: 2083
-  type: vless
-  uuid: 52ed7408-efac-4d3a-935e-3cdc8e887225
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vpn.574ck.xyz
-  udp: true
-- name: 🇫🇷 法国 | FRA 5
-  server: 89.208.113.16
-  port: 443
-  type: vless
-  uuid: adce7c2a-3191-49ae-b61c-9b8258ea1b0e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 45.125.32.115
-  port: 443
-  type: vless
-  uuid: e2c8fa8c-886d-4649-bd59-cf73bee48b55
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇮🇪 爱尔兰 | IRL
   server: ai.tunnelpoint.space
   port: 443
@@ -54,37 +53,7 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 45.130.125.209
-  port: 80
-  type: vless
-  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
-  tls: false
-  network: ws
-  ws-opts:
-    path: /http
-    headers:
-      Host: de.vpnbase.net
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 195.63.136.235
-  port: 443
-  type: vless
-  uuid: 0f026ffa-077e-46cf-b35a-3425227bd462
-  tls: false
-  network: ws
-  ws-opts:
-    path: /rw
-  udp: true
-- name: 🇵🇱 波兰 | POL 3
-  server: 2.59.163.45
-  port: 59992
-  type: vless
-  uuid: 9a9fe945246a431ebd051cb981464c8d
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
+- name: 🇷🇺 俄罗斯 | RUS 2
   server: pro-ru-bridge.emrata.top
   port: 443
   type: vless
@@ -97,91 +66,107 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: rf4.o4ka-internet.com
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: pro-ru-bridge.emrata.top
   port: 443
   type: vless
-  uuid: a03df445-0666-4d61-acde-9705009e409c
+  uuid: c245b785-bb81-481b-95c9-c2db14c66f25
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: rf4.o4ka-internet.com
+    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
+  servername: pro-ru-bridge.emrata.top
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 7
-  server: 130.17.2.27
-  port: 4100
+- name: 🇹🇭 泰国 | THA 3
+  server: 157.85.105.179
+  port: 80
   type: vless
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
   tls: false
   network: ws
   ws-opts:
-    path: /v1
+    path: /
     headers:
-      Host: live.ok.ru
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 6
-  server: sw1-chr.astralweb.tech
-  port: 443
-  type: vless
-  uuid: 3ad1d277-5715-4ca1-84db-5baea72f822d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Z2c9dK70_0OWBEZGgeaXJyt9dup9h2-hZlCCvIGLg1Q
-    short-id: 496ee75c2f91f51d
-  servername: sw1-chr.astralweb.tech
-  client-fingerprint: firefox
-  network: tcp
+      Host: d2pwbkmfr5lxa4.cloudfront.net
   udp: true
 - name: 🇹🇭 泰国 | THA 2
-  server: 157.85.96.11
-  port: 8443
+  server: 143.14.11.236
+  port: 80
   type: vless
-  uuid: 9abf5e0c-e98a-44a3-bd0b-1a6dd065eb0f
+  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
   tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  udp: true
+- name: 🇹🇭 泰国 | THA 4
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: ff0c1cde-6f94-4bf1-9774-ab25c6b4977d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /knl8
+    headers:
+      Host: d7iwyzy9wpvuu.cloudfront.net
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2pwbkmfr5lxa4.cloudfront.net
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 11
+  server: pro-tr.emrata.top
+  port: 443
+  type: vless
+  uuid: 8586ba96-1d58-42d8-9e66-68714425fcd8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: da5UVhoC5QOCDm84AxB-RRxf0z2nySZ3lOemgqizLS4
+  servername: pro-tr.emrata.top
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: www.wto.org
-  port: 2095
+- name: 🇹🇭 泰国 | THA 6
+  server: dtac.exp.dog
+  port: 80
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /fnet50
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 35
-  server: 172.64.152.241
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 36
-  server: 8.47.69.0
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: duatoup3wk8q2.cloudfront.net
   udp: true
 - name: 🇺🇸 美国 | USA 17
+  server: ad-013.rapid4yjcz.info
+  port: 8443
+  type: vless
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  servername: ad-013.rapid4yjcz.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-013.rapid4yjcz.info
+  udp: true
+- name: 🇺🇸 美国 | USA 23
   server: ad-010.orbitqgr7v.info
   port: 8443
   type: vless
@@ -195,19 +180,61 @@ proxies:
     headers:
       Host: ad-010.orbitqgr7v.info
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: ad-010.flux3ni5o.info
+- name: 🇺🇸 美国 | USA 26
+  server: ad-005.clouduhtpv.info
   port: 8443
   type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
   tls: true
-  servername: ad-010.flux3ni5o.info
+  servername: ad-005.clouduhtpv.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ad-010.flux3ni5o.info
+      Host: ad-005.clouduhtpv.info
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: ad-004.zen2bswa.info
+  port: 8443
+  type: vless
+  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
+  tls: true
+  servername: ad-004.zen2bswa.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-004.zen2bswa.info
+  udp: true
+- name: 🇺🇸 美国 | USA 29
+  server: ad-005.zen2bswa.info
+  port: 8443
+  type: vless
+  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
+  tls: true
+  servername: ad-005.zen2bswa.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-005.zen2bswa.info
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 3
+  server: turok2.o4ka-internet.com
+  port: 443
+  type: vless
+  uuid: a03df445-0666-4d61-acde-9705009e409c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: turok2.o4ka-internet.com
+  client-fingerprint: random
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -215,23 +242,23 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 12
-  - 🇫🇷 法国 | FRA 5
-  - 🇭🇰 香港 | HKG 2
+  - 🇪🇪 爱沙尼亚 | EST 3
+  - 🇯🇵 日本 | JPN
+  - 🇳🇱 荷兰 | NLD
   - 🇮🇪 爱尔兰 | IRL
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇵🇱 波兰 | POL 3
-  - 🇷🇺 俄罗斯 | RUS
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 7
-  - 🇸🇪 瑞典 | SWE 6
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇹🇭 泰国 | THA 3
   - 🇹🇭 泰国 | THA 2
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 35
-  - 🇺🇸 美国 | USA 36
+  - 🇹🇭 泰国 | THA 4
+  - 🇹🇭 泰国 | THA
+  - 🇹🇷 土耳其 | TUR 11
+  - 🇹🇭 泰国 | THA 6
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 29
+  - 🇹🇷 土耳其 | TUR 3
 rules:
 - MATCH,AUTO
