@@ -4,41 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.185.126
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.220.183
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇩🇪 德国 | DEU 6
-  server: 178.17.53.177
-  port: 34151
-  type: vless
-  uuid: e80398bb-aecb-4686-a75c-dfe4cd8ce242
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: nlEvGwt7WTuobjUSOK9ITQ8LF5VIC-SrWPMTH9FqTk4
-    short-id: 5e039404
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 13.37.64.176
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: eston3.o4ka-internet.com
   port: 443
@@ -53,68 +18,13 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 13.37.64.176
-  port: 22223
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.185.126
+  port: 62145
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-  udp: true
-- name: 🇧🇬 保加利亚 | BGR
-  server: 185.126.14.200
-  port: 10635
-  type: vless
-  uuid: 1bc7aa95-9100-4e8e-de41-ae62b3419ae9
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 13.37.64.176
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 5
-  server: 51.45.54.70
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 4
-  server: 51.45.54.70
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 6
-  server: 51.45.54.70
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: turok2.o4ka-internet.com
-  port: 443
-  type: vless
-  uuid: a03df445-0666-4d61-acde-9705009e409c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: turok2.o4ka-internet.com
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 17
   server: www.wto.org
   port: 2095
@@ -139,8 +49,8 @@ proxies:
     headers:
       Host: duatoup3wk8q2.cloudfront.net
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: sha3.o4ka-internet.com
+- name: 🇹🇷 土耳其 | TUR
+  server: turok2.o4ka-internet.com
   port: 443
   type: vless
   uuid: a03df445-0666-4d61-acde-9705009e409c
@@ -149,21 +59,21 @@ proxies:
   reality-opts:
     public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
     short-id: 5629431325884ff0
-  servername: sha3.o4ka-internet.com
+  servername: turok2.o4ka-internet.com
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: www.baipiao.eu.org
-  port: 8880
+- name: 🇺🇸 美国 | USA 25
+  server: www.fbi.gov
+  port: 2095
   type: vless
-  uuid: 121c3728-2b6b-4b69-bac6-170b13658d74
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: falling-darkness-95ea.289.workers.dev
+      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
 - name: 🇺🇸 美国 | USA 19
   server: josni.hoyes.cloudns.ch
@@ -179,24 +89,18 @@ proxies:
     headers:
       Host: josni.hoyes.cloudns.ch
   udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: www.fbi.gov
-  port: 2095
+- name: 🇺🇸 美国 | USA 21
+  server: sha3.o4ka-internet.com
+  port: 443
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 91.229.91.167
-  port: 11139
-  type: vless
-  uuid: 4d033e4e-943d-43c3-bed8-3e14184bae2f
-  tls: false
+  uuid: a03df445-0666-4d61-acde-9705009e409c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: sha3.o4ka-internet.com
+  client-fingerprint: random
   network: tcp
   udp: true
 proxy-groups:
@@ -205,65 +109,52 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 6
-  - 🇫🇷 法国 | FRA
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇫🇷 法国 | FRA 2
-  - 🇧🇬 保加利亚 | BGR
-  - 🇫🇷 法国 | FRA 3
-  - 🇫🇷 法国 | FRA 5
-  - 🇫🇷 法国 | FRA 4
-  - 🇫🇷 法国 | FRA 6
-  - 🇹🇷 土耳其 | TUR
+  - 🇨🇴 哥伦比亚 | COL
   - 🇺🇸 美国 | USA 17
   - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 19
+  - 🇹🇷 土耳其 | TUR
   - 🇺🇸 美国 | USA 25
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 21
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 6
-  - 🇫🇷 法国 | FRA
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇫🇷 法国 | FRA 2
-  - 🇧🇬 保加利亚 | BGR
-  - 🇫🇷 法国 | FRA 3
-  - 🇫🇷 法国 | FRA 5
-  - 🇫🇷 法国 | FRA 4
-  - 🇫🇷 法国 | FRA 6
-  - 🇹🇷 土耳其 | TUR
+  - 🇨🇴 哥伦比亚 | COL
   - 🇺🇸 美国 | USA 17
   - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 19
+  - 🇹🇷 土耳其 | TUR
   - 🇺🇸 美国 | USA 25
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 21
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇭 泰国 | THA
+  - 🇹🇷 土耳其 | TUR
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇫🇷 法国 | FRA
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA 3
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 25
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
 rules:
 - MATCH,AUTO
