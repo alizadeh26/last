@@ -4,115 +4,43 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 12
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.185.126
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.220.183
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU 6
   server: 178.17.53.177
-  port: 34150
+  port: 34151
   type: vless
   uuid: e80398bb-aecb-4686-a75c-dfe4cd8ce242
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
     public-key: nlEvGwt7WTuobjUSOK9ITQ8LF5VIC-SrWPMTH9FqTk4
-    short-id: 84abf04b
+    short-id: 5e039404
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 185.118.15.160
-  port: 2095
+- name: 🇫🇷 法国 | FRA
+  server: 13.37.64.176
+  port: 22224
   type: vless
-  uuid: 529cd8b2-0432-4fe7-80a2-89076c818f25
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: node12.mxvpn.dev
-  port: 443
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: bbc68cec8bb8d2e3
-  servername: node12.mxvpn.dev
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: getsavesafe.net
-  port: 443
-  type: vless
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
-  servername: getsavesafe.net
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 91.229.91.167
-  port: 11139
-  type: vless
-  uuid: 4d033e4e-943d-43c3-bed8-3e14184bae2f
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 9
-  server: pro-ru-bridge.emrata.top
-  port: 443
-  type: vless
-  uuid: c245b785-bb81-481b-95c9-c2db14c66f25
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
-  servername: pro-ru-bridge.emrata.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 10
-  server: pro-ru-bridge.emrata.top
-  port: 443
-  type: vless
-  uuid: 831f56ff-d117-4a72-bb2b-a5e44eab6fbf
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
-  servername: pro-ru-bridge.emrata.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: dark-leaf-93a1.440-02e.workers.dev
-  udp: true
-- name: 🇹🇭 泰国 | THA 2
-  server: dtac.exp.dog
-  port: 80
-  type: vless
-  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
-  tls: false
-  network: ws
-  ws-opts:
-    path: /fnet50
-    headers:
-      Host: duatoup3wk8q2.cloudfront.net
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: sha3.o4ka-internet.com
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: eston3.o4ka-internet.com
   port: 443
   type: vless
   uuid: a03df445-0666-4d61-acde-9705009e409c
@@ -121,23 +49,59 @@ proxies:
   reality-opts:
     public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
     short-id: 5629431325884ff0
-  servername: sha3.o4ka-internet.com
+  servername: eston3.o4ka-internet.com
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: www.wto.org
-  port: 2095
+- name: 🇫🇷 法国 | FRA 2
+  server: 13.37.64.176
+  port: 22223
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+  network: tcp
   udp: true
-- name: 🇹🇷 土耳其 | TUR 10
+- name: 🇧🇬 保加利亚 | BGR
+  server: 185.126.14.200
+  port: 10635
+  type: vless
+  uuid: 1bc7aa95-9100-4e8e-de41-ae62b3419ae9
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 3
+  server: 13.37.64.176
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 5
+  server: 51.45.54.70
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 4
+  server: 51.45.54.70
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 6
+  server: 51.45.54.70
+  port: 22223
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
   server: turok2.o4ka-internet.com
   port: 443
   type: vless
@@ -151,7 +115,71 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: dtac.exp.dog
+  port: 80
+  type: vless
+  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
+  tls: false
+  network: ws
+  ws-opts:
+    path: /fnet50
+    headers:
+      Host: duatoup3wk8q2.cloudfront.net
+  udp: true
 - name: 🇺🇸 美国 | USA 21
+  server: sha3.o4ka-internet.com
+  port: 443
+  type: vless
+  uuid: a03df445-0666-4d61-acde-9705009e409c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: sha3.o4ka-internet.com
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: www.baipiao.eu.org
+  port: 8880
+  type: vless
+  uuid: 121c3728-2b6b-4b69-bac6-170b13658d74
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: falling-darkness-95ea.289.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: josni.hoyes.cloudns.ch
+  port: 2053
+  type: vless
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  servername: josni.hoyes.cloudns.ch
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: josni.hoyes.cloudns.ch
+  udp: true
+- name: 🇺🇸 美国 | USA 25
   server: www.fbi.gov
   port: 2095
   type: vless
@@ -163,54 +191,13 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: icook.tw
-  port: 8880
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 91.229.91.167
+  port: 11139
   type: vless
-  uuid: c3f4ee0c-3c64-466d-ae14-9bcf685e1efd
+  uuid: 4d033e4e-943d-43c3-bed8-3e14184bae2f
   tls: false
-  servername: icook.tw
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: shiny-waterfall-fa51.300-c6f.workers.dev
-  udp: true
-- name: 🇹🇭 泰国 | THA 4
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: ff0c1cde-6f94-4bf1-9774-ab25c6b4977d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /knl8
-    headers:
-      Host: d7iwyzy9wpvuu.cloudfront.net
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 157.85.105.179
-  port: 80
-  type: vless
-  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2pwbkmfr5lxa4.cloudfront.net
-  udp: true
-- name: 🇹🇭 泰国 | THA 3
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2pwbkmfr5lxa4.cloudfront.net
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -218,22 +205,24 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 3
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 6
+  - 🇫🇷 法国 | FRA
+  - 🇪🇪 爱沙尼亚 | EST
   - 🇫🇷 法国 | FRA 2
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇷🇺 俄罗斯 | RUS 9
-  - 🇷🇺 俄罗斯 | RUS 10
-  - 🇸🇬 新加坡 | SGP
-  - 🇹🇭 泰国 | THA 2
+  - 🇧🇬 保加利亚 | BGR
+  - 🇫🇷 法国 | FRA 3
+  - 🇫🇷 法国 | FRA 5
+  - 🇫🇷 法国 | FRA 4
+  - 🇫🇷 法国 | FRA 6
+  - 🇹🇷 土耳其 | TUR
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 16
-  - 🇹🇷 土耳其 | TUR 10
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 22
-  - 🇹🇭 泰国 | THA 4
   - 🇹🇭 泰国 | THA
-  - 🇹🇭 泰国 | THA 3
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 25
+  - 🇷🇺 俄罗斯 | RUS 3
 rules:
 - MATCH,AUTO
