@@ -18,13 +18,6 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.185.126
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇺🇸 美国 | USA 17
   server: www.wto.org
   port: 2095
@@ -36,58 +29,6 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: dtac.exp.dog
-  port: 80
-  type: vless
-  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
-  tls: false
-  network: ws
-  ws-opts:
-    path: /fnet50
-    headers:
-      Host: duatoup3wk8q2.cloudfront.net
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: turok2.o4ka-internet.com
-  port: 443
-  type: vless
-  uuid: a03df445-0666-4d61-acde-9705009e409c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: turok2.o4ka-internet.com
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: josni.hoyes.cloudns.ch
-  port: 2053
-  type: vless
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: josni.hoyes.cloudns.ch
   udp: true
 - name: 🇺🇸 美国 | USA 21
   server: sha3.o4ka-internet.com
@@ -103,6 +44,58 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
+- name: 🇹🇭 泰国 | THA
+  server: dtac.exp.dog
+  port: 80
+  type: vless
+  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
+  tls: false
+  network: ws
+  ws-opts:
+    path: /fnet50
+    headers:
+      Host: duatoup3wk8q2.cloudfront.net
+  udp: true
+- name: 🇺🇸 美国 | USA 25
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: turok2.o4ka-internet.com
+  port: 443
+  type: vless
+  uuid: a03df445-0666-4d61-acde-9705009e409c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: turok2.o4ka-internet.com
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: josni.hoyes.cloudns.ch
+  port: 2053
+  type: vless
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  servername: josni.hoyes.cloudns.ch
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: josni.hoyes.cloudns.ch
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -110,33 +103,30 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇨🇴 哥伦比亚 | COL
   - 🇺🇸 美国 | USA 17
-  - 🇹🇭 泰国 | THA
-  - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 21
+  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 25
+  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 19
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇨🇴 哥伦比亚 | COL
   - 🇺🇸 美国 | USA 17
-  - 🇹🇭 泰国 | THA
-  - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 21
+  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 25
+  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 19
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 | THA
-  - 🇹🇷 土耳其 | TUR
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -149,12 +139,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 25
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇴 哥伦比亚 | COL
 rules:
 - MATCH,AUTO
