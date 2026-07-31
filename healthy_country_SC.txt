@@ -1,1 +1,2 @@
-trojan://humanity@45.130.125.126:443?type=ws&host=www.calmlunch.com&path=/assignment&security=tls&sni=www.calmlunch.com#🇸🇨 128 - SC - Trojan/WS/TLS - 443
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@45.130.125.209:80?encryption=none&host=de.vpnbase.net&path=/http&security=none&type=ws#🇸🇨 480 - SC - VLESS/WS - 80
+trojan://humanity@45.130.125.158:443?path=/assignment&security=tls&alpn=h3,h2,http/1.1&insecure=0&host=www.ignitelimit.com&fp=ios&type=ws&allowInsecure=0&sni=www.ignitelimit.com#🇸🇨 130 - SC - Trojan/WS/TLS/UTLS - 443

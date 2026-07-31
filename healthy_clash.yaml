@@ -44,6 +44,20 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: turok2.o4ka-internet.com
+  port: 443
+  type: vless
+  uuid: a03df445-0666-4d61-acde-9705009e409c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: turok2.o4ka-internet.com
+  client-fingerprint: random
+  network: tcp
+  udp: true
 - name: 🇹🇭 泰国 | THA
   server: dtac.exp.dog
   port: 80
@@ -68,20 +82,6 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: turok2.o4ka-internet.com
-  port: 443
-  type: vless
-  uuid: a03df445-0666-4d61-acde-9705009e409c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: turok2.o4ka-internet.com
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 19
   server: josni.hoyes.cloudns.ch
   port: 2053
@@ -105,9 +105,9 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 | EST
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 21
+  - 🇹🇷 土耳其 | TUR
   - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 25
-  - 🇹🇷 土耳其 | TUR
   - 🇺🇸 美国 | USA 19
 - name: PROTO-VLESS
   type: url-test
@@ -117,15 +117,16 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 | EST
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 21
+  - 🇹🇷 土耳其 | TUR
   - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 25
-  - 🇹🇷 土耳其 | TUR
   - 🇺🇸 美国 | USA 19
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇹🇷 土耳其 | TUR
   - 🇹🇭 泰国 | THA
 - name: REGION-EU
   type: url-test
@@ -140,6 +141,5 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 25
 rules:
 - MATCH,AUTO
