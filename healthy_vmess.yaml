@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 5
+- name: 🇳🇱 荷兰 | NLD 6
   server: tun1.wizardx1.com
   port: 2078
   type: vmess
@@ -22,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 6
 rules:
 - MATCH,AUTO
