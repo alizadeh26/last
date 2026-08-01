@@ -4,48 +4,68 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇪 瑞典 | SWE 3
-  server: 13.51.233.2
-  port: 443
+- name: 🇦🇷 阿根廷 | ARG
+  server: s.8.p.f.r.a.g.3.b.ar01-ae5.entry.v51124-1.qpon
+  port: 20025
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 | SWE 5
-  server: 13.53.38.71
-  port: 443
+  cipher: aes-256-gcm
+  password: 94571d62-a23f-364e-8065-2a740b342216
+- name: 🇬🇧 英国 | GBR 5
+  server: s.8.p.w.d.7.4.3.b.gb01-ae5.entry.v51124-1.qpon
+  port: 20020
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 8
-  server: 13.62.231.217
-  port: 443
+  cipher: aes-256-gcm
+  password: 94571d62-a23f-364e-8065-2a740b342216
+- name: 🇯🇵 日本 | JPN
+  server: 1.t.k.w.d.a.q.3.b.jp01-ae5.entry.v51124-1.qpon
+  port: 473
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 5
-  server: 38.180.135.39
-  port: 8316
+  cipher: aes-256-gcm
+  password: 94571d62-a23f-364e-8065-2a740b342216
+- name: 🇭🇰 香港 | HKG 4
+  server: s.t.k.z.e.s.q.3.b.hk03-ae5.entry.v51124-1.qpon
+  port: 760
+  type: ss
+  cipher: aes-256-gcm
+  password: 94571d62-a23f-364e-8065-2a740b342216
+- name: 🇯🇵 日本 | JPN 5
+  server: 7.t.p.z.r.a.q.3.b.jp02-ae5.entry.v51124-1.qpon
+  port: 483
+  type: ss
+  cipher: aes-256-gcm
+  password: 94571d62-a23f-364e-8065-2a740b342216
+- name: 🇳🇱 荷兰 | NLD 9
+  server: e3.cover20.ir
+  port: 56985
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
+  password: gmUUhfQrQbrhF6NXRp+GxqHTPC6ZGCxRDvAMrjeoQfk=
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 98.81.132.97
-  port: 443
+- name: 🇸🇬 新加坡 | SGP
+  server: s.8.m.z.r.a.q.3.b.sg03-ae5.entry.v51124-1.qpon
+  port: 20080
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-256-gcm
+  password: 94571d62-a23f-364e-8065-2a740b342216
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: 7.8.k.w.d.a.4.3.b.ru01-ae5.entry.v51124-1.qpon
+  port: 20030
+  type: ss
+  cipher: aes-256-gcm
+  password: 94571d62-a23f-364e-8065-2a740b342216
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇸🇪 瑞典 | SWE 5
-  - 🇸🇪 瑞典 | SWE 8
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 20
+  - 🇦🇷 阿根廷 | ARG
+  - 🇬🇧 英国 | GBR 5
+  - 🇯🇵 日本 | JPN
+  - 🇭🇰 香港 | HKG 4
+  - 🇯🇵 日本 | JPN 5
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇸🇬 新加坡 | SGP
+  - 🇷🇺 俄罗斯 | RUS 5
 rules:
 - MATCH,AUTO
