@@ -4,40 +4,48 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 137.131.193.56
-  port: 59319
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 13.51.233.2
+  port: 443
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 🇧🇷 巴西 | BRA 2
-  server: 147.15.57.24
-  port: 59319
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 | SWE 5
+  server: 13.53.38.71
+  port: 443
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 🇭🇰 香港 | HKG
-  server: 212.192.13.25
-  port: 20166
-  type: ss
-  cipher: aes-256-gcm
-  password: 7e1dd4c55bf85da5
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 195.58.48.19
-  port: 50111
+- name: 🇸🇪 瑞典 | SWE 8
+  server: 13.62.231.217
+  port: 443
   type: ss
-  cipher: aes-256-gcm
-  password: fbaf33bcffe53cf9
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 5
+  server: 38.180.135.39
+  port: 8316
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ljqdalu13..
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: 98.81.132.97
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
-  - 🇭🇰 香港 | HKG
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇸🇪 瑞典 | SWE 5
+  - 🇸🇪 瑞典 | SWE 8
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 20
 rules:
 - MATCH,AUTO

@@ -4,70 +4,290 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 6
-  server: 178.17.53.177
-  port: 34151
+- name: 🇦🇹 奥地利 | AUT
+  server: 45.131.215.61
+  port: 52315
   type: vless
-  uuid: e80398bb-aecb-4686-a75c-dfe4cd8ce242
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: nlEvGwt7WTuobjUSOK9ITQ8LF5VIC-SrWPMTH9FqTk4
-    short-id: 5e039404
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: eston3.o4ka-internet.com
-  port: 443
-  type: vless
-  uuid: a03df445-0666-4d61-acde-9705009e409c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: eston3.o4ka-internet.com
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: dtac.exp.dog
-  port: 80
-  type: vless
-  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
+  uuid: 29498268-55f3-4b51-ba1a-1eba23f4ab63
   tls: false
   network: ws
   ws-opts:
-    path: /fnet50
-    headers:
-      Host: duatoup3wk8q2.cloudfront.net
+    path: /
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: www.wto.org
-  port: 2095
+- name: 🇩🇪 德国 | DEU
+  server: dedger.skorostnet.space
+  port: 443
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: dedger.skorostnet.space
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇨🇾 塞浦路斯 | CYP
+  server: api-endpoint.rest
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XW9rKSbrkI0ehSHTieUsCpvhJ1_Wib9MDPZG8JafD0s
+    short-id: 19fbc4c7dd3d3d5a
+  servername: api-endpoint.rest
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: dev.tunnelpoint.space
+  port: 443
+  type: vless
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+  servername: dev.tunnelpoint.space
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 12
+  server: 91.124.209.138
+  port: 8880
+  type: vless
+  uuid: 28926c34-865c-447e-8d42-a17240af743b
   tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: sha3.o4ka-internet.com
+      Host: cdn-cloudflare91.korvexe.ir
+- name: 🇩🇪 德国 | DEU 15
+  server: de22.kubservice.icu
   port: 443
   type: vless
-  uuid: a03df445-0666-4d61-acde-9705009e409c
+  uuid: 1a0bd0ba-df37-4d86-84ee-5f6eb4210d07
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: sha3.o4ka-internet.com
-  client-fingerprint: random
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+  servername: de22.kubservice.icu
+  client-fingerprint: qq
   network: tcp
+  udp: true
+- name: 🇪🇸 西班牙 | ESP 2
+  server: is.tunnelpoint.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+  servername: is.tunnelpoint.space
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 5
+  server: 194.242.129.183
+  port: 2550
+  type: vless
+  uuid: d8b42cd5-a149-4356-9e61-000000000000
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇭🇺 匈牙利 | HUN
+  server: hu001.kubservice.icu
+  port: 443
+  type: vless
+  uuid: 1a0bd0ba-df37-4d86-84ee-5f6eb4210d07
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+  servername: hu001.kubservice.icu
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇬🇷 希腊 | GRC
+  server: sys-runtime-errors.blog
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: rqnNT7JPmVcyahhg-djQ44mW1P_wxok3KjHTirb-pkI
+    short-id: e5a03ed4c5832bc4
+  servername: sys-runtime-errors.blog
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇮🇹 意大利 | ITA 2
+  server: log-delivery.cloud
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 2p4JMqpDtRw7qmmNZUg8JZ4rbq5Nvm7Xpv_Pw2r5myA
+    short-id: 26a4015385ec5527
+  servername: log-delivery.cloud
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇮🇪 爱尔兰 | IRL
+  server: dev-ops-notes.blog
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5qYuPXdx_1i6bBOUJRKCSv2vBxdWxSZcct_Cxd-W0hc
+    short-id: 65c55164c5e88da1
+  servername: dev-ops-notes.blog
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 91.124.209.138
+  port: 2095
+  type: vless
+  uuid: 28926c34-865c-447e-8d42-a17240af743b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn-cloudflare91.korvexe.ir
+  udp: true
+- name: 🇬🇧 英国 | GBR 6
+  server: rt.tunnelpoint.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+  servername: rt.tunnelpoint.space
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: ne88.kubservice.icu
+  port: 443
+  type: vless
+  uuid: 1a0bd0ba-df37-4d86-84ee-5f6eb4210d07
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+  servername: ne88.kubservice.icu
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: ne111.kubservice.icu
+  port: 443
+  type: vless
+  uuid: 1a0bd0ba-df37-4d86-84ee-5f6eb4210d07
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+  servername: ne111.kubservice.icu
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pl88.kubservice.icu
+  port: 443
+  type: vless
+  uuid: 1a0bd0ba-df37-4d86-84ee-5f6eb4210d07
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+  servername: pl88.kubservice.icu
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: se99.kubservice.icu
+  port: 443
+  type: vless
+  uuid: 1a0bd0ba-df37-4d86-84ee-5f6eb4210d07
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+  servername: se99.kubservice.icu
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 4
+  server: site.neoncloak.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: site.neoncloak.space
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 13.51.233.2
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 | SWE 5
+  server: 13.53.38.71
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: code-sandbox.blog
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 84d_aHtsBvclx_Y6FnTmhhTqsZyQdfCGWtmFvefTrUI
+    short-id: ee57ea513371ce89
+  servername: code-sandbox.blog
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 8
+  server: 13.62.231.217
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 5
+  server: 38.180.135.39
+  port: 8316
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ljqdalu13..
   udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: turok2.o4ka-internet.com
@@ -83,31 +303,78 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: www.fbi.gov
-  port: 2095
+- name: 🇺🇸 美国 | USA 7
+  server: sha3.o4ka-internet.com
+  port: 443
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: a03df445-0666-4d61-acde-9705009e409c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: sha3.o4ka-internet.com
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: 98.81.132.97
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 17
+  server: dedus.skorostnet.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+  servername: dedus.skorostnet.space
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇹🇭 泰国 | THA 3
+  server: dtac.exp.dog
+  port: 80
+  type: vless
+  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /fnet50
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: duatoup3wk8q2.cloudfront.net
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: josni.hoyes.cloudns.ch
-  port: 2053
+- name: 🇺🇸 美国 | USA 11
+  server: ad-020.cloud25075.info
+  port: 8443
   type: vless
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
   tls: true
-  servername: josni.hoyes.cloudns.ch
+  servername: ad-020.cloud25075.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: josni.hoyes.cloudns.ch
+      Host: ad-020.cloud25075.info
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: most.lodkirmm.ru
+  port: 443
+  type: vless
+  uuid: ee6950b1-5a5a-4bb6-ae54-814070840281
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6fwpt8WW46VND7VgVV5lQSteCUgJsZbRR092VDZ2nFs
+  servername: most.lodkirmm.ru
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -115,46 +382,88 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇦🇹 奥地利 | AUT
+  - 🇩🇪 德国 | DEU
+  - 🇨🇾 塞浦路斯 | CYP
   - 🇩🇪 德国 | DEU 6
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 21
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU 15
+  - 🇪🇸 西班牙 | ESP 2
+  - 🇬🇧 英国 | GBR 5
+  - 🇭🇺 匈牙利 | HUN
+  - 🇬🇷 希腊 | GRC
+  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇬🇧 英国 | GBR 6
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇵🇱 波兰 | POL
+  - 🇸🇪 瑞典 | SWE
+  - 🇵🇱 波兰 | POL 4
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇸🇪 瑞典 | SWE 5
+  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇸🇪 瑞典 | SWE 8
+  - 🇺🇸 美国 | USA 5
   - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 17
+  - 🇹🇭 泰国 | THA 3
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 16
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇸🇪 瑞典 | SWE 5
+  - 🇸🇪 瑞典 | SWE 8
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 20
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇦🇹 奥地利 | AUT
+  - 🇩🇪 德国 | DEU
+  - 🇨🇾 塞浦路斯 | CYP
   - 🇩🇪 德国 | DEU 6
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 21
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU 15
+  - 🇪🇸 西班牙 | ESP 2
+  - 🇬🇧 英国 | GBR 5
+  - 🇭🇺 匈牙利 | HUN
+  - 🇬🇷 希腊 | GRC
+  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇬🇧 英国 | GBR 6
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇵🇱 波兰 | POL
+  - 🇸🇪 瑞典 | SWE
+  - 🇵🇱 波兰 | POL 4
+  - 🇷🇺 俄罗斯 | RUS 4
   - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 19
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 17
+  - 🇹🇭 泰国 | THA 3
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 16
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇦🇹 奥地利 | AUT
+  - 🇩🇪 德国 | DEU
+  - 🇨🇾 塞浦路斯 | CYP
   - 🇩🇪 德国 | DEU 6
-  - 🇪🇪 爱沙尼亚 | EST
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 21
+  - 🇩🇪 德国 | DEU 12
+  - 🇳🇱 荷兰 | NLD 4
 rules:
 - MATCH,AUTO
