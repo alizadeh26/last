@@ -4,15 +4,150 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 15
-  server: 45.133.209.203
-  port: 52315
+- name: 🇧🇷 巴西 | BRA 2
+  server: 136.248.81.138
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇧🇷 巴西 | BRA
+  server: 163.176.57.58
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 3
+  server: 163.176.45.154
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 4
+  server: 163.176.245.43
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.223.61
+  port: 62145
   type: vless
-  uuid: 29498268-55f3-4b51-ba1a-1eba23f4ab63
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  network: ws
-  ws-opts:
-    path: /
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.211.117
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 157.137.220.13
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 4
+  server: 157.137.220.52
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 5
+  server: 149.130.190.85
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: ficdn-17.nem-osh-rkp.net
+  port: 443
+  type: vless
+  uuid: 6daae99a-82f8-4675-9069-a34a165b6c6b
+  tls: true
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 15
+  server: 178.17.53.177
+  port: 34150
+  type: vless
+  uuid: e80398bb-aecb-4686-a75c-dfe4cd8ce242
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: nlEvGwt7WTuobjUSOK9ITQ8LF5VIC-SrWPMTH9FqTk4
+    short-id: 84abf04b
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 16
+  server: deddu.skorostnet.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  servername: deddu.skorostnet.space
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: tir.tunnelpoint.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+  servername: tir.tunnelpoint.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇪🇸 西班牙 | ESP 3
+  server: is.tunnelpoint.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+  servername: is.tunnelpoint.space
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 5
+  server: qwe.tunnelpoint.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+  servername: qwe.tunnelpoint.space
+  client-fingerprint: qq
+  network: tcp
   udp: true
 - name: 🇮🇪 爱尔兰 | IRL
   server: dev-ops-notes.blog
@@ -28,64 +163,145 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 98.81.132.97
+- name: 🇬🇷 希腊 | GRC
+  server: sys-runtime-errors.blog
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: rqnNT7JPmVcyahhg-djQ44mW1P_wxok3KjHTirb-pkI
+    short-id: e5a03ed4c5832bc4
+  servername: sys-runtime-errors.blog
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: f35-1-production-3e6b.up.railway.app
+  port: 443
+  type: vless
+  uuid: 334227dd-a25f-6683-3c0a-7b7875e0f00c
+  tls: true
+  alpn:
+  - http/1.1
+  servername: f35-1-production-3e6b.up.railway.app
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /ws/334227dd-a25f-6683-3c0a-7b7875e0f00c
+    headers:
+      Host: f35-1-production-3e6b.up.railway.app
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 158.180.15.97
+  port: 45819
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 82.38.31.218
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: 158.178.149.200
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: getsavesafe.net
+  port: 443
+  type: vless
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+  servername: getsavesafe.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 72.56.91.165
+  port: 9999
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2pCwqZ2qR55vF13c4LFr4xWeBr2DwoRB
+- name: 🇳🇱 荷兰 | NLD
+  server: nl10.roscomsosal.de
+  port: 443
+  type: vless
+  uuid: 0f3965de-fd00-40cb-94a6-d4c81a9b9216
+  tls: true
+  flow: xtls-rprx-vision
+  servername: nl10.roscomsosal.de
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 195.58.48.19
+  port: 10910
+  type: ss
+  cipher: aes-256-gcm
+  password: 2027e830399d8d08
+- name: 🇸🇪 瑞典 | SWE
+  server: 13.62.20.75
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA 9
-  server: ad-020.cloud25075.info
-  port: 8443
-  type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-020.cloud25075.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-020.cloud25075.info
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: ad-005.zen2bswa.info
-  port: 8443
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: code-sandbox.blog
+  port: 443
   type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
   tls: true
-  servername: ad-005.zen2bswa.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-005.zen2bswa.info
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 84d_aHtsBvclx_Y6FnTmhhTqsZyQdfCGWtmFvefTrUI
+    short-id: ee57ea513371ce89
+  servername: code-sandbox.blog
+  client-fingerprint: qq
+  network: tcp
   udp: true
-- name: 🇹🇭 泰国 | THA 2
-  server: 18.239.134.69
-  port: 80
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 16.171.111.98
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 5
+  server: www.fbi.gov
+  port: 2095
   type: vless
-  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: most.lodkirmm.ru
-  port: 443
+- name: 🇺🇸 美国 | USA 19
+  server: 162.159.140.78
+  port: 8880
   type: vless
-  uuid: ee6950b1-5a5a-4bb6-ae54-814070840281
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6fwpt8WW46VND7VgVV5lQSteCUgJsZbRR092VDZ2nFs
-  servername: most.lodkirmm.ru
-  client-fingerprint: firefox
-  network: tcp
+  uuid: a8c27bd6-e395-4f9b-a75d-1c3bc6b1f83a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: long-boat-7113.303-08c.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -93,44 +309,85 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 3
+  - 🇧🇷 巴西 | BRA 4
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 4
+  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 15
+  - 🇩🇪 德国 | DEU 16
+  - 🇩🇪 德国 | DEU 13
+  - 🇪🇸 西班牙 | ESP 3
+  - 🇬🇧 英国 | GBR 5
   - 🇮🇪 爱尔兰 | IRL
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
-  - 🇹🇭 泰国 | THA 2
-  - 🇺🇸 美国 | USA 13
+  - 🇬🇷 希腊 | GRC
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD
+  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇸🇪 瑞典 | SWE
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 19
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 12
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 3
+  - 🇧🇷 巴西 | BRA 4
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇸🇪 瑞典 | SWE
+  - 🇸🇪 瑞典 | SWE 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 4
+  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 15
+  - 🇩🇪 德国 | DEU 16
+  - 🇩🇪 德国 | DEU 13
+  - 🇪🇸 西班牙 | ESP 3
+  - 🇬🇧 英国 | GBR 5
   - 🇮🇪 爱尔兰 | IRL
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
-  - 🇹🇭 泰国 | THA 2
-  - 🇺🇸 美国 | USA 13
-- name: REGION-EU
+  - 🇬🇷 希腊 | GRC
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 19
+- name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 15
-  - 🇮🇪 爱尔兰 | IRL
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 3
+  - 🇧🇷 巴西 | BRA 4
+  - 🇨🇴 哥伦比亚 | COL
 rules:
 - MATCH,AUTO

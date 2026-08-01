@@ -4,8 +4,68 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 12
-  server: 98.81.132.97
+- name: 🇧🇷 巴西 | BRA 2
+  server: 136.248.81.138
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇧🇷 巴西 | BRA
+  server: 163.176.57.58
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 3
+  server: 163.176.45.154
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 4
+  server: 163.176.245.43
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 158.180.15.97
+  port: 45819
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 82.38.31.218
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 72.56.91.165
+  port: 9999
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2pCwqZ2qR55vF13c4LFr4xWeBr2DwoRB
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 195.58.48.19
+  port: 10910
+  type: ss
+  cipher: aes-256-gcm
+  password: 2027e830399d8d08
+- name: 🇸🇪 瑞典 | SWE
+  server: 13.62.20.75
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 16.171.111.98
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -16,6 +76,15 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 12
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 3
+  - 🇧🇷 巴西 | BRA 4
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇸🇪 瑞典 | SWE
+  - 🇸🇪 瑞典 | SWE 3
 rules:
 - MATCH,AUTO
