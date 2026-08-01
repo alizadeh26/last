@@ -18,14 +18,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.185.135
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL
   server: 149.130.160.234
   port: 62145
@@ -42,16 +34,16 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 4
-  server: 149.130.190.21
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.185.135
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 5
-  server: 157.137.208.54
+- name: 🇨🇴 哥伦比亚 | COL 4
+  server: 149.130.190.21
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -70,30 +62,6 @@ proxies:
     short-id: d67ec5a8fc40ebea
   servername: deddu.skorostnet.space
   client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 9
-  server: 15.237.147.218
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 10
-  server: 15.237.147.218
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 11
-  server: 15.237.147.218
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
   network: tcp
   udp: true
 - name: 🇫🇷 法国 | FRA 20
@@ -150,30 +118,6 @@ proxies:
     headers:
       Host: tme-freevpnf35-production.up.railway.app
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 9bae1d148edc10e6.apruxdomain.xyz
-  port: 80
-  type: vless
-  uuid: 8c7752f1-c2fc-47ff-8357-3ed5150d0338
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 9bae1d148edc10e6.apruxdomain.xyz
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: multi.fresedvpn.site
-  port: 11443
-  type: vless
-  uuid: 7153fb3d-f357-42ac-b6db-ece1732f7f01
-  tls: false
-  network: ws
-  ws-opts:
-    path: /api/v3/ws
-    headers:
-      Host: rebus.rustore.ru
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: most.lodkirmm.ru
   port: 443
@@ -187,6 +131,18 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 6
+  server: 9bae1d148edc10e6.apruxdomain.xyz
+  port: 80
+  type: vless
+  uuid: 8c7752f1-c2fc-47ff-8357-3ed5150d0338
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 9bae1d148edc10e6.apruxdomain.xyz
+  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: www.wto.org
   port: 2095
@@ -198,22 +154,6 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: f35-1-production-3e6b.up.railway.app
-  port: 443
-  type: vless
-  uuid: 334227dd-a25f-6683-3c0a-7b7875e0f00c
-  tls: true
-  alpn:
-  - http/1.1
-  servername: f35-1-production-3e6b.up.railway.app
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /ws/334227dd-a25f-6683-3c0a-7b7875e0f00c
-    headers:
-      Host: f35-1-production-3e6b.up.railway.app
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 162.159.21.178
@@ -246,24 +186,18 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇬 保加利亚 | BGR
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 4
-  - 🇨🇴 哥伦比亚 | COL 5
   - 🇩🇪 德国 | DEU 8
-  - 🇫🇷 法国 | FRA 9
-  - 🇫🇷 法国 | FRA 10
-  - 🇫🇷 法国 | FRA 11
   - 🇫🇷 法国 | FRA 20
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 4
-  - 🇷🇺 俄罗斯 | RUS 6
-  - 🇷🇺 俄罗斯 | RUS 4
   - 🇳🇱 荷兰 | NLD 5
+  - 🇷🇺 俄罗斯 | RUS 6
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 9
   - 🇹🇭 泰国 | THA
 rules:
