@@ -16,13 +16,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 | SWE
-  server: 13.61.5.244
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -31,6 +24,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO

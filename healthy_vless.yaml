@@ -86,21 +86,17 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: tme-freevpnf35-production.up.railway.app
-  port: 443
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: multi.fresedvpn.site
+  port: 11443
   type: vless
-  uuid: 8988b7e6-8778-abd0-8861-8bb3f7d1532b
-  tls: true
-  alpn:
-  - http/1.1
-  servername: tme-freevpnf35-production.up.railway.app
-  client-fingerprint: ios
+  uuid: 7153fb3d-f357-42ac-b6db-ece1732f7f01
+  tls: false
   network: ws
   ws-opts:
-    path: /ws/8988b7e6-8778-abd0-8861-8bb3f7d1532b
+    path: /api/v3/ws
     headers:
-      Host: tme-freevpnf35-production.up.railway.app
+      Host: rebus.rustore.ru
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 6
   server: 9bae1d148edc10e6.apruxdomain.xyz
@@ -152,7 +148,7 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇩🇪 德国 | DEU 8
   - 🇫🇷 法国 | FRA 20
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇷🇺 俄罗斯 | RUS 4
   - 🇷🇺 俄罗斯 | RUS 6
   - 🇺🇸 美国 | USA 16
   - 🇹🇭 泰国 | THA

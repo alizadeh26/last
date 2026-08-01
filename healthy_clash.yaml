@@ -86,22 +86,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: tme-freevpnf35-production.up.railway.app
-  port: 443
-  type: vless
-  uuid: 8988b7e6-8778-abd0-8861-8bb3f7d1532b
-  tls: true
-  alpn:
-  - http/1.1
-  servername: tme-freevpnf35-production.up.railway.app
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /ws/8988b7e6-8778-abd0-8861-8bb3f7d1532b
-    headers:
-      Host: tme-freevpnf35-production.up.railway.app
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 195.58.48.19
   port: 10910
@@ -114,6 +98,18 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: multi.fresedvpn.site
+  port: 11443
+  type: vless
+  uuid: 7153fb3d-f357-42ac-b6db-ece1732f7f01
+  tls: false
+  network: ws
+  ws-opts:
+    path: /api/v3/ws
+    headers:
+      Host: rebus.rustore.ru
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 6
   server: 9bae1d148edc10e6.apruxdomain.xyz
   port: 80
@@ -125,25 +121,6 @@ proxies:
     path: /
     headers:
       Host: 9bae1d148edc10e6.apruxdomain.xyz
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 13.61.5.244
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
 - name: 🇺🇸 美国 | USA 24
   server: cg1c02.waimaojd.com
@@ -160,6 +137,18 @@ proxies:
     path: /api/v1/graphql
     headers:
       Host: cg1c02.waimaojd.com
+- name: 🇺🇸 美国 | USA 16
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
 - name: 🇹🇭 泰国 | THA
   server: www.true.th
   port: 80
@@ -186,13 +175,12 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇩🇪 德国 | DEU 8
   - 🇫🇷 法国 | FRA 20
-  - 🇳🇱 荷兰 | NLD 4
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 2
+  - 🇷🇺 俄罗斯 | RUS 4
   - 🇷🇺 俄罗斯 | RUS 6
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 16
   - 🇹🇭 泰国 | THA
 - name: PROTO-SS
   type: url-test
@@ -201,7 +189,6 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇪 瑞典 | SWE
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -215,7 +202,7 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇩🇪 德国 | DEU 8
   - 🇫🇷 法国 | FRA 20
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇷🇺 俄罗斯 | RUS 4
   - 🇷🇺 俄罗斯 | RUS 6
   - 🇺🇸 美国 | USA 16
   - 🇹🇭 泰国 | THA
