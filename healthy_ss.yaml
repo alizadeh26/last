@@ -11,19 +11,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
   udp: true
-- name: 🇧🇷 巴西 | BRA 2
-  server: 163.176.114.47
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 195.133.23.200
-  port: 10190
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 195.58.48.19
   port: 10910
@@ -43,8 +30,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
-  - 🇷🇺 俄罗斯 | RUS
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 2
 rules:
