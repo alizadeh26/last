@@ -4,43 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇹 奥地利 | AUT
-  server: as.tunnelx.space
-  port: 443
-  type: vless
-  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA
-    short-id: 4e9b0c2d1a3f5768
-  servername: as.tunnelx.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇧🇷 巴西 | BRA
-  server: pro-ru-bridge.emrata.top
-  port: 443
-  type: vless
-  uuid: 594f6aef-16f8-4a86-8e2e-a217344a96aa
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
-  servername: pro-ru-bridge.emrata.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇪🇸 西班牙 | ESP 3
-  server: 82.22.47.50
-  port: 25129
-  type: vless
-  uuid: 2a088d58-eb38-47bd-b74d-ac392ee12ccd
-  tls: false
-  network: ws
-  ws-opts:
-    path: /xray
-  udp: true
 - name: 🇩🇪 德国 | DEU 26
   server: 83.143.112.140.cdn-one.org
   port: 443
@@ -82,20 +45,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: zjmy.zywm.eu.org
-  port: 443
-  type: vless
-  uuid: 83564060-4069-40b4-e657-adccef9c4b62
-  tls: true
-  servername: zjmy.zywm.eu.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /mmy
-    headers:
-      Host: zjmy.zywm.eu.org
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 14
   server: ne.tunnelx.space
   port: 443
@@ -109,16 +58,6 @@ proxies:
   servername: ne.tunnelx.space
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 151.243.182.21
-  port: 25737
-  type: vless
-  uuid: 2a088d58-eb38-47bd-b74d-ac392ee12ccd
-  tls: false
-  network: ws
-  ws-opts:
-    path: /xray
   udp: true
 - name: 🇳🇱 荷兰 | NLD 13
   server: log.bpminecraft.com
@@ -169,31 +108,17 @@ proxies:
     headers:
       Host: dark-leaf-93a1.440-02e.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: cloudflare-dns.com
-  port: 2095
+- name: 🇺🇸 美国 | USA 17
+  server: 162.159.140.78
+  port: 8880
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: a8c27bd6-e395-4f9b-a75d-1c3bc6b1f83a
   tls: false
-  servername: cnmfangbinxing.cnmfangbinxing-s.workers.dev
   network: ws
   ws-opts:
-    path: /fp=randomized
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-s.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: pro-us.emrata.top
-  port: 443
-  type: vless
-  uuid: 594f6aef-16f8-4a86-8e2e-a217344a96aa
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: uY-4wMHFY1pD8SIwHBfcxVRdolB7NAJIWIbYjaG8iw0
-  servername: pro-us.emrata.top
-  client-fingerprint: firefox
-  network: tcp
+      Host: long-boat-7113.303-08c.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 104.18.188.234
@@ -206,28 +131,6 @@ proxies:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
       Host: damp-disk-1ae9.138-c4c.workers.dev
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: 194.238.57.237
-  port: 25643
-  type: vless
-  uuid: 2a088d58-eb38-47bd-b74d-ac392ee12ccd
-  tls: false
-  network: ws
-  ws-opts:
-    path: /xray
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 162.159.140.78
-  port: 8880
-  type: vless
-  uuid: a8c27bd6-e395-4f9b-a75d-1c3bc6b1f83a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: long-boat-7113.303-08c.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 19
   server: ad-013.limaklhc6.info
@@ -243,6 +146,45 @@ proxies:
     headers:
       Host: ad-013.limaklhc6.info
   udp: true
+- name: 🇹🇭 泰国 | THA
+  server: 18.172.202.92
+  port: 80
+  type: vless
+  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
+  tls: false
+  servername: duatoup3wk8q2.cloudfront.net
+  network: ws
+  ws-opts:
+    path: /fnet50
+    headers:
+      Host: duatoup3wk8q2.cloudfront.net
+  udp: true
+- name: 🇹🇭 泰国 | THA 2
+  server: dtac.exp.dog
+  port: 80
+  type: vless
+  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
+  tls: false
+  network: ws
+  ws-opts:
+    path: /fnet50
+    headers:
+      Host: duatoup3wk8q2.cloudfront.net
+  udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: zjmy.zywm.eu.org
+  port: 443
+  type: vless
+  uuid: 83564060-4069-40b4-e657-adccef9c4b62
+  tls: true
+  servername: zjmy.zywm.eu.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /mmy
+    headers:
+      Host: zjmy.zywm.eu.org
+  udp: true
 - name: 🇺🇸 美国 | USA 25
   server: ad-010.flux3ni5o.info
   port: 8443
@@ -257,44 +199,26 @@ proxies:
     headers:
       Host: ad-010.flux3ni5o.info
   udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: 104.17.21.32
-  port: 8880
-  type: vless
-  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: autumn-dawn-fa6b.337-272.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇧🇷 巴西 | BRA
-  - 🇪🇸 西班牙 | ESP 3
   - 🇩🇪 德国 | DEU 26
   - 🇳🇱 荷兰 | NLD
   - 🇲🇩 摩尔多瓦 | MDA
-  - 🇲🇾 马来西亚 | MYS
   - 🇳🇱 荷兰 | NLD 14
-  - 🇵🇱 波兰 | POL
   - 🇳🇱 荷兰 | NLD 13
   - 🇵🇱 波兰 | POL 3
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 8
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 19
+  - 🇹🇭 泰国 | THA
+  - 🇹🇭 泰国 | THA 2
+  - 🇲🇾 马来西亚 | MYS
   - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 26
 rules:
 - MATCH,AUTO

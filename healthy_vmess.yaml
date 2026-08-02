@@ -4,18 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 8
-  server: tun1.wizardx1.com
-  port: 2078
-  type: vmess
-  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 94.182.88.61
   port: 2078
@@ -31,7 +19,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 7
 rules:
 - MATCH,AUTO

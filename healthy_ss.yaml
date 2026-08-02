@@ -4,25 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR 2
-  server: 134.65.58.5
-  port: 61312
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇸🇪 瑞典 | SWE 8
-  server: 16.171.111.98
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇬 新加坡 | SGP
-  server: 161.118.224.85
-  port: 56927
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
-  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 38.180.135.39
   port: 8313
@@ -35,9 +16,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
-  - 🇸🇪 瑞典 | SWE 8
-  - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO
