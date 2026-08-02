@@ -4,106 +4,40 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA 2
-  server: 163.176.225.9
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇨🇭 瑞士 | CHE
-  server: ch.tunnelx.space
+- name: 🇦🇹 奥地利 | AUT
+  server: as.tunnelx.space
   port: 443
   type: vless
   uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: q_lfutznS1iTS7bGphTIGMYVeht-8clcf_IfzIf4mBQ
-    short-id: 10a5c8e2f4b7d936
-  servername: ch.tunnelx.space
+    public-key: UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA
+    short-id: 4e9b0c2d1a3f5768
+  servername: as.tunnelx.space
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.185.1
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: fin.sillyvpn.cc
-  port: 31013
-  type: vless
-  uuid: ddd9a320-9e93-437f-a5b6-6bf9647334a9
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 31.76.11.46.cdn-one.org
+- name: 🇧🇷 巴西 | BRA
+  server: pro-ru-bridge.emrata.top
   port: 443
   type: vless
-  uuid: 2a6b708e-6799-473e-85e9-d4b116c5eedc
-  tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /52872/BNzG4FvIAr
-    headers:
-      Host: 31.76.11.46.cdn-one.org
-  udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: de-gw.videomonitor.cloud
-  port: 2087
-  type: vless
-  uuid: d6b98f2c-53c7-11f1-91ee-561961d26415
-  tls: true
-  reality-opts:
-    public-key: LBsG9yP94EfV0y0hUGiraFdedsHbp4JjDp3XppkTnyQ
-    short-id: 11f2ad8421132110
-  servername: de-gw.videomonitor.cloud
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-direct
-  udp: true
-- name: 🇩🇪 德国 | DEU 17
-  server: free-de.moscow-neversleep.digital
-  port: 753
-  type: vless
-  uuid: aa41a66a-69c3-48c1-a71e-f2d8e153f14b
+  uuid: 594f6aef-16f8-4a86-8e2e-a217344a96aa
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-    short-id: 1ed136481e0ede74
-  servername: cdn.byteark.com
+    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
+  servername: pro-ru-bridge.emrata.top
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: 185.143.234.238
-  port: 2086
-  type: vless
-  uuid: 1ee1f28d-4975-4d7c-95c7-76172c20eed5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: parsi.parsi.sbs
-  udp: true
-- name: 🇩🇪 德国 | DEU 30
-  server: creativeboxde.zanity.net
-  port: 5223
+- name: 🇬🇧 英国 | GBR 2
+  server: 134.65.58.5
+  port: 61312
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: vOmnC9uJ6tXdLyIaRGwc2s
-  udp: true
-- name: 🇪🇸 西班牙 | ESP
+  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+- name: 🇪🇸 西班牙 | ESP 3
   server: 82.22.47.50
   port: 25129
   type: vless
@@ -113,52 +47,76 @@ proxies:
   ws-opts:
     path: /xray
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 144.24.226.244
-  port: 61312
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇭🇺 匈牙利 | HUN
-  server: hu0001.kubservice.icu
+- name: 🇩🇪 德国 | DEU 26
+  server: 83.143.112.140.cdn-one.org
   port: 443
   type: vless
-  uuid: 767a17d0-0579-4d98-ae13-413198f44752
+  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
+  tls: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /29378/wQYeoLE7LS
+    headers:
+      Host: 83.143.112.140.cdn-one.org
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 19.07-7.yunus.guru
+  port: 443
+  type: vless
+  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
-  servername: hu0001.kubservice.icu
-  client-fingerprint: qq
+    public-key: APXp2igsjxFmGkpb3L98I__FTySIY6saN6skP2y0ank
+    short-id: c6d439fd92614ab0
+  servername: 19.07-7.yunus.guru
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇮🇳 印度 | IND
-  server: ind.tunnelx.space
+- name: 🇲🇩 摩尔多瓦 | MDA
+  server: rezerv23.yunus.guru
+  port: 443
+  type: vless
+  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zT7a-PnmIWP4c-G1EDUT3KZ7URi1kc8EppAWPr3h5lk
+    short-id: afeed89ae23b36ed
+  servername: rezerv23.yunus.guru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: zjmy.zywm.eu.org
+  port: 443
+  type: vless
+  uuid: 83564060-4069-40b4-e657-adccef9c4b62
+  tls: true
+  servername: zjmy.zywm.eu.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /mmy
+    headers:
+      Host: zjmy.zywm.eu.org
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 14
+  server: ne.tunnelx.space
   port: 443
   type: vless
   uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: loAFNSTbdM9g-9dyps76y996jHPfBNJBq5F5Vd0Sekw
-    short-id: 4e9b5c2d1a3f5748
-  servername: ind.tunnelx.space
+    public-key: z0sVn6TJzORVJQX_vhS-ucGnJCKhDMD6eqnOdQrjrUQ
+    short-id: f3a9d2b1c7e4f608
+  servername: ne.tunnelx.space
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: pro-it.emrata.top
-  port: 443
-  type: vless
-  uuid: b3779e17-7ac3-47af-a648-bccef9e02ceb
-  tls: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: pro-it.emrata.top
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
+- name: 🇵🇱 波兰 | POL
   server: 151.243.182.21
   port: 25737
   type: vless
@@ -168,28 +126,19 @@ proxies:
   ws-opts:
     path: /xray
   udp: true
-- name: 🇵🇱 波兰 | POL 4
-  server: pl03.skorostnet.space
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 13
+  server: log.bpminecraft.com
+  port: 8880
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
-    short-id: fdda9806fe5d8584
-  servername: pl03.skorostnet.space
-  client-fingerprint: edge
-  network: tcp
+  uuid: 486ebf01-0b45-4c38-9ef6-198aa0f9d2c3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: quiet-feather-19f3.410-a69.workers.dev
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 13.61.5.244
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇵🇱 波兰 | POL
+- name: 🇵🇱 波兰 | POL 3
   server: 31.76.251.127.cdn-one.org
   port: 443
   type: vless
@@ -202,63 +151,169 @@ proxies:
     headers:
       Host: 31.76.251.127.cdn-one.org
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: www.wto.org
+- name: 🇳🇱 荷兰 | NLD 8
+  server: tun1.wizardx1.com
+  port: 2078
+  type: vmess
+  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 8
+  server: 16.171.111.98
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 新加坡 | SGP
+  server: 161.118.224.85
+  port: 56927
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: icy-snowflake-1f56.147-1ea.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dark-leaf-93a1.440-02e.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: cloudflare-dns.com
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
+  servername: cnmfangbinxing.cnmfangbinxing-s.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /fp=randomized
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: cnmfangbinxing.cnmfangbinxing-s.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 5
+- name: 🇺🇸 美国 | USA 11
+  server: pro-us.emrata.top
+  port: 443
+  type: vless
+  uuid: 594f6aef-16f8-4a86-8e2e-a217344a96aa
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uY-4wMHFY1pD8SIwHBfcxVRdolB7NAJIWIbYjaG8iw0
+  servername: pro-us.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 104.18.188.234
+  port: 8880
+  type: vless
+  uuid: 52fb52b1-82de-4c6f-b7d3-599ce5d57f1c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: damp-disk-1ae9.138-c4c.workers.dev
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 194.238.57.237
+  port: 25643
+  type: vless
+  uuid: 2a088d58-eb38-47bd-b74d-ac392ee12ccd
+  tls: false
+  network: ws
+  ws-opts:
+    path: /xray
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: 162.159.140.78
+  port: 8880
+  type: vless
+  uuid: a8c27bd6-e395-4f9b-a75d-1c3bc6b1f83a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: long-boat-7113.303-08c.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 14
   server: 38.180.135.39
   port: 8313
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ljqdalu13..
-- name: 🇹🇷 土耳其 | TUR 3
-  server: dev.cloud-compute.rest
-  port: 443
+- name: 🇺🇸 美国 | USA 19
+  server: ad-013.limaklhc6.info
+  port: 8443
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Fd7epdoLVi5UHgGe_2pHYzh3efwKFKPwBC0UhuB5JWM
-    short-id: 8cce20a6ad40c0a2
-  servername: dev.cloud-compute.rest
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
+  servername: ad-013.limaklhc6.info
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: ad-013.limaklhc6.info
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 4usa.skorostnet.space
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 94.182.88.61
+  port: 2078
+  type: vmess
+  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 25
+  server: ad-010.flux3ni5o.info
+  port: 8443
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
-    short-id: fdda9806fe5d8584
-  servername: 4usa.skorostnet.space
-  client-fingerprint: qq
-  network: tcp
+  servername: ad-010.flux3ni5o.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.flux3ni5o.info
+  udp: true
+- name: 🇺🇸 美国 | USA 26
+  server: 104.17.21.32
+  port: 8880
+  type: vless
+  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: autumn-dawn-fa6b.337-272.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -266,76 +321,84 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA 2
-  - 🇨🇭 瑞士 | CHE
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 17
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 30
-  - 🇪🇸 西班牙 | ESP
+  - 🇦🇹 奥地利 | AUT
+  - 🇧🇷 巴西 | BRA
   - 🇬🇧 英国 | GBR 2
-  - 🇭🇺 匈牙利 | HUN
-  - 🇮🇳 印度 | IND
-  - 🇮🇹 意大利 | ITA
-  - 🇵🇱 波兰 | POL 2
-  - 🇵🇱 波兰 | POL 4
-  - 🇸🇪 瑞典 | SWE
+  - 🇪🇸 西班牙 | ESP 3
+  - 🇩🇪 德国 | DEU 26
+  - 🇳🇱 荷兰 | NLD
+  - 🇲🇩 摩尔多瓦 | MDA
+  - 🇲🇾 马来西亚 | MYS
+  - 🇳🇱 荷兰 | NLD 14
   - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
-  - 🇹🇷 土耳其 | TUR 3
-  - 🇺🇸 美国 | USA 13
+  - 🇳🇱 荷兰 | NLD 13
+  - 🇵🇱 波兰 | POL 3
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇸🇪 瑞典 | SWE 8
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 8
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 19
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 26
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA 2
-  - 🇩🇪 德国 | DEU 30
   - 🇬🇧 英国 | GBR 2
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 5
+  - 🇸🇪 瑞典 | SWE 8
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 14
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 | CHE
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 17
-  - 🇩🇪 德国 | DEU 12
-  - 🇪🇸 西班牙 | ESP
-  - 🇭🇺 匈牙利 | HUN
-  - 🇮🇳 印度 | IND
-  - 🇮🇹 意大利 | ITA
-  - 🇵🇱 波兰 | POL 2
-  - 🇵🇱 波兰 | POL 4
+  - 🇦🇹 奥地利 | AUT
+  - 🇧🇷 巴西 | BRA
+  - 🇪🇸 西班牙 | ESP 3
+  - 🇩🇪 德国 | DEU 26
+  - 🇳🇱 荷兰 | NLD
+  - 🇲🇩 摩尔多瓦 | MDA
+  - 🇲🇾 马来西亚 | MYS
+  - 🇳🇱 荷兰 | NLD 14
   - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 4
-  - 🇹🇷 土耳其 | TUR 3
-  - 🇺🇸 美国 | USA 13
+  - 🇳🇱 荷兰 | NLD 13
+  - 🇵🇱 波兰 | POL 3
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 8
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 26
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 7
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 | CHE
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 2
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇧🇷 巴西 | BRA 2
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇦🇹 奥地利 | AUT
+  - 🇧🇷 巴西 | BRA
+  - 🇬🇧 英国 | GBR 2
+  - 🇪🇸 西班牙 | ESP 3
+  - 🇩🇪 德国 | DEU 26
 rules:
 - MATCH,AUTO
