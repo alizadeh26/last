@@ -4,12 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.212.124
-  port: 62145
+- name: 🇦🇹 奥地利 | AUT
+  server: as.tunnelx.space
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
+  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA
+    short-id: 4e9b0c2d1a3f5768
+  servername: as.tunnelx.space
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇨🇴 哥伦比亚 | COL 2
@@ -73,20 +79,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇦🇹 奥地利 | AUT
-  server: as.tunnelx.space
-  port: 443
-  type: vless
-  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA
-    short-id: 4e9b0c2d1a3f5768
-  servername: as.tunnelx.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇪🇸 西班牙 | ESP 2
   server: isp03.skorostnet.space
   port: 443
@@ -113,6 +105,28 @@ proxies:
     short-id: fdda9806fe5d8584
   servername: fl09.skorostnet.space
   client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 2
+  server: 3x-ui-multi-production-b876.up.railway.app
+  port: 443
+  type: vless
+  uuid: aa6bb7db-8e34-4f82-b9dc-104b3eef5806
+  tls: true
+  servername: 3x-ui-multi-production-b876.up.railway.app
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /in4
+    headers:
+      Host: 3x-ui-multi-production-b876.up.railway.app
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.212.124
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
   udp: true
 - name: 🇮🇹 意大利 | ITA
@@ -150,36 +164,6 @@ proxies:
   servername: pro-jp.emrata.top
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 3x-ui-multi-production-b876.up.railway.app
-  port: 443
-  type: vless
-  uuid: aa6bb7db-8e34-4f82-b9dc-104b3eef5806
-  tls: true
-  servername: 3x-ui-multi-production-b876.up.railway.app
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /in4
-    headers:
-      Host: 3x-ui-multi-production-b876.up.railway.app
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: marzban-node-production-3abb.up.railway.app
-  port: 443
-  type: vless
-  uuid: 086a1b7f-47a3-442d-9c40-cddf2cd53324
-  tls: true
-  alpn:
-  - h2
-  servername: marzban-node-production-3abb.up.railway.app
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: marzban-node-production-3abb.up.railway.app
   udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 19.07-3.yunus.guru
@@ -233,19 +217,6 @@ proxies:
     headers:
       Host: fangbinxingnmsl.pusytroller.gq
   udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: pro-ru-bridge.emrata.top
-  port: 443
-  type: vless
-  uuid: d3b3f278-2cca-4abf-aa27-bf0c0f27cbd0
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
-  servername: pro-ru-bridge.emrata.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: tr.tunnelx.space
   port: 443
@@ -257,6 +228,19 @@ proxies:
     public-key: zvbLa6BrfAeAKIg4TZ2AASiEZ9ntYCSEFhgkbqWwkQg
     short-id: 4e9b5c2d1a3f5728
   servername: tr.tunnelx.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: pro-ru-bridge.emrata.top
+  port: 443
+  type: vless
+  uuid: d3b3f278-2cca-4abf-aa27-bf0c0f27cbd0
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
+  servername: pro-ru-bridge.emrata.top
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -287,46 +271,32 @@ proxies:
     headers:
       Host: zjmy.zywm.eu.org
   udp: true
-- name: 🇺🇸 美国 | USA 28
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: soft-scene-d370.55-7ff.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇦🇹 奥地利 | AUT
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 12
   - 🇩🇪 德国 | DEU 15
-  - 🇦🇹 奥地利 | AUT
   - 🇪🇸 西班牙 | ESP 2
   - 🇩🇪 德国 | DEU 17
+  - 🇫🇷 法国 | FRA 2
+  - 🇨🇴 哥伦比亚 | COL
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 4
   - 🇯🇵 日本 | JPN
-  - 🇫🇷 法国 | FRA 2
-  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD
   - 🇲🇩 摩尔多瓦 | MDA 2
   - 🇸🇪 瑞典 | SWE
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 14
   - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 14
   - 🇹🇭 泰国 | THA 2
   - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 28
 rules:
 - MATCH,AUTO
