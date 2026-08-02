@@ -39,6 +39,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 12
+  server: pro-fi.emrata.top
+  port: 443
+  type: vless
+  uuid: 4bce450e-0a37-4fdd-8c9e-ba6a5e4730aa
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-fi.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU
   server: 83.143.112.140.cdn-one.org
   port: 443
@@ -52,17 +65,12 @@ proxies:
     headers:
       Host: 83.143.112.140.cdn-one.org
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: pro-fi.emrata.top
-  port: 443
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.212.124
+  port: 62145
   type: vless
-  uuid: 4bce450e-0a37-4fdd-8c9e-ba6a5e4730aa
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: pro-fi.emrata.top
-  client-fingerprint: firefox
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 15
@@ -91,42 +99,6 @@ proxies:
     short-id: fdda9806fe5d8584
   servername: isp03.skorostnet.space
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 17
-  server: fl09.skorostnet.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
-    short-id: fdda9806fe5d8584
-  servername: fl09.skorostnet.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 3x-ui-multi-production-b876.up.railway.app
-  port: 443
-  type: vless
-  uuid: aa6bb7db-8e34-4f82-b9dc-104b3eef5806
-  tls: true
-  servername: 3x-ui-multi-production-b876.up.railway.app
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /in4
-    headers:
-      Host: 3x-ui-multi-production-b876.up.railway.app
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.212.124
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
   network: tcp
   udp: true
 - name: 🇮🇹 意大利 | ITA
@@ -179,6 +151,20 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 17
+  server: fl09.skorostnet.space
+  port: 443
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+  servername: fl09.skorostnet.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇲🇩 摩尔多瓦 | MDA 2
   server: rezerv23.yunus.guru
   port: 443
@@ -205,18 +191,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 172.64.146.153
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fangbinxingnmsl.pusytroller.gq
-  udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: tr.tunnelx.space
   port: 443
@@ -231,18 +205,17 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: pro-ru-bridge.emrata.top
-  port: 443
+- name: 🇺🇸 美国 | USA 3
+  server: 172.64.146.153
+  port: 2095
   type: vless
-  uuid: d3b3f278-2cca-4abf-aa27-bf0c0f27cbd0
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
-  servername: pro-ru-bridge.emrata.top
-  client-fingerprint: firefox
-  network: tcp
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
   udp: true
 - name: 🇹🇭 泰国 | THA 2
   server: 18.172.202.92
@@ -256,6 +229,19 @@ proxies:
     path: /fnet50
     headers:
       Host: duatoup3wk8q2.cloudfront.net
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: pro-ru-bridge.emrata.top
+  port: 443
+  type: vless
+  uuid: d3b3f278-2cca-4abf-aa27-bf0c0f27cbd0
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
+  servername: pro-ru-bridge.emrata.top
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 26
   server: zjmy.zywm.eu.org
@@ -280,23 +266,22 @@ proxy-groups:
   - 🇦🇹 奥地利 | AUT
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU
+  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 15
   - 🇪🇸 西班牙 | ESP 2
-  - 🇩🇪 德国 | DEU 17
-  - 🇫🇷 法国 | FRA 2
-  - 🇨🇴 哥伦比亚 | COL
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 4
   - 🇯🇵 日本 | JPN
   - 🇳🇱 荷兰 | NLD
+  - 🇩🇪 德国 | DEU 17
   - 🇲🇩 摩尔多瓦 | MDA 2
   - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 3
   - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 3
   - 🇹🇭 泰国 | THA 2
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 26
 - name: PROTO-VLESS
   type: url-test
@@ -306,23 +291,22 @@ proxy-groups:
   - 🇦🇹 奥地利 | AUT
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU
+  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 15
   - 🇪🇸 西班牙 | ESP 2
-  - 🇩🇪 德国 | DEU 17
-  - 🇫🇷 法国 | FRA 2
-  - 🇨🇴 哥伦比亚 | COL
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 4
   - 🇯🇵 日本 | JPN
   - 🇳🇱 荷兰 | NLD
+  - 🇩🇪 德国 | DEU 17
   - 🇲🇩 摩尔多瓦 | MDA 2
   - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 3
   - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 3
   - 🇹🇭 泰国 | THA 2
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 26
 - name: REGION-EU
   type: url-test
@@ -331,8 +315,8 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
