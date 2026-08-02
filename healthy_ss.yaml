@@ -4,18 +4,50 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 14
-  server: 38.180.135.39
-  port: 8313
+- name: 🇧🇷 巴西 | BRA 2
+  server: 129.148.49.241
+  port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇩🇪 德国 | DEU 18
+  server: 130.61.233.206
+  port: 59924
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
+- name: 🇬🇧 英国 | GBR
+  server: 134.65.57.138
+  port: 61312
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 89.34.230.135
+  port: 30736
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: _8vt09n7I9Kl64RYzLLwYe3V
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 54.196.207.151
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 14
+  - 🇧🇷 巴西 | BRA 2
+  - 🇩🇪 德国 | DEU 18
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO

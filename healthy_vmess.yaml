@@ -4,21 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 94.182.88.61
-  port: 2078
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 89.34.230.135
+  port: 51185
   type: vmess
-  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
+  uuid: af6b6c9b-62bc-46c2-9147-81ec34885899
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: 89.34.230.135
+  port: 11361
+  type: vmess
+  uuid: af6b6c9b-62bc-46c2-9147-81ec34885899
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /y83qykm0zm
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 10
 rules:
 - MATCH,AUTO
