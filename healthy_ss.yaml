@@ -4,6 +4,41 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇧🇷 巴西 | BRA
+  server: 147.15.51.28
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 2
+  server: 163.176.191.41
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 3
+  server: 147.15.107.7
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 4
+  server: 163.176.249.216
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 5
+  server: 163.176.222.201
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
 - name: 🇯🇵 日本 | JPN
   server: xunlinknode.csdjhajkshdjkas.com
   port: 40003
@@ -16,21 +51,32 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 28789988-887e-4e41-83cd-27bbfb7999ad
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: hg1.levikogjgfdd.ir
-  port: 40028
+- name: 🇸🇪 瑞典 | SWE 2
+  server: creativeboxlv.zanity.net
+  port: 5228
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: JlOogWdbpnfIWiJ1KyvzMw
+- name: 🇹🇭 泰国 | THA
+  server: xunlinknode.csdjhajkshdjkas.com
+  port: 40008
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 28789988-887e-4e41-83cd-27bbfb7999ad
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA 3
+  - 🇧🇷 巴西 | BRA 4
+  - 🇧🇷 巴西 | BRA 5
   - 🇯🇵 日本 | JPN
   - 🇲🇾 马来西亚 | MYS
-  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇹🇭 泰国 | THA
 rules:
 - MATCH,AUTO

@@ -4,157 +4,91 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 177.1.199.2
-  port: 443
+- name: 🇨🇴 哥伦比亚 | COL 5
+  server: 149.130.190.126
+  port: 62145
   type: vless
-  uuid: fdac0300-5963-4e68-adb6-fc89a2de99a2
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
-  servername: pro-ru-bridge.emrata.top
-  client-fingerprint: chrome
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
+- name: 🇨🇴 哥伦比亚 | COL 7
   server: 157.137.223.179
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇩🇪 德国 | DEU 8
-  server: ddc-akn.astralweb.tech
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.224.94
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 2-27-13-121.nip.io
   port: 443
   type: vless
-  uuid: 04b9e828-43ed-4faf-8952-41069ec08355
+  uuid: 0101b456-b51b-40f3-926c-dd2e219a98a0
+  tls: true
+  servername: 2-27-13-121.nip.io
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 2-27-13-121.nip.io
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.189.180
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 6
+  server: 149.130.175.28
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 157.137.214.172
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 4
+  server: 157.137.237.61
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: line-vpn-co-production.up.railway.app
+  port: 443
+  type: vless
+  uuid: 0a1486b6-d54f-c050-2c0b-80ba5f8966a6
   tls: true
   alpn:
   - h2
-  servername: ddc-akn.astralweb.tech
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: hentai.colorbox.space
-  port: 80
-  type: vless
-  uuid: 8c7752f1-c2fc-47ff-8357-3ed5150d0338
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hentai.colorbox.space
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: cf.off666.ccwu.cc
-  port: 443
-  type: vless
-  uuid: 0c1c48ca-0b15-4558-84d9-82a1da312a19
-  tls: true
-  servername: cf.off666.ccwu.cc
+  - http/1.1
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ws/0a1486b6-d54f-c050-2c0b-80ba5f8966a6
     headers:
-      Host: cf.off666.ccwu.cc
+      Host: line-vpn-co-production.up.railway.app
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: getsavesafe.net
-  port: 443
-  type: vless
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
-  servername: getsavesafe.net
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: gd.off999.ccwu.cc
-  port: 443
-  type: vless
-  uuid: 723b1be4-244e-42d4-87fc-ff67c8e68d1c
-  tls: true
-  servername: gd.off999.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gd.off999.ccwu.cc
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: cf.off888.ccwu.cc
-  port: 443
-  type: vless
-  uuid: 9bc41d19-2d8b-4d49-8db1-20155be03b82
-  tls: true
-  servername: cf.off888.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /asdfghjkl
-    headers:
-      Host: cf.off888.ccwu.cc
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 2.26.79.32
-  port: 443
-  type: vless
-  uuid: fdac0300-5963-4e68-adb6-fc89a2de99a2
-  tls: true
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-  servername: pro-se.emrata.top
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: sw.tunnelx.space
-  port: 443
-  type: vless
-  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: L1mMPvSystB6rMgj4GnHizy37M_M1gj_krywNf3hfHc
-    short-id: c1a3b5d7e9f02468
-  servername: sw.tunnelx.space
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: yellow-breeze-989b.348-9b8.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 13
+- name: 🇺🇸 美国 | USA 6
   server: 38.246.226.240
   port: 57878
   type: vless
@@ -163,51 +97,31 @@ proxies:
   network: ws
   ws-opts:
     path: /535f0e03
-- name: 🇺🇸 美国 | USA 6
-  server: 162.159.21.178
-  port: 8880
+- name: 🇺🇸 美国 | USA 11
+  server: net1.irajapan.store
+  port: 2052
   type: vless
-  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: dark-leaf-93a1.440-02e.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: be21e732-58e2-47a1-b6c6-8cf9de58dde4
   tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: net.irajapan.store
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 168.222.202.15
-  port: 4100
+- name: 🇺🇸 美国 | USA 10
+  server: d.mygoldiran.com
+  port: 443
   type: vless
-  uuid: 2001e98b-e06e-4244-910f-7ff640746eda
-  tls: false
+  uuid: 76792e97-ee95-4d29-86da-347362d491f2
+  tls: true
+  servername: usa_multi.mygoldiran.com
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /v1
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /idea
     headers:
-      Host: icy-snowflake-1f56.147-1ea.workers.dev
+      Host: usa_multi.mygoldiran.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -215,22 +129,17 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
+  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇨🇴 哥伦比亚 | COL 7
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 7
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇸🇪 瑞典 | SWE
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 13
+  - 🇩🇪 德国 | DEU
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL 6
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 4
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 16
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
