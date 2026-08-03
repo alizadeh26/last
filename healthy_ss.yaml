@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 147.15.51.28
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
 - name: 🇯🇵 日本 | JPN
   server: xunlinknode.csdjhajkshdjkas.com
   port: 40003
@@ -41,7 +34,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇯🇵 日本 | JPN
   - 🇲🇾 马来西亚 | MYS
   - 🇸🇪 瑞典 | SWE 2
