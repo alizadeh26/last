@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇹 奥地利 | AUT
+- name: 🇦🇹 奥地利 | AUT 2
   server: as.tunnelx.space
   port: 443
   type: vless
@@ -18,74 +18,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.212.124
-  port: 62145
+- name: 🇩🇪 德国 | DEU 10
+  server: ad-005.zen2bswa.info
+  port: 8443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.181.172
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 83.143.112.140.cdn-one.org
-  port: 443
-  type: vless
-  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
+  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
   tls: true
+  servername: ad-005.zen2bswa.info
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /29378/wQYeoLE7LS
+    path: /
     headers:
-      Host: 83.143.112.140.cdn-one.org
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: pro-fi.emrata.top
-  port: 443
-  type: vless
-  uuid: d3b3f278-2cca-4abf-aa27-bf0c0f27cbd0
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: pro-fi.emrata.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: pro-fi.emrata.top
-  port: 443
-  type: vless
-  uuid: 4bce450e-0a37-4fdd-8c9e-ba6a5e4730aa
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: pro-fi.emrata.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 15
-  server: fl11.skorostnet.space
-  port: 443
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
-    short-id: fdda9806fe5d8584
-  servername: fl11.skorostnet.space
-  client-fingerprint: firefox
-  network: tcp
+      Host: ad-005.zen2bswa.info
   udp: true
 - name: 🇪🇸 西班牙 | ESP 2
   server: isp03.skorostnet.space
@@ -101,7 +46,7 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 17
+- name: 🇩🇪 德国 | DEU 14
   server: fl09.skorostnet.space
   port: 443
   type: vless
@@ -115,19 +60,20 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: pro-it.emrata.top
+- name: 🇩🇪 德国 | DEU 15
+  server: 83.143.112.140.cdn-one.org
   port: 443
   type: vless
-  uuid: d3b3f278-2cca-4abf-aa27-bf0c0f27cbd0
+  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
   tls: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: pro-it.emrata.top
   client-fingerprint: chrome
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /29378/wQYeoLE7LS
+    headers:
+      Host: 83.143.112.140.cdn-one.org
   udp: true
-- name: 🇮🇹 意大利 | ITA 4
+- name: 🇮🇹 意大利 | ITA 2
   server: pro-it.emrata.top
   port: 443
   type: vless
@@ -139,11 +85,19 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN
+- name: 🇳🇱 荷兰 | NLD
+  server: 144.21.35.143
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 2
   server: pro-jp.emrata.top
   port: 443
   type: vless
-  uuid: d3b3f278-2cca-4abf-aa27-bf0c0f27cbd0
+  uuid: 4bce450e-0a37-4fdd-8c9e-ba6a5e4730aa
   tls: true
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
@@ -151,39 +105,60 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 19.07-3.yunus.guru
+- name: 🇬🇧 英国 | GBR 6
+  server: ad-010.zen2bswa.info
+  port: 8443
+  type: vless
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  servername: ad-010.zen2bswa.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.zen2bswa.info
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: ne.tunnelx.space
   port: 443
   type: vless
-  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
+  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: APXp2igsjxFmGkpb3L98I__FTySIY6saN6skP2y0ank
-    short-id: c6d439fd92614ab0
-  servername: 19.07-3.yunus.guru
+    public-key: z0sVn6TJzORVJQX_vhS-ucGnJCKhDMD6eqnOdQrjrUQ
+    short-id: f3a9d2b1c7e4f608
+  servername: ne.tunnelx.space
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇲🇩 摩尔多瓦 | MDA 2
-  server: rezerv23.yunus.guru
+- name: 🇸🇪 瑞典 | SWE 2
+  server: 16.16.170.253
+  port: 27775
+  type: vless
+  uuid: 309c4bd0-7430-b8aa-2238-1075e9e29370
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 3
+  server: 31.76.251.127.cdn-one.org
   port: 443
   type: vless
-  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
+  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zT7a-PnmIWP4c-G1EDUT3KZ7URi1kc8EppAWPr3h5lk
-    short-id: afeed89ae23b36ed
-  servername: rezerv23.yunus.guru
-  client-fingerprint: firefox
-  network: tcp
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /10336/2GCOqG7bvA
+    headers:
+      Host: 31.76.251.127.cdn-one.org
   udp: true
-- name: 🇸🇪 瑞典 | SWE
+- name: 🇸🇪 瑞典 | SWE 5
   server: pro-se.emrata.top
   port: 443
   type: vless
-  uuid: d3b3f278-2cca-4abf-aa27-bf0c0f27cbd0
+  uuid: 4bce450e-0a37-4fdd-8c9e-ba6a5e4730aa
   tls: true
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
@@ -191,19 +166,33 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 172.64.146.153
-  port: 2095
+- name: 🇸🇪 瑞典 | SWE 6
+  server: pro-se.emrata.top
+  port: 443
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
+  uuid: caeb0482-d3d9-4271-8fbe-bc2cfe694efa
+  tls: true
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+  servername: pro-se.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 4
+  server: 31.76.251.127.cdn-one.org
+  port: 443
+  type: vless
+  uuid: 2a6b708e-6799-473e-85e9-d4b116c5eedc
+  tls: true
+  servername: 31.76.251.127.cdn-one.org
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /10336/2GCOqG7bvA
     headers:
-      Host: fangbinxingnmsl.pusytroller.gq
+      Host: 31.76.251.127.cdn-one.org
   udp: true
-- name: 🇹🇷 土耳其 | TUR
+- name: 🇹🇷 土耳其 | TUR 4
   server: tr.tunnelx.space
   port: 443
   type: vless
@@ -217,20 +206,45 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: pro-ru-bridge.emrata.top
-  port: 443
+- name: 🇺🇸 美国 | USA 8
+  server: www.wto.org
+  port: 2095
   type: vless
-  uuid: d3b3f278-2cca-4abf-aa27-bf0c0f27cbd0
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
-  servername: pro-ru-bridge.emrata.top
-  client-fingerprint: firefox
-  network: tcp
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 26
+- name: 🇹🇷 土耳其 | TUR 5
+  server: nl-bl-nl.karmatel.ir
+  port: 20828
+  type: vless
+  uuid: 35a6946a-2003-448f-9c1b-911efaa8c9a7
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nl-bl-nl.karmatel.ir
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: ad-010.vector2llqn.info
+  port: 8443
+  type: vless
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  servername: ad-010.vector2llqn.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.vector2llqn.info
+  udp: true
+- name: 🇺🇸 美国 | USA 9
   server: zjmy.zywm.eu.org
   port: 443
   type: vless
@@ -250,24 +264,25 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 15
+  - 🇦🇹 奥地利 | AUT 2
+  - 🇩🇪 德国 | DEU 10
   - 🇪🇸 西班牙 | ESP 2
-  - 🇩🇪 德国 | DEU 17
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 4
-  - 🇯🇵 日本 | JPN
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 15
+  - 🇮🇹 意大利 | ITA 2
   - 🇳🇱 荷兰 | NLD
-  - 🇲🇩 摩尔多瓦 | MDA 2
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 3
-  - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 26
+  - 🇯🇵 日本 | JPN 2
+  - 🇬🇧 英国 | GBR 6
+  - 🇳🇱 荷兰 | NLD 10
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇵🇱 波兰 | POL 3
+  - 🇸🇪 瑞典 | SWE 5
+  - 🇸🇪 瑞典 | SWE 6
+  - 🇵🇱 波兰 | POL 4
+  - 🇹🇷 土耳其 | TUR 4
+  - 🇺🇸 美国 | USA 8
+  - 🇹🇷 土耳其 | TUR 5
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
