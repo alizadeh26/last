@@ -4,16 +4,24 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.189.180
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.224.94
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.224.94
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 157.137.214.172
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.189.180
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -36,6 +44,13 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇨🇴 哥伦比亚 | COL 7
+  server: 157.137.223.179
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇨🇴 哥伦比亚 | COL 6
   server: 149.130.175.28
   port: 62145
@@ -44,36 +59,18 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 157.137.214.172
-  port: 62145
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 194.26.229.214
+  port: 2200
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: a9f07ec1-bd8a-4c95-a281-3de7f0b76853
   tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 2-27-13-121.nip.io
-  port: 443
-  type: vless
-  uuid: 0101b456-b51b-40f3-926c-dd2e219a98a0
-  tls: true
-  servername: 2-27-13-121.nip.io
-  client-fingerprint: qq
   network: ws
   ws-opts:
-    path: /ws
+    path: /v1
     headers:
-      Host: 2-27-13-121.nip.io
-- name: 🇺🇸 美国 | USA 6
-  server: 38.246.226.240
-  port: 57878
-  type: vless
-  uuid: 535f0e03-24d4-4268-ac40-5af829e8e59b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /535f0e03
+      Host: rzd.ru
+  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: www.wto.org
   port: 2095
@@ -100,34 +97,21 @@ proxies:
     headers:
       Host: usa_multi.mygoldiran.com
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: net1.irajapan.store
-  port: 2052
-  type: vless
-  uuid: be21e732-58e2-47a1-b6c6-8cf9de58dde4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: net.irajapan.store
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 4
   - 🇨🇴 哥伦比亚 | COL 5
+  - 🇨🇴 哥伦比亚 | COL 7
   - 🇨🇴 哥伦比亚 | COL 6
-  - 🇨🇴 哥伦比亚 | COL 3
-  - 🇩🇪 德国 | DEU
-  - 🇺🇸 美国 | USA 6
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO

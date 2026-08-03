@@ -4,39 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40003
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-- name: 🇲🇾 马来西亚 | MYS
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40006
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
 - name: 🇸🇪 瑞典 | SWE 2
   server: creativeboxlv.zanity.net
   port: 5228
   type: ss
   cipher: chacha20-ietf-poly1305
   password: JlOogWdbpnfIWiJ1KyvzMw
-- name: 🇹🇭 泰国 | THA
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40008
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN
-  - 🇲🇾 马来西亚 | MYS
   - 🇸🇪 瑞典 | SWE 2
-  - 🇹🇭 泰国 | THA
 rules:
 - MATCH,AUTO
