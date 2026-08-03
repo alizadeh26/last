@@ -4,36 +4,37 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 89.34.230.135
-  port: 51185
+- name: 🇺🇸 美国 | USA 23
+  server: 154.36.135.84
+  port: 55633
   type: vmess
-  uuid: af6b6c9b-62bc-46c2-9147-81ec34885899
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 89.34.230.135
-  port: 11361
-  type: vmess
-  uuid: af6b6c9b-62bc-46c2-9147-81ec34885899
+  uuid: d2627d4c-422c-42d7-9e9a-954c8f6728d4
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /y83qykm0zm
-  udp: true
+    path: /arki
+- name: 🇺🇸 美国 | USA 22
+  server: 154.36.135.84
+  port: 33735
+  type: vmess
+  uuid: 0753b38c-ffdb-4eb0-928a-c0855642fd4b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 10
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 22
 rules:
 - MATCH,AUTO

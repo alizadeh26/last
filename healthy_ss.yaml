@@ -4,26 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA
-  server: 83.171.225.55
-  port: 8388
+- name: 🇯🇵 日本 | JPN
+  server: xunlinknode.csdjhajkshdjkas.com
+  port: 40003
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: ZmM0Z
+  password: 28789988-887e-4e41-83cd-27bbfb7999ad
+- name: 🇲🇾 马来西亚 | MYS
+  server: xunlinknode.csdjhajkshdjkas.com
+  port: 40006
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 28789988-887e-4e41-83cd-27bbfb7999ad
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: hg1.levikogjgfdd.ir
+  port: 40028
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 28789988-887e-4e41-83cd-27bbfb7999ad
   udp: true
-- name: 🇩🇪 德国 | DEU 14
-  server: 152.70.26.250
-  port: 59924
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
-  - 🇩🇪 德国 | DEU 14
+  - 🇯🇵 日本 | JPN
+  - 🇲🇾 马来西亚 | MYS
+  - 🇹🇼 🇨🇳 台湾 | TWN
 rules:
 - MATCH,AUTO

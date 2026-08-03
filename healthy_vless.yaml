@@ -4,45 +4,145 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 10
-  server: 83.143.112.140.cdn-one.org
+- name: 🇧🇷 巴西 | BRA
+  server: 177.1.199.2
   port: 443
   type: vless
-  uuid: 2a6b708e-6799-473e-85e9-d4b116c5eedc
+  uuid: fdac0300-5963-4e68-adb6-fc89a2de99a2
   tls: true
-  servername: 83.143.112.140.cdn-one.org
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
+  servername: pro-ru-bridge.emrata.top
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /29378/wQYeoLE7LS
-    headers:
-      Host: 83.143.112.140.cdn-one.org
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: www.wto.org
-  port: 2095
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.223.179
+  port: 62145
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU 8
+  server: ddc-akn.astralweb.tech
+  port: 443
+  type: vless
+  uuid: 04b9e828-43ed-4faf-8952-41069ec08355
+  tls: true
+  alpn:
+  - h2
+  servername: ddc-akn.astralweb.tech
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: hentai.colorbox.space
+  port: 80
+  type: vless
+  uuid: 8c7752f1-c2fc-47ff-8357-3ed5150d0338
   tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: hentai.colorbox.space
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 172.66.214.247
+- name: 🇳🇱 荷兰 | NLD 6
+  server: cf.off666.ccwu.cc
+  port: 443
+  type: vless
+  uuid: 0c1c48ca-0b15-4558-84d9-82a1da312a19
+  tls: true
+  servername: cf.off666.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.off666.ccwu.cc
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: getsavesafe.net
+  port: 443
+  type: vless
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+  servername: getsavesafe.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: gd.off999.ccwu.cc
+  port: 443
+  type: vless
+  uuid: 723b1be4-244e-42d4-87fc-ff67c8e68d1c
+  tls: true
+  servername: gd.off999.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gd.off999.ccwu.cc
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: cf.off888.ccwu.cc
+  port: 443
+  type: vless
+  uuid: 9bc41d19-2d8b-4d49-8db1-20155be03b82
+  tls: true
+  servername: cf.off888.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /asdfghjkl
+    headers:
+      Host: cf.off888.ccwu.cc
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 2.26.79.32
+  port: 443
+  type: vless
+  uuid: fdac0300-5963-4e68-adb6-fc89a2de99a2
+  tls: true
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+  servername: pro-se.emrata.top
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: sw.tunnelx.space
+  port: 443
+  type: vless
+  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: L1mMPvSystB6rMgj4GnHizy37M_M1gj_krywNf3hfHc
+    short-id: c1a3b5d7e9f02468
+  servername: sw.tunnelx.space
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: codecanyon.net
   port: 8880
   type: vless
-  uuid: 9b14cdbe-bcfe-4178-a674-3ad88a7c6f6a
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /pyip
     headers:
-      Host: summer-snow-c151.320-3ef.workers.dev
+      Host: silent-snow-1a0d.241-b0a.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 10
+- name: 🇸🇬 新加坡 | SGP 2
   server: 162.159.21.178
   port: 8880
   type: vless
@@ -54,58 +154,60 @@ proxies:
     headers:
       Host: yellow-breeze-989b.348-9b8.workers.dev
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 77.222.37.89
+- name: 🇺🇸 美国 | USA 13
+  server: 38.246.226.240
+  port: 57878
+  type: vless
+  uuid: 535f0e03-24d4-4268-ac40-5af829e8e59b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /535f0e03
+- name: 🇺🇸 美国 | USA 6
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dark-leaf-93a1.440-02e.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 168.222.202.15
   port: 4100
   type: vless
-  uuid: b79c54f3-68e9-4e9d-8b57-22cbbe978730
+  uuid: 2001e98b-e06e-4244-910f-7ff640746eda
   tls: false
   network: ws
   ws-opts:
     path: /v1
-    headers:
-      Host: live.ok.ru
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: ad-010.zen2bswa.info
-  port: 8443
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.21.178
+  port: 8880
   type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.zen2bswa.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.zen2bswa.info
-  udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: 3.162.103.99
-  port: 80
-  type: vless
-  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
   tls: false
-  servername: d2pwbkmfr5lxa4.cloudfront.net
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: d2pwbkmfr5lxa4.cloudfront.net
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: ad-005.zen2bswa.info
-  port: 8443
-  type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
-  tls: true
-  servername: ad-005.zen2bswa.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-005.zen2bswa.info
+      Host: icy-snowflake-1f56.147-1ea.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -113,13 +215,22 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 10
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 10
-  - 🇷🇺 俄罗斯 | RUS 6
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 21
+  - 🇧🇷 巴西 | BRA
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 7
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇸🇪 瑞典 | SWE
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 16
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇸🇬 新加坡 | SGP
 rules:
 - MATCH,AUTO
