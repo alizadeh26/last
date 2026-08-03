@@ -4,56 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 147.15.51.28
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 2
-  server: 163.176.191.41
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 3
-  server: 147.15.107.7
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 4
-  server: 163.176.249.216
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 5
-  server: 163.176.222.201
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 5
-  server: 149.130.190.126
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 7
-  server: 157.137.223.179
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇨🇴 哥伦比亚 | COL
   server: 157.137.224.94
   port: 62145
@@ -62,29 +12,8 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 2-27-13-121.nip.io
-  port: 443
-  type: vless
-  uuid: 0101b456-b51b-40f3-926c-dd2e219a98a0
-  tls: true
-  servername: 2-27-13-121.nip.io
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 2-27-13-121.nip.io
 - name: 🇨🇴 哥伦比亚 | COL 2
   server: 149.130.189.180
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 6
-  server: 149.130.175.28
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -106,6 +35,49 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 6
+  server: 149.130.175.28
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 5
+  server: 149.130.190.126
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 7
+  server: 157.137.223.179
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU
+  server: 2-27-13-121.nip.io
+  port: 443
+  type: vless
+  uuid: 0101b456-b51b-40f3-926c-dd2e219a98a0
+  tls: true
+  servername: 2-27-13-121.nip.io
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 2-27-13-121.nip.io
+- name: 🇧🇷 巴西 | BRA
+  server: 147.15.51.28
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
   udp: true
 - name: 🇯🇵 日本 | JPN
   server: xunlinknode.csdjhajkshdjkas.com
@@ -131,22 +103,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 28789988-887e-4e41-83cd-27bbfb7999ad
-- name: 🇺🇸 美国 | USA 2
-  server: line-vpn-co-production.up.railway.app
-  port: 443
-  type: vless
-  uuid: 0a1486b6-d54f-c050-2c0b-80ba5f8966a6
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/0a1486b6-d54f-c050-2c0b-80ba5f8966a6
-    headers:
-      Host: line-vpn-co-production.up.railway.app
-  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 38.246.226.240
   port: 57878
@@ -156,6 +112,18 @@ proxies:
   network: ws
   ws-opts:
     path: /535f0e03
+- name: 🇺🇸 美国 | USA 14
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
 - name: 🇺🇸 美国 | USA 11
   server: net1.irajapan.store
   port: 2052
@@ -182,43 +150,48 @@ proxies:
     headers:
       Host: usa_multi.mygoldiran.com
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 194.26.229.214
+  port: 2200
+  type: vless
+  uuid: a9f07ec1-bd8a-4c95-a281-3de7f0b76853
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 3
-  - 🇧🇷 巴西 | BRA 4
-  - 🇧🇷 巴西 | BRA 5
-  - 🇨🇴 哥伦比亚 | COL 5
-  - 🇨🇴 哥伦比亚 | COL 7
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇨🇴 哥伦比亚 | COL 6
   - 🇨🇴 哥伦比亚 | COL 3
   - 🇨🇴 哥伦比亚 | COL 4
+  - 🇨🇴 哥伦比亚 | COL 6
+  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇨🇴 哥伦比亚 | COL 7
+  - 🇩🇪 德国 | DEU
+  - 🇧🇷 巴西 | BRA
   - 🇯🇵 日本 | JPN
   - 🇲🇾 马来西亚 | MYS
   - 🇸🇪 瑞典 | SWE 2
   - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 10
+  - 🇷🇺 俄罗斯 | RUS 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 3
-  - 🇧🇷 巴西 | BRA 4
-  - 🇧🇷 巴西 | BRA 5
   - 🇯🇵 日本 | JPN
   - 🇲🇾 马来西亚 | MYS
   - 🇸🇪 瑞典 | SWE 2
@@ -228,27 +201,28 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 5
-  - 🇨🇴 哥伦比亚 | COL 7
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇨🇴 哥伦比亚 | COL 6
   - 🇨🇴 哥伦比亚 | COL 3
   - 🇨🇴 哥伦比亚 | COL 4
-  - 🇺🇸 美国 | USA 2
+  - 🇨🇴 哥伦比亚 | COL 6
+  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇨🇴 哥伦比亚 | COL 7
+  - 🇩🇪 德国 | DEU
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 10
+  - 🇷🇺 俄罗斯 | RUS 2
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 3
-  - 🇧🇷 巴西 | BRA 4
-  - 🇧🇷 巴西 | BRA 5
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 4
+  - 🇨🇴 哥伦比亚 | COL 6
 rules:
 - MATCH,AUTO

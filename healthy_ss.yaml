@@ -11,34 +11,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
   udp: true
-- name: 🇧🇷 巴西 | BRA 2
-  server: 163.176.191.41
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 3
-  server: 147.15.107.7
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 4
-  server: 163.176.249.216
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 5
-  server: 163.176.222.201
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
 - name: 🇯🇵 日本 | JPN
   server: xunlinknode.csdjhajkshdjkas.com
   port: 40003
@@ -70,10 +42,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 3
-  - 🇧🇷 巴西 | BRA 4
-  - 🇧🇷 巴西 | BRA 5
   - 🇯🇵 日本 | JPN
   - 🇲🇾 马来西亚 | MYS
   - 🇸🇪 瑞典 | SWE 2
