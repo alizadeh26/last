@@ -4,14 +4,42 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: creativeboxde3.zanity.net
-  port: 5223
+- name: 🇩🇪 德国 | DEU
+  server: 130.61.178.74
+  port: 59924
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 0w2SXgRXHtKQ0FKwGIzq0j
-- name: 🇯🇵 日本 | JPN
-  server: 13.231.179.245
+  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
+- name: 🇧🇷 巴西 | BRA
+  server: 137.131.226.109
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 130.61.226.94
+  port: 59924
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.61.86.126
+  port: 59924
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 23.185.200.135
+  port: 57841
+  type: ss
+  cipher: aes-128-gcm
+  password: xo6k84l7b00n2hJp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 13.61.13.49
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -23,7 +51,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇧🇷 巴西 | BRA
   - 🇩🇪 德国 | DEU 2
-  - 🇯🇵 日本 | JPN
+  - 🇩🇪 德国 | DEU 3
+  - 🇺🇸 美国 | USA 4
+  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
