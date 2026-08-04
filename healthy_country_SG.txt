@@ -1,7 +1,5 @@
-vmess://eyJhZGQiOiIxNDkuODguMjMuMjAyIiwicG9ydCI6IjE4MDAwIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InJhdyIsInYiOiIyIiwicHMiOiLmlrDliqDlnaFfMDgwNDE5NTQ0IiwiaG9zdCI6IiIsInBhdGgiOiIiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoiIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
+vmess://eyJhZGQiOiIxNDkuODguMjMuMjAyIiwicG9ydCI6IjE4MDAwIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InJhdyIsInYiOiIyIiwicHMiOiLmlrDliqDlnaFfMDgwNTAwNTQ2IiwiaG9zdCI6IiIsInBhdGgiOiIiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoiIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
 vless://814bd064-544d-4255-a070-5705c03f6da9@3.0.111.82:12972?encryption=none&flow=xtls-rprx-vision&fp=&pbk=k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0&security=reality&sid=48050fab&sni=www.apple.com&type=tcp#REALITY|SG🇸🇬
 ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@103.106.229.69:9090#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+103.106.229.69-9090+%7C+294.21ms
-vless://607801ac-dbdd-4938-a167-129015d9978e@91.192.81.214:443?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=www.cloudflare.com&fp=chrome&flow=xtls-rprx-vision&sid=d1742269&pbk=bMcyxNueltQhz5Kuxcf8odDStWHowYfLhKNdCbUweDc#🇸🇬 356 - SG - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://b8f3a337-ad39-4064-95f1-33a725a65877@152.42.217.27:4321?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=www.yahoo.com&fp=chrome&flow=xtls-rprx-vision&sid=950e9d42106bedae&pbk=iFKNWOLqlwrSmvR8wkxap1u85leVrr6YqEBy3Vn8WX0#🇸🇬 643 - SG - VLESS/REALITY/PBK/SID/VISION/UTLS - 4321
-trojan://ND91608427@13.212.208.243:443?sni=sacred-treefrog.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🇸🇬 50 - SG - Trojan/TLS/UTLS - 443
-trojan://ND91608427@54.255.35.23:443?sni=tidy-gelding.rooster465.autos&allowInsecure=1&type=tcp#🇸🇬 117 - SG - Trojan/TLS - 443
+trojan://ND91608427@13.212.208.243:443?sni=sacred-treefrog.rooster465.autos&allowInsecure=1&type=tcp#🇸🇬 50 - SG - Trojan/TLS - 443
+trojan://ND91608427@54.255.35.23:443?sni=tidy-gelding.rooster465.autos&allowInsecure=1&type=tcp#🇸🇬 230 - SG - Trojan/TLS - 443
