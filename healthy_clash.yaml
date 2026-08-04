@@ -12,6 +12,12 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 130.61.178.74
+  port: 59924
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
 - name: 🇩🇪 德国 | DEU 2
   server: 130.61.226.94
   port: 59924
@@ -26,13 +32,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 134.98.158.207
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇳🇱 荷兰 | NLD 3
   server: 141.148.235.203
   port: 62145
@@ -41,29 +40,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 158.178.159.208
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 84.235.173.150
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 23.185.200.135
-  port: 57841
-  type: ss
-  cipher: aes-128-gcm
-  password: xo6k84l7b00n2hJp
-  udp: true
 - name: 🇵🇹 葡萄牙 | PRT
   server: 93.119.168.215
   port: 60771
@@ -71,13 +47,6 @@ proxies:
   uuid: 060a5db6-7ff9-4a64-87c1-8a27be4f11ab
   tls: false
   network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 13.61.13.49
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
   udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: 185.39.204.155
@@ -90,30 +59,20 @@ proxies:
     grpc-mode: gun
     grpc-service-name: grpc
   udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+- name: 🇺🇸 美国 | USA 4
+  server: 23.185.200.135
+  port: 57841
+  type: ss
+  cipher: aes-128-gcm
+  password: xo6k84l7b00n2hJp
   udp: true
-- name: 🇺🇸 美国 | USA 28
-  server: www.fbi.gov
-  port: 2095
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 134.98.158.207
+  port: 62145
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
+  network: tcp
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -121,49 +80,41 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇺🇸 美国 | USA 4
   - 🇵🇹 葡萄牙 | PRT
-  - 🇸🇪 瑞典 | SWE
   - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 28
+  - 🇺🇸 美国 | USA 4
+  - 🇳🇱 荷兰 | NLD 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 3
   - 🇺🇸 美国 | USA 4
-  - 🇸🇪 瑞典 | SWE
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 5
   - 🇵🇹 葡萄牙 | PRT
   - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 28
+  - 🇳🇱 荷兰 | NLD 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
 - name: REGION-SA
   type: url-test
