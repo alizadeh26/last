@@ -25,14 +25,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 141.148.235.203
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇵🇹 葡萄牙 | PRT
   server: 93.119.168.215
   port: 60771
@@ -47,6 +39,13 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 23.185.200.135
+  port: 57841
+  type: ss
+  cipher: aes-128-gcm
+  password: xo6k84l7b00n2hJp
   udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: 185.39.204.155
@@ -83,21 +82,6 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 23.185.200.135
-  port: 57841
-  type: ss
-  cipher: aes-128-gcm
-  password: xo6k84l7b00n2hJp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 84.235.173.150
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -107,14 +91,12 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD 3
   - 🇵🇹 葡萄牙 | PRT
   - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 4
   - 🇹🇷 土耳其 | TUR
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 4
-  - 🇳🇱 荷兰 | NLD 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -130,12 +112,10 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇳🇱 荷兰 | NLD 3
   - 🇵🇹 葡萄牙 | PRT
   - 🇹🇷 土耳其 | TUR
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 28
-  - 🇳🇱 荷兰 | NLD 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -143,8 +123,8 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD 3
   - 🇵🇹 葡萄牙 | PRT
+  - 🇸🇪 瑞典 | SWE
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
