@@ -5,31 +5,34 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.226.24
+  server: 149.130.181.254
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.233.108
+  server: 157.137.217.152
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 3
-  server: 149.130.172.130
+  server: 157.137.235.122
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇩🇪 德国 | DEU 15
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
   server: new01.asaltabie.monster
   port: 443
   type: vless
-  uuid: 0211e2dc-c485-465d-87bd-426635433114
+  uuid: f0e5bb7a-4d44-4316-9038-91bf4e343289
   tls: true
   alpn:
   - h2
@@ -42,109 +45,95 @@ proxies:
     headers:
       Host: new01.asaltabie.monster
   udp: true
-- name: 🇳🇱 荷兰 | NLD 12
-  server: 134.98.137.74
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇯🇵 日本 | JPN
-  server: download.yunzhongzhuan.com
-  port: 8880
-  type: vless
-  uuid: 7a2df38b-2d8b-486b-9b43-641c81e11f40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: shiny-mud-d9fa.466.workers.dev
-  udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: download.yunzhongzhuan.com
-  port: 8880
-  type: vless
-  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: super-sunset-010c.24-43d.workers.dev
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 6
+- name: 🇸🇬 新加坡 | SGP 2
   server: 162.159.21.178
   port: 8880
   type: vless
-  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: icy-snowflake-1f56.147-1ea.workers.dev
+      Host: dark-leaf-93a1.440-02e.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 104.16.98.215
-  port: 8880
+- name: 🇺🇸 美国 | USA 15
+  server: www.wto.org
+  port: 2095
   type: vless
-  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /
     headers:
-      Host: super-sunset-010c.24-43d.workers.dev
+      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: download.yunzhongzhuan.com
-  port: 8880
+- name: 🇺🇸 美国 | USA 21
+  server: soskeynets-vpn-production-7798.up.railway.app
+  port: 443
   type: vless
-  uuid: c3f4ee0c-3c64-466d-ae14-9bcf685e1efd
+  uuid: 41e08548-679b-56ba-42d2-48523a168cff
+  tls: true
+  alpn:
+  - http/1.1
+  servername: line-vpn-production-7798.up.railway.app
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/41e08548-679b-56ba-42d2-48523a168cff
+    headers:
+      Host: line-vpn-production-7798.up.railway.app
+  udp: true
+- name: 🇺🇸 美国 | USA 22
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /
     headers:
-      Host: shiny-waterfall-fa51.300-c6f.workers.dev
+      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: 104.18.34.245
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 162.159.21.178
   port: 8880
   type: vless
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
+  uuid: 94977b19-6720-48a6-92fd-00238757ea30
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: white-hill-f907.23-b68.workers.dev
+      Host: fragrant-credit-c4cf.148-e68.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: ad-005.zen2bswa.info
-  port: 8443
+- name: 🇺🇸 美国 | USA 4
+  server: 104.21.89.181
+  port: 8880
   type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
-  tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-005.zen2bswa.info
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 104.21.44.253
-  port: 8080
-  type: vless
-  uuid: c6ba83a7-c4b5-481f-8f71-0f17deff0bf2
+  uuid: 25322a43-4ef3-45cc-9e96-db44bcccd7be
   tls: false
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiOUhPbnRlV0xaekI1cjciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: billowing-sunset-e340.qaraatayi.workers.dev
+      Host: purple-disk-f68d.14-360.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: d.mygoldiran.com
+  port: 443
+  type: vless
+  uuid: 76792e97-ee95-4d29-86da-347362d491f2
+  tls: true
+  servername: usa_multi.mygoldiran.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /idea
+    headers:
+      Host: usa_multi.mygoldiran.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -155,15 +144,13 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 3
-  - 🇩🇪 德国 | DEU 15
-  - 🇳🇱 荷兰 | NLD 12
-  - 🇯🇵 日本 | JPN
-  - 🇯🇵 日本 | JPN 3
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 7
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 13
+  - 🇩🇪 德国 | DEU 7
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 22
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO

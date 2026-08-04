@@ -4,60 +4,26 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇺 澳大利亚 | AUS
-  server: cm1.kaochangcn.org
-  port: 42142
+- name: 🇩🇪 德国 | DEU 2
+  server: creativeboxde3.zanity.net
+  port: 5223
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: f8744af0-8406-440f-9f90-45a4d004f3e9
-- name: 🇭🇰 香港 | HKG
-  server: cm1.kaochangcn.org
-  port: 28039
+  password: 0w2SXgRXHtKQ0FKwGIzq0j
+- name: 🇯🇵 日本 | JPN
+  server: 13.231.179.245
+  port: 443
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8744af0-8406-440f-9f90-45a4d004f3e9
-- name: 🇬🇧 英国 | GBR 2
-  server: cm1.kaochangcn.org
-  port: 36521
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8744af0-8406-440f-9f90-45a4d004f3e9
-- name: 🇯🇵 日本 | JPN 4
-  server: cm1.kaochangcn.org
-  port: 40102
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8744af0-8406-440f-9f90-45a4d004f3e9
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 195.133.23.200
-  port: 10991
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: cm1.kaochangcn.org
-  port: 45379
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8744af0-8406-440f-9f90-45a4d004f3e9
-- name: 🇺🇸 美国 | USA 20
-  server: cm1.kaochangcn.org
-  port: 48003
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8744af0-8406-440f-9f90-45a4d004f3e9
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 | AUS
-  - 🇭🇰 香港 | HKG
-  - 🇬🇧 英国 | GBR 2
-  - 🇯🇵 日本 | JPN 4
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇺🇸 美国 | USA 20
+  - 🇩🇪 德国 | DEU 2
+  - 🇯🇵 日本 | JPN
 rules:
 - MATCH,AUTO
