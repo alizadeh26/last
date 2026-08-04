@@ -4,82 +4,147 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: ddc-akn.astralweb.tech
-  port: 443
-  type: vless
-  uuid: 04b9e828-43ed-4faf-8952-41069ec08355
-  tls: true
-  alpn:
-  - h2
-  servername: ddc-akn.astralweb.tech
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 31.76.11.46.cdn-one.org
-  port: 443
-  type: vless
-  uuid: 2a6b708e-6799-473e-85e9-d4b116c5eedc
-  tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /52872/BNzG4FvIAr
-    headers:
-      Host: 31.76.11.46.cdn-one.org
-  udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: psf-1.zdshop.ir
-  port: 80
-  type: vless
-  uuid: ea1278d8-c65a-4bdf-8c68-e84a26be53a3
-  tls: false
-  servername: machinemag.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: machinemag.ir
-  udp: true
-- name: 🇰🇿 哈萨克斯坦 | KAZ
-  server: 91.224.74.7
-  port: 20000
-  type: vless
-  uuid: 97fb7dfe-94aa-44f7-895b-947d07246712
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 84.235.166.124
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.226.24
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇺🇸 美国 | USA 16
-  server: www.fbi.gov
-  port: 2095
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.233.108
+  port: 62145
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
+  network: tcp
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 149.130.172.130
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU 15
+  server: new01.asaltabie.monster
+  port: 443
+  type: vless
+  uuid: 0211e2dc-c485-465d-87bd-426635433114
+  tls: true
+  alpn:
+  - h2
+  - h3
+  servername: new01.asaltabie.monster
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: new01.asaltabie.monster
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: www.wto.org
-  port: 2095
+- name: 🇳🇱 荷兰 | NLD 12
+  server: 134.98.137.74
+  port: 62145
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
+  network: tcp
+- name: 🇯🇵 日本 | JPN
+  server: download.yunzhongzhuan.com
+  port: 8880
+  type: vless
+  uuid: 7a2df38b-2d8b-486b-9b43-641c81e11f40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: shiny-mud-d9fa.466.workers.dev
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: download.yunzhongzhuan.com
+  port: 8880
+  type: vless
+  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: super-sunset-010c.24-43d.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: icy-snowflake-1f56.147-1ea.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 104.16.98.215
+  port: 8880
+  type: vless
+  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: super-sunset-010c.24-43d.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: download.yunzhongzhuan.com
+  port: 8880
+  type: vless
+  uuid: c3f4ee0c-3c64-466d-ae14-9bcf685e1efd
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: shiny-waterfall-fa51.300-c6f.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 8
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: white-hill-f907.23-b68.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: ad-005.zen2bswa.info
+  port: 8443
+  type: vless
+  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
+  tls: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: ad-005.zen2bswa.info
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 104.21.44.253
+  port: 8080
+  type: vless
+  uuid: c6ba83a7-c4b5-481f-8f71-0f17deff0bf2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiOUhPbnRlV0xaekI1cjciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+    headers:
+      Host: billowing-sunset-e340.qaraatayi.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -87,12 +152,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 10
-  - 🇰🇿 哈萨克斯坦 | KAZ
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 11
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇩🇪 德国 | DEU 15
+  - 🇳🇱 荷兰 | NLD 12
+  - 🇯🇵 日本 | JPN
+  - 🇯🇵 日本 | JPN 3
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 7
+  - 🇸🇬 新加坡 | SGP 8
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO
