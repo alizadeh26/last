@@ -39,13 +39,38 @@ proxies:
     grpc-mode: gun
     grpc-service-name: grpc
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 134.98.158.207
+- name: 🇺🇸 美国 | USA 24
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 28
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 84.235.173.150
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -56,6 +81,8 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 3
   - 🇵🇹 葡萄牙 | PRT
   - 🇹🇷 土耳其 | TUR
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 28
+  - 🇳🇱 荷兰 | NLD 5
 rules:
 - MATCH,AUTO

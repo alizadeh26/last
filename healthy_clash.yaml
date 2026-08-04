@@ -18,13 +18,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 🇩🇪 德国 | DEU 2
-  server: 130.61.226.94
-  port: 59924
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 130.61.86.126
   port: 59924
@@ -48,6 +41,13 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 13.61.13.49
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: 185.39.204.155
   port: 8443
@@ -59,6 +59,30 @@ proxies:
     grpc-mode: gun
     grpc-service-name: grpc
   udp: true
+- name: 🇺🇸 美国 | USA 24
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 28
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 23.185.200.135
   port: 57841
@@ -66,13 +90,14 @@ proxies:
   cipher: aes-128-gcm
   password: xo6k84l7b00n2hJp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 134.98.158.207
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 84.235.173.150
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -81,21 +106,23 @@ proxy-groups:
   proxies:
   - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 3
   - 🇳🇱 荷兰 | NLD 3
   - 🇵🇹 葡萄牙 | PRT
+  - 🇸🇪 瑞典 | SWE
   - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 28
   - 🇺🇸 美国 | USA 4
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 3
+  - 🇸🇪 瑞典 | SWE
   - 🇺🇸 美国 | USA 4
 - name: PROTO-VLESS
   type: url-test
@@ -106,16 +133,18 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 3
   - 🇵🇹 葡萄牙 | PRT
   - 🇹🇷 土耳其 | TUR
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 28
+  - 🇳🇱 荷兰 | NLD 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 3
   - 🇳🇱 荷兰 | NLD 3
+  - 🇵🇹 葡萄牙 | PRT
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
