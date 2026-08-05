@@ -28,6 +28,16 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 104.171.134.67
+  port: 4100
+  type: vless
+  uuid: 47947923-49ac-49f8-86ed-2912bcbf2d18
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+  udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 104.18.42.98
   port: 2095
@@ -88,16 +98,6 @@ proxies:
     headers:
       Host: josni.hoyes.cloudns.ch
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 104.171.134.67
-  port: 4100
-  type: vless
-  uuid: 47947923-49ac-49f8-86ed-2912bcbf2d18
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -107,11 +107,11 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇨🇴 哥伦比亚 | COL 6
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 26
-  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO
