@@ -18,22 +18,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 149.130.184.51
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 4
-  server: 149.130.185.31
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 5
   server: 149.130.186.27
   port: 62145
@@ -47,47 +31,6 @@ proxies:
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 9
-  server: 158.247.126.67
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 176.65.151.212
-  port: 36937
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: FPLQa3tXOMxNKC4_Q3Dy5ZFDRoweUbi8
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 143.47.176.202
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 176.65.151.212
-  port: 11382
-  type: vless
-  uuid: e51ba2a3-a79f-461d-b515-0ef2d573a8a2
-  tls: false
-  network: ws
-  ws-opts:
-    path: /nasf8s3et6
-  udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 93.119.168.26
-  port: 63443
-  type: vless
-  uuid: 555a098f-06db-427c-a535-4ba284046dbf
   tls: false
   network: tcp
   udp: true
@@ -109,44 +52,8 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
-- name: 🇺🇸 美国 | USA 4
-  server: 104.16.100.215
-  port: 8880
-  type: vless
-  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: super-sunset-010c.24-43d.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 172.66.200.130
-  port: 8880
-  type: vless
-  uuid: a51d8a82-faec-44f4-8882-441a2e7f0ce4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: spring-math-5c8c.434.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 25
   server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: www.fbi.gov
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -180,6 +87,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
 - name: 🇺🇸 美国 | USA 26
   server: josni.hoyes.cloudns.ch
   port: 2053
@@ -194,6 +113,16 @@ proxies:
     headers:
       Host: josni.hoyes.cloudns.ch
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 104.171.134.67
+  port: 4100
+  type: vless
+  uuid: 47947923-49ac-49f8-86ed-2912bcbf2d18
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -202,31 +131,22 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 3
-  - 🇨🇴 哥伦比亚 | COL 4
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇨🇴 哥伦比亚 | COL 6
-  - 🇨🇴 哥伦比亚 | COL 9
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇵🇹 葡萄牙 | PRT
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 26
+  - 🇷🇺 俄罗斯 | RUS 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇳🇱 荷兰 | NLD 4
   - 🇺🇸 美国 | USA 3
 - name: PROTO-VLESS
   type: url-test
@@ -234,28 +154,27 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 3
-  - 🇨🇴 哥伦比亚 | COL 4
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇨🇴 哥伦比亚 | COL 6
-  - 🇨🇴 哥伦比亚 | COL 9
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇵🇹 葡萄牙 | PRT
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 26
+  - 🇷🇺 俄罗斯 | RUS 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 27
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 4
-  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇧🇷 巴西 | BRA
+  - 🇨🇴 哥伦比亚 | COL
 rules:
 - MATCH,AUTO

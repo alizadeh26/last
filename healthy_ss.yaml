@@ -10,13 +10,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 176.65.151.212
-  port: 36937
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: FPLQa3tXOMxNKC4_Q3Dy5ZFDRoweUbi8
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 3.85.61.177
   port: 443
@@ -31,7 +24,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇳🇱 荷兰 | NLD 4
   - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO
