@@ -12,16 +12,16 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 4
-  server: 149.130.185.31
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 149.130.184.51
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 149.130.184.51
+- name: 🇨🇴 哥伦比亚 | COL 4
+  server: 149.130.185.31
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -44,22 +44,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.166.237
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 8
-  server: 158.247.123.7
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 9
   server: 158.247.126.67
   port: 62145
@@ -68,37 +52,14 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 7
-  server: 157.137.221.166
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 143.47.176.202
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: pro-it.emrata.top
-  port: 443
-  type: vless
-  uuid: 2e4101cd-40b4-4d1a-8df6-cc949c136e5a
-  tls: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: pro-it.emrata.top
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: pro-jp.emrata.top
-  port: 443
-  type: vless
-  uuid: 2e4101cd-40b4-4d1a-8df6-cc949c136e5a
-  tls: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: pro-jp.emrata.top
-  client-fingerprint: firefox
-  network: tcp
 - name: 🇳🇱 荷兰 | NLD 7
   server: 176.65.151.212
   port: 11382
@@ -109,45 +70,12 @@ proxies:
   ws-opts:
     path: /nasf8s3et6
   udp: true
-- name: 🇳🇱 荷兰 | NLD 17
-  server: soskeynets-node-production--96peb.up.railway.app
-  port: 443
-  type: vless
-  uuid: 16378da2-d73b-49c6-913a-bc54e556cf9a
-  tls: true
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  servername: marzban-node-production--96peb.up.railway.app
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: marzban-node-production--96peb.up.railway.app
-  udp: true
 - name: 🇵🇹 葡萄牙 | PRT
   server: 93.119.168.26
   port: 63443
   type: vless
   uuid: 555a098f-06db-427c-a535-4ba284046dbf
   tls: false
-  network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL 3
-  server: pol01.port-server.online
-  port: 443
-  type: vless
-  uuid: 45c876f9-4900-40c0-b269-94871e78df54
-  tls: true
-  packet-encoding: xudp
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: wJP3dHSebpXt0VzXPkQQV641qIse5haPAUnJl4O4CBM
-    short-id: a3b6822086b8b1a9
-  servername: pol01.port-server.online
-  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 9
@@ -161,18 +89,6 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 162.159.21.178
-  port: 8880
-  type: vless
-  uuid: 94977b19-6720-48a6-92fd-00238757ea30
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: fragrant-credit-c4cf.148-e68.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 104.16.100.215
   port: 8880
@@ -184,55 +100,6 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: super-sunset-010c.24-43d.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 104.17.191.15
-  port: 8880
-  type: vless
-  uuid: 812b1aeb-c6f7-43cb-8d8b-981711fea21a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: dark-cake-4743.198-46c.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 162.159.48.193
-  port: 8880
-  type: vless
-  uuid: 8995976a-1c81-4b44-a414-d3bc71058a21
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: muddy-queen-cdda.181-cf9.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 95.182.91.123
-  port: 8443
-  type: vless
-  uuid: b81ac2f6-f745-47d8-8da7-379a81ea2769
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /Norman
-  udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: los.chihirokk.online
-  port: 23253
-  type: vless
-  uuid: 0c946396-6336-40c3-a161-fcb6bec776ce
-  tls: true
-  flow: xtls-rprx-vision
-  servername: los.chihirokk.online
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 15
   server: 172.66.200.130
@@ -246,29 +113,52 @@ proxies:
     headers:
       Host: spring-math-5c8c.434.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 172.67.179.98
+- name: 🇺🇸 美国 | USA 25
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 162.159.48.193
   port: 8880
   type: vless
-  uuid: 129b50b6-060d-475c-b1de-b87c2a67051f
+  uuid: 8995976a-1c81-4b44-a414-d3bc71058a21
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: shrill-waterfall-bfe2.416.workers.dev
+      Host: muddy-queen-cdda.181-cf9.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 172.66.200.130
-  port: 8880
+- name: 🇺🇸 美国 | USA 24
+  server: los.chihirokk.online
+  port: 23253
   type: vless
-  uuid: 4c37df21-0a34-41bf-8bc7-78efd823c03b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: shiny-salad-e491.479.workers.dev
+  uuid: 0c946396-6336-40c3-a161-fcb6bec776ce
+  tls: true
+  flow: xtls-rprx-vision
+  servername: los.chihirokk.online
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 26
   server: josni.hoyes.cloudns.ch
@@ -284,41 +174,6 @@ proxies:
     headers:
       Host: josni.hoyes.cloudns.ch
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 172.66.200.130
-  port: 8880
-  type: vless
-  uuid: 20d0a81f-da70-44dc-b9bf-5a5ddab644db
-  tls: false
-  servername: crimson-lab-6cab.402-311.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: crimson-lab-6cab.402-311.workers.dev
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 104.171.134.67
-  port: 4100
-  type: vless
-  uuid: 47947923-49ac-49f8-86ed-2912bcbf2d18
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -326,33 +181,21 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 4
   - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 4
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇨🇴 哥伦比亚 | COL 6
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇨🇴 哥伦比亚 | COL 8
   - 🇨🇴 哥伦比亚 | COL 9
-  - 🇨🇴 哥伦比亚 | COL 7
-  - 🇮🇹 意大利 | ITA
-  - 🇯🇵 日本 | JPN 3
+  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 17
   - 🇵🇹 葡萄牙 | PRT
-  - 🇵🇱 波兰 | POL 3
   - 🇺🇸 美国 | USA 9
-  - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 17
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 26
 rules:
 - MATCH,AUTO

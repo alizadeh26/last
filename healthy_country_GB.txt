@@ -1,9 +1,5 @@
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.182:443#Server 11 🇬🇧
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.178:443#Server 9 🇬🇧
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.179:443#Server 7 🇬🇧
-vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiQFByb3h5VlBOMTEiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoyMjMyNCwicHMiOiJTZXJ2ZXIgMzMg8J+HrPCfh6ciLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiYXV0byIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
-vmess://eyJhZGQiOiI1Ny4xMjguMTgzLjMiLCJwb3J0IjoiNDQzIiwiaWQiOiI1ZjcyZjE4MC1iMjFiLTRiN2EtODQ4NC0yNDA3NTkwMTI2MDQiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidiI6IjIiLCJwcyI6IuazleWbvV8wODA1MTk0MDMiLCJob3N0IjoiYXBqaGRnZ3l4LmNvbSIsInBhdGgiOiIvNWY3MmYxODAtYjIxYi00YjdhLTg0ODQtMjQwNzU5MDk2Nzg1IiwidGxzIjoidGxzIiwic25pIjoiYXBqaGRnZ3l4LmNvbSIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
+vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoidjJyYXlucGx1cy12MnJheW5wbHVzLXYycmF5bnBsdXMiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoyMjMyNCwicHMiOiJTZXJ2ZXIgNDkg8J+HrPCfh6ciLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiYXV0byIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
 ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-0144
-vless://6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2@91.193.58.198:2096?security=tls&type=ws&path=/free-server.techsonic.dev&host=free-server.techsonic.dev&sni=free-server.techsonic.dev&fp=firefox&encryption=none#🇬🇧 328 - GB - VLESS/WS/TLS/UTLS - 2096
-vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?encryption=none&host=google.com&path=/vless/&security=none&type=ws#🏳️ 508 - XX - VLESS/WS - 80
-vless://d9aa9ea3-9388-483f-a58d-a754f33ec505@54.37.6.119:2053?security=reality&type=grpc&mode=gun&serviceName=api.v1.data&sni=play.google.com&fp=firefox&sid=524efc1f88592266&pbk=GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY#🇺🇸 601 - US - VLESS/GRPC/REALITY/PBK/SID/UTLS - 2053
+vless://6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2@91.193.58.198:2096?security=tls&type=ws&path=/free-server.techsonic.dev&host=free-server.techsonic.dev&sni=free-server.techsonic.dev&fp=firefox&encryption=none#🇬🇧 301 - GB - VLESS/WS/TLS/UTLS - 2096
+vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?encryption=none&host=google.com&path=/vless/&security=none&type=ws#🇬🇧 477 - GB - VLESS/WS - 80
+vless://d9aa9ea3-9388-483f-a58d-a754f33ec505@54.37.6.119:2053?security=reality&type=grpc&mode=gun&serviceName=api.v1.data&sni=play.google.com&fp=firefox&sid=524efc1f88592266&pbk=GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY#🇬🇧 567 - GB - VLESS/GRPC/REALITY/PBK/SID/UTLS - 2053
