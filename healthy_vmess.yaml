@@ -4,30 +4,26 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 15
-  server: deapp.jisuyun.top
-  port: 2053
+- name: 🇺🇸 美国 | USA 21
+  server: la.2555555.xyz
+  port: 23142
   type: vmess
-  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
+  uuid: 22ca377b-2ee8-49a9-907a-e6219b267113
   alterId: 0
   cipher: auto
   tls: true
-  alpn:
-  - ''
   skip-cert-verify: true
-  servername: deapp.jisuyun.top
   network: ws
   ws-opts:
-    path: /devm
+    path: /pfrq
     headers:
-      Host: deapp.jisuyun.top
-  udp: true
+      Host: la.2555555.xyz
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 15
+  - 🇺🇸 美国 | USA 21
 rules:
 - MATCH,AUTO

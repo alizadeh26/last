@@ -4,61 +4,85 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.181.254
+- name: 🇧🇷 巴西 | BRA
+  server: 136.248.89.191
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇧🇷 巴西 | BRA 2
+  server: 137.131.181.254
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇬🇧 英国 | GBR
+  server: 217.79.125.105
+  port: 2550
+  type: vless
+  uuid: d8b42cd5-a149-4356-9e61-000000000000
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 141.148.235.203
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 130.61.178.74
-  port: 59924
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.61.86.126
-  port: 59924
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-  udp: true
-- name: 🇵🇹 葡萄牙 | PRT
-  server: 93.119.168.215
-  port: 60771
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 104.171.132.185
+  port: 4100
   type: vless
-  uuid: 060a5db6-7ff9-4a64-87c1-8a27be4f11ab
+  uuid: 112912a9-cedf-485d-b8ed-d8f8d4774437
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 13.61.13.49
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 109.73.196.160
+  port: 2200
+  type: vless
+  uuid: 5d0206d9-fb42-4c8b-a84b-3d95ab0f42c7
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: 168.222.202.15
+  port: 4100
+  type: vless
+  uuid: 2001e98b-e06e-4244-910f-7ff640746eda
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 10
+  server: api.univesalsrv.com
   port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 23.185.200.135
-  port: 57841
-  type: ss
-  cipher: aes-128-gcm
-  password: xo6k84l7b00n2hJp
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 185.39.204.155
-  port: 8443
   type: vless
-  uuid: 7e8f7489-e65f-4be6-93ed-867a74ec6759
-  tls: false
+  uuid: 1b92d620-add7-42bd-ac1b-93ee4dfacee0
+  tls: true
+  reality-opts:
+    public-key: eU2IqYoHVYNfFqNlTNEAGooWqL2WqKbbQwxAPRu_7wc
+    short-id: 93762a4ddf178703
+  servername: api.univesalsrv.com
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: grpc
+    grpc-service-name: rpc.v2.FeedService
   udp: true
-- name: 🇺🇸 美国 | USA 24
+- name: 🇺🇸 美国 | USA 13
   server: www.wto.org
   port: 2095
   type: vless
@@ -70,7 +94,30 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 28
+- name: 🇺🇸 美国 | USA 21
+  server: la.2555555.xyz
+  port: 23142
+  type: vmess
+  uuid: 22ca377b-2ee8-49a9-907a-e6219b267113
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pfrq
+    headers:
+      Host: la.2555555.xyz
+- name: 🇺🇸 美国 | USA 10
+  server: 216.167.9.238
+  port: 58549
+  type: vless
+  uuid: 4a291562-7e80-41c1-97dd-592303a675b4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸 美国 | USA 17
   server: www.fbi.gov
   port: 2095
   type: vless
@@ -82,54 +129,122 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: ad-013.atlaswyxd3.info
+  port: 8443
+  type: vless
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  servername: ad-013.atlaswyxd3.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-013.atlaswyxd3.info
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: ad-013.core6g25r.info
+  port: 8443
+  type: vless
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  servername: ad-013.core6g25r.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-013.core6g25r.info
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: d.mygoldiran.com
+  port: 443
+  type: vless
+  uuid: 76792e97-ee95-4d29-86da-347362d491f2
+  tls: true
+  servername: usa_multi.mygoldiran.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /idea
+    headers:
+      Host: usa_multi.mygoldiran.com
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 23.185.200.135
+  port: 57841
+  type: ss
+  cipher: aes-128-gcm
+  password: xo6k84l7b00n2hJp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
-  - 🇵🇹 葡萄牙 | PRT
-  - 🇸🇪 瑞典 | SWE
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇷🇺 俄罗斯 | RUS 10
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 4
-  - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 28
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
-  - 🇸🇪 瑞典 | SWE
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
   - 🇺🇸 美国 | USA 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇵🇹 葡萄牙 | PRT
-  - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 28
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇷🇺 俄罗斯 | RUS 10
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 14
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 21
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
-  - 🇵🇹 葡萄牙 | PRT
-  - 🇸🇪 瑞典 | SWE
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇷🇺 俄罗斯 | RUS
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
 rules:
 - MATCH,AUTO
