@@ -1,16 +1,20 @@
-trojan://ND91608427@definite-malamute.rooster465.autos:443?security=tls&sni=definite-malamute.rooster465.autos#%E9%9F%A9%E5%9B%BD_080515003
-trojan://ND91608427@uncommon-feline.rooster465.autos:443?security=tls&sni=uncommon-feline.rooster465.autos#%E9%9F%A9%E5%9B%BD_080515004
-trojan://ND91608427@chief-bluegill.rooster465.autos:443?sni=chief-bluegill.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_080515137
-trojan://ND91608427@main-whippet.rooster465.autos:443?sni=main-whippet.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_080515138
-trojan://ND91608427@43.203.244.203:443?sni=grateful-owl.rooster465.autos&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_080515140
-trojan://ND91608427@exotic-chow.rooster465.autos:443?sni=exotic-chow.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_080515139
-trojan://ND91608427@3.36.59.34:443?sni=select-ferret.rooster465.autos&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_080515143
-trojan://ND91608427@52.78.13.238:443?sni=upward-puma.rooster465.autos&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_080515144
-trojan://ND91608427@13.125.239.182:443?sni=saving-octopus.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🇺🇸 41 - US - Trojan/TLS/UTLS - 443
-trojan://ND91608427@3.35.140.99:443?sni=moved-meerkat.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🇰🇷 116 - KR - Trojan/TLS/UTLS - 443
-trojan://ND91608427@3.36.131.218:443?sni=humorous-malamute.rooster465.autos&path=/#🇰🇷 122 - KR - Trojan/TLS - 443
-trojan://ND91608427@3.38.106.2:443?sni=communal-sunbird.rooster465.autos&fp=chrome&type=tcp&path=/#🏳️ 128 - XX - Trojan/TLS/UTLS - 443
-trojan://ND91608427@43.201.103.8:443?sni=intimate-moray.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🇰🇷 147 - KR - Trojan/TLS/UTLS - 443
-trojan://ND91608427@43.202.56.122:443?sni=striking-maggot.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🇰🇷 157 - KR - Trojan/TLS/UTLS - 443
-trojan://ND91608427@43.201.56.44:443?sni=distinct-llama.rooster465.autos&fp=chrome&type=tcp&path=/#🇰🇷 155 - KR - Trojan/TLS/UTLS - 443
-trojan://ND91608427@54.180.228.238:443?sni=pure-ram.rooster465.autos&fp=chrome&type=tcp&path=/#🇰🇷 226 - KR - Trojan/TLS/UTLS - 443
+ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M@141.164.45.187:9090#Server 154 🇰🇷
+ss://YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T@141.164.45.187:6697#Server 162 🇰🇷
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@141.164.45.187:2376#Server 164 🇰🇷
+trojan://ND91608427@definite-malamute.rooster465.autos:443?security=tls&sni=definite-malamute.rooster465.autos#%E9%9F%A9%E5%9B%BD_080519003
+trojan://ND91608427@uncommon-feline.rooster465.autos:443?security=tls&sni=uncommon-feline.rooster465.autos#%E9%9F%A9%E5%9B%BD_080519004
+trojan://ND91608427@chief-bluegill.rooster465.autos:443?allowInsecure=1&sni=chief-bluegill.rooster465.autos#%E9%9F%A9%E5%9B%BD_080519005
+trojan://ND91608427@exotic-chow.rooster465.autos:443?allowInsecure=1&sni=exotic-chow.rooster465.autos#%E9%9F%A9%E5%9B%BD_080519007
+trojan://ND91608427@43.203.244.203:443?allowInsecure=0&sni=grateful-owl.rooster465.autos#%E9%9F%A9%E5%9B%BD_080519008
+trojan://ND91608427@main-whippet.rooster465.autos:443?allowInsecure=1&sni=main-whippet.rooster465.autos#%E9%9F%A9%E5%9B%BD_080519006
+trojan://ND91608427@3.36.59.34:443?allowInsecure=0&sni=select-ferret.rooster465.autos#%E9%9F%A9%E5%9B%BD_080519011
+trojan://ND91608427@52.78.13.238:443?allowInsecure=0&sni=upward-puma.rooster465.autos#%E9%9F%A9%E5%9B%BD_080519012
+vless://e6d8d743-a9bc-48c9-be99-8f3cc94d16e1@132.145.89.30:443?security=tls&type=tcp&sni=ako.pagate.top&fp=chrome&flow=xtls-rprx-vision&encryption=none#🏳️ 626 - XX - VLESS/TLS/VISION/UTLS - 443
+trojan://ND91608427@13.125.239.182:443?sni=saving-octopus.rooster465.autos&fp=chrome&type=tcp&path=/#🇺🇸 29 - US - Trojan/TLS/UTLS - 443
+trojan://ND91608427@3.35.140.99:443?sni=moved-meerkat.rooster465.autos&fp=chrome&type=tcp&path=/#🇺🇸 104 - US - Trojan/TLS/UTLS - 443
+trojan://ND91608427@3.36.131.218:443?sni=humorous-malamute.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🏳️ 106 - XX - Trojan/TLS/UTLS - 443
+trojan://ND91608427@3.38.106.2:443?sni=communal-sunbird.rooster465.autos&fp=chrome&type=tcp&path=/#🏳️ 115 - XX - Trojan/TLS/UTLS - 443
+trojan://ND91608427@43.201.103.8:443?sni=intimate-moray.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🏳️ 135 - XX - Trojan/TLS/UTLS - 443
+trojan://ND91608427@43.201.56.44:443?sni=distinct-llama.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🇺🇸 143 - US - Trojan/TLS/UTLS - 443
+trojan://ND91608427@43.202.56.122:443?sni=striking-maggot.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🇰🇷 148 - KR - Trojan/TLS/UTLS - 443
+trojan://ND91608427@54.180.228.238:443?sni=pure-ram.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🇰🇷 212 - KR - Trojan/TLS/UTLS - 443

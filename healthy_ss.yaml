@@ -5,44 +5,36 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇧🇷 巴西 | BRA 2
-  server: 147.15.93.150
+  server: 147.15.32.94
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇧🇷 巴西 | BRA 3
+  server: 163.176.198.213
   port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
   udp: true
 - name: 🇧🇷 巴西 | BRA
-  server: 147.15.15.231
+  server: 144.22.183.254
   port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 3
-  server: 64.181.177.140
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
+- name: 🇭🇰 香港 | HKG
   server: 212.192.15.13
   port: 8388
   type: ss
   cipher: aes-256-gcm
   password: WWMo8FMXNGLs
-- name: 🇭🇰 香港 | HKG 3
-  server: 212.192.15.33
-  port: 10910
-  type: ss
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
-- name: 🇵🇱 波兰 | POL
-  server: 45.140.204.75
-  port: 45635
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 176.65.151.212
+  port: 36937
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: QxU3Q3O44spzHBb6z3l4OS
+  password: FPLQa3tXOMxNKC4_Q3Dy5ZFDRoweUbi8
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 195.133.5.207
@@ -50,14 +42,7 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-- name: 🇺🇸 美国 | USA
-  server: 23.185.200.135
-  port: 57841
-  type: ss
-  cipher: aes-128-gcm
-  password: xo6k84l7b00n2hJp
-  udp: true
-- name: 🇺🇸 美国 | USA 2
+- name: 🇺🇸 美国 | USA 3
   server: 3.85.61.177
   port: 443
   type: ss
@@ -71,13 +56,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 3
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 3
-  - 🇵🇱 波兰 | POL
+  - 🇧🇷 巴西 | BRA
+  - 🇭🇰 香港 | HKG
+  - 🇳🇱 荷兰 | NLD 4
   - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO

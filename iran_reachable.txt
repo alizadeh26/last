@@ -1,20 +1,15 @@
-vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiQFByb3h5VlBOMTEiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoyMjMyNCwicHMiOiJTZXJ2ZXIgMzMg8J+HrPCfh6ciLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiYXV0byIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0NjFmNDk5Ni1hNDMwLTQ0ODItYTEwMy1hY2VmMDcxMzI4MWE@ydyh1.nanbei-host.com:26902#Server 171 🇯🇵
-trojan://ND91608427@18.181.164.216:443?sni=upright-impala.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%E6%97%A5%E6%9C%AC_080515339
-trojan://ND91608427@43.207.139.153:443?sni=sensible-mongrel.rooster465.autos&type=tcp&fp=chrome#%E6%97%A5%E6%9C%AC_080515345
-trojan://41c406e2-12b5-41f2-a329-d0621052d675@hkdcrtc-e.catcat321.com:20066?security=tls&sni=hk.catxstar.com#%E7%BE%8E%E5%9B%BD_080515040
-trojan://ND91608427@52.78.13.238:443?sni=upward-puma.rooster465.autos&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_080515144
-vless://1b92d620-add7-42bd-ac1b-93ee4dfacee0@83.217.192.233:443?encryption=none&fp=edge&mode=gun&pbk=eU2IqYoHVYNfFqNlTNEAGooWqL2WqKbbQwxAPRu_7wc&security=reality&serviceName=rpc.v2.FeedService&sid=93762a4ddf178703&sni=api.univesalsrv.com&type=grpc#🇷🇺 49 - RU - VLESS/GRPC/REALITY/PBK/SID/UTLS - 443
-vless://2e8beadd-99bf-4fda-8692-8493886504bc@104.21.56.8:8443?security=tls&type=ws&path=/&host=ad-007.cloud25075.info&sni=ad-007.cloud25075.info&fp=chrome&encryption=none#🇺🇸 117 - US - VLESS/WS/TLS/UTLS - 8443
-vless://631ee34f-4faf-4ad7-b49d-e6f50403cf0e@95.213.143.18:443?security=reality&type=raw&sni=findmypackets.com&fp=firefox&flow=xtls-rprx-vision&sid=93ae75024604f796&pbk=mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0&encryption=none#🏳️ 362 - XX - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 443
-vless://8a6729c4-81d4-4b05-8747-3fffc17b6a64@meshbuzz.bond:443?path=/mashdi&security=tls&encryption=none&insecure=0&host=OhPwIlJo8.RoBoRoCkS.Ir&fp=firefox&type=ws&allowInsecure=0&sni=OhPwIlJo8.RoBoRoCkS.Ir#🏳️ 490 - XX - VLESS/WS/TLS/UTLS - 443
-vless://859a537b-09cf-4bce-8da4-ecbb72950e3a@159.195.27.99:443?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=1.oncloudnineservicestreang.com&fp=firefox&flow=xtls-rprx-vision&sid=28415a7918168947&pbk=EuExqpNB141gtIjbCmU0yyurbBqiLtGjDg-n95JIuig#🇩🇪 469 - DE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@104.16.72.41:80?path=/http&security=none&encryption=none&host=de.vpnbase.net&type=ws#🇺🇸 676 - US - VLESS/WS - 80
-vless://cac6ec8f-99f0-44c5-814f-2f3f65e4db74@support.zoom.us:80?security=none&type=ws&path=/dula&host=speed.dulacloud.store&sni=speed.dulacloud.store#🏳️ 651 - XX - VLESS/WS - 80
-trojan://ND91608427@13.125.239.182:443?sni=saving-octopus.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🇺🇸 41 - US - Trojan/TLS/UTLS - 443
-trojan://ND91608427@3.64.59.246:443?fp=chrome&sni=gentle-raptor.rooster465.autos#🇩🇪 132 - DE - Trojan/TLS/UTLS - 443
-trojan://ND91608427@43.203.247.197:443?sni=definite-malamute.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🇺🇸 173 - US - Trojan/TLS/UTLS - 443
-93.119.168.26:63443	🇵🇹 葡萄牙 | PRT
-104.16.97.215:8880	🇺🇸 美国 | USA 4
-64.181.177.140:59319	🇧🇷 巴西 | BRA 3
-trojan://ND91608427@54.93.54.137:443?sni=informed-alpaca.rooster465.autos&fp=chrome&type=tcp&path=/#🇩🇪 244 - DE - Trojan/TLS/UTLS - 443
+vmess://eyJhZGQiOiIxNjUuMTQwLjIxNi4xNDIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Ikxldmlrb0NvbmZpZyIsImlkIjoiYjY1YTJkNjktNTYzNC00MmEyLWU0YmUtNTRlOGE2MTc2OTAwIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6Ii9MZXZpa29Db25maWciLCJwb3J0IjoiNDQzIiwicHMiOiJTZXJ2ZXIgNTIg8J+HuvCfh7giLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInNraXAtY2VydC12ZXJpZnkiOnRydWV9
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZMlF3WlRRME1EWXpPV0ZoTmpBNVltRTBOVFpoTldGa09Ea3pNV05tT0RVPQ@161.118.248.57:56927#Server 128 🇸🇬
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkaU9NQlU1SUR2SmNGcXlOUGJSallS@137.74.119.18:10443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+137.74.119.18-10443+%7C+135.92ms
+ss://YWVzLTEyOC1jZmI6c2hhZG93c29ja3M=@109.201.152.181:443#%F0%9F%87%B3%F0%9F%87%B1NL-109.201.152.181-0135
+trojan://ND91608427@43.207.140.98:443?allowInsecure=0&sni=right-seahorse.rooster465.autos#%E6%97%A5%E6%9C%AC_080519355
+trojan://ND91608427@3.36.59.34:443?allowInsecure=0&sni=select-ferret.rooster465.autos#%E9%9F%A9%E5%9B%BD_080519011
+vmess://eyJhZGQiOiJhcGpoZGdneXguY29tIiwiYWlkIjowLCJob3N0IjoiYXBqaGRnZ3l4LmNvbSIsImlkIjoiNWY3MmYxODAtYjIxYi00YjdhLTg0ODQtMjQwNzU5MDEyNjA0IiwibmV0Ijoid3MiLCJwYXRoIjoiXC81ZjcyZjE4MC1iMjFiLTRiN2EtODQ4NC0yNDA3NTkwOTY3ODUiLCJwb3J0IjoiNDQzIiwicHMiOiJOTFx1ZDgzY1x1ZGRmM1x1ZDgzY1x1ZGRmMSB8IGFwamhkZ2d5eC5jb20tNDQzIHwgMTI0LjYxbXMiLCJzZWN1cml0eSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiYXV0byIsInYiOiIyIn0=
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.29:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+82.38.31.29-443+%7C+98.91ms
+vless://83b69fd2-ae76-4a35-8f0e-65b90babcc6f@104.167.199.232:443?security=reality&type=tcp&sni=login.yahoo.com&fp=chrome&sid=c6e19c434dc87df7&pbk=OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg&encryption=none#🏳️ 376 - XX - VLESS/REALITY/PBK/SID/UTLS - 443
+vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@149.130.186.27:62145?security=none&type=tcp#🏳️ 444 - XX - VLESS - 62145
+vless://86c50e3a-5b87-49dd-bd20-03c7f2735e40@8.47.69.0:2095?security=none&type=ws&path=/&host=fuckingfangbinxing.pusytroller.cf#🏳️ 389 - XX - VLESS/WS - 2095
+trojan://ND91608427@3.35.140.99:443?sni=moved-meerkat.rooster465.autos&fp=chrome&type=tcp&path=/#🇺🇸 104 - US - Trojan/TLS/UTLS - 443
+trojan://ND91608427@54.170.212.206:443?sni=skilled-lioness.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#🏳️ 209 - XX - Trojan/TLS/UTLS - 443
+95.182.91.123:8443	🇺🇸 美国 | USA 23
+163.176.198.213:59319	🇧🇷 巴西 | BRA 3
