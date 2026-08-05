@@ -34,13 +34,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 3.85.61.177
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 104.18.42.98
   port: 2095
@@ -52,6 +45,17 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
+- name: 🇺🇸 美国 | USA 24
+  server: los.chihirokk.online
+  port: 23253
+  type: vless
+  uuid: 0c946396-6336-40c3-a161-fcb6bec776ce
+  tls: true
+  flow: xtls-rprx-vision
+  servername: los.chihirokk.online
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 25
   server: www.wto.org
   port: 2095
@@ -63,29 +67,6 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 162.159.48.193
-  port: 8880
-  type: vless
-  uuid: 8995976a-1c81-4b44-a414-d3bc71058a21
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: muddy-queen-cdda.181-cf9.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: los.chihirokk.online
-  port: 23253
-  type: vless
-  uuid: 0c946396-6336-40c3-a161-fcb6bec776ce
-  tls: true
-  flow: xtls-rprx-vision
-  servername: los.chihirokk.online
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 27
   server: www.fbi.gov
@@ -133,11 +114,9 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇨🇴 哥伦比亚 | COL 6
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 26
   - 🇷🇺 俄罗斯 | RUS 2
@@ -147,7 +126,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇺🇸 美国 | USA 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -157,24 +135,16 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇨🇴 哥伦比亚 | COL 6
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 26
   - 🇷🇺 俄罗斯 | RUS 2
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 27
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 6
 rules:
 - MATCH,AUTO

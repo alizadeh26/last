@@ -10,13 +10,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 🇺🇸 美国 | USA 3
-  server: 3.85.61.177
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -24,6 +17,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO

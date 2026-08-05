@@ -39,6 +39,17 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
+- name: 🇺🇸 美国 | USA 24
+  server: los.chihirokk.online
+  port: 23253
+  type: vless
+  uuid: 0c946396-6336-40c3-a161-fcb6bec776ce
+  tls: true
+  flow: xtls-rprx-vision
+  servername: los.chihirokk.online
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 25
   server: www.wto.org
   port: 2095
@@ -50,29 +61,6 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 162.159.48.193
-  port: 8880
-  type: vless
-  uuid: 8995976a-1c81-4b44-a414-d3bc71058a21
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: muddy-queen-cdda.181-cf9.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: los.chihirokk.online
-  port: 23253
-  type: vless
-  uuid: 0c946396-6336-40c3-a161-fcb6bec776ce
-  tls: true
-  flow: xtls-rprx-vision
-  servername: los.chihirokk.online
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 27
   server: www.fbi.gov
@@ -120,9 +108,8 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇨🇴 哥伦比亚 | COL 6
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 26
   - 🇷🇺 俄罗斯 | RUS 2
