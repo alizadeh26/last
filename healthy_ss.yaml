@@ -4,18 +4,63 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 137.131.169.174
+- name: 🇩🇪 德国 | DEU 4
+  server: 130.61.228.21
+  port: 59924
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 2
+  server: 152.67.55.163
   port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇧🇷 巴西 | BRA
+  server: 147.15.66.166
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇩🇪 德国 | DEU 5
+  server: 92.5.16.55
+  port: 59924
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
+- name: 🇩🇪 德国 | DEU 6
+  server: creativeboxfin.zanity.net
+  port: 5223
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d3dNkbPb1w5BCBx9Fr5xsb
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.74.38
+  port: 61312
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 201.34.136.122
+  port: 60035
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BsVzyLrGhbw4MivQz7k1_Q
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 4
+  - 🇧🇷 巴西 | BRA 2
   - 🇧🇷 巴西 | BRA
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 6
+  - 🇬🇧 英国 | GBR
+  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
