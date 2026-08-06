@@ -5,46 +5,11 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇧🇷 巴西 | BRA
-  server: 163.176.59.72
+  server: 137.131.169.174
   port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 🇩🇪 德国 | DEU 7
-  server: 91.107.157.137
-  port: 56352
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: VDD+vDFdq8ad4Yh2f9hB7cEayWIKmZkTaUxxC2uC/c8=:wE0CA+qFy6HpXEYDckEg1SlhqL37BPtJaCPotkzYjE0=
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 62.76.234.75
-  port: 10901
-  type: ss
-  cipher: aes-256-gcm
-  password: d1fa2f4b98a38bc8
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: it2.levikogjgfdd.ir
-  port: 10901
-  type: ss
-  cipher: aes-256-gcm
-  password: d1fa2f4b98a38bc8
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 193.233.216.247
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eAfQb4p8exIxYlbiO04QPQ
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 23.185.200.135
-  port: 57841
-  type: ss
-  cipher: aes-128-gcm
-  password: xo6k84l7b00n2hJp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -52,10 +17,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 7
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO

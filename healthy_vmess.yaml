@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 16
+- name: 🇩🇪 德国 | DEU 33
   server: deapp.jisuyun.top
   port: 2053
   type: vmess
@@ -28,6 +28,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 16
+  - 🇩🇪 德国 | DEU 33
 rules:
 - MATCH,AUTO
