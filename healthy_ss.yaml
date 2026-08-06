@@ -4,50 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: 130.61.228.21
-  port: 59924
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 2
-  server: 152.67.55.163
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 🇧🇷 巴西 | BRA
-  server: 147.15.66.166
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
 - name: 🇩🇪 德国 | DEU 5
-  server: 92.5.16.55
+  server: 130.61.233.183
   port: 59924
   type: ss
   cipher: chacha20-ietf-poly1305
   password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 🇩🇪 德国 | DEU 6
-  server: creativeboxfin.zanity.net
-  port: 5223
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d3dNkbPb1w5BCBx9Fr5xsb
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.74.38
-  port: 61312
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 201.34.136.122
-  port: 60035
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 152.70.53.15
+  port: 45819
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: BsVzyLrGhbw4MivQz7k1_Q
+  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 168.107.83.128
+  port: 56927
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: e3.cover20.ir
+  port: 56985
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: yijvtycn/16XSdzMKa0v5XqPpERY+Ndka+tAbHj64X4=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -55,12 +38,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
-  - 🇬🇧 英国 | GBR
-  - 🇸🇪 瑞典 | SWE
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇹🇷 土耳其 | TUR
 rules:
 - MATCH,AUTO

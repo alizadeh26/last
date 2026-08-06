@@ -2,5 +2,5 @@ vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.24.73:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+158.173.24.73-443+%7C+80.54ms
 ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#%F0%9F%87%AC%F0%9F%87%A7GB-146.70.61.37-0117
 ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-0145
-vless://6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2@91.193.58.27:2096?type=ws&encryption=none&host=free-server.techsonic.dev&path=/free-server.techsonic.dev&security=tls&sni=free-server.techsonic.dev&fp=firefox#🇬🇧 244 - GB - VLESS/WS/TLS/UTLS - 2096
-vless://d9aa9ea3-9388-483f-a58d-a754f33ec505@54.37.6.119:2053?security=reality&type=grpc&mode=gun&serviceName=api.v1.data&sni=play.google.com&fp=firefox&sid=524efc1f88592266&pbk=GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY#🇬🇧 474 - GB - VLESS/GRPC/REALITY/PBK/SID/UTLS - 2053
+vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?security=none&type=ws&path=/vless/&host=google.com&encryption=none#🏳️ 414 - XX - VLESS/WS - 80
+vless://d9aa9ea3-9388-483f-a58d-a754f33ec505@54.37.6.119:2053?security=reality&type=grpc&mode=gun&serviceName=api.v1.data&sni=play.google.com&fp=firefox&sid=524efc1f88592266&pbk=GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY#🏳️ 488 - XX - VLESS/GRPC/REALITY/PBK/SID/UTLS - 2053
