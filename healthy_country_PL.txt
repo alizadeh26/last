@@ -1,3 +1,5 @@
-trojan://ND91608427@relaxed-gull.rooster465.autos:443?security=tls&sni=relaxed-gull.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_080605002
-trojan://ND91608427@202.78.163.148:443?sni=discrete-basilisk.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%E5%8D%A2%E6%A3%AE%E5%A0%A1_080605053
+trojan://ND91608427@202.78.163.148:443?sni=discrete-basilisk.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%E5%8D%A2%E6%A3%AE%E5%A0%A1_080610053
+trojan://ND91608427@relaxed-gull.rooster465.autos:443?security=tls&sni=relaxed-gull.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_080610002
 ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@92.118.205.211:5600#PL%F0%9F%87%B5%F0%9F%87%B1+%7C+92.118.205.211-5600+%7C+114.72ms
+vless://5d8eb33a-2166-4daf-88fe-4be5799c493b@141.101.120.73:443?encryption=none&fp=chrome&host=noisy-term-e657.airdrop2014aa5168.workers.dev&path=/&security=tls&sni=noisy-term-e657.airdrop2014aa5168.workers.dev&type=ws#🇺🇸 298 - US - VLESS/WS/TLS/UTLS - 443
+vless://8624ba0f-d03e-48de-9df6-b7fcff482ea2@77.83.246.233:2053?encryption=none&security=tls&sni=x1htl81r.njcdoaw.workers.dev&alpn=http/1.1&type=ws&host=x1htl81r.njcdoaw.workers.dev&path=/?ed=2560#🇵🇱 401 - PL - VLESS/WS/TLS - 2053

@@ -4,42 +4,193 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.164.131
+- name: 🇩🇪 德国 | DEU 15
+  server: pro-de.emrata.top
+  port: 443
+  type: vless
+  uuid: 95f50108-2bae-0032-948c-b22e01ae3133
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-de.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+- name: 🇩🇪 德国 | DEU 16
+  server: pro-de.emrata.top
+  port: 443
+  type: vless
+  uuid: 95f50108-2bae-4634-948c-b22e01ae3133
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-de.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+- name: 🇩🇪 德国 | DEU 14
+  server: 31.76.11.46.cdn-one.org
+  port: 443
+  type: vless
+  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
+  tls: true
+  servername: 31.76.11.46.cdn-one.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /52872/BNzG4FvIAr
+    headers:
+      Host: 31.76.11.46.cdn-one.org
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: pro-uk.emrata.top
+  port: 443
+  type: vless
+  uuid: 02ae7872-1c03-4214-8b95-14c126da831e
+  tls: true
+  reality-opts:
+    public-key: RYnbBzo-UTB4nVMymzJ5B6TgYed7DfOc6O5Pr_htYSc
+  servername: pro-uk.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 4
+  server: pro-uk.emrata.top
+  port: 443
+  type: vless
+  uuid: 95f50108-2bae-4634-948c-b22e01ae3133
+  tls: true
+  reality-opts:
+    public-key: RYnbBzo-UTB4nVMymzJ5B6TgYed7DfOc6O5Pr_htYSc
+  servername: pro-uk.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: 39.109.117.110
+  port: 43646
+  type: vless
+  uuid: d92afe21-8e8b-42c7-98c2-8a33da64d28f
+  tls: false
+  network: ws
+  ws-opts:
+    path: /d92afe21
+- name: 🇮🇹 意大利 | ITA 4
+  server: pro-it.emrata.top
+  port: 443
+  type: vless
+  uuid: 02ae7872-1c03-4214-8b95-14c126da831e
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-it.emrata.top
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇮🇹 意大利 | ITA 5
+  server: pro-it.emrata.top
+  port: 443
+  type: vless
+  uuid: 95f50108-2bae-4634-948c-b22e01ae3133
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: pro-it.emrata.top
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 152.70.51.120
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 5
-  server: 149.130.186.27
-  port: 62145
+- name: 🇳🇱 荷兰 | NLD 11
+  server: node18.mxvpn.dev
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 6
-  server: 149.130.186.93
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: bbc68cec8bb8d2e3
+  servername: node18.mxvpn.dev
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
-  server: 104.171.134.67
+  server: 168.222.141.146
+  port: 2200
+  type: vless
+  uuid: bceda826-c83c-45d0-891e-15c4bfec76bc
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 2.26.79.43
+  port: 443
+  type: vless
+  uuid: 02ae7872-1c03-4214-8b95-14c126da831e
+  tls: true
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+  servername: pro-se.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 168.222.202.15
   port: 4100
   type: vless
-  uuid: 47947923-49ac-49f8-86ed-2912bcbf2d18
+  uuid: 2001e98b-e06e-4244-910f-7ff640746eda
   tls: false
   network: ws
   ws-opts:
     path: /v1
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 104.18.42.98
+- name: 🇸🇪 瑞典 | SWE 2
+  server: 2.26.79.57
+  port: 443
+  type: vless
+  uuid: 02ae7872-1c03-4214-8b95-14c126da831e
+  tls: true
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+  servername: pro-se.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: pro-se.emrata.top
+  port: 443
+  type: vless
+  uuid: 02ae7872-1c03-4214-8b95-14c126da831e
+  tls: true
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+  servername: pro-se.emrata.top
+  client-fingerprint: firefox
+  network: tcp
+- name: 🇸🇬 新加坡 | SGP 3
+  server: free-server.techsonic.dev
+  port: 443
+  type: vless
+  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: aka.ms
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 104.18.38.47
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -48,19 +199,22 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-- name: 🇺🇸 美国 | USA 24
-  server: los.chihirokk.online
-  port: 23253
+      Host: fangbinxingnmsl.pusytroller.gq
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 5
+  server: pro-tr.emrata.top
+  port: 443
   type: vless
-  uuid: 0c946396-6336-40c3-a161-fcb6bec776ce
+  uuid: 02ae7872-1c03-4214-8b95-14c126da831e
   tls: true
   flow: xtls-rprx-vision
-  servername: los.chihirokk.online
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: da5UVhoC5QOCDm84AxB-RRxf0z2nySZ3lOemgqizLS4
+  servername: pro-tr.emrata.top
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 25
+- name: 🇺🇸 美国 | USA 14
   server: www.wto.org
   port: 2095
   type: vless
@@ -72,46 +226,30 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: josni.hoyes.cloudns.ch
-  port: 2053
-  type: vless
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: josni.hoyes.cloudns.ch
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 5
-  - 🇨🇴 哥伦比亚 | COL 6
+  - 🇩🇪 德国 | DEU 15
+  - 🇩🇪 德国 | DEU 16
+  - 🇩🇪 德国 | DEU 14
+  - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR 4
+  - 🇭🇰 香港 | HKG 3
+  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 5
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 11
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 27
-  - 🇺🇸 美国 | USA 26
+  - 🇸🇪 瑞典 | SWE
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 7
+  - 🇹🇷 土耳其 | TUR 5
+  - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO
