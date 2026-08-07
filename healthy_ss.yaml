@@ -16,13 +16,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 4qCKP8DUdyisoz0Jwbuklm
-- name: 🇹🇷 土耳其 | TUR
-  server: e3.cover20.ir
-  port: 56985
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oQwS+vy+ZXh9jXR2uUaerIzUiX0aojlEXA1D3KX9sIM=
-  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 100.31.139.112
   port: 443
@@ -38,7 +31,6 @@ proxy-groups:
   proxies:
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇹🇷 土耳其 | TUR
   - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
