@@ -19,16 +19,16 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.191.105
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 157.137.226.173
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 157.137.226.173
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.191.105
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -54,14 +54,6 @@ proxies:
   udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: 152.70.60.147
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 158.178.145.70
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -95,12 +87,52 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 158.178.145.70
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA
   server: 100.31.139.112
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 138.68.53.88
+  port: 443
+  type: vless
+  uuid: 413a66e9-b05b-4ae6-a9eb-6d28204a28f4
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
   udp: true
 proxy-groups:
 - name: AUTO
@@ -110,16 +142,19 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 4
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 14
   - 🇸🇪 瑞典 | SWE
+  - 🇳🇱 荷兰 | NLD 4
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 11
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -134,13 +169,16 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 4
   - 🇨🇴 哥伦比亚 | COL 5
   - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 14
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
