@@ -10,12 +10,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: GuURTkWo16VVnL3IbHZtWY
-- name: 🇳🇱 荷兰 | NLD 3
-  server: creativeboxnl2.zanity.net
-  port: 5228
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4qCKP8DUdyisoz0Jwbuklm
 - name: 🇺🇸 美国 | USA 2
   server: 100.31.139.112
   port: 443
@@ -23,6 +17,12 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: creativeboxnl2.zanity.net
+  port: 5228
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4qCKP8DUdyisoz0Jwbuklm
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -30,7 +30,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
   - 🇺🇸 美国 | USA 2
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO

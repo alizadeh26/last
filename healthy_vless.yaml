@@ -11,13 +11,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.237.111
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇳🇱 荷兰 | NLD 5
   server: 141.148.241.72
   port: 62145
@@ -36,6 +29,18 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: white-bush-712e.498-f8f.workers.dev
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 9
+  server: 194.26.229.207
+  port: 2200
+  type: vless
+  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 162.159.21.178
@@ -61,6 +66,18 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lingering-lab-91a6.54-8c3.workers.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 104.18.34.245
   port: 8880
@@ -72,14 +89,6 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: white-hill-f907.23-b68.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 180.178.60.253
-  port: 10000
-  type: vless
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
-  tls: false
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 21
   server: log.bpminecraft.com
@@ -93,18 +102,6 @@ proxies:
     headers:
       Host: polished-field-4448.186-705.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-lab-91a6.54-8c3.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 28
   server: www.fbi.gov
   port: 2095
@@ -116,6 +113,14 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 180.178.60.253
+  port: 10000
+  type: vless
+  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
+  tls: false
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 26
   server: codecanyon.net
@@ -129,18 +134,6 @@ proxies:
     headers:
       Host: weathered-union-5358.101-262.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dawn-waterfall-6052.360-001.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 24
   server: codecanyon.net
   port: 8880
@@ -153,6 +146,18 @@ proxies:
     headers:
       Host: soft-scene-d370.55-7ff.workers.dev
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 168.222.140.55
+  port: 2200
+  type: vless
+  uuid: e1e26ef7-3291-45ac-b821-a11dcdbfdb4d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -160,18 +165,18 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 11
+  - 🇷🇺 俄罗斯 | RUS 9
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 28
+  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 24
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO
