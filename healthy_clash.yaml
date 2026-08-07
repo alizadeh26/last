@@ -4,56 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 163.176.178.63
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.187.35
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 157.137.226.173
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 2
   server: 149.130.191.105
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 4
-  server: 157.137.226.67
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  packet-encoding: xudp
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 5
-  server: 157.137.230.163
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 152.70.60.147
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -87,28 +39,12 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 158.178.145.70
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA
   server: 100.31.139.112
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 138.68.53.88
-  port: 443
-  type: vless
-  uuid: 413a66e9-b05b-4ae6-a9eb-6d28204a28f4
-  tls: false
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: www.wto.org
@@ -134,33 +70,33 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 138.68.53.88
+  port: 443
+  type: vless
+  uuid: 413a66e9-b05b-4ae6-a9eb-6d28204a28f4
+  tls: false
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 3
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇨🇴 哥伦比亚 | COL 4
-  - 🇨🇴 哥伦比亚 | COL 5
-  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 14
   - 🇸🇪 瑞典 | SWE
-  - 🇳🇱 荷兰 | NLD 4
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇸🇪 瑞典 | SWE
   - 🇺🇸 美国 | USA
 - name: PROTO-VLESS
@@ -168,17 +104,29 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 3
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇨🇴 哥伦比亚 | COL 4
-  - 🇨🇴 哥伦比亚 | COL 5
-  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 14
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 6
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD 6
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 11
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇴 哥伦比亚 | COL 2
 rules:
 - MATCH,AUTO
