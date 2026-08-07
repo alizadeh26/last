@@ -10,12 +10,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 🇳🇱 荷兰 | NLD 8
-  server: creativeboxnl2.zanity.net
-  port: 5228
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4qCKP8DUdyisoz0Jwbuklm
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -23,6 +17,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇳🇱 荷兰 | NLD 8
 rules:
 - MATCH,AUTO

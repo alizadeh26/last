@@ -12,16 +12,16 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 157.137.208.150
+- name: 🇨🇴 哥伦比亚 | COL 4
+  server: 149.130.177.227
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  packet-encoding: xudp
   network: tcp
-- name: 🇨🇴 哥伦比亚 | COL 6
-  server: 157.137.214.20
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 5
+  server: 157.137.210.130
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -36,22 +36,6 @@ proxies:
   tls: false
   packet-encoding: xudp
   network: tcp
-- name: 🇨🇴 哥伦比亚 | COL 5
-  server: 157.137.210.130
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 4
-  server: 149.130.177.227
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: smm-02.smmmdesign.com
   port: 443
@@ -65,6 +49,14 @@ proxies:
     path: /vless
     headers:
       Host: smm-02.smmmdesign.com
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 6
+  server: 157.137.214.20
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR
   server: smm-01.smmmdesign.com
@@ -80,14 +72,14 @@ proxies:
     headers:
       Host: smm-01.smmmdesign.com
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 141.148.236.62
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 157.137.208.150
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
+  packet-encoding: xudp
   network: tcp
-  udp: true
 - name: 🇸🇪 瑞典 | SWE 3
   server: 194.87.30.161
   port: 22647
@@ -98,17 +90,13 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 162.159.21.178
-  port: 8880
+- name: 🇬🇧 英国 | GBR 5
+  server: 164.37.111.117
+  port: 2020
   type: vless
-  uuid: 94977b19-6720-48a6-92fd-00238757ea30
+  uuid: 0dbacd35-9159-4648-89ac-c38b741567a8
   tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: fragrant-credit-c4cf.148-e68.workers.dev
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 2
   server: www.wto.org
@@ -129,16 +117,15 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 3
-  - 🇨🇴 哥伦比亚 | COL 6
-  - 🇨🇴 哥伦比亚 | COL 7
-  - 🇨🇴 哥伦比亚 | COL 5
   - 🇨🇴 哥伦比亚 | COL 4
+  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇨🇴 哥伦比亚 | COL 7
   - 🇩🇪 德国 | DEU 3
+  - 🇨🇴 哥伦比亚 | COL 6
   - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇨🇴 哥伦比亚 | COL 3
   - 🇸🇪 瑞典 | SWE 3
-  - 🇸🇬 新加坡 | SGP 5
+  - 🇬🇧 英国 | GBR 5
   - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
