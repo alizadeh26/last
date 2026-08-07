@@ -10,13 +10,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA
-  server: 100.31.139.112
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -24,6 +17,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

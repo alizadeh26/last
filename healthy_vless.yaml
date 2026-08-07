@@ -12,8 +12,8 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 193.123.60.154
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 158.178.145.70
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -31,6 +31,14 @@ proxies:
     public-key: E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw
   servername: direct-nl.bachidze.com
   client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 138.68.53.88
+  port: 443
+  type: vless
+  uuid: 413a66e9-b05b-4ae6-a9eb-6d28204a28f4
+  tls: false
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 10
@@ -57,14 +65,6 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 138.68.53.88
-  port: 443
-  type: vless
-  uuid: 413a66e9-b05b-4ae6-a9eb-6d28204a28f4
-  tls: false
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -72,10 +72,10 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 14
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO
