@@ -4,20 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 2
-  server: creativeboxnl2.zanity.net
-  port: 5228
+- name: 🇧🇷 巴西 | BRA
+  server: 163.176.119.238
+  port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: GuURTkWo16VVnL3IbHZtWY
-- name: 🇺🇸 美国 | USA 2
-  server: 100.31.139.112
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇳🇱 荷兰 | NLD 8
   server: creativeboxnl2.zanity.net
   port: 5228
   type: ss
@@ -29,8 +22,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 2
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇧🇷 巴西 | BRA
+  - 🇳🇱 荷兰 | NLD 8
 rules:
 - MATCH,AUTO
