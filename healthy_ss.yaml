@@ -5,11 +5,32 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇧🇷 巴西 | BRA
-  server: 163.176.119.238
+  server: 163.176.178.63
   port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 51.21.130.209
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA
+  server: 100.31.139.112
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: c26s1.portablesubmarines.com
+  port: 12323
+  type: ss
+  cipher: aes-256-gcm
+  password: HWbaU4kDuRc4Xuow
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -17,5 +38,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
