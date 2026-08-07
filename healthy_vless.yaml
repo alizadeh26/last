@@ -24,48 +24,8 @@ proxies:
     headers:
       Host: playstationisp.com
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: free05.tunnely.space
-  port: 2096
-  type: vless
-  uuid: 5ab0346a-10ca-4d54-ba56-9a5a132e28f4
-  tls: true
-  reality-opts:
-    public-key: mChFHtaRmeuO2aDuDPqZvBFaCz6f34sVJIKuJcAR130
-    short-id: 2e40144ddc07e8e1
-  servername: free05.tunnely.space
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 134.98.149.115
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 143.47.177.0
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 144.21.35.209
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 92.5.236.31
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -80,20 +40,44 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: www.wto.org
-  port: 2095
+- name: 🇺🇸 美国 | USA 9
+  server: 104.17.21.32
+  port: 8880
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 4070e7c9-a412-4ed0-a5fa-fdb455451d2c
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: icy-sky-53f2.9-e8e.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: www.fbi.gov
+- name: 🇺🇸 美国 | USA 10
+  server: 104.17.21.32
+  port: 8880
+  type: vless
+  uuid: d1eeb74f-e5ea-45eb-9934-5376bfeb5ba4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fragrant-shape-07a0.269-144.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: 172.64.88.168
+  port: 8880
+  type: vless
+  uuid: 2e55e846-7737-4c07-af67-191e2727513c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: weathered-sunset-be54.407-d9d.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 22
+  server: www.wto.org
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -116,6 +100,26 @@ proxies:
     headers:
       Host: fragrant-credit-c4cf.148-e68.workers.dev
   udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 134.98.149.115
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 19
   server: 180.178.60.253
   port: 10000
@@ -124,17 +128,29 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 172.64.88.168
+- name: 🏴‍☠️ 未知地区 | Unknown
+  server: download.yunzhongzhuan.com
   port: 8880
   type: vless
-  uuid: 2e55e846-7737-4c07-af67-191e2727513c
+  uuid: 70ca8aec-42ba-41df-a874-ec9517053dec
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: weathered-sunset-be54.407-d9d.workers.dev
+      Host: rough-mouse-2a3a.424-e94.workers.dev
+  udp: true
+- name: 🏴‍☠️ 未知地区 | Unknown 2
+  server: download.yunzhongzhuan.com
+  port: 8880
+  type: vless
+  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: super-sunset-010c.24-43d.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -144,16 +160,17 @@ proxy-groups:
   proxies:
   - 🇨🇴 哥伦比亚 | COL
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 27
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 27
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 19
+  - 🏴‍☠️ 未知地区 | Unknown
+  - 🏴‍☠️ 未知地区 | Unknown 2
 rules:
 - MATCH,AUTO

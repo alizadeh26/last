@@ -12,13 +12,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 130.61.233.183
-  port: 59924
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-  udp: true
 - name: 🇮🇹 意大利 | ITA 2
   server: fn.cloud--vpn.site
   port: 80
@@ -31,45 +24,6 @@ proxies:
     headers:
       Host: playstationisp.com
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: free05.tunnely.space
-  port: 2096
-  type: vless
-  uuid: 5ab0346a-10ca-4d54-ba56-9a5a132e28f4
-  tls: true
-  reality-opts:
-    public-key: mChFHtaRmeuO2aDuDPqZvBFaCz6f34sVJIKuJcAR130
-    short-id: 2e40144ddc07e8e1
-  servername: free05.tunnely.space
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 134.98.149.115
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 152.70.53.15
-  port: 45819
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 143.47.177.0
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 144.21.35.209
   port: 62145
@@ -77,21 +31,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 92.5.236.31
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 168.107.83.128
-  port: 56927
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
   udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: 141.144.207.185
@@ -101,56 +40,29 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: e3.cover20.ir
-  port: 56985
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: yijvtycn/16XSdzMKa0v5XqPpERY+Ndka+tAbHj64X4=
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 162.159.21.178
+- name: 🇺🇸 美国 | USA 9
+  server: 104.17.21.32
   port: 8880
   type: vless
-  uuid: 94977b19-6720-48a6-92fd-00238757ea30
+  uuid: 4070e7c9-a412-4ed0-a5fa-fdb455451d2c
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: fragrant-credit-c4cf.148-e68.workers.dev
+      Host: icy-sky-53f2.9-e8e.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 180.178.60.253
-  port: 10000
+- name: 🇺🇸 美国 | USA 10
+  server: 104.17.21.32
+  port: 8880
   type: vless
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
+  uuid: d1eeb74f-e5ea-45eb-9934-5376bfeb5ba4
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fragrant-shape-07a0.269-144.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 18
   server: 172.64.88.168
@@ -164,6 +76,82 @@ proxies:
     headers:
       Host: weathered-sunset-be54.407-d9d.workers.dev
   udp: true
+- name: 🇺🇸 美国 | USA 22
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: 162.159.21.178
+  port: 8880
+  type: vless
+  uuid: 94977b19-6720-48a6-92fd-00238757ea30
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: fragrant-credit-c4cf.148-e68.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 134.98.149.115
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 180.178.60.253
+  port: 10000
+  type: vless
+  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
+  tls: false
+  network: tcp
+  udp: true
+- name: 🏴‍☠️ 未知地区 | Unknown
+  server: download.yunzhongzhuan.com
+  port: 8880
+  type: vless
+  uuid: 70ca8aec-42ba-41df-a874-ec9517053dec
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: rough-mouse-2a3a.424-e94.workers.dev
+  udp: true
+- name: 🏴‍☠️ 未知地区 | Unknown 2
+  server: download.yunzhongzhuan.com
+  port: 8880
+  type: vless
+  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: super-sunset-010c.24-43d.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -171,31 +159,19 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 5
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 10
-  - 🇸🇬 新加坡 | SGP
   - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 27
-  - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 18
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇸🇬 新加坡 | SGP
-  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 27
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 19
+  - 🏴‍☠️ 未知地区 | Unknown
+  - 🏴‍☠️ 未知地区 | Unknown 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -203,28 +179,17 @@ proxy-groups:
   proxies:
   - 🇨🇴 哥伦比亚 | COL
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 27
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 18
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 5
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 27
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 19
+  - 🏴‍☠️ 未知地区 | Unknown
+  - 🏴‍☠️ 未知地区 | Unknown 2
 rules:
 - MATCH,AUTO
