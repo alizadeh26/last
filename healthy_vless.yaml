@@ -4,14 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.188.226
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL
   server: 149.130.168.29
   port: 62145
@@ -20,12 +12,22 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 157.137.221.79
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.188.226
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 14
+  server: ddc-akn.astralweb.tech
+  port: 443
+  type: vless
+  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
+  tls: true
+  servername: ddc-akn.astralweb.tech
+  client-fingerprint: qq
   network: tcp
   udp: true
 - name: 🇨🇴 哥伦比亚 | COL 4
@@ -44,16 +46,8 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 134.98.158.108
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 144.21.40.16
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 158.180.14.247
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -70,17 +64,17 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 206.189.146.23
-  port: 17658
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: 194.26.229.207
+  port: 2200
   type: vless
-  uuid: 7362c389-7f4b-4c41-9594-fdb847570243
+  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
   tls: false
   network: ws
   ws-opts:
-    path: /Free By Tharuwa (0767597317)
+    path: /v1
     headers:
-      Host: zoom.us
+      Host: rzd.ru
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 104.18.34.245
@@ -94,17 +88,37 @@ proxies:
     headers:
       Host: square-tree-3dbf.285.workers.dev
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 18.239.134.69
-  port: 80
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 144.21.40.16
+  port: 62145
   type: vless
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 5
+  server: 206.189.146.23
+  port: 17658
+  type: vless
+  uuid: 7362c389-7f4b-4c41-9594-fdb847570243
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Free By Tharuwa (0767597317)
+    headers:
+      Host: zoom.us
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
   tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+      Host: weathered-union-5358.101-262.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 17
   server: www.wto.org
@@ -130,22 +144,6 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: x4g-production-ff3b.up.railway.app
-  port: 443
-  type: vless
-  uuid: d517ffb6-9d5c-278d-8df3-5398b941f578
-  tls: true
-  alpn:
-  - http/1.1
-  servername: x4g-production-ff3b.up.railway.app
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /ws/d517ffb6-9d5c-278d-8df3-5398b941f578
-    headers:
-      Host: x4g-production-ff3b.up.railway.app
-  udp: true
 - name: 🇹🇭 泰国 | THA 2
   server: www.true.th
   port: 80
@@ -164,20 +162,20 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 14
   - 🇨🇴 哥伦比亚 | COL 4
   - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 10
-  - 🇸🇬 新加坡 | SGP 5
+  - 🇷🇺 俄罗斯 | RUS 5
   - 🇸🇬 新加坡 | SGP 3
-  - 🇹🇭 泰国 | THA
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 18
   - 🇹🇭 泰国 | THA 2
 rules:
 - MATCH,AUTO

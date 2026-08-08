@@ -22,41 +22,23 @@ proxies:
     headers:
       Host: US032013.ssgreen.org
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: US032017.ssgreen.org
+- name: 🇺🇸 美国 | USA 25
+  server: JP032002.ssgreen.org
   port: 443
   type: vmess
-  uuid: 51ca2c43-70e5-4537-b7fd-cd52e24ac2c2
+  uuid: 5a412bde-b31d-4f75-bedb-375195b9cf41
   alterId: 0
   cipher: auto
   tls: true
   alpn:
   - ''
   skip-cert-verify: true
-  servername: US032017.ssgreen.org
+  servername: JP032002.ssgreen.org
   network: ws
   ws-opts:
     path: /wes
     headers:
-      Host: US032017.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA 29
-  server: US032010.westmgreen.com
-  port: 443
-  type: vmess
-  uuid: 238879d6-f2ea-4f0d-9fe9-0972a2995f78
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US032010.westmgreen.com
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032010.westmgreen.com
+      Host: JP032002.ssgreen.org
   udp: true
 - name: 🇺🇸 美国 | USA 24
   server: JP032001.ssgreen.org
@@ -75,24 +57,6 @@ proxies:
     path: /wes
     headers:
       Host: JP032001.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: JP032002.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 5a412bde-b31d-4f75-bedb-375195b9cf41
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032002.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032002.ssgreen.org
   udp: true
 - name: 🇺🇸 美国 | USA 28
   server: JP032008.ssgreen.org
@@ -119,10 +83,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 27
-  - 🇺🇸 美国 | USA 29
-  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 28
 rules:
 - MATCH,AUTO

@@ -4,28 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 144.22.212.248
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 🇧🇷 巴西 | BRA 2
-  server: 147.15.111.224
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
 - name: 🇧🇷 巴西 | BRA 3
   server: 147.15.12.217
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 4
-  server: 147.15.95.165
   port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -38,6 +18,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
   udp: true
+- name: 🇭🇰 香港 | HKG
+  server: 212.192.15.159
+  port: 10910
+  type: ss
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
 - name: 🇮🇹 意大利 | ITA
   server: 194.87.47.152
   port: 10901
@@ -45,12 +31,6 @@ proxies:
   cipher: aes-256-gcm
   password: d1fa2f4b98a38bc8
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 212.192.15.159
-  port: 10910
-  type: ss
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
 - name: 🇷🇺 俄罗斯 | RUS
   server: 195.133.23.200
   port: 10806
@@ -63,42 +43,17 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 46.17.45.76
-  port: 10808
-  type: ss
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 140.245.109.33
-  port: 56927
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 13.50.4.72
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
   - 🇧🇷 巴西 | BRA 3
-  - 🇧🇷 巴西 | BRA 4
   - 🇬🇧 英国 | GBR
-  - 🇮🇹 意大利 | ITA
   - 🇭🇰 香港 | HKG
+  - 🇮🇹 意大利 | ITA
   - 🇷🇺 俄罗斯 | RUS
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
