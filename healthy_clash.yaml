@@ -4,7 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR 6
+- name: 🇬🇧 英国 | GBR 7
+  server: 87.242.85.201
+  port: 13561
+  type: vless
+  uuid: 22a0751d-4db7-4a51-ba80-d8ddf24e0b77
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 8
   server: 87.242.85.201
   port: 35412
   type: vless
@@ -12,29 +20,108 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 13.61.189.139
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 109.73.193.169
+- name: 🇭🇰 香港 | HKG 2
+  server: 47.82.120.47
+  port: 43630
+  type: vless
+  uuid: 01a95af3-a2f6-453e-9f88-b2fc011627cc
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 176.98.178.17
   port: 4100
   type: vless
-  uuid: e1e26ef7-3291-45ac-b821-a11dcdbfdb4d
+  uuid: 87f3bc47-ee10-4418-9260-7a4e43f28e00
   tls: false
   network: ws
   ws-opts:
     path: /v1
+    headers:
+      Host: live.ok.ru
   udp: true
+- name: 🇸🇪 瑞典 | SWE 5
+  server: 13.50.4.72
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇸🇪 瑞典 | SWE 6
   server: 51.21.130.209
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA
+- name: 🇺🇸 美国 | USA 11
+  server: 45.40.155.4
+  port: 80
+  type: vless
+  uuid: e403856e-4e50-49e6-9edc-d9536a803a6a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳 @WangCai2
+    headers:
+      Host: proud-cloud-5c50.113-8dc.workers.dev
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: e1.cover20.ir
+  port: 51570
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: SyhFNZUMkscDIajvuBnkIonkASYsiHIa216xYDbnDKY=
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
+- name: 🇺🇸 美国 | USA 26
+  server: 172.64.88.168
+  port: 8880
+  type: vless
+  uuid: 6f876b28-1b3e-4088-85c0-d299e56bfccd
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: throbbing-haze-fbde.388-6c4.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 24
+  server: gem.cryptoofarm.com
+  port: 8443
+  type: vless
+  uuid: 16ab4d4a-fd81-4535-9b7b-346677226ce8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: psBgpjOLk-vmOts84wgm_T0qqqaZHd9Reekul4L3ugA
+    short-id: 42fe6ff20442d025
+  servername: gem.cryptoofarm.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 28
   server: sal.cryptoofarm.com
   port: 8443
   type: vless
@@ -48,23 +135,25 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 98.89.48.191
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 11
-  server: www.wto.org
-  port: 2095
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 109.73.193.169
+  port: 4100
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: e1e26ef7-3291-45ac-b821-a11dcdbfdb4d
   tls: false
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+    path: /v1
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 7
+  server: 194.26.229.219
+  port: 4100
+  type: vless
+  uuid: 099c6e3f-e8d3-41d4-95f2-ef2eafb51cdc
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
   udp: true
 proxy-groups:
 - name: AUTO
@@ -72,36 +161,45 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 6
-  - 🇸🇪 瑞典 | SWE
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇬🇧 英国 | GBR 7
+  - 🇬🇧 英国 | GBR 8
+  - 🇭🇰 香港 | HKG 2
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇸🇪 瑞典 | SWE 5
   - 🇸🇪 瑞典 | SWE 6
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 11
+  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 28
+  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇷🇺 俄罗斯 | RUS 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 | SWE
+  - 🇸🇪 瑞典 | SWE 5
   - 🇸🇪 瑞典 | SWE 6
-  - 🇺🇸 美国 | USA 8
+  - 🇹🇷 土耳其 | TUR
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 6
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA
+  - 🇬🇧 英国 | GBR 7
+  - 🇬🇧 英国 | GBR 8
+  - 🇭🇰 香港 | HKG 2
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 11
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR 6
-  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 28
+  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇷🇺 俄罗斯 | RUS 7
 rules:
 - MATCH,AUTO
