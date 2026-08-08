@@ -4,77 +4,91 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA 3
-  server: 147.15.12.217
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.227.216
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
   udp: true
 - name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.168.29
+  server: 157.137.213.216
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.188.226
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 14
-  server: ddc-akn.astralweb.tech
-  port: 443
-  type: vless
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
-  tls: true
-  servername: ddc-akn.astralweb.tech
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 4
-  server: 158.247.126.16
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.66.64
-  port: 61312
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-  udp: true
-- name: 🇭🇰 香港 | HKG
+- name: 🇭🇰 香港 | HKG 3
   server: 212.192.15.159
   port: 10910
   type: ss
   cipher: aes-256-gcm
   password: 72553320ae6bcc8f
-- name: 🇮🇹 意大利 | ITA
-  server: 194.87.47.152
-  port: 10901
+- name: 🇯🇵 日本 | JPN 2
+  server: JP032010.ssgreen.org
+  port: 443
+  type: vmess
+  uuid: 114af209-c748-49eb-9e45-629986aacfbb
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  servername: JP032010.ssgreen.org
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: JP032010.ssgreen.org
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: JP032006.ssgreen.org
+  port: 443
+  type: vmess
+  uuid: 2f4b5909-0ae6-484e-b528-2a570d474e56
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  servername: JP032006.ssgreen.org
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: JP032006.ssgreen.org
+  udp: true
+- name: 🇯🇵 日本 | JPN 4
+  server: JP032009.ssgreen.org
+  port: 443
+  type: vmess
+  uuid: 011fca93-33cd-4c3b-a584-7960621e0a3b
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  servername: JP032009.ssgreen.org
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: JP032009.ssgreen.org
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 158.101.199.246
+  port: 45819
   type: ss
-  cipher: aes-256-gcm
-  password: d1fa2f4b98a38bc8
+  cipher: chacha20-ietf-poly1305
+  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 134.98.155.228
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 158.180.14.247
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 158.178.154.97
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -97,17 +111,24 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: 81a20429165df87e
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 195.133.5.207
-  port: 10860
-  type: ss
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 194.26.229.207
+- name: 🇳🇱 荷兰 | NLD 9
+  server: nd13.skorostnet.space
+  port: 443
+  type: vless
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 7
+  server: 45.90.32.30
   port: 2200
   type: vless
-  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
+  uuid: ea535a23-447f-4501-918c-de8a8b376bec
   tls: false
   network: ws
   ws-opts:
@@ -115,7 +136,27 @@ proxies:
     headers:
       Host: rzd.ru
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: 103.227.225.198
+  port: 32355
+  type: vless
+  uuid: a2f6da81-64bd-4b86-b806-5658e161b7e4
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 104.27.82.154
+  port: 8880
+  type: vless
+  uuid: 50c91104-c1fc-471e-914f-3ad252a0a34c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: quiet-snowflake-e1dd.374-ac3.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
   server: 104.18.34.245
   port: 8880
   type: vless
@@ -127,15 +168,7 @@ proxies:
     headers:
       Host: square-tree-3dbf.285.workers.dev
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 144.21.40.16
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 5
+- name: 🇸🇬 新加坡 | SGP 3
   server: 206.189.146.23
   port: 17658
   type: vless
@@ -147,125 +180,183 @@ proxies:
     headers:
       Host: zoom.us
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 104.18.34.245
+- name: 🇺🇸 美国 | USA 16
+  server: 70.39.197.9
+  port: 59216
+  type: vless
+  uuid: 0bcec952-a452-43ed-9468-4547b9f5dfc4
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 172.64.146.153
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 172.64.88.168
   port: 8880
   type: vless
-  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
+  uuid: 2e55e846-7737-4c07-af67-191e2727513c
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: weathered-union-5358.101-262.workers.dev
+      Host: weathered-sunset-be54.407-d9d.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: www.wto.org
-  port: 2095
+- name: 🇺🇸 美国 | USA 6
+  server: 162.159.140.78
+  port: 8880
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 363202dd-0521-46b4-b4e2-443dfbaa2ce1
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: flat-heart-b60a.401-306.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: www.fbi.gov
-  port: 2095
+- name: 🇺🇸 美国 | USA 7
+  server: 162.159.140.78
+  port: 8880
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: e8e34074-166f-48a6-9f86-398ad796c3ca
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: hidden-bonus-24d0.232-647.workers.dev
   udp: true
-- name: 🇹🇭 泰国 | THA 2
-  server: www.true.th
-  port: 80
+- name: 🇺🇸 美国 | USA 33
+  server: us.klxiaogou.com
+  port: 41963
+  type: vmess
+  uuid: 7a4830df-5391-4748-b1c7-b6857ad04acb
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /124
+    headers:
+      Host: us.klxiaogou.com
+- name: 🇺🇸 美国 | USA 29
+  server: US032014.ssgreen.org
+  port: 443
+  type: vmess
+  uuid: 69bd12dd-03a2-4782-b4bd-46a90d17214f
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  servername: US032014.ssgreen.org
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: US032014.ssgreen.org
+  udp: true
+- name: 🇺🇸 美国 | USA 32
+  server: US032010.westmgreen.com
+  port: 443
+  type: vmess
+  uuid: 238879d6-f2ea-4f0d-9fe9-0972a2995f78
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  servername: US032010.westmgreen.com
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: US032010.westmgreen.com
+  udp: true
+- name: 🇺🇸 美国 | USA 30
+  server: US122207.ssgreen.org
+  port: 443
+  type: vmess
+  uuid: a784449b-074f-4fe7-9f4a-119b33d8c05d
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  servername: US122207.ssgreen.org
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: US122207.ssgreen.org
+  udp: true
+- name: 🇺🇸 美国 | USA 31
+  server: US032017.ssgreen.org
+  port: 443
+  type: vmess
+  uuid: 51ca2c43-70e5-4537-b7fd-cd52e24ac2c2
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  servername: US032017.ssgreen.org
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: US032017.ssgreen.org
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: log.bpminecraft.com
+  port: 8880
   type: vless
-  uuid: 63ae5b68-f6f8-432e-b440-d975053cfbc2
+  uuid: d702b5e4-412d-4859-a528-3fc0b91f6fc0
   tls: false
   network: ws
   ws-opts:
-    path: /than
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: d16l6nb4do0zu4.cloudfront.net
+      Host: wild-math-3ef2.439.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: US032013.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 58968a6c-2def-4bfb-b20a-8cbc4baed978
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US032013.ssgreen.org
+- name: 🇷🇺 俄罗斯 | RUS 8
+  server: 82.117.87.199
+  port: 4100
+  type: vless
+  uuid: 2a88091e-e3f8-4478-9751-6ce0557a7f2e
+  tls: false
   network: ws
   ws-opts:
-    path: /wes
+    path: /v1
     headers:
-      Host: US032013.ssgreen.org
+      Host: live.ok.ru
   udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: JP032002.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 5a412bde-b31d-4f75-bedb-375195b9cf41
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032002.ssgreen.org
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: 201.24.120.68
+  port: 4100
+  type: vless
+  uuid: 59525c39-e731-4c27-bc9e-6d8cef67572c
+  tls: false
   network: ws
   ws-opts:
-    path: /wes
+    path: /v1
     headers:
-      Host: JP032002.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: JP032001.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 842bf7b4-1c6b-478f-8edb-5b93abde9691
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032001.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032001.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA 28
-  server: JP032008.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: fdd5c90a-96f7-44dd-9adc-58413bd85981
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032008.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032008.ssgreen.org
+      Host: live.ok.ru
   udp: true
 proxy-groups:
 - name: AUTO
@@ -273,70 +364,92 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA 3
-  - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 14
-  - 🇨🇴 哥伦比亚 | COL 4
-  - 🇬🇧 英国 | GBR
-  - 🇭🇰 香港 | HKG
-  - 🇮🇹 意大利 | ITA
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇭🇰 香港 | HKG 3
+  - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 3
+  - 🇯🇵 日本 | JPN 4
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 10
   - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 5
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇷🇺 俄罗斯 | RUS 7
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 19
-  - 🇹🇭 泰国 | THA 2
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 28
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 33
+  - 🇺🇸 美国 | USA 29
+  - 🇺🇸 美国 | USA 32
+  - 🇺🇸 美国 | USA 30
+  - 🇺🇸 美国 | USA 31
+  - 🇺🇸 美国 | USA 20
+  - 🇷🇺 俄罗斯 | RUS 8
+  - 🇷🇺 俄罗斯 | RUS 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA 3
-  - 🇬🇧 英国 | GBR
-  - 🇭🇰 香港 | HKG
-  - 🇮🇹 意大利 | ITA
+  - 🇭🇰 香港 | HKG 3
+  - 🇳🇱 荷兰 | NLD 2
   - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 14
-  - 🇨🇴 哥伦比亚 | COL 4
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 10
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 5
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇷🇺 俄罗斯 | RUS 7
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 19
-  - 🇹🇭 泰国 | THA 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 20
+  - 🇷🇺 俄罗斯 | RUS 8
+  - 🇷🇺 俄罗斯 | RUS 5
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 28
+  - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 3
+  - 🇯🇵 日本 | JPN 4
+  - 🇺🇸 美国 | USA 33
+  - 🇺🇸 美国 | USA 29
+  - 🇺🇸 美国 | USA 32
+  - 🇺🇸 美国 | USA 30
+  - 🇺🇸 美国 | USA 31
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 3
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 4
+  - 🇺🇸 美国 | USA 31
 rules:
 - MATCH,AUTO
