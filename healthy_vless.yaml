@@ -4,57 +4,52 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.191.105
-  port: 62145
+- name: 🇩🇪 德国 | DEU 7
+  server: 47.82.120.47
+  port: 43630
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: 01a95af3-a2f6-453e-9f88-b2fc011627cc
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 158.178.145.70
-  port: 62145
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 109.73.193.169
+  port: 4100
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 14
-  server: direct-nl.bachidze.com
-  port: 443
-  type: vless
-  uuid: f7c25743-140c-4d32-a296-a53bc49682d8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw
-  servername: direct-nl.bachidze.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 138.68.53.88
-  port: 443
-  type: vless
-  uuid: 413a66e9-b05b-4ae6-a9eb-6d28204a28f4
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: e1e26ef7-3291-45ac-b821-a11dcdbfdb4d
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /v1
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 6
+  server: 212.193.26.170
+  port: 4100
+  type: vless
+  uuid: d3984ebd-b876-4a38-be7d-90299feafc81
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: live.ok.ru
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: sal.cryptoofarm.com
+  port: 8443
+  type: vless
+  uuid: 16ab4d4a-fd81-4535-9b7b-346677226ce8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XCllhQ8ZiaUgo_kuf4sgRFyVNa7cxEUk6Eyr1zwLK0g
+    short-id: 33b978fcbd938651
+  servername: sal.cryptoofarm.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 11
-  server: www.fbi.gov
+  server: www.wto.org
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -71,11 +66,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 14
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 10
+  - 🇩🇪 德国 | DEU 7
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS 6
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO

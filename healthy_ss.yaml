@@ -5,11 +5,43 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇸🇪 瑞典 | SWE
+  server: 13.61.189.139
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 | SWE 6
   server: 51.21.130.209
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇸🇪 瑞典 | SWE 7
+  server: 13.50.4.72
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 2
+  server: 100.31.139.112
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 98.89.48.191
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇹🇷 土耳其 | TUR 4
+  server: e3.cover20.ir
+  port: 56985
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: NHnR/CZ9XSTK2hIKVZ6qCVLKHe4cbZsozY58EIq/HZI=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -17,5 +49,10 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇸🇪 瑞典 | SWE
+  - 🇸🇪 瑞典 | SWE 6
+  - 🇸🇪 瑞典 | SWE 7
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 8
+  - 🇹🇷 土耳其 | TUR 4
 rules:
 - MATCH,AUTO
