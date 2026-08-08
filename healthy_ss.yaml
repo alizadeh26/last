@@ -11,6 +11,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
   udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 13.50.4.72
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -18,5 +24,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
