@@ -4,60 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 2
-  server: JP032010.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 114af209-c748-49eb-9e45-629986aacfbb
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032010.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032010.ssgreen.org
-  udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: JP032006.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 2f4b5909-0ae6-484e-b528-2a570d474e56
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032006.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032006.ssgreen.org
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: JP032009.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 011fca93-33cd-4c3b-a584-7960621e0a3b
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032009.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032009.ssgreen.org
-  udp: true
 - name: 🇺🇸 美国 | USA 33
   server: us.klxiaogou.com
   port: 41963
@@ -72,91 +18,12 @@ proxies:
     path: /124
     headers:
       Host: us.klxiaogou.com
-- name: 🇺🇸 美国 | USA 29
-  server: US032014.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 69bd12dd-03a2-4782-b4bd-46a90d17214f
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US032014.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032014.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA 32
-  server: US032010.westmgreen.com
-  port: 443
-  type: vmess
-  uuid: 238879d6-f2ea-4f0d-9fe9-0972a2995f78
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US032010.westmgreen.com
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032010.westmgreen.com
-  udp: true
-- name: 🇺🇸 美国 | USA 30
-  server: US122207.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: a784449b-074f-4fe7-9f4a-119b33d8c05d
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US122207.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US122207.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA 31
-  server: US032017.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 51ca2c43-70e5-4537-b7fd-cd52e24ac2c2
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US032017.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032017.ssgreen.org
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 29
-  - 🇺🇸 美国 | USA 32
-  - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 31
 rules:
 - MATCH,AUTO
