@@ -4,14 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: 47.82.120.47
-  port: 43630
+- name: 🇬🇧 英国 | GBR 6
+  server: 87.242.85.201
+  port: 35412
   type: vless
-  uuid: 01a95af3-a2f6-453e-9f88-b2fc011627cc
+  uuid: bfa91d79-049c-41e1-be94-029397377150
   tls: false
   network: tcp
   udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 13.61.189.139
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 109.73.193.169
   port: 4100
@@ -22,43 +28,12 @@ proxies:
   ws-opts:
     path: /v1
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 212.193.26.170
-  port: 4100
-  type: vless
-  uuid: d3984ebd-b876-4a38-be7d-90299feafc81
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 13.61.189.139
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇸🇪 瑞典 | SWE 6
   server: 51.21.130.209
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 | SWE 7
-  server: 13.50.4.72
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 2
-  server: 100.31.139.112
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇺🇸 美国 | USA
   server: sal.cryptoofarm.com
   port: 8443
@@ -91,30 +66,19 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇹🇷 土耳其 | TUR 4
-  server: e3.cover20.ir
-  port: 56985
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: NHnR/CZ9XSTK2hIKVZ6qCVLKHe4cbZsozY58EIq/HZI=
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 6
+  - 🇬🇧 英国 | GBR 6
   - 🇸🇪 瑞典 | SWE
+  - 🇷🇺 俄罗斯 | RUS 3
   - 🇸🇪 瑞典 | SWE 6
-  - 🇸🇪 瑞典 | SWE 7
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 11
-  - 🇹🇷 土耳其 | TUR 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -122,19 +86,22 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 | SWE
   - 🇸🇪 瑞典 | SWE 6
-  - 🇸🇪 瑞典 | SWE 7
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 8
-  - 🇹🇷 土耳其 | TUR 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
+  - 🇬🇧 英国 | GBR 6
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 6
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 11
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇬🇧 英国 | GBR 6
+  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO

@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: 47.82.120.47
-  port: 43630
+- name: 🇬🇧 英国 | GBR 6
+  server: 87.242.85.201
+  port: 35412
   type: vless
-  uuid: 01a95af3-a2f6-453e-9f88-b2fc011627cc
+  uuid: bfa91d79-049c-41e1-be94-029397377150
   tls: false
   network: tcp
   udp: true
@@ -21,18 +21,6 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 212.193.26.170
-  port: 4100
-  type: vless
-  uuid: d3984ebd-b876-4a38-be7d-90299feafc81
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
   udp: true
 - name: 🇺🇸 美国 | USA
   server: sal.cryptoofarm.com
@@ -66,9 +54,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
+  - 🇬🇧 英国 | GBR 6
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 6
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 11
 rules:
