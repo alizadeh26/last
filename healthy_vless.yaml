@@ -4,6 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.213.216
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 2
   server: 157.137.227.216
   port: 62145
@@ -43,6 +51,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 201.24.118.145
+  port: 4100
+  type: vless
+  uuid: bee21918-0933-430c-904b-c941b92256ba
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 8
   server: 82.117.87.199
   port: 4100
@@ -54,54 +74,6 @@ proxies:
     path: /v1
     headers:
       Host: live.ok.ru
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 172.64.146.153
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fangbinxingnmsl.pusytroller.gq
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: 103.227.225.198
-  port: 32355
-  type: vless
-  uuid: a2f6da81-64bd-4b86-b806-5658e161b7e4
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 206.189.146.23
-  port: 17658
-  type: vless
-  uuid: 7362c389-7f4b-4c41-9594-fdb847570243
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Free By Tharuwa (0767597317)
-    headers:
-      Host: zoom.us
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 70.39.197.9
-  port: 59216
-  type: vless
-  uuid: 0bcec952-a452-43ed-9468-4547b9f5dfc4
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 143.47.188.151
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 5
   server: 201.24.120.68
@@ -115,22 +87,76 @@ proxies:
     headers:
       Host: live.ok.ru
   udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 206.189.146.23
+  port: 17658
+  type: vless
+  uuid: 7362c389-7f4b-4c41-9594-fdb847570243
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Free By Tharuwa (0767597317)
+    headers:
+      Host: zoom.us
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: 103.227.225.198
+  port: 32355
+  type: vless
+  uuid: a2f6da81-64bd-4b86-b806-5658e161b7e4
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 172.64.146.153
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 172.64.88.168
+  port: 8880
+  type: vless
+  uuid: 2e55e846-7737-4c07-af67-191e2727513c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: weathered-sunset-be54.407-d9d.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 70.39.197.9
+  port: 59216
+  type: vless
+  uuid: 0bcec952-a452-43ed-9468-4547b9f5dfc4
+  tls: false
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 9
+  - 🇷🇺 俄罗斯 | RUS 4
   - 🇷🇺 俄罗斯 | RUS 8
-  - 🇺🇸 美国 | USA 10
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 16
-  - 🇳🇱 荷兰 | NLD 3
   - 🇷🇺 俄罗斯 | RUS 5
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 16
 rules:
 - MATCH,AUTO
