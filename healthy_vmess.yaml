@@ -4,26 +4,49 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 33
-  server: us.klxiaogou.com
-  port: 41963
+- name: 🇯🇵 日本 | JPN 2
+  server: JP032009.ssgreen.org
+  port: 443
   type: vmess
-  uuid: 7a4830df-5391-4748-b1c7-b6857ad04acb
+  uuid: 0976d0fd-e6c1-4adc-a2be-86a11c87bc8b
   alterId: 0
   cipher: auto
   tls: true
+  alpn:
+  - ''
   skip-cert-verify: true
+  servername: JP032009.ssgreen.org
   network: ws
   ws-opts:
-    path: /124
+    path: /wes
     headers:
-      Host: us.klxiaogou.com
+      Host: JP032009.ssgreen.org
+  udp: true
+- name: 🇺🇸 美国 | USA 25
+  server: US032017.ssgreen.org
+  port: 443
+  type: vmess
+  uuid: 7132fc21-21b1-46e1-aa59-6ce61e96d0fe
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  servername: US032017.ssgreen.org
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: US032017.ssgreen.org
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 33
+  - 🇯🇵 日本 | JPN 2
+  - 🇺🇸 美国 | USA 25
 rules:
 - MATCH,AUTO
