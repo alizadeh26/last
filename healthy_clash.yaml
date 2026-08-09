@@ -10,6 +10,13 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.215.84
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇩🇪 德国 | DEU 4
   server: ddc-akn.astralweb.tech
   port: 443
@@ -20,13 +27,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.215.84
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇬🇧 英国 | GBR
   server: 134.65.56.165
   port: 61312
@@ -60,35 +60,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 134.98.145.246
-  port: 45819
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
-- name: 🇩🇪 德国 | DEU 23
-  server: cdn-ru.sxvpn.pro
-  port: 443
-  type: vless
-  uuid: 501b6afa-f955-473f-8440-1010110a1548
-  tls: true
-  alpn:
-  - http/1.1
-  servername: cdn-ru.sxvpn.pro
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sx-cdn-ws
-    headers:
-      Host: cdn-ru.sxvpn.pro
-  udp: true
-- name: 🇩🇪 德国 | DEU 26
-  server: e2.cover20.ir
-  port: 30874
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4YQDtYQlErEbYy+6INH+dcNOExc6sbl2lEiA/15zhfI=
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: cdn.sxvpn.pro
   port: 443
@@ -105,30 +76,6 @@ proxies:
     headers:
       Host: cdn.sxvpn.pro
   udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: white-hill-f907.23-b68.workers.dev
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 5.129.252.140
-  port: 4100
-  type: vless
-  uuid: eb135f2b-4b9e-4abb-9a89-78242613da61
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  udp: true
 - name: 🇹🇭 泰国 | THA
   server: 18.239.134.69
   port: 80
@@ -140,6 +87,18 @@ proxies:
     path: /
     headers:
       Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: white-hill-f907.23-b68.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 23
   server: 172.66.214.247
@@ -153,30 +112,6 @@ proxies:
     headers:
       Host: sweet-sun-c70f.317-ba5.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 38
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: soft-scene-d370.55-7ff.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 34
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dawn-waterfall-6052.360-001.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 30
   server: 172.66.214.247
   port: 8880
@@ -189,17 +124,33 @@ proxies:
     headers:
       Host: summer-snow-c151.320-3ef.workers.dev
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 8
-  server: 5.129.241.247
-  port: 4100
+- name: 🇺🇸 美国 | USA 38
+  server: codecanyon.net
+  port: 8880
   type: vless
-  uuid: 5d0fbb28-3be3-4044-bc5b-e4b7ca1916c7
+  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
   tls: false
   network: ws
   ws-opts:
-    path: /v1
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: live.ok.ru
+      Host: soft-scene-d370.55-7ff.workers.dev
+  udp: true
+- name: 🇩🇪 德国 | DEU 23
+  server: cdn-ru.sxvpn.pro
+  port: 443
+  type: vless
+  uuid: 501b6afa-f955-473f-8440-1010110a1548
+  tls: true
+  alpn:
+  - http/1.1
+  servername: cdn-ru.sxvpn.pro
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sx-cdn-ws
+    headers:
+      Host: cdn-ru.sxvpn.pro
   udp: true
 proxy-groups:
 - name: AUTO
@@ -208,24 +159,19 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 4
   - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 3
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇩🇪 德国 | DEU 23
-  - 🇩🇪 德国 | DEU 26
   - 🇳🇱 荷兰 | NLD 3
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇷🇺 俄罗斯 | RUS 6
   - 🇹🇭 泰国 | THA
+  - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 38
-  - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 30
-  - 🇷🇺 俄罗斯 | RUS 8
+  - 🇺🇸 美国 | USA 38
+  - 🇩🇪 德国 | DEU 23
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -234,26 +180,21 @@ proxy-groups:
   - 🇧🇷 巴西 | BRA
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇩🇪 德国 | DEU 26
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
   - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 4
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 23
   - 🇳🇱 荷兰 | NLD 3
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇷🇺 俄罗斯 | RUS 6
   - 🇹🇭 泰国 | THA
+  - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 38
-  - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 30
-  - 🇷🇺 俄罗斯 | RUS 8
+  - 🇺🇸 美国 | USA 38
+  - 🇩🇪 德国 | DEU 23
 rules:
 - MATCH,AUTO
