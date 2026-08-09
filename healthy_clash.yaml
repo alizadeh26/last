@@ -12,6 +12,16 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: sw1-chr.astralweb.tech
+  port: 443
+  type: vless
+  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
+  tls: true
+  servername: sw1-chr.astralweb.tech
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 17
   server: 5.129.241.247
   port: 4100
@@ -23,23 +33,6 @@ proxies:
     path: /v1
     headers:
       Host: live.ok.ru
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 158.180.14.198
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇸🇪 瑞典 | SWE 3
-  server: sw1-chr.astralweb.tech
-  port: 443
-  type: vless
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
-  tls: true
-  servername: sw1-chr.astralweb.tech
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 185.23.35.175
@@ -71,9 +64,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇷🇺 俄罗斯 | RUS 17
-  - 🇳🇱 荷兰 | NLD 2
   - 🇸🇪 瑞典 | SWE 3
+  - 🇷🇺 俄罗斯 | RUS 17
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 20
 - name: PROTO-VLESS
@@ -82,9 +74,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇷🇺 俄罗斯 | RUS 17
-  - 🇳🇱 荷兰 | NLD 2
   - 🇸🇪 瑞典 | SWE 3
+  - 🇷🇺 俄罗斯 | RUS 17
   - 🇺🇸 美国 | USA 7
 - name: PROTO-VMESS
   type: url-test
@@ -92,5 +83,24 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 20
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 20
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇷🇺 俄罗斯 | RUS 17
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇴 哥伦比亚 | COL
 rules:
 - MATCH,AUTO
