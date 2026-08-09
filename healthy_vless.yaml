@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.215.84
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇩🇪 德国 | DEU 4
   server: ddc-akn.astralweb.tech
   port: 443
@@ -21,20 +14,13 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: ld.242311.xyz
-  port: 443
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.215.84
+  port: 62145
   type: vless
-  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
-  tls: true
-  servername: ld.242311.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ld.242311.xyz
-  udp: true
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇳🇱 荷兰 | NLD 5
   server: 144.21.34.192
   port: 62145
@@ -70,17 +56,17 @@ proxies:
     headers:
       Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: codecanyon.net
+- name: 🇺🇸 美国 | USA 30
+  server: 172.66.214.247
   port: 8880
   type: vless
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
+  uuid: 9b14cdbe-bcfe-4178-a674-3ad88a7c6f6a
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: white-hill-f907.23-b68.workers.dev
+      Host: summer-snow-c151.320-3ef.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 23
   server: 172.66.214.247
@@ -94,18 +80,6 @@ proxies:
     headers:
       Host: sweet-sun-c70f.317-ba5.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 30
-  server: 172.66.214.247
-  port: 8880
-  type: vless
-  uuid: 9b14cdbe-bcfe-4178-a674-3ad88a7c6f6a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: summer-snow-c151.320-3ef.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 38
   server: codecanyon.net
   port: 8880
@@ -118,38 +92,19 @@ proxies:
     headers:
       Host: soft-scene-d370.55-7ff.workers.dev
   udp: true
-- name: 🇩🇪 德国 | DEU 23
-  server: cdn-ru.sxvpn.pro
-  port: 443
-  type: vless
-  uuid: 501b6afa-f955-473f-8440-1010110a1548
-  tls: true
-  alpn:
-  - http/1.1
-  servername: cdn-ru.sxvpn.pro
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sx-cdn-ws
-    headers:
-      Host: cdn-ru.sxvpn.pro
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 4
-  - 🇳🇱 荷兰 | NLD
+  - 🇨🇴 哥伦比亚 | COL
   - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 3
   - 🇹🇭 泰国 | THA
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 30
+  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 38
-  - 🇩🇪 德国 | DEU 23
 rules:
 - MATCH,AUTO
