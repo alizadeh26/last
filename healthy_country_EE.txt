@@ -1,2 +1,1 @@
-vless://342ab7e4-5a89-0001-8809-304120d4aa83@95.85.224.51:443?flow=xtls-rprx-vision&security=reality&sni=max.ru&fp=qq&pbk=WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc&sid=a696de84963656de&type=tcp&path=/#🏳️ 103 - XX - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://4612258c-15e8-4459-a3b6-8b6571699c5f@46.22.216.31:443?security=reality&type=tcp&sni=mail.protech-plus.ee&fp=firefox&flow=xtls-rprx-vision&pbk=NiCJO84l7l--GJ10ggvb6HcOS8qLR30pWTphwvWozhg&encryption=none#🇪🇪 173 - EE - VLESS/REALITY/PBK/VISION/UTLS - 443
+vless://7e8f7489-e65f-4be6-93ed-867a74ec6759@95.85.224.3:8443?security=none&encryption=none&type=grpc&serviceName=grpc&path=/#🇪🇪 308 - EE - VLESS/GRPC - 8443

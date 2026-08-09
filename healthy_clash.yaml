@@ -4,28 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 6
-  server: 178.83.46.30
-  port: 5794
-  type: vless
-  uuid: ddd72e51-9224-43a2-b3a0-9c4170f78ed1
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇦🇪 阿联酋 | ARE
-  server: hk.s3-cloud.org
-  port: 443
-  type: vless
-  uuid: f9959a44-4836-4d29-8029-c539a26e77c5
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: nFJCJ2tvxLdLrc9G-O1laW8KDir5SDnaOTmYndVaOGQ
-    short-id: 7a3f9e2b1c8d4f6a
-  servername: hk.s3-cloud.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL
   server: 157.137.224.100
   port: 62145
@@ -33,6 +11,18 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 17
+  server: 5.129.241.247
+  port: 4100
+  type: vless
+  uuid: 5d0fbb28-3be3-4044-bc5b-e4b7ca1916c7
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 158.180.14.198
@@ -51,28 +41,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 17
-  server: 5.129.241.247
-  port: 4100
-  type: vless
-  uuid: 5d0fbb28-3be3-4044-bc5b-e4b7ca1916c7
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: lt.badns.help
-  port: 51360
-  type: vmess
-  uuid: 85ad21e1-c2cd-3407-aa90-815f3f3ea636
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 185.23.35.175
   port: 8450
@@ -86,31 +54,37 @@ proxies:
     headers:
       Host: x5club.ru
   udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: lt.badns.help
+  port: 51360
+  type: vmess
+  uuid: 85ad21e1-c2cd-3407-aa90-815f3f3ea636
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇦🇪 阿联酋 | ARE
   - 🇨🇴 哥伦比亚 | COL
+  - 🇷🇺 俄罗斯 | RUS 17
   - 🇳🇱 荷兰 | NLD 2
   - 🇸🇪 瑞典 | SWE 3
-  - 🇷🇺 俄罗斯 | RUS 17
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 20
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇦🇪 阿联酋 | ARE
   - 🇨🇴 哥伦比亚 | COL
+  - 🇷🇺 俄罗斯 | RUS 17
   - 🇳🇱 荷兰 | NLD 2
   - 🇸🇪 瑞典 | SWE 3
-  - 🇷🇺 俄罗斯 | RUS 17
   - 🇺🇸 美国 | USA 7
 - name: PROTO-VMESS
   type: url-test
