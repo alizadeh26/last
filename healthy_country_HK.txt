@@ -1,6 +1,6 @@
 trojan://ND91608427@185.244.208.13:443?security=tls&sni=ace-starling.rooster465.autos#%E9%A6%99%E6%B8%AF_080918002
-trojan://ND91608427@91.199.84.120:443?sni=dynamic-grubworm.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_080918497
-trojan://ND91608427@upright-hamster.rooster465.autos:443?security=tls&sni=upright-hamster.rooster465.autos#%E9%A6%99%E6%B8%AF_080918005
+trojan://ND91608427@185.244.208.210:443?sni=upright-hamster.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_080918498
+trojan://ND91608427@dynamic-grubworm.rooster465.autos:443?security=tls&sni=dynamic-grubworm.rooster465.autos#%E9%A6%99%E6%B8%AF_080918004
 vless://431fe973-a43a-4fac-bf83-2a772e0d0625@182.16.61.3:45647?path=/#🏳️ 170 - XX - VLESS - 45647
 vless://96563f88-f743-4395-a3b2-27ec462ae45e@35.241.98.220:443?security=reality&encryption=none&sni=www.cloudflare.com&fp=chrome&pbk=bSK8gtmPMlw7gP415tmh6kQzzFiwzxBsT3Kuqql6cRo&sid=ec2c7091fe76336c&type=tcp&path=/#🏳️ 478 - XX - VLESS/REALITY/PBK/SID/UTLS - 443
 vless://d92afe21-8e8b-42c7-98c2-8a33da64d28f@39.109.117.110:43646?path=/d92afe21&encryption=none&type=ws&security=none#🇭🇰 620 - HK - VLESS/WS - 43646
