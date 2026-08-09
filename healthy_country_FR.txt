@@ -2,13 +2,13 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwRk5OOWpLZThqd0Q@38.180.92.242:32245#Server 
 vless://eb77be10-9d9e-527b-a78d-8caaf58992d6@45.13.119.219:8888?security=none&encryption=none&headerType=none&type=tcp#Server 117 🇫🇷
 vless://adce7c2a-3191-49ae-b61c-9b8258ea1b0e@89.208.113.16:443?encryption=none&security=none&type=tcp#Server 130 🇫🇷
 trojan://ND91608427@13.36.175.151:443?allowInsecure=0&sni=classic-gator.rooster465.autos#%E6%B3%95%E5%9B%BD_080904001
+trojan://ND91608427@star-kiwi.rooster465.autos:443?allowInsecure=0&sni=star-kiwi.rooster465.autos#%E6%B3%95%E5%9B%BD_080904002
+trojan://ND91608427@15.237.137.197:443?allowInsecure=0&sni=fancy-skink.rooster465.autos#%E6%B3%95%E5%9B%BD_080904003
 trojan://ND91608427@15.237.219.234:443?allowInsecure=0&sni=careful-tadpole.rooster465.autos#%E6%B3%95%E5%9B%BD_080904004
 trojan://QV31589740@great-krill.rooster465.autos:443?allowInsecure=0&sni=great-krill.rooster465.autos#%E6%B3%95%E5%9B%BD_080904005
-trojan://ND91608427@15.237.137.197:443?allowInsecure=0&sni=fancy-skink.rooster465.autos#%E6%B3%95%E5%9B%BD_080904003
-trojan://ND91608427@15.237.49.244:443?sni=star-kiwi.rooster465.autos&type=tcp&fp=chrome#%E6%B3%95%E5%9B%BD_080904350
-vless://1e3c6e25-0c65-4927-91cb-79982fd6dafc@35.181.171.182:40133?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=yahoo.com&fp=firefox&flow=xtls-rprx-vision&sid=87806cfd2dcfcd&pbk=FDnQBm11AA6TUNmcyQAo0wJnl2mt1oozbOG-FSVi6DU#🇫🇷 36 - FR - VLESS/REALITY/PBK/SID/VISION/UTLS - 40133
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@62.210.91.10:23576?encryption=none&flow=xtls-rprx-vision&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&security=reality&sid=01&sni=fuck.rkn&type=tcp#🇺🇸 186 - US - VLESS/REALITY/PBK/SID/VISION - 23576
-vless://8787dd0a-095a-414e-804f-a7d16a1ae166@45.95.233.214:8443?flow=xtls-rprx-vision&security=tls&sni=frx1.braidx.tech&fp=firefox&type=tcp&path=/#🇫🇷 359 - FR - VLESS/TLS/VISION/UTLS - 8443
-vless://b585dc5e-55bf-4a8b-913a-27c9ccac05c3@bab-6.site:443?encryption=none&fp=chrome&host=bab-6.site&path=/vws/&security=tls&sni=bab-6.site&type=ws#🇫🇷 473 - FR - VLESS/WS/TLS/UTLS - 443
+vless://1e3c6e25-0c65-4927-91cb-79982fd6dafc@35.181.171.182:40133?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=yahoo.com&fp=firefox&flow=xtls-rprx-vision&sid=87806cfd2dcfcd&pbk=FDnQBm11AA6TUNmcyQAo0wJnl2mt1oozbOG-FSVi6DU#🇫🇷 50 - FR - VLESS/REALITY/PBK/SID/VISION/UTLS - 40133
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@62.210.91.10:23576?security=reality&type=raw&sni=fuck.rkn&fp=chrome&flow=xtls-rprx-vision&sid=01&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&encryption=none#🇫🇷 196 - FR - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 23576
+vless://8787dd0a-095a-414e-804f-a7d16a1ae166@45.95.233.214:8443?flow=xtls-rprx-vision&security=tls&sni=frx1.braidx.tech&fp=firefox&type=tcp&path=/#🇫🇷 350 - FR - VLESS/TLS/VISION/UTLS - 8443
+vless://b585dc5e-55bf-4a8b-913a-27c9ccac05c3@bab-6.site:443?encryption=none&fp=chrome&host=bab-6.site&path=/vws/&security=tls&sni=bab-6.site&type=ws#🇫🇷 476 - FR - VLESS/WS/TLS/UTLS - 443
 vless://c124a209-d949-4951-8234-e2d918b3e6c0@185.193.89.51:443?flow=xtls-rprx-vision&security=reality&encryption=none&sni=p.keshevoz.ru&fp=chrome&pbk=C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc&type=tcp&path=/#🇫🇷 494 - FR - VLESS/REALITY/PBK/VISION/UTLS - 443
-vless://e8b1500b-e9e8-5492-8312-f4eadf7d0767@162.19.10.99:443?alpn=h2&encryption=none&flow=xtls-rprx-vision&fp=chrome&security=tls&sni=nasnet-162191099-direct.mbghalibaf.com&type=tcp#🇫🇷 592 - FR - VLESS/TLS/VISION/UTLS - 443
+vless://e8b1500b-e9e8-5492-8312-f4eadf7d0767@162.19.10.99:443?alpn=h2&encryption=none&flow=xtls-rprx-vision&fp=chrome&security=tls&sni=nasnet-162191099-direct.mbghalibaf.com&type=tcp#🇫🇷 608 - FR - VLESS/TLS/VISION/UTLS - 443
