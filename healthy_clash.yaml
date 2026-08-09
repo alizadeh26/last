@@ -12,16 +12,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: sw1-chr.astralweb.tech
-  port: 443
-  type: vless
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
-  tls: true
-  servername: sw1-chr.astralweb.tech
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 17
   server: 5.129.241.247
   port: 4100
@@ -64,7 +54,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇸🇪 瑞典 | SWE 3
   - 🇷🇺 俄罗斯 | RUS 17
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 20
@@ -74,16 +63,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇸🇪 瑞典 | SWE 3
   - 🇷🇺 俄罗斯 | RUS 17
   - 🇺🇸 美国 | USA 7
 - name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 20
-- name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
@@ -94,13 +76,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇷🇺 俄罗斯 | RUS 17
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
