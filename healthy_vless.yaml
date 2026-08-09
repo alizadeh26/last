@@ -4,26 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.220.255
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇩🇪 德国 | DEU 8
-  server: 135.125.184.182
-  port: 50559
-  type: vless
-  uuid: 3fd3909b-238f-42c4-9170-38d10014b1d8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Play.googel.com
-  udp: true
-- name: 🇩🇪 德国 | DEU 20
+- name: 🇩🇪 德国 | DEU 4
   server: ddc-akn.astralweb.tech
   port: 443
   type: vless
@@ -33,23 +14,35 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 23
-  server: cdn-de.sxvpn.pro
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.215.84
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD
+  server: ld.242311.xyz
   port: 443
   type: vless
-  uuid: 501b6afa-f955-473f-8440-1010110a1548
+  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
   tls: true
-  alpn:
-  - http/1.1
-  servername: cdn-de.sxvpn.pro
-  client-fingerprint: firefox
+  servername: ld.242311.xyz
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sx-cdn-ws
+    path: /fp=chrome
     headers:
-      Host: cdn-de.sxvpn.pro
+      Host: ld.242311.xyz
   udp: true
-- name: 🇩🇪 德国 | DEU 24
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 144.21.34.192
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU 23
   server: cdn-ru.sxvpn.pro
   port: 443
   type: vless
@@ -65,47 +58,45 @@ proxies:
     headers:
       Host: cdn-ru.sxvpn.pro
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: ddc-chr.astralweb.tech
+- name: 🇳🇱 荷兰 | NLD 3
+  server: cdn.sxvpn.pro
   port: 443
   type: vless
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
+  uuid: 501b6afa-f955-473f-8440-1010110a1548
   tls: true
-  servername: ddc-chr.astralweb.tech
-  client-fingerprint: chrome
-  network: tcp
+  alpn:
+  - http/1.1
+  servername: cdn.sxvpn.pro
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /sx-cdn-ws
+    headers:
+      Host: cdn.sxvpn.pro
   udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: byocsv48182d.dxdx3.com
-  port: 15744
+- name: 🇸🇬 新加坡 | SGP 6
+  server: codecanyon.net
+  port: 8880
   type: vless
-  uuid: c26a059d-e324-4c93-912f-443ddec99643
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 172.64.152.241
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
+      Host: white-hill-f907.23-b68.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 172.67.202.17
-  port: 2095
+- name: 🇷🇺 俄罗斯 | RUS 6
+  server: 5.129.252.140
+  port: 4100
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: eb135f2b-4b9e-4abb-9a89-78242613da61
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /v1
     headers:
-      Host: nmslfangbinxing.pusytroller.gq
+      Host: live.ok.ru
   udp: true
 - name: 🇹🇭 泰国 | THA
   server: 18.239.134.69
@@ -119,29 +110,65 @@ proxies:
     headers:
       Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: www.baipiao.eu.org
+- name: 🇺🇸 美国 | USA 23
+  server: 172.66.214.247
   port: 8880
   type: vless
-  uuid: d593c88a-496b-4889-968c-6af644021467
+  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: white-disk-79ed.476.workers.dev
+      Host: sweet-sun-c70f.317-ba5.workers.dev
   udp: true
-- name: 🇹🇭 泰国 | THA 3
-  server: www.true.th
-  port: 80
+- name: 🇺🇸 美国 | USA 38
+  server: codecanyon.net
+  port: 8880
   type: vless
-  uuid: 63ae5b68-f6f8-432e-b440-d975053cfbc2
+  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
   tls: false
   network: ws
   ws-opts:
-    path: /than
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: d16l6nb4do0zu4.cloudfront.net
+      Host: soft-scene-d370.55-7ff.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 34
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dawn-waterfall-6052.360-001.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 30
+  server: 172.66.214.247
+  port: 8880
+  type: vless
+  uuid: 9b14cdbe-bcfe-4178-a674-3ad88a7c6f6a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: summer-snow-c151.320-3ef.workers.dev
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 8
+  server: 5.129.241.247
+  port: 4100
+  type: vless
+  uuid: 5d0fbb28-3be3-4044-bc5b-e4b7ca1916c7
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
   udp: true
 proxy-groups:
 - name: AUTO
@@ -149,17 +176,19 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 4
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 20
-  - 🇩🇪 德国 | DEU 23
-  - 🇩🇪 德国 | DEU 24
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 5
-  - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 9
+  - 🇩🇪 德国 | DEU 23
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇷🇺 俄罗斯 | RUS 6
   - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 13
-  - 🇹🇭 泰国 | THA 3
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 38
+  - 🇺🇸 美国 | USA 34
+  - 🇺🇸 美国 | USA 30
+  - 🇷🇺 俄罗斯 | RUS 8
 rules:
 - MATCH,AUTO

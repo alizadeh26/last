@@ -1,5 +1,4 @@
 trojan://ND91608427@discrete-basilisk.rooster465.autos:443?allowInsecure=1&sni=discrete-basilisk.rooster465.autos#Server 99 🇵🇱
 trojan://ND91608427@relaxed-gull.rooster465.autos:443?security=tls&sni=relaxed-gull.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_080904002
-vless://1fef5248-fdd2-40d6-b3b9-6c33d4e74724@144.31.0.34:7443?flow=xtls-rprx-vision&security=reality&sni=_custom_&fp=firefox&pbk=8wD0IhR27ftD5LyJDq9CaFzi6DgA4vFtB-UP6QIdWVc&sid=e8ca5079a5e91481&type=tcp&path=/#🇵🇱 52 - PL - VLESS/REALITY/PBK/SID/VISION/UTLS - 7443
-vless://5d8eb33a-2166-4daf-88fe-4be5799c493b@141.101.120.73:443?encryption=none&fp=chrome&host=noisy-term-e657.airdrop2014aa5168.workers.dev&path=/&security=tls&sni=noisy-term-e657.airdrop2014aa5168.workers.dev&type=ws#🇺🇸 251 - US - VLESS/WS/TLS/UTLS - 443
-vless://c26a059d-e324-4c93-912f-443ddec99643@byocsv48182d.dxdx3.com:15744?security=none&encryption=none&headerType=none&type=tcp#🇵🇱 497 - PL - VLESS - 15744
+vless://1fef5248-fdd2-40d6-b3b9-6c33d4e74724@144.31.0.34:7443?security=reality&encryption=none&pbk=8wD0IhR27ftD5LyJDq9CaFzi6DgA4vFtB-UP6QIdWVc&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=_custom_&sid=e8ca5079a5e91481#REALITY|PL🇵🇱
+vless://5d8eb33a-2166-4daf-88fe-4be5799c493b@141.101.120.73:443?encryption=none&fp=chrome&host=noisy-term-e657.airdrop2014aa5168.workers.dev&path=/&security=tls&sni=noisy-term-e657.airdrop2014aa5168.workers.dev&type=ws#🏳️ 277 - XX - VLESS/WS/TLS/UTLS - 443

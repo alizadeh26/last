@@ -4,26 +4,47 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 158.101.199.246
+- name: 🇧🇷 巴西 | BRA
+  server: 137.131.204.232
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇬🇧 英国 | GBR
+  server: 134.65.56.165
+  port: 61312
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+- name: 🇬🇧 英国 | GBR 3
+  server: 134.65.57.231
+  port: 61312
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 134.98.145.246
   port: 45819
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 13.50.4.72
-  port: 443
+- name: 🇩🇪 德国 | DEU 26
+  server: e2.cover20.ir
+  port: 30874
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: chacha20-ietf-poly1305
+  password: 4YQDtYQlErEbYy+6INH+dcNOExc6sbl2lEiA/15zhfI=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇸🇪 瑞典 | SWE
+  - 🇧🇷 巴西 | BRA
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇩🇪 德国 | DEU 26
 rules:
 - MATCH,AUTO
