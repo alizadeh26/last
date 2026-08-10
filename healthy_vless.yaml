@@ -54,6 +54,18 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 194.26.229.211
+  port: 4100
+  type: vless
+  uuid: 1a2f7607-b36a-4996-b7a2-72359123c446
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  udp: true
 - name: 🇸🇪 瑞典 | SWE 7
   server: sw.rexten.cc
   port: 443
@@ -67,17 +79,17 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 194.26.229.211
-  port: 4100
+- name: 🇹🇭 泰国 | THA
+  server: 18.239.134.69
+  port: 80
   type: vless
-  uuid: 1a2f7607-b36a-4996-b7a2-72359123c446
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
   tls: false
   network: ws
   ws-opts:
-    path: /v1
+    path: /
     headers:
-      Host: live.ok.ru
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 180.178.60.253
@@ -97,8 +109,9 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 | LVA 4
   - 🇱🇻 拉脱维亚 | LVA 3
   - 🇳🇱 荷兰 | NLD 7
-  - 🇸🇪 瑞典 | SWE 7
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇸🇪 瑞典 | SWE 7
+  - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
