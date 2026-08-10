@@ -4,25 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 134.65.56.165
-  port: 61312
+- name: 🇷🇺 俄罗斯 | RUS 14
+  server: 195.133.23.200
+  port: 20118
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇬🇧 英国 | GBR 3
-  server: 134.65.57.231
-  port: 61312
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 3
+  - 🇷🇺 俄罗斯 | RUS 14
 rules:
 - MATCH,AUTO
