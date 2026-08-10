@@ -18,6 +18,20 @@ proxies:
     headers:
       Host: 150.241.101.218.fwqfw783rg2dad.website
   udp: true
+- name: 🇱🇻 拉脱维亚 | LVA 3
+  server: lv.rexten.cc
+  port: 443
+  type: vless
+  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: lv.rexten.cc
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇱🇻 拉脱维亚 | LVA 4
   server: lv.rexten.cc
   port: 10443
@@ -32,20 +46,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: GunService
-  udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 3
-  server: lv.rexten.cc
-  port: 443
-  type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  packet-encoding: xudp
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.rexten.cc
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 158.101.201.108
@@ -79,18 +79,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 18.239.134.69
-  port: 80
-  type: vless
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 180.178.60.253
   port: 10000
@@ -113,12 +101,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 | EST 4
-  - 🇱🇻 拉脱维亚 | LVA 4
   - 🇱🇻 拉脱维亚 | LVA 3
+  - 🇱🇻 拉脱维亚 | LVA 4
   - 🇳🇱 荷兰 | NLD 7
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 7
-  - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA
 - name: PROTO-SS
@@ -133,33 +120,21 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 | EST 4
-  - 🇱🇻 拉脱维亚 | LVA 4
   - 🇱🇻 拉脱维亚 | LVA 3
+  - 🇱🇻 拉脱维亚 | LVA 4
   - 🇳🇱 荷兰 | NLD 7
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 7
-  - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 7
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇹🇭 泰国 | THA
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 | EST 4
-  - 🇱🇻 拉脱维亚 | LVA 4
   - 🇱🇻 拉脱维亚 | LVA 3
+  - 🇱🇻 拉脱维亚 | LVA 4
   - 🇳🇱 荷兰 | NLD 7
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO
