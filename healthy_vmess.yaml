@@ -19,18 +19,6 @@ proxies:
   ws-opts:
     path: /ac3e705e
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: 366-1095.rabbitpro-in-3.com
-  port: 27119
-  type: vmess
-  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -38,6 +26,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇲🇾 马来西亚 | MYS 2
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
 rules:
 - MATCH,AUTO

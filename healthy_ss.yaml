@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 163.176.109.73
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
 - name: 🇬🇧 英国 | GBR 3
   server: 144.24.226.223
   port: 61312
@@ -23,7 +16,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇬🇧 英国 | GBR 3
 rules:
 - MATCH,AUTO
