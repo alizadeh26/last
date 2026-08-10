@@ -4,33 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 6
-  server: de3.rexten.cc
-  port: 443
-  type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: de3.rexten.cc
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 18
-  server: tunix.ciphero.xyz
-  port: 443
-  type: vless
-  uuid: e3c40721-22bc-4862-a358-09502fc14af6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4
-    short-id: 33b5887524592cad
-  servername: tunix.ciphero.xyz
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: nl.convert-flow.net
   port: 443
@@ -45,38 +18,17 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: stormix.pulsio.cfd
-  port: 443
+- name: 🇷🇺 俄罗斯 | RUS 24
+  server: 104.171.137.141
+  port: 4100
   type: vless
-  uuid: e3c40721-22bc-4862-a358-09502fc14af6
-  tls: true
-  packet-encoding: xudp
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OTuJX9K_E2nHhg0mXT2uFMNIO7746G6c5rlT6OscQGk
-    short-id: 9698d67e63bc8ee0
-  servername: stormix.pulsio.cfd
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 14
-  server: 195.133.23.200
-  port: 20118
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-- name: 🇸🇬 新加坡 | SGP 3
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
+  uuid: d5d72f0a-42b0-4f43-b568-9cf7fbff073d
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /v1
     headers:
-      Host: soft-scene-d370.55-7ff.workers.dev
+      Host: live.ok.ru
   udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 104.18.34.245
@@ -90,30 +42,27 @@ proxies:
     headers:
       Host: white-hill-f907.23-b68.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 172.67.152.71
+- name: 🇺🇸 美国 | USA 16
+  server: codecanyon.net
   port: 8880
   type: vless
-  uuid: 84270e8b-567e-45c6-b2f2-56ec9a67ae1e
+  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
   tls: false
-  servername: log.bpminecraft.com
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: young-leaf-a723.162-4da.workers.dev
+      Host: odd-darkness-57ce.334-a29.workers.dev
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 18.239.134.69
-  port: 80
+- name: 🇷🇺 俄罗斯 | RUS 18
+  server: 194.26.229.209
+  port: 4100
   type: vless
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  uuid: 9b4ba157-f60b-4a5b-b326-4d561eb826d4
   tls: false
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+    path: /v1
   udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 104.17.191.15
@@ -141,15 +90,17 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 18
-  server: 194.26.229.209
-  port: 4100
+- name: 🇸🇬 新加坡 | SGP 3
+  server: codecanyon.net
+  port: 8880
   type: vless
-  uuid: 9b4ba157-f60b-4a5b-b326-4d561eb826d4
+  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
   tls: false
   network: ws
   ws-opts:
-    path: /v1
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: soft-scene-d370.55-7ff.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -157,48 +108,41 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 18
   - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇷🇺 俄罗斯 | RUS 14
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇷🇺 俄罗斯 | RUS 24
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 13
-  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 16
+  - 🇷🇺 俄罗斯 | RUS 18
   - 🇺🇸 美国 | USA 12
   - 🇸🇪 瑞典 | SWE 3
-  - 🇷🇺 俄罗斯 | RUS 18
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇷🇺 俄罗斯 | RUS 14
+  - 🇸🇬 新加坡 | SGP 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 18
   - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇷🇺 俄罗斯 | RUS 24
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 13
-  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 16
+  - 🇷🇺 俄罗斯 | RUS 18
   - 🇺🇸 美国 | USA 12
   - 🇸🇪 瑞典 | SWE 3
-  - 🇷🇺 俄罗斯 | RUS 18
+  - 🇸🇬 新加坡 | SGP 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 18
   - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇷🇺 俄罗斯 | RUS 24
+  - 🇷🇺 俄罗斯 | RUS 18
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO
