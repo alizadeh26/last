@@ -4,19 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇱🇻 拉脱维亚 | LVA 3
-  server: lv.rexten.cc
+- name: 🇪🇪 爱沙尼亚 | EST 4
+  server: 150.241.101.218.fwqfw783rg2dad.website
   port: 443
   type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  uuid: 9efe092e-e4ae-4601-bb89-169fcb3db39b
   tls: true
-  packet-encoding: xudp
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.rexten.cc
+  servername: 150.241.101.218.fwqfw783rg2dad.website
   client-fingerprint: firefox
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: 150.241.101.218.fwqfw783rg2dad.website
   udp: true
 - name: 🇱🇻 拉脱维亚 | LVA 4
   server: lv.rexten.cc
@@ -33,17 +33,19 @@ proxies:
     grpc-mode: gun
     grpc-service-name: GunService
   udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: 366-1095.rabbitpro-in-3.com
-  port: 29009
-  type: vmess
-  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
+- name: 🇱🇻 拉脱维亚 | LVA 3
+  server: lv.rexten.cc
+  port: 443
+  type: vless
+  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: lv.rexten.cc
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 158.101.201.108
@@ -52,20 +54,17 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇺🇸 美国 | USA
-  server: autodiscover.fuzzyaytor.cyou
-  port: 42982
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 180.178.60.253
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+- name: 🇲🇽 墨西哥 | MEX
+  server: 366-1095.rabbitpro-in-3.com
+  port: 29053
+  type: vmess
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+  alterId: 0
+  cipher: auto
   tls: false
-  network: tcp
+  alpn:
+  - ''
+  skip-cert-verify: true
   udp: true
 - name: 🇸🇪 瑞典 | SWE 7
   server: sw.rexten.cc
@@ -80,17 +79,32 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 18.239.134.69
-  port: 80
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 194.26.229.211
+  port: 4100
   type: vless
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  uuid: 1a2f7607-b36a-4996-b7a2-72359123c446
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /v1
     headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+      Host: live.ok.ru
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 180.178.60.253
+  port: 10000
+  type: vless
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: autodiscover.fuzzyaytor.cyou
+  port: 42982
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
   udp: true
 proxy-groups:
 - name: AUTO
@@ -98,14 +112,15 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 | LVA 3
+  - 🇪🇪 爱沙尼亚 | EST 4
   - 🇱🇻 拉脱维亚 | LVA 4
-  - 🇰🇷 韩国 | KOR
+  - 🇱🇻 拉脱维亚 | LVA 3
   - 🇳🇱 荷兰 | NLD 7
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 7
+  - 🇲🇽 墨西哥 | MEX
   - 🇸🇪 瑞典 | SWE 7
-  - 🇹🇭 泰国 | THA
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -117,38 +132,39 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 | LVA 3
+  - 🇪🇪 爱沙尼亚 | EST 4
   - 🇱🇻 拉脱维亚 | LVA 4
+  - 🇱🇻 拉脱维亚 | LVA 3
   - 🇳🇱 荷兰 | NLD 7
-  - 🇺🇸 美国 | USA 7
   - 🇸🇪 瑞典 | SWE 7
-  - 🇹🇭 泰国 | THA
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 7
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 | KOR
+  - 🇲🇽 墨西哥 | MEX
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 | KOR
+  - 🇲🇽 墨西哥 | MEX
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 | LVA 3
+  - 🇪🇪 爱沙尼亚 | EST 4
   - 🇱🇻 拉脱维亚 | LVA 4
   - 🇳🇱 荷兰 | NLD 7
-  - 🇸🇪 瑞典 | SWE 7
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

@@ -1,13 +1,22 @@
-vmess://eyJhZGQiOiIxNjUuMTQwLjIxNi4xNDEiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZTdkNzJhOGQtMjZmMi00YjU0LWIzNjYtMGM0M2UwYmNiYTdkIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiI0NDMiLCJwcyI6IlNlcnZlciA0NyDwn4e68J+HuCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=
-vless://8787dd0a-095a-414e-804f-a7d16a1ae166@217.154.244.251:8443?security=tls&alpn=http%2F1.1&encryption=none&insecure=0&headerType=&fp=firefox&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=de1.hys.braidx.tech#Server 107 🇩🇪
-trojan://ND91608427@3.38.106.2:443?security=tls&sni=communal-sunbird.rooster465.autos#%E9%9F%A9%E5%9B%BD_081023010
-vless://8787dd0a-095a-414e-804f-a7d16a1ae166@138.124.244.77:8443?security=tls&encryption=none&insecure=0&host=%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=none&fp=firefox&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=fi1.hys.braidx.tech#CH🇨🇭
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.215:8080#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+82.38.31.215-8080+%7C+99.78ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.35:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.35-0142
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.191:8080#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+82.38.31.191-8080+%7C+93.66ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@193.42.38.209:1080#US%F0%9F%87%BA%F0%9F%87%B8+%7C+193.42.38.209-1080+%7C+69.38ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.57:443#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.57-0115
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.19:23576?security=reality&type=tcp&sni=fuck.rkn&fp=chrome&flow=xtls-rprx-vision&sid=01&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s#🇳🇱 145 - NL - VLESS/REALITY/PBK/SID/VISION/UTLS - 23576
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.93:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#🇳🇱 158 - NL - VLESS/REALITY/PBK/SID/VISION/UTLS - 23576
-vless://F5516AD2-22A9-413B-8DBE-60B72D30D31F@18.179.40.96:10035?security=reality&type=grpc&mode=gun&serviceName=update&sni=s0.awsstatic.com&fp=chrome&sid=686c0ef0&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&encryption=none#🇯🇵 407 - JP - VLESS/GRPC/REALITY/PBK/SID/UTLS - 10035
-vless://ed720ae2-e1ab-41d4-8c9c-ca9ab3cfee70@18.162.173.112:443?security=reality&type=tcp&sni=www.cloudflare.com&fp=chrome&flow=xtls-rprx-vision&sid=bd685806015172ca&pbk=0EtR_KBpH13wngvWn6rXJjINlWjb2nW8fgXrR46bz3E&encryption=none#🇭🇰 536 - HK - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZTczMWVjMy1mOGUxLTQzZjYtOTJjZi0zOTc4ZDE0NzA1YzQ@36.224.177.236:50099#Server 145 🇹🇼
+vmess://eyJhZGQiOiI4Mi4xOTguMjQ2Ljk3IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiaW1hZmFrZS5sb2NrZXIiLCJpZCI6ImQxM2ZjMmY1LTNlMDUtNDc5NS04MWViLTQ0MTQzYTA5ZTU1MiIsIm5ldCI6InRjcCIsInBhdGgiOiIvc3BlZWR0ZXN0IiwicG9ydCI6MTgwLCJwcyI6IlNlcnZlciAzMyDwn4e68J+HuCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJhdXRvIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
+trojan://ND91608427@35.72.13.34:443?sni=casual-bee.rooster465.autos&type=raw&fp=chrome#%E6%97%A5%E6%9C%AC_081023356
+trojan://ND91608427@3.113.24.17:443?allowInsecure=0&sni=nearby-egret.rooster465.autos#%E6%97%A5%E6%9C%AC_081023002
+trojan://ND91608427@3.36.59.34:443?security=tls&sni=select-ferret.rooster465.autos#%E9%9F%A9%E5%9B%BD_081023015
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#%F0%9F%87%B3%F0%9F%87%B1NL-193.29.139.151-0286
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.187:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.187-0126
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.194:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.194-0131
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.211:8080#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+82.38.31.211-8080+%7C+92.71ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.10:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.10-0261
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.24.73:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+158.173.24.73-443+%7C+81.32ms
+vless://2a12bb81-f3a3-0065-99ab-36febf676b4a@130.78.216.194:443?security=reality&encryption=none&pbk=X44VAj_y9MabQeF7ZgssR57zaf2Rx5bX--BJ-U9wQ2o&headerType=none&fp=random&type=tcp&flow=xtls-rprx-vision&sni=quiet-bear.cdn.cachefleet.com#🇬🇧 80 - GB - VLESS/REALITY/PBK/VISION/UTLS - 443
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.98:23576?encryption=none&flow=xtls-rprx-vision&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&security=reality&sid=01&sni=fuck.rkn&type=tcp#🇳🇱 220 - NL - VLESS/REALITY/PBK/SID/VISION - 23576
+vless://533098d5-957a-4914-addd-528eea5f2b99@45.9.14.31:443?encryption=none&flow=xtls-rprx-vision&fp=qq&pbk=dqNf0WzsieOO2lPrm_clopblTaFeX9xHNwWsaUY9CC0&security=reality&sid=ec35d84c1661b372&sni=bestrecipes-online.site&type=raw#🇺🇸 251 - US - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 443
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.19:23576?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=fuck.rkn&fp=chrome&flow=xtls-rprx-vision&sid=01&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s#🇳🇱 196 - NL - VLESS/REALITY/PBK/SID/VISION/UTLS - 23576
+vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@172.66.44.97:443?encryption=none&host=josni.hoyes.cloudns.ch&path=/sg-melbi/mtmvpn---mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn---@mtmvpn&security=tls&sni=josni.hoyes.cloudns.ch&type=ws#🇺🇸 355 - US - VLESS/WS/TLS - 443
+vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@157.137.229.129:62145?security=none&type=tcp#🇨🇴 384 - CO - VLESS - 62145
+vless://F5516AD2-22A9-413B-8DBE-60B72D30D31F@jp5-r.link-t7.com:10035?security=reality&type=grpc&mode=gun&serviceName=update&sni=s0.awsstatic.com&fp=chrome&sid=686c0ef0&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&encryption=none#🇯🇵 432 - JP - VLESS/GRPC/REALITY/PBK/SID/UTLS - 10035
+vless://caec0d8d-ab2f-4247-b97d-7fb1a34ab195@180.178.60.253:10000?encryption=none&type=tcp&path=/#🇺🇸 488 - US - VLESS - 10000
+vless://f61025f4-7973-4e3e-883c-a0fe85f0489c@144.31.178.184:443?flow=xtls-rprx-vision&security=reality&encryption=none&sni=ee.rexten.cc&fp=firefox&pbk=OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ&type=tcp&path=/#🇺🇸 565 - US - VLESS/REALITY/PBK/VISION/UTLS - 443
+vless://af325624-e28d-44fd-a8a7-058a439d128f@5.129.194.34:4100?encryption=none&path=/v1&security=none&type=ws#🇷🇺 451 - RU - VLESS/WS - 4100
+vless://d361072e-9e0e-4e2d-8ec7-2a4189b5b23a@chatgpt.com:2053?encryption=none&type=ws&security=tls&path=/J5aLQOY1R9ONWYCM&host=ov.iran-servers.shop&sni=ov.iran-servers.shop&fp=chrome&insecure=0&allowInsecure=0#🇨🇦 501 - CA - VLESS/WS/TLS/UTLS - 2053

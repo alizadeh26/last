@@ -4,9 +4,9 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇰🇷 韩国 | KOR
+- name: 🇲🇽 墨西哥 | MEX
   server: 366-1095.rabbitpro-in-3.com
-  port: 29009
+  port: 29053
   type: vmess
   uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
   alterId: 0
@@ -22,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 | KOR
+  - 🇲🇽 墨西哥 | MEX
 rules:
 - MATCH,AUTO
