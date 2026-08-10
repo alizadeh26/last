@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 12
-  server: ape.malwarewatch.info
-  port: 2095
+- name: 🇰🇷 韩国 | KOR
+  server: 366-1095.rabbitpro-in-3.com
+  port: 29009
   type: vmess
-  uuid: e10b6c95-7923-471a-9967-73ee7cf26cea
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
   alterId: 0
   cipher: auto
   tls: false
@@ -22,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 12
+  - 🇰🇷 韩国 | KOR
 rules:
 - MATCH,AUTO
