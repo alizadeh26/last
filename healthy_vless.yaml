@@ -4,29 +4,105 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.224.100
-  port: 62145
+- name: 🇦🇱 AL_22
+  server: ru-sl.convert-flow.net
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
+  uuid: 5710bc50-f5ff-0008-a3f5-067959ed2644
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: ru-sl.convert-flow.net
+  client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: sw1-chr.astralweb.tech
+- name: 🇨🇦 加拿大 | CAN
+  server: ru-sl.convert-flow.net
+  port: 443
+  type: vless
+  uuid: 5710bc50-f5ff-007c-a3f5-067959ed2644
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: ru-sl.convert-flow.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: ddc-akn.astralweb.tech
   port: 443
   type: vless
   uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
   tls: true
-  servername: sw1-chr.astralweb.tech
-  client-fingerprint: chrome
+  servername: ddc-akn.astralweb.tech
+  client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 17
-  server: 5.129.241.247
+- name: 🇩🇪 德国 | DEU 10
+  server: nexvio.orbvia.online
+  port: 443
+  type: vless
+  uuid: e3c40721-22bc-4862-a358-09502fc14af6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: c9FNVDSx_oUTDFW0JewGq511wlGweUkQGgPPY9vsCVM
+    short-id: 08804e078e1257c8
+  servername: nexvio.orbvia.online
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇦🇪 阿联酋 | ARE 3
+  server: ru-sl.convert-flow.net
+  port: 443
+  type: vless
+  uuid: 5710bc50-f5ff-0310-a3f5-067959ed2644
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: ru-sl.convert-flow.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇰🇿 哈萨克斯坦 | KAZ
+  server: ru-sl.convert-flow.net
+  port: 443
+  type: vless
+  uuid: 5710bc50-f5ff-018e-a3f5-067959ed2644
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: ru-sl.convert-flow.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇳🇴 挪威 | NOR
+  server: ru-sl.convert-flow.net
+  port: 443
+  type: vless
+  uuid: 5710bc50-f5ff-0242-a3f5-067959ed2644
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: ru-sl.convert-flow.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 8
+  server: 176.98.178.17
   port: 4100
   type: vless
-  uuid: 5d0fbb28-3be3-4044-bc5b-e4b7ca1916c7
+  uuid: 87f3bc47-ee10-4418-9260-7a4e43f28e00
   tls: false
   network: ws
   ws-opts:
@@ -34,18 +110,74 @@ proxies:
     headers:
       Host: live.ok.ru
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 185.23.35.175
-  port: 8450
+- name: 🇷🇺 俄罗斯 | RUS 6
+  server: core.univesalsrv.com
+  port: 443
   type: vless
-  uuid: 48817310-fd5c-4877-b2ac-70fee6db6acc
+  uuid: f50e364f-f5c9-4552-b0d9-13e4de24b9f0
+  tls: true
+  reality-opts:
+    public-key: qC6RGWAH6tWFe2xGC9IGxpu9hQtxvOclI8yuj0AT8Eg
+    short-id: f42242bed20425b5
+  servername: core.univesalsrv.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: edge.v2.ObjectService
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 3
+  server: us.rexten.cc
+  port: 443
+  type: vless
+  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: us.rexten.cc
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: glidio.shieldix.top
+  port: 443
+  type: vless
+  uuid: e3c40721-22bc-4862-a358-09502fc14af6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V9MHR6nhlKPenVUq1172uIHJFZYOkRVqSOUkjCS4430
+    short-id: f0ba53a31b489b3e
+  servername: glidio.shieldix.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: ru-sl.convert-flow.net
+  port: 443
+  type: vless
+  uuid: 5710bc50-f5ff-02fc-a3f5-067959ed2644
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: ru-sl.convert-flow.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 14
+  server: 194.26.229.207
+  port: 2200
+  type: vless
+  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
   tls: false
-  packet-encoding: xudp
   network: ws
   ws-opts:
-    path: /lk/profile
+    path: /v1
     headers:
-      Host: x5club.ru
+      Host: rzd.ru
   udp: true
 proxy-groups:
 - name: AUTO
@@ -53,9 +185,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇷🇺 俄罗斯 | RUS 17
-  - 🇺🇸 美国 | USA 7
+  - 🇦🇱 AL_22
+  - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 10
+  - 🇦🇪 阿联酋 | ARE 3
+  - 🇰🇿 哈萨克斯坦 | KAZ
+  - 🇳🇴 挪威 | NOR
+  - 🇷🇺 俄罗斯 | RUS 8
+  - 🇷🇺 俄罗斯 | RUS 6
+  - 🇹🇷 土耳其 | TUR 3
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇹🇭 泰国 | THA
+  - 🇷🇺 俄罗斯 | RUS 14
 rules:
 - MATCH,AUTO
