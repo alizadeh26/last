@@ -4,33 +4,81 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.229.70
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇬🇧 英国 | GBR 3
-  server: 144.24.226.223
-  port: 61312
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇲🇾 马来西亚 | MYS 2
-  server: 166.88.35.128
-  port: 27533
+- name: 🇩🇪 德国 | DEU 12
+  server: ape.malwarewatch.info
+  port: 2095
   type: vmess
-  uuid: ac3e705e-3713-40b0-c0fe-0342c328eed3
+  uuid: e10b6c95-7923-471a-9967-73ee7cf26cea
   alterId: 0
   cipher: auto
   tls: false
   alpn:
   - ''
   skip-cert-verify: true
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST 4
+  server: 150.241.101.218.fwqfw783rg2dad.website
+  port: 443
+  type: vless
+  uuid: 9efe092e-e4ae-4601-bb89-169fcb3db39b
+  tls: true
+  servername: 150.241.101.218.fwqfw783rg2dad.website
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /ac3e705e
+    path: /websocket
+    headers:
+      Host: 150.241.101.218.fwqfw783rg2dad.website
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 158.101.201.108
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇱🇻 拉脱维亚 | LVA 3
+  server: lv.rexten.cc
+  port: 443
+  type: vless
+  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: lv.rexten.cc
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇱🇻 拉脱维亚 | LVA 4
+  server: lv.rexten.cc
+  port: 10443
+  type: vless
+  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  tls: true
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: lv.rexten.cc
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: GunService
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: cf-ak-hk01.ziyoufly.xyz
+  port: 443
+  type: vless
+  uuid: 0490617a-818b-40e4-b517-8e09bfd4f30b
+  tls: true
+  servername: cf-ak-hk01.ziyoufly.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ziyou
+    headers:
+      Host: cf-ak-hk01.ziyoufly.xyz
   udp: true
 - name: 🇸🇪 瑞典 | SWE 7
   server: sw.rexten.cc
@@ -45,67 +93,76 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: codecanyon.net
-  port: 8880
+- name: 🇯🇵 日本 | JPN 4
+  server: cf-uh-jp01.ziyoufly.xyz
+  port: 443
   type: vless
-  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
-  tls: false
+  uuid: 0490617a-818b-40e4-b517-8e09bfd4f30b
+  tls: true
+  servername: cf-uh-jp01.ziyoufly.xyz
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /ziyou
     headers:
-      Host: odd-darkness-57ce.334-a29.workers.dev
+      Host: cf-uh-jp01.ziyoufly.xyz
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 104.18.42.98
-  port: 2095
+- name: 🇯🇵 日本 | JPN 14
+  server: cf-aws-jp02.ziyoufly.xyz
+  port: 443
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
+  uuid: 0490617a-818b-40e4-b517-8e09bfd4f30b
+  tls: true
+  servername: cf-aws-jp02.ziyoufly.xyz
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ziyou
     headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 104.18.185.26
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fangbinxingnmsl.pusytroller.gq
+      Host: cf-aws-jp02.ziyoufly.xyz
   udp: true
 - name: 🇺🇸 美国 | USA 7
-  server: 104.24.152.211
-  port: 8880
+  server: 180.178.60.253
+  port: 10000
   type: vless
-  uuid: a7b8b48e-1000-46f5-a974-f6606d94f3b4
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 8
+  server: cf-uh-sg01.ziyoufly.xyz
+  port: 443
+  type: vless
+  uuid: 0490617a-818b-40e4-b517-8e09bfd4f30b
+  tls: true
+  servername: cf-uh-sg01.ziyoufly.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ziyou
+    headers:
+      Host: cf-uh-sg01.ziyoufly.xyz
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: autodiscover.fuzzyaytor.cyou
+  port: 42982
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: 18.239.134.69
+  port: 80
+  type: vless
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: misty-hill-4b94.146-c18.workers.dev
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 172.64.88.251
-  port: 8880
-  type: vless
-  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dry-credit-fc26.203-d8c.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 29
+- name: 🇺🇸 美国 | USA 4
   server: 104.27.82.154
   port: 8880
   type: vless
@@ -117,15 +174,33 @@ proxies:
     headers:
       Host: yellow-hall-d482.260-d22.workers.dev
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 7
-  server: 45.151.101.67
-  port: 4100
+- name: 🇺🇸 美国 | USA 18
+  server: cf-ak-tw01.ziyoufly.xyz
+  port: 443
   type: vless
-  uuid: 89537879-e550-45e9-ab1c-5e1a11c168f1
-  tls: false
+  uuid: 0490617a-818b-40e4-b517-8e09bfd4f30b
+  tls: true
+  servername: cf-ak-tw01.ziyoufly.xyz
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /v1
+    path: /ziyou
+    headers:
+      Host: cf-ak-tw01.ziyoufly.xyz
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: cf-uh-us01.ziyoufly.xyz
+  port: 443
+  type: vless
+  uuid: 0490617a-818b-40e4-b517-8e09bfd4f30b
+  tls: true
+  servername: cf-uh-us01.ziyoufly.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ziyou
+    headers:
+      Host: cf-uh-us01.ziyoufly.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -133,42 +208,68 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇬🇧 英国 | GBR 3
-  - 🇲🇾 马来西亚 | MYS 2
+  - 🇩🇪 德国 | DEU 12
+  - 🇪🇪 爱沙尼亚 | EST 4
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇱🇻 拉脱维亚 | LVA 3
+  - 🇱🇻 拉脱维亚 | LVA 4
+  - 🇭🇰 香港 | HKG 4
   - 🇸🇪 瑞典 | SWE 7
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 23
+  - 🇯🇵 日本 | JPN 4
+  - 🇯🇵 日本 | JPN 14
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 29
-  - 🇷🇺 俄罗斯 | RUS 7
+  - 🇸🇬 新加坡 | SGP 8
+  - 🇺🇸 美国 | USA
+  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 16
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇪🇪 爱沙尼亚 | EST 4
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇱🇻 拉脱维亚 | LVA 3
+  - 🇱🇻 拉脱维亚 | LVA 4
+  - 🇭🇰 香港 | HKG 4
   - 🇸🇪 瑞典 | SWE 7
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 23
+  - 🇯🇵 日本 | JPN 4
+  - 🇯🇵 日本 | JPN 14
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 29
-  - 🇷🇺 俄罗斯 | RUS 7
+  - 🇸🇬 新加坡 | SGP 8
+  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 16
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 | MYS 2
+  - 🇩🇪 德国 | DEU 12
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 12
+  - 🇪🇪 爱沙尼亚 | EST 4
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇱🇻 拉脱维亚 | LVA 4
+  - 🇸🇪 瑞典 | SWE 7
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO

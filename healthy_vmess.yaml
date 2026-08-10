@@ -4,20 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇲🇾 马来西亚 | MYS 2
-  server: 166.88.35.128
-  port: 27533
+- name: 🇩🇪 德国 | DEU 12
+  server: ape.malwarewatch.info
+  port: 2095
   type: vmess
-  uuid: ac3e705e-3713-40b0-c0fe-0342c328eed3
+  uuid: e10b6c95-7923-471a-9967-73ee7cf26cea
   alterId: 0
   cipher: auto
   tls: false
   alpn:
   - ''
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ac3e705e
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 | MYS 2
+  - 🇩🇪 德国 | DEU 12
 rules:
 - MATCH,AUTO
