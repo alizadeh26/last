@@ -4,14 +4,31 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 20
-  server: lt.badns.help
-  port: 51360
+- name: 🇲🇾 马来西亚 | MYS 2
+  server: 166.88.35.128
+  port: 27533
   type: vmess
-  uuid: 85ad21e1-c2cd-3407-aa90-815f3f3ea636
+  uuid: ac3e705e-3713-40b0-c0fe-0342c328eed3
   alterId: 0
   cipher: auto
   tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ac3e705e
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: 366-1095.rabbitpro-in-3.com
+  port: 27119
+  type: vmess
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -20,6 +37,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 20
+  - 🇲🇾 马来西亚 | MYS 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
 rules:
 - MATCH,AUTO
