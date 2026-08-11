@@ -11,6 +11,30 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+- name: 🇩🇪 德国 | DEU 7
+  server: 63.180.222.124
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 63.180.222.124
+  port: 22223
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 63.180.222.124
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 14
   server: 46.8.228.91
   port: 47424
@@ -34,31 +58,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 92.5.237.183
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 7
-  server: boal.rubyshow.ir
-  port: 443
-  type: vless
-  uuid: b995b891-7402-4798-aa24-73fcfed84bd4
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  - h3
-  servername: test.rubyshow.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sendx
-    headers:
-      Host: test.rubyshow.ir
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 104.18.34.245
   port: 8880
@@ -70,18 +69,6 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: white-hill-f907.23-b68.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 104.17.21.137
-  port: 8880
-  type: vless
-  uuid: 9e648bb6-25f7-4b16-9949-55ac0952d66b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-grass-6728.131-a78.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 172.67.202.17
@@ -108,18 +95,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 104.16.101.215
-  port: 8880
-  type: vless
-  uuid: 0bd6aa8d-3bdb-4fa3-893e-75a844e2e409
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: wispy-cake-ec69.193-bc6.workers.dev
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 8
   server: 193.134.100.23
   port: 12596
@@ -135,15 +110,14 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 14
   - 🇮🇹 意大利 | ITA
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 7
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 9
   - 🇸🇬 新加坡 | SGP 9
-  - 🇺🇸 美国 | USA 3
   - 🇸🇬 新加坡 | SGP 8
 rules:
 - MATCH,AUTO

@@ -4,12 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 136.248.70.239
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
 - name: 🇩🇪 德国 | DEU 3
   server: 130.61.232.226
   port: 59924
@@ -23,6 +17,30 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+- name: 🇩🇪 德国 | DEU 7
+  server: 63.180.222.124
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 63.180.222.124
+  port: 22223
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 63.180.222.124
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 14
   server: 46.8.228.91
   port: 47424
@@ -30,13 +48,6 @@ proxies:
   uuid: 6de486c1-dbad-4540-8875-98c35e9cd173
   tls: false
   network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 45.32.16.53
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: uTBjZhDmOMwBVAJI
   udp: true
 - name: 🇮🇹 意大利 | ITA
   server: xit.saturn-cloud.net
@@ -53,13 +64,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 92.5.237.183
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇵🇱 波兰 | POL 2
   server: 64.176.73.160
   port: 8388
@@ -67,23 +71,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: VJtsgllDDJfNmaTe
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: boal.rubyshow.ir
-  port: 443
-  type: vless
-  uuid: b995b891-7402-4798-aa24-73fcfed84bd4
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  - h3
-  servername: test.rubyshow.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sendx
-    headers:
-      Host: test.rubyshow.ir
+- name: 🇯🇵 日本 | JPN
+  server: 45.32.16.53
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: uTBjZhDmOMwBVAJI
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 104.18.34.245
@@ -96,18 +89,6 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: white-hill-f907.23-b68.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 104.17.21.137
-  port: 8880
-  type: vless
-  uuid: 9e648bb6-25f7-4b16-9949-55ac0952d66b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-grass-6728.131-a78.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 172.67.202.17
@@ -134,18 +115,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 104.16.101.215
-  port: 8880
-  type: vless
-  uuid: 0bd6aa8d-3bdb-4fa3-893e-75a844e2e409
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: wispy-cake-ec69.193-bc6.workers.dev
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 8
   server: 193.134.100.23
   port: 12596
@@ -160,66 +129,41 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇩🇪 德国 | DEU 3
   - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 14
-  - 🇯🇵 日本 | JPN
   - 🇮🇹 意大利 | ITA
-  - 🇳🇱 荷兰 | NLD 5
   - 🇵🇱 波兰 | POL 2
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 9
   - 🇸🇬 新加坡 | SGP 9
-  - 🇺🇸 美国 | USA 3
   - 🇸🇬 新加坡 | SGP 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇩🇪 德国 | DEU 3
-  - 🇯🇵 日本 | JPN
   - 🇵🇱 波兰 | POL 2
+  - 🇯🇵 日本 | JPN
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 14
   - 🇮🇹 意大利 | ITA
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 7
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 9
   - 🇸🇬 新加坡 | SGP 9
-  - 🇺🇸 美国 | USA 3
   - 🇸🇬 新加坡 | SGP 8
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 14
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇸🇬 新加坡 | SGP 3
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇨🇴 哥伦比亚 | COL
 rules:
 - MATCH,AUTO

@@ -4,25 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 136.248.70.239
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
 - name: 🇩🇪 德国 | DEU 3
   server: 130.61.232.226
   port: 59924
   type: ss
   cipher: chacha20-ietf-poly1305
   password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 🇯🇵 日本 | JPN
-  server: 45.32.16.53
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: uTBjZhDmOMwBVAJI
-  udp: true
 - name: 🇵🇱 波兰 | POL 2
   server: 64.176.73.160
   port: 8388
@@ -30,15 +17,21 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: VJtsgllDDJfNmaTe
   udp: true
+- name: 🇯🇵 日本 | JPN
+  server: 45.32.16.53
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: uTBjZhDmOMwBVAJI
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇩🇪 德国 | DEU 3
-  - 🇯🇵 日本 | JPN
   - 🇵🇱 波兰 | POL 2
+  - 🇯🇵 日本 | JPN
 rules:
 - MATCH,AUTO
