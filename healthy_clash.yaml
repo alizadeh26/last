@@ -4,14 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 158.247.126.107
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇩🇪 德国 | DEU 7
+- name: 🇩🇪 德国 | DEU 8
   server: arclo.ciphero.xyz
   port: 443
   type: vless
@@ -25,52 +18,58 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: 150.241.70.0
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 9
+  server: 158.178.156.196
+  port: 62145
   type: vless
-  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
-  tls: true
-  reality-opts:
-    public-key: YW6wlOE6DhEzY4nQobPKj-hoc2bpNgJineecGIgOgWM
-    short-id: 9d3734f3ff471b68
-  servername: stats.vk-portal.net
-  client-fingerprint: firefox
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
-  udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: lv.rexten.cc
-  port: 10443
+- name: 🇳🇱 荷兰 | NLD
+  server: nld.north-1winter.cv
+  port: 8443
   type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.rexten.cc
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: GunService
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: sw.rexten.cc
-  port: 443
-  type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  uuid: acc50200-7f21-4f90-9cca-0057efcbf042
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: sw.rexten.cc
-  client-fingerprint: chrome
+    public-key: eq3hx1_bR5U7i_1P_QZTWtIb-LnurZIy3PHYPppHmRU
+    short-id: e34709f4d2691c08
+  servername: nld.north-1winter.cv
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 194.26.229.211
+- name: 🇳🇱 荷兰 | NLD 11
+  server: neth.anonch.net
+  port: 443
+  type: vless
+  uuid: d16a7171-625d-4d09-9459-859f1c9b3b0a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: w4rbDsuTZX8WqNEaCd0TuLI5m6kxKIcwzJ8rmX7qOQw
+    short-id: 48a5dbcd976b54bf
+  servername: neth.anonch.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 12
+  server: 103.133.1.160
+  port: 80
+  type: vless
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: soft-shadow-1e33.xicav73335.workers.dev
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 83.217.200.217
   port: 4100
   type: vless
-  uuid: 1a2f7607-b36a-4996-b7a2-72359123c446
+  uuid: 5ab425b0-d54d-45ed-a7ae-0a5788112258
   tls: false
   network: ws
   ws-opts:
@@ -78,11 +77,23 @@ proxies:
     headers:
       Host: live.ok.ru
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 217.149.23.169
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: silent-snow-1a0d.241-b0a.workers.dev
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 79.137.192.188
   port: 2200
   type: vless
-  uuid: 4cbdaf4f-ca34-4a00-9a96-49eaa6564b42
+  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
   tls: false
   network: ws
   ws-opts:
@@ -90,14 +101,31 @@ proxies:
     headers:
       Host: rzd.ru
   udp: true
-- name: 🇹🇷 土耳其 | TUR 6
-  server: sub.almavpn.shop
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LHZzf4y0j2WQlZsTh0NzPxVmTYufR-TA
+- name: 🇸🇬 新加坡 | SGP
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: odd-darkness-57ce.334-a29.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 16
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: white-hill-f907.23-b68.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 5
   server: 132.145.200.43
   port: 2054
   type: vmess
@@ -112,41 +140,143 @@ proxies:
   ws-opts:
     path: /p
   udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 180.178.60.253
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: autodiscover.fuzzyaytor.cyou
-  port: 42982
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
+- name: 🇹🇷 土耳其 | TUR 3
   server: e1.cover20.ir
   port: 51570
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: A33pWRIZnoJ6gaSK6Y5yrc5kBNKktoXblIm/nuHNhrU=
+  password: AsjCCe+gRStwtdAYCm0sWfpIImN7Enllf3UD2oNuIe4=
   udp: true
-- name: 🇹🇭 泰国 | THA 2
-  server: www.true.th
-  port: 80
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 104.21.44.253
+  port: 8080
   type: vless
-  uuid: 63ae5b68-f6f8-432e-b440-d975053cfbc2
+  uuid: c6ba83a7-c4b5-481f-8f71-0f17deff0bf2
   tls: false
   network: ws
   ws-opts:
-    path: /than
+    path: /eyJqdW5rIjoiOUhPbnRlV0xaekI1cjciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
     headers:
-      Host: d16l6nb4do0zu4.cloudfront.net
+      Host: billowing-sunset-e340.qaraatayi.workers.dev
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
+- name: 🇺🇸 美国 | USA 24
+  server: 172.66.132.196
+  port: 8880
+  type: vless
+  uuid: 5a4d9f40-56db-402a-9fbc-31c9229bdcf6
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: floral-resonance-4baf.468.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 22
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-tree-3dbf.285.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 172.67.152.71
+  port: 8880
+  type: vless
+  uuid: 38135fde-7044-4407-8faf-e1ab08e47402
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: white-bush-712e.498-f8f.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: 172.67.68.240
+  port: 8880
+  type: vless
+  uuid: df5dc160-3764-4e6b-805d-1286ea701310
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dawn-mode-a061.444-a0e.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 32
+  server: 45.40.155.4
+  port: 80
+  type: vless
+  uuid: e403856e-4e50-49e6-9edc-d9536a803a6a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳 @WangCai2
+    headers:
+      Host: proud-cloud-5c50.113-8dc.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 31
+  server: 104.17.21.32
+  port: 8880
+  type: vless
+  uuid: 63a1d550-f8da-456e-813c-398dd819e405
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: noisy-cherry-b46b.206-866.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 39
+  server: 104.17.21.32
+  port: 8880
+  type: vless
+  uuid: d1eeb74f-e5ea-45eb-9934-5376bfeb5ba4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fragrant-shape-07a0.269-144.workers.dev
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: glidio.shieldix.top
+  port: 443
+  type: vless
+  uuid: e3c40721-22bc-4862-a358-09502fc14af6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V9MHR6nhlKPenVUq1172uIHJFZYOkRVqSOUkjCS4430
+    short-id: f0ba53a31b489b3e
+  servername: glidio.shieldix.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇿🇦 南非 | ZAF
+  server: 139.84.247.164
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
+  udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: 172.66.132.196
+  port: 8880
+  type: vless
+  uuid: 3adac494-0eb1-4d89-a187-b2181691444d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: tiny-lake-bbf1.369-766.workers.dev
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 5
   server: 201.51.2.6
   port: 2200
   type: vless
@@ -156,54 +286,107 @@ proxies:
   ws-opts:
     path: /v1
   udp: true
+- name: 🇺🇸 美国 | USA 38
+  server: 180.178.60.253
+  port: 10000
+  type: vless
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 12
-  - 🇱🇻 拉脱维亚 | LVA
-  - 🇸🇪 瑞典 | SWE
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 6
-  - 🇹🇷 土耳其 | TUR 6
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 8
-  - 🇹🇷 土耳其 | TUR
-  - 🇹🇭 泰国 | THA 2
+  - 🇩🇪 德国 | DEU 8
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 11
+  - 🇳🇱 荷兰 | NLD 12
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇸🇬 新加坡 | SGP 4
   - 🇷🇺 俄罗斯 | RUS 4
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 5
+  - 🇹🇷 土耳其 | TUR 3
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 32
+  - 🇺🇸 美国 | USA 31
+  - 🇺🇸 美国 | USA 39
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇿🇦 南非 | ZAF
+  - 🇺🇸 美国 | USA 21
+  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇺🇸 美国 | USA 38
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 | TUR 6
-  - 🇺🇸 美国 | USA 8
-  - 🇹🇷 土耳其 | TUR
+  - 🇹🇷 土耳其 | TUR 3
+  - 🇿🇦 南非 | ZAF
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 12
-  - 🇱🇻 拉脱维亚 | LVA
-  - 🇸🇪 瑞典 | SWE
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 6
-  - 🇺🇸 美国 | USA 14
-  - 🇹🇭 泰国 | THA 2
+  - 🇩🇪 德国 | DEU 8
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 11
+  - 🇳🇱 荷兰 | NLD 12
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇸🇬 新加坡 | SGP 4
   - 🇷🇺 俄罗斯 | RUS 4
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 32
+  - 🇺🇸 美国 | USA 31
+  - 🇺🇸 美国 | USA 39
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 21
+  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇺🇸 美国 | USA 38
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 5
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 | TUR 3
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 8
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 11
+  - 🇷🇺 俄罗斯 | RUS 3
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD 12
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO

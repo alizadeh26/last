@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 16
+- name: 🇺🇸 美国 | USA 5
   server: 132.145.200.43
   port: 2054
   type: vmess
@@ -25,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO

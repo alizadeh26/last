@@ -1,6 +1,6 @@
 trojan://ND91608427@202.78.163.148:443?allowInsecure=1&sni=discrete-basilisk.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081109001
-trojan://ND91608427@202.78.163.248:443?security=tls&sni=relaxed-gull.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081109004
+trojan://ND91608427@relaxed-gull.rooster465.autos:443?security=tls&sni=relaxed-gull.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081109003
 vmess://eyJhZGQiOiIxNjguMjIyLjQ5LjE4OCIsInBvcnQiOiI4MCIsImlkIjoiMjU3MWY3NjItMDNhZi00YzMwLThlYjktNjY1MjEwMmU3Y2QzIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ2IjoiMiIsInBzIjoi576O5Zu9XzA4MTEwOTY1MDkiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6Im5vbmUiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
-vless://5d8eb33a-2166-4daf-88fe-4be5799c493b@141.101.120.73:443?encryption=none&fp=chrome&host=noisy-term-e657.airdrop2014aa5168.workers.dev&path=/&security=tls&sni=noisy-term-e657.airdrop2014aa5168.workers.dev&type=ws#🇺🇸 278 - US - VLESS/WS/TLS/UTLS - 443
-vless://9a9fe945246a431ebd051cb981464c8d@2.59.163.45:59992?security=none&type=tcp&path=/#🇵🇱 428 - PL - VLESS - 59992
-vless://fbb74aa8-b89a-4f20-9504-6b25aadf6681@83.168.108.200:443?security=reality&type=tcp&sni=pol3.freeinternat.com&fp=firefox&flow=xtls-rprx-vision&sid=ff776ff77be48b88&pbk=bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk&encryption=none#🇵🇱 609 - PL - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://5d8eb33a-2166-4daf-88fe-4be5799c493b@141.101.120.73:443?encryption=none&fp=chrome&host=noisy-term-e657.airdrop2014aa5168.workers.dev&path=/&security=tls&sni=noisy-term-e657.airdrop2014aa5168.workers.dev&type=ws#🇺🇸 246 - US - VLESS/WS/TLS/UTLS - 443
+vless://9a9fe945246a431ebd051cb981464c8d@2.59.163.45:59992?security=none&type=tcp&path=/#🇵🇱 374 - PL - VLESS - 59992
+vless://fbb74aa8-b89a-4f20-9504-6b25aadf6681@pol3.freeinternat.com:443?security=reality&type=tcp&sni=pol3.freeinternat.com&fp=firefox&flow=xtls-rprx-vision&sid=ff776ff77be48b88&pbk=bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk&encryption=none#🇵🇱 593 - PL - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
