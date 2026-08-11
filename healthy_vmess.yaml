@@ -4,20 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 5
-  server: 132.145.200.43
-  port: 2054
+- name: 🇬🇧 英国 | GBR 2
+  server: usa.sangarvip.panal-shop-sangar-shkan.xyz
+  port: 2086
   type: vmess
-  uuid: ceeaee0b-89af-40b1-aa14-577cbde03a89
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
   alterId: 0
   cipher: auto
   tls: false
   alpn:
   - ''
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /p
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 5
+  - 🇬🇧 英国 | GBR 2
 rules:
 - MATCH,AUTO

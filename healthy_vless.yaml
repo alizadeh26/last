@@ -4,45 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.186.193
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇩🇪 德国 | DEU 7
-  server: 63.180.222.124
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 63.180.222.124
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 63.180.222.124
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 14
-  server: 46.8.228.91
-  port: 47424
-  type: vless
-  uuid: 6de486c1-dbad-4540-8875-98c35e9cd173
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: xit.saturn-cloud.net
   port: 443
@@ -58,50 +19,20 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: white-hill-f907.23-b68.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 172.67.202.17
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nmslfangbinxing.pusytroller.gq
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 9
-  server: free-server.techsonic.dev
+- name: 🇺🇸 美国 | USA 4
+  server: ansooyefilter-hhh.up.railway.app
   port: 443
   type: vless
-  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
+  uuid: f4e637c2-f9c0-0bce-75f9-f1f4e44d1553
   tls: true
   alpn:
-  - h2
   - http/1.1
-  servername: aka.ms
   client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: 193.134.100.23
-  port: 12596
-  type: vless
-  uuid: e48cf70b-a9a5-4855-9330-e8649a11882e
-  tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /ws/f4e637c2-f9c0-0bce-75f9-f1f4e44d1553
+    headers:
+      Host: ansooyefilter-hhh.up.railway.app
   udp: true
 proxy-groups:
 - name: AUTO
@@ -109,15 +40,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 14
   - 🇮🇹 意大利 | ITA
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 9
-  - 🇸🇬 新加坡 | SGP 9
-  - 🇸🇬 新加坡 | SGP 8
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
