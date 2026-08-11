@@ -33,21 +33,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: ansooyefilter-hhh.up.railway.app
-  port: 443
-  type: vless
-  uuid: f4e637c2-f9c0-0bce-75f9-f1f4e44d1553
-  tls: true
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/f4e637c2-f9c0-0bce-75f9-f1f4e44d1553
-    headers:
-      Host: ansooyefilter-hhh.up.railway.app
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -56,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 2
   - 🇮🇹 意大利 | ITA
-  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO

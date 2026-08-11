@@ -45,28 +45,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: ansooyefilter-hhh.up.railway.app
-  port: 443
-  type: vless
-  uuid: f4e637c2-f9c0-0bce-75f9-f1f4e44d1553
-  tls: true
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/f4e637c2-f9c0-0bce-75f9-f1f4e44d1553
-    headers:
-      Host: ansooyefilter-hhh.up.railway.app
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 45.32.16.53
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: uTBjZhDmOMwBVAJI
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -76,14 +54,6 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR 2
   - 🇮🇹 意大利 | ITA
-  - 🇺🇸 美国 | USA 4
-  - 🇯🇵 日本 | JPN
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇯🇵 日本 | JPN
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -91,12 +61,19 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 2
   - 🇮🇹 意大利 | ITA
-  - 🇺🇸 美国 | USA 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR 2
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 2
+  - 🇬🇧 英国 | GBR 2
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO
