@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇹🇷 土耳其 | TUR 3
-  server: e1.cover20.ir
-  port: 51570
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: AsjCCe+gRStwtdAYCm0sWfpIImN7Enllf3UD2oNuIe4=
-  udp: true
 - name: 🇿🇦 南非 | ZAF
   server: 139.84.247.164
   port: 8388
@@ -24,7 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 | TUR 3
   - 🇿🇦 南非 | ZAF
 rules:
 - MATCH,AUTO
