@@ -4,64 +4,60 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
-  server: nld.north-1winter.cv
-  port: 8443
-  type: vless
-  uuid: acc50200-7f21-4f90-9cca-0057efcbf042
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: eq3hx1_bR5U7i_1P_QZTWtIb-LnurZIy3PHYPppHmRU
-    short-id: e34709f4d2691c08
-  servername: nld.north-1winter.cv
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 158.178.156.196
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.186.193
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 12
-  server: 103.133.1.160
-  port: 80
+- name: 🇩🇪 德国 | DEU 14
+  server: 46.8.228.91
+  port: 47424
   type: vless
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  uuid: 6de486c1-dbad-4540-8875-98c35e9cd173
   tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: soft-shadow-1e33.xicav73335.workers.dev
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: arclo.ciphero.xyz
-  port: 443
-  type: vless
-  uuid: 1bced29a-3051-42b8-b393-005135b97616
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4
-    short-id: 33b5887524592cad
-  servername: arclo.ciphero.xyz
-  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 104.18.34.245
-  port: 8880
+- name: 🇮🇹 意大利 | ITA
+  server: xit.saturn-cloud.net
+  port: 443
   type: vless
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  uuid: 95ae0de8-d944-4b1e-b450-d34d80f9a528
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: UjwVdSvY-6dV5UKCNO7ROokiSF_aLaXYyUaG6RybOmI
+    short-id: 2762604ed2e0fa2f
+  servername: xit.saturn-cloud.net
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 92.5.237.183
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD 7
+  server: boal.rubyshow.ir
+  port: 443
+  type: vless
+  uuid: b995b891-7402-4798-aa24-73fcfed84bd4
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  - h3
+  servername: test.rubyshow.ir
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /sendx
     headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
+      Host: test.rubyshow.ir
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 104.18.34.245
@@ -75,65 +71,62 @@ proxies:
     headers:
       Host: white-hill-f907.23-b68.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: 172.67.68.240
+- name: 🇺🇸 美国 | USA 7
+  server: 104.17.21.137
   port: 8880
   type: vless
-  uuid: df5dc160-3764-4e6b-805d-1286ea701310
+  uuid: 9e648bb6-25f7-4b16-9949-55ac0952d66b
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: dawn-mode-a061.444-a0e.workers.dev
+      Host: lingering-grass-6728.131-a78.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 172.67.152.71
-  port: 8880
+- name: 🇺🇸 美国 | USA 9
+  server: 172.67.202.17
+  port: 2095
   type: vless
-  uuid: 38135fde-7044-4407-8faf-e1ab08e47402
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /
     headers:
-      Host: white-bush-712e.498-f8f.workers.dev
+      Host: nmslfangbinxing.pusytroller.gq
   udp: true
-- name: 🇺🇸 美国 | USA 31
-  server: 104.17.21.32
+- name: 🇸🇬 新加坡 | SGP 9
+  server: free-server.techsonic.dev
+  port: 443
+  type: vless
+  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: aka.ms
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 104.16.101.215
   port: 8880
   type: vless
-  uuid: 63a1d550-f8da-456e-813c-398dd819e405
+  uuid: 0bd6aa8d-3bdb-4fa3-893e-75a844e2e409
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: noisy-cherry-b46b.206-866.workers.dev
+      Host: wispy-cake-ec69.193-bc6.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: 104.18.34.245
-  port: 8880
+- name: 🇸🇬 新加坡 | SGP 8
+  server: 193.134.100.23
+  port: 12596
   type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  uuid: e48cf70b-a9a5-4855-9330-e8649a11882e
   tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 39
-  server: 104.17.21.32
-  port: 8880
-  type: vless
-  uuid: d1eeb74f-e5ea-45eb-9934-5376bfeb5ba4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fragrant-shape-07a0.269-144.workers.dev
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -141,16 +134,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 12
-  - 🇩🇪 德国 | DEU 8
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 14
+  - 🇮🇹 意大利 | ITA
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 7
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 27
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 31
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 39
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 9
+  - 🇸🇬 新加坡 | SGP 9
+  - 🇺🇸 美国 | USA 3
+  - 🇸🇬 新加坡 | SGP 8
 rules:
 - MATCH,AUTO
