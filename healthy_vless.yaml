@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 150.241.70.0
-  port: 443
-  type: vless
-  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
-  tls: true
-  packet-encoding: xudp
-  reality-opts:
-    public-key: YW6wlOE6DhEzY4nQobPKj-hoc2bpNgJineecGIgOgWM
-    short-id: 9d3734f3ff471b68
-  servername: stats.vk-portal.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: xit.saturn-cloud.net
   port: 443
@@ -39,7 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO
