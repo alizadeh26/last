@@ -25,20 +25,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 11
-  server: neth.anonch.net
-  port: 443
-  type: vless
-  uuid: d16a7171-625d-4d09-9459-859f1c9b3b0a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: w4rbDsuTZX8WqNEaCd0TuLI5m6kxKIcwzJ8rmX7qOQw
-    short-id: 48a5dbcd976b54bf
-  servername: neth.anonch.net
-  client-fingerprint: qq
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 12
   server: 103.133.1.160
   port: 80
@@ -51,51 +37,17 @@ proxies:
     headers:
       Host: soft-shadow-1e33.xicav73335.workers.dev
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 79.137.192.188
-  port: 2200
-  type: vless
-  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 201.51.2.6
-  port: 2200
-  type: vless
-  uuid: eb135f2b-4b9e-4abb-9a89-78242613da61
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: white-hill-f907.23-b68.workers.dev
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: glidio.shieldix.top
+- name: 🇩🇪 德国 | DEU 8
+  server: arclo.ciphero.xyz
   port: 443
   type: vless
-  uuid: e3c40721-22bc-4862-a358-09502fc14af6
+  uuid: 1bced29a-3051-42b8-b393-005135b97616
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: V9MHR6nhlKPenVUq1172uIHJFZYOkRVqSOUkjCS4430
-    short-id: f0ba53a31b489b3e
-  servername: glidio.shieldix.top
+    public-key: 8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4
+    short-id: 33b5887524592cad
+  servername: arclo.ciphero.xyz
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -111,6 +63,18 @@ proxies:
     headers:
       Host: silent-snow-1a0d.241-b0a.workers.dev
   udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: white-hill-f907.23-b68.workers.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 27
   server: 172.67.68.240
   port: 8880
@@ -122,54 +86,6 @@ proxies:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
       Host: dawn-mode-a061.444-a0e.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 32
-  server: 45.40.155.4
-  port: 80
-  type: vless
-  uuid: e403856e-4e50-49e6-9edc-d9536a803a6a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
-    headers:
-      Host: proud-cloud-5c50.113-8dc.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: 172.66.132.196
-  port: 8880
-  type: vless
-  uuid: 3adac494-0eb1-4d89-a187-b2181691444d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: tiny-lake-bbf1.369-766.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 31
-  server: 104.17.21.32
-  port: 8880
-  type: vless
-  uuid: 63a1d550-f8da-456e-813c-398dd819e405
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: noisy-cherry-b46b.206-866.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 39
-  server: 104.17.21.32
-  port: 8880
-  type: vless
-  uuid: d1eeb74f-e5ea-45eb-9934-5376bfeb5ba4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fragrant-shape-07a0.269-144.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 23
   server: 172.67.152.71
@@ -183,6 +99,42 @@ proxies:
     headers:
       Host: white-bush-712e.498-f8f.workers.dev
   udp: true
+- name: 🇺🇸 美国 | USA 31
+  server: 104.17.21.32
+  port: 8880
+  type: vless
+  uuid: 63a1d550-f8da-456e-813c-398dd819e405
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: noisy-cherry-b46b.206-866.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 22
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-tree-3dbf.285.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 39
+  server: 104.17.21.32
+  port: 8880
+  type: vless
+  uuid: d1eeb74f-e5ea-45eb-9934-5376bfeb5ba4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fragrant-shape-07a0.269-144.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -191,18 +143,14 @@ proxy-groups:
   proxies:
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 12
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇩🇪 德国 | DEU 8
   - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA 27
-  - 🇺🇸 美国 | USA 32
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 31
-  - 🇺🇸 美国 | USA 39
   - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 31
+  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 39
 rules:
 - MATCH,AUTO
