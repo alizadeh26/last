@@ -4,6 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU 2
+  server: 150.241.70.0
+  port: 443
+  type: vless
+  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
+  tls: true
+  packet-encoding: xudp
+  reality-opts:
+    public-key: YW6wlOE6DhEzY4nQobPKj-hoc2bpNgJineecGIgOgWM
+    short-id: 9d3734f3ff471b68
+  servername: stats.vk-portal.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: usa.sangarvip.panal-shop-sangar-shkan.xyz
   port: 2086
@@ -15,13 +29,6 @@ proxies:
   alpn:
   - ''
   skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 45.32.16.53
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: uTBjZhDmOMwBVAJI
   udp: true
 - name: 🇮🇹 意大利 | ITA
   server: xit.saturn-cloud.net
@@ -53,16 +60,24 @@ proxies:
     headers:
       Host: ansooyefilter-hhh.up.railway.app
   udp: true
+- name: 🇯🇵 日本 | JPN
+  server: 45.32.16.53
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: uTBjZhDmOMwBVAJI
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR 2
-  - 🇯🇵 日本 | JPN
   - 🇮🇹 意大利 | ITA
   - 🇺🇸 美国 | USA 4
+  - 🇯🇵 日本 | JPN
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -74,6 +89,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 2
   - 🇮🇹 意大利 | ITA
   - 🇺🇸 美国 | USA 4
 - name: PROTO-VMESS
