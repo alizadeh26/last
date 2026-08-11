@@ -4,17 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇲🇽 墨西哥 | MEX
-  server: 366-1095.rabbitpro-in-3.com
-  port: 29053
+- name: 🇺🇸 美国 | USA 16
+  server: 132.145.200.43
+  port: 2054
   type: vmess
-  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+  uuid: ceeaee0b-89af-40b1-aa14-577cbde03a89
   alterId: 0
   cipher: auto
   tls: false
   alpn:
   - ''
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /p
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 墨西哥 | MEX
+  - 🇺🇸 美国 | USA 16
 rules:
 - MATCH,AUTO

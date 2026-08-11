@@ -4,35 +4,41 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇪 爱沙尼亚 | EST 4
-  server: 150.241.101.218.fwqfw783rg2dad.website
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 158.247.126.107
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU 7
+  server: arclo.ciphero.xyz
   port: 443
   type: vless
-  uuid: 9efe092e-e4ae-4601-bb89-169fcb3db39b
+  uuid: 1bced29a-3051-42b8-b393-005135b97616
   tls: true
-  servername: 150.241.101.218.fwqfw783rg2dad.website
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: 150.241.101.218.fwqfw783rg2dad.website
-  udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 3
-  server: lv.rexten.cc
-  port: 443
-  type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  packet-encoding: xudp
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.rexten.cc
+    public-key: 8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4
+    short-id: 33b5887524592cad
+  servername: arclo.ciphero.xyz
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 4
+- name: 🇩🇪 德国 | DEU 12
+  server: 150.241.70.0
+  port: 443
+  type: vless
+  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
+  tls: true
+  reality-opts:
+    public-key: YW6wlOE6DhEzY4nQobPKj-hoc2bpNgJineecGIgOgWM
+    short-id: 9d3734f3ff471b68
+  servername: stats.vk-portal.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
   server: lv.rexten.cc
   port: 10443
   type: vless
@@ -47,26 +53,7 @@ proxies:
     grpc-mode: gun
     grpc-service-name: GunService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 158.101.201.108
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 194.26.229.211
-  port: 4100
-  type: vless
-  uuid: 1a2f7607-b36a-4996-b7a2-72359123c446
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 7
+- name: 🇸🇪 瑞典 | SWE
   server: sw.rexten.cc
   port: 443
   type: vless
@@ -79,7 +66,31 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 7
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 194.26.229.211
+  port: 4100
+  type: vless
+  uuid: 1a2f7607-b36a-4996-b7a2-72359123c446
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 6
+  server: 217.149.23.169
+  port: 2200
+  type: vless
+  uuid: 4cbdaf4f-ca34-4a00-9a96-49eaa6564b42
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+  udp: true
+- name: 🇺🇸 美国 | USA 14
   server: 180.178.60.253
   port: 10000
   type: vless
@@ -87,18 +98,43 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇹🇭 泰国 | THA 2
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: 63ae5b68-f6f8-432e-b440-d975053cfbc2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /than
+    headers:
+      Host: d16l6nb4do0zu4.cloudfront.net
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 201.51.2.6
+  port: 2200
+  type: vless
+  uuid: eb135f2b-4b9e-4abb-9a89-78242613da61
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST 4
-  - 🇱🇻 拉脱维亚 | LVA 3
-  - 🇱🇻 拉脱维亚 | LVA 4
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 12
+  - 🇱🇻 拉脱维亚 | LVA
+  - 🇸🇪 瑞典 | SWE
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇸🇪 瑞典 | SWE 7
-  - 🇺🇸 美国 | USA 7
+  - 🇷🇺 俄罗斯 | RUS 6
+  - 🇺🇸 美国 | USA 14
+  - 🇹🇭 泰国 | THA 2
+  - 🇷🇺 俄罗斯 | RUS 4
 rules:
 - MATCH,AUTO

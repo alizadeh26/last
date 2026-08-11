@@ -4,12 +4,26 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
+- name: 🇹🇷 土耳其 | TUR 6
+  server: sub.almavpn.shop
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: LHZzf4y0j2WQlZsTh0NzPxVmTYufR-TA
+  udp: true
+- name: 🇺🇸 美国 | USA 8
   server: autodiscover.fuzzyaytor.cyou
   port: 42982
   type: ss
   cipher: chacha20-ietf-poly1305
   password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: e1.cover20.ir
+  port: 51570
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: A33pWRIZnoJ6gaSK6Y5yrc5kBNKktoXblIm/nuHNhrU=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +31,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
+  - 🇹🇷 土耳其 | TUR 6
+  - 🇺🇸 美国 | USA 8
+  - 🇹🇷 土耳其 | TUR
 rules:
 - MATCH,AUTO
