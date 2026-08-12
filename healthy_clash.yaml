@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.231.73
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇩🇪 德国 | DEU 8
   server: de151.mechvpn.online
   port: 443
@@ -55,6 +62,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 9
   - 🇫🇷 法国 | FRA 6
@@ -64,6 +72,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 9
   - 🇫🇷 法国 | FRA 6
@@ -81,5 +90,11 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 9
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇴 哥伦比亚 | COL 2
 rules:
 - MATCH,AUTO
