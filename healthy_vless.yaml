@@ -4,7 +4,38 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 21
+- name: 🇩🇪 德国 | DEU 5
+  server: 63.186.162.237
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.231.73
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU 6
+  server: 63.186.162.237
+  port: 22223
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 63.186.162.237
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
   server: de151.mechvpn.online
   port: 443
   type: vless
@@ -14,38 +45,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: fr198.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇫🇷 法国 | FRA 3
-  server: fr199.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 19
-  server: fr76.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 22
   server: fr143.mechvpn.online
+  port: 443
+  type: vless
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 4
+  server: fr15.mechvpn.online
   port: 443
   type: vless
   uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
@@ -67,53 +78,54 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 13
+- name: 🇸🇪 瑞典 | SWE
+  server: novea.shieldix.top
+  port: 443
+  type: vless
+  uuid: b50a52ba-891f-44ff-af82-f5f0f3317024
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V9MHR6nhlKPenVUq1172uIHJFZYOkRVqSOUkjCS4430
+    short-id: f0ba53a31b489b3e
+  servername: novea.shieldix.top
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 4
   server: 172.67.152.71
   port: 8880
   type: vless
-  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  uuid: 2a8cafda-479d-4e30-82d1-0bd4c6da6db9
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: lively-dream-d892.262.workers.dev
+      Host: delicate-meadow-15da.423-c77.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 28
+- name: 🇺🇸 美国 | USA 8
+  server: 216.106.183.132
+  port: 2082
+  type: vless
+  uuid: aa8250e1-954c-449e-98fc-aa56a973a3f1
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+- name: 🇺🇸 美国 | USA 11
   server: log.bpminecraft.com
   port: 8880
   type: vless
-  uuid: 7ed93ccf-6a54-4b19-a9b4-aedfc79bab7d
+  uuid: c6c5ad2f-b4d5-450f-862f-341cebb7f9b5
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: muddy-sky-4767.344-7a7.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: cloudflare-ech.com
-  port: 8880
-  type: vless
-  uuid: dd2952d5-2bc6-40c8-8a82-6dc00fe5105c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: nameless-shape-271e.321-5f5.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: log.bpminecraft.com
-  port: 8880
-  type: vless
-  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-feather-dc98.136-25b.workers.dev
+      Host: empty-rain-1df4.332-633.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -121,15 +133,17 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 21
-  - 🇫🇷 法国 | FRA
+  - 🇩🇪 德国 | DEU 5
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
   - 🇫🇷 法国 | FRA 3
-  - 🇫🇷 法国 | FRA 19
-  - 🇫🇷 法国 | FRA 22
+  - 🇫🇷 法国 | FRA 4
   - 🇵🇱 波兰 | POL 3
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 10
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
