@@ -4,14 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: 63.186.162.237
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL
   server: 157.137.231.73
   port: 62145
@@ -19,22 +11,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇩🇪 德国 | DEU 6
-  server: 63.186.162.237
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 63.186.162.237
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: de151.mechvpn.online
   port: 443
@@ -44,6 +20,31 @@ proxies:
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: n1.famlegacy.online
+  port: 443
+  type: vless
+  uuid: 47975fcf-1f4c-4808-9012-114569b081e4
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5jbcp5sIqgP82WsskUhSENWnfk0ZUSWIBlbqKHkIJA0
+  servername: n1.famlegacy.online
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 185.143.234.238
+  port: 2086
+  type: vless
+  uuid: 1ee1f28d-4975-4d7c-95c7-76172c20eed5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: parsi.parsi.sbs
   udp: true
 - name: 🇫🇷 法国 | FRA 3
   server: fr143.mechvpn.online
@@ -65,44 +66,24 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL 3
-  server: pl.rexten.cc
-  port: 443
+- name: 🇩🇪 德国 | DEU 12
+  server: p01.parsi.sbs
+  port: 2086
   type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: pl.rexten.cc
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: novea.shieldix.top
-  port: 443
-  type: vless
-  uuid: b50a52ba-891f-44ff-af82-f5f0f3317024
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V9MHR6nhlKPenVUq1172uIHJFZYOkRVqSOUkjCS4430
-    short-id: f0ba53a31b489b3e
-  servername: novea.shieldix.top
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 172.67.152.71
-  port: 8880
-  type: vless
-  uuid: 2a8cafda-479d-4e30-82d1-0bd4c6da6db9
+  uuid: 1ee1f28d-4975-4d7c-95c7-76172c20eed5
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /
     headers:
-      Host: delicate-meadow-15da.423-c77.workers.dev
+      Host: parsi.parsi.sbs
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: sub.almavpn.shop
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: KxJVQc8ZjDgRNhFaesshNDEZqBexyyZv
   udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 216.106.183.132
@@ -133,59 +114,73 @@ proxies:
     headers:
       Host: rush-w1niu.teeopp.online
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: log.bpminecraft.com
-  port: 8880
-  type: vless
-  uuid: c6c5ad2f-b4d5-450f-862f-341cebb7f9b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: empty-rain-1df4.332-633.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 3
   - 🇫🇷 法国 | FRA 3
   - 🇫🇷 法国 | FRA 4
-  - 🇵🇱 波兰 | POL 3
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 4
+  - 🇩🇪 德国 | DEU 12
+  - 🇹🇷 土耳其 | TUR
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 11
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 | TUR
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 3
   - 🇫🇷 法国 | FRA 3
   - 🇫🇷 法国 | FRA 4
-  - 🇵🇱 波兰 | POL 3
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 4
+  - 🇩🇪 德国 | DEU 12
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 11
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 17
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 3
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 9
+  - 🇫🇷 法国 | FRA 3
+  - 🇹🇷 土耳其 | TUR
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 17
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇴 哥伦比亚 | COL
 rules:
 - MATCH,AUTO
