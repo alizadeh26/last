@@ -4,12 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN
-  server: 45.32.16.53
-  port: 8388
+- name: 🇺🇸 美国 | USA 2
+  server: 18.219.164.184
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: e1.cover20.ir
+  port: 51570
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: uTBjZhDmOMwBVAJI
+  password: 3UN+UZNZfhF9a2pgOy0fenep0gHttiEZ0RxqixotwXc=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 2
+  - 🇹🇷 土耳其 | TUR
 rules:
 - MATCH,AUTO

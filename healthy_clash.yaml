@@ -4,20 +4,121 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA
-  server: xit.saturn-cloud.net
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 158.247.125.162
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU 13
+  server: 159.194.226.13
+  port: 2053
+  type: vless
+  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇫🇷 法国 | FRA 8
+  server: fr198.mechvpn.online
   port: 443
   type: vless
-  uuid: 95ae0de8-d944-4b1e-b450-d34d80f9a528
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   tls: true
-  packet-encoding: xudp
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: UjwVdSvY-6dV5UKCNO7ROokiSF_aLaXYyUaG6RybOmI
-    short-id: 2762604ed2e0fa2f
-  servername: xit.saturn-cloud.net
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 12
+  server: fr186.mechvpn.online
+  port: 443
+  type: vless
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 21
+  server: fr199.mechvpn.online
+  port: 443
+  type: vless
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 24
+  server: fr76.mechvpn.online
+  port: 443
+  type: vless
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 34
+  server: fr15.mechvpn.online
+  port: 443
+  type: vless
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pl.rexten.cc
+  port: 443
+  type: vless
+  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: pl.rexten.cc
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 18.219.164.184
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 62.113.103.10
+  port: 4100
+  type: vless
+  uuid: ea535a23-447f-4501-918c-de8a8b376bec
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: 138.124.72.220
+  port: 443
+  type: vless
+  uuid: 52bc7468-0c2f-4e9d-bdfa-e266242ab44b
+  tls: true
+  reality-opts:
+    public-key: fu-_qH499aSXYcsyiJIUf9o28LYahPCIFyRHrLWuCDI
+    short-id: 0a077a46
+  client-fingerprint: randomized
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: e1.cover20.ir
+  port: 51570
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3UN+UZNZfhF9a2pgOy0fenep0gHttiEZ0RxqixotwXc=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,18 +126,39 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 13
+  - 🇫🇷 法国 | FRA 8
+  - 🇫🇷 法国 | FRA 12
+  - 🇫🇷 法国 | FRA 21
+  - 🇫🇷 法国 | FRA 24
+  - 🇫🇷 法国 | FRA 34
+  - 🇵🇱 波兰 | POL
+  - 🇺🇸 美国 | USA 2
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇵🇱 波兰 | POL 2
+  - 🇹🇷 土耳其 | TUR
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 2
+  - 🇹🇷 土耳其 | TUR
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇮🇹 意大利 | ITA
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 13
+  - 🇫🇷 法国 | FRA 8
+  - 🇫🇷 法国 | FRA 12
+  - 🇫🇷 法国 | FRA 21
+  - 🇫🇷 法国 | FRA 24
+  - 🇫🇷 法国 | FRA 34
+  - 🇵🇱 波兰 | POL
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇵🇱 波兰 | POL 2
 rules:
 - MATCH,AUTO
