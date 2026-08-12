@@ -5,12 +5,44 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.213.138
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 63.186.162.237
+  port: 22223
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 2
   server: 157.137.231.73
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+- name: 🇩🇪 德国 | DEU 6
+  server: 63.186.162.237
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 63.186.162.237
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: de151.mechvpn.online
   port: 443
@@ -34,49 +66,31 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 185.143.234.238
-  port: 2086
-  type: vless
-  uuid: 1ee1f28d-4975-4d7c-95c7-76172c20eed5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: parsi.parsi.sbs
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: fr143.mechvpn.online
+- name: 🇫🇷 法国 | FRA 6
+  server: fr213.mechvpn.online
   port: 443
   type: vless
   uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 4
-  server: fr15.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: qq
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 12
-  server: p01.parsi.sbs
-  port: 2086
+  server: 40.66.33.31
+  port: 2064
   type: vless
-  uuid: 1ee1f28d-4975-4d7c-95c7-76172c20eed5
+  uuid: 841be8d9-964f-4183-9e99-a65e41c3a018
   tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: parsi.parsi.sbs
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 40.66.33.31
+  port: 2042
+  type: vless
+  uuid: 841be8d9-964f-4183-9e99-a65e41c3a018
+  tls: false
+  network: tcp
   udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: sub.almavpn.shop
@@ -85,34 +99,25 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: KxJVQc8ZjDgRNhFaesshNDEZqBexyyZv
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 216.106.183.132
-  port: 2082
+- name: 🇵🇱 波兰 | POL
+  server: 40.66.33.31
+  port: 2041
   type: vless
-  uuid: aa8250e1-954c-449e-98fc-aa56a973a3f1
+  uuid: 5c5f21f2-8527-4d45-95d0-0c72871d22e7
   tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: rush-w1niu.teeopp.online
-  port: 443
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: rush-w1niu.teeopp.online
+- name: 🇹🇭 泰国 | THA
+  server: 18.239.134.69
+  port: 80
+  type: vless
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  tls: false
   network: ws
   ws-opts:
-    path: /video/v4sx3q/zxzrurkc.m3u8
+    path: /
     headers:
-      Host: rush-w1niu.teeopp.online
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -121,15 +126,18 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 5
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 3
-  - 🇫🇷 法国 | FRA 3
-  - 🇫🇷 法国 | FRA 4
+  - 🇫🇷 法国 | FRA 6
   - 🇩🇪 德国 | DEU 12
+  - 🇳🇱 荷兰 | NLD 2
   - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 17
+  - 🇵🇱 波兰 | POL
+  - 🇹🇭 泰国 | THA
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -142,40 +150,27 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 5
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 3
-  - 🇫🇷 法国 | FRA 3
-  - 🇫🇷 法国 | FRA 4
+  - 🇫🇷 法国 | FRA 6
   - 🇩🇪 德国 | DEU 12
-  - 🇺🇸 美国 | USA 8
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 17
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 3
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇵🇱 波兰 | POL
+  - 🇹🇭 泰国 | THA
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 9
-  - 🇫🇷 法国 | FRA 3
-  - 🇹🇷 土耳其 | TUR
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 17
+  - 🇫🇷 法国 | FRA 6
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
