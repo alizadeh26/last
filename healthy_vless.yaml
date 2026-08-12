@@ -4,18 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 15
-  server: 104.24.152.211
-  port: 8880
-  type: vless
-  uuid: 2acde116-5949-48d8-a1e6-60a1d2547deb
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: lively-pine-093d.144-868.workers.dev
-  udp: true
 - name: 🇩🇪 德国 | DEU 21
   server: de151.mechvpn.online
   port: 443
@@ -79,29 +67,17 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 172.64.147.210
+- name: 🇺🇸 美国 | USA 13
+  server: 172.67.152.71
   port: 8880
   type: vless
-  uuid: 11046a7c-fa1b-4653-ab87-400feb465540
+  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: nameless-poetry-12fb.8-0a2.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: cloudflare-ech.com
-  port: 8880
-  type: vless
-  uuid: dd2952d5-2bc6-40c8-8a82-6dc00fe5105c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: nameless-shape-271e.321-5f5.workers.dev
+      Host: lively-dream-d892.262.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: log.bpminecraft.com
@@ -115,30 +91,17 @@ proxies:
     headers:
       Host: morning-feather-dc98.136-25b.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 172.67.152.71
-  port: 8880
+- name: 🇺🇸 美国 | USA 31
+  server: 104.21.4.10
+  port: 2086
   type: vless
-  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  uuid: 9ef1d60d-9e38-49c5-9405-131e11be1f9c
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /eyJqdW5rIjoiVGtvRGR4TXdHSzdseGpZWCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
     headers:
-      Host: lively-dream-d892.262.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: po.fastbrokencompony.com
-  port: 2053
-  type: vless
-  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
-  tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: po.fastbrokencompony.com
+      Host: muddy-shadow-8905.qara-atayi-1.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 28
   server: log.bpminecraft.com
@@ -151,31 +114,6 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: muddy-sky-4767.344-7a7.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: weathered-union-5358.101-262.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 40
-  server: log.bpminecraft.com
-  port: 8880
-  type: vless
-  uuid: 84270e8b-567e-45c6-b2f2-56ec9a67ae1e
-  tls: false
-  servername: log.bpminecraft.com
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: young-leaf-a723.162-4da.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 39
   server: 104.20.37.53
@@ -196,21 +134,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 21
   - 🇫🇷 法国 | FRA
   - 🇫🇷 法国 | FRA 3
   - 🇫🇷 法国 | FRA 19
   - 🇫🇷 法国 | FRA 22
   - 🇵🇱 波兰 | POL 3
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 31
   - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 40
   - 🇺🇸 美国 | USA 39
 rules:
 - MATCH,AUTO
