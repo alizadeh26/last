@@ -79,30 +79,6 @@ proxies:
     headers:
       Host: lively-dream-d892.262.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: log.bpminecraft.com
-  port: 8880
-  type: vless
-  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-feather-dc98.136-25b.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 31
-  server: 104.21.4.10
-  port: 2086
-  type: vless
-  uuid: 9ef1d60d-9e38-49c5-9405-131e11be1f9c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiVGtvRGR4TXdHSzdseGpZWCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
-    headers:
-      Host: muddy-shadow-8905.qara-atayi-1.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 28
   server: log.bpminecraft.com
   port: 8880
@@ -115,18 +91,29 @@ proxies:
     headers:
       Host: muddy-sky-4767.344-7a7.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 39
-  server: 104.20.37.53
-  port: 80
+- name: 🇺🇸 美国 | USA 3
+  server: cloudflare-ech.com
+  port: 8880
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  uuid: dd2952d5-2bc6-40c8-8a82-6dc00fe5105c
   tls: false
-  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
   network: ws
   ws-opts:
-    path: /stream/TrexBridge/b52a90ada6ab
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+      Host: nameless-shape-271e.321-5f5.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: log.bpminecraft.com
+  port: 8880
+  type: vless
+  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: morning-feather-dc98.136-25b.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -141,10 +128,9 @@ proxy-groups:
   - 🇫🇷 法国 | FRA 22
   - 🇵🇱 波兰 | POL 3
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 31
   - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 39
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 10
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -157,10 +143,9 @@ proxy-groups:
   - 🇫🇷 法国 | FRA 22
   - 🇵🇱 波兰 | POL 3
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 31
   - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 39
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 10
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -168,13 +153,7 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 21
   - 🇫🇷 法国 | FRA
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 28
+  - 🇫🇷 法国 | FRA 3
+  - 🇫🇷 法国 | FRA 19
 rules:
 - MATCH,AUTO
