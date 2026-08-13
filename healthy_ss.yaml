@@ -4,19 +4,32 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇹🇷 土耳其 | TUR
-  server: sub.almavpn.shop
-  port: 1080
+- name: 🇧🇷 巴西 | BRA
+  server: 163.176.133.70
+  port: 59319
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: KxJVQc8ZjDgRNhFaesshNDEZqBexyyZv
-  udp: true
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.86.242
+  port: 61312
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+- name: 🇸🇬 新加坡 | SGP
+  server: 168.107.81.96
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bK1EEmfRtCrVUfjw8ON888lnrH8V4UsqSH+hiIxx/BQ=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 | TUR
+  - 🇧🇷 巴西 | BRA
+  - 🇬🇧 英国 | GBR 2
+  - 🇸🇬 新加坡 | SGP
 rules:
 - MATCH,AUTO

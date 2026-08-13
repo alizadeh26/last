@@ -4,36 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: fqub.falsemirrov.com
-  port: 443
-  type: vless
-  uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: N1KH15LltY-On3flp6KhR0VOouBqNrcFNktOnptsOTs
-    short-id: 9c2378562188c3cb
-  servername: fqub.falsemirrov.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: dfhgfh.falsemirrov.com
-  port: 443
-  type: vless
-  uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: grChGtm5AMYpETcfHo5ewowDpy77odNFBQQ-jceJbh8
-    short-id: 9c2378562188c3cb
-  servername: dfhgfh.falsemirrov.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 19
-  server: de151.mechvpn.online
+- name: 🇧🇷 巴西 | BRA
+  server: 163.176.133.70
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇫🇷 法国 | FRA 5
+  server: fr15.mechvpn.online
   port: 443
   type: vless
   uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
@@ -42,7 +20,7 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 4
+- name: 🇫🇷 法国 | FRA 24
   server: fr199.mechvpn.online
   port: 443
   type: vless
@@ -51,14 +29,24 @@ proxies:
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   network: tcp
-- name: 🇫🇷 法国 | FRA 19
-  server: fr15.mechvpn.online
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.86.242
+  port: 61312
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+- name: 🇬🇧 英国 | GBR 3
+  server: pnnsh.falsemirrov.com
   port: 443
   type: vless
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: lE6w45X8Bwb0HscO6Wa5wnN0qlw7wUuaCW8-iYL5HAQ
+    short-id: bc609efa3b2d052f
+  servername: pnnsh.falsemirrov.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇱🇹 立陶宛 | LTU
@@ -75,33 +63,71 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇮🇳 印度 | IND
-  server: apxc.falsemirrov.com
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 200.165.228.47
+  port: 4100
+  type: vless
+  uuid: 6620ef58-9c62-43fe-9596-ff862b200958
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: dnlch.mostserv.xyz
   port: 443
   type: vless
-  uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
+  uuid: 463a26c2-eba8-0065-89c4-ee5c1373ccbe
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: sbl95eJz_SP1vYb8doCjAJOo0o5NveutEb9J-XKGl1w
-    short-id: 9c2378562188c3cb
-  servername: apxc.falsemirrov.com
+    public-key: Q6sZPc96fGUJvHsOjwpAc57V16CajEfhkHHhuv-_Bg4
+    short-id: 0f3adaccbda5e56b
+  servername: dnlch.mostserv.xyz
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: nl2.panel11.ru
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 84.235.160.177
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD 10
+  server: 143.47.185.78
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD 12
+  server: ld.242311.xyz
   port: 443
   type: vless
-  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
+  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SyTPcYz068PdWyB0tongXPgSe1QU2nn-_yYsO959nUQ
-    short-id: 5578c19d39bec828
-  servername: nl2.panel11.ru
-  client-fingerprint: firefox
-  network: tcp
+  servername: ld.242311.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ld.242311.xyz
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 194.26.229.210
+  port: 4100
+  type: vless
+  uuid: 20124617-eba7-4b34-87ad-fcf700ea7dff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
   udp: true
 - name: 🇳🇱 荷兰 | NLD 11
   server: 87.199.205.120.sslip.io
@@ -117,7 +143,25 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 6
+- name: 🇸🇬 新加坡 | SGP
+  server: 168.107.81.96
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bK1EEmfRtCrVUfjw8ON888lnrH8V4UsqSH+hiIxx/BQ=
+- name: 🇺🇸 美国 | USA 5
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lingering-lab-91a6.54-8c3.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 8
   server: united.nosok-top.com
   port: 443
   type: vless
@@ -131,31 +175,54 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: vruaz.mostserv.xyz
-  port: 443
-  type: vless
-  uuid: 463a26c2-eba8-0031-89c4-ee5c1373ccbe
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ckPCrgbrSdQaz1j3vP0-f0P8F4E8ZucQTeQGtxBKagU
-    short-id: 3882f019072c5dcd
-  servername: vruaz.mostserv.xyz
-  client-fingerprint: firefox
-  network: tcp
+- name: 🇺🇸 美国 | USA 23
+  server: 35.212.204.142
+  port: 56723
+  type: vmess
+  uuid: 987dc12e-cd35-4df9-9542-6e96908c754a
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 79.137.192.188
-  port: 2200
+- name: 🇺🇸 美国 | USA 13
+  server: one-for-all.levikogjgfdd.ir
+  port: 8880
   type: vless
-  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
+  uuid: e74e8806-06b5-4fb0-a89e-cf79d88cfd02
   tls: false
   network: ws
   ws-opts:
-    path: /v1
+    path: /pyip
     headers:
-      Host: rzd.ru
+      Host: wild-frog-54a9.170-dcc.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 26
+  server: 104.19.145.222
+  port: 8880
+  type: vless
+  uuid: 288bb3f1-8994-47cf-8bd8-9b7d4d716461
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: newvless2026.nova-b0f3f5.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: 104.20.37.53
+  port: 8080
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  tls: false
+  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/b52a90ada6ab
+    headers:
+      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -163,34 +230,75 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 19
-  - 🇫🇷 法国 | FRA 4
-  - 🇫🇷 法国 | FRA 19
+  - 🇧🇷 巴西 | BRA
+  - 🇫🇷 法国 | FRA 5
+  - 🇫🇷 法国 | FRA 24
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
   - 🇱🇹 立陶宛 | LTU
-  - 🇮🇳 印度 | IND
   - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 12
+  - 🇷🇺 俄罗斯 | RUS
   - 🇳🇱 荷兰 | NLD 11
-  - 🇺🇸 美国 | USA 6
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 20
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇷 巴西 | BRA
+  - 🇬🇧 英国 | GBR 2
+  - 🇸🇬 新加坡 | SGP
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 19
-  - 🇫🇷 法国 | FRA 4
-  - 🇫🇷 法国 | FRA 19
+  - 🇫🇷 法国 | FRA 5
+  - 🇫🇷 法国 | FRA 24
+  - 🇬🇧 英国 | GBR 3
   - 🇱🇹 立陶宛 | LTU
-  - 🇮🇳 印度 | IND
   - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 12
+  - 🇷🇺 俄罗斯 | RUS
   - 🇳🇱 荷兰 | NLD 11
-  - 🇺🇸 美国 | USA 6
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 20
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 23
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇷 法国 | FRA 5
+  - 🇫🇷 法国 | FRA 24
+  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 7
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇷 巴西 | BRA
 rules:
 - MATCH,AUTO
