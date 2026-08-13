@@ -4,24 +4,24 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 5
-  server: fr15.mechvpn.online
-  port: 443
+- name: 🇩🇪 德国 | DEU 12
+  server: 104.26.13.40
+  port: 8880
   type: vless
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
+  uuid: 2b2ed3be-36bd-486d-9d04-ebf5b4be7ae9
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: twilight-heart-dbd6.220-2bd.workers.dev
   udp: true
-- name: 🇫🇷 法国 | FRA 24
-  server: fr199.mechvpn.online
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 152.70.59.205
+  port: 62145
   type: vless
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
 - name: 🇬🇧 英国 | GBR 3
   server: pnnsh.falsemirrov.com
@@ -37,21 +37,7 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇱🇹 立陶宛 | LTU
-  server: lt.nosok-top.com
-  port: 443
-  type: vless
-  uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
-  servername: lt.nosok-top.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
+- name: 🇳🇱 荷兰 | NLD 5
   server: dnlch.mostserv.xyz
   port: 443
   type: vless
@@ -65,42 +51,15 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 143.47.185.78
-  port: 62145
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: 220.130.75.247
+  port: 10000
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
   tls: false
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 12
-  server: ld.242311.xyz
-  port: 443
-  type: vless
-  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
-  tls: true
-  servername: ld.242311.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ld.242311.xyz
   udp: true
-- name: 🇳🇱 荷兰 | NLD 11
-  server: 87.199.205.120.sslip.io
-  port: 443
-  type: vless
-  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bKfIxJpnGI17_v5257WLeZy2mGAli86T1Mf8_8hwETo
-    short-id: 1da052e4ba28e6e9
-  servername: 87.199.205.120.sslip.io
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 8
+- name: 🇺🇸 美国 | USA 16
   server: united.nosok-top.com
   port: 443
   type: vless
@@ -114,29 +73,39 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: codecanyon.net
+- name: 🇺🇸 美国 | USA 4
+  server: 104.18.34.245
   port: 8880
   type: vless
-  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: lingering-lab-91a6.54-8c3.workers.dev
+      Host: square-tree-3dbf.285.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: one-for-all.levikogjgfdd.ir
-  port: 8880
+- name: 🇹🇭 泰国 | THA
+  server: www.true.th
+  port: 80
   type: vless
-  uuid: e74e8806-06b5-4fb0-a89e-cf79d88cfd02
+  uuid: cb700418-90ba-4da0-b319-64a2d46f754e
   tls: false
   network: ws
   ws-opts:
-    path: /pyip
+    path: /kind1
     headers:
-      Host: wild-frog-54a9.170-dcc.workers.dev
+      Host: d3saayob5cvi7l.cloudfront.net
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 104.171.136.172
+  port: 4100
+  type: vless
+  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
   udp: true
 proxy-groups:
 - name: AUTO
@@ -144,16 +113,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 5
-  - 🇫🇷 法国 | FRA 24
+  - 🇩🇪 德国 | DEU 12
+  - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR 3
-  - 🇱🇹 立陶宛 | LTU
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 10
-  - 🇳🇱 荷兰 | NLD 12
-  - 🇳🇱 荷兰 | NLD 11
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 13
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 4
+  - 🇹🇭 泰国 | THA
+  - 🇷🇺 俄罗斯 | RUS 3
 rules:
 - MATCH,AUTO

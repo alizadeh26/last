@@ -4,17 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 23
-  server: 35.212.204.142
-  port: 56723
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: 117.27.228.29
+  port: 10000
   type: vmess
-  uuid: 987dc12e-cd35-4df9-9542-6e96908c754a
+  uuid: 2c90af15-bac7-f850-4c7c-120c5a420636
   alterId: 0
   cipher: auto
   tls: false
   alpn:
   - ''
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 23
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
 rules:
 - MATCH,AUTO
