@@ -4,18 +4,122 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 9
-  server: 130.61.40.253
+- name: 🇧🇷 巴西 | BRA
+  server: 163.176.175.199
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: YJJy7dk2gzKOwuowrsJ+v6QZGEy0q0GZyC0n4NHg8pk=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 2
+  server: 163.176.1.85
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 3
+  server: 163.176.36.206
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: M1Ha2O5QMCqUpIt8Xgvk42c4NWqsMt6z1tRNZ3gMW/Y=
+- name: 🇧🇷 巴西 | BRA 4
+  server: 147.15.91.100
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 7qKgkFPiuE7SbagJv9Qjyb1QXHPEMi2tuEnVaavwhcM=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 5
+  server: 163.176.178.88
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 130.61.180.245
   port: 59924
   type: ss
   cipher: chacha20-ietf-poly1305
   password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
+  udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: 130.61.36.206
+  port: 59924
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.91.246
+  port: 61312
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 129.151.94.56
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: TIA8kOrHKFpcEamkLCrKJjJXhUujmpW7N6vp5rtWh2I=
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 195.133.23.5
+  port: 30331
+  type: ss
+  cipher: aes-256-gcm
+  password: d99c422199e62b6b
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 168.107.93.104
+  port: 56927
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 161.118.213.172
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: qijccmlKE+yYjqqsXkXk0nU529ZEscqKPOm+D/rMh10=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 161.118.210.227
+  port: 56927
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 161.153.115.187
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2ecH6KjZ47PFvs90eNt1AAstlT3n5eZergD2O5IXEas=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA 3
+  - 🇧🇷 巴西 | BRA 4
+  - 🇧🇷 巴西 | BRA 5
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 9
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO

@@ -4,60 +4,132 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR 3
-  server: pnnsh.falsemirrov.com
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.172.133
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 149.130.180.210
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.189.173
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 4
+  server: 157.137.217.4
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 5
+  server: 149.130.191.130
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: r5.teamspeak-service.ru
+  port: 443
+  type: vless
+  uuid: 0435db04-5b38-45bc-8d46-b7c0d94f69bb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6nJG7yiDEfrOCLGD_UfVfYhQ8AOh0w_86HOAPl_0TWQ
+    short-id: 62521d7ac8fc9119
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇮🇳 印度 | IND
+  server: apxc.falsemirrov.com
   port: 443
   type: vless
   uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: lE6w45X8Bwb0HscO6Wa5wnN0qlw7wUuaCW8-iYL5HAQ
-    short-id: bc609efa3b2d052f
-  servername: pnnsh.falsemirrov.com
+    public-key: sbl95eJz_SP1vYb8doCjAJOo0o5NveutEb9J-XKGl1w
+    short-id: 9c2378562188c3cb
+  servername: apxc.falsemirrov.com
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
+- name: 🇳🇱 荷兰 | NLD 2
   server: 152.70.59.205
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 5
-  server: dnlch.mostserv.xyz
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 141.148.245.162
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 134.98.157.168
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: 84.235.168.64
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: dsech.mostserv.xyz
   port: 443
   type: vless
-  uuid: 463a26c2-eba8-0065-89c4-ee5c1373ccbe
+  uuid: 463a26c2-eba8-40ea-89c4-ee5c1373ccbe
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: Q6sZPc96fGUJvHsOjwpAc57V16CajEfhkHHhuv-_Bg4
-    short-id: 0f3adaccbda5e56b
-  servername: dnlch.mostserv.xyz
+    public-key: g0mDPNlv3uOrnxXvBYP3cEjd0ewJuIFlBh93KE5bU3A
+    short-id: d0ca141e839394a3
+  servername: dsech.mostserv.xyz
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 185.185.142.79
-  port: 2200
+- name: 🇺🇸 美国 | USA 8
+  server: fast.nanniang.top
+  port: 8443
   type: vless
-  uuid: 0c4f46c2-afb7-4a80-8f6e-10258d80333e
-  tls: false
+  uuid: 916e3030-6eac-418b-9402-7508ca7d6280
+  tls: true
+  servername: us-akile.nanniang.top
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /v1
+    path: /
+    headers:
+      Host: us-akile.nanniang.top
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: 220.130.75.247
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 16
+- name: 🇺🇸 美国 | USA 27
   server: united.nosok-top.com
   port: 443
   type: vless
@@ -71,27 +143,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 104.171.136.172
-  port: 4100
+- name: 🇺🇸 美国 | USA
+  server: hong1.panel11.ru
+  port: 443
   type: vless
-  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: cb700418-90ba-4da0-b319-64a2d46f754e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /kind1
-    headers:
-      Host: d3saayob5cvi7l.cloudfront.net
+  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: HPucFUE6yU-sL-U2cP8yfY3Qx1QJ6hN9r9hSzzxbU28
+    short-id: efa856184deb7468
+  servername: hong1.panel11.ru
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -99,13 +163,20 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇺🇸 美国 | USA 16
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇹🇭 泰国 | THA
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 4
+  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇩🇪 德国 | DEU 4
+  - 🇮🇳 印度 | IND
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
