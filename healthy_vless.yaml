@@ -4,22 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.172.133
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 149.130.180.210
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL
   server: 149.130.189.173
   port: 62145
@@ -28,16 +12,8 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 4
-  server: 157.137.217.4
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 5
-  server: 149.130.191.130
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.172.133
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -55,20 +31,6 @@ proxies:
     public-key: 6nJG7yiDEfrOCLGD_UfVfYhQ8AOh0w_86HOAPl_0TWQ
     short-id: 62521d7ac8fc9119
   client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇮🇳 印度 | IND
-  server: apxc.falsemirrov.com
-  port: 443
-  type: vless
-  uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: sbl95eJz_SP1vYb8doCjAJOo0o5NveutEb9J-XKGl1w
-    short-id: 9c2378562188c3cb
-  servername: apxc.falsemirrov.com
-  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
@@ -129,20 +91,6 @@ proxies:
     headers:
       Host: us-akile.nanniang.top
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: united.nosok-top.com
-  port: 443
-  type: vless
-  uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: oYo4UjPmIVNSFTLYR7wuadY2v44sVuckzRAKyzi0UAE
-    short-id: a25c781f24d4209f
-  servername: united.nosok-top.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA
   server: hong1.panel11.ru
   port: 443
@@ -163,20 +111,15 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇨🇴 哥伦比亚 | COL 3
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 4
-  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 4
-  - 🇮🇳 印度 | IND
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 9
   - 🇸🇪 瑞典 | SWE 2
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
