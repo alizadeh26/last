@@ -10,25 +10,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 🇩🇪 德国 | DEU 12
-  server: 104.26.13.40
-  port: 8880
-  type: vless
-  uuid: 2b2ed3be-36bd-486d-9d04-ebf5b4be7ae9
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: twilight-heart-dbd6.220-2bd.workers.dev
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 152.70.59.205
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇬🇧 英国 | GBR 3
   server: pnnsh.falsemirrov.com
   port: 443
@@ -43,6 +24,13 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 152.70.59.205
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇳🇱 荷兰 | NLD 5
   server: dnlch.mostserv.xyz
   port: 443
@@ -56,6 +44,16 @@ proxies:
   servername: dnlch.mostserv.xyz
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 185.185.142.79
+  port: 2200
+  type: vless
+  uuid: 0c4f46c2-afb7-4a80-8f6e-10258d80333e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: 220.130.75.247
@@ -79,17 +77,27 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 104.18.34.245
-  port: 8880
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 104.171.136.172
+  port: 4100
   type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /v1
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: cb700418-90ba-4da0-b319-64a2d46f754e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /kind1
     headers:
-      Host: square-tree-3dbf.285.workers.dev
+      Host: d3saayob5cvi7l.cloudfront.net
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: 117.27.228.29
@@ -106,28 +114,6 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: cb700418-90ba-4da0-b319-64a2d46f754e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /kind1
-    headers:
-      Host: d3saayob5cvi7l.cloudfront.net
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 104.171.136.172
-  port: 4100
-  type: vless
-  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -135,16 +121,15 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 12
-  - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 5
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 4
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇭 泰国 | THA
   - 🇷🇺 俄罗斯 | RUS 3
+  - 🇹🇭 泰国 | THA
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -156,20 +141,33 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 12
-  - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 5
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 4
-  - 🇹🇭 泰国 | THA
   - 🇷🇺 俄罗斯 | RUS 3
+  - 🇹🇭 泰国 | THA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 🇨🇳 台湾 | TWN 2
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 9
+  - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO
