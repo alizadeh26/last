@@ -1,8 +1,8 @@
-trojan://ND91608427@relaxed-gull.rooster465.autos:443?allowInsecure=1&sni=relaxed-gull.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081323001
-trojan://AE62539071@tolerant-mosquito.rooster465.autos:443?allowInsecure=1&sni=tolerant-mosquito.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081323003
-trojan://ND91608427@202.78.163.148:443?security=tls&sni=discrete-basilisk.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081323004
-trojan://AE62539071@relative-locust.rooster465.autos:443?security=tls#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081323057
-trojan://AE62539071@enough-basilisk.rooster465.autos:443?allowInsecure=1&sni=#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081323060
-vless://551955b3-46e9-5129-95c9-e7474c15ed6b@31.56.188.152:443?alpn=http/1.1&encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=pl11.fast-connect-service.site&type=tcp#🇵🇱 220 - PL - VLESS/TLS/VISION/UTLS - 443
-vless://7e760d89-a8f4-4a87-8f10-b4af28c61b7f@82.26.91.87:443?alpn=h2&encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=faster.yandex-apicloud.ru&type=tcp#🇵🇱 354 - PL - VLESS/TLS/VISION/UTLS - 443
-vless://a34b5e88-cf0d-4c01-8199-2d1002d3c787@meow-warsaw.nethcloud.top:443?encryption=none&flow=xtls-rprx-vision&pbk=HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U&security=reality&sni=www.wikihow.com&type=tcp#🇩🇪 458 - DE - VLESS/REALITY/PBK/VISION - 443
+trojan://ND91608427@202.78.163.248:443?allowInsecure=0&sni=relaxed-gull.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081404002
+trojan://AE62539071@tolerant-mosquito.rooster465.autos:443?allowInsecure=1&sni=tolerant-mosquito.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081404003
+trojan://ND91608427@202.78.163.148:443?security=tls&sni=discrete-basilisk.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081404004
+trojan://AE62539071@relative-locust.rooster465.autos:443?security=tls#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081404006
+trojan://AE62539071@enough-basilisk.rooster465.autos:443?sni=enough-basilisk.rooster465.autos&type=tcp&fp=chrome#%E5%8D%A2%E6%A3%AE%E5%A0%A1_081404058
+vless://551955b3-46e9-5129-95c9-e7474c15ed6b@31.56.188.152:443?alpn=http/1.1&encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=pl11.fast-connect-service.site&type=tcp#🏳️ 208 - XX - VLESS/TLS/VISION/UTLS - 443
+vless://7e760d89-a8f4-4a87-8f10-b4af28c61b7f@82.26.91.87:443?alpn=h2&encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=faster.yandex-apicloud.ru&type=tcp#🇵🇱 317 - PL - VLESS/TLS/VISION/UTLS - 443
+vless://a34b5e88-cf0d-4c01-8199-2d1002d3c787@meow-warsaw.nethcloud.top:443?encryption=none&flow=xtls-rprx-vision&pbk=HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U&security=reality&sni=www.wikihow.com&type=tcp#🏳️ 415 - XX - VLESS/REALITY/PBK/VISION - 443

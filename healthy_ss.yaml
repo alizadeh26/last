@@ -4,19 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA 2
-  server: 163.176.1.85
-  port: 59319
+- name: 🇩🇪 德国 | DEU 7
+  server: 130.61.180.245
+  port: 59924
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 4
-  server: 147.15.91.100
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7qKgkFPiuE7SbagJv9Qjyb1QXHPEMi2tuEnVaavwhcM=
+  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,7 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 4
+  - 🇩🇪 德国 | DEU 7
 rules:
 - MATCH,AUTO

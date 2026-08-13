@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA 2
-  server: 163.176.1.85
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 4
-  server: 147.15.91.100
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7qKgkFPiuE7SbagJv9Qjyb1QXHPEMi2tuEnVaavwhcM=
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL
   server: 149.130.189.173
   port: 62145
@@ -34,12 +20,39 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 84.235.168.64
-  port: 62145
+- name: 🇩🇪 德国 | DEU 7
+  server: 130.61.180.245
+  port: 59924
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: dsech.mostserv.xyz
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
+  uuid: 463a26c2-eba8-40ea-89c4-ee5c1373ccbe
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: g0mDPNlv3uOrnxXvBYP3cEjd0ewJuIFlBh93KE5bU3A
+    short-id: d0ca141e839394a3
+  servername: dsech.mostserv.xyz
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: hong1.panel11.ru
+  port: 443
+  type: vless
+  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: HPucFUE6yU-sL-U2cP8yfY3Qx1QJ6hN9r9hSzzxbU28
+    short-id: efa856184deb7468
+  servername: hong1.panel11.ru
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 8
@@ -56,40 +69,24 @@ proxies:
     headers:
       Host: us-akile.nanniang.top
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: hong1.panel11.ru
-  port: 443
-  type: vless
-  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: HPucFUE6yU-sL-U2cP8yfY3Qx1QJ6hN9r9hSzzxbU28
-    short-id: efa856184deb7468
-  servername: hong1.panel11.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 4
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇺🇸 美国 | USA 8
+  - 🇩🇪 德国 | DEU 7
+  - 🇸🇪 瑞典 | SWE 2
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 4
+  - 🇩🇪 德国 | DEU 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -97,8 +94,27 @@ proxy-groups:
   proxies:
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇺🇸 美国 | USA 8
+  - 🇸🇪 瑞典 | SWE 2
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 8
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇪 瑞典 | SWE 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 8
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
 rules:
 - MATCH,AUTO
