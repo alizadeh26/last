@@ -63,18 +63,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 200.165.228.47
-  port: 4100
-  type: vless
-  uuid: 6620ef58-9c62-43fe-9596-ff862b200958
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: dnlch.mostserv.xyz
   port: 443
@@ -117,18 +105,6 @@ proxies:
     headers:
       Host: ld.242311.xyz
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 194.26.229.210
-  port: 4100
-  type: vless
-  uuid: 20124617-eba7-4b34-87ad-fcf700ea7dff
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 11
   server: 87.199.205.120.sslip.io
   port: 443
@@ -143,12 +119,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 168.107.81.96
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bK1EEmfRtCrVUfjw8ON888lnrH8V4UsqSH+hiIxx/BQ=
 - name: 🇺🇸 美国 | USA 5
   server: codecanyon.net
   port: 8880
@@ -175,18 +145,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 35.212.204.142
-  port: 56723
-  type: vmess
-  uuid: 987dc12e-cd35-4df9-9542-6e96908c754a
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸 美国 | USA 13
   server: one-for-all.levikogjgfdd.ir
   port: 8880
@@ -199,17 +157,17 @@ proxies:
     headers:
       Host: wild-frog-54a9.170-dcc.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: 104.19.145.222
-  port: 8880
-  type: vless
-  uuid: 288bb3f1-8994-47cf-8bd8-9b7d4d716461
+- name: 🇺🇸 美国 | USA 23
+  server: 35.212.204.142
+  port: 56723
+  type: vmess
+  uuid: 987dc12e-cd35-4df9-9542-6e96908c754a
+  alterId: 0
+  cipher: auto
   tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: newvless2026.nova-b0f3f5.workers.dev
+  alpn:
+  - ''
+  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 20
   server: 104.20.37.53
@@ -224,6 +182,18 @@ proxies:
     headers:
       Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 194.26.229.210
+  port: 4100
+  type: vless
+  uuid: 20124617-eba7-4b34-87ad-fcf700ea7dff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -236,20 +206,17 @@ proxy-groups:
   - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 3
   - 🇱🇹 立陶宛 | LTU
-  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 7
   - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 12
-  - 🇷🇺 俄罗斯 | RUS
   - 🇳🇱 荷兰 | NLD 11
-  - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 20
+  - 🇷🇺 俄罗斯 | RUS
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -257,7 +224,6 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇬🇧 英国 | GBR 2
-  - 🇸🇬 新加坡 | SGP
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -267,18 +233,16 @@ proxy-groups:
   - 🇫🇷 法国 | FRA 24
   - 🇬🇧 英国 | GBR 3
   - 🇱🇹 立陶宛 | LTU
-  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 7
   - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 12
-  - 🇷🇺 俄罗斯 | RUS
   - 🇳🇱 荷兰 | NLD 11
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 20
+  - 🇷🇺 俄罗斯 | RUS
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -292,8 +256,7 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 | FRA 5
   - 🇫🇷 法国 | FRA 24
-  - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇱🇹 立陶宛 | LTU
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
