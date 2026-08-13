@@ -20,61 +20,12 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: r5.teamspeak-service.ru
-  port: 443
-  type: vless
-  uuid: 0435db04-5b38-45bc-8d46-b7c0d94f69bb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6nJG7yiDEfrOCLGD_UfVfYhQ8AOh0w_86HOAPl_0TWQ
-    short-id: 62521d7ac8fc9119
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 152.70.59.205
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 141.148.245.162
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 134.98.157.168
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 9
   server: 84.235.168.64
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: dsech.mostserv.xyz
-  port: 443
-  type: vless
-  uuid: 463a26c2-eba8-40ea-89c4-ee5c1373ccbe
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: g0mDPNlv3uOrnxXvBYP3cEjd0ewJuIFlBh93KE5bU3A
-    short-id: d0ca141e839394a3
-  servername: dsech.mostserv.xyz
-  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 8
@@ -113,12 +64,7 @@ proxy-groups:
   proxies:
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 9
-  - 🇸🇪 瑞典 | SWE 2
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA
 rules:
