@@ -34,20 +34,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: hong1.panel11.ru
-  port: 443
-  type: vless
-  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: HPucFUE6yU-sL-U2cP8yfY3Qx1QJ6hN9r9hSzzxbU28
-    short-id: efa856184deb7468
-  servername: hong1.panel11.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: fast.nanniang.top
   port: 8443
@@ -62,6 +48,20 @@ proxies:
     headers:
       Host: us-akile.nanniang.top
   udp: true
+- name: 🇺🇸 美国 | USA
+  server: hong1.panel11.ru
+  port: 443
+  type: vless
+  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: HPucFUE6yU-sL-U2cP8yfY3Qx1QJ6hN9r9hSzzxbU28
+    short-id: efa856184deb7468
+  servername: hong1.panel11.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -71,7 +71,7 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇸🇪 瑞典 | SWE 2
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
