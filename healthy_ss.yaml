@@ -4,25 +4,25 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 163.176.133.70
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
 - name: 🇬🇧 英国 | GBR 2
   server: 129.151.86.242
   port: 61312
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+- name: 🇧🇷 巴西 | BRA
+  server: 163.176.133.70
+  port: 59319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇬🇧 英国 | GBR 2
+  - 🇧🇷 巴西 | BRA
 rules:
 - MATCH,AUTO

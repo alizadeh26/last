@@ -65,13 +65,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 84.235.160.177
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇳🇱 荷兰 | NLD 10
   server: 143.47.185.78
   port: 62145
@@ -107,18 +100,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-lab-91a6.54-8c3.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: united.nosok-top.com
   port: 443
@@ -133,6 +114,18 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lingering-lab-91a6.54-8c3.workers.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 13
   server: one-for-all.levikogjgfdd.ir
   port: 8880
@@ -145,31 +138,6 @@ proxies:
     headers:
       Host: wild-frog-54a9.170-dcc.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 104.20.37.53
-  port: 8080
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
-  tls: false
-  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/b52a90ada6ab
-    headers:
-      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 194.26.229.210
-  port: 4100
-  type: vless
-  uuid: 20124617-eba7-4b34-87ad-fcf700ea7dff
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -181,14 +149,11 @@ proxy-groups:
   - 🇬🇧 英国 | GBR 3
   - 🇱🇹 立陶宛 | LTU
   - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 7
   - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 12
   - 🇳🇱 荷兰 | NLD 11
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 20
-  - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO

@@ -1,9 +1,12 @@
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.182:443#Server 10 🇬🇧
-vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJAUHJveHlWUE4xMSIsImlkIjoiMDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6Ii8gQFByb3h5VlBOMTEiLCJwb3J0IjoiMjIzMjQiLCJwcyI6IlNlcnZlciAzIPCfh6zwn4enIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
+vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoidjJyYXlucGx1cy12MnJheW5wbHVzLXYycmF5bnBsdXMiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoyMjMyNCwicHMiOiJTZXJ2ZXIgMTMg8J+HrPCfh6ciLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiYXV0byIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
 vless://ad4dd89a-2e4b-4f33-bb96-7e9c4eb85d0b@169.197.113.179:20190?encryption=none&security=none&type=tcp#Server 161 🇬🇧
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+141.98.101.181-443+%7C+116.99ms
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-0258
 ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#%F0%9F%87%AC%F0%9F%87%A7GB-146.70.61.37-0149
 ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-0237
-vless://3f03d985-b3a4-4e48-b317-edad1936f4f3@23.27.20.142:48537?path=/@Marisa_kristi&security=tls&encryption=none&insecure=0&host=jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev#🇬🇧 124 - GB - VLESS/WS/TLS/UTLS - 48537
-vless://6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2@91.193.58.57:2096?encryption=none&fp=chrome&host=free-server.techsonic.dev&path=/free-server.techsonic.dev&security=tls&sni=free-server.techsonic.dev&type=ws#🇬🇧 362 - GB - VLESS/WS/TLS/UTLS - 2096
-vless://98944209-4d92-41b2-9c24-c5ac17b3b493@46.250.250.149:2053?security=reality&sni=www.cloudflare.com&fp=chrome&pbk=2mp1wwmKQyvIVuGujoT0AGoAHwP1IFXlZRj8jB_UnGo&sid=61abecf0a82c31f5&type=tcp&path=/#🇬🇧 502 - GB - VLESS/REALITY/PBK/SID/UTLS - 2053
+vless://3f03d985-b3a4-4e48-b317-edad1936f4f3@23.27.20.142:48537?path=/@Marisa_kristi&security=tls&encryption=none&insecure=0&host=jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev#🇺🇸 136 - US - VLESS/WS/TLS/UTLS - 48537
+vless://6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2@91.193.58.57:2096?encryption=none&fp=chrome&host=free-server.techsonic.dev&path=/free-server.techsonic.dev&security=tls&sni=free-server.techsonic.dev&type=ws#🏳️ 366 - XX - VLESS/WS/TLS/UTLS - 2096
+vless://98944209-4d92-41b2-9c24-c5ac17b3b493@46.250.250.149:2053?security=reality&sni=www.cloudflare.com&fp=chrome&pbk=2mp1wwmKQyvIVuGujoT0AGoAHwP1IFXlZRj8jB_UnGo&sid=61abecf0a82c31f5&type=tcp&path=/#🏳️ 510 - XX - VLESS/REALITY/PBK/SID/UTLS - 2053
+vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?encryption=none&host=google.com&path=/vless/&security=none&type=ws#🇬🇧 527 - GB - VLESS/WS - 80
+vless://ae1c12b0-df98-5f76-9adc-bd3380a3dbbd@191.215.37.90:443?encryption=none&path=/#🇬🇧 567 - GB - VLESS - 443
+trojan://ba07a8af-5544-48ac-ab62-3b6c00a44fa6@217.217.222.230:20004?security=tls&sni=hk.catxstar.com&fp=android&type=tcp&path=/#🇬🇧 626 - GB - Trojan/TLS/UTLS - 20004
