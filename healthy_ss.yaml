@@ -5,37 +5,11 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇧🇷 巴西 | BRA
-  server: 137.131.248.115
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 1HM/x7SUJ1uHRmACfHbU051eV5vmNLtG+fT9AXeoEq0=
-  udp: true
-- name: 🇧🇷 巴西 | BRA 2
   server: 164.152.41.210
   port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: Vmx6M+UKDzQxzXfFy+JeKe8J7CUMdrA/pWe9hMpyGKY=
-- name: 🇧🇷 巴西 | BRA 4
-  server: 147.15.37.163
-  port: 59319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 🇧🇷 巴西 | BRA 3
-  server: 137.131.154.109
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3sN3flK4QS70Seqs/gqSfJg9/N4PVMv7kHbSRtVdWK8=
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 129.146.79.29
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Ziq2yDCbCX0W6GGNC0ba4L99ILN7CVkwZnhtasd/yEU=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -43,9 +17,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 4
-  - 🇧🇷 巴西 | BRA 3
-  - 🇺🇸 美国 | USA 23
 rules:
 - MATCH,AUTO
