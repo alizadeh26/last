@@ -1,13 +1,12 @@
-vless://adce7c2a-3191-49ae-b61c-9b8258ea1b0e@89.208.113.16:443?encryption=none&security=none&type=tcp#Server 6 🇫🇷
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwRk5OOWpLZThqd0Q@38.180.92.242:32245#Server 5 🇫🇷
-trojan://ND91608427@15.237.137.197:443?security=tls&sni=fancy-skink.rooster465.autos#%E6%B3%95%E5%9B%BD_081409014
-trojan://ND91608427@13.36.175.151:443?security=tls&sni=classic-gator.rooster465.autos#%E6%B3%95%E5%9B%BD_081409013
-trojan://QV31589740@great-krill.rooster465.autos:443?security=tls&sni=great-krill.rooster465.autos#%E6%B3%95%E5%9B%BD_081409015
-trojan://AE62539071@distinct-quail.rooster465.autos:443?sni=distinct-quail.rooster465.autos&type=tcp&fp=chrome#%E6%B3%95%E5%9B%BD_081409365
-trojan://AE62539071@chief-cricket.rooster465.autos:443?sni=chief-cricket.rooster465.autos&type=tcp&fp=chrome#%E6%B3%95%E5%9B%BD_081409366
-trojan://AE62539071@one-quail.rooster465.autos:443?sni=one-quail.rooster465.autos&type=tcp&fp=chrome#%E6%B3%95%E5%9B%BD_081409367
-trojan://AE62539071@tough-hermit.rooster465.autos:443?sni=tough-hermit.rooster465.autos&type=tcp&fp=chrome#%E6%B3%95%E5%9B%BD_081409368
-vless://9f0baff8-bdee-4de9-9515-bcc4932b41fa@194.76.154.31:40443?encryption=none&fp=&pbk=MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ&security=reality&sid=a8ae&sni=deepl.com&type=tcp#REALITY|CY🇨🇾
+vless://adce7c2a-3191-49ae-b61c-9b8258ea1b0e@89.208.113.16:443?encryption=none&security=none&type=tcp#Server 6 🇫🇷
+trojan://AE62539071@distinct-quail.rooster465.autos:443?security=tls#%E6%B3%95%E5%9B%BD_081414014
+trojan://AE62539071@tough-hermit.rooster465.autos:443?sni=tough-hermit.rooster465.autos&type=tcp&fp=chrome#%E6%B3%95%E5%9B%BD_081414364
+trojan://AE62539071@chief-cricket.rooster465.autos:443?sni=chief-cricket.rooster465.autos&type=tcp&fp=chrome#%E6%B3%95%E5%9B%BD_081414362
+trojan://AE62539071@one-quail.rooster465.autos:443?sni=one-quail.rooster465.autos&type=tcp&fp=chrome#%E6%B3%95%E5%9B%BD_081414363
+trojan://QV31589740@great-krill.rooster465.autos:443?allowInsecure=0&sni=great-krill.rooster465.autos#%E6%B3%95%E5%9B%BD_081414016
+trojan://ND91608427@15.237.137.197:443?security=tls&sni=fancy-skink.rooster465.autos#%E6%B3%95%E5%9B%BD_081414013
+trojan://ND91608427@classic-gator.rooster465.autos:443?allowInsecure=0&sni=classic-gator.rooster465.autos#%E6%B3%95%E5%9B%BD_081414001
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.77.225.200-8388+%7C+79.63ms
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.255.13.232-8388+%7C+90.86ms
 ss://YWVzLTEyOC1nY206U3lTV0RhUDhybTFORUswd2RMZG9hVjVDbGtTakZEZnc=@173.212.251.231:51058#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+173.212.251.231-51058+%7C+107.94ms

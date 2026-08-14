@@ -4,28 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.231.23
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 158.247.125.22
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.239.194
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: tsarlive.dpdns.org
   port: 443
@@ -67,20 +45,6 @@ proxies:
     headers:
       Host: royal-salad-175d.306.workers.dev
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: pg-de-443-vless-tcp.gigatapbot.top
-  port: 443
-  type: vless
-  uuid: 3b9eb177-6f0c-4d49-be4a-7e5168569f45
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk
-    short-id: c577182abe08e64c
-  servername: pg-de-443-vless-tcp.gigatapbot.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 104.20.37.53
   port: 80
@@ -106,18 +70,6 @@ proxies:
     headers:
       Host: quiet-feather-19f3.410-a69.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-lab-91a6.54-8c3.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 32
   server: codecanyon.net
   port: 8880
@@ -130,17 +82,15 @@ proxies:
     headers:
       Host: dawn-waterfall-6052.360-001.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 33
-  server: codecanyon.net
-  port: 8880
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 104.171.136.172
+  port: 4100
   type: vless
-  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
+  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: soft-scene-d370.55-7ff.workers.dev
+    path: /v1
   udp: true
 - name: 🇺🇸 美国 | USA 41
   server: 104.18.34.245
@@ -154,52 +104,19 @@ proxies:
     headers:
       Host: white-hill-f907.23-b68.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: 104.21.4.10
-  port: 2086
-  type: vless
-  uuid: 9ef1d60d-9e38-49c5-9405-131e11be1f9c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiVGtvRGR4TXdHSzdseGpZWCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
-    headers:
-      Host: muddy-shadow-8905.qara-atayi-1.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 40
-  server: pg-usa2-443-vless-tcp.gigatapbot.top
-  port: 443
-  type: vless
-  uuid: 3b9eb177-6f0c-4d49-be4a-7e5168569f45
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk
-    short-id: c577182abe08e64c
-  servername: pg-usa2-443-vless-tcp.gigatapbot.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 3
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 5
   - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 8
-  - 🇩🇪 德国 | DEU 10
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 32
-  - 🇺🇸 美国 | USA 33
+  - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA 41
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 40
 rules:
 - MATCH,AUTO
