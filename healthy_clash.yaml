@@ -32,14 +32,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 164.90.191.172
-  port: 47260
-  type: vless
-  uuid: dbe453d8-112d-4bad-b353-3ccf60044a23
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: gb1.murhost.network
   port: 443
@@ -73,6 +65,21 @@ proxies:
     headers:
       Host: pl4.lckdwn.ru
   udp: true
+- name: 🇺🇸 美国 | USA 30
+  server: 66.42.72.146
+  port: 46373
+  type: vmess
+  uuid: f98fdefd-1b61-4052-c5b5-2a196f6e0541
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /my-vmess-path
+  udp: true
 - name: 🇺🇸 美国 | USA 32
   server: mgxui.peng.mom
   port: 26602
@@ -91,10 +98,10 @@ proxy-groups:
   - 🇨🇦 加拿大 | CAN 3
   - 🇨🇦 加拿大 | CAN
   - 🇨🇿 捷克 | CZE 2
-  - 🇩🇪 德国 | DEU 3
   - 🇬🇧 英国 | GBR 2
   - 🇵🇱 波兰 | POL 2
   - 🇵🇱 波兰 | POL
+  - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 32
 - name: PROTO-SS
   type: url-test
@@ -110,9 +117,14 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇿 捷克 | CZE 2
-  - 🇩🇪 德国 | DEU 3
   - 🇬🇧 英国 | GBR 2
   - 🇵🇱 波兰 | POL
   - 🇺🇸 美国 | USA 32
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 30
 rules:
 - MATCH,AUTO
