@@ -45,19 +45,6 @@ proxies:
     headers:
       Host: royal-salad-175d.306.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 104.20.37.53
-  port: 80
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
-  tls: false
-  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/b52a90ada6ab
-    headers:
-      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 22
   server: log.bpminecraft.com
   port: 8880
@@ -69,28 +56,6 @@ proxies:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
       Host: quiet-feather-19f3.410-a69.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 32
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dawn-waterfall-6052.360-001.workers.dev
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 104.171.136.172
-  port: 4100
-  type: vless
-  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
   udp: true
 - name: 🇺🇸 美国 | USA 41
   server: 104.18.34.245
@@ -104,6 +69,20 @@ proxies:
     headers:
       Host: white-hill-f907.23-b68.workers.dev
   udp: true
+- name: 🇺🇸 美国 | USA 40
+  server: pg-usa2-443-vless-tcp.gigatapbot.top
+  port: 443
+  type: vless
+  uuid: 3b9eb177-6f0c-4d49-be4a-7e5168569f45
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk
+    short-id: c577182abe08e64c
+  servername: pg-usa2-443-vless-tcp.gigatapbot.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -113,11 +92,9 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 5
   - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 32
-  - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA 41
+  - 🇺🇸 美国 | USA 40
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -126,24 +103,8 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 5
   - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 32
-  - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA 41
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 32
+  - 🇺🇸 美国 | USA 40
 rules:
 - MATCH,AUTO

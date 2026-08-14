@@ -3,8 +3,8 @@ ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M@103.106.229.69:9090#Server 105 🇸🇬
 vmess://eyJhZGQiOiIxNDkuODguMjMuMjAyIiwicG9ydCI6IjE4MDAwIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InRjcCIsInYiOiIyIiwicHMiOiLmlrDliqDlnaFfMDgxNDE0MDAyIiwiaG9zdCI6IiIsInBhdGgiOiIiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
 trojan://AE62539071@integral-quetzal.rooster465.autos:443?allowInsecure=1&sni=integral-quetzal.rooster465.autos#%E6%96%B0%E5%8A%A0%E5%9D%A1_081414001
 trojan://AE62539071@adapted-martin.rooster465.autos:443?sni=adapted-martin.rooster465.autos&type=tcp&fp=chrome#%E6%96%B0%E5%8A%A0%E5%9D%A1_081414544
-trojan://AE62539071@massive-terrapin.rooster465.autos:443?sni=massive-terrapin.rooster465.autos&type=tcp&fp=chrome#%E6%96%B0%E5%8A%A0%E5%9D%A1_081414545
 trojan://AE62539071@simple-rodent.rooster465.autos:443?sni=simple-rodent.rooster465.autos&type=tcp&fp=chrome#%E6%96%B0%E5%8A%A0%E5%9D%A1_081414546
+trojan://AE62539071@massive-terrapin.rooster465.autos:443?sni=massive-terrapin.rooster465.autos&type=tcp&fp=chrome#%E6%96%B0%E5%8A%A0%E5%9D%A1_081414545
 trojan://AE62539071@absolute-hare.rooster465.autos:443?sni=absolute-hare.rooster465.autos&type=tcp&fp=chrome#%E6%96%B0%E5%8A%A0%E5%9D%A1_081414547
 trojan://AE62539071@54.169.241.164:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=rested-osprey.rooster465.autos#%E6%96%B0%E5%8A%A0%E5%9D%A1_081414551
 trojan://AE62539071@13.212.44.180:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=smooth-hornet.rooster465.autos#%E6%96%B0%E5%8A%A0%E5%9D%A1_081414552
@@ -18,6 +18,7 @@ trojan://AE62539071@47.128.150.245:443?security=tls&insecure=0&headerType=none&f
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpURkVsRzJGVnF5cUc=@176.97.64.144:8388#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+176.97.64.144-8388+%7C+231.83ms
 ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206Zm52bzgycDl5NEFLeWtaWHlJRnRub2RGeTZmUW1XblZsSTJTdkdsZU9CMD0=@167.150.100.115:27755#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+167.150.100.115-27755+%7C+226.61ms
 vless://9206ae06-88ee-49b1-a558-531ade80fcaa@178.128.112.70:443?security=reality&encryption=none&pbk=-O8QFkqeMAc6TzQp6eY1s38my_8jhBd7HDHxNki6QlY&headerType=none&fp=chrome&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=www.amazon.com&sid=7f7f#REALITY|SG🇸🇬
-vless://1178e691-88c5-4c7d-b4ea-1cefcdf52553@52.76.177.127:17771?encryption=none&security=none&type=ws&path=/#🏳️ 21 - XX - VLESS/WS - 17771
-vless://5ad0bed3-68ac-495e-b778-8b2d0e1dc176@52.74.176.20:443?encryption=none&security=none&type=ws&path=/#🇸🇬 242 - SG - VLESS/WS - 443
-vless://efd11a89-7506-44ce-95b6-6654859f155b@178.128.52.52:443?security=reality&type=tcp&alpn=h2&sni=zoom.us&fp=chrome&flow=xtls-rprx-vision&sid=5a42dbd7e26a0415&pbk=EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI&encryption=none#🇺🇸 621 - US - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://1178e691-88c5-4c7d-b4ea-1cefcdf52553@52.76.177.127:17771?encryption=none&security=none&type=ws&path=/#🇸🇬 31 - SG - VLESS/WS - 17771
+vless://1bc380b1-cff7-446f-b13f-5c0ad29fc75a@zero.csmaster.ggff.net:443?security=tls&type=ws&path=/&sni=zero.csmaster.ggff.net&fp=chrome&encryption=none#🇸🇬 45 - SG - VLESS/WS/TLS/UTLS - 443
+vless://5ad0bed3-68ac-495e-b778-8b2d0e1dc176@52.74.176.20:443?encryption=none&security=none&type=ws&path=/#🇸🇬 236 - SG - VLESS/WS - 443
+vless://b8f3a337-ad39-4064-95f1-33a725a65877@152.42.217.27:4321?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=www.yahoo.com&fp=chrome&flow=xtls-rprx-vision&sid=950e9d42106bedae&pbk=iFKNWOLqlwrSmvR8wkxap1u85leVrr6YqEBy3Vn8WX0#🇸🇬 499 - SG - VLESS/REALITY/PBK/SID/VISION/UTLS - 4321
