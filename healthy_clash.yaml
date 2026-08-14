@@ -4,83 +4,275 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: tsarlive.dpdns.org
+- name: 🇧🇷 巴西 | BRA
+  server: 147.15.18.110
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 41V7PSJSBS7f7AgDZyYEm5ZcP/ruYl3OFjo5wWTOhi4=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 3
+  server: 163.176.212.36
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Odwl6fTZmZrBcaH2WNDIhqDu4MZO/5yFCTO2CeN8G5M=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 2
+  server: 163.176.115.182
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9jbr4rN/jUHADrXAvzott4jArdE7p9kmG9Ya2DJw/iw=
+- name: 🇧🇷 巴西 | BRA 4
+  server: 163.176.240.6
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Wy1UImjn4slIMGk7alrakt+yyl9YHXCMhtO5RypXDPE=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 5
+  server: 163.176.254.175
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 7pTuen2wPOFpfCTvsQCW/zE35d9zLqoiYoI9LEd+t6s=
+- name: 🇨🇦 加拿大 | CAN
+  server: 142.4.216.225
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
+  udp: true
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 51.222.12.127
+  port: 445
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇧🇷 巴西 | BRA 7
+  server: 163.176.64.97
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: vm/54x6x1jshW8TH5BPO2MAMtQ1M5esrFpb+DydSbhk=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 6
+  server: 163.176.64.177
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: T8TtEYHAqJv57kSjJsjiKxTIfDguT7OW8SRF2wAY7mM=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 8
+  server: 163.176.85.126
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: tmNoITDlBC6uGpvPYjou7PZKAH2MOs9tHjig37+TT/Q=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 9
+  server: 163.176.9.233
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: zvF08Bwd2j17r3Sg+VIFRKvF9JuHqm9e4AJM8opefY0=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 10
+  server: 164.152.59.44
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: xBKROEwcEBC8SYIsmrKJ5fIz85eNFhMVk4qy4zbnPd0=
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.222.20
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.224.224
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇨🇴 哥伦比亚 | COL 5
+  server: 157.137.237.218
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 4
+  server: 157.137.236.69
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 157.137.225.34
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇩🇪 德国 | DEU 6
+  server: 35.158.7.204
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 35.158.7.204
+  port: 22223
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 35.158.7.204
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇿 捷克 | CZE 2
+  server: ch1.murhost.network
   port: 443
   type: vless
-  uuid: e4dc8a93-ddfc-4f70-b97f-bbc04b0b6c7b
+  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
   tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: tsarlive.dpdns.org
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V-B12dvv0fVIwcmcRNdMQIcc4nmqsYB_PR_3X4VVB0A
+    short-id: 91a7a393d805f5c6
+  servername: ch1.murhost.network
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tsar-tun
-    headers:
-      Host: tsarlive.dpdns.org
+  network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: neth.lckdwn.ru
+- name: 🇬🇧 英国 | GBR 2
+  server: gb1.murhost.network
   port: 443
+  type: vless
+  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE
+    short-id: 84f9881951050a30
+  servername: gb1.murhost.network
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 54.36.174.140
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: neth.lckdwn.ru
+  port: 8443
   type: vless
   uuid: 0db4a87c-c280-4a5f-ae97-903768c5ef4c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth.lckdwn.ru
+  tls: true
+  servername: neth.lckdwn.ru
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
+- name: 🇳🇱 荷兰 | NLD 7
   server: log.bpminecraft.com
   port: 8880
   type: vless
-  uuid: 1cefdbfd-6032-43d5-ac13-f58b4498e2f7
+  uuid: c6c5ad2f-b4d5-450f-862f-341cebb7f9b5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: empty-rain-1df4.332-633.workers.dev
+  udp: true
+- name: 🇮🇩 印尼 | IDN
+  server: 202.47.89.133
+  port: 53548
+  type: vmess
+  uuid: 3a03613b-bbac-4a22-bee6-2c9a751a2761
+  alterId: 0
+  cipher: none
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /dkfjh222
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: log.bpminecraft.com
+  port: 8880
+  type: vless
+  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: royal-salad-175d.306.workers.dev
+      Host: lucky-cake-4f58.318-5ee.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 22
+- name: 🇺🇸 美国 | USA 18
   server: log.bpminecraft.com
   port: 8880
   type: vless
-  uuid: 486ebf01-0b45-4c38-9ef6-198aa0f9d2c3
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: quiet-feather-19f3.410-a69.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 41
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
+  uuid: a8985e6a-f338-4b44-9a41-f94495603a96
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: white-hill-f907.23-b68.workers.dev
+      Host: dawn-cell-346f.238-df6.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 40
-  server: pg-usa2-443-vless-tcp.gigatapbot.top
-  port: 443
+- name: 🇺🇸 美国 | USA 11
+  server: 172.64.88.168
+  port: 8880
   type: vless
-  uuid: 3b9eb177-6f0c-4d49-be4a-7e5168569f45
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk
-    short-id: c577182abe08e64c
-  servername: pg-usa2-443-vless-tcp.gigatapbot.top
-  client-fingerprint: firefox
+  uuid: b4883d27-3151-4adf-92b1-841c0dccd1ea
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: damp-surf-aacf.296-8ed.workers.dev
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 199.232.78.150
+  port: 80
+  type: vless
+  uuid: 16569657-116c-46ed-8920-758ab8abaac4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Vpsdelta2.com
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 85.198.103.253
+  port: 21018
+  type: vless
+  uuid: f5a0d1e9-a6da-49dc-86ed-afefa39ce3ed
+  tls: false
   network: tcp
   udp: true
 proxy-groups:
@@ -89,22 +281,97 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 3
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA 4
+  - 🇧🇷 巴西 | BRA 5
+  - 🇨🇦 加拿大 | CAN
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇧🇷 巴西 | BRA 7
+  - 🇧🇷 巴西 | BRA 6
+  - 🇧🇷 巴西 | BRA 8
+  - 🇧🇷 巴西 | BRA 9
+  - 🇧🇷 巴西 | BRA 10
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇨🇴 哥伦比亚 | COL 4
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇨🇿 捷克 | CZE 2
+  - 🇬🇧 英国 | GBR 2
+  - 🇵🇱 波兰 | POL
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇮🇩 印尼 | IDN
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 11
   - 🇩🇪 德国 | DEU 5
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 41
-  - 🇺🇸 美国 | USA 40
+  - 🇳🇱 荷兰 | NLD 5
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 3
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA 4
+  - 🇧🇷 巴西 | BRA 5
+  - 🇨🇦 加拿大 | CAN
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇧🇷 巴西 | BRA 7
+  - 🇧🇷 巴西 | BRA 6
+  - 🇧🇷 巴西 | BRA 8
+  - 🇧🇷 巴西 | BRA 9
+  - 🇧🇷 巴西 | BRA 10
+  - 🇵🇱 波兰 | POL
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇨🇴 哥伦比亚 | COL 4
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇨🇿 捷克 | CZE 2
+  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 11
   - 🇩🇪 德国 | DEU 5
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 41
-  - 🇺🇸 美国 | USA 40
+  - 🇳🇱 荷兰 | NLD 5
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇩 印尼 | IDN
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 | CAN 2
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 3
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA 7
 rules:
 - MATCH,AUTO

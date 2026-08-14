@@ -5,11 +5,94 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇧🇷 巴西 | BRA
-  server: 164.152.41.210
+  server: 147.15.18.110
   port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: Vmx6M+UKDzQxzXfFy+JeKe8J7CUMdrA/pWe9hMpyGKY=
+  password: 41V7PSJSBS7f7AgDZyYEm5ZcP/ruYl3OFjo5wWTOhi4=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 3
+  server: 163.176.212.36
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Odwl6fTZmZrBcaH2WNDIhqDu4MZO/5yFCTO2CeN8G5M=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 2
+  server: 163.176.115.182
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9jbr4rN/jUHADrXAvzott4jArdE7p9kmG9Ya2DJw/iw=
+- name: 🇧🇷 巴西 | BRA 4
+  server: 163.176.240.6
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Wy1UImjn4slIMGk7alrakt+yyl9YHXCMhtO5RypXDPE=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 5
+  server: 163.176.254.175
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 7pTuen2wPOFpfCTvsQCW/zE35d9zLqoiYoI9LEd+t6s=
+- name: 🇨🇦 加拿大 | CAN
+  server: 142.4.216.225
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
+  udp: true
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 51.222.12.127
+  port: 445
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇧🇷 巴西 | BRA 7
+  server: 163.176.64.97
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: vm/54x6x1jshW8TH5BPO2MAMtQ1M5esrFpb+DydSbhk=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 6
+  server: 163.176.64.177
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: T8TtEYHAqJv57kSjJsjiKxTIfDguT7OW8SRF2wAY7mM=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 8
+  server: 163.176.85.126
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: tmNoITDlBC6uGpvPYjou7PZKAH2MOs9tHjig37+TT/Q=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 9
+  server: 163.176.9.233
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: zvF08Bwd2j17r3Sg+VIFRKvF9JuHqm9e4AJM8opefY0=
+  udp: true
+- name: 🇧🇷 巴西 | BRA 10
+  server: 164.152.59.44
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: xBKROEwcEBC8SYIsmrKJ5fIz85eNFhMVk4qy4zbnPd0=
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 54.36.174.140
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -17,5 +100,17 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 3
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA 4
+  - 🇧🇷 巴西 | BRA 5
+  - 🇨🇦 加拿大 | CAN
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇧🇷 巴西 | BRA 7
+  - 🇧🇷 巴西 | BRA 6
+  - 🇧🇷 巴西 | BRA 8
+  - 🇧🇷 巴西 | BRA 9
+  - 🇧🇷 巴西 | BRA 10
+  - 🇵🇱 波兰 | POL
 rules:
 - MATCH,AUTO
