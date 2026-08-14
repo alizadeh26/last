@@ -18,6 +18,14 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 164.90.191.172
+  port: 47260
+  type: vless
+  uuid: dbe453d8-112d-4bad-b353-3ccf60044a23
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: gb1.murhost.network
   port: 443
@@ -60,6 +68,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇿 捷克 | CZE 2
+  - 🇩🇪 德国 | DEU 3
   - 🇬🇧 英国 | GBR 2
   - 🇵🇱 波兰 | POL
   - 🇺🇸 美国 | USA 32
