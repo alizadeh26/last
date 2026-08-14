@@ -4,7 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 17
+- name: 🇺🇸 美国 | USA 30
+  server: 66.42.72.146
+  port: 46373
+  type: vmess
+  uuid: f98fdefd-1b61-4052-c5b5-2a196f6e0541
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /my-vmess-path
+  udp: true
+- name: 🇺🇸 美国 | USA 27
   server: www.true.th
   port: 80
   type: vmess
@@ -21,28 +36,13 @@ proxies:
     headers:
       Host: d7pu5mzr9c4b0.cloudfront.net
   udp: true
-- name: 🇮🇩 印尼 | IDN
-  server: 202.47.89.133
-  port: 53548
-  type: vmess
-  uuid: 3a03613b-bbac-4a22-bee6-2c9a751a2761
-  alterId: 0
-  cipher: none
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /dkfjh222
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 17
-  - 🇮🇩 印尼 | IDN
+  - 🇺🇸 美国 | USA 30
+  - 🇺🇸 美国 | USA 27
 rules:
 - MATCH,AUTO
