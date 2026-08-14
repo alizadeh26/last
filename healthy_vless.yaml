@@ -18,22 +18,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇨🇴 哥伦比亚 | COL 5
-  server: 157.137.237.218
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 4
-  server: 157.137.236.69
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 3
   server: 157.137.225.34
   port: 62145
@@ -41,6 +25,20 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+- name: 🇨🇿 捷克 | CZE 2
+  server: ch1.murhost.network
+  port: 443
+  type: vless
+  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V-B12dvv0fVIwcmcRNdMQIcc4nmqsYB_PR_3X4VVB0A
+    short-id: 91a7a393d805f5c6
+  servername: ch1.murhost.network
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: 35.158.7.204
   port: 22224
@@ -65,18 +63,18 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇿 捷克 | CZE 2
-  server: ch1.murhost.network
+- name: 🇩🇪 德国 | DEU 10
+  server: nl1.murhost.network
   port: 443
   type: vless
   uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: V-B12dvv0fVIwcmcRNdMQIcc4nmqsYB_PR_3X4VVB0A
-    short-id: 91a7a393d805f5c6
-  servername: ch1.murhost.network
-  client-fingerprint: chrome
+    public-key: rkRBWVPGbMdh1UXAMu0I019NbBFWoBh4W1T856oyl2o
+    short-id: bbab5af2663db00a
+  servername: nl1.murhost.network
+  client-fingerprint: qq
   network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR 2
@@ -93,28 +91,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: neth.lckdwn.ru
-  port: 8443
-  type: vless
-  uuid: 0db4a87c-c280-4a5f-ae97-903768c5ef4c
-  tls: true
-  servername: neth.lckdwn.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: log.bpminecraft.com
-  port: 8880
-  type: vless
-  uuid: c6c5ad2f-b4d5-450f-862f-341cebb7f9b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: empty-rain-1df4.332-633.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 20
   server: log.bpminecraft.com
   port: 8880
@@ -127,17 +103,15 @@ proxies:
     headers:
       Host: lucky-cake-4f58.318-5ee.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: log.bpminecraft.com
-  port: 8880
+- name: 🇳🇱 荷兰 | NLD 9
+  server: neth.lckdwn.ru
+  port: 8443
   type: vless
-  uuid: a8985e6a-f338-4b44-9a41-f94495603a96
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: dawn-cell-346f.238-df6.workers.dev
+  uuid: 0db4a87c-c280-4a5f-ae97-903768c5ef4c
+  tls: true
+  servername: neth.lckdwn.ru
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 11
   server: 172.64.88.168
@@ -151,24 +125,18 @@ proxies:
     headers:
       Host: damp-surf-aacf.296-8ed.workers.dev
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 199.232.78.150
-  port: 80
+- name: 🇺🇸 美国 | USA 22
+  server: pg-usa2-443-vless-tcp.gigatapbot.top
+  port: 443
   type: vless
-  uuid: 16569657-116c-46ed-8920-758ab8abaac4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Vpsdelta2.com
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 85.198.103.253
-  port: 21018
-  type: vless
-  uuid: f5a0d1e9-a6da-49dc-86ed-afefa39ce3ed
-  tls: false
+  uuid: 3b9eb177-6f0c-4d49-be4a-7e5168569f45
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk
+    short-id: c577182abe08e64c
+  servername: pg-usa2-443-vless-tcp.gigatapbot.top
+  client-fingerprint: firefox
   network: tcp
   udp: true
 proxy-groups:
@@ -179,20 +147,16 @@ proxy-groups:
   proxies:
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇨🇴 哥伦比亚 | COL 5
-  - 🇨🇴 哥伦比亚 | COL 4
   - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇿 捷克 | CZE 2
   - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
-  - 🇨🇿 捷克 | CZE 2
+  - 🇩🇪 德国 | DEU 10
   - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 7
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 18
+  - 🇳🇱 荷兰 | NLD 9
   - 🇺🇸 美国 | USA 11
-  - 🇩🇪 德国 | DEU 5
-  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA 22
 rules:
 - MATCH,AUTO
