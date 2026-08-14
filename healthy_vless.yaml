@@ -12,11 +12,11 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 5
-  server: 157.137.210.4
-  port: 62145
+- name: 🇩🇪 德国 | DEU 3
+  server: 164.90.191.172
+  port: 47260
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: dbe453d8-112d-4bad-b353-3ccf60044a23
   tls: false
   network: tcp
   udp: true
@@ -32,6 +32,14 @@ proxies:
     short-id: 91a7a393d805f5c6
   servername: ch1.murhost.network
   client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 5
+  server: 157.137.210.4
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR 2
@@ -56,14 +64,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 158.178.150.85
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇵🇱 波兰 | POL
   server: pl4.lckdwn.ru
   port: 443
@@ -75,54 +75,6 @@ proxies:
     path: /
     headers:
       Host: pl4.lckdwn.ru
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 172.66.200.130
-  port: 8880
-  type: vless
-  uuid: a51d8a82-faec-44f4-8882-441a2e7f0ce4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: spring-math-5c8c.434.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 104.17.123.204
-  port: 8880
-  type: vless
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 172.64.88.168
-  port: 8880
-  type: vless
-  uuid: b4883d27-3151-4adf-92b1-841c0dccd1ea
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: damp-surf-aacf.296-8ed.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 104.17.191.15
-  port: 8880
-  type: vless
-  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-haze-ab00.236-68b.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 34
   server: 172.64.88.251
@@ -136,6 +88,15 @@ proxies:
     headers:
       Host: patient-cake-39c7.44-e7a.workers.dev
   udp: true
+- name: 🇺🇸 美国 | USA 32
+  server: mgxui.peng.mom
+  port: 26602
+  type: vless
+  uuid: b0979c88-5a95-45c7-a46b-16b213b3e841
+  tls: true
+  servername: mgxui.peng.mom
+  client-fingerprint: chrome
+  network: tcp
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -143,16 +104,13 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL 4
-  - 🇨🇴 哥伦比亚 | COL 5
+  - 🇩🇪 德国 | DEU 3
   - 🇨🇿 捷克 | CZE 2
+  - 🇨🇴 哥伦比亚 | COL 5
   - 🇬🇧 英国 | GBR 2
   - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 3
   - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 34
+  - 🇺🇸 美国 | USA 32
 rules:
 - MATCH,AUTO
