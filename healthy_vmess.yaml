@@ -4,20 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: 117.27.228.29
-  port: 10000
+- name: 🇮🇩 印尼 | IDN
+  server: 202.47.89.133
+  port: 53548
   type: vmess
-  uuid: 2c90af15-bac7-f850-4c7c-120c5a420636
+  uuid: 3a03613b-bbac-4a22-bee6-2c9a751a2761
   alterId: 0
-  cipher: auto
+  cipher: none
   tls: false
   alpn:
   - ''
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dkfjh222
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇮🇩 印尼 | IDN
 rules:
 - MATCH,AUTO

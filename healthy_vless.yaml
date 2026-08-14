@@ -5,22 +5,67 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.189.173
+  server: 158.247.125.22
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.172.133
+  server: 157.137.231.23
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+- name: 🇩🇪 德国 | DEU 5
+  server: pg-de-443-vless-tcp.gigatapbot.top
+  port: 443
+  type: vless
+  uuid: 3b9eb177-6f0c-4d49-be4a-7e5168569f45
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk
+    short-id: c577182abe08e64c
+  servername: pg-de-443-vless-tcp.gigatapbot.top
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
+- name: 🇫🇷 法国 | FRA 10
+  server: uwu.dianawpaw36.dpdns.org
+  port: 2053
+  type: vless
+  uuid: 79dafc6f-e61b-46cf-8a3c-74f6304d230c
+  tls: true
+  alpn:
+  - h2
+  servername: uwu.dianawpaw36.dpdns.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@blueKnight_net
+    headers:
+      Host: uwu.dianawpaw36.dpdns.org
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: new01.asaltabie.monster
+  port: 443
+  type: vless
+  uuid: d0f4d620-db2b-45e0-8353-a073461b1130
+  tls: true
+  alpn:
+  - h2
+  - h3
+  servername: new01.asaltabie.monster
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: new01.asaltabie.monster
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
   server: dsech.mostserv.xyz
   port: 443
   type: vless
@@ -34,33 +79,55 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: fast.nanniang.top
-  port: 8443
+- name: 🇳🇱 荷兰 | NLD 4
+  server: neth.lckdwn.ru
+  port: 443
   type: vless
-  uuid: 916e3030-6eac-418b-9402-7508ca7d6280
-  tls: true
-  servername: us-akile.nanniang.top
-  client-fingerprint: chrome
+  uuid: 0db4a87c-c280-4a5f-ae97-903768c5ef4c
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: us-akile.nanniang.top
+      Host: neth.lckdwn.ru
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: hong1.panel11.ru
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 85.92.111.38
+  port: 4100
+  type: vless
+  uuid: 0c4f46c2-afb7-4a80-8f6e-10258d80333e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: pg-usa2-443-vless-tcp.gigatapbot.top
   port: 443
   type: vless
-  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
+  uuid: 3b9eb177-6f0c-4d49-be4a-7e5168569f45
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: HPucFUE6yU-sL-U2cP8yfY3Qx1QJ6hN9r9hSzzxbU28
-    short-id: efa856184deb7468
-  servername: hong1.panel11.ru
+    public-key: VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk
+    short-id: c577182abe08e64c
+  servername: pg-usa2-443-vless-tcp.gigatapbot.top
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇹🇭 泰国 | THA 2
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: cb700418-90ba-4da0-b319-64a2d46f754e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /kind1
+    headers:
+      Host: d3saayob5cvi7l.cloudfront.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -70,8 +137,13 @@ proxy-groups:
   proxies:
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU 5
+  - 🇫🇷 法国 | FRA 10
+  - 🇩🇪 德国 | DEU 7
+  - 🇸🇪 瑞典 | SWE
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 14
+  - 🇹🇭 泰国 | THA 2
 rules:
 - MATCH,AUTO
