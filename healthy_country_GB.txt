@@ -1,7 +1,5 @@
-vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsInBvcnQiOjIyMzI0LCJwcyI6IlNlcnZlciAxNyDwn4es8J+HpyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJhdXRvIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
-vless://ad4dd89a-2e4b-4f33-bb96-7e9c4eb85d0b@169.197.113.179:20190?encryption=none&security=none&type=tcp#Server 161 🇬🇧
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-0218
-ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-0241
-vmess://eyJhZGQiOiI1Ny4xMjkuMTMyLjIyMyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiZ29vZ2xlLmNvbSIsImlkIjoiYTI1Y2JmMTEtMjkwOC00YTFiLWEzYTgtOWE1NzE3NzdkY2EzIiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzc1wvIiwicG9ydCI6IjgwIiwicHMiOiJVU1x1ZDgzY1x1ZGRmYVx1ZDgzY1x1ZGRmOCB8IGdvb2dsZS5jb20tODAgfCAzLjI1bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
-vless://6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2@91.193.58.108:2096?security=tls&type=ws&path=/free-server.techsonic.dev&host=free-server.techsonic.dev&sni=free-server.techsonic.dev&fp=chrome#🇬🇧 363 - GB - VLESS/WS/TLS/UTLS - 2096
-vless://a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac@gb1.murhost.network:443?flow=xtls-rprx-vision&security=reality&encryption=none&sni=gb1.murhost.network&fp=firefox&pbk=-nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE&sid=84f9881951050a30&type=tcp&path=/#🇬🇧 537 - GB - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#Server 23 🇬🇧
+ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#Server 120 🇬🇧
+vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwiaG9zdCI6IiIsImlkIjoiMDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyIiwibmV0IjoidGNwIiwicGF0aCI6IlwvIiwicG9ydCI6IjIyMzI0IiwicHMiOiJHQlx1ZDgzY1x1ZGRlY1x1ZDgzY1x1ZGRlNyB8IDY2LjE2My4xMTcuNTgtMjIzMjQgfCA4OS4wMm1zIiwic2N5IjoiYXV0byIsInR5cGUiOiJub25lIn0=
+vless://6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2@91.193.58.57:2096?encryption=none&fp=chrome&host=free-server.techsonic.dev&path=/free-server.techsonic.dev&security=tls&sni=free-server.techsonic.dev&type=ws#🇬🇧 285 - GB - VLESS/WS/TLS/UTLS - 2096
+vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?encryption=none&host=google.com&path=/vless/&security=none&type=ws#🏳️ 402 - XX - VLESS/WS - 80
