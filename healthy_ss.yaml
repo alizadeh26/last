@@ -32,13 +32,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: YyppYr+19SFyy4WAU2OmSlq+NwKjR+L0oV2CCJ6rMAM=
   udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: 161.153.82.253
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: plOiPuT3hE6D4+jexk3dGDPQyjA68wlwEbM9QobMze8=
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -49,6 +42,5 @@ proxy-groups:
   - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 8
-  - 🇺🇸 美国 | USA 24
 rules:
 - MATCH,AUTO
