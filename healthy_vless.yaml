@@ -56,38 +56,6 @@ proxies:
     headers:
       Host: rzd.ru
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 104.171.132.128
-  port: 2200
-  type: vless
-  uuid: 6c0ced37-dd9c-43f2-b474-6dafe036c44b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 8
-  server: 104.171.132.128
-  port: 4100
-  type: vless
-  uuid: 6c0ced37-dd9c-43f2-b474-6dafe036c44b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 9
-  server: 168.222.140.236
-  port: 4100
-  type: vless
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 4
   server: 104.18.34.245
   port: 8880
@@ -99,6 +67,30 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: dawn-waterfall-6052.360-001.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-tree-3dbf.285.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 172.67.152.71
+  port: 8880
+  type: vless
+  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lively-dream-d892.262.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: france.io-com-de-dev.org
@@ -116,17 +108,15 @@ proxies:
     headers:
       Host: france.io-com-de-dev.org
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 172.67.152.71
-  port: 8880
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 185.185.142.79
+  port: 2200
   type: vless
-  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  uuid: 0c4f46c2-afb7-4a80-8f6e-10258d80333e
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lively-dream-d892.262.workers.dev
+    path: /v1
   udp: true
 - name: 🇺🇸 美国 | USA 29
   server: codecanyon.net
@@ -140,17 +130,6 @@ proxies:
     headers:
       Host: dawn-waterfall-6052.360-001.workers.dev
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 168.222.203.14
-  port: 4100
-  type: vless
-  uuid: 2e79f3ca-b8db-4d4d-a96e-8f7313480696
-  tls: false
-  servername: live.ok.ru
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -162,13 +141,11 @@ proxy-groups:
   - 🇫🇷 法国 | FRA 7
   - 🇳🇱 荷兰 | NLD 5
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 6
-  - 🇷🇺 俄罗斯 | RUS 8
-  - 🇷🇺 俄罗斯 | RUS 9
   - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 3
+  - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 3
+  - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA 29
-  - 🇷🇺 俄罗斯 | RUS 5
 rules:
 - MATCH,AUTO
