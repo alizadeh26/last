@@ -5,54 +5,28 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.213.155
+  server: 157.137.236.210
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 145.223.68.48
-  port: 443
+- name: 🇩🇪 德国 | DEU 4
+  server: 212.100.171.149
+  port: 5025
   type: vless
-  uuid: dc495bf5-9591-43aa-83de-d8dc7a8769b8
+  uuid: 1c2b69b0-c777-40fc-8a29-f87c28a451cd
   tls: false
-  network: ws
-  ws-opts:
-    path: /vless
+  network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 158.178.153.121
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.190.130
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 69.84.182.152
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: download.pusytroller.gq
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -61,9 +35,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇫🇷 法国 | FRA 2
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 16
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇩🇪 德国 | DEU 4
+  - 🇨🇴 哥伦比亚 | COL 2
 rules:
 - MATCH,AUTO

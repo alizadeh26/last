@@ -4,11 +4,23 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇹🇭 泰国 | THA
-  server: www.true.th
-  port: 80
+- name: 🇭🇰 香港 | HKG 4
+  server: 43.132.192.16
+  port: 9527
   type: vmess
-  uuid: a150d554-e962-4632-829f-ee583ada3f95
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+  alterId: 0
+  cipher: chacha20-poly1305
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: t.cnmjcn.cyou
+  port: 16632
+  type: vmess
+  uuid: d52b72b0-a509-490a-adae-23da2348d29c
   alterId: 0
   cipher: auto
   tls: false
@@ -17,9 +29,26 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /htun
+    path: /
     headers:
-      Host: d7pu5mzr9c4b0.cloudfront.net
+      Host: 82d16f3a12ad1d0871e0270510bf2ef6.mobgslb.tbcache.com
+  udp: true
+- name: 🇭🇰 香港 | HKG 10
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: fd15f1d9-a3f5-41e3-a755-f3e7bb32d78d
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 67102451140aedb1cbfa18e08d87aeeb.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -27,6 +56,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 | THA
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG 10
 rules:
 - MATCH,AUTO
