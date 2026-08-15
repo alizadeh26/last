@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 5
+- name: 🇭🇰 香港 | HKG
   server: 156.245.232.239
   port: 35043
   type: vmess
@@ -19,60 +19,12 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 66.42.72.146
-  port: 46373
-  type: vmess
-  uuid: f98fdefd-1b61-4052-c5b5-2a196f6e0541
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /my-vmess-path
-  udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: 47.243.39.251
-  port: 32913
-  type: vmess
-  uuid: 47506713-508e-441a-bb02-56eb679b4dc9
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: rush-6it6b.teeopp.quest
-  port: 443
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /video/kz49hf/gbin5jve.m3u8
-    headers:
-      Host: rush-6it6b.teeopp.quest
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
-  - 🇺🇸 美国 | USA 6
-  - 🇭🇰 香港 | HKG 4
-  - 🇺🇸 美国 | USA 26
+  - 🇭🇰 香港 | HKG
 rules:
 - MATCH,AUTO
