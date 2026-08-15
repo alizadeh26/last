@@ -72,6 +72,30 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: lat.o4ka-internet.com
+  port: 443
+  type: vless
+  uuid: 2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: lat.o4ka-internet.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 104.171.132.128
+  port: 4100
+  type: vless
+  uuid: 6c0ced37-dd9c-43f2-b474-6dafe036c44b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: skk.moe
   port: 8880
@@ -84,11 +108,11 @@ proxies:
     headers:
       Host: crimson-bread-c38e.295.workers.dev
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 104.171.132.128
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: 168.222.140.236
   port: 4100
   type: vless
-  uuid: 6c0ced37-dd9c-43f2-b474-6dafe036c44b
+  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
   tls: false
   network: ws
   ws-opts:
@@ -108,6 +132,21 @@ proxies:
   network: ws
   ws-opts:
     path: /my-vmess-path
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: 47.243.39.251
+  port: 32913
+  type: vmess
+  uuid: 47506713-508e-441a-bb02-56eb679b4dc9
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 185.185.142.79
@@ -134,20 +173,6 @@ proxies:
     headers:
       Host: rush-6it6b.teeopp.quest
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: lat.o4ka-internet.com
-  port: 443
-  type: vless
-  uuid: 2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: lat.o4ka-internet.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -161,12 +186,14 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 5
   - 🇭🇰 香港 | HKG 5
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD
+  - 🇱🇻 拉脱维亚 | LVA
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇷🇺 俄罗斯 | RUS 5
   - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG 4
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇺🇸 美国 | USA 26
-  - 🇱🇻 拉脱维亚 | LVA
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -183,10 +210,11 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 5
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 3
   - 🇱🇻 拉脱维亚 | LVA
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇷🇺 俄罗斯 | RUS 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -194,6 +222,21 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 5
   - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG 4
   - 🇺🇸 美国 | USA 26
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 6
+  - 🇱🇻 拉脱维亚 | LVA
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 | CAN
 rules:
 - MATCH,AUTO

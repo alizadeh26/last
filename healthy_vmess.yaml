@@ -34,6 +34,21 @@ proxies:
   ws-opts:
     path: /my-vmess-path
   udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: 47.243.39.251
+  port: 32913
+  type: vmess
+  uuid: 47506713-508e-441a-bb02-56eb679b4dc9
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
 - name: 🇺🇸 美国 | USA 26
   server: rush-6it6b.teeopp.quest
   port: 443
@@ -57,6 +72,7 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 5
   - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG 4
   - 🇺🇸 美国 | USA 26
 rules:
 - MATCH,AUTO
