@@ -4,68 +4,97 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN 3
+- name: 🇨🇦 加拿大 | CAN
   server: 142.4.216.225
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
   udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: 51.222.12.127
-  port: 445
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇿 捷克 | CZE 2
-  server: ch1.murhost.network
-  port: 443
+- name: 🇩🇪 德国 | DEU 2
+  server: 63.180.184.26
+  port: 22223
   type: vless
-  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V-B12dvv0fVIwcmcRNdMQIcc4nmqsYB_PR_3X4VVB0A
-    short-id: 91a7a393d805f5c6
-  servername: ch1.murhost.network
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: gb1.murhost.network
-  port: 443
-  type: vless
-  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE
-    short-id: 84f9881951050a30
-  servername: gb1.murhost.network
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 54.36.174.140
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: pl4.lckdwn.ru
-  port: 443
-  type: vless
-  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 89.167.12.115
+  port: 22579
+  type: vless
+  uuid: 39ad12ba-914a-4aa1-a825-3ee4db7c0a52
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 63.180.184.26
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 5.75.197.25
+  port: 1000
+  type: vless
+  uuid: 97ee39cc-cb22-42fd-9476-0c1a5f5a9621
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: 156.245.232.239
+  port: 35043
+  type: vmess
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: pl4.lckdwn.ru
   udp: true
-- name: 🇺🇸 美国 | USA 30
+- name: 🇳🇱 荷兰 | NLD 2
+  server: nl6.o4ka-internet.com
+  port: 443
+  type: vless
+  uuid: 2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: nl6.o4ka-internet.com
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: skk.moe
+  port: 8880
+  type: vless
+  uuid: ba746959-18e7-471c-b00f-fa5cdd930abf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: crimson-bread-c38e.295.workers.dev
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 104.171.132.128
+  port: 4100
+  type: vless
+  uuid: 6c0ced37-dd9c-43f2-b474-6dafe036c44b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+  udp: true
+- name: 🇺🇸 美国 | USA 6
   server: 66.42.72.146
   port: 46373
   type: vmess
@@ -80,51 +109,91 @@ proxies:
   ws-opts:
     path: /my-vmess-path
   udp: true
-- name: 🇺🇸 美国 | USA 32
-  server: mgxui.peng.mom
-  port: 26602
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 185.185.142.79
+  port: 2200
   type: vless
-  uuid: b0979c88-5a95-45c7-a46b-16b213b3e841
+  uuid: 0c4f46c2-afb7-4a80-8f6e-10258d80333e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+  udp: true
+- name: 🇺🇸 美国 | USA 26
+  server: rush-6it6b.teeopp.quest
+  port: 443
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: mgxui.peng.mom
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/kz49hf/gbin5jve.m3u8
+    headers:
+      Host: rush-6it6b.teeopp.quest
+  udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: lat.o4ka-internet.com
+  port: 443
+  type: vless
+  uuid: 2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: lat.o4ka-internet.com
   client-fingerprint: chrome
   network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN 3
   - 🇨🇦 加拿大 | CAN
-  - 🇨🇿 捷克 | CZE 2
-  - 🇬🇧 英国 | GBR 2
-  - 🇵🇱 波兰 | POL 2
-  - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 32
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 5
+  - 🇭🇰 香港 | HKG 5
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 6
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇺🇸 美国 | USA 26
+  - 🇱🇻 拉脱维亚 | LVA
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN 3
   - 🇨🇦 加拿大 | CAN
-  - 🇵🇱 波兰 | POL 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 | CZE 2
-  - 🇬🇧 英国 | GBR 2
-  - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 32
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 5
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇱🇻 拉脱维亚 | LVA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 30
+  - 🇭🇰 香港 | HKG 5
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 26
 rules:
 - MATCH,AUTO

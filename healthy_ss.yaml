@@ -4,22 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN 3
-  server: 142.4.216.225
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-  udp: true
 - name: 🇨🇦 加拿大 | CAN
-  server: 51.222.12.127
-  port: 445
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 54.36.174.140
+  server: 142.4.216.225
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -31,8 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN 3
   - 🇨🇦 加拿大 | CAN
-  - 🇵🇱 波兰 | POL 2
 rules:
 - MATCH,AUTO
