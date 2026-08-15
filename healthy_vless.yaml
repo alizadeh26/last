@@ -30,18 +30,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: 69.84.182.152
   port: 2095
@@ -54,17 +42,17 @@ proxies:
     headers:
       Host: download.pusytroller.gq
   udp: true
-- name: 🇺🇸 美国 | USA 29
-  server: 172.67.152.71
+- name: 🇸🇬 新加坡 | SGP 7
+  server: 104.18.34.245
   port: 8880
   type: vless
-  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: lively-dream-d892.262.workers.dev
+      Host: square-tree-3dbf.285.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -75,8 +63,7 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL
   - 🇫🇷 法国 | FRA 2
   - 🇳🇱 荷兰 | NLD 2
-  - 🇸🇬 新加坡 | SGP 7
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 29
+  - 🇸🇬 新加坡 | SGP 7
 rules:
 - MATCH,AUTO

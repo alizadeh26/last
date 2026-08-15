@@ -4,19 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 147.15.5.6
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mDphroTzOKvFG8gumDqZ9V3H7S74r24SmaiWuU4ACQo=
-  udp: true
 - name: 🇧🇷 巴西 | BRA 2
   server: 136.248.80.6
   port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: aT6rqN4f04fLRZCT7Dti1VhCvSaxC6C85CUsXPoJqeo=
+  udp: true
+- name: 🇧🇷 巴西 | BRA
+  server: 147.15.5.6
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: mDphroTzOKvFG8gumDqZ9V3H7S74r24SmaiWuU4ACQo=
   udp: true
 - name: 🇧🇷 巴西 | BRA 3
   server: 163.176.56.46
@@ -32,6 +32,13 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 134.65.62.195
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 5CkaY/EgA106Ec/ceWI2A4I7BXIgbDUJ6hRnDiCWX60=
   udp: true
 - name: 🇫🇷 法国 | FRA 2
   server: 145.223.68.48
@@ -50,13 +57,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: EOMKHJ7htCaQWlQV7lWfaNS5jnhWg94TbhEMDEby7sE=
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 134.65.62.195
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5CkaY/EgA106Ec/ceWI2A4I7BXIgbDUJ6hRnDiCWX60=
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 158.178.153.121
   port: 62145
@@ -65,13 +65,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇵🇭 菲律宾 | PHL
-  server: 149.104.109.252
-  port: 8882
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
 - name: 🇵🇱 波兰 | POL 5
   server: 54.36.174.140
   port: 443
@@ -79,24 +72,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 129.146.125.200
-  port: 50356
+- name: 🇵🇭 菲律宾 | PHL
+  server: 149.104.109.252
+  port: 8882
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: TvfLLfU2bOLehu/+/AOFM1wmTRLoWw7x5jW5h1jAuiU=
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
   udp: true
 - name: 🇺🇸 美国 | USA 16
   server: 69.84.182.152
@@ -110,17 +91,34 @@ proxies:
     headers:
       Host: download.pusytroller.gq
   udp: true
-- name: 🇺🇸 美国 | USA 29
-  server: 172.67.152.71
+- name: 🇸🇬 新加坡 | SGP 7
+  server: 104.18.34.245
   port: 8880
   type: vless
-  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: lively-dream-d892.262.workers.dev
+      Host: square-tree-3dbf.285.workers.dev
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: www.true.th
+  port: 80
+  type: vmess
+  uuid: a150d554-e962-4632-829f-ee583ada3f95
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /htun
+    headers:
+      Host: d7pu5mzr9c4b0.cloudfront.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -128,33 +126,31 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 3
   - 🇨🇴 哥伦比亚 | COL
+  - 🇬🇧 英国 | GBR 2
   - 🇫🇷 法国 | FRA 2
   - 🇬🇧 英国 | GBR 4
-  - 🇬🇧 英国 | GBR 2
   - 🇳🇱 荷兰 | NLD 2
-  - 🇵🇭 菲律宾 | PHL
   - 🇵🇱 波兰 | POL 5
-  - 🇺🇸 美国 | USA 7
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇵🇭 菲律宾 | PHL
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 29
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇹🇭 泰国 | THA
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 3
-  - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 2
-  - 🇵🇭 菲律宾 | PHL
+  - 🇬🇧 英国 | GBR 4
   - 🇵🇱 波兰 | POL 5
-  - 🇺🇸 美国 | USA 7
+  - 🇵🇭 菲律宾 | PHL
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -163,15 +159,13 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL
   - 🇫🇷 法国 | FRA 2
   - 🇳🇱 荷兰 | NLD 2
-  - 🇸🇬 新加坡 | SGP 7
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 29
-- name: REGION-SA
+  - 🇸🇬 新加坡 | SGP 7
+- name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 3
+  - 🇹🇭 泰国 | THA
 rules:
 - MATCH,AUTO

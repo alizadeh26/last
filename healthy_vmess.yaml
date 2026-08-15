@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG
-  server: 156.245.232.239
-  port: 35043
+- name: 🇹🇭 泰国 | THA
+  server: www.true.th
+  port: 80
   type: vmess
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  uuid: a150d554-e962-4632-829f-ee583ada3f95
   alterId: 0
   cipher: auto
   tls: false
@@ -17,7 +17,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /htun
+    headers:
+      Host: d7pu5mzr9c4b0.cloudfront.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +27,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
+  - 🇹🇭 泰国 | THA
 rules:
 - MATCH,AUTO

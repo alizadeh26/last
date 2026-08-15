@@ -4,19 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 147.15.5.6
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mDphroTzOKvFG8gumDqZ9V3H7S74r24SmaiWuU4ACQo=
-  udp: true
 - name: 🇧🇷 巴西 | BRA 2
   server: 136.248.80.6
   port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: aT6rqN4f04fLRZCT7Dti1VhCvSaxC6C85CUsXPoJqeo=
+  udp: true
+- name: 🇧🇷 巴西 | BRA
+  server: 147.15.5.6
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: mDphroTzOKvFG8gumDqZ9V3H7S74r24SmaiWuU4ACQo=
   udp: true
 - name: 🇧🇷 巴西 | BRA 3
   server: 163.176.56.46
@@ -25,13 +25,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw=
   udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: 144.24.229.230
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EOMKHJ7htCaQWlQV7lWfaNS5jnhWg94TbhEMDEby7sE=
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 134.65.62.195
   port: 61312
@@ -39,12 +32,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 5CkaY/EgA106Ec/ceWI2A4I7BXIgbDUJ6hRnDiCWX60=
   udp: true
-- name: 🇵🇭 菲律宾 | PHL
-  server: 149.104.109.252
-  port: 8882
+- name: 🇬🇧 英国 | GBR 4
+  server: 144.24.229.230
+  port: 61312
   type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EOMKHJ7htCaQWlQV7lWfaNS5jnhWg94TbhEMDEby7sE=
   udp: true
 - name: 🇵🇱 波兰 | POL 5
   server: 54.36.174.140
@@ -53,12 +46,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 129.146.125.200
-  port: 50356
+- name: 🇵🇭 菲律宾 | PHL
+  server: 149.104.109.252
+  port: 8882
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: TvfLLfU2bOLehu/+/AOFM1wmTRLoWw7x5jW5h1jAuiU=
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
   udp: true
 proxy-groups:
 - name: AUTO
@@ -66,13 +59,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 3
-  - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 2
-  - 🇵🇭 菲律宾 | PHL
+  - 🇬🇧 英国 | GBR 4
   - 🇵🇱 波兰 | POL 5
-  - 🇺🇸 美国 | USA 7
+  - 🇵🇭 菲律宾 | PHL
 rules:
 - MATCH,AUTO
