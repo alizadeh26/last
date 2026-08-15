@@ -30,14 +30,6 @@ proxies:
   - ''
   skip-cert-verify: true
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.190.130
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇭🇰 香港 | HKG 10
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
@@ -78,7 +70,6 @@ proxy-groups:
   - 🇧🇷 巴西 | BRA
   - 🇬🇧 英国 | GBR
   - 🇭🇰 香港 | HKG 4
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇭🇰 香港 | HKG 10
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 8
@@ -91,12 +82,6 @@ proxy-groups:
   - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 8
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -104,17 +89,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 10
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 10
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇧🇷 巴西 | BRA
 rules:
 - MATCH,AUTO
