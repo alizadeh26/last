@@ -11,30 +11,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw=
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.190.130
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 212.100.171.149
-  port: 5025
-  type: vless
-  uuid: 1c2b69b0-c777-40fc-8a29-f87c28a451cd
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.236.210
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 144.24.229.230
   port: 61312
@@ -54,19 +30,13 @@ proxies:
   - ''
   skip-cert-verify: true
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 141.148.234.216
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ChsbgW3Or5iKoWxNZQyTSxGx3KIKHjOD+w1t9/MbeeA=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 152.70.53.76
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: YyppYr+19SFyy4WAU2OmSlq+NwKjR+L0oV2CCJ6rMAM=
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.190.130
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
   udp: true
 - name: 🇭🇰 香港 | HKG 10
   server: planb.mojcn.com.linuxlh.xin
@@ -85,22 +55,19 @@ proxies:
     headers:
       Host: 67102451140aedb1cbfa18e08d87aeeb.mobgslb.tbcache.com
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: t.cnmjcn.cyou
-  port: 16632
-  type: vmess
-  uuid: d52b72b0-a509-490a-adae-23da2348d29c
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 82d16f3a12ad1d0871e0270510bf2ef6.mobgslb.tbcache.com
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 141.148.234.216
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ChsbgW3Or5iKoWxNZQyTSxGx3KIKHjOD+w1t9/MbeeA=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 152.70.53.76
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: YyppYr+19SFyy4WAU2OmSlq+NwKjR+L0oV2CCJ6rMAM=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -109,15 +76,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇨🇴 哥伦比亚 | COL
   - 🇬🇧 英国 | GBR
   - 🇭🇰 香港 | HKG 4
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇭🇰 香港 | HKG 10
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 8
-  - 🇭🇰 香港 | HKG 10
-  - 🇭🇰 香港 | HKG 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -133,8 +97,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇨🇴 哥伦比亚 | COL
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -142,6 +104,17 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 10
-  - 🇭🇰 香港 | HKG 5
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 10
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇷 巴西 | BRA
 rules:
 - MATCH,AUTO

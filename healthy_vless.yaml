@@ -12,22 +12,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 212.100.171.149
-  port: 5025
-  type: vless
-  uuid: 1c2b69b0-c777-40fc-8a29-f87c28a451cd
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.236.210
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -35,7 +19,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇨🇴 哥伦比亚 | COL
 rules:
 - MATCH,AUTO

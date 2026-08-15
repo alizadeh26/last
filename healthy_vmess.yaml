@@ -33,23 +33,6 @@ proxies:
     headers:
       Host: 67102451140aedb1cbfa18e08d87aeeb.mobgslb.tbcache.com
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: t.cnmjcn.cyou
-  port: 16632
-  type: vmess
-  uuid: d52b72b0-a509-490a-adae-23da2348d29c
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 82d16f3a12ad1d0871e0270510bf2ef6.mobgslb.tbcache.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -58,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 10
-  - 🇭🇰 香港 | HKG 5
 rules:
 - MATCH,AUTO
