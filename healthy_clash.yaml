@@ -4,32 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.104.107.41
-  port: 8090
+- name: 🇧🇷 巴西 | BRA
+  server: 147.15.5.6
+  port: 59319
   type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
+  cipher: 2022-blake3-chacha20-poly1305
+  password: mDphroTzOKvFG8gumDqZ9V3H7S74r24SmaiWuU4ACQo=
   udp: true
-- name: 🇧🇬 保加利亚 | BGR
-  server: 195.123.226.21
-  port: 443
-  type: vless
-  uuid: 33851d53-ede0-45f7-9eb8-9aa961f7d200
-  tls: false
-  network: ws
-  ws-opts:
-    path: /vless
+- name: 🇧🇷 巴西 | BRA 2
+  server: 136.248.80.6
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: aT6rqN4f04fLRZCT7Dti1VhCvSaxC6C85CUsXPoJqeo=
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 89.167.12.115
-  port: 22579
+- name: 🇧🇷 巴西 | BRA 3
+  server: 163.176.56.46
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw=
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.213.155
+  port: 62145
   type: vless
-  uuid: 39ad12ba-914a-4aa1-a825-3ee4db7c0a52
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 7
+- name: 🇫🇷 法国 | FRA 2
   server: 145.223.68.48
   port: 443
   type: vless
@@ -39,41 +43,50 @@ proxies:
   ws-opts:
     path: /vless
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 156.245.232.239
-  port: 35043
-  type: vmess
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
+- name: 🇬🇧 英国 | GBR 4
+  server: 144.24.229.230
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EOMKHJ7htCaQWlQV7lWfaNS5jnhWg94TbhEMDEby7sE=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: skk.moe
-  port: 8880
+- name: 🇬🇧 英国 | GBR 2
+  server: 134.65.62.195
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 5CkaY/EgA106Ec/ceWI2A4I7BXIgbDUJ6hRnDiCWX60=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 158.178.153.121
+  port: 62145
   type: vless
-  uuid: ba746959-18e7-471c-b00f-fa5cdd930abf
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: crimson-bread-c38e.295.workers.dev
+  network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL
+- name: 🇵🇭 菲律宾 | PHL
+  server: 149.104.109.252
+  port: 8882
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇵🇱 波兰 | POL 5
   server: 54.36.174.140
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
+- name: 🇺🇸 美国 | USA 7
+  server: 129.146.125.200
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: TvfLLfU2bOLehu/+/AOFM1wmTRLoWw7x5jW5h1jAuiU=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 7
   server: 104.18.34.245
   port: 8880
   type: vless
@@ -85,61 +98,29 @@ proxies:
     headers:
       Host: square-tree-3dbf.285.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 15.204.247.124
-  port: 2375
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 104.171.132.128
-  port: 2200
+- name: 🇺🇸 美国 | USA 16
+  server: 69.84.182.152
+  port: 2095
   type: vless
-  uuid: 6c0ced37-dd9c-43f2-b474-6dafe036c44b
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
-    path: /v1
+    path: /
     headers:
-      Host: rzd.ru
+      Host: download.pusytroller.gq
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: france.io-com-de-dev.org
-  port: 8443
+- name: 🇺🇸 美国 | USA 29
+  server: 172.67.152.71
+  port: 8880
   type: vless
-  uuid: 05cf7b0e-ad1a-42bb-80e7-73ae45b1019a
-  tls: true
-  alpn:
-  - http/1.1
-  servername: france.io-com-de-dev.org
-  client-fingerprint: chrome
+  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  tls: false
   network: ws
   ws-opts:
-    path: /api/voip/updates/static/x9i2
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: france.io-com-de-dev.org
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 168.222.203.14
-  port: 4100
-  type: vless
-  uuid: 2e79f3ca-b8db-4d4d-a96e-8f7313480696
-  tls: false
-  servername: live.ok.ru
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 8
-  server: 104.171.132.128
-  port: 4100
-  type: vless
-  uuid: 6c0ced37-dd9c-43f2-b474-6dafe036c44b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
+      Host: lively-dream-d892.262.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -147,73 +128,50 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA 3
   - 🇨🇴 哥伦比亚 | COL
-  - 🇧🇬 保加利亚 | BGR
-  - 🇩🇪 德国 | DEU 11
-  - 🇫🇷 法国 | FRA 7
-  - 🇭🇰 香港 | HKG
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇵🇱 波兰 | POL
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 10
-  - 🇷🇺 俄罗斯 | RUS 6
-  - 🇺🇸 美国 | USA 3
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇷🇺 俄罗斯 | RUS 8
+  - 🇫🇷 法国 | FRA 2
+  - 🇬🇧 英国 | GBR 4
+  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇵🇭 菲律宾 | PHL
+  - 🇵🇱 波兰 | POL 5
+  - 🇺🇸 美国 | USA 7
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 29
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 10
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA 3
+  - 🇬🇧 英国 | GBR 4
+  - 🇬🇧 英国 | GBR 2
+  - 🇵🇭 菲律宾 | PHL
+  - 🇵🇱 波兰 | POL 5
+  - 🇺🇸 美国 | USA 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 | BGR
-  - 🇩🇪 德国 | DEU 11
-  - 🇫🇷 法国 | FRA 7
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇷🇺 俄罗斯 | RUS 6
-  - 🇺🇸 美国 | USA 3
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇷🇺 俄罗斯 | RUS 8
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇧🇬 保加利亚 | BGR
-  - 🇩🇪 德国 | DEU 11
-  - 🇵🇱 波兰 | POL
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 3
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇫🇷 法国 | FRA 2
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 29
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 3
 rules:
 - MATCH,AUTO

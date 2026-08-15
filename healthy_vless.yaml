@@ -4,25 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇬 保加利亚 | BGR
-  server: 195.123.226.21
-  port: 443
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.213.155
+  port: 62145
   type: vless
-  uuid: 33851d53-ede0-45f7-9eb8-9aa961f7d200
-  tls: false
-  network: ws
-  ws-opts:
-    path: /vless
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 89.167.12.115
-  port: 22579
-  type: vless
-  uuid: 39ad12ba-914a-4aa1-a825-3ee4db7c0a52
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 7
+- name: 🇫🇷 法国 | FRA 2
   server: 145.223.68.48
   port: 443
   type: vless
@@ -32,19 +22,15 @@ proxies:
   ws-opts:
     path: /vless
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: skk.moe
-  port: 8880
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 158.178.153.121
+  port: 62145
   type: vless
-  uuid: ba746959-18e7-471c-b00f-fa5cdd930abf
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: crimson-bread-c38e.295.workers.dev
+  network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
+- name: 🇸🇬 新加坡 | SGP 7
   server: 104.18.34.245
   port: 8880
   type: vless
@@ -56,54 +42,29 @@ proxies:
     headers:
       Host: square-tree-3dbf.285.workers.dev
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 104.171.132.128
-  port: 2200
+- name: 🇺🇸 美国 | USA 16
+  server: 69.84.182.152
+  port: 2095
   type: vless
-  uuid: 6c0ced37-dd9c-43f2-b474-6dafe036c44b
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
-    path: /v1
+    path: /
     headers:
-      Host: rzd.ru
+      Host: download.pusytroller.gq
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: france.io-com-de-dev.org
-  port: 8443
+- name: 🇺🇸 美国 | USA 29
+  server: 172.67.152.71
+  port: 8880
   type: vless
-  uuid: 05cf7b0e-ad1a-42bb-80e7-73ae45b1019a
-  tls: true
-  alpn:
-  - http/1.1
-  servername: france.io-com-de-dev.org
-  client-fingerprint: chrome
+  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  tls: false
   network: ws
   ws-opts:
-    path: /api/voip/updates/static/x9i2
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: france.io-com-de-dev.org
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 168.222.203.14
-  port: 4100
-  type: vless
-  uuid: 2e79f3ca-b8db-4d4d-a96e-8f7313480696
-  tls: false
-  servername: live.ok.ru
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 8
-  server: 104.171.132.128
-  port: 4100
-  type: vless
-  uuid: 6c0ced37-dd9c-43f2-b474-6dafe036c44b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
+      Host: lively-dream-d892.262.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -111,14 +72,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 | BGR
-  - 🇩🇪 德国 | DEU 11
-  - 🇫🇷 法国 | FRA 7
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇷🇺 俄罗斯 | RUS 6
-  - 🇺🇸 美国 | USA 3
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇷🇺 俄罗斯 | RUS 8
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇫🇷 法国 | FRA 2
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 29
 rules:
 - MATCH,AUTO
