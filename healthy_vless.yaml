@@ -4,13 +4,173 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.190.130
-  port: 62145
+- name: 🇨🇿 捷克 | CZE
+  server: cz.helper-internet.com
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: cz.helper-internet.com
+  client-fingerprint: edge
   network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA
+  server: fr4.sodahub.online
+  port: 8443
+  type: vless
+  uuid: e11ac221-4113-4252-bd60-5266e0e3f322
+  tls: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: fr4grpc
+  udp: true
+- name: 🇫🇷 法国 | FRA 5
+  server: fr4.sodahub.online
+  port: 8443
+  type: vless
+  uuid: a5a612d6-d571-4400-9f9a-7cb21eb903c1
+  tls: true
+  servername: fr4.sodahub.online
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: fr4grpc
+  udp: true
+- name: 🇪🇸 西班牙 | ESP
+  server: spain3.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: spain3.helper-internet.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: veilix.ciphero.xyz
+  port: 443
+  type: vless
+  uuid: b6b92515-13c5-4e6e-9fea-8db2d44628a0
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4
+    short-id: 33b5887524592cad
+  servername: veilix.ciphero.xyz
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: eng3.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: eng3.helper-internet.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇬🇷 希腊 | GRC
+  server: grek.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: grek.helper-internet.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇱🇹 立陶宛 | LTU
+  server: unas.denegnet.cc
+  port: 443
+  type: vless
+  uuid: 27dcb3a9-c82d-4628-a8c4-bae39e6cb4f4
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RP93KQEzBP7wvvhwYy5c87IiQbV6xnsx7XgJpajevTA
+    short-id: bc599ecdd54c1b3f
+  servername: unas.denegnet.cc
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇰🇿 哈萨克斯坦 | KAZ
+  server: magazinetut.online
+  port: 8443
+  type: vless
+  uuid: 7d641c2e-6897-4b9f-8a82-3f0cc8980db1
+  tls: true
+  alpn:
+  - http/1.1
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: swed1.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: swed1.helper-internet.com
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: tsarlive.dpdns.org
+  port: 443
+  type: vless
+  uuid: e4dc8a93-ddfc-4f70-b97f-bbc04b0b6c7b
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: tsarlive.dpdns.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tsar-tun
+    headers:
+      Host: tsarlive.dpdns.org
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: mws.tunnelgate.org
+  port: 14443
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  alpn:
+  - http/1.1
+  servername: mws.tunnelgate.org
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /ru
+    headers:
+      Host: mws.tunnelgate.org
   udp: true
 proxy-groups:
 - name: AUTO
@@ -18,6 +178,17 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇿 捷克 | CZE
+  - 🇫🇷 法国 | FRA
+  - 🇫🇷 法国 | FRA 5
+  - 🇪🇸 西班牙 | ESP
+  - 🇩🇪 德国 | DEU 10
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇷 希腊 | GRC
+  - 🇱🇹 立陶宛 | LTU
+  - 🇰🇿 哈萨克斯坦 | KAZ
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 17
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO

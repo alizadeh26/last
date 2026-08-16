@@ -5,33 +5,24 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇧🇷 巴西 | BRA
-  server: 163.176.56.46
+  server: 137.131.212.166
   port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw=
+  password: WV59TZ3tB11PI5IZDkTcPYyjaqYAmcVuketz8wPYLrg=
+- name: 🇵🇱 波兰 | POL
+  server: 54.36.174.140
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 144.24.229.230
-  port: 61312
+- name: 🇸🇬 新加坡 | SGP 5
+  server: 161.118.216.2
+  port: 56927
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: EOMKHJ7htCaQWlQV7lWfaNS5jnhWg94TbhEMDEby7sE=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 141.148.234.216
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ChsbgW3Or5iKoWxNZQyTSxGx3KIKHjOD+w1t9/MbeeA=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 152.70.53.76
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: YyppYr+19SFyy4WAU2OmSlq+NwKjR+L0oV2CCJ6rMAM=
-  udp: true
+  password: gmuk2W4fT2dDAeQqReYJvX3cVGTEJxGKQH4zgEuO/6o=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -39,8 +30,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 8
+  - 🇵🇱 波兰 | POL
+  - 🇸🇬 新加坡 | SGP 5
 rules:
 - MATCH,AUTO
