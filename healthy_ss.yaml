@@ -4,12 +4,25 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 15
-  server: 216.57.105.16
-  port: 40
+- name: 🇫🇷 法国 | FRA 26
+  server: 15.237.189.197
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇭🇺 匈牙利 | HUN
+  server: 217.70.14.216
+  port: 8443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: r0_pds2En38zW5zzVy1DZTdEfSmRNNdx
+  password: 48UQWJVetDr7ETiOXF+aEQ==
+- name: 🇮🇹 意大利 | ITA
+  server: 194.87.47.204
+  port: 10901
+  type: ss
+  cipher: aes-256-gcm
+  password: d1fa2f4b98a38bc8
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +30,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 15
+  - 🇫🇷 法国 | FRA 26
+  - 🇭🇺 匈牙利 | HUN
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO

@@ -4,59 +4,77 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 18.157.224.206
-  port: 22222
+- name: 🇨🇳 CN_33
+  server: jp.sofast.live
+  port: 52683
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 18.157.224.206
-  port: 22223
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: ee-t3.vinnypuxtomoon.today
+  port: 2053
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: 18.157.224.206
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: nl8.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: nl8.helper-internet.com
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇮🇳 印度 | IND
-  server: ind2.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: ind2.helper-internet.com
+    public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
+    short-id: c0d1d1776fed0f6d
+  servername: ee-t3.vinnypuxtomoon.today
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 6
+- name: 🇨🇳 CN_34
+  server: jp.sofast.live
+  port: 52683
+  type: vless
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: uk-t2.vinnypuxtomoon.today
+  port: 2053
+  type: vless
+  uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
+    short-id: c0d1d1776fed0f6d
+  servername: uk-t2.vinnypuxtomoon.today
+  client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: 🇬🇷 希腊 | GRC
+  server: grek.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: grek.helper-internet.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 104.17.185.207
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
   server: xiweini.dpdns.org
   port: 30100
   type: vless
@@ -69,79 +87,7 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 8.47.69.0
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dawn-waterfall-6052.360-001.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dawn-waterfall-6052.360-001.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 104.17.181.19
-  port: 8880
-  type: vless
-  uuid: 3bc49320-3dcd-4f30-9215-a4fa964e54c7
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: tight-moon-2d50.457.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: 104.16.100.66
-  port: 8880
-  type: vless
-  uuid: 8cde6cd0-7903-4aef-8ce8-528fa9677d7b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: steep-glitter-7c3c.367-5c9.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 35
-  server: 104.18.13.229
-  port: 8880
-  type: vless
-  uuid: b85c8be2-3109-4b8a-aa82-f0d8fe06f5ae
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: young-dust-b8d9.31-8ba.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 34
+- name: 🇸🇬 新加坡 | SGP 3
   server: 104.18.34.245
   port: 8880
   type: vless
@@ -153,24 +99,39 @@ proxies:
     headers:
       Host: square-tree-3dbf.285.workers.dev
   udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: us22.sofast.live
+  port: 58011
+  type: vless
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 125.77.20.210
+  port: 13565
+  type: vless
+  uuid: 65500794-99b4-0343-bd18-a12453257a2b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 12
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇮🇳 印度 | IND
-  - 🇭🇰 香港 | HKG 6
-  - 🇺🇸 美国 | USA 12
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 35
-  - 🇺🇸 美国 | USA 34
+  - 🇨🇳 CN_33
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇨🇳 CN_34
+  - 🇬🇧 英国 | GBR 3
+  - 🇬🇷 希腊 | GRC
+  - 🇺🇸 美国 | USA 23
+  - 🇭🇰 香港 | HKG 4
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 4
+  - 🇸🇬 新加坡 | SGP 4
 rules:
 - MATCH,AUTO
