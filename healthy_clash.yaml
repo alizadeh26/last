@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 166.88.130.218
-  port: 30331
-  type: ss
-  cipher: aes-256-gcm
-  password: fbcec76953a2d173
-  udp: true
 - name: 🇩🇪 德国 | DEU 9
   server: 104.24.152.211
   port: 8880
@@ -65,20 +58,6 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇬🇷 希腊 | GRC 2
-  server: grek.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: grek.helper-internet.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: 194.87.47.204
   port: 10901
@@ -114,6 +93,28 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇬🇷 希腊 | GRC 2
+  server: grek.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: grek.helper-internet.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: 82.40.62.221
+  port: 27737
+  type: vless
+  uuid: 9eb9de08-1b4b-4023-ae0d-cd28246b8778
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: nl-04.vacvps.com
   port: 443
@@ -126,75 +127,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 82.40.62.221
-  port: 27737
-  type: vless
-  uuid: 9eb9de08-1b4b-4023-ae0d-cd28246b8778
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 0ccenterhk-c.center-link.org
-  port: 611
-  type: ss
-  cipher: aes-128-gcm
-  password: 929c5ce8-222b-4d93-a80f-9ed580e2e8c1
-  udp: true
 - name: 🇵🇱 波兰 | POL 4
   server: 54.36.174.140
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
-  udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: 43.132.192.16
-  port: 9527
-  type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-  alterId: 0
-  cipher: chacha20-poly1305
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 185.148.104.30
-  port: 8880
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 72.56.14.138
-  port: 2200
-  type: vless
-  uuid: 269c4c7d-6e37-4c63-9a8f-2f162bd892a3
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
   udp: true
 - name: 🇭🇰 香港 | HKG 4
   server: planb.mojcn.com.linuxlh.xin
@@ -227,6 +165,42 @@ proxies:
     path: /
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+- name: 🇸🇬 新加坡 | SGP
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: silent-snow-1a0d.241-b0a.workers.dev
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 72.56.14.138
+  port: 2200
+  type: vless
+  uuid: 269c4c7d-6e37-4c63-9a8f-2f162bd892a3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: 43.132.192.16
+  port: 9527
+  type: vmess
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+  alterId: 0
+  cipher: chacha20-poly1305
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
 - name: 🇹🇷 土耳其 | TUR 2
   server: StreaMcORENODE8-aPilInkHub4-NetWeBGaTE.clOUdsYnC9.coM
   port: 443
@@ -241,17 +215,17 @@ proxies:
     path: /mU5O3LNBc0Byn1BgoYh8
     headers:
       Host: streAmcOREnODE8-apILiNkhUb4-nEtwebGATe.clOUDsync9.CoM
-- name: 🇺🇸 美国 | USA 19
-  server: 172.67.152.71
-  port: 8880
+- name: 🇺🇸 美国 | USA 12
+  server: neth6.lckdwn.ru
+  port: 443
   type: vless
-  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  uuid: 14da77da-4fb3-4e49-ac4f-7881ea19b267
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /
     headers:
-      Host: lively-dream-d892.262.workers.dev
+      Host: neth6.lckdwn.ru
   udp: true
 - name: 🇺🇸 美国 | USA
   server: log.bpminecraft.com
@@ -265,17 +239,17 @@ proxies:
     headers:
       Host: misty-flower-4d15.372-912.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: neth6.lckdwn.ru
-  port: 443
+- name: 🇺🇸 美国 | USA 19
+  server: 172.67.152.71
+  port: 8880
   type: vless
-  uuid: 14da77da-4fb3-4e49-ac4f-7881ea19b267
+  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: neth6.lckdwn.ru
+      Host: lively-dream-d892.262.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -283,37 +257,32 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇩🇪 德国 | DEU 9
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇩🇪 德国 | DEU 6
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇷 希腊 | GRC 2
   - 🇮🇹 意大利 | ITA
   - 🇮🇳 印度 | IND
   - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇬🇷 希腊 | GRC 2
   - 🇵🇱 波兰 | POL 2
-  - 🇯🇵 日本 | JPN
+  - 🇳🇱 荷兰 | NLD 6
   - 🇵🇱 波兰 | POL 4
-  - 🇭🇰 香港 | HKG 3
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇸🇬 新加坡 | SGP
-  - 🇷🇺 俄罗斯 | RUS 3
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG
+  - 🇸🇬 新加坡 | SGP
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇭🇰 香港 | HKG 3
   - 🇹🇷 土耳其 | TUR 2
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 19
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇮🇹 意大利 | ITA
-  - 🇯🇵 日本 | JPN
   - 🇵🇱 波兰 | POL 4
 - name: PROTO-VLESS
   type: url-test
@@ -324,25 +293,40 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇩🇪 德国 | DEU 6
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇷 希腊 | GRC 2
   - 🇮🇳 印度 | IND
   - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇬🇷 希腊 | GRC 2
   - 🇵🇱 波兰 | POL 2
-  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇳🇱 荷兰 | NLD 6
   - 🇸🇬 新加坡 | SGP
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 19
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 3
   - 🇹🇷 土耳其 | TUR 2
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇩🇪 德国 | DEU 6
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇷 希腊 | GRC 2
+  - 🇵🇱 波兰 | POL 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 9
 rules:
 - MATCH,AUTO

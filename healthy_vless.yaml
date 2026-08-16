@@ -58,20 +58,6 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇬🇷 希腊 | GRC 2
-  server: grek.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: grek.helper-internet.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇮🇳 印度 | IND
   server: ind2.helper-internet.com
   port: 443
@@ -100,6 +86,28 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇬🇷 希腊 | GRC 2
+  server: grek.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: grek.helper-internet.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: 82.40.62.221
+  port: 27737
+  type: vless
+  uuid: 9eb9de08-1b4b-4023-ae0d-cd28246b8778
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: nl-04.vacvps.com
   port: 443
@@ -111,26 +119,6 @@ proxies:
     public-key: LyVBHJ_qK2ron24Qfw_mhZ8n-T94xHCzXPrFM02EaQw
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 82.40.62.221
-  port: 27737
-  type: vless
-  uuid: 9eb9de08-1b4b-4023-ae0d-cd28246b8778
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 185.148.104.30
-  port: 8880
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
   udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: codecanyon.net
@@ -156,17 +144,17 @@ proxies:
     headers:
       Host: rzd.ru
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 172.67.152.71
-  port: 8880
+- name: 🇺🇸 美国 | USA 12
+  server: neth6.lckdwn.ru
+  port: 443
   type: vless
-  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  uuid: 14da77da-4fb3-4e49-ac4f-7881ea19b267
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /
     headers:
-      Host: lively-dream-d892.262.workers.dev
+      Host: neth6.lckdwn.ru
   udp: true
 - name: 🇺🇸 美国 | USA
   server: log.bpminecraft.com
@@ -180,17 +168,17 @@ proxies:
     headers:
       Host: misty-flower-4d15.372-912.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: neth6.lckdwn.ru
-  port: 443
+- name: 🇺🇸 美国 | USA 19
+  server: 172.67.152.71
+  port: 8880
   type: vless
-  uuid: 14da77da-4fb3-4e49-ac4f-7881ea19b267
+  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: neth6.lckdwn.ru
+      Host: lively-dream-d892.262.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -202,16 +190,15 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇩🇪 德国 | DEU 6
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇷 希腊 | GRC 2
   - 🇮🇳 印度 | IND
   - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇬🇷 希腊 | GRC 2
   - 🇵🇱 波兰 | POL 2
-  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇳🇱 荷兰 | NLD 6
   - 🇸🇬 新加坡 | SGP
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
