@@ -32,19 +32,6 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: xiweini.dpdns.org
-  port: 30100
-  type: vless
-  uuid: 19bb341c-ee57-4899-b1e7-e9d3ebdf23df
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: xiweini.dpdns.org
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇬🇷 希腊 | GRC
   server: grek.helper-internet.com
   port: 443
@@ -57,6 +44,19 @@ proxies:
     short-id: ff776ff77be48b88
   servername: grek.helper-internet.com
   client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: xiweini.dpdns.org
+  port: 30100
+  type: vless
+  uuid: 19bb341c-ee57-4899-b1e7-e9d3ebdf23df
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: xiweini.dpdns.org
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 23
@@ -89,8 +89,8 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇬🇧 英国 | GBR 3
-  - 🇭🇰 香港 | HKG 4
   - 🇬🇷 希腊 | GRC
+  - 🇭🇰 香港 | HKG 4
   - 🇺🇸 美国 | USA 23
   - 🇸🇬 新加坡 | SGP 4
 rules:
