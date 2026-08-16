@@ -4,60 +4,31 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇿 捷克 | CZE
-  server: cz.helper-internet.com
-  port: 443
+- name: 🇨🇾 塞浦路斯 | CYP
+  server: 195.85.59.30
+  port: 8880
   type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: cz.helper-internet.com
-  client-fingerprint: edge
-  network: tcp
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime58.workers.dev
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: fr4.sodahub.online
-  port: 8443
+- name: 🇩🇪 德国 | DEU 9
+  server: 104.24.152.211
+  port: 8880
   type: vless
-  uuid: e11ac221-4113-4252-bd60-5266e0e3f322
-  tls: true
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: fr4grpc
+  uuid: 2acde116-5949-48d8-a1e6-60a1d2547deb
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: lively-pine-093d.144-868.workers.dev
   udp: true
-- name: 🇫🇷 法国 | FRA 5
-  server: fr4.sodahub.online
-  port: 8443
-  type: vless
-  uuid: a5a612d6-d571-4400-9f9a-7cb21eb903c1
-  tls: true
-  servername: fr4.sodahub.online
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: fr4grpc
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: eng3.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: eng3.helper-internet.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 10
+- name: 🇩🇪 德国 | DEU 6
   server: veilix.ciphero.xyz
   port: 443
   type: vless
@@ -71,7 +42,35 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇬🇷 希腊 | GRC
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: ee-t3.vinnypuxtomoon.today
+  port: 2053
+  type: vless
+  uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
+    short-id: c0d1d1776fed0f6d
+  servername: ee-t3.vinnypuxtomoon.today
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: uk-t2.vinnypuxtomoon.today
+  port: 2053
+  type: vless
+  uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
+    short-id: c0d1d1776fed0f6d
+  servername: uk-t2.vinnypuxtomoon.today
+  client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: 🇬🇷 希腊 | GRC 2
   server: grek.helper-internet.com
   port: 443
   type: vless
@@ -85,34 +84,8 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇱🇹 立陶宛 | LTU
-  server: unas.denegnet.cc
-  port: 443
-  type: vless
-  uuid: 27dcb3a9-c82d-4628-a8c4-bae39e6cb4f4
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RP93KQEzBP7wvvhwYy5c87IiQbV6xnsx7XgJpajevTA
-    short-id: bc599ecdd54c1b3f
-  servername: unas.denegnet.cc
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇰🇿 哈萨克斯坦 | KAZ
-  server: magazinetut.online
-  port: 8443
-  type: vless
-  uuid: 7d641c2e-6897-4b9f-8a82-3f0cc8980db1
-  tls: true
-  alpn:
-  - http/1.1
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: swed1.helper-internet.com
+- name: 🇮🇳 印度 | IND
+  server: ind2.helper-internet.com
   port: 443
   type: vless
   uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
@@ -121,42 +94,91 @@ proxies:
   reality-opts:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
     short-id: ff776ff77be48b88
-  servername: swed1.helper-internet.com
-  client-fingerprint: random
+  servername: ind2.helper-internet.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: mws.tunnelgate.org
-  port: 14443
+- name: 🇳🇱 荷兰 | NLD 9
+  server: nl-t3.vinnypuxtomoon.today
+  port: 2053
   type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
   tls: true
-  alpn:
-  - http/1.1
-  servername: mws.tunnelgate.org
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /ru
-    headers:
-      Host: mws.tunnelgate.org
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
+    short-id: c0d1d1776fed0f6d
+  servername: nl-t3.vinnypuxtomoon.today
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: tsarlive.dpdns.org
+- name: 🇳🇱 荷兰 | NLD 6
+  server: nl-04.vacvps.com
   port: 443
   type: vless
-  uuid: e4dc8a93-ddfc-4f70-b97f-bbc04b0b6c7b
+  uuid: 0f6ecc1c-4cd4-4f69-970e-a385d9c5afe3
   tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: tsarlive.dpdns.org
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: LyVBHJ_qK2ron24Qfw_mhZ8n-T94xHCzXPrFM02EaQw
   client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: 82.40.62.221
+  port: 27737
+  type: vless
+  uuid: 9eb9de08-1b4b-4023-ae0d-cd28246b8778
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  tls: false
   network: ws
   ws-opts:
-    path: /tsar-tun
+    path: /pyip
     headers:
-      Host: tsarlive.dpdns.org
+      Host: silent-snow-1a0d.241-b0a.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: log.bpminecraft.com
+  port: 8880
+  type: vless
+  uuid: bd3eb105-b048-47fa-9a1d-63a66f9830a2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: misty-flower-4d15.372-912.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 172.67.152.71
+  port: 8880
+  type: vless
+  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lively-dream-d892.262.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: neth6.lckdwn.ru
+  port: 443
+  type: vless
+  uuid: 14da77da-4fb3-4e49-ac4f-7881ea19b267
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: neth6.lckdwn.ru
   udp: true
 proxy-groups:
 - name: AUTO
@@ -164,16 +186,19 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 | CZE
-  - 🇫🇷 法国 | FRA
-  - 🇫🇷 法国 | FRA 5
+  - 🇨🇾 塞浦路斯 | CYP
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 6
+  - 🇪🇪 爱沙尼亚 | EST 2
   - 🇬🇧 英国 | GBR 2
-  - 🇩🇪 德国 | DEU 10
-  - 🇬🇷 希腊 | GRC
-  - 🇱🇹 立陶宛 | LTU
-  - 🇰🇿 哈萨克斯坦 | KAZ
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 17
+  - 🇬🇷 希腊 | GRC 2
+  - 🇮🇳 印度 | IND
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇵🇱 波兰 | POL 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
