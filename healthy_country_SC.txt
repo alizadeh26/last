@@ -1,3 +1,2 @@
 trojan://humanity@45.130.125.160:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇸🇨 1770 - SC - Trojan/WS/TLS - 443
 vless://2a650f3b-d95b-4bd6-aadf-16ccc0717155@200.165.228.114:9871?security=reality&type=grpc&mode=gun&serviceName=grpc-tunnel&packetEncoding=none&allowInsecure=1&sni=dl.google.com&fp=chrome&sid=aabb&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0#🇸🇨 69 - SC - VLESS/GRPC/REALITY/PBK/SID/UTLS - 9871
-vless://e7961655-9674-4cbd-a36f-ec0d5d7d660c@45.130.125.158:2053?encryption=none&host=po.fastbrokencompony.com&path=/&security=tls&sni=po.fastbrokencompony.com&type=ws#🇸🇨 645 - SC - VLESS/WS/TLS - 2053

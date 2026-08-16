@@ -12,6 +12,14 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇨🇳 CN_34
+  server: jp.sofast.live
+  port: 52683
+  type: vless
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇪🇪 爱沙尼亚 | EST 2
   server: ee-t3.vinnypuxtomoon.today
   port: 2053
@@ -26,14 +34,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇨🇳 CN_34
-  server: jp.sofast.live
-  port: 52683
-  type: vless
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR 3
   server: uk-t2.vinnypuxtomoon.today
   port: 2053
@@ -46,6 +46,19 @@ proxies:
     short-id: c0d1d1776fed0f6d
   servername: uk-t2.vinnypuxtomoon.today
   client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: xiweini.dpdns.org
+  port: 30100
+  type: vless
+  uuid: 19bb341c-ee57-4899-b1e7-e9d3ebdf23df
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: xiweini.dpdns.org
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇬🇷 希腊 | GRC
@@ -74,31 +87,6 @@ proxies:
     headers:
       Host: fangbinxingnmsl.pusytroller.gq
   udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: xiweini.dpdns.org
-  port: 30100
-  type: vless
-  uuid: 19bb341c-ee57-4899-b1e7-e9d3ebdf23df
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: xiweini.dpdns.org
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: us22.sofast.live
   port: 58011
@@ -124,13 +112,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇳 CN_33
-  - 🇪🇪 爱沙尼亚 | EST 2
   - 🇨🇳 CN_34
+  - 🇪🇪 爱沙尼亚 | EST 2
   - 🇬🇧 英国 | GBR 3
+  - 🇭🇰 香港 | HKG 4
   - 🇬🇷 希腊 | GRC
   - 🇺🇸 美国 | USA 23
-  - 🇭🇰 香港 | HKG 4
-  - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA 4
   - 🇸🇬 新加坡 | SGP 4
 rules:

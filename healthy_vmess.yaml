@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG
+- name: 🇭🇰 香港 | HKG 9
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
   type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
   alterId: 0
   cipher: auto
   tls: false
@@ -17,19 +17,21 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-- name: 🇭🇰 香港 | HKG 10
-  server: 43.132.192.16
-  port: 9527
+      Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
+- name: 🇭🇰 香港 | HKG 6
+  server: t.cnmjcn.cyou
+  port: 16632
   type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+  uuid: 62319519-82bc-46ff-99cd-237bd0882cef
   alterId: 0
-  cipher: chacha20-poly1305
+  cipher: auto
   tls: false
-  alpn:
-  - ''
   skip-cert-verify: true
-  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1b24b66c02c843942070b76b27406898.mobgslb.tbcache.com
 - name: 🇭🇰 香港 | HKG 7
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
@@ -47,25 +49,23 @@ proxies:
     headers:
       Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
   udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: t.cnmjcn.cyou
-  port: 16632
+- name: 🇭🇰 香港 | HKG 10
+  server: 43.132.192.16
+  port: 9527
   type: vmess
-  uuid: 62319519-82bc-46ff-99cd-237bd0882cef
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
   alterId: 0
-  cipher: auto
+  cipher: chacha20-poly1305
   tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 1b24b66c02c843942070b76b27406898.mobgslb.tbcache.com
-- name: 🇭🇰 香港 | HKG 9
+  udp: true
+- name: 🇭🇰 香港 | HKG
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
   type: vmess
-  uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
   alterId: 0
   cipher: auto
   tls: false
@@ -74,17 +74,17 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 10
-  - 🇭🇰 香港 | HKG 7
-  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 9
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 10
+  - 🇭🇰 香港 | HKG
 rules:
 - MATCH,AUTO
