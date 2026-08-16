@@ -4,21 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 15
-  server: 74.48.28.190
-  port: 80
-  type: vmess
-  uuid: 4ed58974-48cd-472e-c818-fb847b8c551f
-  alterId: 0
-  cipher: aes-128-gcm
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-  udp: true
 - name: 🇭🇰 香港 | HKG
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
@@ -65,7 +50,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 15
   - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5

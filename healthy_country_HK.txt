@@ -3,17 +3,17 @@ vmess://eyJ2IjoiMiIsInBzIjoiU2VydmVyIDEwNCDwn4et8J+HsCIsImFkZCI6IjQ3LjI0My4zOS4y
 trojan://ND91608427@upright-hamster.rooster465.autos:443?security=tls&sni=upright-hamster.rooster465.autos#%E9%A6%99%E6%B8%AF_081618001
 trojan://FH72359861@natural-swan.rooster465.autos:443?security=tls#%E9%A6%99%E6%B8%AF_081618002
 trojan://ND91608427@185.244.208.13:443?security=tls&sni=ace-starling.rooster465.autos#%E9%A6%99%E6%B8%AF_081618003
-trojan://ND91608427@dynamic-grubworm.rooster465.autos:443?security=tls&sni=dynamic-grubworm.rooster465.autos#%E9%A6%99%E6%B8%AF_081618004
-trojan://AE62539071@dynamic-grubworm.rooster465.autos:443?sni=dynamic-grubworm.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618236
 trojan://FH72359861@modern-bedbug.rooster465.autos:443?security=tls&sni=modern-bedbug.rooster465.autos#%E9%A6%99%E6%B8%AF_081618007
-trojan://AE62539071@wealthy-loon.rooster465.autos:443?sni=wealthy-loon.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618239
-trojan://AE62539071@magical-kodiak.rooster465.autos:443?sni=magical-kodiak.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618238
-trojan://AE62539071@novel-mouse.rooster465.autos:443?sni=novel-mouse.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618237
 trojan://AE62539071@upright-bedbug.rooster465.autos:443?security=tls#%E9%A6%99%E6%B8%AF_081618008
+trojan://ND91608427@dynamic-grubworm.rooster465.autos:443?security=tls&sni=dynamic-grubworm.rooster465.autos#%E9%A6%99%E6%B8%AF_081618004
 trojan://AE62539071@strong-haddock.rooster465.autos:443?security=tls&sni=strong-haddock.rooster465.autos#%E9%A6%99%E6%B8%AF_081618006
+trojan://AE62539071@dynamic-grubworm.rooster465.autos:443?sni=dynamic-grubworm.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618236
+trojan://AE62539071@novel-mouse.rooster465.autos:443?sni=novel-mouse.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618237
+trojan://AE62539071@magical-kodiak.rooster465.autos:443?sni=magical-kodiak.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618238
+trojan://AE62539071@wealthy-loon.rooster465.autos:443?sni=wealthy-loon.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618239
 trojan://AE62539071@humorous-parakeet.rooster465.autos:443?sni=humorous-parakeet.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618241
-trojan://AE62539071@modest-foal.rooster465.autos:443?sni=modest-foal.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618242
 trojan://AE62539071@smiling-ray.rooster465.autos:443?sni=smiling-ray.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618240
+trojan://AE62539071@modest-foal.rooster465.autos:443?sni=modest-foal.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618242
 trojan://FH72359861@smiling-ray.rooster465.autos:443?sni=smiling-ray.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618243
 trojan://FH72359861@choice-worm.rooster465.autos:443?sni=choice-worm.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618244
 trojan://FH72359861@dynamic-grubworm.rooster465.autos:443?sni=dynamic-grubworm.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081618245
@@ -22,4 +22,4 @@ vmess://eyJhZGQiOiJkcmJrZzE2ZWdmM2Z6bG0zLnYuM2Rucy52aXAiLCJwb3J0IjoiNDQzIiwiaWQi
 trojan://6ec301428255a78a1d826988d86cc87e@18.162.120.218:50887?sni=www.nintendogames.net&type=raw&fp=chrome#🇺🇸 6 - US - Trojan/TLS/UTLS - 50887
 trojan://FH72359861@growing-oyster.rooster465.autos:443?security=tls&path=/#🇭🇰 1056 - HK - Trojan/TLS - 443
 vless://B1BF44DF-BADD-44EE-826A-12C27206993D@95.40.100.129:10126?security=reality&type=grpc&mode=gun&serviceName=update&sni=s0.awsstatic.com&fp=chrome&sid=686c0ef0&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&encryption=none#🇭🇰 465 - HK - VLESS/GRPC/REALITY/PBK/SID/UTLS - 10126
-vless://caec0d8d-ab2f-4247-b97d-7fb1a34ab195@182.16.61.2:45647?security=none&encryption=none&headerType=none&type=tcp#🇭🇰 579 - HK - VLESS - 45647
+vless://caec0d8d-ab2f-4247-b97d-7fb1a34ab195@182.16.61.2:45647?path=/#🇭🇰 578 - HK - VLESS - 45647
