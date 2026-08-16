@@ -4,22 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇳 CN_33
-  server: jp.sofast.live
-  port: 52683
-  type: vless
-  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇳 CN_34
-  server: jp.sofast.live
-  port: 52683
-  type: vless
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇪🇪 爱沙尼亚 | EST 2
   server: ee-t3.vinnypuxtomoon.today
   port: 2053
@@ -55,6 +39,33 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: xiweini.dpdns.org
+  port: 30100
+  type: vless
+  uuid: 19bb341c-ee57-4899-b1e7-e9d3ebdf23df
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: xiweini.dpdns.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇬🇷 希腊 | GRC
+  server: grek.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: grek.helper-internet.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇭🇺 匈牙利 | HUN
   server: 217.70.14.216
   port: 8443
@@ -68,34 +79,6 @@ proxies:
   cipher: aes-256-gcm
   password: d1fa2f4b98a38bc8
   udp: true
-- name: 🇭🇰 香港 | HKG 9
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
-- name: 🇭🇰 香港 | HKG 6
-  server: t.cnmjcn.cyou
-  port: 16632
-  type: vmess
-  uuid: 62319519-82bc-46ff-99cd-237bd0882cef
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 1b24b66c02c843942070b76b27406898.mobgslb.tbcache.com
 - name: 🇭🇰 香港 | HKG 7
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
@@ -113,45 +96,6 @@ proxies:
     headers:
       Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
   udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: xiweini.dpdns.org
-  port: 30100
-  type: vless
-  uuid: 19bb341c-ee57-4899-b1e7-e9d3ebdf23df
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: xiweini.dpdns.org
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 10
-  server: 43.132.192.16
-  port: 9527
-  type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-  alterId: 0
-  cipher: chacha20-poly1305
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
-- name: 🇬🇷 希腊 | GRC
-  server: grek.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: grek.helper-internet.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇭🇰 香港 | HKG
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
@@ -166,6 +110,18 @@ proxies:
     path: /
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+- name: 🇭🇰 香港 | HKG 10
+  server: 43.132.192.16
+  port: 9527
+  type: vmess
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+  alterId: 0
+  cipher: chacha20-poly1305
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸 美国 | USA 23
   server: 104.17.185.207
   port: 2095
@@ -178,14 +134,6 @@ proxies:
     headers:
       Host: fangbinxingnmsl.pusytroller.gq
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: us22.sofast.live
-  port: 58011
-  type: vless
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 4
   server: 125.77.20.210
   port: 13565
@@ -196,29 +144,39 @@ proxies:
   ws-opts:
     path: /
   udp: true
+- name: 🇭🇰 香港 | HKG 9
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN_33
-  - 🇨🇳 CN_34
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇫🇷 法国 | FRA 26
   - 🇬🇧 英国 | GBR 3
+  - 🇭🇰 香港 | HKG 4
+  - 🇬🇷 希腊 | GRC
   - 🇭🇺 匈牙利 | HUN
   - 🇮🇹 意大利 | ITA
-  - 🇭🇰 香港 | HKG 9
-  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 7
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 10
-  - 🇬🇷 希腊 | GRC
   - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 10
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 4
   - 🇸🇬 新加坡 | SGP 4
+  - 🇭🇰 香港 | HKG 9
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -232,32 +190,27 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN_33
-  - 🇨🇳 CN_34
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇬🇧 英国 | GBR 3
   - 🇭🇰 香港 | HKG 4
   - 🇬🇷 希腊 | GRC
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 4
   - 🇸🇬 新加坡 | SGP 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 9
-  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 7
-  - 🇭🇰 香港 | HKG 10
   - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 10
+  - 🇭🇰 香港 | HKG 9
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN_33
-  - 🇨🇳 CN_34
+  - 🇭🇰 香港 | HKG 10
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -265,6 +218,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇫🇷 法国 | FRA 26
-  - 🇭🇺 匈牙利 | HUN
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO
