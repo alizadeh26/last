@@ -18,6 +18,13 @@ proxies:
   cipher: aes-256-gcm
   password: d1fa2f4b98a38bc8
   udp: true
+- name: 🇯🇵 日本 | JPN
+  server: 0ccenterhk-c.center-link.org
+  port: 611
+  type: ss
+  cipher: aes-128-gcm
+  password: 929c5ce8-222b-4d93-a80f-9ed580e2e8c1
+  udp: true
 - name: 🇵🇱 波兰 | POL 4
   server: 54.36.174.140
   port: 443
@@ -33,6 +40,7 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇮🇹 意大利 | ITA
+  - 🇯🇵 日本 | JPN
   - 🇵🇱 波兰 | POL 4
 rules:
 - MATCH,AUTO

@@ -11,18 +11,6 @@ proxies:
   cipher: aes-256-gcm
   password: fbcec76953a2d173
   udp: true
-- name: 🇨🇾 塞浦路斯 | CYP
-  server: 195.85.59.30
-  port: 8880
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime58.workers.dev
-  udp: true
 - name: 🇩🇪 德国 | DEU 9
   server: 104.24.152.211
   port: 8880
@@ -34,20 +22,6 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: lively-pine-093d.144-868.workers.dev
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: veilix.ciphero.xyz
-  port: 443
-  type: vless
-  uuid: b6b92515-13c5-4e6e-9fea-8db2d44628a0
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4
-    short-id: 33b5887524592cad
-  servername: veilix.ciphero.xyz
-  client-fingerprint: qq
-  network: tcp
   udp: true
 - name: 🇪🇪 爱沙尼亚 | EST 2
   server: ee-t3.vinnypuxtomoon.today
@@ -61,6 +35,20 @@ proxies:
     short-id: c0d1d1776fed0f6d
   servername: ee-t3.vinnypuxtomoon.today
   client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: veilix.ciphero.xyz
+  port: 443
+  type: vless
+  uuid: b6b92515-13c5-4e6e-9fea-8db2d44628a0
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4
+    short-id: 33b5887524592cad
+  servername: veilix.ciphero.xyz
+  client-fingerprint: qq
   network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR 2
@@ -98,18 +86,6 @@ proxies:
   cipher: aes-256-gcm
   password: d1fa2f4b98a38bc8
   udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: 43.132.192.16
-  port: 9527
-  type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-  alterId: 0
-  cipher: chacha20-poly1305
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
 - name: 🇮🇳 印度 | IND
   server: ind2.helper-internet.com
   port: 443
@@ -123,37 +99,6 @@ proxies:
   servername: ind2.helper-internet.com
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-- name: 🇭🇰 香港 | HKG 4
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 0c657913-e593-4893-9555-f88478c33a4b
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
   udp: true
 - name: 🇳🇱 荷兰 | NLD 9
   server: nl-t3.vinnypuxtomoon.today
@@ -189,12 +134,43 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇯🇵 日本 | JPN
+  server: 0ccenterhk-c.center-link.org
+  port: 611
+  type: ss
+  cipher: aes-128-gcm
+  password: 929c5ce8-222b-4d93-a80f-9ed580e2e8c1
+  udp: true
 - name: 🇵🇱 波兰 | POL 4
   server: 54.36.174.140
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: 43.132.192.16
+  port: 9527
+  type: vmess
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+  alterId: 0
+  cipher: chacha20-poly1305
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 185.148.104.30
+  port: 8880
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime51.workers.dev
   udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: codecanyon.net
@@ -208,18 +184,49 @@ proxies:
     headers:
       Host: silent-snow-1a0d.241-b0a.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: log.bpminecraft.com
-  port: 8880
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 72.56.14.138
+  port: 2200
   type: vless
-  uuid: bd3eb105-b048-47fa-9a1d-63a66f9830a2
+  uuid: 269c4c7d-6e37-4c63-9a8f-2f162bd892a3
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /v1
     headers:
-      Host: misty-flower-4d15.372-912.workers.dev
+      Host: rzd.ru
   udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 0c657913-e593-4893-9555-f88478c33a4b
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
 - name: 🇹🇷 土耳其 | TUR 2
   server: StreaMcORENODE8-aPilInkHub4-NetWeBGaTE.clOUdsYnC9.coM
   port: 443
@@ -246,6 +253,18 @@ proxies:
     headers:
       Host: lively-dream-d892.262.workers.dev
   udp: true
+- name: 🇺🇸 美国 | USA
+  server: log.bpminecraft.com
+  port: 8880
+  type: vless
+  uuid: bd3eb105-b048-47fa-9a1d-63a66f9830a2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: misty-flower-4d15.372-912.workers.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 12
   server: neth6.lckdwn.ru
   port: 443
@@ -265,25 +284,27 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇨🇾 塞浦路斯 | CYP
   - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 6
   - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇩🇪 德国 | DEU 6
   - 🇬🇧 英国 | GBR 2
   - 🇬🇷 希腊 | GRC 2
   - 🇮🇹 意大利 | ITA
-  - 🇭🇰 香港 | HKG 3
   - 🇮🇳 印度 | IND
-  - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 4
   - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 6
   - 🇵🇱 波兰 | POL 2
+  - 🇯🇵 日本 | JPN
   - 🇵🇱 波兰 | POL 4
+  - 🇭🇰 香港 | HKG 3
+  - 🇷🇺 俄罗斯 | RUS 4
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG
   - 🇹🇷 土耳其 | TUR 2
   - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 12
 - name: PROTO-SS
   type: url-test
@@ -292,25 +313,27 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇮🇹 意大利 | ITA
+  - 🇯🇵 日本 | JPN
   - 🇵🇱 波兰 | POL 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 | CYP
   - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 6
   - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇩🇪 德国 | DEU 6
   - 🇬🇧 英国 | GBR 2
   - 🇬🇷 希腊 | GRC 2
   - 🇮🇳 印度 | IND
   - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 6
   - 🇵🇱 波兰 | POL 2
+  - 🇷🇺 俄罗斯 | RUS 4
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA
+  - 🇷🇺 俄罗斯 | RUS 3
   - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 12
 - name: PROTO-VMESS
   type: url-test
@@ -318,27 +341,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 4
-  - 🇹🇷 土耳其 | TUR 2
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇮🇳 印度 | IND
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇾 塞浦路斯 | CYP
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇦 加拿大 | CAN
+  - 🇭🇰 香港 | HKG
   - 🇹🇷 土耳其 | TUR 2
 rules:
 - MATCH,AUTO
