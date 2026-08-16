@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇪 爱沙尼亚 | EST 2
-  server: ee-t3.vinnypuxtomoon.today
-  port: 2053
-  type: vless
-  uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
-    short-id: c0d1d1776fed0f6d
-  servername: ee-t3.vinnypuxtomoon.today
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR 3
   server: uk-t2.vinnypuxtomoon.today
   port: 2053
@@ -71,27 +57,15 @@ proxies:
     headers:
       Host: fangbinxingnmsl.pusytroller.gq
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 125.77.20.210
-  port: 13565
-  type: vless
-  uuid: 65500794-99b4-0343-bd18-a12453257a2b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST 2
   - 🇬🇧 英国 | GBR 3
   - 🇬🇷 希腊 | GRC
   - 🇭🇰 香港 | HKG 4
   - 🇺🇸 美国 | USA 23
-  - 🇸🇬 新加坡 | SGP 4
 rules:
 - MATCH,AUTO

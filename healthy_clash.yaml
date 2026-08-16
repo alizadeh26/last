@@ -4,27 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇪 爱沙尼亚 | EST 2
-  server: ee-t3.vinnypuxtomoon.today
-  port: 2053
-  type: vless
-  uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
-    short-id: c0d1d1776fed0f6d
-  servername: ee-t3.vinnypuxtomoon.today
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 26
-  server: 15.237.189.197
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇬🇧 英国 | GBR 3
   server: uk-t2.vinnypuxtomoon.today
   port: 2053
@@ -66,6 +45,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇭🇰 香港 | HKG 10
+  server: 43.132.192.16
+  port: 9527
+  type: vmess
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+  alterId: 0
+  cipher: chacha20-poly1305
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
 - name: 🇭🇰 香港 | HKG
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
@@ -80,13 +71,6 @@ proxies:
     path: /
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-- name: 🇮🇹 意大利 | ITA
-  server: 194.87.47.204
-  port: 10901
-  type: ss
-  cipher: aes-256-gcm
-  password: d1fa2f4b98a38bc8
-  udp: true
 - name: 🇭🇰 香港 | HKG 7
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
@@ -118,23 +102,12 @@ proxies:
     path: /
     headers:
       Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
-- name: 🇭🇺 匈牙利 | HUN
-  server: 217.70.14.216
-  port: 8443
+- name: 🇮🇹 意大利 | ITA
+  server: 194.87.47.204
+  port: 10901
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 48UQWJVetDr7ETiOXF+aEQ==
-- name: 🇭🇰 香港 | HKG 10
-  server: 43.132.192.16
-  port: 9527
-  type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-  alterId: 0
-  cipher: chacha20-poly1305
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
+  cipher: aes-256-gcm
+  password: d1fa2f4b98a38bc8
   udp: true
 - name: 🇺🇸 美国 | USA 23
   server: 104.17.185.207
@@ -148,41 +121,33 @@ proxies:
     headers:
       Host: fangbinxingnmsl.pusytroller.gq
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 125.77.20.210
-  port: 13565
-  type: vless
-  uuid: 65500794-99b4-0343-bd18-a12453257a2b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
+- name: 🇭🇺 匈牙利 | HUN
+  server: 217.70.14.216
+  port: 8443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 48UQWJVetDr7ETiOXF+aEQ==
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST 2
-  - 🇫🇷 法国 | FRA 26
   - 🇬🇧 英国 | GBR 3
   - 🇬🇷 希腊 | GRC
   - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 10
   - 🇭🇰 香港 | HKG
-  - 🇮🇹 意大利 | ITA
   - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 9
-  - 🇭🇺 匈牙利 | HUN
-  - 🇭🇰 香港 | HKG 10
+  - 🇮🇹 意大利 | ITA
   - 🇺🇸 美国 | USA 23
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇭🇺 匈牙利 | HUN
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 26
   - 🇮🇹 意大利 | ITA
   - 🇭🇺 匈牙利 | HUN
 - name: PROTO-VLESS
@@ -190,21 +155,19 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST 2
   - 🇬🇧 英国 | GBR 3
   - 🇬🇷 希腊 | GRC
   - 🇭🇰 香港 | HKG 4
   - 🇺🇸 美国 | USA 23
-  - 🇸🇬 新加坡 | SGP 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇭🇰 香港 | HKG 10
   - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 9
-  - 🇭🇰 香港 | HKG 10
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -217,11 +180,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST 2
-  - 🇫🇷 法国 | FRA 26
   - 🇬🇧 英国 | GBR 3
-  - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 7
-  - 🇭🇰 香港 | HKG 9
+  - 🇬🇷 希腊 | GRC
+  - 🇭🇺 匈牙利 | HUN
 rules:
 - MATCH,AUTO
