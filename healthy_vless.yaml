@@ -43,8 +43,8 @@ proxies:
     grpc-mode: gun
     grpc-service-name: fr4grpc
   udp: true
-- name: 🇪🇸 西班牙 | ESP
-  server: spain3.helper-internet.com
+- name: 🇬🇧 英国 | GBR 2
+  server: eng3.helper-internet.com
   port: 443
   type: vless
   uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
@@ -53,7 +53,7 @@ proxies:
   reality-opts:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
     short-id: ff776ff77be48b88
-  servername: spain3.helper-internet.com
+  servername: eng3.helper-internet.com
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -69,20 +69,6 @@ proxies:
     short-id: 33b5887524592cad
   servername: veilix.ciphero.xyz
   client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: eng3.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: eng3.helper-internet.com
-  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇬🇷 希腊 | GRC
@@ -139,6 +125,22 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: mws.tunnelgate.org
+  port: 14443
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  alpn:
+  - http/1.1
+  servername: mws.tunnelgate.org
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /ru
+    headers:
+      Host: mws.tunnelgate.org
+  udp: true
 - name: 🇺🇸 美国 | USA 17
   server: tsarlive.dpdns.org
   port: 443
@@ -156,22 +158,6 @@ proxies:
     headers:
       Host: tsarlive.dpdns.org
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: mws.tunnelgate.org
-  port: 14443
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  alpn:
-  - http/1.1
-  servername: mws.tunnelgate.org
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /ru
-    headers:
-      Host: mws.tunnelgate.org
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -181,14 +167,13 @@ proxy-groups:
   - 🇨🇿 捷克 | CZE
   - 🇫🇷 法国 | FRA
   - 🇫🇷 法国 | FRA 5
-  - 🇪🇸 西班牙 | ESP
-  - 🇩🇪 德国 | DEU 10
   - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 10
   - 🇬🇷 希腊 | GRC
   - 🇱🇹 立陶宛 | LTU
   - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇸🇪 瑞典 | SWE 2
-  - 🇺🇸 美国 | USA 17
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 17
 rules:
 - MATCH,AUTO

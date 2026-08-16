@@ -49,8 +49,8 @@ proxies:
     grpc-mode: gun
     grpc-service-name: fr4grpc
   udp: true
-- name: 🇪🇸 西班牙 | ESP
-  server: spain3.helper-internet.com
+- name: 🇬🇧 英国 | GBR 2
+  server: eng3.helper-internet.com
   port: 443
   type: vless
   uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
@@ -59,7 +59,7 @@ proxies:
   reality-opts:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
     short-id: ff776ff77be48b88
-  servername: spain3.helper-internet.com
+  servername: eng3.helper-internet.com
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -77,20 +77,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: eng3.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: eng3.helper-internet.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇬🇷 希腊 | GRC
   server: grek.helper-internet.com
   port: 443
@@ -104,6 +90,18 @@ proxies:
   servername: grek.helper-internet.com
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 9
+  server: 43.132.192.16
+  port: 9527
+  type: vmess
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+  alterId: 0
+  cipher: chacha20-poly1305
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
   udp: true
 - name: 🇱🇹 立陶宛 | LTU
   server: unas.denegnet.cc
@@ -125,32 +123,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
-  udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
-- name: 🇭🇰 香港 | HKG 9
-  server: 43.132.192.16
-  port: 9527
-  type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-  alterId: 0
-  cipher: chacha20-poly1305
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
   udp: true
 - name: 🇰🇿 哈萨克斯坦 | KAZ
   server: magazinetut.online
@@ -178,6 +150,20 @@ proxies:
     path: /
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+- name: 🇭🇰 香港 | HKG 3
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
 - name: 🇸🇪 瑞典 | SWE 2
   server: swed1.helper-internet.com
   port: 443
@@ -191,6 +177,22 @@ proxies:
   servername: swed1.helper-internet.com
   client-fingerprint: random
   network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: mws.tunnelgate.org
+  port: 14443
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  alpn:
+  - http/1.1
+  servername: mws.tunnelgate.org
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /ru
+    headers:
+      Host: mws.tunnelgate.org
   udp: true
 - name: 🇸🇬 新加坡 | SGP 5
   server: 161.118.216.2
@@ -215,22 +217,6 @@ proxies:
     headers:
       Host: tsarlive.dpdns.org
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: mws.tunnelgate.org
-  port: 14443
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  alpn:
-  - http/1.1
-  servername: mws.tunnelgate.org
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /ru
-    headers:
-      Host: mws.tunnelgate.org
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -241,20 +227,19 @@ proxy-groups:
   - 🇨🇿 捷克 | CZE
   - 🇫🇷 法国 | FRA
   - 🇫🇷 法国 | FRA 5
-  - 🇪🇸 西班牙 | ESP
-  - 🇩🇪 德国 | DEU 10
   - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 10
   - 🇬🇷 希腊 | GRC
+  - 🇭🇰 香港 | HKG 9
   - 🇱🇹 立陶宛 | LTU
   - 🇵🇱 波兰 | POL
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 9
   - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 3
   - 🇸🇪 瑞典 | SWE 2
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇬 新加坡 | SGP 5
   - 🇺🇸 美国 | USA 17
-  - 🇷🇺 俄罗斯 | RUS 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -271,22 +256,34 @@ proxy-groups:
   - 🇨🇿 捷克 | CZE
   - 🇫🇷 法国 | FRA
   - 🇫🇷 法国 | FRA 5
-  - 🇪🇸 西班牙 | ESP
-  - 🇩🇪 德国 | DEU 10
   - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 10
   - 🇬🇷 希腊 | GRC
   - 🇱🇹 立陶宛 | LTU
   - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇸🇪 瑞典 | SWE 2
-  - 🇺🇸 美国 | USA 17
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 17
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 9
   - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 3
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 捷克 | CZE
+  - 🇵🇱 波兰 | POL
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇷 巴西 | BRA
 rules:
 - MATCH,AUTO
