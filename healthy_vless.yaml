@@ -4,19 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 3
-  server: 14.137.238.40
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: 179.254.126.218
   port: 9800
   type: vless
   uuid: f4685d27-73e3-4588-9622-add50b84046a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: 14.137.238.40
+  port: 10000
+  type: vless
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
   tls: false
   network: tcp
   udp: true
@@ -26,7 +26,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 3
   - 🇩🇪 德国 | DEU 13
+  - 🇯🇵 日本 | JPN 3
 rules:
 - MATCH,AUTO
