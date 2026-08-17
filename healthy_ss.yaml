@@ -4,19 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇷 伊朗 | IRN
-  server: e1.cover20.ir
-  port: 51570
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 161.118.220.20
+  port: 56927
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WW382z3PcHtpz2O2qrEJZFN1ApP9zvngUHuBtkpptb0=
-  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: GQqbqOXuxZENzAQNNBNHN1f0G98P3t929vf932qYclw=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 伊朗 | IRN
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO

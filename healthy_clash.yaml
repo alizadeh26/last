@@ -4,20 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: estproxy4.lockdwn.com
-  port: 8443
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: estproxy4.lockdwn.com
-  client-fingerprint: edge
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 19
+- name: 🇩🇪 德国 | DEU 3
   server: www.true.th
   port: 80
   type: vmess
@@ -32,41 +19,62 @@ proxies:
     headers:
       Host: d7pu5mzr9c4b0.cloudfront.net
   udp: true
-- name: 🇬🇷 希腊 | GRC
-  server: grek.helper-internet.com
+- name: 🇫🇷 法国 | FRA 18
+  server: begin.magazinetut.online
   port: 443
   type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  uuid: 85bddbfa-4149-4db0-8092-39a2b228ec60
   tls: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: grek.helper-internet.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 37.252.20.41
-  port: 204
+- name: 🇬🇧 英国 | GBR 3
+  server: hope.tutdesignstudio.site
+  port: 443
   type: vless
-  uuid: 7c49a866-4f78-4dd0-bb4a-430e75d4ee70
-  tls: false
+  uuid: 493dea8b-0d8d-42bf-b96b-1efee4d5102a
+  tls: true
+  alpn:
+  - http/1.1
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 43.132.192.16
-  port: 9527
-  type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-  alterId: 0
-  cipher: chacha20-poly1305
-  tls: false
+- name: 🇷🇺 俄罗斯 | RUS
+  server: rus.noooo.win
+  port: 8443
+  type: vless
+  uuid: 84d6f322-52ad-40d6-becd-38e4593a6f47
+  tls: true
   alpn:
-  - ''
-  skip-cert-verify: true
+  - h2
+  flow: xtls-rprx-vision
+  servername: user-6a827a4e.noooo.win
+  client-fingerprint: edge
+  network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 11
+- name: 🇭🇰 香港 | HKG 13
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 161.118.220.20
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: GQqbqOXuxZENzAQNNBNHN1f0G98P3t929vf932qYclw=
+- name: 🇺🇸 美国 | USA 6
   server: 201.24.118.145
   port: 2200
   type: vless
@@ -76,108 +84,40 @@ proxies:
   ws-opts:
     path: /v1
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 0c657913-e593-4893-9555-f88478c33a4b
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: odd-darkness-57ce.334-a29.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: log.bpminecraft.com
-  port: 8880
-  type: vless
-  uuid: 4212034d-c18b-4060-b218-4f8372e5473a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: summer-hill-7f65.275-521.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: log.bpminecraft.com
-  port: 8880
-  type: vless
-  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-feather-dc98.136-25b.workers.dev
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇩🇪 德国 | DEU 19
-  - 🇬🇷 希腊 | GRC
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇭🇰 香港 | HKG
-  - 🇷🇺 俄罗斯 | RUS 11
-  - 🇭🇰 香港 | HKG 2
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 10
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇩🇪 德国 | DEU 3
+  - 🇫🇷 法国 | FRA 18
+  - 🇬🇧 英国 | GBR 3
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇭🇰 香港 | HKG 13
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 6
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇬🇷 希腊 | GRC
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇷🇺 俄罗斯 | RUS 11
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 10
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇫🇷 法国 | FRA 18
+  - 🇬🇧 英国 | GBR 3
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 6
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 19
-  - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 2
+  - 🇩🇪 德国 | DEU 3
+  - 🇭🇰 香港 | HKG 13
 rules:
 - MATCH,AUTO
