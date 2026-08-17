@@ -4,16 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 18
-  server: begin.magazinetut.online
-  port: 443
-  type: vless
-  uuid: 85bddbfa-4149-4db0-8092-39a2b228ec60
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR 3
   server: hope.tutdesignstudio.site
   port: 443
@@ -26,17 +16,14 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: rus.noooo.win
-  port: 8443
+- name: 🇫🇷 法国 | FRA 18
+  server: begin.magazinetut.online
+  port: 443
   type: vless
-  uuid: 84d6f322-52ad-40d6-becd-38e4593a6f47
+  uuid: 85bddbfa-4149-4db0-8092-39a2b228ec60
   tls: true
-  alpn:
-  - h2
   flow: xtls-rprx-vision
-  servername: user-6a827a4e.noooo.win
-  client-fingerprint: edge
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 6
@@ -55,9 +42,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 18
   - 🇬🇧 英国 | GBR 3
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇫🇷 法国 | FRA 18
   - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO

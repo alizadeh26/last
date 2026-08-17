@@ -4,31 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: www.true.th
-  port: 80
-  type: vmess
-  uuid: a150d554-e962-4632-829f-ee583ada3f95
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /htun
-    headers:
-      Host: d7pu5mzr9c4b0.cloudfront.net
-  udp: true
-- name: 🇫🇷 法国 | FRA 18
-  server: begin.magazinetut.online
-  port: 443
-  type: vless
-  uuid: 85bddbfa-4149-4db0-8092-39a2b228ec60
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR 3
   server: hope.tutdesignstudio.site
   port: 443
@@ -41,33 +16,16 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: rus.noooo.win
-  port: 8443
+- name: 🇫🇷 法国 | FRA 18
+  server: begin.magazinetut.online
+  port: 443
   type: vless
-  uuid: 84d6f322-52ad-40d6-becd-38e4593a6f47
+  uuid: 85bddbfa-4149-4db0-8092-39a2b228ec60
   tls: true
-  alpn:
-  - h2
   flow: xtls-rprx-vision
-  servername: user-6a827a4e.noooo.win
-  client-fingerprint: edge
+  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 13
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
 - name: 🇸🇬 新加坡 | SGP 2
   server: 161.118.220.20
   port: 56927
@@ -90,11 +48,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇫🇷 法国 | FRA 18
   - 🇬🇧 英国 | GBR 3
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇭🇰 香港 | HKG 13
+  - 🇫🇷 法国 | FRA 18
   - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 6
 - name: PROTO-SS
@@ -108,16 +63,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 18
   - 🇬🇧 英国 | GBR 3
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇫🇷 法国 | FRA 18
   - 🇺🇸 美国 | USA 6
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇭🇰 香港 | HKG 13
 rules:
 - MATCH,AUTO
