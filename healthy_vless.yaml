@@ -12,20 +12,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇿 捷克 | CZE
-  server: cz.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: cz.helper-internet.com
-  client-fingerprint: edge
-  network: tcp
-  udp: true
 - name: 🇯🇵 日本 | JPN 3
   server: 14.137.238.40
   port: 10000
@@ -41,7 +27,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 13
-  - 🇨🇿 捷克 | CZE
   - 🇯🇵 日本 | JPN 3
 rules:
 - MATCH,AUTO
