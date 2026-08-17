@@ -4,37 +4,35 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR 3
-  server: hope.tutdesignstudio.site
-  port: 443
+- name: 🇩🇪 德国 | DEU 13
+  server: 179.254.126.218
+  port: 9800
   type: vless
-  uuid: 493dea8b-0d8d-42bf-b96b-1efee4d5102a
-  tls: true
-  alpn:
-  - http/1.1
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 18
-  server: begin.magazinetut.online
-  port: 443
-  type: vless
-  uuid: 85bddbfa-4149-4db0-8092-39a2b228ec60
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 201.24.118.145
-  port: 2200
-  type: vless
-  uuid: 89537879-e550-45e9-ab1c-5e1a11c168f1
+  uuid: f4685d27-73e3-4588-9622-add50b84046a
   tls: false
-  network: ws
-  ws-opts:
-    path: /v1
+  network: tcp
+  udp: true
+- name: 🇨🇿 捷克 | CZE
+  server: cz.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: cz.helper-internet.com
+  client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: 14.137.238.40
+  port: 10000
+  type: vless
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -42,8 +40,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 3
-  - 🇫🇷 法国 | FRA 18
-  - 🇺🇸 美国 | USA 6
+  - 🇩🇪 德国 | DEU 13
+  - 🇨🇿 捷克 | CZE
+  - 🇯🇵 日本 | JPN 3
 rules:
 - MATCH,AUTO
