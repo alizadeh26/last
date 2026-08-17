@@ -1,27 +1,38 @@
-ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@15.204.247.124:2375?type=tcp&headerType=none#Server 34 🇺🇸
-vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@188.114.97.6:80?path=/http&security=none&encryption=none&host=de.vpnbase.net&type=ws#Server 160 🇺🇸
-trojan://AE62539071@54.64.255.224:443?security=tls&sni=maximum-elk.rooster465.autos#%E6%97%A5%E6%9C%AC_081708031
-trojan://ND91608427@35.72.13.34:443?allowInsecure=0&sni=casual-bee.rooster465.autos#%E6%97%A5%E6%9C%AC_081708041
-trojan://AE62539071@54.249.80.161:443?sni=deep-ringtail.rooster465.autos&type=tcp&fp=chrome#%E6%97%A5%E6%9C%AC_081708399
-trojan://AE62539071@13.115.54.131:443?sni=intense-wildcat.rooster465.autos&type=tcp&fp=chrome#%E6%97%A5%E6%9C%AC_081708392
-trojan://FH72359861@43.207.87.43:443?sni=casual-stallion.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%E6%97%A5%E6%9C%AC_081708483
-trojan://AE62539071@18.179.200.238:443?sni=safe-frog.rooster465.autos&type=tcp&fp=chrome#%E6%97%A5%E6%9C%AC_081708510
-trojan://FH72359861@16.146.11.254:443?sni=live-stallion.rooster465.autos&type=tcp&fp=chrome#%E7%BE%8E%E5%9B%BD_0817086655
-trojan://FH72359861@54.185.164.73:443?sni=outgoing-lynx.rooster465.autos&type=tcp&fp=chrome#%E7%BE%8E%E5%9B%BD_0817086648
-trojan://ND91608427@3.35.140.99:443?security=tls&sni=moved-meerkat.rooster465.autos#%E9%9F%A9%E5%9B%BD_081708010
-trojan://AE62539071@3.34.186.19:443?sni=magnetic-haddock.rooster465.autos&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_081708150
-vmess://eyJhZGQiOiJwbGFuYi5tb2pjbi5jb20ubGludXhsaC54aW4iLCJwb3J0IjoiMTY2MzIiLCJpZCI6Ijk3YzYzOGM2LTg2ZDUtNGNmNi1iNzBiLTExNGM2ODA5YjYzNyIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ2IjoiMiIsInBzIjoi5rOV5Zu9XzA4MTcwODAwMSIsImhvc3QiOiI0MDdhMmJjNmQ0NTJmZjkzZTZkN2I3MzA3ODUzOWQ5ZS5tb2Jnc2xiLnRiY2FjaGUuY29tIiwicGF0aCI6Ii8iLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
-trojan://AE62539071@52.79.160.55:443?sni=gorgeous-hookworm.rooster465.autos&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_081708159
-trojan://AE62539071@43.201.51.17:443?sni=glorious-glider.rooster465.autos&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_081708164
-trojan://FH72359861@13.125.103.245:443?sni=kind-grizzly.rooster465.autos&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_081708195
-trojan://ND91608427@43.201.56.44:443?security=tls&sni=distinct-llama.rooster465.autos#%E9%9F%A9%E5%9B%BD_081708017
-trojan://HC04361579@3.38.99.157:443?sni=star-shrimp.rooster465.autos&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_081708204
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.219:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.219-0290
-trojan://AE62539071@43.207.166.211:443?sni=proper-mouse.rooster465.autos&fp=chrome&type=tcp&path=/#🇯🇵 106 - JP - Trojan/TLS/UTLS - 443
-vless://155e8dd4-a559-407a-9ea8-13a5e829f066@168.222.140.236:4100?encryption=none&path=/v1&security=none&type=ws#🇷🇺 35 - RU - VLESS/WS - 4100
-vless://2f41c3ac-627d-4a65-9f3c-b8e2a73f06d9@66.90.93.74:8444?alpn=http/1.1&encryption=none&fp=firefox&path=/api/v1/connect&security=tls&sni=gateway-v1.bosx.net&type=ws#🇷🇺 122 - RU - VLESS/WS/TLS/UTLS - 8444
-vless://2c634977-584e-4e1f-b501-1b70c77a6743@185.141.227.153:9001?encryption=none&fp=safari&mode=gun&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&serviceName=grpc-reality&sid=6ba85179e30d4fc2&sni=api-maps.yandex.ru&type=grpc#🇷🇺 109 - RU - VLESS/GRPC/REALITY/PBK/SID/UTLS - 9001
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@104.16.80.73:443?encryption=none&security=tls&sni=josni.hoyes.cloudns.ch&insecure=0&allowInsecure=0&ech=ip.gs+udp://8.8.8.8&type=ws&host=josni.hoyes.cloudns.ch&path=musiclovers85?ed=512#🇺🇸 359 - US - VLESS/WS/TLS - 443
-vless://7e85ed3f-3829-45b1-8b1c-6a2e45ebc967@164.68.127.108:24144?encryption=none&security=none&type=tcp#🇫🇷 351 - FR - VLESS - 24144
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@63.185.140.9:22222?security=none&type=tcp&encryption=none#🇩🇪 583 - DE - VLESS - 22222
-vless://e7961655-9674-4cbd-a36f-ec0d5d7d660c@172.66.44.97:2053?path=/&security=tls&encryption=none&insecure=0&host=po.fastbrokencompony.com&ech=ip.gs+udp://8.8.8.8&type=ws&allowInsecure=0&sni=po.fastbrokencompony.com#🇺🇸 601 - US - VLESS/WS/TLS - 2053
+vmess://eyJ2IjoiMiIsImFkZCI6IjQ3LjI1MC4xMzUuMjQ0IiwicG9ydCI6IjEwMDAwIiwiaWQiOiJhZWRjNjZiOC05OWQ3LTRhMjEtODMxMC02MTg3MGU3Zjg3MGQiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InRjcCIsInR5cGUiOiIiLCJ0bHMiOiIiLCJwcyI6IlNlcnZlciA0MCDwn4ey8J+HviJ9
+trojan://FH72359861@54.254.235.88:443?sni=charming-ox.rooster465.autos&type=tcp&fp=chrome#%E6%96%B0%E5%8A%A0%E5%9D%A1_081713572
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@54.36.174.134:443#Server 114 🇵🇱
+trojan://ND91608427@3.112.223.141:443?security=tls&sni=internal-sunbird.rooster465.autos#%E6%97%A5%E6%9C%AC_081713033
+trojan://ND91608427@35.72.13.34:443?allowInsecure=0&sni=casual-bee.rooster465.autos#%E6%97%A5%E6%9C%AC_081713043
+trojan://ND91608427@57.180.13.78:443?security=tls&sni=healthy-louse.rooster465.autos#%E6%97%A5%E6%9C%AC_081713027
+trojan://AE62539071@52.199.134.162:443?sni=modest-pup.rooster465.autos&type=tcp&fp=chrome#%E6%97%A5%E6%9C%AC_081713402
+trojan://AE62539071@54.250.97.109:443?sni=current-barnacle.rooster465.autos&type=tcp&fp=chrome#%E6%97%A5%E6%9C%AC_081713401
+trojan://FH72359861@18.181.200.117:443?sni=sacred-shepherd.rooster465.autos&type=tcp&fp=chrome#%E6%97%A5%E6%9C%AC_081713481
+trojan://FH72359861@52.195.215.144:443?sni=great-wasp.rooster465.autos&type=tcp&fp=chrome#%E6%97%A5%E6%9C%AC_081713485
+trojan://QV31589740@51.44.160.58:443?allowInsecure=0&sni=great-krill.rooster465.autos#%E6%B3%95%E5%9B%BD_081713008
+trojan://AE62539071@100.22.163.167:443?sni=bright-baboon.rooster465.autos&type=tcp&fp=chrome#%E7%BE%8E%E5%9B%BD_0817136711
+vmess://eyJhZGQiOiI4NS45MC4yMTcuNDIiLCJwb3J0IjoiMjIzMjQiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidiI6IjIiLCJwcyI6Iuilv+ePreeJmV8wODE3MTMwMDEiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
+trojan://AE62539071@13.158.137.73:443?sni=novel-bat.rooster465.autos&type=tcp&fp=chrome#%E7%BE%8E%E5%9B%BD_0817136658
+trojan://AE62539071@13.125.228.160:443?sni=engaged-skink.rooster465.autos&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_081713166
+trojan://FH72359861@3.39.132.127:443?sni=star-bluejay.rooster465.autos&type=tcp&fp=chrome#%E9%9F%A9%E5%9B%BD_081713201
+trojan://ND91608427@185.244.208.210:443?allowInsecure=0&sni=upright-hamster.rooster465.autos#%E9%A6%99%E6%B8%AF_081713007
+ss://YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2@51.222.12.127:445#CA%F0%9F%87%A8%F0%9F%87%A6+%7C+51.222.12.127-445+%7C+71.57ms
+trojan://FH72359861@91.199.84.155:443?sni=modern-bedbug.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_081713250
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.203:8080#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+82.38.31.203-8080+%7C+160.63ms
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.160-0143
+trojan://FH72359861@engaging-toucan.rooster465.autos:443?#🇩🇪 1128 - DE - Trojan/TLS - 443
+trojan://PQ05174892@13.115.247.230:443?sni=ethical-raccoon.rooster465.autos&type=tcp&fp=chrome#🇯🇵 1687 - JP - Trojan/TLS/UTLS - 443
+trojan://PQ05174892@13.212.213.236:443?sni=closing-moose.rooster465.autos&type=tcp&fp=chrome#🇸🇬 1695 - SG - Trojan/TLS/UTLS - 443
+trojan://PQ05174892@47.129.0.251:443?sni=sharing-filly.rooster465.autos&type=tcp&fp=chrome#🇸🇬 1729 - SG - Trojan/TLS/UTLS - 443
+trojan://PQ05174892@57.181.28.187:443?sni=thorough-elf.rooster465.autos&type=tcp&fp=chrome#🇯🇵 1757 - JP - Trojan/TLS/UTLS - 443
+trojan://PQ05174892@3.35.48.58:443?sni=ethical-monkfish.rooster465.autos&type=tcp&fp=chrome#🇰🇷 1716 - KR - Trojan/TLS/UTLS - 443
+vless://155e8dd4-a559-407a-9ea8-13a5e829f066@87.228.122.108:4100?encryption=none&path=/v1&security=none&type=ws#🇷🇺 51 - RU - VLESS/WS - 4100
+vless://25f3beef-a4b6-40bc-aa74-17a0f89f683c@gr2.levikogjgfdd.ir:443?security=tls&type=ws&path=/&host=telegram.us&sni=finite-node.rtxconfigz.com&fp=chrome&encryption=none#🇫🇷 107 - FR - VLESS/WS/TLS/UTLS - 443
+vless://2e79f3ca-b8db-4d4d-a96e-8f7313480696@168.222.203.14:4100?encryption=none&host=live.ok.ru&path=/v1&security=none&type=ws#🇷🇺 165 - RU - VLESS/WS - 4100
+vless://670decfe-68cc-499e-8cb1-22b39c20acbb@159.194.230.94:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE&security=reality&sid=ff776ff77be48b88&sni=rf3.helper-internet.com&spx=/&type=raw#🇷🇺 383 - RU - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 443
+vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@185.140.12.160:2083?security=tls&type=grpc&mode=gun&serviceName=grpc&sni=derman.neobo-tooth.ru&fp=ios#🇩🇪 412 - DE - VLESS/GRPC/TLS/UTLS - 2083
+vless://88DA9CA6-5E68-4687-A748-961B612DCED5@sg4-r.link-t7.com:10039?security=reality&type=grpc&mode=gun&serviceName=update&packetEncoding=none&sni=d1.awsstatic.com&fp=chrome&sid=686c0ef0&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE#🇸🇬 528 - SG - VLESS/GRPC/REALITY/PBK/SID/UTLS - 10039
+vless://be42674a-296a-43d8-bf04-b8314d65ff63@199.232.78.159:443?allowInsecure=1&ed=2053&eh=Sec-WebSocket-Protocol&encryption=none&host=pane2.global.ssl.fastly.net&path=/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER&security=tls&sni=ssl.fastly.com&type=ws#🇺🇸 677 - US - VLESS/WS/TLS - 443
+vless://859a537b-09cf-4bce-8da4-ecbb72950e3a@159.195.22.155:443?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=2.oncloudnineservicestreang.com&fp=chrome&flow=xtls-rprx-vision&sid=d8d3dc6c3ca45dd4&pbk=Mg3ZxHNUFbX96q1HpS3WReeM7rnhEsXXtlEzxALeTDc#🇩🇪 513 - DE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://ef770523-8eb5-403f-9e95-06b328719c87@lucky-sunset-d12e.201-98c.workers.dev:8880?encryption=none&path=/pyip=ProxyIP.US.CMLiussss.net&security=none&type=ws#🇨🇦 814 - CA - VLESS/WS - 8880
+www.true.th:80	🇩🇪 德国 | DEU 19
+vless://caec0d8d-ab2f-4247-b97d-7fb1a34ab195@182.16.61.2:45647?security=none&encryption=none&headerType=none&type=tcp#🇺🇸 720 - US - VLESS - 45647

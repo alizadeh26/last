@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇷 希腊 | GRC
-  server: grek.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: grek.helper-internet.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: estproxy4.lockdwn.com
   port: 8443
@@ -39,17 +25,19 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: codecanyon.net
-  port: 8880
+- name: 🇬🇷 希腊 | GRC
+  server: grek.helper-internet.com
+  port: 443
   type: vless
-  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: odd-darkness-57ce.334-a29.workers.dev
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: grek.helper-internet.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇸🇬 新加坡 | SGP 7
   server: codecanyon.net
@@ -63,29 +51,27 @@ proxies:
     headers:
       Host: silent-snow-1a0d.241-b0a.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: log.bpminecraft.com
-  port: 8880
+- name: 🇷🇺 俄罗斯 | RUS 11
+  server: 201.24.118.145
+  port: 2200
   type: vless
-  uuid: 4212034d-c18b-4060-b218-4f8372e5473a
+  uuid: 89537879-e550-45e9-ab1c-5e1a11c168f1
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: summer-hill-7f65.275-521.workers.dev
+    path: /v1
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: log.bpminecraft.com
+- name: 🇸🇬 新加坡 | SGP 4
+  server: codecanyon.net
   port: 8880
   type: vless
-  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
+  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: morning-feather-dc98.136-25b.workers.dev
+      Host: odd-darkness-57ce.334-a29.workers.dev
   udp: true
 - name: 🇹🇭 泰国 | THA
   server: 18.239.134.69
@@ -99,19 +85,44 @@ proxies:
     headers:
       Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: log.bpminecraft.com
+  port: 8880
+  type: vless
+  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: morning-feather-dc98.136-25b.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: log.bpminecraft.com
+  port: 8880
+  type: vless
+  uuid: 4212034d-c18b-4060-b218-4f8372e5473a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: summer-hill-7f65.275-521.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 希腊 | GRC
   - 🇪🇪 爱沙尼亚 | EST
   - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇬🇷 希腊 | GRC
   - 🇸🇬 新加坡 | SGP 7
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 10
+  - 🇷🇺 俄罗斯 | RUS 11
+  - 🇸🇬 新加坡 | SGP 4
   - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO
