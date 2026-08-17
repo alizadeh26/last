@@ -28,13 +28,6 @@ proxies:
   - ''
   skip-cert-verify: true
   udp: true
-- name: 🇮🇷 伊朗 | IRN
-  server: e1.cover20.ir
-  port: 51570
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WW382z3PcHtpz2O2qrEJZFN1ApP9zvngUHuBtkpptb0=
-  udp: true
 - name: 🇭🇰 香港 | HKG 8
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
@@ -86,6 +79,20 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: free-nl.moscow-neversleep.digital
+  port: 443
+  type: vless
+  uuid: c5c76051-abad-4dfe-bf16-1ee0ee3aca31
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+    short-id: 1ed136481e0ede74
+  servername: cdn.byteark.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -94,17 +101,11 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 | EST
   - 🇭🇰 香港 | HKG 3
-  - 🇮🇷 伊朗 | IRN
   - 🇭🇰 香港 | HKG 8
   - 🇱🇻 拉脱维亚 | LVA
   - 🇺🇸 美国 | USA 7
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇮🇷 伊朗 | IRN
+  - 🇳🇱 荷兰 | NLD
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -114,6 +115,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 | LVA
   - 🇺🇸 美国 | USA 7
   - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇳🇱 荷兰 | NLD
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -127,8 +129,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 3
-  - 🇮🇷 伊朗 | IRN
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -136,5 +136,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 | EST
   - 🇭🇰 香港 | HKG 8
+  - 🇱🇻 拉脱维亚 | LVA
 rules:
 - MATCH,AUTO

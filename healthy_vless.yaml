@@ -50,6 +50,20 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: free-nl.moscow-neversleep.digital
+  port: 443
+  type: vless
+  uuid: c5c76051-abad-4dfe-bf16-1ee0ee3aca31
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+    short-id: 1ed136481e0ede74
+  servername: cdn.byteark.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -60,5 +74,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 | LVA
   - 🇺🇸 美国 | USA 7
   - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
