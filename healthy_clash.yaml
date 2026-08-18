@@ -4,12 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 146.235.35.83
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: IcsKPKHKW9DOiQEeXcRnYMR4dcZ3zP5g0DgZk6CQHWw=
 - name: 🇨🇭 瑞士 | CHE
   server: translate.magazinetut.online
   port: 443
@@ -20,13 +14,6 @@ proxies:
   servername: translate.magazinetut.online
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 20
-  server: 15.237.189.197
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
   udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: savesafe.co
@@ -41,6 +28,13 @@ proxies:
   servername: savesafe.co
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 20
+  server: 15.237.189.197
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇬🇧 英国 | GBR 4
   server: 129.151.77.35
@@ -69,33 +63,6 @@ proxies:
     headers:
       Host: 129.121.95.159
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 157.137.217.159
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 92.5.228.26
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5Xn2qHoVdu6aJjp6R2KjKrk10+qFniNh5OjKW93TdWk=
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 195.133.23.200
-  port: 10998
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 195.133.23.5
-  port: 20998
-  type: ss
-  cipher: aes-256-gcm
-  password: d99c422199e62b6b
 - name: 🇭🇰 香港 | HKG 10
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
@@ -113,12 +80,31 @@ proxies:
     headers:
       Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 195.133.23.5
+  port: 20998
+  type: ss
+  cipher: aes-256-gcm
+  password: d99c422199e62b6b
 - name: 🇸🇬 新加坡 | SGP 3
   server: 168.107.81.254
   port: 56927
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: SeX7cLfW+WWgFoc3nPSBxPxBPtE63qwODMqpUf7Slho=
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 45.8.158.176
+  port: 10801
+  type: ss
+  cipher: aes-256-gcm
+  password: 1eadd4e4a37b6601
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 195.133.23.200
+  port: 10998
+  type: ss
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
 - name: 🇺🇸 美国 | USA 8
   server: 64.83.12.153
   port: 443
@@ -131,12 +117,12 @@ proxies:
   - ''
   skip-cert-verify: true
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 45.8.158.176
-  port: 10801
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 92.5.228.26
+  port: 45819
   type: ss
-  cipher: aes-256-gcm
-  password: 1eadd4e4a37b6601
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 5Xn2qHoVdu6aJjp6R2KjKrk10+qFniNh5OjKW93TdWk=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -144,35 +130,32 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇨🇭 瑞士 | CHE
-  - 🇫🇷 法国 | FRA 20
   - 🇩🇪 德国 | DEU 6
+  - 🇫🇷 法国 | FRA 20
   - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 5
   - 🇬🇧 英国 | GBR 3
-  - 🇨🇴 哥伦比亚 | COL 3
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS
   - 🇭🇰 香港 | HKG 10
+  - 🇷🇺 俄罗斯 | RUS
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 8
   - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 8
+  - 🇳🇱 荷兰 | NLD 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇫🇷 法国 | FRA 20
   - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 5
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇷🇺 俄罗斯 | RUS
   - 🇸🇬 新加坡 | SGP 3
   - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇳🇱 荷兰 | NLD 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -181,7 +164,6 @@ proxy-groups:
   - 🇨🇭 瑞士 | CHE
   - 🇩🇪 德国 | DEU 6
   - 🇬🇧 英国 | GBR 3
-  - 🇨🇴 哥伦比亚 | COL 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -189,17 +171,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 10
   - 🇺🇸 美国 | USA 8
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇭 瑞士 | CHE
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇧🇷 巴西 | BRA
 rules:
 - MATCH,AUTO
