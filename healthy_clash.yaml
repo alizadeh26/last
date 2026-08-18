@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.239.163
-  port: 62145
+- name: 🇩🇪 德国 | DEU 2
+  server: 3.79.218.80
+  port: 22224
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
@@ -55,28 +55,20 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 9
-  server: 49.lwdh.us
-  port: 12939
-  type: vless
-  uuid: df8cd190-eaf0-4cf1-ac32-bb07a3bd4c36
-  tls: true
-  flow: xtls-rprx-vision
-  servername: 49.lwdh.us
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 14
-  server: 4.lwdh.us
-  port: 13001
-  type: vless
-  uuid: df8cd190-eaf0-4cf1-ac32-bb07a3bd4c36
-  tls: true
-  flow: xtls-rprx-vision
-  servername: 4.lwdh.us
-  client-fingerprint: ios
-  network: tcp
-  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
 - name: 🇳🇱 荷兰 | NLD 2
   server: 84.235.170.175
   port: 62145
@@ -93,20 +85,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
 - name: 🇸🇪 瑞典 | SWE 2
   server: se.morinsq.su
   port: 443
@@ -119,37 +97,49 @@ proxies:
   servername: se.morinsq.su
   client-fingerprint: chrome
   network: tcp
+- name: 🇸🇬 新加坡 | SGP 4
+  server: paid.sshehi.ggff.net
+  port: 443
+  type: vless
+  uuid: 49c86212-ae0b-430e-9abb-244e715b533f
+  tls: true
+  servername: aka.ms
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: paid.sshehi.ggff.net
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 10
   - 🇬🇧 英国 | GBR 4
   - 🇫🇷 法国 | FRA 3
   - 🇬🇧 英国 | GBR 2
-  - 🇭🇰 香港 | HKG 9
-  - 🇭🇰 香港 | HKG 14
+  - 🇭🇰 香港 | HKG 5
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 7
-  - 🇭🇰 香港 | HKG 5
   - 🇸🇪 瑞典 | SWE 2
+  - 🇸🇬 新加坡 | SGP 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 10
   - 🇫🇷 法国 | FRA 3
   - 🇬🇧 英国 | GBR 2
-  - 🇭🇰 香港 | HKG 9
-  - 🇭🇰 香港 | HKG 14
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 7
   - 🇸🇪 瑞典 | SWE 2
+  - 🇸🇬 新加坡 | SGP 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -157,27 +147,13 @@ proxy-groups:
   proxies:
   - 🇬🇧 英国 | GBR 4
   - 🇭🇰 香港 | HKG 5
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 9
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 10
-  - 🇬🇧 英国 | GBR 4
+  - 🇩🇪 德国 | DEU 2
   - 🇫🇷 法国 | FRA 3
-  - 🇭🇰 香港 | HKG 5
-  - 🇸🇪 瑞典 | SWE 2
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO
