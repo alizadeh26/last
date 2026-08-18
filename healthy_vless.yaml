@@ -4,17 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇭 瑞士 | CHE
-  server: translate.magazinetut.online
-  port: 443
-  type: vless
-  uuid: 5c025078-2eae-4c53-bad1-5e491f33395e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: translate.magazinetut.online
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: savesafe.co
   port: 443
@@ -26,6 +15,17 @@ proxies:
     public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
     short-id: f63805c3ecc7a483
   servername: savesafe.co
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇨🇭 瑞士 | CHE
+  server: translate.magazinetut.online
+  port: 443
+  type: vless
+  uuid: 5c025078-2eae-4c53-bad1-5e491f33395e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: translate.magazinetut.online
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -49,8 +49,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 | CHE
   - 🇩🇪 德国 | DEU 6
+  - 🇨🇭 瑞士 | CHE
   - 🇬🇧 英国 | GBR 3
 rules:
 - MATCH,AUTO

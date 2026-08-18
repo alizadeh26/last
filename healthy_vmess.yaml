@@ -21,6 +21,20 @@ proxies:
     headers:
       Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
   udp: true
+- name: 🇯🇵 日本 | JPN 4
+  server: cc28.goingside.site
+  port: 8998
+  type: vmess
+  uuid: 4b019faa-38b0-473d-bc49-60bb68151c34
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cc28.goingside.site
 - name: 🇺🇸 美国 | USA 8
   server: 64.83.12.153
   port: 443
@@ -40,6 +54,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 10
+  - 🇯🇵 日本 | JPN 4
   - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
