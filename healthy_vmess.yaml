@@ -4,22 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: www.true.th
-  port: 80
+- name: 🇬🇧 英国 | GBR 4
+  server: 192.248.163.148
+  port: 53224
   type: vmess
-  uuid: a150d554-e962-4632-829f-ee583ada3f95
+  uuid: 647c2dc6-fd48-4a84-9b59-163df19ad6f9
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /htun
-    headers:
-      Host: d7pu5mzr9c4b0.cloudfront.net
+    path: /647c2dc6-fd48-4a84-9b59-163df19ad6f9
   udp: true
-- name: 🇭🇰 香港 | HKG 13
+- name: 🇭🇰 香港 | HKG 5
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
   type: vmess
@@ -39,7 +37,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇭🇰 香港 | HKG 13
+  - 🇬🇧 英国 | GBR 4
+  - 🇭🇰 香港 | HKG 5
 rules:
 - MATCH,AUTO

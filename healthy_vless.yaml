@@ -4,29 +4,108 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 13
-  server: 179.254.126.218
-  port: 9800
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.239.163
+  port: 62145
   type: vless
-  uuid: f4685d27-73e3-4588-9622-add50b84046a
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: 14.137.238.40
-  port: 10000
+- name: 🇩🇪 德国 | DEU 10
+  server: 63.180.32.154
+  port: 22224
   type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
+- name: 🇫🇷 法国 | FRA 3
+  server: begin.magazinetut.online
+  port: 443
+  type: vless
+  uuid: 85bddbfa-4149-4db0-8092-39a2b228ec60
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: hope.tutdesignstudio.site
+  port: 443
+  type: vless
+  uuid: 493dea8b-0d8d-42bf-b96b-1efee4d5102a
+  tls: true
+  alpn:
+  - http/1.1
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 9
+  server: 49.lwdh.us
+  port: 12939
+  type: vless
+  uuid: df8cd190-eaf0-4cf1-ac32-bb07a3bd4c36
+  tls: true
+  flow: xtls-rprx-vision
+  servername: 49.lwdh.us
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 14
+  server: 4.lwdh.us
+  port: 13001
+  type: vless
+  uuid: df8cd190-eaf0-4cf1-ac32-bb07a3bd4c36
+  tls: true
+  flow: xtls-rprx-vision
+  servername: 4.lwdh.us
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 84.235.170.175
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 193.123.58.85
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: se.morinsq.su
+  port: 443
+  type: vless
+  uuid: 93fab704-cea7-4ca4-a9ac-5bb46aef263c
+  tls: true
+  reality-opts:
+    public-key: uag6mQ8Nj62hZYzJhhd4ZZ-0GOGA42khyC6XtRbEnAg
+    short-id: 77ca514a4493ae52
+  servername: se.morinsq.su
+  client-fingerprint: chrome
+  network: tcp
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 13
-  - 🇯🇵 日本 | JPN 3
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 10
+  - 🇫🇷 法国 | FRA 3
+  - 🇬🇧 英国 | GBR 2
+  - 🇭🇰 香港 | HKG 9
+  - 🇭🇰 香港 | HKG 14
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇸🇪 瑞典 | SWE 2
 rules:
 - MATCH,AUTO
