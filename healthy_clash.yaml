@@ -10,27 +10,11 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: IcsKPKHKW9DOiQEeXcRnYMR4dcZ3zP5g0DgZk6CQHWw=
-- name: 🇩🇪 德国 | DEU 3
-  server: 63.187.235.95
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL
   server: 158.247.126.78
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 63.187.235.95
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
@@ -50,12 +34,15 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 4
-  server: 157.137.230.43
-  port: 62145
+- name: 🇨🇭 瑞士 | CHE
+  server: translate.magazinetut.online
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
+  uuid: 5c025078-2eae-4c53-bad1-5e491f33395e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: translate.magazinetut.online
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 6
@@ -72,16 +59,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇨🇭 瑞士 | CHE
-  server: translate.magazinetut.online
+- name: 🇫🇷 法国 | FRA 20
+  server: 15.237.189.197
   port: 443
-  type: vless
-  uuid: 5c025078-2eae-4c53-bad1-5e491f33395e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: translate.magazinetut.online
-  client-fingerprint: chrome
-  network: tcp
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇬🇧 英国 | GBR 4
   server: 129.151.77.35
@@ -133,14 +116,6 @@ proxies:
     path: /xray
     headers:
       Host: hk01.vpn.taiaise.cn
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 158.178.144.96
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 92.5.228.26
   port: 45819
@@ -148,68 +123,30 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 5Xn2qHoVdu6aJjp6R2KjKrk10+qFniNh5OjKW93TdWk=
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 64.83.12.153
-  port: 443
-  type: vmess
-  uuid: 9d476209-d8bd-9536-6e8d-61c97ec114db
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 195.133.23.5
   port: 20998
   type: ss
   cipher: aes-256-gcm
   password: d99c422199e62b6b
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 168.107.81.254
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: SeX7cLfW+WWgFoc3nPSBxPxBPtE63qwODMqpUf7Slho=
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 195.133.23.200
   port: 10998
   type: ss
   cipher: aes-256-gcm
   password: 81a20429165df87e
-- name: 🇺🇸 美国 | USA 13
-  server: 104.225.232.25
-  port: 10877
-  type: vless
-  uuid: 42613786-2036-4a79-ad64-cc65d4e60a8d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zX35soHloTc-mNt8U2GiZQaRZuKr4v_GjMEV7SMyiUw
-  servername: www.paypal.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 168.107.81.254
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: SeX7cLfW+WWgFoc3nPSBxPxBPtE63qwODMqpUf7Slho=
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 45.8.158.176
   port: 10801
   type: ss
   cipher: aes-256-gcm
   password: 1eadd4e4a37b6601
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 185.227.252.204
-  port: 8080
-  type: vmess
-  uuid: b3c6fb30-1416-47fc-87a1-784aeb75b526
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
   udp: true
 - name: 🇭🇰 香港 | HKG 10
   server: planb.mojcn.com.linuxlh.xin
@@ -228,6 +165,29 @@ proxies:
     headers:
       Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
   udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 64.83.12.153
+  port: 443
+  type: vmess
+  uuid: 9d476209-d8bd-9536-6e8d-61c97ec114db
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: bns.taiaise.cn
+  port: 9444
+  type: vless
+  uuid: 060aede7-11ea-4032-b025-6c4168a5182e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: bns.taiaise.cn
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -235,74 +195,72 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 3
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 4
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 3
-  - 🇨🇴 哥伦比亚 | COL 4
-  - 🇩🇪 德国 | DEU 6
   - 🇨🇭 瑞士 | CHE
+  - 🇩🇪 德国 | DEU 6
+  - 🇫🇷 法国 | FRA 20
   - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 5
   - 🇬🇧 英国 | GBR 3
   - 🇯🇵 日本 | JPN 3
   - 🇭🇰 香港 | HKG 7
-  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 7
-  - 🇺🇸 美国 | USA 8
   - 🇷🇺 俄罗斯 | RUS
-  - 🇸🇬 新加坡 | SGP 3
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 13
+  - 🇸🇬 新加坡 | SGP 3
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA 4
   - 🇭🇰 香港 | HKG 10
+  - 🇺🇸 美国 | USA 8
+  - 🇭🇰 香港 | HKG 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
+  - 🇫🇷 法国 | FRA 20
   - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 5
   - 🇳🇱 荷兰 | NLD 7
   - 🇷🇺 俄罗斯 | RUS
-  - 🇸🇬 新加坡 | SGP 3
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇸🇬 新加坡 | SGP 3
   - 🇷🇺 俄罗斯 | RUS 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 4
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 3
-  - 🇨🇴 哥伦比亚 | COL 4
-  - 🇩🇪 德国 | DEU 6
   - 🇨🇭 瑞士 | CHE
+  - 🇩🇪 德国 | DEU 6
   - 🇬🇧 英国 | GBR 3
   - 🇯🇵 日本 | JPN 3
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇺🇸 美国 | USA 13
+  - 🇭🇰 香港 | HKG 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 7
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 4
   - 🇭🇰 香港 | HKG 10
+  - 🇺🇸 美国 | USA 8
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇬🇧 英国 | GBR 3
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 2
 rules:
 - MATCH,AUTO

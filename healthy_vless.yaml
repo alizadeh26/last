@@ -4,27 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: 63.187.235.95
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL
   server: 158.247.126.78
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 63.187.235.95
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
@@ -44,12 +28,15 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 4
-  server: 157.137.230.43
-  port: 62145
+- name: 🇨🇭 瑞士 | CHE
+  server: translate.magazinetut.online
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
+  uuid: 5c025078-2eae-4c53-bad1-5e491f33395e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: translate.magazinetut.online
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 6
@@ -63,17 +50,6 @@ proxies:
     public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
     short-id: f63805c3ecc7a483
   servername: savesafe.co
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇨🇭 瑞士 | CHE
-  server: translate.magazinetut.online
-  port: 443
-  type: vless
-  uuid: 5c025078-2eae-4c53-bad1-5e491f33395e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: translate.magazinetut.online
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -99,24 +75,14 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 158.178.144.96
-  port: 62145
+- name: 🇭🇰 香港 | HKG 4
+  server: bns.taiaise.cn
+  port: 9444
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 104.225.232.25
-  port: 10877
-  type: vless
-  uuid: 42613786-2036-4a79-ad64-cc65d4e60a8d
+  uuid: 060aede7-11ea-4032-b025-6c4168a5182e
   tls: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zX35soHloTc-mNt8U2GiZQaRZuKr4v_GjMEV7SMyiUw
-  servername: www.paypal.com
+  servername: bns.taiaise.cn
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -126,17 +92,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 4
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 3
-  - 🇨🇴 哥伦比亚 | COL 4
-  - 🇩🇪 德国 | DEU 6
   - 🇨🇭 瑞士 | CHE
+  - 🇩🇪 德国 | DEU 6
   - 🇬🇧 英国 | GBR 3
   - 🇯🇵 日本 | JPN 3
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇺🇸 美国 | USA 13
+  - 🇭🇰 香港 | HKG 4
 rules:
 - MATCH,AUTO
