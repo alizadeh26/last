@@ -1,4 +1,2 @@
-vless://9b44bfb4-9d28-4870-9fc3-5154d6d462ff@168.222.140.155:4100?type=ws&security=none&path=/v1#Server 36 🇷🇺
-vless://218fd696-e3a2-4c33-b397-a5f13a82969e@193.233.48.92:443?encryption=none&fp=chrome&mode=gun&pbk=iUc9JqWjFemnQo8R5fgiwssCjEdWmixB4X-mRJkx2VE&security=reality&serviceName=grpc&sid=3182f9ae&sni=media3.abvphelp.cc&type=grpc#🇺🇸 25 - US - VLESS/GRPC/REALITY/PBK/SID/UTLS - 443
-vless://53c76647-14d1-4df5-99cb-be99ad2e6bd9@45.139.26.104:443?encryption=none&flow=xtls-rprx-vision&fp=ios&security=tls&sni=ru104.mechvpn.online&type=raw#🇷🇺 132 - RU - VLESS/RAW/TLS/VISION/UTLS - 443
-vless://9d01e9f2-1569-48cd-beb3-36f706f5ad5b@45.146.131.154:8452?security=reality&encryption=none&pbk=neW65LaKi88zH-X9gRQPhl5YqQLz9E4IrVnOpS4BnkU&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com&sid=45b10e93bc618c2c#🏳️ 310 - XX - VLESS/REALITY/PBK/SID/VISION/UTLS - 8452
+ss://YWVzLTI1Ni1nY206MWVhZGQ0ZTRhMzdiNjYwMQ@45.8.158.176:10801#Server 23 🇷🇺
+vless://633f424e-2b11-48da-a6b3-a849dd71456f@45.12.75.242:26424?encryption=none&fp=chrome&pbk=l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0&security=reality&sid=23103e1e&sni=ya.ru&type=raw#🏳️ 168 - XX - VLESS/RAW/REALITY/PBK/SID/UTLS - 26424
