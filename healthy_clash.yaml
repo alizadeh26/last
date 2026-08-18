@@ -4,19 +4,73 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 166.88.130.218
-  port: 50118
+- name: 🇧🇷 巴西 | BRA
+  server: 146.235.35.83
+  port: 59319
   type: ss
-  cipher: aes-256-gcm
-  password: fbcec76953a2d173
+  cipher: 2022-blake3-chacha20-poly1305
+  password: IcsKPKHKW9DOiQEeXcRnYMR4dcZ3zP5g0DgZk6CQHWw=
+- name: 🇩🇪 德国 | DEU 3
+  server: 63.187.235.95
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
   udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: 45.32.246.180
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TqkkHRpZTkjbTBrk
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 158.247.126.78
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 63.187.235.95
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.225.201
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 157.137.217.159
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 4
+  server: 157.137.230.43
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: savesafe.co
+  port: 443
+  type: vless
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
+    short-id: f63805c3ecc7a483
+  servername: savesafe.co
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇨🇭 瑞士 | CHE
   server: translate.magazinetut.online
@@ -29,30 +83,126 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 129.151.65.200
+- name: 🇬🇧 英国 | GBR 4
+  server: 129.151.77.35
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: dBzhdBpUjjungwbNFFQOLIrxd9SYfqP4Qt2l29/2uYo=
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.88.180
+  password: sC1RiQOK5Ts5zgUYDwB/AGFbqjpytI0/AczgkgCCnew=
+- name: 🇬🇧 英国 | GBR 5
+  server: 129.151.66.31
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 7CCOp1icO5ZfmmzSweQowSvA5+efeJ3HrKxHDAAJmUc=
-- name: 🇫🇷 法国 | FRA 9
-  server: 15.237.189.197
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  password: fr5M3Mv/8HIcozWHJCfI8SeuOYixEodurkiYtFmanP8=
   udp: true
-- name: 🇭🇰 香港 | HKG 18
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
+- name: 🇬🇧 英国 | GBR 3
+  server: 129.121.95.159
+  port: 443
+  type: vless
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  tls: true
+  servername: 129.121.95.159
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: 129.121.95.159
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: 139.180.198.220
+  port: 52143
+  type: vless
+  uuid: 2942bae7-9dcf-4a2e-f928-933c0ab3eab0
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 7
+  server: hk01.vpn.taiaise.cn
+  port: 443
   type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  uuid: 060aede7-11ea-4032-b025-6c4168a5182e
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: hk01.vpn.taiaise.cn
+  network: ws
+  ws-opts:
+    path: /xray
+    headers:
+      Host: hk01.vpn.taiaise.cn
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 158.178.144.96
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 92.5.228.26
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 5Xn2qHoVdu6aJjp6R2KjKrk10+qFniNh5OjKW93TdWk=
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 64.83.12.153
+  port: 443
+  type: vmess
+  uuid: 9d476209-d8bd-9536-6e8d-61c97ec114db
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 195.133.23.5
+  port: 20998
+  type: ss
+  cipher: aes-256-gcm
+  password: d99c422199e62b6b
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 168.107.81.254
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: SeX7cLfW+WWgFoc3nPSBxPxBPtE63qwODMqpUf7Slho=
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 195.133.23.200
+  port: 10998
+  type: ss
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+- name: 🇺🇸 美国 | USA 13
+  server: 104.225.232.25
+  port: 10877
+  type: vless
+  uuid: 42613786-2036-4a79-ad64-cc65d4e60a8d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zX35soHloTc-mNt8U2GiZQaRZuKr4v_GjMEV7SMyiUw
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 45.8.158.176
+  port: 10801
+  type: ss
+  cipher: aes-256-gcm
+  password: 1eadd4e4a37b6601
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 185.227.252.204
+  port: 8080
+  type: vmess
+  uuid: b3c6fb30-1416-47fc-87a1-784aeb75b526
   alterId: 0
   cipher: auto
   tls: false
@@ -60,63 +210,99 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 84.235.171.188
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  udp: true
+- name: 🇭🇰 香港 | HKG 10
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 0c657913-e593-4893-9555-f88478c33a4b
+  alterId: 0
+  cipher: auto
   tls: false
-  network: tcp
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇦🇺 澳大利亚 | AUS
+  - 🇧🇷 巴西 | BRA
+  - 🇩🇪 德国 | DEU 3
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 4
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 4
+  - 🇩🇪 德国 | DEU 6
   - 🇨🇭 瑞士 | CHE
+  - 🇬🇧 英国 | GBR 4
+  - 🇬🇧 英国 | GBR 5
   - 🇬🇧 英国 | GBR 3
-  - 🇬🇧 英国 | GBR 2
-  - 🇫🇷 法国 | FRA 9
-  - 🇭🇰 香港 | HKG 18
+  - 🇯🇵 日本 | JPN 3
+  - 🇭🇰 香港 | HKG 7
+  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 8
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 13
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇺🇸 美国 | USA 4
+  - 🇭🇰 香港 | HKG 10
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇦🇺 澳大利亚 | AUS
-  - 🇬🇧 英国 | GBR 3
-  - 🇬🇧 英国 | GBR 2
-  - 🇫🇷 法国 | FRA 9
+  - 🇧🇷 巴西 | BRA
+  - 🇬🇧 英国 | GBR 4
+  - 🇬🇧 英国 | GBR 5
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇷🇺 俄罗斯 | RUS 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 3
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 4
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 4
+  - 🇩🇪 德国 | DEU 6
   - 🇨🇭 瑞士 | CHE
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇬🇧 英国 | GBR 3
+  - 🇯🇵 日本 | JPN 3
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇺🇸 美国 | USA 13
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 18
-- name: REGION-EU
+  - 🇭🇰 香港 | HKG 7
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 4
+  - 🇭🇰 香港 | HKG 10
+- name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
-- name: REGION-OC
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇦🇺 澳大利亚 | AUS
+  - 🇧🇷 巴西 | BRA
+  - 🇨🇴 哥伦比亚 | COL 3
 rules:
 - MATCH,AUTO

@@ -4,11 +4,38 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 18
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
+- name: 🇭🇰 香港 | HKG 7
+  server: hk01.vpn.taiaise.cn
+  port: 443
   type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  uuid: 060aede7-11ea-4032-b025-6c4168a5182e
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: hk01.vpn.taiaise.cn
+  network: ws
+  ws-opts:
+    path: /xray
+    headers:
+      Host: hk01.vpn.taiaise.cn
+- name: 🇺🇸 美国 | USA 8
+  server: 64.83.12.153
+  port: 443
+  type: vmess
+  uuid: 9d476209-d8bd-9536-6e8d-61c97ec114db
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 185.227.252.204
+  port: 8080
+  type: vmess
+  uuid: b3c6fb30-1416-47fc-87a1-784aeb75b526
   alterId: 0
   cipher: auto
   tls: false
@@ -16,14 +43,33 @@ proxies:
   network: ws
   ws-opts:
     path: /
+  udp: true
+- name: 🇭🇰 香港 | HKG 10
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 0c657913-e593-4893-9555-f88478c33a4b
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
     headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 18
+  - 🇭🇰 香港 | HKG 7
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 4
+  - 🇭🇰 香港 | HKG 10
 rules:
 - MATCH,AUTO
