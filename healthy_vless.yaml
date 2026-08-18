@@ -4,33 +4,61 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.185.200
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.225.227
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 157.137.231.93
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 4
+  server: 158.247.124.70
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇩🇪 德国 | DEU 2
-  server: 3.79.218.80
-  port: 22224
+  server: 135.106.187.106
+  port: 301
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: c52733b5-7482-4972-a785-af2b5d49698a
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: 63.180.32.154
-  port: 22224
+- name: 🇩🇪 德国 | DEU 7
+  server: 2.59.223.72
+  port: 667
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 76fd8cd7-cff8-42fa-9b65-d10532536ae7
   tls: false
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: begin.magazinetut.online
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 193.123.58.85
+  port: 62145
   type: vless
-  uuid: 85bddbfa-4149-4db0-8092-39a2b228ec60
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 2
+- name: 🇬🇧 英国 | GBR 3
   server: hope.tutdesignstudio.site
   port: 443
   type: vless
@@ -42,23 +70,43 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 84.235.170.175
-  port: 62145
+- name: 🇸🇬 新加坡 | SGP
+  server: codecanyon.net
+  port: 8880
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: weathered-union-5358.101-262.workers.dev
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 193.123.58.85
-  port: 62145
+- name: 🇺🇸 美国 | USA 4
+  server: cf-vless-4cf55824.aimall.fr
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
+  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
+  tls: true
+  servername: cf-vless-4cf55824.aimall.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: cf-vless-4cf55824.aimall.fr
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
+- name: 🇵🇱 波兰 | POL 2
+  server: 150.251.114.43
+  port: 443
+  type: vless
+  uuid: 851b2819-b359-40bc-ad61-a5d41027be2c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /vless
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
   server: se.morinsq.su
   port: 443
   type: vless
@@ -70,19 +118,41 @@ proxies:
   servername: se.morinsq.su
   client-fingerprint: chrome
   network: tcp
-- name: 🇸🇬 新加坡 | SGP 4
-  server: paid.sshehi.ggff.net
-  port: 443
+- name: 🇺🇸 美国 | USA 6
+  server: 104.18.34.245
+  port: 8880
   type: vless
-  uuid: 49c86212-ae0b-430e-9abb-244e715b533f
-  tls: true
-  servername: aka.ms
-  client-fingerprint: chrome
+  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
+  tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: paid.sshehi.ggff.net
+      Host: dawn-waterfall-6052.360-001.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 30
+  server: 172.67.152.71
+  port: 8880
+  type: vless
+  uuid: 565326ee-c588-4843-9472-a051578ab1ae
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: lucky-cell-e8c5.490-f12.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: white-hill-f907.23-b68.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -90,13 +160,20 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 4
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 10
-  - 🇫🇷 法国 | FRA 3
-  - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇩🇪 德国 | DEU 7
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇬🇧 英国 | GBR 3
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 4
+  - 🇵🇱 波兰 | POL 2
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 30
+  - 🇺🇸 美国 | USA 23
 rules:
 - MATCH,AUTO

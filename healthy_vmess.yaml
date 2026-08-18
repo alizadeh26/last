@@ -4,20 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR 4
-  server: 192.248.163.148
-  port: 53224
+- name: 🇭🇰 香港 | HKG
+  server: 43.132.192.16
+  port: 9527
   type: vmess
-  uuid: 647c2dc6-fd48-4a84-9b59-163df19ad6f9
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
   alterId: 0
-  cipher: auto
+  cipher: chacha20-poly1305
   tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /647c2dc6-fd48-4a84-9b59-163df19ad6f9
   udp: true
-- name: 🇭🇰 香港 | HKG 5
+- name: 🇭🇰 香港 | HKG 7
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
   type: vmess
@@ -37,7 +36,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 4
-  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 7
 rules:
 - MATCH,AUTO

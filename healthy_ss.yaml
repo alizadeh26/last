@@ -4,12 +4,25 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 45.8.158.176
-  port: 10801
+- name: 🇫🇷 法国 | FRA 7
+  server: 15.237.189.197
+  port: 443
   type: ss
-  cipher: aes-256-gcm
-  password: 1eadd4e4a37b6601
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.88.180
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 7CCOp1icO5ZfmmzSweQowSvA5+efeJ3HrKxHDAAJmUc=
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 64.188.77.159
+  port: 8390
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: EyGy11BMfeP-6UHjsgajWw
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +30,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇫🇷 法国 | FRA 7
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 4
 rules:
 - MATCH,AUTO
