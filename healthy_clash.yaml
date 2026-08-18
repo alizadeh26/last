@@ -18,13 +18,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: TqkkHRpZTkjbTBrk
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 158.247.124.70
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇨🇭 瑞士 | CHE
   server: translate.magazinetut.online
   port: 443
@@ -36,64 +29,24 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 9
-  server: 15.237.189.197
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.88.180
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7CCOp1icO5ZfmmzSweQowSvA5+efeJ3HrKxHDAAJmUc=
 - name: 🇬🇧 英国 | GBR 3
   server: 129.151.65.200
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: dBzhdBpUjjungwbNFFQOLIrxd9SYfqP4Qt2l29/2uYo=
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 84.235.171.188
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 4
-  server: video.she-happ.com
-  port: 443
-  type: vless
-  uuid: ea6db8fa-7e15-4eb2-87f1-22004ac00061
-  tls: true
-  alpn:
-  - h2
-  servername: video.she-happ.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: sync.v2.SyncService
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 144.24.13.187
-  port: 50356
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.88.180
+  port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: nRZy6ykJ/fn39mZEQVUp0dEfSoQTdszf6wdGbVUYuuE=
-- name: 🇺🇸 美国 | USA 25
-  server: 172.67.152.71
-  port: 8880
-  type: vless
-  uuid: 2a8cafda-479d-4e30-82d1-0bd4c6da6db9
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: delicate-meadow-15da.423-c77.workers.dev
+  password: 7CCOp1icO5ZfmmzSweQowSvA5+efeJ3HrKxHDAAJmUc=
+- name: 🇫🇷 法国 | FRA 9
+  server: 15.237.189.197
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇭🇰 香港 | HKG 18
   server: planb.mojcn.com.linuxlh.xin
@@ -109,6 +62,13 @@ proxies:
     path: /
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 84.235.171.188
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -117,16 +77,12 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇦🇺 澳大利亚 | AUS
-  - 🇨🇴 哥伦比亚 | COL
   - 🇨🇭 瑞士 | CHE
-  - 🇫🇷 法国 | FRA 9
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 25
+  - 🇬🇧 英国 | GBR 2
+  - 🇫🇷 法国 | FRA 9
   - 🇭🇰 香港 | HKG 18
+  - 🇳🇱 荷兰 | NLD 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -134,20 +90,16 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇦🇺 澳大利亚 | AUS
-  - 🇫🇷 法国 | FRA 9
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 3
-  - 🇺🇸 美国 | USA 7
+  - 🇬🇧 英国 | GBR 2
+  - 🇫🇷 法国 | FRA 9
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
   - 🇨🇭 瑞士 | CHE
   - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 25
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -159,15 +111,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 | CHE
   - 🇬🇧 英国 | GBR 2
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇺🇸 美国 | USA 7
 - name: REGION-OC
   type: url-test
   url: https://cp.cloudflare.com/generate_204

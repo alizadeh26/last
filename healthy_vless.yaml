@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 158.247.124.70
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇨🇭 瑞士 | CHE
   server: translate.magazinetut.online
   port: 443
@@ -29,43 +22,13 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 4
-  server: video.she-happ.com
-  port: 443
-  type: vless
-  uuid: ea6db8fa-7e15-4eb2-87f1-22004ac00061
-  tls: true
-  alpn:
-  - h2
-  servername: video.she-happ.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: sync.v2.SyncService
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: 172.67.152.71
-  port: 8880
-  type: vless
-  uuid: 2a8cafda-479d-4e30-82d1-0bd4c6da6db9
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: delicate-meadow-15da.423-c77.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
   - 🇨🇭 瑞士 | CHE
   - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 25
 rules:
 - MATCH,AUTO

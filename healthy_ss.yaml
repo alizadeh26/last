@@ -18,6 +18,18 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: TqkkHRpZTkjbTBrk
   udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 129.151.65.200
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: dBzhdBpUjjungwbNFFQOLIrxd9SYfqP4Qt2l29/2uYo=
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.88.180
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 7CCOp1icO5ZfmmzSweQowSvA5+efeJ3HrKxHDAAJmUc=
 - name: 🇫🇷 法国 | FRA 9
   server: 15.237.189.197
   port: 443
@@ -25,24 +37,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.88.180
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7CCOp1icO5ZfmmzSweQowSvA5+efeJ3HrKxHDAAJmUc=
-- name: 🇬🇧 英国 | GBR 3
-  server: 129.151.65.200
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: dBzhdBpUjjungwbNFFQOLIrxd9SYfqP4Qt2l29/2uYo=
-- name: 🇺🇸 美国 | USA 7
-  server: 144.24.13.187
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: nRZy6ykJ/fn39mZEQVUp0dEfSoQTdszf6wdGbVUYuuE=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -51,9 +45,8 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇦🇺 澳大利亚 | AUS
-  - 🇫🇷 法国 | FRA 9
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 3
-  - 🇺🇸 美国 | USA 7
+  - 🇬🇧 英国 | GBR 2
+  - 🇫🇷 法国 | FRA 9
 rules:
 - MATCH,AUTO
