@@ -4,17 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 6
-  server: savesafe.co
+- name: 🇩🇪 德国 | DEU 14
+  server: 178.162.253.64
   port: 443
   type: vless
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
-    short-id: f63805c3ecc7a483
-  servername: savesafe.co
+    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
+    short-id: b91a73752053b039
+  servername: de.servers.gracevpnbuy.com
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -29,7 +29,20 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 3
+- name: 🇬🇧 英国 | GBR
+  server: gb1.wba-pn.ru
+  port: 443
+  type: vless
+  uuid: 4bc8ff7a-20b4-41b2-9751-dfca869f0553
+  tls: true
+  servername: gb1.wba-pn.ru
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gb1.wba-pn.ru
+- name: 🇬🇧 英国 | GBR 2
   server: 129.121.95.159
   port: 443
   type: vless
@@ -43,14 +56,141 @@ proxies:
     headers:
       Host: 129.121.95.159
   udp: true
+- name: 🇯🇵 日本 | JPN 9
+  server: 142.91.105.104
+  port: 443
+  type: vless
+  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
+    short-id: b91a73752053b039
+  servername: jp.servers.gracevpnbuy.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: hys40.wba-pn.ru
+  port: 443
+  type: vless
+  uuid: ae2e0637-5c9d-422b-93ac-70bd3fceeb81
+  tls: true
+  servername: hys40.wba-pn.ru
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hys40.wba-pn.ru
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 138.124.29.81
+  port: 57020
+  type: vless
+  uuid: 8b0067a9-8cc8-555a-b4c3-e742bb716980
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 8
+  server: 45.90.32.132
+  port: 4100
+  type: vless
+  uuid: 31c2a8e8-0ab2-4f3f-8767-11f3a35d4228
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 5
+  server: 138.124.29.81
+  port: 57020
+  type: vless
+  uuid: My-chanel-ATOVPN
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: 130.185.123.32
+  port: 443
+  type: vless
+  uuid: 14f493a7-242a-4add-8413-cecc063b3ce3
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 172.64.145.202
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: usa.zelnora.ir
+  port: 64584
+  type: vless
+  uuid: a8307b5d-2d9e-4d34-912d-5b5dd8340082
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: test.lte.anti-zapret.com
+  port: 443
+  type: vless
+  uuid: f82332b2-dc8c-4196-ac12-f276e37e278a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 58fbcddfaae3ade9
+  servername: us.srv.anti-zapret.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: mlt.spbculture.org
+  port: 443
+  type: vless
+  uuid: fecd4358-c037-4ae2-bae0-c72792fd8e40
+  tls: true
+  alpn:
+  - http/1.1
+  servername: mlt.spbculture.org
+  client-fingerprint: android
+  network: ws
+  ws-opts:
+    path: /api/v2/upload/2aec3a50a58a
+    headers:
+      Host: mlt.spbculture.org
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 14
   - 🇨🇭 瑞士 | CHE
-  - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 2
+  - 🇯🇵 日本 | JPN 9
+  - 🇳🇱 荷兰 | NLD
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇷🇺 俄罗斯 | RUS 8
+  - 🇸🇪 瑞典 | SWE 5
+  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 16
+  - 🇩🇪 德国 | DEU 3
 rules:
 - MATCH,AUTO
