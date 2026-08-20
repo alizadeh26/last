@@ -23,24 +23,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇨🇳 CN_13
-  server: 120.232.253.90
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇧🇷 巴西 | BRA 3
-  server: 201.24.49.233
-  port: 2200
-  type: vless
-  uuid: 714e1212-6707-471e-9f40-2fbd3d8d3b4b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL
   server: 157.137.223.233
   port: 62145
@@ -83,40 +65,23 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: DlT2mkkr4HdSTn3gCzKZ8iF+//KKBL8Kw2ytl1qprhU=
-- name: 🇭🇰 香港 | HKG 2
-  server: 43.132.192.16
-  port: 9527
-  type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-  alterId: 0
-  cipher: chacha20-poly1305
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
 - name: 🇬🇧 英国 | GBR 3
   server: 144.24.225.94
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: +KGg1IPCmwou/Tbox35CD4DDdNYoAFN+ywjSch2F6LE=
-- name: 🇭🇰 香港 | HKG 5
-  server: 69.165.75.160
-  port: 10086
+- name: 🇧🇷 巴西 | BRA 2
+  server: 201.24.49.19
+  port: 2200
   type: vless
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  uuid: 716903b1-e6bf-4420-9e27-65e4451692e9
   tls: false
   network: ws
   ws-opts:
-    path: /vless
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: sd-sh.bx-xb.xyz
-  port: 62740
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: qPPU4cGU59hjRnOyNTjacA==
+    path: /v1
+    headers:
+      Host: rzd.ru
   udp: true
 - name: 🇯🇵 日本 | JPN 5
   server: 65.109.218.135
@@ -132,12 +97,24 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇯🇵 日本 | JPN 3
-  server: sd-sh.bx-xb.xyz
-  port: 62780
+- name: 🇳🇱 荷兰 | NLD 10
+  server: 200.165.234.62
+  port: 4100
+  type: vless
+  uuid: 5383fb97-1178-4709-9a25-b767b743e911
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 45.8.158.176
+  port: 10801
   type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: qPPU4cGU59hjRnOyNTjacA==
+  cipher: aes-256-gcm
+  password: 1eadd4e4a37b6601
   udp: true
 - name: 🇸🇬 新加坡 | SGP 5
   server: codecanyon.net
@@ -152,12 +129,17 @@ proxies:
     headers:
       Host: lingering-lab-91a6.54-8c3.workers.dev
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 45.8.158.176
-  port: 10801
-  type: ss
-  cipher: aes-256-gcm
-  password: 1eadd4e4a37b6601
+- name: 🇭🇰 香港 | HKG 2
+  server: 43.132.192.16
+  port: 9527
+  type: vmess
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+  alterId: 0
+  cipher: chacha20-poly1305
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 3.145.155.157
@@ -179,98 +161,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 154.92.9.2
-  port: 8880
-  type: vless
-  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
-    headers:
-      Host: old-violet-a5ce.29-440.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 198.71.190.2
-  port: 8880
-  type: vless
-  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
-    headers:
-      Host: old-violet-a5ce.29-440.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 172.64.144.82
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fangbinxingnmsl.pusytroller.gq
-  udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: 166.62.109.2
-  port: 8880
-  type: vless
-  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
-    headers:
-      Host: old-violet-a5ce.29-440.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 13.59.70.134
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 29
-  server: 104.234.239.2
-  port: 8880
-  type: vless
-  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
-    headers:
-      Host: old-violet-a5ce.29-440.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: ld.242311.xyz
-  port: 443
-  type: vless
-  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
-  tls: true
-  servername: ld.242311.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ld.242311.xyz
-  udp: true
-- name: 🇹🇭 泰国 | THA 3
-  server: 18.239.134.69
-  port: 80
-  type: vless
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -279,69 +169,47 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇩🇪 德国 | DEU
-  - 🇨🇳 CN_13
-  - 🇧🇷 巴西 | BRA 3
   - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 9
   - 🇬🇧 英国 | GBR 2
-  - 🇭🇰 香港 | HKG 2
   - 🇬🇧 英国 | GBR 3
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG
+  - 🇧🇷 巴西 | BRA 2
   - 🇯🇵 日本 | JPN 5
   - 🇳🇱 荷兰 | NLD 15
-  - 🇯🇵 日本 | JPN 3
-  - 🇸🇬 新加坡 | SGP 5
+  - 🇳🇱 荷兰 | NLD 10
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇭🇰 香港 | HKG 2
   - 🇺🇸 美国 | USA 5
   - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 29
-  - 🇺🇸 美国 | USA 22
-  - 🇹🇭 泰国 | THA 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU
-  - 🇨🇳 CN_13
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 11
   - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 3
-  - 🇭🇰 香港 | HKG
   - 🇯🇵 日本 | JPN 5
-  - 🇯🇵 日本 | JPN 3
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 23
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 3
   - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 9
-  - 🇭🇰 香港 | HKG 5
+  - 🇧🇷 巴西 | BRA 2
   - 🇳🇱 荷兰 | NLD 15
+  - 🇳🇱 荷兰 | NLD 10
   - 🇸🇬 新加坡 | SGP 5
   - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 29
-  - 🇺🇸 美国 | USA 22
-  - 🇹🇭 泰国 | THA 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -355,6 +223,8 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇩🇪 德国 | DEU
-  - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 11
+  - 🇧🇷 巴西 | BRA 2
 rules:
 - MATCH,AUTO

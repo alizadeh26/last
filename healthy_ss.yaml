@@ -11,12 +11,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇨🇳 CN_13
-  server: 120.232.253.90
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
 - name: 🇩🇪 德国 | DEU 3
   server: 130.162.34.180
   port: 59924
@@ -41,26 +35,12 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: +KGg1IPCmwou/Tbox35CD4DDdNYoAFN+ywjSch2F6LE=
-- name: 🇭🇰 香港 | HKG
-  server: sd-sh.bx-xb.xyz
-  port: 62740
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: qPPU4cGU59hjRnOyNTjacA==
-  udp: true
 - name: 🇯🇵 日本 | JPN 5
   server: 65.109.218.135
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: sAxh+v9q0ENO0KzA3u53R5TKupp4kkEnD4a4j2NrnM0=
-  udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: sd-sh.bx-xb.xyz
-  port: 62780
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: qPPU4cGU59hjRnOyNTjacA==
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 45.8.158.176
@@ -75,12 +55,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA 23
-  server: 13.59.70.134
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -88,16 +62,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU
-  - 🇨🇳 CN_13
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 11
   - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 3
-  - 🇭🇰 香港 | HKG
   - 🇯🇵 日本 | JPN 5
-  - 🇯🇵 日本 | JPN 3
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 23
 rules:
 - MATCH,AUTO
