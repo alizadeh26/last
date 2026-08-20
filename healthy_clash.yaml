@@ -4,22 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 216.128.176.166
-  port: 22819
-  type: vless
-  uuid: f60ed982-1ec8-426a-d74e-a675685d6dc8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /f60ed982-1ec8-426a-d74e-a675685d6dc8
-  udp: true
-- name: 🇧🇷 巴西 | BRA 2
-  server: 137.131.249.25
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4cuK1uo09SOhjsm02WOLQY1i4uozWLuipTgFW6s0N1c=
 - name: 🇧🇷 巴西 | BRA
   server: 201.24.49.120
   port: 4100
@@ -32,42 +16,51 @@ proxies:
     headers:
       Host: live.ok.ru
   udp: true
-- name: 🇨🇳 CN_07
-  server: 120.232.250.161
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇨🇳 CN_08
-  server: 120.232.251.128
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 63.178.246.78
+- name: 🇩🇪 德国 | DEU
+  server: 3.79.230.55
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇩🇪 德国 | DEU 4
-  server: ger.iranstoresf.ir
-  port: 443
+  udp: true
+- name: 🇨🇳 CN_13
+  server: 120.232.253.90
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇧🇷 巴西 | BRA 3
+  server: 201.24.49.233
+  port: 2200
   type: vless
-  uuid: 0da6bac1-644a-47d0-b9e8-03cb138079e8
+  uuid: 714e1212-6707-471e-9f40-2fbd3d8d3b4b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.223.233
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 139.28.241.77
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.162.34.180
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: lwWy6pzHMkI9wSRqa0W6BffrvpBMhfk3Az8mex0Uf7k=
+- name: 🇩🇪 德国 | DEU 11
+  server: 52.59.195.252
   port: 443
-  type: vless
-  uuid: 5d5c40b1-102c-4343-94cc-d5b794dbd0c6
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 | DEU 9
   server: d2hplu8rn1zhez.cloudfront.net
   port: 443
   type: vless
@@ -84,20 +77,13 @@ proxies:
     headers:
       Host: d2hplu8rn1zhez.cloudfront.net
   udp: true
-- name: 🇫🇷 法国 | FRA 8
-  server: 95.170.13.47
-  port: 65443
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.77.233
+  port: 61312
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇭🇰 香港 | HKG 4
-  server: 120.232.253.96
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇭🇰 香港 | HKG
+  cipher: 2022-blake3-chacha20-poly1305
+  password: DlT2mkkr4HdSTn3gCzKZ8iF+//KKBL8Kw2ytl1qprhU=
+- name: 🇭🇰 香港 | HKG 2
   server: 43.132.192.16
   port: 9527
   type: vmess
@@ -109,44 +95,171 @@ proxies:
   - ''
   skip-cert-verify: true
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 200.165.234.119
-  port: 2200
+- name: 🇬🇧 英国 | GBR 3
+  server: 144.24.225.94
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +KGg1IPCmwou/Tbox35CD4DDdNYoAFN+ywjSch2F6LE=
+- name: 🇭🇰 香港 | HKG 5
+  server: 69.165.75.160
+  port: 10086
   type: vless
-  uuid: 936b7663-a841-4b42-b639-6e3fab1dbf45
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
   tls: false
   network: ws
   ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
+    path: /vless
   udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 167.99.103.190
-  port: 443
+- name: 🇭🇰 香港 | HKG
+  server: sd-sh.bx-xb.xyz
+  port: 62740
+  type: ss
+  cipher: 2022-blake3-aes-128-gcm
+  password: qPPU4cGU59hjRnOyNTjacA==
+  udp: true
+- name: 🇯🇵 日本 | JPN 5
+  server: 65.109.218.135
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: sAxh+v9q0ENO0KzA3u53R5TKupp4kkEnD4a4j2NrnM0=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 15
+  server: 84.235.164.183
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇯🇵 日本 | JPN 3
+  server: sd-sh.bx-xb.xyz
+  port: 62780
+  type: ss
+  cipher: 2022-blake3-aes-128-gcm
+  password: qPPU4cGU59hjRnOyNTjacA==
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 5
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
+  tls: false
+  servername: codecanyon.net
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: lingering-lab-91a6.54-8c3.workers.dev
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 45.8.158.176
+  port: 10801
   type: ss
   cipher: aes-256-gcm
-  password: P569MXUDpk9G0cQj
+  password: 1eadd4e4a37b6601
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 13.59.70.134
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 28
+- name: 🇺🇸 美国 | USA 5
   server: 3.145.155.157
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA 25
-  server: 3.145.35.194
+- name: 🇹🇷 土耳其 | TUR
+  server: bg.cloudtechone.org
+  port: 443
+  type: vless
+  uuid: 0b596551-26c0-4d8d-8a4a-231b54418c28
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: _IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo
+    short-id: f93c9d5127e622e4
+  servername: bg.cloudtechone.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: 154.92.9.2
+  port: 8880
+  type: vless
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳 @WangCai2
+    headers:
+      Host: old-violet-a5ce.29-440.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 198.71.190.2
+  port: 8880
+  type: vless
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳 @WangCai2
+    headers:
+      Host: old-violet-a5ce.29-440.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: 172.64.144.82
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
+  udp: true
+- name: 🇺🇸 美国 | USA 26
+  server: 166.62.109.2
+  port: 8880
+  type: vless
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳 @WangCai2
+    headers:
+      Host: old-violet-a5ce.29-440.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 13.59.70.134
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇹🇭 泰国 | THA
+- name: 🇺🇸 美国 | USA 29
+  server: 104.234.239.2
+  port: 8880
+  type: vless
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳 @WangCai2
+    headers:
+      Host: old-violet-a5ce.29-440.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 22
+  server: ld.242311.xyz
+  port: 443
+  type: vless
+  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
+  tls: true
+  servername: ld.242311.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.242311.xyz
+  udp: true
+- name: 🇹🇭 泰国 | THA 3
   server: 18.239.134.69
   port: 80
   type: vless
@@ -158,113 +271,90 @@ proxies:
     headers:
       Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: 121.46.230.234
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇹🇷 土耳其 | TUR 3
-  server: tr.savesafe.cc
-  port: 443
-  type: vless
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: fyOnHd_PZ6UjxCLPDFfxrT3XIJnjTpHXyluFakC3v14
-    short-id: 95d36da964f4e951
-  servername: tr.savesafe.cc
-  client-fingerprint: qq
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇧🇷 巴西 | BRA 2
   - 🇧🇷 巴西 | BRA
-  - 🇨🇳 CN_07
-  - 🇨🇳 CN_08
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 7
-  - 🇫🇷 法国 | FRA 8
-  - 🇭🇰 香港 | HKG 4
+  - 🇩🇪 德国 | DEU
+  - 🇨🇳 CN_13
+  - 🇧🇷 巴西 | BRA 3
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 9
+  - 🇬🇧 英国 | GBR 2
+  - 🇭🇰 香港 | HKG 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 25
-  - 🇹🇭 泰国 | THA
+  - 🇯🇵 日本 | JPN 5
+  - 🇳🇱 荷兰 | NLD 15
+  - 🇯🇵 日本 | JPN 3
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 5
+  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 29
   - 🇺🇸 美国 | USA 22
-  - 🇹🇷 土耳其 | TUR 3
+  - 🇹🇭 泰国 | THA 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA 2
-  - 🇨🇳 CN_07
-  - 🇨🇳 CN_08
-  - 🇩🇪 德国 | DEU 5
-  - 🇫🇷 法国 | FRA 8
-  - 🇭🇰 香港 | HKG 4
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 22
+  - 🇩🇪 德国 | DEU
+  - 🇨🇳 CN_13
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 11
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇭🇰 香港 | HKG
+  - 🇯🇵 日本 | JPN 5
+  - 🇯🇵 日本 | JPN 3
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 23
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 7
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇹🇭 泰国 | THA
-  - 🇹🇷 土耳其 | TUR 3
+  - 🇧🇷 巴西 | BRA 3
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 9
+  - 🇭🇰 香港 | HKG 5
+  - 🇳🇱 荷兰 | NLD 15
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 29
+  - 🇺🇸 美国 | USA 22
+  - 🇹🇭 泰国 | THA 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇳 CN_08
+  - 🇭🇰 香港 | HKG 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 6
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 7
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇧🇷 巴西 | BRA 2
+  - 🇩🇪 德国 | DEU
+  - 🇬🇧 英国 | GBR 2
 rules:
 - MATCH,AUTO
