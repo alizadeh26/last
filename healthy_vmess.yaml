@@ -16,18 +16,6 @@ proxies:
   - ''
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 43.132.192.16
-  port: 9527
-  type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-  alterId: 0
-  cipher: chacha20-poly1305
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -35,6 +23,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇭🇰 香港 | HKG 2
 rules:
 - MATCH,AUTO
