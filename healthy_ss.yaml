@@ -4,33 +4,71 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: 130.61.34.182
-  port: 59924
+- name: 🇧🇷 巴西 | BRA 2
+  server: 137.131.249.25
+  port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: NLrckFvmYxeqGAR3dbSZb2ImAvMylV4p8yhCAIrQ+hI=
-- name: 🇬🇧 英国 | GBR 3
-  server: 129.151.66.31
-  port: 61312
+  password: 4cuK1uo09SOhjsm02WOLQY1i4uozWLuipTgFW6s0N1c=
+- name: 🇨🇳 CN_07
+  server: 120.232.250.161
+  port: 65443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: fr5M3Mv/8HIcozWHJCfI8SeuOYixEodurkiYtFmanP8=
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇨🇳 CN_08
+  server: 120.232.251.128
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 195.133.23.200
-  port: 10998
+- name: 🇩🇪 德国 | DEU 5
+  server: 63.178.246.78
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 | FRA 8
+  server: 95.170.13.47
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇭🇰 香港 | HKG 4
+  server: 120.232.253.96
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: 167.99.103.190
+  port: 443
   type: ss
   cipher: aes-256-gcm
-  password: 81a20429165df87e
-- name: 🇷🇺 俄罗斯 | RUS 7
-  server: 195.133.23.5
-  port: 20998
+  password: P569MXUDpk9G0cQj
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 13.59.70.134
+  port: 443
   type: ss
-  cipher: aes-256-gcm
-  password: d99c422199e62b6b
-- name: 🇰🇷 韩国 | KOR
-  server: 121.46.230.235
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 28
+  server: 3.145.155.157
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 25
+  server: 3.145.35.194
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 22
+  server: 121.46.230.234
   port: 65443
   type: ss
   cipher: aes-256-cfb
@@ -42,10 +80,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇧🇷 巴西 | BRA 2
+  - 🇨🇳 CN_07
+  - 🇨🇳 CN_08
   - 🇩🇪 德国 | DEU 5
-  - 🇬🇧 英国 | GBR 3
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 7
-  - 🇰🇷 韩国 | KOR
+  - 🇫🇷 法国 | FRA 8
+  - 🇭🇰 香港 | HKG 4
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 28
+  - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 22
 rules:
 - MATCH,AUTO
