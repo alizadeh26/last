@@ -11,41 +11,80 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: HWBXhJoxrIyNrENJIipt9FVnzqRABmuXjSW0HtgNGI0=
   udp: true
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 51.79.49.116
+  port: 8882
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇨🇦 加拿大 | CAN 3
+  server: 51.79.64.198
+  port: 8119
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
 - name: 🇧🇷 巴西 | BRA 2
-  server: 64.181.178.255
+  server: 147.15.126.231
   port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: Fw9bgI7CnhMMq21OpAvd0AG6kI8jmhvwPPxJ/ZV+ZaM=
-  udp: true
+  password: Nb4cyfUWNhfcSQUm/3QbpS8DvPiigNgg9Vrx2v+siFo=
+- name: 🇧🇷 巴西 | BRA 4
+  server: 163.176.61.216
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Q9hM7ALoZdFYyLDQYsQLjK0qE9gnz4/OuEI1XlJNYPU=
 - name: 🇧🇷 巴西 | BRA 3
-  server: 152.67.52.97
+  server: 163.176.194.118
   port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 2gtecrcNXbLo1qmEHIqeVBmaBEafjnm8XJMuL2dGPlQ=
+  password: lpYNiPiwJ1rV1HSmT5yzHLcLsv9qVgXIXWSuNw3ohhY=
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 63.186.69.235
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 | DEU 8
-  server: 141.144.250.61
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kdTMVAm8v43BRuJZr+GI+udAziQPGR2QdYITH9w2WNg=
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
+- name: 🇩🇪 德国 | DEU 3
   server: 130.61.176.82
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 4/4O8tTGmtVVsD2fk70j39adoR7JWg8u114Kfy15IAw=
   udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 63.186.69.235
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 | DEU 4
+  server: 141.144.250.61
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: kdTMVAm8v43BRuJZr+GI+udAziQPGR2QdYITH9w2WNg=
+  udp: true
+- name: 🇫🇷 法国 | FRA 2
+  server: 95.170.13.47
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 - name: 🇬🇧 英国 | GBR
+  server: 129.151.65.11
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9UMwtuEIWbCj7f9y8bx+o3CumyaG15feQ3VbyjaD3nQ=
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.71.151
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: x4n4+aCgMuK8+Tkl+hezK0/cMVRblreR4FODa2twE+w=
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
   server: 129.151.75.132
   port: 61312
   type: ss
@@ -53,13 +92,6 @@ proxies:
   password: 6pOYXynds0NHaX5zmVUEpWxt9hdlhhl7W4oIOL4EHKs=
   udp: true
 - name: 🇬🇧 英国 | GBR 5
-  server: 129.151.89.37
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: AYhW0WCXnkWSVLU1TWzGkAAutfAlRaf3PPe++vWpKV4=
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
   server: 129.151.80.73
   port: 61312
   type: ss
@@ -67,66 +99,71 @@ proxies:
   password: ryZz0qsI8llQKuhaJ02nbzalvk3ODhYCheJVffEB/XI=
   udp: true
 - name: 🇬🇧 英国 | GBR 6
-  server: 129.151.86.44
+  server: 129.151.89.37
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: +R74ooPJ4PHFZKttB9Zh35Fg9N7SxRbRYDFNN1vGabk=
+  password: AYhW0WCXnkWSVLU1TWzGkAAutfAlRaf3PPe++vWpKV4=
   udp: true
-- name: 🇬🇧 英国 | GBR 7
-  server: 129.151.65.11
+- name: 🇬🇧 英国 | GBR 4
+  server: 129.151.76.241
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 9UMwtuEIWbCj7f9y8bx+o3CumyaG15feQ3VbyjaD3nQ=
+  password: 9hCTQgXc8nHfYc1TUZmrQax7am1SKNsUSRlCHRMhITM=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 11
+- name: 🇳🇱 荷兰 | NLD 2
   server: 150.230.20.164
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: rG5LOhX6ZgVbQEUtJ0yH+ouk02Z/UBEINCT6+5kaSOQ=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
+- name: 🇳🇱 荷兰 | NLD
   server: 141.144.192.7
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: wVBWzY/eiDFBHGbshp5iuKUjL8OZsp++y8WAZtVHPvk=
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 45.8.158.176
-  port: 10801
+- name: 🇺🇸 美国 | USA
+  server: 107.170.34.46
+  port: 443
   type: ss
   cipher: aes-256-gcm
-  password: 1eadd4e4a37b6601
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 137.131.21.240
+  password: p7KawP5pzJRHWI9q
+- name: 🇺🇸 美国 | USA 4
+  server: 13.59.70.134
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 2
+  server: 129.146.25.229
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: uSmnkPNBhrMCkZh9b7/PQ2EyebUYE73P5uBTZPxCZXE=
+  password: tPMgeY+xhHlfxddjcZTwVeBFlAYUBzzF+umr56wt6l8=
+- name: 🇺🇸 美国 | USA 5
+  server: 15.204.247.175
+  port: 8008
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-- name: 🇺🇸 美国 | USA 14
+- name: 🇺🇸 美国 | USA 7
   server: 3.145.155.157
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA 18
+- name: 🇺🇸 美国 | USA 6
   server: 162.243.36.19
   port: 80
   type: ss
   cipher: aes-256-gcm
   password: 1BuVr1kYF7v435mF
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: 13.59.70.134
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -134,22 +171,28 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇨🇦 加拿大 | CAN 3
   - 🇧🇷 巴西 | BRA 2
+  - 🇧🇷 巴西 | BRA 4
   - 🇧🇷 巴西 | BRA 3
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 4
+  - 🇫🇷 法国 | FRA 2
   - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 5
   - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR 5
   - 🇬🇧 英国 | GBR 6
-  - 🇬🇧 英国 | GBR 7
-  - 🇳🇱 荷兰 | NLD 11
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇷🇺 俄罗斯 | RUS 6
+  - 🇬🇧 英国 | GBR 4
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO

@@ -4,15 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.189.155
-  port: 62145
+- name: 🇨🇦 加拿大 | CAN 4
+  server: 216.128.176.166
+  port: 22819
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: f60ed982-1ec8-426a-d74e-a675685d6dc8
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /f60ed982-1ec8-426a-d74e-a675685d6dc8
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
+- name: 🇨🇴 哥伦比亚 | COL
   server: 149.130.187.138
   port: 62145
   type: vless
@@ -20,24 +22,36 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: d2hplu8rn1zhez.cloudfront.net
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 157.137.223.233
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.189.155
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: 45.131.213.39
   port: 443
   type: vless
-  uuid: f17a82cc-4b2b-49bc-8875-51c43cc49c36
+  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
   tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: d2hplu8rn1zhez.cloudfront.net
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /api/v3/ws/events
-    headers:
-      Host: d2hplu8rn1zhez.cloudfront.net
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
+    short-id: b91a73752053b039
+  servername: de.servers.gracevpnbuy.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 14
+- name: 🇩🇪 德国 | DEU 11
   server: api.fuck-you.dyn.site.fwqfw783rg2dad.website
   port: 443
   type: vless
@@ -51,37 +65,15 @@ proxies:
     headers:
       Host: api.fuck-you.dyn.site.fwqfw783rg2dad.website
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.223.233
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇳🇱 荷兰 | NLD 4
-  server: 141.148.236.108
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 143.47.190.125
+  server: 134.98.153.48
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 143.47.179.252
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 12
+- name: 🇳🇱 荷兰 | NLD 5
   server: 141.148.233.114
   port: 62145
   type: vless
@@ -89,67 +81,67 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 14
-  server: 158.178.144.128
+- name: 🇹🇷 土耳其 | TUR
+  server: 45.74.159.200
+  port: 10131
+  type: vless
+  uuid: 745bac6d-e48d-4556-aa77-09b68743a9ce
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 4
+  server: fast.nanniang.top
+  port: 8443
+  type: vless
+  uuid: 916e3030-6eac-418b-9402-7508ca7d6280
+  tls: true
+  servername: aq.nanniang.top
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: aq.nanniang.top
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 2
+  server: ru9.aimodelhub.top
+  port: 443
+  type: vless
+  uuid: b85b1e90-b5ed-0002-b433-bf9d2eca0e42
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: jwT3lcIzJQMjzBKRNsmyRGrgaa1qNfE7pQF_nAKu0GA
+    short-id: a73cf719b624
+  servername: ru9.aimodelhub.top
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 134.98.146.202
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇵🇱 波兰 | POL
-  server: pl4.lckdwn.ru
-  port: 443
-  type: vless
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pl4.lckdwn.ru
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: cf.levikogjgfdd.ir
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: ed8d.wdz.de5.net
-  port: 443
-  type: vless
-  uuid: 0b06f318-ab9d-4de7-8779-360bd5f7ea67
-  tls: true
-  servername: ed8d.wdz.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ed8d.wdz.de5.net
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇦 加拿大 | CAN 4
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 3
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 14
   - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 11
   - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 10
-  - 🇳🇱 荷兰 | NLD 12
-  - 🇳🇱 荷兰 | NLD 14
-  - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 16
   - 🇳🇱 荷兰 | NLD 5
+  - 🇹🇷 土耳其 | TUR
+  - 🇫🇷 法国 | FRA 4
+  - 🇹🇷 土耳其 | TUR 2
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO
