@@ -4,37 +4,30 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 3.79.230.55
-  port: 443
+- name: 🇨🇳 CN_13
+  server: 120.232.253.90
+  port: 65443
   type: ss
   cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.162.34.180
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: lwWy6pzHMkI9wSRqa0W6BffrvpBMhfk3Az8mex0Uf7k=
+  password: 7eadc6dbe2ae
 - name: 🇩🇪 德国 | DEU 11
   server: 52.59.195.252
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.77.233
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: DlT2mkkr4HdSTn3gCzKZ8iF+//KKBL8Kw2ytl1qprhU=
 - name: 🇬🇧 英国 | GBR 3
   server: 144.24.225.94
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: +KGg1IPCmwou/Tbox35CD4DDdNYoAFN+ywjSch2F6LE=
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.77.233
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: DlT2mkkr4HdSTn3gCzKZ8iF+//KKBL8Kw2ytl1qprhU=
 - name: 🇯🇵 日本 | JPN 5
   server: 65.109.218.135
   port: 8080
@@ -42,6 +35,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: sAxh+v9q0ENO0KzA3u53R5TKupp4kkEnD4a4j2NrnM0=
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.162.34.180
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: lwWy6pzHMkI9wSRqa0W6BffrvpBMhfk3Az8mex0Uf7k=
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 45.8.158.176
   port: 10801
@@ -55,19 +54,26 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇺🇸 美国 | USA 23
+  server: 13.59.70.134
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
+  - 🇨🇳 CN_13
   - 🇩🇪 德国 | DEU 11
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR 2
   - 🇯🇵 日本 | JPN 5
+  - 🇩🇪 德国 | DEU 3
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 23
 rules:
 - MATCH,AUTO
