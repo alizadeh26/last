@@ -12,13 +12,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.223.233
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇨🇴 哥伦比亚 | COL 3
   server: 149.130.187.138
   port: 62145
@@ -44,18 +37,6 @@ proxies:
     headers:
       Host: d2hplu8rn1zhez.cloudfront.net
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 104.24.152.211
-  port: 8880
-  type: vless
-  uuid: 2acde116-5949-48d8-a1e6-60a1d2547deb
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: lively-pine-093d.144-868.workers.dev
-  udp: true
 - name: 🇩🇪 德国 | DEU 14
   server: api.fuck-you.dyn.site.fwqfw783rg2dad.website
   port: 443
@@ -70,14 +51,13 @@ proxies:
     headers:
       Host: api.fuck-you.dyn.site.fwqfw783rg2dad.website
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 158.180.13.40
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.223.233
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: 141.148.236.108
   port: 62145
@@ -109,13 +89,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 13
-  server: 143.47.179.52
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇳🇱 荷兰 | NLD 14
   server: 158.178.144.128
   port: 62145
@@ -135,18 +108,6 @@ proxies:
     headers:
       Host: pl4.lckdwn.ru
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: ed8d.wdz.de5.net
-  port: 443
-  type: vless
-  uuid: 0b06f318-ab9d-4de7-8779-360bd5f7ea67
-  tls: true
-  servername: ed8d.wdz.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ed8d.wdz.de5.net
 - name: 🇺🇸 美国 | USA 16
   server: cf.levikogjgfdd.ir
   port: 2095
@@ -159,55 +120,18 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 104.16.101.215
-  port: 8880
+- name: 🇳🇱 荷兰 | NLD 5
+  server: ed8d.wdz.de5.net
+  port: 443
   type: vless
-  uuid: 7a2df38b-2d8b-486b-9b43-641c81e11f40
-  tls: false
+  uuid: 0b06f318-ab9d-4de7-8779-360bd5f7ea67
+  tls: true
+  servername: ed8d.wdz.de5.net
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /
     headers:
-      Host: shiny-mud-d9fa.466.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 172.67.68.240
-  port: 8880
-  type: vless
-  uuid: df5dc160-3764-4e6b-805d-1286ea701310
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: dawn-mode-a061.444-a0e.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: anydesk.com
-  port: 8880
-  type: vless
-  uuid: b85c8be2-3109-4b8a-aa82-f0d8fe06f5ae
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: young-dust-b8d9.31-8ba.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 29
-  server: anydesk.com
-  port: 8880
-  type: vless
-  uuid: 2e3431ac-0b98-4471-9822-6b7ae94a9a11
-  tls: false
-  servername: anydesk.com
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: polished-hall-7427.463-5d2.workers.dev
-  udp: true
+      Host: ed8d.wdz.de5.net
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -215,24 +139,17 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 3
   - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 14
-  - 🇳🇱 荷兰 | NLD
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 12
-  - 🇳🇱 荷兰 | NLD 13
   - 🇳🇱 荷兰 | NLD 14
   - 🇵🇱 波兰 | POL
-  - 🇳🇱 荷兰 | NLD 5
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 29
+  - 🇳🇱 荷兰 | NLD 5
 rules:
 - MATCH,AUTO
