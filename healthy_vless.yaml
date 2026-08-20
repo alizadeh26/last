@@ -4,16 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN 4
-  server: 216.128.176.166
-  port: 22819
-  type: vless
-  uuid: f60ed982-1ec8-426a-d74e-a675685d6dc8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /f60ed982-1ec8-426a-d74e-a675685d6dc8
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 2
   server: 149.130.189.155
   port: 62145
@@ -50,6 +40,16 @@ proxies:
     headers:
       Host: api.fuck-you.dyn.site.fwqfw783rg2dad.website
   udp: true
+- name: 🇨🇦 加拿大 | CAN 4
+  server: 216.128.176.166
+  port: 22819
+  type: vless
+  uuid: f60ed982-1ec8-426a-d74e-a675685d6dc8
+  tls: false
+  network: ws
+  ws-opts:
+    path: /f60ed982-1ec8-426a-d74e-a675685d6dc8
+  udp: true
 - name: 🇫🇷 法国 | FRA 4
   server: fast.nanniang.top
   port: 8443
@@ -78,14 +78,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 45.74.159.200
-  port: 10131
-  type: vless
-  uuid: 745bac6d-e48d-4556-aa77-09b68743a9ce
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 201.34.137.15
   port: 4100
@@ -104,13 +96,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN 4
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 11
+  - 🇨🇦 加拿大 | CAN 4
   - 🇫🇷 法国 | FRA 4
   - 🇹🇷 土耳其 | TUR 2
-  - 🇹🇷 土耳其 | TUR
   - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO
