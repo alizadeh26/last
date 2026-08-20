@@ -17,13 +17,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: Nb4cyfUWNhfcSQUm/3QbpS8DvPiigNgg9Vrx2v+siFo=
-- name: 🇧🇷 巴西 | BRA 3
-  server: 163.176.194.118
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: lpYNiPiwJ1rV1HSmT5yzHLcLsv9qVgXIXWSuNw3ohhY=
-  udp: true
 - name: 🇨🇦 加拿大 | CAN 2
   server: 51.79.49.116
   port: 8882
@@ -31,12 +24,12 @@ proxies:
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 🇨🇦 加拿大 | CAN 3
-  server: 51.79.64.198
-  port: 8119
+- name: 🇧🇷 巴西 | BRA 3
+  server: 163.176.194.118
+  port: 59319
   type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  cipher: 2022-blake3-chacha20-poly1305
+  password: lpYNiPiwJ1rV1HSmT5yzHLcLsv9qVgXIXWSuNw3ohhY=
   udp: true
 - name: 🇧🇷 巴西 | BRA 4
   server: 163.176.61.216
@@ -44,35 +37,12 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: Q9hM7ALoZdFYyLDQYsQLjK0qE9gnz4/OuEI1XlJNYPU=
-- name: 🇩🇪 德国 | DEU 4
-  server: 141.144.250.61
-  port: 59924
+- name: 🇨🇦 加拿大 | CAN 3
+  server: 51.79.64.198
+  port: 8119
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kdTMVAm8v43BRuJZr+GI+udAziQPGR2QdYITH9w2WNg=
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.187.138
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 157.137.223.233
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.189.155
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
   udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: 3.66.86.250
@@ -81,12 +51,33 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.61.176.82
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4/4O8tTGmtVVsD2fk70j39adoR7JWg8u114Kfy15IAw=
+  udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: 63.186.69.235
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 149.130.189.155
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 2
+  server: 95.170.13.47
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 - name: 🇩🇪 德国 | DEU 9
   server: 45.131.213.39
   port: 443
@@ -101,34 +92,26 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 95.170.13.47
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇫🇷 法国 | FRA
-  server: 13.38.46.203
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇨🇦 加拿大 | CAN 4
-  server: 216.128.176.166
-  port: 22819
-  type: vless
-  uuid: f60ed982-1ec8-426a-d74e-a675685d6dc8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /f60ed982-1ec8-426a-d74e-a675685d6dc8
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.71.151
-  port: 61312
+- name: 🇩🇪 德国 | DEU 4
+  server: 141.144.250.61
+  port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: x4n4+aCgMuK8+Tkl+hezK0/cMVRblreR4FODa2twE+w=
+  password: kdTMVAm8v43BRuJZr+GI+udAziQPGR2QdYITH9w2WNg=
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: api.fuck-you.dyn.site.fwqfw783rg2dad.website
+  port: 443
+  type: vless
+  uuid: 5ca83936-136d-4314-8453-4ba10a86cf60
+  tls: true
+  servername: api.fuck-you.dyn.site.fwqfw783rg2dad.website
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: api.fuck-you.dyn.site.fwqfw783rg2dad.website
   udp: true
 - name: 🇬🇧 英国 | GBR
   server: 129.151.65.11
@@ -151,6 +134,13 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 9hCTQgXc8nHfYc1TUZmrQax7am1SKNsUSRlCHRMhITM=
   udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.71.151
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: x4n4+aCgMuK8+Tkl+hezK0/cMVRblreR4FODa2twE+w=
+  udp: true
 - name: 🇬🇧 英国 | GBR 5
   server: 129.151.80.73
   port: 61312
@@ -158,19 +148,20 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: ryZz0qsI8llQKuhaJ02nbzalvk3ODhYCheJVffEB/XI=
   udp: true
-- name: 🇬🇧 英国 | GBR 6
-  server: 129.151.89.37
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: AYhW0WCXnkWSVLU1TWzGkAAutfAlRaf3PPe++vWpKV4=
-  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 141.144.192.7
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: wVBWzY/eiDFBHGbshp5iuKUjL8OZsp++y8WAZtVHPvk=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 134.98.146.202
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 150.230.20.164
@@ -185,24 +176,38 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+- name: 🇫🇷 法国 | FRA 4
+  server: fast.nanniang.top
+  port: 8443
+  type: vless
+  uuid: 916e3030-6eac-418b-9402-7508ca7d6280
+  tls: true
+  servername: aq.nanniang.top
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: aq.nanniang.top
+  udp: true
 - name: 🇺🇸 美国 | USA
   server: 107.170.34.46
   port: 443
   type: ss
   cipher: aes-256-gcm
   password: p7KawP5pzJRHWI9q
-- name: 🇺🇸 美国 | USA 4
-  server: 13.59.70.134
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇺🇸 美国 | USA 2
   server: 129.146.25.229
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: tPMgeY+xhHlfxddjcZTwVeBFlAYUBzzF+umr56wt6l8=
+- name: 🇺🇸 美国 | USA 4
+  server: 13.59.70.134
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: 2.27.174.110
   port: 794
@@ -215,42 +220,6 @@ proxies:
   - ''
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 15.204.247.175
-  port: 8008
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 162.243.36.19
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: 1BuVr1kYF7v435mF
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 3.145.155.157
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇹🇷 土耳其 | TUR
-  server: 45.74.159.200
-  port: 10131
-  type: vless
-  uuid: 745bac6d-e48d-4556-aa77-09b68743a9ce
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 134.98.153.48
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 141.148.233.114
   port: 62145
@@ -259,13 +228,26 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.61.176.82
-  port: 59924
+- name: 🇺🇸 美国 | USA 6
+  server: 162.243.36.19
+  port: 80
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4/4O8tTGmtVVsD2fk70j39adoR7JWg8u114Kfy15IAw=
+  cipher: aes-256-gcm
+  password: 1BuVr1kYF7v435mF
   udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 15.204.247.175
+  port: 8008
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 3.145.155.157
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇹🇷 土耳其 | TUR 2
   server: ru9.aimodelhub.top
   port: 443
@@ -280,13 +262,32 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 134.98.146.202
-  port: 62145
+- name: 🇬🇧 英国 | GBR 6
+  server: 129.151.89.37
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: AYhW0WCXnkWSVLU1TWzGkAAutfAlRaf3PPe++vWpKV4=
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: 45.74.159.200
+  port: 10131
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: 745bac6d-e48d-4556-aa77-09b68743a9ce
   tls: false
   network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: 43.132.192.16
+  port: 9527
+  type: vmess
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+  alterId: 0
+  cipher: chacha20-poly1305
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: AUTO
@@ -296,42 +297,40 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 3
   - 🇨🇦 加拿大 | CAN 2
-  - 🇨🇦 加拿大 | CAN 3
+  - 🇧🇷 巴西 | BRA 3
   - 🇧🇷 巴西 | BRA 4
-  - 🇩🇪 德国 | DEU 4
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 3
-  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇦 加拿大 | CAN 3
   - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 9
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA
-  - 🇨🇦 加拿大 | CAN 4
-  - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 11
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR 4
+  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 6
   - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 2
   - 🇰🇷 韩国 | KOR
+  - 🇫🇷 法国 | FRA 4
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 4
   - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 7
-  - 🇹🇷 土耳其 | TUR
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 3
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 7
   - 🇹🇷 土耳其 | TUR 2
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇬🇧 英国 | GBR 6
+  - 🇹🇷 土耳其 | TUR
+  - 🇭🇰 香港 | HKG 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -339,65 +338,70 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 3
   - 🇨🇦 加拿大 | CAN 2
-  - 🇨🇦 加拿大 | CAN 3
+  - 🇧🇷 巴西 | BRA 3
   - 🇧🇷 巴西 | BRA 4
-  - 🇩🇪 德国 | DEU 4
+  - 🇨🇦 加拿大 | CAN 3
   - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 6
   - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA
-  - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR 4
+  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 6
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 2
   - 🇰🇷 韩国 | KOR
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 7
-  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 3
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 9
-  - 🇨🇦 加拿大 | CAN 4
-  - 🇹🇷 土耳其 | TUR
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇩🇪 德国 | DEU 11
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇫🇷 法国 | FRA 4
   - 🇳🇱 荷兰 | NLD 5
   - 🇹🇷 土耳其 | TUR 2
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇹🇷 土耳其 | TUR
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇭🇰 香港 | HKG 2
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 6
+  - 🇫🇷 法国 | FRA 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN 3
+  - 🇨🇦 加拿大 | CAN 2
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
   - 🇧🇷 巴西 | BRA 3
 rules:
 - MATCH,AUTO
