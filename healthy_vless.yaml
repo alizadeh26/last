@@ -4,6 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇨🇦 加拿大 | CAN 4
+  server: 216.128.176.166
+  port: 22819
+  type: vless
+  uuid: f60ed982-1ec8-426a-d74e-a675685d6dc8
+  tls: false
+  network: ws
+  ws-opts:
+    path: /f60ed982-1ec8-426a-d74e-a675685d6dc8
+  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 2
   server: 149.130.189.155
   port: 62145
@@ -40,14 +50,6 @@ proxies:
     headers:
       Host: api.fuck-you.dyn.site.fwqfw783rg2dad.website
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 134.98.146.202
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇫🇷 法国 | FRA 4
   server: fast.nanniang.top
   port: 8443
@@ -61,14 +63,6 @@ proxies:
     path: /
     headers:
       Host: aq.nanniang.top
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 141.148.233.114
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
   udp: true
 - name: 🇹🇷 土耳其 | TUR 2
   server: ru9.aimodelhub.top
@@ -92,19 +86,31 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: 201.34.137.15
+  port: 4100
+  type: vless
+  uuid: 716903b1-e6bf-4420-9e27-65e4451692e9
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇦 加拿大 | CAN 4
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 11
-  - 🇳🇱 荷兰 | NLD 3
   - 🇫🇷 法国 | FRA 4
-  - 🇳🇱 荷兰 | NLD 5
   - 🇹🇷 土耳其 | TUR 2
   - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO
