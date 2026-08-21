@@ -14,6 +14,14 @@ proxies:
   ws-opts:
     path: /f60ed982-1ec8-426a-d74e-a675685d6dc8
   udp: true
+- name: 🇩🇪 德国 | DEU 12
+  server: 63.188.40.90
+  port: 22223
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 157.238.208.110
   port: 41834
@@ -23,24 +31,6 @@ proxies:
   network: ws
   ws-opts:
     path: /5adeccb9
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 89.19.223.136
-  port: 443
-  type: vless
-  uuid: 22419260-5475-49d8-a29c-01905c54d1b8
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 188.225.47.234
-  port: 4100
-  type: vless
-  uuid: 7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
   udp: true
 - name: 🇸🇪 瑞典 | SWE 2
   server: se1.se-cdn.ru
@@ -63,9 +53,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 12
   - 🇺🇸 美国 | USA 4
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 2
 rules:
 - MATCH,AUTO

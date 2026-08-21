@@ -27,24 +27,20 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: HWBXhJoxrIyNrENJIipt9FVnzqRABmuXjSW0HtgNGI0=
   udp: true
-- name: 🇫🇷 法国 | FRA 14
-  server: 13.38.46.203
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+- name: 🇩🇪 德国 | DEU 12
+  server: 63.188.40.90
+  port: 22223
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 134.65.58.116
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: EECkcZhvinEjpAAJXYZQXmyKQTXLoPaQEonv4Lmt/LY=
-- name: 🇳🇱 荷兰 | NLD
-  server: 134.98.147.182
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kVJer/RaxqQotMpJVDmyRShD2pMmDy1VM0ku+ao8q/4=
 - name: 🇮🇹 意大利 | ITA
   server: 194.87.47.162
   port: 10901
@@ -52,19 +48,18 @@ proxies:
   cipher: aes-256-gcm
   password: d1fa2f4b98a38bc8
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: e2.cover20.ir
-  port: 30874
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BlRtjyYlj18kYcrEL/8wcbSyqNKSPESiwSDDvisu9+o=
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 13.59.70.134
-  port: 443
+- name: 🇰🇷 韩国 | KOR 2
+  server: 121.46.230.138
+  port: 65443
   type: ss
   cipher: aes-256-cfb
-  password: amazonskr05
+  password: 7eadc6dbe2ae
+- name: 🇳🇱 荷兰 | NLD
+  server: 134.98.147.182
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: kVJer/RaxqQotMpJVDmyRShD2pMmDy1VM0ku+ao8q/4=
 - name: 🇺🇸 美国 | USA 4
   server: 157.238.208.110
   port: 41834
@@ -75,23 +70,18 @@ proxies:
   ws-opts:
     path: /5adeccb9
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 89.19.223.136
+- name: 🇺🇸 美国 | USA 3
+  server: 13.59.70.134
   port: 443
-  type: vless
-  uuid: 22419260-5475-49d8-a29c-01905c54d1b8
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 188.225.47.234
-  port: 4100
-  type: vless
-  uuid: 7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 19
+  server: 162.243.36.19
+  port: 80
+  type: ss
+  cipher: aes-256-gcm
+  password: 1BuVr1kYF7v435mF
   udp: true
 - name: 🇸🇪 瑞典 | SWE 2
   server: se1.se-cdn.ru
@@ -107,13 +97,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 162.243.36.19
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: 1BuVr1kYF7v435mF
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -123,17 +106,15 @@ proxy-groups:
   - 🇨🇦 加拿大 | CAN
   - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
-  - 🇫🇷 法国 | FRA 14
+  - 🇩🇪 德国 | DEU 12
   - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD
   - 🇮🇹 意大利 | ITA
-  - 🇩🇪 德国 | DEU 10
-  - 🇺🇸 美国 | USA 3
+  - 🇰🇷 韩国 | KOR 2
+  - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 4
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 19
+  - 🇸🇪 瑞典 | SWE 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -141,11 +122,10 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
-  - 🇫🇷 法国 | FRA 14
   - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD
   - 🇮🇹 意大利 | ITA
-  - 🇩🇪 德国 | DEU 10
+  - 🇰🇷 韩国 | KOR 2
+  - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 19
 - name: PROTO-VLESS
@@ -154,28 +134,21 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 12
   - 🇺🇸 美国 | USA 4
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 2
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇷🇺 俄罗斯 | RUS 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇺🇸 美国 | USA 3
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
+  - 🇧🇷 巴西 | BRA 2
 rules:
 - MATCH,AUTO
