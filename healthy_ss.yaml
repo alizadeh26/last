@@ -22,6 +22,20 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+- name: 🇭🇰 香港 | HKG 5
+  server: 95.40.120.162
+  port: 8319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ljqdalu13..
+  udp: true
+- name: 🇰🇷 韩国 | KOR 20
+  server: 49.254.204.133
+  port: 1774
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 168.107.84.216
   port: 56927
@@ -29,18 +43,19 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: AvgbFIV7Cex5/qT5UZZfczfm4HvieP7cS50XxXtw+EA=
   udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 129.153.203.166
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: A23Zvh1OLiC2Y+dr+da8RDCNlqeYEdn6Luu/gWk/6rs=
-- name: 🇭🇰 香港 | HKG 5
-  server: 95.40.120.162
-  port: 8319
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: robon.mashhad1market.ir
+  port: 1080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
+  password: TU4NUJuMe4XlZ3NCQ_1KiQ
+  udp: true
+- name: 🇯🇵 日本 | JPN 4
+  server: 121.46.230.136
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
 proxy-groups:
 - name: AUTO
@@ -51,8 +66,10 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 13
   - 🇫🇷 法国 | FRA 6
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 15
   - 🇭🇰 香港 | HKG 5
+  - 🇰🇷 韩国 | KOR 20
+  - 🇸🇬 新加坡 | SGP
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇯🇵 日本 | JPN 4
 rules:
 - MATCH,AUTO
