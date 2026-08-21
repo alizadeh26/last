@@ -20,19 +20,6 @@ proxies:
     headers:
       Host: relay.meshbeat.online
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 31.76.65.234.fwqfw783rg2dad.website
-  port: 443
-  type: vless
-  uuid: 5ca83936-136d-4314-8453-4ba10a86cf60
-  tls: true
-  servername: 31.76.65.234.fwqfw783rg2dad.website
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: 31.76.65.234.fwqfw783rg2dad.website
 - name: 🇩🇪 德国 | DEU 10
   server: node2.onepanel123.ru
   port: 2087
@@ -75,18 +62,6 @@ proxies:
     headers:
       Host: cf.udpid.org
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: white-hill-f907.23-b68.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -94,10 +69,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇩🇪 德国 | DEU 10
   - 🇸🇪 瑞典 | SWE
   - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO

@@ -11,12 +11,6 @@ proxies:
   cipher: aes-256-gcm
   password: g5MeD6Ft3CWlJId
   udp: true
-- name: 🇧🇷 巴西 | BRA
-  server: 163.176.6.223
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: SP1M0IipjvtsuKVyn9U2iK+ZKuuQ0afVhLCicK9pO8Y=
 - name: 🇬🇧 英国 | GBR
   server: 134.65.58.116
   port: 61312
@@ -30,12 +24,18 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ljqdalu13..
   udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: 121.46.230.138
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 161.118.236.226
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: mK3U4CcxreExT+4ZbQ+ixTCRA0PpbwB2qEYHsgySaLU=
 - name: 🇹🇭 泰国 | THA 2
   server: 103.169.67.34
   port: 65443
@@ -43,12 +43,6 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
 - name: 🇺🇸 美国 | USA 16
   server: 129.146.37.14
   port: 50356
@@ -61,12 +55,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: kVJer/RaxqQotMpJVDmyRShD2pMmDy1VM0ku+ao8q/4=
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 161.118.236.226
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mK3U4CcxreExT+4ZbQ+ixTCRA0PpbwB2qEYHsgySaLU=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -74,14 +62,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN 2
-  - 🇧🇷 巴西 | BRA
   - 🇬🇧 英国 | GBR
   - 🇯🇵 日本 | JPN 4
-  - 🇰🇷 韩国 | KOR 2
-  - 🇹🇭 泰国 | THA 2
   - 🇲🇾 马来西亚 | MYS
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇹🇭 泰国 | THA 2
   - 🇺🇸 美国 | USA 16
   - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO

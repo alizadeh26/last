@@ -11,12 +11,6 @@ proxies:
   cipher: aes-256-gcm
   password: g5MeD6Ft3CWlJId
   udp: true
-- name: 🇧🇷 巴西 | BRA
-  server: 163.176.6.223
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: SP1M0IipjvtsuKVyn9U2iK+ZKuuQ0afVhLCicK9pO8Y=
 - name: 🇬🇧 英国 | GBR
   server: 134.65.58.116
   port: 61312
@@ -30,6 +24,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ljqdalu13..
   udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 - name: 🇳🇱 荷兰 | NLD
   server: relay.meshbeat.online
   port: 8444
@@ -46,19 +46,6 @@ proxies:
     headers:
       Host: relay.meshbeat.online
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 31.76.65.234.fwqfw783rg2dad.website
-  port: 443
-  type: vless
-  uuid: 5ca83936-136d-4314-8453-4ba10a86cf60
-  tls: true
-  servername: 31.76.65.234.fwqfw783rg2dad.website
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: 31.76.65.234.fwqfw783rg2dad.website
 - name: 🇩🇪 德国 | DEU 10
   server: node2.onepanel123.ru
   port: 2087
@@ -73,6 +60,12 @@ proxies:
     headers:
       Host: node2.onepanel123.ru
   udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 161.118.236.226
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: mK3U4CcxreExT+4ZbQ+ixTCRA0PpbwB2qEYHsgySaLU=
 - name: 🇸🇪 瑞典 | SWE
   server: se1.se-cdn.ru
   port: 443
@@ -87,12 +80,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: 121.46.230.138
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
 - name: 🇹🇭 泰国 | THA 2
   server: 103.169.67.34
   port: 65443
@@ -100,12 +87,6 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
 - name: 🇺🇸 美国 | USA 16
   server: 129.146.37.14
   port: 50356
@@ -126,30 +107,12 @@ proxies:
     headers:
       Host: cf.udpid.org
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: white-hill-f907.23-b68.workers.dev
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 134.98.147.182
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: kVJer/RaxqQotMpJVDmyRShD2pMmDy1VM0ku+ao8q/4=
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 161.118.236.226
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mK3U4CcxreExT+4ZbQ+ixTCRA0PpbwB2qEYHsgySaLU=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -157,72 +120,50 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN 2
-  - 🇧🇷 巴西 | BRA
   - 🇬🇧 英国 | GBR
   - 🇯🇵 日本 | JPN 4
-  - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇩🇪 德国 | DEU 10
-  - 🇸🇪 瑞典 | SWE
-  - 🇰🇷 韩国 | KOR 2
-  - 🇹🇭 泰国 | THA 2
   - 🇲🇾 马来西亚 | MYS
+  - 🇳🇱 荷兰 | NLD
+  - 🇩🇪 德国 | DEU 10
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇸🇪 瑞典 | SWE
+  - 🇹🇭 泰国 | THA 2
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 9
   - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN 2
-  - 🇧🇷 巴西 | BRA
   - 🇬🇧 英国 | GBR
   - 🇯🇵 日本 | JPN 4
-  - 🇰🇷 韩国 | KOR 2
-  - 🇹🇭 泰国 | THA 2
   - 🇲🇾 马来西亚 | MYS
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇹🇭 泰国 | THA 2
   - 🇺🇸 美国 | USA 16
   - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇩🇪 德国 | DEU 10
   - 🇸🇪 瑞典 | SWE
   - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 9
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 日本 | JPN 4
-  - 🇰🇷 韩国 | KOR 2
-  - 🇹🇭 泰国 | THA 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇦 加拿大 | CAN 2
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇧🇷 巴西 | BRA
 rules:
 - MATCH,AUTO
