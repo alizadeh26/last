@@ -10,35 +10,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: T4U8Yut/MwgzDc5v2QDgEQ8kNm7ne2Q7V4MUN86I2u0=
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.190.81
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.210.216
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: cdn4.velnaro.ir
-  port: 443
-  type: vless
-  uuid: d2615adf-96c4-414e-9126-eedf9ec9f0c0
-  tls: true
-  servername: cdn4.velnaro.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /happy-2026-fall
-    headers:
-      Host: cdn4.velnaro.ir
-  udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: link.meshbeat.online
   port: 8444
@@ -55,12 +26,12 @@ proxies:
     headers:
       Host: link.meshbeat.online
   udp: true
-- name: 🇫🇷 法国 | FRA 6
-  server: 95.170.13.47
-  port: 65443
+- name: 🇩🇪 德国 | DEU 13
+  server: 130.61.85.53
+  port: 59924
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 67WnA2slMaP+SEtj7R8eea9uFlTg19yFTrOQMmz2QRI=
 - name: 🇩🇪 德国 | DEU 8
   server: node2.onepanel123.ru
   port: 2087
@@ -75,33 +46,12 @@ proxies:
     headers:
       Host: node2.onepanel123.ru
   udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: 121.46.230.136
+- name: 🇫🇷 法国 | FRA 6
+  server: 95.170.13.47
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 168.107.84.216
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: AvgbFIV7Cex5/qT5UZZfczfm4HvieP7cS50XxXtw+EA=
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 129.153.203.166
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: A23Zvh1OLiC2Y+dr+da8RDCNlqeYEdn6Luu/gWk/6rs=
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: robon.mashhad1market.ir
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TU4NUJuMe4XlZ3NCQ_1KiQ
-  udp: true
 - name: 🇭🇰 香港 | HKG 5
   server: 95.40.120.162
   port: 8319
@@ -109,6 +59,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ljqdalu13..
   udp: true
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.210.216
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: 129.153.203.166
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: A23Zvh1OLiC2Y+dr+da8RDCNlqeYEdn6Luu/gWk/6rs=
 - name: 🇺🇸 美国 | USA 8
   server: rush-w1niu.teeopp.online
   port: 443
@@ -124,12 +88,13 @@ proxies:
     headers:
       Host: rush-w1niu.teeopp.online
   udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: 130.61.85.53
-  port: 59924
+- name: 🇸🇬 新加坡 | SGP
+  server: 168.107.84.216
+  port: 56927
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 67WnA2slMaP+SEtj7R8eea9uFlTg19yFTrOQMmz2QRI=
+  password: AvgbFIV7Cex5/qT5UZZfczfm4HvieP7cS50XxXtw+EA=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -137,42 +102,34 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 2
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 7
-  - 🇫🇷 法国 | FRA 6
-  - 🇩🇪 德国 | DEU 8
-  - 🇯🇵 日本 | JPN 4
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 15
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇭🇰 香港 | HKG 5
-  - 🇺🇸 美国 | USA 8
   - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 8
+  - 🇫🇷 法国 | FRA 6
+  - 🇭🇰 香港 | HKG 5
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 8
+  - 🇸🇬 新加坡 | SGP
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 2
-  - 🇫🇷 法国 | FRA 6
-  - 🇯🇵 日本 | JPN 4
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 15
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇭🇰 香港 | HKG 5
   - 🇩🇪 德国 | DEU 13
+  - 🇫🇷 法国 | FRA 6
+  - 🇭🇰 香港 | HKG 5
+  - 🇺🇸 美国 | USA 15
+  - 🇸🇬 新加坡 | SGP
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
+  - 🇨🇴 哥伦比亚 | COL 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
