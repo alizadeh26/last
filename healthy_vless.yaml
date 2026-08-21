@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 10
-  server: node2.onepanel123.ru
-  port: 2087
-  type: vless
-  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
-  tls: true
-  servername: node2.onepanel123.ru
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /de-vless-ws
-    headers:
-      Host: node2.onepanel123.ru
-  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: relay.meshbeat.online
   port: 8444
@@ -34,6 +20,33 @@ proxies:
     headers:
       Host: relay.meshbeat.online
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 31.76.65.234.fwqfw783rg2dad.website
+  port: 443
+  type: vless
+  uuid: 5ca83936-136d-4314-8453-4ba10a86cf60
+  tls: true
+  servername: 31.76.65.234.fwqfw783rg2dad.website
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: 31.76.65.234.fwqfw783rg2dad.website
+- name: 🇩🇪 德国 | DEU 10
+  server: node2.onepanel123.ru
+  port: 2087
+  type: vless
+  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
+  tls: true
+  servername: node2.onepanel123.ru
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /de-vless-ws
+    headers:
+      Host: node2.onepanel123.ru
+  udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: se1.se-cdn.ru
   port: 443
@@ -48,19 +61,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 31.76.65.234.fwqfw783rg2dad.website
-  port: 443
-  type: vless
-  uuid: 5ca83936-136d-4314-8453-4ba10a86cf60
-  tls: true
-  servername: 31.76.65.234.fwqfw783rg2dad.website
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: 31.76.65.234.fwqfw783rg2dad.website
 - name: 🇺🇸 美国 | USA 12
   server: cf.udpid.org
   port: 443
@@ -87,30 +87,17 @@ proxies:
     headers:
       Host: white-hill-f907.23-b68.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 10
   - 🇳🇱 荷兰 | NLD
-  - 🇸🇪 瑞典 | SWE
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇩🇪 德国 | DEU 10
+  - 🇸🇪 瑞典 | SWE
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 27
 rules:
 - MATCH,AUTO

@@ -17,37 +17,12 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: SP1M0IipjvtsuKVyn9U2iK+ZKuuQ0afVhLCicK9pO8Y=
-- name: 🇩🇪 德国 | DEU 4
-  server: 63.186.69.235
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 | DEU 17
-  server: 63.176.139.123
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 | FRA 4
-  server: 51.44.170.194
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 134.65.58.116
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: EECkcZhvinEjpAAJXYZQXmyKQTXLoPaQEonv4Lmt/LY=
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 134.98.147.182
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kVJer/RaxqQotMpJVDmyRShD2pMmDy1VM0ku+ao8q/4=
 - name: 🇯🇵 日本 | JPN 4
   server: 54.95.207.148
   port: 8316
@@ -55,44 +30,43 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ljqdalu13..
   udp: true
-- name: 🇫🇷 法国 | FRA 13
-  server: 51.44.167.151
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇰🇷 韩国 | KOR 2
   server: 121.46.230.138
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇺🇸 美国 | USA
-  server: 3.145.61.0
-  port: 443
+- name: 🇹🇭 泰国 | THA 2
+  server: 103.169.67.34
+  port: 65443
   type: ss
   cipher: aes-256-cfb
-  password: amazonskr05
+  password: 7eadc6dbe2ae
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 161.118.236.226
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mK3U4CcxreExT+4ZbQ+ixTCRA0PpbwB2qEYHsgySaLU=
-- name: 🇺🇸 美国 | USA 16
-  server: 129.146.37.14
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Y9jRhGRJX5snpyhEGATgmRdSNeY4AcPXFruR7xCow6w=
 - name: 🇲🇾 马来西亚 | MYS
   server: 118.107.222.231
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+- name: 🇺🇸 美国 | USA 16
+  server: 129.146.37.14
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Y9jRhGRJX5snpyhEGATgmRdSNeY4AcPXFruR7xCow6w=
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 134.98.147.182
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: kVJer/RaxqQotMpJVDmyRShD2pMmDy1VM0ku+ao8q/4=
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 161.118.236.226
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: mK3U4CcxreExT+4ZbQ+ixTCRA0PpbwB2qEYHsgySaLU=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -101,17 +75,13 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN 2
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 17
-  - 🇫🇷 法国 | FRA 4
   - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 5
   - 🇯🇵 日本 | JPN 4
-  - 🇫🇷 法国 | FRA 13
   - 🇰🇷 韩国 | KOR 2
-  - 🇺🇸 美国 | USA
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 16
+  - 🇹🇭 泰国 | THA 2
   - 🇲🇾 马来西亚 | MYS
+  - 🇺🇸 美国 | USA 16
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO

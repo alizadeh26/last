@@ -1,7 +1,6 @@
-vless://a375fa6a-bef7-4f71-92f0-17976e5afaac@piracy-android.video-streams.org:443?encryption=none&type=ws&path=%2Fws&host=piracy-android.video-streams.org&security=tls&sni=piracy-android.video-streams.org&fp=chrome&alpn=http%2F1.1#Server 2 🇨🇦	dl_kib_s=3361	ul_kib_s=4351
-vless://a375fa6a-bef7-4f71-92f0-17976e5afaac@adheres-scruple.quick-cdn.net:443?encryption=none&type=ws&path=%2Fws&host=adheres-scruple.quick-cdn.net&security=tls&sni=adheres-scruple.quick-cdn.net&fp=chrome&alpn=http%2F1.1#Server 4 🇨🇦	dl_kib_s=2780	ul_kib_s=2960
-vless://a375fa6a-bef7-4f71-92f0-17976e5afaac@minimize-evenness.cdn-content.com:443?encryption=none&type=ws&path=%2Fws&host=minimize-evenness.cdn-content.com&security=tls&sni=minimize-evenness.cdn-content.com&fp=chrome&alpn=http%2F1.1#Server 1 🇺🇸	dl_kib_s=2829	ul_kib_s=2021
-ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg@146.70.23.32:8080#Server 15 🇬🇧	dl_kib_s=1510	ul_kib_s=1604
-vless://93dac4b8-3879-4179-abdb-9666a9e2ca8d@87.120.84.32:33843?encryption=none&type=raw&headerType=none&security=tls&fp=chrome&sni=deproxy2.lckdwn.ru#Server 6 🇩🇪	dl_kib_s=1417	ul_kib_s=1418
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.58.239:8388#Server 9 🇳🇱	dl_kib_s=1244	ul_kib_s=1572
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#Server 11 🇪🇸	dl_kib_s=1063	ul_kib_s=1180
+vless://XpnTeam-19@199.232.78.160:443?encryption=none&type=ws&host=Appxdn.global.ssl.fastly.net&path=%2F&security=tls&alpn=http%2F1.1&fp=chrome&sni=ssl.fastly.com#Server 3 🇺🇸	dl_kib_s=1435	ul_kib_s=1510
+ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg@146.70.23.32:8080#Server 15 🇬🇧	dl_kib_s=1127	ul_kib_s=1322
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.58.239:8388#Server 9 🇳🇱	dl_kib_s=1192	ul_kib_s=1209
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@nl1.levikogjgfdd.ir:8388#Server 17 🇳🇱	dl_kib_s=1092	ul_kib_s=1210
+vless://93dac4b8-3879-4179-abdb-9666a9e2ca8d@87.120.84.32:33843?encryption=none&type=raw&headerType=none&security=tls&fp=chrome&sni=deproxy2.lckdwn.ru#Server 6 🇩🇪	dl_kib_s=1088	ul_kib_s=1017
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#Server 11 🇪🇸	dl_kib_s=1016	ul_kib_s=938
