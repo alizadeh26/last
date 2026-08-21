@@ -11,20 +11,6 @@ proxies:
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇨🇳 CN_20
-  server: 121.46.230.136
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: netixu.mashhad1market.ir
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TU4NUJuMe4XlZ3NCQ_1KiQ
-  udp: true
 - name: 🇫🇷 法国 | FRA 5
   server: 95.170.13.47
   port: 65443
@@ -38,38 +24,19 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ljqdalu13..
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 134.98.133.200
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: I7hDyttiC6TqiyAetICIfNgbc3oneYyGeX1Uedi9a34=
-- name: 🇩🇪 德国 | DEU 17
-  server: e2.cover20.ir
-  port: 30874
+- name: 🇩🇪 德国 | DEU 11
+  server: netixu.mashhad1market.ir
+  port: 1080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 2wh1oScZDyomCGHuC4pPHaw2jMF6RYdQqxwp02r0rG4=
+  password: TU4NUJuMe4XlZ3NCQ_1KiQ
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 161.118.209.26
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 43swztt3KoeKI7uXGyvrpG9OOfwYNq5uYSk87aR969U=
 - name: 🇺🇸 美国 | USA 12
   server: 129.153.203.166
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: A23Zvh1OLiC2Y+dr+da8RDCNlqeYEdn6Luu/gWk/6rs=
-- name: 🇺🇸 美国 | USA 18
-  server: 206.189.223.234
-  port: 443
-  type: ss
-  cipher: aes-256-gcm
-  password: YmrYLpErhi5oTrrv
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -77,14 +44,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇨🇳 CN_20
-  - 🇩🇪 德国 | DEU 11
   - 🇫🇷 法国 | FRA 5
   - 🇯🇵 日本 | JPN 3
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 17
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇩🇪 德国 | DEU 11
   - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 18
 rules:
 - MATCH,AUTO

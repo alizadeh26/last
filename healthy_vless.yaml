@@ -4,29 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.218.222
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.218.106
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇩🇪 德国 | DEU 13
-  server: ger.me1.pingsf.ir
-  port: 443
-  type: vless
-  uuid: 59086073-d6da-44ed-b604-241ecdf03e97
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: connecto1.kolman.com.de
   port: 8080
@@ -38,6 +15,14 @@ proxies:
     path: /eQ7EK5s88mh1QkQrKDwYqh6Dbhd
     headers:
       Host: 1.sidin.com.de
+  udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: ger.me1.pingsf.ir
+  port: 443
+  type: vless
+  uuid: 59086073-d6da-44ed-b604-241ecdf03e97
+  tls: false
+  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: relay.meshbeat.online
@@ -55,18 +40,6 @@ proxies:
     headers:
       Host: relay.meshbeat.online
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 172.67.209.127
-  port: 8880
-  type: vless
-  uuid: 942bdcfc-e522-44f1-b899-3bd8db7c5ae2
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: winter-leaf-b4da.122-6c9.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 27
   server: 157.238.208.110
   port: 41834
@@ -83,12 +56,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 13
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 6
   - 🇺🇸 美国 | USA 27
 rules:
 - MATCH,AUTO

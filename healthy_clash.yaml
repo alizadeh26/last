@@ -11,36 +11,6 @@ proxies:
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.218.222
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇨🇳 CN_20
-  server: 121.46.230.136
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.218.106
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇩🇪 德国 | DEU 13
-  server: ger.me1.pingsf.ir
-  port: 443
-  type: vless
-  uuid: 59086073-d6da-44ed-b604-241ecdf03e97
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: connecto1.kolman.com.de
   port: 8080
@@ -53,12 +23,13 @@ proxies:
     headers:
       Host: 1.sidin.com.de
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: netixu.mashhad1market.ir
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TU4NUJuMe4XlZ3NCQ_1KiQ
+- name: 🇩🇪 德国 | DEU 13
+  server: ger.me1.pingsf.ir
+  port: 443
+  type: vless
+  uuid: 59086073-d6da-44ed-b604-241ecdf03e97
+  tls: false
+  network: tcp
   udp: true
 - name: 🇫🇷 法国 | FRA 5
   server: 95.170.13.47
@@ -72,19 +43,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ljqdalu13..
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 134.98.133.200
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: I7hDyttiC6TqiyAetICIfNgbc3oneYyGeX1Uedi9a34=
-- name: 🇩🇪 德国 | DEU 17
-  server: e2.cover20.ir
-  port: 30874
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2wh1oScZDyomCGHuC4pPHaw2jMF6RYdQqxwp02r0rG4=
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: relay.meshbeat.online
@@ -102,37 +60,6 @@ proxies:
     headers:
       Host: relay.meshbeat.online
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 161.118.209.26
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 43swztt3KoeKI7uXGyvrpG9OOfwYNq5uYSk87aR969U=
-- name: 🇺🇸 美国 | USA 12
-  server: 129.153.203.166
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: A23Zvh1OLiC2Y+dr+da8RDCNlqeYEdn6Luu/gWk/6rs=
-- name: 🇺🇸 美国 | USA 18
-  server: 206.189.223.234
-  port: 443
-  type: ss
-  cipher: aes-256-gcm
-  password: YmrYLpErhi5oTrrv
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 172.67.209.127
-  port: 8880
-  type: vless
-  uuid: 942bdcfc-e522-44f1-b899-3bd8db7c5ae2
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: winter-leaf-b4da.122-6c9.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 27
   server: 157.238.208.110
   port: 41834
@@ -143,6 +70,19 @@ proxies:
   ws-opts:
     path: /5adeccb9
   udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: netixu.mashhad1market.ir
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: TU4NUJuMe4XlZ3NCQ_1KiQ
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 129.153.203.166
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: A23Zvh1OLiC2Y+dr+da8RDCNlqeYEdn6Luu/gWk/6rs=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -150,48 +90,53 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇳 CN_20
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 13
   - 🇫🇷 法国 | FRA 5
   - 🇯🇵 日本 | JPN 3
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 17
   - 🇳🇱 荷兰 | NLD 2
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 18
-  - 🇳🇱 荷兰 | NLD 6
   - 🇺🇸 美国 | USA 27
+  - 🇩🇪 德国 | DEU 11
+  - 🇺🇸 美国 | USA 12
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇨🇳 CN_20
-  - 🇩🇪 德国 | DEU 11
   - 🇫🇷 法国 | FRA 5
   - 🇯🇵 日本 | JPN 3
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 17
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇩🇪 德国 | DEU 11
   - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 18
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 13
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 6
   - 🇺🇸 美国 | USA 27
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 日本 | JPN 3
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 11
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 6
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
