@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.190.81
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇩🇪 德国 | DEU 7
   server: link.meshbeat.online
   port: 8444
@@ -34,6 +41,18 @@ proxies:
     headers:
       Host: node2.onepanel123.ru
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 109.196.101.18
+  port: 4100
+  type: vless
+  uuid: 020530ec-acf3-41a3-b93e-838e6860bd74
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 2
   server: 157.137.210.216
   port: 62145
@@ -48,8 +67,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
+  - 🇷🇺 俄罗斯 | RUS
   - 🇨🇴 哥伦比亚 | COL 2
 rules:
 - MATCH,AUTO

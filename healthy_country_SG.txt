@@ -5,3 +5,4 @@ vmess://eyJhZGQiOiIxNDkuODguMjMuMjAyIiwicG9ydCI6IjE4MDAwIiwiaWQiOiJmOGM4ZGMzZC0w
 trojan://Edk07MJ3Xqg5cl1j5519zqwX2f2EFjON@vip-sg-1.hkd4fwmg.vip:21802?security=tls&sni=vip-sg-1.hkd4fwmg.vip&insecure=0&allowInsecure=0&type=tcp&headerType=none#%E6%96%B0%E5%8A%A0%E5%9D%A1_082204081
 trojan://Sn+JPr7a1JGWKxUrlhKrgTGajkOxbxUg@vip-sg-2.hkd4fwmg.vip:58277?security=tls&sni=vip-sg-2.hkd4fwmg.vip&insecure=0&allowInsecure=0&type=tcp&headerType=none#%E6%96%B0%E5%8A%A0%E5%9D%A1_082204082
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpURkVsRzJGVnF5cUc=@176.97.64.144:8388#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+176.97.64.144-8388+%7C+171.22ms
+vless://6179bb85-fd73-4aa1-a10d-a7c017306c1b@162.128.84.142:443?security=reality&encryption=none&pbk=t3_QIEko7K1ONUIWGr4L84HNHszQ3zB_kOqkALiacRg&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.bing.com&sid=43a85ad1c112e5d8#🏳️ 163 - XX - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
