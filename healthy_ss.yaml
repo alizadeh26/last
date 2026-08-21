@@ -4,31 +4,63 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 51.222.155.32
+  port: 5003
+  type: ss
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
 - name: 🇧🇷 巴西 | BRA
   server: 163.176.6.223
   port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: SP1M0IipjvtsuKVyn9U2iK+ZKuuQ0afVhLCicK9pO8Y=
-- name: 🇧🇷 巴西 | BRA 2
-  server: 129.148.44.181
-  port: 59319
+- name: 🇩🇪 德国 | DEU 4
+  server: 63.186.69.235
+  port: 443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: HWBXhJoxrIyNrENJIipt9FVnzqRABmuXjSW0HtgNGI0=
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 | DEU 17
+  server: 63.176.139.123
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 | FRA 4
+  server: 51.44.170.194
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
-- name: 🇬🇧 英国 | GBR 2
+- name: 🇬🇧 英国 | GBR
   server: 134.65.58.116
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: EECkcZhvinEjpAAJXYZQXmyKQTXLoPaQEonv4Lmt/LY=
-- name: 🇮🇹 意大利 | ITA
-  server: 194.87.47.162
-  port: 10901
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 134.98.147.182
+  port: 45819
   type: ss
-  cipher: aes-256-gcm
-  password: d1fa2f4b98a38bc8
+  cipher: 2022-blake3-chacha20-poly1305
+  password: kVJer/RaxqQotMpJVDmyRShD2pMmDy1VM0ku+ao8q/4=
+- name: 🇯🇵 日本 | JPN 4
+  server: 54.95.207.148
+  port: 8316
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ljqdalu13..
+  udp: true
+- name: 🇫🇷 法国 | FRA 13
+  server: 51.44.167.151
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇰🇷 韩国 | KOR 2
   server: 121.46.230.138
@@ -36,38 +68,50 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇳🇱 荷兰 | NLD
-  server: 134.98.147.182
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kVJer/RaxqQotMpJVDmyRShD2pMmDy1VM0ku+ao8q/4=
-- name: 🇺🇸 美国 | USA 3
-  server: 13.59.70.134
+- name: 🇺🇸 美国 | USA
+  server: 3.145.61.0
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA 19
-  server: 162.243.36.19
-  port: 80
-  type: ss
-  cipher: aes-256-gcm
-  password: 1BuVr1kYF7v435mF
   udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 161.118.236.226
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: mK3U4CcxreExT+4ZbQ+ixTCRA0PpbwB2qEYHsgySaLU=
+- name: 🇺🇸 美国 | USA 16
+  server: 129.146.37.14
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Y9jRhGRJX5snpyhEGATgmRdSNeY4AcPXFruR7xCow6w=
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇦 加拿大 | CAN 2
   - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
-  - 🇬🇧 英国 | GBR 2
-  - 🇮🇹 意大利 | ITA
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 17
+  - 🇫🇷 法国 | FRA 4
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇯🇵 日本 | JPN 4
+  - 🇫🇷 法国 | FRA 13
   - 🇰🇷 韩国 | KOR 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 16
+  - 🇲🇾 马来西亚 | MYS
 rules:
 - MATCH,AUTO

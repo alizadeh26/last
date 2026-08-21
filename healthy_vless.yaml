@@ -4,35 +4,37 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 216.128.176.166
-  port: 22819
+- name: 🇩🇪 德国 | DEU 10
+  server: node2.onepanel123.ru
+  port: 2087
   type: vless
-  uuid: f60ed982-1ec8-426a-d74e-a675685d6dc8
-  tls: false
+  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
+  tls: true
+  servername: node2.onepanel123.ru
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /f60ed982-1ec8-426a-d74e-a675685d6dc8
+    path: /de-vless-ws
+    headers:
+      Host: node2.onepanel123.ru
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: 63.188.40.90
-  port: 22223
+- name: 🇳🇱 荷兰 | NLD
+  server: relay.meshbeat.online
+  port: 8444
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 157.238.208.110
-  port: 41834
-  type: vless
-  uuid: 5adeccb9-dfca-41de-cdf7-4d901f2e70f5
-  tls: false
+  uuid: 1f619326-cd93-4d6b-aebe-e0b5f8831d02
+  tls: true
+  alpn:
+  - http/1.1
+  servername: relay.meshbeat.online
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /5adeccb9
+    path: /api/v1/devices/2545c190a7/telemetry
+    headers:
+      Host: relay.meshbeat.online
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
+- name: 🇸🇪 瑞典 | SWE
   server: se1.se-cdn.ru
   port: 443
   type: vless
@@ -46,15 +48,69 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 31.76.65.234.fwqfw783rg2dad.website
+  port: 443
+  type: vless
+  uuid: 5ca83936-136d-4314-8453-4ba10a86cf60
+  tls: true
+  servername: 31.76.65.234.fwqfw783rg2dad.website
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: 31.76.65.234.fwqfw783rg2dad.website
+- name: 🇺🇸 美国 | USA 12
+  server: cf.udpid.org
+  port: 443
+  type: vless
+  uuid: 7893b302-3882-4c38-9ab6-6313f1575d1a
+  tls: true
+  servername: cf.udpid.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@zyzzzoao
+    headers:
+      Host: cf.udpid.org
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: white-hill-f907.23-b68.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: silent-snow-1a0d.241-b0a.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 12
-  - 🇺🇸 美国 | USA 4
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇩🇪 德国 | DEU 10
+  - 🇳🇱 荷兰 | NLD
+  - 🇸🇪 瑞典 | SWE
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 27
 rules:
 - MATCH,AUTO
