@@ -4,139 +4,162 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 51.222.155.113
-  port: 5601
+- name: 🇩🇪 德国 | DEU 2
+  server: 150.230.157.58
+  port: 59924
   type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: connecto1.kolman.com.de
-  port: 8080
+  cipher: 2022-blake3-chacha20-poly1305
+  password: T4U8Yut/MwgzDc5v2QDgEQ8kNm7ne2Q7V4MUN86I2u0=
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.190.81
+  port: 62145
   type: vless
-  uuid: ce71b8c2-54a4-4dd0-b780-a4521b16f2fb
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  network: ws
-  ws-opts:
-    path: /eQ7EK5s88mh1QkQrKDwYqh6Dbhd
-    headers:
-      Host: 1.sidin.com.de
-  udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: ger.me1.pingsf.ir
-  port: 443
+  network: tcp
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.210.216
+  port: 62145
   type: vless
-  uuid: 59086073-d6da-44ed-b604-241ecdf03e97
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 5
-  server: 95.170.13.47
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇯🇵 日本 | JPN 3
-  server: 54.95.207.148
-  port: 8316
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
+- name: 🇩🇪 德国 | DEU 3
+  server: cdn4.velnaro.ir
+  port: 443
+  type: vless
+  uuid: d2615adf-96c4-414e-9126-eedf9ec9f0c0
+  tls: true
+  servername: cdn4.velnaro.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /happy-2026-fall
+    headers:
+      Host: cdn4.velnaro.ir
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: relay.meshbeat.online
+- name: 🇩🇪 德国 | DEU 7
+  server: link.meshbeat.online
   port: 8444
   type: vless
   uuid: 1f619326-cd93-4d6b-aebe-e0b5f8831d02
   tls: true
   alpn:
   - http/1.1
-  servername: relay.meshbeat.online
+  servername: link.meshbeat.online
   client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /api/v1/devices/2545c190a7/telemetry
+    path: /api/v1/devices/ff3c56308c/telemetry
     headers:
-      Host: relay.meshbeat.online
+      Host: link.meshbeat.online
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: 157.238.208.110
-  port: 41834
-  type: vless
-  uuid: 5adeccb9-dfca-41de-cdf7-4d901f2e70f5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /5adeccb9
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: netixu.mashhad1market.ir
-  port: 1080
+- name: 🇩🇪 德国 | DEU 13
+  server: 130.61.85.53
+  port: 59924
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TU4NUJuMe4XlZ3NCQ_1KiQ
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 67WnA2slMaP+SEtj7R8eea9uFlTg19yFTrOQMmz2QRI=
+- name: 🇫🇷 法国 | FRA 6
+  server: 95.170.13.47
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇸🇬 新加坡 | SGP
+  server: 168.107.84.216
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: AvgbFIV7Cex5/qT5UZZfczfm4HvieP7cS50XxXtw+EA=
   udp: true
-- name: 🇺🇸 美国 | USA 12
+- name: 🇺🇸 美国 | USA 15
   server: 129.153.203.166
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: A23Zvh1OLiC2Y+dr+da8RDCNlqeYEdn6Luu/gWk/6rs=
+- name: 🇺🇸 美国 | USA 8
+  server: rush-w1niu.teeopp.online
+  port: 443
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/v4sx3q/zxzrurkc.m3u8
+    headers:
+      Host: rush-w1niu.teeopp.online
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: 95.40.120.162
+  port: 8319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ljqdalu13..
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: node2.onepanel123.ru
+  port: 2087
+  type: vless
+  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
+  tls: true
+  servername: node2.onepanel123.ru
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /de-vless-ws
+    headers:
+      Host: node2.onepanel123.ru
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 2
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 13
-  - 🇫🇷 法国 | FRA 5
-  - 🇯🇵 日本 | JPN 3
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 27
-  - 🇩🇪 德国 | DEU 11
-  - 🇺🇸 美国 | USA 12
+  - 🇫🇷 法国 | FRA 6
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 8
+  - 🇭🇰 香港 | HKG 5
+  - 🇩🇪 德国 | DEU 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇫🇷 法国 | FRA 5
-  - 🇯🇵 日本 | JPN 3
-  - 🇩🇪 德国 | DEU 11
-  - 🇺🇸 美国 | USA 12
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 13
+  - 🇫🇷 法国 | FRA 6
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 15
+  - 🇭🇰 香港 | HKG 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 13
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 27
-- name: REGION-AS
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+- name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 3
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 11
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 6
-  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

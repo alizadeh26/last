@@ -4,29 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 2
-  server: 43.132.192.16
-  port: 9527
+- name: 🇺🇸 美国 | USA 8
+  server: rush-w1niu.teeopp.online
+  port: 443
   type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-  alterId: 0
-  cipher: chacha20-poly1305
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: 2.27.174.110
-  port: 794
-  type: vmess
-  uuid: fd2c3c77-1984-4f7c-befe-efba034e1f3c
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
-  tls: false
-  alpn:
-  - ''
+  tls: true
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/v4sx3q/zxzrurkc.m3u8
+    headers:
+      Host: rush-w1niu.teeopp.online
   udp: true
 proxy-groups:
 - name: AUTO
@@ -34,7 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

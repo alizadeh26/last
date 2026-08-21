@@ -4,49 +4,55 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 51.222.155.113
-  port: 5601
+- name: 🇩🇪 德国 | DEU 2
+  server: 150.230.157.58
+  port: 59924
   type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇫🇷 法国 | FRA 5
+  cipher: 2022-blake3-chacha20-poly1305
+  password: T4U8Yut/MwgzDc5v2QDgEQ8kNm7ne2Q7V4MUN86I2u0=
+- name: 🇩🇪 德国 | DEU 13
+  server: 130.61.85.53
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 67WnA2slMaP+SEtj7R8eea9uFlTg19yFTrOQMmz2QRI=
+- name: 🇫🇷 法国 | FRA 6
   server: 95.170.13.47
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇯🇵 日本 | JPN 3
-  server: 54.95.207.148
-  port: 8316
+- name: 🇸🇬 新加坡 | SGP
+  server: 168.107.84.216
+  port: 56927
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
+  cipher: 2022-blake3-chacha20-poly1305
+  password: AvgbFIV7Cex5/qT5UZZfczfm4HvieP7cS50XxXtw+EA=
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: netixu.mashhad1market.ir
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TU4NUJuMe4XlZ3NCQ_1KiQ
-  udp: true
-- name: 🇺🇸 美国 | USA 12
+- name: 🇺🇸 美国 | USA 15
   server: 129.153.203.166
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: A23Zvh1OLiC2Y+dr+da8RDCNlqeYEdn6Luu/gWk/6rs=
+- name: 🇭🇰 香港 | HKG 5
+  server: 95.40.120.162
+  port: 8319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ljqdalu13..
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇫🇷 法国 | FRA 5
-  - 🇯🇵 日本 | JPN 3
-  - 🇩🇪 德国 | DEU 11
-  - 🇺🇸 美国 | USA 12
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 13
+  - 🇫🇷 法国 | FRA 6
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 15
+  - 🇭🇰 香港 | HKG 5
 rules:
 - MATCH,AUTO
