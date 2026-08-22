@@ -4,28 +4,55 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL 2
+- name: 🇨🇴 哥伦比亚 | COL
   server: 157.137.229.25
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.213.151
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 149.130.179.122
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 193.123.37.20
+  udp: true
+- name: 🇩🇪 德国 | DEU 15
+  server: 104.24.152.211
+  port: 8880
+  type: vless
+  uuid: 2acde116-5949-48d8-a1e6-60a1d2547deb
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: lively-pine-093d.144-868.workers.dev
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: ld.242311.xyz
+  port: 443
+  type: vless
+  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
+  tls: true
+  servername: ld.242311.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.242311.xyz
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 141.144.195.7
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 8
+- name: 🇳🇱 荷兰 | NLD 9
   server: 141.148.232.137
   port: 62145
   type: vless
@@ -33,15 +60,111 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: 143.47.183.183
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD 13
+  server: 193.123.37.20
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇺🇸 美国 | USA 10
+  server: pl94.mechvpn.online
+  port: 443
+  type: vless
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  tls: true
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  flow: xtls-rprx-vision
+  servername: pl94.mechvpn.online
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 34
+  server: 104.17.144.29
+  port: 8880
+  type: vless
+  uuid: 85e14d59-02ea-4642-a317-50f1e1691660
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: icy-hat-20f3.328-99f.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 24
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: weathered-union-5358.101-262.workers.dev
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.210.216
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇮🇳 印度 | IND
+  server: il.stream-host.site
+  port: 443
+  type: vless
+  uuid: 20df893e-dcf4-491d-8261-6dbb24f9566b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: bO6oE5j-3-ONc3nqNsicX1hs6UhmrNLS5g_aMIRDUEc
+  servername: il.stream-host.site
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 188.114.97.6
+  port: 80
+  type: vless
+  uuid: 57bd62cf-5550-4075-8fa3-d4519aae8df0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0
+    headers:
+      Host: silent-feather-8539.sddadad2233122eew.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇩🇪 德国 | DEU 15
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 10
-  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 13
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 34
+  - 🇺🇸 美国 | USA 24
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇮🇳 印度 | IND
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO
