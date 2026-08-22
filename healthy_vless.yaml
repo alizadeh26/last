@@ -4,19 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 11
-  server: 132-243-223-227.sslip.io
-  port: 2101
-  type: vless
-  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
-  tls: true
-  servername: 132-243-223-227.sslip.io
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: fi-grpc-test
-  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: m7r.speedtestmark.com
   port: 443
@@ -31,6 +18,27 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: 132-243-223-227.sslip.io
+  port: 2101
+  type: vless
+  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
+  tls: true
+  servername: 132-243-223-227.sslip.io
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: fi-grpc-test
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 158.178.153.49
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 11
   server: 213.165.40.175.sslip.io
   port: 2083
@@ -39,14 +47,6 @@ proxies:
   tls: true
   servername: 213.165.40.175.sslip.io
   client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 158.178.153.49
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 8
@@ -63,10 +63,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD 11
+  - 🇩🇪 德国 | DEU 11
   - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 8
 rules:
 - MATCH,AUTO
