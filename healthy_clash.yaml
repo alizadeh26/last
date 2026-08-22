@@ -11,6 +11,33 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: N1wWAclBS1JWHoN3JOOUOEpvV0+NKZFdBpGMHZSMFuU=
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: m7r.speedtestmark.com
+  port: 443
+  type: vless
+  uuid: 294bf801-bfbe-4f29-9a03-3a9736a9674b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Bp49BC_XtsdC4Jvp5p-vfR1voCti6QrYyIPKQSIt_Hw
+    short-id: '4326'
+  servername: m7r.speedtestmark.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 129.151.70.252
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ACBxVu50k3V8Oy+U4V+ad2Z85fnNVys6MfGj5Sinz70=
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 144.24.228.102
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: N32MvyKWcvB2dfd9+8tDGsdDPkfZtsmmm6eik9yxW/E=
 - name: 🇩🇪 德国 | DEU 11
   server: 132-243-223-227.sslip.io
   port: 2101
@@ -24,46 +51,18 @@ proxies:
     grpc-mode: gun
     grpc-service-name: fi-grpc-test
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 144.24.228.102
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: N32MvyKWcvB2dfd9+8tDGsdDPkfZtsmmm6eik9yxW/E=
-- name: 🇬🇧 英国 | GBR 3
-  server: 129.151.70.252
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ACBxVu50k3V8Oy+U4V+ad2Z85fnNVys6MfGj5Sinz70=
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 158.101.222.193
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: c1X6HxfuG20TnAmSC8ZYQYDJqmxgjOP1vwvrkQcPMdQ=
-- name: 🇳🇱 荷兰 | NLD
-  server: 134.98.144.146
-  port: 45819
+- name: 🇯🇵 日本 | JPN 3
+  server: 121.46.230.136
+  port: 65443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mSsDylEWEVs4RJudck4O0ScHhezXB9RZs9N70l5esqM=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 158.180.13.253
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: T8nDZA9hyAy2MrDlJBL1w5F6HMzfNNyN8Ysk1Se1INc=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 92.5.227.75
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 158.178.153.49
@@ -73,6 +72,13 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 158.180.13.253
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: T8nDZA9hyAy2MrDlJBL1w5F6HMzfNNyN8Ysk1Se1INc=
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 158.178.159.220
   port: 45819
@@ -80,21 +86,13 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 2w4/eGbaFaK8GlJMa+yKZO1EwfIe1nOpojVM3qPFKkU=
   udp: true
-- name: 🇭🇰 香港 | HKG 8
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
-  alterId: 0
-  cipher: auto
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 92.5.227.75
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  skip-cert-verify: true
-  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 129.146.221.27
@@ -102,31 +100,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak/bQds=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: irhub-production-4401.up.railway.app
-  port: 443
-  type: vless
-  uuid: 07352861-2376-1f43-59c2-cedaa49dff2d
-  tls: true
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/07352861-2376-1f43-59c2-cedaa49dff2d
-    headers:
-      Host: irhub-production-4401.up.railway.app
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 11
-  server: 213.165.40.175.sslip.io
-  port: 2083
-  type: vless
-  uuid: 7efc901f-7862-40e8-902b-4bfad8f8ca88
-  tls: true
-  servername: 213.165.40.175.sslip.io
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 17
   server: 137.131.35.71
@@ -142,26 +115,29 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: ifrTlZy7Avf81frUk4hicQ8bxe7Vm9kV+JngePHDDTk=
   udp: true
+- name: 🇳🇱 荷兰 | NLD 11
+  server: 213.165.40.175.sslip.io
+  port: 2083
+  type: vless
+  uuid: 7efc901f-7862-40e8-902b-4bfad8f8ca88
+  tls: true
+  servername: 213.165.40.175.sslip.io
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 134.98.144.146
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: mSsDylEWEVs4RJudck4O0ScHhezXB9RZs9N70l5esqM=
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 134.98.146.23
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: stWyUk6orboi395iL0FnR3BPusuEjio2VBywW09OOO0=
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: m7r.speedtestmark.com
-  port: 443
-  type: vless
-  uuid: 294bf801-bfbe-4f29-9a03-3a9736a9674b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Bp49BC_XtsdC4Jvp5p-vfR1voCti6QrYyIPKQSIt_Hw
-    short-id: '4326'
-  servername: m7r.speedtestmark.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -170,71 +146,58 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 11
-  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 3
   - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 11
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 8
+  - 🇯🇵 日本 | JPN 3
   - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 6
-  - 🇭🇰 香港 | HKG 8
+  - 🇳🇱 荷兰 | NLD 8
   - 🇺🇸 美国 | USA 5
-  - 🇳🇱 荷兰 | NLD 10
-  - 🇳🇱 荷兰 | NLD 11
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 25
+  - 🇳🇱 荷兰 | NLD 11
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 7
-  - 🇩🇪 德国 | DEU 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 13
-  - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD
+  - 🇯🇵 日本 | JPN 3
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 6
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 25
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 11
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 10
-  - 🇳🇱 荷兰 | NLD 11
   - 🇩🇪 德国 | DEU 3
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 8
+  - 🇩🇪 德国 | DEU 11
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 11
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 11
-  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 3
   - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD 11
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 17
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 6
 rules:
 - MATCH,AUTO
