@@ -1,11 +1,11 @@
 ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M@92.118.205.211:5600?#Server 128 🇵🇱
 trojan://AE62539071@tolerant-mosquito.rooster465.autos:443?security=tls&sni=tolerant-mosquito.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208001
-trojan://ND91608427@202.78.163.148:443?security=tls&sni=discrete-basilisk.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208005
-trojan://FH72359861@primary-leech.rooster465.autos:443?security=tls&sni=primary-leech.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208002
 trojan://FH72359861@magnetic-caiman.rooster465.autos:443?security=tls&sni=magnetic-caiman.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208003
-trojan://ND91608427@relaxed-gull.rooster465.autos:443?security=tls&sni=relaxed-gull.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208006
-trojan://EQ30679154@pretty-mollusk.rooster465.autos:443?security=tls#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208009
+trojan://FH72359861@primary-leech.rooster465.autos:443?security=tls&sni=primary-leech.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208002
+trojan://ND91608427@202.78.163.148:443?security=tls&sni=discrete-basilisk.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208005
+trojan://ND91608427@202.78.163.248:443?security=tls&sni=relaxed-gull.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208007
 trojan://AE62539071@relative-locust.rooster465.autos:443?security=tls#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208008
+trojan://EQ30679154@pretty-mollusk.rooster465.autos:443?security=tls#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208009
 trojan://AE62539071@enough-basilisk.rooster465.autos:443?allowInsecure=0&sni=enough-basilisk.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208011
 trojan://FH72359861@tolerant-mosquito.rooster465.autos:443?allowInsecure=0&sni=tolerant-mosquito.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208012
 trojan://PQ05174892@suitable-feline.rooster465.autos:443?allowInsecure=0&sni=suitable-feline.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208015
@@ -14,16 +14,17 @@ trojan://AE62539071@202.78.163.19:443?allowInsecure=0&sni=game-firefly.rooster46
 trojan://EQ30679154@distinct-ibex.rooster465.autos:443?sni=distinct-ibex.rooster465.autos&type=tcp&fp=chrome#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208041
 trojan://EQ30679154@discrete-basilisk.rooster465.autos:443?sni=discrete-basilisk.rooster465.autos&type=tcp&fp=chrome#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208044
 trojan://PQ05174892@202.78.163.146:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=electric-sturgeon.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208050+L38
-trojan://FH72359861@202.78.163.19:443?sni=game-firefly.rooster465.autos&fp=chrome&type=tcp&path=#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208053
 trojan://PQ05174892@202.78.163.172:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=more-trout.rooster465.autos#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208052
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@54.36.174.134:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+54.36.174.134-443+%7C+170.73ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@54.36.174.140:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+54.36.174.140-443+%7C+169.66ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@pl140.vpnbook.com:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+pl140.vpnbook.com-443+%7C+193.38ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@pl134.vpnbook.com:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+pl134.vpnbook.com-443+%7C+180.42ms
+trojan://FH72359861@202.78.163.19:443?sni=game-firefly.rooster465.autos&fp=chrome&type=tcp&path=#%E5%8D%A2%E6%A3%AE%E5%A0%A1_082208053
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@54.36.174.134:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+54.36.174.134-443+%7C+162.7ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@54.36.174.140:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+54.36.174.140-443+%7C+166.02ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@pl134.vpnbook.com:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+pl134.vpnbook.com-443+%7C+196.92ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@pl140.vpnbook.com:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+pl140.vpnbook.com-443+%7C+237.44ms
+vless://423b1d79-08c4-403f-9d5e-c541f791b55f@144.31.171.143:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI&security=reality&sid=00bca5982f82d083&sni=eu-central.cendora.ru&type=tcp#REALITY|PL🇵🇱
 trojan://FH72359861@202.78.163.175:443?security=tls&sni=optimal-urchin.rooster465.autos&path=/#🏳️ 860 - XX - Trojan/TLS - 443
-vless://5d8eb33a-2166-4daf-88fe-4be5799c493b@141.101.120.73:443?encryption=none&fp=chrome&host=noisy-term-e657.airdrop2014aa5168.workers.dev&path=/&security=tls&sni=noisy-term-e657.airdrop2014aa5168.workers.dev&type=ws#🇺🇸 156 - US - VLESS/WS/TLS/UTLS - 443
-vless://5e7ecc47-e424-4653-876e-c7515a2c82b4@94.183.209.43:443?encryption=none&path=/&security=none&type=ws#🇩🇪 158 - DE - VLESS/WS - 443
-vless://851b2819-b359-40bc-ad61-a5d41027be2c@150.251.114.43:443?encryption=none&path=/vless&security=none&type=ws#🏳️ 239 - XX - VLESS/WS - 443
-vless://8787dd0a-095a-414e-804f-a7d16a1ae166@2.26.255.36:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=po1.hys.braidx.tech&type=tcp#🏳️ 247 - XX - VLESS/TLS/VISION/UTLS - 8443
-vless://c7e9c591-2764-423a-afca-efbd010fd396@31.133.0.133:2053?encryption=none&security=tls&sni=forfreeuse.rtqa.ru&type=ws&host=forfreeuse.rtqa.ru&path=/#🇵🇱 310 - PL - VLESS/WS/TLS - 2053
-vless://d23cb516-40db-4aa4-8142-6b45ff882f90@pl4.lckdwn.ru:443?encryption=none&type=ws&path=/#🇩🇪 341 - DE - VLESS/WS - 443
+vless://5d8eb33a-2166-4daf-88fe-4be5799c493b@141.101.120.73:443?encryption=none&fp=chrome&host=noisy-term-e657.airdrop2014aa5168.workers.dev&path=/&security=tls&sni=noisy-term-e657.airdrop2014aa5168.workers.dev&type=ws#🏳️ 155 - XX - VLESS/WS/TLS/UTLS - 443
+vless://5e7ecc47-e424-4653-876e-c7515a2c82b4@94.183.209.43:443?encryption=none&path=/&security=none&type=ws#🏳️ 157 - XX - VLESS/WS - 443
+vless://851b2819-b359-40bc-ad61-a5d41027be2c@150.251.114.43:443?encryption=none&path=/vless&security=none&type=ws#🏳️ 224 - XX - VLESS/WS - 443
+vless://8787dd0a-095a-414e-804f-a7d16a1ae166@2.26.255.36:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=po1.hys.braidx.tech&type=tcp#🏳️ 231 - XX - VLESS/TLS/VISION/UTLS - 8443
+vless://c7e9c591-2764-423a-afca-efbd010fd396@31.133.0.133:2053?encryption=none&security=tls&sni=forfreeuse.rtqa.ru&type=ws&host=forfreeuse.rtqa.ru&path=/#🇵🇱 301 - PL - VLESS/WS/TLS - 2053
+vless://d23cb516-40db-4aa4-8142-6b45ff882f90@pl4.lckdwn.ru:443?encryption=none&type=ws&path=/#🏳️ 317 - XX - VLESS/WS - 443

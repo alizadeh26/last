@@ -11,6 +11,13 @@ proxies:
   cipher: aes-256-gcm
   password: g5MeD6Ft3CWlJId
   udp: true
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 51.222.155.113
+  port: 5601
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
 - name: 🇧🇷 巴西 | BRA
   server: 136.248.74.249
   port: 59319
@@ -29,6 +36,12 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: FT5UQvIiUPmdUrsx5avI6+dGrw19Jozj8xebN+sCHdw=
+- name: 🇩🇪 德国 | DEU 5
+  server: 130.61.239.20
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BPLlwEf4Q5pBjnh9yaObDbz37IjYijvvrCSJL5CNaaY=
 - name: 🇨🇴 哥伦比亚 | COL 2
   server: 157.137.229.25
   port: 62145
@@ -36,12 +49,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇩🇪 德国 | DEU 5
-  server: 130.61.239.20
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BPLlwEf4Q5pBjnh9yaObDbz37IjYijvvrCSJL5CNaaY=
 - name: 🇨🇴 哥伦比亚 | COL
   server: 157.137.213.151
   port: 62145
@@ -49,19 +56,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇨🇦 加拿大 | CAN 2
-  server: 51.222.155.113
-  port: 5601
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇨🇳 CN_14
-  server: 121.46.230.138
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
 - name: 🇩🇪 德国 | DEU 11
   server: 130.61.130.149
   port: 59924
@@ -105,14 +99,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: WdDHx+DT1TW08s5vMmHqa0dc56hUvgJKx877w3x3NpE=
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 141.148.232.137
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 10
   server: 193.123.37.20
   port: 62145
@@ -146,19 +132,20 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 7Wzvg+ZKNpOMiVuPoJXOklvJ42fiGlw0VTDIi74jiOM=
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 141.148.232.137
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 12
   server: 140.245.99.131
   port: 56927
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: PSNoCtdGxchVkryXlnee6lVcD4lL0DwT/TcFDSbW3Ig=
-- name: 🇺🇸 美国 | USA 23
-  server: 38.64.58.242
-  port: 8388
-  type: ss
-  cipher: aes-256-gcm
-  password: 7w9x5m4kNWNFgKuDXFUxu68x-26wbWwg
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -166,14 +153,13 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
+  - 🇨🇦 加拿大 | CAN 2
   - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
   - 🇩🇪 德国 | DEU 3
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 5
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇦 加拿大 | CAN 2
-  - 🇨🇳 CN_14
   - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 12
   - 🇬🇧 英国 | GBR 4
@@ -181,26 +167,24 @@ proxy-groups:
   - 🇬🇧 英国 | GBR 5
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 10
   - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 8
+  - 🇳🇱 荷兰 | NLD 8
   - 🇸🇬 新加坡 | SGP 12
-  - 🇺🇸 美国 | USA 23
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
+  - 🇨🇦 加拿大 | CAN 2
   - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
-  - 🇨🇦 加拿大 | CAN 2
-  - 🇨🇳 CN_14
   - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 12
   - 🇬🇧 英国 | GBR 4
@@ -213,7 +197,6 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 8
   - 🇸🇬 新加坡 | SGP 12
-  - 🇺🇸 美国 | USA 23
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -221,7 +204,26 @@ proxy-groups:
   proxies:
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL
-  - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 8
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 5
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 | CAN
+  - 🇨🇦 加拿大 | CAN 2
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇷 巴西 | BRA
 rules:
 - MATCH,AUTO
