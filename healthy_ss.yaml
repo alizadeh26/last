@@ -11,6 +11,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: N1wWAclBS1JWHoN3JOOUOEpvV0+NKZFdBpGMHZSMFuU=
   udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 144.24.228.102
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: N32MvyKWcvB2dfd9+8tDGsdDPkfZtsmmm6eik9yxW/E=
 - name: 🇬🇧 英国 | GBR 3
   server: 129.151.70.252
   port: 61312
@@ -18,18 +24,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: ACBxVu50k3V8Oy+U4V+ad2Z85fnNVys6MfGj5Sinz70=
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 144.24.228.102
-  port: 61312
+- name: 🇳🇱 荷兰 | NLD
+  server: 134.98.144.146
+  port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: N32MvyKWcvB2dfd9+8tDGsdDPkfZtsmmm6eik9yxW/E=
-- name: 🇯🇵 日本 | JPN 3
-  server: 121.46.230.136
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  password: mSsDylEWEVs4RJudck4O0ScHhezXB9RZs9N70l5esqM=
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 158.101.222.193
@@ -51,19 +51,19 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 2w4/eGbaFaK8GlJMa+yKZO1EwfIe1nOpojVM3qPFKkU=
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 134.98.144.146
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mSsDylEWEVs4RJudck4O0ScHhezXB9RZs9N70l5esqM=
-  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 129.146.221.27
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak/bQds=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 134.98.146.23
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: stWyUk6orboi395iL0FnR3BPusuEjio2VBywW09OOO0=
   udp: true
 - name: 🇺🇸 美国 | USA 17
   server: 137.131.35.71
@@ -79,13 +79,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: ifrTlZy7Avf81frUk4hicQ8bxe7Vm9kV+JngePHDDTk=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 134.98.146.23
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: stWyUk6orboi395iL0FnR3BPusuEjio2VBywW09OOO0=
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -93,16 +86,15 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 13
-  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
-  - 🇯🇵 日本 | JPN 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 5
+  - 🇳🇱 荷兰 | NLD 7
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 25
-  - 🇳🇱 荷兰 | NLD 7
 rules:
 - MATCH,AUTO
