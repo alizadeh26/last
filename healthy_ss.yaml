@@ -10,6 +10,13 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: BPLlwEf4Q5pBjnh9yaObDbz37IjYijvvrCSJL5CNaaY=
+- name: 🇭🇰 香港 | HKG 4
+  server: 95.40.120.162
+  port: 8319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ljqdalu13..
+  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 134.65.61.49
   port: 61312
@@ -22,27 +29,26 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 5pt3YBp2pgKAqVFsb68mRl6eo8PJr0eTzvZm8Uf58fc=
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 - name: 🇳🇱 荷兰 | NLD
   server: 158.180.14.59
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: vdyomDpjvBY+0xMrZoSOFy3i76Rly452tXFAzixPcL4=
-- name: 🇭🇰 香港 | HKG 4
-  server: 95.40.120.162
-  port: 8319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 152.70.50.59
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: WdDHx+DT1TW08s5vMmHqa0dc56hUvgJKx877w3x3NpE=
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
+- name: 🇰🇷 韩国 | KOR
+  server: 121.46.230.138
   port: 65443
   type: ss
   cipher: aes-256-cfb
@@ -54,6 +60,18 @@ proxies:
   cipher: aes-256-gcm
   password: d99c422199e62b6b
   udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 168.107.68.247
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: H8LKYNq3/4Wpg9dKvNcCo3Q/Z12k3R2sQyHzkjEBfHk=
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 152.69.213.76
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: cprIDP4qYEtehD8jch7mdRH4GV4nRhqNzqsQigWxCNQ=
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 46.17.40.234
   port: 20199
@@ -61,36 +79,6 @@ proxies:
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
   udp: true
-- name: 🇳🇱 荷兰 | NLD 14
-  server: 92.5.229.117
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EzU+FRH/EZYadbhR0w4f2raDkz4hunKKlRaHl7eY82E=
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 168.107.68.247
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: H8LKYNq3/4Wpg9dKvNcCo3Q/Z12k3R2sQyHzkjEBfHk=
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 140.245.99.131
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: PSNoCtdGxchVkryXlnee6lVcD4lL0DwT/TcFDSbW3Ig=
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 152.69.213.76
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: cprIDP4qYEtehD8jch7mdRH4GV4nRhqNzqsQigWxCNQ=
-- name: 🇸🇬 新加坡 | SGP 9
-  server: 168.138.173.43
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: M2h7TXxEyzZQT+DAMi4ma6TyZs9cF8l5sJIMzw3hhOQ=
 - name: 🇹🇭 泰国 | THA 2
   server: 103.169.67.34
   port: 65443
@@ -104,6 +92,18 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: oa7A0+9L7mp4aPLp9pFZ8FayB0x3G70Kw64suapoH8k=
+- name: 🇸🇬 新加坡 | SGP 9
+  server: 168.138.173.43
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: M2h7TXxEyzZQT+DAMi4ma6TyZs9cF8l5sJIMzw3hhOQ=
+- name: 🇳🇱 荷兰 | NLD 14
+  server: 92.5.229.117
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EzU+FRH/EZYadbhR0w4f2raDkz4hunKKlRaHl7eY82E=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -111,20 +111,20 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 14
+  - 🇭🇰 香港 | HKG 4
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇭🇰 香港 | HKG 4
-  - 🇳🇱 荷兰 | NLD 7
   - 🇲🇾 马来西亚 | MYS
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇰🇷 韩国 | KOR
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇳🇱 荷兰 | NLD 14
   - 🇸🇬 新加坡 | SGP 2
-  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 4
-  - 🇸🇬 新加坡 | SGP 9
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇹🇭 泰国 | THA 2
   - 🇺🇸 美国 | USA 33
+  - 🇸🇬 新加坡 | SGP 9
+  - 🇳🇱 荷兰 | NLD 14
 rules:
 - MATCH,AUTO

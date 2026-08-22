@@ -12,33 +12,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.210.216
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 172.67.132.85
-  port: 8080
-  type: vless
-  uuid: 3a701524-30c8-45f3-8922-d7af5d024af0
-  tls: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiWDRPODRLWDd2IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0=
-    headers:
-      Host: server14.peekconf.workers.dev
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 141.144.195.7
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇮🇳 印度 | IND
   server: il.stream-host.site
   port: 443
@@ -52,6 +25,13 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 141.144.195.7
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇳🇱 荷兰 | NLD 9
   server: 141.148.232.137
   port: 62145
@@ -60,13 +40,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 143.47.183.183
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇳🇱 荷兰 | NLD 13
   server: 193.123.37.20
   port: 62145
@@ -74,25 +47,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.229.25
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 188.114.97.6
-  port: 80
-  type: vless
-  uuid: 57bd62cf-5550-4075-8fa3-d4519aae8df0
-  tls: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0
-    headers:
-      Host: silent-feather-8539.sddadad2233122eew.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: pl94.mechvpn.online
   port: 443
@@ -120,6 +74,13 @@ proxies:
     headers:
       Host: icy-hat-20f3.328-99f.workers.dev
   udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: 143.47.183.183
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -127,16 +88,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL 3
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 6
   - 🇮🇳 印度 | IND
+  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 13
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇳🇱 荷兰 | NLD 3
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 34
+  - 🇳🇱 荷兰 | NLD 10
 rules:
 - MATCH,AUTO
