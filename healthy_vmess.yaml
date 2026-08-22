@@ -4,20 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 8
-  server: rush-w1niu.teeopp.online
-  port: 443
+- name: 🇭🇰 香港 | HKG
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
+  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
   network: ws
   ws-opts:
-    path: /video/v4sx3q/zxzrurkc.m3u8
+    path: /
     headers:
-      Host: rush-w1niu.teeopp.online
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +26,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 8
+  - 🇭🇰 香港 | HKG
 rules:
 - MATCH,AUTO
