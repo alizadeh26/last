@@ -4,73 +4,44 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.190.81
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇩🇪 德国 | DEU 7
-  server: link.meshbeat.online
-  port: 8444
-  type: vless
-  uuid: 1f619326-cd93-4d6b-aebe-e0b5f8831d02
-  tls: true
-  alpn:
-  - http/1.1
-  servername: link.meshbeat.online
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/v1/devices/ff3c56308c/telemetry
-    headers:
-      Host: link.meshbeat.online
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: node2.onepanel123.ru
-  port: 2087
-  type: vless
-  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
-  tls: true
-  servername: node2.onepanel123.ru
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /de-vless-ws
-    headers:
-      Host: node2.onepanel123.ru
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 109.196.101.18
-  port: 4100
-  type: vless
-  uuid: 020530ec-acf3-41a3-b93e-838e6860bd74
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.210.216
+  server: 157.137.229.25
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.213.151
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 141.148.232.137
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: 193.123.37.20
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 8
-  - 🇷🇺 俄罗斯 | RUS
   - 🇨🇴 哥伦比亚 | COL 2
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 10
 rules:
 - MATCH,AUTO
