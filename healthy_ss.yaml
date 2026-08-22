@@ -4,86 +4,75 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 136.248.118.107
-  port: 59319
+- name: 🇩🇪 德国 | DEU 13
+  server: 130.61.81.111
+  port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: l9J76M7suWl7vAPE/4hyTmUNqoImWoumsZ2fhuRX7cI=
+  password: N1wWAclBS1JWHoN3JOOUOEpvV0+NKZFdBpGMHZSMFuU=
   udp: true
-- name: 🇧🇷 巴西 | BRA 2
-  server: 167.234.225.164
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: O68yo+vY7gEcToIytfKJGZCG7lQkBW4VzsP1ZXRsTIU=
-- name: 🇫🇷 法国 | FRA
-  server: 95.170.13.47
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.75.194
+- name: 🇬🇧 英国 | GBR
+  server: 144.24.228.102
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: a/UK8LHF/90SAehQnn56RP5pUgdXKFLeP4sXt/D7VOw=
-- name: 🇬🇧 英国 | GBR 10
-  server: 129.151.85.177
+  password: N32MvyKWcvB2dfd9+8tDGsdDPkfZtsmmm6eik9yxW/E=
+- name: 🇬🇧 英国 | GBR 3
+  server: 129.151.70.252
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: HEZMw3e3ObzQ4hOH3EwEh3RsD3u7zzmSOHpVGDATZRk=
+  password: ACBxVu50k3V8Oy+U4V+ad2Z85fnNVys6MfGj5Sinz70=
   udp: true
-- name: 🇬🇧 英国 | GBR 11
-  server: 129.151.93.193
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: uTP7T8hg8KZuMkMy3aRzZP2UQkaTUhrW7NKgP/vT8I4=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 134.98.133.97
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 158.101.222.193
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: Di0niuJKfaX3xE2XbjXVE3LnDahhHuRY3OehphQn+dw=
-  udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
-  port: 65443
+  password: c1X6HxfuG20TnAmSC8ZYQYDJqmxgjOP1vwvrkQcPMdQ=
+- name: 🇳🇱 荷兰 | NLD
+  server: 134.98.144.146
+  port: 45819
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 195.133.23.200
-  port: 20990
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
+  cipher: 2022-blake3-chacha20-poly1305
+  password: mSsDylEWEVs4RJudck4O0ScHhezXB9RZs9N70l5esqM=
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 129.146.167.224
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 158.180.13.253
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: T8nDZA9hyAy2MrDlJBL1w5F6HMzfNNyN8Ysk1Se1INc=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 158.178.159.220
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2w4/eGbaFaK8GlJMa+yKZO1EwfIe1nOpojVM3qPFKkU=
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 129.146.221.27
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: oa7A0+9L7mp4aPLp9pFZ8FayB0x3G70Kw64suapoH8k=
-- name: 🇳🇱 荷兰 | NLD
-  server: 134.98.150.87
-  port: 45819
+  password: sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak/bQds=
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: 137.131.35.71
+  port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: J2sKKVp6+QBdjiJJskSFOXJ1ljCxje05WtZ91yS7qrc=
+  password: BXx9inbBMWJ1C9RDbASzhzsgJy4rvTPibOWqVhLFdNo=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 134.98.137.200
-  port: 45819
+- name: 🇺🇸 美国 | USA 25
+  server: 161.153.119.148
+  port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: PqUMoaSUlUKvYQbagqMsAaoOeYClI6e0PUJaT/QAiM8=
+  password: ifrTlZy7Avf81frUk4hicQ8bxe7Vm9kV+JngePHDDTk=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
+- name: 🇳🇱 荷兰 | NLD 7
   server: 134.98.146.23
   port: 45819
   type: ss
@@ -96,18 +85,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
-  - 🇫🇷 法国 | FRA
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 10
-  - 🇬🇧 英国 | GBR 11
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇲🇾 马来西亚 | MYS
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 2
+  - 🇩🇪 德国 | DEU 13
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 25
+  - 🇳🇱 荷兰 | NLD 7
 rules:
 - MATCH,AUTO

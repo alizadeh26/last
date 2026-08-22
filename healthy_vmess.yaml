@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG
+- name: 🇭🇰 香港 | HKG 8
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
   type: vmess
@@ -26,6 +26,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 8
 rules:
 - MATCH,AUTO
