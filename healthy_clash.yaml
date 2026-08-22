@@ -17,12 +17,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: O68yo+vY7gEcToIytfKJGZCG7lQkBW4VzsP1ZXRsTIU=
-- name: 🇧🇷 巴西 | BRA 3
-  server: 136.248.74.249
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: keCxFI2Iy4vMTOGXW2Bzi5IlksnPxxdqO67TkmJGw/I=
 - name: 🇨🇴 哥伦比亚 | COL
   server: 157.137.208.244
   port: 62145
@@ -31,16 +25,16 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.229.126
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 149.130.188.248
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 149.130.188.248
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.229.126
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -73,19 +67,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: uTP7T8hg8KZuMkMy3aRzZP2UQkaTUhrW7NKgP/vT8I4=
   udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: 121.46.230.138
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 134.98.137.200
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: PqUMoaSUlUKvYQbagqMsAaoOeYClI6e0PUJaT/QAiM8=
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 134.98.133.97
   port: 45819
@@ -93,54 +74,14 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: Di0niuJKfaX3xE2XbjXVE3LnDahhHuRY3OehphQn+dw=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 134.98.146.23
-  port: 45819
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
+  port: 65443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: stWyUk6orboi395iL0FnR3BPusuEjio2VBywW09OOO0=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: irhub-production-4401.up.railway.app
-  port: 443
-  type: vless
-  uuid: 04776582-ce7d-4e2c-082e-5dbbb08cf22d
-  tls: true
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/04776582-ce7d-4e2c-082e-5dbbb08cf22d
-    headers:
-      Host: irhub-production-4401.up.railway.app
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: web-production-41122.up.railway.app
-  port: 443
-  type: vless
-  uuid: f6d604c9-1d66-4400-8a4b-3021804085b4
-  tls: true
-  alpn:
-  - http/1.1
-  servername: web-production-41122.up.railway.app
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl-ws
-    headers:
-      Host: web-production-41122.up.railway.app
-  udp: true
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 - name: 🇳🇱 荷兰 | NLD 9
   server: 134.98.135.220
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 134.98.136.110
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -154,12 +95,18 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+- name: 🇸🇬 新加坡 | SGP 8
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: odd-darkness-57ce.334-a29.workers.dev
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 13
   server: liang92.dpdns.org
   port: 443
@@ -173,43 +120,6 @@ proxies:
     path: /
     headers:
       Host: liang92.dpdns.org
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 129.146.167.224
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oa7A0+9L7mp4aPLp9pFZ8FayB0x3G70Kw64suapoH8k=
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 195.133.23.200
-  port: 20990
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: odd-darkness-57ce.334-a29.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 201.24.49.74
-  port: 2200
-  type: vless
-  uuid: f0528a17-863f-4160-a5a0-0d9ad03f2ee7
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
   udp: true
 - name: 🇭🇰 香港 | HKG
   server: planb.mojcn.com.linuxlh.xin
@@ -227,12 +137,59 @@ proxies:
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 134.98.133.122
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 195.133.23.200
+  port: 20990
+  type: ss
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 129.146.167.224
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: oa7A0+9L7mp4aPLp9pFZ8FayB0x3G70Kw64suapoH8k=
+- name: 🇺🇸 美国 | USA 15
+  server: 201.24.49.74
+  port: 2200
+  type: vless
+  uuid: f0528a17-863f-4160-a5a0-0d9ad03f2ee7
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 134.98.150.87
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: aQFwKywVqx4Y1BOPkHwT78SgRbRf3/e6yf8nrwVANxU=
+  password: J2sKKVp6+QBdjiJJskSFOXJ1ljCxje05WtZ91yS7qrc=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: 134.98.136.110
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 134.98.137.200
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: PqUMoaSUlUKvYQbagqMsAaoOeYClI6e0PUJaT/QAiM8=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 134.98.146.23
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: stWyUk6orboi395iL0FnR3BPusuEjio2VBywW09OOO0=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -242,31 +199,27 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 3
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 10
   - 🇬🇧 英国 | GBR 11
-  - 🇰🇷 韩国 | KOR 2
-  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 10
-  - 🇳🇱 荷兰 | NLD 11
   - 🇲🇾 马来西亚 | MYS
-  - 🇳🇱 荷兰 | NLD 13
-  - 🇺🇸 美国 | USA 2
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 11
   - 🇸🇬 新加坡 | SGP 8
-  - 🇺🇸 美国 | USA 15
+  - 🇳🇱 荷兰 | NLD 13
   - 🇭🇰 香港 | HKG
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 15
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -274,49 +227,36 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 3
   - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 10
   - 🇬🇧 英国 | GBR 11
-  - 🇰🇷 韩国 | KOR 2
-  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 8
   - 🇲🇾 马来西亚 | MYS
-  - 🇺🇸 美国 | USA 2
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 8
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 3
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 11
-  - 🇳🇱 荷兰 | NLD 13
   - 🇸🇬 新加坡 | SGP 8
+  - 🇳🇱 荷兰 | NLD 13
   - 🇺🇸 美国 | USA 15
+  - 🇳🇱 荷兰 | NLD 10
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 3
-  - 🇨🇴 哥伦比亚 | COL
 rules:
 - MATCH,AUTO

@@ -12,14 +12,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.229.126
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 3
   server: 149.130.188.248
   port: 62145
@@ -28,47 +20,16 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: irhub-production-4401.up.railway.app
-  port: 443
-  type: vless
-  uuid: 04776582-ce7d-4e2c-082e-5dbbb08cf22d
-  tls: true
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/04776582-ce7d-4e2c-082e-5dbbb08cf22d
-    headers:
-      Host: irhub-production-4401.up.railway.app
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: web-production-41122.up.railway.app
-  port: 443
-  type: vless
-  uuid: f6d604c9-1d66-4400-8a4b-3021804085b4
-  tls: true
-  alpn:
-  - http/1.1
-  servername: web-production-41122.up.railway.app
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl-ws
-    headers:
-      Host: web-production-41122.up.railway.app
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 134.98.135.220
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.229.126
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 134.98.136.110
+- name: 🇳🇱 荷兰 | NLD 9
+  server: 134.98.135.220
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -82,6 +43,18 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+- name: 🇸🇬 新加坡 | SGP 8
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: odd-darkness-57ce.334-a29.workers.dev
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 13
   server: liang92.dpdns.org
   port: 443
@@ -96,18 +69,6 @@ proxies:
     headers:
       Host: liang92.dpdns.org
   udp: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: odd-darkness-57ce.334-a29.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 15
   server: 201.24.49.74
   port: 2200
@@ -120,6 +81,14 @@ proxies:
     headers:
       Host: rzd.ru
   udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: 134.98.136.110
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -127,15 +96,13 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇨🇴 哥伦比亚 | COL 3
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 11
-  - 🇳🇱 荷兰 | NLD 13
   - 🇸🇬 新加坡 | SGP 8
+  - 🇳🇱 荷兰 | NLD 13
   - 🇺🇸 美国 | USA 15
+  - 🇳🇱 荷兰 | NLD 10
 rules:
 - MATCH,AUTO

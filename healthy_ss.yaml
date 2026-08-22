@@ -17,12 +17,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: O68yo+vY7gEcToIytfKJGZCG7lQkBW4VzsP1ZXRsTIU=
-- name: 🇧🇷 巴西 | BRA 3
-  server: 136.248.74.249
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: keCxFI2Iy4vMTOGXW2Bzi5IlksnPxxdqO67TkmJGw/I=
 - name: 🇫🇷 法国 | FRA
   server: 95.170.13.47
   port: 65443
@@ -49,19 +43,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: uTP7T8hg8KZuMkMy3aRzZP2UQkaTUhrW7NKgP/vT8I4=
   udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: 121.46.230.138
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 134.98.137.200
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: PqUMoaSUlUKvYQbagqMsAaoOeYClI6e0PUJaT/QAiM8=
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 134.98.133.97
   port: 45819
@@ -69,25 +50,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: Di0niuJKfaX3xE2XbjXVE3LnDahhHuRY3OehphQn+dw=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 134.98.146.23
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: stWyUk6orboi395iL0FnR3BPusuEjio2VBywW09OOO0=
-  udp: true
 - name: 🇲🇾 马来西亚 | MYS
   server: 118.107.222.231
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇺🇸 美国 | USA 2
-  server: 129.146.167.224
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oa7A0+9L7mp4aPLp9pFZ8FayB0x3G70Kw64suapoH8k=
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 195.133.23.200
   port: 20990
@@ -95,12 +63,32 @@ proxies:
   cipher: aes-256-gcm
   password: 81a20429165df87e
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 134.98.133.122
+- name: 🇺🇸 美国 | USA 2
+  server: 129.146.167.224
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: oa7A0+9L7mp4aPLp9pFZ8FayB0x3G70Kw64suapoH8k=
+- name: 🇳🇱 荷兰 | NLD
+  server: 134.98.150.87
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: aQFwKywVqx4Y1BOPkHwT78SgRbRf3/e6yf8nrwVANxU=
+  password: J2sKKVp6+QBdjiJJskSFOXJ1ljCxje05WtZ91yS7qrc=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 134.98.137.200
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: PqUMoaSUlUKvYQbagqMsAaoOeYClI6e0PUJaT/QAiM8=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 134.98.146.23
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: stWyUk6orboi395iL0FnR3BPusuEjio2VBywW09OOO0=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -110,18 +98,16 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
-  - 🇧🇷 巴西 | BRA 3
   - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 10
   - 🇬🇧 英国 | GBR 11
-  - 🇰🇷 韩国 | KOR 2
-  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 8
   - 🇲🇾 马来西亚 | MYS
-  - 🇺🇸 美国 | USA 2
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 8
 rules:
 - MATCH,AUTO
