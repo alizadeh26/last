@@ -11,6 +11,19 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: N1wWAclBS1JWHoN3JOOUOEpvV0+NKZFdBpGMHZSMFuU=
   udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: 132-243-223-227.sslip.io
+  port: 2101
+  type: vless
+  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
+  tls: true
+  servername: 132-243-223-227.sslip.io
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: fi-grpc-test
+  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: m7r.speedtestmark.com
   port: 443
@@ -25,6 +38,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 144.24.228.102
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: N32MvyKWcvB2dfd9+8tDGsdDPkfZtsmmm6eik9yxW/E=
 - name: 🇬🇧 英国 | GBR 3
   server: 129.151.70.252
   port: 61312
@@ -32,46 +51,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: ACBxVu50k3V8Oy+U4V+ad2Z85fnNVys6MfGj5Sinz70=
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 144.24.228.102
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: N32MvyKWcvB2dfd9+8tDGsdDPkfZtsmmm6eik9yxW/E=
-- name: 🇩🇪 德国 | DEU 11
-  server: 132-243-223-227.sslip.io
-  port: 2101
-  type: vless
-  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
-  tls: true
-  servername: 132-243-223-227.sslip.io
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: fi-grpc-test
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 158.101.222.193
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: c1X6HxfuG20TnAmSC8ZYQYDJqmxgjOP1vwvrkQcPMdQ=
-- name: 🇯🇵 日本 | JPN 3
-  server: 121.46.230.136
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 158.178.153.49
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: 158.180.13.253
   port: 45819
@@ -79,41 +64,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: T8nDZA9hyAy2MrDlJBL1w5F6HMzfNNyN8Ysk1Se1INc=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 158.178.159.220
-  port: 45819
+- name: 🇯🇵 日本 | JPN 3
+  server: 121.46.230.136
+  port: 65443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2w4/eGbaFaK8GlJMa+yKZO1EwfIe1nOpojVM3qPFKkU=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 92.5.227.75
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 129.146.221.27
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak/bQds=
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 137.131.35.71
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BXx9inbBMWJ1C9RDbASzhzsgJy4rvTPibOWqVhLFdNo=
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: 161.153.119.148
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ifrTlZy7Avf81frUk4hicQ8bxe7Vm9kV+JngePHDDTk=
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
 - name: 🇳🇱 荷兰 | NLD 11
   server: 213.165.40.175.sslip.io
@@ -132,12 +88,56 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: mSsDylEWEVs4RJudck4O0ScHhezXB9RZs9N70l5esqM=
   udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 129.146.221.27
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak/bQds=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 158.178.153.49
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 92.5.227.75
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 158.178.159.220
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2w4/eGbaFaK8GlJMa+yKZO1EwfIe1nOpojVM3qPFKkU=
+  udp: true
+- name: 🇺🇸 美国 | USA 25
+  server: 161.153.119.148
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ifrTlZy7Avf81frUk4hicQ8bxe7Vm9kV+JngePHDDTk=
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 134.98.146.23
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: stWyUk6orboi395iL0FnR3BPusuEjio2VBywW09OOO0=
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: 137.131.35.71
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BXx9inbBMWJ1C9RDbASzhzsgJy4rvTPibOWqVhLFdNo=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -146,58 +146,57 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 3
-  - 🇬🇧 英国 | GBR 3
-  - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
   - 🇳🇱 荷兰 | NLD 2
-  - 🇯🇵 日本 | JPN 3
-  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 25
+  - 🇯🇵 日本 | JPN 3
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 5
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇺🇸 美国 | USA 25
   - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 17
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 13
-  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
   - 🇳🇱 荷兰 | NLD 2
-  - 🇯🇵 日本 | JPN 3
   - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 25
+  - 🇯🇵 日本 | JPN 3
   - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 5
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇺🇸 美国 | USA 25
   - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 17
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 3
+  - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 8
-  - 🇳🇱 荷兰 | NLD 11
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 3
-  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 6
 rules:
 - MATCH,AUTO

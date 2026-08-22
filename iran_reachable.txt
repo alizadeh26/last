@@ -1,16 +1,13 @@
-vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@188.114.97.6:80?path=/http&security=none&encryption=none&host=de.vpnbase.net&type=ws#Server 134 🇺🇸
-vmess://eyJhZGQiOiIxMTIuMTMyLjIxNS4xMDgiLCJhaWQiOjY0LCJob3N0IjoiIiwiaWQiOiI0MTgwNDhhZi1hMjkzLTRiOTktOWIwYy05OGNhMzU4MGRkMjQiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjUwMDAyIiwicHMiOiJTZXJ2ZXIgNzAg8J+HqPCfh7MiLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZX0=
-trojan://FH72359861@91.199.84.155:443?allowInsecure=0&sni=modern-bedbug.rooster465.autos#%E9%A6%99%E6%B8%AF_082223030
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#%F0%9F%87%B3%F0%9F%87%B1NL-193.29.139.204-0134
-vmess://eyJhZGQiOiJjZi5sZXZpa29namdmZGQuaXIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImRlYXBwLmppc3V5dW4udG9wIiwiaWQiOiI5YTFhMDVkOS02OWJlLTQ1ZDMtZTMyNi1jNjYyMWVkZjdiMzEiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL2Rldm0iLCJwb3J0IjoiMjA1MyIsInBzIjoiREVcdWQ4M2NcdWRkZTlcdWQ4M2NcdWRkZWEgfCBkZWFwcC5qaXN1eXVuLnRvcC0yMDUzIHwgMTYwLjRtcyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.189:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.189-0107
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.16:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.16-0106
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5VEVYV0I2WEJIeXY5U2ZRSnpDU1JXQ25SWXV0RmRVWGcxd2JjYnV0eFB3WkU2VXhjdXJrYTNHa29hdGdFZFg0ODNYWlNIZUpwM2pYY1RTaExDUk04clBnTUYzdllOZlM=@217.28.129.81:42982#US%F0%9F%87%BA%F0%9F%87%B8+%7C+217.28.129.81-42982+%7C+164.75ms
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.160-0079
-vless://4bc8ff7a-20b4-41b2-9751-dfca869f0553@gb1.wba-pn.ru:443?encryption=none&fp=qq&host=gb1.wba-pn.ru&path=/&security=tls&sni=gb1.wba-pn.ru&type=ws#🇺🇸 130 - US - VLESS/WS/TLS/UTLS - 443
-vless://c7e9c591-2764-423a-afca-efbd010fd396@143.110.163.137:2053?path=/&security=tls&encryption=none&insecure=0&host=forfreeuse.rtqa.ru&type=ws&allowInsecure=0&sni=forfreeuse.rtqa.ru#🇬🇧 294 - GB - VLESS/WS/TLS - 2053
-vless://c7e9c591-2764-423a-afca-efbd010fd396@212.135.37.169:443?encryption=none&security=tls&sni=forfreeuse.rtqa.ru&type=ws&host=forfreeuse.rtqa.ru&path=/#🇺🇸 304 - US - VLESS/WS/TLS - 443
-vless://c7e9c591-2764-423a-afca-efbd010fd396@94.159.108.9:443?encryption=none&security=tls&sni=forfreeuse.rtqa.ru&type=ws&host=forfreeuse.rtqa.ru&path=/#🇩🇪 318 - DE - VLESS/WS/TLS - 443
-vless://c7e9c591-2764-423a-afca-efbd010fd396@45.59.170.20:443?encryption=none&security=tls&sni=forfreeuse.rtqa.ru&type=ws&host=forfreeuse.rtqa.ru&path=/#🇳🇱 310 - NL - VLESS/WS/TLS - 443
-vless://e5cc16a6-ea42-46b2-82ae-ad2157e1641b@chat.openai.com:443?path=/fp&security=tls&encryption=none&insecure=0&host=hhlfy.twiladaphne.ndjp.net&type=ws&allowInsecure=0&sni=hhlfy.twiladaphne.ndjp.net#🇺🇸 355 - US - VLESS/WS/TLS - 443
-134.98.144.146:45819	🇳🇱 荷兰 | NLD
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@15.204.247.124:2375#Server 137 🇺🇸
+ss://YWVzLTI1Ni1jZmI6N2VhZGM2ZGJlMmFl@103.169.67.34:65443#Server 90 🇹🇭
+trojan://AE62539071@185.244.208.219:443?allowInsecure=0&sni=upright-bedbug.rooster465.autos#%E9%A6%99%E6%B8%AF_082223034
+trojan://AE62539071@194.99.79.197:443?sni=smiling-ray.rooster465.autos&type=tcp&fp=chrome#%E9%A6%99%E6%B8%AF_082223184
+ss://YWVzLTI1Ni1nY206alNVN2JHS3VwUTk2WUZ2Zg==@139.180.133.90:80#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+139.180.133.90-80+%7C+190.16ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.184:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.184-0103
+vless://13efddd3-1a20-49f3-bbbe-f5b530398bb6@tr.cellser.ir:57728?security=reality&encryption=none&pbk=_msWT9DtUixMc55dabeo7IqbWGikrSNz35GkoGllFBM&headerType=none&fp=chrome&spx=%2F13542a4b6dcde13&type=tcp&sni=www.yahoo.com&sid=85436cc1#REALITY|TR🇹🇷
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.17:8080#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+82.38.31.17-8080+%7C+152.33ms
+vmess://eyJhZGQiOiJndWFud2FuZy5hd3Nuby5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNmE4OWEyMTUtMjJiZi00YmQ3LTk2NDItYjk1YjJlMDk1ODNhIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBjcyI6IiIsInBvcnQiOiI0NDMiLCJwcyI6IlVTXHVkODNjXHVkZGZhXHVkODNjXHVkZGY4IHwgZ3VhbndhbmcuYXdzbm8uY29tLTQ0MyB8IDc3Ljg2bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9
+vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@104.18.37.228:443?encryption=none&security=tls&sni=josni.hoyes.cloudns.ch&insecure=0&allowInsecure=0&ech=ip.gs+udp://8.8.8.8&type=ws&host=josni.hoyes.cloudns.ch&path=/?TELEGRAM-NexVexo_NexVexo_NexVexo_NexVexo_NexVexo?ed=512#🇺🇸 191 - US - VLESS/WS/TLS - 443
+vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@157.137.210.242:62145?encryption=none&security=none&type=tcp&headerType=none#🇺🇸 216 - US - VLESS - 62145
+vless://f1ae21a2-9618-410f-8c6a-730aebc7fabe@78.159.245.75:9002?encryption=none&fp=firefox&mode=gun&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&serviceName=grpc-reality&sid=6ba85179e30d4fc2&sni=api-maps.yandex.ru&type=grpc#🏳️ 361 - XX - VLESS/GRPC/REALITY/PBK/SID/UTLS - 9002
+158.101.222.193:45819	🇳🇱 荷兰 | NLD 2
