@@ -1,10 +1,7 @@
-vless://14777bd9-56a5-46f6-a94f-826b4800dc05@176.108.243.192:9880?encryption=none&fp=edge&mode=gun&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&security=reality&serviceName=grpc-tunnel&sid=aa&sni=dl.google.com&type=grpc#🇺🇸 12 - US - VLESS/GRPC/REALITY/PBK/SID/UTLS - 9880
-vless://19365fd3-d23c-4a9e-a2ef-543d230e65c4@193.233.217.140:2200?encryption=none&path=/v1&security=none&type=ws#🇷🇺 21 - RU - VLESS/WS - 2200
-vless://2e79f3ca-b8db-4d4d-a96e-8f7313480696@168.222.203.14:4100?encryption=none&path=/v1&security=none&type=ws#🏳️ 70 - XX - VLESS/WS - 4100
-vless://5502312d-b5cf-4652-8c59-4d670dd047be@45.146.131.97:4100?encryption=none&path=/v1&security=none&type=ws#🇩🇪 143 - DE - VLESS/WS - 4100
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@185.148.104.30:8880?encryption=none&host=vms.lifetime51.workers.dev&path=/&security=none&type=ws#🏳️ 164 - XX - VLESS/WS - 8880
-vless://633f424e-2b11-48da-a6b3-a849dd71456f@45.12.75.242:26424?encryption=none&fp=firefox&pbk=l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0&security=reality&sid=23103e1e&sni=ya.ru&type=raw#🏳️ 170 - XX - VLESS/RAW/REALITY/PBK/SID/UTLS - 26424
-vless://64bd5231-8c49-44f4-8bc0-998eef787d05@5.42.121.52:2200?encryption=none&path=/v1&security=none&type=ws#🏳️ 175 - XX - VLESS/WS - 2200
-vless://64bd5231-8c49-44f4-8bc0-998eef787d05@5.42.121.52:4100?encryption=none&path=/v1&security=none&type=ws#🏳️ 176 - XX - VLESS/WS - 4100
-vless://aef0e934-09d7-4b8f-b3bc-de78d2eec928@45.90.32.132:2200?fp=qq&type=ws&path=/v1#🏳️ 276 - XX - VLESS/WS/UTLS - 2200
-vless://fc72e947-b8dd-4de0-9ec7-2b0050c9f83a@141.8.199.212:4100?encryption=none&host=live.ok.ru&path=/v1&security=none&type=ws#🇷🇺 383 - RU - VLESS/WS - 4100
+vless://14777bd9-56a5-46f6-a94f-826b4800dc05@176.108.243.192:9880?encryption=none&fp=edge&mode=gun&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&security=reality&serviceName=grpc-tunnel&sid=aa&sni=dl.google.com&type=grpc#🏳️ 6 - XX - VLESS/GRPC/REALITY/PBK/SID/UTLS - 9880
+vless://19365fd3-d23c-4a9e-a2ef-543d230e65c4@193.233.217.140:2200?encryption=none&path=/v1&security=none&type=ws#🇷🇺 10 - RU - VLESS/WS - 2200
+vless://2e79f3ca-b8db-4d4d-a96e-8f7313480696@168.222.203.14:4100?encryption=none&host=live.ok.ru&path=/v1&security=none&type=ws#🇷🇺 72 - RU - VLESS/WS - 4100
+vless://5502312d-b5cf-4652-8c59-4d670dd047be@45.146.131.97:4100?encryption=none&path=/v1&security=none&type=ws#🏳️ 165 - XX - VLESS/WS - 4100
+vless://633f424e-2b11-48da-a6b3-a849dd71456f@45.12.75.242:26424?encryption=none&fp=chrome&pbk=l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0&security=reality&sid=23103e1e&sni=ya.ru&type=raw#🇷🇺 194 - RU - VLESS/RAW/REALITY/PBK/SID/UTLS - 26424
+vless://7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050@5.42.103.91:2200?encryption=none&path=/v1&security=none&type=ws#🇷🇺 231 - RU - VLESS/WS - 2200
+vless://aef0e934-09d7-4b8f-b3bc-de78d2eec928@45.90.32.132:2200?fp=qq&type=ws&path=/v1#🏳️ 290 - XX - VLESS/WS/UTLS - 2200

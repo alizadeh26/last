@@ -4,15 +4,16 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.229.25
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 149.130.179.122
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 149.130.179.122
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.210.216
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -25,50 +26,29 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: BPLlwEf4Q5pBjnh9yaObDbz37IjYijvvrCSJL5CNaaY=
-- name: 🇩🇪 德国 | DEU 15
-  server: 104.24.152.211
-  port: 8880
-  type: vless
-  uuid: 2acde116-5949-48d8-a1e6-60a1d2547deb
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: lively-pine-093d.144-868.workers.dev
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.83.171
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5pt3YBp2pgKAqVFsb68mRl6eo8PJr0eTzvZm8Uf58fc=
 - name: 🇬🇧 英国 | GBR
   server: 134.65.61.49
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8IpzGj+4Dz13GyB7G5h1DuG0klyKJ4Ku73CAYi6cs5Y=
-- name: 🇭🇰 香港 | HKG 4
-  server: 95.40.120.162
-  port: 8319
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.83.171
+  port: 61312
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: ld.242311.xyz
-  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 5pt3YBp2pgKAqVFsb68mRl6eo8PJr0eTzvZm8Uf58fc=
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 172.67.132.85
+  port: 8080
   type: vless
-  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
-  tls: true
-  servername: ld.242311.xyz
-  client-fingerprint: chrome
+  uuid: 3a701524-30c8-45f3-8922-d7af5d024af0
+  tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /eyJqdW5rIjoiWDRPODRLWDd2IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0=
     headers:
-      Host: ld.242311.xyz
+      Host: server14.peekconf.workers.dev
   udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 158.180.14.59
@@ -76,18 +56,13 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: vdyomDpjvBY+0xMrZoSOFy3i76Rly452tXFAzixPcL4=
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
-  port: 65443
+- name: 🇭🇰 香港 | HKG 4
+  server: 95.40.120.162
+  port: 8319
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 152.70.50.59
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: WdDHx+DT1TW08s5vMmHqa0dc56hUvgJKx877w3x3NpE=
+  cipher: chacha20-ietf-poly1305
+  password: ljqdalu13..
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 141.144.195.7
   port: 62145
@@ -95,6 +70,31 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 152.70.50.59
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: WdDHx+DT1TW08s5vMmHqa0dc56hUvgJKx877w3x3NpE=
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇮🇳 印度 | IND
+  server: il.stream-host.site
+  port: 443
+  type: vless
+  uuid: 20df893e-dcf4-491d-8261-6dbb24f9566b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: bO6oE5j-3-ONc3nqNsicX1hs6UhmrNLS5g_aMIRDUEc
+  servername: il.stream-host.site
+  client-fingerprint: qq
+  network: tcp
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 9
   server: 141.148.232.137
   port: 62145
@@ -117,24 +117,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 14
-  server: 92.5.229.117
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EzU+FRH/EZYadbhR0w4f2raDkz4hunKKlRaHl7eY82E=
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 168.107.68.247
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: H8LKYNq3/4Wpg9dKvNcCo3Q/Z12k3R2sQyHzkjEBfHk=
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 140.245.99.131
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: PSNoCtdGxchVkryXlnee6lVcD4lL0DwT/TcFDSbW3Ig=
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 194.87.69.207
   port: 20991
@@ -148,6 +130,43 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 14
+  server: 92.5.229.117
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EzU+FRH/EZYadbhR0w4f2raDkz4hunKKlRaHl7eY82E=
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 168.107.68.247
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: H8LKYNq3/4Wpg9dKvNcCo3Q/Z12k3R2sQyHzkjEBfHk=
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.229.25
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 140.245.99.131
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: PSNoCtdGxchVkryXlnee6lVcD4lL0DwT/TcFDSbW3Ig=
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 188.114.97.6
+  port: 80
+  type: vless
+  uuid: 57bd62cf-5550-4075-8fa3-d4519aae8df0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0
+    headers:
+      Host: silent-feather-8539.sddadad2233122eew.workers.dev
   udp: true
 - name: 🇸🇬 新加坡 | SGP 4
   server: 152.69.213.76
@@ -168,12 +187,6 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: 🇺🇸 美国 | USA 33
-  server: 129.146.167.224
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oa7A0+9L7mp4aPLp9pFZ8FayB0x3G70Kw64suapoH8k=
 - name: 🇺🇸 美国 | USA 10
   server: pl94.mechvpn.online
   port: 443
@@ -189,6 +202,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 33
+  server: 129.146.167.224
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: oa7A0+9L7mp4aPLp9pFZ8FayB0x3G70Kw64suapoH8k=
 - name: 🇺🇸 美国 | USA 34
   server: 104.17.144.29
   port: 8880
@@ -201,104 +220,57 @@ proxies:
     headers:
       Host: icy-hat-20f3.328-99f.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: weathered-union-5358.101-262.workers.dev
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.210.216
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇮🇳 印度 | IND
-  server: il.stream-host.site
-  port: 443
-  type: vless
-  uuid: 20df893e-dcf4-491d-8261-6dbb24f9566b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bO6oE5j-3-ONc3nqNsicX1hs6UhmrNLS5g_aMIRDUEc
-  servername: il.stream-host.site
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 188.114.97.6
-  port: 80
-  type: vless
-  uuid: 57bd62cf-5550-4075-8fa3-d4519aae8df0
-  tls: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0
-    headers:
-      Host: silent-feather-8539.sddadad2233122eew.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 15
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR
-  - 🇭🇰 香港 | HKG 4
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD
-  - 🇲🇾 马来西亚 | MYS
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇭🇰 香港 | HKG 4
   - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇲🇾 马来西亚 | MYS
+  - 🇮🇳 印度 | IND
   - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 13
-  - 🇳🇱 荷兰 | NLD 14
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇸🇬 新加坡 | SGP 3
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇳🇱 荷兰 | NLD 14
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇳🇱 荷兰 | NLD 3
   - 🇸🇬 新加坡 | SGP 4
   - 🇸🇬 新加坡 | SGP 9
   - 🇹🇭 泰国 | THA 2
-  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 34
-  - 🇺🇸 美国 | USA 24
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇮🇳 印度 | IND
-  - 🇳🇱 荷兰 | NLD 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 14
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR
-  - 🇭🇰 香港 | HKG 4
+  - 🇬🇧 英国 | GBR 2
   - 🇳🇱 荷兰 | NLD
-  - 🇲🇾 马来西亚 | MYS
+  - 🇭🇰 香港 | HKG 4
   - 🇳🇱 荷兰 | NLD 7
+  - 🇲🇾 马来西亚 | MYS
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD 14
   - 🇸🇬 新加坡 | SGP 2
   - 🇸🇬 新加坡 | SGP 3
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇬 新加坡 | SGP 4
   - 🇸🇬 新加坡 | SGP 9
   - 🇹🇭 泰国 | THA 2
@@ -308,38 +280,17 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 3
-  - 🇩🇪 德国 | DEU 15
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇳🇱 荷兰 | NLD 5
   - 🇳🇱 荷兰 | NLD 6
+  - 🇮🇳 印度 | IND
   - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 13
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇳🇱 荷兰 | NLD 3
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 34
-  - 🇺🇸 美国 | USA 24
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇮🇳 印度 | IND
-  - 🇳🇱 荷兰 | NLD 3
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR 2
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 15
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 3
 rules:
 - MATCH,AUTO
