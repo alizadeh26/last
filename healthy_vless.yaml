@@ -4,33 +4,82 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 11
-  server: 132-243-223-227.sslip.io
-  port: 2101
+- name: 🇳🇱 荷兰 | NLD
+  server: auth.sso.anti-zapret.com
+  port: 443
   type: vless
-  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
+  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
   tls: true
-  servername: 132-243-223-227.sslip.io
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: fi-grpc-test
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 158.178.153.49
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: cbb0a5c1dc905505
+  servername: cdnjs.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 92.5.227.75
-  port: 62145
+- name: 🇵🇱 波兰 | POL 4
+  server: s3.storage.anti-zapret.com
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: cbb0a5c1dc905505
+  servername: s3.storage.anti-zapret.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 141.8.199.212
+  port: 4100
+  type: vless
+  uuid: fc72e947-b8dd-4de0-9ec7-2b0050c9f83a
   tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 109.73.206.166
+  port: 2200
+  type: vless
+  uuid: fc72e947-b8dd-4de0-9ec7-2b0050c9f83a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+  udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: 32362877.xyz
+  port: 443
+  type: vless
+  uuid: 29cd734a-0cdd-42d9-8b37-2b7b0e00c489
+  tls: true
+  servername: 32362877.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 32362877.xyz
+  udp: true
+- name: 🇺🇸 美国 | USA 49
+  server: token.api.anti-zapret.com
+  port: 443
+  type: vless
+  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 58fbcddfaae3ade9
+  servername: us.srv.anti-zapret.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
 proxy-groups:
@@ -39,8 +88,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 11
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD
+  - 🇵🇱 波兰 | POL 4
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 49
 rules:
 - MATCH,AUTO

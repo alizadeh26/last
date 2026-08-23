@@ -4,109 +4,131 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 13
-  server: 130.61.81.111
-  port: 59924
+- name: 🇧🇷 巴西 | BRA
+  server: 163.176.27.230
+  port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: N1wWAclBS1JWHoN3JOOUOEpvV0+NKZFdBpGMHZSMFuU=
+  password: rd44Xa86YyiRgoidTwqxqQz0IoS54br9IKRFqCZJkow=
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 132-243-223-227.sslip.io
-  port: 2101
-  type: vless
-  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
-  tls: true
-  servername: 132-243-223-227.sslip.io
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: fi-grpc-test
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 144.24.228.102
+- name: 🇫🇷 法国 | FRA 2
+  server: 95.170.13.47
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇬🇧 英国 | GBR 4
+  server: 144.24.229.104
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: N32MvyKWcvB2dfd9+8tDGsdDPkfZtsmmm6eik9yxW/E=
-- name: 🇬🇧 英国 | GBR 3
-  server: 129.151.70.252
-  port: 61312
+  password: 7wkgQllmYUZeB10Gj9imThsnHpg6lPcG/qAgkO2wI88=
+  udp: true
+- name: 🇱🇹 立陶宛 | LTU
+  server: 144.31.243.2
+  port: 16015
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: J1InuU6QRT5JOh1mQfkjU2
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 134.98.133.97
+  port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: ACBxVu50k3V8Oy+U4V+ad2Z85fnNVys6MfGj5Sinz70=
+  password: Di0niuJKfaX3xE2XbjXVE3LnDahhHuRY3OehphQn+dw=
   udp: true
 - name: 🇳🇱 荷兰 | NLD
-  server: 134.98.144.146
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mSsDylEWEVs4RJudck4O0ScHhezXB9RZs9N70l5esqM=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 158.101.222.193
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: c1X6HxfuG20TnAmSC8ZYQYDJqmxgjOP1vwvrkQcPMdQ=
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 158.180.13.253
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: T8nDZA9hyAy2MrDlJBL1w5F6HMzfNNyN8Ysk1Se1INc=
+  server: auth.sso.anti-zapret.com
+  port: 443
+  type: vless
+  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: cbb0a5c1dc905505
+  servername: cdnjs.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 5
-  server: 158.178.153.49
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 158.178.159.220
+  server: 134.98.137.200
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 2w4/eGbaFaK8GlJMa+yKZO1EwfIe1nOpojVM3qPFKkU=
+  password: PqUMoaSUlUKvYQbagqMsAaoOeYClI6e0PUJaT/QAiM8=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 92.5.227.75
-  port: 62145
+- name: 🇵🇱 波兰 | POL 4
+  server: s3.storage.anti-zapret.com
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
+  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: cbb0a5c1dc905505
+  servername: s3.storage.anti-zapret.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 129.146.221.27
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak/bQds=
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 141.8.199.212
+  port: 4100
+  type: vless
+  uuid: fc72e947-b8dd-4de0-9ec7-2b0050c9f83a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 134.98.146.23
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: stWyUk6orboi395iL0FnR3BPusuEjio2VBywW09OOO0=
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 109.73.206.166
+  port: 2200
+  type: vless
+  uuid: fc72e947-b8dd-4de0-9ec7-2b0050c9f83a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 137.131.35.71
-  port: 50356
+- name: 🇹🇭 泰国 | THA
+  server: 103.169.67.34
+  port: 65443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BXx9inbBMWJ1C9RDbASzhzsgJy4rvTPibOWqVhLFdNo=
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: 161.153.119.148
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ifrTlZy7Avf81frUk4hicQ8bxe7Vm9kV+JngePHDDTk=
+- name: 🇺🇸 美国 | USA 21
+  server: 32362877.xyz
+  port: 443
+  type: vless
+  uuid: 29cd734a-0cdd-42d9-8b37-2b7b0e00c489
+  tls: true
+  servername: 32362877.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 32362877.xyz
+  udp: true
+- name: 🇺🇸 美国 | USA 49
+  server: token.api.anti-zapret.com
+  port: 443
+  type: vless
+  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 58fbcddfaae3ade9
+  servername: us.srv.anti-zapret.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -114,53 +136,55 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 11
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 3
+  - 🇧🇷 巴西 | BRA
+  - 🇫🇷 法国 | FRA 2
+  - 🇬🇧 英国 | GBR 4
+  - 🇱🇹 立陶宛 | LTU
+  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇺🇸 美国 | USA 5
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 25
+  - 🇵🇱 波兰 | POL 4
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 49
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 13
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇺🇸 美国 | USA 5
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 25
+  - 🇧🇷 巴西 | BRA
+  - 🇫🇷 法国 | FRA 2
+  - 🇬🇧 英国 | GBR 4
+  - 🇱🇹 立陶宛 | LTU
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇹🇭 泰国 | THA
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 11
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD
+  - 🇵🇱 波兰 | POL 4
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 49
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 11
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇫🇷 法国 | FRA 2
+  - 🇬🇧 英国 | GBR 4
+  - 🇳🇱 荷兰 | NLD 3
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇷 巴西 | BRA
 rules:
 - MATCH,AUTO
