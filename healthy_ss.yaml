@@ -4,12 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 15.222.248.181
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇨🇦 加拿大 | CAN 2
   server: 16.52.46.12
   port: 443
@@ -24,6 +18,18 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 5AUy4er8u7V/zMsQJk1vSda0I6vdApAU85sQ1G4X/0E=
   udp: true
+- name: 🇨🇦 加拿大 | CAN
+  server: 15.222.248.181
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇬🇧 英国 | GBR 2
+  server: 13.135.73.177
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇩🇪 德国 | DEU 8
   server: 130.61.113.169
   port: 59924
@@ -31,18 +37,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: TWbDvdQktmGst6N2Yc2/L5IC9e3+kttzFJOv6doxsPw=
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 13.135.73.177
-  port: 443
+- name: 🇰🇷 韩国 | KOR 2
+  server: 49.254.204.133
+  port: 1774
   type: ss
   cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇰🇷 韩国 | KOR 3
-  server: 121.46.230.138
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  password: 1234!@#$
   udp: true
 - name: 🇹🇭 泰国 | THA
   server: 103.169.67.34
@@ -57,12 +57,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 8
+  - 🇨🇦 加拿大 | CAN
   - 🇬🇧 英国 | GBR 2
-  - 🇰🇷 韩国 | KOR 3
+  - 🇩🇪 德国 | DEU 8
+  - 🇰🇷 韩国 | KOR 2
   - 🇹🇭 泰国 | THA
 rules:
 - MATCH,AUTO

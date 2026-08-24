@@ -4,12 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 15.222.248.181
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇨🇦 加拿大 | CAN 2
   server: 16.52.46.12
   port: 443
@@ -24,6 +18,18 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 5AUy4er8u7V/zMsQJk1vSda0I6vdApAU85sQ1G4X/0E=
   udp: true
+- name: 🇨🇦 加拿大 | CAN
+  server: 15.222.248.181
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇬🇧 英国 | GBR 2
+  server: 13.135.73.177
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇩🇪 德国 | DEU 8
   server: 130.61.113.169
   port: 59924
@@ -31,18 +37,24 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: TWbDvdQktmGst6N2Yc2/L5IC9e3+kttzFJOv6doxsPw=
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 13.135.73.177
-  port: 443
+- name: 🇰🇷 韩国 | KOR 2
+  server: 49.254.204.133
+  port: 1774
   type: ss
   cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇰🇷 韩国 | KOR 3
-  server: 121.46.230.138
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  password: 1234!@#$
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: silent-snow-1a0d.241-b0a.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 172.64.146.153
@@ -63,18 +75,6 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
-  udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: swe-one.letsgodance.site
   port: 443
@@ -88,18 +88,6 @@ proxies:
   servername: swe-one.letsgodance.site
   client-fingerprint: edge
   network: tcp
-- name: 🇺🇸 美国 | USA 5
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 13
   server: 172.67.152.71
   port: 8880
@@ -112,82 +100,57 @@ proxies:
     headers:
       Host: aged-mud-9b4c.202-2dc.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 208.103.161.249
-  port: 80
-  type: vless
-  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 8
+  - 🇨🇦 加拿大 | CAN
   - 🇬🇧 英国 | GBR 2
-  - 🇰🇷 韩国 | KOR 3
+  - 🇩🇪 德国 | DEU 8
+  - 🇰🇷 韩国 | KOR 2
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 4
   - 🇹🇭 泰国 | THA
-  - 🇸🇬 新加坡 | SGP 2
   - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 11
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 8
+  - 🇨🇦 加拿大 | CAN
   - 🇬🇧 英国 | GBR 2
-  - 🇰🇷 韩国 | KOR 3
+  - 🇩🇪 德国 | DEU 8
+  - 🇰🇷 韩国 | KOR 2
   - 🇹🇭 泰国 | THA
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇸🇪 瑞典 | SWE
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 4
+  - 🇸🇪 瑞典 | SWE
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 11
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇰🇷 韩国 | KOR 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
+  - 🇬🇧 英国 | GBR 2
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
-  - 🇺🇸 美国 | USA 4
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 5
+  - 🇨🇦 加拿大 | CAN
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
