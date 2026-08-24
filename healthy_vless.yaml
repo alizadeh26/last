@@ -4,18 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 5
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 172.64.146.153
   port: 2095
@@ -27,6 +15,18 @@ proxies:
     path: /
     headers:
       Host: fangbinxingnmsl.pusytroller.gq
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: silent-snow-1a0d.241-b0a.workers.dev
   udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: swe-one.letsgodance.site
@@ -59,8 +59,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
   - 🇸🇪 瑞典 | SWE
   - 🇺🇸 美国 | USA 13
 rules:
