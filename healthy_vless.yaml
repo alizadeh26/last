@@ -4,23 +4,101 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: nl3.meshbeat.online
-  port: 8444
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.165.253
+  port: 62145
   type: vless
-  uuid: 1f619326-cd93-4d6b-aebe-e0b5f8831d02
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.235.70
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: de-two.letsgodance.site
+  port: 443
+  type: vless
+  uuid: 5d36ddf8-dde5-4b2d-8213-d3255f22a0f1
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1D0SMyHvFMr72srLodeSqa1oOsBCsvGdKvINrJGCuic
+    short-id: 37f60bd15d93e3f4
+  servername: de-two.letsgodance.site
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: 189.24.64.9
+  port: 2044
+  type: vless
+  uuid: aa904ebf-99ab-452d-9678-cbe62f5f8934
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 134.98.129.83
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 2
+  server: 189.24.64.171
+  port: 2044
+  type: vless
+  uuid: aa904ebf-99ab-452d-9678-cbe62f5f8934
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: inetchnl-production-1330.up.railway.app
+  port: 443
+  type: vless
+  uuid: 2c7eacb3-58ea-7851-9cf0-2fd8469fc0a3
   tls: true
   alpn:
+  - h2
   - http/1.1
-  servername: nl3.meshbeat.online
+  - h3
+  servername: inetchnl-production-1330.up.railway.app
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /api/v1/devices/7c05e2fb91/telemetry
+    path: /ws/2c7eacb3-58ea-7851-9cf0-2fd8469fc0a3
     headers:
-      Host: nl3.meshbeat.online
+      Host: inetchnl-production-1330.up.railway.app
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
+- name: 🇳🇱 荷兰 | NLD 10
+  server: web-production-bef71.up.railway.app
+  port: 443
+  type: vless
+  uuid: acc78fe2-d53c-489e-9fb5-563191a9590c
+  tls: true
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/acc78fe2-d53c-489e-9fb5-563191a9590c
+    headers:
+      Host: web-production-bef71.up.railway.app
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 11
+  server: 158.178.152.114
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
   server: nl-one.letsgodance.site
   port: 443
   type: vless
@@ -39,7 +117,15 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 10
+  - 🇭🇰 香港 | HKG 3
+  - 🇳🇱 荷兰 | NLD
+  - 🇯🇵 日本 | JPN 2
   - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 11
+  - 🇳🇱 荷兰 | NLD 6
 rules:
 - MATCH,AUTO
