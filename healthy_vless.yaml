@@ -33,18 +33,6 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 104.16.8.66
-  port: 8880
-  type: vless
-  uuid: d6d0ba7b-fa88-4b2c-9915-530ae4a81035
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: aged-mud-9b4c.202-2dc.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -53,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD 5
-  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO

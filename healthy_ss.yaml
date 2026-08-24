@@ -4,24 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 15.222.248.181
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇨🇦 加拿大 | CAN 2
   server: 16.52.44.93
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇧🇷 巴西 | BRA
-  server: 64.181.171.113
-  port: 59319
+- name: 🇨🇦 加拿大 | CAN 3
+  server: 3.97.15.59
+  port: 443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: OYAoH+Rfx3SHm6POtoPiRHDXs/hWB8AviM1xxUek39c=
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇩🇪 德国 | DEU 4
   server: 130.61.145.58
   port: 59924
@@ -34,145 +28,36 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇬🇧 英国 | GBR 2
-  server: 13.135.73.177
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 | GBR 4
-  server: 3.8.123.237
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: mn.qwer-cn.org
-  port: 10927
-  type: ss
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 🇬🇧 英国 | GBR 3
-  server: 134.65.60.219
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oNh1eL/Q4w8hzh0wY6/JPnFjFMidf6FZLhICWd1Gmok=
-- name: 🇩🇪 德国 | DEU 5
-  server: mn.qwer-cn.org
-  port: 10910
-  type: ss
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 🇫🇷 法国 | FRA 3
-  server: mn.qwer-cn.org
-  port: 10913
-  type: ss
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
 - name: 🇭🇰 香港 | HKG 3
   server: 202.155.141.87
   port: 12345
   type: ss
   cipher: chacha20-ietf-poly1305
   password: e936372a-d976-4e25-8b3b-29c1a5841e06
-- name: 🇭🇰 香港 | HKG 6
-  server: mn.qwer-cn.org
-  port: 10920
+- name: 🇬🇧 英国 | GBR 3
+  server: 134.65.60.219
+  port: 61312
   type: ss
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 🇭🇰 香港 | HKG 5
-  server: mn.qwer-cn.org
-  port: 10933
-  type: ss
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 🇭🇰 香港 | HKG 4
-  server: mn.qwer-cn.org
-  port: 10924
-  type: ss
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 🇭🇰 香港 | HKG 7
-  server: mn.qwer-cn.org
-  port: 10931
-  type: ss
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 🇬🇧 英国 | GBR 5
-  server: mn.qwer-cn.org
-  port: 10929
-  type: ss
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 🇮🇳 印度 | IND
-  server: mn.qwer-cn.org
-  port: 10928
-  type: ss
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 🇯🇵 日本 | JPN 5
-  server: mn.qwer-cn.org
-  port: 10925
-  type: ss
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  udp: true
-- name: 🇯🇵 日本 | JPN 6
-  server: mn.qwer-cn.org
-  port: 10937
-  type: ss
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 🇰🇷 韩国 | KOR
-  server: 121.46.230.138
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: oNh1eL/Q4w8hzh0wY6/JPnFjFMidf6FZLhICWd1Gmok=
 - name: 🇺🇸 美国 | USA 3
   server: 129.146.113.93
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: fLNIIbHAv/g58k4JwMx87hCjA8+Uod3DuU7fo6yi1Bk=
-- name: 🇸🇬 新加坡 | SGP
-  server: 161.118.225.224
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: KA1/OAHhawU2vWpzCWzboh5Sy7Pf5oJRaWpUUdVGnVw=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
-  - 🇧🇷 巴西 | BRA
+  - 🇨🇦 加拿大 | CAN 3
   - 🇩🇪 德国 | DEU 4
   - 🇫🇷 法国 | FRA 2
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 4
-  - 🇦🇺 澳大利亚 | AUS
-  - 🇬🇧 英国 | GBR 3
-  - 🇩🇪 德国 | DEU 5
-  - 🇫🇷 法国 | FRA 3
   - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 6
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 7
-  - 🇬🇧 英国 | GBR 5
-  - 🇮🇳 印度 | IND
-  - 🇯🇵 日本 | JPN 5
-  - 🇯🇵 日本 | JPN 6
-  - 🇰🇷 韩国 | KOR
+  - 🇬🇧 英国 | GBR 3
   - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP
 rules:
 - MATCH,AUTO
