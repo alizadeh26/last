@@ -4,41 +4,78 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA 2
-  server: 201.24.49.77
-  port: 2200
+- name: 🇺🇸 美国 | USA 4
+  server: 172.64.146.153
+  port: 2095
   type: vless
-  uuid: af60d475-3c13-41cf-af0e-18353d08877a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: pl2.lckdwn.ru
-  port: 443
-  type: vless
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: pl2.lckdwn.ru
+      Host: fangbinxingnmsl.pusytroller.gq
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 141.8.199.212
-  port: 4100
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 104.18.34.245
+  port: 8880
   type: vless
-  uuid: fc72e947-b8dd-4de0-9ec7-2b0050c9f83a
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
   tls: false
   network: ws
   ws-opts:
-    path: /v1
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: live.ok.ru
+      Host: square-tree-3dbf.285.workers.dev
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: swe-one.letsgodance.site
+  port: 443
+  type: vless
+  uuid: 5d36ddf8-dde5-4b2d-8213-d3255f22a0f1
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0DU2XI6J-aVzvYzrKQ7XOI9WPRMOADKTyn2V9E71WA8
+    short-id: b4c513c67294b791
+  servername: swe-one.letsgodance.site
+  client-fingerprint: edge
+  network: tcp
+- name: 🇺🇸 美国 | USA 5
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: silent-snow-1a0d.241-b0a.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 172.67.152.71
+  port: 8880
+  type: vless
+  uuid: d6d0ba7b-fa88-4b2c-9915-530ae4a81035
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: aged-mud-9b4c.202-2dc.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 208.103.161.249
+  port: 80
+  type: vless
+  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
   udp: true
 proxy-groups:
 - name: AUTO
@@ -46,8 +83,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA 2
-  - 🇵🇱 波兰 | POL
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 4
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
