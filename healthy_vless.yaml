@@ -4,45 +4,37 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 4
-  server: 172.64.146.153
-  port: 2095
+- name: 🇩🇪 德国 | DEU 7
+  server: nl3.meshbeat.online
+  port: 8444
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
+  uuid: 1f619326-cd93-4d6b-aebe-e0b5f8831d02
+  tls: true
+  alpn:
+  - http/1.1
+  servername: nl3.meshbeat.online
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /api/v1/devices/7c05e2fb91/telemetry
     headers:
-      Host: fangbinxingnmsl.pusytroller.gq
+      Host: nl3.meshbeat.online
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: swe-one.letsgodance.site
+- name: 🇳🇱 荷兰 | NLD 5
+  server: nl-one.letsgodance.site
   port: 443
   type: vless
   uuid: 5d36ddf8-dde5-4b2d-8213-d3255f22a0f1
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 0DU2XI6J-aVzvYzrKQ7XOI9WPRMOADKTyn2V9E71WA8
-    short-id: b4c513c67294b791
-  servername: swe-one.letsgodance.site
+    public-key: s7bhpC1Z6AqLC8XSr_wMQx_tQIzrZmpktn0K-rfFiVw
+  servername: nl-one.letsgodance.site
   client-fingerprint: edge
   network: tcp
-- name: 🇺🇸 美国 | USA 13
-  server: 172.67.152.71
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 104.16.8.66
   port: 8880
   type: vless
   uuid: d6d0ba7b-fa88-4b2c-9915-530ae4a81035
@@ -59,9 +51,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 13
+  - 🇩🇪 德国 | DEU 7
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO
