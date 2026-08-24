@@ -4,21 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 8
-  server: planb.mojcn.com.linuxlh.xin
+- name: 🇭🇰 香港 | HKG 2
+  server: t.cnmjcn.cyou
   port: 16632
   type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  uuid: d52b72b0-a509-490a-adae-23da2348d29c
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+      Host: 82d16f3a12ad1d0871e0270510bf2ef6.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -26,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 8
+  - 🇭🇰 香港 | HKG 2
 rules:
 - MATCH,AUTO

@@ -4,35 +4,31 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
-  server: auth.sso.anti-zapret.com
+- name: 🇧🇷 巴西 | BRA 2
+  server: 201.24.49.77
+  port: 2200
+  type: vless
+  uuid: af60d475-3c13-41cf-af0e-18353d08877a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pl2.lckdwn.ru
   port: 443
   type: vless
-  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
-    short-id: cbb0a5c1dc905505
-  servername: cdnjs.com
-  client-fingerprint: firefox
-  network: tcp
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pl2.lckdwn.ru
   udp: true
-- name: 🇵🇱 波兰 | POL 4
-  server: s3.storage.anti-zapret.com
-  port: 443
-  type: vless
-  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
-    short-id: cbb0a5c1dc905505
-  servername: s3.storage.anti-zapret.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
+- name: 🇷🇺 俄罗斯 | RUS 2
   server: 141.8.199.212
   port: 4100
   type: vless
@@ -44,55 +40,14 @@ proxies:
     headers:
       Host: live.ok.ru
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 109.73.206.166
-  port: 2200
-  type: vless
-  uuid: fc72e947-b8dd-4de0-9ec7-2b0050c9f83a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: 32362877.xyz
-  port: 443
-  type: vless
-  uuid: 29cd734a-0cdd-42d9-8b37-2b7b0e00c489
-  tls: true
-  servername: 32362877.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 32362877.xyz
-  udp: true
-- name: 🇺🇸 美国 | USA 49
-  server: token.api.anti-zapret.com
-  port: 443
-  type: vless
-  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
-    short-id: 58fbcddfaae3ade9
-  servername: us.srv.anti-zapret.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇵🇱 波兰 | POL 4
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 49
+  - 🇧🇷 巴西 | BRA 2
+  - 🇵🇱 波兰 | POL
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO
