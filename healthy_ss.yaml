@@ -4,12 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 8
-  server: 130.61.145.58
-  port: 59924
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 99.79.128.42
+  port: 443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: vDCasqZ8xPuCuDY7ExMXv+kgbwu8OS6yEQMRsb38zUc=
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 | DEU 2
+  server: 45.95.2.25
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MzcxY
+  udp: true
 - name: 🇫🇷 法国 | FRA
   server: 95.170.13.47
   port: 65443
@@ -42,20 +49,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇩🇪 德国 | DEU 2
-  server: 45.95.2.25
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MzcxY
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: e4.cover20.ir
-  port: 16156
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TIU2Q+zGv43ySqEreN27+haqVHskIeIQ4I+DE1Em0Fk=
-  udp: true
 - name: 🇬🇧 英国 | GBR 6
   server: 134.65.60.219
   port: 61312
@@ -94,14 +87,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇩🇪 德国 | DEU 2
   - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 7
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 9
   - 🇬🇧 英国 | GBR 6
   - 🇳🇱 荷兰 | NLD 7
   - 🇸🇬 新加坡 | SGP 2
