@@ -11,6 +11,14 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+- name: 🇳🇱 荷兰 | NLD
+  server: 134.98.129.83
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 11
   server: 158.178.152.114
   port: 62145
@@ -40,6 +48,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 3
 rules:

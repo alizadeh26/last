@@ -17,19 +17,19 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+- name: 🇩🇪 德国 | DEU 2
+  server: 45.95.2.25
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MzcxY
+  udp: true
 - name: 🇫🇷 法国 | FRA
   server: 95.170.13.47
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇬🇧 英国 | GBR
-  server: 13.135.73.3
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 144.24.226.232
   port: 61312
@@ -49,6 +49,26 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: oNh1eL/Q4w8hzh0wY6/JPnFjFMidf6FZLhICWd1Gmok=
+- name: 🇬🇧 英国 | GBR
+  server: 13.135.73.3
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇬🇧 英国 | GBR 7
+  server: 13.135.73.177
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 34.243.114.244
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇩🇪 德国 | DEU 9
   server: e4.cover20.ir
   port: 16156
@@ -56,12 +76,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: TIU2Q+zGv43ySqEreN27+haqVHskIeIQ4I+DE1Em0Fk=
   udp: true
-- name: 🇮🇪 爱尔兰 | IRL
-  server: 34.243.114.244
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+- name: 🇳🇱 荷兰 | NLD
+  server: 134.98.129.83
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 141.148.244.61
@@ -70,12 +91,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: rccNBXGUPgDWHLt9USQQukjqF2JvS5yU+TUxLxL473Y=
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 138.2.87.37
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: z5RtKfqcjsueEgSEK5FzRSUrIvUzlLfJgEWo5BkZqI4=
 - name: 🇳🇱 荷兰 | NLD 11
   server: 158.178.152.114
   port: 62145
@@ -83,13 +98,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 129.150.48.175
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8C+C41HLztRjvq+sf6K94V2i+6SYGHN/ldg2UttNNY4=
   udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: edge2.rumedia-cdn.com
@@ -105,6 +113,19 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 129.150.48.175
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8C+C41HLztRjvq+sf6K94V2i+6SYGHN/ldg2UttNNY4=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 138.2.87.37
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: z5RtKfqcjsueEgSEK5FzRSUrIvUzlLfJgEWo5BkZqI4=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -113,40 +134,46 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN 2
   - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 2
   - 🇫🇷 法国 | FRA
-  - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 6
-  - 🇩🇪 德国 | DEU 9
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 7
   - 🇮🇪 爱尔兰 | IRL
+  - 🇩🇪 德国 | DEU 9
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 7
-  - 🇸🇬 新加坡 | SGP 4
   - 🇳🇱 荷兰 | NLD 11
-  - 🇸🇬 新加坡 | SGP 2
   - 🇳🇱 荷兰 | NLD 3
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN 2
+  - 🇩🇪 德国 | DEU 2
   - 🇫🇷 法国 | FRA
-  - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 6
-  - 🇩🇪 德国 | DEU 9
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 7
   - 🇮🇪 爱尔兰 | IRL
+  - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 7
-  - 🇸🇬 新加坡 | SGP 4
   - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 3
 rules:
