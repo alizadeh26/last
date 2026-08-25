@@ -4,41 +4,113 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.165.253
-  port: 62145
+- name: 🇧🇷 巴西 | BRA
+  server: 201.24.49.77
+  port: 2200
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: af60d475-3c13-41cf-af0e-18353d08877a
   tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD
-  server: 134.98.129.83
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
   udp: true
-- name: 🇳🇱 荷兰 | NLD 11
-  server: 158.178.152.114
-  port: 62145
+- name: 🇩🇪 德国 | DEU 3
+  server: 141.0.184.113
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: 15b154c3-b4f9-435d-9b46-bd096dec4be1
   tls: false
-  network: tcp
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: edge2.rumedia-cdn.com
-  port: 2083
+- name: 🇨🇿 捷克 | CZE 2
+  server: cz.helper-internet.com
+  port: 443
   type: vless
-  uuid: 51afc65b-70f9-46f9-bbf5-6dab07fb94c6
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: UPNrOP5K4VMKioVmi1o15crjzHP3tkeMQr-ivgBNNQU
-    short-id: eb95c48c14152f51
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: cz.helper-internet.com
+  client-fingerprint: edge
+  network: tcp
+- name: 🇩🇪 德国 | DEU 5
+  server: cctvhikvision.center
+  port: 2052
+  type: vless
+  uuid: 3302c871-79e8-45a3-8233-d0547ae963ed
+  tls: false
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 | DEU 8
+  server: node-fra01.rkitman.ru
+  port: 443
+  type: vless
+  uuid: 64774bd8-3116-4eaa-a046-5ea4fc230b81
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
+    short-id: 88d9dc52ef39c8bd
+  servername: node-fra01.rkitman.ru
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 14
+  server: eeb.mythos-wargame.fun
+  port: 443
+  type: vless
+  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
+  tls: true
+  servername: eeb.mythos-wargame.fun
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: edge.sync.v1
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 158.180.12.255
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: edge7.rumedia-cdn.com
+  port: 8443
+  type: vless
+  uuid: a237ca49-48d5-466f-aee5-c44f728a99ab
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Z3dT5WeVvmrbBtZycHfI3kO6kyoLH3tAqpT_ReaMaxI
+    short-id: 4f676caa93313eab
   servername: www.rumedia-cdn.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: us-backup-ssh.anti-zapret.com
+  port: 443
+  type: vless
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 17faf32cb516c9cb
+  servername: us.srv.anti-zapret.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
 proxy-groups:
@@ -47,9 +119,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 11
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇧🇷 巴西 | BRA
+  - 🇩🇪 德国 | DEU 3
+  - 🇨🇿 捷克 | CZE 2
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 14
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇺🇸 美国 | USA 17
 rules:
 - MATCH,AUTO
