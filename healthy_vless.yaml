@@ -12,36 +12,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.236.160
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: de.convert-flow.net
-  port: 443
-  type: vless
-  uuid: defd7be5-3090-4f97-9d46-823087b2345d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: de.convert-flow.net
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 5.57.32.153
-  port: 80
-  type: vless
-  uuid: 49c37551-2843-4cd0-87ff-b75f5938a6d9
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: nl3.freeinternat.com
   port: 443
@@ -55,34 +25,6 @@ proxies:
   servername: nl3.freeinternat.com
   client-fingerprint: random
   network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pol.freeinternat.com
-  port: 443
-  type: vless
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-  servername: pol.freeinternat.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: cf2.laowu.life
-  port: 443
-  type: vless
-  uuid: 86e02d10-23e7-496d-b90c-313649587c68
-  tls: true
-  servername: cf2.laowu.life
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/v2/stream
-    headers:
-      Host: cf2.laowu.life
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: cdn.asshole.eu.cc
@@ -103,12 +45,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 8
   - 🇳🇱 荷兰 | NLD 2
-  - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
