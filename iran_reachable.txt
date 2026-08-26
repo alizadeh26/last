@@ -1,22 +1,13 @@
-ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg@146.70.23.32:8080#Server 8 🇬🇧
-vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@104.16.72.41:80?path=/http&security=none&encryption=none&host=de.vpnbase.net&type=ws#Server 100 🇺🇸
-ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@15.204.247.124:2375#Server 137 🇺🇸
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@142.4.216.225:443#%F0%9F%87%A8%F0%9F%87%A6CA-142.4.216.225-0139
-ss://YWVzLTI1Ni1jZmI6N2VhZGM2ZGJlMmFl@154.127.56.212:65443#CA%F0%9F%87%A8%F0%9F%87%A6+%7C+154.127.56.212-65443+%7C+27.6ms
-ss://YWVzLTEyOC1jZmI6c2hhZG93c29ja3M=@109.201.152.181:443#%F0%9F%87%B3%F0%9F%87%B1NL-109.201.152.181-0089
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.194:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.194-0071
-vless://03bb538f-2a16-4a31-a747-1a5e5a4c8cfa@us06hk.lockdwn.com:443?encryption=none&security=none&type=ws&path=/#🇺🇸 2 - US - VLESS/WS - 443
-vless://14777bd9-56a5-46f6-a94f-826b4800dc05@89.248.192.63:9895?encryption=none&fp=firefox&mode=gun&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&security=reality&serviceName=grpc-tunnel&sid=aabb&sni=dl.google.com&type=grpc#🇷🇺 19 - RU - VLESS/GRPC/REALITY/PBK/SID/UTLS - 9895
-vless://30a2a9a6-6a03-4353-a7fb-63831d64f718@www.zsu.gov.ua:8880?encryption=none&host=orange-lab-896e.365-80b.workers.dev&path=/pyip=ProxyIP.SG.CMLiussss.net&security=none&type=ws#🇺🇸 84 - US - VLESS/WS - 8880
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.197:23576?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#🇺🇸 108 - US - VLESS/REALITY/PBK/SID/VISION/UTLS - 23576
-vless://51afc65b-70f9-46f9-bbf5-6dab07fb94c6@217.149.30.225:2083?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=UPNrOP5K4VMKioVmi1o15crjzHP3tkeMQr-ivgBNNQU&security=reality&sid=eb95c48c14152f51&sni=www.rumedia-cdn.com&type=raw#🇷🇺 139 - RU - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 2083
-vless://4bc8ff7a-20b4-41b2-9751-dfca869f0553@45.150.66.31:443?encryption=none&path=/&security=tls&sni=gb1.wba-pn.ru&type=ws#🇬🇧 132 - GB - VLESS/WS/TLS - 443
-vless://893096ae-ed76-4440-bc34-f77c4872540f@188.114.96.3:443?alpn=http%2F1.1&ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&host=maSterserVeR1-VSH.KaLlEH.WORkERs.DEV&path=/eyJqdW5rIjoieE1zSFhYR2hkcHZGUHI3cSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=&security=tls&sni=maSterserVeR1-VSH.KaLlEH.WORkERs.DEV&type=ws#🇺🇸 258 - US - VLESS/WS/TLS - 443
-vless://7e85ed3f-3829-45b1-8b1c-6a2e45ebc967@164.68.127.108:24144?encryption=none&security=none&type=tcp#🇫🇷 235 - FR - VLESS - 24144
-vless://88212d38-f112-4a35-8ac2-eb3a1923e413@109.169.84.146:443?flow=xtls-rprx-vision&security=reality&sni=strapi.io&fp=firefox&pbk=vvpu_ljhBuTWmM9w5Hl6jj8ZTiE_JYq29S77zNDeCjQ&sid=ff6975658b6cefce&type=tcp&path=/#🇬🇧 257 - GB - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://93dac4b8-3879-4179-abdb-9666a9e2ca8d@87.120.84.32:8443?encryption=none&security=none&type=ws&path=/#🇩🇪 277 - DE - VLESS/WS - 8443
-vless://a2ec6ed8-ef05-4fa9-b6c5-aec54186f89a@185.178.208.140:443?alpn=h2&encryption=none&fp=firefox&host=cloud.dev.fosonmine.site&path=/api/v2/session/channel/connect&security=tls&sni=cloud.dev.fosonmine.site&type=ws#🇷🇺 303 - RU - VLESS/WS/TLS/UTLS - 443
-trojan://Telegram_healer_config@172.67.132.19:443?path=/tr/bDodLFtTQwCZ6EX3ffMYJ06j9EjLse4d?ed=2560&security=tls&alpn=http/1.1&insecure=0&host=vre6r9qrbqi0t25tg.srtb0m3hdbwr2cjz8fjur.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=VRE6R9qRbQI0t25TG.SRTB0M3hdbwr2cJZ8fjUr.WoRKeRS.dev#🇺🇸 35 - US - Trojan/WS/TLS/UTLS - 443
-vless://c7a30b74-560c-4561-8f0b-7d70e85c9b5e@178.248.236.138:18443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=VUc_2yzS6cjaq_MB8TScaCftgT3oJtP6zpotM5yM_Xg&security=reality&sid=dde21fff&sni=rutube.ru&type=raw#🇷🇺 340 - RU - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 18443
-vless://e5cc16a6-ea42-46b2-82ae-ad2157e1641b@172.64.150.28:443?path=/fp&security=tls&encryption=none&insecure=0&host=hhlfy.twiladaphne.ndjp.net&fp=chrome&type=ws&allowInsecure=0&sni=hhlfy.twiladaphne.ndjp.net#🇺🇸 387 - US - VLESS/WS/TLS/UTLS - 443
-3.96.165.186:443	🇨🇦 加拿大 | CAN 3
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.225:443#Server 20 🇳🇱
+vless://8ddedcc7-6c4e-4df3-a190-ac40926f6694@104.21.74.214:8880?path=%2Fpyip&security=&encryption=none&host=late-boat-fbd7.152-de6.workers.dev&type=ws#Server 100 🇺🇸
+ss://YWVzLTI1Ni1nY206alNVN2JHS3VwUTk2WUZ2Zg@139.180.133.90:80#Server 146 🇸🇬
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.58.239:8388#Server 93 🇳🇱
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpFeUd5MTFCTWZlUC02VUhqc2dhald3@64.188.77.159:8390#Server 181 🇳🇱
+trojan://7e70223b-f331-41d5-9313-02b8d2df2885@157.254.38.210:20065?sni=hk.catxstar.com&allowInsecure=1&type=tcp&fp=chrome#%E7%BE%8E%E5%9B%BD_0826081271+L39
+vless://03446511-2806-0021-b02f-f10d2d3a33c6@5.61.91.221:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=cdn-up.perecbass.ru&fp=firefox&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&sid=4a7b1c8d&type=tcp&headerType=none&host=cdn-up.perecbass.ru&path=%2F#REALITY|FI🇫🇮
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.180:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.180-0090
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.219:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.219-0158
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.36:443#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.36-0092
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.7:8080#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+82.38.31.7-8080+%7C+112.43ms
+vless://a289a3d3-5833-4b28-8809-ae72898a98d0@45.150.64.157:443?encryption=none&fp=qq&path=/websocket&security=tls&sni=alb1.abvpn.ru&type=ws#🇷🇺 137 - RU - VLESS/WS/TLS/UTLS - 443
+vless://710fc22f-06b2-4b6d-bb3e-f57c17b670a6@2.27.27.202:443?flow=xtls-rprx-vision&security=reality&sni=www.ray-balance.space&fp=firefox&pbk=d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI&path=/#🇬🇪 101 - GE - VLESS/REALITY/PBK/VISION/UTLS - 443
