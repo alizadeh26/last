@@ -4,18 +4,166 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA
-  server: 95.170.13.47
+- name: 🇧🇷 巴西 | BRA
+  server: 129.151.36.160
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: wN0e81acGsb1w99rzzhp0DuSnVw6j6bc1SHwsNE4O4M=
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 16.54.243.229
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 158.247.120.174
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.236.160
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 5.57.32.153
+  port: 80
+  type: vless
+  uuid: 49c37551-2843-4cd0-87ff-b75f5938a6d9
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 18.171.210.5
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇪🇸 西班牙 | ESP 2
+  server: spain4.helper-internet.com
+  port: 443
+  type: vless
+  uuid: a4ccca8a-dd5a-4935-80ea-53feafe195c9
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: spain4.helper-internet.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 18.170.37.90
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇳🇱 荷兰 | NLD
+  server: 144.21.33.206
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BV86qPJylUk7GQtbhPEO8PRzZ+78F9XD24HIU2z7k4o=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: nl3.freeinternat.com
+  port: 443
+  type: vless
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U
+    short-id: 6aa2d2e950441a9a
+  servername: nl3.freeinternat.com
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇹🇭 泰国 | THA
-  server: 103.169.67.34
-  port: 65443
+- name: 🇵🇱 波兰 | POL 2
+  server: pol.freeinternat.com
+  port: 443
+  type: vless
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+  servername: pol.freeinternat.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 129.146.74.96
+  port: 50356
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  cipher: 2022-blake3-chacha20-poly1305
+  password: DM4XRM+YsXKRBV8vbBFXyLX1k1pwNMwXivSMmiXKZF4=
+- name: 🇸🇬 新加坡 | SGP 7
+  server: 140.245.123.126
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9PvikasSAkf6uo3YfXr/N6WffBIsBQt0Nid+CxbSXDM=
+- name: 🇸🇬 新加坡 | SGP 16
+  server: 161.118.203.141
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: F2M12ztwS+zxs2LT5+VDiHt3FuhbuzBMYRiswQM8b74=
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 132.226.71.250
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9X1MAxGhs1ni3zLUnZn/IHSClJTA2wy2PfIfcpapHJw=
+- name: 🇺🇸 美国 | USA 9
+  server: cdn.asshole.eu.cc
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn.asshole.eu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: cf2.laowu.life
+  port: 443
+  type: vless
+  uuid: 86e02d10-23e7-496d-b90c-313649587c68
+  tls: true
+  servername: cf2.laowu.life
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/v2/stream
+    headers:
+      Host: cf2.laowu.life
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 129.153.74.252
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: jpJxo3GBO0Z7kQjyDLt0HTiPuI+R5S6UQxnaxaHJUGg=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -23,14 +171,78 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
-  - 🇹🇭 泰国 | THA
+  - 🇧🇷 巴西 | BRA
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 8
+  - 🇬🇧 英国 | GBR
+  - 🇪🇸 西班牙 | ESP 2
+  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇲🇾 马来西亚 | MYS
+  - 🇵🇱 波兰 | POL 2
+  - 🇺🇸 美国 | USA 2
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇸🇬 新加坡 | SGP 16
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
-  - 🇹🇭 泰国 | THA
+  - 🇧🇷 巴西 | BRA
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇲🇾 马来西亚 | MYS
+  - 🇺🇸 美国 | USA 2
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇸🇬 新加坡 | SGP 16
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 7
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 8
+  - 🇪🇸 西班牙 | ESP 2
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇵🇱 波兰 | POL 2
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 4
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 8
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 | CAN 2
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇴 哥伦比亚 | COL 2
 rules:
 - MATCH,AUTO
