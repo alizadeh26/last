@@ -4,21 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 2
+- name: 🇫🇷 法国 | FRA
   server: 95.170.13.47
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇮🇪 爱尔兰 | IRL
-  server: 34.243.114.244
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇲🇾 马来西亚 | MYS 2
-  server: 118.107.222.231
   port: 65443
   type: ss
   cipher: aes-256-cfb
@@ -36,31 +23,26 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇲🇾 马来西亚 | MYS 2
+  - 🇫🇷 法国 | FRA
   - 🇹🇭 泰国 | THA
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇲🇾 马来西亚 | MYS 2
+  - 🇫🇷 法国 | FRA
   - 🇹🇭 泰国 | THA
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 | MYS 2
+  - 🇹🇭 泰国 | THA
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇫🇷 法国 | FRA
 rules:
 - MATCH,AUTO
