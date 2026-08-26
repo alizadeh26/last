@@ -20,26 +20,26 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: de.convert-flow.net
+  port: 443
+  type: vless
+  uuid: defd7be5-3090-4f97-9d46-823087b2345d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: de.convert-flow.net
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: 5.57.32.153
   port: 80
   type: vless
   uuid: 49c37551-2843-4cd0-87ff-b75f5938a6d9
   tls: false
-  network: tcp
-  udp: true
-- name: 🇪🇸 西班牙 | ESP 2
-  server: spain4.helper-internet.com
-  port: 443
-  type: vless
-  uuid: a4ccca8a-dd5a-4935-80ea-53feafe195c9
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: spain4.helper-internet.com
-  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
@@ -70,18 +70,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: cdn.asshole.eu.cc
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn.asshole.eu.cc
-  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: cf2.laowu.life
   port: 443
@@ -96,6 +84,18 @@ proxies:
     headers:
       Host: cf2.laowu.life
   udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: cdn.asshole.eu.cc
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn.asshole.eu.cc
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -104,11 +104,11 @@ proxy-groups:
   proxies:
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
+  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 8
-  - 🇪🇸 西班牙 | ESP 2
   - 🇳🇱 荷兰 | NLD 2
   - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
