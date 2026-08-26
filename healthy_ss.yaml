@@ -10,30 +10,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: wN0e81acGsb1w99rzzhp0DuSnVw6j6bc1SHwsNE4O4M=
-- name: 🇨🇦 加拿大 | CAN 2
-  server: 16.54.243.229
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇨🇳 CN_22
-  server: 121.46.230.138
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇬🇧 英国 | GBR
-  server: 18.171.210.5
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 | GBR 2
-  server: 18.170.37.90
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇲🇾 马来西亚 | MYS
   server: 118.107.222.231
   port: 65443
@@ -46,12 +22,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 9PvikasSAkf6uo3YfXr/N6WffBIsBQt0Nid+CxbSXDM=
-- name: 🇺🇸 美国 | USA 13
-  server: 132.226.71.250
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9X1MAxGhs1ni3zLUnZn/IHSClJTA2wy2PfIfcpapHJw=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -59,12 +29,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇨🇦 加拿大 | CAN 2
-  - 🇨🇳 CN_22
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
   - 🇲🇾 马来西亚 | MYS
   - 🇸🇬 新加坡 | SGP 7
-  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO
