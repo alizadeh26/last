@@ -5,140 +5,127 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇨🇦 加拿大 | CAN
-  server: 16.54.243.229
-  port: 443
+  server: 51.79.64.198
+  port: 8119
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇧🇷 巴西 | BRA
-  server: 163.176.131.65
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3EM1fSSvxFj30vpiwYR0Lj9HQd0pwDQaJ4S/Vge027s=
-- name: 🇧🇷 巴西 | BRA 3
-  server: 147.15.63.145
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Zlu9lHfIIkX8w15AtB1WLU2/SfcxGpF8r84tMisvoCk=
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.227.227
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 130.61.131.57
+- name: 🇩🇪 德国 | DEU
+  server: 130.61.116.140
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: YZrZprqUWU03b8JWKxIs7sWKrtNZ2QLc9yU8em4zKwQ=
-- name: 🇩🇪 德国 | DEU 7
-  server: 130.162.40.71
-  port: 59924
+  password: rJevsg8gWGF8MLXHJbO8cUjw8qT7Nkd/v8BA8jCVDsk=
+- name: 🇧🇷 巴西 | BRA 2
+  server: 147.15.73.104
+  port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 0IpaV4tsjDPWg+Na3xDketwfnL5SzLHbPIegllYTD8E=
-- name: 🇫🇷 法国 | FRA 7
+  password: 7/EA6g8zfS5vVYXrk+16wA+41eejpQjr7ll5C2BXsx4=
+  udp: true
+- name: 🇫🇷 法国 | FRA
   server: 95.170.13.47
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
 - name: 🇬🇧 英国 | GBR 2
-  server: 3.10.143.14
+  server: 129.151.84.196
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: INRdbIRZKRRbsFj4TAxNOnbAu0Yh7G/lr33SS+4V+s8=
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 3.250.80.208
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇮🇪 爱尔兰 | IRL
+- name: 🇮🇪 爱尔兰 | IRL 2
   server: 34.241.245.82
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇬🇧 英国 | GBR
-  server: gb2.murhost.network
-  port: 443
-  type: vless
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: fyfX-egDrRvXNW1Gt2P_8rH4jdupAcmhFLOCZCzCowo
-    short-id: fc36b4a584871aa5
-  servername: gb2.murhost.network
-  client-fingerprint: firefox
-  network: tcp
+  server: 129.151.82.201
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: hIQF8+K9VdZUUvML50mUwcPk2TtPvuf2FCcxXICzvt4=
   udp: true
-- name: 🇮🇪 爱尔兰 | IRL 2
-  server: 54.247.216.201
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇮🇪 爱尔兰 | IRL 3
-  server: 3.250.80.208
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇮🇪 爱尔兰 | IRL 4
-  server: 52.16.228.57
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇳🇱 荷兰 | NLD
-  server: 141.148.224.180
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 141.148.227.92
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 7RyR6zIJD3llHkRTahN7a//7mn11rRIUuccE0vcFWfU=
-- name: 🇸🇬 新加坡 | SGP
-  server: 104.18.34.245
+  password: KXH1wvyRSEvM9nM+k1Twlar5OyguGkr5VdW7mi/q934=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 141.148.241.211
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: k//4bvSvtf5XFTJVWWSaOHAr/631ZWJzHo4vSOObpQU=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 152.70.63.41
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: p3+EY3yWtw36eyy5gnBCkMt7NdN56ox/XByvzOZ9fS0=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 5
+  server: 162.159.43.187
   port: 8880
   type: vless
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /?ed=2560security=tls
     headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: tg1.wba-pn.ru
+- name: 🇵🇱 波兰 | POL 2
+  server: 94.183.209.59
   port: 443
   type: vless
-  uuid: ae2009b9-76cb-4d18-8612-7515b2b84398
-  tls: true
-  servername: tg1.wba-pn.ru
-  client-fingerprint: qq
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  tls: false
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: tg1.wba-pn.ru
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 129.151.9.186
+- name: 🇺🇸 美国 | USA 6
+  server: 129.146.167.71
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: lOBcDkXcCLvC7cRuLJVTWYO1UEPelR3wC2lfBiB4+sg=
-- name: 🇹🇭 泰国 | THA
-  server: 103.169.67.34
+  password: e/LtVsVh1d/nLym2Se5Q1iueknHxIiUB4eNujOLXNe8=
+  udp: true
+- name: 🇮🇷 伊朗 | IRN
+  server: poll.shhflow.xyz
+  port: 443
+  type: vless
+  uuid: 2f919a1e-f00e-4538-b0a9-cf190721d578
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: qlI3bp81zxyEIlh-Q35-DGHlTymqfJ3D_BZtIPNXezo
+  servername: poll.shhflow.xyz
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 121.46.230.233
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: 🇺🇸 美国 | USA 23
+- name: 🇺🇸 美国 | USA 17
   server: cdn.asshole.eu.cc
   port: 2095
   type: vless
@@ -150,21 +137,6 @@ proxies:
     headers:
       Host: cdn.asshole.eu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 31
-  server: 121.46.230.233
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.225.233
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -172,70 +144,48 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 3
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 7
-  - 🇫🇷 法国 | FRA 7
+  - 🇩🇪 德国 | DEU
+  - 🇧🇷 巴西 | BRA 2
+  - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR 2
   - 🇮🇪 爱尔兰 | IRL
-  - 🇬🇧 英国 | GBR
   - 🇮🇪 爱尔兰 | IRL 2
-  - 🇮🇪 爱尔兰 | IRL 3
-  - 🇮🇪 爱尔兰 | IRL 4
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP
+  - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 16
-  - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 31
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇵🇱 波兰 | POL 2
+  - 🇺🇸 美国 | USA 6
+  - 🇮🇷 伊朗 | IRN
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 17
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 3
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 7
-  - 🇫🇷 法国 | FRA 7
+  - 🇩🇪 德国 | DEU
+  - 🇧🇷 巴西 | BRA 2
+  - 🇫🇷 法国 | FRA
   - 🇬🇧 英国 | GBR 2
   - 🇮🇪 爱尔兰 | IRL
   - 🇮🇪 爱尔兰 | IRL 2
-  - 🇮🇪 爱尔兰 | IRL 3
-  - 🇮🇪 爱尔兰 | IRL 4
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 16
-  - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 31
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇬🇧 英国 | GBR
-  - 🇸🇬 新加坡 | SGP
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 23
-  - 🇨🇴 哥伦比亚 | COL
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇦 加拿大 | CAN
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 3
-  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇵🇱 波兰 | POL 2
+  - 🇮🇷 伊朗 | IRN
+  - 🇺🇸 美国 | USA 17
 rules:
 - MATCH,AUTO

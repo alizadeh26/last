@@ -1,6 +1,4 @@
-vless://155e8dd4-a559-407a-9ea8-13a5e829f066@87.228.122.108:4100?encryption=none&path=/v1&security=none&type=ws#🇷🇺 25 - RU - VLESS/WS - 4100
-vless://19365fd3-d23c-4a9e-a2ef-543d230e65c4@193.233.217.140:2200?encryption=none&path=/v1&security=none&type=ws#🇷🇺 29 - RU - VLESS/WS - 2200
-vless://2aa7f4b1-e859-46d0-b8ac-8587811ab7b1@212.67.9.113:2200?path=/v1&security=none&encryption=none&type=ws#🇷🇺 69 - RU - VLESS/WS - 2200
-vless://6d60c73d-5915-4cf8-b155-e522dfd863bb@31.128.37.67:16560?encryption=none&security=none&type=raw#🇷🇺 259 - RU - VLESS/RAW - 16560
-vless://633f424e-2b11-48da-a6b3-a849dd71456f@45.12.75.242:26424?encryption=none&fp=qq&pbk=l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0&security=reality&sid=23103e1e&sni=ya.ru&type=raw#🇷🇺 244 - RU - VLESS/RAW/REALITY/PBK/SID/UTLS - 26424
-vless://64bd5231-8c49-44f4-8bc0-998eef787d05@5.42.121.52:4100?encryption=none&path=/v1&security=none&type=ws#🇷🇺 249 - RU - VLESS/WS - 4100
+vless://192d1b67-0b7e-40fd-bcb1-c86847595115@193.168.46.180:443?encryption=none&flow=xtls-rprx-vision&fp=qq&pbk=D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY&security=reality&sid=c1a7e9b4711d5f60&sni=rruu.persik.host&type=raw#🇷🇺 29 - RU - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 443
+vless://380f152a-33b3-456e-b5db-970aa27c32e3@109.196.98.121:2053?encryption=none&fp=qq&security=tls&sni=tr.wba-pn.ru&type=ws#🇷🇺 55 - RU - VLESS/WS/TLS/UTLS - 2053
+vless://6d60c73d-5915-4cf8-b155-e522dfd863bb@31.128.37.67:16560?encryption=none&security=none&type=raw#🇷🇺 164 - RU - VLESS/RAW - 16560
+vless://633f424e-2b11-48da-a6b3-a849dd71456f@45.12.75.242:26424?encryption=none&fp=qq&pbk=l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0&security=reality&sid=23103e1e&sni=ya.ru&type=raw#🇷🇺 158 - RU - VLESS/RAW/REALITY/PBK/SID/UTLS - 26424

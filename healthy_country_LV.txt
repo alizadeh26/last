@@ -1,2 +1,3 @@
 vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@89.36.161.222:2096?path=/&security=none&encryption=none&type=ws#Server 132 🇱🇻
-vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@89.36.161.222:2053?encryption=none&flow=xtls-rprx-vision&pbk=cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg&security=reality&sid=d26f4703cdd30f4e&sni=vk.ru&type=tcp#🇱🇻 270 - LV - VLESS/REALITY/PBK/SID/VISION - 2053
+vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@89.36.161.222:2053?encryption=none&flow=xtls-rprx-vision&pbk=cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg&security=reality&sid=d26f4703cdd30f4e&sni=vk.ru&type=tcp#🇱🇻 172 - LV - VLESS/REALITY/PBK/SID/VISION - 2053
+vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@89.36.161.222:2083?security=tls&type=grpc&mode=gun&serviceName=grpc&sni=laoye.in-gect.fun&fp=ios#🇱🇻 174 - LV - VLESS/GRPC/TLS/UTLS - 2083
