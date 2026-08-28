@@ -4,8 +4,135 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP 5
+- name: 🇧🇬 保加利亚 | BGR
+  server: bul2.helper-internet.com
+  port: 443
+  type: vless
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: bul2.helper-internet.com
+  client-fingerprint: random
+  network: tcp
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.217.90
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇧🇷 巴西 | BRA 4
+  server: 201.24.49.117
+  port: 2200
+  type: vless
+  uuid: 2e228435-33a0-47d1-a1d8-9a34b5a03c45
+  tls: false
+  servername: 201.24.49.117
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: 193.123.63.154
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD 11
+  server: 172.67.184.37
+  port: 8880
+  type: vless
+  uuid: 4f54572a-b852-4da3-8823-0ddccc60b5d8
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: icy-snowflake-1f56.147-1ea.workers.dev
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: hys41.wba-pn.ru
+  port: 443
+  type: vless
+  uuid: 8e8e4592-6088-4d00-b061-ef5456d0eb9c
+  tls: true
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hys41.wba-pn.ru
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: fin2.helper-internet.com
+  port: 443
+  type: vless
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: fin2.helper-internet.com
+  client-fingerprint: firefox
+  network: tcp
+- name: 🇸🇬 新加坡 | SGP 8
   server: 162.159.43.187
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 172.64.88.168
+  port: 8880
+  type: vless
+  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: autumn-dawn-fa6b.337-272.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dawn-waterfall-6052.360-001.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 34
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-f.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: 162.159.0.169
   port: 8880
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -16,40 +143,32 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 94.183.209.59
-  port: 443
+- name: 🇺🇸 美国 | USA 37
+  server: 162.159.43.187
+  port: 80
   type: vless
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇮🇷 伊朗 | IRN
-  server: poll.shhflow.xyz
+- name: 🇺🇸 美国 | USA 14
+  server: gr2.panel11.ru
   port: 443
   type: vless
-  uuid: 2f919a1e-f00e-4538-b0a9-cf190721d578
+  uuid: d091ad65-d948-4b45-b9c2-b880552ede4e
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: qlI3bp81zxyEIlh-Q35-DGHlTymqfJ3D_BZtIPNXezo
-  servername: poll.shhflow.xyz
-  client-fingerprint: firefox
+    public-key: 2fZTX_b8h4Cdf2xJCID00BqFzsjtKAAws4Y-OZtNLnE
+    short-id: 56f57b965ff599bf
+  servername: gr2.panel11.ru
+  client-fingerprint: qq
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: cdn.asshole.eu.cc
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn.asshole.eu.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -57,9 +176,19 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇵🇱 波兰 | POL 2
-  - 🇮🇷 伊朗 | IRN
-  - 🇺🇸 美国 | USA 17
+  - 🇧🇬 保加利亚 | BGR
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇧🇷 巴西 | BRA 4
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 11
+  - 🇳🇱 荷兰 | NLD 10
+  - 🇩🇪 德国 | DEU 6
+  - 🇸🇬 新加坡 | SGP 8
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 34
+  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 37
+  - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO

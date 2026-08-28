@@ -4,87 +4,97 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 51.79.64.198
-  port: 8119
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 130.61.116.140
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rJevsg8gWGF8MLXHJbO8cUjw8qT7Nkd/v8BA8jCVDsk=
-- name: 🇧🇷 巴西 | BRA 2
-  server: 147.15.73.104
+- name: 🇧🇷 巴西 | BRA
+  server: 163.176.156.216
   port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 7/EA6g8zfS5vVYXrk+16wA+41eejpQjr7ll5C2BXsx4=
-  udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 95.170.13.47
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.84.196
-  port: 61312
+  password: tpgVOomrbq6prHPdIl3VVRfPpWwXUCfZCRjIya+RRGw=
+- name: 🇧🇷 巴西 | BRA 2
+  server: 163.176.246.48
+  port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: INRdbIRZKRRbsFj4TAxNOnbAu0Yh7G/lr33SS+4V+s8=
+  password: 3CoIkS9kkeoyGQsy7tQD19IGQJdvwu76tTKyalr7mKs=
+- name: 🇩🇪 德国 | DEU 2
+  server: 130.61.112.159
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bvCkSd0HaT0nf8vHPqnmKB99UkYYDw9XatMo6BhujmE=
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: 130.61.41.69
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Vb8fwksl70rXmSYAWCEPXRYbYmNhwF+vle+qbaKbDe4=
+- name: 🇬🇧 英国 | GBR
+  server: 18.171.210.5
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇮🇪 爱尔兰 | IRL
+  server: 3.250.223.202
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇮🇪 爱尔兰 | IRL 3
+  server: 54.216.107.30
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇮🇪 爱尔兰 | IRL 4
+  server: 52.16.228.57
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇮🇪 爱尔兰 | IRL 5
+  server: 176.34.158.52
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇮🇪 爱尔兰 | IRL 6
   server: 3.250.80.208
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇮🇪 爱尔兰 | IRL 2
-  server: 34.241.245.82
-  port: 443
+- name: 🇮🇹 意大利 | ITA
+  server: 194.87.47.204
+  port: 10901
+  type: ss
+  cipher: aes-256-gcm
+  password: d1fa2f4b98a38bc8
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 7
+  server: 140.245.114.180
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: GMLX7E+RG0kwk1EVOtkOA+g7hXZYfDzdKcUDgbrqslU=
+- name: 🇺🇸 美国 | USA
+  server: 121.46.230.233
+  port: 65443
   type: ss
   cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.82.201
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: hIQF8+K9VdZUUvML50mUwcPk2TtPvuf2FCcxXICzvt4=
+  password: 7eadc6dbe2ae
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 141.148.227.92
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 92.5.231.219
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: KXH1wvyRSEvM9nM+k1Twlar5OyguGkr5VdW7mi/q934=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 141.148.241.211
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: k//4bvSvtf5XFTJVWWSaOHAr/631ZWJzHo4vSOObpQU=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 152.70.63.41
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: p3+EY3yWtw36eyy5gnBCkMt7NdN56ox/XByvzOZ9fS0=
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 129.146.167.71
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: e/LtVsVh1d/nLym2Se5Q1iueknHxIiUB4eNujOLXNe8=
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 121.46.230.233
+  password: PWlFaofVgOxIzdG8E5m2Urd1Ktm+kdOpOEkWnNtws9U=
+- name: 🇰🇷 韩国 | KOR 4
+  server: 121.46.230.138
   port: 65443
   type: ss
   cipher: aes-256-cfb
@@ -96,18 +106,20 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU
+  - 🇧🇷 巴西 | BRA
   - 🇧🇷 巴西 | BRA 2
-  - 🇫🇷 法国 | FRA
-  - 🇬🇧 英国 | GBR 2
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇮🇪 爱尔兰 | IRL 2
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 11
   - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 4
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇮🇪 爱尔兰 | IRL 3
+  - 🇮🇪 爱尔兰 | IRL 4
+  - 🇮🇪 爱尔兰 | IRL 5
+  - 🇮🇪 爱尔兰 | IRL 6
+  - 🇮🇹 意大利 | ITA
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇺🇸 美国 | USA
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇰🇷 韩国 | KOR 4
 rules:
 - MATCH,AUTO
