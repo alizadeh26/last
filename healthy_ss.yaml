@@ -4,70 +4,101 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 16.54.243.229
-  port: 443
+- name: 🇧🇷 巴西 | BRA
+  server: 144.22.210.207
+  port: 59319
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 | DEU 2
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bJqLdTAJymgdGwNASsjxuR4N7THATrNjW/6mZv77qRw=
+  udp: true
+- name: 🇩🇪 德国 | DEU
   server: 129.159.15.175
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: IwxNmiHQr4nZQEjxKD8bl/0lbvbZ/HJJbzAkjwnHOkk=
 - name: 🇩🇪 德国 | DEU 3
-  server: 130.61.233.63
+  server: 141.147.53.115
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: mep9mzR3cG4vUy51p++Xst0L0p98TWYR38sAAFr3yJY=
-- name: 🇩🇪 德国 | DEU 4
-  server: 130.61.87.118
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: fvf8HrzAP5nIMchC+4SuGnNzU/nWjBbpe6moSwFGzWw=
+  password: IFvwvrqx26KIutn01x+IDo6chyktXgr2b0UvXNliBzc=
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 95.170.13.47
-  port: 65443
+- name: 🇬🇧 英国 | GBR
+  server: 18.170.37.90
+  port: 443
   type: ss
   cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 144.24.229.181
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rpjoXW0RKmr8FsgAZEwIaTidgIizyY94H0k4lJw/HGw=
-- name: 🇬🇧 英国 | GBR 2
+  password: amazonskr05
+- name: 🇬🇧 英国 | GBR 6
   server: 144.24.226.15
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: m03E8gi3urOxgrIv7T06vEoae3ctMWTS2XnYst6jJSI=
   udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: 18.170.37.90
-  port: 443
+- name: 🇬🇧 英国 | GBR 8
+  server: 129.151.67.62
+  port: 61312
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇳🇱 荷兰 | NLD
-  server: 141.148.237.64
+  cipher: 2022-blake3-chacha20-poly1305
+  password: OxtyOVFwJdUQxmuDhQdFaM4osbi2RAT32aXZ1z0PgM4=
+  udp: true
+- name: 🇬🇧 英国 | GBR 9
+  server: 129.151.75.124
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: TbDsEKY6SRYS4BL5BQVtccFR+k4tD9WSRLEabwzqHlo=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 141.148.237.51
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: IVBe/v0PRzoIAxF7OKUA6rHMM+f8VFYJThG6KvBXNcY=
-- name: 🇳🇱 荷兰 | NLD 2
+  password: Bq7fNTetsKxZR/aGO54gR4+Dac67uZ+YYRnIWuHGIo4=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 141.148.242.123
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: i3rd8p/HM52Cidn3DqOXRvo4BWjKri9B+UkuTyhK0/k=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
   server: 158.178.155.37
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 14zduVOpqZOK6iayk+xd34h98ymp6qr2NuJj2xtWXiY=
   udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: 161.118.215.233
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: m5LHmfSALidcG/rys3lkmyWVRPeMymkZVm3LbSM4p1g=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 16
+  server: 158.178.239.69
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2xgDpUvct/rw6f6wfqQ0NeQzZZ9N8PLvCTuRt1OVBhg=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 19
+  server: 161.118.208.148
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +RVrrYpka8vzDG1IZIHEcuyFSuvRnfpylJWmqh3xGOc=
 - name: 🇹🇭 泰国 | THA
   server: 103.169.67.34
   port: 65443
@@ -75,32 +106,19 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 129.146.73.67
-  port: 50356
+- name: 🇸🇬 新加坡 | SGP 17
+  server: 168.107.88.80
+  port: 56927
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: RoFdephcuY8+LrAoVBBy0QjUxywV5XKPrjU2sc0RtKw=
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.64.147
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: YsZAgtzuuQHa9Ekc7um7AhfAhEvtiIKJw4oxCLsN3eY=
+  password: KprPsjUmgnhkhFSWVMzF4Xzam1HD8C/jpJ+mCAG4YnQ=
   udp: true
-- name: 🇺🇸 美国 | USA 4
+- name: 🇺🇸 美国 | USA 8
   server: 121.46.230.232
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 168.107.94.84
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Pe9lvXuaLi5pwiVFi9DI90KfeThZMXeOE6bZ6t9HsbM=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -108,20 +126,22 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 2
+  - 🇧🇷 巴西 | BRA
+  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 4
-  - 🇫🇷 法国 | FRA 2
-  - 🇬🇧 英国 | GBR 3
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 4
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 5
   - 🇬🇧 英国 | GBR
-  - 🇺🇸 美国 | USA 4
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇬🇧 英国 | GBR 6
+  - 🇬🇧 英国 | GBR 8
+  - 🇬🇧 英国 | GBR 9
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇲🇾 马来西亚 | MYS
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇸🇬 新加坡 | SGP 16
+  - 🇸🇬 新加坡 | SGP 19
+  - 🇹🇭 泰国 | THA
+  - 🇸🇬 新加坡 | SGP 17
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

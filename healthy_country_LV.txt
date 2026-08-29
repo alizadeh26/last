@@ -1,3 +1,4 @@
 vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@89.36.161.222:2096?path=/&security=none&encryption=none&type=ws#Server 132 🇱🇻
-vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@89.36.161.222:2083?encryption=none&security=tls&serviceName=grpc&sni=laoye.in-gect.fun&type=grpc#🇱🇻 180 - LV - VLESS/GRPC/TLS - 2083
-vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@89.36.161.222:2053?security=reality&type=tcp&sni=vk.ru&fp=chrome&flow=xtls-rprx-vision&sid=d26f4703cdd30f4e&pbk=cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg&encryption=none#🇱🇻 179 - LV - VLESS/REALITY/PBK/SID/VISION/UTLS - 2053
+vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@89.36.161.222:2053?encryption=none&flow=xtls-rprx-vision&pbk=cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg&security=reality&sid=d26f4703cdd30f4e&sni=vk.ru&type=tcp#🇱🇻 196 - LV - VLESS/REALITY/PBK/SID/VISION - 2053
+vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@89.36.161.222:2083?encryption=none&security=tls&serviceName=grpc&sni=laoye.in-gect.fun&type=grpc#🇱🇻 198 - LV - VLESS/GRPC/TLS - 2083
+vless://dabb9a19-03ab-4cdf-8963-d3c45eb0f80d@31.76.62.223:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&sni=lat2.freeinternat.com&pbk=bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk&sid=ff776ff77be48b88&fp=firefox#🇱🇻 368 - LV - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
