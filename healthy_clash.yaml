@@ -11,12 +11,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: bJqLdTAJymgdGwNASsjxuR4N7THATrNjW/6mZv77qRw=
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 129.159.15.175
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: IwxNmiHQr4nZQEjxKD8bl/0lbvbZ/HJJbzAkjwnHOkk=
 - name: 🇩🇪 德国 | DEU 3
   server: 141.147.53.115
   port: 59924
@@ -24,27 +18,18 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: IFvwvrqx26KIutn01x+IDo6chyktXgr2b0UvXNliBzc=
   udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 129.159.15.175
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: IwxNmiHQr4nZQEjxKD8bl/0lbvbZ/HJJbzAkjwnHOkk=
 - name: 🇬🇧 英国 | GBR
   server: 18.170.37.90
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.222.54
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 6
-  server: 144.24.226.15
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: m03E8gi3urOxgrIv7T06vEoae3ctMWTS2XnYst6jJSI=
-  udp: true
 - name: 🇬🇧 英国 | GBR 5
   server: public-auth.savesafe.cc
   port: 443
@@ -59,28 +44,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 8
-  server: 129.151.67.62
+- name: 🇬🇧 英国 | GBR 6
+  server: 144.24.226.15
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: OxtyOVFwJdUQxmuDhQdFaM4osbi2RAT32aXZ1z0PgM4=
+  password: m03E8gi3urOxgrIv7T06vEoae3ctMWTS2XnYst6jJSI=
   udp: true
-- name: 🇬🇧 英国 | GBR 9
-  server: 129.151.75.124
-  port: 61312
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 34.241.245.82
+  port: 443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: TbDsEKY6SRYS4BL5BQVtccFR+k4tD9WSRLEabwzqHlo=
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 157.137.228.225
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇳🇱 荷兰 | NLD 2
   server: 141.148.237.51
   port: 45819
@@ -94,6 +70,13 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: i3rd8p/HM52Cidn3DqOXRvo4BWjKri9B+UkuTyhK0/k=
+  udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
 - name: 🇱🇹 立陶宛 | LTU
   server: lt.superbuba.top
@@ -123,21 +106,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.235.147
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 84.235.163.101
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 158.178.155.37
   port: 45819
@@ -145,46 +113,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 14zduVOpqZOK6iayk+xd34h98ymp6qr2NuJj2xtWXiY=
   udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 161.118.215.233
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: m5LHmfSALidcG/rys3lkmyWVRPeMymkZVm3LbSM4p1g=
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 16
-  server: 158.178.239.69
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2xgDpUvct/rw6f6wfqQ0NeQzZZ9N8PLvCTuRt1OVBhg=
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 19
-  server: 161.118.208.148
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +RVrrYpka8vzDG1IZIHEcuyFSuvRnfpylJWmqh3xGOc=
 - name: 🇹🇭 泰国 | THA
   server: 103.169.67.34
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 17
-  server: 168.107.88.80
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: KprPsjUmgnhkhFSWVMzF4Xzam1HD8C/jpJ+mCAG4YnQ=
   udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 121.46.230.232
@@ -200,28 +134,19 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU
   - 🇬🇧 英国 | GBR
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇬🇧 英国 | GBR 6
   - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 8
-  - 🇬🇧 英国 | GBR 9
-  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇬🇧 英国 | GBR 6
+  - 🇮🇪 爱尔兰 | IRL
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
+  - 🇲🇾 马来西亚 | MYS
   - 🇱🇹 立陶宛 | LTU
   - 🇳🇱 荷兰 | NLD
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 7
-  - 🇲🇾 马来西亚 | MYS
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇸🇬 新加坡 | SGP 16
-  - 🇸🇬 新加坡 | SGP 19
   - 🇹🇭 泰国 | THA
-  - 🇸🇬 新加坡 | SGP 17
   - 🇺🇸 美国 | USA 8
 - name: PROTO-SS
   type: url-test
@@ -229,40 +154,40 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 6
-  - 🇬🇧 英国 | GBR 8
-  - 🇬🇧 英国 | GBR 9
+  - 🇮🇪 爱尔兰 | IRL
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 7
   - 🇲🇾 马来西亚 | MYS
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇸🇬 新加坡 | SGP 16
-  - 🇸🇬 新加坡 | SGP 19
+  - 🇳🇱 荷兰 | NLD 7
   - 🇹🇭 泰国 | THA
-  - 🇸🇬 新加坡 | SGP 17
   - 🇺🇸 美国 | USA 8
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇬🇧 英国 | GBR 5
-  - 🇨🇴 哥伦比亚 | COL 3
   - 🇱🇹 立陶宛 | LTU
   - 🇳🇱 荷兰 | NLD
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇳🇱 荷兰 | NLD 6
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇾 马来西亚 | MYS
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 6
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204

@@ -4,14 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.222.54
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR 5
   server: public-auth.savesafe.cc
   port: 443
@@ -24,14 +16,6 @@ proxies:
     short-id: c37c2ae6f6eb0d71
   servername: public-auth.savesafe.cc
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 157.137.228.225
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
   network: tcp
   udp: true
 - name: 🇱🇹 立陶宛 | LTU
@@ -62,33 +46,14 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.235.147
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 84.235.163.101
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL 2
   - 🇬🇧 英国 | GBR 5
-  - 🇨🇴 哥伦比亚 | COL 3
   - 🇱🇹 立陶宛 | LTU
   - 🇳🇱 荷兰 | NLD
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇳🇱 荷兰 | NLD 6
 rules:
 - MATCH,AUTO
