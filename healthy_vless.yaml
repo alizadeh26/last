@@ -4,38 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 11
-  server: fast.iqiraq.shop
-  port: 443
+- name: 🇧🇷 巴西 | BRA
+  server: 201.24.49.237
+  port: 2200
   type: vless
-  uuid: 5d8fae5f-0427-4da3-99ab-242905fa5c69
-  tls: true
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: qq
+  uuid: af412668-578c-4296-bc8c-8fac6a8d9003
+  tls: false
+  servername: rzd.ru
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: fast.iqiraq.shop
+    path: /v1
   udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: adminv2.jikecloud.cc
-  port: 443
-  type: vless
-  uuid: d896043a-440a-4377-88db-2dac132bc176
-  tls: true
-  servername: adminv2.jikecloud.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: adminv2.jikecloud.cc
-- name: 🇱🇹 立陶宛 | LTU
-  server: lit9.helper-internet.com
+- name: 🇩🇪 德国 | DEU 8
+  server: fin2.helper-internet.com
   port: 443
   type: vless
   uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
@@ -44,29 +25,63 @@ proxies:
   reality-opts:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
     short-id: ff776ff77be48b88
-  servername: lit9.helper-internet.com
+  servername: fin2.helper-internet.com
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 141.148.237.3
-  port: 62145
+- name: 🇫🇷 法国 | FRA 3
+  server: fr2.janusgate.org
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: df880bf8-2635-4a83-a6bf-91bb36df284b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
+    short-id: 6ed1d644822b2951
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 7
+  server: 104.238.174.99
+  port: 24314
+  type: vless
+  uuid: dc40dac7-add2-4e09-b3df-d0c6b39701eb
   tls: false
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD
-  server: 92.5.228.242
+  server: 141.148.225.65
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 10
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 84.235.161.202
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
   server: 162.159.43.187
-  port: 2082
+  port: 80
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 172.64.154.8
+  port: 2095
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -76,30 +91,29 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇸🇬 新加坡 | SGP 24
-  server: admin.jikecloud.cc
-  port: 443
+- name: 🇺🇸 美国 | USA 19
+  server: 188.114.97.6
+  port: 8880
   type: vless
-  uuid: e55fa822-ad91-4133-8dcf-2587aec10baf
-  tls: true
-  servername: admin.jikecloud.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: admin.jikecloud.cc
-- name: 🇺🇸 美国 | USA 28
-  server: update.asshole.eu.cc
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: update.asshole.eu.cc
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: 162.159.0.169
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 proxy-groups:
 - name: AUTO
@@ -107,13 +121,15 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 11
-  - 🇬🇧 英国 | GBR 4
-  - 🇱🇹 立陶宛 | LTU
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇧🇷 巴西 | BRA
+  - 🇩🇪 德国 | DEU 8
+  - 🇫🇷 法国 | FRA 3
+  - 🇬🇧 英国 | GBR 7
   - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP 10
-  - 🇸🇬 新加坡 | SGP 24
-  - 🇺🇸 美国 | USA 28
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 14
 rules:
 - MATCH,AUTO

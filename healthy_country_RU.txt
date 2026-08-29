@@ -1,3 +1,5 @@
-vless://237f91bf-102e-4077-8cc3-baebccb42936@85.198.70.200:14406?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=vk.ru&fp=firefox&flow=xtls-rprx-vision&sid=1a2b3c4d5e6f7a8b&pbk=ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY#🇷🇺 29 - RU - VLESS/REALITY/PBK/SID/VISION/UTLS - 14406
-vless://633f424e-2b11-48da-a6b3-a849dd71456f@45.12.75.242:26424?encryption=none&fp=qq&pbk=l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0&security=reality&sid=23103e1e&sni=ya.ru&type=raw#🇷🇺 144 - RU - VLESS/RAW/REALITY/PBK/SID/UTLS - 26424
-vless://6d60c73d-5915-4cf8-b155-e522dfd863bb@31.128.37.67:16560?encryption=none&security=none&type=raw#🇷🇺 153 - RU - VLESS/RAW - 16560
+vless://155e8dd4-a559-407a-9ea8-13a5e829f066@87.228.122.108:4100?encryption=none&path=/v1&security=none&type=ws#🇷🇺 22 - RU - VLESS/WS - 4100
+vless://633f424e-2b11-48da-a6b3-a849dd71456f@45.12.75.242:26424?encryption=none&fp=qq&pbk=l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0&security=reality&sid=23103e1e&sni=ya.ru&type=raw#🇷🇺 151 - RU - VLESS/RAW/REALITY/PBK/SID/UTLS - 26424
+vless://6d60c73d-5915-4cf8-b155-e522dfd863bb@31.128.37.67:16560?encryption=none&security=none&type=raw#🇷🇺 169 - RU - VLESS/RAW - 16560
+vless://7ee53e03-96ed-4121-9da2-62f3d3374506@185.185.69.26:4100?encryption=none&host=live.ok.ru&path=/v1&security=none&type=ws#🇷🇺 211 - RU - VLESS/WS - 4100
+vless://db7de26b-96d8-452c-8b9d-4a6bf55a7da7@87.249.54.103:4100?path=/v1&security=none&encryption=none&host=live.ok.ru&type=ws#🇷🇺 320 - RU - VLESS/WS - 4100

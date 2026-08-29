@@ -4,20 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 2
-  server: t.cnmjcn.cyou
-  port: 16632
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 130.185.122.177
+  port: 443
   type: vmess
-  uuid: d52b72b0-a509-490a-adae-23da2348d29c
+  uuid: f232d454-b014-4e00-a7ae-430341909db4
   alterId: 0
   cipher: auto
   tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 82d16f3a12ad1d0871e0270510bf2ef6.mobgslb.tbcache.com
+      Host: 130.185.122.177
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +27,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
+  - 🇳🇱 荷兰 | NLD 6
 rules:
 - MATCH,AUTO

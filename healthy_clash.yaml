@@ -4,66 +4,46 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.61.81.43
+- name: 🇩🇪 德国 | DEU
+  server: 130.61.151.8
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: t6L2d1ZjOdzQU4fn680FJUbIrKvpNzDdzNDnU1m1Z4k=
+  password: jsjRco4bpxjDpHTSx9qchaZhbzJtIRTREVFoIKkBJyw=
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: fast.iqiraq.shop
-  port: 443
+- name: 🇧🇷 巴西 | BRA
+  server: 201.24.49.237
+  port: 2200
   type: vless
-  uuid: 5d8fae5f-0427-4da3-99ab-242905fa5c69
-  tls: true
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: qq
+  uuid: af412668-578c-4296-bc8c-8fac6a8d9003
+  tls: false
+  servername: rzd.ru
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: fast.iqiraq.shop
+    path: /v1
   udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: adminv2.jikecloud.cc
-  port: 443
-  type: vless
-  uuid: d896043a-440a-4377-88db-2dac132bc176
-  tls: true
-  servername: adminv2.jikecloud.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: adminv2.jikecloud.cc
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.85.23
-  port: 61312
+- name: 🇩🇪 德国 | DEU 4
+  server: 130.61.226.252
+  port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: IrAOLcmiZJ3pvgUluPeP0O59kPd6FLCTr1thF8LfKXU=
+  password: ygX002qD39oJa1Ijqgpbfc7gN26DYYnuBjuTfsifEV4=
   udp: true
-- name: 🇩🇪 德国 | DEU
+- name: 🇩🇪 德国 | DEU 6
+  server: 130.61.148.71
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: OXzmL1h7BLzI+gF8+61lZtiiltHgo2wphibbeQntWv0=
+- name: 🇩🇪 德国 | DEU 9
   server: 79.76.111.162
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 4DVAG9NsTUzTh92HBVoFkMfiynB9a44tbm2jMaCwL5o=
   udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇱🇹 立陶宛 | LTU
-  server: lit9.helper-internet.com
+- name: 🇩🇪 德国 | DEU 8
+  server: fin2.helper-internet.com
   port: 443
   type: vless
   uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
@@ -72,19 +52,45 @@ proxies:
   reality-opts:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
     short-id: ff776ff77be48b88
-  servername: lit9.helper-internet.com
+  servername: fin2.helper-internet.com
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 141.148.237.3
-  port: 62145
+- name: 🇫🇷 法国 | FRA 3
+  server: fr2.janusgate.org
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: df880bf8-2635-4a83-a6bf-91bb36df284b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
+    short-id: 6ed1d644822b2951
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 18.170.37.90
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 34.244.150.119
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇬🇧 英国 | GBR 7
+  server: 104.238.174.99
+  port: 24314
+  type: vless
+  uuid: dc40dac7-add2-4e09-b3df-d0c6b39701eb
   tls: false
   network: tcp
   udp: true
-- name: 🇰🇷 韩国 | KOR 4
+- name: 🇰🇷 韩国 | KOR 2
   server: 121.46.230.138
   port: 65443
   type: ss
@@ -92,16 +98,81 @@ proxies:
   password: 7eadc6dbe2ae
   udp: true
 - name: 🇳🇱 荷兰 | NLD
-  server: 92.5.228.242
+  server: 141.148.225.65
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 10
+- name: 🇲🇾 马来西亚 | MYS 2
+  server: 118.107.222.231
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 141.148.244.146
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: w5pcVb0VsP2Ze6TbJAXR7ZaofRyoJn5sm0CdhBg78q4=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 134.98.152.41
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: UlfvIBf12IBr8/iIjOCIMSar5r/qUNIIQr+ht5hMnJw=
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 84.235.161.202
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 130.185.122.177
+  port: 443
+  type: vmess
+  uuid: f232d454-b014-4e00-a7ae-430341909db4
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 130.185.122.177
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
   server: 162.159.43.187
-  port: 2082
+  port: 80
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 129.146.60.116
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: xDEXXhNhDE1+LUHo1bMUnTwFqgPX3i7cpDX+hUx+dRg=
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 172.64.154.8
+  port: 2095
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -111,51 +182,50 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 135.106.194.88
-  port: 140
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: iibqDfY-xDEyF0J8ntYH28gLob2ycGgy
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 24
-  server: admin.jikecloud.cc
-  port: 443
+- name: 🇺🇸 美国 | USA 19
+  server: 188.114.97.6
+  port: 8880
   type: vless
-  uuid: e55fa822-ad91-4133-8dcf-2587aec10baf
-  tls: true
-  servername: admin.jikecloud.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: admin.jikecloud.cc
-- name: 🇺🇸 美国 | USA 18
-  server: 129.146.127.111
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: IAaq/dxoRe2IQqHLE2jF0+o1l54hnnu5/wf3KBwri/k=
-  udp: true
-- name: 🇺🇸 美国 | USA 28
-  server: update.asshole.eu.cc
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: update.asshole.eu.cc
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 129.146.79.168
+- name: 🇺🇸 美国 | USA 26
+  server: 129.146.63.242
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 5zQYEH/taJ/IGKB9jxn8ljEFZ2TB3vemTfYsGN4jCmY=
+  password: OHUY7QDL4f3zNO6d95hzLn2pF++yYLAzwJMdTtZDYvY=
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: 162.159.0.169
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: 121.46.230.232
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: 121.46.230.233
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
 proxy-groups:
 - name: AUTO
@@ -163,63 +233,70 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 11
-  - 🇬🇧 英国 | GBR 4
-  - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU
-  - 🇲🇾 马来西亚 | MYS
-  - 🇱🇹 立陶宛 | LTU
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇰🇷 韩国 | KOR 4
+  - 🇧🇷 巴西 | BRA
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 8
+  - 🇫🇷 法国 | FRA 3
+  - 🇬🇧 英国 | GBR
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇬🇧 英国 | GBR 7
+  - 🇰🇷 韩国 | KOR 2
   - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP 10
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇸🇬 新加坡 | SGP 24
+  - 🇲🇾 马来西亚 | MYS 2
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 17
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU
-  - 🇲🇾 马来西亚 | MYS
-  - 🇰🇷 韩国 | KOR 4
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 9
+  - 🇬🇧 英国 | GBR
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇰🇷 韩国 | KOR 2
+  - 🇲🇾 马来西亚 | MYS 2
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 17
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 11
-  - 🇬🇧 英国 | GBR 4
-  - 🇱🇹 立陶宛 | LTU
+  - 🇧🇷 巴西 | BRA
+  - 🇩🇪 德国 | DEU 8
+  - 🇫🇷 法国 | FRA 3
+  - 🇬🇧 英国 | GBR 7
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 14
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP 10
-  - 🇸🇬 新加坡 | SGP 24
-  - 🇺🇸 美国 | USA 28
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU
-  - 🇳🇱 荷兰 | NLD
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR 4
-  - 🇸🇬 新加坡 | SGP 24
 rules:
 - MATCH,AUTO
