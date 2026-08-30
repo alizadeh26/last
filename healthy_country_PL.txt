@@ -2,13 +2,12 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@54.36.174.134:443#Server 33 🇵�
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjVEFPYndnNE9XV1hrWkpRczBaZGdD@31.76.82.131:34260#Server 65 🇩🇪
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@54.36.174.140:443#Server 89 🇵🇱
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVOVlBb3FCZ2c1VnlHQmM2dlF2MXNO@194.61.121.93:7538#Server 112 🇵🇱
-vless://5d8eb33a-2166-4daf-88fe-4be5799c493b@141.101.120.73:443?encryption=none&security=tls&sni=noisy-term-e657.airdrop2014aa5168.workers.dev&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=noisy-term-e657.airdrop2014aa5168.workers.dev&path=/#🇺🇸 700 - US - VLESS/WS/TLS/UTLS - 443
-vless://5e7ecc47-e424-4653-876e-c7515a2c82b4@94.183.209.43:443?encryption=none&path=/&security=none&type=ws#🇩🇪 714 - DE - VLESS/WS - 443
-vless://7061b26c-0f6c-49b5-be42-af2c011c04bc@54.37.136.194:2053?type=tcp&security=reality&encryption=none&fp=firefox&pbk=TtGgrgk1OLMjWBaomJ1JkUOvmtMx7sLJdvvN0bxmZF8&sid=bdc1efeb01044e93&sni=www.apple.com#🇵🇱 844 - PL - VLESS/REALITY/PBK/SID/UTLS - 2053
-vless://758f49d3-5f5f-47e7-bfa4-4ce96faf800d@2.26.224.91:8443?encryption=none&fp=firefox&pbk=NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU&security=reality&sid=f747a7a5793b5714&sni=cdn.shopify.com&type=grpc#🇵🇱 925 - PL - VLESS/GRPC/REALITY/PBK/SID/UTLS - 8443
-vless://78791f9e-fe09-4d4f-88ec-895764bae0d6@94.183.209.58:443?security=none&type=ws&path=/&host=pl2.lckdwn.ru&packetEncoding=xudp#🇩🇪 964 - DE - VLESS/WS - 443
-vless://851b2819-b359-40bc-ad61-a5d41027be2c@150.251.114.43:443?encryption=none&path=/vless&security=none&type=ws#🇵🇱 1057 - PL - VLESS/WS - 443
-vless://8787dd0a-095a-414e-804f-a7d16a1ae166@2.26.255.36:8443?type=tcp&security=tls&encryption=none&flow=xtls-rprx-vision&fp=firefox&sni=po1.hys.braidx.tech#🇺🇸 1077 - US - VLESS/TLS/VISION/UTLS - 8443
-vless://98673856-cd6f-4aa0-b2c9-d2ec90c0f47b@151.243.182.249:443?encryption=none&path=/&security=none&type=ws#🇵🇱 1214 - PL - VLESS/WS - 443
-vless://a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a@tg.riotvpn.eu:443?security=reality&encryption=none&pbk=8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho&headerType=none&fp=chrome&type=tcp&sni=ads.x5.ru&sid=2f49bccf11150ef2#🇵🇱 1271 - PL - VLESS/REALITY/PBK/SID/UTLS - 443
-vless://f798a2c4-c51b-409d-b349-ca8455b36796@chopin.adaspoloandco.com:8443?security=tls&type=ws&path=/download.php&fp=qq#🇵🇱 1864 - PL - VLESS/WS/TLS/UTLS - 8443
+vless://5e7ecc47-e424-4653-876e-c7515a2c82b4@94.183.209.43:443?encryption=none&path=/&security=none&type=ws#🇩🇪 666 - DE - VLESS/WS - 443
+vless://7061b26c-0f6c-49b5-be42-af2c011c04bc@54.37.136.194:2053?type=tcp&security=reality&encryption=none&fp=firefox&pbk=TtGgrgk1OLMjWBaomJ1JkUOvmtMx7sLJdvvN0bxmZF8&sid=bdc1efeb01044e93&sni=www.apple.com#🇵🇱 790 - PL - VLESS/REALITY/PBK/SID/UTLS - 2053
+vless://758f49d3-5f5f-47e7-bfa4-4ce96faf800d@2.26.224.91:8443?encryption=none&fp=firefox&pbk=NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU&security=reality&sid=f747a7a5793b5714&sni=cdn.shopify.com&type=grpc#🇵🇱 868 - PL - VLESS/GRPC/REALITY/PBK/SID/UTLS - 8443
+vless://78791f9e-fe09-4d4f-88ec-895764bae0d6@94.183.209.58:443?security=none&type=ws&path=/&host=pl2.lckdwn.ru&packetEncoding=xudp#🇩🇪 907 - DE - VLESS/WS - 443
+vless://851b2819-b359-40bc-ad61-a5d41027be2c@150.251.114.43:443?encryption=none&path=/vless&security=none&type=ws#🇵🇱 994 - PL - VLESS/WS - 443
+vless://8787dd0a-095a-414e-804f-a7d16a1ae166@2.26.255.36:8443?type=tcp&security=tls&encryption=none&flow=xtls-rprx-vision&fp=firefox&sni=po1.hys.braidx.tech#🇺🇸 1016 - US - VLESS/TLS/VISION/UTLS - 8443
+vless://98673856-cd6f-4aa0-b2c9-d2ec90c0f47b@151.243.182.249:443?encryption=none&path=/&security=none&type=ws#🇵🇱 1135 - PL - VLESS/WS - 443
+vless://a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a@tg.riotvpn.eu:443?security=reality&encryption=none&pbk=8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho&headerType=none&fp=chrome&type=tcp&sni=ads.x5.ru&sid=2f49bccf11150ef2#🇵🇱 1175 - PL - VLESS/REALITY/PBK/SID/UTLS - 443
+vless://f798a2c4-c51b-409d-b349-ca8455b36796@chopin.adaspoloandco.com:8443?security=tls&type=ws&path=/download.php&sni=chopin.adaspoloandco.com&fp=qq#🇵🇱 1720 - PL - VLESS/WS/TLS/UTLS - 8443

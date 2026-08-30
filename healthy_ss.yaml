@@ -4,59 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: 144.22.210.207
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bJqLdTAJymgdGwNASsjxuR4N7THATrNjW/6mZv77qRw=
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 129.159.15.175
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: IwxNmiHQr4nZQEjxKD8bl/0lbvbZ/HJJbzAkjwnHOkk=
-- name: 🇩🇪 德国 | DEU 3
-  server: 141.147.53.115
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: IFvwvrqx26KIutn01x+IDo6chyktXgr2b0UvXNliBzc=
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 18.170.37.90
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇮🇪 爱尔兰 | IRL
-  server: 34.241.245.82
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 141.148.237.51
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 141.148.239.62
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: Bq7fNTetsKxZR/aGO54gR4+Dac67uZ+YYRnIWuHGIo4=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 158.178.155.37
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 14zduVOpqZOK6iayk+xd34h98ymp6qr2NuJj2xtWXiY=
-  udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
+  password: 7vDcApvjEM/BKjaxYQLBjym80MGCi6eJ8jkfoY+6bUs=
 - name: 🇹🇭 泰国 | THA
   server: 103.169.67.34
   port: 65443
@@ -64,8 +17,15 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 121.46.230.232
+- name: 🇫🇷 法国 | FRA 13
+  server: 95.170.13.47
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 121.46.230.233
   port: 65443
   type: ss
   cipher: aes-256-cfb
@@ -77,15 +37,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
-  - 🇬🇧 英国 | GBR
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇲🇾 马来西亚 | MYS
+  - 🇳🇱 荷兰 | NLD 3
   - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 8
+  - 🇫🇷 法国 | FRA 13
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
