@@ -11,6 +11,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: bJqLdTAJymgdGwNASsjxuR4N7THATrNjW/6mZv77qRw=
   udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 129.159.15.175
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: IwxNmiHQr4nZQEjxKD8bl/0lbvbZ/HJJbzAkjwnHOkk=
 - name: 🇩🇪 德国 | DEU 3
   server: 141.147.53.115
   port: 59924
@@ -18,12 +24,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: IFvwvrqx26KIutn01x+IDo6chyktXgr2b0UvXNliBzc=
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 129.159.15.175
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: IwxNmiHQr4nZQEjxKD8bl/0lbvbZ/HJJbzAkjwnHOkk=
 - name: 🇬🇧 英国 | GBR
   server: 18.170.37.90
   port: 443
@@ -44,13 +44,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 6
-  server: 144.24.226.15
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: m03E8gi3urOxgrIv7T06vEoae3ctMWTS2XnYst6jJSI=
-  udp: true
 - name: 🇮🇪 爱尔兰 | IRL
   server: 34.241.245.82
   port: 443
@@ -63,34 +56,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: Bq7fNTetsKxZR/aGO54gR4+Dac67uZ+YYRnIWuHGIo4=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 141.148.242.123
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: i3rd8p/HM52Cidn3DqOXRvo4BWjKri9B+UkuTyhK0/k=
-  udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇱🇹 立陶宛 | LTU
-  server: lt.superbuba.top
-  port: 443
-  type: vless
-  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
-    short-id: 4fa44664f6a566d3
-  servername: lt.superbuba.top
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: nl.superbuba.top
@@ -106,12 +71,33 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇱🇹 立陶宛 | LTU
+  server: lt.superbuba.top
+  port: 443
+  type: vless
+  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  servername: lt.superbuba.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 158.178.155.37
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 14zduVOpqZOK6iayk+xd34h98ymp6qr2NuJj2xtWXiY=
+  udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
 - name: 🇹🇭 泰国 | THA
   server: 103.169.67.34
@@ -134,18 +120,16 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 6
   - 🇮🇪 爱尔兰 | IRL
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇲🇾 马来西亚 | MYS
-  - 🇱🇹 立陶宛 | LTU
   - 🇳🇱 荷兰 | NLD
+  - 🇱🇹 立陶宛 | LTU
   - 🇳🇱 荷兰 | NLD 7
+  - 🇲🇾 马来西亚 | MYS
   - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 8
 - name: PROTO-SS
@@ -154,15 +138,13 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
   - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 6
   - 🇮🇪 爱尔兰 | IRL
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇲🇾 马来西亚 | MYS
   - 🇳🇱 荷兰 | NLD 7
+  - 🇲🇾 马来西亚 | MYS
   - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 8
 - name: PROTO-VLESS
@@ -171,28 +153,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR 5
-  - 🇱🇹 立陶宛 | LTU
   - 🇳🇱 荷兰 | NLD
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇲🇾 马来西亚 | MYS
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 6
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇧🇷 巴西 | BRA
+  - 🇱🇹 立陶宛 | LTU
 rules:
 - MATCH,AUTO
