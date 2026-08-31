@@ -4,14 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.179.13
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 91.107.242.197
   port: 51815
@@ -20,12 +12,13 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 89.168.83.14
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 0yzaYXEBbvQSJurLwkByo3Yjq+/wVZto1Oo9V4z3i+E=
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.179.13
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: germany.superbuba.top
@@ -47,63 +40,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇭🇰 香港 | HKG 2
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 8ed52c4d-1fe1-4c08-b46f-ca8eb2729cb9
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f406e32143bc023a8819a6335733f851.mobgslb.tbcache.com
-- name: 🇭🇰 香港 | HKG 3
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 0f2a8df7-6119-496d-aef8-45ff837cf9ec
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 236be42fc5d210917a1ecf890328e104.mobgslb.tbcache.com
-- name: 🇸🇬 新加坡 | SGP 6
-  server: free-server.techsonic.dev
-  port: 443
-  type: vless
-  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
-  tls: true
-  servername: aka.ms
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 129.146.27.138
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: JsNI5ZMcbBpm0Ym1Li12sF47K1R3CvcWF8orVn+p1Ds=
-- name: 🇺🇸 美国 | USA
-  server: 162.159.43.187
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: 213.35.118.140
   port: 56927
@@ -122,61 +58,91 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 158.178.145.2
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+- name: 🇭🇰 香港 | HKG 2
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 8ed52c4d-1fe1-4c08-b46f-ca8eb2729cb9
+  alterId: 0
+  cipher: auto
   tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f406e32143bc023a8819a6335733f851.mobgslb.tbcache.com
+- name: 🇸🇬 新加坡 | SGP 6
+  server: free-server.techsonic.dev
+  port: 443
+  type: vless
+  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
+  tls: true
+  servername: aka.ms
+  client-fingerprint: chrome
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 92.5.237.51
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9P2nkEFxZJq7TRwKtLLRH7H8kOiTHJ4N4feRiPxAZlo=
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 0f2a8df7-6119-496d-aef8-45ff837cf9ec
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 236be42fc5d210917a1ecf890328e104.mobgslb.tbcache.com
+- name: 🇺🇸 美国 | USA
+  server: 162.159.43.187
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 9
+  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 3
   - 🇳🇱 荷兰 | NLD
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 3
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA
   - 🇸🇬 新加坡 | SGP 2
   - 🇸🇬 新加坡 | SGP 7
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇭🇰 香港 | HKG 2
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇭🇰 香港 | HKG 3
+  - 🇺🇸 美国 | USA
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
-  - 🇺🇸 美国 | USA 10
   - 🇸🇬 新加坡 | SGP 2
-  - 🇳🇱 荷兰 | NLD 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 2
+  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 3
   - 🇳🇱 荷兰 | NLD
+  - 🇸🇬 新加坡 | SGP 7
   - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA
-  - 🇸🇬 新加坡 | SGP 7
-  - 🇳🇱 荷兰 | NLD 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -190,13 +156,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 9
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 3
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204

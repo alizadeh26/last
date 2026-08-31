@@ -4,19 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.179.13
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 91.107.242.197
   port: 51815
   type: vless
   uuid: f7e8a87f-e472-4fca-a393-fb9cc5b5dfa9
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.179.13
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
@@ -40,6 +40,18 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+- name: 🇸🇬 新加坡 | SGP 7
+  server: 162.159.43.187
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 6
   server: free-server.techsonic.dev
   port: 443
@@ -63,38 +75,18 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 162.159.43.187
-  port: 8880
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 158.178.145.2
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 2
+  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 3
   - 🇳🇱 荷兰 | NLD
+  - 🇸🇬 新加坡 | SGP 7
   - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA
-  - 🇸🇬 新加坡 | SGP 7
-  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO

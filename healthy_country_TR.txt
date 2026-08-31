@@ -1,1 +1,4 @@
-vless://52b1aca9-a2ba-4249-9e9f-d488f89c1445@151.241.226.201:2053?type=tcp&security=reality&encryption=none&fp=firefox&pbk=dUFJ3jZPMH9WvjtAnUc9wYhO_IX1czIi-CidF_HdFDA&sid=c267be657e1539ea&sni=www.apple.com#🏳️ 821 - XX - VLESS/REALITY/PBK/SID/UTLS - 2053
+vless://52b1aca9-a2ba-4249-9e9f-d488f89c1445@151.241.226.201:2053?type=tcp&security=reality&encryption=none&fp=firefox&pbk=dUFJ3jZPMH9WvjtAnUc9wYhO_IX1czIi-CidF_HdFDA&sid=c267be657e1539ea&sni=www.apple.com#🇹🇷 780 - TR - VLESS/REALITY/PBK/SID/UTLS - 2053
+vless://5626ce32-dad0-468b-952c-e53d609100f1@212.87.199.122:58416?encryption=none&packetEncoding=xudp#🏳️ 798 - XX - VLESS - 58416
+vless://78eb4455-0d07-4bc2-93e3-7c8654f11d74@185.123.100.56:8443?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.apple.com&fp=firefox&security=reality&pbk=EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8#🇹🇷 1234 - TR - VLESS/REALITY/PBK/VISION/UTLS - 8443
+vless://bfb3f06c-e33f-41ac-b101-012c8325a689@amator.mrgang.shop:8082?encryption=none&security=none&type=tcp&headerType=none#🏳️ 1810 - XX - VLESS - 8082
