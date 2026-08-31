@@ -4,42 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 141.148.239.62
-  port: 45819
+- name: 🇩🇪 德国 | DEU 4
+  server: 138.2.161.254
+  port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 7vDcApvjEM/BKjaxYQLBjym80MGCi6eJ8jkfoY+6bUs=
-- name: 🇹🇭 泰国 | THA
-  server: 103.169.67.34
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇫🇷 法国 | FRA 13
-  server: 95.170.13.47
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 121.46.230.233
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
+  password: 1XTdzbvLts9QsSGsu6VgI1Vu65EFYaQurcuu3vlt/ak=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇹🇭 泰国 | THA
-  - 🇫🇷 法国 | FRA 13
-  - 🇺🇸 美国 | USA 10
+  - 🇩🇪 德国 | DEU 4
 rules:
 - MATCH,AUTO

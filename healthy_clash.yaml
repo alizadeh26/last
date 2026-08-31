@@ -4,7 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 9
+- name: 🇩🇪 德国 | DEU 4
+  server: 138.2.161.254
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1XTdzbvLts9QsSGsu6VgI1Vu65EFYaQurcuu3vlt/ak=
+- name: 🇩🇪 德国 | DEU 14
   server: germany.superbuba.top
   port: 443
   type: vless
@@ -17,95 +23,54 @@ proxies:
   servername: germany.superbuba.top
   client-fingerprint: firefox
   network: tcp
-- name: 🇩🇪 德国 | DEU 5
-  server: rrr.windconnect.pro
+- name: 🇩🇪 德国 | DEU 11
+  server: fin2.helper-internet.com
   port: 443
   type: vless
-  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30
-    short-id: 4da5d1853f04af6d
-  servername: rrr.windconnect.pro
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: fin2.helper-internet.com
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 141.148.239.62
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7vDcApvjEM/BKjaxYQLBjym80MGCi6eJ8jkfoY+6bUs=
-- name: 🇸🇬 新加坡 | SGP 8
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-lab-91a6.54-8c3.workers.dev
-  udp: true
-- name: 🇮🇷 伊朗 | IRN
-  server: 185.143.233.5
-  port: 80
-  type: vless
-  uuid: 38dd06a1-e1cb-492b-bb87-218ce05d0d67
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 103.169.67.34
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇫🇷 法国 | FRA 13
-  server: 95.170.13.47
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 172.64.144.180
-  port: 8880
-  type: vless
-  uuid: e9d9f06f-d5dd-460a-998f-52efc4732636
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: bitter-meadow-1d60.313-0f9.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 36
-  server: 172.64.229.2
-  port: 2086
+  server: 162.159.43.187
+  port: 2082
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 121.46.230.233
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+- name: 🇹🇭 泰国 | THA
+  server: 18.239.134.69
+  port: 80
+  type: vless
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  udp: true
+- name: 🇺🇸 美国 | USA 33
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-tree-3dbf.285.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -113,35 +78,34 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 5
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇮🇷 伊朗 | IRN
-  - 🇹🇭 泰国 | THA
-  - 🇫🇷 法国 | FRA 13
-  - 🇺🇸 美国 | USA 17
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 11
   - 🇺🇸 美国 | USA 36
-  - 🇺🇸 美国 | USA 10
+  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 33
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇹🇭 泰国 | THA
-  - 🇫🇷 法国 | FRA 13
-  - 🇺🇸 美国 | USA 10
+  - 🇩🇪 德国 | DEU 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 5
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇮🇷 伊朗 | IRN
-  - 🇺🇸 美国 | USA 17
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 11
   - 🇺🇸 美国 | USA 36
+  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 33
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 11
 rules:
 - MATCH,AUTO
