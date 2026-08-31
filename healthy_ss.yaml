@@ -4,18 +4,40 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: 138.2.161.254
+- name: 🇩🇪 德国 | DEU 9
+  server: 89.168.83.14
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 1XTdzbvLts9QsSGsu6VgI1Vu65EFYaQurcuu3vlt/ak=
+  password: 0yzaYXEBbvQSJurLwkByo3Yjq+/wVZto1Oo9V4z3i+E=
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 129.146.27.138
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JsNI5ZMcbBpm0Ym1Li12sF47K1R3CvcWF8orVn+p1Ds=
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 213.35.118.140
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: QBlUmYJVDFiaz6ug+SYat6dnNH0irhfF26JGEv+axh4=
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 92.5.237.51
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9P2nkEFxZJq7TRwKtLLRH7H8kOiTHJ4N4feRiPxAZlo=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 9
+  - 🇺🇸 美国 | USA 10
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO

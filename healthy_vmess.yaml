@@ -4,29 +4,41 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 130.185.122.177
-  port: 443
+- name: 🇭🇰 香港 | HKG 2
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
   type: vmess
-  uuid: f232d454-b014-4e00-a7ae-430341909db4
+  uuid: 8ed52c4d-1fe1-4c08-b46f-ca8eb2729cb9
   alterId: 0
   cipher: auto
   tls: false
-  alpn:
-  - ''
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 130.185.122.177
-  udp: true
+      Host: f406e32143bc023a8819a6335733f851.mobgslb.tbcache.com
+- name: 🇭🇰 香港 | HKG 3
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 0f2a8df7-6119-496d-aef8-45ff837cf9ec
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 236be42fc5d210917a1ecf890328e104.mobgslb.tbcache.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 3
 rules:
 - MATCH,AUTO
