@@ -4,110 +4,136 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 91.107.242.197
-  port: 51815
-  type: vless
-  uuid: f7e8a87f-e472-4fca-a393-fb9cc5b5dfa9
-  tls: false
-  network: tcp
+- name: 🇨🇦 加拿大 | CAN
+  server: 3.96.124.46
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.179.13
-  port: 62145
+- name: 🇩🇪 德国 | DEU
+  server: 188.220.67.224
+  port: 2087
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
   udp: true
 - name: 🇩🇪 德国 | DEU 3
-  server: germany.superbuba.top
-  port: 443
+  server: 188.220.67.245
+  port: 2087
   type: vless
-  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  tls: false
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: ar.shotorfree.shop
+  port: 17476
+  type: vless
+  uuid: 37f80d6d-53d8-4c12-8ea3-7a6889a921b2
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: 212.192.15.178
+  port: 20210
+  type: ss
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 172.67.155.136
+  port: 2086
+  type: vless
+  uuid: 73796e63-0000-4000-8000-000000000007
+  tls: false
+  servername: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16622
+  type: vmess
+  uuid: 2498a366-dd3c-4f0b-832c-f2df12f7ee27
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 791f9b5b1318471268a2dc21098376cc.mobgslb.tbcache.com
+- name: 🇸🇪 瑞典 | SWE 3
+  server: get4s.skystreamgame.com
+  port: 8443
+  type: vless
+  uuid: 2569614f-879b-43de-9cd9-9bb304b68856
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
-    short-id: 4fa44664f6a566d3
-  servername: germany.superbuba.top
+    public-key: QHkXBS2ENHV0khgY9VBYi8_9bpfqnUYDcfQN4cW5Qg0
+    short-id: '4326'
+  servername: get4s.skystreamgame.com
   client-fingerprint: firefox
   network: tcp
-- name: 🇳🇱 荷兰 | NLD
-  server: 158.178.147.174
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 213.35.118.140
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: QBlUmYJVDFiaz6ug+SYat6dnNH0irhfF26JGEv+axh4=
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 162.159.43.187
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: 198.71.190.2
   port: 8880
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
   tls: false
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /pyip=Telegram🇨🇳 @WangCai2
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: old-violet-a5ce.29-440.workers.dev
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 8ed52c4d-1fe1-4c08-b46f-ca8eb2729cb9
-  alterId: 0
-  cipher: auto
+- name: 🇺🇸 美国 | USA 12
+  server: 166.62.109.2
+  port: 8880
+  type: vless
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
   tls: false
-  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳 @WangCai2
+    headers:
+      Host: old-violet-a5ce.29-440.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 208.103.161.249
+  port: 80
+  type: vless
+  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: f406e32143bc023a8819a6335733f851.mobgslb.tbcache.com
-- name: 🇸🇬 新加坡 | SGP 6
-  server: free-server.techsonic.dev
-  port: 443
-  type: vless
-  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
-  tls: true
-  servername: aka.ms
-  client-fingerprint: chrome
-  network: tcp
+      Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
   udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 0f2a8df7-6119-496d-aef8-45ff837cf9ec
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 236be42fc5d210917a1ecf890328e104.mobgslb.tbcache.com
-- name: 🇺🇸 美国 | USA
-  server: 162.159.43.187
-  port: 8080
+- name: 🇺🇸 美国 | USA 7
+  server: codecanyon.net
+  port: 8880
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
   tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: weathered-union-5358.101-262.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -115,52 +141,44 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇩🇪 德国 | DEU 8
   - 🇭🇰 香港 | HKG 2
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇭🇰 香港 | HKG 3
-  - 🇺🇸 美国 | USA
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇭🇰 香港 | HKG 4
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇨🇦 加拿大 | CAN
+  - 🇭🇰 香港 | HKG 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP 7
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU 8
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 7
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 3
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 2
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇴 哥伦比亚 | COL
+  - 🇭🇰 香港 | HKG 4
 rules:
 - MATCH,AUTO

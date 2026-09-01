@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 2
+- name: 🇭🇰 香港 | HKG 4
   server: planb.mojcn.com.linuxlh.xin
-  port: 16632
+  port: 16622
   type: vmess
-  uuid: 8ed52c4d-1fe1-4c08-b46f-ca8eb2729cb9
+  uuid: 2498a366-dd3c-4f0b-832c-f2df12f7ee27
   alterId: 0
   cipher: auto
   tls: false
@@ -17,28 +17,13 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: f406e32143bc023a8819a6335733f851.mobgslb.tbcache.com
-- name: 🇭🇰 香港 | HKG 3
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 0f2a8df7-6119-496d-aef8-45ff837cf9ec
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 236be42fc5d210917a1ecf890328e104.mobgslb.tbcache.com
+      Host: 791f9b5b1318471268a2dc21098376cc.mobgslb.tbcache.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 4
 rules:
 - MATCH,AUTO
