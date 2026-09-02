@@ -11,9 +11,9 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 162.159.0.169
-  port: 2095
+- name: 🇺🇸 美国 | USA
+  server: 172.64.42.85
+  port: 8080
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -37,9 +37,9 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 172.64.42.85
-  port: 8080
+- name: 🇺🇸 美国 | USA 3
+  server: 162.159.0.169
+  port: 2095
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -75,13 +75,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 158.178.156.51
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -89,12 +82,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇫🇷 法国 | FRA
-  - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 11
-  - 🇳🇱 荷兰 | NLD
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -106,11 +98,23 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 11
-  - 🇳🇱 荷兰 | NLD
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇷 法国 | FRA
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
