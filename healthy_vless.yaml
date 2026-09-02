@@ -4,26 +4,88 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: korgivps.ru
-  port: 8443
+- name: 🇺🇸 美国 | USA 3
+  server: 162.159.0.169
+  port: 2095
   type: vless
-  uuid: e8e502bd-8c9e-4261-a020-7f7d41cc3c05
-  tls: true
-  servername: korgivps.ru
-  client-fingerprint: qq
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /api/user
+    path: /?ed=2560security=tls
     headers:
-      Host: korgivps.ru
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: 162.159.43.187
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 172.64.42.85
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: us6.lunariai.ru
+  port: 443
+  type: vless
+  uuid: 170e1be8-e51b-4a82-a779-3ad27b78607c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us6.lunariai.ru
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 172.64.42.85
+  port: 80
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 158.178.156.51
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
+  - 🇺🇸 美国 | USA 3
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 11
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO

@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇹🇭 泰国 | THA 2
-  server: 103.169.67.34
+- name: 🇫🇷 法国 | FRA
+  server: 95.170.13.47
   port: 65443
   type: ss
   cipher: aes-256-cfb
@@ -17,6 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 | THA 2
+  - 🇫🇷 法国 | FRA
 rules:
 - MATCH,AUTO
