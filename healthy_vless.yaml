@@ -4,40 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.234.36
-  port: 62145
+- name: 🇩🇪 德国 | DEU
+  server: korgivps.ru
+  port: 8443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇩🇪 德国 | DEU 3
-  server: 188.220.67.140
-  port: 2087
-  type: vless
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
-  tls: false
+  uuid: e8e502bd-8c9e-4261-a020-7f7d41cc3c05
+  tls: true
+  servername: korgivps.ru
+  client-fingerprint: qq
   network: ws
   ws-opts:
-    path: /8f2690e2d016
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.216.90
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇺🇸 美国 | USA 18
-  server: 40.160.69.180
-  port: 8080
-  type: vless
-  uuid: 11af1c47-865a-47c6-92ff-118013655d78
-  tls: false
-  servername: 40.160.69.180
-  network: ws
-  ws-opts:
-    path: /
+    path: /api/user
+    headers:
+      Host: korgivps.ru
   udp: true
 proxy-groups:
 - name: AUTO
@@ -45,9 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 3
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇺🇸 美国 | USA 18
+  - 🇩🇪 德国 | DEU
 rules:
 - MATCH,AUTO
