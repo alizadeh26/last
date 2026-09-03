@@ -1,2 +1,5 @@
 vless://06c4e938-2954-478f-a870-ca1b163e30e9@94.183.170.135:443?encryption=none&host=estproxy4.lockdwn.com&path=%2F&security=none&type=ws#EE🇪🇪
-trojan://humanity@80.77.25.142:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇪🇪 3525 - EE - Trojan/WS/TLS - 443
+vless://06c4e938-2954-478f-a870-ca1b163e30e9@94.183.170.135:8443?type=tcp&security=tls&encryption=none&fp=firefox&sni=estproxy4.lockdwn.com#🏳️ 43 - XX - VLESS/TLS/UTLS - 8443
+vless://06c4e938-2954-478f-a870-ca1b163e30e9@estproxy4.lockdwn.com:8443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&alpn=h2,http/1.1&fp=edge&security=tls#🇪🇪 45 - EE - VLESS/TLS/UTLS - 8443
+vless://9d9e3421-5652-4804-85ba-238355b948ab@94.183.170.248:8443?alpn=h2,http/1.1&encryption=none&fp=firefox&security=tls&sni=estproxy3.lockdwn.com&type=tcp#🇪🇪 1234 - EE - VLESS/TLS/UTLS - 8443
+vless://9d9e3421-5652-4804-85ba-238355b948ab@estproxy3.lockdwn.com:443?type=ws#🇪🇪 1235 - EE - VLESS/WS - 443
