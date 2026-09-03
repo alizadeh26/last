@@ -11,6 +11,16 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 163.8.195.241
+  port: 2087
+  type: vless
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  tls: false
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
+  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 129.151.67.155
   port: 61312
@@ -23,6 +33,16 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: B2fwo8FnMvOLaNLVDYYbMa5oXBejTe5GvPFJhldAyF0=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 178.95.170.83
+  port: 2087
+  type: vless
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
   udp: true
 - name: 🇨🇳 CN_13
   server: 121.46.230.233
@@ -44,21 +64,17 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: minimize-evenness.cdn-content.com
-  port: 443
+- name: 🇹🇷 土耳其 | TUR 2
+  server: y347t3784gfh478f4.tr.snapeurop.com
+  port: 666
   type: vless
-  uuid: 9760fa51-423f-4000-9dd8-15eccf811982
-  tls: true
-  alpn:
-  - http/1.1
-  servername: minimize-evenness.cdn-content.com
-  client-fingerprint: chrome
+  uuid: a17be1ef-d5bc-41a1-aeac-b02345823f07
+  tls: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: minimize-evenness.cdn-content.com
+      Host: ads.mohsen3.ir
   udp: true
 - name: 🇭🇰 香港 | HKG 4
   server: 207.174.133.163
@@ -68,16 +84,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 178.95.170.83
-  port: 2087
-  type: vless
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-  tls: false
-  network: ws
-  ws-opts:
-    path: /4bc027a44532
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -85,13 +91,14 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇫🇷 法国 | FRA
+  - 🇩🇪 德国 | DEU 5
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 6
+  - 🇳🇱 荷兰 | NLD 2
   - 🇨🇳 CN_13
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 3
+  - 🇹🇷 土耳其 | TUR 2
   - 🇭🇰 香港 | HKG 4
-  - 🇳🇱 荷兰 | NLD 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -106,15 +113,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 3
-  - 🇭🇰 香港 | HKG 4
+  - 🇩🇪 德国 | DEU 5
   - 🇳🇱 荷兰 | NLD 2
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇹🇷 土耳其 | TUR 2
   - 🇭🇰 香港 | HKG 4
 - name: REGION-EU
   type: url-test
@@ -122,6 +124,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇫🇷 法国 | FRA
-  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 5
 rules:
 - MATCH,AUTO
