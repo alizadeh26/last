@@ -4,69 +4,57 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
-  server: 172.64.42.85
-  port: 8080
+- name: 🇩🇪 德国 | DEU 2
+  server: 212.43.158.62
+  port: 545
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 6cbc63c1-97de-4460-847c-7fd7bdda3fa6
   tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 188.220.67.245
+  port: 2087
+  type: vless
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  tls: false
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /8f2690e2d016
   udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 162.159.43.187
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 162.159.0.169
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: us6.lunariai.ru
+- name: 🇺🇸 美国 | USA 22
+  server: adheres-scruple.quick-cdn.net
   port: 443
   type: vless
-  uuid: 170e1be8-e51b-4a82-a779-3ad27b78607c
-  tls: false
+  uuid: 8a9b898d-5658-4f77-9fe9-5ff5b61fa107
+  tls: true
+  alpn:
+  - http/1.1
+  servername: adheres-scruple.quick-cdn.net
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: us6.lunariai.ru
+      Host: adheres-scruple.quick-cdn.net
   udp: true
 - name: 🇺🇸 美国 | USA 11
-  server: 172.64.42.85
-  port: 80
+  server: 212.43.158.62
+  port: 196
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 6cbc63c1-97de-4460-847c-7fd7bdda3fa6
   tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 201.24.51.241
+  port: 4100
+  type: vless
+  uuid: 5181e3af-4a0c-47d7-8beb-7e4fa4786cdd
+  tls: false
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /v1
   udp: true
 proxy-groups:
 - name: AUTO
@@ -74,10 +62,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 8
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 5
+  - 🇺🇸 美国 | USA 22
   - 🇺🇸 美国 | USA 11
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
