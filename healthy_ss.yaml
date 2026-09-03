@@ -4,18 +4,42 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP
-  server: 168.107.70.79
-  port: 56927
+- name: 🇫🇷 法国 | FRA
+  server: 95.170.13.47
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.67.155
+  port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: qUcgsCpP+Pw4XoCvpLIjE3PTwcxITUReE8eKjv+1uLs=
+  password: Ji5AB78QQEDiSSKWC+5XHs+JJE7VRYIITRdQEyaZ+Ao=
+- name: 🇬🇧 英国 | GBR 6
+  server: 129.151.64.19
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: B2fwo8FnMvOLaNLVDYYbMa5oXBejTe5GvPFJhldAyF0=
+  udp: true
+- name: 🇨🇳 CN_13
+  server: 121.46.230.233
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP
+  - 🇫🇷 法国 | FRA
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 6
+  - 🇨🇳 CN_13
 rules:
 - MATCH,AUTO

@@ -4,23 +4,52 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 188.220.67.245
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 162.159.43.187
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  type: vless
+  uuid: 9760fa51-423f-4000-9dd8-15eccf811982
+  tls: true
+  alpn:
+  - http/1.1
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: 207.174.133.163
+  port: 10000
+  type: vless
+  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 178.95.170.83
   port: 2087
   type: vless
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
   tls: false
   network: ws
   ws-opts:
-    path: /8f2690e2d016
-  udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 13.135.56.63
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
+    path: /4bc027a44532
   udp: true
 proxy-groups:
 - name: AUTO
@@ -28,7 +57,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇬🇧 英国 | GBR 3
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 3
+  - 🇭🇰 香港 | HKG 4
+  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO

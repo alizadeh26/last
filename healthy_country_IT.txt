@@ -1,15 +1,13 @@
-ss://YWVzLTI1Ni1jZmI6cVlFTjVIWDRKS2VWQ2RFQw==@91.201.65.122:9039#Server 19 🇮🇹
 ss://YWVzLTI1Ni1jZmI6UGVIU0htNVNxRWpCdUVYRQ==@91.201.65.122:9065#Server 20 🇮🇹
+ss://YWVzLTI1Ni1jZmI6cVlFTjVIWDRKS2VWQ2RFQw==@91.201.65.122:9039#Server 19 🇮🇹
 ss://YWVzLTI1Ni1jZmI6YmY3djMzNEtLRFYzWURoSA==@91.201.65.122:9070#Server 38 🇮🇹
 ss://YWVzLTI1Ni1jZmI6U0JNN1I4ODNqQm1ucWU2Qw==@91.201.65.122:9053#Server 41 🇮🇹
 ss://YWVzLTI1Ni1jZmI6VHlOa0dtcDloczZlR3BESw==@91.201.65.122:9092#Server 49 🇮🇹
-ss://YWVzLTI1Ni1jZmI6OVh3WXlac0s4U056UUR0WQ==@91.201.65.122:9059#Server 51 🇮🇹
 ss://YWVzLTI1Ni1jZmI6YjhLa05EakVkNVFxRnlSbQ==@91.201.65.122:9002#Server 55 🇮🇹
-ss://YWVzLTI1Ni1nY206ZDFmYTJmNGI5OGEzOGJjOA==@194.87.47.204:10901#%F0%9F%87%AE%F0%9F%87%B9IT-194.87.47.204-0113
+ss://YWVzLTI1Ni1jZmI6OVh3WXlac0s4U056UUR0WQ==@91.201.65.122:9059#Server 51 🇮🇹
+ss://YWVzLTI1Ni1nY206ZDFmYTJmNGI5OGEzOGJjOA==@194.87.47.204:10901#IT%F0%9F%87%AE%F0%9F%87%B9+%7C+194.87.47.204-10901+%7C+132.25ms
 ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ==@57.131.48.45:8388#IT%F0%9F%87%AE%F0%9F%87%B9+%7C+57.131.48.45-8388+%7C+113.1ms
-vless://167ed405-7de9-4bff-b1ea-6e3d49c76b0b@172.238.232.239:32833?security=reality&type=tcp&packetEncoding=none&sni=www.intel.com&fp=chrome&flow=xtls-rprx-vision&sid=a0a305ccc8e94aa8&pbk=PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20#🇮🇹 137 - IT - VLESS/REALITY/PBK/SID/VISION/UTLS - 32833
-vless://699ce9a1-abbb-4525-988e-b940381352e8@151.241.215.109:443?security=none&type=ws&path=/&encryption=none#🏳️ 820 - XX - VLESS/WS - 443
-vless://69ac162b-1643-4acb-9f49-09d8b0fad609@milan.adaspoloandco.com:8443?security=tls&type=ws&path=/RoBeRt&fp=qq#🇮🇹 822 - IT - VLESS/WS/TLS/UTLS - 8443
-vless://bd6ebd72-25cd-4209-a418-a8c72946da90@172.232.196.241:32396?security=reality&type=raw&sni=www.sony.com&fp=chrome&flow=xtls-rprx-vision&sid=dd6ce6af95001a&pbk=Pj1XWo01sxdH8jKJ_8DoJiZDFANHFKRAqOncP8RNkwU&encryption=none#🇮🇹 1488 - IT - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 32396
-vless://d4b08cd6-0903-411a-9dac-45dbdf5c9712@57.131.38.163:2053?encryption=none&fp=chrome&pbk=Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc&security=reality&sid=5b8a942318178e7b&sni=www.apple.com&type=tcp#🇮🇹 1628 - IT - VLESS/REALITY/PBK/SID/UTLS - 2053
-vless://e4737ce4-c646-44cc-9067-390e13c2a5f6@151.243.198.104:443?sni=itproxy4.lockdwn.com&type=ws&host=itproxy4.lockdwn.com&path=/#🇮🇹 1792 - IT - VLESS/WS - 443
+vless://049e56d8-0ba0-49e3-b764-ee04122b9f00@57.131.32.191:80?path=%2Fvless%2F&security=none&encryption=none&type=ws#IT🇮🇹
+vless://167ed405-7de9-4bff-b1ea-6e3d49c76b0b@172.238.232.239:32833?security=reality&encryption=none&pbk=PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.intel.com&sid=a0a305ccc8e94aa8#🏳️ 132 - XX - VLESS/REALITY/PBK/SID/VISION/UTLS - 32833
+vless://699ce9a1-abbb-4525-988e-b940381352e8@151.241.215.109:443?security=none&type=ws&path=/&encryption=none#🇮🇹 817 - IT - VLESS/WS - 443
+vless://e4737ce4-c646-44cc-9067-390e13c2a5f6@151.243.198.104:443?sni=itproxy4.lockdwn.com&type=ws&host=itproxy4.lockdwn.com&path=/#🇮🇹 1784 - IT - VLESS/WS - 443
