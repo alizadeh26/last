@@ -1,3 +1,2 @@
-trojan://humanity@91.245.225.79:2053?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇨🇭 3533 - CH - Trojan/WS/TLS - 2053
-vless://5a92a9d2-3067-49cd-bfc5-989bbdfc5d52@31.76.4.128:5001?type=tcp&security=reality&flow=xtls-rprx-vision&fp=qq&pbk=HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ&sid=a1b2c3d4&sni=fi.aeternavpn.space#🇨🇭 978 - CH - VLESS/REALITY/PBK/SID/VISION/UTLS - 5001
-vless://e2b8f727-c5ee-47e1-8f1b-7c5c61479ce0@45.90.56.231:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.cloudflare.com&fp=chrome&pbk=KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0&sid=e2e66f4537770cef&flow=xtls-rprx-vision#🇨🇭 2331 - CH - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://5a92a9d2-3067-49cd-bfc5-989bbdfc5d52@31.76.4.128:5001?encryption=none&flow=xtls-rprx-vision&security=reality&sni=fi.aeternavpn.space&fp=qq&pbk=HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ&sid=a1b2c3d4&type=tcp&headerType=none#REALITY|CH🇨🇭
+trojan://humanity@91.245.225.79:2053?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇨🇭 3531 - CH - Trojan/WS/TLS - 2053

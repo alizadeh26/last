@@ -4,6 +4,57 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.176.3
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 178.95.170.83
+  port: 2087
+  type: vless
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 172.64.229.170
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: 103.169.67.34
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: 121.46.230.137
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 158.101.215.201
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇩🇪 德国 | DEU 2
   server: 212.43.158.62
   port: 545
@@ -12,85 +63,47 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 188.220.67.245
-  port: 2087
-  type: vless
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
-  tls: false
-  network: ws
-  ws-opts:
-    path: /8f2690e2d016
-  udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: adheres-scruple.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: 8a9b898d-5658-4f77-9fe9-5ff5b61fa107
-  tls: true
-  alpn:
-  - http/1.1
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 212.43.158.62
-  port: 196
-  type: vless
-  uuid: 6cbc63c1-97de-4460-847c-7fd7bdda3fa6
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 201.24.51.241
-  port: 4100
-  type: vless
-  uuid: 5181e3af-4a0c-47d7-8beb-7e4fa4786cdd
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 11
+  - 🇨🇴 哥伦比亚 | COL
   - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 7
+  - 🇹🇭 泰国 | THA
+  - 🇯🇵 日本 | JPN 3
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇩🇪 德国 | DEU 2
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇭 泰国 | THA
+  - 🇯🇵 日本 | JPN 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 11
+  - 🇨🇴 哥伦比亚 | COL
   - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 7
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇩🇪 德国 | DEU 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 11
   - 🇳🇱 荷兰 | NLD
-- name: REGION-NA
+- name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 22
+  - 🇨🇴 哥伦比亚 | COL
 rules:
 - MATCH,AUTO
