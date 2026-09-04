@@ -11,38 +11,32 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇩🇪 德国 | DEU 5
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 15.156.204.87
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
   server: 130.61.46.211
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 1n2jXlack06RUjGg0EB2ZyyorM76puOm/J6DIvNSxc8=
-- name: 🇨🇳 CN_16
-  server: 121.46.230.137
+- name: 🇨🇦 加拿大 | CAN 3
+  server: 51.222.200.165
+  port: 5000
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 121.46.230.233
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇬🇧 英国 | GBR 2
-  server: 134.65.58.149
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: tJuPs2n9EImx/xZYQ2jJr06EXftTo8C2ZUxSgQKG5Nk=
-- name: 🇬🇧 英国 | GBR 3
-  server: 129.151.67.68
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: L22F/8+N1b/5guHC1uTKLGAT4F0TvgUVWq3mvqEsIKk=
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 103.169.67.34
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -50,10 +44,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 5
-  - 🇨🇳 CN_16
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 3
-  - 🇹🇭 泰国 | THA
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇨🇦 加拿大 | CAN 3
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
