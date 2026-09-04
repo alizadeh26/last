@@ -4,28 +4,40 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA
-  server: 95.170.13.47
+- name: 🇨🇦 加拿大 | CAN
+  server: 15.223.182.66
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 130.61.46.211
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1n2jXlack06RUjGg0EB2ZyyorM76puOm/J6DIvNSxc8=
+- name: 🇨🇳 CN_16
+  server: 121.46.230.137
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.67.155
+- name: 🇬🇧 英国 | GBR 2
+  server: 134.65.58.149
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: Ji5AB78QQEDiSSKWC+5XHs+JJE7VRYIITRdQEyaZ+Ao=
-- name: 🇬🇧 英国 | GBR 6
-  server: 129.151.64.19
+  password: tJuPs2n9EImx/xZYQ2jJr06EXftTo8C2ZUxSgQKG5Nk=
+- name: 🇬🇧 英国 | GBR 3
+  server: 129.151.67.68
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: B2fwo8FnMvOLaNLVDYYbMa5oXBejTe5GvPFJhldAyF0=
+  password: L22F/8+N1b/5guHC1uTKLGAT4F0TvgUVWq3mvqEsIKk=
   udp: true
-- name: 🇨🇳 CN_13
-  server: 121.46.230.233
+- name: 🇹🇭 泰国 | THA
+  server: 103.169.67.34
   port: 65443
   type: ss
   cipher: aes-256-cfb
@@ -37,9 +49,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 6
-  - 🇨🇳 CN_13
+  - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 5
+  - 🇨🇳 CN_16
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇹🇭 泰国 | THA
 rules:
 - MATCH,AUTO

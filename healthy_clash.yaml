@@ -4,79 +4,112 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 6
-  server: sv13.betust.net
+- name: 🇨🇦 加拿大 | CAN
+  server: 15.223.182.66
   port: 443
-  type: vless
-  uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo
-    short-id: ef5d4ad5
-  servername: apiv13.betust.net
-  client-fingerprint: firefox
-  network: tcp
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
-- name: 🇵🇱 波兰 | POL 5
-  server: chopin.adaspoloandco.com
-  port: 8443
-  type: vless
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  tls: true
-  servername: chopin.adaspoloandco.com
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /download.php
-    headers:
-      Host: chopin.adaspoloandco.com
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 94.183.209.42
-  port: 443
-  type: vless
-  uuid: 84c898c4-6990-4121-ae51-27d989f5ce39
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
+- name: 🇩🇪 德国 | DEU 5
+  server: 130.61.46.211
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1n2jXlack06RUjGg0EB2ZyyorM76puOm/J6DIvNSxc8=
+- name: 🇨🇳 CN_16
+  server: 121.46.230.137
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇬🇧 英国 | GBR 2
+  server: 134.65.58.149
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: tJuPs2n9EImx/xZYQ2jJr06EXftTo8C2ZUxSgQKG5Nk=
+- name: 🇬🇧 英国 | GBR 3
+  server: 129.151.67.68
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: L22F/8+N1b/5guHC1uTKLGAT4F0TvgUVWq3mvqEsIKk=
   udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: 162.159.43.187
-  port: 2082
+  port: 8080
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 45.40.155.4
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.43.187
   port: 80
   type: vless
-  uuid: e403856e-4e50-49e6-9edc-d9536a803a6a
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
+    path: /?ed=2560security=tls
     headers:
-      Host: proud-cloud-5c50.113-8dc.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 81.31.246.124
-  port: 2200
+- name: 🇺🇸 美国 | USA 12
+  server: 162.159.38.127
+  port: 2052
   type: vless
-  uuid: a4d52fe0-f904-48d3-b579-25d5b79c79b2
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /v1
+    path: /?ed=2560security=tls
     headers:
-      Host: rzd.ru
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: sv14.betust.net
+  port: 443
+  type: vless
+  uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 4IoUUt2YZPsn8Y1JqOqV9LnQK0vNlY9AeV4m-83e2SE
+    short-id: ab9d5f3c
+  servername: apiv14.betust.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 84.235.170.145
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD
+  server: 78.17.190.94
+  port: 53289
+  type: vless
+  uuid: 9a913f1c-28b3-4d0b-aa77-698302252ab7
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: 103.169.67.34
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
 proxy-groups:
 - name: AUTO
@@ -84,29 +117,39 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇵🇱 波兰 | POL 5
-  - 🇵🇱 波兰 | POL
+  - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 5
+  - 🇨🇳 CN_16
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 18
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 12
+  - 🇸🇪 瑞典 | SWE
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD
+  - 🇹🇭 泰国 | THA
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 5
+  - 🇨🇳 CN_16
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇹🇭 泰国 | THA
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇵🇱 波兰 | POL 5
-  - 🇵🇱 波兰 | POL
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 18
-  - 🇷🇺 俄罗斯 | RUS
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇵🇱 波兰 | POL
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 12
+  - 🇸🇪 瑞典 | SWE
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
