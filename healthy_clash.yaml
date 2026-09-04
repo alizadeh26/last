@@ -18,26 +18,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 130.61.46.211
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 1n2jXlack06RUjGg0EB2ZyyorM76puOm/J6DIvNSxc8=
-- name: 🇨🇦 加拿大 | CAN 3
-  server: 51.222.200.165
-  port: 5000
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 84.235.170.145
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇫🇷 法国 | FRA
   server: kamaz02.api3-max.ru
   port: 443
@@ -51,6 +31,23 @@ proxies:
   servername: kamaz02.api3-max.ru
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 84.235.170.145
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD 9
+  server: 178.95.170.83
+  port: 2087
+  type: vless
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
   udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: mx.ubuntuhosting.host
@@ -68,15 +65,24 @@ proxies:
     grpc-mode: gun
     grpc-service-name: gun
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 178.95.170.83
-  port: 2087
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 162.159.43.187
+  port: 2082
   type: vless
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /4bc027a44532
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇨🇦 加拿大 | CAN 3
+  server: 51.222.200.165
+  port: 5000
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 172.64.42.85
@@ -90,13 +96,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 84.235.161.108
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇺🇸 美国 | USA 6
   server: kombo.api3-max.ru
   port: 443
@@ -138,14 +137,13 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇨🇦 加拿大 | CAN 3
-  - 🇳🇱 荷兰 | NLD
   - 🇫🇷 法国 | FRA
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇨🇦 加拿大 | CAN 3
   - 🇺🇸 美国 | USA 2
-  - 🇳🇱 荷兰 | NLD 7
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 4
@@ -156,7 +154,6 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
-  - 🇩🇪 德国 | DEU 4
   - 🇨🇦 加拿大 | CAN 3
   - 🇺🇸 美国 | USA 4
 - name: PROTO-VLESS
@@ -164,30 +161,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
   - 🇫🇷 法国 | FRA
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 2
-  - 🇳🇱 荷兰 | NLD 7
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 10
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇳🇱 荷兰 | NLD
-  - 🇫🇷 法国 | FRA
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇨🇦 加拿大 | CAN 2
-  - 🇨🇦 加拿大 | CAN 3
-  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO

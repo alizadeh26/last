@@ -18,12 +18,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 130.61.46.211
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 1n2jXlack06RUjGg0EB2ZyyorM76puOm/J6DIvNSxc8=
 - name: 🇨🇦 加拿大 | CAN 3
   server: 51.222.200.165
   port: 5000
@@ -45,7 +39,6 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
-  - 🇩🇪 德国 | DEU 4
   - 🇨🇦 加拿大 | CAN 3
   - 🇺🇸 美国 | USA 4
 rules:
