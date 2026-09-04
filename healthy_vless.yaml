@@ -4,27 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: 163.8.195.241
-  port: 2087
+- name: 🇵🇱 波兰 | POL 2
+  server: pl3.lckdwn.ru
+  port: 443
   type: vless
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  uuid: 84c898c4-6990-4121-ae51-27d989f5ce39
   tls: false
   network: ws
   ws-opts:
-    path: /29c8fed7ca22
+    path: /
+    headers:
+      Host: pl3.lckdwn.ru
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 178.95.170.83
-  port: 2087
-  type: vless
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-  tls: false
-  network: ws
-  ws-opts:
-    path: /4bc027a44532
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
+- name: 🇺🇸 美国 | USA 9
   server: 162.159.43.187
   port: 2086
   type: vless
@@ -37,7 +29,21 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇹🇷 土耳其 | TUR 2
+- name: 🇳🇱 荷兰 | NLD 2
+  server: alca.foff.ch
+  port: 443
+  type: vless
+  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BS25qHJWxx0kqrcrnA41jOx9HSZTyRVs9tLx-R66oQ4
+    short-id: 9a8df4ee3fdf
+  servername: alca.foff.ch
+  client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
   server: y347t3784gfh478f4.tr.snapeurop.com
   port: 666
   type: vless
@@ -49,11 +55,11 @@ proxies:
     headers:
       Host: ads.mohsen3.ir
   udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: 207.174.133.163
-  port: 10000
+- name: 🇭🇰 香港 | HKG 3
+  server: 182.16.61.6
+  port: 45647
   type: vless
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
+  uuid: 6f361c37-bc54-43dd-8c8b-0f59354745a5
   tls: false
   network: tcp
   udp: true
@@ -63,10 +69,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
+  - 🇵🇱 波兰 | POL 2
+  - 🇺🇸 美国 | USA 9
   - 🇳🇱 荷兰 | NLD 2
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇹🇷 土耳其 | TUR 2
-  - 🇭🇰 香港 | HKG 4
+  - 🇹🇷 土耳其 | TUR
+  - 🇭🇰 香港 | HKG 3
 rules:
 - MATCH,AUTO
