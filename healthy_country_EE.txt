@@ -1,6 +1,8 @@
 vless://06c4e938-2954-478f-a870-ca1b163e30e9@94.183.170.135:443?encryption=none&host=estproxy4.lockdwn.com&path=%2F&security=none&type=ws#EE🇪🇪
-vless://06c4e938-2954-478f-a870-ca1b163e30e9@94.183.170.135:8443?type=tcp&security=tls&encryption=none&fp=firefox&sni=estproxy4.lockdwn.com#🇪🇪 54 - EE - VLESS/TLS/UTLS - 8443
-vless://06c4e938-2954-478f-a870-ca1b163e30e9@estproxy4.lockdwn.com:8443?encryption=none&security=tls&type=raw#🇪🇪 58 - EE - VLESS/RAW/TLS - 8443
-vless://342ab7e4-5a89-0001-8809-304120d4aa83@95.85.224.51:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=max.ru&fp=chrome&pbk=WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc&sid=a696de84963656de#🇪🇪 453 - EE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://9d9e3421-5652-4804-85ba-238355b948ab@94.183.170.248:443?type=ws#🏳️ 1733 - XX - VLESS/WS - 443
-vless://9d9e3421-5652-4804-85ba-238355b948ab@94.183.170.248:8443?alpn=h2,http/1.1&encryption=none&fp=firefox&security=tls&sni=estproxy3.lockdwn.com&type=tcp#🏳️ 1734 - XX - VLESS/TLS/UTLS - 8443
+trojan://humanity@80.77.25.142:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇪🇪 3499 - EE - Trojan/WS/TLS - 443
+vless://06c4e938-2954-478f-a870-ca1b163e30e9@94.183.170.135:8443?type=tcp&security=tls&encryption=none&fp=firefox&sni=estproxy4.lockdwn.com#🏳️ 55 - XX - VLESS/TLS/UTLS - 8443
+vless://06c4e938-2954-478f-a870-ca1b163e30e9@estproxy4.lockdwn.com:8443?encryption=none&security=tls&type=raw#🏳️ 59 - XX - VLESS/RAW/TLS - 8443
+vless://342ab7e4-5a89-0001-8809-304120d4aa83@95.85.224.51:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=max.ru&fp=chrome&pbk=WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc&sid=a696de84963656de#🏳️ 455 - XX - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://9d9e3421-5652-4804-85ba-238355b948ab@94.183.170.248:443?type=ws#🏳️ 1750 - XX - VLESS/WS - 443
+vless://9d9e3421-5652-4804-85ba-238355b948ab@94.183.170.248:8443?alpn=h2,http/1.1&encryption=none&fp=firefox&security=tls&sni=estproxy3.lockdwn.com&type=tcp#🏳️ 1751 - XX - VLESS/TLS/UTLS - 8443
+vless://ef9d2063-0140-472b-8b17-ba02ba4b4435@45.80.108.236:443?security=tls&type=ws&path=/proxyip=167.71.48.187&host=lively-resonance-4e12.electrocellco-cf-059.workers.dev&packetEncoding=xudp&sni=lively-resonance-4e12.electrocellco-cf-059.workers.dev&fp=chrome&encryption=none#🏳️ 2547 - XX - VLESS/WS/TLS/UTLS - 443

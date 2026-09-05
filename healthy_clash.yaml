@@ -4,13 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 15.223.182.66
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇨🇦 加拿大 | CAN 2
   server: 15.156.204.87
   port: 443
@@ -18,156 +11,102 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: kamaz02.api3-max.ru
-  port: 443
-  type: vless
-  uuid: 5999a497-a2da-41d0-92cb-5b758082f83c
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  servername: kamaz02.api3-max.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 84.235.170.145
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 178.95.170.83
-  port: 2087
-  type: vless
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-  tls: false
-  network: ws
-  ws-opts:
-    path: /4bc027a44532
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: mx.ubuntuhosting.host
-  port: 443
-  type: vless
-  uuid: d7430ae7-320c-4658-808b-3006d0627d82
-  tls: true
-  reality-opts:
-    public-key: QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng
-    short-id: 3fa234ea9feaa048
-  servername: mx.ubuntuhosting.host
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: gun
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇨🇦 加拿大 | CAN 3
-  server: 51.222.200.165
-  port: 5000
+  server: 35.182.118.89
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇨🇦 加拿大 | CAN
+  server: 51.79.85.185
+  port: 8118
   type: ss
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  password: cdBIDV42DCwnfIN
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 172.64.42.85
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: kombo.api3-max.ru
+- name: 🇩🇪 德国 | DEU 5
+  server: de-6.kihsuyhf8jkiugsxb.cfd
   port: 443
   type: vless
-  uuid: 5999a497-a2da-41d0-92cb-5b758082f83c
+  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
   tls: true
-  alpn:
-  - h2
-  - http/1.1
   flow: xtls-rprx-vision
-  servername: kombo.api3-max.ru
+  reality-opts:
+    public-key: ia6cEEqjnawIhBPzcHFWSNsQIOJcHQU5t5FebSphWGA
+  servername: de-6.kihsuyhf8jkiugsxb.cfd
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 162.159.38.127
-  port: 2086
+- name: 🇩🇪 德国 | DEU 3
+  server: de-3.kihsuyhf8jkiugsxb.cfd
+  port: 443
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: eBPoRhgoi1Wc3_CWGAfvF6dO_QqXzPWcpUKTycvx3Ck
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 121.46.230.233
+- name: 🇫🇷 法国 | FRA 18
+  server: 95.170.13.47
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+  udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
-  - 🇫🇷 法国 | FRA
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇸🇬 新加坡 | SGP 2
   - 🇨🇦 加拿大 | CAN 3
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 4
+  - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 3
+  - 🇫🇷 法国 | FRA 18
+  - 🇲🇾 马来西亚 | MYS
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
   - 🇨🇦 加拿大 | CAN 3
-  - 🇺🇸 美国 | USA 4
+  - 🇨🇦 加拿大 | CAN
+  - 🇫🇷 法国 | FRA 18
+  - 🇲🇾 马来西亚 | MYS
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 10
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 3
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 5
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇨🇦 加拿大 | CAN 3
+  - 🇨🇦 加拿大 | CAN
 rules:
 - MATCH,AUTO
