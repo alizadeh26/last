@@ -5,49 +5,40 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇨🇦 加拿大 | CAN
-  server: 130.94.115.231
-  port: 2087
-  type: vless
-  uuid: 8a51f3d9-30cc-44e6-8d31-700211a29066
-  tls: false
-  network: ws
-  ws-opts:
-    path: /721740e567c7
-  udp: true
-- name: 🇨🇦 加拿大 | CAN 2
-  server: 51.222.141.125
-  port: 445
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 130.61.228.228
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: wRqHKj1lyPV0qigDlTj2LC9VebXikHNxsOUQ+l5HMoo=
-- name: 🇩🇪 德国 | DEU 8
-  server: 130.61.231.223
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: /UtWDfxcFcX9CFdFmZRhxPyk24i/1G8UOH1kuu4vaoQ=
-- name: 🇮🇪 爱尔兰 | IRL
-  server: 52.214.208.36
+  server: 3.99.178.14
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.61.131.106
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ArqUdhheIXgMGupUWwbbvZ7yRAWy5jHmiPtxwrLhs3k=
-- name: 🇬🇧 英国 | GBR
-  server: 147.189.141.114
+- name: 🇩🇪 德国 | DEU 6
+  server: 188.220.67.245
+  port: 2087
+  type: vless
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  tls: false
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: mageia.ubuntuhosting.host
+  port: 443
+  type: vless
+  uuid: d7430ae7-320c-4658-808b-3006d0627d82
+  tls: true
+  reality-opts:
+    public-key: QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng
+    short-id: 3fa234ea9feaa048
+  servername: mageia.ubuntuhosting.host
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: gun
+  udp: true
+- name: 🇬🇧 英国 | GBR 5
+  server: 45.95.184.120
   port: 2087
   type: vless
   uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
@@ -56,92 +47,79 @@ proxies:
   ws-opts:
     path: /4de527ea5ed9
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 84.235.166.135
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
+- name: 🇰🇷 韩国 | KOR 2
+  server: 121.46.230.138
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 156.226.183.181
-  port: 54321
+- name: 🇬🇧 英国 | GBR 2
+  server: 147.189.141.106
+  port: 2087
+  type: vless
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 45.95.184.90
+  port: 2087
+  type: vless
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
+  udp: true
+- name: 🇯🇵 日本 | JPN 2
+  server: oc.imfun.fun
+  port: 18112
   type: vmess
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 141.148.238.119
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 134.185.94.128
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JtkbIj4+qk/NSxl76apJZvxcu/vuJj2t3RiQWcMTQ5A=
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 162.159.43.187
-  port: 8880
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 104.18.46.234
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 121.46.230.233
+- name: 🇹🇭 泰国 | THA
+  server: 103.169.67.34
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇺🇸 美国 | USA 16
-  server: 104.18.46.234
-  port: 2086
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 152.70.53.161
-  port: 62145
+- name: 🇵🇱 波兰 | POL 3
+  server: eu-central-pl-1.hanvpn.biz
+  port: 443
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: NjIuu35vz5MthSzqd6kt8PbXbZxCCL2Rb2GbpMCRTEY
+    short-id: 12e3b7681806bc97
+  servername: eu-central-pl-1.hanvpn.biz
+  client-fingerprint: firefox
   network: tcp
-- name: 🇳🇱 荷兰 | NLD
-  server: 92.5.231.30
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 121.46.230.232
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 134.98.153.152
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -155,67 +133,57 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇨🇦 加拿大 | CAN 2
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 8
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇩🇪 德国 | DEU 3
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇲🇾 马来西亚 | MYS
-  - 🇭🇰 香港 | HKG
+  - 🇩🇪 德国 | DEU
+  - 🇬🇧 英国 | GBR 5
+  - 🇰🇷 韩国 | KOR 2
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇯🇵 日本 | JPN 2
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇹🇭 泰国 | THA
+  - 🇵🇱 波兰 | POL 3
+  - 🇺🇸 美国 | USA 5
   - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 16
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN 2
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 8
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇩🇪 德国 | DEU 3
-  - 🇲🇾 马来西亚 | MYS
-  - 🇺🇸 美国 | USA
+  - 🇨🇦 加拿大 | CAN
+  - 🇰🇷 韩国 | KOR 2
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇹🇭 泰国 | THA
+  - 🇺🇸 美国 | USA 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU
+  - 🇬🇧 英国 | GBR 5
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇵🇱 波兰 | POL 3
   - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 16
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
+  - 🇯🇵 日本 | JPN 2
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇷 韩国 | KOR 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 8
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇨🇦 加拿大 | CAN 2
+  - 🇬🇧 英国 | GBR 5
 rules:
 - MATCH,AUTO

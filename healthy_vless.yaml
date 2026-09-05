@@ -4,18 +4,34 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 130.94.115.231
+- name: 🇩🇪 德国 | DEU 6
+  server: 188.220.67.245
   port: 2087
   type: vless
-  uuid: 8a51f3d9-30cc-44e6-8d31-700211a29066
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
   tls: false
   network: ws
   ws-opts:
-    path: /721740e567c7
+    path: /8f2690e2d016
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 147.189.141.114
+- name: 🇩🇪 德国 | DEU
+  server: mageia.ubuntuhosting.host
+  port: 443
+  type: vless
+  uuid: d7430ae7-320c-4658-808b-3006d0627d82
+  tls: true
+  reality-opts:
+    public-key: QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng
+    short-id: 3fa234ea9feaa048
+  servername: mageia.ubuntuhosting.host
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: gun
+  udp: true
+- name: 🇬🇧 英国 | GBR 5
+  server: 45.95.184.120
   port: 2087
   type: vless
   uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
@@ -24,69 +40,42 @@ proxies:
   ws-opts:
     path: /4de527ea5ed9
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 84.235.166.135
-  port: 62145
+- name: 🇬🇧 英国 | GBR 2
+  server: 147.189.141.106
+  port: 2087
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
   tls: false
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 45.95.184.90
+  port: 2087
+  type: vless
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
+  udp: true
+- name: 🇵🇱 波兰 | POL 3
+  server: eu-central-pl-1.hanvpn.biz
+  port: 443
+  type: vless
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: NjIuu35vz5MthSzqd6kt8PbXbZxCCL2Rb2GbpMCRTEY
+    short-id: 12e3b7681806bc97
+  servername: eu-central-pl-1.hanvpn.biz
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
-  server: 141.148.238.119
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 162.159.43.187
-  port: 8880
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 104.18.46.234
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 104.18.46.234
-  port: 2086
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 152.70.53.161
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD
-  server: 92.5.231.30
+  server: 134.98.153.152
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
@@ -99,14 +88,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU
+  - 🇬🇧 英国 | GBR 5
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇵🇱 波兰 | POL 3
   - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 16
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
