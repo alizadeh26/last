@@ -30,28 +30,18 @@ proxies:
     grpc-mode: gun
     grpc-service-name: gun
   udp: true
-- name: 🇬🇧 英国 | GBR 5
-  server: 45.95.184.120
-  port: 2087
-  type: vless
-  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
-  tls: false
-  network: ws
-  ws-opts:
-    path: /4de527ea5ed9
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 147.189.141.106
-  port: 2087
-  type: vless
-  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
-  tls: false
-  network: ws
-  ws-opts:
-    path: /4de527ea5ed9
-  udp: true
 - name: 🇬🇧 英国 | GBR 3
   server: 45.95.184.90
+  port: 2087
+  type: vless
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
+  udp: true
+- name: 🇬🇧 英国 | GBR 5
+  server: 45.95.184.120
   port: 2087
   type: vless
   uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
@@ -74,13 +64,29 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 134.98.153.152
-  port: 62145
+- name: 🇬🇧 英国 | GBR 2
+  server: 147.189.141.106
+  port: 2087
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: ru05.abvpn.ru
+  port: 443
+  type: vless
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  servername: ru05.abvpn.ru
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: ru05.abvpn.ru
   udp: true
 proxy-groups:
 - name: AUTO
@@ -90,10 +96,10 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU
-  - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR 5
   - 🇵🇱 波兰 | POL 3
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇬🇧 英国 | GBR 2
+  - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO

@@ -21,6 +21,12 @@ proxies:
   ws-opts:
     path: /8f2690e2d016
   udp: true
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 3.250.40.89
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇩🇪 德国 | DEU
   server: mageia.ubuntuhosting.host
   port: 443
@@ -37,33 +43,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: gun
   udp: true
-- name: 🇬🇧 英国 | GBR 5
-  server: 45.95.184.120
-  port: 2087
-  type: vless
-  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
-  tls: false
-  network: ws
-  ws-opts:
-    path: /4de527ea5ed9
-  udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: 121.46.230.138
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 147.189.141.106
-  port: 2087
-  type: vless
-  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
-  tls: false
-  network: ws
-  ws-opts:
-    path: /4de527ea5ed9
-  udp: true
 - name: 🇬🇧 英国 | GBR 3
   server: 45.95.184.90
   port: 2087
@@ -74,29 +53,15 @@ proxies:
   ws-opts:
     path: /4de527ea5ed9
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: oc.imfun.fun
-  port: 18112
-  type: vmess
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
+- name: 🇬🇧 英国 | GBR 5
+  server: 45.95.184.120
+  port: 2087
+  type: vless
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
   tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 134.185.94.128
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: JtkbIj4+qk/NSxl76apJZvxcu/vuJj2t3RiQWcMTQ5A=
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 103.169.67.34
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
   udp: true
 - name: 🇵🇱 波兰 | POL 3
   server: eu-central-pl-1.hanvpn.biz
@@ -112,19 +77,56 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 147.189.141.106
+  port: 2087
+  type: vless
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: 103.169.67.34
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: ru05.abvpn.ru
+  port: 443
+  type: vless
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  servername: ru05.abvpn.ru
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: ru05.abvpn.ru
+  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 121.46.230.232
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 134.98.153.152
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 134.185.94.128
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JtkbIj4+qk/NSxl76apJZvxcu/vuJj2t3RiQWcMTQ5A=
+  udp: true
+- name: 🇰🇷 韩国 | KOR 2
+  server: 121.46.230.138
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
 proxy-groups:
 - name: AUTO
@@ -134,27 +136,28 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 | CAN
   - 🇩🇪 德国 | DEU 6
+  - 🇮🇪 爱尔兰 | IRL
   - 🇩🇪 德国 | DEU
-  - 🇬🇧 英国 | GBR 5
-  - 🇰🇷 韩国 | KOR 2
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 3
-  - 🇯🇵 日本 | JPN 2
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇹🇭 泰国 | THA
+  - 🇬🇧 英国 | GBR 5
   - 🇵🇱 波兰 | POL 3
+  - 🇬🇧 英国 | GBR 2
+  - 🇹🇭 泰国 | THA
+  - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA 5
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇰🇷 韩国 | KOR 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇰🇷 韩国 | KOR 2
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇮🇪 爱尔兰 | IRL
   - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 5
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇰🇷 韩国 | KOR 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -162,28 +165,10 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU
-  - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 3
-  - 🇵🇱 波兰 | POL 3
-  - 🇳🇱 荷兰 | NLD 2
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇯🇵 日本 | JPN 2
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇰🇷 韩国 | KOR 2
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
   - 🇬🇧 英国 | GBR 5
+  - 🇵🇱 波兰 | POL 3
+  - 🇬🇧 英国 | GBR 2
+  - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO

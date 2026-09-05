@@ -11,20 +11,12 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: 121.46.230.138
-  port: 65443
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 3.250.40.89
+  port: 443
   type: ss
   cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 134.185.94.128
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: JtkbIj4+qk/NSxl76apJZvxcu/vuJj2t3RiQWcMTQ5A=
-  udp: true
+  password: amazonskr05
 - name: 🇹🇭 泰国 | THA
   server: 103.169.67.34
   port: 65443
@@ -38,6 +30,20 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 134.185.94.128
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JtkbIj4+qk/NSxl76apJZvxcu/vuJj2t3RiQWcMTQ5A=
+  udp: true
+- name: 🇰🇷 韩国 | KOR 2
+  server: 121.46.230.138
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -45,9 +51,10 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇰🇷 韩国 | KOR 2
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇮🇪 爱尔兰 | IRL
   - 🇹🇭 泰国 | THA
   - 🇺🇸 美国 | USA 5
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇰🇷 韩国 | KOR 2
 rules:
 - MATCH,AUTO
