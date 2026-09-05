@@ -4,30 +4,80 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: de-6.kihsuyhf8jkiugsxb.cfd
+- name: 🇩🇪 德国 | DEU 6
+  server: de-7.kihsuyhf8jkiugsxb.cfd
   port: 443
   type: vless
   uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: ia6cEEqjnawIhBPzcHFWSNsQIOJcHQU5t5FebSphWGA
-  servername: de-6.kihsuyhf8jkiugsxb.cfd
+    public-key: Wqx0RygJd4tz8SL1qZ37JSsmEnb0kXtp50z4ytPlpVc
+  servername: de-7.kihsuyhf8jkiugsxb.cfd
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: de-3.kihsuyhf8jkiugsxb.cfd
-  port: 443
+- name: 🇬🇧 英国 | GBR
+  server: 45.95.184.120
+  port: 2087
   type: vless
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: eBPoRhgoi1Wc3_CWGAfvF6dO_QqXzPWcpUKTycvx3Ck
-  client-fingerprint: firefox
-  network: tcp
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
+  udp: true
+- name: 🇬🇧 英国 | GBR 4
+  server: 147.189.141.114
+  port: 2087
+  type: vless
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 147.189.141.104
+  port: 2087
+  type: vless
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 178.95.170.83
+  port: 2087
+  type: vless
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 104.18.46.46
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 147.189.129.155
+  port: 2087
+  type: vless
+  uuid: 090a3fa8-973f-4812-9b69-ed982082a933
+  tls: false
+  network: ws
+  ws-opts:
+    path: /4ad49ed0a3d5
   udp: true
 proxy-groups:
 - name: AUTO
@@ -35,7 +85,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 6
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 4
+  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
