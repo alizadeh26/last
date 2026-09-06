@@ -37,12 +37,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: ExPNDBZzUC/Jjs1+JpVlovzA+LE0RxQNHDfwGbceORs=
   udp: true
-- name: 🇬🇧 英国 | GBR 7
-  server: 129.151.82.157
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: nqqtdNNPXiHXGXPI0sIQSxMvdNgzlVwFVD51+xplcu0=
 - name: 🇬🇧 英国 | GBR 5
   server: 18.130.157.255
   port: 443
@@ -50,19 +44,18 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
+- name: 🇬🇧 英国 | GBR 7
+  server: 129.151.82.157
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: nqqtdNNPXiHXGXPI0sIQSxMvdNgzlVwFVD51+xplcu0=
 - name: 🇬🇧 英国 | GBR 8
   server: 129.151.69.35
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 6YmXBs93ISiL6BQXFPWm5H5cNZCwyjlbbUXF3j4sS+o=
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 92.5.231.206
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: E7S9NmbJuTjNpSFGXlZRWHvpRnVlnOC6wu9kUKlD8QE=
-  udp: true
 - name: 🇲🇾 马来西亚 | MYS
   server: 118.107.222.231
   port: 65443
@@ -70,6 +63,12 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
+- name: 🇨🇳 CN_12
+  server: 121.46.230.232
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 - name: 🇺🇸 美国 | USA 2
   server: 15.204.233.41
   port: 8882
@@ -94,11 +93,11 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 6
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR 4
-  - 🇬🇧 英国 | GBR 7
   - 🇬🇧 英国 | GBR 5
+  - 🇬🇧 英国 | GBR 7
   - 🇬🇧 英国 | GBR 8
-  - 🇳🇱 荷兰 | NLD 2
   - 🇲🇾 马来西亚 | MYS
+  - 🇨🇳 CN_12
   - 🇺🇸 美国 | USA 2
   - 🇳🇱 荷兰 | NLD 6
 rules:
