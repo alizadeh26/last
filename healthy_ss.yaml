@@ -4,57 +4,42 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 3.99.178.14
-  port: 443
+- name: 🇬🇧 英国 | GBR
+  server: 134.65.57.72
+  port: 61312
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: 2022-blake3-chacha20-poly1305
+  password: wtrUMVbSRSi4MlzATr+FjvqFCczZWFxG3hZ7+IWW1y0=
+- name: 🇳🇱 荷兰 | NLD
+  server: 82.38.31.66
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇮🇪 爱尔兰 | IRL 2
-  server: 52.214.208.36
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 82.38.31.82
+  port: 8080
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇮🇪 爱尔兰 | IRL
-  server: 3.250.40.89
-  port: 443
+- name: 🇵🇱 波兰 | POL 3
+  server: 31.76.82.131
+  port: 34260
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇰🇷 韩国 | KOR 2
-  server: 121.46.230.138
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  cipher: chacha20-ietf-poly1305
+  password: cTAObwg4OWWXkZJQs0ZdgC
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 103.169.67.34
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 121.46.230.232
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇮🇪 爱尔兰 | IRL 2
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇰🇷 韩国 | KOR 2
-  - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 5
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇵🇱 波兰 | POL 3
 rules:
 - MATCH,AUTO

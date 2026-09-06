@@ -4,136 +4,114 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 3.99.178.14
-  port: 443
+- name: 🇬🇧 英国 | GBR
+  server: 134.65.57.72
+  port: 61312
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: 2022-blake3-chacha20-poly1305
+  password: wtrUMVbSRSi4MlzATr+FjvqFCczZWFxG3hZ7+IWW1y0=
+- name: 🇳🇱 荷兰 | NLD
+  server: 82.38.31.66
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 188.220.67.245
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 82.38.31.82
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 178.95.170.83
   port: 2087
   type: vless
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
   tls: false
   network: ws
   ws-opts:
-    path: /8f2690e2d016
+    path: /4bc027a44532
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: mageia.ubuntuhosting.host
-  port: 443
-  type: vless
-  uuid: d7430ae7-320c-4658-808b-3006d0627d82
-  tls: true
-  reality-opts:
-    public-key: QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng
-    short-id: 3fa234ea9feaa048
-  servername: mageia.ubuntuhosting.host
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: gun
-  udp: true
-- name: 🇮🇪 爱尔兰 | IRL 2
-  server: 52.214.208.36
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇮🇪 爱尔兰 | IRL
-  server: 3.250.40.89
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇵🇱 波兰 | POL 3
-  server: eu-central-pl-1.hanvpn.biz
-  port: 443
-  type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: NjIuu35vz5MthSzqd6kt8PbXbZxCCL2Rb2GbpMCRTEY
-    short-id: 12e3b7681806bc97
-  servername: eu-central-pl-1.hanvpn.biz
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: 121.46.230.138
-  port: 65443
+  server: 31.76.82.131
+  port: 34260
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  cipher: chacha20-ietf-poly1305
+  password: cTAObwg4OWWXkZJQs0ZdgC
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: oc.imfun.fun
-  port: 18112
+- name: 🇺🇸 美国 | USA
+  server: 162.159.43.187
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 78.17.71.236
+  port: 33736
   type: vmess
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
   alterId: 0
   cipher: auto
   tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess-ws
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 103.169.67.34
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 121.46.230.232
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU
-  - 🇮🇪 爱尔兰 | IRL 2
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 3
   - 🇵🇱 波兰 | POL 3
-  - 🇰🇷 韩国 | KOR 2
-  - 🇯🇵 日本 | JPN 2
-  - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA
+  - 🇳🇱 荷兰 | NLD 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇮🇪 爱尔兰 | IRL 2
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇰🇷 韩国 | KOR 2
-  - 🇹🇭 泰国 | THA
-  - 🇺🇸 美国 | USA 5
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇵🇱 波兰 | POL 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU
-  - 🇵🇱 波兰 | POL 3
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 2
+  - 🇳🇱 荷兰 | NLD 4
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇵🇱 波兰 | POL 3
 rules:
 - MATCH,AUTO
