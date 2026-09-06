@@ -4,27 +4,63 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 134.65.57.72
-  port: 61312
+- name: 🇪🇸 西班牙 | ESP
+  server: 64.177.32.29
+  port: 8388
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: wtrUMVbSRSi4MlzATr+FjvqFCczZWFxG3hZ7+IWW1y0=
-- name: 🇳🇱 荷兰 | NLD
+  cipher: aes-256-gcm
+  password: wBYiDjDDyFqcBnNl
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: eu-north-fi-1.hanvpn.biz
+  port: 443
+  type: vless
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: nnkPnz6R86-6xG92s8k-1DUQPXAJIVMoMWDLPghh4x4
+    short-id: 0173b2681806bc97
+  servername: eu-north-fi-1.hanvpn.biz
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 52.214.208.36
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 94.184.18.241
+  port: 2086
+  type: ss
+  cipher: 2022-blake3-aes-128-gcm
+  password: lwjkyE2q/OMF2zKnU6lP9g==
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 82.38.31.69
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
   server: 82.38.31.66
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 82.38.31.82
-  port: 8080
+- name: 🇩🇪 德国 | DEU 3
+  server: api.de.faz11.ir
+  port: 2086
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: 2022-blake3-aes-128-gcm
+  password: lwjkyE2q/OMF2zKnU6lP9g==
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
+- name: 🇳🇱 荷兰 | NLD 4
   server: 178.95.170.83
   port: 2087
   type: vless
@@ -34,27 +70,19 @@ proxies:
   ws-opts:
     path: /4bc027a44532
   udp: true
-- name: 🇵🇱 波兰 | POL 3
-  server: 31.76.82.131
-  port: 34260
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cTAObwg4OWWXkZJQs0ZdgC
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 162.159.43.187
-  port: 8080
+- name: 🇺🇸 美国 | USA 8
+  server: 172.64.52.6
+  port: 2095
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
+- name: 🇳🇱 荷兰 | NLD 3
   server: 78.17.71.236
   port: 33736
   type: vmess
@@ -69,49 +97,76 @@ proxies:
   ws-opts:
     path: /vmess-ws
   udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: 162.159.140.78
+  port: 8880
+  type: vless
+  uuid: f35fb51f-8d34-49ec-80cb-7d04ffc1a69b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: damp-sky-9aaa.224-8b4.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: 121.46.230.232
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD
+  - 🇪🇸 西班牙 | ESP
+  - 🇩🇪 德国 | DEU
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇩🇪 德国 | DEU 5
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇵🇱 波兰 | POL 3
-  - 🇺🇸 美国 | USA
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇩🇪 德国 | DEU 3
   - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 8
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 20
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD
+  - 🇪🇸 西班牙 | ESP
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇩🇪 德国 | DEU 5
   - 🇳🇱 荷兰 | NLD 2
-  - 🇵🇱 波兰 | POL 3
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇩🇪 德国 | DEU 3
+  - 🇺🇸 美国 | USA 20
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 21
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇵🇱 波兰 | POL 3
+  - 🇩🇪 德国 | DEU
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO

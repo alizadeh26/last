@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 4
+- name: 🇳🇱 荷兰 | NLD 3
   server: 78.17.71.236
   port: 33736
   type: vmess
@@ -25,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO
