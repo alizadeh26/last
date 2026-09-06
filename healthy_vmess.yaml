@@ -4,27 +4,71 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 78.17.71.236
-  port: 33736
+- name: 🇭🇰 香港 | HKG 2
+  server: 143.14.189.125
+  port: 21316
   type: vmess
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  uuid: 116f6ecd-275e-4b50-921d-780e78a526cb
   alterId: 0
   cipher: auto
   tls: false
-  alpn:
-  - ''
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vmess-ws
-  udp: true
+    path: /
+    headers:
+      Host: pull.free.video.10010.com
+- name: 🇸🇬 新加坡 | SGP
+  server: usucloud.jcnas.vip
+  port: 20002
+  type: vmess
+  uuid: 805f05df-2efc-4b68-a3c8-a286c4edf6f4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 3
+  server: uscloud2.jcnas.vip
+  port: 20002
+  type: vmess
+  uuid: aeea3376-683d-4b64-9ed7-06239e483acc
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 15
+  server: us.jcnas.vip
+  port: 20002
+  type: vmess
+  uuid: 81b28b96-e14a-4610-a82e-3f5361be5ffc
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 香港 | HKG 4
+  server: m.cnmjin.net
+  port: 16632
+  type: vmess
+  uuid: 21af4a11-cf99-4370-bdd7-8a50cd0c6c49
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: e176d51869ea80390a96391ec8361f3f.mobgslb.tbcache.com
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇭🇰 香港 | HKG 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 15
+  - 🇭🇰 香港 | HKG 4
 rules:
 - MATCH,AUTO
