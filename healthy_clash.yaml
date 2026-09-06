@@ -4,81 +4,155 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 134.65.60.30
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 3.96.202.83
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 188.220.67.245
+  port: 2087
+  type: vless
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  tls: false
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 130.61.44.247
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Ysvv0xxTrCg+FjlIar+M9OXA+rHCF4uKzNEYfIUpWV4=
+- name: 🇩🇪 德国 | DEU 6
+  server: 130.61.237.108
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: e0sT7dql6hUZTTWLOtz89tI2+PxjtSCqzAhkwhVVz9U=
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 129.151.67.2
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 2fnydjTcNmrbCXHWHthnEQ+9+bMPrOMzqX9JTaqd2+I=
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 143.14.189.125
-  port: 21316
-  type: vmess
-  uuid: 116f6ecd-275e-4b50-921d-780e78a526cb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pull.free.video.10010.com
-- name: 🇩🇪 德国 | DEU 2
-  server: 94.184.18.241
-  port: 2086
+  password: 3vT67+EiRIaupWjM/LZ8PtZ9r11vRs8eqF59FKRdvxk=
+- name: 🇬🇧 英国 | GBR 4
+  server: 134.65.60.243
+  port: 61312
   type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: lwjkyE2q/OMF2zKnU6lP9g==
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ExPNDBZzUC/Jjs1+JpVlovzA+LE0RxQNHDfwGbceORs=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 82.38.31.61
-  port: 8080
+- name: 🇬🇧 英国 | GBR 7
+  server: 129.151.82.157
+  port: 61312
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: 2022-blake3-chacha20-poly1305
+  password: nqqtdNNPXiHXGXPI0sIQSxMvdNgzlVwFVD51+xplcu0=
+- name: 🇬🇧 英国 | GBR 5
+  server: 18.130.157.255
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
+- name: 🇬🇧 英国 | GBR 8
+  server: 129.151.69.35
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 6YmXBs93ISiL6BQXFPWm5H5cNZCwyjlbbUXF3j4sS+o=
 - name: 🇯🇵 日本 | JPN 2
-  server: 121.46.230.137
+  server: 14.137.238.193
+  port: 10000
+  type: vless
+  uuid: 8b92dfff-ddfd-4a37-841d-6f7bf7ab43b6
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 92.5.231.206
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: E7S9NmbJuTjNpSFGXlZRWHvpRnVlnOC6wu9kUKlD8QE=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 141.144.198.50
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 92.5.228.124
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 82.38.31.69
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: usucloud.jcnas.vip
-  port: 20002
-  type: vmess
-  uuid: 805f05df-2efc-4b68-a3c8-a286c4edf6f4
-  alterId: 0
-  cipher: auto
+- name: 🇺🇸 美国 | USA 6
+  server: 172.64.32.103
+  port: 2095
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 | USA 3
-  server: uscloud2.jcnas.vip
-  port: 20002
-  type: vmess
-  uuid: aeea3376-683d-4b64-9ed7-06239e483acc
-  alterId: 0
-  cipher: auto
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 162.159.43.187
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 161.118.242.201
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 1afbKC3jNUktuuCAaP8cpCX3zhmd3q5Fs5bDgI8zrH0=
-- name: 🇺🇸 美国 | USA 4
-  server: 104.21.70.21
-  port: 8080
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 172.64.53.55
+  port: 2095
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 92.5.225.187
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 188.114.97.6
+  port: 2095
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -88,88 +162,76 @@ proxies:
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: us.jcnas.vip
-  port: 20002
-  type: vmess
-  uuid: 81b28b96-e14a-4610-a82e-3f5361be5ffc
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 香港 | HKG 4
-  server: m.cnmjin.net
-  port: 16632
-  type: vmess
-  uuid: 21af4a11-cf99-4370-bdd7-8a50cd0c6c49
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e176d51869ea80390a96391ec8361f3f.mobgslb.tbcache.com
 - name: 🇺🇸 美国 | USA 2
-  server: 121.46.230.233
-  port: 65443
+  server: 15.204.233.41
+  port: 8882
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 92.5.229.63
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: PMBwiRu8/7o8jrAiKnwhZLs7+Ca34xS5ZH7ZgrQ7p3I=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇭🇰 香港 | HKG 2
-  - 🇩🇪 德国 | DEU 2
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 6
+  - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR 4
+  - 🇬🇧 英国 | GBR 7
+  - 🇬🇧 英国 | GBR 5
+  - 🇬🇧 英国 | GBR 8
   - 🇯🇵 日本 | JPN 2
+  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 4
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 15
-  - 🇭🇰 香港 | HKG 4
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇲🇾 马来西亚 | MYS
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 11
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 2
+  - 🇳🇱 荷兰 | NLD 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇩🇪 德国 | DEU 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇯🇵 日本 | JPN 2
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 6
+  - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR 4
+  - 🇬🇧 英国 | GBR 7
+  - 🇬🇧 英国 | GBR 5
+  - 🇬🇧 英国 | GBR 8
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇲🇾 马来西亚 | MYS
   - 🇺🇸 美国 | USA 2
+  - 🇳🇱 荷兰 | NLD 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 15
-  - 🇭🇰 香港 | HKG 4
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇯🇵 日本 | JPN 2
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 11
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
