@@ -4,19 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 152.70.51.87
-  port: 45819
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 52.214.208.36
+  port: 443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Z8Zd769iHmU/lrmBfcd3MQG7UUHT+isXNZ6kyBcEQe0=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 134.98.137.196
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: K+/ERLJni8xTb+fO9R9gNA6T2kGPRkRa1OwPEeG7aqM=
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,7 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇮🇪 爱尔兰 | IRL
 rules:
 - MATCH,AUTO
