@@ -1,4 +1,4 @@
 vless://06c4e938-2954-478f-a870-ca1b163e30e9@94.183.170.135:443?encryption=none&path=%2F&security=none&type=ws#EE🇪🇪
-vless://342ab7e4-5a89-0001-8809-304120d4aa83@95.85.224.51:443?security=reality&flow=xtls-rprx-vision&pbk=WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc&sid=a696de84963656de&fp=qq&sni=max.ru&type=tcp&headerType=none&host=max.ru&path=/#🇪🇪 2525 - EE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://9d9e3421-5652-4804-85ba-238355b948ab@94.183.170.248:443?type=ws#🇪🇪 8023 - EE - VLESS/WS - 443
-vless://9d9e3421-5652-4804-85ba-238355b948ab@94.183.170.248:8443?alpn=h2,http/1.1&encryption=none&fp=firefox&security=tls&sni=estproxy3.lockdwn.com&type=tcp#🇪🇪 8024 - EE - VLESS/TLS/UTLS - 8443
+vless://342ab7e4-5a89-0001-8809-304120d4aa83@95.85.224.51:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=max.ru&fp=chrome&pbk=WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc&sid=a696de84963656de#🇪🇪 2500 - EE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+vless://9d9e3421-5652-4804-85ba-238355b948ab@94.183.170.248:443?type=ws#🇪🇪 7994 - EE - VLESS/WS - 443
+vless://9d9e3421-5652-4804-85ba-238355b948ab@94.183.170.248:8443?alpn=h2,http/1.1&encryption=none&fp=firefox&security=tls&sni=estproxy3.lockdwn.com&type=tcp#🇪🇪 7995 - EE - VLESS/TLS/UTLS - 8443
