@@ -1,2 +1,1 @@
-vless://716903b1-e6bf-4420-9e27-65e4451692e9@201.24.49.19:2200?encryption=none&type=ws&security=none&path=/v1&host=rzd.ru#🇳🇱 1142 - NL - VLESS/WS - 2200
-vless://aa7d939b-feaa-4ad3-9615-74216f490807@201.24.49.240:4100?encryption=none&type=ws&security=none&path=/v1&host=live.ok.ru&fp=edge#🏳️ 1695 - XX - VLESS/WS/UTLS - 4100
+vless://3db8407b-1f96-4b82-bfeb-55258c1e57b4@flarora.ferreo.sbs:443?security=reality&type=tcp&sni=flarora.ferreo.sbs&fp=ios&flow=xtls-rprx-vision&sid=1067b23f928e7618&pbk=HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU#🇸🇨 2837 - SC - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
