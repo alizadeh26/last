@@ -4,24 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 130.61.119.35
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bYDYE98Um55QDC0NmNkkSta8WZY+76jxtLFZNaug0GY=
 - name: 🇩🇪 德国 | DEU
-  server: 188.220.67.245
-  port: 2087
-  type: vless
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
-  tls: false
-  network: ws
-  ws-opts:
-    path: /8f2690e2d016
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 194.34.175.11
+  server: 194.34.175.98
   port: 443
   type: vless
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
@@ -33,111 +17,130 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 158.178.156.65
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 152.70.51.87
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: SaGqmONY9xO/uzuB2sK4MeMYANXZKnSt1P8sE1yBICE=
-- name: 🇺🇸 美国 | USA 10
-  server: 172.64.32.103
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  password: Z8Zd769iHmU/lrmBfcd3MQG7UUHT+isXNZ6kyBcEQe0=
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 162.159.39.218
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pl4.moritech.net
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: pl4.moritech.net
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 134.98.130.54
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Vx4uE0dDRMAJbS10iwd2+wqqdIqaa87lf2CyTfPc7kE=
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 134.98.140.10
+- name: 🇳🇱 荷兰 | NLD
+  server: 143.47.183.48
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN
+  server: 130.12.102.26
+  port: 443
+  type: vless
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: localhost
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 2
+  server: 130.12.102.62
+  port: 443
+  type: vless
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: localhost
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 134.98.137.196
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: K+/ERLJni8xTb+fO9R9gNA6T2kGPRkRa1OwPEeG7aqM=
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 162.159.0.53
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: 18.239.134.69
+  port: 80
+  type: vless
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 78.17.71.236
+  port: 33736
+  type: vmess
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU
-  - 🇭🇰 香港 | HKG
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 12
-  - 🇵🇱 波兰 | POL 2
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇯🇵 日本 | JPN
+  - 🇯🇵 日本 | JPN 2
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 8
+  - 🇹🇭 泰国 | THA
+  - 🇳🇱 荷兰 | NLD 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU
-  - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 12
-  - 🇵🇱 波兰 | POL 2
-  - 🇳🇱 荷兰 | NLD 9
-- name: REGION-EU
+  - 🇳🇱 荷兰 | NLD
+  - 🇯🇵 日本 | JPN
+  - 🇯🇵 日本 | JPN 2
+  - 🇺🇸 美国 | USA 8
+  - 🇹🇭 泰国 | THA
+- name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU
-  - 🇳🇱 荷兰 | NLD 3
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 10
+  - 🇳🇱 荷兰 | NLD 6
 rules:
 - MATCH,AUTO
