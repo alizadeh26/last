@@ -11,12 +11,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 130.61.44.247
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Ysvv0xxTrCg+FjlIar+M9OXA+rHCF4uKzNEYfIUpWV4=
 - name: 🇩🇪 德国 | DEU 6
   server: 130.61.237.108
   port: 59924
@@ -24,6 +18,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: e0sT7dql6hUZTTWLOtz89tI2+PxjtSCqzAhkwhVVz9U=
   udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 130.61.44.247
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Ysvv0xxTrCg+FjlIar+M9OXA+rHCF4uKzNEYfIUpWV4=
 - name: 🇩🇪 德国 | DEU 4
   server: 188.220.67.245
   port: 2087
@@ -54,23 +54,47 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇬🇧 英国 | GBR 7
-  server: 129.151.82.157
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: nqqtdNNPXiHXGXPI0sIQSxMvdNgzlVwFVD51+xplcu0=
 - name: 🇬🇧 英国 | GBR 8
   server: 129.151.69.35
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 6YmXBs93ISiL6BQXFPWm5H5cNZCwyjlbbUXF3j4sS+o=
+- name: 🇬🇧 英国 | GBR 7
+  server: 129.151.82.157
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: nqqtdNNPXiHXGXPI0sIQSxMvdNgzlVwFVD51+xplcu0=
 - name: 🇯🇵 日本 | JPN 2
   server: 14.137.238.193
   port: 10000
   type: vless
   uuid: 8b92dfff-ddfd-4a37-841d-6f7bf7ab43b6
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 92.5.225.187
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 141.144.198.50
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 92.5.228.124
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
@@ -87,13 +111,12 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 141.144.198.50
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
+- name: 🇺🇸 美国 | USA 2
+  server: 15.204.233.41
+  port: 8882
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
   udp: true
 - name: 🇺🇸 美国 | USA
   server: 162.159.43.187
@@ -101,19 +124,6 @@ proxies:
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 172.64.32.103
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
     path: /?ed=2560security=tls
@@ -145,6 +155,19 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 172.64.32.103
+  port: 2095
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇺🇸 美国 | USA 11
   server: 172.64.53.55
   port: 2095
@@ -158,27 +181,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 15.204.233.41
-  port: 8882
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 92.5.228.124
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 92.5.229.63
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: PMBwiRu8/7o8jrAiKnwhZLs7+Ca34xS5ZH7ZgrQ7p3I=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -186,43 +188,42 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN 2
-  - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 7
   - 🇬🇧 英国 | GBR 8
+  - 🇬🇧 英国 | GBR 7
   - 🇯🇵 日本 | JPN 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 5
   - 🇲🇾 马来西亚 | MYS
   - 🇨🇳 CN_12
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 2
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN 2
-  - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 5
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 7
   - 🇬🇧 英国 | GBR 8
+  - 🇬🇧 英国 | GBR 7
   - 🇲🇾 马来西亚 | MYS
   - 🇨🇳 CN_12
   - 🇺🇸 美国 | USA 2
-  - 🇳🇱 荷兰 | NLD 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -230,26 +231,13 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 4
   - 🇯🇵 日本 | JPN 2
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 5
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 11
-  - 🇳🇱 荷兰 | NLD 5
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 4
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇦 加拿大 | CAN 2
 rules:
 - MATCH,AUTO
