@@ -4,26 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 7
-  server: 95.170.13.47
+- name: 🇺🇸 美国 | USA 18
+  server: 121.46.230.232
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 121.46.230.137
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 134.98.152.103
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: FV3tOq7ZCGpJTl9r1HvOSeQOIwXFCRf66dTTlNBFdfY=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -31,8 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 7
-  - 🇯🇵 日本 | JPN
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 18
 rules:
 - MATCH,AUTO
