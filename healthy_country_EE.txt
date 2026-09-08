@@ -1,7 +1,4 @@
 vless://06c4e938-2954-478f-a870-ca1b163e30e9@94.183.170.135:443?encryption=none&security=none&type=ws#EE🇪🇪
-vless://9d9e3421-5652-4804-85ba-238355b948ab@estproxy3.lockdwn.com:8443?security=tls&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0#🆔soskeynet%20🔒%20VL-TCP-N/A%20🇪🇪%20EE%20198ms
-vless://06c4e938-2954-478f-a870-ca1b163e30e9@94.183.170.135:8443?encryption=none&fp=chrome&security=tls&sni=estproxy4.lockdwn.com&type=tcp#🇪🇪 337 - EE - VLESS/TLS/UTLS - 8443
-vless://342ab7e4-5a89-0001-8809-304120d4aa83@95.85.224.51:443?security=reality&flow=xtls-rprx-vision&pbk=WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc&sid=a696de84963656de&fp=qq&sni=max.ru&type=tcp&headerType=none&host=max.ru&path=/#🇪🇪 2426 - EE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://90546412-d9c5-4442-831b-e9b7ca3643de@2.26.129.1:443?type=tcp&headerType=none&security=reality&encryption=none&sni=stream.indigo.ru&fp=qq&pbk=gPTBA-gVUWAK9yziB_v_sGSncm0LwBQvEAsTQZK4jEE&sid=5a8e1a04f3d92b67&spx=/&flow=xtls-rprx-vision#🇪🇪 7308 - EE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://9d9e3421-5652-4804-85ba-238355b948ab@94.183.170.248:443?type=ws#🇪🇪 7944 - EE - VLESS/WS - 443
-vless://9d9e3421-5652-4804-85ba-238355b948ab@estproxy3.lockdwn.com:8443?type=tcp&headerType=none&security=tls&encryption=none&sni=estproxy3.lockdwn.com&alpn=h2,http/1.1&fp=chrome#🇪🇪 7946 - EE - VLESS/TLS/UTLS - 8443
+vless://06c4e938-2954-478f-a870-ca1b163e30e9@94.183.170.135:8443?encryption=none&fp=chrome&security=tls&sni=estproxy4.lockdwn.com&type=tcp#🇪🇪 345 - EE - VLESS/TLS/UTLS - 8443
+vless://342ab7e4-5a89-0001-8809-304120d4aa83@95.85.224.51:443?security=reality&flow=xtls-rprx-vision&pbk=WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc&sid=a696de84963656de&fp=qq&sni=max.ru&type=tcp&headerType=none&host=max.ru&path=/#🇪🇪 2377 - EE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
+trojan://humanity@80.77.25.142:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇪🇪 6940 - EE - Trojan/WS/TLS - 443
