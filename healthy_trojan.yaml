@@ -1,0 +1,28 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: silent
+proxies:
+- name: 🇩🇪 德国 | DEU 2
+  server: de9w7ehd8ejr9fyd-development-m0t2g.lucity.app
+  port: 443
+  type: trojan
+  password: 1e0cc178-82ff-8111-42b1-916b4210ca9b
+  sni: de9w7ehd8ejr9fyd-development-m0t2g.lucity.app
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: de9w7ehd8ejr9fyd-development-m0t2g.lucity.app
+  udp: true
+proxy-groups:
+- name: AUTO
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 2
+rules:
+- MATCH,AUTO

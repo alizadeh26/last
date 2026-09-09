@@ -4,44 +4,39 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 3
-  server: 95.170.13.47
+- name: 🇩🇪 德国 | DEU 2
+  server: de9w7ehd8ejr9fyd-development-m0t2g.lucity.app
+  port: 443
+  type: trojan
+  password: 1e0cc178-82ff-8111-42b1-916b4210ca9b
+  sni: de9w7ehd8ejr9fyd-development-m0t2g.lucity.app
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: de9w7ehd8ejr9fyd-development-m0t2g.lucity.app
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: de.cloudtechone.org
+  port: 443
+  type: vless
+  uuid: 2b2ea9d8-501e-4b79-8fd9-19bff6ed5cf5
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: _IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo
+    short-id: f93c9d5127e622e4
+  servername: de.cloudtechone.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 121.46.230.233
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: brightharbor.download
-  port: 443
-  type: vless
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: freshjuniper.download
-  port: 443
-  type: vless
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  tls: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 185.203.4.204
-  port: 3
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 816Efx8yiCSDDpvvpxXL8Q
   udp: true
 proxy-groups:
 - name: AUTO
@@ -49,41 +44,39 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 2
-  - 🇯🇵 日本 | JPN
-  - 🇩🇪 德国 | DEU 5
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 12
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 3
-  - 🇩🇪 德国 | DEU 5
+  - 🇺🇸 美国 | USA 12
+- name: PROTO-TROJAN
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇯🇵 日本 | JPN
+  - 🇳🇱 荷兰 | NLD 3
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 12
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 3
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
   - 🇩🇪 德国 | DEU 2
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO
