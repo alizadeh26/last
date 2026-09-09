@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 12
+- name: 🇨🇳 CN_06
   server: 121.46.230.233
   port: 65443
   type: ss
@@ -17,6 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 12
+  - 🇨🇳 CN_06
 rules:
 - MATCH,AUTO
