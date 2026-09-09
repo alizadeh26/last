@@ -4,12 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 18
-  server: 121.46.230.232
+- name: 🇫🇷 法国 | FRA 3
+  server: 95.170.13.47
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 185.203.4.204
+  port: 3
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 816Efx8yiCSDDpvvpxXL8Q
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 18
+  - 🇫🇷 法国 | FRA 3
+  - 🇩🇪 德国 | DEU 5
 rules:
 - MATCH,AUTO
