@@ -4,14 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: 2.26.178.129
+- name: 🇩🇪 德国 | DEU
+  server: 2.26.178.154
   port: 443
   type: vless
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
   tls: true
-  alpn:
-  - networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-
   flow: xtls-rprx-vision
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
@@ -19,28 +17,29 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 130.12.102.125
+- name: 🇩🇪 德国 | DEU 3
+  server: 2.26.178.138
   port: 443
   type: vless
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
   tls: true
+  flow: xtls-rprx-vision
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
   servername: localhost
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 31
-  server: 130.12.102.26
+- name: 🇳🇴 挪威 | NOR
+  server: viper-23.moriarty-web.com
   port: 443
   type: vless
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   tls: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
-  client-fingerprint: chrome
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: viper-23.moriarty-web.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
 proxy-groups:
@@ -49,8 +48,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 31
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇳🇴 挪威 | NOR
 rules:
 - MATCH,AUTO
