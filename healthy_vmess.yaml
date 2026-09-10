@@ -4,20 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 78.17.71.236
-  port: 33736
+- name: 🇺🇸 美国 | USA 26
+  server: 165.140.217.2
+  port: 443
   type: vmess
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
   tls: false
   alpn:
   - ''
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess-ws
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇺🇸 美国 | USA 26
 rules:
 - MATCH,AUTO

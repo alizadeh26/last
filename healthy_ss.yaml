@@ -4,8 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇳 CN_06
-  server: 121.46.230.233
+- name: 🇯🇵 日本 | JPN
+  server: 121.46.230.137
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
   port: 65443
   type: ss
   cipher: aes-256-cfb
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN_06
+  - 🇯🇵 日本 | JPN
+  - 🇲🇾 马来西亚 | MYS
 rules:
 - MATCH,AUTO
