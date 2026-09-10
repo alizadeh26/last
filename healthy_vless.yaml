@@ -31,6 +31,19 @@ proxies:
     headers:
       Host: aljha.typeshoes.online
   udp: true
+- name: 🇭🇰 香港 | HKG 6
+  server: 207.57.128.241
+  port: 48256
+  type: vless
+  uuid: c9858759-70bc-4d9d-b43b-b9ce233c0353
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: PLMKW3tCxUXZArpQZ6tuaECgNaSNUP-6NNxg7aRqIR8
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇭🇰 香港 | HKG 4
   server: 207.57.131.115
   port: 45140
@@ -43,16 +56,65 @@ proxies:
   servername: dash.cloudflare.com
   client-fingerprint: chrome
   network: tcp
-- name: 🇭🇰 香港 | HKG 6
-  server: 207.57.128.241
-  port: 48256
+- name: 🇭🇰 香港 | HKG 5
+  server: 38.147.173.43
+  port: 32073
   type: vless
-  uuid: c9858759-70bc-4d9d-b43b-b9ce233c0353
+  uuid: b145ee79-42dd-4399-adcc-044660ad306f
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: PLMKW3tCxUXZArpQZ6tuaECgNaSNUP-6NNxg7aRqIR8
-  servername: www.amazon.com
+    public-key: G7_z4XOqJImMhL0H8rBzN-VSR739_RsUGokfNuyadQc
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: pl-new-ded2.moritech.net
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: pl-new-ded2.moritech.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: viper-22.moriarty-web.com
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: viper-22.moriarty-web.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: 157.238.208.110
+  port: 41834
+  type: vless
+  uuid: 5adeccb9-dfca-41de-cdf7-4d901f2e70f5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /5adeccb9
+  udp: true
+- name: 🇭🇰 香港 | HKG 8
+  server: 193.134.211.201
+  port: 64136
+  type: vless
+  uuid: cb0d51da-de26-4e29-b3db-a7fbbf9a4b8c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: yi2t6WsgV_77ANrZf2xcfrSaJihtFVDQ5O_Ddt0n9SE
+  servername: dash.cloudflare.com
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -69,68 +131,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: viper-22.moriarty-web.com
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: viper-22.moriarty-web.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 8
-  server: 193.134.211.201
-  port: 64136
-  type: vless
-  uuid: cb0d51da-de26-4e29-b3db-a7fbbf9a4b8c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: yi2t6WsgV_77ANrZf2xcfrSaJihtFVDQ5O_Ddt0n9SE
-  servername: dash.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 157.238.208.110
-  port: 41834
-  type: vless
-  uuid: 5adeccb9-dfca-41de-cdf7-4d901f2e70f5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /5adeccb9
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pl-new-ded2.moritech.net
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: pl-new-ded2.moritech.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: 38.147.173.43
-  port: 32073
-  type: vless
-  uuid: b145ee79-42dd-4399-adcc-044660ad306f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: G7_z4XOqJImMhL0H8rBzN-VSR739_RsUGokfNuyadQc
-  servername: www.paypal.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -139,13 +139,13 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 6
-  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 6
-  - 🇭🇰 香港 | HKG 3
-  - 🇵🇱 波兰 | POL
-  - 🇭🇰 香港 | HKG 8
-  - 🇺🇸 美国 | USA 18
-  - 🇵🇱 波兰 | POL 2
+  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 5
+  - 🇵🇱 波兰 | POL 2
+  - 🇵🇱 波兰 | POL
+  - 🇺🇸 美国 | USA 18
+  - 🇭🇰 香港 | HKG 8
+  - 🇭🇰 香港 | HKG 3
 rules:
 - MATCH,AUTO
