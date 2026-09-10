@@ -1,2 +1,4 @@
-trojan://humanity@212.183.88.136:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇦🇹 6486 - AT - Trojan/WS/TLS - 443
-trojan://humanity@46.102.156.144:2053?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇦🇹 6516 - AT - Trojan/WS/TLS - 2053
+vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@50.7.37.155:443?alpn=h2&encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=at-new-ded.moritech.net&type=tcp#🇦🇹 9983 - AT - VLESS/TLS/VISION/UTLS - 443
+vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@50.7.36.27:443?alpn=h2&encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=at-new-ded2.moritech.net&type=tcp#🇦🇹 9981 - AT - VLESS/TLS/VISION/UTLS - 443
+trojan://humanity@212.183.88.136:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇦🇹 6397 - AT - Trojan/WS/TLS - 443
+trojan://humanity@46.102.156.144:2053?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇦🇹 6428 - AT - Trojan/WS/TLS - 2053

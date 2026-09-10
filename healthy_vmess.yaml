@@ -4,17 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 26
-  server: 165.140.217.2
-  port: 443
+- name: 🇮🇳 印度 | IND
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16626
   type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  uuid: bc8a58c9-a544-4f85-87cf-274f6eb4d8cb
   alterId: 0
   cipher: auto
   tls: false
-  alpn:
-  - ''
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 9531724e3efc3135bdf7f4339b2e04d7.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 26
+  - 🇮🇳 印度 | IND
 rules:
 - MATCH,AUTO

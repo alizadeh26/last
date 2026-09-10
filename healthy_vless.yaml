@@ -4,7 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
+- name: 🇩🇪 德国 | DEU 3
+  server: 2.26.178.152
+  port: 443
+  type: vless
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: localhost
+  client-fingerprint: chrome
+  network: tcp
+- name: 🇩🇪 德国 | DEU 5
   server: 2.26.178.154
   port: 443
   type: vless
@@ -17,20 +29,22 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 2.26.178.138
+- name: 🇩🇪 德国 | DEU 2
+  server: aljha.typeshoes.online
   port: 443
   type: vless
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  uuid: acc591a0-04ae-4676-996a-e6fe01b26ed2
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
+  servername: aljha.typeshoes.online
   client-fingerprint: chrome
-  network: tcp
-- name: 🇳🇴 挪威 | NOR
-  server: viper-23.moriarty-web.com
+  network: ws
+  ws-opts:
+    path: /kdi
+    headers:
+      Host: aljha.typeshoes.online
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: en-new.moriarty-web.com
   port: 443
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
@@ -38,8 +52,103 @@ proxies:
   alpn:
   - h2
   flow: xtls-rprx-vision
-  servername: viper-23.moriarty-web.com
+  servername: en-new.moriarty-web.com
   client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: 207.57.133.54
+  port: 18582
+  type: vless
+  uuid: 37b1e31e-0288-49d3-aa93-fe6a848501a3
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zDedAztDEYmYmjEOnYW8JZIaKG3MFZKov9i9k2BcbDA
+  servername: dash.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pl-new-ded2.moritech.net
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: pl-new-ded2.moritech.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: viper-33.moriarty-web.com
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: viper-33.moriarty-web.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: adheres-scruple.quick-cdn.net
+  port: 443
+  type: vless
+  uuid: 7eeeaa43-4ffd-4223-88a6-484a2be9cb95
+  tls: true
+  alpn:
+  - http/1.1
+  servername: adheres-scruple.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: adheres-scruple.quick-cdn.net
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  type: vless
+  uuid: 7eeeaa43-4ffd-4223-88a6-484a2be9cb95
+  tls: true
+  alpn:
+  - http/1.1
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: freshjuniper.download
+  port: 443
+  type: vless
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: localhost
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 130.12.102.125
+  port: 443
+  type: vless
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  servername: localhost
+  client-fingerprint: chrome
   network: tcp
   udp: true
 proxy-groups:
@@ -48,8 +157,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 3
-  - 🇳🇴 挪威 | NOR
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 2
+  - 🇬🇧 英国 | GBR
+  - 🇭🇰 香港 | HKG 2
+  - 🇵🇱 波兰 | POL
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
