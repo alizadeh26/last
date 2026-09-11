@@ -4,39 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 87.83.220.214
-  port: 10210
+- name: 🇦🇹 奥地利 | AUT
+  server: 82.110.60.9
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇦 加拿大 | CAN
+  server: 35.182.182.58
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 158.173.221.214
+  port: 11001
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: c032c3833d4b86b9
+  password: c58d16e593d44f42
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: nasnet-571299667-direct.mbghalibaf.com
-  port: 443
-  type: vless
-  uuid: nasnet
-  tls: true
-  flow: xtls-rprx-vision
-  servername: nasnet-571299667-direct.mbghalibaf.com
-  client-fingerprint: chrome
-  network: tcp
+- name: 🇮🇹 意大利 | ITA
+  server: 185.164.175.81
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: nl.alpheratzz.org
-  port: 8443
-  type: vless
-  uuid: 6b03ffdd-6646-410b-b575-6c05eafdaf60
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: vusr-6aa2cf2b.adhil.uk
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 172.64.42.85
+- name: 🇺🇸 美国 | USA 11
+  server: 104.18.46.234
   port: 2095
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -47,40 +44,18 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 172.64.52.6
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: grimness-backlogs.cdn-content.com
-  port: 443
-  type: vless
-  uuid: 254e661b-77ef-454a-8e2d-832bcdfc7470
-  tls: true
-  alpn:
-  - http/1.1
-  servername: grimness-backlogs.cdn-content.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: grimness-backlogs.cdn-content.com
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 194.77.229.56
-  port: 12007
+- name: 🇬🇧 英国 | GBR 3
+  server: 134.65.57.209
+  port: 61312
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1ed0af1c413861ff
+  cipher: 2022-blake3-chacha20-poly1305
+  password: wzbgRLlSeDwxHX6xLVVxKk93K5k5N8k+7rncQXn80XA=
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 158.101.199.87
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4TVQ2f1okbVq3+Brnm5IMRtM6r6S8HjjQpliw944wEA=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -88,41 +63,36 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 5
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 13
+  - 🇦🇹 奥地利 | AUT
+  - 🇨🇦 加拿大 | CAN
+  - 🇬🇧 英国 | GBR
+  - 🇮🇹 意大利 | ITA
+  - 🇺🇸 美国 | USA 11
+  - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇺🇸 美国 | USA 13
+  - 🇦🇹 奥地利 | AUT
+  - 🇨🇦 加拿大 | CAN
+  - 🇬🇧 英国 | GBR
+  - 🇮🇹 意大利 | ITA
+  - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 17
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 2
+  - 🇺🇸 美国 | USA 11
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
+  - 🇬🇧 英国 | GBR
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO

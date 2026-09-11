@@ -4,19 +4,46 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 87.83.220.214
-  port: 10210
+- name: 🇦🇹 奥地利 | AUT
+  server: 82.110.60.9
+  port: 19999
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c032c3833d4b86b9
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 194.77.229.56
-  port: 12007
+- name: 🇨🇦 加拿大 | CAN
+  server: 35.182.182.58
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 158.173.221.214
+  port: 11001
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 1ed0af1c413861ff
+  password: c58d16e593d44f42
+  udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: 185.164.175.81
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 134.65.57.209
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: wzbgRLlSeDwxHX6xLVVxKk93K5k5N8k+7rncQXn80XA=
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 158.101.199.87
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4TVQ2f1okbVq3+Brnm5IMRtM6r6S8HjjQpliw944wEA=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,7 +51,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇺🇸 美国 | USA 13
+  - 🇦🇹 奥地利 | AUT
+  - 🇨🇦 加拿大 | CAN
+  - 🇬🇧 英国 | GBR
+  - 🇮🇹 意大利 | ITA
+  - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO
