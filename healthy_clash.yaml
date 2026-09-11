@@ -4,9 +4,40 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 162.159.43.187
-  port: 8880
+- name: 🇩🇪 德国 | DEU 2
+  server: 87.83.220.214
+  port: 10210
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c032c3833d4b86b9
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: nasnet-571299667-direct.mbghalibaf.com
+  port: 443
+  type: vless
+  uuid: nasnet
+  tls: true
+  flow: xtls-rprx-vision
+  servername: nasnet-571299667-direct.mbghalibaf.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: nl.alpheratzz.org
+  port: 8443
+  type: vless
+  uuid: 6b03ffdd-6646-410b-b575-6c05eafdaf60
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: vusr-6aa2cf2b.adhil.uk
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 172.64.42.85
+  port: 2095
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -16,15 +47,40 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: ninja.monak2.ir
-  port: 110
-  type: vmess
-  uuid: 7034f274-c53a-4d73-9f0c-b28bac0d9e7a
-  alterId: 0
-  cipher: auto
+- name: 🇺🇸 美国 | USA 18
+  server: 172.64.52.6
+  port: 2095
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
-  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: grimness-backlogs.cdn-content.com
+  port: 443
+  type: vless
+  uuid: 254e661b-77ef-454a-8e2d-832bcdfc7470
+  tls: true
+  alpn:
+  - http/1.1
+  servername: grimness-backlogs.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: grimness-backlogs.cdn-content.com
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 194.77.229.56
+  port: 12007
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1ed0af1c413861ff
   udp: true
 proxy-groups:
 - name: AUTO
@@ -32,31 +88,41 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇹🇷 土耳其 | TUR
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 5
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 13
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 2
+  - 🇺🇸 美国 | USA 13
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 2
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇹🇷 土耳其 | TUR
+  - 🇩🇪 德国 | DEU 5
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 17
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 | TUR
-- name: REGION-NA
+  - 🇩🇪 德国 | DEU 2
+- name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇩🇪 德国 | DEU 5
 rules:
 - MATCH,AUTO
