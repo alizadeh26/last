@@ -4,6 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇭🇰 香港 | HKG
+  server: 207.57.131.123
+  port: 26631
+  type: vless
+  uuid: 906f32ff-9293-46ee-a694-a5eee40b8b42
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x2oZng_IPNINd3JLak1Rtv05OdkwgChhgHzBT7Z3byQ
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 11
   server: 104.18.46.234
   port: 2095
@@ -22,6 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
