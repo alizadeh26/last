@@ -4,43 +4,35 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: 178.105.61.61
-  port: 2083
+- name: 🇮🇪 爱尔兰 | IRL 2
+  server: 108.129.176.139
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: 207.57.133.237
+  port: 56109
   type: vless
-  uuid: cb077bf2-70b7-457b-af42-27cdc3e0e544
+  uuid: 751b489c-27e6-4bae-b43c-f02fb304d768
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: H0nCazQFHVhSObfqSUhGLhK7KRwKzTMggIBPjnMMqhk
-    short-id: af04ff8094115e93
+    public-key: WV3fNhuy06svr1ONLWT2t76iDO9lJVonANX5pbBMwic
+  servername: dash.cloudflare.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: aljha.typeshoes.online
-  port: 443
+- name: 🇭🇰 香港 | HKG 2
+  server: 207.57.133.226
+  port: 45643
   type: vless
-  uuid: acc591a0-04ae-4676-996a-e6fe01b26ed2
-  tls: true
-  servername: aljha.typeshoes.online
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /kdi
-    headers:
-      Host: aljha.typeshoes.online
-  udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: 207.57.128.241
-  port: 48256
-  type: vless
-  uuid: c9858759-70bc-4d9d-b43b-b9ce233c0353
+  uuid: 87d6ec62-660b-430a-a89c-dcd85d5aff75
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: PLMKW3tCxUXZArpQZ6tuaECgNaSNUP-6NNxg7aRqIR8
-  servername: www.amazon.com
+    public-key: iJ-HaZJleNLUNRws14Ud2veIdX8xdX0b97yWFQ0B33M
+  servername: www.paypal.com
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -56,86 +48,33 @@ proxies:
   servername: dash.cloudflare.com
   client-fingerprint: chrome
   network: tcp
-- name: 🇭🇰 香港 | HKG 5
-  server: 38.147.173.43
-  port: 32073
-  type: vless
-  uuid: b145ee79-42dd-4399-adcc-044660ad306f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: G7_z4XOqJImMhL0H8rBzN-VSR739_RsUGokfNuyadQc
-  servername: www.paypal.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pl-new-ded2.moritech.net
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: pl-new-ded2.moritech.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: viper-22.moriarty-web.com
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: viper-22.moriarty-web.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 146.235.19.129
-  port: 56927
+- name: 🇳🇱 荷兰 | NLD
+  server: 140.82.56.38
+  port: 8388
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: i699dvro3+yyb9U6o3qsojnoZw2MsymfU8jhW6SzVLg=
-- name: 🇺🇸 美国 | USA 18
-  server: 157.238.208.110
-  port: 41834
-  type: vless
-  uuid: 5adeccb9-dfca-41de-cdf7-4d901f2e70f5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /5adeccb9
+  cipher: aes-256-gcm
+  password: iOaIXNsQXVIxwmkY
   udp: true
-- name: 🇭🇰 香港 | HKG 8
-  server: 193.134.211.201
-  port: 64136
-  type: vless
-  uuid: cb0d51da-de26-4e29-b3db-a7fbbf9a4b8c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: yi2t6WsgV_77ANrZf2xcfrSaJihtFVDQ5O_Ddt0n9SE
-  servername: dash.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
+- name: 🇺🇸 美国 | USA 19
+  server: 121.46.230.232
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: 207.57.135.29
-  port: 54785
-  type: vless
-  uuid: 810493f7-4306-40f1-86e5-9fa7868b26b6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RqlCAwGrowPZDljm1O3c5jJJQmhwmSPOdgsopGTJMzE
-  servername: www.amazon.com
-  client-fingerprint: chrome
-  network: tcp
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: 🇰🇷 韩国 | KOR
+  server: 121.46.230.138
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
 proxy-groups:
 - name: AUTO
@@ -143,57 +82,45 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 6
-  - 🇭🇰 香港 | HKG 6
+  - 🇮🇪 爱尔兰 | IRL 2
+  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 5
-  - 🇵🇱 波兰 | POL 2
-  - 🇵🇱 波兰 | POL
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 18
-  - 🇭🇰 香港 | HKG 8
-  - 🇭🇰 香港 | HKG 3
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 19
+  - 🇲🇾 马来西亚 | MYS
+  - 🇰🇷 韩国 | KOR
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇮🇪 爱尔兰 | IRL 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 19
+  - 🇲🇾 马来西亚 | MYS
+  - 🇰🇷 韩国 | KOR
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 6
-  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 5
-  - 🇵🇱 波兰 | POL 2
-  - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 18
-  - 🇭🇰 香港 | HKG 8
-  - 🇭🇰 香港 | HKG 3
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 4
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇭🇰 香港 | HKG 5
+  - 🇮🇪 爱尔兰 | IRL 2
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
