@@ -4,20 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇳 印度 | IND
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16626
+- name: 🇹🇷 土耳其 | TUR
+  server: ninja.monak2.ir
+  port: 110
   type: vmess
-  uuid: bc8a58c9-a544-4f85-87cf-274f6eb4d8cb
+  uuid: 7034f274-c53a-4d73-9f0c-b28bac0d9e7a
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 9531724e3efc3135bdf7f4339b2e04d7.mobgslb.tbcache.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 | IND
+  - 🇹🇷 土耳其 | TUR
 rules:
 - MATCH,AUTO
