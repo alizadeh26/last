@@ -4,100 +4,25 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇹 奥地利 | AUT
-  server: at-new-ded5.moritech.net
+- name: 🇳🇱 荷兰 | NLD 3
+  server: cdn15sw.goonars.com
   port: 443
   type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: 02722550-1915-4629-a653-cbe95e594f70
   tls: true
+  alpn:
+  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
   flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Q6vABOUn6Uxtp0uDsfDG-SRJFLBh_oOofD9reec4iSg
+    short-id: cf41f778
+  servername: cdn15sw.goonars.com
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 10
-  server: 15.236.172.122
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.72.38
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Up0+uVr81SdwJumU4IQyZQYfIL+J1mPjEANj5EbLc9w=
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 162.159.0.53
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 172.64.229.170
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: austria-2.moritech.net
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: austria.moritech.net
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: uk-dedic.failspace.top
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 162.159.24.131
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 162.159.38.127
-  port: 2082
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.43.187
+  port: 2086
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -108,19 +33,60 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: fin.pinkmoon.pro
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 162.159.43.187
+  port: 2052
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇷🇴 罗马尼亚 | ROU 2
+  server: roma3.moritech.net
   port: 443
   type: vless
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   tls: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-  servername: fin.pinkmoon.pro
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇷🇴 罗马尼亚 | ROU
+  server: roma1.moritech.net
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: austria-2.moritech.net
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 172.64.229.170
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 proxy-groups:
 - name: AUTO
@@ -128,51 +94,39 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇫🇷 法国 | FRA 10
-  - 🇬🇧 英国 | GBR 2
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 9
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇬🇧 英国 | GBR 3
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 17
-  - 🇩🇪 德国 | DEU 4
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇷🇴 罗马尼亚 | ROU 2
+  - 🇷🇴 罗马尼亚 | ROU
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 19
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇫🇷 法国 | FRA 10
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 9
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇬🇧 英国 | GBR 3
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 17
-  - 🇩🇪 德国 | DEU 4
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇷🇴 罗马尼亚 | ROU 2
+  - 🇷🇴 罗马尼亚 | ROU
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 19
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇫🇷 法国 | FRA 10
-  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇷🇴 罗马尼亚 | ROU
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
