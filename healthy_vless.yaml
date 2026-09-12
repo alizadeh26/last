@@ -36,6 +36,19 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 162.159.43.187
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 7
   server: 162.159.43.187
   port: 2095
@@ -86,18 +99,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 162.159.43.187
-  port: 8880
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 172.64.32.108
   port: 8880
@@ -111,34 +112,17 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
+- name: 🇺🇸 美国 | USA 5
   server: 162.159.43.187
-  port: 8080
+  port: 8880
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: ghosts-spasm.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: 6f46fe49-9692-4e74-bfd0-5515fc677963
-  tls: true
-  alpn:
-  - http/1.1
-  servername: ghosts-spasm.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ghosts-spasm.quick-cdn.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -149,13 +133,12 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 6
   - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇬 新加坡 | SGP 4
   - 🇸🇬 新加坡 | SGP 7
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 12
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
