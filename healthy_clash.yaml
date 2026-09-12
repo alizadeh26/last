@@ -4,41 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇹 奥地利 | AUT
-  server: at.failspace.top
-  port: 443
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.209.135
+  port: 62145
   type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 158.173.221.214
-  port: 11001
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 130.61.82.58
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: hjqTkJV5VFVNHAIg/ivqFp+lDtPbAwt1CF4ZqrbwLAg=
-  udp: true
-- name: 🇮🇪 爱尔兰 | IRL
-  server: ir-new1.failspace.top
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
+- name: 🇩🇪 德国 | DEU 6
   server: fin.pinkmoon.pro
   port: 443
   type: vless
@@ -52,24 +26,15 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: cdn15sw.goonars.com
-  port: 443
-  type: vless
-  uuid: 02722550-1915-4629-a653-cbe95e594f70
-  tls: true
-  alpn:
-  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Q6vABOUn6Uxtp0uDsfDG-SRJFLBh_oOofD9reec4iSg
-    short-id: cf41f778
-  servername: cdn15sw.goonars.com
-  client-fingerprint: chrome
-  network: tcp
+- name: 🇬🇧 英国 | GBR 2
+  server: 158.173.221.214
+  port: 11001
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: poland-viper.moritech.net
+- name: 🇳🇱 荷兰 | NLD 2
+  server: nl-new-ded.failspace.top
   port: 443
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
@@ -78,31 +43,21 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: cdn6.goonars.com
-  port: 443
-  type: vless
-  uuid: 02722550-1915-4629-a653-cbe95e594f70
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: VWDBW2RS3o-oFBrSNdpncoaVVU8KixbPNHoj4-Wy7lM
-    short-id: 04a69fc6
-  servername: apitw3.goonars.com
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇵🇱 波兰 | POL 3
-  server: poland-new-ded.failspace.top
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 9
+- name: 🇸🇬 新加坡 | SGP 7
   server: 162.159.43.187
+  port: 2095
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 162.159.48.32
   port: 80
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -114,8 +69,32 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 172.64.52.6
+- name: 🇺🇸 美国 | USA 3
+  server: 172.64.32.108
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 104.18.46.234
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 162.159.43.187
   port: 8880
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -126,40 +105,47 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: free-server.techsonic.dev
-  port: 443
-  type: vless
-  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: aka.ms
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 22
-  server: 104.18.47.113
-  port: 8080
+- name: 🇺🇸 美国 | USA 12
+  server: 172.64.32.108
+  port: 8880
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇷🇴 罗马尼亚 | ROU
-  server: roma2.moritech.net
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 162.159.43.187
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: ghosts-spasm.quick-cdn.net
   port: 443
   type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: 6f46fe49-9692-4e74-bfd0-5515fc677963
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  network: tcp
+  alpn:
+  - http/1.1
+  servername: ghosts-spasm.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ghosts-spasm.quick-cdn.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -167,50 +153,54 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇬🇧 英国 | GBR
-  - 🇩🇪 德国 | DEU 4
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇩🇪 德国 | DEU 2
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇵🇱 波兰 | POL
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇵🇱 波兰 | POL 3
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 22
-  - 🇷🇴 罗马尼亚 | ROU
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 6
+  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 12
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 16
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇩🇪 德国 | DEU 4
+  - 🇬🇧 英国 | GBR 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇩🇪 德国 | DEU 2
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇵🇱 波兰 | POL
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇵🇱 波兰 | POL 3
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 22
-  - 🇷🇴 罗马尼亚 | ROU
-- name: REGION-EU
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇩🇪 德国 | DEU 6
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 12
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 16
+- name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇺🇸 美国 | USA 5
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 16
+- name: REGION-SA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇴 哥伦比亚 | COL
 rules:
 - MATCH,AUTO
