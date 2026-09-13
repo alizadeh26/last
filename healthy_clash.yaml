@@ -4,129 +4,82 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 130.61.231.5
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rQno0Boe5rbp1Ysul9MC25Cj2xvQanDYvQwo4tvjscQ=
+- name: 🇫🇷 法国 | FRA 3
+  server: 35.181.22.53
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR
-  server: 129.151.71.173
+  server: 129.151.80.3
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: RaC0yEMvQyt+dCIAYoUOUc40R3ULbnjEdqncGcOa+BE=
+  password: K0TpYu/15IWNGjVIozBua1uU5B9QB+LZRvFkP6fSAfY=
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 129.151.81.233
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.87.146
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: EiNQJLrudSLJz+ytMW+PBlyZl9qnk8DpSNuVEZA+5o8=
+  password: Qye4JK+lHU/8aJtTB5om+IMoxG4r3luE4ogzVo1+Oxk=
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 84.235.184.38
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 134.98.155.71
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  servername: 84.235.184.38
+  servername: 134.98.155.71
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 158.101.196.150
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: KL+tcAquOdHKZmi2oaMUN6G/VIi0kNptTxE0peCEbPk=
-- name: 🇺🇸 美国 | USA 7
-  server: 129.146.201.152
+- name: 🇺🇸 美国 | USA 25
+  server: 129.146.118.11
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: X4v639wlzFu2Dq28alDI5L47+ccP0oMT1fb6Qzs++so=
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 162.159.43.187
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.61.85.116
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3/Ww5SSfxqu0aei8xP1jEaBpAc24C4WNY18GEwfTg0M=
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 104.18.46.46
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
+  password: jyWBH8PWys7muYTwrV1sXByMIbElJrWCu+Jcx2v4C3Q=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
+  - 🇫🇷 法国 | FRA 3
   - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
-  - 🇩🇪 德国 | DEU 3
-  - 🇺🇸 美国 | USA 8
+  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 25
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 7
-  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 2
+  - 🇺🇸 美国 | USA 25
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 8
+  - 🇫🇷 法国 | FRA 3
+  - 🇳🇱 荷兰 | NLD 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
+  - 🇫🇷 法国 | FRA 3
   - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 25
 rules:
 - MATCH,AUTO
