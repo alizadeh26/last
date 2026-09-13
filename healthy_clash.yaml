@@ -4,15 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 134.98.155.71
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 134.98.155.71
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 129.151.87.146
   port: 61312
@@ -20,6 +11,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: Qye4JK+lHU/8aJtTB5om+IMoxG4r3luE4ogzVo1+Oxk=
   udp: true
+- name: 🇺🇸 美国 | USA 25
+  server: 129.146.118.11
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: jyWBH8PWys7muYTwrV1sXByMIbElJrWCu+Jcx2v4C3Q=
 - name: 🇺🇸 美国 | USA 10
   server: 162.159.43.187
   port: 8080
@@ -33,44 +30,40 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.80.3
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: K0TpYu/15IWNGjVIozBua1uU5B9QB+LZRvFkP6fSAfY=
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: 129.146.118.11
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jyWBH8PWys7muYTwrV1sXByMIbElJrWCu+Jcx2v4C3Q=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR 2
-  - 🇺🇸 美国 | USA 10
-  - 🇬🇧 英国 | GBR
   - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 10
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR
   - 🇺🇸 美国 | USA 25
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 10
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇬🇧 英国 | GBR 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO

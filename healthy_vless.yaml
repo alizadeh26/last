@@ -4,15 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 134.98.155.71
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 134.98.155.71
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 162.159.43.187
   port: 8080
@@ -32,7 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 3
   - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
