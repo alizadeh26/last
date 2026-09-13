@@ -4,19 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.80.3
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: K0TpYu/15IWNGjVIozBua1uU5B9QB+LZRvFkP6fSAfY=
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 129.151.87.146
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: Qye4JK+lHU/8aJtTB5om+IMoxG4r3luE4ogzVo1+Oxk=
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.80.3
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: K0TpYu/15IWNGjVIozBua1uU5B9QB+LZRvFkP6fSAfY=
   udp: true
 - name: 🇺🇸 美国 | USA 25
   server: 129.146.118.11
@@ -30,8 +30,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR
   - 🇺🇸 美国 | USA 25
 rules:
 - MATCH,AUTO
