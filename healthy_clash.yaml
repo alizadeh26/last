@@ -5,25 +5,61 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇬🇧 英国 | GBR 2
-  server: 129.151.87.146
-  port: 61312
+  server: 158.173.221.214
+  port: 11001
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Qye4JK+lHU/8aJtTB5om+IMoxG4r3luE4ogzVo1+Oxk=
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
   udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: 129.146.118.11
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jyWBH8PWys7muYTwrV1sXByMIbElJrWCu+Jcx2v4C3Q=
-- name: 🇺🇸 美国 | USA 10
+- name: 🇸🇪 瑞典 | SWE
+  server: se.chick-team.ru
+  port: 24443
+  type: vless
+  uuid: 15553b23-a621-4dfd-995e-2fe28d124526
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uUI9qoHBKhlrPy4BRJSQQygc4jstmLKLrhRI6jqhYxw
+    short-id: 8df4211d612176a5
+  servername: se.chick-team.ru
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: us05.shifor01.life
+  port: 443
+  type: vless
+  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
+  tls: true
+  alpn:
+  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
+    short-id: 169fc2df88419465
+  servername: us05.shifor01.life
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 5
   server: 162.159.43.187
-  port: 8080
+  port: 2052
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 172.64.229.2
+  port: 80
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
   network: ws
   ws-opts:
     path: /?ed=2560security=tls
@@ -37,33 +73,24 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR 2
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 10
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 13
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR 2
-  - 🇺🇸 美国 | USA 25
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 10
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR 2
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 10
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO
