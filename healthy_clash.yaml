@@ -4,33 +4,28 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
+- name: 🇸🇬 新加坡 | SGP 2
+  server: sg-edge.xn--kivt58h.lol
+  port: 443
+  type: vmess
+  uuid: 4e365b37-c94d-4a7c-8008-9375b24cccf5
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg-edge.xn--kivt58h.lol
+  network: ws
+  ws-opts:
+    path: /sg-edge-vm-859c3a8d7341c647
+    headers:
+      Host: sg-edge.xn--kivt58h.lol
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
   server: 150.230.23.127
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: O0YzhVbSI6dkXq8u2erAigGyzED8wS+gjA6IoAv7p3M=
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 158.173.221.214
-  port: 11001
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-  udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: ys6n-mveg4s.truvexel.com
-  port: 443
-  type: vless
-  uuid: a85ba9f6-ec48-40d1-ba5e-0ebbb7487789
-  tls: true
-  servername: ys6n-mveg4s.truvexel.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /a85ba9f6-ec48-40d1-ba5e-0ebbb7487789
-    headers:
-      Host: ys6n-mveg4s.truvexel.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,34 +33,31 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇬🇧 英国 | GBR
-  - 🇭🇰 香港 | HKG 6
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇳🇱 荷兰 | NLD 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇬🇧 英国 | GBR
-- name: PROTO-VLESS
+  - 🇳🇱 荷兰 | NLD 2
+- name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 6
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 6
+  - 🇸🇬 新加坡 | SGP 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO
