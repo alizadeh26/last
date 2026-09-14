@@ -4,67 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR 2
+- name: 🇳🇱 荷兰 | NLD
+  server: 150.230.23.127
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: O0YzhVbSI6dkXq8u2erAigGyzED8wS+gjA6IoAv7p3M=
+  udp: true
+- name: 🇬🇧 英国 | GBR
   server: 158.173.221.214
   port: 11001
   type: ss
   cipher: chacha20-ietf-poly1305
   password: c58d16e593d44f42
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: se.chick-team.ru
-  port: 24443
-  type: vless
-  uuid: 15553b23-a621-4dfd-995e-2fe28d124526
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: uUI9qoHBKhlrPy4BRJSQQygc4jstmLKLrhRI6jqhYxw
-    short-id: 8df4211d612176a5
-  servername: se.chick-team.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: us05.shifor01.life
+- name: 🇭🇰 香港 | HKG 6
+  server: ys6n-mveg4s.truvexel.com
   port: 443
   type: vless
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
+  uuid: a85ba9f6-ec48-40d1-ba5e-0ebbb7487789
   tls: true
-  alpn:
-  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
-    short-id: 169fc2df88419465
-  servername: us05.shifor01.life
+  servername: ys6n-mveg4s.truvexel.com
   client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 162.159.43.187
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /a85ba9f6-ec48-40d1-ba5e-0ebbb7487789
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 172.64.229.2
-  port: 80
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: ys6n-mveg4s.truvexel.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -72,25 +38,34 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 13
+  - 🇳🇱 荷兰 | NLD
+  - 🇬🇧 英国 | GBR
+  - 🇭🇰 香港 | HKG 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇬🇧 英国 | GBR
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 13
+  - 🇭🇰 香港 | HKG 6
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 6
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD
+  - 🇬🇧 英国 | GBR
 rules:
 - MATCH,AUTO
