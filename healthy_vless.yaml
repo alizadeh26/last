@@ -30,14 +30,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 64.176.64.194
-  port: 25585
-  type: vless
-  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 6
   server: 162.159.43.187
   port: 2086
@@ -72,7 +64,6 @@ proxy-groups:
   proxies:
   - 🇱🇹 立陶宛 | LTU 2
   - 🇸🇬 新加坡 | SGP
-  - 🇵🇱 波兰 | POL
   - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA 5
 rules:

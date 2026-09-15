@@ -4,12 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 130.61.183.63
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yf9h4xUU2tlbrA3gWX0zX0SO10STT3U6z1OlknRAo8=
 - name: 🇬🇧 英国 | GBR 3
   server: 129.151.74.10
   port: 61312
@@ -42,14 +36,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 64.176.64.194
-  port: 25585
-  type: vless
-  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 6
   server: 162.159.43.187
   port: 2086
@@ -76,26 +62,31 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 130.61.183.63
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yf9h4xUU2tlbrA3gWX0zX0SO10STT3U6z1OlknRAo8=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR 3
   - 🇱🇹 立陶宛 | LTU 2
   - 🇸🇬 新加坡 | SGP
-  - 🇵🇱 波兰 | POL
   - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA 5
+  - 🇩🇪 德国 | DEU 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR 3
+  - 🇩🇪 德国 | DEU 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -103,7 +94,6 @@ proxy-groups:
   proxies:
   - 🇱🇹 立陶宛 | LTU 2
   - 🇸🇬 新加坡 | SGP
-  - 🇵🇱 波兰 | POL
   - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA 5
 - name: REGION-EU
@@ -111,7 +101,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇬🇧 英国 | GBR 3
   - 🇱🇹 立陶宛 | LTU 2
-  - 🇵🇱 波兰 | POL
+  - 🇩🇪 德国 | DEU 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO

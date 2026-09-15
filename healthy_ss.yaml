@@ -4,25 +4,25 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 130.61.183.63
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yf9h4xUU2tlbrA3gWX0zX0SO10STT3U6z1OlknRAo8=
 - name: 🇬🇧 英国 | GBR 3
   server: 129.151.74.10
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: T1M/5P2Hc8WTkog/3oP2qI8NptCcefVAAe5tK2uqZ70=
+- name: 🇩🇪 德国 | DEU 2
+  server: 130.61.183.63
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yf9h4xUU2tlbrA3gWX0zX0SO10STT3U6z1OlknRAo8=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR 3
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO
