@@ -4,25 +4,55 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: 141.95.103.217
-  port: 443
-  type: vless
-  uuid: 81b77672-07d4-41e8-8eae-18987e2bd50b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 134.65.61.221
+- name: 🇩🇪 德国 | DEU 2
+  server: 130.61.183.63
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yf9h4xUU2tlbrA3gWX0zX0SO10STT3U6z1OlknRAo8=
+- name: 🇬🇧 英国 | GBR 3
+  server: 129.151.74.10
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: csIhMhVn3wF7rtlb0rU2Y3dx53jcnlSbGkxMl8aHrv0=
+  password: T1M/5P2Hc8WTkog/3oP2qI8NptCcefVAAe5tK2uqZ70=
+- name: 🇱🇹 立陶宛 | LTU 2
+  server: lt.aether-runet.top
+  port: 443
+  type: vless
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  servername: lt.aether-runet.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 162.159.43.187
-  port: 80
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 64.176.64.194
+  port: 25585
+  type: vless
+  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: 162.159.43.187
+  port: 2086
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -33,21 +63,18 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: grimness-backlogs.cdn-content.com
-  port: 443
+- name: 🇺🇸 美国 | USA 5
+  server: 162.159.43.187
+  port: 2095
   type: vless
-  uuid: 409f4682-a458-4671-8805-40dfc6978336
-  tls: true
-  alpn:
-  - http/1.1
-  servername: grimness-backlogs.cdn-content.com
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /ws
+    path: /?ed=2560security=tls
     headers:
-      Host: grimness-backlogs.cdn-content.com
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 proxy-groups:
 - name: AUTO
@@ -55,36 +82,36 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇱🇹 立陶宛 | LTU 2
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 20
+  - 🇵🇱 波兰 | POL
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇺🇸 美国 | USA 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 2
+  - 🇬🇧 英国 | GBR 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
+  - 🇱🇹 立陶宛 | LTU 2
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 20
+  - 🇵🇱 波兰 | POL
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇺🇸 美国 | USA 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇬🇧 英国 | GBR
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇸🇬 新加坡 | SGP
+  - 🇱🇹 立陶宛 | LTU 2
+  - 🇵🇱 波兰 | POL
 rules:
 - MATCH,AUTO
