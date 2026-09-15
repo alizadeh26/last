@@ -4,19 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 150.230.23.127
-  port: 45819
+- name: 🇬🇧 英国 | GBR
+  server: 134.65.61.221
+  port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: O0YzhVbSI6dkXq8u2erAigGyzED8wS+gjA6IoAv7p3M=
-  udp: true
+  password: csIhMhVn3wF7rtlb0rU2Y3dx53jcnlSbGkxMl8aHrv0=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇬🇧 英国 | GBR
 rules:
 - MATCH,AUTO
