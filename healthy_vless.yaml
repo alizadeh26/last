@@ -64,18 +64,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: flax-spinel23895.my-vm.work
-  port: 8088
-  type: vless
-  uuid: tmp_user
-  tls: false
-  network: ws
-  ws-opts:
-    path: /api
-    headers:
-      Host: queuev4.vk.com
-  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 162.159.43.187
   port: 8080
@@ -89,23 +77,17 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 158.101.197.145
-  port: 62145
+- name: 🇺🇸 美国 | USA 12
+  server: flax-spinel23895.my-vm.work
+  port: 8088
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: tmp_user
   tls: false
-  servername: 158.101.197.145
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 158.101.214.23
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 158.101.214.23
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /api
+    headers:
+      Host: queuev4.vk.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -118,9 +100,7 @@ proxy-groups:
   - 🇵🇱 波兰 | POL
   - 🇵🇱 波兰 | POL 2
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 10
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
