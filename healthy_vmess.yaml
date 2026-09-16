@@ -4,21 +4,23 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP 2
-  server: sg-edge.xn--kivt58h.lol
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  server: 82259754d625.oylfmxz.cn
   port: 443
   type: vmess
-  uuid: 4e365b37-c94d-4a7c-8008-9375b24cccf5
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
   alterId: 0
   cipher: auto
   tls: true
+  alpn:
+  - ''
   skip-cert-verify: true
-  servername: sg-edge.xn--kivt58h.lol
+  servername: 82259754d625.oylfmxz.cn
   network: ws
   ws-opts:
-    path: /sg-edge-vm-859c3a8d7341c647
+    path: /
     headers:
-      Host: sg-edge.xn--kivt58h.lol
+      Host: 82259754d625.oylfmxz.cn
   udp: true
 proxy-groups:
 - name: AUTO
@@ -26,6 +28,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
 rules:
 - MATCH,AUTO

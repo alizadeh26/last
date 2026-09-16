@@ -4,17 +4,82 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 27
-  server: www.gov.ua
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.43.187
   port: 8880
   type: vless
-  uuid: a62a4c64-2270-4d41-828b-2591906c48ba
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /?ed=2560security=tls
     headers:
-      Host: sweet-disk-a026.253-54b.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: poland-new-dedic-2.failspace.top
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: poland-new-dedic-2.failspace.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 162.159.38.127
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 172.64.53.55
+  port: 2095
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: piracy-android.video-streams.org
+  port: 443
+  type: vless
+  uuid: a97b4f58-0d47-416f-9ecd-dfdf20f31bf7
+  tls: true
+  servername: piracy-android.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: piracy-android.video-streams.org
+  udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: atomic-prase23893.my-vm.work
+  port: 8088
+  type: vless
+  uuid: tmp_user
+  tls: false
+  network: ws
+  ws-opts:
+    path: /api
+    headers:
+      Host: queuev4.vk.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +87,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 27
+  - 🇸🇬 新加坡 | SGP
+  - 🇵🇱 波兰 | POL
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 15
+  - 🇱🇻 拉脱维亚 | LVA
 rules:
 - MATCH,AUTO
