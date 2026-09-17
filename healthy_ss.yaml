@@ -4,54 +4,57 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: 63.180.252.123
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇳🇱 荷兰 | NLD
-  server: 92.5.225.140
-  port: 45819
+- name: 🇩🇪 德国 | DEU 2
+  server: 130.61.146.13
+  port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: SPNWAgF2AWO6KZhUhtr+KvkeClPO9K5Ys/vI45HtYEw=
+  password: oB5H6Y/UUhmW9lutHBne3Cwf6ZBPaKa1vKBj+FHQsYo=
 - name: 🇬🇧 英国 | GBR
-  server: 134.65.58.241
+  server: 129.151.64.102
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: tvpBo/Hcvix3GwQ1duILnBX2njevG6/K/mhs9ow4vuI=
+  password: bZtYdV6c3t+mqgvUvrzHYYjN01dNa77xEXsSCg+IlNs=
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 3.144.113.215
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 17
-  server: 18.191.174.144
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 158.101.193.0
-  port: 45819
+- name: 🇸🇬 新加坡 | SGP
+  server: 129.150.52.139
+  port: 56927
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: NhI8UUsxcCRH8PLCcp5/hOdrU5cJNByixTd0HsB15LE=
+  password: cAUXme9Y9EAWi28SXTU+es4KTr42+2hpNvFd7VohRO8=
+- name: 🇺🇸 美国 | USA 10
+  server: 129.146.126.143
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: v4eJ0V/39Gc9d/tSDT8Z5MMSWtDpckxKTiDIKPUD0uU=
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 3.149.6.228
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 129.146.61.109
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 7o6yLRjghychuBmpkqI4TIDe5EDz7s0lp4EPU31FcwE=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇳🇱 荷兰 | NLD
+  - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 17
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
