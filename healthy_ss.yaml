@@ -4,33 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.66.210
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: RsOf4rCN1x4ccrOrmu9aOAoAFZzvxGunwxrf2ZNoBgM=
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 129.151.92.18
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 4YIk2BAV2AExvYDsQrw4ELlQJP/b4poEXjzFbSXwMao=
-  udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 144.24.231.162
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: F0hfVWxhzOH0litAYyVAGxOQ7YUtyNdxp5F0PWBLyoQ=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 92.5.228.170
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: WxECxHlU2Cha2DHZqeQQLe0ruuNG4IBvbCAcwzStCbA=
   udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 129.146.112.109
@@ -39,31 +18,13 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: w7iS/IiaXU91y57t4KbfBGELydrLtztiCsqlXF9TO5g=
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 129.150.52.139
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: cAUXme9Y9EAWi28SXTU+es4KTr42+2hpNvFd7VohRO8=
-- name: 🇳🇱 荷兰 | NLD 12
-  server: 134.98.157.187
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bYZxXnOeeGcKITW1Vl1/RQ8pyUsC3OuNQoKxcRkABrM=
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD 5
   - 🇺🇸 美国 | USA 6
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇳🇱 荷兰 | NLD 12
 rules:
 - MATCH,AUTO
