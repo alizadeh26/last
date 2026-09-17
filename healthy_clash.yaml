@@ -4,73 +4,65 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 130.61.146.13
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oB5H6Y/UUhmW9lutHBne3Cwf6ZBPaKa1vKBj+FHQsYo=
 - name: 🇬🇧 英国 | GBR
-  server: 129.151.64.102
+  server: 129.151.66.210
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: bZtYdV6c3t+mqgvUvrzHYYjN01dNa77xEXsSCg+IlNs=
+  password: RsOf4rCN1x4ccrOrmu9aOAoAFZzvxGunwxrf2ZNoBgM=
   udp: true
-- name: 🇸🇬 新加坡 | SGP
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.92.18
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4YIk2BAV2AExvYDsQrw4ELlQJP/b4poEXjzFbSXwMao=
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 144.24.231.162
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: F0hfVWxhzOH0litAYyVAGxOQ7YUtyNdxp5F0PWBLyoQ=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 92.5.228.170
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: WxECxHlU2Cha2DHZqeQQLe0ruuNG4IBvbCAcwzStCbA=
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 129.146.112.109
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: w7iS/IiaXU91y57t4KbfBGELydrLtztiCsqlXF9TO5g=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
   server: 129.150.52.139
   port: 56927
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: cAUXme9Y9EAWi28SXTU+es4KTr42+2hpNvFd7VohRO8=
-- name: 🇺🇸 美国 | USA 10
-  server: 129.146.126.143
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: v4eJ0V/39Gc9d/tSDT8Z5MMSWtDpckxKTiDIKPUD0uU=
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 3.149.6.228
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: adheres-scruple.quick-cdn.net
-  port: 443
+- name: 🇺🇸 美国 | USA 16
+  server: 162.159.39.218
+  port: 8080
   type: vless
-  uuid: fadcfc37-376a-42e6-a5cd-cb65988663d3
-  tls: true
-  alpn:
-  - http/1.1
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 129.146.61.109
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7o6yLRjghychuBmpkqI4TIDe5EDz7s0lp4EPU31FcwE=
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 104.20.28.74
-  port: 8880
-  type: vless
-  uuid: c3f4ee0c-3c64-466d-ae14-9bcf685e1efd
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /?ed=2560security=tls
     headers:
-      Host: shiny-waterfall-fa51.300-c6f.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 12
+  server: 134.98.157.187
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bYZxXnOeeGcKITW1Vl1/RQ8pyUsC3OuNQoKxcRkABrM=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -78,50 +70,31 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 17
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA 6
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 16
+  - 🇳🇱 荷兰 | NLD 12
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 8
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA 6
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇳🇱 荷兰 | NLD 12
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 17
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇸🇬 新加坡 | SGP
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇬🇧 英国 | GBR
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 16
 rules:
 - MATCH,AUTO
