@@ -4,102 +4,61 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇹 奥地利 | AUT
-  server: at-dedic-2.failspace.top
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  flow: xtls-rprx-vision
-  servername: at-dedic-2.failspace.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 10
+- name: 🇩🇪 德国 | DEU 5
   server: 63.180.252.123
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇬🇧 英国 | GBR 5
-  server: uk-dedic-new-1.failspace.top
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 141.148.241.198
+  port: 62145
   type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: uk-dedic-new-1.failspace.top
-  client-fingerprint: firefox
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
+- name: 🇳🇱 荷兰 | NLD
+  server: 92.5.225.140
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: SPNWAgF2AWO6KZhUhtr+KvkeClPO9K5Ys/vI45HtYEw=
+- name: 🇬🇧 英国 | GBR
+  server: 134.65.58.241
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: tvpBo/Hcvix3GwQ1duILnBX2njevG6/K/mhs9ow4vuI=
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: poland-new-dedic-2.failspace.top
+- name: 🇺🇸 美国 | USA 9
+  server: 3.144.113.215
   port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: poland-new-dedic-2.failspace.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 3
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 17
   server: 18.191.174.144
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇵🇱 波兰 | POL 2
-  server: poland-new-decic-1.failspace.top
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  flow: xtls-rprx-vision
-  servername: poland-new-decic-1.failspace.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 172.64.154.8
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 162.159.43.187
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 158.101.193.0
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: NhI8UUsxcCRH8PLCcp5/hOdrU5cJNByixTd0HsB15LE=
+- name: 🇳🇱 荷兰 | NLD 10
+  server: 104.21.44.253
   port: 8080
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: flax-spinel23895.my-vm.work
-  port: 8088
-  type: vless
-  uuid: tmp_user
+  uuid: c6ba83a7-c4b5-481f-8f71-0f17deff0bf2
   tls: false
   network: ws
   ws-opts:
-    path: /api
+    path: /eyJqdW5rIjoiOUhPbnRlV0xaekI1cjciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
     headers:
-      Host: queuev4.vk.com
+      Host: billowing-sunset-e340.qaraatayi.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -107,33 +66,46 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇩🇪 德国 | DEU 10
-  - 🇬🇧 英国 | GBR 5
-  - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA 3
-  - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 12
+  - 🇩🇪 德国 | DEU 5
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD
+  - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 17
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 10
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 10
-  - 🇺🇸 美国 | USA 3
+  - 🇩🇪 德国 | DEU 5
+  - 🇳🇱 荷兰 | NLD
+  - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 17
+  - 🇳🇱 荷兰 | NLD 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇬🇧 英国 | GBR 5
-  - 🇵🇱 波兰 | POL
-  - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 12
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 10
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 5
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD
+  - 🇬🇧 英国 | GBR
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD 10
 rules:
 - MATCH,AUTO
