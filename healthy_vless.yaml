@@ -4,38 +4,46 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 158.101.211.111
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 158.101.211.111
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: www.whatismyip.net
+- name: 🇺🇸 美国 | USA 8
+  server: 162.159.48.32
   port: 2095
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: free-claude-api.asshole.us.ci
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: www.epicgames.com
-  port: 2095
+- name: 🇺🇸 美国 | USA 24
+  server: 172.64.88.168
+  port: 8880
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: b4883d27-3151-4adf-92b1-841c0dccd1ea
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: free-claude-api.asshole.us.ci
+      Host: damp-surf-aacf.296-8ed.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: bounded-crammed.video-streams.org
+  port: 443
+  type: vless
+  uuid: 7797f4a9-cf0b-4e07-a496-235897575512
+  tls: true
+  alpn:
+  - http/1.1
+  packet-encoding: xudp
+  servername: bounded-crammed.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: bounded-crammed.video-streams.org
   udp: true
 proxy-groups:
 - name: AUTO
@@ -43,8 +51,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 20
 rules:
 - MATCH,AUTO

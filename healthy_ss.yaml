@@ -5,112 +5,74 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇩🇪 德国 | DEU 2
-  server: 130.61.80.134
+  server: 130.61.147.64
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: Yz7wERCXItjxg58QkWoUaXdAFoiDFoytVsSeRO0RojA=
+  password: JgVnjf+IujBeHuKJ9dhXtdyGYRYY8x9LPeqbgYYQE0Q=
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 130.61.232.82
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: qcbhYjOYL+wy0N69cPyPDZMaCLix6L/5XD1HrCZlZiA=
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 130.61.224.188
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: WnsuVoEN56+jytOhEHYViA3xB4OMZ0kcBDudgqMeeHE=
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 130.61.146.82
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 1W4RvEFjyad78wExwpCcWKQ0AqXDGPqCFRxuxsmFLmk=
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 130.61.119.122
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: uuMbME5levfAj7yT6O3+6D+ufAlCTzK4KcgVq6AZAv8=
-  udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: 130.61.224.122
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: uo6MuSvMSNqb2E8KPtH3uTEn4ob1K5VLgJ7dfpmGvCw=
-  udp: true
-- name: 🇩🇪 德国 | DEU 14
-  server: 130.61.34.252
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: QXHfUaFRhH6qiO8T/a5el3MGLLpbe7IQqFNs2RPeQO0=
-- name: 🇩🇪 德国 | DEU 16
+- name: 🇩🇪 德国 | DEU 6
   server: 130.61.46.224
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: QzoZDLFsugBaayOFoit59+peLgfv3Vk+5MGnHhdhPAo=
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 13.37.239.112
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 | GBR
-  server: 144.24.231.175
-  port: 61312
+- name: 🇩🇪 德国 | DEU 7
+  server: 130.61.40.61
+  port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: lvowWeKVBF+PManXpAfXqZ2beNoI3O13BDm6gzsH7Qk=
+  password: rYYQVHYHRQ85q+A8qkzqg51BCs9HBK4Psg7VO/z6rMc=
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.78.53
-  port: 61312
+- name: 🇩🇪 德国 | DEU 10
+  server: 130.61.112.123
+  port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: br54CXSUGpJNzPcu1ijYkzj9uu2HcqisQ+Rtfs75BtY=
+  password: HrYSd9R7z1TYyeNpwA/w+0lfEIT6cS06z94kxzipL0k=
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 129.151.65.24
-  port: 61312
+- name: 🇳🇱 荷兰 | NLD
+  server: 84.235.184.174
+  port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: YtbZ5p/WBjlRfs2aQ1vr44sGpkdKyx5Xbdd+DKP7ke0=
-- name: 🇬🇧 英国 | GBR 4
-  server: 144.24.226.249
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: axZ54YHizH8C2/85gqPV+VCC6r0h+nWWGemeypymi2I=
+  password: L5v+6LtHT3Rm1mnmyP77xUs2XovkScMadD4XU5o0mVY=
   udp: true
-- name: 🇺🇸 美国 | USA 4
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 84.235.178.219
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: QOfM1O7xNsWPaSuxXycKxp6aJ6kqDU7+6tnjQcV1PDE=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 143.47.187.148
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: jV5AUHtwwIqzjlwmuewCRCeGlfjXHO5+EQyzgwuzlIQ=
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 130.61.235.30
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: m/CrE+EuNElAAVP1IrhSyQYq0EUT+XiDckrdlPOdMFA=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 161.118.242.116
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: O8NAGBdB4ptCXObiSU8J/Gf38K8gnGNG6Bj6QU6/1WI=
+  udp: true
+- name: 🇺🇸 美国 | USA 3
   server: 129.146.78.85
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: sbJ5llt+YoGtqLI7RpEhaXIgLTN+tnwzrB3vSOAvs04=
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 3.141.200.225
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 25
-  server: 129.146.75.221
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ko88AO1Lj50PH3xGQ/SzJChWovcD99np3GwLcJwj/Eo=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -119,20 +81,14 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 16
-  - 🇫🇷 法国 | FRA 2
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 3
-  - 🇬🇧 英国 | GBR 4
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 25
+  - 🇩🇪 德国 | DEU 10
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇩🇪 德国 | DEU 4
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO
