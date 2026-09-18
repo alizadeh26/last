@@ -4,19 +4,25 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.92.18
-  port: 61312
+- name: 🇩🇪 德国 | DEU
+  server: 18.156.84.97
+  port: 443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4YIk2BAV2AExvYDsQrw4ELlQJP/b4poEXjzFbSXwMao=
-  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA
+  server: 43.173.90.202
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: sg-proxy-2026
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
