@@ -23,13 +23,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 129.146.112.109
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: w7iS/IiaXU91y57t4KbfBGELydrLtztiCsqlXF9TO5g=
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -38,25 +31,17 @@ proxy-groups:
   proxies:
   - 🇬🇧 英国 | GBR 2
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR 2
-  - 🇺🇸 美国 | USA 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 16
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR 2
 rules:
 - MATCH,AUTO

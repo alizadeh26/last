@@ -11,13 +11,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 4YIk2BAV2AExvYDsQrw4ELlQJP/b4poEXjzFbSXwMao=
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 129.146.112.109
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: w7iS/IiaXU91y57t4KbfBGELydrLtztiCsqlXF9TO5g=
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -25,6 +18,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇬🇧 英国 | GBR 2
-  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO
