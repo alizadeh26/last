@@ -16,35 +16,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: 172.64.88.168
-  port: 8880
-  type: vless
-  uuid: b4883d27-3151-4adf-92b1-841c0dccd1ea
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: damp-surf-aacf.296-8ed.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: bounded-crammed.video-streams.org
-  port: 443
-  type: vless
-  uuid: 7797f4a9-cf0b-4e07-a496-235897575512
-  tls: true
-  alpn:
-  - http/1.1
-  packet-encoding: xudp
-  servername: bounded-crammed.video-streams.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: bounded-crammed.video-streams.org
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -52,7 +23,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 20
 rules:
 - MATCH,AUTO
