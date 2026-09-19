@@ -5,76 +5,69 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇩🇪 德国 | DEU 2
-  server: 130.61.147.64
+  server: 130.61.176.44
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: JgVnjf+IujBeHuKJ9dhXtdyGYRYY8x9LPeqbgYYQE0Q=
+  password: AQqPf1u0AmCFWLNBxK7ve1ODd1cTFFCg+q5qsF3hwoM=
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 130.61.235.30
-  port: 59924
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.68.65
+  port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: m/CrE+EuNElAAVP1IrhSyQYq0EUT+XiDckrdlPOdMFA=
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 130.61.40.61
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rYYQVHYHRQ85q+A8qkzqg51BCs9HBK4Psg7VO/z6rMc=
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 13.37.239.112
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇳🇱 荷兰 | NLD
-  server: 84.235.184.174
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: L5v+6LtHT3Rm1mnmyP77xUs2XovkScMadD4XU5o0mVY=
-  udp: true
+  password: 0N1dYtQFmHnwBeKv53o5MJDkRzbGYY1KkLXnaNkWo3o=
 - name: 🇳🇱 荷兰 | NLD 4
-  server: 143.47.187.148
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jV5AUHtwwIqzjlwmuewCRCeGlfjXHO5+EQyzgwuzlIQ=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 84.235.178.219
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: QOfM1O7xNsWPaSuxXycKxp6aJ6kqDU7+6tnjQcV1PDE=
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 162.159.48.32
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 151.243.173.119
+  port: 33736
+  type: vmess
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  alterId: 0
+  cipher: auto
   tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /vmess-ws
   udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: 172.64.88.168
+- name: 🇳🇱 荷兰 | NLD 7
+  server: hhhorp.plus-hit.ru
+  port: 443
+  type: vless
+  uuid: 84a794a5-2420-4ca7-8e08-8d21571f36f3
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA
+    short-id: 7c8e3d4a9b1f26d3
+  servername: hhhorp.plus-hit.ru
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: codecanyon.net
   port: 8880
   type: vless
-  uuid: b4883d27-3151-4adf-92b1-841c0dccd1ea
+  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: damp-surf-aacf.296-8ed.workers.dev
+      Host: dawn-waterfall-6052.360-001.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 104.20.37.53
+  port: 80
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  tls: false
+  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/b52a90ada6ab
+    headers:
+      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -83,32 +76,38 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 7
-  - 🇫🇷 法国 | FRA 2
-  - 🇳🇱 荷兰 | NLD
+  - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 24
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 19
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 7
-  - 🇫🇷 法国 | FRA 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇬🇧 英国 | GBR
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 24
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 19
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD 4
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 2
+  - 🇳🇱 荷兰 | NLD 7
 rules:
 - MATCH,AUTO

@@ -5,53 +5,18 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇩🇪 德国 | DEU 2
-  server: 130.61.147.64
+  server: 130.61.176.44
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: JgVnjf+IujBeHuKJ9dhXtdyGYRYY8x9LPeqbgYYQE0Q=
+  password: AQqPf1u0AmCFWLNBxK7ve1ODd1cTFFCg+q5qsF3hwoM=
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 130.61.235.30
-  port: 59924
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.68.65
+  port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: m/CrE+EuNElAAVP1IrhSyQYq0EUT+XiDckrdlPOdMFA=
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 130.61.40.61
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rYYQVHYHRQ85q+A8qkzqg51BCs9HBK4Psg7VO/z6rMc=
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 13.37.239.112
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇳🇱 荷兰 | NLD
-  server: 84.235.184.174
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: L5v+6LtHT3Rm1mnmyP77xUs2XovkScMadD4XU5o0mVY=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 143.47.187.148
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jV5AUHtwwIqzjlwmuewCRCeGlfjXHO5+EQyzgwuzlIQ=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 84.235.178.219
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: QOfM1O7xNsWPaSuxXycKxp6aJ6kqDU7+6tnjQcV1PDE=
-  udp: true
+  password: 0N1dYtQFmHnwBeKv53o5MJDkRzbGYY1KkLXnaNkWo3o=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -59,11 +24,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 7
-  - 🇫🇷 法国 | FRA 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇬🇧 英国 | GBR
 rules:
 - MATCH,AUTO
