@@ -4,20 +4,114 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 130.61.176.44
+- name: 🇩🇪 德国 | DEU
+  server: 130.61.130.33
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: AQqPf1u0AmCFWLNBxK7ve1ODd1cTFFCg+q5qsF3hwoM=
+  password: RpNOp0rdeUcXTBh/XgawUngLjpcB87tY8NaiVQl/dpo=
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.68.65
-  port: 61312
+- name: 🇩🇪 德国 | DEU 3
+  server: 167.233.185.128
+  port: 80
+  type: vless
+  uuid: 381d2d00-e193-4163-a7d0-170b9144c34f
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: vera.kyras.pw
+  port: 443
+  type: vless
+  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: xa2oqWBhi_uW7Zns1Irp8OlAEGQFU_vKTUqUqbnG2Wg
+    short-id: cdf67af2
+  servername: vera.kyras.pw
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA
+  server: hyhkup.mervi.icu
+  port: 443
+  type: vless
+  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EEMZb6c0SADcplLXt8-rTAZYaH-s0o9pXG1daNegzww
+    short-id: 18b63521daeda630
+  servername: hyhkup.mervi.icu
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 84.235.176.206
+  port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 0N1dYtQFmHnwBeKv53o5MJDkRzbGYY1KkLXnaNkWo3o=
-- name: 🇳🇱 荷兰 | NLD 4
+  password: I5lfbvkaESDwrx7KOnyw6ucfHEdwviDT3HekoYufSbE=
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: estomin1.vodniki.monster
+  port: 443
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
+    short-id: d98e7afec9c0c359
+  servername: estomin1.vodniki.monster
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 14ang88.snusoed.baby
+  port: 443
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
+    short-id: 2e124af254a65e7c
+  servername: 14ang88.snusoed.baby
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 152.70.56.250
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1XeydZB/lx64MHceQ9pOts/N4240zbkRHERpRBoaVVQ=
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 158.101.210.92
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Lkuvq8NB1/tDZYrDCNcvxZMC7ISuX6oMGYUEAvk966s=
+  udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: filetransver-pro.com
+  port: 443
+  type: vless
+  uuid: 1fa3ded2-4946-45ac-9f39-2a0e501e3d1f
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mk-fkkWvUHz2ubIOkr8kfDeglXowdCI3Z4OssjWIIwg
+    short-id: 2b145d99dc39e2cc
+  servername: filetransver-pro.com
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
   server: 151.243.173.119
   port: 33736
   type: vmess
@@ -30,44 +124,58 @@ proxies:
   ws-opts:
     path: /vmess-ws
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: hhhorp.plus-hit.ru
+- name: 🇸🇪 瑞典 | SWE
+  server: mail.figmafound.org
   port: 443
   type: vless
-  uuid: 84a794a5-2420-4ca7-8e08-8d21571f36f3
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA
-    short-id: 7c8e3d4a9b1f26d3
-  servername: hhhorp.plus-hit.ru
-  client-fingerprint: chrome
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: mail.figmafound.org
+  client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: codecanyon.net
-  port: 8880
+- name: 🇺🇦 乌克兰 | UKR
+  server: 104.143.223.67
+  port: 2085
   type: vless
-  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
+  uuid: c5a28d88-714d-461c-9ef6-178e26e2c840
   tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dawn-waterfall-6052.360-001.workers.dev
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 104.20.37.53
-  port: 80
+- name: 🇹🇷 土耳其 | TUR 3
+  server: 167.104.219.66
+  port: 18361
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  uuid: 'My-chanel-Telegram-ATOVPN '
   tls: false
-  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 162.159.0.53
+  port: 2095
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
   network: ws
   ws-opts:
-    path: /stream/TrexBridge/b52a90ada6ab
+    path: /?ed=2560security=tls
     headers:
-      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 92.5.238.234
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -75,39 +183,68 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 6
+  - 🇫🇷 法国 | FRA
+  - 🇳🇱 荷兰 | NLD
+  - 🇪🇪 爱沙尼亚 | EST
   - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 7
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 19
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇱🇻 拉脱维亚 | LVA
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇦 乌克兰 | UKR
+  - 🇹🇷 土耳其 | TUR 3
+  - 🇺🇸 美国 | USA 8
+  - 🇳🇱 荷兰 | NLD 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 19
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 6
+  - 🇫🇷 法国 | FRA
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇬🇧 英国 | GBR
+  - 🇱🇻 拉脱维亚 | LVA
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇦 乌克兰 | UKR
+  - 🇹🇷 土耳其 | TUR 3
+  - 🇺🇸 美国 | USA 8
+  - 🇳🇱 荷兰 | NLD 8
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇸🇪 瑞典 | SWE
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 6
 rules:
 - MATCH,AUTO

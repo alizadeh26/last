@@ -4,26 +4,42 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 130.61.176.44
+- name: 🇩🇪 德国 | DEU
+  server: 130.61.130.33
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: AQqPf1u0AmCFWLNBxK7ve1ODd1cTFFCg+q5qsF3hwoM=
+  password: RpNOp0rdeUcXTBh/XgawUngLjpcB87tY8NaiVQl/dpo=
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.68.65
-  port: 61312
+- name: 🇳🇱 荷兰 | NLD
+  server: 84.235.176.206
+  port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 0N1dYtQFmHnwBeKv53o5MJDkRzbGYY1KkLXnaNkWo3o=
+  password: I5lfbvkaESDwrx7KOnyw6ucfHEdwviDT3HekoYufSbE=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 152.70.56.250
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1XeydZB/lx64MHceQ9pOts/N4240zbkRHERpRBoaVVQ=
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 158.101.210.92
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Lkuvq8NB1/tDZYrDCNcvxZMC7ISuX6oMGYUEAvk966s=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 6
 rules:
 - MATCH,AUTO
