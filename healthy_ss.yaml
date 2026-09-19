@@ -11,6 +11,13 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: JgVnjf+IujBeHuKJ9dhXtdyGYRYY8x9LPeqbgYYQE0Q=
   udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 130.61.235.30
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: m/CrE+EuNElAAVP1IrhSyQYq0EUT+XiDckrdlPOdMFA=
+  udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: 130.61.40.61
   port: 59924
@@ -31,19 +38,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: L5v+6LtHT3Rm1mnmyP77xUs2XovkScMadD4XU5o0mVY=
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 161.118.242.116
-  port: 56927
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 143.47.187.148
+  port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: O8NAGBdB4ptCXObiSU8J/Gf38K8gnGNG6Bj6QU6/1WI=
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 130.61.235.30
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: m/CrE+EuNElAAVP1IrhSyQYq0EUT+XiDckrdlPOdMFA=
+  password: jV5AUHtwwIqzjlwmuewCRCeGlfjXHO5+EQyzgwuzlIQ=
   udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: 84.235.178.219
@@ -52,13 +52,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: QOfM1O7xNsWPaSuxXycKxp6aJ6kqDU7+6tnjQcV1PDE=
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 129.146.78.85
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: sbJ5llt+YoGtqLI7RpEhaXIgLTN+tnwzrB3vSOAvs04=
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -66,12 +59,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU 7
   - 🇫🇷 法国 | FRA 2
   - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇩🇪 德国 | DEU 4
+  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 3
-  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO
