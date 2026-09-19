@@ -4,42 +4,25 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR 3
-  server: 144.24.228.5
-  port: 61312
+- name: 🇺🇸 美国 | USA 19
+  server: 3.148.195.154
+  port: 443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: WmdVBr7gOr7QnP9JHkRbcAGh1MYOv3JCpr9/TnYTHt0=
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 138.2.71.128
-  port: 56927
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 17
+  server: 121.46.230.139
+  port: 65443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mYD6SNVk6rYfSsNcRE54unnYKlp5hRZk+XTtDnjEzjY=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 144.21.40.104
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: qp01vmOLvi4mN/iTG0oPcWhgK0C3ZvrkFQ2ZaT2t0H4=
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.87.133
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: b55gTfbbzI7GfDrbynYm2QwMB0lCtQXQsFl8qIevieg=
-  udp: true
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 3
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 17
 rules:
 - MATCH,AUTO

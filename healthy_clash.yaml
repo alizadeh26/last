@@ -4,20 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: estomin1.vodniki.monster
-  port: 443
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  servername: estomin1.vodniki.monster
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: finkafsb.finiki.lol
   port: 443
@@ -32,26 +18,6 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 144.24.228.5
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: WmdVBr7gOr7QnP9JHkRbcAGh1MYOv3JCpr9/TnYTHt0=
-- name: 🇫🇷 法国 | FRA 13
-  server: hyhkup.mervi.icu
-  port: 443
-  type: vless
-  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: EEMZb6c0SADcplLXt8-rTAZYaH-s0o9pXG1daNegzww
-    short-id: 18b63521daeda630
-  servername: hyhkup.mervi.icu
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: aws.bossonlineshop.info
   port: 80
@@ -60,77 +26,69 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 138.2.71.128
-  port: 56927
+- name: 🇺🇸 美国 | USA 19
+  server: 3.148.195.154
+  port: 443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mYD6SNVk6rYfSsNcRE54unnYKlp5hRZk+XTtDnjEzjY=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 144.21.40.104
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: qp01vmOLvi4mN/iTG0oPcWhgK0C3ZvrkFQ2ZaT2t0H4=
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: grimness-backlogs.cdn-content.com
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: estomin1.vodniki.monster
   port: 443
   type: vless
-  uuid: a3108d14-1f45-4f82-bb36-e2c41bdab527
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   tls: true
-  alpn:
-  - http/1.1
-  packet-encoding: xudp
-  servername: grimness-backlogs.cdn-content.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: grimness-backlogs.cdn-content.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
+    short-id: d98e7afec9c0c359
+  servername: estomin1.vodniki.monster
+  client-fingerprint: random
+  network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.87.133
-  port: 61312
+- name: 🇺🇸 美国 | USA 17
+  server: 121.46.230.139
+  port: 65443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: b55gTfbbzI7GfDrbynYm2QwMB0lCtQXQsFl8qIevieg=
-  udp: true
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇪 德国 | DEU 3
-  - 🇬🇧 英国 | GBR 3
-  - 🇫🇷 法国 | FRA 13
   - 🇺🇸 美国 | USA 2
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 15
-  - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 19
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇺🇸 美国 | USA 17
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 3
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 17
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇪 德国 | DEU 3
-  - 🇫🇷 法国 | FRA 13
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 15
+  - 🇪🇪 爱沙尼亚 | EST
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 3
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
