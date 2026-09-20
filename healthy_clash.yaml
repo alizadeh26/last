@@ -4,67 +4,174 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 5
-  server: 15.237.196.230
+- name: 🇩🇪 德国 | DEU
+  server: 130.61.32.89
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3AIXOT98856Z37/EC4I30Hm8EkZp5cPv7r9g/Zhcei4=
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.61.84.223
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: RQ/Pmz291j6t2nRAaCbztGTzWRjdPqP3WXIIbXO0BSM=
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 130.61.118.114
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: k5pJnvcAyoqjALpD9aI7vbAdkav9hHCRZchV/hv6JRQ=
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 130.61.231.49
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: YyvmYnbvBgSLa34idu1vUT3qeqo4QbuqWmJRQyR2x2M=
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 130.61.181.162
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 6IpJJIUOKtVHjU8zrTJoScGDGLfBBvWobJgMFGDuvM0=
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: jujujuj.mervi.icu
   port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇬🇧 英国 | GBR 5
-  server: 129.151.89.226
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: hx5/BJFpUSYwk16zA3b//qJ/ZL4UV6/Lg0hXmoPfBq0=
-  udp: true
-- name: 🇬🇧 英国 | GBR 7
-  server: 144.24.227.48
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: /ppCjFkh8QUQnwARBYcc8y20XK595agXWQ1+wWKJNGc=
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 144.24.231.91
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +lljlgksfaoQj9WykXIKz3KiYvRgwYs0q/YGHJ4dfNA=
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 45.152.65.68
-  port: 37574
   type: vless
-  uuid: e2353f83-9a40-4b46-82e1-666b1652d479
+  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: Pu-3VzlM8PPRnOTVZOC8HVGr4WwG5yOYiIrbVJYU5RI
+    public-key: j7_ysAZxK5vBkMqvu0r8_UUuR3Qp7Yml3fXFDGR5x3w
+    short-id: 573703f224b75e8c
+  servername: jujujuj.mervi.icu
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.86.235
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Vy4lRpLwy1/ZUJF58f+SpzYRBJCwQpwztiwtHcOtReI=
+- name: 🇯🇵 日本 | JPN 2
+  server: adheres-scruple.quick-cdn.net
+  port: 443
+  type: vless
+  uuid: 7478f643-1ef4-47fd-8ac7-5d53c6c64217
+  tls: true
+  servername: adheres-scruple.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: adheres-scruple.quick-cdn.net
+  udp: true
+- name: 🇬🇧 英国 | GBR 5
+  server: 134.65.59.15
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: r5ic6K6vlgFjNKuR9W7uPVRtSuzCYAjM78oW3RYK0bA=
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: 207.57.133.51
+  port: 29896
+  type: vless
+  uuid: 3767d445-9012-4f95-90ee-b5f15301dfe0
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k_rgz9OgfRvruve7uGVmd8tHbDxS1h_Yh9C7FL2qHls
   servername: www.amazon.com
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 54.36.174.140
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: 193.134.211.12
+  port: 40229
+  type: vless
+  uuid: fd33946a-ad66-48bb-bece-36a19009a20e
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: NdYhIYluMQg_VZTxYc9DtlCWl6bNDXS421HBsTECaBE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
 - name: 🇳🇱 荷兰 | NLD 2
-  server: 134.98.148.247
+  server: 141.148.241.38
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: rjjFYsfUkf7OHvPeiSPjvwe1J7PQhgqPvvY4toBG8Z4=
+  password: 6WkIZ7XnxsrwTRzKoBDXAEf/qVWbAcoiFBCN77bJgi8=
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 129.146.166.249
-  port: 50356
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.43.187
+  port: 80
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 172.64.154.8
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: www.terence-tunnel.org
+  port: 443
+  type: vless
+  uuid: c47eb7ab-2c2d-44e0-80cc-bb104f89a137
+  tls: true
+  servername: www.terence-tunnel.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tunnel
+    headers:
+      Host: www.terence-tunnel.org
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 178.255.222.200
+  port: 81
+  type: vless
+  uuid: 138a2254-7133-42a8-a454-fac19ec60999
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: 130.61.151.93
+  port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: K9OBH2kYRAOoHOHnTpy+legiiKeRJGLYdi0645bEdc8=
+  password: jcGrOPLXBqRT+ZnVbhom8HavJ2p5MkyjZdyxfkOzgLY=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 143.47.179.231
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: kAoIHaeRoTe0gnOjRPghW5nXrZUcx+gSKXcRVk9/ToE=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -72,31 +179,60 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 5
-  - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 7
-  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
-  - 🇵🇱 波兰 | POL
+  - 🇯🇵 日本 | JPN 2
+  - 🇬🇧 英国 | GBR 5
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 5
   - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 13
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇩🇪 德国 | DEU 11
+  - 🇳🇱 荷兰 | NLD 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 5
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 7
-  - 🇬🇧 英国 | GBR
-  - 🇵🇱 波兰 | POL
   - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU 11
+  - 🇳🇱 荷兰 | NLD 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 4
+  - 🇯🇵 日本 | JPN 2
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 5
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 13
+  - 🇳🇱 荷兰 | NLD 3
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 8
   - 🇬🇧 英国 | GBR 2
 rules:
 - MATCH,AUTO

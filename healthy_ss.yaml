@@ -4,54 +4,74 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 5
-  server: 15.237.196.230
-  port: 443
+- name: 🇩🇪 德国 | DEU
+  server: 130.61.32.89
+  port: 59924
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3AIXOT98856Z37/EC4I30Hm8EkZp5cPv7r9g/Zhcei4=
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.61.84.223
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: RQ/Pmz291j6t2nRAaCbztGTzWRjdPqP3WXIIbXO0BSM=
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: 130.61.118.114
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: k5pJnvcAyoqjALpD9aI7vbAdkav9hHCRZchV/hv6JRQ=
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 130.61.231.49
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: YyvmYnbvBgSLa34idu1vUT3qeqo4QbuqWmJRQyR2x2M=
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 130.61.181.162
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 6IpJJIUOKtVHjU8zrTJoScGDGLfBBvWobJgMFGDuvM0=
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.86.235
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Vy4lRpLwy1/ZUJF58f+SpzYRBJCwQpwztiwtHcOtReI=
 - name: 🇬🇧 英国 | GBR 5
-  server: 129.151.89.226
+  server: 134.65.59.15
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: hx5/BJFpUSYwk16zA3b//qJ/ZL4UV6/Lg0hXmoPfBq0=
-  udp: true
-- name: 🇬🇧 英国 | GBR 7
-  server: 144.24.227.48
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: /ppCjFkh8QUQnwARBYcc8y20XK595agXWQ1+wWKJNGc=
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 144.24.231.91
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +lljlgksfaoQj9WykXIKz3KiYvRgwYs0q/YGHJ4dfNA=
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 54.36.174.140
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
+  password: r5ic6K6vlgFjNKuR9W7uPVRtSuzCYAjM78oW3RYK0bA=
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
-  server: 134.98.148.247
+  server: 141.148.241.38
   port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: rjjFYsfUkf7OHvPeiSPjvwe1J7PQhgqPvvY4toBG8Z4=
+  password: 6WkIZ7XnxsrwTRzKoBDXAEf/qVWbAcoiFBCN77bJgi8=
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 129.146.166.249
-  port: 50356
+- name: 🇩🇪 德国 | DEU 11
+  server: 130.61.151.93
+  port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: K9OBH2kYRAOoHOHnTpy+legiiKeRJGLYdi0645bEdc8=
+  password: jcGrOPLXBqRT+ZnVbhom8HavJ2p5MkyjZdyxfkOzgLY=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 143.47.179.231
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: kAoIHaeRoTe0gnOjRPghW5nXrZUcx+gSKXcRVk9/ToE=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -59,12 +79,15 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 5
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 7
-  - 🇬🇧 英国 | GBR
-  - 🇵🇱 波兰 | POL
   - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU 11
+  - 🇳🇱 荷兰 | NLD 4
 rules:
 - MATCH,AUTO
