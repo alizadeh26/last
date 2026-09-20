@@ -4,67 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: finkafsb.finiki.lol
-  port: 443
+- name: 🇺🇸 美国 | USA 8
+  server: 172.64.146.211
+  port: 8880
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
-    short-id: d110331f200987ae
-  servername: finkafsb.finiki.lol
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: estomin1.vodniki.monster
-  port: 443
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  servername: estomin1.vodniki.monster
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 13
-  server: hyhkup.mervi.icu
-  port: 443
-  type: vless
-  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: EEMZb6c0SADcplLXt8-rTAZYaH-s0o9pXG1daNegzww
-    short-id: 18b63521daeda630
-  servername: hyhkup.mervi.icu
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: aws.bossonlineshop.info
-  port: 80
-  type: vless
-  uuid: f657645c-406a-48d6-bb62-f6da673f6a7c
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 172.64.154.8
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 11046a7c-fa1b-4653-ab87-400feb465540
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: nameless-poetry-12fb.8-0a2.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -72,10 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇫🇷 法国 | FRA 13
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

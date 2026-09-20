@@ -4,25 +4,58 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 19
-  server: 3.148.195.154
+- name: 🇫🇷 法国 | FRA 11
+  server: 15.237.196.230
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA 17
-  server: 121.46.230.139
-  port: 65443
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.72.10
+  port: 61312
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1W4F0fI81d/vwGCxDLCle+KbE+/Bb6uE7BP8Xjq1wH4=
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 144.24.226.127
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: J7cXNcIXneBAD5a5hk6nXD68z5BcJtIMepdH646KjtI=
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 144.24.225.39
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JXVCv3N78Ulr/V2Rsk0UN8DJEzD+yC0cbtWo9zjGTkg=
+- name: 🇬🇧 英国 | GBR 4
+  server: 134.65.57.36
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: M8pOfLWIl6qvXsCsc92LanmKA+kkrvEl1wCZSK5GCXk=
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 129.146.202.221
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +fzJvpwW2VTKUH4q8DKLuZXnibvrI2eRuStiXN8txX4=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 17
+  - 🇫🇷 法国 | FRA 11
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 4
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO

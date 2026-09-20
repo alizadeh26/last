@@ -4,79 +4,58 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: finkafsb.finiki.lol
-  port: 443
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
-    short-id: d110331f200987ae
-  servername: finkafsb.finiki.lol
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: estomin1.vodniki.monster
-  port: 443
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  servername: estomin1.vodniki.monster
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 13
-  server: hyhkup.mervi.icu
-  port: 443
-  type: vless
-  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: EEMZb6c0SADcplLXt8-rTAZYaH-s0o9pXG1daNegzww
-    short-id: 18b63521daeda630
-  servername: hyhkup.mervi.icu
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: aws.bossonlineshop.info
-  port: 80
-  type: vless
-  uuid: f657645c-406a-48d6-bb62-f6da673f6a7c
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 3.148.195.154
+- name: 🇫🇷 法国 | FRA 11
+  server: 15.237.196.230
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA 17
-  server: 121.46.230.139
-  port: 65443
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.72.10
+  port: 61312
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1W4F0fI81d/vwGCxDLCle+KbE+/Bb6uE7BP8Xjq1wH4=
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 144.24.226.127
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: J7cXNcIXneBAD5a5hk6nXD68z5BcJtIMepdH646KjtI=
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 144.24.225.39
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JXVCv3N78Ulr/V2Rsk0UN8DJEzD+yC0cbtWo9zjGTkg=
+- name: 🇬🇧 英国 | GBR 4
+  server: 134.65.57.36
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: M8pOfLWIl6qvXsCsc92LanmKA+kkrvEl1wCZSK5GCXk=
+  udp: true
 - name: 🇺🇸 美国 | USA 10
-  server: 172.64.154.8
-  port: 2052
+  server: 129.146.202.221
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +fzJvpwW2VTKUH4q8DKLuZXnibvrI2eRuStiXN8txX4=
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 172.64.146.211
+  port: 8880
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 11046a7c-fa1b-4653-ab87-400feb465540
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: nameless-poetry-12fb.8-0a2.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -84,29 +63,29 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇫🇷 法国 | FRA 13
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 17
+  - 🇫🇷 法国 | FRA 11
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 4
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 17
+  - 🇫🇷 法国 | FRA 11
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR 4
+  - 🇺🇸 美国 | USA 10
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇫🇷 法国 | FRA 13
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
