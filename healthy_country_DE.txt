@@ -5,6 +5,7 @@ ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@3.71.182.230:443#%F0%9F%87%A9%F0%9F%87%AAD
 ss://YWVzLTI1Ni1nY206a0tFZDByQnJkNTZGdXJqeg==@2.58.81.221:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+2.58.81.221-443+%7C+155.98ms
 ss://YWVzLTI1Ni1nY206a0tFZDByQnJkNTZGdXJqeg==@2.58.81.221:80#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+2.58.81.221-80+%7C+156.59ms
 vless://423b1d79-08c4-403f-9d5e-c541f791b55f@144.31.168.95:443?security=reality&flow=xtls-rprx-vision&sni=eu-central.cendora.ru&type=tcp&fp=qq&pbk=b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI&sid=00bca5982f82d083#🇩🇪 87 - DE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://47d9b534-8a0a-4bd2-90f1-1d6ade14427e@150.241.101.80:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=yandex.net&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2&type=tcp&headerType=none#🇪🇪 94 - EE - VLESS/REALITY/PBK/SID/VISION/UTLS - 8443
-vless://bbfd1f68-ec64-452f-8404-9e2bcf1df951@95.85.230.35:443?encryption=none&flow=xtls-rprx-vision&pbk=mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0&security=reality&sni=de.oblaco.bet&type=tcp#🇩🇪 294 - DE - VLESS/REALITY/PBK/VISION - 443
-ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@185.226.172.8:8008#🇩🇪 67 - DE - SS/AEAD - 8008
+vless://39cd736f-d129-4e75-ac39-77f6cf233450@91.98.44.116:80?flow=xtls-rprx-vision&security=reality&encryption=none&sni=www.yahoo.com&fp=chrome&pbk=KDmlFjsZuxHYEHYtFZh-3sLmrkt_KmcxA-sG8twBqxM&sid=d2549f367a3ed3cc&spx=/&type=tcp&headerType=none&path=/#🇩🇪 80 - DE - VLESS/REALITY/PBK/SID/VISION/UTLS - 80
+vless://bbfd1f68-ec64-452f-8404-9e2bcf1df951@95.85.230.35:443?encryption=none&flow=xtls-rprx-vision&pbk=mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0&security=reality&sni=de.oblaco.bet&type=tcp#🇩🇪 292 - DE - VLESS/REALITY/PBK/VISION - 443
+vless://nasnet@nasnet-571299667-direct.mbghalibaf.com:443?flow=xtls-rprx-vision&security=tls&encryption=none&fp=chrome&type=tcp&headerType=none&path=/&allow_insecure=0#🇩🇪 368 - DE - VLESS/TLS/VISION/UTLS - 443
+ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@185.226.172.8:8008#🇩🇪 105 - DE - SS/AEAD - 8008

@@ -4,34 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: jujujuj.mervi.icu
-  port: 443
-  type: vless
-  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j7_ysAZxK5vBkMqvu0r8_UUuR3Qp7Yml3fXFDGR5x3w
-    short-id: 573703f224b75e8c
-  servername: jujujuj.mervi.icu
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: adheres-scruple.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: 7478f643-1ef4-47fd-8ac7-5d53c6c64217
-  tls: true
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
 - name: 🇭🇰 香港 | HKG 2
   server: 207.57.133.51
   port: 29896
@@ -57,6 +29,20 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇯🇵 日本 | JPN 2
+  server: adheres-scruple.quick-cdn.net
+  port: 443
+  type: vless
+  uuid: 7478f643-1ef4-47fd-8ac7-5d53c6c64217
+  tls: true
+  servername: adheres-scruple.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: adheres-scruple.quick-cdn.net
+  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 162.159.43.187
   port: 80
@@ -82,26 +68,17 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: www.terence-tunnel.org
-  port: 443
+- name: 🇭🇰 香港 | HKG 7
+  server: 45.152.66.160
+  port: 2581
   type: vless
-  uuid: c47eb7ab-2c2d-44e0-80cc-bb104f89a137
+  uuid: 600d0970-77e5-4b57-8a88-a5b623c5a3d7
   tls: true
-  servername: www.terence-tunnel.org
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: sJMVQ27QqDnyTPtHC02hVfJK1Ot42YsyLm47eHnLgV8
+  servername: www.amazon.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tunnel
-    headers:
-      Host: www.terence-tunnel.org
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 178.255.222.200
-  port: 81
-  type: vless
-  uuid: 138a2254-7133-42a8-a454-fac19ec60999
-  tls: false
   network: tcp
   udp: true
 proxy-groups:
@@ -110,13 +87,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇯🇵 日本 | JPN 2
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
+  - 🇯🇵 日本 | JPN 2
   - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 13
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇭🇰 香港 | HKG 7
 rules:
 - MATCH,AUTO

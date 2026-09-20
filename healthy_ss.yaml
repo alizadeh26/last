@@ -4,13 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 130.61.32.89
+- name: 🇩🇪 德国 | DEU 7
+  server: 130.61.231.49
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 3AIXOT98856Z37/EC4I30Hm8EkZp5cPv7r9g/Zhcei4=
+  password: YyvmYnbvBgSLa34idu1vUT3qeqo4QbuqWmJRQyR2x2M=
   udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: 18.156.84.97
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇩🇪 德国 | DEU 3
   server: 130.61.84.223
   port: 59924
@@ -25,13 +31,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: k5pJnvcAyoqjALpD9aI7vbAdkav9hHCRZchV/hv6JRQ=
   udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 130.61.231.49
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: YyvmYnbvBgSLa34idu1vUT3qeqo4QbuqWmJRQyR2x2M=
-  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: 130.61.181.162
   port: 59924
@@ -39,32 +38,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 6IpJJIUOKtVHjU8zrTJoScGDGLfBBvWobJgMFGDuvM0=
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.86.235
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Vy4lRpLwy1/ZUJF58f+SpzYRBJCwQpwztiwtHcOtReI=
-- name: 🇬🇧 英国 | GBR 5
-  server: 134.65.59.15
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: r5ic6K6vlgFjNKuR9W7uPVRtSuzCYAjM78oW3RYK0bA=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 141.148.241.38
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 6WkIZ7XnxsrwTRzKoBDXAEf/qVWbAcoiFBCN77bJgi8=
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 130.61.151.93
+- name: 🇩🇪 德国 | DEU
+  server: 130.61.32.89
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: jcGrOPLXBqRT+ZnVbhom8HavJ2p5MkyjZdyxfkOzgLY=
+  password: 3AIXOT98856Z37/EC4I30Hm8EkZp5cPv7r9g/Zhcei4=
   udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: 143.47.179.231
@@ -79,15 +58,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 8
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 5
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 4
 rules:
 - MATCH,AUTO
