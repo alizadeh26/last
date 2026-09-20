@@ -4,40 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: 130.61.231.49
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: YyvmYnbvBgSLa34idu1vUT3qeqo4QbuqWmJRQyR2x2M=
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 18.156.84.97
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.61.84.223
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: RQ/Pmz291j6t2nRAaCbztGTzWRjdPqP3WXIIbXO0BSM=
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 130.61.118.114
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: k5pJnvcAyoqjALpD9aI7vbAdkav9hHCRZchV/hv6JRQ=
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 130.61.181.162
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 6IpJJIUOKtVHjU8zrTJoScGDGLfBBvWobJgMFGDuvM0=
-  udp: true
 - name: 🇭🇰 香港 | HKG 2
   server: 207.57.133.51
   port: 29896
@@ -90,31 +56,18 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 130.61.32.89
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3AIXOT98856Z37/EC4I30Hm8EkZp5cPv7r9g/Zhcei4=
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 172.64.154.8
-  port: 8880
+- name: 🇭🇰 香港 | HKG 8
+  server: 207.57.135.28
+  port: 27659
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 143.47.179.231
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kAoIHaeRoTe0gnOjRPghW5nXrZUcx+gSKXcRVk9/ToE=
+  uuid: ecee6ef1-5172-4543-bf81-e4aaf64db01c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: KFp1q4xOR_FZQYwRBFTLhyf5cOSVjrPNDkUG-RblNmg
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇭🇰 香港 | HKG 7
   server: 45.152.66.160
@@ -129,37 +82,46 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 172.64.154.8
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: www.terence-tunnel.org
+  port: 443
+  type: vless
+  uuid: c47eb7ab-2c2d-44e0-80cc-bb104f89a137
+  tls: true
+  servername: www.terence-tunnel.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tunnel
+    headers:
+      Host: www.terence-tunnel.org
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 8
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
   - 🇯🇵 日本 | JPN 2
   - 🇸🇬 新加坡 | SGP
-  - 🇩🇪 德国 | DEU
-  - 🇺🇸 美国 | USA 6
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇭🇰 香港 | HKG 8
   - 🇭🇰 香港 | HKG 7
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 13
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -169,22 +131,24 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 5
   - 🇯🇵 日本 | JPN 2
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG 8
   - 🇭🇰 香港 | HKG 7
-- name: REGION-EU
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 13
+- name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 8
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 5
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇯🇵 日本 | JPN 2
   - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO

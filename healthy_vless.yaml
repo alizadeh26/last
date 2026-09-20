@@ -56,17 +56,18 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 172.64.154.8
-  port: 8880
+- name: 🇭🇰 香港 | HKG 8
+  server: 207.57.135.28
+  port: 27659
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: ecee6ef1-5172-4543-bf81-e4aaf64db01c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: KFp1q4xOR_FZQYwRBFTLhyf5cOSVjrPNDkUG-RblNmg
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇭🇰 香港 | HKG 7
   server: 45.152.66.160
@@ -81,6 +82,32 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 172.64.154.8
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: www.terence-tunnel.org
+  port: 443
+  type: vless
+  uuid: c47eb7ab-2c2d-44e0-80cc-bb104f89a137
+  tls: true
+  servername: www.terence-tunnel.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tunnel
+    headers:
+      Host: www.terence-tunnel.org
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -91,7 +118,9 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 5
   - 🇯🇵 日本 | JPN 2
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG 8
   - 🇭🇰 香港 | HKG 7
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 13
 rules:
 - MATCH,AUTO
