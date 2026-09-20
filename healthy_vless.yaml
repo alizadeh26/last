@@ -4,17 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 8
-  server: 172.64.146.211
-  port: 8880
+- name: 🇬🇧 英国 | GBR 2
+  server: 45.152.65.68
+  port: 37574
   type: vless
-  uuid: 11046a7c-fa1b-4653-ab87-400feb465540
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
-    headers:
-      Host: nameless-poetry-12fb.8-0a2.workers.dev
+  uuid: e2353f83-9a40-4b46-82e1-666b1652d479
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Pu-3VzlM8PPRnOTVZOC8HVGr4WwG5yOYiIrbVJYU5RI
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 8
+  - 🇬🇧 英国 | GBR 2
 rules:
 - MATCH,AUTO

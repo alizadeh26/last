@@ -4,46 +4,54 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 11
+- name: 🇫🇷 法国 | FRA 5
   server: 15.237.196.230
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
+- name: 🇬🇧 英国 | GBR 5
+  server: 129.151.89.226
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: hx5/BJFpUSYwk16zA3b//qJ/ZL4UV6/Lg0hXmoPfBq0=
+  udp: true
+- name: 🇬🇧 英国 | GBR 7
+  server: 144.24.227.48
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: /ppCjFkh8QUQnwARBYcc8y20XK595agXWQ1+wWKJNGc=
+  udp: true
 - name: 🇬🇧 英国 | GBR
-  server: 129.151.72.10
+  server: 144.24.231.91
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 1W4F0fI81d/vwGCxDLCle+KbE+/Bb6uE7BP8Xjq1wH4=
+  password: +lljlgksfaoQj9WykXIKz3KiYvRgwYs0q/YGHJ4dfNA=
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 144.24.226.127
-  port: 61312
+- name: 🇵🇱 波兰 | POL
+  server: 54.36.174.140
+  port: 443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: J7cXNcIXneBAD5a5hk6nXD68z5BcJtIMepdH646KjtI=
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 144.24.225.39
-  port: 61312
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 134.98.148.247
+  port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: JXVCv3N78Ulr/V2Rsk0UN8DJEzD+yC0cbtWo9zjGTkg=
-- name: 🇬🇧 英国 | GBR 4
-  server: 134.65.57.36
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: M8pOfLWIl6qvXsCsc92LanmKA+kkrvEl1wCZSK5GCXk=
+  password: rjjFYsfUkf7OHvPeiSPjvwe1J7PQhgqPvvY4toBG8Z4=
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 129.146.202.221
+- name: 🇺🇸 美国 | USA
+  server: 129.146.166.249
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: +fzJvpwW2VTKUH4q8DKLuZXnibvrI2eRuStiXN8txX4=
+  password: K9OBH2kYRAOoHOHnTpy+legiiKeRJGLYdi0645bEdc8=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -51,11 +59,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 11
+  - 🇫🇷 法国 | FRA 5
+  - 🇬🇧 英国 | GBR 5
+  - 🇬🇧 英国 | GBR 7
   - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 3
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR 4
-  - 🇺🇸 美国 | USA 10
+  - 🇵🇱 波兰 | POL
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
