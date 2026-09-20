@@ -18,20 +18,6 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: aws.bossonlineshop.info
-  port: 80
-  type: vless
-  uuid: f657645c-406a-48d6-bb62-f6da673f6a7c
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 3.148.195.154
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇪🇪 爱沙尼亚 | EST
   server: estomin1.vodniki.monster
   port: 443
@@ -46,12 +32,52 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
+- name: 🇫🇷 法国 | FRA 13
+  server: hyhkup.mervi.icu
+  port: 443
+  type: vless
+  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EEMZb6c0SADcplLXt8-rTAZYaH-s0o9pXG1daNegzww
+    short-id: 18b63521daeda630
+  servername: hyhkup.mervi.icu
+  client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: aws.bossonlineshop.info
+  port: 80
+  type: vless
+  uuid: f657645c-406a-48d6-bb62-f6da673f6a7c
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 3.148.195.154
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇺🇸 美国 | USA 17
   server: 121.46.230.139
   port: 65443
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+- name: 🇺🇸 美国 | USA 10
+  server: 172.64.154.8
+  port: 2052
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -59,10 +85,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 3
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇫🇷 法国 | FRA 13
   - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 19
-  - 🇪🇪 爱沙尼亚 | EST
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 10
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -76,19 +104,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 3
-  - 🇺🇸 美国 | USA 2
   - 🇪🇪 爱沙尼亚 | EST
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 3
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 19
+  - 🇫🇷 法国 | FRA 13
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
