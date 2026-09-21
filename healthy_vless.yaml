@@ -4,8 +4,44 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP 2
+- name: 🇨🇱 智利 | CHL
+  server: platform117.golnamakcert.top
+  port: 80
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+  udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: 140.248.189.57
+  port: 80
+  type: vless
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Tazia.global.ssl.fastly.net
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
   server: 162.159.43.187
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 172.64.229.170
   port: 2082
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -16,66 +52,15 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 172.64.229.170
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 45.152.66.168
-  port: 27906
-  type: vless
-  uuid: c1cbaa45-23ad-4113-8d9f-c66ec5ec3960
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zw-86s4VfPvHEbmPeIA_0U0rFYiNlkmR9ky2y23fvWk
-  servername: dash.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇺🇸 美国 | USA 11
-  server: 172.67.152.71
-  port: 8880
-  type: vless
-  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lively-dream-d892.262.workers.dev
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 116.202.2.27
-  port: 2053
-  type: vless
-  uuid: 0f2b674f-1855-47d3-aa4e-e5e3c637ebcf
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: kQ80VUyUaQF2Qczqb4XqnNdGD8pYwuVNqBEezMjtBTc
-    short-id: 72a35f6d88599886
-  servername: 91.98.44.116
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 10
-  - 🇬🇧 英国 | GBR
-  - 🇺🇸 美国 | USA 11
-  - 🇩🇪 德国 | DEU 3
+  - 🇨🇱 智利 | CHL
+  - 🇮🇹 意大利 | ITA
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO
