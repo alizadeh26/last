@@ -16,24 +16,18 @@ proxies:
     headers:
       Host: platform117.halalkhor.info
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 130.61.227.189
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EPNhE9qvdzvZpDTA6OzRwv1CsK7SFcOahpqDmNOGM/w=
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 140.248.189.57
-  port: 80
+- name: 🇭🇰 香港 | HKG 5
+  server: 68.64.180.201
+  port: 35957
   type: vless
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Tazia.global.ssl.fastly.net
+  uuid: ebc2c010-91e2-491d-875b-81de66a01590
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 79XmdoMC-YDcAhXMX6TGYfajcPWxVTSwIpbP0-QdMV8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇸🇬 新加坡 | SGP 4
   server: 162.159.43.187
@@ -66,36 +60,17 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇱 智利 | CHL
-  - 🇩🇪 德国 | DEU
-  - 🇮🇹 意大利 | ITA
+  - 🇭🇰 香港 | HKG 5
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 6
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇱 智利 | CHL
-  - 🇮🇹 意大利 | ITA
+  - 🇭🇰 香港 | HKG 5
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 6
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU
-- name: REGION-SA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇱 智利 | CHL
 rules:
 - MATCH,AUTO
