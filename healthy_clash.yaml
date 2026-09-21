@@ -4,76 +4,73 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇸 西班牙 | ESP
-  server: es.cache-4d8a.com
-  port: 443
-  type: vless
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  tls: true
-  reality-opts:
-    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
-    short-id: 8319913f2e5f5711
-  servername: es.cache-4d8a.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 158.180.13.225
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Of7TrBg1GnSUFQJEGoe1K0d9USdAzgjzMlrfKwk0aLM=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 158.101.222.3
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: aXCC+LogUNgffkN9eZuLOIdClpoHAWXvN8GxcmEkkis=
-- name: 🇮🇹 意大利 | ITA 4
-  server: italia.superbuba.top
-  port: 443
-  type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
-    short-id: 4fa44664f6a566d3
-  servername: italia.superbuba.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 172.64.42.85
-  port: 2086
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 162.159.43.187
+  port: 2082
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
-  port: 443
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+- name: 🇸🇬 新加坡 | SGP
+  server: 161.118.247.164
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Q70CetEalirnFI/x4fkKfNkfug9mx9O3zE9BRT2FUAE=
+- name: 🇺🇸 美国 | USA 10
+  server: 172.64.229.170
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 45.152.66.168
+  port: 27906
+  type: vless
+  uuid: c1cbaa45-23ad-4113-8d9f-c66ec5ec3960
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zw-86s4VfPvHEbmPeIA_0U0rFYiNlkmR9ky2y23fvWk
+  servername: dash.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
+- name: 🇺🇸 美国 | USA 11
+  server: 172.67.152.71
+  port: 8880
+  type: vless
+  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lively-dream-d892.262.workers.dev
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 116.202.2.27
+  port: 2053
+  type: vless
+  uuid: 0f2b674f-1855-47d3-aa4e-e5e3c637ebcf
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kQ80VUyUaQF2Qczqb4XqnNdGD8pYwuVNqBEezMjtBTc
+    short-id: 72a35f6d88599886
+  servername: 91.98.44.116
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -81,32 +78,40 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 | ESP
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇮🇹 意大利 | ITA 4
-  - 🇺🇸 美国 | USA 19
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 10
+  - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 11
+  - 🇩🇪 德国 | DEU 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇸🇬 新加坡 | SGP
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 | ESP
-  - 🇮🇹 意大利 | ITA 4
-  - 🇺🇸 美国 | USA 19
-- name: PROTO-VMESS
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 10
+  - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 11
+  - 🇩🇪 德国 | DEU 3
+- name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇸🇬 新加坡 | SGP
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO

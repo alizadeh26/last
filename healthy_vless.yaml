@@ -4,47 +4,67 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇸 西班牙 | ESP
-  server: es.cache-4d8a.com
-  port: 443
-  type: vless
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  tls: true
-  reality-opts:
-    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
-    short-id: 8319913f2e5f5711
-  servername: es.cache-4d8a.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: italia.superbuba.top
-  port: 443
-  type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
-    short-id: 4fa44664f6a566d3
-  servername: italia.superbuba.top
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 172.64.42.85
-  port: 2086
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 162.159.43.187
+  port: 2082
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 172.64.229.170
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 45.152.66.168
+  port: 27906
+  type: vless
+  uuid: c1cbaa45-23ad-4113-8d9f-c66ec5ec3960
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zw-86s4VfPvHEbmPeIA_0U0rFYiNlkmR9ky2y23fvWk
+  servername: dash.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
+- name: 🇺🇸 美国 | USA 11
+  server: 172.67.152.71
+  port: 8880
+  type: vless
+  uuid: f7ebef03-3c34-4769-bfe4-66e3c92ed665
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lively-dream-d892.262.workers.dev
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 116.202.2.27
+  port: 2053
+  type: vless
+  uuid: 0f2b674f-1855-47d3-aa4e-e5e3c637ebcf
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kQ80VUyUaQF2Qczqb4XqnNdGD8pYwuVNqBEezMjtBTc
+    short-id: 72a35f6d88599886
+  servername: 91.98.44.116
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -52,8 +72,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 | ESP
-  - 🇮🇹 意大利 | ITA 4
-  - 🇺🇸 美国 | USA 19
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 10
+  - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 11
+  - 🇩🇪 德国 | DEU 3
 rules:
 - MATCH,AUTO
