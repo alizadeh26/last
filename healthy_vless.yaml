@@ -4,109 +4,47 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 2
-  server: 207.57.133.51
-  port: 29896
-  type: vless
-  uuid: 3767d445-9012-4f95-90ee-b5f15301dfe0
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k_rgz9OgfRvruve7uGVmd8tHbDxS1h_Yh9C7FL2qHls
-  servername: www.amazon.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: 193.134.211.12
-  port: 40229
-  type: vless
-  uuid: fd33946a-ad66-48bb-bece-36a19009a20e
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: NdYhIYluMQg_VZTxYc9DtlCWl6bNDXS421HBsTECaBE
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇯🇵 日本 | JPN 2
-  server: adheres-scruple.quick-cdn.net
+- name: 🇪🇸 西班牙 | ESP
+  server: es.cache-4d8a.com
   port: 443
   type: vless
-  uuid: 7478f643-1ef4-47fd-8ac7-5d53c6c64217
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
   tls: true
-  servername: adheres-scruple.quick-cdn.net
+  reality-opts:
+    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
+    short-id: 8319913f2e5f5711
+  servername: es.cache-4d8a.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.43.187
-  port: 80
+- name: 🇮🇹 意大利 | ITA 4
+  server: italia.superbuba.top
+  port: 443
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇭🇰 香港 | HKG 8
-  server: 207.57.135.28
-  port: 27659
-  type: vless
-  uuid: ecee6ef1-5172-4543-bf81-e4aaf64db01c
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: KFp1q4xOR_FZQYwRBFTLhyf5cOSVjrPNDkUG-RblNmg
-  servername: www.paypal.com
-  client-fingerprint: chrome
+    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
+    short-id: 4fa44664f6a566d3
+  servername: italia.superbuba.top
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: 45.152.66.160
-  port: 2581
-  type: vless
-  uuid: 600d0970-77e5-4b57-8a88-a5b623c5a3d7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: sJMVQ27QqDnyTPtHC02hVfJK1Ot42YsyLm47eHnLgV8
-  servername: www.amazon.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 172.64.154.8
-  port: 8880
+- name: 🇺🇸 美国 | USA 19
+  server: 172.64.42.85
+  port: 2086
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: www.terence-tunnel.org
-  port: 443
-  type: vless
-  uuid: c47eb7ab-2c2d-44e0-80cc-bb104f89a137
-  tls: true
-  servername: www.terence-tunnel.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tunnel
-    headers:
-      Host: www.terence-tunnel.org
   udp: true
 proxy-groups:
 - name: AUTO
@@ -114,13 +52,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 5
-  - 🇯🇵 日本 | JPN 2
-  - 🇸🇬 新加坡 | SGP
-  - 🇭🇰 香港 | HKG 8
-  - 🇭🇰 香港 | HKG 7
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 13
+  - 🇪🇸 西班牙 | ESP
+  - 🇮🇹 意大利 | ITA 4
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
