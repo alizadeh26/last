@@ -4,25 +4,43 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇱 智利 | CHL
-  server: platform118.golnamakcert.top
-  port: 80
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.43.187
+  port: 2082
   type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /platform118
+    path: /?ed=2560security=tls
     headers:
-      Host: platform118.halalkhor.info
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇫🇷 法国 | FRA 6
-  server: 13.36.86.247
-  port: 22222
+- name: 🇳🇱 荷兰 | NLD
+  server: xinnusvpn.duckdns.org
+  port: 8443
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xinnusvpn.duckdns.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /wsnl
+    headers:
+      Host: xinnusvpn.duckdns.org
+- name: 🇺🇸 美国 | USA 9
+  server: 162.159.43.187
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
-  network: tcp
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 proxy-groups:
 - name: AUTO
@@ -30,7 +48,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 智利 | CHL
-  - 🇫🇷 法国 | FRA 6
+  - 🇸🇬 新加坡 | SGP
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
