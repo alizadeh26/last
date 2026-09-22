@@ -5,53 +5,24 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇨🇱 智利 | CHL
-  server: platform117.golnamakcert.top
+  server: platform118.golnamakcert.top
   port: 80
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   tls: false
   network: ws
   ws-opts:
-    path: /platform117
+    path: /platform118
     headers:
-      Host: platform117.halalkhor.info
+      Host: platform118.halalkhor.info
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: 68.64.180.201
-  port: 35957
+- name: 🇫🇷 法国 | FRA 6
+  server: 13.36.86.247
+  port: 22222
   type: vless
-  uuid: ebc2c010-91e2-491d-875b-81de66a01590
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 79XmdoMC-YDcAhXMX6TGYfajcPWxVTSwIpbP0-QdMV8
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
   network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 162.159.43.187
-  port: 8880
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 172.64.229.170
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 proxy-groups:
 - name: AUTO
@@ -60,8 +31,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇱 智利 | CHL
-  - 🇭🇰 香港 | HKG 5
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 6
+  - 🇫🇷 法国 | FRA 6
 rules:
 - MATCH,AUTO
