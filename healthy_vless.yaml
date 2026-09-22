@@ -4,15 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 92.5.236.74
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 92.5.236.74
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: ndi.lavivas.org
   port: 2096
@@ -26,6 +17,19 @@ proxies:
   servername: ndi.lavivas.org
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.43.187
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 5.223.74.174
@@ -71,8 +75,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 5
+  - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 8

@@ -4,43 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 12
-  server: 130.61.33.9
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: pAXH1kDzTfDIeAo4L7hAwsKaabXGYYH7Jz4OBLG5oeg=
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.65.156
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 0bt5twW+YJsxRkgIINMT2VjqrCioowqMZT8L+H8szBk=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 92.5.203.236
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kXnpBRbLJPiaN+qpuZE/o2tmyKe2Pu1ab+P7ZHRVRYE=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 92.5.236.74
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 92.5.236.74
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 143.47.191.38
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ppr8jh4HaNV2cNeSn/Q4/SuTvC3B+mdTL+tT3DGlRW8=
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: ndi.lavivas.org
   port: 2096
@@ -55,25 +18,18 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: 130.61.145.33
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2IhI4JDsLapp7N4PfL+duHVI+taMbdDLJkhaQfTBUZQ=
-- name: 🇩🇪 德国 | DEU 6
-  server: 130.61.130.186
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: E+do7ZdpBv+KFrzaQE6KQ+/A4N1ONgz0vk7ifrUJ0M0=
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 129.150.45.119
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: JWRZ7+0mUkmiBvXBEykz2Qf668TcUwAsRc3vVoTMHmI=
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.43.187
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 5.223.74.174
@@ -113,61 +69,40 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 129.150.45.119
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JWRZ7+0mUkmiBvXBEykz2Qf668TcUwAsRc3vVoTMHmI=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 12
-  - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 6
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 8
+  - 🇸🇬 新加坡 | SGP 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 12
-  - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇬 新加坡 | SGP 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 5
+  - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 8
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇸🇬 新加坡 | SGP 4
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 12
-  - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 5
 rules:
 - MATCH,AUTO
