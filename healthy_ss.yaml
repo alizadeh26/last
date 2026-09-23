@@ -4,40 +4,58 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 158.101.211.78
-  port: 45819
+- name: 🇩🇪 德国 | DEU 9
+  server: 130.61.102.123
+  port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: REewqi3c7l3hyDUDzTpuhOPrWO6X9Vo6bXYhhE3tGw8=
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 141.144.194.235
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: hW/kZ3Lkub41cyalnSsNTCYF8hMO8dh5MHzqf+FRl8o=
+  password: 2XG9witwk9u9AP7ZPoKluZNL5VBW82xnYgGA/8oHC4I=
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 130.61.180.252
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.61.103.121
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: CJz7/MZF6sW6ylvOCfAE+EmAqYZKN1GnMlS4tGUS3J4=
-- name: 🇩🇪 德国 | DEU 7
-  server: 130.61.232.101
+  password: +n5JF83I0RydYOC0f8bFw2GEKIAkYDaSSTq0epm0JDM=
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 130.61.150.64
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: f+Q/z5EHlXtbRPZBqT8ygy+RUkwnc6kMcd8UY8iyxU8=
+  password: MbYmuMLaB299+b+tHO5lTDizuqcxnh0y5bvchPVbzWU=
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 158.178.158.74
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: onn4Tw29/R/yO4nldI2wvkYGPlot5pSygKPCOzXWGTc=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 84.235.184.240
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: OrxPJmTiB4nA0yTp2bOaypDlVZQbIEaGn5+mf8GieCY=
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: 51.170.180.67
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: b+GyAWtaF/qui7/BJQLBjXvTC4uqcjwNCdSfgCeElL8=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 6
   - 🇳🇱 荷兰 | NLD 4
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 7
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇸🇪 瑞典 | SWE 2
 rules:
 - MATCH,AUTO
