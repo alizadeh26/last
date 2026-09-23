@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA
+- name: 🇯🇵 日本 | JPN
   server: grimness-backlogs.cdn-content.com
   port: 443
   type: vless
-  uuid: f1646667-a135-4246-9a9a-de0c53b0dc8d
+  uuid: 9819d5c6-bc6e-4e31-8af7-c023ecff6022
   tls: true
   alpn:
   - http/1.1
@@ -20,9 +20,25 @@ proxies:
     headers:
       Host: grimness-backlogs.cdn-content.com
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.43.187
-  port: 8880
+- name: 🇯🇵 日本 | JPN 5
+  server: bounded-crammed.video-streams.org
+  port: 443
+  type: vless
+  uuid: 18b91bec-1abf-45c0-bd06-f2c6ed22a125
+  tls: true
+  alpn:
+  - http/1.1
+  servername: bounded-crammed.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: bounded-crammed.video-streams.org
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 172.64.229.170
+  port: 8080
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -32,42 +48,13 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: 104.16.72.101
-  port: 8880
+- name: 🇺🇸 美国 | USA 6
+  server: 38.207.169.83
+  port: 17396
   type: vless
-  uuid: ddef628e-e3a8-43c4-85eb-bd767a5f3b13
+  uuid: '@Net2ray'
   tls: false
-  servername: 104.16.72.101
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: autumn-forest-3479.121-488.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: weathered-union-5358.101-262.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: weathered-union-5358.101-262.workers.dev
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -75,10 +62,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇯🇵 日本 | JPN
+  - 🇯🇵 日本 | JPN 5
   - 🇺🇸 美国 | USA
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO
