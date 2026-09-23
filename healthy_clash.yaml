@@ -4,20 +4,41 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.43.187
-  port: 2086
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.73.227
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EG7gd6f1FSkm+x/OoWRHzsRT1Jl/tSx0EWxkprEGZSo=
+- name: 🇯🇵 日本 | JPN 2
+  server: 89.125.244.241
+  port: 10090
+  type: ss
+  cipher: aes-256-gcm
+  password: 9cfaa78d51ac366f
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 194.87.196.13
+  port: 10090
+  type: ss
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
+- name: 🇺🇸 美国 | USA
+  server: grimness-backlogs.cdn-content.com
+  port: 443
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: f1646667-a135-4246-9a9a-de0c53b0dc8d
+  tls: true
+  alpn:
+  - http/1.1
+  servername: grimness-backlogs.cdn-content.com
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /ws
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: grimness-backlogs.cdn-content.com
   udp: true
-- name: 🇸🇬 新加坡 | SGP 5
+- name: 🇸🇬 新加坡 | SGP
   server: 162.159.43.187
   port: 8880
   type: vless
@@ -29,123 +50,86 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: ndi.lavivas.org
-  port: 2096
+- name: 🇺🇸 美国 | USA 24
+  server: 104.16.72.101
+  port: 8880
   type: vless
-  uuid: 44e1105d-b46e-402f-933b-eaa136fcbb24
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  servername: ndi.lavivas.org
-  client-fingerprint: firefox
-  network: tcp
+  uuid: ddef628e-e3a8-43c4-85eb-bd767a5f3b13
+  tls: false
+  servername: 104.16.72.101
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: autumn-forest-3479.121-488.workers.dev
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 129.150.45.119
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: JWRZ7+0mUkmiBvXBEykz2Qf668TcUwAsRc3vVoTMHmI=
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 5.223.74.174
-  port: 2053
+- name: 🇺🇸 美国 | USA 14
+  server: codecanyon.net
+  port: 8880
   type: vless
-  uuid: 29b81e1a-1989-4778-b0cb-a7223730f59d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg
-    short-id: 36151c48e28cfb65
-  servername: 5.223.74.174
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
   tls: false
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: weathered-union-5358.101-262.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 172.64.229.170
-  port: 8080
+- name: 🇺🇸 美国 | USA 17
+  server: 104.18.34.245
+  port: 8880
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: f12cc297-c9ce-4cdb-98d4-8e47c3f09644
   tls: false
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: weathered-union-5358.101-262.workers.dev
   udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: 130.61.145.33
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2IhI4JDsLapp7N4PfL+duHVI+taMbdDLJkhaQfTBUZQ=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇬🇧 英国 | GBR
+  - 🇯🇵 日本 | JPN 2
+  - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 8
-  - 🇩🇪 德国 | DEU 13
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 17
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇩🇪 德国 | DEU 13
+  - 🇬🇧 英国 | GBR
+  - 🇯🇵 日本 | JPN 2
+  - 🇷🇺 俄罗斯 | RUS
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 8
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 17
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇯🇵 日本 | JPN 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 13
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇸🇬 新加坡 | SGP
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇺🇸 美国 | USA
+  - 🇬🇧 英国 | GBR
 rules:
 - MATCH,AUTO
