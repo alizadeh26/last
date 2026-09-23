@@ -11,6 +11,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: JWRZ7+0mUkmiBvXBEykz2Qf668TcUwAsRc3vVoTMHmI=
   udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: 130.61.145.33
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2IhI4JDsLapp7N4PfL+duHVI+taMbdDLJkhaQfTBUZQ=
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -18,5 +24,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇸🇬 新加坡 | SGP 4
+  - 🇩🇪 德国 | DEU 13
 rules:
 - MATCH,AUTO
