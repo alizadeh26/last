@@ -17,80 +17,6 @@ proxies:
     headers:
       Host: nova.freshnet.ir
   udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: est1.loozerp.wiki
-  port: 443
-  type: vless
-  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
-    short-id: 38018dde3e27335e
-  servername: est1.loozerp.wiki
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: adheres-scruple.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: 316f013e-4cf9-4a02-8415-73c22932594a
-  tls: true
-  alpn:
-  - http/1.1
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: bounded-crammed.video-streams.org
-  port: 443
-  type: vless
-  uuid: 11e6c528-434f-4b15-83b3-40a46237ea13
-  tls: true
-  alpn:
-  - http/1.1
-  servername: bounded-crammed.video-streams.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: bounded-crammed.video-streams.org
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: ghosts-spasm.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: 11e6c528-434f-4b15-83b3-40a46237ea13
-  tls: true
-  alpn:
-  - http/1.1
-  servername: ghosts-spasm.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ghosts-spasm.quick-cdn.net
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: fbsv6.guardora.pro
   port: 443
@@ -107,6 +33,18 @@ proxies:
     headers:
       Host: fbsv6.guardora.pro
   udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: 162.159.43.187
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -114,11 +52,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 7
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 15
   - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO
