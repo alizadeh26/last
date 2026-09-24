@@ -4,153 +4,160 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN
-  server: 172.64.229.170
-  port: 2052
+- name: 🇬🇧 英国 | GBR
+  server: 66.90.105.211
+  port: 2083
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 193.123.39.109
-  port: 45819
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.75.161
+  port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: t0Ao+u9a5WcyKcSJOhC2R1IXIKxEcBD411OI3G5YicI=
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 162.159.0.53
-  port: 80
+  password: HtWG23QPL9XJw6cFok28NcS5EfPs4ufTNqnzYQr7k8c=
+- name: 🇫🇷 法国 | FRA 12
+  server: fra2.loozerp.wiki
+  port: 443
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: fra2.loozerp.wiki
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 172.64.229.170
-  port: 80
+- name: 🇸🇪 瑞典 | SWE
+  server: surstreming.vvzzkontaktezzvv.garden
+  port: 443
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 138.2.73.61
+- name: 🇰🇿 哈萨克斯坦 | KAZ
+  server: kazartip.thewalkingded.life
+  port: 443
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
+    short-id: 7cf408996c82639f
+  servername: kazartip.thewalkingded.life
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 168.107.84.176
   port: 56927
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: To6vtBYY2vHB3dYSu3rGxLOObUWvC8zGLJMtn+/LEPU=
+  password: zfRw8qHR5DsiUSSiFqxRnNjXZ0/oOyLeNKOqv5VW0PM=
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 158.178.229.235
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4nphreJpAUpxvkVQmO2l37kEup8qRu7pcSYU0JbJLVM=
   udp: true
 - name: 🇺🇸 美国 | USA 17
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: 162.159.0.53
+  server: blog.cloudflare.com
   port: 2095
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 30
-  server: 162.159.0.53
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇱🇰 LK_31
-  server: free.sahanwickramasinghe.me
+      Host: llm-api.sofurry.dpdns.org
+- name: 🇺🇸 美国 | USA 20
+  server: adheres-scruple.quick-cdn.net
   port: 443
   type: vless
-  uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
+  uuid: c9ff358e-20c4-4979-bc14-acc3daaf1297
   tls: true
-  servername: aka.ms
+  alpn:
+  - http/1.1
+  servername: adheres-scruple.quick-cdn.net
   client-fingerprint: chrome
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: adheres-scruple.quick-cdn.net
   udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: www.whatismyip.net
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: llm-api.sofurry.dpdns.org
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 15
-  - 🇸🇬 新加坡 | SGP
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 2
+  - 🇫🇷 法国 | FRA 12
+  - 🇸🇪 瑞典 | SWE
+  - 🇰🇿 哈萨克斯坦 | KAZ
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 30
-  - 🇱🇰 LK_31
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 19
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP
+  - 🇬🇧 英国 | GBR 2
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 15
+  - 🇬🇧 英国 | GBR
+  - 🇫🇷 法国 | FRA 12
+  - 🇸🇪 瑞典 | SWE
+  - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 30
-  - 🇱🇰 LK_31
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 19
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇱🇰 LK_31
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 30
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 2
+  - 🇫🇷 法国 | FRA 12
+  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO

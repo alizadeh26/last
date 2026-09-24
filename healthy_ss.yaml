@@ -4,19 +4,24 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
-  server: 193.123.39.109
-  port: 45819
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.75.161
+  port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: t0Ao+u9a5WcyKcSJOhC2R1IXIKxEcBD411OI3G5YicI=
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 138.2.73.61
+  password: HtWG23QPL9XJw6cFok28NcS5EfPs4ufTNqnzYQr7k8c=
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 168.107.84.176
   port: 56927
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: To6vtBYY2vHB3dYSu3rGxLOObUWvC8zGLJMtn+/LEPU=
+  password: zfRw8qHR5DsiUSSiFqxRnNjXZ0/oOyLeNKOqv5VW0PM=
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 158.178.229.235
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4nphreJpAUpxvkVQmO2l37kEup8qRu7pcSYU0JbJLVM=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,7 +29,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP
+  - 🇬🇧 英国 | GBR 2
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP 4
 rules:
 - MATCH,AUTO
