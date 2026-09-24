@@ -4,61 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 66.90.105.211
-  port: 2083
+- name: 🇮🇱 以色列 | ISR
+  server: platform115.golnamakcert.top
+  port: 80
   type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
+  servername: platform115.halalkhor.info
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
   udp: true
-- name: 🇫🇷 法国 | FRA 12
-  server: fra2.loozerp.wiki
-  port: 443
-  type: vless
-  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: fra2.loozerp.wiki
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: surstreming.vvzzkontaktezzvv.garden
-  port: 443
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇰🇿 哈萨克斯坦 | KAZ
-  server: kazartip.thewalkingded.life
-  port: 443
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
-    short-id: 7cf408996c82639f
-  servername: kazartip.thewalkingded.life
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: blog.cloudflare.com
+- name: 🇺🇸 美国 | USA 6
+  server: support.cloudflare.com
   port: 2095
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -68,23 +28,20 @@ proxies:
     path: /
     headers:
       Host: llm-api.sofurry.dpdns.org
-- name: 🇺🇸 美国 | USA 20
-  server: adheres-scruple.quick-cdn.net
-  port: 443
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: openai.com
+  port: 2095
   type: vless
-  uuid: c9ff358e-20c4-4979-bc14-acc3daaf1297
-  tls: true
-  alpn:
-  - http/1.1
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: adheres-scruple.quick-cdn.net
+      Host: llm-api.sofurry.dpdns.org
   udp: true
-- name: 🇺🇸 美国 | USA 19
+- name: 🇺🇸 美国 | USA 5
   server: www.whatismyip.net
   port: 2095
   type: vless
@@ -95,18 +52,56 @@ proxies:
     path: /
     headers:
       Host: llm-api.sofurry.dpdns.org
+- name: 🇺🇸 美国 | USA 13
+  server: cloudflare-dns.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: llm-api.sofurry.dpdns.org
+- name: 🇺🇸 美国 | USA 19
+  server: blog.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: llm-api.sofurry.dpdns.org
+- name: 🇷🇺 俄罗斯 | RUS
+  server: fbsv6.guardora.pro
+  port: 443
+  type: vless
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  tls: true
+  alpn:
+  - http/1.1
+  servername: fbsv6.guardora.pro
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇫🇷 法国 | FRA 12
-  - 🇸🇪 瑞典 | SWE
-  - 🇰🇿 哈萨克斯坦 | KAZ
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 20
+  - 🇮🇱 以色列 | ISR
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 19
+  - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO
