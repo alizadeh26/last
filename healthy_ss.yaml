@@ -4,12 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 4
-  server: 18.179.39.119
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇯🇵 日本 | JPN 6
   server: 3.112.209.209
   port: 443
@@ -31,22 +25,14 @@ proxies:
   cipher: 2022-blake3-aes-128-gcm
   password: 7VOMWk6RwicM3IKLPijKrA==
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 144.24.230.61
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3vcop09uUPma9htQCFzSu+f1cMY8eY1XY13AdzOdMHg=
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 8
   - 🇺🇸 美国 | USA 8
-  - 🇬🇧 英国 | GBR 2
 rules:
 - MATCH,AUTO

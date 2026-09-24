@@ -17,18 +17,6 @@ proxies:
     headers:
       Host: platform115.halalkhor.info
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: support.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: llm-api.sofurry.dpdns.org
-  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: openai.com
   port: 2095
@@ -52,6 +40,18 @@ proxies:
     path: /
     headers:
       Host: llm-api.sofurry.dpdns.org
+- name: 🇺🇸 美国 | USA 6
+  server: support.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: llm-api.sofurry.dpdns.org
+  udp: true
 - name: 🇺🇸 美国 | USA 13
   server: cloudflare-dns.com
   port: 2095
@@ -97,9 +97,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇮🇱 以色列 | ISR
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 19
   - 🇷🇺 俄罗斯 | RUS
