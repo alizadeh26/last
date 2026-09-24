@@ -4,36 +4,44 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: nova.freshnet.ir
-  port: 2082
+- name: 🇯🇵 日本 | JPN
+  server: 172.64.229.170
+  port: 2052
   type: vless
-  uuid: ce2bd817-7fb1-4b94-8125-d6161de31962
-  tls: true
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
   network: ws
   ws-opts:
-    path: /cats/FslNz
+    path: /?ed=2560security=tls
     headers:
-      Host: nova.freshnet.ir
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: fbsv6.guardora.pro
-  port: 443
+- name: 🇺🇸 美国 | USA 8
+  server: 162.159.0.53
+  port: 80
   type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  tls: true
-  alpn:
-  - http/1.1
-  servername: fbsv6.guardora.pro
-  client-fingerprint: firefox
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /?ed=2560security=tls
     headers:
-      Host: fbsv6.guardora.pro
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 15
+  server: 172.64.229.170
+  port: 80
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 17
   server: 162.159.43.187
   port: 2082
   type: vless
@@ -45,14 +53,52 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇺🇸 美国 | USA 24
+  server: 162.159.0.53
+  port: 2095
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 30
+  server: 162.159.0.53
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇱🇰 LK_31
+  server: free.sahanwickramasinghe.me
+  port: 443
+  type: vless
+  uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
+  tls: true
+  servername: aka.ms
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 30
+  - 🇱🇰 LK_31
 rules:
 - MATCH,AUTO

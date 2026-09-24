@@ -4,12 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 9
-  server: 130.61.102.123
-  port: 59924
+- name: 🇳🇱 荷兰 | NLD
+  server: 193.123.39.109
+  port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: 2XG9witwk9u9AP7ZPoKluZNL5VBW82xnYgGA/8oHC4I=
+  password: t0Ao+u9a5WcyKcSJOhC2R1IXIKxEcBD411OI3G5YicI=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 138.2.73.61
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: To6vtBYY2vHB3dYSu3rGxLOObUWvC8zGLJMtn+/LEPU=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
+  - 🇳🇱 荷兰 | NLD
+  - 🇸🇬 新加坡 | SGP
 rules:
 - MATCH,AUTO
