@@ -4,86 +4,45 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 4
-  server: 15.188.167.181
-  port: 22222
+- name: 🇰🇿 哈萨克斯坦 | KAZ
+  server: kazartip.thewalkingded.life
+  port: 443
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
+    short-id: 7cf408996c82639f
+  servername: kazartip.thewalkingded.life
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 7
-  server: 15.188.167.181
-  port: 22224
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 162.159.43.187
+  port: 2086
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
-  network: tcp
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 104.20.37.53
+- name: 🇺🇸 美国 | USA 3
+  server: 172.64.229.170
   port: 80
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
-  tls: false
-  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/b52a90ada6ab
-    headers:
-      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 158.101.195.112
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 162.159.43.187
-  port: 2082
-  type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 141.144.195.160
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.43.187
-  port: 8880
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 172.67.179.98
-  port: 8880
-  type: vless
-  uuid: 48b1d8af-1720-4462-a0ec-de493331ceb3
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: square-mountain-1d69.356-977.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -91,13 +50,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 4
-  - 🇫🇷 法国 | FRA 7
-  - 🇩🇪 德国 | DEU 7
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇸🇬 新加坡 | SGP
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇰🇿 哈萨克斯坦 | KAZ
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO
