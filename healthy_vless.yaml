@@ -14,21 +14,17 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 52.47.71.76
-  port: 22222
+- name: 🇮🇱 以色列 | ISR
+  server: platform102.golnamakcert.top
+  port: 80
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 52.47.71.76
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
   udp: true
 - name: 🇮🇱 以色列 | ISR 3
   server: platform101.golnamakcert.top
@@ -42,17 +38,15 @@ proxies:
     headers:
       Host: platform101.halalkhor.info
   udp: true
-- name: 🇮🇱 以色列 | ISR
-  server: platform102.golnamakcert.top
-  port: 80
+- name: 🇲🇩 摩尔多瓦 | MDA
+  server: md-new.failspace.top
+  port: 443
   type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 162.159.43.187
@@ -80,16 +74,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇲🇩 摩尔多瓦 | MDA
-  server: md-new.failspace.top
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -97,12 +81,10 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇦🇹 奥地利 | AUT
-  - 🇫🇷 法国 | FRA
-  - 🇫🇷 法国 | FRA 2
-  - 🇮🇱 以色列 | ISR 3
   - 🇮🇱 以色列 | ISR
+  - 🇮🇱 以色列 | ISR 3
+  - 🇲🇩 摩尔多瓦 | MDA
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
-  - 🇲🇩 摩尔多瓦 | MDA
 rules:
 - MATCH,AUTO

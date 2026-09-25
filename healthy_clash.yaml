@@ -14,21 +14,17 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 52.47.71.76
-  port: 22222
+- name: 🇮🇱 以色列 | ISR
+  server: platform102.golnamakcert.top
+  port: 80
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 52.47.71.76
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
   udp: true
 - name: 🇯🇵 日本 | JPN 3
   server: 18.179.37.17
@@ -48,32 +44,37 @@ proxies:
     headers:
       Host: platform101.halalkhor.info
   udp: true
-- name: 🇮🇱 以色列 | ISR
-  server: platform102.golnamakcert.top
-  port: 80
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 51.20.122.188
+- name: 🇯🇵 日本 | JPN 4
+  server: 3.112.209.209
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+  udp: true
 - name: 🇸🇪 瑞典 | SWE 2
   server: 51.20.86.152
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 | SWE 3
-  server: 13.49.64.122
+- name: 🇸🇪 瑞典 | SWE
+  server: 51.20.122.188
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇲🇩 摩尔多瓦 | MDA
+  server: md-new.failspace.top
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 54.162.206.255
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -91,6 +92,12 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: 18.205.21.144
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇺🇸 美国 | USA 16
   server: 108.162.198.178
   port: 2052
@@ -104,41 +111,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 18.234.148.112
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇲🇩 摩尔多瓦 | MDA
-  server: md-new.failspace.top
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 45.32.128.44
-  port: 2095
-  type: vmess
-  uuid: 1da76fea-2360-40d7-99ce-7374971808bb
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: www.bing.com
-  network: ws
-  ws-opts:
-    path: 1da76fea-2360-40d7-99ce-7374971808bb-vm
-    headers:
-      Host: www.bing.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -146,62 +118,38 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇦🇹 奥地利 | AUT
-  - 🇫🇷 法国 | FRA
-  - 🇫🇷 法国 | FRA 2
+  - 🇮🇱 以色列 | ISR
   - 🇯🇵 日本 | JPN 3
   - 🇮🇱 以色列 | ISR 3
-  - 🇮🇱 以色列 | ISR
-  - 🇸🇪 瑞典 | SWE
+  - 🇯🇵 日本 | JPN 4
   - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 2
+  - 🇸🇪 瑞典 | SWE
   - 🇲🇩 摩尔多瓦 | MDA
-  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 16
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 日本 | JPN 3
-  - 🇸🇪 瑞典 | SWE
+  - 🇯🇵 日本 | JPN 4
   - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇺🇸 美国 | USA 2
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 18
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇦🇹 奥地利 | AUT
-  - 🇫🇷 法国 | FRA
-  - 🇫🇷 法国 | FRA 2
-  - 🇮🇱 以色列 | ISR 3
   - 🇮🇱 以色列 | ISR
+  - 🇮🇱 以色列 | ISR 3
+  - 🇲🇩 摩尔多瓦 | MDA
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
-  - 🇲🇩 摩尔多瓦 | MDA
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 17
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇯🇵 日本 | JPN 3
-  - 🇮🇱 以色列 | ISR 3
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇫🇷 法国 | FRA
-  - 🇫🇷 法国 | FRA 2
 rules:
 - MATCH,AUTO

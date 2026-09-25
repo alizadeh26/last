@@ -10,31 +10,37 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 | SWE
-  server: 51.20.122.188
+- name: 🇯🇵 日本 | JPN 4
+  server: 3.112.209.209
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+  udp: true
 - name: 🇸🇪 瑞典 | SWE 2
   server: 51.20.86.152
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 | SWE 3
-  server: 13.49.64.122
+- name: 🇸🇪 瑞典 | SWE
+  server: 51.20.122.188
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA 2
-  server: 18.234.148.112
+- name: 🇺🇸 美国 | USA 13
+  server: 54.162.206.255
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: 18.205.21.144
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -42,9 +48,10 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇯🇵 日本 | JPN 3
-  - 🇸🇪 瑞典 | SWE
+  - 🇯🇵 日本 | JPN 4
   - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇺🇸 美国 | USA 2
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 18
 rules:
 - MATCH,AUTO
