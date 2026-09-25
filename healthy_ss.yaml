@@ -4,41 +4,47 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: creativeboxfin.zanity.net
-  port: 5223
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: xXsl5l3ZfdG9zRWGkkft1j
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 51.20.86.152
+- name: 🇯🇵 日本 | JPN 3
+  server: 18.179.37.17
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇬🇧 英国 | GBR 3
-  server: 144.24.231.161
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: MVpdGZDDUTWwOb5S96x+CeotQ55Jfrhf8TGdD65wEv0=
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 3
+- name: 🇸🇪 瑞典 | SWE
   server: 51.20.122.188
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇸🇪 瑞典 | SWE 2
+  server: 51.20.86.152
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 13.49.64.122
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 2
+  server: 18.234.148.112
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
+  - 🇯🇵 日本 | JPN 3
   - 🇸🇪 瑞典 | SWE
-  - 🇬🇧 英国 | GBR 3
+  - 🇸🇪 瑞典 | SWE 2
   - 🇸🇪 瑞典 | SWE 3
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO

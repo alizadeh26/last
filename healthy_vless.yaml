@@ -4,23 +4,59 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇰🇿 哈萨克斯坦 | KAZ
-  server: kazartip.thewalkingded.life
+- name: 🇦🇹 奥地利 | AUT
+  server: at-at-at.failspace.top
   port: 443
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   tls: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
-    short-id: 7cf408996c82639f
-  servername: kazartip.thewalkingded.life
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
+- name: 🇫🇷 法国 | FRA
+  server: 52.47.71.76
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 2
+  server: 52.47.71.76
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇮🇱 以色列 | ISR 3
+  server: platform101.golnamakcert.top
+  port: 80
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+  udp: true
+- name: 🇮🇱 以色列 | ISR
+  server: platform102.golnamakcert.top
+  port: 80
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+  udp: true
+- name: 🇺🇸 美国 | USA 8
   server: 162.159.43.187
-  port: 2086
+  port: 8080
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -31,9 +67,9 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 172.64.229.170
-  port: 80
+- name: 🇺🇸 美国 | USA 16
+  server: 108.162.198.178
+  port: 2052
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -43,6 +79,16 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇲🇩 摩尔多瓦 | MDA
+  server: md-new.failspace.top
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -50,8 +96,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 哈萨克斯坦 | KAZ
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 3
+  - 🇦🇹 奥地利 | AUT
+  - 🇫🇷 法国 | FRA
+  - 🇫🇷 法国 | FRA 2
+  - 🇮🇱 以色列 | ISR 3
+  - 🇮🇱 以色列 | ISR
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 16
+  - 🇲🇩 摩尔多瓦 | MDA
 rules:
 - MATCH,AUTO

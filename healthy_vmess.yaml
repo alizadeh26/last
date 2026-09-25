@@ -4,21 +4,23 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
-  port: 443
+- name: 🇺🇸 美国 | USA 17
+  server: 45.32.128.44
+  port: 2095
   type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  uuid: 1da76fea-2360-40d7-99ce-7374971808bb
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
-  servername: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  servername: www.bing.com
   network: ws
   ws-opts:
-    path: /
+    path: 1da76fea-2360-40d7-99ce-7374971808bb-vm
     headers:
-      Host: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+      Host: www.bing.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -26,6 +28,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇺🇸 美国 | USA 17
 rules:
 - MATCH,AUTO
