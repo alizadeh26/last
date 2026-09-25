@@ -5,31 +5,17 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇯🇵 日本 | JPN 2
-  server: 18.179.39.119
+  server: 18.179.37.17
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.92.223
-  port: 61312
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 92.5.200.64
+  port: 45819
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: FIKU8rw44Gdi49OR9KrHVRffn85pphhU/+C3IQucB3g=
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.77.63
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: /pYDD9iRDQlBUa4aL0lBTCSp6ZNStfL6xHNn4mSFqFE=
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 67.215.235.109
-  port: 443
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: 7VOMWk6RwicM3IKLPijKrA==
+  password: KdOEa+dVRB5OxZvDlur6Cj0tndokRlxu/lDzjX3lZ7E=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,8 +24,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇯🇵 日本 | JPN 2
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR
-  - 🇺🇸 美国 | USA 8
+  - 🇳🇱 荷兰 | NLD 6
 rules:
 - MATCH,AUTO

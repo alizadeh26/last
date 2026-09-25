@@ -4,106 +4,58 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇫🇷 法国 | FRA 4
+  server: 15.188.167.181
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 7
+  server: 15.188.167.181
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 104.20.37.53
+  port: 80
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  tls: false
+  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/b52a90ada6ab
+    headers:
+      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+  udp: true
 - name: 🇯🇵 日本 | JPN 2
-  server: 18.179.39.119
+  server: 18.179.37.17
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.92.223
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: FIKU8rw44Gdi49OR9KrHVRffn85pphhU/+C3IQucB3g=
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.77.63
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: /pYDD9iRDQlBUa4aL0lBTCSp6ZNStfL6xHNn4mSFqFE=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 92.5.231.246
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 158.101.195.112
   port: 62145
   type: vless
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: newpalace-production-a231.up.railway.app
-  port: 443
-  type: vless
-  uuid: 8bba8133-5c2f-a174-7998-f7594d4c98dd
-  tls: true
-  alpn:
-  - http/1.1
-  servername: newpalace-production-a231.up.railway.app
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/8bba8133-5c2f-a174-7998-f7594d4c98dd
-    headers:
-      Host: newpalace-production-a231.up.railway.app
-  udp: true
-- name: 🇹🇷 土耳其 | TUR 2
-  server: 93.190.8.81
-  port: 3090
-  type: vless
-  uuid: 0d5d672c-e82a-46d7-af19-b5bf0027ff83
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
-  udp: true
-- name: 🇹🇷 土耳其 | TUR 3
-  server: 93.190.9.223
-  port: 3090
-  type: vless
-  uuid: 0d5d672c-e82a-46d7-af19-b5bf0027ff83
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 67.215.235.109
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 92.5.200.64
+  port: 45819
   type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: 7VOMWk6RwicM3IKLPijKrA==
+  cipher: 2022-blake3-chacha20-poly1305
+  password: KdOEa+dVRB5OxZvDlur6Cj0tndokRlxu/lDzjX3lZ7E=
   udp: true
-- name: 🇹🇷 土耳其 | TUR 4
-  server: 93.190.9.158
-  port: 3090
-  type: vless
-  uuid: 82d81f5d-51be-4132-afaf-46f6218f4127
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
-  udp: true
-- name: 🇰🇿 哈萨克斯坦 | KAZ
-  server: kazartip.thewalkingded.life
-  port: 443
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
-    short-id: 7cf408996c82639f
-  servername: kazartip.thewalkingded.life
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 172.64.229.170
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 162.159.43.187
   port: 2082
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -114,16 +66,37 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇹🇷 土耳其 | TUR 6
-  server: 93.190.9.17
-  port: 3090
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 141.144.195.160
+  port: 62145
   type: vless
-  uuid: e2b20d7c-8e3e-4122-a997-523f3d6af119
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.43.187
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 172.67.179.98
+  port: 8880
+  type: vless
+  uuid: 48b1d8af-1720-4462-a0ec-de493331ceb3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: square-mountain-1d69.356-977.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -131,40 +104,36 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇫🇷 法国 | FRA 4
+  - 🇫🇷 法国 | FRA 7
+  - 🇩🇪 德国 | DEU 7
   - 🇯🇵 日本 | JPN 2
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇸🇬 新加坡 | SGP 2
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇹🇷 土耳其 | TUR 2
-  - 🇹🇷 土耳其 | TUR 3
-  - 🇺🇸 美国 | USA 8
-  - 🇹🇷 土耳其 | TUR 4
-  - 🇰🇿 哈萨克斯坦 | KAZ
-  - 🇺🇸 美国 | USA 7
-  - 🇹🇷 土耳其 | TUR 6
+  - 🇸🇬 新加坡 | SGP
+  - 🇳🇱 荷兰 | NLD 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 日本 | JPN 2
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR
-  - 🇺🇸 美国 | USA 8
+  - 🇳🇱 荷兰 | NLD 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇫🇷 法国 | FRA 4
+  - 🇫🇷 法国 | FRA 7
+  - 🇩🇪 德国 | DEU 7
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇸🇬 新加坡 | SGP 2
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇹🇷 土耳其 | TUR 2
-  - 🇹🇷 土耳其 | TUR 3
-  - 🇹🇷 土耳其 | TUR 4
-  - 🇰🇿 哈萨克斯坦 | KAZ
-  - 🇺🇸 美国 | USA 7
-  - 🇹🇷 土耳其 | TUR 6
+  - 🇸🇬 新加坡 | SGP
+  - 🇳🇱 荷兰 | NLD 3
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -176,8 +145,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇫🇷 法国 | FRA 4
+  - 🇫🇷 法国 | FRA 7
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 7
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO
