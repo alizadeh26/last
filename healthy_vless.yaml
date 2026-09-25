@@ -4,91 +4,99 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇱 以色列 | ISR
-  server: platform115.golnamakcert.top
-  port: 80
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 92.5.231.246
+  port: 62145
   type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  servername: platform115.halalkhor.info
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: openai.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: llm-api.sofurry.dpdns.org
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: www.whatismyip.net
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: llm-api.sofurry.dpdns.org
-- name: 🇺🇸 美国 | USA 6
-  server: support.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: llm-api.sofurry.dpdns.org
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: cloudflare-dns.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: llm-api.sofurry.dpdns.org
-- name: 🇺🇸 美国 | USA 19
-  server: blog.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: llm-api.sofurry.dpdns.org
-- name: 🇷🇺 俄罗斯 | RUS
-  server: fbsv6.guardora.pro
+- name: 🇳🇱 荷兰 | NLD
+  server: newpalace-production-a231.up.railway.app
   port: 443
   type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  uuid: 8bba8133-5c2f-a174-7998-f7594d4c98dd
   tls: true
   alpn:
   - http/1.1
-  servername: fbsv6.guardora.pro
-  client-fingerprint: firefox
+  servername: newpalace-production-a231.up.railway.app
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /ws/8bba8133-5c2f-a174-7998-f7594d4c98dd
     headers:
-      Host: fbsv6.guardora.pro
+      Host: newpalace-production-a231.up.railway.app
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 2
+  server: 93.190.8.81
+  port: 3090
+  type: vless
+  uuid: 0d5d672c-e82a-46d7-af19-b5bf0027ff83
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 3
+  server: 93.190.9.223
+  port: 3090
+  type: vless
+  uuid: 0d5d672c-e82a-46d7-af19-b5bf0027ff83
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 4
+  server: 93.190.9.158
+  port: 3090
+  type: vless
+  uuid: 82d81f5d-51be-4132-afaf-46f6218f4127
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇰🇿 哈萨克斯坦 | KAZ
+  server: kazartip.thewalkingded.life
+  port: 443
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
+    short-id: 7cf408996c82639f
+  servername: kazartip.thewalkingded.life
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 172.64.229.170
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 6
+  server: 93.190.9.17
+  port: 3090
+  type: vless
+  uuid: e2b20d7c-8e3e-4122-a997-523f3d6af119
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
   udp: true
 proxy-groups:
 - name: AUTO
@@ -96,12 +104,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 以色列 | ISR
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇹🇷 土耳其 | TUR 2
+  - 🇹🇷 土耳其 | TUR 3
+  - 🇹🇷 土耳其 | TUR 4
+  - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 19
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇹🇷 土耳其 | TUR 6
 rules:
 - MATCH,AUTO
