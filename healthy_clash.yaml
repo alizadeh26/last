@@ -4,6 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU
+  server: cosw.ggisopi.su
+  port: 443
+  type: vless
+  uuid: d0f0a880-0df1-0003-bdf1-5669fb9483ce
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  client-fingerprint: qq
+  network: tcp
+  udp: true
 - name: 🇨🇱 智利 | CHL
   server: platform107.golnamakcert.top
   port: 80
@@ -17,71 +29,14 @@ proxies:
     headers:
       Host: platform107.halalkhor.info
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: cosw.ggisopi.su
-  port: 443
-  type: vless
-  uuid: d0f0a880-0df1-0003-bdf1-5669fb9483ce
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 162.159.43.187
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 185.22.154.239
-  port: 10301
-  type: ss
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
 - name: 🇯🇵 日本 | JPN 9
   server: 18.179.37.17
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA 19
-  server: 188.114.97.6
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: 104.18.46.234
-  port: 2086
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: 162.159.43.187
   port: 2086
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -111,33 +66,25 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 智利 | CHL
   - 🇩🇪 德国 | DEU
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇨🇱 智利 | CHL
   - 🇯🇵 日本 | JPN 9
-  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 20
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
   - 🇯🇵 日本 | JPN 9
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 智利 | CHL
   - 🇩🇪 德国 | DEU
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇺🇸 美国 | USA 19
+  - 🇨🇱 智利 | CHL
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 20
 rules:
 - MATCH,AUTO
