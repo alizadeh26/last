@@ -4,54 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 3
-  server: 18.179.37.17
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 103.229.31.69
+  port: 1
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵 日本 | JPN 4
-  server: 3.112.209.209
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: chacha20-ietf-poly1305
+  password: xPxOExZbWvvm9ySqelT6tKHk9lBsOEyb
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: 51.20.86.152
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 | SWE
-  server: 51.20.122.188
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 13
-  server: 54.162.206.255
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 18
+- name: 🇺🇸 美国 | USA 14
   server: 18.205.21.144
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇰🇷 韩国 | KOR 2
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
+  type: ss
+  cipher: aes-256-gcm
+  password: ac9c0a7b
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 18
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇺🇸 美国 | USA 14
+  - 🇰🇷 韩国 | KOR 2
 rules:
 - MATCH,AUTO
