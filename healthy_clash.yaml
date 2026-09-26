@@ -5,25 +5,105 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇨🇱 智利 | CHL
-  server: platform106.golnamakcert.top
+  server: platform107.golnamakcert.top
   port: 80
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   tls: false
+  servername: platform107.halalkhor.info
   network: ws
   ws-opts:
-    path: /platform106
+    path: /platform107
     headers:
-      Host: platform106.halalkhor.info
+      Host: platform107.halalkhor.info
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 103.229.31.69
-  port: 1
+- name: 🇯🇵 日本 | JPN
+  server: 3.112.209.209
+  port: 443
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: xPxOExZbWvvm9ySqelT6tKHk9lBsOEyb
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
+- name: 🇫🇷 法国 | FRA 7
+  server: 151.101.1.194
+  port: 80
+  type: vless
+  uuid: 5fb42b35-29e1-43c1-9c48-13b1b5e67e94
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: simorghfr.global.ssl.fastly.net
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 46.29.163.78
+  port: 30210
+  type: ss
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 172.64.229.170
+  port: 2095
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: bounded-crammed.video-streams.org
+  port: 443
+  type: vless
+  uuid: 2957d7ed-4697-4dda-8939-0caf7a0e93af
+  tls: true
+  alpn:
+  - http/1.1
+  servername: bounded-crammed.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: bounded-crammed.video-streams.org
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 18.234.148.112
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 4
+  server: 45.62.106.145
+  port: 8443
+  type: vless
+  uuid: a3054186-5e1d-4c95-a849-a79ee1e447b2
+  tls: false
+  servername: 45.62.106.145
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 45.62.106.145
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 172.64.229.170
+  port: 2052
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
   server: nl2.gursub.com
   port: 443
   type: vless
@@ -37,61 +117,33 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 104.21.70.21
-  port: 8080
-  type: vless
-  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
-  tls: false
-  servername: ez-5faafb.esmaoi.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: ez-5faafb.esmaoi.workers.dev
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 104.20.37.53
-  port: 8080
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
-  tls: false
-  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/b52a90ada6ab
-    headers:
-      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pl1.gursub.com
-  port: 8444
-  type: vless
-  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE
-    short-id: a3f509aa7a4b41cc
-  servername: pl1.gursub.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 172.67.179.98
+- name: 🇺🇸 美国 | USA 15
+  server: codecanyon.net
   port: 8880
   type: vless
-  uuid: 75e19908-ecd0-4c71-99d2-4f343a52a4d9
+  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: delicate-hall-3f93.239-23c.workers.dev
+      Host: odd-darkness-57ce.334-a29.workers.dev
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 162.159.43.187
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 104.18.34.245
   port: 8880
+  type: vless
+  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-tree-3dbf.285.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 172.64.229.170
+  port: 8080
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -101,90 +153,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: assets-de2.pleiades.codes
-  port: 443
-  type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  tls: true
-  servername: assets-de2.pleiades.codes
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: cdn.v1.AssetService
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 23.83.224.178
-  port: 54322
-  type: vless
-  uuid: 2b424263-d888-494a-eb6a-79538055d1ad
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 18.205.21.144
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇰🇷 韩国 | KOR 2
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  type: ss
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-- name: 🇺🇸 美国 | USA 16
-  server: 104.21.39.30
-  port: 80
-  type: vless
-  uuid: 7201b2cd-0675-4c1a-9c76-07ca14ffcf08
-  tls: false
-  servername: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiTEwyZVI5T3BYZDBxTzhPRCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 172.67.179.98
-  port: 8880
-  type: vless
-  uuid: 82a3c394-55b7-4780-93a0-5f45c0e89625
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-brook-e650.353-3ac.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 172.67.179.98
-  port: 8880
-  type: vless
-  uuid: 8e7ce77a-d889-4dbf-b095-1d0eca88f6dc
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: broad-bread-2a6d.433-b9b.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 172.67.152.71
-  port: 8880
-  type: vless
-  uuid: 38135fde-7044-4407-8faf-e1ab08e47402
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: white-bush-712e.498-f8f.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -192,59 +160,55 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇱 智利 | CHL
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 10
-  - 🇩🇪 德国 | DEU 6
-  - 🇵🇱 波兰 | POL 2
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇯🇵 日本 | JPN
+  - 🇫🇷 法国 | FRA 7
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 14
-  - 🇰🇷 韩国 | KOR 2
-  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 15
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 11
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇺🇸 美国 | USA 14
-  - 🇰🇷 韩国 | KOR 2
+  - 🇯🇵 日本 | JPN
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 9
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇱 智利 | CHL
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 10
-  - 🇩🇪 德国 | DEU 6
-  - 🇵🇱 波兰 | POL 2
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 16
+  - 🇫🇷 法国 | FRA 7
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 15
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 11
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 6
-- name: REGION-EU
+  - 🇯🇵 日本 | JPN
+- name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 4
 - name: REGION-SA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
