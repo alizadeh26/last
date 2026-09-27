@@ -4,18 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇹 奥地利 | AUT
-  server: atatat.failspace.top
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  flow: xtls-rprx-vision
-  servername: atatat.failspace.top
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇮🇳 印度 | IND
-  server: condropolo.ggisopi.su
+- name: 🇦🇩 AD_47
+  server: conge.ggisopi.su
   port: 443
   type: vless
   uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
@@ -23,25 +13,13 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: condropolo.ggisopi.su
-  client-fingerprint: edge
+  servername: conge.ggisopi.su
+  client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 104.18.32.47
-  port: 8880
-  type: vless
-  uuid: b01cadb4-428b-42d2-8c56-d6c13e582ede
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: lingering-water-9e69.219.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 162.159.43.187
-  port: 2082
+- name: 🇺🇸 美国 | USA 19
+  server: 172.64.229.170
+  port: 8080
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -51,29 +29,13 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 104.21.89.181
-  port: 8880
-  type: vless
-  uuid: fe467f51-b2cc-4b16-b50b-a78865ed3dd9
-  tls: false
-  servername: crimson-wind-71bc.19-5fd.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: crimson-wind-71bc.19-5fd.workers.dev
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 | AUT
-  - 🇮🇳 印度 | IND
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 5
+  - 🇦🇩 AD_47
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
