@@ -4,21 +4,67 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇫🇷 法国 | FRA
+  server: 13.36.157.66
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 134.98.147.203
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: 18.179.37.17
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇳🇱 荷兰 | NLD 2
+  server: kosta9.api3-max.ru
+  port: 443
+  type: vless
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  tls: true
+  flow: xtls-rprx-vision
+  servername: kosta9.api3-max.ru
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
-  server: 141.148.239.199
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: GpjRf5YrJgdk/JESBf3HdJ2Klr7+QA6a9K76+2WuKf8=
+  server: sfghfdh75-production.up.railway.app
+  port: 443
+  type: vless
+  uuid: 3515991a-d6cd-4c93-a1c1-d39a77aad058
+  tls: true
+  alpn:
+  - http/1.1
+  servername: sfghfdh75-production.up.railway.app
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/3515991a-d6cd-4c93-a1c1-d39a77aad058
+    headers:
+      Host: sfghfdh75-production.up.railway.app
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 130.61.83.88
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bvHY/DNOgIpmarNB4MP65BYeGyXcXlZ1yF1k+2PnCGQ=
+- name: 🇳🇱 荷兰 | NLD 6
+  server: kosta6.api3-max.ru
+  port: 443
+  type: vless
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  tls: true
+  flow: xtls-rprx-vision
+  servername: kosta6.api3-max.ru
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: 🇦🇩 AD_47
+- name: 🇦🇩 AD_23
   server: conge.ggisopi.su
   port: 443
   type: vless
@@ -31,30 +77,20 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 51.20.72.15
-  port: 443
+- name: 🇩🇪 德国 | DEU 7
+  server: 130.61.146.229
+  port: 59924
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 19
-  server: 172.64.229.170
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  cipher: 2022-blake3-chacha20-poly1305
+  password: MKHwqx5R2L0MzLTo/BQ7xr5Ve6nfPBPfo0HERkDcG9s=
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: 51.20.122.188
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 51.170.176.145
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -62,27 +98,47 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇫🇷 法国 | FRA
+  - 🇳🇱 荷兰 | NLD
+  - 🇯🇵 日本 | JPN 3
+  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 4
-  - 🇦🇩 AD_47
-  - 🇸🇪 瑞典 | SWE
-  - 🇺🇸 美国 | USA 19
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇦🇩 AD_23
+  - 🇩🇪 德国 | DEU 7
+  - 🇸🇪 瑞典 | SWE 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇯🇵 日本 | JPN 3
+  - 🇩🇪 德国 | DEU 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇩 AD_47
-  - 🇺🇸 美国 | USA 19
+  - 🇫🇷 法国 | FRA
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇦🇩 AD_23
+  - 🇸🇪 瑞典 | SWE 3
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇷 法国 | FRA
+  - 🇳🇱 荷兰 | NLD
+  - 🇩🇪 德国 | DEU 7
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD 5
 rules:
 - MATCH,AUTO

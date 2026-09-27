@@ -4,7 +4,61 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇩 AD_47
+- name: 🇫🇷 法国 | FRA
+  server: 13.36.157.66
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 134.98.147.203
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: kosta9.api3-max.ru
+  port: 443
+  type: vless
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  tls: true
+  flow: xtls-rprx-vision
+  servername: kosta9.api3-max.ru
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: sfghfdh75-production.up.railway.app
+  port: 443
+  type: vless
+  uuid: 3515991a-d6cd-4c93-a1c1-d39a77aad058
+  tls: true
+  alpn:
+  - http/1.1
+  servername: sfghfdh75-production.up.railway.app
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/3515991a-d6cd-4c93-a1c1-d39a77aad058
+    headers:
+      Host: sfghfdh75-production.up.railway.app
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: kosta6.api3-max.ru
+  port: 443
+  type: vless
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  tls: true
+  flow: xtls-rprx-vision
+  servername: kosta6.api3-max.ru
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇦🇩 AD_23
   server: conge.ggisopi.su
   port: 443
   type: vless
@@ -17,17 +71,13 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 172.64.229.170
-  port: 8080
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 51.170.176.145
+  port: 62145
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -35,7 +85,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇩 AD_47
-  - 🇺🇸 美国 | USA 19
+  - 🇫🇷 法国 | FRA
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇦🇩 AD_23
+  - 🇸🇪 瑞典 | SWE 3
 rules:
 - MATCH,AUTO
