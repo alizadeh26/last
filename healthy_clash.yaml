@@ -4,11 +4,53 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: cosw.ggisopi.su
+- name: 🇩🇪 德国 | DEU 3
+  server: 159.69.91.8
+  port: 80
+  type: vless
+  uuid: 3728d3fa-e004-47b9-b334-9f0723efeef2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇯🇵 日本 | JPN 2
+  server: 3.112.209.209
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 18.169.206.105
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 13.51.242.39
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 | USA 10
+  server: 172.64.154.8
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: condrve.ggisopi.su
   port: 443
   type: vless
-  uuid: d0f0a880-0df1-0003-bdf1-5669fb9483ce
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
@@ -16,41 +58,9 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇨🇱 智利 | CHL
-  server: platform107.golnamakcert.top
-  port: 80
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  tls: false
-  servername: platform107.halalkhor.info
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
-  udp: true
-- name: 🇯🇵 日本 | JPN 9
-  server: 18.179.37.17
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 16
-  server: 104.18.46.234
-  port: 2086
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 172.64.53.55
-  port: 8080
+- name: 🇺🇸 美国 | USA 28
+  server: 162.159.43.187
+  port: 2082
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -66,25 +76,29 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇨🇱 智利 | CHL
-  - 🇯🇵 日本 | JPN 9
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 20
+  - 🇩🇪 德国 | DEU 3
+  - 🇯🇵 日本 | JPN 2
+  - 🇬🇧 英国 | GBR
+  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 10
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 28
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 9
+  - 🇯🇵 日本 | JPN 2
+  - 🇸🇪 瑞典 | SWE
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇨🇱 智利 | CHL
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 20
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 10
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 28
 rules:
 - MATCH,AUTO

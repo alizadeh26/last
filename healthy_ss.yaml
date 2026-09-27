@@ -4,8 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 9
-  server: 18.179.37.17
+- name: 🇯🇵 日本 | JPN 2
+  server: 3.112.209.209
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 13.51.242.39
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -16,6 +23,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 9
+  - 🇯🇵 日本 | JPN 2
+  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
