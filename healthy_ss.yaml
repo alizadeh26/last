@@ -10,13 +10,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇩🇪 德国 | DEU 7
-  server: 130.61.146.229
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: MKHwqx5R2L0MzLTo/BQ7xr5Ve6nfPBPfo0HERkDcG9s=
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -24,6 +17,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇯🇵 日本 | JPN 3
-  - 🇩🇪 德国 | DEU 7
 rules:
 - MATCH,AUTO
