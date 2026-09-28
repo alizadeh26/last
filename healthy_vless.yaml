@@ -4,60 +4,51 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇦🇩 AD_23
-  server: conge.ggisopi.su
-  port: 443
+- name: 🇩🇪 德国 | DEU
+  server: 136.244.85.41
+  port: 80
   type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: conge.ggisopi.su
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 134.98.147.203
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: 9be7fcec-5b90-4cf7-828c-ccbd889fd03c
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: kosta9.api3-max.ru
-  port: 443
+- name: 🇩🇪 德国 | DEU 3
+  server: 199.247.7.55
+  port: 80
   type: vless
-  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
-  tls: true
-  flow: xtls-rprx-vision
-  servername: kosta9.api3-max.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: 51.170.176.145
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: 4c250d79-700a-4968-b50d-bae96983e1d7
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: kosta6.api3-max.ru
-  port: 443
+- name: 🇵🇱 波兰 | POL 2
+  server: 64.176.77.202
+  port: 80
   type: vless
-  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
-  tls: true
-  flow: xtls-rprx-vision
-  servername: kosta6.api3-max.ru
-  client-fingerprint: chrome
-  network: tcp
+  uuid: 2a12a637-2724-4789-a64d-64ebc1b9bbf3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
   udp: true
-- name: 🇺🇸 美国 | USA 14
+- name: 🇸🇬 新加坡 | SGP 6
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: silent-snow-1a0d.241-b0a.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 8
   server: 162.159.43.187
-  port: 2095
+  port: 80
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -68,17 +59,70 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 172.64.229.170
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 104.21.70.21
+  port: 8080
+  type: vless
+  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
+  tls: false
+  servername: fornewiran.ade-1000.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
+    headers:
+      Host: fornewiran.ade-1000.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: codecanyon.net
+  port: 8880
+  type: vless
+  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dawn-waterfall-6052.360-001.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 104.21.70.21
+  port: 8080
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  tls: false
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇩 AD_23
-  - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇺🇸 美国 | USA 14
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇵🇱 波兰 | POL 2
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇸🇬 新加坡 | SGP 8
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 16
 rules:
 - MATCH,AUTO

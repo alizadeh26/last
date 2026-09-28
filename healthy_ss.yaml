@@ -4,18 +4,26 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 3
-  server: 18.179.37.17
+- name: 🇺🇸 美国 | USA 18
+  server: 18.205.21.144
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 158.178.148.7
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: vNoCxihjVyhIFWBlYnKneEfNcEFU/rxVqQhR6/FoGUk=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 3
+  - 🇺🇸 美国 | USA 18
+  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO
