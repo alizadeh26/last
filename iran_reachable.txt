@@ -1,8 +1,10 @@
-ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@51.222.155.113:5601#Server 72 🇨🇦
-ss://YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2@51.222.141.125:445#Server 70 🇨🇦
-vless://56ba5d34-ef22-4ba6-8090-4188b807df54@163.8.195.241:2087?path=/29c8fed7ca22&security=&encryption=none&type=ws#Server 16 🇩🇪
-ss://YWVzLTI1Ni1jZmI6SEFWQWRFM25YaHFBNW5IcA==@185.135.86.175:9017?#Server 127 🇱🇻
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.168:8080#Server 57 🇳🇱
-ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#%F0%9F%87%AC%F0%9F%87%A7GB-146.70.61.37-0109
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#%F0%9F%87%BA%F0%9F%87%B8US-173.244.56.6-0108
-trojan://humanity@www.calmlunch.com:443?security=tls&sni=www.calmlunch.com&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&type=ws&host=www.calmlunch.com&path=/assignment&allow_insecure=0#🇺🇸 24 - US - Trojan/WS/TLS - 443
+vmess://eyJ2IjoiMiIsInBzIjoiU2VydmVyIDgwIPCfh7Pwn4exIiwiYWRkIjoicGFob2JhYy5vcmciLCJwb3J0Ijo0NDMsImlkIjoiMDNmY2M2MTgtYjkzZC02Nzk2LTZhZWQtOGEzOGM5NzVkNTgxIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOm51bGwsImhvc3QiOiJwYWhvYmFjLm9yZyIsImFscG4iOm51bGwsInBhdGgiOiIvbGlua3Z3cyIsInRscyI6InRscyIsInNuaSI6bnVsbCwiZnAiOm51bGwsIm5hbWUiOiJOTCDwn4ez8J+HsSB8IEBSYXlkaWthbHggfCAzMEVBRTEifQ==
+vless://fad0b9a6-187d-4fcc-96fc-498bc5b3135a@107.181.151.39:443?encryption=none&type=tcp&security=reality&headerType=none&sni=www.foxsports.com&fp=firefox&insecure=0&allowInsecure=0&pbk=J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk&sid=8325360e8bd2&flow=xtls-rprx-vision#🆔soskeynet%20🔒%20VL-TCP-%20🇫🇮%20FI%20171ms
+ss://YWVzLTI1Ni1nY206cFgwdWhVM1pqVWNMV1lzMFZlejU1Qk8zSm9RclJsTA==@146.59.116.19:17000#PL%F0%9F%87%B5%F0%9F%87%B1+%7C+146.59.116.19-17000+%7C+198.42ms
+vmess://eyJhZGQiOiIxNjcuODguNjMuNTkiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiMDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBjcyI6IiIsInBvcnQiOiIyMjMyNCIsInBzIjoiU2VydmVyIDI1IPCfh7rwn4e4Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIiLCJ2Y24iOiIifQ==
+vless://91d28760-ecf1-450b-9170-d310111a0e6d@104.16.181.38:443?encryption=none&security=tls&sni=us9.69lover.my&fp=unsafe&alpn=http%2F1.1&fm=%7B%22tcp%22%3A%5B%7B%22settings%22%3A%7B%22delays%22%3A%5B%220%22%5D%2C%22lengths%22%3A%5B%220%22%2C%22104%22%2C%221%22%5D%2C%22maxSplit%22%3A%220%22%2C%22packets%22%3A%22tlshello%22%7D%2C%22type%22%3A%22fragment%22%7D%2C%7B%22settings%22%3A%7B%22delays%22%3A%5B%221%22%5D%2C%22lengths%22%3A%5B%22114%22%2C%221%22%5D%2C%22maxSplit%22%3A%2211%22%2C%22packets%22%3A%221-1%22%7D%2C%22type%22%3A%22fragment%22%7D%5D%7D&type=ws&host=us9.69lover.my&path=%2Fapi%2Fv2%2F63e9687fa53e441c%2Fstream#Server 114 🇺🇸
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.207:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.207-0095
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.217:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.217-0082
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.219:8080#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+82.38.31.219-8080+%7C+157.72ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.179:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.179-0060
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-0122
