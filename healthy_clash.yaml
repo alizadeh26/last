@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
+- name: 🇩🇪 德国 | DEU 6
   server: 136.244.85.41
   port: 80
   type: vless
@@ -14,54 +14,95 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 199.247.7.55
-  port: 80
-  type: vless
-  uuid: 4c250d79-700a-4968-b50d-bae96983e1d7
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
+- name: 🇩🇪 德国 | DEU 11
+  server: 130.61.43.139
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: foHuoXlfaX4nHHz/zioppturXfvYRcBoJ6GU8GoLj1E=
   udp: true
 - name: 🇵🇱 波兰 | POL 2
-  server: 64.176.77.202
-  port: 80
+  server: poland-ded-new-one.failspace.top
+  port: 443
   type: vless
-  uuid: 2a12a637-2724-4789-a64d-64ebc1b9bbf3
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 162.159.43.187
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇸🇬 新加坡 | SGP 6
+- name: 🇸🇬 新加坡 | SGP
+  server: free-server.techsonic.dev
+  port: 443
+  type: vless
+  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: aka.ms
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  type: vless
+  uuid: 5fccaf5f-6cc7-46a1-8a41-03c0a4231e6c
+  tls: true
+  alpn:
+  - http/1.1
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  type: vless
+  uuid: d78a47b6-dbd2-4ed1-8749-17a22dbe8c3e
+  tls: true
+  alpn:
+  - http/1.1
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  udp: true
+- name: 🇺🇸 美国 | USA 8
   server: codecanyon.net
   port: 8880
   type: vless
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
   tls: false
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
+      Host: odd-darkness-57ce.334-a29.workers.dev
   udp: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: 162.159.43.187
-  port: 80
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 172.64.229.170
-  port: 2086
+- name: 🇺🇸 美国 | USA 12
+  server: 172.64.229.2
+  port: 2052
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -70,57 +111,6 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 104.21.70.21
-  port: 8080
-  type: vless
-  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
-  tls: false
-  servername: fornewiran.ade-1000.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
-    headers:
-      Host: fornewiran.ade-1000.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 18.205.21.144
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 3
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dawn-waterfall-6052.360-001.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 104.21.70.21
-  port: 8080
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  tls: false
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 158.178.148.7
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: vNoCxihjVyhIFWBlYnKneEfNcEFU/rxVqQhR6/FoGUk=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -128,52 +118,47 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 11
   - 🇵🇱 波兰 | POL 2
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 3
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 16
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 12
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 18
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇩🇪 德国 | DEU 11
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 6
   - 🇵🇱 波兰 | POL 2
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 3
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 12
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 3
-  - 🇵🇱 波兰 | POL 2
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 11
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 11
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
