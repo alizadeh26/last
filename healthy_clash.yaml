@@ -4,12 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU 7
+  server: 130.61.38.201
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: cpfozXiC+kIkLtCqoXJ6jAIw0eQjqNjK1r5xBOelSPk=
+  udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: 130.61.231.252
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: w2UgXaZ3iOrLmANBQsipIyFHbIlhynnJ6s6TIquX/Ys=
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 134.65.62.95
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +n/Yn6rWy+11rk4MxKsXdkGqV5y7bSFi1ktUN4jt11w=
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.74.201
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: GKgXiQpcAqeN3oLeZcMRXvu1zSLopUrV/JNylzVi2DE=
   udp: true
 - name: 🇩🇪 德国 | DEU 12
   server: 199.247.23.162
@@ -20,34 +41,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.74.201
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: GKgXiQpcAqeN3oLeZcMRXvu1zSLopUrV/JNylzVi2DE=
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 134.65.62.95
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +n/Yn6rWy+11rk4MxKsXdkGqV5y7bSFi1ktUN4jt11w=
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 130.61.38.201
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: cpfozXiC+kIkLtCqoXJ6jAIw0eQjqNjK1r5xBOelSPk=
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 130.61.151.181
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 57c1Cki1OOfgfkTTKVU+y2V8zGvYuq42Z9AslJe4bZg=
   udp: true
 - name: 🇭🇰 香港 | HKG
   server: china.letsconnectpoint.com
@@ -63,13 +56,6 @@ proxies:
   client-fingerprint: ios
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 158.101.217.178
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: cgfpFnVn190tZ5u5tOinJgSQGnK9OXEV+8q+HTTDoXs=
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 158.178.146.109
   port: 45819
@@ -77,42 +63,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: a8ii2yncuhwoLpYzpTs14Ctz33WtPwqsVKGqwoRGLBA=
   udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: t.cnmjcn.cyou
-  port: 16622
-  type: vmess
-  uuid: 76c43223-7fc5-4819-93cf-49ba562aed00
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 13e884f43ae137445d1618e1e66ded01.mobgslb.tbcache.com
-- name: 🇺🇸 美国 | USA 8
-  server: p4.cnb.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 76c43223-7fc5-4819-93cf-49ba562aed00
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 13e884f43ae137445d1618e1e66ded01.mobgslb.tbcache.com
-- name: 🇸🇪 瑞典 | SWE
-  server: 51.170.181.33
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 51.170.181.33
-  network: tcp
+- name: 🇳🇱 荷兰 | NLD
+  server: 158.101.217.178
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: cgfpFnVn190tZ5u5tOinJgSQGnK9OXEV+8q+HTTDoXs=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -120,30 +76,25 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 12
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 4
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 12
   - 🇭🇰 香港 | HKG
-  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 2
-  - 🇭🇰 香港 | HKG 4
-  - 🇺🇸 美国 | USA 8
-  - 🇸🇪 瑞典 | SWE
+  - 🇳🇱 荷兰 | NLD
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇬🇧 英国 | GBR 2
-  - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 11
-  - 🇳🇱 荷兰 | NLD
+  - 🇩🇪 德国 | DEU 4
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 2
   - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -151,13 +102,14 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 12
   - 🇭🇰 香港 | HKG
-  - 🇸🇪 瑞典 | SWE
-- name: PROTO-VMESS
+- name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 4
-  - 🇺🇸 美国 | USA 8
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 4
+  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO

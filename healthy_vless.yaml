@@ -28,15 +28,6 @@ proxies:
   client-fingerprint: ios
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 51.170.181.33
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 51.170.181.33
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -45,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 12
   - 🇭🇰 香港 | HKG
-  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
