@@ -4,15 +4,40 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 167.233.182.218
-  port: 80
+- name: 🇩🇪 德国 | DEU 2
+  server: fi.astrafic.ru
+  port: 443
   type: vless
-  uuid: 1a64c956-522f-44ea-8e7e-f4a909a40ec5
+  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
+  tls: true
+  servername: fi.astrafic.ru
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless-grpc
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: polka-dot.failspace.top
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 162.159.43.187
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 proxy-groups:
 - name: AUTO
@@ -20,6 +45,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 2
+  - 🇵🇱 波兰 | POL
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

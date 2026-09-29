@@ -4,36 +4,47 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 167.233.182.218
-  port: 80
+- name: 🇩🇪 德国 | DEU 2
+  server: fi.astrafic.ru
+  port: 443
   type: vless
-  uuid: 1a64c956-522f-44ea-8e7e-f4a909a40ec5
+  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
+  tls: true
+  servername: fi.astrafic.ru
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless-grpc
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: 168.107.78.228
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bkirkeLNxhjqSpiH40KS1FGcpKSwnAEWm8+DN3QLPoU=
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: polka-dot.failspace.top
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 162.159.43.187
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /
-  udp: true
-- name: 🇯🇵 日本 | JPN 5
-  server: cdn.sfacg.uk
-  port: 2083
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /or3
+    path: /?ed=2560security=tls
     headers:
-      Host: or3.sfacg.uk
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 13.229.204.74
-  port: 8443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2db985f6-21bf-40c2-a4f1-4ce2cf90b1c2
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 proxy-groups:
 - name: AUTO
@@ -41,44 +52,36 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇯🇵 日本 | JPN 5
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇩🇪 德国 | DEU 2
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇵🇱 波兰 | POL
+  - 🇺🇸 美国 | USA
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇸🇬 新加坡 | SGP 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇯🇵 日本 | JPN 5
+  - 🇩🇪 德国 | DEU 2
+  - 🇵🇱 波兰 | POL
+  - 🇺🇸 美国 | USA
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇸🇬 新加坡 | SGP 6
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇯🇵 日本 | JPN 5
+  - 🇩🇪 德国 | DEU 2
+  - 🇵🇱 波兰 | POL
 rules:
 - MATCH,AUTO
