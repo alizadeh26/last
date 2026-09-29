@@ -4,32 +4,66 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: fi.astrafic.ru
+- name: 🇬🇧 英国 | GBR
+  server: rankaat10.api3-max.ru
   port: 443
   type: vless
-  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
   tls: true
-  servername: fi.astrafic.ru
-  client-fingerprint: qq
+  flow: xtls-rprx-vision
+  servername: rankaat10.api3-max.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 13
+  server: assets-fr4.pleiades.codes
+  port: 443
+  type: vless
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  tls: true
+  servername: assets-fr4.pleiades.codes
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: vless-grpc
+    grpc-service-name: cdn.v1.AssetService
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: polka-dot.failspace.top
+- name: 🇬🇧 英国 | GBR 4
+  server: rankas9.api3-max.ru
   port: 443
   type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  servername: rankas9.api3-max.ru
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 162.159.43.187
-  port: 2082
+- name: 🇹🇷 土耳其 | TUR 2
+  server: myda06.api3-max.ru
+  port: 443
+  type: vless
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  tls: true
+  flow: xtls-rprx-vision
+  servername: myda06.api3-max.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: myda08.api3-max.ru
+  port: 443
+  type: vless
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  tls: true
+  flow: xtls-rprx-vision
+  servername: myda08.api3-max.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: 172.64.32.103
+  port: 2052
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -39,14 +73,31 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: media-se.compressor.work
+  port: 14443
+  type: vless
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  tls: true
+  servername: media-se.compressor.work
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: media-se.compressor.work
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇵🇱 波兰 | POL
-  - 🇺🇸 美国 | USA
+  - 🇬🇧 英国 | GBR
+  - 🇫🇷 法国 | FRA 13
+  - 🇬🇧 英国 | GBR 4
+  - 🇹🇷 土耳其 | TUR 2
+  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 18
+  - 🇩🇪 德国 | DEU 5
 rules:
 - MATCH,AUTO

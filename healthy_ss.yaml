@@ -4,12 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 168.107.78.228
-  port: 56927
+- name: 🇩🇪 德国 | DEU 6
+  server: 130.61.45.158
+  port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: bkirkeLNxhjqSpiH40KS1FGcpKSwnAEWm8+DN3QLPoU=
+  password: ZEntWGl0SEq0qUIMx4UiTN482RzOg2VeZ2N5Qrte1Xc=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 13.229.204.74
+  port: 8443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2db985f6-21bf-40c2-a4f1-4ce2cf90b1c2
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 6
+  - 🇩🇪 德国 | DEU 6
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO
