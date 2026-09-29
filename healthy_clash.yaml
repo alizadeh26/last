@@ -4,150 +4,160 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: rankaat10.api3-max.ru
-  port: 443
-  type: vless
-  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
-  tls: true
-  flow: xtls-rprx-vision
-  servername: rankaat10.api3-max.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 13
-  server: assets-fr4.pleiades.codes
-  port: 443
-  type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  tls: true
-  servername: assets-fr4.pleiades.codes
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: cdn.v1.AssetService
-  udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: rankas9.api3-max.ru
-  port: 443
-  type: vless
-  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
-  tls: true
-  flow: xtls-rprx-vision
-  servername: rankas9.api3-max.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇹🇷 土耳其 | TUR 2
-  server: myda06.api3-max.ru
-  port: 443
-  type: vless
-  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
-  tls: true
-  flow: xtls-rprx-vision
-  servername: myda06.api3-max.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: myda08.api3-max.ru
-  port: 443
-  type: vless
-  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
-  tls: true
-  flow: xtls-rprx-vision
-  servername: myda08.api3-max.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 172.64.32.103
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 130.61.45.158
+- name: 🇩🇪 德国 | DEU 4
+  server: 130.61.231.252
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: ZEntWGl0SEq0qUIMx4UiTN482RzOg2VeZ2N5Qrte1Xc=
+  password: w2UgXaZ3iOrLmANBQsipIyFHbIlhynnJ6s6TIquX/Ys=
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 13.229.204.74
-  port: 8443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2db985f6-21bf-40c2-a4f1-4ce2cf90b1c2
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: media-se.compressor.work
-  port: 14443
+- name: 🇩🇪 德国 | DEU 12
+  server: 199.247.23.162
+  port: 80
   type: vless
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  tls: true
-  servername: media-se.compressor.work
-  client-fingerprint: chrome
+  uuid: 306dcb21-d02d-49dd-8ec7-0005b972b47a
+  tls: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.74.201
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: GKgXiQpcAqeN3oLeZcMRXvu1zSLopUrV/JNylzVi2DE=
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 134.65.62.95
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +n/Yn6rWy+11rk4MxKsXdkGqV5y7bSFi1ktUN4jt11w=
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 130.61.38.201
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: cpfozXiC+kIkLtCqoXJ6jAIw0eQjqNjK1r5xBOelSPk=
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: 130.61.151.181
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 57c1Cki1OOfgfkTTKVU+y2V8zGvYuq42Z9AslJe4bZg=
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: china.letsconnectpoint.com
+  port: 443
+  type: vless
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 158.101.217.178
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: cgfpFnVn190tZ5u5tOinJgSQGnK9OXEV+8q+HTTDoXs=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 158.178.146.109
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: a8ii2yncuhwoLpYzpTs14Ctz33WtPwqsVKGqwoRGLBA=
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: t.cnmjcn.cyou
+  port: 16622
+  type: vmess
+  uuid: 76c43223-7fc5-4819-93cf-49ba562aed00
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
     headers:
-      Host: media-se.compressor.work
+      Host: 13e884f43ae137445d1618e1e66ded01.mobgslb.tbcache.com
+- name: 🇺🇸 美国 | USA 8
+  server: p4.cnb.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: 76c43223-7fc5-4819-93cf-49ba562aed00
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 13e884f43ae137445d1618e1e66ded01.mobgslb.tbcache.com
+- name: 🇸🇪 瑞典 | SWE
+  server: 51.170.181.33
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  servername: 51.170.181.33
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 12
+  - 🇬🇧 英国 | GBR 2
   - 🇬🇧 英国 | GBR
-  - 🇫🇷 法国 | FRA 13
-  - 🇬🇧 英国 | GBR 4
-  - 🇹🇷 土耳其 | TUR 2
-  - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 18
-  - 🇩🇪 德国 | DEU 6
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 11
+  - 🇭🇰 香港 | HKG
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇭🇰 香港 | HKG 4
+  - 🇺🇸 美国 | USA 8
+  - 🇸🇪 瑞典 | SWE
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 11
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇫🇷 法国 | FRA 13
-  - 🇬🇧 英国 | GBR 4
-  - 🇹🇷 土耳其 | TUR 2
-  - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 18
-  - 🇩🇪 德国 | DEU 5
-- name: REGION-AS
+  - 🇩🇪 德国 | DEU 12
+  - 🇭🇰 香港 | HKG
+  - 🇸🇪 瑞典 | SWE
+- name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 2
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇫🇷 法国 | FRA 13
-  - 🇬🇧 英国 | GBR 4
-  - 🇩🇪 德国 | DEU 5
+  - 🇭🇰 香港 | HKG 4
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

@@ -4,19 +4,54 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 6
-  server: 130.61.45.158
+- name: 🇩🇪 德国 | DEU 4
+  server: 130.61.231.252
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: ZEntWGl0SEq0qUIMx4UiTN482RzOg2VeZ2N5Qrte1Xc=
+  password: w2UgXaZ3iOrLmANBQsipIyFHbIlhynnJ6s6TIquX/Ys=
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 13.229.204.74
-  port: 8443
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.74.201
+  port: 61312
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2db985f6-21bf-40c2-a4f1-4ce2cf90b1c2
+  cipher: 2022-blake3-chacha20-poly1305
+  password: GKgXiQpcAqeN3oLeZcMRXvu1zSLopUrV/JNylzVi2DE=
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 134.65.62.95
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +n/Yn6rWy+11rk4MxKsXdkGqV5y7bSFi1ktUN4jt11w=
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 130.61.38.201
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: cpfozXiC+kIkLtCqoXJ6jAIw0eQjqNjK1r5xBOelSPk=
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: 130.61.151.181
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 57c1Cki1OOfgfkTTKVU+y2V8zGvYuq42Z9AslJe4bZg=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 158.101.217.178
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: cgfpFnVn190tZ5u5tOinJgSQGnK9OXEV+8q+HTTDoXs=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 158.178.146.109
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: a8ii2yncuhwoLpYzpTs14Ctz33WtPwqsVKGqwoRGLBA=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,7 +59,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇬🇧 英国 | GBR 2
+  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 11
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO
