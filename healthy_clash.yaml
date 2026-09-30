@@ -3,54 +3,7 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: silent
-proxies:
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 162.159.43.187
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: abctest.8rm.net
-  port: 443
-  type: vless
-  uuid: 351c9981-04b6-4103-aa4b-864aa9c91469
-  tls: true
-  servername: abctest.8rm.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: abctest.8rm.net
-  udp: true
-proxy-groups:
-- name: AUTO
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇸🇬 新加坡 | SGP 7
-  - 🇺🇸 美国 | USA 6
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇸🇬 新加坡 | SGP 7
-  - 🇺🇸 美国 | USA 6
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 6
+proxies: []
+proxy-groups: []
 rules:
 - MATCH,AUTO
