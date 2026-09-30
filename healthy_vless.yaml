@@ -4,29 +4,159 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 12
-  server: 199.247.23.162
-  port: 80
+- name: 🇫🇷 法国 | FRA
+  server: api.asamping.ir
+  port: 2105
   type: vless
-  uuid: 306dcb21-d02d-49dd-8ec7-0005b972b47a
+  uuid: 5f424b45-29e5-4cbe-b752-88ac535c11b7
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 162.159.156.214
+  port: 8880
+  type: vless
+  uuid: 999c9769-28db-425a-84d8-ccd7a3321406
+  tls: false
+  servername: jolly-glitter-123c.196-2b3.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: jolly-glitter-123c.196-2b3.workers.dev
+  udp: true
+- name: 🇫🇷 法国 | FRA 3
+  server: gustav7.api3-max.ru
+  port: 443
+  type: vless
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  tls: true
+  flow: xtls-rprx-vision
+  servername: gustav7.api3-max.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 4
+  server: gustav8.api3-max.ru
+  port: 443
+  type: vless
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  tls: true
+  flow: xtls-rprx-vision
+  servername: gustav8.api3-max.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 104.21.12.116
+  port: 8880
+  type: vless
+  uuid: df26029b-bffe-4ce2-9246-25b52ed2b1c7
   tls: false
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: polished-field-4448.186-705.workers.dev
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: china.letsconnectpoint.com
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 104.21.70.21
+  port: 8080
   type: vless
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: ios
-  network: tcp
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  tls: false
+  servername: 057.electrocellco-cf-057.workers.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 057.electrocellco-cf-057.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 104.16.106.213
+  port: 8880
+  type: vless
+  uuid: e43ca713-a646-4406-a4d5-1e7bad20e7da
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: autumn-snow-735a.175-9d9.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 188.114.97.6
+  port: 8080
+  type: vless
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: silent-snow-1a0d.241-b0a.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 172.64.151.134
+  port: 8880
+  type: vless
+  uuid: 878dd962-027b-4bd3-a1f8-66be68a03c4d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: young-wind-3c58.240-2ce.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 104.21.70.21
+  port: 8080
+  type: vless
+  uuid: a51d8a82-faec-44f4-8882-441a2e7f0ce4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: spring-math-5c8c.434.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: anydesk.com
+  port: 8880
+  type: vless
+  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fancy-king-6fb5.33-615.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 104.20.37.53
+  port: 8080
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  tls: false
+  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/b52a90ada6ab
+    headers:
+      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 5
+  server: 171.83.48.117
+  port: 8443
+  type: vless
+  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
+  tls: false
+  servername: 171.83.48.117
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fancy-king-6fb5.33-615.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -34,7 +164,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 12
-  - 🇭🇰 香港 | HKG
+  - 🇫🇷 法国 | FRA
+  - 🇩🇪 德国 | DEU 2
+  - 🇫🇷 法国 | FRA 3
+  - 🇫🇷 法国 | FRA 4
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 16
+  - 🇸🇬 新加坡 | SGP 5
 rules:
 - MATCH,AUTO
