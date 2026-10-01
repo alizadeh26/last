@@ -4,89 +4,32 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: de-918a1965.sishka.network
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.61.183.138
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ocMG8tE50zf8rMv9SZrKUY2Ob+fAsZOTQWlgoJdfuvg=
+  udp: true
+- name: 🇯🇵 日本 | JPN 6
+  server: bounded-crammed.video-streams.org
   port: 443
   type: vless
-  uuid: 5f5677a6-f1fd-4911-b32a-cfbc506f0cf6
-  tls: true
-  flow: xtls-rprx-vision
-  servername: de-918a1965.sishka.network
-  client-fingerprint: edge
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: id-nl-01.mintrocket.org
-  port: 443
-  type: vless
-  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
-    short-id: fee1f986a72444db
-  servername: id-nl-01.mintrocket.org
-  client-fingerprint: safari
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.43.187
-  port: 2086
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 162.159.43.187
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 162.159.43.187
-  port: 80
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: ghosts-spasm.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: 484af701-34a8-4957-bf61-0f7bc3891e59
+  uuid: 18b91bec-1abf-45c0-bd06-f2c6ed22a125
   tls: true
   alpn:
   - http/1.1
-  servername: ghosts-spasm.quick-cdn.net
+  servername: bounded-crammed.video-streams.org
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: ghosts-spasm.quick-cdn.net
+      Host: bounded-crammed.video-streams.org
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
+- name: 🇺🇸 美国 | USA 2
   server: 162.159.43.187
-  port: 8880
+  port: 2082
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -95,6 +38,47 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: bounded-crammed.video-streams.org
+  port: 443
+  type: vless
+  uuid: 91c35e01-00bf-41f5-94e4-71539222d255
+  tls: true
+  alpn:
+  - http/1.1
+  servername: bounded-crammed.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: bounded-crammed.video-streams.org
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: bounded-crammed.video-streams.org
+  port: 443
+  type: vless
+  uuid: 018a6ab7-f54c-4a1c-bfc5-d6b04e6545d1
+  tls: true
+  alpn:
+  - http/1.1
+  servername: bounded-crammed.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: bounded-crammed.video-streams.org
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 158.101.202.50
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  servername: 158.101.202.50
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -102,31 +86,27 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 4
-  - 🇸🇬 新加坡 | SGP
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 15
+  - 🇩🇪 德国 | DEU 3
+  - 🇯🇵 日本 | JPN 6
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 12
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇳🇱 荷兰 | NLD 3
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 4
-  - 🇸🇬 新加坡 | SGP
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 15
+  - 🇯🇵 日本 | JPN 6
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 12
-  - 🇸🇬 新加坡 | SGP 2
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 4
+  - 🇳🇱 荷兰 | NLD 3
 rules:
 - MATCH,AUTO
