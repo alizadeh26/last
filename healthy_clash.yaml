@@ -4,28 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.61.183.138
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ocMG8tE50zf8rMv9SZrKUY2Ob+fAsZOTQWlgoJdfuvg=
-  udp: true
-- name: 🇯🇵 日本 | JPN 6
-  server: bounded-crammed.video-streams.org
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 158.101.202.50
+  port: 62145
   type: vless
-  uuid: 18b91bec-1abf-45c0-bd06-f2c6ed22a125
-  tls: true
-  alpn:
-  - http/1.1
-  servername: bounded-crammed.video-streams.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: bounded-crammed.video-streams.org
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  servername: 158.101.202.50
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 162.159.43.187
@@ -39,74 +25,32 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: bounded-crammed.video-streams.org
-  port: 443
-  type: vless
-  uuid: 91c35e01-00bf-41f5-94e4-71539222d255
-  tls: true
-  alpn:
-  - http/1.1
-  servername: bounded-crammed.video-streams.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: bounded-crammed.video-streams.org
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: bounded-crammed.video-streams.org
-  port: 443
-  type: vless
-  uuid: 018a6ab7-f54c-4a1c-bfc5-d6b04e6545d1
-  tls: true
-  alpn:
-  - http/1.1
-  servername: bounded-crammed.video-streams.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: bounded-crammed.video-streams.org
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 158.101.202.50
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 158.101.202.50
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇯🇵 日本 | JPN 6
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 12
   - 🇳🇱 荷兰 | NLD 3
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 3
+  - 🇺🇸 美国 | USA 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 6
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 12
   - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 2
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD 3
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
