@@ -4,16 +4,34 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 2
-  server: 212.192.13.143
-  port: 20999
-  type: ss
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
+- name: 🇩🇪 德国 | DEU
+  server: de-918a1965.sishka.network
+  port: 443
+  type: vless
+  uuid: 5f5677a6-f1fd-4911-b32a-cfbc506f0cf6
+  tls: true
+  flow: xtls-rprx-vision
+  servername: de-918a1965.sishka.network
+  client-fingerprint: edge
+  network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
+- name: 🇩🇪 德国 | DEU 4
+  server: id-nl-01.mintrocket.org
+  port: 443
+  type: vless
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
+  servername: id-nl-01.mintrocket.org
+  client-fingerprint: safari
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
   server: 162.159.43.187
-  port: 2052
+  port: 2086
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -24,29 +42,59 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 104.18.30.170
-  port: 8880
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 162.159.43.187
+  port: 2095
   type: vless
-  uuid: 1399f473-ffb5-4942-b05c-7dd3fc0007fb
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: round-truth-dcf1.34-719.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: anydesk.com
+- name: 🇺🇸 美国 | USA 15
+  server: 162.159.43.187
+  port: 80
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: ghosts-spasm.quick-cdn.net
+  port: 443
+  type: vless
+  uuid: 484af701-34a8-4957-bf61-0f7bc3891e59
+  tls: true
+  alpn:
+  - http/1.1
+  servername: ghosts-spasm.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ghosts-spasm.quick-cdn.net
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 162.159.43.187
   port: 8880
   type: vless
-  uuid: 984d10dd-4d51-45ac-a781-f0c1357644c2
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /?ed=2560security=tls
     headers:
-      Host: lingering-sun-d7b5.49-56e.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 proxy-groups:
 - name: AUTO
@@ -54,23 +102,31 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 4
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 12
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 9
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 4
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 12
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 9
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 4
 rules:
 - MATCH,AUTO
