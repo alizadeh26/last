@@ -3,7 +3,74 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: silent
-proxies: []
-proxy-groups: []
+proxies:
+- name: 🇭🇰 香港 | HKG 2
+  server: 212.192.13.143
+  port: 20999
+  type: ss
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 162.159.43.187
+  port: 2052
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 104.18.30.170
+  port: 8880
+  type: vless
+  uuid: 1399f473-ffb5-4942-b05c-7dd3fc0007fb
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: round-truth-dcf1.34-719.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: anydesk.com
+  port: 8880
+  type: vless
+  uuid: 984d10dd-4d51-45ac-a781-f0c1357644c2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: lingering-sun-d7b5.49-56e.workers.dev
+  udp: true
+proxy-groups:
+- name: AUTO
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 2
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 9
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 2
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO

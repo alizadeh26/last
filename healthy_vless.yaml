@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP 7
+- name: 🇸🇬 新加坡 | SGP 2
   server: 162.159.43.187
   port: 2052
   type: vless
@@ -17,19 +17,29 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: abctest.8rm.net
-  port: 443
+- name: 🇺🇸 美国 | USA 5
+  server: 104.18.30.170
+  port: 8880
   type: vless
-  uuid: 351c9981-04b6-4103-aa4b-864aa9c91469
-  tls: true
-  servername: abctest.8rm.net
-  client-fingerprint: chrome
+  uuid: 1399f473-ffb5-4942-b05c-7dd3fc0007fb
+  tls: false
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /
     headers:
-      Host: abctest.8rm.net
+      Host: round-truth-dcf1.34-719.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: anydesk.com
+  port: 8880
+  type: vless
+  uuid: 984d10dd-4d51-45ac-a781-f0c1357644c2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: lingering-sun-d7b5.49-56e.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -37,7 +47,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 7
-  - 🇺🇸 美国 | USA 6
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
