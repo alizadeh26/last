@@ -4,38 +4,63 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 2
-  server: agemalmebashi-production.up.railway.app
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: us51.mech-pro.online
   port: 443
   type: vless
-  uuid: b625622c-e693-4023-3eee-11a49b0aafca
+  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
   tls: true
-  alpn:
-  - http/1.1
-  servername: agemalmebashi-production.up.railway.app
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/b625622c-e693-4023-3eee-11a49b0aafca
-    headers:
-      Host: agemalmebashi-production.up.railway.app
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
+    short-id: 16e0f049
+  servername: us51.mech-pro.online
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 2
+- name: 🇩🇪 德国 | DEU 4
+  server: cdn-de.bulkavpn.top
+  port: 443
+  type: vless
+  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ
+    short-id: c885e8f8
+  servername: cdn-de.bulkavpn.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pl193.mech-pro.online
+  port: 443
+  type: vless
+  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
+    short-id: 16e0f049
+  servername: pl193.mech-pro.online
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
   server: 162.159.43.187
-  port: 2095
+  port: 2082
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 10
+- name: 🇺🇸 美国 | USA 13
   server: 162.159.43.187
-  port: 80
+  port: 8080
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -46,25 +71,17 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 172.64.53.55
-  port: 2095
+- name: 🇺🇸 美国 | USA 11
+  server: undef.network
+  port: 2052
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 130.61.149.187
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3dnhV7bixKH/zZxV1pUukqQJUgb0FLew7bx7u8qXaq0=
+      Host: uwu.blueknightnet.qzz.io
   udp: true
 proxy-groups:
 - name: AUTO
@@ -72,34 +89,22 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 6
-  - 🇩🇪 德国 | DEU 8
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 8
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇵🇱 波兰 | POL
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 11
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 6
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 6
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇵🇱 波兰 | POL
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
