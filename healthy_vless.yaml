@@ -4,26 +4,120 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 158.101.202.50
-  port: 62145
+- name: 🇩🇪 德国 | DEU 3
+  server: 139.162.149.105
+  port: 80
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 158.101.202.50
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
   tls: false
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
+  udp: true
+- name: 🇱🇹 立陶宛 | LTU 2
+  server: litva.ali-bard.online
+  port: 443
+  type: vless
+  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: litva.ali-bard.online
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: www.baipiao.eu.org
+  port: 8880
+  type: vless
+  uuid: 56c673ba-865a-48ec-8dc0-fd7133a7ecfd
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: curly-surf-4401.75-08c.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: bounded-crammed.video-streams.org
+  port: 443
+  type: vless
+  uuid: b973d146-31db-4ec4-8d62-c034598d4d79
+  tls: true
+  alpn:
+  - http/1.1
+  servername: bounded-crammed.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: bounded-crammed.video-streams.org
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: bounded-crammed.video-streams.org
+  port: 443
+  type: vless
+  uuid: 06183f61-967a-47a0-b09e-2a877d4f0c54
+  tls: true
+  alpn:
+  - http/1.1
+  servername: bounded-crammed.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: bounded-crammed.video-streams.org
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: v2ray.aizgl.com
+  port: 443
+  type: vless
+  uuid: 4b21fbc7-00c2-4665-9788-02153832f9e5
+  tls: true
+  servername: v2ray.aizgl.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /xray-ws
+    headers:
+      Host: v2ray.aizgl.com
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 5.223.19.211
+  port: 80
+  type: vless
+  uuid: 4b8a0930-1c36-4efe-b4fe-21f9ad97905c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 172.67.179.98
+  port: 8880
+  type: vless
+  uuid: 83744063-3ddc-4ed9-b6e5-d207ce6ed48e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: still-pine-d15e.368-b2a.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: 104.18.34.245
+  port: 8880
+  type: vless
+  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dawn-waterfall-6052.360-001.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -31,7 +125,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇩🇪 德国 | DEU 3
+  - 🇱🇹 立陶宛 | LTU 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 2
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 20
 rules:
 - MATCH,AUTO
