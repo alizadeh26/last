@@ -4,12 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 80.87.197.181
-  port: 2055
+- name: 🇩🇪 德国 | DEU 8
+  server: 130.61.149.187
+  port: 59924
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MBiJEJ5VgZXVSj58CEEFZA
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3dnhV7bixKH/zZxV1pUukqQJUgb0FLew7bx7u8qXaq0=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇩🇪 德国 | DEU 8
 rules:
 - MATCH,AUTO
