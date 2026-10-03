@@ -4,84 +4,71 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇪 爱沙尼亚 | EST 2
-  server: us51.mech-pro.online
+- name: 🇧🇷 巴西 | BRA 2
+  server: br.monkora.org
   port: 443
   type: vless
-  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
-    short-id: 16e0f049
-  servername: us51.mech-pro.online
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: br.monkora.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: de.monkora.org
+  port: 443
+  type: vless
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  tls: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: cdn-de.bulkavpn.top
+- name: 🇳🇱 荷兰 | NLD 3
+  server: lkde-production.up.railway.app
   port: 443
   type: vless
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  uuid: d82df9f0-ac94-57f8-8756-c920943dc3c5
   tls: true
-  flow: xtls-rprx-vision
+  alpn:
+  - http/1.1
+  servername: lkde-production.up.railway.app
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/d82df9f0-ac94-57f8-8756-c920943dc3c5
+    headers:
+      Host: lkde-production.up.railway.app
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: sg.monkora.org
+  port: 443
+  type: vless
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  tls: true
   reality-opts:
-    public-key: LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ
-    short-id: c885e8f8
-  servername: cdn-de.bulkavpn.top
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: sg.monkora.org
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: pl193.mech-pro.online
+- name: 🇺🇸 美国 | USA 5
+  server: ghosts-spasm.quick-cdn.net
   port: 443
   type: vless
-  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
+  uuid: 6f46fe49-9692-4e74-bfd0-5515fc677963
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
-    short-id: 16e0f049
-  servername: pl193.mech-pro.online
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
+  servername: ghosts-spasm.quick-cdn.net
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /ws
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 162.159.43.187
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: undef.network
-  port: 2052
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  tls: false
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: ghosts-spasm.quick-cdn.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -89,22 +76,20 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇵🇱 波兰 | POL
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 11
+  - 🇧🇷 巴西 | BRA 2
+  - 🇩🇪 德国 | DEU 10
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇵🇱 波兰 | POL
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 11
+  - 🇧🇷 巴西 | BRA 2
+  - 🇩🇪 德国 | DEU 10
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
