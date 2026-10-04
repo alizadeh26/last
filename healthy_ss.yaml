@@ -4,12 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 8
-  server: 130.61.149.187
-  port: 59924
+- name: 🇺🇸 美国 | USA 4
+  server: 54.208.227.172
+  port: 443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3dnhV7bixKH/zZxV1pUukqQJUgb0FLew7bx7u8qXaq0=
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 54.173.150.39
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO

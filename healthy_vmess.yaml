@@ -4,17 +4,38 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 31.77.8.97
-  port: 110
+- name: 🇭🇰 香港 | HKG 17
+  server: 47.244.120.197
+  port: 44867
   type: vmess
-  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   alterId: 0
   cipher: auto
   tls: false
   alpn:
   - ''
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇭🇰 香港 | HKG 6
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +43,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
+  - 🇭🇰 香港 | HKG 17
+  - 🇭🇰 香港 | HKG 6
 rules:
 - MATCH,AUTO

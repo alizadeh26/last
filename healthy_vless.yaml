@@ -4,71 +4,75 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA 2
-  server: br.monkora.org
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 2
+  server: s11.shahankhan.ir
+  port: 8080
   type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: br.monkora.org
-  client-fingerprint: chrome
+  uuid: 6fddf57a-313c-4d4a-8ae1-939b207a1588
+  tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: de.monkora.org
+- name: 🇵🇱 波兰 | POL
+  server: polkadotnewone.failspace.top
   port: 443
   type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: lkde-production.up.railway.app
-  port: 443
-  type: vless
-  uuid: d82df9f0-ac94-57f8-8756-c920943dc3c5
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   tls: true
   alpn:
-  - http/1.1
-  servername: lkde-production.up.railway.app
+  - h2
+  flow: xtls-rprx-vision
+  servername: polkadotnewone.failspace.top
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/d82df9f0-ac94-57f8-8756-c920943dc3c5
-    headers:
-      Host: lkde-production.up.railway.app
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: sg.monkora.org
-  port: 443
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: sg.monkora.org
-  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: ghosts-spasm.quick-cdn.net
-  port: 443
+- name: 🇺🇸 美国 | USA
+  server: 104.18.47.113
+  port: 2082
   type: vless
-  uuid: 6f46fe49-9692-4e74-bfd0-5515fc677963
-  tls: true
-  servername: ghosts-spasm.quick-cdn.net
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /?ed=2560security=tls
     headers:
-      Host: ghosts-spasm.quick-cdn.net
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 104.18.47.113
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 104.18.35.86
+  port: 8080
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 104.18.47.113
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 proxy-groups:
 - name: AUTO
@@ -76,10 +80,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA 2
-  - 🇩🇪 德国 | DEU 10
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 5
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇵🇱 波兰 | POL
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 10
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
