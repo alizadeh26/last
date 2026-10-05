@@ -4,23 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 12
-  server: de-2.srv.dvzh.net
-  port: 443
+- name: 🇩🇪 德国 | DEU 6
+  server: 154.197.75.40
+  port: 8880
   type: vless
-  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
-    short-id: e4e77e76e6e49da7
-  servername: de-2.srv.dvzh.net
-  client-fingerprint: firefox
-  network: tcp
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime37.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 172.64.53.55
-  port: 80
+- name: 🇺🇸 美国 | USA 5
+  server: 172.64.52.6
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 172.64.42.85
+  port: 2082
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -31,17 +41,28 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 8
-  server: 104.18.0.181
-  port: 2082
+  server: 104.26.13.40
+  port: 8880
   type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  uuid: b9ea760d-3200-4d6d-8000-30514ebbce5a
   tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
   network: ws
   ws-opts:
-    path: /fp
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: aged-pine-d8c4.379.workers.dev
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: ru-1-9.imnotgay.party
+  port: 443
+  type: vless
+  uuid: 65616081-1772-49d7-a793-42bc13d22f69
+  tls: true
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: ru-1-9.imnotgay.party
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -49,8 +70,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 12
-  - 🇺🇸 美国 | USA 6
+  - 🇩🇪 德国 | DEU 6
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 8
+  - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO

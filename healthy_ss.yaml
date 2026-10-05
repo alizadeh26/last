@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 5
-  server: 54.208.227.172
+- name: 🇫🇷 法国 | FRA 2
+  server: 15.237.255.137
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -17,6 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 5
+  - 🇫🇷 法国 | FRA 2
 rules:
 - MATCH,AUTO
