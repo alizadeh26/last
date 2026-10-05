@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 4
-  server: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 香港 | HKG 3
+  server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
   type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -13,11 +13,12 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +26,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 3
 rules:
 - MATCH,AUTO

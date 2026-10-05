@@ -4,21 +4,45 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 7
-  server: www.large-files.info
-  port: 8443
+- name: 🇩🇪 德国 | DEU 4
+  server: de2.srv.vbuste.ru
+  port: 443
   type: vless
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   tls: true
-  alpn:
-  - http/1.1
-  servername: www.large-files.info
-  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: randomized
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: 172.64.229.2
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /var/www/html/video/preview/download/i8o0la
+    path: /?ed=2560security=tls
     headers:
-      Host: www.large-files.info
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇫🇷 法国 | FRA 2
+  server: e3k67dwms3-51255166202-direct.tavafog.com
+  port: 443
+  type: vless
+  uuid: e3k67dwms3
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -26,6 +50,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
+  - 🇩🇪 德国 | DEU 4
+  - 🇭🇰 香港 | HKG 2
+  - 🇫🇷 法国 | FRA 2
 rules:
 - MATCH,AUTO
