@@ -5,79 +5,32 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇫🇷 法国 | FRA 2
-  server: 15.237.255.137
+  server: 15.224.203.210
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 154.197.75.40
-  port: 8880
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime37.workers.dev
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+- name: 🇫🇷 法国 | FRA 5
+  server: 35.180.75.226
   port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 韩国 | KOR 2
+  server: 3.35.54.161
+  port: 8443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 172.64.52.6
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 172.64.42.85
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇭🇰 香港 | HKG 7
+- name: 🇺🇸 美国 | USA 6
+  server: 18.208.223.39
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇭🇰 香港 | HKG 4
   server: 6JDvArazgU3qQR6Q.v.3dns.vip
   port: 443
   type: vmess
@@ -92,44 +45,28 @@ proxies:
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
   udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 45.127.32.220
-  port: 55002
-  type: vmess
-  uuid: b25731af-0428-4274-be5d-31a273a8d632
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /b25731af-0428-4274-be5d-31a273a8d632-vm
-    headers:
-      Host: www.bing.com
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 13.212.109.205
+  port: 8443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 104.26.13.40
-  port: 8880
+- name: 🇺🇸 美国 | USA 7
+  server: www.large-files.info
+  port: 8443
   type: vless
-  uuid: b9ea760d-3200-4d6d-8000-30514ebbce5a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: aged-pine-d8c4.379.workers.dev
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: ru-1-9.imnotgay.party
-  port: 443
-  type: vless
-  uuid: 65616081-1772-49d7-a793-42bc13d22f69
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
   tls: true
-  reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: ru-1-9.imnotgay.party
-  client-fingerprint: firefox
-  network: tcp
+  alpn:
+  - http/1.1
+  servername: www.large-files.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+    headers:
+      Host: www.large-files.info
   udp: true
 proxy-groups:
 - name: AUTO
@@ -138,39 +75,33 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇫🇷 法国 | FRA 2
-  - 🇩🇪 德国 | DEU 6
-  - 🇭🇰 香港 | HKG 5
-  - 🇺🇸 美国 | USA 5
-  - 🇭🇰 香港 | HKG 6
-  - 🇺🇸 美国 | USA 4
-  - 🇭🇰 香港 | HKG 7
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇺🇸 美国 | USA 8
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇫🇷 法国 | FRA 5
+  - 🇰🇷 韩国 | KOR 2
+  - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG 4
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 7
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇫🇷 法国 | FRA 2
+  - 🇫🇷 法国 | FRA 5
+  - 🇰🇷 韩国 | KOR 2
+  - 🇺🇸 美国 | USA 6
+  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 8
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 7
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG 6
-  - 🇭🇰 香港 | HKG 7
-  - 🇸🇬 新加坡 | SGP 5
+  - 🇭🇰 香港 | HKG 4
 rules:
 - MATCH,AUTO
