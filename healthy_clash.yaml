@@ -18,13 +18,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: gw.lydwan.com
-  port: 35601
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
-  udp: true
 - name: 🇭🇰 香港 | HKG 8
   server: qtkdr8jxe3wefxjm.v.3dns.vip
   port: 443
@@ -49,7 +42,6 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 | FRA
   - 🇺🇸 美国 | USA
-  - 🇸🇬 新加坡 | SGP 2
   - 🇭🇰 香港 | HKG 8
 - name: PROTO-SS
   type: url-test
@@ -58,31 +50,11 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 | FRA
   - 🇺🇸 美国 | USA
-  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 8
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇭🇰 香港 | HKG 8
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇫🇷 法国 | FRA
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

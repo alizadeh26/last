@@ -18,13 +18,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: gw.lydwan.com
-  port: 35601
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -33,6 +26,5 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 | FRA
   - 🇺🇸 美国 | USA
-  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO
