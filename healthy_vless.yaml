@@ -4,45 +4,32 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: de2.srv.vbuste.ru
-  port: 443
+- name: 🇩🇪 德国 | DEU
+  server: shop.neexbyte.ir
+  port: 8443
   type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  uuid: 8bb52771-052e-40b5-ab53-c6e151ad2290
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.srv.vbuste.ru
-  client-fingerprint: randomized
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 172.64.229.2
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: shop.neexbyte.ir
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: e3k67dwms3-51255166202-direct.tavafog.com
+- name: 🇺🇸 美国 | USA 12
+  server: ld.235231.xyz
   port: 443
   type: vless
-  uuid: e3k67dwms3
+  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
   tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
+  servername: ld.235231.xyz
   client-fingerprint: chrome
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.235231.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -50,8 +37,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇭🇰 香港 | HKG 2
-  - 🇫🇷 法国 | FRA 2
+  - 🇩🇪 德国 | DEU
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
