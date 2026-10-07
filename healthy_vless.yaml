@@ -4,36 +4,62 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 46.225.255.204
-  port: 39100
+- name: 🇨🇦 加拿大 | CAN
+  server: amphetamine.adaspoloandco.com
+  port: 2087
   type: vless
-  uuid: '@ZhilaVPN'
-  tls: false
-  network: tcp
+  uuid: 97ea73b6-2043-4238-903c-a1e3d4a43c96
+  tls: true
+  servername: amphetamine.adaspoloandco.com
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /download.php
+    headers:
+      Host: amphetamine.adaspoloandco.com
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: nl.alpheratzz.org
+- name: 🇺🇸 美国 | USA 10
+  server: www.large-files.info
   port: 8443
   type: vless
-  uuid: 20ef7310-0b50-4943-98a6-3d0856b383b1
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
   tls: true
-  flow: xtls-rprx-vision
-  servername: vusr-6ac431f4.adhil.uk
+  alpn:
+  - http/1.1
+  servername: www.large-files.info
   client-fingerprint: chrome
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+    headers:
+      Host: www.large-files.info
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 172.67.161.104
-  port: 8880
+- name: 🇸🇬 新加坡 | SGP 4
+  server: asia.csmaster.site
+  port: 443
   type: vless
-  uuid: 11046a7c-fa1b-4653-ab87-400feb465540
-  tls: false
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  tls: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: nameless-poetry-12fb.8-0a2.workers.dev
+      Host: asia.csmaster.site
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: asia.csmaster.site
+  port: 8443
+  type: vless
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  tls: true
+  servername: asia.csmaster.site
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
   udp: true
 proxy-groups:
 - name: AUTO
@@ -41,8 +67,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA
+  - 🇨🇦 加拿大 | CAN
+  - 🇺🇸 美国 | USA 10
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO
