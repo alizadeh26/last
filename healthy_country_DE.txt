@@ -1,11 +1,10 @@
-trojan://UX82473651@3.120.109.26:443?sni=actual-squid.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_100719306
-vmess://eyJhZGQiOiIzMS43Ni4xMS44MyIsInBvcnQiOiI1MDU1MSIsImlkIjoiNTcxNjBjMTYtYjdkYi00MGQ4LWJkMDYtY2VkMzBlZGQ0ZGY2IiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ2IjoiMiIsInBzIjoi6Iux5Zu9XzEwMDcxOTMzMiIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIiwic25pIjoiIiwidHlwZSI6IiIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
 trojan://WFer-5gN21nfHbVB2N8s71Z74EPUfzVj@de.zhabulik.ru:443?allowInsecure=1&sni=de.zhabulik.ru&alpn=h2%2Chttp/1.1#%E5%BE%B7%E5%9B%BD_100719020
+trojan://UX82473651@3.120.109.26:443?sni=actual-squid.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_100719306
 trojan://UX82473651@63.178.198.94:443?sni=pleased-albacore.rooster465.autos&type=tcp&fp=chrome#%E5%BE%B7%E5%9B%BD_100719307
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+209.46.102.22-8388+%7C+108.7ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AADE-209.46.102.22-0236
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001#%F0%9F%87%A9%F0%9F%87%AADE-8.209.74.72-0260
 ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ=@185.226.172.8:8008#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+185.226.172.8-8008+%7C+98.5ms
 trojan://UX82473651@meet-goshawk.rooster465.autos:443?security=tls&sni=meet-goshawk.rooster465.autos#%F0%9F%87%A9%F0%9F%87%AADE-3.75.93.113-0537
-vless://b585dc5e-55bf-4a8b-913a-27c9ccac05c3@81.95.4.189:443?path=/vws/&security=tls&encryption=none&insecure=0&host=bab-6.site&fp=chrome&type=ws&allowInsecure=0&sni=bab-6.site#🇩🇪 262 - DE - VLESS/WS/TLS/UTLS - 443
+vless://b585dc5e-55bf-4a8b-913a-27c9ccac05c3@81.95.4.189:443?path=/vws/&security=tls&encryption=none&insecure=0&host=bab-6.site&fp=chrome&type=ws&allowInsecure=0&sni=bab-6.site#🇩🇪 271 - DE - VLESS/WS/TLS/UTLS - 443
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE@51.195.126.38:8388#🇩🇪 6 - DE - SS/AEAD - 8388
-ss://YWVzLTI1Ni1nY206a0tFZDByQnJkNTZGdXJqeg@2.58.81.221:80#🇩🇪 66 - DE - SS/AEAD - 80
+ss://YWVzLTI1Ni1nY206a0tFZDByQnJkNTZGdXJqeg@2.58.81.221:80#🇩🇪 64 - DE - SS/AEAD - 80

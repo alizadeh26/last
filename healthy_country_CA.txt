@@ -1,17 +1,12 @@
+vless://e5cc16a6-ea42-46b2-82ae-ad2157e1641b@172.64.150.28:2082?path=/fp&security=&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&encryption=none&host=hhlfy.twiladaphne.ndjp.net&type=ws#Server 102 🇺🇸
 vless://e5cc16a6-ea42-46b2-82ae-ad2157e1641b@172.64.150.28:2082?type=ws&host=hhlfy.twiladaphne.ndjp.net&mode=multi#Server 114 🇺🇸
-vless://e5cc16a6-ea42-46b2-82ae-ad2157e1641b@172.64.150.28:2082?&security=false&fp=chrome&type=ws&headerType=none&host=hhlfy.twiladaphne.ndjp.net&path=/fp#Server 152 🇺🇸
 vmess://eyJhZGQiOiIyMy4xNjIuMjAwLjE5OCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjE4MDAwIiwicHMiOiJTZXJ2ZXIgMTY3IPCfh6jwn4emIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoiMiJ9
-ss://YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2@51.222.141.125:445#Server 169 🇨🇦
+ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@51.222.155.113:5601#Server 132 🇨🇦
 vmess://eyJhZGQiOiJndWFud2FuZy5hd3Nuby5jb20iLCJhaWQiOiIwIiwiaG9zdCI6Imd1YW53YW5nLmF3c25vLmNvbSIsImlkIjoiNmE4OWEyMTUtMjJiZi00YmQ3LTk2NDItYjk1YjJlMDk1ODNhIiwibmV0Ijoid3MiLCJwYXRoIjoiL2hscy9jY3R2NXBoZC5tM3U4IiwicG9ydCI6IjQ0MyIsInBzIjoiU2VydmVyIDE5NCDwn4eo8J+HpiIsInNjeSI6ImF1dG8iLCJzbmkiOiJndWFud2FuZy5hd3Nuby5jb20iLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=
-vmess://eyJhZGQiOiJub21pbm8uMTFoaThpdGJhZi53b3JrZXJzLmRldiIsImFpZCI6MCwiaG9zdCI6Im5vbWluby4xMWhpOGl0YmFmLndvcmtlcnMuZGV2IiwiaWQiOiI2YTg5YTIxNS0yMmJmLTRiZDctOTY0Mi1iOTViMmUwOTU4M2EiLCJuZXQiOiJ3cyIsInBhdGgiOiIvZ3VhbndhbmcuYXdzbm8uY29tL2hscy9jY3R2NXBoZC5tM3U4IiwicG9ydCI6IjQ0MyIsInBzIjoiU2VydmVyIDIxNCDwn4eo8J+HpiIsInNuaSI6Im5vbWluby4xMWhpOGl0YmFmLndvcmtlcnMuZGV2IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
-ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@51.79.85.185:8118#Server 216 🇨🇦
-ss://YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2@51.222.12.127:445?type=tcp&headerType=none#Server 212 🇨🇦
 ss://YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0@51.222.136.236:8882?type=tcp#Server 218 🇨🇦
-vmess://eyJhZGQiOiIxOTguNTcuMjcuMTkwIiwicG9ydCI6IjIyMzI0IiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InRjcCIsInYiOiIyIiwicHMiOiLliqDmi7/lpKdfMTAwNzE5MDIwIiwiaG9zdCI6IiIsInBhdGgiOiIiLCJ0bHMiOiIiLCJzbmkiOiIiLCJ0eXBlIjoibm9uZSIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
 vmess://eyJhZGQiOiJ5ZzEueWdra2suZHBkbnMub3JnIiwicG9ydCI6IjQ0MyIsImlkIjoiYjJiYTRhNzMtMzEyMy00NzllLWFhOTYtNTk3M2E5ZWNkMGMwIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInYiOiIyIiwicHMiOiLmnKrnn6VfMTAwNzE5MDczIiwiaG9zdCI6ImptcDEuOTA3NzM3Lnh5eiIsInBhdGgiOiIvYjJiYTRhNzMtMzEyMy00NzllLWFhOTYtNTk3M2E5ZWNkMGMwLXZtIiwidGxzIjoidGxzIiwic25pIjoiam1wMS45MDc3MzcueHl6IiwidHlwZSI6IiIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#%F0%9F%87%A8%F0%9F%87%A6CA-149.22.95.183-0167
 ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@51.222.200.165:5000#%F0%9F%87%A8%F0%9F%87%A6CA-51.222.200.165-0286
-ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@51.79.64.198:8119#%F0%9F%87%A8%F0%9F%87%A6CA-51.79.64.198-0292
 ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@137.184.174.93:8080#%F0%9F%87%A8%F0%9F%87%A6CA-137.184.174.93-0195
 trojan://humanity@104.16.72.2:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🆔configfa%20🔒%20TR-WS-N/A%20🇨🇦%20CA%209ms
-vless://9d672694-c146-422e-b3b5-3717a38a0fcc@fr.api-music-fa.com:2053?encryption=none&security=tls&sni=fr.api-music-fa.com&alpn=http/1.1&type=ws&host=fr.api-music-fa.com&path=/api/voip/updates/static/fr2035#🇺🇸 229 - US - VLESS/WS/TLS - 2053
+vless://9d672694-c146-422e-b3b5-3717a38a0fcc@fr.api-music-fa.com:2053?encryption=none&security=tls&sni=fr.api-music-fa.com&alpn=http/1.1&type=ws&host=fr.api-music-fa.com&path=/api/voip/updates/static/fr2035#🇺🇸 233 - US - VLESS/WS/TLS - 2053
