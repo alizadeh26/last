@@ -4,22 +4,67 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA
-  server: 13.36.167.227
+- name: 🇩🇪 德国 | DEU 2
+  server: 3.67.197.81
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 46.225.255.204
+  port: 39100
+  type: vless
+  uuid: '@ZhilaVPN'
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: nl.alpheratzz.org
+  port: 8443
+  type: vless
+  uuid: 20ef7310-0b50-4943-98a6-3d0856b383b1
+  tls: true
+  flow: xtls-rprx-vision
+  servername: vusr-6ac431f4.adhil.uk
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 176.32.39.52
+  port: 10550
+  type: ss
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
   udp: true
 - name: 🇺🇸 美国 | USA
-  server: 100.48.94.91
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  server: 172.67.161.104
+  port: 8880
+  type: vless
+  uuid: 11046a7c-fa1b-4653-ab87-400feb465540
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nameless-poetry-12fb.8-0a2.workers.dev
   udp: true
-- name: 🇭🇰 香港 | HKG 8
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
+- name: 🇰🇷 韩国 | KOR 2
+  server: 13.124.117.110
+  port: 8443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 47.129.152.126
+  port: 8443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+- name: 🇭🇰 香港 | HKG 6
+  server: i2psm3knof5qjjix.v.3dns.vip
   port: 443
   type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -27,12 +72,11 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: qtkdr8jxe3wefxjm.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+      Host: i2psm3knof5qjjix.v.3dns.vip
   udp: true
 proxy-groups:
 - name: AUTO
@@ -40,21 +84,43 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇷🇺 俄罗斯 | RUS
   - 🇺🇸 美国 | USA
-  - 🇭🇰 香港 | HKG 8
+  - 🇰🇷 韩国 | KOR 2
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇭🇰 香港 | HKG 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
+  - 🇩🇪 德国 | DEU 2
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇰🇷 韩国 | KOR 2
+  - 🇸🇬 新加坡 | SGP 2
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇳🇱 荷兰 | NLD 4
   - 🇺🇸 美国 | USA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 8
+  - 🇭🇰 香港 | HKG 6
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU
 rules:
 - MATCH,AUTO

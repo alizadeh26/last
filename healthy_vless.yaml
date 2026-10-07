@@ -5,31 +5,35 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇩🇪 德国 | DEU
-  server: shop.neexbyte.ir
+  server: 46.225.255.204
+  port: 39100
+  type: vless
+  uuid: '@ZhilaVPN'
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: nl.alpheratzz.org
   port: 8443
   type: vless
-  uuid: 8bb52771-052e-40b5-ab53-c6e151ad2290
+  uuid: 20ef7310-0b50-4943-98a6-3d0856b383b1
   tls: true
+  flow: xtls-rprx-vision
+  servername: vusr-6ac431f4.adhil.uk
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: ld.235231.xyz
-  port: 443
+- name: 🇺🇸 美国 | USA
+  server: 172.67.161.104
+  port: 8880
   type: vless
-  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
-  tls: true
-  servername: ld.235231.xyz
-  client-fingerprint: chrome
+  uuid: 11046a7c-fa1b-4653-ab87-400feb465540
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ld.235231.xyz
+      Host: nameless-poetry-12fb.8-0a2.workers.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,6 +42,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU
-  - 🇺🇸 美国 | USA 12
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
