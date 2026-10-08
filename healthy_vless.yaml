@@ -4,7 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 2
+- name: 🇩🇪 德国 | DEU 7
+  server: 31.77.148.89
+  port: 45021
+  type: vless
+  uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA
   server: tyxyrytyro-51255165170-direct.araghchy.com
   port: 443
   type: vless
@@ -17,21 +25,17 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: www.large-files.info
-  port: 8443
+- name: 🇩🇪 德国 | DEU 10
+  server: psf-3.weedly.top
+  port: 80
   type: vless
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
-  tls: true
-  alpn:
-  - http/1.1
-  servername: www.large-files.info
-  client-fingerprint: chrome
+  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
+  tls: false
   network: ws
   ws-opts:
-    path: /var/www/html/video/preview/download/i8o0la
+    path: /
     headers:
-      Host: www.large-files.info
+      Host: machinemag.ir
   udp: true
 proxy-groups:
 - name: AUTO
@@ -39,7 +43,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
-  - 🇺🇸 美国 | USA 12
+  - 🇩🇪 德国 | DEU 7
+  - 🇫🇷 法国 | FRA
+  - 🇩🇪 德国 | DEU 10
 rules:
 - MATCH,AUTO
