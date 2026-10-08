@@ -4,40 +4,58 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: 31.77.148.89
-  port: 45021
-  type: vless
-  uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
-  tls: false
-  network: tcp
+- name: 🇫🇷 法国 | FRA 2
+  server: 13.36.241.80
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: tyxyrytyro-51255165170-direct.araghchy.com
+- name: 🇫🇷 法国 | FRA 3
+  server: 15.237.53.180
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇪🇸 西班牙 | ESP 2
+  server: es.srv.dvzh.net
   port: 443
   type: vless
-  uuid: tyxyrytyro
+  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
   tls: true
-  alpn:
-  - h2
   flow: xtls-rprx-vision
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
+    short-id: e4e77e76e6e49da7
+  servername: es.srv.dvzh.net
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: psf-3.weedly.top
-  port: 80
-  type: vless
-  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
-  tls: false
+- name: 🇭🇰 香港 | HKG 6
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
   network: ws
   ws-opts:
-    path: /
+    path: /ws-vmess
     headers:
-      Host: machinemag.ir
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
   udp: true
-- name: 🇭🇰 香港 | HKG 8
+- name: 🇰🇷 韩国 | KOR 3
+  server: 43.202.53.247
+  port: 8443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+- name: 🇭🇰 香港 | HKG 7
   server: ex1ogt73nzpqkac2.v.3dns.vip
   port: 443
   type: vmess
@@ -52,64 +70,35 @@ proxies:
     headers:
       Host: ex1ogt73nzpqkac2.v.3dns.vip
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 176.32.39.52
-  port: 20880
-  type: ss
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 194.87.196.13
-  port: 20880
-  type: ss
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 46.17.41.166
-  port: 20880
-  type: ss
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 54.221.120.243
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
+- name: 🇸🇬 新加坡 | SGP
+  server: 104.18.35.86
+  port: 8080
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
+  servername: hhlfy.twiladaphne.ndjp.net
   network: ws
   ws-opts:
-    path: /arki
-  udp: true
-- name: 🇭🇰 香港 | HKG 10
-  server: 93ucrn4i0pffuabk.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
+    path: /sg-melbi
     headers:
-      Host: 93ucrn4i0pffuabk.v.3dns.vip
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 54.169.240.70
+  port: 8443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 13.143.172.203
+  port: 2083
+  type: vless
+  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
+  tls: true
+  servername: 13.143.172.203
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -117,52 +106,38 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇫🇷 法国 | FRA
-  - 🇩🇪 德国 | DEU 10
-  - 🇭🇰 香港 | HKG 8
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA 4
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 10
+  - 🇫🇷 法国 | FRA 2
+  - 🇫🇷 法国 | FRA 3
+  - 🇪🇸 西班牙 | ESP 2
+  - 🇭🇰 香港 | HKG 6
+  - 🇰🇷 韩国 | KOR 3
+  - 🇭🇰 香港 | HKG 7
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇳🇱 荷兰 | NLD 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA 4
+  - 🇫🇷 法国 | FRA 2
+  - 🇫🇷 法国 | FRA 3
+  - 🇰🇷 韩国 | KOR 3
+  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇫🇷 法国 | FRA
-  - 🇩🇪 德国 | DEU 10
+  - 🇪🇸 西班牙 | ESP 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇳🇱 荷兰 | NLD 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 8
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 10
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 8
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 7
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 7
 rules:
 - MATCH,AUTO
