@@ -4,18 +4,24 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 11
-  server: 63.177.230.112
+- name: 🇫🇷 法国 | FRA 2
+  server: tyxyrytyro-51255165170-direct.araghchy.com
   port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: vless
+  uuid: tyxyrytyro
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 5
+- name: 🇭🇰 香港 | HKG 7
   server: 47.244.120.197
-  port: 36703
+  port: 23026
   type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
   alterId: 0
   cipher: auto
   tls: false
@@ -25,13 +31,6 @@ proxies:
   network: ws
   ws-opts:
     path: /arki
-  udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: 52.78.59.52
-  port: 8443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   udp: true
 - name: 🇺🇸 美国 | USA 12
   server: www.large-files.info
@@ -49,11 +48,11 @@ proxies:
     headers:
       Host: www.large-files.info
   udp: true
-- name: 🇭🇰 香港 | HKG 7
+- name: 🇭🇰 香港 | HKG 5
   server: 47.244.120.197
-  port: 23026
+  port: 36703
   type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
   alterId: 0
   cipher: auto
   tls: false
@@ -70,30 +69,36 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 11
-  - 🇭🇰 香港 | HKG 5
-  - 🇰🇷 韩国 | KOR
-  - 🇺🇸 美国 | USA 12
+  - 🇫🇷 法国 | FRA 2
   - 🇭🇰 香港 | HKG 7
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 11
-  - 🇰🇷 韩国 | KOR
+  - 🇺🇸 美国 | USA 12
+  - 🇭🇰 香港 | HKG 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇫🇷 法国 | FRA 2
   - 🇺🇸 美国 | USA 12
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 5
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 5
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇷 法国 | FRA 2
 rules:
 - MATCH,AUTO

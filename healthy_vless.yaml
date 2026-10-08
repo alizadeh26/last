@@ -4,6 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇫🇷 法国 | FRA 2
+  server: tyxyrytyro-51255165170-direct.araghchy.com
+  port: 443
+  type: vless
+  uuid: tyxyrytyro
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 12
   server: www.large-files.info
   port: 8443
@@ -26,6 +39,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇫🇷 法国 | FRA 2
   - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
