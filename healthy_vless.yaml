@@ -18,6 +18,16 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 13.143.172.203
+  port: 2083
+  type: vless
+  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
+  tls: true
+  servername: 13.143.172.203
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 104.18.35.86
   port: 8080
@@ -31,15 +41,19 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 13.143.172.203
-  port: 2083
+- name: 🇺🇸 美国 | USA 18
+  server: 185.220.249.44
+  port: 2053
   type: vless
-  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
+  uuid: 6d1590ed-4c0f-4bbc-931d-2431737615dd
   tls: true
-  servername: 13.143.172.203
-  client-fingerprint: firefox
-  network: tcp
+  servername: 185.220.249.44
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /ws-cdn1-vless
+    headers:
+      Host: es.fastmirror-labs.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -48,7 +62,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇪🇸 西班牙 | ESP 2
-  - 🇸🇬 新加坡 | SGP
   - 🇳🇱 荷兰 | NLD 3
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 18
 rules:
 - MATCH,AUTO

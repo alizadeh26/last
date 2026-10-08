@@ -4,6 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇭🇰 香港 | HKG 7
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
+  udp: true
 - name: 🇭🇰 香港 | HKG 6
   server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
@@ -20,28 +35,13 @@ proxies:
     headers:
       Host: VAH4URdZL3jDX5r2.v.3dns.vip
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: ex1ogt73nzpqkac2.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 6
 rules:
 - MATCH,AUTO
