@@ -4,33 +4,26 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: 18.196.88.40
+- name: 🇫🇷 法国 | FRA 5
+  server: 51.44.86.16
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 47.85.168.157
-  port: 443
+- name: 🇰🇷 韩国 | KOR
+  server: 52.78.216.116
+  port: 8443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 13.36.241.80
-  port: 443
+- name: 🇸🇬 新加坡 | SGP 5
+  server: 13.212.141.33
+  port: 8443
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 15.237.53.180
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,9 +31,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 4
-  - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA 3
+  - 🇫🇷 法国 | FRA 5
+  - 🇰🇷 韩国 | KOR
+  - 🇸🇬 新加坡 | SGP 5
 rules:
 - MATCH,AUTO
