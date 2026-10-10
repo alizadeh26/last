@@ -4,39 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇭 瑞士 | CHE 2
-  server: sweth.ali-bard.online
+- name: 🇩🇪 德国 | DEU 8
+  server: viksa.subsvdragontoo.online
+  port: 6443
+  type: vless
+  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
+  tls: true
+  servername: viksa.subsvdragontoo.online
+  client-fingerprint: android
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: viksa.subsvdragontoo.online
+  udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: mioline.save-files.online
   port: 443
   type: vless
-  uuid: 15c9be2b-20f1-47b7-bf33-747ed1ff7fb7
+  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: sweth.ali-bard.online
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: vpn.cyrionflare.xyz
-  port: 2087
-  type: vless
-  uuid: 15f434b8-aaec-4306-98c9-dd8f5ef608d4
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: swidenlanzerotte.live
-  port: 443
-  type: vless
-  uuid: 56de13ac-086e-4789-8e1e-1bf2bd90216b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
-  servername: swidenlanzerotte.live
-  client-fingerprint: qq
-  network: tcp
+  servername: mioline.save-files.online
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /api/v1/clip/segment/8c7eea6f
+    headers:
+      Host: mioline.save-files.online
   udp: true
 proxy-groups:
 - name: AUTO
@@ -44,8 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 | CHE 2
-  - 🇩🇪 德国 | DEU 5
-  - 🇸🇪 瑞典 | SWE
+  - 🇩🇪 德国 | DEU 8
+  - 🇱🇻 拉脱维亚 | LVA
 rules:
 - MATCH,AUTO
