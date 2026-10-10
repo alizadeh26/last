@@ -1,2 +1,1 @@
-vless://203d434a-2a92-45df-8973-ca80434ecf73@163.245.43.50:443?mode=gun&security=tls&encryption=none&insecure=0&fp=firefox&type=grpc&serviceName=content.v1.Feed&allowInsecure=0&sni=se-twitch.global-cdn.org#SE🇸🇪
-vless://2412bd96-925b-43f2-81d1-0ed4f0793699@31.207.7.74:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s&security=reality&sid=457ae5b8bef4d1b3&sni=pkg.go.dev&type=tcp#REALITY|SE🇸🇪
+vless://2412bd96-925b-43f2-81d1-0ed4f0793699@31.207.7.74:443?security=reality&encryption=none&pbk=RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=pkg.go.dev&sid=457ae5b8bef4d1b3#🇸🇪 33 - SE - VLESS/REALITY/PBK/SID/VISION - 443

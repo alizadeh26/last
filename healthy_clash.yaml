@@ -4,22 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 8
-  server: viksa.subsvdragontoo.online
-  port: 6443
-  type: vless
-  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
-  tls: true
-  servername: viksa.subsvdragontoo.online
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: viksa.subsvdragontoo.online
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 香港 | HKG 5
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
   type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -27,33 +13,121 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
   udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: 52.79.212.191
+- name: 🇭🇰 香港 | HKG 6
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 11
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 9
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: de-gdd-1.unturned-rust-dead.lol
+  port: 443
+  type: vless
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  tls: true
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+  servername: de-gdd-1.unturned-rust-dead.lol
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: gdd-grpc
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 104.18.35.86
+  port: 8080
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 13.212.173.211
   port: 8443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: mioline.save-files.online
-  port: 443
+- name: 🇺🇸 美国 | USA 3
+  server: 104.18.0.181
+  port: 2052
   type: vless
-  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
-  tls: true
-  servername: mioline.save-files.online
-  client-fingerprint: ios
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  tls: false
+  servername: eu02.123450908.xyz
   network: ws
   ws-opts:
-    path: /api/v1/clip/segment/8c7eea6f
+    path: /rain1226
     headers:
-      Host: mioline.save-files.online
+      Host: eu02.123450908.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -61,41 +135,48 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
-  - 🇭🇰 香港 | HKG 2
-  - 🇰🇷 韩国 | KOR
-  - 🇱🇻 拉脱维亚 | LVA
+  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 11
+  - 🇭🇰 香港 | HKG 9
+  - 🇩🇪 德国 | DEU 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 | KOR
+  - 🇸🇬 新加坡 | SGP 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
-  - 🇱🇻 拉脱维亚 | LVA
+  - 🇩🇪 德国 | DEU 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 11
+  - 🇭🇰 香港 | HKG 9
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇰🇷 韩国 | KOR
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 8
+  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 11
+  - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO

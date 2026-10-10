@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇰🇷 韩国 | KOR
-  server: 52.79.212.191
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 13.212.173.211
   port: 8443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -17,6 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 | KOR
+  - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO
