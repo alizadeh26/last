@@ -39,6 +39,36 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: whuiy.xyz
+  port: 443
+  type: vless
+  uuid: c64992bd-54aa-4d3d-8527-42da7d7e520a
+  tls: true
+  servername: whuiy.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless-cdn
+    headers:
+      Host: whuiy.xyz
+  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: 654168416355441.d6f54hd1j.cc
   port: 443
@@ -57,6 +87,19 @@ proxies:
     headers:
       Host: 654168416355441.d6f54hd1j.cc
   udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 104.18.35.86
+  port: 8080
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -66,7 +109,10 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇯🇵 日本 | JPN 3
   - 🇬🇧 英国 | GBR 2
+  - 🇭🇰 香港 | HKG 4
+  - 🇺🇸 美国 | USA 3
   - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇺🇸 美国 | USA 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -80,11 +126,32 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇬🇧 英国 | GBR 2
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇭🇰 香港 | HKG 4
   - 🇹🇼 🇨🇳 台湾 | TWN
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇼 🇨🇳 台湾 | TWN
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪 爱沙尼亚 | EST 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 日本 | JPN 3
 rules:
 - MATCH,AUTO
