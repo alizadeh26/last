@@ -1,9 +1,14 @@
-trojan://UX82473651@meet-goshawk.rooster465.autos:443?security=tls&sni=meet-goshawk.rooster465.autos#%E5%BE%B7%E5%9B%BD_101111002
-trojan://UX82473651@cuddly-sheepdog.rooster465.autos:443?security=tls&sni=cuddly-sheepdog.rooster465.autos#%E5%BE%B7%E5%9B%BD_101111003
-trojan://UX82473651@3.120.109.26:443?allowInsecure=0&sni=actual-squid.rooster465.autos#%E5%BE%B7%E5%9B%BD_101111007+L3
-trojan://UX82473651@63.178.198.94:443?allowInsecure=0&sni=pleased-albacore.rooster465.autos#%E5%BE%B7%E5%9B%BD_101111008+L4
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AADE-209.46.102.22-0115
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOY0FYYzBVWkk2eVFKRTFwOFFtT3Y4@57.129.113.16:8388#%F0%9F%87%A9%F0%9F%87%AADE-57.129.113.16-2139
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001#%F0%9F%87%A9%F0%9F%87%AADE-8.209.74.72-0138
-ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ=@185.226.172.8:8008#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+185.226.172.8-8008+%7C+91.66ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOY0FYYzBVWkk2eVFKRTFwOFFtT3Y4@57.129.113.16:8388?#Server 78 🇩🇪
+trojan://UX82473651@cuddly-sheepdog.rooster465.autos:443?security=tls&sni=cuddly-sheepdog.rooster465.autos#%E5%BE%B7%E5%9B%BD_101119002
+trojan://UX82473651@63.178.198.94:443?allowInsecure=0&sni=pleased-albacore.rooster465.autos#%E5%BE%B7%E5%9B%BD_101119007+L4
+trojan://UX82473651@3.120.109.26:443?allowInsecure=0&sni=actual-squid.rooster465.autos#%E5%BE%B7%E5%9B%BD_101119006+L3
+vmess://eyJhZGQiOiIxNzguMTA1LjE2OC4xNzEiLCJwb3J0IjoiMjExMCIsImlkIjoiMDZkNGQwMDEtNDE2OC00ODc2LTk0MTYtN2NhZWNmNTc4ZjQwIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ2IjoiMiIsInBzIjoi6Iux5Zu9XzEwMTExOTMyNyBMNiIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIiwic25pIjoiIiwidHlwZSI6IiIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpLNjNxLVdoSGRKb0NfQUl4VDZFNHJfSUl1R0liNkN1Vg==@feow.nomush.ir:8388#FI%F0%9F%87%AB%F0%9F%87%AE+%7C+feow.nomush.ir-8388+%7C+407.83ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AADE-209.46.102.22-0120
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001#%F0%9F%87%A9%F0%9F%87%AADE-8.209.74.72-0142
+trojan://UX82473651@meet-goshawk.rooster465.autos:443?security=tls&sni=meet-goshawk.rooster465.autos#%F0%9F%87%A9%F0%9F%87%AADE-3.75.93.113-0206
+vless://a5ce10af-5e95-4eb3-ab87-bf4f95cb059b@212.100.171.154:443?security=reality&encryption=none&pbk=8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.google.com&sid=aa6582cf25e243ce#🆔soskeynet%20🔒%20VL-TCP-%20🇩🇪%20DE%20122ms
+vless://47d9b534-8a0a-4bd2-90f1-1d6ade14427e@150.241.101.80:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=yandex.net&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2&type=tcp&headerType=none#🆔surfboardv2ray%20🔒%20VL-TCP-%20🇩🇪%20DE%20159ms
+vless://318c935d-c195-41d3-99ad-9bbcfdab3386@144.31.62.242:443?security=reality&encryption=none&pbk=0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=de2.srv.vbuste.ru&sid=4be4110078ebed4a#🇩🇪 51 - DE - VLESS/REALITY/PBK/SID/VISION - 443
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE@51.195.126.38:8388#🇩🇪 7 - DE - SS/AEAD - 8388
+ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@185.226.172.8:8008#🇩🇪 78 - DE - SS/AEAD - 8008

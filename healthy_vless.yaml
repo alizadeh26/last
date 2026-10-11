@@ -4,29 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: edge10.cyrionflare.com
-  port: 2052
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: fi.pythonsetupbib.online
-  port: 443
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
-    short-id: bdf5852d1423e694
-  servername: fi.pythonsetupbib.online
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL
+- name: 🇵🇱 波兰 | POL 2
   server: pl-1-1.unturned-rust-dead.lol
   port: 443
   type: vless
@@ -38,14 +16,27 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: whuiy.xyz
+  port: 443
+  type: vless
+  uuid: c64992bd-54aa-4d3d-8527-42da7d7e520a
+  tls: true
+  servername: whuiy.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless-cdn
+    headers:
+      Host: whuiy.xyz
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 6
-  - 🇵🇱 波兰 | POL
+  - 🇵🇱 波兰 | POL 2
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

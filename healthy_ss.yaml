@@ -4,15 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 13.40.25.145
-  port: 443
+- name: 🇯🇵 日本 | JPN
+  server: ruot.ayucloudservices.nl
+  port: 22069
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-256-gcm
+  password: bd962c9a-d6f2-4561-bd80-34206c4d5279
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 54.255.177.5
+- name: 🇯🇵 日本 | JPN 4
+  server: ruot.ayucloudservices.nl
+  port: 22073
+  type: ss
+  cipher: aes-256-gcm
+  password: bd962c9a-d6f2-4561-bd80-34206c4d5279
+  udp: true
+- name: 🇰🇷 韩国 | KOR
+  server: 15.164.245.92
   port: 8443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -24,7 +31,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇸🇬 新加坡 | SGP
+  - 🇯🇵 日本 | JPN
+  - 🇯🇵 日本 | JPN 4
+  - 🇰🇷 韩国 | KOR
 rules:
 - MATCH,AUTO
