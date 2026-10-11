@@ -4,114 +4,58 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 3
-  server: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: ees92.shhflow.xyz
   port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
   tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  servername: ees92.shhflow.xyz
+  client-fingerprint: random
+  network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 93ucrn4i0pffuabk.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 93ucrn4i0pffuabk.v.3dns.vip
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: ruot.ayucloudservices.nl
-  port: 22069
-  type: ss
-  cipher: aes-256-gcm
-  password: bd962c9a-d6f2-4561-bd80-34206c4d5279
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
+- name: 🇯🇵 日本 | JPN 3
   server: ruot.ayucloudservices.nl
   port: 22073
   type: ss
   cipher: aes-256-gcm
   password: bd962c9a-d6f2-4561-bd80-34206c4d5279
   udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: 15.164.245.92
-  port: 8443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pl-1-1.unturned-rust-dead.lol
+- name: 🇬🇧 英国 | GBR 2
+  server: de2.srv.vbuste.ru
   port: 443
   type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   tls: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: pl-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: whuiy.xyz
-  port: 443
-  type: vless
-  uuid: c64992bd-54aa-4d3d-8527-42da7d7e520a
-  tls: true
-  servername: whuiy.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless-cdn
-    headers:
-      Host: whuiy.xyz
-  udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: 654168416355441.d6f54hd1j.cc
   port: 443
   type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
   alterId: 0
   cipher: auto
   tls: true
+  alpn:
+  - ''
   skip-cert-verify: true
-  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  servername: 654168416355441.d6f54hd1j.cc
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /
     headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+      Host: 654168416355441.d6f54hd1j.cc
   udp: true
 proxy-groups:
 - name: AUTO
@@ -119,61 +63,28 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 2
-  - 🇯🇵 日本 | JPN
-  - 🇯🇵 日本 | JPN 4
-  - 🇰🇷 韩国 | KOR
-  - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 8
-  - 🇭🇰 香港 | HKG 7
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇯🇵 日本 | JPN 3
+  - 🇬🇧 英国 | GBR 2
+  - 🇹🇼 🇨🇳 台湾 | TWN
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN
-  - 🇯🇵 日本 | JPN 4
-  - 🇰🇷 韩国 | KOR
+  - 🇯🇵 日本 | JPN 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 8
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇬🇧 英国 | GBR 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 7
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 2
-  - 🇰🇷 韩国 | KOR
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇵🇱 波兰 | POL 2
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇯🇵 日本 | JPN
-  - 🇯🇵 日本 | JPN 4
-  - 🇺🇸 美国 | USA 8
+  - 🇹🇼 🇨🇳 台湾 | TWN
 rules:
 - MATCH,AUTO

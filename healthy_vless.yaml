@@ -4,31 +4,33 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇵🇱 波兰 | POL 2
-  server: pl-1-1.unturned-rust-dead.lol
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: ees92.shhflow.xyz
   port: 443
   type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
   tls: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: pl-1-1.unturned-rust-dead.lol
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  servername: ees92.shhflow.xyz
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: whuiy.xyz
+- name: 🇬🇧 英国 | GBR 2
+  server: de2.srv.vbuste.ru
   port: 443
   type: vless
-  uuid: c64992bd-54aa-4d3d-8527-42da7d7e520a
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   tls: true
-  servername: whuiy.xyz
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless-cdn
-    headers:
-      Host: whuiy.xyz
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -36,7 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 8
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇬🇧 英国 | GBR 2
 rules:
 - MATCH,AUTO
