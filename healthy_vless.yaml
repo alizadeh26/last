@@ -4,47 +4,39 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: de-gdd-1.unturned-rust-dead.lol
+- name: 🇩🇪 德国 | DEU
+  server: edge10.cyrionflare.com
+  port: 2052
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: fi.pythonsetupbib.online
+  port: 443
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
+    short-id: bdf5852d1423e694
+  servername: fi.pythonsetupbib.online
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pl-1-1.unturned-rust-dead.lol
   port: 443
   type: vless
   uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
   tls: true
   reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: de-gdd-1.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: gdd-grpc
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: nd-2.ardesnode.ru
-  port: 443
-  type: vless
-  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
-    short-id: 9ea74b83f4993ca9
-  servername: nd-2.ardesnode.ru
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: pl-1-1.unturned-rust-dead.lol
   client-fingerprint: random
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 104.18.0.181
-  port: 2052
-  type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  tls: false
-  servername: eu02.123450908.xyz
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -52,8 +44,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇺🇸 美国 | USA 3
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 6
+  - 🇵🇱 波兰 | POL
 rules:
 - MATCH,AUTO

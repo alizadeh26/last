@@ -4,8 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 13.212.173.211
+- name: 🇬🇧 英国 | GBR
+  server: 13.40.25.145
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 54.255.177.5
   port: 8443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -17,6 +24,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇬🇧 英国 | GBR
+  - 🇸🇬 新加坡 | SGP
 rules:
 - MATCH,AUTO
