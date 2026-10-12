@@ -4,60 +4,58 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇪 爱沙尼亚 | EST 2
-  server: ees92.shhflow.xyz
+- name: 🇵🇱 波兰 | POL
+  server: pl-1-1.unturned-rust-dead.lol
   port: 443
   type: vless
-  uuid: 43212c32-01f2-4356-b216-67dc1c178262
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
-    short-id: 7f3a91c2d8e640ab
-  servername: ees92.shhflow.xyz
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: pl-1-1.unturned-rust-dead.lol
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: de2.srv.vbuste.ru
+- name: 🇳🇱 荷兰 | NLD
+  server: nl.alpheratzz.org
+  port: 8443
+  type: vless
+  uuid: 1bda2ae7-b597-4704-95a8-29c0f76324ba
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: api-v1-6aca6fae.vmagnum.win
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: natureoflatvia.top
   port: 443
   type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  uuid: 62610fc6-8333-41f9-9258-08915e4343ab
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.srv.vbuste.ru
+    public-key: 0RlpyDQNw2rAlZ6t6RIzoOVeGcDjRS-XO-cHBLW-JjI
+    short-id: 964c0252c22b16d4
+  servername: natureoflatvia.top
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: whuiy.xyz
+- name: 🇸🇪 瑞典 | SWE
+  server: swe.wizard.select
   port: 443
   type: vless
-  uuid: c64992bd-54aa-4d3d-8527-42da7d7e520a
+  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
   tls: true
-  servername: whuiy.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless-cdn
-    headers:
-      Host: whuiy.xyz
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 104.18.35.86
-  port: 8080
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
+    short-id: 3b20e438da99
+  servername: swe.wizard.select
+  client-fingerprint: qq
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -65,9 +63,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST 2
-  - 🇬🇧 英国 | GBR 2
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 2
+  - 🇵🇱 波兰 | POL
+  - 🇳🇱 荷兰 | NLD
+  - 🇱🇻 拉脱维亚 | LVA
+  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
