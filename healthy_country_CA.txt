@@ -1,17 +1,17 @@
-vless://e5cc16a6-ea42-46b2-82ae-ad2157e1641b@172.64.150.28:2082?path=/fp&security=&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&encryption=none&host=hhlfy.twiladaphne.ndjp.net&type=ws#Server 22 🇺🇸
-vless://e5cc16a6-ea42-46b2-82ae-ad2157e1641b@172.64.150.28:2082?type=ws&host=hhlfy.twiladaphne.ndjp.net&mode=multi#Server 49 🇺🇸
+vless://e5cc16a6-ea42-46b2-82ae-ad2157e1641b@172.64.150.28:2082?encryption=none&type=ws&host=hhlfy.twiladaphne.ndjp.net&path=/fp&early_data_header_name=Sec-WebSocket-Protocol&packetEncoding=xudp#Server 56 🇺🇸
 vmess://eyJhZGQiOiAiMjMuMTYyLjIwMC4xOTgiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiIiwgInBvcnQiOiAiMTgwMDAiLCAicHMiOiAiU2VydmVyIDg0IFx1ZDgzY1x1ZGRlOFx1ZDgzY1x1ZGRlNiIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICIiLCAidiI6ICIyIn0=
-ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@51.222.155.113:5601#Server 57 🇨🇦
-ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@51.79.64.198:8119#Server 116 🇨🇦
 ss://YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2@51.222.141.125:445#Server 98 🇨🇦
-vmess://eyJhZGQiOiAibm9taW5vLjExaGk4aXRiYWYud29ya2Vycy5kZXYiLCAiYWlkIjogMCwgImhvc3QiOiAibm9taW5vLjExaGk4aXRiYWYud29ya2Vycy5kZXYiLCAiaWQiOiAiNmE4OWEyMTUtMjJiZi00YmQ3LTk2NDItYjk1YjJlMDk1ODNhIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9ndWFud2FuZy5hd3Nuby5jb20vaGxzL2NjdHY1cGhkLm0zdTgiLCAicG9ydCI6ICI0NDMiLCAicHMiOiAiU2VydmVyIDE2MSBcdWQ4M2NcdWRkZThcdWQ4M2NcdWRkZTYiLCAic25pIjogIm5vbWluby4xMWhpOGl0YmFmLndvcmtlcnMuZGV2IiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9
+ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@51.79.64.198:8119#Server 116 🇨🇦
+ss://YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0@51.79.49.116:8882#Server 62 🇨🇦
+ss://YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2@51.222.12.127:445#Server 126 🇨🇦
 vmess://eyJhZGQiOiAiZ3VhbndhbmcuYXdzbm8uY29tIiwgImFpZCI6IDAsICJob3N0IjogImd1YW53YW5nLmF3c25vLmNvbSIsICJpZCI6ICI2YTg5YTIxNS0yMmJmLTRiZDctOTY0Mi1iOTViMmUwOTU4M2EiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL2hscy9jY3R2NXBoZC5tM3U4IiwgInBvcnQiOiA0NDMsICJwcyI6ICJTZXJ2ZXIgMTY5IFx1ZDgzY1x1ZGRlOFx1ZDgzY1x1ZGRlNiIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiYXV0byIsICJzZWN1cml0eSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiBmYWxzZSwgInNuaSI6ICJndWFud2FuZy5hd3Nuby5jb20iLCAidiI6ICIyIn0=
-ss://YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2@51.222.12.127:445?type=tcp&headerType=none#Server 182 🇨🇦
-ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@51.222.200.165:5000#CA%F0%9F%87%A8%F0%9F%87%A6+%7C+51.222.200.165-5000+%7C+37.91ms
+ss://YWVzLTI1Ni1nY206ZzVNZUQ2RnQzQ1dsSklk@51.222.155.32:5003#Server 197 🇨🇦
+vmess://eyJhZGQiOiJvcjMuc2ZhY2cudWsiLCJwb3J0IjoiMjA4MyIsImlkIjoiYWMyNTEyMzctNTc2Zi00MGM4LWE1NDMtNTU0OTYwYzk1OGIxIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInYiOiIyIiwicHMiOiLmnKrnn6VfMTAxMzA2MTgxMSIsImhvc3QiOiJvcjMuc2ZhY2cudWsiLCJwYXRoIjoiL29yMyIsInRscyI6InRscyIsInNuaSI6ImNkbi5zZmFjZy51ayIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#%F0%9F%87%A8%F0%9F%87%A6CA-149.22.95.183-0110
+ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@51.222.200.165:5000#CA%F0%9F%87%A8%F0%9F%87%A6+%7C+51.222.200.165-5000+%7C+37.91ms
 ss://YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0@51.222.136.236:8882#%F0%9F%87%A8%F0%9F%87%A6CA-51.222.136.236-0191
 ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@137.184.174.93:8080#%F0%9F%87%A8%F0%9F%87%A6CA-137.184.174.93-0221
 ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@51.79.85.185:8118#%F0%9F%87%A8%F0%9F%87%A6CA-51.79.85.185-0212
-ss://YWVzLTEyOC1nY206MWNiYjNlMzQ3ZWU4NmUxOTgwYTdjNzMxZTlkZDAwYTA=@64.74.161.147:17200#US%F0%9F%87%BA%F0%9F%87%B8+%7C+64.74.161.147-17200+%7C+50.33ms
+ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@51.222.155.113:5601#%F0%9F%87%A8%F0%9F%87%A6CA-51.222.155.113-0422
 ss://YWVzLTEyOC1nY206NGVmZTFhZjI3MmU3MjkyMTM5Yjg4OWY2YTYzZWUwNzE=@64.74.163.69:18766#%F0%9F%87%BA%F0%9F%87%B8US-64.74.163.69-0104
-trojan://humanity@172.66.40.99:443?path=/assignment&security=tls&alpn=http/1.1&insecure=0&host=www.trusteeforward.com&fp=firefox&type=ws&allowInsecure=0&sni=www.trusteeforward.com#🇺🇸 8 - US - Trojan/WS/TLS/UTLS - 443
+trojan://humanity@188.114.97.4:443?cs=real_firefox_cipherSuites&path=%2Fassignment&security=tls&fm=tlshello-0-len&insecure=0&host=www.pleadcourt.org&fp=unsafe&type=ws&allowInsecure=0&sni=www.pleadcourt.org#🆔soskeynet%20🔒%20TR-WS-N/A%20🇺🇸%20US%2017ms
