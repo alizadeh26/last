@@ -4,61 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 89.125.103.208
-  port: 20111
-  type: ss
-  cipher: aes-256-gcm
-  password: 994ccabf6f0950d6
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: pl-1-1.unturned-rust-dead.lol
-  port: 443
+- name: 🇺🇸 美国 | USA 8
+  server: www.epicgames.com
+  port: 2095
   type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
-  tls: true
-  reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: pl-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: tcp
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uwu.femboy67.cc.cd
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: nl.alpheratzz.org
-  port: 8443
-  type: vless
-  uuid: 1bda2ae7-b597-4704-95a8-29c0f76324ba
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: api-v1-6aca6fae.vmagnum.win
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 54.179.192.171
-  port: 8443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: natureoflatvia.top
-  port: 443
-  type: vless
-  uuid: 62610fc6-8333-41f9-9258-08915e4343ab
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0RlpyDQNw2rAlZ6t6RIzoOVeGcDjRS-XO-cHBLW-JjI
-    short-id: 964c0252c22b16d4
-  servername: natureoflatvia.top
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+- name: 🇭🇰 香港 | HKG 7
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
   type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -70,21 +29,38 @@ proxies:
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: swe.wizard.select
+- name: 🇭🇰 香港 | HKG 3
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
   port: 443
-  type: vless
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
-  client-fingerprint: qq
-  network: tcp
+  skip-cert-verify: true
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 6
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
   udp: true
 proxy-groups:
 - name: AUTO
@@ -92,41 +68,35 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇵🇱 波兰 | POL
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇱🇻 拉脱维亚 | LVA
-  - 🇭🇰 香港 | HKG 5
-  - 🇸🇪 瑞典 | SWE
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 8
+  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 | POL
-  - 🇳🇱 荷兰 | NLD
-  - 🇱🇻 拉脱维亚 | LVA
-  - 🇸🇪 瑞典 | SWE
+  - 🇺🇸 美国 | USA 8
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
-- name: REGION-EU
+  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 6
+- name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇵🇱 波兰 | POL
+  - 🇭🇰 香港 | HKG 7
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
