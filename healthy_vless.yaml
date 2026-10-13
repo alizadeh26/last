@@ -4,17 +4,49 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 8
-  server: www.epicgames.com
-  port: 2095
+- name: 🇩🇪 德国 | DEU 8
+  server: lumen.linqora.net
+  port: 443
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
+  uuid: 6c21cf57-a9a9-4075-ad9f-631152bd911e
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: j6Ea9USHO5t3f1RC2_5TINyy4BOv2V30nW54OLxQGFQ
+    short-id: ae33b0ff89304aea
+  servername: lumen.linqora.net
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: googol.wookshop.ir
+  port: 17915
+  type: vless
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: googol.wookshop.ir
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
+  port: 443
+  type: vless
+  uuid: b8e59255-d392-c427-535d-bc1f8f444c4e
+  tls: true
+  alpn:
+  - h3
+  - http/1.1
+  servername: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ws/b8e59255-d392-c427-535d-bc1f8f444c4e
     headers:
-      Host: uwu.femboy67.cc.cd
+      Host: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +54,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 8
+  - 🇩🇪 德国 | DEU 8
+  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 2
 rules:
 - MATCH,AUTO
