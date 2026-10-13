@@ -4,22 +4,81 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇨🇦 加拿大 | CAN
+  server: 15.175.220.220
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇩🇪 德国 | DEU 8
-  server: lumen.linqora.net
+  server: 43.114.183.117
+  port: 443
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: d4M6fAj9Q07uK4HePntATUAs1KBceMzq8hGPy1AFxFA=
+  udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: 185.239.141.248
+  port: 8388
+  type: ss
+  cipher: aes-256-gcm
+  password: j_Z9yWqItCz_9yhD5YVY4w
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 13.135.199.253
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 4vJWBUhtW5vKHytB.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: e4cfeb24-c58f-4813-b0c8-d2b6b52cd244
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 4vJWBUhtW5vKHytB.v.3dns.vip
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: laga18.api3-max.ru
   port: 443
   type: vless
-  uuid: 6c21cf57-a9a9-4075-ad9f-631152bd911e
+  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
   tls: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j6Ea9USHO5t3f1RC2_5TINyy4BOv2V30nW54OLxQGFQ
-    short-id: ae33b0ff89304aea
-  servername: lumen.linqora.net
-  client-fingerprint: chrome
+  servername: laga18.api3-max.ru
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: 93ucrn4i0pffuabk.v.3dns.vip
+- name: 🇩🇪 德国 | DEU 10
+  server: kBd17k34BR3HAOJ2.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: e4cfeb24-c58f-4813-b0c8-d2b6b52cd244
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: kBd17k34BR3HAOJ2.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: ex1ogt73nzpqkac2.v.3dns.vip
   port: 443
   type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -27,66 +86,210 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: 93ucrn4i0pffuabk.v.3dns.vip
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: googol.wookshop.ir
-  port: 17915
+- name: 🇰🇷 韩国 | KOR 3
+  server: baBfGGlhjs86aTxZ.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: b89b702b-31ef-4f6a-85df-c264795a987b
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: baBfGGlhjs86aTxZ.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 6
+  server: bYWXdhIRqKJj8XAZ.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: e4cfeb24-c58f-4813-b0c8-d2b6b52cd244
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: bYWXdhIRqKJj8XAZ.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: bYWXdhIRqKJj8XAZ.v.3dns.vip
+- name: 🇱🇰 LK_54
+  server: free.sahanwickramasinghe.me
+  port: 8443
   type: vless
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   tls: true
   alpn:
   - h2
   - http/1.1
-  servername: googol.wookshop.ir
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
-  port: 443
-  type: vless
-  uuid: b8e59255-d392-c427-535d-bc1f8f444c4e
-  tls: true
-  alpn:
-  - h3
-  - http/1.1
-  servername: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
+  servername: zoom.us
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws/b8e59255-d392-c427-535d-bc1f8f444c4e
+    path: /
     headers:
-      Host: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
+      Host: free.sahanwickramasinghe.me
   udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  type: vless
+  uuid: ad6a20fb-5484-4c59-b745-662afe232270
+  tls: true
+  alpn:
+  - http/1.1
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: adheres-scruple.quick-cdn.net
+  port: 443
+  type: vless
+  uuid: ad6a20fb-5484-4c59-b745-662afe232270
+  tls: true
+  alpn:
+  - http/1.1
+  servername: adheres-scruple.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: adheres-scruple.quick-cdn.net
+  udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 54.254.240.48
+  port: 8443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 7
+  server: 104.18.35.86
+  port: 8080
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: K5DYRTmkNsLnAj8V.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: b89b702b-31ef-4f6a-85df-c264795a987b
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: K5DYRTmkNsLnAj8V.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: K5DYRTmkNsLnAj8V.v.3dns.vip
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇦 加拿大 | CAN
   - 🇩🇪 德国 | DEU 8
-  - 🇭🇰 香港 | HKG 5
-  - 🇹🇷 土耳其 | TUR
+  - 🇩🇪 德国 | DEU 9
+  - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 6
+  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 10
+  - 🇭🇰 香港 | HKG 2
+  - 🇰🇷 韩国 | KOR 3
+  - 🇭🇰 香港 | HKG 6
+  - 🇱🇰 LK_54
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 3
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇸🇬 新加坡 | SGP 2
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 | CAN
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 9
+  - 🇬🇧 英国 | GBR 2
+  - 🇸🇬 新加坡 | SGP
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
-  - 🇹🇷 土耳其 | TUR
+  - 🇬🇧 英国 | GBR
+  - 🇱🇰 LK_54
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 3
+  - 🇸🇬 新加坡 | SGP 7
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 10
+  - 🇭🇰 香港 | HKG 2
+  - 🇰🇷 韩国 | KOR 3
+  - 🇭🇰 香港 | HKG 6
+  - 🇸🇬 新加坡 | SGP 2
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 2
+  - 🇰🇷 韩国 | KOR 3
+  - 🇭🇰 香港 | HKG 6
+  - 🇸🇬 新加坡 | SGP
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 9
+  - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 6
+  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 10
+  - 🇱🇰 LK_54
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 | CAN
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 3
+  - 🇸🇬 新加坡 | SGP 7
 rules:
 - MATCH,AUTO

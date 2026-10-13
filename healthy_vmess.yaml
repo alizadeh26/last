@@ -4,8 +4,42 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 5
-  server: 93ucrn4i0pffuabk.v.3dns.vip
+- name: 🇩🇪 德国 | DEU 6
+  server: 4vJWBUhtW5vKHytB.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: e4cfeb24-c58f-4813-b0c8-d2b6b52cd244
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 4vJWBUhtW5vKHytB.v.3dns.vip
+  udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: kBd17k34BR3HAOJ2.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: e4cfeb24-c58f-4813-b0c8-d2b6b52cd244
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: kBd17k34BR3HAOJ2.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: ex1ogt73nzpqkac2.v.3dns.vip
   port: 443
   type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -13,19 +47,70 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: 93ucrn4i0pffuabk.v.3dns.vip
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
   udp: true
+- name: 🇰🇷 韩国 | KOR 3
+  server: baBfGGlhjs86aTxZ.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: b89b702b-31ef-4f6a-85df-c264795a987b
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: baBfGGlhjs86aTxZ.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 6
+  server: bYWXdhIRqKJj8XAZ.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: e4cfeb24-c58f-4813-b0c8-d2b6b52cd244
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: bYWXdhIRqKJj8XAZ.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: bYWXdhIRqKJj8XAZ.v.3dns.vip
+- name: 🇸🇬 新加坡 | SGP 2
+  server: K5DYRTmkNsLnAj8V.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: b89b702b-31ef-4f6a-85df-c264795a987b
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: K5DYRTmkNsLnAj8V.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: K5DYRTmkNsLnAj8V.v.3dns.vip
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 10
+  - 🇭🇰 香港 | HKG 2
+  - 🇰🇷 韩国 | KOR 3
+  - 🇭🇰 香港 | HKG 6
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO

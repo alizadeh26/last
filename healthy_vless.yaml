@@ -4,49 +4,78 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 8
-  server: lumen.linqora.net
+- name: 🇬🇧 英国 | GBR
+  server: laga18.api3-max.ru
   port: 443
   type: vless
-  uuid: 6c21cf57-a9a9-4075-ad9f-631152bd911e
+  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
   tls: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j6Ea9USHO5t3f1RC2_5TINyy4BOv2V30nW54OLxQGFQ
-    short-id: ae33b0ff89304aea
-  servername: lumen.linqora.net
-  client-fingerprint: chrome
+  servername: laga18.api3-max.ru
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: googol.wookshop.ir
-  port: 17915
+- name: 🇱🇰 LK_54
+  server: free.sahanwickramasinghe.me
+  port: 8443
   type: vless
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   tls: true
   alpn:
   - h2
   - http/1.1
-  servername: googol.wookshop.ir
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
-  port: 443
-  type: vless
-  uuid: b8e59255-d392-c427-535d-bc1f8f444c4e
-  tls: true
-  alpn:
-  - h3
-  - http/1.1
-  servername: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
+  servername: zoom.us
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws/b8e59255-d392-c427-535d-bc1f8f444c4e
+    path: /
     headers:
-      Host: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
+      Host: free.sahanwickramasinghe.me
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  type: vless
+  uuid: ad6a20fb-5484-4c59-b745-662afe232270
+  tls: true
+  alpn:
+  - http/1.1
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: adheres-scruple.quick-cdn.net
+  port: 443
+  type: vless
+  uuid: ad6a20fb-5484-4c59-b745-662afe232270
+  tls: true
+  alpn:
+  - http/1.1
+  servername: adheres-scruple.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: adheres-scruple.quick-cdn.net
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 7
+  server: 104.18.35.86
+  port: 8080
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -54,8 +83,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
-  - 🇹🇷 土耳其 | TUR
+  - 🇬🇧 英国 | GBR
+  - 🇱🇰 LK_54
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 3
+  - 🇸🇬 新加坡 | SGP 7
 rules:
 - MATCH,AUTO
