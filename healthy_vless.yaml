@@ -32,51 +32,6 @@ proxies:
     headers:
       Host: free.sahanwickramasinghe.me
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: minimize-evenness.cdn-content.com
-  port: 443
-  type: vless
-  uuid: ad6a20fb-5484-4c59-b745-662afe232270
-  tls: true
-  alpn:
-  - http/1.1
-  servername: minimize-evenness.cdn-content.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: minimize-evenness.cdn-content.com
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: adheres-scruple.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: ad6a20fb-5484-4c59-b745-662afe232270
-  tls: true
-  alpn:
-  - http/1.1
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 104.18.35.86
-  port: 8080
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -85,8 +40,5 @@ proxy-groups:
   proxies:
   - 🇬🇧 英国 | GBR
   - 🇱🇰 LK_54
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP 7
 rules:
 - MATCH,AUTO

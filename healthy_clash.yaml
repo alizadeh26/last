@@ -11,43 +11,12 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 43.114.183.117
-  port: 443
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: d4M6fAj9Q07uK4HePntATUAs1KBceMzq8hGPy1AFxFA=
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 185.239.141.248
-  port: 8388
-  type: ss
-  cipher: aes-256-gcm
-  password: j_Z9yWqItCz_9yhD5YVY4w
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 13.135.199.253
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 4vJWBUhtW5vKHytB.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: e4cfeb24-c58f-4813-b0c8-d2b6b52cd244
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 4vJWBUhtW5vKHytB.v.3dns.vip
   udp: true
 - name: 🇬🇧 英国 | GBR
   server: laga18.api3-max.ru
@@ -59,23 +28,6 @@ proxies:
   servername: laga18.api3-max.ru
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: kBd17k34BR3HAOJ2.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: e4cfeb24-c58f-4813-b0c8-d2b6b52cd244
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: kBd17k34BR3HAOJ2.v.3dns.vip
   udp: true
 - name: 🇭🇰 香港 | HKG 2
   server: ex1ogt73nzpqkac2.v.3dns.vip
@@ -91,6 +43,38 @@ proxies:
     path: /ws-vmess
     headers:
       Host: ex1ogt73nzpqkac2.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 7
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+  udp: true
+- name: 🇱🇰 LK_54
+  server: free.sahanwickramasinghe.me
+  port: 8443
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: zoom.us
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
   udp: true
 - name: 🇰🇷 韩国 | KOR 3
   server: baBfGGlhjs86aTxZ.v.3dns.vip
@@ -109,90 +93,12 @@ proxies:
     headers:
       Host: baBfGGlhjs86aTxZ.v.3dns.vip
   udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: bYWXdhIRqKJj8XAZ.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: e4cfeb24-c58f-4813-b0c8-d2b6b52cd244
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: bYWXdhIRqKJj8XAZ.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: bYWXdhIRqKJj8XAZ.v.3dns.vip
-- name: 🇱🇰 LK_54
-  server: free.sahanwickramasinghe.me
-  port: 8443
-  type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: zoom.us
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: minimize-evenness.cdn-content.com
-  port: 443
-  type: vless
-  uuid: ad6a20fb-5484-4c59-b745-662afe232270
-  tls: true
-  alpn:
-  - http/1.1
-  servername: minimize-evenness.cdn-content.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: minimize-evenness.cdn-content.com
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: adheres-scruple.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: ad6a20fb-5484-4c59-b745-662afe232270
-  tls: true
-  alpn:
-  - http/1.1
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 54.254.240.48
-  port: 8443
+- name: 🇺🇸 美国 | USA 6
+  server: ruot.ayucloudservices.nl
+  port: 40022
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 104.18.35.86
-  port: 8080
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
+  cipher: aes-128-gcm
+  password: 49b07b98-6b76-4c70-b046-39be88e75abf
 - name: 🇸🇬 新加坡 | SGP 2
   server: K5DYRTmkNsLnAj8V.v.3dns.vip
   port: 443
@@ -208,6 +114,13 @@ proxies:
     path: /ws-vmess
     headers:
       Host: K5DYRTmkNsLnAj8V.v.3dns.vip
+- name: 🇩🇪 德国 | DEU 8
+  server: 43.114.183.117
+  port: 443
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: d4M6fAj9Q07uK4HePntATUAs1KBceMzq8hGPy1AFxFA=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -215,31 +128,24 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 9
   - 🇬🇧 英国 | GBR 2
-  - 🇩🇪 德国 | DEU 6
   - 🇬🇧 英国 | GBR
-  - 🇩🇪 德国 | DEU 10
   - 🇭🇰 香港 | HKG 2
-  - 🇰🇷 韩国 | KOR 3
-  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 7
   - 🇱🇰 LK_54
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇰🇷 韩国 | KOR 3
+  - 🇺🇸 美国 | USA 6
   - 🇸🇬 新加坡 | SGP 2
+  - 🇩🇪 德国 | DEU 8
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 9
   - 🇬🇧 英国 | GBR 2
-  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 6
+  - 🇩🇪 德国 | DEU 8
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -247,49 +153,14 @@ proxy-groups:
   proxies:
   - 🇬🇧 英国 | GBR
   - 🇱🇰 LK_54
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP 7
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 10
   - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 7
   - 🇰🇷 韩国 | KOR 3
-  - 🇭🇰 香港 | HKG 6
   - 🇸🇬 新加坡 | SGP 2
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇰🇷 韩国 | KOR 3
-  - 🇭🇰 香港 | HKG 6
-  - 🇸🇬 新加坡 | SGP
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 9
-  - 🇬🇧 英国 | GBR 2
-  - 🇩🇪 德国 | DEU 6
-  - 🇬🇧 英国 | GBR
-  - 🇩🇪 德国 | DEU 10
-  - 🇱🇰 LK_54
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP 7
 rules:
 - MATCH,AUTO
