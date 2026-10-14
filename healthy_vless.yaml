@@ -4,7 +4,55 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 3
+- name: 🇦🇪 阿联酋 | ARE 2
+  server: 185.253.116.33
+  port: 14430
+  type: vless
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  tls: false
+  servername: 185.253.116.33
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 45.144.234.157
+  port: 14430
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  tls: false
+  servername: 45.144.234.157
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+  udp: true
+- name: 🇦🇹 奥地利 | AUT
+  server: 138.124.90.177
+  port: 10443
+  type: vless
+  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
+  tls: false
+  servername: 138.124.90.177
+  network: tcp
+  udp: true
+- name: 🇦🇪 阿联酋 | ARE
+  server: 95.174.68.188
+  port: 14430
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  tls: false
+  servername: 95.174.68.188
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
   server: nl1.aiage.work
   port: 443
   type: vless
@@ -17,6 +65,36 @@ proxies:
   servername: nl1.aiage.work
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: 45.137.43.168
+  port: 10443
+  type: vless
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  tls: false
+  servername: 45.137.43.168
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 104.207.132.12
+  port: 30006
+  type: vless
+  uuid: 157bf3e0-9467-4600-9b76-71323f7ef14e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 193.188.21.253
+  port: 14430
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  tls: false
+  servername: 193.188.21.253
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
   udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: meowgenicslab.net
@@ -32,34 +110,86 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: eu02.123450908.xyz
-  port: 2052
+- name: 🇸🇪 瑞典 | SWE 5
+  server: 5.178.109.174
+  port: 14430
   type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   tls: false
+  servername: 5.178.109.174
   network: ws
   ws-opts:
-    path: /rain1226
+    path: /vless
     headers:
-      Host: eu02.123450908.xyz
+      Host: 5.178.109.174
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 104.207.132.12
-  port: 30004
+- name: 🇺🇸 美国 | USA 14
+  server: 193.233.130.118
+  port: 14430
   type: vless
-  uuid: 157bf3e0-9467-4600-9b76-71323f7ef14e
+  uuid: dfc3077e-b013-4fcb-a500-df3e210e88b0
   tls: false
+  servername: 193.233.130.118
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.233.130.118
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 193.233.130.119
+  port: 10443
+  type: vless
+  uuid: 16f78e38-8df9-4658-93e8-e49feababf5b
+  tls: false
+  servername: 193.233.130.119
   network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 45.137.43.168
+  port: 14430
+  type: vless
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  tls: false
+  servername: 45.137.43.168
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.137.43.168
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 193.233.130.119
+  port: 14430
+  type: vless
+  uuid: 16f78e38-8df9-4658-93e8-e49feababf5b
+  tls: false
+  servername: 193.233.130.119
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.233.130.119
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇦🇪 阿联酋 | ARE 2
+  - 🇩🇪 德国 | DEU 2
+  - 🇦🇹 奥地利 | AUT
+  - 🇦🇪 阿联酋 | ARE
+  - 🇳🇱 荷兰 | NLD
+  - 🇵🇱 波兰 | POL 2
+  - 🇺🇸 美国 | USA 3
+  - 🇸🇪 瑞典 | SWE 3
   - 🇹🇷 土耳其 | TUR
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 6
+  - 🇸🇪 瑞典 | SWE 5
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 13
+  - 🇵🇱 波兰 | POL
+  - 🇺🇸 美国 | USA 12
 rules:
 - MATCH,AUTO
