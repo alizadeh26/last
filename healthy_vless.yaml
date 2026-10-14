@@ -4,27 +4,30 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: laga18.api3-max.ru
+- name: 🇩🇪 德国 | DEU 5
+  server: hehehe.hohoterz.beer
   port: 443
   type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
   tls: true
   flow: xtls-rprx-vision
-  servername: laga18.api3-max.ru
+  reality-opts:
+    public-key: 9xlKofHgn6_79fzCJNtw11zc1zicldVPHk6_h1KTIXA
+    short-id: 9532ce4ecd911eac
+  servername: hehehe.hohoterz.beer
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇱🇰 LK_54
+- name: 🇱🇰 LK_75
   server: free.sahanwickramasinghe.me
-  port: 8443
+  port: 2096
   type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  uuid: 13d72f62-ca03-4f06-acc4-409f5dc2f4e6
   tls: true
   alpn:
   - h2
   - http/1.1
-  servername: zoom.us
+  servername: microsoft.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
@@ -38,7 +41,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇱🇰 LK_54
+  - 🇩🇪 德国 | DEU 5
+  - 🇱🇰 LK_75
 rules:
 - MATCH,AUTO

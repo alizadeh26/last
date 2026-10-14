@@ -4,32 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 15.175.220.220
+- name: 🇵🇱 波兰 | POL 2
+  server: 54.36.174.140
   port: 443
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 13.135.199.253
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: ruot.ayucloudservices.nl
-  port: 40022
-  type: ss
-  cipher: aes-128-gcm
-  password: 49b07b98-6b76-4c70-b046-39be88e75abf
-- name: 🇩🇪 德国 | DEU 8
-  server: 43.114.183.117
-  port: 443
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: d4M6fAj9Q07uK4HePntATUAs1KBceMzq8hGPy1AFxFA=
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
   udp: true
 proxy-groups:
 - name: AUTO
@@ -37,9 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇬🇧 英国 | GBR 2
-  - 🇺🇸 美国 | USA 6
-  - 🇩🇪 德国 | DEU 8
+  - 🇵🇱 波兰 | POL 2
 rules:
 - MATCH,AUTO

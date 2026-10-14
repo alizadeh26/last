@@ -4,7 +4,35 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 2
+- name: 🇭🇰 香港 | HKG 5
+  server: 47.244.120.197
+  port: 44867
+  type: vmess
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: 47.244.120.197
+  port: 36703
+  type: vmess
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
   server: ex1ogt73nzpqkac2.v.3dns.vip
   port: 443
   type: vmess
@@ -19,62 +47,62 @@ proxies:
     headers:
       Host: ex1ogt73nzpqkac2.v.3dns.vip
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: 47.244.120.197
-  port: 23026
+- name: 🇺🇸 美国 | USA
+  server: cf.0sm.com
+  port: 80
   type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki
+    path: /ws
     headers:
-      Host: 47.244.120.197
+      Host: vmess.lbw666.dpdns.org
   udp: true
-- name: 🇰🇷 韩国 | KOR 3
-  server: baBfGGlhjs86aTxZ.v.3dns.vip
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: renderer-stream-2-114.mirra.now
   port: 443
   type: vmess
-  uuid: b89b702b-31ef-4f6a-85df-c264795a987b
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
   alterId: 0
   cipher: auto
   tls: true
-  alpn:
-  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-114.mirra.now
+  udp: true
+- name: 🇭🇰 香港 | HKG 6
+  server: 6JDvArazgU3qQR6Q.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: baBfGGlhjs86aTxZ.v.3dns.vip
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: K5DYRTmkNsLnAj8V.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: b89b702b-31ef-4f6a-85df-c264795a987b
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: K5DYRTmkNsLnAj8V.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: K5DYRTmkNsLnAj8V.v.3dns.vip
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 7
-  - 🇰🇷 韩国 | KOR 3
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 4
+  - 🇺🇸 美国 | USA
+  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇭🇰 香港 | HKG 6
 rules:
 - MATCH,AUTO
