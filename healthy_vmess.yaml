@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇰🇷 韩国 | KOR 4
-  server: 4KnPRw5H74w4AVNs.v.3dns.vip
+- name: 🇩🇪 德国 | DEU 4
+  server: 9FvMZovqvgV9O0xM.v.3dns.vip
   port: 443
   type: vmess
   uuid: 10d6665f-10c9-4f03-9b83-ba45968f748d
@@ -13,12 +13,12 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: 4KnPRw5H74w4AVNs.v.3dns.vip
+  servername: 9FvMZovqvgV9O0xM.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: 4KnPRw5H74w4AVNs.v.3dns.vip
+      Host: 9FvMZovqvgV9O0xM.v.3dns.vip
 - name: 🇰🇷 韩国 | KOR 2
   server: JBQ4dPDPuJFzj4KV.v.3dns.vip
   port: 443
@@ -34,21 +34,21 @@ proxies:
     path: /ws-vmess
     headers:
       Host: JBQ4dPDPuJFzj4KV.v.3dns.vip
-- name: 🇺🇸 美国 | USA 6
-  server: 3kCf86Ufi0U5xBDA.v.3dns.vip
+- name: 🇰🇷 韩国 | KOR 4
+  server: 4KnPRw5H74w4AVNs.v.3dns.vip
   port: 443
   type: vmess
-  uuid: ad8685f2-5d17-411e-855c-1cc2ed5144a9
+  uuid: 10d6665f-10c9-4f03-9b83-ba45968f748d
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: 3kCf86Ufi0U5xBDA.v.3dns.vip
+  servername: 4KnPRw5H74w4AVNs.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: 3kCf86Ufi0U5xBDA.v.3dns.vip
+      Host: 4KnPRw5H74w4AVNs.v.3dns.vip
 - name: 🇺🇸 美国 | USA 2
   server: XSmlqR4AuuOPMsMN.v.3dns.vip
   port: 443
@@ -64,15 +64,48 @@ proxies:
     path: /ws-vmess
     headers:
       Host: XSmlqR4AuuOPMsMN.v.3dns.vip
+- name: 🇺🇸 美国 | USA 6
+  server: 3kCf86Ufi0U5xBDA.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: ad8685f2-5d17-411e-855c-1cc2ed5144a9
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 3kCf86Ufi0U5xBDA.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 3kCf86Ufi0U5xBDA.v.3dns.vip
+- name: 🇭🇰 香港 | HKG 3
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 | KOR 4
+  - 🇩🇪 德国 | DEU 4
   - 🇰🇷 韩国 | KOR 2
-  - 🇺🇸 美国 | USA 6
+  - 🇰🇷 韩国 | KOR 4
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG 3
 rules:
 - MATCH,AUTO
