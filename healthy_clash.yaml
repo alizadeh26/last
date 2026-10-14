@@ -4,7 +4,72 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG
+- name: 🇳🇱 荷兰 | NLD 3
+  server: nl1.aiage.work
+  port: 443
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: vSa3rWZfq5OftXO2RSgggbTOxbHlWGTLpP8bNDki3wk
+    short-id: adcbde41b1cf27ba
+  servername: nl1.aiage.work
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: meowgenicslab.net
+  port: 443
+  type: vless
+  uuid: f580778d-8e05-4d88-8724-802eccf4ceff
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: F7enjoJVna8sj4M9KPqNkN1ATXeflVNx9SHnn4lpAkY
+    short-id: 5f37b7c5e2cc31a3
+  servername: meowgenicslab.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: eu02.123450908.xyz
+  port: 2052
+  type: vless
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 104.207.132.12
+  port: 30004
+  type: vless
+  uuid: 157bf3e0-9467-4600-9b76-71323f7ef14e
+  tls: false
+  network: tcp
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  server: fujrdt.d6f54hd1j.cc
+  port: 443
+  type: vmess
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  alterId: 0
+  cipher: auto
+  tls: true
+  alpn:
+  - ''
+  skip-cert-verify: true
+  servername: fujrdt.d6f54hd1j.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fujrdt.d6f54hd1j.cc
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
   server: 47.244.120.197
   port: 44867
   type: vmess
@@ -19,100 +84,53 @@ proxies:
   ws-opts:
     path: /arki
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: de2.balancer.vbuste-bot.com
-  port: 443
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.balancer.vbuste-bot.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-  udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: 54.180.251.134
-  port: 8443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: ex1ogt73nzpqkac2.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
-  udp: true
-- name: 🇱🇰 LK_50
-  server: free.sahanwickramasinghe.me
-  port: 80
-  type: vless
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
-  - 🇩🇪 德国 | DEU 12
-  - 🇭🇰 香港 | HKG 5
-  - 🇰🇷 韩国 | KOR 2
-  - 🇭🇰 香港 | HKG 6
-  - 🇱🇰 LK_50
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇰🇷 韩国 | KOR 2
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 6
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇭🇰 香港 | HKG 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 12
-  - 🇱🇰 LK_50
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇹🇷 土耳其 | TUR
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 6
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG 6
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇭🇰 香港 | HKG 4
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 4
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇹🇷 土耳其 | TUR
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO
