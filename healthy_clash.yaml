@@ -4,21 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: hehehe.hohoterz.beer
-  port: 443
-  type: vless
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9xlKofHgn6_79fzCJNtw11zc1zicldVPHk6_h1KTIXA
-    short-id: 9532ce4ecd911eac
-  servername: hehehe.hohoterz.beer
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
+- name: 🇭🇰 香港 | HKG
   server: 47.244.120.197
   port: 44867
   type: vmess
@@ -33,11 +19,25 @@ proxies:
   ws-opts:
     path: /arki
   udp: true
-- name: 🇭🇰 香港 | HKG
+- name: 🇩🇪 德国 | DEU 12
+  server: de2.balancer.vbuste-bot.com
+  port: 443
+  type: vless
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.balancer.vbuste-bot.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
   server: 47.244.120.197
-  port: 36703
+  port: 23026
   type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
   alterId: 0
   cipher: auto
   tls: false
@@ -45,8 +45,17 @@ proxies:
   network: ws
   ws-opts:
     path: /arki
+    headers:
+      Host: 47.244.120.197
   udp: true
-- name: 🇭🇰 香港 | HKG 4
+- name: 🇰🇷 韩国 | KOR 2
+  server: 54.180.251.134
+  port: 8443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+- name: 🇭🇰 香港 | HKG 6
   server: ex1ogt73nzpqkac2.v.3dns.vip
   port: 443
   type: vmess
@@ -61,113 +70,49 @@ proxies:
     headers:
       Host: ex1ogt73nzpqkac2.v.3dns.vip
   udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 54.36.174.140
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
-- name: 🇱🇰 LK_75
+- name: 🇱🇰 LK_50
   server: free.sahanwickramasinghe.me
-  port: 2096
+  port: 80
   type: vless
-  uuid: 13d72f62-ca03-4f06-acc4-409f5dc2f4e6
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: microsoft.com
-  client-fingerprint: chrome
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: cf.0sm.com
-  port: 80
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: renderer-stream-2-114.mirra.now
-  port: 443
-  type: vmess
-  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-114.mirra.now
-  udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: 6JDvArazgU3qQR6Q.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 4
-  - 🇵🇱 波兰 | POL 2
-  - 🇱🇰 LK_75
-  - 🇺🇸 美国 | USA
-  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇩🇪 德国 | DEU 12
+  - 🇭🇰 香港 | HKG 5
+  - 🇰🇷 韩国 | KOR 2
   - 🇭🇰 香港 | HKG 6
+  - 🇱🇰 LK_50
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 | POL 2
+  - 🇰🇷 韩国 | KOR 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇱🇰 LK_75
+  - 🇩🇪 德国 | DEU 12
+  - 🇱🇰 LK_50
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 4
-  - 🇺🇸 美国 | USA
-  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG 6
 rules:
 - MATCH,AUTO

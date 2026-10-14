@@ -4,44 +4,38 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: hehehe.hohoterz.beer
+- name: 🇩🇪 德国 | DEU 12
+  server: de2.balancer.vbuste-bot.com
   port: 443
   type: vless
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 9xlKofHgn6_79fzCJNtw11zc1zicldVPHk6_h1KTIXA
-    short-id: 9532ce4ecd911eac
-  servername: hehehe.hohoterz.beer
-  client-fingerprint: firefox
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.balancer.vbuste-bot.com
+  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇱🇰 LK_75
+- name: 🇱🇰 LK_50
   server: free.sahanwickramasinghe.me
-  port: 2096
+  port: 80
   type: vless
-  uuid: 13d72f62-ca03-4f06-acc4-409f5dc2f4e6
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: microsoft.com
-  client-fingerprint: chrome
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  tls: false
   network: ws
   ws-opts:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇱🇰 LK_75
+  - 🇩🇪 德国 | DEU 12
+  - 🇱🇰 LK_50
 rules:
 - MATCH,AUTO

@@ -4,12 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇵🇱 波兰 | POL 2
-  server: 54.36.174.140
-  port: 443
+- name: 🇰🇷 韩国 | KOR 2
+  server: 54.180.251.134
+  port: 8443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: e5c65ph
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   udp: true
 proxy-groups:
 - name: AUTO
@@ -17,6 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 | POL 2
+  - 🇰🇷 韩国 | KOR 2
 rules:
 - MATCH,AUTO
