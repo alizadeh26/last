@@ -4,72 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: fi.quic.best
-  port: 443
+- name: 🇩🇪 德国 | DEU
+  server: dash.mobiza.ir
+  port: 2052
   type: vless
-  uuid: c2331311-c9fd-4af9-8f34-7a9edcee3b92
-  tls: true
-  alpn:
-  - h2
-  - h3
-  flow: xtls-rprx-vision
-  servername: fi.quic.best
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 213.176.92.168
-  port: 14430
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  uuid: 4da2b397-98db-4aaa-aa24-321f478f5f61
   tls: false
-  servername: 213.176.92.168
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 213.176.92.168
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: z5n1.vpnpolar.online
-  port: 443
-  type: vless
-  uuid: 49e4b91a-bd15-4e54-9b51-41a3380afb51
-  tls: true
-  servername: z5n1.vpnpolar.online
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /beeline
-    headers:
-      Host: z5n1.vpnpolar.online
-  udp: true
-- name: 🇮🇳 印度 | IND
-  server: 13.140.56.100
-  port: 14430
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  tls: false
-  servername: 13.140.56.100
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 104.18.35.86
-  port: 8080
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: dash.mobiza.ir
   udp: true
 proxy-groups:
 - name: AUTO
@@ -77,10 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇵🇱 波兰 | POL 2
-  - 🇮🇳 印度 | IND
-  - 🇺🇸 美国 | USA 3
+  - 🇩🇪 德国 | DEU
 rules:
 - MATCH,AUTO

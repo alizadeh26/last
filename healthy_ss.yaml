@@ -4,8 +4,8 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 11
-  server: 3.138.123.136
+- name: 🇬🇧 英国 | GBR 2
+  server: 13.40.23.138
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -16,6 +16,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 11
+  - 🇬🇧 英国 | GBR 2
 rules:
 - MATCH,AUTO
