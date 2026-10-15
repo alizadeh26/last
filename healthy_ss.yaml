@@ -10,12 +10,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇨🇦 加拿大 | CAN
-  server: 15.175.213.130
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -23,6 +17,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇦 加拿大 | CAN 2
-  - 🇨🇦 加拿大 | CAN
 rules:
 - MATCH,AUTO
