@@ -13,6 +13,15 @@ proxies:
   servername: 77.221.157.213
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 45.138.100.248
+  port: 10443
+  type: vless
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  tls: false
+  servername: 45.138.100.248
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 15
   server: freeus.aiage.work
   port: 443
@@ -27,27 +36,18 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 104.18.35.86
-  port: 8080
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
-- name: 🇺🇸 美国 | USA 8
+- name: 🇺🇸 美国 | USA 19
   server: 45.138.100.248
-  port: 10443
+  port: 14430
   type: vless
   uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
   tls: false
   servername: 45.138.100.248
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.138.100.248
   udp: true
 proxy-groups:
 - name: AUTO
@@ -56,8 +56,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 9
-  - 🇺🇸 美国 | USA 15
-  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO

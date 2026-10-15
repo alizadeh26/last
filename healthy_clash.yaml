@@ -4,6 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇨🇦 加拿大 | CAN
+  server: 15.175.213.130
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇨🇦 加拿大 | CAN 2
   server: 15.223.182.197
   port: 443
@@ -17,6 +23,15 @@ proxies:
   uuid: 1d006ad5-1de1-4520-a5f4-875dae1b0a5d
   tls: false
   servername: 77.221.157.213
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 45.138.100.248
+  port: 10443
+  type: vless
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  tls: false
+  servername: 45.138.100.248
   network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 15
@@ -33,27 +48,18 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 104.18.35.86
-  port: 8080
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
-- name: 🇺🇸 美国 | USA 8
+- name: 🇺🇸 美国 | USA 19
   server: 45.138.100.248
-  port: 10443
+  port: 14430
   type: vless
   uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
   tls: false
   servername: 45.138.100.248
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.138.100.248
   udp: true
 proxy-groups:
 - name: AUTO
@@ -61,16 +67,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
   - 🇩🇪 德国 | DEU 9
-  - 🇺🇸 美国 | USA 15
-  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 19
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
 - name: PROTO-VLESS
   type: url-test
@@ -78,14 +86,23 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 | DEU 9
-  - 🇺🇸 美国 | USA 15
-  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 19
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 9
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 2
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
