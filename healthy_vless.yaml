@@ -4,17 +4,66 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: dash.mobiza.ir
-  port: 2052
+- name: 🇩🇪 德国 | DEU 9
+  server: 77.221.157.213
+  port: 10443
   type: vless
-  uuid: 4da2b397-98db-4aaa-aa24-321f478f5f61
+  uuid: 1d006ad5-1de1-4520-a5f4-875dae1b0a5d
   tls: false
+  servername: 77.221.157.213
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 45.138.100.248
+  port: 10443
+  type: vless
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  tls: false
+  servername: 45.138.100.248
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: bounded-crammed.video-streams.org
+  port: 443
+  type: vless
+  uuid: c7ebdd04-3c92-4d70-8632-3236b3b86e92
+  tls: true
+  alpn:
+  - http/1.1
+  servername: bounded-crammed.video-streams.org
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: dash.mobiza.ir
+      Host: bounded-crammed.video-streams.org
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 45.138.100.248
+  port: 14430
+  type: vless
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  tls: false
+  servername: 45.138.100.248
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.138.100.248
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: freeus.aiage.work
+  port: 443
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pxLk0ocXqKYYqUFyALvH2BVXaswI-6NE00posKNayy0
+    short-id: ccaf7283610c6fa8
+  servername: freeus.aiage.work
+  client-fingerprint: qq
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -22,6 +71,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 9
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO
