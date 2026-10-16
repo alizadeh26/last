@@ -4,19 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇷 巴西 | BRA
-  server: platform108.golnamakcert.top
-  port: 80
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  tls: false
-  servername: platform108.halalkhor.info
-  network: ws
-  ws-opts:
-    path: /platform108
-    headers:
-      Host: platform108.halalkhor.info
-  udp: true
 - name: 🇭🇺 匈牙利 | HUN
   server: hu1.aiage.work
   port: 443
@@ -29,6 +16,20 @@ proxies:
     short-id: f8379ce795f2e5ed
   servername: hu1.aiage.work
   client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: seal-nl1.bypassme.online
+  port: 443
+  type: vless
+  uuid: e625f8ef-f935-4c7d-a259-0f154b6842fd
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk
+    short-id: 6b69118a7847c4c3
+  servername: seal-nl1.bypassme.online
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
@@ -47,29 +48,14 @@ proxies:
     headers:
       Host: cdn.topingr.ir
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: seal-nl1.bypassme.online
-  port: 443
-  type: vless
-  uuid: e625f8ef-f935-4c7d-a259-0f154b6842fd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk
-    short-id: 6b69118a7847c4c3
-  servername: seal-nl1.bypassme.online
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 | BRA
   - 🇭🇺 匈牙利 | HUN
-  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 2
 rules:
 - MATCH,AUTO
