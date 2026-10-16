@@ -4,37 +4,51 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 15.175.213.130
+- name: 🇭🇺 匈牙利 | HUN
+  server: hu1.aiage.work
   port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇨🇦 加拿大 | CAN 2
-  server: 15.223.182.197
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 | DEU 9
-  server: 77.221.157.213
-  port: 10443
   type: vless
-  uuid: 1d006ad5-1de1-4520-a5f4-875dae1b0a5d
-  tls: false
-  servername: 77.221.157.213
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
+    short-id: f8379ce795f2e5ed
+  servername: hu1.aiage.work
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 45.138.100.248
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 178.83.185.156
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇮🇳 印度 | IND
+  server: 5.253.29.254
   port: 10443
   type: vless
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   tls: false
-  servername: 45.138.100.248
+  servername: 5.253.29.254
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 15
+- name: 🇭🇰 香港 | HKG 4
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+  udp: true
+- name: 🇺🇸 美国 | USA 5
   server: freeus.aiage.work
   port: 443
   type: vless
@@ -48,7 +62,20 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 19
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 5.253.29.254
+  port: 14430
+  type: vless
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  tls: false
+  servername: 5.253.29.254
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
+  udp: true
+- name: 🇺🇸 美国 | USA 6
   server: 45.138.100.248
   port: 14430
   type: vless
@@ -61,48 +88,72 @@ proxies:
     headers:
       Host: 45.138.100.248
   udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: 47.244.120.197
+  port: 44867
+  type: vmess
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇨🇦 加拿大 | CAN 2
-  - 🇩🇪 德国 | DEU 9
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 19
+  - 🇭🇺 匈牙利 | HUN
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇮🇳 印度 | IND
+  - 🇭🇰 香港 | HKG 4
+  - 🇺🇸 美国 | USA 5
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇨🇦 加拿大 | CAN 2
+  - 🇳🇱 荷兰 | NLD 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 19
+  - 🇭🇺 匈牙利 | HUN
+  - 🇮🇳 印度 | IND
+  - 🇺🇸 美国 | USA 5
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 6
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
+  - 🇭🇺 匈牙利 | HUN
+  - 🇳🇱 荷兰 | NLD 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇨🇦 加拿大 | CAN 2
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 19
+  - 🇮🇳 印度 | IND
+  - 🇺🇸 美国 | USA 5
+  - 🇳🇱 荷兰 | NLD 4
 rules:
 - MATCH,AUTO
