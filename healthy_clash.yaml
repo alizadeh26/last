@@ -4,20 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 10
-  server: studio.10media.top
+- name: 🇵🇱 波兰 | POL
+  server: api.mediapolyana.cc
   port: 443
   type: vless
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
   tls: true
-  servername: studio.10media.top
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: studiofeed
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.mediapolyana.cc
+  client-fingerprint: edge
+  network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
+- name: 🇭🇰 香港 | HKG 4
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
   server: edge-lab-b.10media.top
   port: 443
   type: vless
@@ -30,38 +46,22 @@ proxies:
     grpc-mode: gun
     grpc-service-name: swedenfeed
   udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: VAH4URdZL3jDX5r2.v.3dns.vip
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 10
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇵🇱 波兰 | POL
   - 🇭🇰 香港 | HKG 4
+  - 🇸🇪 瑞典 | SWE
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 10
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇵🇱 波兰 | POL
+  - 🇸🇪 瑞典 | SWE
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -79,7 +79,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 10
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇵🇱 波兰 | POL
+  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO

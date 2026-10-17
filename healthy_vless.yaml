@@ -4,20 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 10
-  server: studio.10media.top
+- name: 🇵🇱 波兰 | POL
+  server: api.mediapolyana.cc
   port: 443
   type: vless
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
   tls: true
-  servername: studio.10media.top
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: studiofeed
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.mediapolyana.cc
+  client-fingerprint: edge
+  network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
+- name: 🇸🇪 瑞典 | SWE
   server: edge-lab-b.10media.top
   port: 443
   type: vless
@@ -36,7 +37,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 10
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇵🇱 波兰 | POL
+  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
