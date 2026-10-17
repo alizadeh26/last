@@ -4,49 +4,49 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇺 匈牙利 | HUN
-  server: hu1.aiage.work
+- name: 🇩🇪 德国 | DEU 3
+  server: freefl.aiage.work
   port: 443
   type: vless
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
-    short-id: f8379ce795f2e5ed
-  servername: hu1.aiage.work
+    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
+    short-id: ff0ddf949624ef2a
+  servername: freefl.aiage.work
   client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD
-  server: seal-nl1.bypassme.online
-  port: 443
+  server: 141.144.207.185
+  port: 62145
   type: vless
-  uuid: e625f8ef-f935-4c7d-a259-0f154b6842fd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk
-    short-id: 6b69118a7847c4c3
-  servername: seal-nl1.bypassme.online
-  client-fingerprint: firefox
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: cdn.topingr.ir
-  port: 443
+- name: 🇸🇬 新加坡 | SGP
+  server: 178.94.25.73
+  port: 10443
   type: vless
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
-  tls: true
-  alpn:
-  - /--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/NLSus--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/NLSus--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/NLSus--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/1.1
-  servername: cdn.topingr.ir
-  client-fingerprint: chrome
+  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
+  tls: false
+  servername: 178.94.25.73
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 178.94.25.73
+  port: 14430
+  type: vless
+  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
+  tls: false
+  servername: 178.94.25.73
   network: ws
   ws-opts:
-    path: /gropcdn
+    path: /vless
     headers:
-      Host: cdn.topingr.ir
+      Host: 178.94.25.73
   udp: true
 proxy-groups:
 - name: AUTO
@@ -54,8 +54,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 匈牙利 | HUN
+  - 🇩🇪 德国 | DEU 3
   - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO

@@ -4,102 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 5
-  server: i2psm3knof5qjjix.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-  udp: true
-- name: 🇭🇺 匈牙利 | HUN
-  server: hu1.aiage.work
+- name: 🇩🇪 德国 | DEU 3
+  server: freefl.aiage.work
   port: 443
   type: vless
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
-    short-id: f8379ce795f2e5ed
-  servername: hu1.aiage.work
+    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
+    short-id: ff0ddf949624ef2a
+  servername: freefl.aiage.work
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 12
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
   udp: true
 - name: 🇳🇱 荷兰 | NLD
-  server: seal-nl1.bypassme.online
-  port: 443
+  server: 141.144.207.185
+  port: 62145
   type: vless
-  uuid: e625f8ef-f935-4c7d-a259-0f154b6842fd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk
-    short-id: 6b69118a7847c4c3
-  servername: seal-nl1.bypassme.online
-  client-fingerprint: firefox
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 95.169.3.45
-  port: 46008
+- name: 🇺🇸 美国 | USA
+  server: 172.86.108.79
+  port: 30832
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 123456
+  cipher: 2022-blake3-aes-128-gcm
+  password: jr+T2RS0sCHBmC4u6aY6Vg==
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 95.169.3.45
-  port: 46005
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 123456
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: cdn.topingr.ir
-  port: 443
-  type: vless
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
-  tls: true
-  alpn:
-  - /--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/NLSus--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/NLSus--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/NLSus--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/1.1
-  servername: cdn.topingr.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 95.169.3.45
-  port: 46010
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 123456
-  udp: true
-- name: 🇭🇰 香港 | HKG 11
+- name: 🇭🇰 香港 | HKG 6
   server: qtkdr8jxe3wefxjm.v.3dns.vip
   port: 443
   type: vmess
@@ -114,7 +48,7 @@ proxies:
     headers:
       Host: qTKDR8jXE3wEFxJM.v.3dns.vip
   udp: true
-- name: 🇭🇰 香港 | HKG 8
+- name: 🇭🇰 香港 | HKG 7
   server: 47.244.120.197
   port: 44867
   type: vmess
@@ -129,46 +63,81 @@ proxies:
   ws-opts:
     path: /arki
   udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 178.94.25.73
+  port: 10443
+  type: vless
+  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
+  tls: false
+  servername: 178.94.25.73
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 178.94.25.73
+  port: 14430
+  type: vless
+  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
+  tls: false
+  servername: 178.94.25.73
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.94.25.73
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇺 匈牙利 | HUN
-  - 🇭🇰 香港 | HKG 12
+  - 🇩🇪 德国 | DEU 3
   - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 6
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 14
-  - 🇭🇰 香港 | HKG 11
-  - 🇭🇰 香港 | HKG 8
+  - 🇺🇸 美国 | USA
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 7
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 匈牙利 | HUN
+  - 🇩🇪 德国 | DEU 3
   - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG 12
-  - 🇭🇰 香港 | HKG 11
-  - 🇭🇰 香港 | HKG 8
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 7
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 6
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 3
+  - 🇳🇱 荷兰 | NLD
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

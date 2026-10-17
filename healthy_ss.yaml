@@ -4,26 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 2
-  server: 95.169.3.45
-  port: 46008
+- name: 🇺🇸 美国 | USA
+  server: 172.86.108.79
+  port: 30832
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 123456
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 95.169.3.45
-  port: 46005
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 123456
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 95.169.3.45
-  port: 46010
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 123456
+  cipher: 2022-blake3-aes-128-gcm
+  password: jr+T2RS0sCHBmC4u6aY6Vg==
   udp: true
 proxy-groups:
 - name: AUTO
@@ -31,8 +17,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
