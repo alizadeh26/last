@@ -18,6 +18,19 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: edge-lab-b.10media.top
+  port: 443
+  type: vless
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  tls: true
+  servername: edge-lab-b.10media.top
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: swedenfeed
+  udp: true
 - name: 🇭🇰 香港 | HKG 4
   server: nycqg19zkwacpm1b.v.3dns.vip
   port: 443
@@ -33,18 +46,20 @@ proxies:
     headers:
       Host: NYcQg19zkwaCPM1B.v.3dns.vip
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: edge-lab-b.10media.top
+- name: 🇭🇰 香港 | HKG 5
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
   port: 443
-  type: vless
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: edge-lab-b.10media.top
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: swedenfeed
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
   udp: true
 proxy-groups:
 - name: AUTO
@@ -53,8 +68,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇵🇱 波兰 | POL
-  - 🇭🇰 香港 | HKG 4
   - 🇸🇪 瑞典 | SWE
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -68,6 +84,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 5
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
