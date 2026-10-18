@@ -4,6 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇫🇷 法国 | FRA 2
+  server: farancenew.mamadhpbot.ir
+  port: 8080
+  type: vless
+  uuid: 732ec777-bf4a-4fee-835a-25d6a8b58563
+  tls: false
+  network: ws
+  ws-opts:
+    path: /real
+    headers:
+      Host: farancenew.mamadhpbot.ir
+  udp: true
 - name: 🇵🇱 波兰 | POL
   server: api.mediapolyana.cc
   port: 443
@@ -18,26 +30,13 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: edge-lab-b.10media.top
-  port: 443
-  type: vless
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-  tls: true
-  servername: edge-lab-b.10media.top
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: swedenfeed
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇫🇷 法国 | FRA 2
   - 🇵🇱 波兰 | POL
-  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
