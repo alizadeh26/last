@@ -46,21 +46,6 @@ proxies:
     headers:
       Host: NYcQg19zkwaCPM1B.v.3dns.vip
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -70,7 +55,6 @@ proxy-groups:
   - 🇵🇱 波兰 | POL
   - 🇸🇪 瑞典 | SWE
   - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -84,19 +68,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 5
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 4
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇵🇱 波兰 | POL
-  - 🇸🇪 瑞典 | SWE
 rules:
 - MATCH,AUTO
