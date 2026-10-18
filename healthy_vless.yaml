@@ -4,22 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA
-  server: 51.44.197.117
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 51.44.197.117
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇫🇷 法国 | FRA 2
   server: redcloudport-bidarbash.sbs
   port: 443
@@ -36,29 +20,12 @@ proxies:
     headers:
       Host: redcloudport-bidarbash.sbs
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: sgip.harry.lv
-  port: 443
-  type: vless
-  uuid: 5d75a660-f04e-4301-a41b-d394bae03970
-  tls: true
-  servername: sgcf.harry.lv
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sg
-    headers:
-      Host: sgcf.harry.lv
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
-  - 🇫🇷 法国 | FRA 3
   - 🇫🇷 法国 | FRA 2
-  - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,AUTO
