@@ -4,23 +4,23 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 13.135.33.165
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 13.135.33.165
+- name: 🇫🇷 法国 | FRA
+  server: 51.44.197.117
   port: 22224
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 4
+- name: 🇫🇷 法国 | FRA 3
+  server: 51.44.197.117
+  port: 22222
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 2
   server: redcloudport-bidarbash.sbs
   port: 443
   type: vless
@@ -36,24 +36,21 @@ proxies:
     headers:
       Host: redcloudport-bidarbash.sbs
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 172.67.187.145
-  port: 80
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: sgip.harry.lv
+  port: 443
+  type: vless
+  uuid: 5d75a660-f04e-4301-a41b-d394bae03970
+  tls: true
+  servername: sgcf.harry.lv
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /sg
     headers:
-      Host: vmess.lbw666.dpdns.org
+      Host: sgcf.harry.lv
   udp: true
-- name: 🇭🇰 香港 | HKG
+- name: 🇭🇰 香港 | HKG 5
   server: nycqg19zkwacpm1b.v.3dns.vip
   port: 443
   type: vmess
@@ -74,44 +71,25 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-  - 🇫🇷 法国 | FRA 4
-  - 🇺🇸 美国 | USA 11
-  - 🇭🇰 香港 | HKG
+  - 🇫🇷 法国 | FRA
+  - 🇫🇷 法国 | FRA 3
+  - 🇫🇷 法国 | FRA 2
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇭🇰 香港 | HKG 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-  - 🇫🇷 法国 | FRA 4
+  - 🇫🇷 法国 | FRA
+  - 🇫🇷 法国 | FRA 3
+  - 🇫🇷 法国 | FRA 2
+  - 🇸🇬 新加坡 | SGP 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 11
-  - 🇭🇰 香港 | HKG
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇫🇷 法国 | FRA 4
+  - 🇭🇰 香港 | HKG 5
 rules:
 - MATCH,AUTO
