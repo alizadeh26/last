@@ -4,44 +4,37 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 4
-  server: farancenew.mamadhpbot.ir
-  port: 8080
+- name: 🇬🇧 英国 | GBR
+  server: 13.135.33.165
+  port: 22222
   type: vless
-  uuid: 732ec777-bf4a-4fee-835a-25d6a8b58563
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
-  network: ws
-  ws-opts:
-    path: /real
-    headers:
-      Host: farancenew.mamadhpbot.ir
-  udp: true
-- name: 🇵🇱 波兰 | POL 4
-  server: api.mediapolyana.cc
-  port: 443
-  type: vless
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  servername: api.mediapolyana.cc
-  client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 104.18.35.86
-  port: 8080
+- name: 🇬🇧 英国 | GBR 2
+  server: 13.135.33.165
+  port: 22224
   type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 4
+  server: redcloudport-bidarbash.sbs
+  port: 443
+  type: vless
+  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  tls: true
+  alpn:
+  - http/1.1
+  servername: redcloudport-bidarbash.sbs
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /zoodi
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: redcloudport-bidarbash.sbs
   udp: true
 proxy-groups:
 - name: AUTO
@@ -49,8 +42,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 2
   - 🇫🇷 法国 | FRA 4
-  - 🇵🇱 波兰 | POL 4
-  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
