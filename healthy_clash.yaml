@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 2
+- name: 🇫🇷 法国 | FRA 4
   server: farancenew.mamadhpbot.ir
   port: 8080
   type: vless
@@ -16,22 +16,7 @@ proxies:
     headers:
       Host: farancenew.mamadhpbot.ir
   udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇵🇱 波兰 | POL
+- name: 🇵🇱 波兰 | POL 4
   server: api.mediapolyana.cc
   port: 443
   type: vless
@@ -45,40 +30,48 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 104.18.35.86
+  port: 8080
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
-  - 🇭🇰 香港 | HKG 6
-  - 🇵🇱 波兰 | POL
+  - 🇫🇷 法国 | FRA 4
+  - 🇵🇱 波兰 | POL 4
+  - 🇺🇸 美国 | USA 10
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
-  - 🇵🇱 波兰 | POL
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 6
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 6
+  - 🇫🇷 法国 | FRA 4
+  - 🇵🇱 波兰 | POL 4
+  - 🇺🇸 美国 | USA 10
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
-  - 🇵🇱 波兰 | POL
+  - 🇫🇷 法国 | FRA 4
+  - 🇵🇱 波兰 | POL 4
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
