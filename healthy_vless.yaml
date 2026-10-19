@@ -4,50 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 6
-  server: adheres-scruple.quick-cdn.net
-  port: 443
+- name: 🇺🇸 美国 | USA 11
+  server: 104.18.35.86
+  port: 8080
   type: vless
-  uuid: e4c62709-2791-4033-bbcc-c0a7c90d0f62
-  tls: true
-  alpn:
-  - http/1.1
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: piracy-android.video-streams.org
-  port: 443
-  type: vless
-  uuid: 66af2078-d185-4cfe-8fc2-028ec115cf66
-  tls: true
-  alpn:
-  - http/1.1
-  servername: piracy-android.video-streams.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: piracy-android.video-streams.org
-  udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: platform109.golnamakcert.top
-  port: 80
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   tls: false
-  servername: platform109.halalkhor.info
+  servername: hhlfy.twiladaphne.ndjp.net
   network: ws
   ws-opts:
-    path: /platform109
+    path: /sg-melbi
     headers:
-      Host: platform109.halalkhor.info
+      Host: hhlfy.twiladaphne.ndjp.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -55,8 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 8
-  - 🇯🇵 日本 | JPN 3
+  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO

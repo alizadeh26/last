@@ -4,7 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN 6
+- name: 🇺🇸 美国 | USA 5
+  server: 98.98.79.198
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 128.1.186.132
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 🇯🇵 日本 | JPN 2
   server: 154.36.158.197
   port: 8388
   type: ss
@@ -17,6 +31,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 6
+  - 🇺🇸 美国 | USA 5
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇯🇵 日本 | JPN 2
 rules:
 - MATCH,AUTO
