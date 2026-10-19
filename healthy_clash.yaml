@@ -4,47 +4,57 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: ru.msk.nurcloud.org
+- name: 🇺🇸 美国 | USA 6
+  server: adheres-scruple.quick-cdn.net
   port: 443
   type: vless
-  uuid: 1ab9e166-5a54-48b9-a07f-79d1d840ae21
+  uuid: e4c62709-2791-4033-bbcc-c0a7c90d0f62
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j1p0hmghXQkpoamrREgYJMcK7D_y3I2gxqy9RzjOD2I
-    short-id: d2cf64ff98c7c4ca
-  servername: ru.msk.nurcloud.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
+  alpn:
+  - http/1.1
+  servername: adheres-scruple.quick-cdn.net
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /ws
     headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+      Host: adheres-scruple.quick-cdn.net
   udp: true
-- name: 🇸🇬 新加坡 | SGP 11
-  server: 104.18.35.86
-  port: 2082
+- name: 🇯🇵 日本 | JPN 6
+  server: 154.36.158.197
+  port: 8388
+  type: ss
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: piracy-android.video-streams.org
+  port: 443
   type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  uuid: 66af2078-d185-4cfe-8fc2-028ec115cf66
+  tls: true
+  alpn:
+  - http/1.1
+  servername: piracy-android.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: piracy-android.video-streams.org
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: platform109.golnamakcert.top
+  port: 80
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
+  servername: platform109.halalkhor.info
   network: ws
   ws-opts:
-    path: /fp
+    path: /platform109
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: platform109.halalkhor.info
   udp: true
 proxy-groups:
 - name: AUTO
@@ -52,33 +62,37 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇭🇰 香港 | HKG 6
-  - 🇸🇬 新加坡 | SGP 11
+  - 🇺🇸 美国 | USA 6
+  - 🇯🇵 日本 | JPN 6
+  - 🇺🇸 美国 | USA 8
+  - 🇯🇵 日本 | JPN 3
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 日本 | JPN 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇸🇬 新加坡 | SGP 11
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 6
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 8
+  - 🇯🇵 日本 | JPN 3
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 6
-- name: REGION-EU
+  - 🇯🇵 日本 | JPN 6
+  - 🇯🇵 日本 | JPN 3
+- name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

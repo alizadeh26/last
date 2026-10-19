@@ -1,13 +1,10 @@
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOY0FYYzBVWkk2eVFKRTFwOFFtT3Y4@57.129.113.16:8388#Server 32 🇩🇪
 vmess://eyJ2IjogIjIiLCAicHMiOiAiU2VydmVyIDE0MSBcdWQ4M2NcdWRkZTlcdWQ4M2NcdWRkZWEiLCAiYWRkIjogIjMxLjc2LjExLjgzIiwgInBvcnQiOiAyMjM2NiwgImlkIjogIjYzMmNmYTY5LWFlMDAtNDlkMS04MWUwLTU1NDk3OWQxZTlmYSIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAidGNwIiwgInRscyI6ICJub25lIiwgInR5cGUiOiAibm9uZSJ9
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4QVlYdEIrWE1kZldXT2xtTDhQV2NPWkVQZktIS1Z2N05jVFk2anBjTC9BPQ@31.76.11.83:15731#Server 142 🇩🇪
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de4.dedushka.top:443?sni=de4.dedushka.top&type=tcp&fp=chrome#%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A_101910080
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de7.dedushka.top:443?security=tls&sni=de7.dedushka.top#%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A_101910001
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de2.dedushka.top:443?security=tls&alpn=http%2F1.1&insecure=0&headerType=none&fp=firefox&type=tcp&allowInsecure=0&sni=de2.dedushka.top#%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A_101910082
+trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de7.dedushka.top:443?security=tls&sni=de7.dedushka.top#%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A_101918001
+trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de4.dedushka.top:443?sni=de4.dedushka.top&type=tcp&fp=chrome#%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A_101918079
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AADE-209.46.102.22-0116
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001#%F0%9F%87%A9%F0%9F%87%AADE-8.209.74.72-0131
-vless://4d852af3-a121-41aa-9aed-4ca40a6f7b4d@31.76.35.27:443?security=reality&encryption=none&pbk=P-r-oVr8MTTCILgRxk8YuB9OKVojYw3MkH_ERUXzX3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=addons.mozilla.org&sid=b76a6309#🇩🇪 150 - DE - VLESS/REALITY/PBK/SID/VISION/UTLS - 443
-vless://a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d@hoert1rert.localip.ir:2087?encryption=none&security=tls&sni=hoert1rert.localip.ir&alpn=http/1.1&type=ws&host=hoert1rert.localip.ir&path=/hokm#🇩🇪 275 - DE - VLESS/WS/TLS - 2087
-ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@185.226.172.8:8008#🇩🇪 118 - DE - SS/AEAD - 8008
+ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@185.226.172.8:8008#🇩🇪 119 - DE - SS/AEAD - 8008
 trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de10.dedushka.top:443?security=tls&sni=de10.dedushka.top&alpn=http/1.1&type=tcp&headerType=none#🇷🇴 1 - RO - Trojan/TLS - 443
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de9.dedushka.top:443?security=tls&sni=de9.dedushka.top&alpn=http/1.1&type=tcp&headerType=none#🇷🇴 5 - RO - Trojan/TLS - 443
+trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de9.dedushka.top:443?security=tls&sni=de9.dedushka.top&alpn=http/1.1&type=tcp&headerType=none#🇷🇴 4 - RO - Trojan/TLS - 443
