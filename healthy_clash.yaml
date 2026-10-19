@@ -4,23 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA 2
-  server: redcloudport-bidarbash.sbs
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: ru.msk.nurcloud.org
   port: 443
   type: vless
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  uuid: 1ab9e166-5a54-48b9-a07f-79d1d840ae21
   tls: true
-  alpn:
-  - http/1.1
-  servername: redcloudport-bidarbash.sbs
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /zoodi
-    headers:
-      Host: redcloudport-bidarbash.sbs
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: j1p0hmghXQkpoamrREgYJMcK7D_y3I2gxqy9RzjOD2I
+    short-id: d2cf64ff98c7c4ca
+  servername: ru.msk.nurcloud.org
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 5
+- name: 🇭🇰 香港 | HKG 6
   server: nycqg19zkwacpm1b.v.3dns.vip
   port: 443
   type: vmess
@@ -35,7 +33,7 @@ proxies:
     headers:
       Host: NYcQg19zkwaCPM1B.v.3dns.vip
   udp: true
-- name: 🇺🇸 美国 | USA 9
+- name: 🇸🇬 新加坡 | SGP 11
   server: 104.18.35.86
   port: 2082
   type: vless
@@ -54,21 +52,33 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
-  - 🇭🇰 香港 | HKG 5
-  - 🇺🇸 美国 | USA 9
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇭🇰 香港 | HKG 6
+  - 🇸🇬 新加坡 | SGP 11
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA 2
-  - 🇺🇸 美国 | USA 9
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇸🇬 新加坡 | SGP 11
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG 6
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 6
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO

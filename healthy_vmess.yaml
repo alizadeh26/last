@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 5
+- name: 🇭🇰 香港 | HKG 6
   server: nycqg19zkwacpm1b.v.3dns.vip
   port: 443
   type: vmess
@@ -25,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG 6
 rules:
 - MATCH,AUTO
