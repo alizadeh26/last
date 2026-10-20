@@ -4,48 +4,37 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 6
-  server: 206.1.103.26
+- name: 🇫🇷 法国 | FRA
+  server: redrocketnode-bidarbash.sbs
   port: 443
   type: vless
-  uuid: 0ad58d97-922c-4e85-b820-9d04dab5b8ec
-  tls: false
-  network: tcp
+  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  tls: true
+  alpn:
+  - http/1.1
+  servername: redrocketnode-bidarbash.sbs
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /zoodi
+    headers:
+      Host: redrocketnode-bidarbash.sbs
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 176.32.33.143
-  port: 18443
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+- name: 🇰🇷 韩国 | KOR 4
+  server: seoul01.zgjok.com
   port: 443
   type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: 182f1650-ca13-480c-b0b4-1ca44ed0504e
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
+  servername: seoul01.zgjok.com
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /henis01
     headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 104.18.35.86
-  port: 8080
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: seoul01.zgjok.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -53,47 +42,31 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇭🇰 香港 | HKG 4
-  - 🇸🇬 新加坡 | SGP 7
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇫🇷 法国 | FRA
+  - 🇰🇷 韩国 | KOR 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇫🇷 法国 | FRA
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 4
+  - 🇰🇷 韩国 | KOR 4
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇭🇰 香港 | HKG 4
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇰🇷 韩国 | KOR 4
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇫🇷 法国 | FRA
 rules:
 - MATCH,AUTO

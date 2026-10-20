@@ -4,20 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 4
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+- name: 🇰🇷 韩国 | KOR 4
+  server: seoul01.zgjok.com
   port: 443
   type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: 182f1650-ca13-480c-b0b4-1ca44ed0504e
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
+  servername: seoul01.zgjok.com
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /henis01
     headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
+      Host: seoul01.zgjok.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +26,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 4
+  - 🇰🇷 韩国 | KOR 4
 rules:
 - MATCH,AUTO

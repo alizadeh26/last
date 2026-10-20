@@ -4,26 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 6
-  server: 206.1.103.26
+- name: 🇫🇷 法国 | FRA
+  server: redrocketnode-bidarbash.sbs
   port: 443
   type: vless
-  uuid: 0ad58d97-922c-4e85-b820-9d04dab5b8ec
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 104.18.35.86
-  port: 8080
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
+  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  tls: true
+  alpn:
+  - http/1.1
+  servername: redrocketnode-bidarbash.sbs
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /zoodi
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: redrocketnode-bidarbash.sbs
   udp: true
 proxy-groups:
 - name: AUTO
@@ -31,7 +26,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
-  - 🇸🇬 新加坡 | SGP 7
+  - 🇫🇷 法国 | FRA
 rules:
 - MATCH,AUTO
