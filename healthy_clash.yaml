@@ -4,37 +4,68 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA
-  server: redrocketnode-bidarbash.sbs
-  port: 443
+- name: 🇩🇪 德国 | DEU
+  server: 185.176.204.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.27
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 185.215.132.9
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 193.151.160.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: 45.86.51.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: 193.151.163.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: us.mediabox12wrr.site
+  port: 8443
   type: vless
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  uuid: 1566a6e1-8181-41ef-894c-6d6d0d482470
   tls: true
-  alpn:
-  - http/1.1
-  servername: redrocketnode-bidarbash.sbs
+  servername: us.mediabox12wrr.site
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /zoodi
+    path: /dfefc609ed724b3d8647ed29
     headers:
-      Host: redrocketnode-bidarbash.sbs
-  udp: true
-- name: 🇰🇷 韩国 | KOR 4
-  server: seoul01.zgjok.com
-  port: 443
-  type: vmess
-  uuid: 182f1650-ca13-480c-b0b4-1ca44ed0504e
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: seoul01.zgjok.com
-  network: ws
-  ws-opts:
-    path: /henis01
-    headers:
-      Host: seoul01.zgjok.com
+      Host: us.mediabox12wrr.site
   udp: true
 proxy-groups:
 - name: AUTO
@@ -42,31 +73,31 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
-  - 🇰🇷 韩国 | KOR 4
+  - 🇩🇪 德国 | DEU
+  - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 3
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 15
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇰🇷 韩国 | KOR 4
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇰🇷 韩国 | KOR 4
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇫🇷 法国 | FRA
+  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO
