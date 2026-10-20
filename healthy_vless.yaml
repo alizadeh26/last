@@ -4,7 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 11
+- name: 🇩🇪 德国 | DEU 6
+  server: 206.1.103.26
+  port: 443
+  type: vless
+  uuid: 0ad58d97-922c-4e85-b820-9d04dab5b8ec
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 7
   server: 104.18.35.86
   port: 8080
   type: vless
@@ -23,6 +31,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 11
+  - 🇩🇪 德国 | DEU 6
+  - 🇸🇬 新加坡 | SGP 7
 rules:
 - MATCH,AUTO
