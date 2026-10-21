@@ -4,19 +4,23 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 3
-  server: us.mediabox12wrr.site
-  port: 8443
+- name: 🇩🇪 德国 | DEU 14
+  server: 91.107.190.254
+  port: 23198
   type: vless
-  uuid: 1566a6e1-8181-41ef-894c-6d6d0d482470
-  tls: true
-  servername: us.mediabox12wrr.site
-  client-fingerprint: chrome
+  uuid: '@Cooonfig@Cooonfig'
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 23.81.36.148
+  port: 8080
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: false
   network: ws
   ws-opts:
-    path: /dfefc609ed724b3d8647ed29
-    headers:
-      Host: us.mediabox12wrr.site
+    path: /
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,6 +28,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 3
+  - 🇩🇪 德国 | DEU 14
+  - 🇬🇧 英国 | GBR
 rules:
 - MATCH,AUTO
