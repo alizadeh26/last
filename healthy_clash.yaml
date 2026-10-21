@@ -4,37 +4,73 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 14
-  server: 91.107.190.254
-  port: 23198
+- name: 🇬🇧 英国 | GBR
+  server: 13.134.170.98
+  port: 22223
   type: vless
-  uuid: '@Cooonfig@Cooonfig'
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 23.81.36.148
-  port: 8080
+- name: 🇬🇧 英国 | GBR 2
+  server: 13.134.170.98
+  port: 22224
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
-  network: ws
-  ws-opts:
-    path: /
+  network: tcp
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.81
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 2
+- name: 🇭🇰 香港 | HKG
+  server: i2psm3knof5qjjix.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+  udp: true
+- name: 🇮🇹 意大利 | ITA
   server: 202.50.253.18
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 176.32.34.253
+  port: 18443
+  type: ss
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: grimness-backlogs.cdn-content.com
+  port: 443
+  type: vless
+  uuid: 1263d819-9089-4b14-ab52-09a747817ebc
+  tls: true
+  alpn:
+  - http/1.1
+  servername: grimness-backlogs.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: grimness-backlogs.cdn-content.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -42,32 +78,56 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 14
   - 🇬🇧 英国 | GBR
-  - 🇮🇹 意大利 | ITA
+  - 🇬🇧 英国 | GBR 2
   - 🇮🇹 意大利 | ITA 2
+  - 🇭🇰 香港 | HKG
+  - 🇮🇹 意大利 | ITA
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA
+  - 🇷🇺 俄罗斯 | RUS
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 14
   - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 2
+  - 🇺🇸 美国 | USA 6
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 14
   - 🇬🇧 英国 | GBR
-  - 🇮🇹 意大利 | ITA
+  - 🇬🇧 英国 | GBR 2
   - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA
+  - 🇷🇺 俄罗斯 | RUS
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO

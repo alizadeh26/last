@@ -4,23 +4,37 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 14
-  server: 91.107.190.254
-  port: 23198
+- name: 🇬🇧 英国 | GBR
+  server: 13.134.170.98
+  port: 22223
   type: vless
-  uuid: '@Cooonfig@Cooonfig'
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 23.81.36.148
-  port: 8080
+- name: 🇬🇧 英国 | GBR 2
+  server: 13.134.170.98
+  port: 22224
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: grimness-backlogs.cdn-content.com
+  port: 443
+  type: vless
+  uuid: 1263d819-9089-4b14-ab52-09a747817ebc
+  tls: true
+  alpn:
+  - http/1.1
+  servername: grimness-backlogs.cdn-content.com
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ws
+    headers:
+      Host: grimness-backlogs.cdn-content.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -28,7 +42,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 14
   - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 2
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO

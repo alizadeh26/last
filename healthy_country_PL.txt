@@ -1,4 +1,6 @@
+trojan://Trojan@82164024@pl.tronsg.com:443?security=tls&sni=pl.tronsg.com#Server 108 🇵🇱
 vmess://eyJ2IjogIjIiLCAicHMiOiAiU2VydmVyIDEwNyBcdWQ4M2NcdWRkZjVcdWQ4M2NcdWRkZjEiLCAiYWRkIjogIjU0LjM3LjEzMS4xMjYiLCAicG9ydCI6ICI4MCIsICJpZCI6ICI2ZGVlZjlhZC0xMzU3LTQ0M2QtZjk1Yy1jYjE4OTUyYzIwYjMiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogIndzIiwgInR5cGUiOiAiIiwgInRscyI6ICIiLCAicGF0aCI6ICIvIiwgImhvc3QiOiAiZ29vZ2xlLndoYXRzYXBwLnNuYXBwLnRvcm9iLmJhc2FsYW0uaGVzYW5pZDguaXIuIn0=
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@pl2.dedushka.top:443?security=tls&sni=pl2.dedushka.top#%E6%B3%A2%E5%85%B0_102110001
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@pl1.dedushka.top:443?sni=pl1.dedushka.top&allowInsecure=1&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_102110038
+trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@pl2.dedushka.top:443?security=tls&sni=pl2.dedushka.top#%E6%B3%A2%E5%85%B0_102117001
+trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@pl1.dedushka.top:443?sni=pl1.dedushka.top&allowInsecure=1&type=tcp&fp=chrome#%E6%B3%A2%E5%85%B0_102117039
 vless://1c794e75-bcd4-4a65-9f69-ed0a10f33d60@144.31.101.196:33891?encryption=none&flow=xtls-rprx-vision&fp=&pbk=HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw&security=reality&sid=5bd7b68ca4c04443&sni=browser.yandex.com&type=tcp#REALITY|PL🇵🇱
+vless://1a8ecc41-6e62-431b-8eca-87c2fa4dc286@edge10.cyrionflare.com:2052?encryption=none&headerType=none&type=tcp#🆔soskeynet%20🔓%20VL-TCP-N/A%20🇬🇧%20GB%20down
