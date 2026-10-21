@@ -4,73 +4,51 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 13.134.170.98
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 13.134.170.98
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
+- name: 🇮🇹 意大利 | ITA
   server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇺🇸 美国 | USA
+  server: 3.15.220.122
   port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.18
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.81
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 176.32.34.253
-  port: 18443
-  type: ss
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: grimness-backlogs.cdn-content.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: 9641684.sdf65h4.top
   port: 443
-  type: vless
-  uuid: 1263d819-9089-4b14-ab52-09a747817ebc
+  type: vmess
+  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  alterId: 0
+  cipher: auto
   tls: true
   alpn:
-  - http/1.1
-  servername: grimness-backlogs.cdn-content.com
-  client-fingerprint: chrome
+  - ''
+  skip-cert-verify: true
+  servername: 9641684.sdf65h4.top
   network: ws
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: grimness-backlogs.cdn-content.com
+      Host: 9641684.sdf65h4.top
+  udp: true
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.27
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 proxy-groups:
 - name: AUTO
@@ -78,56 +56,45 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-  - 🇮🇹 意大利 | ITA 2
-  - 🇭🇰 香港 | HKG
   - 🇮🇹 意大利 | ITA
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA
+  - 🇮🇹 意大利 | ITA 2
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇮🇹 意大利 | ITA 3
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA
-  - 🇷🇺 俄罗斯 | RUS
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA
+  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA 3
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
+  - 🇹🇼 🇨🇳 台湾 | TWN
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
+  - 🇹🇼 🇨🇳 台湾 | TWN
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO
