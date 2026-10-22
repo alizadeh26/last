@@ -4,37 +4,43 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 13.134.170.98
+- name: 🇫🇷 法国 | FRA
+  server: 13.37.140.13
   port: 22223
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 13.134.170.98
+- name: 🇩🇪 德国 | DEU 7
+  server: 903.rtgpu.com
+  port: 443
+  type: vless
+  uuid: c6438331-a79b-4471-fd5e-42c2eeac29fa
+  tls: true
+  servername: 903.rtgpu.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /nmd2
+    headers:
+      Host: 903.rtgpu.com
+  udp: true
+- name: 🇫🇷 法国 | FRA 2
+  server: 51.44.38.228
   port: 22224
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: grimness-backlogs.cdn-content.com
-  port: 443
+- name: 🇫🇷 法国 | FRA 3
+  server: 35.180.76.81
+  port: 22224
   type: vless
-  uuid: 1263d819-9089-4b14-ab52-09a747817ebc
-  tls: true
-  alpn:
-  - http/1.1
-  servername: grimness-backlogs.cdn-content.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: grimness-backlogs.cdn-content.com
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -42,8 +48,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-  - 🇺🇸 美国 | USA 6
+  - 🇫🇷 法国 | FRA
+  - 🇩🇪 德国 | DEU 7
+  - 🇫🇷 法国 | FRA 2
+  - 🇫🇷 法国 | FRA 3
 rules:
 - MATCH,AUTO
