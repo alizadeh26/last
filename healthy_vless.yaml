@@ -4,43 +4,53 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇫🇷 法国 | FRA
-  server: 13.37.140.13
-  port: 22223
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  server: forwarded.frnhk.xyz
+  port: 46003
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
   tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 903.rtgpu.com
-  port: 443
-  type: vless
-  uuid: c6438331-a79b-4471-fd5e-42c2eeac29fa
-  tls: true
-  servername: 903.rtgpu.com
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /nmd2
+    path: /my1023
     headers:
-      Host: 903.rtgpu.com
+      Host: forwarded.frnhk.xyz
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 51.44.38.228
-  port: 22224
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: forwarded.frnhk.xyz
+  port: 46004
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 3c5f522d-6695-474f-abcf-2b1a65d503fa
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /aus1023
+    headers:
+      Host: forwarded.frnhk.xyz
   udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 35.180.76.81
-  port: 22224
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: forwarded.frnhk.xyz
+  port: 46001
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 5ce8f582-1494-4e3f-9a2d-7164491cc6fa
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /uk1023
+    headers:
+      Host: forwarded.frnhk.xyz
+  udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 5
+  server: forwarded.frnhk.xyz
+  port: 46001
+  type: vless
+  uuid: 235e318a-8bcb-4480-b256-7b65cc5d0b0a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /uk1023
+    headers:
+      Host: forwarded.frnhk.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -48,9 +58,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
-  - 🇩🇪 德国 | DEU 7
-  - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA 3
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇹🇼 🇨🇳 台湾 | TWN 5
 rules:
 - MATCH,AUTO
