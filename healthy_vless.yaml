@@ -4,33 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 2
-  server: n1.fazelino.site
+- name: 🇪🇸 西班牙 | ESP
+  server: es.srv.dvzh.net
   port: 443
   type: vless
-  uuid: dd688bb9-41d9-4eb7-b5eb-6175f612cdb6
+  uuid: 9ab3a362-1518-496d-b08d-eced45cec936
   tls: true
-  alpn:
-  - http/1.1
-  servername: api.fazelino.site
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/get
-    headers:
-      Host: api.fazelino.site
-  udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: forwarded.frnhk.xyz
-  port: 46003
-  type: vless
-  uuid: 3c5f522d-6695-474f-abcf-2b1a65d503fa
-  tls: false
-  network: ws
-  ws-opts:
-    path: /my1023
-    headers:
-      Host: forwarded.frnhk.xyz
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
+    short-id: e0ccc8c2f487d913
+  servername: es.srv.dvzh.net
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇲🇾 马来西亚 | MYS
+  - 🇪🇸 西班牙 | ESP
 rules:
 - MATCH,AUTO

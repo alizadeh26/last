@@ -5,7 +5,35 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.99
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 195.133.5.194
+  port: 18443
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇪🇸 西班牙 | ESP
+  server: es.srv.dvzh.net
+  port: 443
+  type: vless
+  uuid: 9ab3a362-1518-496d-b08d-eced45cec936
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
+    short-id: e0ccc8c2f487d913
+  servername: es.srv.dvzh.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 202.50.253.45
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -18,11 +46,22 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇮🇹 意大利 | ITA
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇪🇸 西班牙 | ESP
+  - 🇺🇸 美国 | USA 16
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇮🇹 意大利 | ITA
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 16
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇸 西班牙 | ESP
 rules:
 - MATCH,AUTO

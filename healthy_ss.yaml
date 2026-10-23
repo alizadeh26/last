@@ -5,7 +5,21 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.99
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 195.133.5.194
+  port: 18443
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 202.50.253.45
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -18,5 +32,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇮🇹 意大利 | ITA
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 16
 rules:
 - MATCH,AUTO
