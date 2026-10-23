@@ -4,51 +4,31 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇹🇼 🇨🇳 台湾 | TWN 3
-  server: forwarded.frnhk.xyz
-  port: 46003
+- name: 🇳🇱 荷兰 | NLD 2
+  server: n1.fazelino.site
+  port: 443
   type: vless
-  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
-  tls: false
+  uuid: dd688bb9-41d9-4eb7-b5eb-6175f612cdb6
+  tls: true
+  alpn:
+  - http/1.1
+  servername: api.fazelino.site
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /my1023
+    path: /api/get
     headers:
-      Host: forwarded.frnhk.xyz
+      Host: api.fazelino.site
   udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+- name: 🇲🇾 马来西亚 | MYS
   server: forwarded.frnhk.xyz
-  port: 46004
+  port: 46003
   type: vless
   uuid: 3c5f522d-6695-474f-abcf-2b1a65d503fa
   tls: false
   network: ws
   ws-opts:
-    path: /aus1023
-    headers:
-      Host: forwarded.frnhk.xyz
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: forwarded.frnhk.xyz
-  port: 46001
-  type: vless
-  uuid: 5ce8f582-1494-4e3f-9a2d-7164491cc6fa
-  tls: false
-  network: ws
-  ws-opts:
-    path: /uk1023
-    headers:
-      Host: forwarded.frnhk.xyz
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN 5
-  server: forwarded.frnhk.xyz
-  port: 46001
-  type: vless
-  uuid: 235e318a-8bcb-4480-b256-7b65cc5d0b0a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /uk1023
+    path: /my1023
     headers:
       Host: forwarded.frnhk.xyz
   udp: true
@@ -58,9 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 🇨🇳 台湾 | TWN 3
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇹🇼 🇨🇳 台湾 | TWN 5
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇲🇾 马来西亚 | MYS
 rules:
 - MATCH,AUTO
