@@ -5,60 +5,11 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.63
+  server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: n1.fazelino.site
-  port: 443
-  type: vless
-  uuid: dd688bb9-41d9-4eb7-b5eb-6175f612cdb6
-  tls: true
-  alpn:
-  - http/1.1
-  servername: api.fazelino.site
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/get
-    headers:
-      Host: api.fazelino.site
-  udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: forwarded.frnhk.xyz
-  port: 46003
-  type: vless
-  uuid: 3c5f522d-6695-474f-abcf-2b1a65d503fa
-  tls: false
-  network: ws
-  ws-opts:
-    path: /my1023
-    headers:
-      Host: forwarded.frnhk.xyz
   udp: true
 proxy-groups:
 - name: AUTO
@@ -67,26 +18,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 4
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇲🇾 马来西亚 | MYS
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 4
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇲🇾 马来西亚 | MYS
 rules:
 - MATCH,AUTO
