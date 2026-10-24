@@ -4,37 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: wifi10.jzxc.digital
-  port: 443
-  type: vless
-  uuid: 3d87029f-b55b-487d-aea6-6049c8668ff1
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zIhDtqZo--gCOBxMLqpRETmsGUNTzyHQzBDtRov_Qjk
-    short-id: 84249c1249f4b2d5
-  servername: wifi10.jzxc.digital
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 6
-  server: finp2g.yandex-api.store
-  port: 8443
-  type: vless
-  uuid: 78559873-84ef-4cab-a0b2-46d4cd20de4a
-  tls: true
-  alpn:
-  - http/1.1
-  servername: finp2g.yandex-api.store
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /assets
-    headers:
-      Host: finp2g.yandex-api.store
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
   server: hw3.divarkhaghazi.com
   port: 465
   type: vless
@@ -50,29 +20,61 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
   udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.99
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 23.254.194.215
+  port: 8080
+  type: vmess
+  uuid: 3c75a551-81d6-46d0-876d-79519719bb22
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: www.bing.com
+  network: ws
+  ws-opts:
+    path: 3c75a551-81d6-46d0-876d-79519719bb22-vm
+    headers:
+      Host: www.bing.com
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 5
+  - 🇮🇹 意大利 | ITA
+  - 🇺🇸 美国 | USA 8
+- name: PROTO-SS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇹 意大利 | ITA
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 5
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 8
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 6
+  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO

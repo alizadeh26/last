@@ -4,23 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: 9641684.sdf65h4.top
-  port: 443
+- name: 🇺🇸 美国 | USA 8
+  server: 23.254.194.215
+  port: 8080
   type: vmess
-  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  uuid: 3c75a551-81d6-46d0-876d-79519719bb22
   alterId: 0
   cipher: auto
-  tls: true
-  alpn:
-  - ''
+  tls: false
   skip-cert-verify: true
-  servername: 9641684.sdf65h4.top
+  servername: www.bing.com
   network: ws
   ws-opts:
-    path: /
+    path: 3c75a551-81d6-46d0-876d-79519719bb22-vm
     headers:
-      Host: 9641684.sdf65h4.top
+      Host: www.bing.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -28,6 +26,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
