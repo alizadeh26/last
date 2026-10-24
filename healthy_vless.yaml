@@ -4,19 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇸 西班牙 | ESP
-  server: es.srv.dvzh.net
-  port: 443
+- name: 🇩🇪 德国 | DEU 2
+  server: hw3.divarkhaghazi.com
+  port: 465
   type: vless
-  uuid: 9ab3a362-1518-496d-b08d-eced45cec936
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
-    short-id: e0ccc8c2f487d913
-  servername: es.srv.dvzh.net
-  client-fingerprint: firefox
-  network: tcp
+  alpn:
+  - http/1.1
+  servername: hw3.divarkhaghazi.com.
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,6 +26,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 | ESP
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO

@@ -5,25 +5,32 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.90
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
-  server: 195.133.5.194
+  server: 176.32.33.153
   port: 18443
   type: ss
   cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
 proxy-groups:
 - name: AUTO
@@ -32,7 +39,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 2
   - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 16
 rules:
 - MATCH,AUTO
