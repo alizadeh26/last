@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
+- name: 🇩🇪 德国 | DEU 5
   server: hw3.divarkhaghazi.com
   port: 465
   type: vless
@@ -26,6 +26,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 5
 rules:
 - MATCH,AUTO
