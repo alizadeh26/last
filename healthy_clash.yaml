@@ -70,11 +70,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA 8
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇮🇹 意大利 | ITA
 rules:
 - MATCH,AUTO
