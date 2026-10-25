@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.99
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: hw3.divarkhaghazi.com
   port: 465
@@ -19,13 +26,6 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 23.254.194.215
@@ -49,8 +49,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
   - 🇮🇹 意大利 | ITA
+  - 🇩🇪 德国 | DEU 6
   - 🇺🇸 美国 | USA 8
 - name: PROTO-SS
   type: url-test
@@ -65,6 +65,19 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 6
 - name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 8
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇹 意大利 | ITA
+  - 🇩🇪 德国 | DEU 6
+- name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
