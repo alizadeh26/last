@@ -29,6 +29,20 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: de2.pad-sservice.lat
+  port: 8443
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: de2.pad-sservice.lat
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /de2-1
+    headers:
+      Host: de2.pad-service.com
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: renderer-bridge-1-881.mirra.now
   port: 443
@@ -60,20 +74,6 @@ proxies:
     headers:
       Host: usa2.pad-service.com
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: de2.pad-sservice.lat
-  port: 8443
-  type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  tls: true
-  servername: de2.pad-sservice.lat
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /de2-1
-    headers:
-      Host: de2.pad-service.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -82,8 +82,8 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 9
+  - 🇳🇱 荷兰 | NLD 9
   - 🇳🇱 荷兰 | NLD 5
   - 🇺🇸 美国 | USA 17
-  - 🇳🇱 荷兰 | NLD 9
 rules:
 - MATCH,AUTO
