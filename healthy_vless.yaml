@@ -4,21 +4,29 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 6
-  server: hw3.divarkhaghazi.com
-  port: 465
+- name: 🇵🇱 波兰 | POL 2
+  server: pl1.pad-sservice.lat
+  port: 8443
   type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  alpn:
-  - http/1.1
-  servername: hw3.divarkhaghazi.com.
+  servername: pl1.pad-sservice.lat
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /PL1W
     headers:
-      Host: hw3.divarkhaghazi.com.
+      Host: pl1.pad-service.com
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 2.26.6.1
+  port: 2087
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -26,6 +34,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 6
+  - 🇵🇱 波兰 | POL 2
+  - 🇵🇱 波兰 | POL
 rules:
 - MATCH,AUTO
