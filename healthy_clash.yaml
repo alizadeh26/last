@@ -4,227 +4,110 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR
-  server: 177.202.111.22
-  port: 56137
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
+- name: 🇩🇪 德国 | DEU 2
+  server: de7.pad-sservice.lat
+  port: 8443
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: de7.pad-sservice.lat
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.63
+  server: 202.50.253.27
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.36
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: i2psm3knof5qjjix.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-  udp: true
-- name: 🇮🇹 意大利 | ITA 5
-  server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
+- name: 🇮🇹 意大利 | ITA 3
   server: 202.50.253.18
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇯🇵 日本 | JPN
-  server: JP032004.ssgreen.org
+- name: 🇩🇪 德国 | DEU 9
+  server: de7.pad-sservice.lat
   port: 443
-  type: vmess
-  uuid: 3a331c35-433c-4609-a86a-9f9bc3c9b6c8
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032004.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032004.ssgreen.org
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VQ_YLtFuq-mKdLTWXl1FHJoiIVVRHBRs8koxxKFEtzM
+    short-id: 9af4ce6e28a5fa00
+  servername: de7.pad-service.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: JP032012.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 0cf58a80-6fc7-40d1-b491-cb1c42cc8777
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032012.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032012.ssgreen.org
-  udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.72
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.90
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: JP032007.ssgreen.org
+- name: 🇳🇱 荷兰 | NLD 5
+  server: renderer-bridge-1-881.mirra.now
   port: 443
-  type: vmess
-  uuid: 2458b4f7-1f67-4b26-876c-4080c086cce9
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
   tls: true
   alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032007.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032007.ssgreen.org
+  - h2
+  servername: renderer-bridge-1-881.mirra.now
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: VideoRenderer
   udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: JP032002.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: dfc42b51-1262-4c1b-b14d-2b80f32a4f5d
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032002.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032002.ssgreen.org
+- name: 🇺🇸 美国 | USA 3
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: US032024.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: f6fb24e5-310a-4c1e-b381-0e8ca2c7d2ea
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US032024.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032024.ssgreen.org
+- name: 🇰🇷 韩国 | KOR 2
+  server: 43.201.103.215
+  port: 8443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: US032022.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 7fb0eca9-6455-4f6f-bba0-a10c612bbc10
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US032022.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032022.ssgreen.org
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pl1.pad-sservice.lat
+- name: 🇺🇸 美国 | USA 17
+  server: usa2.pad-sservice.lat
   port: 8443
   type: vless
   uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  servername: pl1.pad-sservice.lat
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /PL1W
-    headers:
-      Host: pl1.pad-service.com
-  udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: US122204.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: e9ee0c17-ec4f-44e8-8b5d-205c601f8835
-  alterId: 0
-  cipher: auto
-  tls: true
   alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US122204.ssgreen.org
+  - http/1.1
+  servername: usa2.pad-sservice.lat
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /wes
+    path: /usa2-1
     headers:
-      Host: US122204.ssgreen.org
+      Host: usa2.pad-service.com
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 2.26.6.1
-  port: 2087
+- name: 🇳🇱 荷兰 | NLD 9
+  server: de2.pad-sservice.lat
+  port: 8443
   type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  servername: 2.26.6.1
+  servername: de2.pad-sservice.lat
   client-fingerprint: chrome
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /de2-1
+    headers:
+      Host: de2.pad-service.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -232,71 +115,43 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 2
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇭🇰 香港 | HKG 5
-  - 🇮🇹 意大利 | ITA 5
-  - 🇭🇰 香港 | HKG
-  - 🇮🇹 意大利 | ITA 4
-  - 🇯🇵 日本 | JPN
-  - 🇯🇵 日本 | JPN 2
   - 🇮🇹 意大利 | ITA 3
-  - 🇯🇵 日本 | JPN 4
-  - 🇯🇵 日本 | JPN 3
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 8
-  - 🇵🇱 波兰 | POL 2
-  - 🇺🇸 美国 | USA 9
-  - 🇵🇱 波兰 | POL
+  - 🇩🇪 德国 | DEU 9
+  - 🇮🇹 意大利 | ITA 2
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA 3
+  - 🇰🇷 韩国 | KOR 2
+  - 🇺🇸 美国 | USA 17
+  - 🇳🇱 荷兰 | NLD 9
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 2
+  - 🇺🇸 美国 | USA 3
+  - 🇰🇷 韩国 | KOR 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 | POL 2
-  - 🇵🇱 波兰 | POL
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG
-  - 🇯🇵 日本 | JPN
-  - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 4
-  - 🇯🇵 日本 | JPN 3
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 9
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 9
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA 17
+  - 🇳🇱 荷兰 | NLD 9
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 5
-  - 🇵🇱 波兰 | POL
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇬🇧 英国 | GBR
-  - 🇯🇵 日本 | JPN 2
-  - 🇺🇸 美国 | USA 8
+  - 🇮🇹 意大利 | ITA 3
+  - 🇺🇸 美国 | USA 3
+  - 🇳🇱 荷兰 | NLD 9
 rules:
 - MATCH,AUTO

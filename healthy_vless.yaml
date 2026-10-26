@@ -4,29 +4,75 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇵🇱 波兰 | POL 2
-  server: pl1.pad-sservice.lat
+- name: 🇩🇪 德国 | DEU 2
+  server: de7.pad-sservice.lat
   port: 8443
   type: vless
   uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  servername: pl1.pad-sservice.lat
+  flow: xtls-rprx-vision
+  servername: de7.pad-sservice.lat
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: de7.pad-sservice.lat
+  port: 443
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VQ_YLtFuq-mKdLTWXl1FHJoiIVVRHBRs8koxxKFEtzM
+    short-id: 9af4ce6e28a5fa00
+  servername: de7.pad-service.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: renderer-bridge-1-881.mirra.now
+  port: 443
+  type: vless
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  tls: true
+  alpn:
+  - h2
+  servername: renderer-bridge-1-881.mirra.now
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: VideoRenderer
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: usa2.pad-sservice.lat
+  port: 8443
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  alpn:
+  - http/1.1
+  servername: usa2.pad-sservice.lat
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /usa2-1
+    headers:
+      Host: usa2.pad-service.com
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: de2.pad-sservice.lat
+  port: 8443
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: de2.pad-sservice.lat
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /PL1W
+    path: /de2-1
     headers:
-      Host: pl1.pad-service.com
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 2.26.6.1
-  port: 2087
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
-  client-fingerprint: chrome
-  network: tcp
+      Host: de2.pad-service.com
   udp: true
 proxy-groups:
 - name: AUTO
@@ -34,7 +80,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 | POL 2
-  - 🇵🇱 波兰 | POL
+  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 9
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA 17
+  - 🇳🇱 荷兰 | NLD 9
 rules:
 - MATCH,AUTO
