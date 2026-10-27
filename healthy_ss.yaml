@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU 5
+  server: 37.153.158.167
+  port: 56137
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: 202.50.253.36
   port: 19999
@@ -13,6 +20,13 @@ proxies:
   udp: true
 - name: 🇮🇹 意大利 | ITA 2
   server: 202.50.253.27
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 202.50.253.54
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -32,12 +46,12 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 202.50.253.54
-  port: 19999
+- name: 🇹🇷 土耳其 | TUR
+  server: 177.202.111.24
+  port: 56134
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
   udp: true
 proxy-groups:
 - name: AUTO
@@ -45,10 +59,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 5
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 9
+  - 🇹🇷 土耳其 | TUR
 rules:
 - MATCH,AUTO

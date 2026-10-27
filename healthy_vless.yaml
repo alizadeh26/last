@@ -4,40 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: ge-s-1.pythonmakemigreat.wiki
-  port: 443
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-  servername: ge-s-1.pythonmakemigreat.wiki
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: rabin.142.251.153.7.savfasf.ir
-  port: 41432
-  type: vless
-  uuid: 09931b77-0f40-4734-9b36-5df6e2308e4e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇰🇿 哈萨克斯坦 | KAZ
-  server: kz-central.v8x2b.lol
-  port: 443
-  type: vless
-  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
-  tls: true
-  reality-opts:
-    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
-  servername: kz-central.v8x2b.lol
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: us6.zestapp778.com
   port: 33069
@@ -54,9 +20,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇬🇧 英国 | GBR
-  - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
