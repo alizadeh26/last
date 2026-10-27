@@ -4,61 +4,84 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: 91.107.128.44
-  port: 36812
-  type: vmess
-  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 8fc752g.fi3.h1clayd.click
+- name: 🇩🇪 德国 | DEU 2
+  server: ge-s-1.pythonmakemigreat.wiki
   port: 443
   type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
   tls: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
-    short-id: 09d0a94a1c6fc9d5
-  servername: 8fc752g.fi3.h1clayd.click
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: f345a414c040
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  servername: ge-s-1.pythonmakemigreat.wiki
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 英国 | GBR
+  server: rabin.142.251.153.7.savfasf.ir
+  port: 41432
+  type: vless
+  uuid: 09931b77-0f40-4734-9b36-5df6e2308e4e
+  tls: false
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 202.50.253.27
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 | USA 15
+- name: 🇮🇹 意大利 | ITA
   server: 202.50.253.36
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 177.202.111.19
-  port: 56137
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.27
+  port: 19999
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇰🇿 哈萨克斯坦 | KAZ
+  server: kz-central.v8x2b.lol
+  port: 443
+  type: vless
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
+  tls: true
+  reality-opts:
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  servername: kz-central.v8x2b.lol
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 202.50.253.54
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: us6.zestapp778.com
+  port: 33069
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: us6.zestapp778.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -66,45 +89,43 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 8
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 15
-  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 2
+  - 🇬🇧 英国 | GBR
+  - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
+  - 🇰🇿 哈萨克斯坦 | KAZ
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 15
-  - 🇩🇪 德国 | DEU 4
+  - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 9
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 2
+  - 🇬🇧 英国 | GBR
+  - 🇰🇿 哈萨克斯坦 | KAZ
+  - 🇺🇸 美国 | USA 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 8
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 2
+  - 🇬🇧 英国 | GBR
+  - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
+  - 🇺🇸 美国 | USA 19
 rules:
 - MATCH,AUTO
