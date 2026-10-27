@@ -4,82 +4,75 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: de7.pad-sservice.lat
-  port: 8443
-  type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  tls: true
-  flow: xtls-rprx-vision
-  servername: de7.pad-sservice.lat
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 9
-  server: de7.pad-sservice.lat
+  server: 263651t.fi3.h1clayd.click
   port: 443
   type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: VQ_YLtFuq-mKdLTWXl1FHJoiIVVRHBRs8koxxKFEtzM
-    short-id: 9af4ce6e28a5fa00
-  servername: de7.pad-service.com
-  client-fingerprint: firefox
+    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
+    short-id: 2892e611785bafd1
+  servername: 263651t.fi3.h1clayd.click
+  client-fingerprint: safari
   network: tcp
   udp: true
 - name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.27
+  server: 202.50.253.81
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.90
+  server: 202.50.253.27
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.18
-  port: 19999
+- name: 🇬🇧 英国 | GBR 6
+  server: 177.202.111.21
+  port: 56137
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: de2.pad-sservice.lat
-  port: 8443
+- name: 🇳🇱 荷兰 | NLD 4
+  server: swz.proxyplankton.ru
+  port: 443
   type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
   tls: true
-  servername: de2.pad-sservice.lat
+  alpn:
+  - h2
+  - http/1.1
+  servername: swz.proxyplankton.ru
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 91.206.92.238
+  port: 18443
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: msma-hfgetway.hf.space
+  port: 443
+  type: vless
+  uuid: 0ad9eed9-ea49-4c97-9ac4-fe0ec7e6f97b
+  tls: true
+  servername: msma-hfgetway.hf.space
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /de2-1
+    path: /ws/vless
     headers:
-      Host: de2.pad-service.com
+      Host: msma-hfgetway.hf.space
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
+- name: 🇳🇱 荷兰 | NLD 6
   server: renderer-bridge-1-881.mirra.now
   port: 443
   type: vless
@@ -94,45 +87,20 @@ proxies:
     grpc-mode: gun
     grpc-service-name: VideoRenderer
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: usa2.pad-sservice.lat
-  port: 8443
-  type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  tls: true
-  alpn:
-  - http/1.1
-  servername: usa2.pad-sservice.lat
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /usa2-1
-    headers:
-      Host: usa2.pad-service.com
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 9
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇭🇰 香港 | HKG 2
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 17
+  - 🇬🇧 英国 | GBR 6
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇺🇸 美国 | USA 4
+  - 🇳🇱 荷兰 | NLD 6
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -140,41 +108,31 @@ proxy-groups:
   proxies:
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇺🇸 美国 | USA 3
+  - 🇬🇧 英国 | GBR 6
+  - 🇷🇺 俄罗斯 | RUS 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 9
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇺🇸 美国 | USA 17
-- name: PROTO-VMESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 2
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 4
+  - 🇳🇱 荷兰 | NLD 6
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 9
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇺🇸 美国 | USA 3
+  - 🇳🇱 荷兰 | NLD 4
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 4
 rules:
 - MATCH,AUTO
