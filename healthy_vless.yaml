@@ -4,60 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 9
-  server: 263651t.fi3.h1clayd.click
+- name: 🇩🇪 德国 | DEU 8
+  server: 8fc752g.fi3.h1clayd.click
   port: 443
   type: vless
   uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   tls: true
   reality-opts:
-    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
-    short-id: 2892e611785bafd1
-  servername: 263651t.fi3.h1clayd.click
-  client-fingerprint: safari
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: swz.proxyplankton.ru
-  port: 443
-  type: vless
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: swz.proxyplankton.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: msma-hfgetway.hf.space
-  port: 443
-  type: vless
-  uuid: 0ad9eed9-ea49-4c97-9ac4-fe0ec7e6f97b
-  tls: true
-  servername: msma-hfgetway.hf.space
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/vless
-    headers:
-      Host: msma-hfgetway.hf.space
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: renderer-bridge-1-881.mirra.now
-  port: 443
-  type: vless
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-  tls: true
-  alpn:
-  - h2
-  servername: renderer-bridge-1-881.mirra.now
-  client-fingerprint: chrome
+    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
+    short-id: 09d0a94a1c6fc9d5
+  servername: 8fc752g.fi3.h1clayd.click
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: VideoRenderer
+    grpc-service-name: f345a414c040
   udp: true
 proxy-groups:
 - name: AUTO
@@ -65,9 +26,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 4
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇩🇪 德国 | DEU 8
 rules:
 - MATCH,AUTO

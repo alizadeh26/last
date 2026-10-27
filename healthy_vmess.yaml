@@ -4,20 +4,17 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 2
-  server: 47.244.120.197
-  port: 44867
+- name: 🇩🇪 德国 | DEU 7
+  server: 91.107.128.44
+  port: 36812
   type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
   alterId: 0
   cipher: auto
   tls: false
   alpn:
   - ''
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,6 +22,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
+  - 🇩🇪 德国 | DEU 7
 rules:
 - MATCH,AUTO

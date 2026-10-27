@@ -4,88 +4,61 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 9
-  server: 263651t.fi3.h1clayd.click
+- name: 🇩🇪 德国 | DEU 7
+  server: 91.107.128.44
+  port: 36812
+  type: vmess
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 8fc752g.fi3.h1clayd.click
   port: 443
   type: vless
   uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   tls: true
   reality-opts:
-    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
-    short-id: 2892e611785bafd1
-  servername: 263651t.fi3.h1clayd.click
-  client-fingerprint: safari
-  network: tcp
+    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
+    short-id: 09d0a94a1c6fc9d5
+  servername: 8fc752g.fi3.h1clayd.click
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: f345a414c040
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.81
+- name: 🇺🇸 美国 | USA 7
+  server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 2
+- name: 🇺🇸 美国 | USA 14
   server: 202.50.253.27
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇬🇧 英国 | GBR 6
-  server: 177.202.111.21
+- name: 🇺🇸 美国 | USA 15
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 177.202.111.19
   port: 56137
   type: ss
   cipher: chacha20-ietf-poly1305
   password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: swz.proxyplankton.ru
-  port: 443
-  type: vless
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: swz.proxyplankton.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 91.206.92.238
-  port: 18443
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: msma-hfgetway.hf.space
-  port: 443
-  type: vless
-  uuid: 0ad9eed9-ea49-4c97-9ac4-fe0ec7e6f97b
-  tls: true
-  servername: msma-hfgetway.hf.space
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/vless
-    headers:
-      Host: msma-hfgetway.hf.space
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: renderer-bridge-1-881.mirra.now
-  port: 443
-  type: vless
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-  tls: true
-  alpn:
-  - h2
-  servername: renderer-bridge-1-881.mirra.now
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: VideoRenderer
   udp: true
 proxy-groups:
 - name: AUTO
@@ -93,46 +66,45 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇬🇧 英国 | GBR 6
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇺🇸 美国 | USA 4
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 15
+  - 🇩🇪 德国 | DEU 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇬🇧 英国 | GBR 6
-  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 15
+  - 🇩🇪 德国 | DEU 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 4
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇩🇪 德国 | DEU 8
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 7
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 8
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 4
+  - 🇩🇪 德国 | DEU 4
 rules:
 - MATCH,AUTO
