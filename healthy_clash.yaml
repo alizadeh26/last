@@ -4,7 +4,65 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 2
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.99
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 202.50.253.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 202.50.253.54
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 8
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 9
   server: 47.244.120.197
   port: 23026
   type: vmess
@@ -19,155 +77,41 @@ proxies:
     headers:
       Host: 47.244.120.197
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.36
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: 152.69.226.63
-  port: 25555
-  type: vless
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 | IND 2
-  server: sinavm.soft10.ir
-  port: 2096
-  type: vless
-  uuid: 295009c6-5a47-4f77-b9ac-9be24a61da48
-  tls: true
-  alpn:
-  - http/1.1
-  servername: sinavm.soft10.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm.soft10.ir
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: usa.letsconnectpoint.com
-  port: 443
-  type: vless
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: I45spoFEwSCaxR8FIP1HnrFj5KbR3keSAGMMdgt2AHY
-    short-id: b1c5a5e2
-  servername: usa.letsconnectpoint.com
-  client-fingerprint: edge
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: ru.letsconnectpoint.com
-  port: 443
-  type: vless
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: myIjvlXZS0rm1eg4q2w5WsQBuj80i2rBA0HpRGCUg1w
-    short-id: 86d1efde
-  servername: ru.letsconnectpoint.com
-  client-fingerprint: safari
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 91.206.92.238
-  port: 18443
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 4
-  - 🇰🇷 韩国 | KOR 2
-  - 🇮🇳 印度 | IND 2
-  - 🇺🇸 美国 | USA 2
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇮🇹 意大利 | ITA
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 7
+  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 8
+  - 🇭🇰 香港 | HKG 9
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 4
-  - 🇷🇺 俄罗斯 | RUS 5
-- name: PROTO-VLESS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇰🇷 韩国 | KOR 2
-  - 🇮🇳 印度 | IND 2
-  - 🇺🇸 美国 | USA 2
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇮🇹 意大利 | ITA
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 7
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇰🇷 韩国 | KOR 2
+  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 8
+  - 🇭🇰 香港 | HKG 9
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 4
-  - 🇷🇺 俄罗斯 | RUS 5
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 7
 rules:
 - MATCH,AUTO
