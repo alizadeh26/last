@@ -4,50 +4,78 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇪 爱尔兰 | IRL
-  server: 52.51.176.50
+- name: 🇨🇦 加拿大 | CAN
+  server: 16.54.253.154
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 54.83.84.17
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 35.183.129.117
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 54.237.60.0
+- name: 🇨🇦 加拿大 | CAN 3
+  server: 15.156.207.17
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 54.91.51.67
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA
+- name: 🇮🇹 意大利 | ITA 3
   server: 202.50.253.81
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 | USA 13
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 5
   server: 202.50.253.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 54.237.60.0
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 54.91.51.67
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 202.50.253.72
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -59,12 +87,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 爱尔兰 | IRL
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 3
+  - 🇨🇦 加拿大 | CAN
+  - 🇨🇦 加拿大 | CAN 2
+  - 🇨🇦 加拿大 | CAN 3
+  - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA
-  - 🇺🇸 美国 | USA 13
+  - 🇮🇹 意大利 | ITA 5
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO

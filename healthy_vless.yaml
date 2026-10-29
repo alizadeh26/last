@@ -4,34 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 199.127.153.13
-  port: 43000
-  type: vless
-  uuid: cb06778c-91e6-480a-a791-a49dcfa940d5
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8
-    short-id: 1a72a06c
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: 38.76.180.144
-  port: 1443
-  type: vless
-  uuid: d98b67d4-024a-4bba-91e2-e6ebece6df11
-  tls: false
-  servername: 38.76.180.144
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 38.76.180.144
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
   server: n04.jinggai.online
   port: 8443
   type: vless
@@ -45,14 +18,27 @@ proxies:
     headers:
       Host: n04.jinggai.online
   udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: 206.1.101.85
+  port: 42654
+  type: vless
+  uuid: 893845c5-8e4a-48d5-8a85-622f5b7ea950
+  tls: true
+  alpn:
+  - http/1.1
+  servername: 206.1.101.85
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇭🇰 香港 | HKG 5
-  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇹🇷 土耳其 | TUR
 rules:
 - MATCH,AUTO
