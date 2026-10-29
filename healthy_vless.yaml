@@ -4,88 +4,46 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: nl-central.v8x2b.lol
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 199.127.153.13
+  port: 43000
   type: vless
-  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
+  uuid: cb06778c-91e6-480a-a791-a49dcfa940d5
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
-  servername: nl-central.v8x2b.lol
+    public-key: iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8
+    short-id: 1a72a06c
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: au001.zestapp778.com
-  port: 35652
+- name: 🇭🇰 香港 | HKG 5
+  server: 38.76.180.144
+  port: 1443
   type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: au001.zestapp778.com
+  uuid: d98b67d4-024a-4bba-91e2-e6ebece6df11
+  tls: false
+  servername: 38.76.180.144
   client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: fr.golangwikito.cfd
-  port: 443
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA
-    short-id: e6d589857d1cec5e
-  servername: fr.golangwikito.cfd
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇰🇿 哈萨克斯坦 | KAZ
-  server: kz-central.v8x2b.lol
-  port: 443
-  type: vless
-  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
-  tls: true
-  reality-opts:
-    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
-  servername: kz-central.v8x2b.lol
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: sg2-xr.zgrelay.com
-  port: 443
-  type: vless
-  uuid: E221699D-E705-4664-9162-A75A82AA3997
-  tls: true
-  servername: sg2-xr.zgrelay.com
-  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /700gvl-kr3
+    path: /vless-ws
     headers:
-      Host: sg2-xr.zgrelay.com
+      Host: 38.76.180.144
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: us007.zestapp778.com
-  port: 18580
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: n04.jinggai.online
+  port: 8443
   type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
   tls: true
-  servername: us007.zestapp778.com
+  servername: n04.jinggai.online
   client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: ca001.zestapp778.com
-  port: 32355
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: ca001.zestapp778.com
-  client-fingerprint: chrome
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /nvl-n04-ws/e0577fe8fd7c8823
+    headers:
+      Host: n04.jinggai.online
   udp: true
 proxy-groups:
 - name: AUTO
@@ -93,12 +51,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇦🇺 澳大利亚 | AUS
-  - 🇳🇱 荷兰 | NLD
-  - 🇰🇿 哈萨克斯坦 | KAZ
-  - 🇰🇷 韩国 | KOR
-  - 🇺🇸 美国 | USA 4
-  - 🇨🇦 加拿大 | CAN
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇭🇰 香港 | HKG 5
+  - 🇹🇼 🇨🇳 台湾 | TWN
 rules:
 - MATCH,AUTO

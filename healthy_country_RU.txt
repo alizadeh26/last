@@ -1,3 +1,1 @@
-vless://d9833bab-0a4d-4ebf-9d80-1f6ab04f3964@185.229.9.135:443?encryption=none&host=app.lesotorg-kirov.ru&path=/chws&security=tls&sni=app.lesotorg-kirov.ru&type=ws#🇷🇺 300 - RU - VLESS/WS/TLS - 443
-vless://ee82f319-ab92-425d-8e04-28a29f33f670@193.160.141.81:8443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=apple.com#🇹🇷 339 - TR - VLESS/REALITY/PBK/VISION - 8443
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNT0R6aVdMYTlxTXVXLTR5UGEwcmZ3@msk2.rvpn.app:8388#🇷🇺 31 - RU - SS/AEAD - 8388
+vless://3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f@185.147.27.164:8443?security=tls&flow=xtls-rprx-vision&sni=user-6a8d949a.noooo.win&type=tcp&headerType=none&path=/&fp=chrome#🇷🇺 83 - RU - VLESS/TLS/VISION/UTLS - 8443
