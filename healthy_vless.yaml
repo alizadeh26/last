@@ -4,57 +4,87 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇰🇷 韩国 | KOR 2
-  server: 152.69.226.63
-  port: 25555
-  type: vless
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 | IND 2
-  server: sinavm.soft10.ir
-  port: 2096
-  type: vless
-  uuid: 295009c6-5a47-4f77-b9ac-9be24a61da48
-  tls: true
-  alpn:
-  - http/1.1
-  servername: sinavm.soft10.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm.soft10.ir
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: usa.letsconnectpoint.com
+- name: 🇩🇪 德国 | DEU 2
+  server: nl-central.v8x2b.lol
   port: 443
   type: vless
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: I45spoFEwSCaxR8FIP1HnrFj5KbR3keSAGMMdgt2AHY
-    short-id: b1c5a5e2
-  servername: usa.letsconnectpoint.com
-  client-fingerprint: edge
+    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
+  servername: nl-central.v8x2b.lol
+  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: ru.letsconnectpoint.com
+- name: 🇦🇺 澳大利亚 | AUS
+  server: au001.zestapp778.com
+  port: 35652
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: au001.zestapp778.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: fr.golangwikito.cfd
   port: 443
   type: vless
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: myIjvlXZS0rm1eg4q2w5WsQBuj80i2rBA0HpRGCUg1w
-    short-id: 86d1efde
-  servername: ru.letsconnectpoint.com
-  client-fingerprint: safari
+    public-key: isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA
+    short-id: e6d589857d1cec5e
+  servername: fr.golangwikito.cfd
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇰🇿 哈萨克斯坦 | KAZ
+  server: kz-central.v8x2b.lol
+  port: 443
+  type: vless
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
+  tls: true
+  reality-opts:
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  servername: kz-central.v8x2b.lol
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇰🇷 韩国 | KOR
+  server: sg2-xr.zgrelay.com
+  port: 443
+  type: vless
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  tls: true
+  servername: sg2-xr.zgrelay.com
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: us007.zestapp778.com
+  port: 18580
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: us007.zestapp778.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇨🇦 加拿大 | CAN
+  server: ca001.zestapp778.com
+  port: 32355
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: ca001.zestapp778.com
+  client-fingerprint: chrome
   network: tcp
   udp: true
 proxy-groups:
@@ -63,9 +93,12 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 | KOR 2
-  - 🇮🇳 印度 | IND 2
-  - 🇺🇸 美国 | USA 2
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇩🇪 德国 | DEU 2
+  - 🇦🇺 澳大利亚 | AUS
+  - 🇳🇱 荷兰 | NLD
+  - 🇰🇿 哈萨克斯坦 | KAZ
+  - 🇰🇷 韩国 | KOR
+  - 🇺🇸 美国 | USA 4
+  - 🇨🇦 加拿大 | CAN
 rules:
 - MATCH,AUTO

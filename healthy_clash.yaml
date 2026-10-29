@@ -4,36 +4,45 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.72
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇭🇰 香港 | HKG 8
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
+- name: 🇩🇪 德国 | DEU 2
+  server: nl-central.v8x2b.lol
   port: 443
+  type: vless
+  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
+  servername: nl-central.v8x2b.lol
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇦🇺 澳大利亚 | AUS
+  server: au001.zestapp778.com
+  port: 35652
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: au001.zestapp778.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: 47.244.120.197
+  port: 44867
   type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: qtkdr8jxe3wefxjm.v.3dns.vip
+    path: /arki
   udp: true
-- name: 🇭🇰 香港 | HKG 9
+- name: 🇭🇰 香港 | HKG 2
   server: 47.244.120.197
   port: 23026
   type: vmess
@@ -48,22 +57,110 @@ proxies:
     headers:
       Host: 47.244.120.197
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 202.50.253.18
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.63
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 202.50.253.54
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: vah4urdzl3jdx5r2.v.3dns.vip
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 5
+  server: 202.50.253.27
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: fr.golangwikito.cfd
+  port: 443
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA
+    short-id: e6d589857d1cec5e
+  servername: fr.golangwikito.cfd
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 195.58.49.167
+  port: 18443
+  type: ss
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  udp: true
+- name: 🇰🇿 哈萨克斯坦 | KAZ
+  server: kz-central.v8x2b.lol
+  port: 443
+  type: vless
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
+  tls: true
+  reality-opts:
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  servername: kz-central.v8x2b.lol
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇰🇷 韩国 | KOR
+  server: sg2-xr.zgrelay.com
+  port: 443
+  type: vless
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  tls: true
+  servername: sg2-xr.zgrelay.com
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: us007.zestapp778.com
+  port: 18580
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: us007.zestapp778.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇨🇦 加拿大 | CAN
+  server: ca001.zestapp778.com
+  port: 32355
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: ca001.zestapp778.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 7
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
   type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -75,7 +172,21 @@ proxies:
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇯🇵 日本 | JPN
+  server: 154.36.158.197
+  port: 8388
+  type: ss
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
   udp: true
 proxy-groups:
 - name: AUTO
@@ -83,43 +194,78 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
+  - 🇩🇪 德国 | DEU 2
+  - 🇦🇺 澳大利亚 | AUS
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 2
   - 🇮🇹 意大利 | ITA
-  - 🇭🇰 香港 | HKG 8
-  - 🇭🇰 香港 | HKG 9
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 7
-  - 🇭🇰 香港 | HKG
+  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 4
+  - 🇳🇱 荷兰 | NLD
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇰🇿 哈萨克斯坦 | KAZ
+  - 🇰🇷 韩国 | KOR
+  - 🇺🇸 美国 | USA 4
+  - 🇨🇦 加拿大 | CAN
+  - 🇭🇰 香港 | HKG 7
+  - 🇺🇸 美国 | USA 5
+  - 🇯🇵 日本 | JPN
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 7
+  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 4
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 5
+  - 🇯🇵 日本 | JPN
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 2
+  - 🇦🇺 澳大利亚 | AUS
+  - 🇳🇱 荷兰 | NLD
+  - 🇰🇿 哈萨克斯坦 | KAZ
+  - 🇰🇷 韩国 | KOR
+  - 🇺🇸 美国 | USA 4
+  - 🇨🇦 加拿大 | CAN
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 8
-  - 🇭🇰 香港 | HKG 9
-  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 7
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 8
-  - 🇭🇰 香港 | HKG 9
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 2
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 5
+- name: REGION-OC
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇺 澳大利亚 | AUS
 rules:
 - MATCH,AUTO

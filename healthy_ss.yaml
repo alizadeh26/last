@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.63
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇮🇹 意大利 | ITA 2
   server: 202.50.253.99
   port: 19999
@@ -11,26 +18,47 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 5
+  server: 202.50.253.27
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 4
   server: 202.50.253.72
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 202.50.253.18
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 195.58.49.167
+  port: 18443
+  type: ss
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 202.50.253.36
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 202.50.253.54
-  port: 19999
+- name: 🇯🇵 日本 | JPN
+  server: 154.36.158.197
+  port: 8388
   type: ss
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: BeaUf9c0AEWH40Pu
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,9 +66,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 7
+  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 4
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 5
+  - 🇯🇵 日本 | JPN
 rules:
 - MATCH,AUTO
