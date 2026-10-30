@@ -4,62 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 7
-  server: 94.249.189.41
-  port: 43000
+- name: 🇩🇪 德国 | DEU 5
+  server: nl-modx-prime.storagedirectguide.com
+  port: 443
   type: vless
-  uuid: cec0cf85-cf9f-44ce-9eb0-cb1f9b8d7ba1
+  uuid: 5254c281-3bc1-40ee-ba89-1aaf8c251402
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: YagqjrSaICX5_qhcRvWOfM_yatBa5FtJexO9IlZeIEo
-    short-id: 093e1846
+    public-key: node0aB_7yyVADkeieiBBpxqIlxNLQcvgotRClh0QXQ
+  servername: nl-modx-prime.storagedirectguide.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 94.249.186.64
-  port: 43000
-  type: vless
-  uuid: 4421e4d5-6869-4a45-a76b-5c822aac776d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: QaPoY-5W4Z7NA_LUG37yjYNy3JWg53Ru7eWLTzec-nE
-    short-id: b62ac375
-  client-fingerprint: firefox
-  network: tcp
-- name: 🇸🇪 瑞典 | SWE 2
-  server: cdn1.ir53.indevs.in
-  port: 443
-  type: vless
-  uuid: 1320b10b-9680-40b5-99a1-12a0a8b3134a
-  tls: true
-  alpn:
-  - http/1.1
-  servername: cdn1.ir53.indevs.in
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /varzesh3.com
-    headers:
-      Host: cdn1.ir53.indevs.in
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: cdn2.ir53.indevs.in
-  port: 443
-  type: vless
-  uuid: e9378202-c7db-4204-a41c-ce981fa927d4
-  tls: true
-  alpn:
-  - http/1.1
-  servername: cdn2.ir53.indevs.in
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /varzesh3.com
-    headers:
-      Host: cdn2.ir53.indevs.in
   udp: true
 proxy-groups:
 - name: AUTO
@@ -67,9 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 9
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇺🇸 美国 | USA 3
+  - 🇩🇪 德国 | DEU 5
 rules:
 - MATCH,AUTO
