@@ -4,7 +4,29 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 3
+- name: 🇩🇪 德国 | DEU 6
+  server: tun.xelnivo.ir
+  port: 33625
+  type: vmess
+  uuid: f6547466-a44a-41e7-9b71-473c5bf05723
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 185.19.33.123
+  port: 34029
+  type: vmess
+  uuid: 12f4bc22-31c7-41a3-b5f3-b7cd39b2a53b
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 | HKG 6
   server: 47.244.120.197
   port: 44867
   type: vmess
@@ -20,34 +42,20 @@ proxies:
     path: /arki
   udp: true
 - name: 🇭🇰 香港 | HKG 2
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-  udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  server: rhhierkwrf6fhs2h.v.3dns.vip
   port: 443
   type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
+  servername: rhhierkwrf6fhs2h.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+      Host: rhhierkwrf6fhs2h.v.3dns.vip
   udp: true
 proxy-groups:
 - name: AUTO
@@ -55,8 +63,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 3
+  - 🇩🇪 德国 | DEU 6
+  - 🇳🇱 荷兰 | NLD
+  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 7
 rules:
 - MATCH,AUTO

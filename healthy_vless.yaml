@@ -4,33 +4,62 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇹🇼 🇨🇳 台湾 | TWN 3
-  server: n04.jinggai.online
-  port: 8443
+- name: 🇩🇪 德国 | DEU 7
+  server: 94.249.189.41
+  port: 43000
   type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  uuid: cec0cf85-cf9f-44ce-9eb0-cb1f9b8d7ba1
   tls: true
-  servername: n04.jinggai.online
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: YagqjrSaICX5_qhcRvWOfM_yatBa5FtJexO9IlZeIEo
+    short-id: 093e1846
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
+  network: tcp
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 206.1.101.85
-  port: 42654
+- name: 🇩🇪 德国 | DEU 9
+  server: 94.249.186.64
+  port: 43000
   type: vless
-  uuid: 893845c5-8e4a-48d5-8a85-622f5b7ea950
+  uuid: 4421e4d5-6869-4a45-a76b-5c822aac776d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: QaPoY-5W4Z7NA_LUG37yjYNy3JWg53Ru7eWLTzec-nE
+    short-id: b62ac375
+  client-fingerprint: firefox
+  network: tcp
+- name: 🇸🇪 瑞典 | SWE 2
+  server: cdn1.ir53.indevs.in
+  port: 443
+  type: vless
+  uuid: 1320b10b-9680-40b5-99a1-12a0a8b3134a
   tls: true
   alpn:
   - http/1.1
-  servername: 206.1.101.85
+  servername: cdn1.ir53.indevs.in
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /varzesh3.com
+    headers:
+      Host: cdn1.ir53.indevs.in
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: cdn2.ir53.indevs.in
+  port: 443
+  type: vless
+  uuid: e9378202-c7db-4204-a41c-ce981fa927d4
+  tls: true
+  alpn:
+  - http/1.1
+  servername: cdn2.ir53.indevs.in
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /varzesh3.com
+    headers:
+      Host: cdn2.ir53.indevs.in
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +67,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 🇨🇳 台湾 | TWN 3
-  - 🇹🇷 土耳其 | TUR
+  - 🇩🇪 德国 | DEU 7
+  - 🇩🇪 德国 | DEU 9
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇺🇸 美国 | USA 3
 rules:
 - MATCH,AUTO
