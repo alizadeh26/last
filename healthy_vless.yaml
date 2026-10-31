@@ -5,16 +5,17 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇩🇪 德国 | DEU 5
-  server: nl-modx-prime.storagedirectguide.com
+  server: s12.bsh-net.ru
   port: 443
   type: vless
-  uuid: 5254c281-3bc1-40ee-ba89-1aaf8c251402
+  uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: node0aB_7yyVADkeieiBBpxqIlxNLQcvgotRClh0QXQ
-  servername: nl-modx-prime.storagedirectguide.com
-  client-fingerprint: chrome
+    public-key: QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk
+    short-id: 51079f144d661484
+  servername: s12.bsh-net.ru
+  client-fingerprint: firefox
   network: tcp
   udp: true
 proxy-groups:
