@@ -5,35 +5,20 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇭🇰 香港 | HKG
-  server: rhHiErkwRf6fHs2H.v.3dns.vip
+  server: euu1yalfmcqvljex.v.3dns.vip
   port: 443
   type: vmess
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: rhHiErkwRf6fHs2H.v.3dns.vip
+  servername: euu1yalfmcqvljex.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: rhHiErkwRf6fHs2H.v.3dns.vip
-  udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
+      Host: euu1yalfmcqvljex.v.3dns.vip
   udp: true
 proxy-groups:
 - name: AUTO
@@ -42,6 +27,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 4
 rules:
 - MATCH,AUTO
