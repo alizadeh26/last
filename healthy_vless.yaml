@@ -4,18 +4,46 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: s12.bsh-net.ru
-  port: 443
+- name: 🇩🇪 德国 | DEU 4
+  server: hw14.roghanmo.com
+  port: 465
   type: vless
-  uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a
+  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk
-    short-id: 51079f144d661484
-  servername: s12.bsh-net.ru
-  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  servername: hw14.roghanmo.com.
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw14.roghanmo.com
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: hw5.roghanmo.com
+  port: 465
+  type: vless
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  tls: true
+  alpn:
+  - http/1.1
+  servername: hw5.roghanmo.com.
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw5.roghanmo.com
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: sg1.zestapp778.com
+  port: 56984
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: sg1.zestapp778.com
+  client-fingerprint: chrome
   network: tcp
   udp: true
 proxy-groups:
@@ -24,6 +52,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 7
+  - 🇺🇸 美国 | USA 8
 rules:
 - MATCH,AUTO
