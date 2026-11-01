@@ -4,6 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.63
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.81
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇭🇰 香港 | HKG 2
   server: 47.244.120.197
   port: 23026
@@ -18,13 +32,6 @@ proxies:
     path: /arki
     headers:
       Host: 47.244.120.197
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 46.17.46.27
@@ -47,29 +54,6 @@ proxies:
     headers:
       Host: piracy-android.video-streams.org
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: adheres-scruple.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: ecbc4229-e8d3-4607-8f02-fd592c9a0743
-  tls: true
-  alpn:
-  - http/1.1
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.63
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: ghosts-spasm.quick-cdn.net
   port: 443
@@ -86,34 +70,21 @@ proxies:
     headers:
       Host: ghosts-spasm.quick-cdn.net
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: ghosts-spasm.quick-cdn.net
+- name: 🇺🇸 美国 | USA 4
+  server: adheres-scruple.quick-cdn.net
   port: 443
   type: vless
-  uuid: 9d50fde6-7e89-4dee-9fee-17a77046604c
+  uuid: ecbc4229-e8d3-4607-8f02-fd592c9a0743
   tls: true
-  servername: ghosts-spasm.quick-cdn.net
+  alpn:
+  - http/1.1
+  servername: adheres-scruple.quick-cdn.net
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: ghosts-spasm.quick-cdn.net
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: grimness-backlogs.cdn-content.com
-  port: 443
-  type: vless
-  uuid: 8fa74247-8816-4caf-b2c8-0dadff14ee3c
-  tls: true
-  alpn:
-  - http/1.1
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: grimness-backlogs.cdn-content.com
+      Host: adheres-scruple.quick-cdn.net
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: adheres-scruple.quick-cdn.net
@@ -131,41 +102,53 @@ proxies:
     headers:
       Host: adheres-scruple.quick-cdn.net
   udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: ghosts-spasm.quick-cdn.net
+  port: 443
+  type: vless
+  uuid: 9d50fde6-7e89-4dee-9fee-17a77046604c
+  tls: true
+  servername: ghosts-spasm.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ghosts-spasm.quick-cdn.net
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
+  - 🇭🇰 香港 | HKG 2
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 4
-  - 🇮🇹 意大利 | ITA
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 11
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇮🇹 意大利 | ITA
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 11
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -183,18 +166,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 3
   - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
+  - 🇷🇺 俄罗斯 | RUS 3
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO

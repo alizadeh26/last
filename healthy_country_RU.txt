@@ -1,3 +1,2 @@
-vless://2232d904-8e6a-4202-8240-6efd8aec02e9@185.178.208.167:443?security=tls&sni=lorettmay.top&alpn=http/1.1&fp=firefox&type=ws&path=/blog/posts&host=lorettmay.top#🇷🇺 30 - RU - VLESS/WS/TLS/UTLS - 443
-vless://633f424e-2b11-48da-a6b3-a849dd71456f@45.12.75.242:26424?encryption=none&fp=chrome&pbk=l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0&security=reality&sid=23103e1e&sni=ya.ru&type=raw#🇷🇺 144 - RU - VLESS/RAW/REALITY/PBK/SID/UTLS - 26424
-vless://6116f0f3-15eb-4217-b38e-16514dc00ba1@fr1.robotodata.ru:7443?encryption=none&security=tls&sni=ru2.datacore-tech.ru&fp=safari&type=tcp&flow=xtls-rprx-vision#🇷🇺 139 - RU - VLESS/TLS/VISION/UTLS - 7443
+vless://2232d904-8e6a-4202-8240-6efd8aec02e9@185.178.208.167:443?alpn=http/1.1&host=lorettmay.top&path=/blog/posts&security=tls&sni=lorettmay.top&type=ws&fp=chrome#🇷🇺 33 - RU - VLESS/WS/TLS/UTLS - 443
+vless://6036c28a-8db2-432e-8118-ff0c16641ad0@200.169.184.168:443?flow=xtls-rprx-vision&pbk=2IylNqpuTBeUvd333tXWY6i0l8nkH6o5qfRVKZm6FA0&security=reality&sid=e0aadc6f38ff06a8&sni=tm6.24convertflow.ru&fp=ios#🇸🇨 149 - SC - VLESS/REALITY/PBK/SID/VISION/UTLS - 443

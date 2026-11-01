@@ -18,22 +18,6 @@ proxies:
     headers:
       Host: piracy-android.video-streams.org
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: adheres-scruple.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: ecbc4229-e8d3-4607-8f02-fd592c9a0743
-  tls: true
-  alpn:
-  - http/1.1
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: ghosts-spasm.quick-cdn.net
   port: 443
@@ -50,34 +34,21 @@ proxies:
     headers:
       Host: ghosts-spasm.quick-cdn.net
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: ghosts-spasm.quick-cdn.net
+- name: 🇺🇸 美国 | USA 4
+  server: adheres-scruple.quick-cdn.net
   port: 443
   type: vless
-  uuid: 9d50fde6-7e89-4dee-9fee-17a77046604c
+  uuid: ecbc4229-e8d3-4607-8f02-fd592c9a0743
   tls: true
-  servername: ghosts-spasm.quick-cdn.net
+  alpn:
+  - http/1.1
+  servername: adheres-scruple.quick-cdn.net
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: ghosts-spasm.quick-cdn.net
-  udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: grimness-backlogs.cdn-content.com
-  port: 443
-  type: vless
-  uuid: 8fa74247-8816-4caf-b2c8-0dadff14ee3c
-  tls: true
-  alpn:
-  - http/1.1
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: grimness-backlogs.cdn-content.com
+      Host: adheres-scruple.quick-cdn.net
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: adheres-scruple.quick-cdn.net
@@ -95,6 +66,20 @@ proxies:
     headers:
       Host: adheres-scruple.quick-cdn.net
   udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: ghosts-spasm.quick-cdn.net
+  port: 443
+  type: vless
+  uuid: 9d50fde6-7e89-4dee-9fee-17a77046604c
+  tls: true
+  servername: ghosts-spasm.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ghosts-spasm.quick-cdn.net
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -102,10 +87,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
