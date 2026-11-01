@@ -4,47 +4,96 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 4
-  server: hw14.roghanmo.com
-  port: 465
+- name: 🇺🇸 美国 | USA
+  server: piracy-android.video-streams.org
+  port: 443
   type: vless
-  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
+  uuid: 71ee5343-b431-44be-bed7-22b9b9f7253c
   tls: true
-  alpn:
-  - http/1.1
-  servername: hw14.roghanmo.com.
+  servername: piracy-android.video-streams.org
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: hw14.roghanmo.com
+      Host: piracy-android.video-streams.org
   udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: hw5.roghanmo.com
-  port: 465
+- name: 🇺🇸 美国 | USA 4
+  server: adheres-scruple.quick-cdn.net
+  port: 443
   type: vless
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  uuid: ecbc4229-e8d3-4607-8f02-fd592c9a0743
   tls: true
   alpn:
   - http/1.1
-  servername: hw5.roghanmo.com.
+  servername: adheres-scruple.quick-cdn.net
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: hw5.roghanmo.com
+      Host: adheres-scruple.quick-cdn.net
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: sg1.zestapp778.com
-  port: 56984
+- name: 🇺🇸 美国 | USA 3
+  server: ghosts-spasm.quick-cdn.net
+  port: 443
   type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  uuid: e262a993-a3be-4f36-95ba-81dc1e32d78c
   tls: true
-  servername: sg1.zestapp778.com
+  alpn:
+  - http/1.1
+  servername: ghosts-spasm.quick-cdn.net
   client-fingerprint: chrome
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ghosts-spasm.quick-cdn.net
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: ghosts-spasm.quick-cdn.net
+  port: 443
+  type: vless
+  uuid: 9d50fde6-7e89-4dee-9fee-17a77046604c
+  tls: true
+  servername: ghosts-spasm.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ghosts-spasm.quick-cdn.net
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: grimness-backlogs.cdn-content.com
+  port: 443
+  type: vless
+  uuid: 8fa74247-8816-4caf-b2c8-0dadff14ee3c
+  tls: true
+  alpn:
+  - http/1.1
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: grimness-backlogs.cdn-content.com
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: adheres-scruple.quick-cdn.net
+  port: 443
+  type: vless
+  uuid: 316f013e-4cf9-4a02-8415-73c22932594a
+  tls: true
+  alpn:
+  - http/1.1
+  servername: adheres-scruple.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: adheres-scruple.quick-cdn.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -52,8 +101,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 7
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
