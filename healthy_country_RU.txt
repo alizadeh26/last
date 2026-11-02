@@ -1,3 +1,2 @@
-vless://2232d904-8e6a-4202-8240-6efd8aec02e9@185.178.208.167:443?alpn=http/1.1&host=lorettmay.top&path=/blog/posts&security=tls&sni=lorettmay.top&type=ws&fp=chrome#🇷🇺 37 - RU - VLESS/WS/TLS/UTLS - 443
-vless://b2847c3b-5278-4b06-9c66-bc919d2dfec7@186.246.9.29:443?security=reality&sni=wordpress.com&fp=firefox&pbk=MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA&sid=50ad5564&type=tcp&path=/#🇷🇺 256 - RU - VLESS/REALITY/PBK/SID/UTLS - 443
-vless://7955bf18-35c4-412d-aabd-c0b36c793063@91.185.83.44:443?encryption=none&fp=firefox&host=nguyxejonb.rucdncomp.pro&path=/service/telemetry/0294da469190/&security=tls&sni=nguyxejonb.rucdncomp.pro&type=ws#🇷🇺 181 - RU - VLESS/WS/TLS/UTLS - 443
+vless://7955bf18-35c4-412d-aabd-c0b36c793063@91.185.83.44:443?security=tls&sni=nguyxejonb.rucdncomp.pro&fp=firefox&type=ws&path=/service/telemetry/0294da469190/&host=nguyxejonb.rucdncomp.pro#🇷🇺 179 - RU - VLESS/WS/TLS/UTLS - 443
+vless://c720cb74-4c84-4fce-b8ae-637dbaa16199@91.185.83.44:443?security=tls&sni=nguyxejonb.rucdncomp.pro&alpn=http/1.1&fp=firefox&type=ws&path=/service/telemetry/0294da469190/&host=nguyxejonb.rucdncomp.pro#🇷🇺 289 - RU - VLESS/WS/TLS/UTLS - 443
