@@ -5,14 +5,14 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.63
+  server: 202.50.253.45
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.81
+  server: 202.50.253.63
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -20,32 +20,73 @@ proxies:
   udp: true
 - name: 🇭🇰 香港 | HKG 2
   server: 47.244.120.197
-  port: 23026
+  port: 44867
   type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   alterId: 0
   cipher: auto
   tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /arki
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  type: vless
+  uuid: 5334ebd8-9419-4847-9fc0-72ccf271a62e
+  tls: true
+  alpn:
+  - http/1.1
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
     headers:
-      Host: 47.244.120.197
+      Host: minimize-evenness.cdn-content.com
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 46.17.46.27
-  port: 18443
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇺🇸 美国 | USA 6
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  type: vless
+  uuid: a97b4f58-0d47-416f-9ecd-dfdf20f31bf7
+  tls: true
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
   udp: true
-- name: 🇺🇸 美国 | USA
+- name: 🇺🇸 美国 | USA 13
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  type: vless
+  uuid: fadcfc37-376a-42e6-a5cd-cb65988663d3
+  tls: true
+  alpn:
+  - http/1.1
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  udp: true
+- name: 🇺🇸 美国 | USA 12
   server: piracy-android.video-streams.org
   port: 443
   type: vless
-  uuid: 71ee5343-b431-44be-bed7-22b9b9f7253c
+  uuid: 66af2078-d185-4cfe-8fc2-028ec115cf66
   tls: true
+  alpn:
+  - http/1.1
   servername: piracy-android.video-streams.org
   client-fingerprint: chrome
   network: ws
@@ -54,27 +95,40 @@ proxies:
     headers:
       Host: piracy-android.video-streams.org
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: ghosts-spasm.quick-cdn.net
+- name: 🇺🇸 美国 | USA 5
+  server: piracy-android.video-streams.org
   port: 443
   type: vless
-  uuid: e262a993-a3be-4f36-95ba-81dc1e32d78c
+  uuid: 5334ebd8-9419-4847-9fc0-72ccf271a62e
   tls: true
   alpn:
   - http/1.1
-  servername: ghosts-spasm.quick-cdn.net
+  servername: piracy-android.video-streams.org
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: ghosts-spasm.quick-cdn.net
+      Host: piracy-android.video-streams.org
   udp: true
-- name: 🇺🇸 美国 | USA 4
+- name: 🇺🇸 美国 | USA 14
+  server: bounded-crammed.video-streams.org
+  port: 443
+  type: vless
+  uuid: 8bc4baa4-76a1-42ff-be77-06d8749a467a
+  tls: true
+  servername: bounded-crammed.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: bounded-crammed.video-streams.org
+- name: 🇺🇸 美国 | USA 16
   server: adheres-scruple.quick-cdn.net
   port: 443
   type: vless
-  uuid: ecbc4229-e8d3-4607-8f02-fd592c9a0743
+  uuid: a9c57d75-a2d3-47f7-9fd5-020a8c918b93
   tls: true
   alpn:
   - http/1.1
@@ -86,11 +140,27 @@ proxies:
     headers:
       Host: adheres-scruple.quick-cdn.net
   udp: true
-- name: 🇺🇸 美国 | USA 10
+- name: 🇺🇸 美国 | USA 15
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  type: vless
+  uuid: daed3ca3-6b04-44e3-bd55-a9995e88d70b
+  tls: true
+  alpn:
+  - http/1.1
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  udp: true
+- name: 🇺🇸 美国 | USA 18
   server: adheres-scruple.quick-cdn.net
   port: 443
   type: vless
-  uuid: 316f013e-4cf9-4a02-8415-73c22932594a
+  uuid: 11f654d8-8ee6-4663-8fc6-26f2a128b519
   tls: true
   alpn:
   - http/1.1
@@ -102,19 +172,59 @@ proxies:
     headers:
       Host: adheres-scruple.quick-cdn.net
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: ghosts-spasm.quick-cdn.net
+- name: 🇺🇸 美国 | USA 20
+  server: grimness-backlogs.cdn-content.com
   port: 443
   type: vless
-  uuid: 9d50fde6-7e89-4dee-9fee-17a77046604c
+  uuid: 85ab5d03-5d67-4a95-b1f5-3f1f62d64625
   tls: true
-  servername: ghosts-spasm.quick-cdn.net
+  alpn:
+  - http/1.1
+  servername: grimness-backlogs.cdn-content.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: ghosts-spasm.quick-cdn.net
+      Host: grimness-backlogs.cdn-content.com
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 46.17.46.27
+  port: 18443
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: adheres-scruple.quick-cdn.net
+  port: 443
+  type: vless
+  uuid: 694af80a-2b0c-4d78-93e3-75db887be626
+  tls: true
+  alpn:
+  - http/1.1
+  servername: adheres-scruple.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: adheres-scruple.quick-cdn.net
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: i2psm3knof5qjjix.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
   udp: true
 proxy-groups:
 - name: AUTO
@@ -125,12 +235,19 @@ proxy-groups:
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
   - 🇭🇰 香港 | HKG 2
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 20
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 21
+  - 🇭🇰 香港 | HKG 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -138,23 +255,30 @@ proxy-groups:
   proxies:
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 21
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 5
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -168,14 +292,22 @@ proxy-groups:
   proxies:
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS
 - name: REGION-NA
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 21
 rules:
 - MATCH,AUTO

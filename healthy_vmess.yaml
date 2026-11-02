@@ -6,18 +6,33 @@ log-level: silent
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 47.244.120.197
-  port: 23026
+  port: 44867
   type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   alterId: 0
   cipher: auto
   tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /arki
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: i2psm3knof5qjjix.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
     headers:
-      Host: 47.244.120.197
+      Host: i2psm3knof5qjjix.v.3dns.vip
   udp: true
 proxy-groups:
 - name: AUTO
@@ -26,5 +41,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 5
 rules:
 - MATCH,AUTO
