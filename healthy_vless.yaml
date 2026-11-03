@@ -4,19 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: 903.rtgpu.com
+- name: 🇩🇪 德国 | DEU 2
+  server: finlandlanzarotte.live
   port: 443
   type: vless
-  uuid: c6438331-a79b-4471-fd5e-42c2eeac29fa
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
   tls: true
-  servername: 903.rtgpu.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /nmd2
-    headers:
-      Host: 903.rtgpu.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
+  servername: finlandlanzarotte.live
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,6 +23,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 2
 rules:
 - MATCH,AUTO
