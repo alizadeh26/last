@@ -4,14 +4,23 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.90
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 | DEU 2
+  server: goold.zovip2.ir
+  port: 443
+  type: vless
+  uuid: d8dcb071-57db-4ed6-92af-bb4183a14168
+  tls: true
+  alpn:
+  - http/1.1
+  servername: goold.zovip2.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/v3/pulse
+    headers:
+      Host: goold.zovip2.ir
   udp: true
-- name: 🇮🇹 意大利 | ITA 2
+- name: 🇮🇹 意大利 | ITA
   server: 202.50.253.45
   port: 19999
   type: ss
@@ -19,43 +28,13 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.63
+  server: 202.50.253.36
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: renderer-bridge-2-129.mirra.now
-  port: 443
-  type: vless
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-  tls: true
-  alpn:
-  - h2
-  servername: renderer-bridge-2-129.mirra.now
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: VideoRenderer
-  udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
+- name: 🇭🇰 香港 | HKG 8
   server: rhHiErkwRf6fHs2H.v.3dns.vip
   port: 443
   type: vmess
@@ -71,43 +50,59 @@ proxies:
     headers:
       Host: rhHiErkwRf6fHs2H.v.3dns.vip
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 13.212.25.48
-  port: 8443
+- name: 🇮🇹 意大利 | ITA 5
+  server: 202.50.253.81
+  port: 19999
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇭🇰 香港 | HKG 6
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 46.17.46.27
+  port: 18443
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 7
+  server: hw6.divarkhaghazi.com
+  port: 465
+  type: vless
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  tls: true
+  alpn:
+  - http/1.1
+  servername: hw6.divarkhaghazi.com.
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /arki
+    path: /
     headers:
-      Host: 47.244.120.197
+      Host: hw6.divarkhaghazi.com.
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: swidenafterlanzerotte.space
-  port: 443
-  type: vless
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
-  servername: swidenafterlanzerotte.space
-  client-fingerprint: chrome
-  network: tcp
+- name: 🇺🇸 美国 | USA 15
+  server: 202.50.253.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: nycqg19zkwacpm1b.v.3dns.vip
+- name: 🇭🇰 香港 | HKG 10
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
   type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -119,7 +114,7 @@ proxies:
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
   udp: true
 proxy-groups:
 - name: AUTO
@@ -127,40 +122,58 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU 2
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
-  - 🇩🇪 德国 | DEU 8
-  - 🇭🇰 香港 | HKG 7
-  - 🇭🇰 香港 | HKG 5
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇭🇰 香港 | HKG 6
-  - 🇺🇸 美国 | USA 10
-  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 8
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA 4
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇺🇸 美国 | USA 15
+  - 🇭🇰 香港 | HKG 10
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA 4
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 15
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
-  - 🇺🇸 美国 | USA 10
+  - 🇩🇪 德国 | DEU 2
+  - 🇸🇬 新加坡 | SGP 7
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 7
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG 6
-  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 8
+  - 🇭🇰 香港 | HKG 10
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 8
+  - 🇸🇬 新加坡 | SGP 7
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 2
+  - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 3
+  - 🇺🇸 美国 | USA 15
 rules:
 - MATCH,AUTO
