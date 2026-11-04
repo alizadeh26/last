@@ -1,3 +1,4 @@
-trojan://5t6i121em5lkmsmk@fr001.zestapp778.com:16778?sni=fr001.zestapp778.com&allowInsecure=1&type=tcp&fp=chrome#%E6%B3%95%E5%9B%BD_110420200
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@62.210.91.10:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#🆔v2ray1_ng%20🔒%20VL-TCP-%20🇫🇷%20FR%2088ms
+trojan://5t6i121em5lkmsmk@fr001.zestapp778.com:16778?allowInsecure=1&insecure=1&security=tls&fp=chrome&type=tcp&headerType=none#FR🇫🇷
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@62.210.91.10:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#🆔v2ray1_ng%20🔒%20VL-TCP-%20🇫🇷%20FR%2096ms
 vless://75cc7568-abb0-46a8-88be-8137d3c647d4@152.228.139.33:51671?mode=gun&security=reality&encryption=none&pbk=-5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU&fp=chrome&type=grpc&serviceName=grpc_common3&sni=www.sony.com&sid=2fed44d8c59f7e71#🆔ar14n24b%20🔒%20VL-GRPC-%20🇫🇷%20FR%2090ms
+vless://086bf957-9cd0-4e55-8280-bbef10435b41@161.97.66.16:443?security=reality&encryption=none&pbk=R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc&headerType=none&fp=firefox&type=tcp&sni=www.cloudflare.com&sid=086bf957#REALITY|FR🇫🇷
