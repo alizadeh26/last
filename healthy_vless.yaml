@@ -4,17 +4,32 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: finlandlanzarotte.live
+- name: 🇩🇪 德国 | DEU 8
+  server: renderer-bridge-2-129.mirra.now
+  port: 443
+  type: vless
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  tls: true
+  alpn:
+  - h2
+  servername: renderer-bridge-2-129.mirra.now
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: VideoRenderer
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: swidenafterlanzerotte.space
   port: 443
   type: vless
   uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
-  servername: finlandlanzarotte.live
-  client-fingerprint: firefox
+    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
+  servername: swidenafterlanzerotte.space
+  client-fingerprint: chrome
   network: tcp
   udp: true
 proxy-groups:
@@ -23,6 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 8
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO

@@ -4,62 +4,58 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: finlandlanzarotte.live
-  port: 443
-  type: vless
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
-  servername: finlandlanzarotte.live
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: 47.244.120.197
-  port: 36703
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇭🇰 香港 | HKG 8
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
+- name: 🇮🇹 意大利 | ITA
   server: 202.50.253.90
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.72
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.45
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇭🇰 香港 | HKG 9
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.63
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: renderer-bridge-2-129.mirra.now
+  port: 443
+  type: vless
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  tls: true
+  alpn:
+  - h2
+  servername: renderer-bridge-2-129.mirra.now
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: VideoRenderer
+  udp: true
+- name: 🇭🇰 香港 | HKG 7
+  server: 47.244.120.197
+  port: 44867
+  type: vmess
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
   server: rhHiErkwRf6fHs2H.v.3dns.vip
   port: 443
   type: vmess
@@ -75,12 +71,55 @@ proxies:
     headers:
       Host: rhHiErkwRf6fHs2H.v.3dns.vip
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.63
-  port: 19999
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 13.212.25.48
+  port: 8443
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+- name: 🇭🇰 香港 | HKG 6
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: swidenafterlanzerotte.space
+  port: 443
+  type: vless
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
+  servername: swidenafterlanzerotte.space
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
   udp: true
 proxy-groups:
 - name: AUTO
@@ -88,48 +127,40 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 8
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
-  - 🇭🇰 香港 | HKG 9
-  - 🇮🇹 意大利 | ITA
+  - 🇩🇪 德国 | DEU 8
+  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 5
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇭🇰 香港 | HKG 6
+  - 🇺🇸 美国 | USA 10
+  - 🇭🇰 香港 | HKG 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA
+  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
+  - 🇩🇪 德国 | DEU 8
+  - 🇺🇸 美国 | USA 10
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 8
-  - 🇭🇰 香港 | HKG 9
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 8
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇮🇹 意大利 | ITA 2
+  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 2
 rules:
 - MATCH,AUTO
