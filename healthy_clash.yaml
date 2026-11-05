@@ -4,97 +4,124 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇪 爱沙尼亚 | EST 2
-  server: ee.frgcdn.xyz
+- name: 🇩🇪 德国 | DEU 3
+  server: static.162.97.119.168.clients.your-server.de
+  port: 8443
+  type: vless
+  uuid: fb0876a9-bd89-4bb0-9539-8e7927b36d79
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  flow: xtls-rprx-vision
+  servername: static.167.125.29.2.clients.your-server.de
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: static.216.7.245.188.clients.your-server.de
+  port: 8443
+  type: vless
+  uuid: fb0876a9-bd89-4bb0-9539-8e7927b36d79
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  flow: xtls-rprx-vision
+  servername: static.216.7.245.188.clients.your-server.de
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA
+  server: fr2.japancase.site
   port: 443
   type: vless
-  uuid: 43a26f1a-99b7-4b17-98c7-b836fb466999
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
-    short-id: 7a3f9e2b1c8d4f6a
-  servername: ee.frgcdn.xyz
-  client-fingerprint: chrome
+    public-key: WVSxXflVqhlA-ZkZud3hP_fiN05CZhJWFjfN0liqIFM
+    short-id: fc19a7aa77517cf8
+  servername: fr2.japancase.site
+  client-fingerprint: qq
   network: tcp
-- name: 🇩🇪 德国 | DEU
-  server: n5.mobiza.ir
-  port: 2095
-  type: vmess
-  uuid: bca8c159-df05-4bb6-9b75-92aabc2be45f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dash.mobiza.ir
   udp: true
 - name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.90
+  server: 202.50.253.63
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.27
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
   udp: true
 - name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.54
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 5
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 6
   server: 202.50.253.81
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
+- name: 🇮🇹 意大利 | ITA 8
+  server: 202.50.253.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: 47.244.120.197
-  port: 36703
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
+- name: 🇮🇹 意大利 | ITA 7
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇳 印度 | IND
+  server: in1.japancase.site
+  port: 443
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: lDBwW08dYwPP-7dVxYQ_clzfFwsDHLlclz9K2cEV6DM
+    short-id: df7b054cfc29800c
+  servername: in1.japancase.site
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN
+  server: 154.36.158.197
+  port: 8388
+  type: ss
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 207.246.112.227
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9AUVPZfOeSHmVCMyLvIvrl1wVLvZf7Jv
   udp: true
 proxy-groups:
 - name: AUTO
@@ -102,36 +129,53 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST 2
-  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 10
+  - 🇫🇷 法国 | FRA
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇭🇰 香港 | HKG 3
   - 🇮🇹 意大利 | ITA 3
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG 7
+  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA 8
+  - 🇮🇹 意大利 | ITA 7
+  - 🇮🇳 印度 | IND
+  - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 5
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA 8
+  - 🇮🇹 意大利 | ITA 7
+  - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 | EST 2
-- name: PROTO-VMESS
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 10
+  - 🇫🇷 法国 | FRA
+  - 🇮🇳 印度 | IND
+- name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG 7
+  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 10
+  - 🇫🇷 法国 | FRA
+  - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 7
 rules:
 - MATCH,AUTO
