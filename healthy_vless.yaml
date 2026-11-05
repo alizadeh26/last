@@ -4,25 +4,25 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇸🇬 新加坡 | SGP
-  server: free.vkehi.store
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: ee.frgcdn.xyz
   port: 443
   type: vless
-  uuid: e4d1298a-1f21-42e2-a53e-1b22c0645c48
+  uuid: 43a26f1a-99b7-4b17-98c7-b836fb466999
   tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: zoom.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
+    short-id: 7a3f9e2b1c8d4f6a
+  servername: ee.frgcdn.xyz
   client-fingerprint: chrome
   network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP
+  - 🇪🇪 爱沙尼亚 | EST 2
 rules:
 - MATCH,AUTO

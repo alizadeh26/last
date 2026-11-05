@@ -4,6 +4,41 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: ee.frgcdn.xyz
+  port: 443
+  type: vless
+  uuid: 43a26f1a-99b7-4b17-98c7-b836fb466999
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
+    short-id: 7a3f9e2b1c8d4f6a
+  servername: ee.frgcdn.xyz
+  client-fingerprint: chrome
+  network: tcp
+- name: 🇩🇪 德国 | DEU
+  server: n5.mobiza.ir
+  port: 2095
+  type: vmess
+  uuid: bca8c159-df05-4bb6-9b75-92aabc2be45f
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dash.mobiza.ir
+  udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇮🇹 意大利 | ITA 2
   server: 202.50.253.27
   port: 19999
@@ -11,72 +46,29 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+  udp: true
 - name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.36
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 5
-  server: 202.50.253.54
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.63
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 7
-  server: 202.50.253.72
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 8
   server: 202.50.253.81
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: rhHiErkwRf6fHs2H.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: rhHiErkwRf6fHs2H.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: rhHiErkwRf6fHs2H.v.3dns.vip
-  udp: true
-- name: 🇭🇰 香港 | HKG
+- name: 🇭🇰 香港 | HKG 5
   server: 47.244.120.197
   port: 44867
   type: vmess
@@ -91,34 +83,18 @@ proxies:
   ws-opts:
     path: /arki
   udp: true
-- name: 🇭🇰 香港 | HKG 9
-  server: rhhierkwrf6fhs2h.v.3dns.vip
-  port: 443
+- name: 🇭🇰 香港 | HKG 7
+  server: 47.244.120.197
+  port: 36703
   type: vmess
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: rhhierkwrf6fhs2h.v.3dns.vip
   network: ws
   ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: rhhierkwrf6fhs2h.v.3dns.vip
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: free.vkehi.store
-  port: 443
-  type: vless
-  uuid: e4d1298a-1f21-42e2-a53e-1b22c0645c48
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: zoom.com
-  client-fingerprint: chrome
-  network: tcp
+    path: /arki
   udp: true
 proxy-groups:
 - name: AUTO
@@ -126,61 +102,36 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇩🇪 德国 | DEU
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 6
-  - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 8
+  - 🇮🇹 意大利 | ITA 2
+  - 🇭🇰 香港 | HKG 3
+  - 🇮🇹 意大利 | ITA 3
+  - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG 7
-  - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 9
-  - 🇸🇬 新加坡 | SGP
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 6
-  - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 8
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 | SGP
+  - 🇪🇪 爱沙尼亚 | EST 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG 7
-  - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 9
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG
-  - 🇸🇬 新加坡 | SGP
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 6
 rules:
 - MATCH,AUTO
