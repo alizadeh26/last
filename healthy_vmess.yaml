@@ -4,22 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: n5.mobiza.ir
-  port: 2095
+- name: 🇭🇰 香港 | HKG
+  server: 47.244.120.197
+  port: 36703
   type: vmess
-  uuid: bca8c159-df05-4bb6-9b75-92aabc2be45f
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: dash.mobiza.ir
+    path: /arki
   udp: true
-- name: 🇭🇰 香港 | HKG 3
+- name: 🇭🇰 香港 | HKG 4
   server: 47.244.120.197
   port: 23026
   type: vmess
@@ -34,7 +32,7 @@ proxies:
     headers:
       Host: 47.244.120.197
   udp: true
-- name: 🇭🇰 香港 | HKG 5
+- name: 🇭🇰 香港 | HKG 3
   server: 47.244.120.197
   port: 44867
   type: vmess
@@ -49,28 +47,14 @@ proxies:
   ws-opts:
     path: /arki
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: 47.244.120.197
-  port: 36703
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
+  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG 7
 rules:
 - MATCH,AUTO

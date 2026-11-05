@@ -4,48 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: static.162.97.119.168.clients.your-server.de
-  port: 8443
-  type: vless
-  uuid: fb0876a9-bd89-4bb0-9539-8e7927b36d79
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  servername: static.167.125.29.2.clients.your-server.de
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: static.216.7.245.188.clients.your-server.de
-  port: 8443
-  type: vless
-  uuid: fb0876a9-bd89-4bb0-9539-8e7927b36d79
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  servername: static.216.7.245.188.clients.your-server.de
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA
-  server: fr2.japancase.site
-  port: 443
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: WVSxXflVqhlA-ZkZud3hP_fiN05CZhJWFjfN0liqIFM
-    short-id: fc19a7aa77517cf8
-  servername: fr2.japancase.site
-  client-fingerprint: qq
-  network: tcp
-  udp: true
 - name: 🇮🇳 印度 | IND
   server: in1.japancase.site
   port: 443
@@ -66,9 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 10
-  - 🇫🇷 法国 | FRA
   - 🇮🇳 印度 | IND
 rules:
 - MATCH,AUTO
