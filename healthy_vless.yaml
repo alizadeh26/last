@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 4
+- name: 🇮🇱 以色列 | ISR
   server: 76574ct.nl7.h1clayd.click
   port: 443
   type: vless
@@ -17,7 +17,7 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇱🇰 LK_37
+- name: 🇱🇰 LK_33
   server: free.vkehi.store
   port: 443
   type: vless
@@ -30,19 +30,31 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL 3
-  server: lte-v2-ws.gacvpn.site
-  port: 8443
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 5d0319t.nl7.h1clayd.click
+  port: 443
   type: vless
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
-  servername: lte-v2-ws.gacvpn.site
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: lte-v2-ws.gacvpn.site
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 71b840t.de7.h1clayd.click
+  port: 443
+  type: vless
+  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
+  tls: true
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+    short-id: e572b6579ea525d4
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -50,8 +62,9 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇱🇰 LK_37
-  - 🇵🇱 波兰 | POL 3
+  - 🇮🇱 以色列 | ISR
+  - 🇱🇰 LK_33
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO
