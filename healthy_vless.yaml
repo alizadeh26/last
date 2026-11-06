@@ -4,17 +4,45 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇳 印度 | IND
-  server: in1.japancase.site
+- name: 🇱🇰 LK_35
+  server: free.vkehi.store
+  port: 443
+  type: vless
+  uuid: e4d1298a-1f21-42e2-a53e-1b22c0645c48
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: zoom.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: falmero.store
+  port: 443
+  type: vless
+  uuid: 8fb19a9e-ca2b-433a-8469-e4c7796033b2
+  tls: true
+  alpn:
+  - h2
+  servername: falmero.store
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de1.v1
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: nl5.japancase.site
   port: 443
   type: vless
   uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: lDBwW08dYwPP-7dVxYQ_clzfFwsDHLlclz9K2cEV6DM
-    short-id: df7b054cfc29800c
-  servername: in1.japancase.site
+    public-key: Yw0T7qr5Wk3HCqV8h6V9N5wcInMxQ0XsxUuLV62_bEM
+    short-id: c498d5e4a069592c
+  servername: nl5.japancase.site
   client-fingerprint: ios
   network: tcp
   udp: true
@@ -24,6 +52,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 | IND
+  - 🇱🇰 LK_35
+  - 🇩🇪 德国 | DEU 6
+  - 🇳🇱 荷兰 | NLD 4
 rules:
 - MATCH,AUTO
