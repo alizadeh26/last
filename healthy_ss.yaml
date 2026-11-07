@@ -4,21 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA
+- name: 🇮🇹 意大利 | ITA 2
   server: 202.50.253.18
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.36
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.54
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 3
+- name: 🇮🇹 意大利 | ITA 4
   server: 202.50.253.45
   port: 19999
   type: ss
@@ -26,46 +26,18 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 | ITA 5
-  server: 202.50.253.72
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.63
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 7
   server: 202.50.253.90
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 8
-  server: 202.50.253.99
-  port: 19999
+- name: 🇺🇸 美国 | USA
+  server: 88.216.254.18
+  port: 1080
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 154.36.158.197
-  port: 8388
-  type: ss
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
+  cipher: chacha20-ietf-poly1305
+  password: V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA
   udp: true
 proxy-groups:
 - name: AUTO
@@ -73,14 +45,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 8
-  - 🇯🇵 日本 | JPN
+  - 🇮🇹 意大利 | ITA 5
+  - 🇺🇸 美国 | USA
 rules:
 - MATCH,AUTO

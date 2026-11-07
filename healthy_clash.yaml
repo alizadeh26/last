@@ -4,21 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA
+- name: 🇮🇹 意大利 | ITA 2
   server: 202.50.253.18
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.36
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.54
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 3
+- name: 🇮🇹 意大利 | ITA 4
   server: 202.50.253.45
   port: 19999
   type: ss
@@ -26,104 +26,13 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 | ITA 5
-  server: 202.50.253.72
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.63
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 7
   server: 202.50.253.90
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 8
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 154.36.158.197
-  port: 8388
-  type: ss
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
-  udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-  udp: true
-- name: 🇱🇰 LK_33
-  server: free.vkehi.store
-  port: 443
-  type: vless
-  uuid: e4d1298a-1f21-42e2-a53e-1b22c0645c48
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: zoom.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 5d0319t.nl7.h1clayd.click
-  port: 443
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
+- name: 🇭🇰 香港 | HKG
   server: 47.244.120.197
   port: 36703
   type: vmess
@@ -136,31 +45,39 @@ proxies:
   ws-opts:
     path: /arki
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 71b840t.de7.h1clayd.click
+- name: 🇵🇱 波兰 | POL
+  server: pl3.japancase.site
   port: 443
   type: vless
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   tls: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-    short-id: e572b6579ea525d4
-  servername: 71b840t.de7.h1clayd.click
-  client-fingerprint: firefox
+    public-key: COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc
+    short-id: 5037f0423dc4e4ff
+  servername: pl3.japancase.site
+  client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇮🇱 以色列 | ISR
-  server: 76574ct.nl7.h1clayd.click
+- name: 🇸🇰 斯洛伐克 | SVK
+  server: 5d0319t.nl7.h1clayd.click
   port: 443
   type: vless
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
   reality-opts:
-    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
-    short-id: 2ca59bdc5121f921
-  servername: 76574ct.nl7.h1clayd.click
-  client-fingerprint: chrome
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 88.216.254.18
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA
   udp: true
 proxy-groups:
 - name: AUTO
@@ -168,69 +85,47 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 8
-  - 🇯🇵 日本 | JPN
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 4
-  - 🇱🇰 LK_33
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇭🇰 香港 | HKG 2
-  - 🇺🇸 美国 | USA 5
-  - 🇮🇱 以色列 | ISR
+  - 🇮🇹 意大利 | ITA 5
+  - 🇭🇰 香港 | HKG
+  - 🇵🇱 波兰 | POL
+  - 🇸🇰 斯洛伐克 | SVK
+  - 🇺🇸 美国 | USA
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 8
-  - 🇯🇵 日本 | JPN
+  - 🇮🇹 意大利 | ITA 5
+  - 🇺🇸 美国 | USA
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK_33
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇺🇸 美国 | USA 5
-  - 🇮🇱 以色列 | ISR
+  - 🇵🇱 波兰 | POL
+  - 🇸🇰 斯洛伐克 | SVK
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 2
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 6
+  - 🇵🇱 波兰 | POL
+  - 🇸🇰 斯洛伐克 | SVK
 rules:
 - MATCH,AUTO

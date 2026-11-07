@@ -4,20 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇱🇰 LK_33
-  server: free.vkehi.store
+- name: 🇵🇱 波兰 | POL
+  server: pl3.japancase.site
   port: 443
   type: vless
-  uuid: e4d1298a-1f21-42e2-a53e-1b22c0645c48
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: zoom.com
-  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc
+    short-id: 5037f0423dc4e4ff
+  servername: pl3.japancase.site
+  client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
+- name: 🇸🇰 斯洛伐克 | SVK
   server: 5d0319t.nl7.h1clayd.click
   port: 443
   type: vless
@@ -30,41 +31,13 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 71b840t.de7.h1clayd.click
-  port: 443
-  type: vless
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
-  tls: true
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-    short-id: e572b6579ea525d4
-  servername: 71b840t.de7.h1clayd.click
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇮🇱 以色列 | ISR
-  server: 76574ct.nl7.h1clayd.click
-  port: 443
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  reality-opts:
-    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
-    short-id: 2ca59bdc5121f921
-  servername: 76574ct.nl7.h1clayd.click
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK_33
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇺🇸 美国 | USA 5
-  - 🇮🇱 以色列 | ISR
+  - 🇵🇱 波兰 | POL
+  - 🇸🇰 斯洛伐克 | SVK
 rules:
 - MATCH,AUTO
