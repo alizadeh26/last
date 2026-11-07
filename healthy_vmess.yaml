@@ -4,11 +4,11 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG
+- name: 🇭🇰 香港 | HKG 2
   server: 47.244.120.197
-  port: 36703
+  port: 23026
   type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
   alterId: 0
   cipher: auto
   tls: false
@@ -16,6 +16,8 @@ proxies:
   network: ws
   ws-opts:
     path: /arki
+    headers:
+      Host: 47.244.120.197
   udp: true
 proxy-groups:
 - name: AUTO
@@ -23,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 2
 rules:
 - MATCH,AUTO
