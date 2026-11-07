@@ -4,19 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇱 以色列 | ISR
-  server: 76574ct.nl7.h1clayd.click
-  port: 443
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  reality-opts:
-    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
-    short-id: 2ca59bdc5121f921
-  servername: 76574ct.nl7.h1clayd.click
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇱🇰 LK_33
   server: free.vkehi.store
   port: 443
@@ -56,15 +43,28 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇮🇱 以色列 | ISR
+  server: 76574ct.nl7.h1clayd.click
+  port: 443
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
+    short-id: 2ca59bdc5121f921
+  servername: 76574ct.nl7.h1clayd.click
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 以色列 | ISR
   - 🇱🇰 LK_33
   - 🇳🇱 荷兰 | NLD 3
   - 🇺🇸 美国 | USA 5
+  - 🇮🇱 以色列 | ISR
 rules:
 - MATCH,AUTO
