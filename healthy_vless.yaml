@@ -4,18 +4,43 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇵🇱 波兰 | POL 3
-  server: pl3.japancase.site
+- name: 🇨🇭 瑞士 | CHE 2
+  server: 46.19.138.214
   port: 443
   type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc
-    short-id: 5037f0423dc4e4ff
-  servername: pl3.japancase.site
-  client-fingerprint: edge
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: perevodchiki.su
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇪🇸 西班牙 | ESP
+  server: 213.182.201.18
+  port: 3090
+  type: vless
+  uuid: 8bac7917-b4d2-4338-bbfc-5d47bda8c5ab
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+- name: 🇨🇭 瑞士 | CHE
+  server: 179.43.166.190
+  port: 443
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: perevodchiki.su
+  client-fingerprint: chrome
   network: tcp
   udp: true
 proxy-groups:
@@ -24,6 +49,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 | POL 3
+  - 🇨🇭 瑞士 | CHE 2
+  - 🇪🇸 西班牙 | ESP
+  - 🇨🇭 瑞士 | CHE
 rules:
 - MATCH,AUTO
