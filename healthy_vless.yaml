@@ -5,7 +5,7 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇨🇭 瑞士 | CHE
-  server: 46.19.138.214
+  server: 179.43.166.190
   port: 443
   type: vless
   uuid: 90157e25-cee1-4217-921e-91f300bc1a24
@@ -15,8 +15,24 @@ proxies:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
   servername: perevodchiki.su
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 7cabc1g.de-p1.h1clayd.click
+  port: 443
+  type: vless
+  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
+  tls: true
+  reality-opts:
+    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
+    short-id: 3b84fc70657725af
+  servername: 7cabc1g.de-p1.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 8cb5baa18cd7
   udp: true
 proxy-groups:
 - name: AUTO
@@ -25,5 +41,6 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE
+  - 🇺🇸 美国 | USA 10
 rules:
 - MATCH,AUTO
