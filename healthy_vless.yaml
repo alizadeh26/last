@@ -4,37 +4,26 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 14
-  server: 104.18.41.145
-  port: 8080
-  type: vless
-  uuid: c4940726-7300-46f8-a8ce-925c2b2d6612
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: qgJdrswc-8hh1pa.qgjdRswc.woRkers.deV
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 04535dt.us9.h1clayd.click
+- name: 🇨🇭 瑞士 | CHE
+  server: 46.19.138.214
   port: 443
   type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   tls: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-    short-id: ba2a3dce62b99092
-  servername: 04535dt.us9.h1clayd.click
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: perevodchiki.su
   client-fingerprint: firefox
   network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 7
+  - 🇨🇭 瑞士 | CHE
 rules:
 - MATCH,AUTO
