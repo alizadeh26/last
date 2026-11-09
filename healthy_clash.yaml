@@ -18,147 +18,144 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.27
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.36
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.72
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 5
-  server: 202.50.253.90
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 6
   server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: 45.12.89.202
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1f24d145bf7c877f7e3140b7918eb9cd804b1576a96596f9
-- name: 🇳🇱 荷兰 | NLD
-  server: 156.67.120.205
-  port: 51628
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 46.17.47.58
-  port: 18443
+- name: 🇮🇹 意大利 | ITA 6
+  server: 202.50.253.18
+  port: 19999
   type: ss
   cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 | USA 2
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: get.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  servername: get.mediacorphub.org
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: gw.v2.PushService
+  udp: true
+- name: 🇮🇹 意大利 | ITA 5
   server: 202.50.253.63
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 7cabc1g.de-p1.h1clayd.click
+- name: 🇳🇱 荷兰 | NLD 4
+  server: api.mediacorphub.org
   port: 443
   type: vless
-  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
   tls: true
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: 7cabc1g.de-p1.h1clayd.click
+  alpn:
+  - h2
+  servername: api.mediacorphub.org
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: gw.v2.PushService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: stats.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  alpn:
+  - h2
+  servername: stats.mediacorphub.org
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: gw.v2.PushService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: img.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  alpn:
+  - h2
+  servername: img.mediacorphub.org
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: home.v2.MetricsService
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: US122202.ssgreen.org
+  port: 443
+  type: vmess
+  uuid: 25a5a66f-5dd8-4661-9002-8a7870c62fef
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: US122202.ssgreen.org
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: US122202.ssgreen.org
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 156.67.120.205
+  port: 51628
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 13
+  server: rpc.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  alpn:
+  - h2
+  servername: rpc.mediacorphub.org
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: api.v1.FeedService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 14
+  server: net.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  alpn:
+  - h2
+  servername: net.mediacorphub.org
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: 8cb5baa18cd7
-  udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: 47.244.120.197
-  port: 36703
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 154.36.158.197
-  port: 8388
-  type: ss
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
+    grpc-service-name: home.v2.MetricsService
   udp: true
 proxy-groups:
 - name: AUTO
@@ -167,71 +164,60 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 4
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
   - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 5
   - 🇮🇹 意大利 | ITA 6
-  - 🇯🇵 日本 | JPN 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇮🇹 意大利 | ITA 3
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇮🇹 意大利 | ITA 5
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 9
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 10
-  - 🇭🇰 香港 | HKG 3
-  - 🇯🇵 日本 | JPN
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 13
+  - 🇳🇱 荷兰 | NLD 14
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
   - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 5
   - 🇮🇹 意大利 | ITA 6
-  - 🇯🇵 日本 | JPN 2
-  - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 3
-  - 🇯🇵 日本 | JPN
+  - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 5
+  - 🇳🇱 荷兰 | NLD 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE
-  - 🇺🇸 美国 | USA 10
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 13
+  - 🇳🇱 荷兰 | NLD 14
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 3
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 4
-  - 🇯🇵 日本 | JPN 2
-  - 🇭🇰 香港 | HKG 3
+  - 🇺🇸 美国 | USA 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇺🇸 美国 | USA 2
+  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 6
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇮🇹 意大利 | ITA 5
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 13
+  - 🇳🇱 荷兰 | NLD 14
 rules:
 - MATCH,AUTO

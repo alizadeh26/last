@@ -18,21 +18,93 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 7cabc1g.de-p1.h1clayd.click
+- name: 🇳🇱 荷兰 | NLD 5
+  server: get.mediacorphub.org
   port: 443
   type: vless
-  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
   tls: true
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: 7cabc1g.de-p1.h1clayd.click
+  servername: get.mediacorphub.org
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: gw.v2.PushService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: api.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  alpn:
+  - h2
+  servername: api.mediacorphub.org
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: gw.v2.PushService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: stats.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  alpn:
+  - h2
+  servername: stats.mediacorphub.org
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: gw.v2.PushService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: img.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  alpn:
+  - h2
+  servername: img.mediacorphub.org
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: home.v2.MetricsService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 13
+  server: rpc.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  alpn:
+  - h2
+  servername: rpc.mediacorphub.org
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: api.v1.FeedService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 14
+  server: net.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  alpn:
+  - h2
+  servername: net.mediacorphub.org
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: 8cb5baa18cd7
+    grpc-service-name: home.v2.MetricsService
   udp: true
 proxy-groups:
 - name: AUTO
@@ -41,6 +113,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE
-  - 🇺🇸 美国 | USA 10
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 13
+  - 🇳🇱 荷兰 | NLD 14
 rules:
 - MATCH,AUTO
