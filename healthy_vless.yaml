@@ -4,107 +4,30 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇭 瑞士 | CHE
-  server: 179.43.166.190
-  port: 443
+- name: 🇩🇪 德国 | DEU 2
+  server: 213.176.92.168
+  port: 14430
   type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
-  client-fingerprint: chrome
-  network: tcp
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: stats.mediacorphub.org
+- name: 🇳🇱 荷兰 | NLD
+  server: cdn.mediacorphub.org
   port: 443
   type: vless
   uuid: 1653818d-532e-46be-b825-384107fb7c3a
   tls: true
-  alpn:
-  - h2
-  servername: stats.mediacorphub.org
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: gw.v2.PushService
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: api.mediacorphub.org
-  port: 443
-  type: vless
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-  tls: true
-  alpn:
-  - h2
-  servername: api.mediacorphub.org
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: gw.v2.PushService
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 14
-  server: net.mediacorphub.org
-  port: 443
-  type: vless
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-  tls: true
-  alpn:
-  - h2
-  servername: net.mediacorphub.org
+  servername: cdn.mediacorphub.org
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: home.v2.MetricsService
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 13
-  server: rpc.mediacorphub.org
-  port: 443
-  type: vless
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-  tls: true
-  alpn:
-  - h2
-  servername: rpc.mediacorphub.org
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.FeedService
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: get.mediacorphub.org
-  port: 443
-  type: vless
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-  tls: true
-  servername: get.mediacorphub.org
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: gw.v2.PushService
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: img.mediacorphub.org
-  port: 443
-  type: vless
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-  tls: true
-  alpn:
-  - h2
-  servername: img.mediacorphub.org
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: home.v2.MetricsService
+    grpc-service-name: stats.v2.StreamService
   udp: true
 proxy-groups:
 - name: AUTO
@@ -112,12 +35,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 | CHE
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 14
-  - 🇳🇱 荷兰 | NLD 13
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 9
+  - 🇩🇪 德国 | DEU 2
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
