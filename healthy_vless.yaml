@@ -4,26 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 9
-  server: 104.143.223.236
-  port: 2085
+- name: 🇷🇺 俄罗斯 | RUS
+  server: vps3.nemnogogo.com
+  port: 443
   type: vless
-  uuid: 6538f5c3-5b01-4956-a8e6-47688c01c42e
-  tls: false
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  alpn:
+  - h2
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: vless
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: sg003.zestapp778.com
-  port: 443
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: sg003.zestapp778.com
-  client-fingerprint: chrome
-  network: tcp
+    grpc-service-name: mobile.api.Event
   udp: true
 - name: 🇷🇴 罗马尼亚 | ROU
   server: 82.152.132.74
@@ -39,14 +33,24 @@ proxies:
     headers:
       Host: 82.152.132.74
   udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: sg003.zestapp778.com
+  port: 443
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: sg003.zestapp778.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇷🇺 俄罗斯 | RUS
   - 🇷🇴 罗马尼亚 | ROU
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO

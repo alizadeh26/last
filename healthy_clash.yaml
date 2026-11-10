@@ -4,24 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  server: 35.182.250.103
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 104.143.223.236
-  port: 2085
-  type: vless
-  uuid: 6538f5c3-5b01-4956-a8e6-47688c01c42e
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
-  udp: true
 - name: 🇮🇪 爱尔兰 | IRL
   server: 146.70.90.198
   port: 17456
@@ -29,12 +11,12 @@ proxies:
   cipher: aes-128-gcm
   password: 881cf39affc5286799a585f1acd24d11
   udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.99
-  port: 19999
+- name: 🇫🇷 法国 | FRA 2
+  server: 13.36.165.6
+  port: 443
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇮🇹 意大利 | ITA
   server: 202.50.253.54
@@ -43,8 +25,8 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.18
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -57,12 +39,33 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇮🇹 意大利 | ITA 5
   server: 202.50.253.72
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 6
+  server: 202.50.253.81
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇯🇵 日本 | JPN 4
+  server: 154.36.158.197
+  port: 8388
+  type: ss
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 18.226.88.63
@@ -71,22 +74,20 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: sg003.zestapp778.com
+- name: 🇷🇺 俄罗斯 | RUS
+  server: vps3.nemnogogo.com
   port: 443
   type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
-  servername: sg003.zestapp778.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  alpn:
+  - h2
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
   udp: true
 - name: 🇷🇴 罗马尼亚 | ROU
   server: 82.152.132.74
@@ -102,45 +103,73 @@ proxies:
     headers:
       Host: 82.152.132.74
   udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: sg003.zestapp778.com
+  port: 443
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: sg003.zestapp778.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 9
   - 🇮🇪 爱尔兰 | IRL
-  - 🇮🇹 意大利 | ITA 2
+  - 🇫🇷 法国 | FRA 2
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 5
-  - 🇺🇸 美国 | USA 4
-  - 🇸🇬 新加坡 | SGP 2
   - 🇮🇹 意大利 | ITA 6
+  - 🇯🇵 日本 | JPN 4
+  - 🇺🇸 美国 | USA 4
+  - 🇷🇺 俄罗斯 | RUS
   - 🇷🇴 罗马尼亚 | ROU
+  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇮🇪 爱尔兰 | IRL
-  - 🇮🇹 意大利 | ITA 2
+  - 🇫🇷 法国 | FRA 2
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 5
-  - 🇺🇸 美国 | USA 4
   - 🇮🇹 意大利 | ITA 6
+  - 🇯🇵 日本 | JPN 4
+  - 🇺🇸 美国 | USA 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇷🇺 俄罗斯 | RUS
   - 🇷🇴 罗马尼亚 | ROU
+  - 🇸🇬 新加坡 | SGP 2
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 日本 | JPN 4
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇫🇷 法国 | FRA 2
+  - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 6
 rules:
 - MATCH,AUTO
