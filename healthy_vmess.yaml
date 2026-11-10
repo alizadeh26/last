@@ -4,21 +4,20 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇺🇸 美国 | USA 2
-  server: US122202.ssgreen.org
-  port: 443
+- name: 🇭🇰 香港 | HKG 2
+  server: 47.244.120.197
+  port: 23026
   type: vmess
-  uuid: 25a5a66f-5dd8-4661-9002-8a7870c62fef
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: US122202.ssgreen.org
   network: ws
   ws-opts:
-    path: /wes
+    path: /arki
     headers:
-      Host: US122202.ssgreen.org
+      Host: 47.244.120.197
   udp: true
 proxy-groups:
 - name: AUTO
@@ -26,6 +25,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 2
+  - 🇭🇰 香港 | HKG 2
 rules:
 - MATCH,AUTO

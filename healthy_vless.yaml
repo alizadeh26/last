@@ -18,14 +18,16 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: get.mediacorphub.org
+- name: 🇳🇱 荷兰 | NLD 2
+  server: stats.mediacorphub.org
   port: 443
   type: vless
   uuid: 1653818d-532e-46be-b825-384107fb7c3a
   tls: true
-  servername: get.mediacorphub.org
-  client-fingerprint: chrome
+  alpn:
+  - h2
+  servername: stats.mediacorphub.org
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -46,31 +48,16 @@ proxies:
     grpc-mode: gun
     grpc-service-name: gw.v2.PushService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: stats.mediacorphub.org
+- name: 🇳🇱 荷兰 | NLD 14
+  server: net.mediacorphub.org
   port: 443
   type: vless
   uuid: 1653818d-532e-46be-b825-384107fb7c3a
   tls: true
   alpn:
   - h2
-  servername: stats.mediacorphub.org
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: gw.v2.PushService
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: img.mediacorphub.org
-  port: 443
-  type: vless
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-  tls: true
-  alpn:
-  - h2
-  servername: img.mediacorphub.org
-  client-fingerprint: edge
+  servername: net.mediacorphub.org
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -91,16 +78,29 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.FeedService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 14
-  server: net.mediacorphub.org
+- name: 🇳🇱 荷兰 | NLD 5
+  server: get.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  servername: get.mediacorphub.org
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: gw.v2.PushService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: img.mediacorphub.org
   port: 443
   type: vless
   uuid: 1653818d-532e-46be-b825-384107fb7c3a
   tls: true
   alpn:
   - h2
-  servername: net.mediacorphub.org
-  client-fingerprint: firefox
+  servername: img.mediacorphub.org
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -113,11 +113,11 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 13
+  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 14
+  - 🇳🇱 荷兰 | NLD 13
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 9
 rules:
 - MATCH,AUTO

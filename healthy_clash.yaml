@@ -18,8 +18,22 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇮🇹 意大利 | ITA 4
   server: 202.50.253.99
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 5
+  server: 202.50.253.63
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -32,32 +46,35 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇭🇰 香港 | HKG 2
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: get.mediacorphub.org
+- name: 🇳🇱 荷兰 | NLD 2
+  server: stats.mediacorphub.org
   port: 443
   type: vless
   uuid: 1653818d-532e-46be-b825-384107fb7c3a
   tls: true
-  servername: get.mediacorphub.org
-  client-fingerprint: chrome
+  alpn:
+  - h2
+  servername: stats.mediacorphub.org
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: gw.v2.PushService
-  udp: true
-- name: 🇮🇹 意大利 | ITA 5
-  server: 202.50.253.63
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: api.mediacorphub.org
@@ -74,16 +91,51 @@ proxies:
     grpc-mode: gun
     grpc-service-name: gw.v2.PushService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: stats.mediacorphub.org
+- name: 🇳🇱 荷兰 | NLD 14
+  server: net.mediacorphub.org
   port: 443
   type: vless
   uuid: 1653818d-532e-46be-b825-384107fb7c3a
   tls: true
   alpn:
   - h2
-  servername: stats.mediacorphub.org
+  servername: net.mediacorphub.org
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: home.v2.MetricsService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 13
+  server: rpc.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  alpn:
+  - h2
+  servername: rpc.mediacorphub.org
   client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: api.v1.FeedService
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 156.67.120.205
+  port: 51628
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: get.mediacorphub.org
+  port: 443
+  type: vless
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+  tls: true
+  servername: get.mediacorphub.org
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -104,59 +156,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: home.v2.MetricsService
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: US122202.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 25a5a66f-5dd8-4661-9002-8a7870c62fef
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: US122202.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US122202.ssgreen.org
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 156.67.120.205
-  port: 51628
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 13
-  server: rpc.mediacorphub.org
-  port: 443
-  type: vless
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-  tls: true
-  alpn:
-  - h2
-  servername: rpc.mediacorphub.org
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.FeedService
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 14
-  server: net.mediacorphub.org
-  port: 443
-  type: vless
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-  tls: true
-  alpn:
-  - h2
-  servername: net.mediacorphub.org
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: home.v2.MetricsService
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -164,27 +163,27 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 6
   - 🇮🇹 意大利 | ITA 3
-  - 🇳🇱 荷兰 | NLD 5
+  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 5
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇮🇹 意大利 | ITA 6
+  - 🇭🇰 香港 | HKG 2
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇺🇸 美国 | USA 2
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 13
+  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 14
+  - 🇳🇱 荷兰 | NLD 13
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 9
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 6
   - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 6
   - 🇳🇱 荷兰 | NLD 7
 - name: PROTO-VLESS
   type: url-test
@@ -192,32 +191,32 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 13
+  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 14
+  - 🇳🇱 荷兰 | NLD 13
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 9
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 2
+  - 🇭🇰 香港 | HKG 2
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 瑞士 | CHE
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 6
-  - 🇳🇱 荷兰 | NLD 5
+  - 🇮🇹 意大利 | ITA 3
   - 🇮🇹 意大利 | ITA 5
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇳🇱 荷兰 | NLD 13
-  - 🇳🇱 荷兰 | NLD 14
+  - 🇮🇹 意大利 | ITA 6
 rules:
 - MATCH,AUTO
