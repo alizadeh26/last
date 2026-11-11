@@ -4,44 +4,37 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇷🇺 俄罗斯 | RUS
-  server: vps3.nemnogogo.com
+- name: 🇧🇾 BY_21
+  server: 717252g.nl8.h1clayd.click
   port: 443
   type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
-  alpn:
-  - h2
-  servername: vps3.nemnogogo.com
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  servername: 717252g.nl8.h1clayd.click
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: mobile.api.Event
+    grpc-service-name: 204adda7e3da
   udp: true
-- name: 🇷🇴 罗马尼亚 | ROU
-  server: 82.152.132.74
+- name: 🇩🇪 德国 | DEU 6
+  server: cryptoventura.online
   port: 443
   type: vless
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
   tls: true
-  servername: 82.152.132.74
+  alpn:
+  - http/1.1
+  servername: cryptoventura.online
   client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /assets/sync-8f3a71
+    path: /api/de3/live
     headers:
-      Host: 82.152.132.74
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: sg003.zestapp778.com
-  port: 443
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: sg003.zestapp778.com
-  client-fingerprint: chrome
-  network: tcp
+      Host: cryptoventura.online
   udp: true
 proxy-groups:
 - name: AUTO
@@ -49,8 +42,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇷🇴 罗马尼亚 | ROU
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇧🇾 BY_21
+  - 🇩🇪 德国 | DEU 6
 rules:
 - MATCH,AUTO
