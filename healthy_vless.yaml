@@ -4,23 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇧🇾 BY_21
-  server: 717252g.nl8.h1clayd.click
-  port: 443
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  servername: 717252g.nl8.h1clayd.click
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: 204adda7e3da
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
+- name: 🇩🇪 德国 | DEU 9
   server: cryptoventura.online
   port: 443
   type: vless
@@ -42,7 +26,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇾 BY_21
-  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 9
 rules:
 - MATCH,AUTO
