@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 9
+- name: 🇩🇪 德国 | DEU 12
   server: cryptoventura.online
   port: 443
   type: vless
@@ -20,12 +20,28 @@ proxies:
     headers:
       Host: cryptoventura.online
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: vps3.nemnogogo.com
+  port: 443
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  alpn:
+  - h2
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 12
+  - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO
