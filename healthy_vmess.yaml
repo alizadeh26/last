@@ -5,17 +5,19 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇭🇰 香港 | HKG
-  server: 156.239.224.107
-  port: 57278
+  server: 47.244.120.197
+  port: 36703
   type: vmess
-  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
   alterId: 0
   cipher: auto
   tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /arki
   udp: true
 proxy-groups:
 - name: AUTO

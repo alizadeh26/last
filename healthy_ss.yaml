@@ -4,40 +4,82 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.36
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.27
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.54
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.18
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.63
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 6
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 7
+  server: 202.50.253.81
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 | ITA 5
+  server: 202.50.253.54
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 8
   server: 202.50.253.90
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.81
+- name: 🇮🇹 意大利 | ITA 9
+  server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 | FRA
+  server: dns24.m3hrzd.ir
+  port: 1352
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
+  udp: true
+- name: 🇺🇦 乌克兰 | UKR
+  server: dns24.m3hrzd.ir
+  port: 1349
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
   udp: true
 proxy-groups:
 - name: AUTO
@@ -45,10 +87,16 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA 7
   - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 8
+  - 🇮🇹 意大利 | ITA 9
   - 🇮🇹 意大利 | ITA 4
+  - 🇫🇷 法国 | FRA
+  - 🇺🇦 乌克兰 | UKR
 rules:
 - MATCH,AUTO
