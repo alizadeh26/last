@@ -4,6 +4,21 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU
+  server: luminexorizon.ink
+  port: 443
+  type: vless
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  tls: true
+  alpn:
+  - h2
+  servername: luminexorizon.ink
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de3.v1
+  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: 202.50.253.81
   port: 19999
@@ -19,11 +34,53 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 5
+  server: 202.50.253.27
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 6
   server: 202.50.253.45
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 7
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 8
+  server: 202.50.253.54
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇱🇹 立陶宛 | LTU 2
+  server: lt.t1n2.com
+  port: 443
+  type: vless
+  uuid: a94d8907-6bbb-4570-80d3-dfdc314c1e7a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: awc2TGvraH8xMqfsAnNQ7JMQ_uUF8gW5auvU2gQfjR0
+    short-id: b31de5bead2ebf3c
+  servername: lt.t1n2.com
+  client-fingerprint: edge
+  network: tcp
   udp: true
 - name: 🇮🇹 意大利 | ITA 3
   server: 202.50.253.63
@@ -32,56 +89,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 5
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 7
-  server: 202.50.253.54
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 8
-  server: 202.50.253.36
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 9
-  server: 202.50.253.27
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 10
-  server: 202.50.253.90
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 154.36.158.197
-  port: 8388
-  type: ss
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
+- name: 🇷🇺 俄罗斯 | RUS 2
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -96,33 +104,12 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 54.255.60.49
-  port: 8443
+- name: 🇯🇵 日本 | JPN 2
+  server: 154.36.158.197
+  port: 8388
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  udp: true
-- name: 🇰🇷 韩国 | KOR 3
-  server: 43.200.6.1
-  port: 8443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: xray-piox09gf-calm-maple-6.cloady.io
-  port: 443
-  type: vless
-  uuid: 5633d1c3-fa8e-cd74-5b6b-6c464f36472a
-  tls: true
-  servername: xray-piox09gf-calm-maple-6.cloady.io
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /0f6186ec3c6d8474
-    headers:
-      Host: xray-piox09gf-calm-maple-6.cloady.io
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
   udp: true
 proxy-groups:
 - name: AUTO
@@ -130,21 +117,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 6
   - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 6
   - 🇮🇹 意大利 | ITA 7
   - 🇮🇹 意大利 | ITA 8
-  - 🇮🇹 意大利 | ITA 9
-  - 🇮🇹 意大利 | ITA 10
-  - 🇯🇵 日本 | JPN
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇰🇷 韩国 | KOR 3
-  - 🇺🇸 美国 | USA 4
+  - 🇱🇹 立陶宛 | LTU 2
+  - 🇮🇹 意大利 | ITA 3
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇯🇵 日本 | JPN 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -153,33 +137,30 @@ proxy-groups:
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 6
   - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 6
   - 🇮🇹 意大利 | ITA 7
   - 🇮🇹 意大利 | ITA 8
-  - 🇮🇹 意大利 | ITA 9
-  - 🇮🇹 意大利 | ITA 10
-  - 🇯🇵 日本 | JPN
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇰🇷 韩国 | KOR 3
+  - 🇮🇹 意大利 | ITA 3
+  - 🇯🇵 日本 | JPN 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇺🇸 美国 | USA 4
+  - 🇩🇪 德国 | DEU
+  - 🇱🇹 立陶宛 | LTU 2
+  - 🇷🇺 俄罗斯 | RUS 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 7
+  - 🇮🇹 意大利 | ITA 6
   - 🇮🇹 意大利 | ITA 8
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO

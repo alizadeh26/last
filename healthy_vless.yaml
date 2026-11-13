@@ -4,7 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇷🇺 俄罗斯 | RUS 4
+- name: 🇩🇪 德国 | DEU
+  server: luminexorizon.ink
+  port: 443
+  type: vless
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  tls: true
+  alpn:
+  - h2
+  servername: luminexorizon.ink
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de3.v1
+  udp: true
+- name: 🇱🇹 立陶宛 | LTU 2
+  server: lt.t1n2.com
+  port: 443
+  type: vless
+  uuid: a94d8907-6bbb-4570-80d3-dfdc314c1e7a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: awc2TGvraH8xMqfsAnNQ7JMQ_uUF8gW5auvU2gQfjR0
+    short-id: b31de5bead2ebf3c
+  servername: lt.t1n2.com
+  client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -19,27 +48,14 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: xray-piox09gf-calm-maple-6.cloady.io
-  port: 443
-  type: vless
-  uuid: 5633d1c3-fa8e-cd74-5b6b-6c464f36472a
-  tls: true
-  servername: xray-piox09gf-calm-maple-6.cloady.io
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /0f6186ec3c6d8474
-    headers:
-      Host: xray-piox09gf-calm-maple-6.cloady.io
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 4
-  - 🇺🇸 美国 | USA 4
+  - 🇩🇪 德国 | DEU
+  - 🇱🇹 立陶宛 | LTU 2
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO
