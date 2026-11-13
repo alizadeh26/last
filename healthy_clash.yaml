@@ -4,97 +4,147 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 5
-  server: cryptoventura.online
+- name: 🇦🇱 AL_25
+  server: 15b171g.nl7.h1clayd.click
   port: 443
   type: vless
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
-  alpn:
-  - http/1.1
-  servername: cryptoventura.online
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de3/live
-    headers:
-      Host: cryptoventura.online
+  reality-opts:
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 5b79e8a94241
   udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.27
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇱 AL_26
+  server: 5d0319t.nl7.h1clayd.click
+  port: 443
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇧🇾 BY_32
+  server: 717252g.nl8.h1clayd.click
+  port: 443
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 204adda7e3da
   udp: true
 - name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.36
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.72
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 7
-  server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 5
-  server: 202.50.253.54
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 8
-  server: 202.50.253.90
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 9
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
   server: 202.50.253.45
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: dns24.m3hrzd.ir
-  port: 1352
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.54
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 5
+  server: 202.50.253.81
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 6
+  server: 202.50.253.27
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 8
+  server: 57.131.4.13
+  port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
+  password: mx81glqbtlwuhcjo
   udp: true
-- name: 🇭🇰 香港 | HKG
+- name: 🇮🇹 意大利 | ITA 7
+  server: 202.50.253.99
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 9
+  server: 202.50.253.63
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: nl3.soshelper.space
+  port: 443
+  type: vless
+  uuid: 3a7849e7-8ef6-492f-860d-54dd6aae400a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mEo4kHPpRns7efJfVW1G-gDEsPag0jELFQK-HIwrvjY
+    short-id: 6562cf617728186e
+  servername: nl3.soshelper.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: nl2.soshelper.space
+  port: 443
+  type: vless
+  uuid: 3a7849e7-8ef6-492f-860d-54dd6aae400a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mEo4kHPpRns7efJfVW1G-gDEsPag0jELFQK-HIwrvjY
+    short-id: 6562cf617728186e
+  servername: nl2.soshelper.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
   server: 47.244.120.197
-  port: 36703
+  port: 44867
   type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   alterId: 0
   cipher: auto
   tls: false
@@ -105,12 +155,34 @@ proxies:
   ws-opts:
     path: /arki
   udp: true
-- name: 🇺🇦 乌克兰 | UKR
-  server: dns24.m3hrzd.ir
-  port: 1349
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
+- name: 🇳🇱 荷兰 | NLD 2
+  server: f0d7aft.nl13.h1clayd.click
+  port: 443
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
+    short-id: 8956c57cb4c4f8d2
+  servername: f0d7aft.nl13.h1clayd.click
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 0592efg.us8.h1clayd.click
+  port: 443
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+  servername: 0592efg.us8.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 99f2107b03f8
   udp: true
 proxy-groups:
 - name: AUTO
@@ -118,60 +190,68 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇮🇹 意大利 | ITA 2
+  - 🇦🇱 AL_25
+  - 🇦🇱 AL_26
+  - 🇧🇾 BY_32
   - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 6
-  - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 8
-  - 🇮🇹 意大利 | ITA 9
   - 🇮🇹 意大利 | ITA 4
-  - 🇫🇷 法国 | FRA
-  - 🇭🇰 香港 | HKG
-  - 🇺🇦 乌克兰 | UKR
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA 8
+  - 🇮🇹 意大利 | ITA 7
+  - 🇮🇹 意大利 | ITA 9
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇭🇰 香港 | HKG 2
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 4
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 6
-  - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 8
-  - 🇮🇹 意大利 | ITA 9
   - 🇮🇹 意大利 | ITA 4
-  - 🇫🇷 法国 | FRA
-  - 🇺🇦 乌克兰 | UKR
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA 8
+  - 🇮🇹 意大利 | ITA 7
+  - 🇮🇹 意大利 | ITA 9
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
+  - 🇦🇱 AL_25
+  - 🇦🇱 AL_26
+  - 🇧🇾 BY_32
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇺🇸 美国 | USA 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 5
-  - 🇮🇹 意大利 | ITA 2
+  - 🇦🇱 AL_25
+  - 🇦🇱 AL_26
+  - 🇧🇾 BY_32
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 8
-  - 🇮🇹 意大利 | ITA 4
-  - 🇫🇷 法国 | FRA
-  - 🇺🇦 乌克兰 | UKR
+  - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA 9
+  - 🇳🇱 荷兰 | NLD 4
 rules:
 - MATCH,AUTO
