@@ -4,8 +4,22 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -18,15 +32,8 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.99
+- name: 🇮🇹 意大利 | ITA 5
+  server: 202.50.253.81
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -41,13 +48,6 @@ proxies:
   udp: true
 - name: 🇮🇹 意大利 | ITA 7
   server: 202.50.253.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 5
-  server: 202.50.253.81
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -98,13 +98,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 5
   - 🇮🇹 意大利 | ITA 6
   - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 5
   - 🇷🇺 俄罗斯 | RUS 5
   - 🇹🇭 泰国 | THA
   - 🇹🇭 泰国 | THA 2
@@ -113,13 +113,13 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 5
   - 🇮🇹 意大利 | ITA 6
   - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 5
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -133,18 +133,11 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 6
-  - 🇮🇹 意大利 | ITA 7
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇹🇭 泰国 | THA
-  - 🇹🇭 泰国 | THA 2
+  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 5
+  - 🇷🇺 俄罗斯 | RUS 5
 rules:
 - MATCH,AUTO
