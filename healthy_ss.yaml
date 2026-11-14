@@ -5,7 +5,7 @@ mode: Rule
 log-level: silent
 proxies:
 - name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.27
+  server: 202.50.253.36
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -19,28 +19,7 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.54
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.90
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 5
   server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.36
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -55,8 +34,5 @@ proxy-groups:
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 6
 rules:
 - MATCH,AUTO

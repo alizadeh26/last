@@ -4,36 +4,36 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: notebook.filnex.baby
+- name: 🇬🇧 英国 | GBR 3
+  server: api.alder.lalibobi.online
   port: 443
   type: vless
-  uuid: 820fa845-a1eb-4a83-b613-e6714cea8a1a
+  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
   tls: true
-  alpn:
-  - h2
-  servername: notebook.filnex.baby
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: tKzo0qk-NJCNnmxmSgP7uGmd9VHKiTG2L-YqXYGj4Dc
+    short-id: 203242200f9d16be
+  servername: api.alder.lalibobi.online
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: glush.de6.v1
+    grpc-service-name: shop.v1.Catalog
   udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: amber.filnex.baby
+- name: 🇩🇪 德国 | DEU 9
+  server: luminexorizon.ink
   port: 443
   type: vless
-  uuid: 820fa845-a1eb-4a83-b613-e6714cea8a1a
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
   tls: true
   alpn:
-  - http/1.1
-  servername: amber.filnex.baby
+  - h2
+  servername: luminexorizon.ink
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de3/stream
-    headers:
-      Host: amber.filnex.baby
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de3.v1
   udp: true
 proxy-groups:
 - name: AUTO
@@ -41,7 +41,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 8
+  - 🇬🇧 英国 | GBR 3
+  - 🇩🇪 德国 | DEU 9
 rules:
 - MATCH,AUTO
