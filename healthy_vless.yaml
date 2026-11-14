@@ -4,36 +4,44 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇬🇧 英国 | GBR 3
-  server: api.alder.lalibobi.online
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: vps3.nemnogogo.com
   port: 443
   type: vless
-  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
-  tls: true
-  reality-opts:
-    public-key: tKzo0qk-NJCNnmxmSgP7uGmd9VHKiTG2L-YqXYGj4Dc
-    short-id: 203242200f9d16be
-  servername: api.alder.lalibobi.online
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: shop.v1.Catalog
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: luminexorizon.ink
-  port: 443
-  type: vless
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
   alpn:
   - h2
-  servername: luminexorizon.ink
+  servername: vps3.nemnogogo.com
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: glush.de3.v1
+    grpc-service-name: mobile.api.Event
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: assets.opensignal.com
+  port: 80
+  type: vless
+  uuid: 0c85001b-ad48-4f43-bdc9-b2b5c626a26e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /logout
+    headers:
+      Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
+  udp: true
+- name: 🇹🇭 泰国 | THA 2
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
   udp: true
 proxy-groups:
 - name: AUTO
@@ -41,7 +49,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 | GBR 3
-  - 🇩🇪 德国 | DEU 9
+  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇹🇭 泰国 | THA
+  - 🇹🇭 泰国 | THA 2
 rules:
 - MATCH,AUTO
