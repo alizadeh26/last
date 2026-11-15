@@ -4,41 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.90
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.36
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.27
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: vps3.nemnogogo.com
   port: 443
@@ -54,44 +19,123 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: b998f03d.de-p2.h1clayd.click
+  port: 443
+  type: vless
+  uuid: 474638a5-dc58-4453-9e40-70bcaa4ef74c
+  tls: true
+  reality-opts:
+    public-key: RjoTK5x2_y3hb4nsOUnjii7IAu6gy5GrC-VN-H_AIh0
+    short-id: c10f4100fa3a8d47
+  servername: b998f03d.de-p2.h1clayd.click
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 2
+  server: 7cabc1g.de-p2.h1clayd.click
+  port: 443
+  type: vless
+  uuid: 4618cebd-e1e9-45c3-be98-d9d6e3ee8bef
+  tls: true
+  reality-opts:
+    public-key: VKwRsPrkqzgO1NgEd9uK-g9Sg9vWUl37msYt4OH7XiI
+    short-id: d04b7f092468a136
+  servername: 7cabc1g.de-p2.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: df0c8e02206d
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 5
+  server: bbcdd4t.de-p2.h1clayd.click
+  port: 443
+  type: vless
+  uuid: 4618cebd-e1e9-45c3-be98-d9d6e3ee8bef
+  tls: true
+  reality-opts:
+    public-key: n9cdr2Qf9h3S_jf5Rcd15fl-4fxuztHvlexE7G-QvW8
+    short-id: 1aab0b827885a8b4
+  servername: bbcdd4t.de-p2.h1clayd.click
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: JP032001.ssgreen.org
+  port: 443
+  type: vmess
+  uuid: 16586ea9-a30d-4323-97f3-1907b27f439f
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: JP032001.ssgreen.org
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 104.18.20.212
+  port: 8080
+  type: vless
+  uuid: ab5a19cf-cadc-4648-a5e9-b510aca8f732
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: akanode.madvpn.us.kg
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 6
   - 🇷🇺 俄罗斯 | RUS 2
-- name: PROTO-SS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 6
+  - 🇹🇷 土耳其 | TUR
+  - 🇹🇷 土耳其 | TUR 2
+  - 🇹🇷 土耳其 | TUR 5
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 9
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇹🇷 土耳其 | TUR
+  - 🇹🇷 土耳其 | TUR 2
+  - 🇹🇷 土耳其 | TUR 5
+  - 🇺🇸 美国 | USA 9
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 4
+- name: REGION-AF
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 | TUR
+  - 🇹🇷 土耳其 | TUR 2
+  - 🇹🇷 土耳其 | TUR 5
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 6
   - 🇷🇺 俄罗斯 | RUS 2
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
