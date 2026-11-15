@@ -4,6 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU
+  server: ir2.cryptojakiro.com
+  port: 443
+  type: vless
+  uuid: 8a1a991a-f206-447a-adaf-37a57c133418
+  tls: true
+  servername: ir2.cryptojakiro.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ir2.cryptojakiro.com
 - name: 🇷🇺 俄罗斯 | RUS 7
   server: vps3.nemnogogo.com
   port: 443
@@ -25,6 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 德国 | DEU
   - 🇷🇺 俄罗斯 | RUS 7
 rules:
 - MATCH,AUTO
