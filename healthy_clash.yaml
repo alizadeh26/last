@@ -4,6 +4,13 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇮🇹 意大利 | ITA 2
   server: 202.50.253.45
   port: 19999
@@ -11,29 +18,15 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA
+- name: 🇮🇹 意大利 | ITA 3
   server: 202.50.253.36
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.54
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 5
-  server: 202.50.253.81
+  server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -46,14 +39,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 7
-  server: 202.50.253.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
+- name: 🇷🇺 俄罗斯 | RUS 2
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -68,76 +54,44 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: assets.opensignal.com
-  port: 80
-  type: vless
-  uuid: 0c85001b-ad48-4f43-bdc9-b2b5c626a26e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /logout
-    headers:
-      Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
-  udp: true
-- name: 🇹🇭 泰国 | THA 2
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dcm4kwis2exkw.cloudfront.net
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
   - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 5
   - 🇮🇹 意大利 | ITA 6
-  - 🇮🇹 意大利 | ITA 7
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇹🇭 泰国 | THA
-  - 🇹🇭 泰国 | THA 2
+  - 🇷🇺 俄罗斯 | RUS 2
 - name: PROTO-SS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
   - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 5
   - 🇮🇹 意大利 | ITA 6
-  - 🇮🇹 意大利 | ITA 7
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇹🇭 泰国 | THA
-  - 🇹🇭 泰国 | THA 2
+  - 🇷🇺 俄罗斯 | RUS 2
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 3
   - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 5
-  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇮🇹 意大利 | ITA 6
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO

@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇷🇺 俄罗斯 | RUS 5
+- name: 🇷🇺 俄罗斯 | RUS 2
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -19,38 +19,12 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: assets.opensignal.com
-  port: 80
-  type: vless
-  uuid: 0c85001b-ad48-4f43-bdc9-b2b5c626a26e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /logout
-    headers:
-      Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
-  udp: true
-- name: 🇹🇭 泰国 | THA 2
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dcm4kwis2exkw.cloudfront.net
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇹🇭 泰国 | THA
-  - 🇹🇭 泰国 | THA 2
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO
