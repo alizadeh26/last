@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇷🇺 俄罗斯 | RUS 2
+- name: 🇷🇺 俄罗斯 | RUS 7
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -19,70 +19,12 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: b998f03d.de-p2.h1clayd.click
-  port: 443
-  type: vless
-  uuid: 474638a5-dc58-4453-9e40-70bcaa4ef74c
-  tls: true
-  reality-opts:
-    public-key: RjoTK5x2_y3hb4nsOUnjii7IAu6gy5GrC-VN-H_AIh0
-    short-id: c10f4100fa3a8d47
-  servername: b998f03d.de-p2.h1clayd.click
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇹🇷 土耳其 | TUR 2
-  server: 7cabc1g.de-p2.h1clayd.click
-  port: 443
-  type: vless
-  uuid: 4618cebd-e1e9-45c3-be98-d9d6e3ee8bef
-  tls: true
-  reality-opts:
-    public-key: VKwRsPrkqzgO1NgEd9uK-g9Sg9vWUl37msYt4OH7XiI
-    short-id: d04b7f092468a136
-  servername: 7cabc1g.de-p2.h1clayd.click
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: df0c8e02206d
-  udp: true
-- name: 🇹🇷 土耳其 | TUR 5
-  server: bbcdd4t.de-p2.h1clayd.click
-  port: 443
-  type: vless
-  uuid: 4618cebd-e1e9-45c3-be98-d9d6e3ee8bef
-  tls: true
-  reality-opts:
-    public-key: n9cdr2Qf9h3S_jf5Rcd15fl-4fxuztHvlexE7G-QvW8
-    short-id: 1aab0b827885a8b4
-  servername: bbcdd4t.de-p2.h1clayd.click
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 104.18.20.212
-  port: 8080
-  type: vless
-  uuid: ab5a19cf-cadc-4648-a5e9-b510aca8f732
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: akanode.madvpn.us.kg
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 2
-  - 🇹🇷 土耳其 | TUR
-  - 🇹🇷 土耳其 | TUR 2
-  - 🇹🇷 土耳其 | TUR 5
-  - 🇺🇸 美国 | USA 9
+  - 🇷🇺 俄罗斯 | RUS 7
 rules:
 - MATCH,AUTO
