@@ -4,20 +4,71 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU
-  server: ir2.cryptojakiro.com
+- name: 🇪🇪 爱沙尼亚 | EST 2
+  server: ee45.own-homelab.cloud
   port: 443
   type: vless
-  uuid: 8a1a991a-f206-447a-adaf-37a57c133418
+  uuid: 0ed9418b-e687-4c2d-8869-7e368c44887e
   tls: true
-  servername: ir2.cryptojakiro.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ir2.cryptojakiro.com
-- name: 🇷🇺 俄罗斯 | RUS 7
+  reality-opts:
+    public-key: 4XnNIGFrNW2uKqvNJly-X_J52O_SDOdWwejuGQU_IAs
+    short-id: 05c0787b9357f4a8
+  servername: ee45.own-homelab.cloud
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST 7
+  server: ee11.own-homelab.cloud
+  port: 443
+  type: vless
+  uuid: 0ed9418b-e687-4c2d-8869-7e368c44887e
+  tls: true
+  reality-opts:
+    public-key: 4XnNIGFrNW2uKqvNJly-X_J52O_SDOdWwejuGQU_IAs
+    short-id: 05c0787b9357f4a8
+  servername: ee11.own-homelab.cloud
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST 6
+  server: ee25.own-homelab.cloud
+  port: 443
+  type: vless
+  uuid: 0ed9418b-e687-4c2d-8869-7e368c44887e
+  tls: true
+  reality-opts:
+    public-key: 4XnNIGFrNW2uKqvNJly-X_J52O_SDOdWwejuGQU_IAs
+    short-id: 05c0787b9357f4a8
+  servername: ee25.own-homelab.cloud
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pl225.homelab-cdn.cloud
+  port: 8443
+  type: vless
+  uuid: 0ed9418b-e687-4c2d-8869-7e368c44887e
+  tls: true
+  reality-opts:
+    public-key: 0f9tBNd1e0FjqakxfoGM_bGfYIAdE81XzXwPQgJkVDI
+    short-id: 1eb65c424decdb73
+  servername: pl225.homelab-cdn.cloud
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -38,7 +89,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU
-  - 🇷🇺 俄罗斯 | RUS 7
+  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇪🇪 爱沙尼亚 | EST 7
+  - 🇪🇪 爱沙尼亚 | EST 6
+  - 🇵🇱 波兰 | POL
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO
