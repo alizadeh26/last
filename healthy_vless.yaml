@@ -4,48 +4,18 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇪🇸 西班牙 | ESP 2
-  server: 213.182.201.133
-  port: 3090
-  type: vless
-  uuid: 8d227481-09ea-4d8f-94f5-b25bf72360c0
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
-  udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: ee126.own-homelab.cloud
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 4626b8t.nl19.h1clayd.shop
   port: 443
   type: vless
-  uuid: 0ed9418b-e687-4c2d-8869-7e368c44887e
+  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
   tls: true
   reality-opts:
-    public-key: 4XnNIGFrNW2uKqvNJly-X_J52O_SDOdWwejuGQU_IAs
-    short-id: 05c0787b9357f4a8
-  servername: ee126.own-homelab.cloud
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: sweden.dance-tonic.rutube.info
-  port: 8443
-  type: vless
-  uuid: 0ed9418b-e687-4c2d-8869-7e368c44887e
-  tls: true
-  reality-opts:
-    public-key: 9OYY5pqE32-AqAkHK9Pv2TNoaAFwFFRMJKT4_ccSil4
-    short-id: 08
-  servername: thelocal.se
+    public-key: fgZfPnrvmYRR3aMKxLCmcpmTjOlTcdA356_heBfqkTk
+    short-id: a23fc7d3b02e0a0e
+  servername: 4626b8t.nl19.h1clayd.shop
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
+  network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: vps3.nemnogogo.com
@@ -68,9 +38,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 | ESP 2
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇸🇪 瑞典 | SWE
+  - 🇳🇱 荷兰 | NLD 4
   - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO

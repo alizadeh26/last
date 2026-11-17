@@ -1,2 +1,2 @@
-vless://38308ff1-5aa9-494f-a25a-0f2870d56b3e@vps3.nemnogogo.com:443?encryption=none&type=grpc&security=tls&sni=vps3.nemnogogo.com&fp=firefox&alpn=h2&serviceName=mobile.api.Event#🇷🇺 72 - RU - VLESS/GRPC/TLS/UTLS - 443
-vless://3422d3c1-dec4-4387-96da-d1b56c5f2318@81.163.22.224:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=hST-TEsr1xreXNQfhUTOzebidKRb0quzlQXXXhGgu3c&security=reality&sid=a1b2c3d4e5f60708&sni=yastatic.sbs&type=raw#🇷🇺 65 - RU - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 443
+vless://38308ff1-5aa9-494f-a25a-0f2870d56b3e@vps3.nemnogogo.com:443?encryption=none&type=grpc&security=tls&sni=vps3.nemnogogo.com&fp=firefox&alpn=h2&serviceName=mobile.api.Event#🇷🇺 70 - RU - VLESS/GRPC/TLS/UTLS - 443
+vless://4cabcd59-a405-4c00-96f5-03507e1e28fa@188.225.73.41:443?encryption=none&fp=firefox&mode=gun&security=tls&serviceName=cache.sync.v1&sni=cadrin.wtf&type=grpc#🇷🇺 149 - RU - VLESS/GRPC/TLS/UTLS - 443
