@@ -4,33 +4,19 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 4626b8t.nl19.h1clayd.shop
+- name: 🇳🇱 荷兰 | NLD
+  server: 8a2e72t.nl20.h1clayd.shop
   port: 443
   type: vless
-  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   tls: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: fgZfPnrvmYRR3aMKxLCmcpmTjOlTcdA356_heBfqkTk
-    short-id: a23fc7d3b02e0a0e
-  servername: 4626b8t.nl19.h1clayd.shop
-  client-fingerprint: firefox
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  servername: 8a2e72t.nl20.h1clayd.shop
+  client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: vps3.nemnogogo.com
-  port: 443
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  alpn:
-  - h2
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
   udp: true
 proxy-groups:
 - name: AUTO
@@ -38,7 +24,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇳🇱 荷兰 | NLD
 rules:
 - MATCH,AUTO
