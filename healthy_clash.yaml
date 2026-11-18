@@ -3,7 +3,121 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: silent
-proxies: []
-proxy-groups: []
+proxies:
+- name: 🇩🇪 德国 | DEU 8
+  server: app.streamru14.net
+  port: 443
+  type: vless
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  tls: true
+  flow: xtls-rprx-vision
+  servername: app.streamru14.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: 47.244.120.197
+  port: 36703
+  type: vmess
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: vps3.nemnogogo.com
+  port: 443
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: US122207.ssgreen.org
+  port: 443
+  type: vmess
+  uuid: 74d216a3-fdb8-4774-a9c3-35f9e5a46819
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: US122207.ssgreen.org
+  udp: true
+proxy-groups:
+- name: AUTO
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 8
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 3
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 6
+- name: PROTO-VLESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 8
+  - 🇷🇺 俄罗斯 | RUS
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 3
+  - 🇺🇸 美国 | USA 6
+- name: REGION-AS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 3
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 | DEU 8
+  - 🇷🇺 俄罗斯 | RUS
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 6
 rules:
 - MATCH,AUTO

@@ -4,19 +4,29 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇳🇱 荷兰 | NLD
-  server: 8a2e72t.nl20.h1clayd.shop
+- name: 🇩🇪 德国 | DEU 8
+  server: app.streamru14.net
   port: 443
   type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
   tls: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  servername: 8a2e72t.nl20.h1clayd.shop
-  client-fingerprint: chrome
+  servername: app.streamru14.net
+  client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: vps3.nemnogogo.com
+  port: 443
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
   udp: true
 proxy-groups:
 - name: AUTO
@@ -24,6 +34,7 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 | NLD
+  - 🇩🇪 德国 | DEU 8
+  - 🇷🇺 俄罗斯 | RUS
 rules:
 - MATCH,AUTO

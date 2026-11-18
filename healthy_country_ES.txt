@@ -1,5 +1,7 @@
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.118.62:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=courses.discovergreatjobsandadvanceyourcareer.com#Server 26 🇪🇸
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.118.166:443?security=tls&sni=learn.discovergreatjobsandadvanceyourcareer.com#Server 23 🇪🇸
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.118.251:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=resources.discovergreatjobsandadvanceyourcareer.com#Server 104 🇪🇸
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.118.131:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.discovergreatjobsandadvanceyourcareer.com#Server 127 🇪🇸
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.118.251:443?security=tls&sni=resources.discovergreatjobsandadvanceyourcareer.com&insecure=0&allowInsecure=0&type=tcp&headerType=none#🆔ar14n24b%20🔒%20TR-TCP-N/A%20🇪🇸%20ES%20123ms
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.118.115:443?security=tls&sni=discovergreatjobsandadvanceyourcareer.com&fp=chrome&insecure=0&allowInsecure=0&type=tcp&headerType=none#🆔ar14n24b%20🔒%20TR-TCP-N/A%20❔%20XX%20120ms
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.118.115:443?allowInsecure=1&sni=discovergreatjobsandadvanceyourcareer.com#%E7%BE%8E%E5%9B%BD_1118104680+M63
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.118.203:443?security=tls&sni=blog.discovergreatjobsandadvanceyourcareer.com&insecure=0&allowInsecure=0&type=tcp&headerType=none#🆔ar14n24b%20🔒%20TR-TCP-N/A%20🇪🇸%20ES%20118ms
+vless://12c53e32-e589-47d6-b857-e4132294f767@46.28.71.247:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE&security=reality&sid=0dfc23fe80778c00&sni=www.cloudflare.com&type=raw#🇪🇸 26 - ES - VLESS/RAW/REALITY/PBK/SID/VISION/UTLS - 443
