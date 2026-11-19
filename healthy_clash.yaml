@@ -4,22 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG
-  server: 47.244.120.197
-  port: 36703
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
+- name: 🇷🇺 俄罗斯 | RUS 4
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -34,37 +19,20 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: harbor.gerqix.online
-  port: 443
-  type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
+- name: 🇭🇰 香港 | HKG
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
   alpn:
-  - http/1.1
-  servername: harbor.gerqix.online
-  client-fingerprint: firefox
+  - ''
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /api/de1/stream
-    headers:
-      Host: harbor.gerqix.online
-  udp: true
-- name: 🇩🇪 德国 | DEU 16
-  server: foliose.merlano.monster
-  port: 443
-  type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
-  alpn:
-  - http/1.1
-  servername: foliose.merlano.monster
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de2/stream
-    headers:
-      Host: foliose.merlano.monster
+    path: /arki
   udp: true
 proxy-groups:
 - name: AUTO
@@ -72,18 +40,14 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇷🇺 俄罗斯 | RUS 4
   - 🇭🇰 香港 | HKG
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 16
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 16
+  - 🇷🇺 俄罗斯 | RUS 4
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
@@ -101,8 +65,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 4
-  - 🇩🇪 德国 | DEU 16
+  - 🇷🇺 俄罗斯 | RUS 4
 rules:
 - MATCH,AUTO
