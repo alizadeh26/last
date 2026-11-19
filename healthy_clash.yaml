@@ -4,33 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 8
-  server: app.streamru14.net
-  port: 443
-  type: vless
-  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
-  tls: true
-  flow: xtls-rprx-vision
-  servername: app.streamru14.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-  udp: true
-- name: 🇭🇰 香港 | HKG 3
+- name: 🇭🇰 香港 | HKG
   server: 47.244.120.197
   port: 36703
   type: vmess
@@ -51,27 +25,46 @@ proxies:
   type: vless
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
+  alpn:
+  - h2
   servername: vps3.nemnogogo.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: US122207.ssgreen.org
+- name: 🇩🇪 德国 | DEU 4
+  server: harbor.gerqix.online
   port: 443
-  type: vmess
-  uuid: 74d216a3-fdb8-4774-a9c3-35f9e5a46819
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
   tls: true
-  skip-cert-verify: true
+  alpn:
+  - http/1.1
+  servername: harbor.gerqix.online
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /wes
+    path: /api/de1/stream
     headers:
-      Host: US122207.ssgreen.org
+      Host: harbor.gerqix.online
+  udp: true
+- name: 🇩🇪 德国 | DEU 16
+  server: foliose.merlano.monster
+  port: 443
+  type: vless
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
+  tls: true
+  alpn:
+  - http/1.1
+  servername: foliose.merlano.monster
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de2/stream
+    headers:
+      Host: foliose.merlano.monster
   udp: true
 proxy-groups:
 - name: AUTO
@@ -79,45 +72,37 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG
   - 🇷🇺 俄罗斯 | RUS
-  - 🇺🇸 美国 | USA 6
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 16
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
   - 🇷🇺 俄罗斯 | RUS
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 16
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 3
-  - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 8
   - 🇷🇺 俄罗斯 | RUS
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 6
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 16
 rules:
 - MATCH,AUTO
