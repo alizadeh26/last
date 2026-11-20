@@ -32,11 +32,5 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 | RUS 5
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇷🇺 俄罗斯 | RUS 5
 rules:
 - MATCH,AUTO
