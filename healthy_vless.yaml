@@ -4,6 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU 2
+  server: 152.53.120.90
+  port: 50955
+  type: vless
+  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇫🇷 法国 | FRA
   server: 54.36.102.152
   port: 2083
@@ -13,14 +21,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-kulo
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 152.53.120.90
-  port: 50955
-  type: vless
-  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
-  tls: false
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 62.144.51.95
@@ -36,8 +36,8 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
   - 🇩🇪 德国 | DEU 2
+  - 🇫🇷 法国 | FRA
   - 🇺🇸 美国 | USA 5
 rules:
 - MATCH,AUTO

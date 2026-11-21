@@ -4,6 +4,14 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
+- name: 🇩🇪 德国 | DEU 2
+  server: 152.53.120.90
+  port: 50955
+  type: vless
+  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇫🇷 法国 | FRA
   server: 54.36.102.152
   port: 2083
@@ -14,14 +22,6 @@ proxies:
   ws-opts:
     path: /vless-kulo
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 152.53.120.90
-  port: 50955
-  type: vless
-  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 62.144.51.95
   port: 443
@@ -29,40 +29,6 @@ proxies:
   uuid: c657310e-d87c-4358-9cb7-200a0c3f35e8
   tls: false
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: afzuv.xiaoyan.io
-  port: 16648
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: d1eyz.xiaoyan.io
-  port: 16648
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
   udp: true
 - name: 🇯🇵 日本 | JPN 2
   server: d1eyz.xiaoyan.io
@@ -98,35 +64,88 @@ proxies:
     headers:
       Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
   udp: true
+- name: 🇮🇩 印尼 | IDN
+  server: afzuv.xiaoyan.io
+  port: 16616
+  type: vmess
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: d1eyz.xiaoyan.io
+  port: 16648
+  type: vmess
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: afzuv.xiaoyan.io
+  port: 16648
+  type: vmess
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
   - 🇩🇪 德国 | DEU 2
+  - 🇫🇷 法国 | FRA
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 12
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN
+  - 🇮🇩 印尼 | IDN
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 11
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 | FRA
   - 🇩🇪 德国 | DEU 2
+  - 🇫🇷 法国 | FRA
   - 🇺🇸 美国 | USA 5
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 12
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN
+  - 🇮🇩 印尼 | IDN
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 11
 rules:
 - MATCH,AUTO
