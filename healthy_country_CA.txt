@@ -1,3 +1,11 @@
-vless://03fcc618-b93d-6796-6aed-8a38c975d581@66.163.113.9:443?security=tls&sni=kuruish.org&type=tcp#Server B127 🇨🇦
-vmess://eyJhZGQiOiIxMzQuMTk1LjE5Ni4yMTEiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImVjaCI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiaW5zZWN1cmUiOiIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjE4MDAwIiwicHF2IjoiIiwicHMiOiJDQVx1ZDgzY1x1ZGRlOFx1ZDgzY1x1ZGRlNiB8IDEzNC4xOTUuMTk2LjIxMS0xODAwMCB8IDU2Ljc2bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoibm9uZSIsInR5cGUiOiJub25lIiwidiI6IjIiLCJ2Y24iOiIifQ==
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.152:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=learn.connectingpeoplewithgreatjobs.com#🆔ar14n24b%20🔒%20TR-TCP-N/A%20❔%20XX%2018ms
+vless://03fcc618-b93d-6796-6aed-8a38c975d581@kuruish.org:443?security=tls&sni=kuruish.org&type=tcp#Server B103 🇯🇵
+vmess://eyJhZGQiOiIyMy4xNjIuMjAwLjE5OCIsInBvcnQiOiIxODAwMCIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ2IjoiMiIsInBzIjoi5Yqg5ou/5aSnXzExMjMwNDAwNCBMMzYiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.89:443?allowInsecure=0&sni=www.connectingpeoplewithgreatjobs.com#%E7%BE%8E%E5%9B%BD_112304086+M61
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.85:443?allowInsecure=0&sni=cdn.connectingpeoplewithgreatjobs.com#%E7%BE%8E%E5%9B%BD_112304088+M61
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.93:443?sni=connectingpeoplewithgreatjobs.com#%E7%BE%8E%E5%9B%BD_112304110+M61
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.79:443?allowInsecure=0&sni=blog.connectingpeoplewithgreatjobs.com#%E7%BE%8E%E5%9B%BD_112304111+M61
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.201:443?sni=resources.connectingpeoplewithgreatjobs.com&type=tcp&fp=chrome#%E7%BE%8E%E5%9B%BD_1123044145+M61
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.152:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=learn.connectingpeoplewithgreatjobs.com#CA🇨🇦
+vless://88e79aa6-f431-4453-8dcc-652a0c747198@188.114.98.0:443?encryption=none&security=tls&sni=o685y.save-node.com&alpn=http/1.1&type=ws&host=o685y.save-node.com&path=/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p#🇺🇸 288 - US - VLESS/WS/TLS - 443
+vless://c2425034-91ef-44bf-9fd4-f2be9c1e989a@chatgpt.com:443?encryption=none&type=ws&host=sinavm3.soft10.ir&path=/SiNAVM-SiNAVM-SiNAVM-SiNAVM&security=tls&fp=chrome&sni=sinavm3.soft10.ir&alpn=http/1.1#🇺🇸 398 - US - VLESS/WS/TLS/UTLS - 443
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.74:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=api.connectingpeoplewithgreatjobs.com#🇨🇦 20 - CA - Trojan/TLS/UTLS - 443
