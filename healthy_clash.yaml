@@ -4,116 +4,62 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: 152.53.120.90
-  port: 50955
-  type: vless
-  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 54.36.102.152
-  port: 2083
-  type: vless
-  uuid: 51a6ab93-e805-4b8b-89d1-d3ab85a118ce
-  tls: false
-  network: ws
-  ws-opts:
-    path: /vless-kulo
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 62.144.51.95
+- name: 🇳🇱 荷兰 | NLD 3
+  server: f0d7aft.nl13.h1clayd.click
   port: 443
   type: vless
-  uuid: c657310e-d87c-4358-9cb7-200a0c3f35e8
-  tls: false
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
+    short-id: 8956c57cb4c4f8d2
+  servername: f0d7aft.nl13.h1clayd.click
+  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: d1eyz.xiaoyan.io
-  port: 16617
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: 🇷🇺 俄罗斯 | RUS
+  server: vps3.nemnogogo.com
+  port: 443
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
   alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+  - h2
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇯🇵 日本 | JPN
-  server: afzuv.xiaoyan.io
-  port: 16617
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+- name: 🇳🇱 荷兰 | NLD
+  server: 5d0319t.nl7.h1clayd.click
+  port: 443
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: 🇮🇩 印尼 | IDN
-  server: afzuv.xiaoyan.io
-  port: 16616
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: 🇺🇸 美国 | USA 9
+  server: tachu37.top
+  port: 443
+  type: vless
+  uuid: 65c21703-ae89-4eed-ae87-8bec8a4c000c
+  tls: true
   alpn:
-  - ''
-  skip-cert-verify: true
+  - http/1.1
+  servername: tachu37.top
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /js
     headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: d1eyz.xiaoyan.io
-  port: 16648
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: afzuv.xiaoyan.io
-  port: 16648
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+      Host: tachu37.top
   udp: true
 proxy-groups:
 - name: AUTO
@@ -121,31 +67,37 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇫🇷 法国 | FRA
-  - 🇺🇸 美国 | USA 5
-  - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN
-  - 🇮🇩 印尼 | IDN
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 11
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 9
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇫🇷 法国 | FRA
-  - 🇺🇸 美国 | USA 5
-- name: PROTO-VMESS
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 9
+- name: REGION-AF
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN
-  - 🇮🇩 印尼 | IDN
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 11
+  - 🇳🇱 荷兰 | NLD
+- name: REGION-EU
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇷🇺 俄罗斯 | RUS
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
