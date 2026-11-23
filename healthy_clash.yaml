@@ -4,63 +4,45 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: inlay.merlano.monster
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: vps3.nemnogogo.com
   port: 443
   type: vless
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
-  tls: true
-  alpn:
-  - http/1.1
-  servername: inlay.merlano.monster
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de3/stream
-    headers:
-      Host: inlay.merlano.monster
-  udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: djj.zjlo.top
-  port: 23169
-  type: vless
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  tls: true
-  flow: xtls-rprx-vision
-  servername: djj.zjlo.top
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: birchbark.gerqix.online
-  port: 443
-  type: vless
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
   alpn:
   - h2
-  servername: birchbark.gerqix.online
-  client-fingerprint: chrome
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: glush.de7.v1
+    grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: parchment.merlano.monster
-  port: 443
+- name: 🇺🇸 美国 | USA 9
+  server: 188.114.99.137
+  port: 80
   type: vless
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
-  tls: true
-  alpn:
-  - http/1.1
-  servername: parchment.merlano.monster
-  client-fingerprint: firefox
+  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
+  tls: false
   network: ws
   ws-opts:
-    path: /api/de7/stream
+    path: /
     headers:
-      Host: parchment.merlano.monster
+      Host: suh.cryptofront.uk
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: af48d6t.pl10.h1clayd.shop
+  port: 443
+  type: vless
+  uuid: d92038b6-b470-4267-9c69-2c649bf3f4a4
+  tls: true
+  reality-opts:
+    public-key: yELja29OBDJ2V0qacVXg_5NDN7uNk1YQVMgGKN9Kc2g
+    short-id: f36b61d044905efb
+  servername: af48d6t.pl10.h1clayd.shop
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO
@@ -68,32 +50,28 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇯🇵 日本 | JPN 3
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 11
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 4
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇯🇵 日本 | JPN 3
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 11
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇯🇵 日本 | JPN 3
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 4
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU 11
+  - 🇷🇺 俄罗斯 | RUS 3
+- name: REGION-NA
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
