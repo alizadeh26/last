@@ -4,45 +4,192 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: vps3.nemnogogo.com
+- name: 🇩🇪 德国 | DEU 6
+  server: vellum.filnex.baby
   port: 443
   type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
   tls: true
-  alpn:
-  - h2
-  servername: vps3.nemnogogo.com
+  servername: rookery.moltex.click
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: mobile.api.Event
+    grpc-service-name: glush.de3.v1
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 188.114.99.137
-  port: 80
-  type: vless
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: suh.cryptofront.uk
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: af48d6t.pl10.h1clayd.shop
+- name: 🇩🇪 德国 | DEU 5
+  server: inlay.merlano.monster
   port: 443
   type: vless
-  uuid: d92038b6-b470-4267-9c69-2c649bf3f4a4
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
   tls: true
-  reality-opts:
-    public-key: yELja29OBDJ2V0qacVXg_5NDN7uNk1YQVMgGKN9Kc2g
-    short-id: f36b61d044905efb
-  servername: af48d6t.pl10.h1clayd.shop
+  alpn:
+  - http/1.1
+  servername: inlay.merlano.monster
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/de3/stream
+    headers:
+      Host: inlay.merlano.monster
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: rowanberry.moltex.click
+  port: 443
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  tls: true
+  alpn:
+  - http/1.1
+  servername: rowanberry.moltex.click
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /api/de7/stream
+    headers:
+      Host: rowanberry.moltex.click
+  udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: parchment.merlano.monster
+  port: 443
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  tls: true
+  alpn:
+  - http/1.1
+  servername: parchment.merlano.monster
   client-fingerprint: firefox
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /api/de7/stream
+    headers:
+      Host: parchment.merlano.monster
+  udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: tapestry.gerqix.online
+  port: 443
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  tls: true
+  alpn:
+  - h2
+  servername: tapestry.gerqix.online
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de3.v1
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: cove.gerqix.online
+  port: 443
+  type: vless
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  tls: true
+  alpn:
+  - http/1.1
+  servername: cove.gerqix.online
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: cove.gerqix.online
+  udp: true
+- name: 🇩🇪 德国 | DEU 14
+  server: spindle.filnex.baby
+  port: 443
+  type: vless
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  tls: true
+  alpn:
+  - http/1.1
+  servername: elderglade.elvano.website
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de5/stream
+    headers:
+      Host: spindle.filnex.baby
+  udp: true
+- name: 🇩🇪 德国 | DEU 19
+  server: marina.gerqix.online
+  port: 443
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  tls: true
+  alpn:
+  - http/1.1
+  servername: marina.gerqix.online
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de3/stream
+    headers:
+      Host: marina.gerqix.online
+  udp: true
+- name: 🇩🇪 德国 | DEU 22
+  server: lagoon.gerqix.online
+  port: 443
+  type: vless
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  tls: true
+  alpn:
+  - http/1.1
+  servername: lagoon.gerqix.online
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de5/stream
+    headers:
+      Host: lagoon.gerqix.online
+  udp: true
+- name: 🇩🇪 德国 | DEU 21
+  server: sundial.filnex.baby
+  port: 443
+  type: vless
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  tls: true
+  alpn:
+  - http/1.1
+  servername: silverfen.elvano.website
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de4/stream
+    headers:
+      Host: sundial.filnex.baby
+  udp: true
+- name: 🇩🇪 德国 | DEU 25
+  server: archive.filnex.baby
+  port: 443
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  tls: true
+  servername: elmharbor.gerqix.online
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de7.v1
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  servername: 47.244.120.197
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
   udp: true
 proxy-groups:
 - name: AUTO
@@ -50,28 +197,52 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 4
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 19
+  - 🇩🇪 德国 | DEU 22
+  - 🇩🇪 德国 | DEU 21
+  - 🇩🇪 德国 | DEU 25
+  - 🇭🇰 香港 | HKG 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 4
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 13
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 19
+  - 🇩🇪 德国 | DEU 22
+  - 🇩🇪 德国 | DEU 21
+  - 🇩🇪 德国 | DEU 25
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港 | HKG 3
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS 3
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇺🇸 美国 | USA 9
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 9
+  - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 22
+  - 🇩🇪 德国 | DEU 21
 rules:
 - MATCH,AUTO
