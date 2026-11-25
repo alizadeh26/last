@@ -4,7 +4,118 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
+- name: 🇩🇪 德国 | DEU 15
+  server: 195.110.15.216
+  port: 31652
+  type: vless
+  uuid: 2da03bdf-8af3-4207-96c7-d70e0dd22c36
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: free-server.techsonic.dev
+  port: 443
+  type: vless
+  uuid: 90711def-edd4-42da-ba1d-b2046b86b50a
+  tls: true
+  servername: tech-sonic.webex.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 12
+  server: free-server.techsonic.dev
+  port: 443
+  type: vless
+  uuid: 398d124d-ed77-498e-acb6-be4a2c5d182a
+  tls: true
+  servername: android.googleapis.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: sienna.merlano.monster
+  port: 443
+  type: vless
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  tls: true
+  alpn:
+  - http/1.1
+  servername: sienna.merlano.monster
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /api/de4/stream
+    headers:
+      Host: sienna.merlano.monster
+  udp: true
+- name: 🇩🇪 德国 | DEU 22
+  server: free-server.techsonic.dev
+  port: 443
+  type: vless
+  uuid: 9afdc92d-4e88-4787-8d75-c95f7685d294
+  tls: true
+  servername: aka.ms
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 18
+  server: mintleaf.moltex.click
+  port: 443
+  type: vless
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  tls: true
+  alpn:
+  - http/1.1
+  servername: mintleaf.moltex.click
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de4/stream
+    headers:
+      Host: mintleaf.moltex.click
+  udp: true
+- name: 🇩🇪 德国 | DEU 24
+  server: rowanberry.moltex.click
+  port: 443
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  tls: true
+  alpn:
+  - http/1.1
+  servername: rowanberry.moltex.click
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /api/de7/stream
+    headers:
+      Host: rowanberry.moltex.click
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 185.200.199.122
+  port: 443
+  type: vless
+  uuid: 04920673-035c-410d-94e4-5b1469d3fb6f
+  tls: true
+  flow: xtls-rprx-vision
+  servername: 185.200.199.122
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇱🇹 立陶宛 | LTU
+  server: lt.memepn.com
+  port: 443
+  type: vless
+  uuid: f69e272f-e0e5-4e9d-b180-5be63930cde9
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: lt.memepn.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 28
   server: 4935e4t.de25.h1clayd.click
   port: 443
   type: vless
@@ -18,60 +129,21 @@ proxies:
   client-fingerprint: ios
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: n1.sklserv.com
-  port: 443
-  type: vless
-  uuid: b7791707-83d9-444b-9d05-f5c99e90acd4
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GqhAFTkRQ1HkNXyF2dUl3wUzJDHfgx3O9qocK01SLWU
-    short-id: 38e0c84b27d01e0d
-  servername: n1.sklserv.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: vps3.nemnogogo.com
-  port: 443
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  alpn:
-  - h2
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 717252g.nl8.h1clayd.click
-  port: 443
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  servername: 717252g.nl8.h1clayd.click
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: 204adda7e3da
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇷🇺 俄罗斯 | RUS 6
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇩🇪 德国 | DEU 15
+  - 🇩🇪 德国 | DEU 8
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 22
+  - 🇩🇪 德国 | DEU 18
+  - 🇩🇪 德国 | DEU 24
+  - 🇳🇱 荷兰 | NLD
+  - 🇱🇹 立陶宛 | LTU
+  - 🇩🇪 德国 | DEU 28
 rules:
 - MATCH,AUTO
