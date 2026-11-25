@@ -4,146 +4,83 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 15
-  server: 195.110.15.216
-  port: 31652
-  type: vless
-  uuid: 2da03bdf-8af3-4207-96c7-d70e0dd22c36
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: free-server.techsonic.dev
+- name: 🇭🇰 香港 | HKG 11
+  server: hkg.kkp.us.ci
   port: 443
   type: vless
-  uuid: 90711def-edd4-42da-ba1d-b2046b86b50a
+  uuid: aff1b196-478c-425a-9403-7ea15d9aafdf
   tls: true
-  servername: tech-sonic.webex.com
+  servername: hkg.kkp.us.ci
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /487e07e6-2930-4e71-99b3-6792e5909f16
+    headers:
+      Host: hkg.kkp.us.ci
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: vps3.nemnogogo.com
+  port: 443
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  alpn:
+  - h2
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
+  type: vless
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: turkey-ip1.mmdaqaorg.xyz
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: free-server.techsonic.dev
-  port: 443
-  type: vless
-  uuid: 398d124d-ed77-498e-acb6-be4a2c5d182a
-  tls: true
-  servername: android.googleapis.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: sienna.merlano.monster
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: woodgrain.filnex.baby
   port: 443
   type: vless
   uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
   tls: true
   alpn:
   - http/1.1
-  servername: sienna.merlano.monster
-  client-fingerprint: ios
+  servername: larchbank.elvano.website
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /api/de4/stream
+    path: /api/de2/stream
     headers:
-      Host: sienna.merlano.monster
+      Host: woodgrain.filnex.baby
   udp: true
-- name: 🇩🇪 德国 | DEU 22
-  server: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 | SGP 2
+  server: free.server.darknetlk.com
   port: 443
   type: vless
-  uuid: 9afdc92d-4e88-4787-8d75-c95f7685d294
+  uuid: 076799f8-d922-4bf1-805d-e758e6eb925f
   tls: true
   servername: aka.ms
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 18
-  server: mintleaf.moltex.click
-  port: 443
-  type: vless
-  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
-  tls: true
-  alpn:
-  - http/1.1
-  servername: mintleaf.moltex.click
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de4/stream
-    headers:
-      Host: mintleaf.moltex.click
-  udp: true
-- name: 🇩🇪 德国 | DEU 24
-  server: rowanberry.moltex.click
-  port: 443
-  type: vless
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
-  tls: true
-  alpn:
-  - http/1.1
-  servername: rowanberry.moltex.click
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /api/de7/stream
-    headers:
-      Host: rowanberry.moltex.click
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 185.200.199.122
-  port: 443
-  type: vless
-  uuid: 04920673-035c-410d-94e4-5b1469d3fb6f
-  tls: true
-  flow: xtls-rprx-vision
-  servername: 185.200.199.122
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇱🇹 立陶宛 | LTU
-  server: lt.memepn.com
-  port: 443
-  type: vless
-  uuid: f69e272f-e0e5-4e9d-b180-5be63930cde9
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  servername: lt.memepn.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 28
-  server: 4935e4t.de25.h1clayd.click
-  port: 443
-  type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  servername: 4935e4t.de25.h1clayd.click
-  client-fingerprint: ios
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 15
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 12
-  - 🇩🇪 德国 | DEU
-  - 🇩🇪 德国 | DEU 22
-  - 🇩🇪 德国 | DEU 18
-  - 🇩🇪 德国 | DEU 24
-  - 🇳🇱 荷兰 | NLD
-  - 🇱🇹 立陶宛 | LTU
-  - 🇩🇪 德国 | DEU 28
+  - 🇭🇰 香港 | HKG 11
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇹🇷 土耳其 | TUR
+  - 🇷🇺 俄罗斯 | RUS 5
+  - 🇸🇬 新加坡 | SGP 2
 rules:
 - MATCH,AUTO
