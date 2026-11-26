@@ -4,47 +4,32 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: f309e0t.fi4.h1clayd.click
+- name: 🇮🇱 以色列 | ISR
+  server: 71b840t.de7.h1clayd.click
   port: 443
   type: vless
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  uuid: 26843758-24de-4f76-b5d0-624038e353c4
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: tZoiwNSZeaVBoLJJcXe9A-GzCtbvU95fKkAJLc0vrgU
-    short-id: 6fddab1e1e358290
-  servername: f309e0t.fi4.h1clayd.click
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: mail3.besttotaldns.com
-  port: 443
-  type: vless
-  uuid: 18fe142e-1522-47ae-af55-bd8daf6273df
-  tls: true
-  alpn:
-  - http/1.1
-  servername: mail3.besttotaldns.com
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+    short-id: e572b6579ea525d4
+  servername: 71b840t.de7.h1clayd.click
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /wo9a5v3jcz
-    headers:
-      Host: mail3.besttotaldns.com
+  network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 194.26.229.207
   port: 2200
   type: vless
-  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
+  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
   tls: false
   network: ws
   ws-opts:
     path: /v1
+    headers:
+      Host: rzd.ru
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
+- name: 🇷🇺 俄罗斯 | RUS 6
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -59,45 +44,14 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 185.134.203.106
-  port: 443
-  type: vless
-  uuid: 3af3f8f0-569f-4dd3-be99-2ef4bfe7867c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: api.vk.me
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: h3.1free.us.ci
-  port: 443
-  type: vless
-  uuid: 2377a148-5e9b-431f-93f4-a1bbaa3dabe9
-  tls: true
-  servername: h3.1free.us.ci
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /57252d2116d6439f
-    headers:
-      Host: h3.1free.us.ci
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 5
+  - 🇮🇱 以色列 | ISR
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 4
+  - 🇷🇺 俄罗斯 | RUS 6
 rules:
 - MATCH,AUTO

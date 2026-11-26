@@ -4,77 +4,44 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 2
-  server: f309e0t.fi4.h1clayd.click
-  port: 443
-  type: vless
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: tZoiwNSZeaVBoLJJcXe9A-GzCtbvU95fKkAJLc0vrgU
-    short-id: 6fddab1e1e358290
-  servername: f309e0t.fi4.h1clayd.click
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: mail3.besttotaldns.com
-  port: 443
-  type: vless
-  uuid: 18fe142e-1522-47ae-af55-bd8daf6273df
-  tls: true
-  alpn:
-  - http/1.1
-  servername: mail3.besttotaldns.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /wo9a5v3jcz
-    headers:
-      Host: mail3.besttotaldns.com
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: JP032010.ssgreen.org
-  port: 443
+- name: 🇩🇪 德国 | DEU 3
+  server: 194.110.210.41
+  port: 28059
   type: vmess
-  uuid: f9a1ee44-21b3-4d0e-81b6-265fa2f3ba57
+  uuid: c38605a8-89ae-4e57-b9b0-35606df2e1a3
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
-  servername: JP032010.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032010.ssgreen.org
+  udp: true
+- name: 🇮🇱 以色列 | ISR
+  server: 71b840t.de7.h1clayd.click
+  port: 443
+  type: vless
+  uuid: 26843758-24de-4f76-b5d0-624038e353c4
+  tls: true
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+    short-id: e572b6579ea525d4
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 194.26.229.207
   port: 2200
   type: vless
-  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
+  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
   tls: false
   network: ws
   ws-opts:
     path: /v1
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
     headers:
-      Host: 47.244.120.197
+      Host: rzd.ru
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
+- name: 🇷🇺 俄罗斯 | RUS 6
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -89,141 +56,42 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 185.134.203.106
-  port: 443
-  type: vless
-  uuid: 3af3f8f0-569f-4dd3-be99-2ef4bfe7867c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: api.vk.me
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: US032020.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 25e53ac3-1737-48c0-b92c-10d012af52f5
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032020.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: JP032011.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 4b9dc0c5-388d-45c5-9ad3-a91db984784e
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032011.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: h3.1free.us.ci
-  port: 443
-  type: vless
-  uuid: 2377a148-5e9b-431f-93f4-a1bbaa3dabe9
-  tls: true
-  servername: h3.1free.us.ci
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /57252d2116d6439f
-    headers:
-      Host: h3.1free.us.ci
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: US032021.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: bcb0310d-6a1a-49aa-b6d0-9bcb69805670
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: US032021.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032021.ssgreen.org
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 5
-  - 🇯🇵 日本 | JPN
+  - 🇩🇪 德国 | DEU 3
+  - 🇮🇱 以色列 | ISR
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇭🇰 香港 | HKG 2
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 6
+  - 🇷🇺 俄罗斯 | RUS 6
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 5
+  - 🇮🇱 以色列 | ISR
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇳🇱 荷兰 | NLD
-  - 🇺🇸 美国 | USA 4
+  - 🇷🇺 俄罗斯 | RUS 6
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN
-  - 🇭🇰 香港 | HKG 2
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 6
+  - 🇩🇪 德国 | DEU 3
 - name: REGION-AS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 2
+  - 🇮🇱 以色列 | ISR
 - name: REGION-EU
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 5
-- name: REGION-NA
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA
+  - 🇩🇪 德国 | DEU 3
+  - 🇷🇺 俄罗斯 | RUS 2
 rules:
 - MATCH,AUTO

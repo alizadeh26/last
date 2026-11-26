@@ -4,95 +4,24 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇯🇵 日本 | JPN
-  server: JP032010.ssgreen.org
-  port: 443
+- name: 🇩🇪 德国 | DEU 3
+  server: 194.110.210.41
+  port: 28059
   type: vmess
-  uuid: f9a1ee44-21b3-4d0e-81b6-265fa2f3ba57
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: JP032010.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032010.ssgreen.org
-- name: 🇭🇰 香港 | HKG 2
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  uuid: c38605a8-89ae-4e57-b9b0-35606df2e1a3
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: US032020.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 25e53ac3-1737-48c0-b92c-10d012af52f5
-  alterId: 0
-  cipher: auto
-  tls: true
   alpn:
   - ''
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032020.ssgreen.org
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: JP032011.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 4b9dc0c5-388d-45c5-9ad3-a91db984784e
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032011.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: US032021.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: bcb0310d-6a1a-49aa-b6d0-9bcb69805670
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: US032021.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032021.ssgreen.org
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 | JPN
-  - 🇭🇰 香港 | HKG 2
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 6
+  - 🇩🇪 德国 | DEU 3
 rules:
 - MATCH,AUTO
