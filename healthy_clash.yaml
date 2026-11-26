@@ -4,35 +4,55 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇭🇰 香港 | HKG 11
-  server: hkg.kkp.us.ci
-  port: 443
-  type: vless
-  uuid: aff1b196-478c-425a-9403-7ea15d9aafdf
-  tls: true
-  servername: hkg.kkp.us.ci
-  client-fingerprint: chrome
+- name: 🇭🇰 香港 | HKG 10
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /487e07e6-2930-4e71-99b3-6792e5909f16
+    path: /arki
     headers:
-      Host: hkg.kkp.us.ci
+      Host: 47.244.120.197
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: vps3.nemnogogo.com
+- name: 🇭🇰 香港 | HKG 11
+  server: 47.244.120.197
+  port: 44867
+  type: vmess
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+  udp: true
+- name: 🇰🇷 韩国 | KOR 4
+  server: ifdmbpb.kdns.fr
   port: 443
   type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  uuid: 9a600801-e889-4705-9adb-bf9aeb366fc7
   tls: true
-  alpn:
-  - h2
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
+  servername: ifdmbpb.kdns.fr
+  client-fingerprint: chrome
+  network: tcp
   udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: free.server.darknetlk.com
+  port: 443
+  type: vless
+  uuid: 076799f8-d922-4bf1-805d-e758e6eb925f
+  tls: true
+  servername: aka.ms
+  client-fingerprint: chrome
+  network: tcp
 - name: 🇹🇷 土耳其 | TUR
   server: turkey-ip1.mmdaqaorg.xyz
   port: 50738
@@ -46,33 +66,8 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: woodgrain.filnex.baby
-  port: 443
-  type: vless
-  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
-  tls: true
-  alpn:
-  - http/1.1
-  servername: larchbank.elvano.website
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de2/stream
-    headers:
-      Host: woodgrain.filnex.baby
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: free.server.darknetlk.com
-  port: 443
-  type: vless
-  uuid: 076799f8-d922-4bf1-805d-e758e6eb925f
-  tls: true
-  servername: aka.ms
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇹🇭 泰国 | THA 2
-  server: 47.87.64.133
+- name: 🇹🇭 泰国 | THA
+  server: 8.213.211.160
   port: 18565
   type: vmess
   uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
@@ -89,39 +84,27 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇭🇰 香港 | HKG 10
   - 🇭🇰 香港 | HKG 11
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇰🇷 韩国 | KOR 4
+  - 🇸🇬 新加坡 | SGP
   - 🇹🇷 土耳其 | TUR
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇹🇭 泰国 | THA 2
+  - 🇹🇭 泰国 | THA
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港 | HKG 11
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇰🇷 韩国 | KOR 4
+  - 🇸🇬 新加坡 | SGP
   - 🇹🇷 土耳其 | TUR
-  - 🇷🇺 俄罗斯 | RUS 5
-  - 🇸🇬 新加坡 | SGP 2
 - name: PROTO-VMESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 | THA 2
-- name: REGION-AS
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇹🇷 土耳其 | TUR
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇭🇰 香港 | HKG 10
+  - 🇭🇰 香港 | HKG 11
+  - 🇹🇭 泰国 | THA
 rules:
 - MATCH,AUTO

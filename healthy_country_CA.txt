@@ -1,3 +1,8 @@
 vless://03fcc618-b93d-6796-6aed-8a38c975d581@66.163.113.9:443?security=tls&sni=kuruish.org&type=tcp#Server B127 🇨🇦
-vmess://eyJhZGQiOiIyMy4xNjIuMjAwLjE5OCIsInBvcnQiOiIxODAwMCIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ2IjoiMiIsInBzIjoi5Yqg5ou/5aSnXzExMjUxNDAwNCBMMzYiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.79:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=blog.connectingpeoplewithgreatjobs.com#🆔vpnserverrr%20🔒%20TR-TCP-N/A%20❔%20XX%2019ms
+vmess://eyJhZGQiOiIyMy4xNjIuMjAwLjE5OCIsInBvcnQiOiIxODAwMCIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ2IjoiMiIsInBzIjoi5Yqg5ou/5aSnXzExMjYwMzAwNCBMMzYiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiIsInNuaSI6IiIsInR5cGUiOiJub25lIiwic2VydmVyUG9ydCI6MCwibmF0aW9uIjoiIn0=
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.85:443?allowInsecure=0&sni=cdn.connectingpeoplewithgreatjobs.com#%E7%BE%8E%E5%9B%BD_112603070+M61
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.93:443?sni=connectingpeoplewithgreatjobs.com#%E7%BE%8E%E5%9B%BD_112603123+M61
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.79:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=blog.connectingpeoplewithgreatjobs.com#🆔anty_filter%20🔒%20TR-TCP-N/A%20❔%20XX%2019ms
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.48:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=courses.connectingpeoplewithgreatjobs.com#🇨🇦 9 - CA - Trojan/TLS/UTLS - 443
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.89:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.connectingpeoplewithgreatjobs.com#🇨🇦 12 - CA - Trojan/TLS - 443
+vless://ca52e2b6-fb9f-4dac-b6dc-49da9923f251@209.200.246.148:443?encryption=none&flow=xtls-rprx-vision&pbk=uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk&security=reality&sid=f98843107912e782&sni=www.cloudflare.com&type=tcp#🇨🇦 376 - CA - VLESS/REALITY/PBK/SID/VISION - 443
