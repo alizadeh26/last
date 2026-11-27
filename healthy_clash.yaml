@@ -4,7 +4,37 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇷🇺 俄罗斯 | RUS
+- name: 🇩🇪 德国 | DEU 3
+  server: ns2.irts.lol
+  port: 443
+  type: vless
+  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
+  tls: true
+  servername: ns2.irts.lol
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: free-server.techsonic.dev
+  port: 443
+  type: vless
+  uuid: 90711def-edd4-42da-ba1d-b2046b86b50a
+  tls: true
+  servername: tech-sonic.webex.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: free-server.techsonic.dev
+  port: 443
+  type: vless
+  uuid: 9afdc92d-4e88-4787-8d75-c95f7685d294
+  tls: true
+  servername: aka.ms
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -25,18 +55,18 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇩🇪 德国 | DEU 3
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇷🇺 俄罗斯 | RUS 3
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 | RUS
-- name: REGION-EU
-  type: url-test
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
-  proxies:
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇩🇪 德国 | DEU 3
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇷🇺 俄罗斯 | RUS 3
 rules:
 - MATCH,AUTO
