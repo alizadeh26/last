@@ -4,37 +4,23 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 3
-  server: ns2.irts.lol
+- name: 🇩🇪 德国 | DEU 10
+  server: bookend.filnex.baby
   port: 443
   type: vless
-  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
   tls: true
-  servername: ns2.irts.lol
-  client-fingerprint: chrome
-  network: tcp
+  alpn:
+  - http/1.1
+  servername: ferncrest.gerqix.online
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: bookend.filnex.baby
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: free-server.techsonic.dev
-  port: 443
-  type: vless
-  uuid: 90711def-edd4-42da-ba1d-b2046b86b50a
-  tls: true
-  servername: tech-sonic.webex.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: free-server.techsonic.dev
-  port: 443
-  type: vless
-  uuid: 9afdc92d-4e88-4787-8d75-c95f7685d294
-  tls: true
-  servername: aka.ms
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
+- name: 🇷🇺 俄罗斯 | RUS
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -49,24 +35,57 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: fctwi.xiaoyan.io
+  port: 16648
+  type: vmess
+  uuid: 967fbc94-fccd-46c2-9241-be92d4906186
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 86714acc4cc5924e812db1c117db832f.mobgslb.tbcache.com
+- name: 🇫🇷 法国 | FRA 2
+  server: 6bf329t.nl22.h1clayd.shop
+  port: 443
+  type: vless
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: p35RUaaaItuoyNiCrLpGeStBUpEJMSiZ2AajdfhhmiM
+    short-id: 92aee92130b46fe2
+  servername: 6bf329t.nl22.h1clayd.shop
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇩🇪 德国 | DEU 10
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇺🇸 美国 | USA 9
+  - 🇫🇷 法国 | FRA 2
 - name: PROTO-VLESS
   type: url-test
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 3
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇩🇪 德国 | DEU 10
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇫🇷 法国 | FRA 2
+- name: PROTO-VMESS
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 | USA 9
 rules:
 - MATCH,AUTO
