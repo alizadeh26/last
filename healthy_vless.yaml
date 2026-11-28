@@ -4,23 +4,38 @@ allow-lan: true
 mode: Rule
 log-level: silent
 proxies:
-- name: 🇩🇪 德国 | DEU 10
-  server: bookend.filnex.baby
+- name: 🇩🇪 德国 | DEU 4
+  server: cobblestone.merlano.monster
+  port: 443
+  type: vless
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  tls: true
+  alpn:
+  - h2
+  servername: cobblestone.merlano.monster
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de5.v1
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: woodgrain.filnex.baby
   port: 443
   type: vless
   uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
   tls: true
   alpn:
   - http/1.1
-  servername: ferncrest.gerqix.online
+  servername: larchbank.elvano.website
   client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /api/de1/stream
+    path: /api/de2/stream
     headers:
-      Host: bookend.filnex.baby
+      Host: woodgrain.filnex.baby
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
+- name: 🇷🇺 俄罗斯 | RUS 4
   server: vps3.nemnogogo.com
   port: 443
   type: vless
@@ -35,19 +50,32 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 6bf329t.nl22.h1clayd.shop
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: sandstone.gerqix.online
   port: 443
   type: vless
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: p35RUaaaItuoyNiCrLpGeStBUpEJMSiZ2AajdfhhmiM
-    short-id: 92aee92130b46fe2
-  servername: 6bf329t.nl22.h1clayd.shop
+  alpn:
+  - h2
+  servername: sandstone.gerqix.online
   client-fingerprint: firefox
-  network: tcp
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de6.v1
+  udp: true
+- name: 🇸🇦 SA_46
+  server: platform128.golnamakcert.top
+  port: 80
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.halalkhor.info
   udp: true
 proxy-groups:
 - name: AUTO
@@ -55,8 +83,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 | DEU 10
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇫🇷 法国 | FRA 2
+  - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 5
+  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇸🇦 SA_46
 rules:
 - MATCH,AUTO
